@@ -357,6 +357,7 @@ struct Method(string id, R, T...)
   alias Params = CallParams!T;
   alias R function(Params) Spec;
   alias ReturnType = R;
+  alias Word = Runtime.Word;
 
   static __gshared Runtime.MethodInfo info;
 
@@ -372,51 +373,86 @@ struct Method(string id, R, T...)
 
   static Method discriminator(MethodTag, CallParams!T);
 
+        // version (traceCalls) {
+        //   writefln("%*sdim = %d, class = %s, indexes = %s, slot = %d"
+        //            ~ ", info.slots[slot] = %s"
+        //            ~ ", indexes[info.slots[slot]] = %d"
+        //            ~ ", info.strides[dim].i = %d"
+        //            , dim * 2, "", dim, typeid(args[argIndex]), indexes, slot
+        //            , info.slots[slot]
+        //            , indexes[info.slots[slot]]
+        //            , info.strides[dim].i
+        //            );
+        // }
+
+  template Indexer(Q...)
+  {
+    static const(Word)* move(P...)(const(Word)* slot, const(Word)* stride, P args)
+    {
+      alias Q0 = Q[0];
+      static if (IsVirtual!Q0) {
+        alias arg = args[0];
+        const (Word)* indexes;
+        static if (is(VirtualType!Q0 == class)) {
+          indexes = cast(const Word*) arg.classinfo.deallocator;
+        } else {
+          Object o = cast(Object)
+            (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+          indexes = cast(const Word*) o.classinfo.deallocator;
+        }
+        return Indexer!(Q[1..$])
+          .moveNext(cast(const(Word)*) indexes[slot.i].p,
+                    slot + 1,
+                    stride + 1,
+                    args[1..$]);
+      } else {
+        return Indexer!(Q).move(slot, stride, args);
+      }
+    }
+
+    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slot, const(Word)* stride, P args)
+    {
+      static if (Q.length > 0) {
+        alias Q0 = Q[0];
+        static if (IsVirtual!Q0) {
+          alias arg = args[0];
+          const (Word)* indexes;
+          static if (is(VirtualType!Q0 == class)) {
+            indexes = cast(const Word*) arg.classinfo.deallocator;
+          } else {
+            Object o = cast(Object)
+              (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+            indexes = cast(const Word*) o.classinfo.deallocator;
+          }
+          return Indexer!(Q[1..$])
+            .moveNext(dt + indexes[slot.i].i * stride.i,
+                      slot + 1,
+                      stride + 1,
+                      args[1..$]);
+        } else {
+          return Indexer!(Q[1..$]).moveNext(dt, slot, stride, args[1..$]);
+        }
+      } else {
+        return dt;
+      }
+    }
+  }
+
   static auto dispatcher(CallParams!T args)
   {
-    int dim = 0;
-    int offset = 0;
-    int slot = 0;
+    alias Word = Runtime.Word;
     assert(info.dispatchTable, "updateMethods not called");
+    assert(info.slots);
     assert(info.strides);
+
     version (traceCalls) {
       writefln("dt = %s", info.dispatchTable);
     }
-    foreach (int argIndex, QP; QualParams) {
-      static if (IsVirtual!QP) {
-        assert(args[argIndex], "null passed as virtual argument");
-        int* indexes;
-        static if (is(VirtualType!QP == class)) {
-          indexes = cast(int*) args[argIndex].classinfo.deallocator;
-        } else {
-          static assert(is(VirtualType!QP == interface));
-          Object o = cast(Object)
-            (cast(void*) args[argIndex] - (cast(Interface*) **cast(void***) args[argIndex]).offset);
-          indexes = cast(int*) o.classinfo.deallocator;
-        }
-        assert(indexes);
-        version (traceCalls) {
-          writefln("%*sdim = %d, class = %s, indexes = %s, slot = %d"
-                   ~ ", info.slots[slot] = %s"
-                   ~ ", indexes[info.slots[slot]] = %d"
-                   ~ ", info.strides[dim].i = %d"
-                   , dim * 2, "", dim, typeid(args[argIndex]), indexes, slot
-                   , info.slots[slot]
-                   , indexes[info.slots[slot]]
-                   , info.strides[dim].i
-                   );
-        }
-        offset = offset + indexes[info.slots[slot]] * info.strides[dim].i;
-        ++dim;
-        ++slot;
-      }
-    }
-    auto pf = cast(Spec) info.dispatchTable[offset].p;
+
+    auto pf =
+      cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
     assert(pf);
-    version (traceCalls) {
-      writefln("offset = %d", offset);
-      writefln("pf = %s", pf);
-    }
+
     static if (is(R == void)) {
       pf(args);
     } else {
@@ -481,7 +517,7 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
-    int* slots;
+    Word* slots;
     Word* strides;
     Word* dispatchTable;
     void* throwAmbiguousCall;
@@ -504,6 +540,7 @@ struct Runtime
     int[] slots;
     int[] strides;
     void*[] dispatchTable;
+    GroupMap firstDim;
 
     auto toString() const
     {
@@ -557,7 +594,7 @@ struct Runtime
   alias Registry = MethodInfo*[MethodInfo*];
 
   static __gshared Registry methodInfos;
-  static __gshared int[] giv; // Global Index Vector
+  static __gshared Word[] giv; // Global Index Vector
   static __gshared Word[] gdv; // Global Dispatch Vector
   Method*[] methods;
   Class*[ClassInfo] classMap;
@@ -761,7 +798,7 @@ struct Runtime
 
     // dmd doesn't like this: giv.fill(-1);
 
-    int* sp = giv.ptr;
+    Word* sp = giv.ptr;
 
     version (explain) {
       writefln("  giv size: %d", giv.length);
@@ -775,7 +812,7 @@ struct Runtime
       }
       m.info.slots = sp;
       foreach (slot; m.slots) {
-        *sp++ = slot;
+        sp++.i = slot;
       }
     }
 
@@ -789,7 +826,7 @@ struct Runtime
           writefln("    %s %02d-%02d %s",
                    sp, c.firstUsedSlot, c.nextSlot, c.name);
         }
-        c.info.deallocator = cast(int*) sp;
+        c.info.deallocator = cast(Word*) sp;
         sp += c.nextSlot - c.firstUsedSlot;
       }
     }
@@ -1033,12 +1070,14 @@ struct Runtime
                      group.map!(c => c.name).join(", "));
           }
           foreach (c; group) {
-            (cast(int*) c.info.deallocator)[m.slots[dim]] = i;
+            (cast(Word*) c.info.deallocator)[m.slots[dim]].i = i;
           }
 
           ++i;
         }
       }
+
+      m.firstDim = groups[0];
     }
 
     gdv.length = methods.map!(m => m.dispatchTable.length + m.slots.length).sum;
@@ -1071,6 +1110,15 @@ struct Runtime
     }
 
     foreach (m; methods) {
+      auto slot = m.slots[0];
+      foreach (group; m.firstDim) {
+        foreach (c; group) {
+          //import std.stdio;
+          //writeln("*** ", *c);
+          Word* index = (cast(Word*) c.info.deallocator) + slot;
+          index.p = m.info.dispatchTable + index.i;
+        }
+      }
       foreach (spec; m.specs) {
         auto nextSpec = findNext(spec, m.specs);
         *spec.info.nextPtr = nextSpec ? nextSpec.info.pf : null;

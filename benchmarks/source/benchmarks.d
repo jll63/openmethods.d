@@ -119,7 +119,12 @@ void main()
   benchmark!("double_dispatch_class_to_class", "binary_method_class_to_class");
 }
 
-/* Results with initial version (no first argument optimization)
+/*
+dub run openmethods:benchmarks --build release --compiler dmd
+dub run openmethods:benchmarks --build release --compiler ldc2
+
+Results with initial version (no first argument optimization)
+-------------------------------------------------------------
 LDC - the LLVM D compiler (0.17.3):
   based on DMD v2.068.2 and LLVM 3.6.2
                vfunc_class_to_class : unary_method_class_to_class         0.577
@@ -130,4 +135,16 @@ DMD64 D Compiler v2.074.0
                vfunc_class_to_class : unary_method_class_to_class         0.355
            vfunc_interface_to_class : unary_method_interface_to_class     0.118
      double_dispatch_class_to_class : binary_method_class_to_class        0.481
+
+Results with first argument optimization
+----------------------------------------
+Using dmd...
+               vfunc_class_to_class : unary_method_class_to_class         0.366
+           vfunc_interface_to_class : unary_method_interface_to_class     0.112
+     double_dispatch_class_to_class : binary_method_class_to_class        0.549
+
+Using ldc2...
+               vfunc_class_to_class : unary_method_class_to_class         0.650
+           vfunc_interface_to_class : unary_method_interface_to_class     0.487
+     double_dispatch_class_to_class : binary_method_class_to_class        0.768
 */

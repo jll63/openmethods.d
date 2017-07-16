@@ -6,6 +6,7 @@ echo test openmethods...
 
 if ! dub test -q openmethods $*;
 then
+        echo "ERROR"
     errors=1
 fi
 
@@ -15,6 +16,7 @@ do
 
     if ! dub test -q openmethods:$target $*;
     then
+        echo "ERROR"
         errors=1
     fi
 done
@@ -25,6 +27,7 @@ do
 
     if ! dub run -q openmethods:$target $*;
     then
+        echo "ERROR"
         errors=1
     fi
 done
