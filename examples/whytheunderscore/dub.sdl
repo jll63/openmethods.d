@@ -1,0 +1,7 @@
+name "whytheunderscore"
+description "Why do we need the underscore in front of method specializations?"
+authors "Jean-Louis Leroy"
+copyright "Copyright © 2017, Jean-Louis Leroy"
+license "Boost Software License 1.0"
+targetType "executable"
+dependency "methods" path="../../"

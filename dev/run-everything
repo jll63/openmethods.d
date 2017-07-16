@@ -1,0 +1,36 @@
+#!/bin/bash
+
+errors=0
+
+echo test methods...
+
+if ! dub test -q methods $*;
+then
+    errors=1
+fi
+
+for target in $(ls examples | grep -v synopsis) $(ls tests)
+do
+    echo test $target...
+
+    if ! dub test -q methods:$target $*;
+    then
+        errors=1
+    fi
+done
+
+for target in $(ls examples)
+do
+    echo run $target...
+
+    if ! dub run -q methods:$target $*;
+    then
+        errors=1
+    fi
+done
+
+if [ $errors -ne 0 ]
+then
+   echo "ERRORS!"
+   exit 1
+fi
