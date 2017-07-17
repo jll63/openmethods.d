@@ -1,5 +1,5 @@
 name "rolex"
-description "Fast, open multi-openmethods for D"
+description "Role and Expense example from the yomm11 article on Code Project"
 authors "Jean-Louis Leroy"
 copyright "Copyright © 2017, Jean-Louis Leroy"
 license "Boost Software License 1.0"
