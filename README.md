@@ -59,7 +59,7 @@ The full code for the examples can be found in the following files:
 
 [matrix.d](examples/matrix/source/matrix.d) defines the Matrix interface:
 
-```
+```D
 interface Matrix
 {
   @property int rows() const;
@@ -87,7 +87,7 @@ virtual function - except that it's defined outside of the `matrix` class.
 This is just a declaration. Here is a catch-all implementation that works for
 all matrix types:
 
-```
+```D
 @method
 void _print(Matrix m)
 {
@@ -108,7 +108,7 @@ Note two things:
 
 Here is an implementation for DiagonalMatrix:
 
-```
+```D
 @method
 void _print(DiagonalMatrix m)
 {
@@ -122,7 +122,7 @@ void _print(DiagonalMatrix m)
 Every module that declares methods or define implementations must
 include the following line:
 
-```
+```D
 mixin(registerMethods);
 ```
 
@@ -133,7 +133,7 @@ this is done once, in `main`.
 
 To recap:
 
-```
+```D
 import std.stdio;
 
 import matrix;
@@ -194,14 +194,14 @@ Let's now look at matrix addition...
 
 In matrix.d, a `plus` method is declared with two virtual parameters:
 
-```
+```D
 Matrix plus(virtual!Matrix, virtual!Matrix);
 ```
 
 densematrix.d contains a "catch-all" implementations that uses the `Matrix`
 interface to access the elements of the opereands, and returns a `DenseMatrix`:
 
-```
+```D
 @method
 Matrix _plus(Matrix m1, Matrix m2)
 {
@@ -223,7 +223,7 @@ Matrix _plus(Matrix m1, Matrix m2)
 
 While this override returns the correct result if both operands are dense matrices, it is inefficient. Thus a better override is also provided:
 
-```
+```D
 @method
 Matrix _plus(DenseMatrix a, DenseMatrix b)
 {
@@ -242,7 +242,7 @@ Matrix _plus(DenseMatrix a, DenseMatrix b)
 
 diagonalmatrix.d provides an override that just adds the diagonals - and returns a new `DiagonalMatrix`.
 
-```
+```D
 @method
 Matrix _plus(DiagonalMatrix a, DiagonalMatrix b)
 {
