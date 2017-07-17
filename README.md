@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-If you are familiar with the oncept of open multi-methods, or prefer to learn by reading code, go directly to [the synopsis](examples/synopsis/source/app.d)
+If you are familiar with the concept of open multi-methods, or prefer to learn by reading code, go directly to [the synopsis](examples/synopsis/source/app.d)
 
 ## Introduction
 
@@ -10,7 +10,7 @@ This library implements fast, open multi-methods for D.
 
 Imagine that you are writing a matrix math library. Matrices come in different
 subtypes - dense (i.e. ordinary), diagonal, tridiagonal, etc. Some operations
-can be implemented more efficently for certain types - for example, transposing
+can be implemented more efficiently for certain types - for example, transposing
 a diagonal matrix is a no-op; adding two diagonal matrices does not require
 adding the zeroes that are outside of the diagonals; etc.
 
@@ -73,7 +73,7 @@ elements in a single array. So
 does [DiagonalMatrix](examples/matrix/source/diagonalmatrix.d), but it only stores
 the elements on the diagonal.
 
-The `print` method in [app.d](examples/matrix/app.d) is declared as follow:
+The `print` method in [app.d](examples/matrix/app.d) is declared as follows:
 
 ```D
 import methods;
@@ -199,7 +199,7 @@ Matrix plus(virtual!Matrix, virtual!Matrix);
 ```
 
 densematrix.d contains a "catch-all" implementations that uses the `Matrix`
-interface to access the elements of the opereands, and returns a `DenseMatrix`:
+interface to access the elements of the operands, and returns a `DenseMatrix`:
 
 ```D
 @method
