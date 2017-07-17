@@ -295,12 +295,12 @@ class AmbiguousCallError : MethodError
 // Private parts. This doesn't exist. If you believe it does and use it, on
 // your head be it.
 
-const bool IsVirtual(T) = false;
-const bool IsVirtual(T : virtual!U, U) = true;
+enum IsVirtual(T) = false;
+enum IsVirtual(T : virtual!U, U) = true;
 
 alias VirtualType(T : virtual!U, U) = U;
 
-static template CallParams(T...)
+template CallParams(T...)
 {
   static if (T.length == 0) {
     alias CallParams = AliasSeq!();
