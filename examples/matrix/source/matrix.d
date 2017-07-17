@@ -1,4 +1,4 @@
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 interface Matrix

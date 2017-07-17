@@ -1,4 +1,4 @@
-import methods; // import lib
+import openmethods; // import lib
 mixin(registerMethods); // once per module - don't forget!
 
 

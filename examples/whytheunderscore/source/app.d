@@ -1,6 +1,6 @@
 import std.stdio;
 
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 interface  Animal

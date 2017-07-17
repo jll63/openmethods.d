@@ -1,7 +1,7 @@
 // The example from Code Project
 // https://www.codeproject.com/Articles/859492/Open-Multi-Methods-for-Cplusplus-Part-Inside-Yomm
 
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 interface Role

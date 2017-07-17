@@ -1,7 +1,7 @@
 module nextdemo;
 
 import std.stdio;
-import methods;
+import openmethods;
 
 interface Vehicle
 {

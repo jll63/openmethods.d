@@ -17,10 +17,10 @@
  incompatible with classes that define a `delete` member, and with modules
  that use this field for their own purpose.
 
- Synopsis of methods:
+ Synopsis of openmethods:
 ---
 
-import methods; // import lib
+import openmethods; // import lib
 mixin(registerMethods); // once per module - don't forget!
 
 interface  Animal {}
@@ -90,7 +90,7 @@ void main()
  Authors:   Jean-Louis Leroy 2017
 +/
 
-module methods;
+module openmethods;
 
 import std.traits;
 import std.format;
@@ -234,7 +234,7 @@ auto next(alias F, T...)(T args)
 
  Examples:
  ---
-import methods;
+import openmethods;
 mixin(registerMethods);
  ---
  +/

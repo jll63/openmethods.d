@@ -1,6 +1,6 @@
 import std.stdio;
 import std.datetime;
-import methods;
+import openmethods;
 
 interface BaseInterface
 {

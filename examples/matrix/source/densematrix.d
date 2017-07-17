@@ -1,6 +1,6 @@
 import matrix;
 
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 class DenseMatrix : Matrix

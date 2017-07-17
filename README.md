@@ -1,4 +1,4 @@
-# methods.d
+# openmethods.d
 
 ## TL;DR
 
@@ -76,7 +76,7 @@ the elements on the diagonal.
 The `print` method in [app.d](examples/matrix/app.d) is declared as follow:
 
 ```D
-import methods;
+import openmethods;
 
 void print(virtual!Matrix m);
 ```
@@ -140,7 +140,7 @@ import matrix;
 import diagonalmatrix;
 import densematrix;
 
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 void print(virtual!Matrix m);

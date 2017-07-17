@@ -1,4 +1,4 @@
-name "methods"
+name "openmethods"
 description "Fast, open multi-methods for D"
 authors "Jean-Louis Leroy"
 copyright "Copyright © 2017, Jean-Louis Leroy"

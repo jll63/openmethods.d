@@ -2,9 +2,9 @@
 
 errors=0
 
-echo test methods...
+echo test openmethods...
 
-if ! dub test -q methods $*;
+if ! dub test -q openmethods $*;
 then
     errors=1
 fi
@@ -13,7 +13,7 @@ for target in $(ls examples | grep -v synopsis) $(ls tests)
 do
     echo test $target...
 
-    if ! dub test -q methods:$target $*;
+    if ! dub test -q openmethods:$target $*;
     then
         errors=1
     fi
@@ -23,7 +23,7 @@ for target in $(ls examples)
 do
     echo run $target...
 
-    if ! dub run -q methods:$target $*;
+    if ! dub run -q openmethods:$target $*;
     then
         errors=1
     fi

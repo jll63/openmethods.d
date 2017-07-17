@@ -4,7 +4,7 @@ import matrix;
 import diagonalmatrix;
 import densematrix;
 
-import methods;
+import openmethods;
 mixin(registerMethods);
 
 void print(virtual!Matrix m);
