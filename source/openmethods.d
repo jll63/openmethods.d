@@ -300,6 +300,26 @@ enum IsVirtual(T : virtual!U, U) = true;
 
 alias VirtualType(T : virtual!U, U) = U;
 
+// enum VirtualArity(QP...) = 1 + VirtualArity!(QP[1..$])
+//   if IsVirtual!(QP[0]);
+
+// enum VirtualArity(QP...) = VirtualArity!(QP[1..$])
+//   if !IsVirtual!(QP[0]);
+
+// enum VirtualArity(QP...) = 0
+//   if QP.length == 0;
+
+template VirtualArity(QP...)
+{
+  static if (QP.length == 0) {
+    enum VirtualArity = 0;
+  } else static if (IsVirtual!(QP[0])) {
+    enum VirtualArity = 1 + VirtualArity!(QP[1..$]);
+  } else {
+    enum VirtualArity = VirtualArity!(QP[1..$]);
+  }
+}
+
 template CallParams(T...)
 {
   static if (T.length == 0) {
@@ -347,6 +367,18 @@ template castArgs(T...)
   }
 }
 
+auto indexPtr(T)(T arg)
+{
+  alias Word = Runtime.Word;
+  static if (is(T == class)) {
+    return cast(const Word*) arg.classinfo.deallocator;
+  } else {
+    Object o = cast(Object)
+      (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+    return cast(const Word*) o.classinfo.deallocator;
+  }
+}
+
 struct Method(string id, R, T...)
 {
   import std.stdio;
@@ -373,44 +405,25 @@ struct Method(string id, R, T...)
 
   static Method discriminator(MethodTag, CallParams!T);
 
-        // version (traceCalls) {
-        //   writefln("%*sdim = %d, class = %s, indexes = %s, slot = %d"
-        //            ~ ", info.slots[slot] = %s"
-        //            ~ ", indexes[info.slots[slot]] = %d"
-        //            ~ ", info.strides[dim].i = %d"
-        //            , dim * 2, "", dim, typeid(args[argIndex]), indexes, slot
-        //            , info.slots[slot]
-        //            , indexes[info.slots[slot]]
-        //            , info.strides[dim].i
-        //            );
-        // }
-
   template Indexer(Q...)
   {
-    static const(Word)* move(P...)(const(Word)* slot, const(Word)* stride, P args)
+    static const(Word)* move(P...)(const(Word)* slots, const(Word)* strides, P args)
     {
       alias Q0 = Q[0];
       static if (IsVirtual!Q0) {
         alias arg = args[0];
-        const (Word)* indexes;
-        static if (is(VirtualType!Q0 == class)) {
-          indexes = cast(const Word*) arg.classinfo.deallocator;
-        } else {
-          Object o = cast(Object)
-            (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-          indexes = cast(const Word*) o.classinfo.deallocator;
-        }
+        const (Word)* indexes = indexPtr(arg);
         return Indexer!(Q[1..$])
-          .moveNext(cast(const(Word)*) indexes[slot.i].p,
-                    slot + 1,
-                    stride + 1,
+          .moveNext(cast(const(Word)*) indexes[slots.i].p,
+                    slots + 1,
+                    strides, // stride for dim 0 is 1, not stored
                     args[1..$]);
       } else {
-        return Indexer!(Q).move(slot, stride, args);
+        return Indexer!(Q).move(slots, stride, args);
       }
     }
 
-    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slot, const(Word)* stride, P args)
+    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slots, const(Word)* strides, P args)
     {
       static if (Q.length > 0) {
         alias Q0 = Q[0];
@@ -425,15 +438,25 @@ struct Method(string id, R, T...)
             indexes = cast(const Word*) o.classinfo.deallocator;
           }
           return Indexer!(Q[1..$])
-            .moveNext(dt + indexes[slot.i].i * stride.i,
-                      slot + 1,
-                      stride + 1,
+            .moveNext(dt + indexes[slots.i].i * strides.i,
+                      slots + 1,
+                      strides + 1,
                       args[1..$]);
         } else {
-          return Indexer!(Q[1..$]).moveNext(dt, slot, stride, args[1..$]);
+          return Indexer!(Q[1..$]).moveNext(dt, slots, stride, args[1..$]);
         }
       } else {
         return dt;
+      }
+    }
+
+    static const(Word)* unary(P...)(P args)
+    {
+      alias Q0 = Q[0];
+      static if (IsVirtual!Q0) {
+        return indexPtr(args[0]);
+      } else {
+        return Indexer!(Q[1..$]).unary(args[1..$]);
       }
     }
   }
@@ -441,17 +464,23 @@ struct Method(string id, R, T...)
   static auto dispatcher(CallParams!T args)
   {
     alias Word = Runtime.Word;
-    assert(info.dispatchTable, "updateMethods not called");
-    assert(info.slots);
-    assert(info.strides);
+    assert(info.vp.length == 1 || info.dispatchTable, "updateMethods not called");
+    assert(info.vp.length == 1 || info.slots);
+    assert(info.vp.length == 1 || info.strides);
 
-    version (traceCalls) {
-      writefln("dt = %s", info.dispatchTable);
+    static if (VirtualArity!QualParams == 1) {
+      auto pf = cast(Spec) Indexer!(QualParams).unary(args)[info.slots[0].i].p;
+      import std.stdio;
+    } else {
+      auto pf =
+        cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
     }
 
-    auto pf =
-      cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
     assert(pf);
+
+    version (traceCalls) {
+      writefln("dt = %s pf = %s", info.dispatchTable, pf);
+    }
 
     static if (is(R == void)) {
       pf(args);
@@ -957,6 +986,7 @@ struct Runtime
         } else if (specs.empty) {
           m.dispatchTable ~= m.info.throwUndefined;
         } else {
+          import std.stdio;
           m.dispatchTable ~= specs[0].info.pf;
 
           version (explain) {
@@ -1033,14 +1063,14 @@ struct Runtime
       }
 
       int stride = 1;
-      m.strides.length = dims;
+      m.strides.length = dims - 1;
 
-      foreach (int dim, vp; m.vp) {
+      foreach (int dim, vp; m.vp[1..$]) {
         version (explain) {
-          writefln("    stride for dim %s = %s", dim, stride);
+          writefln("    stride for dim %s = %s", dim + 1, stride);
         }
-        m.strides[dim] = stride;
         stride *= groups[dim].length;
+        m.strides[dim] = stride;
       }
 
       BitArray none;
@@ -1080,7 +1110,8 @@ struct Runtime
       m.firstDim = groups[0];
     }
 
-    gdv.length = methods.map!(m => m.dispatchTable.length + m.slots.length).sum;
+    gdv.length = methods.filter!(m => m.vp.length > 1).map!
+      (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
 
     version (explain) {
       writefln("Initializing global dispatch table - %d words", gdv.length);
@@ -1089,34 +1120,52 @@ struct Runtime
     Word* mp = gdv.ptr;
 
     foreach (m; methods) {
-      version (explain) {
-        writefln("  %s:", *m);
-        writefln("    %s: %d strides: %s", mp, m.strides.length, m.strides);
-      }
-      m.info.strides = mp;
-      foreach (stride; m.strides) {
-        mp++.i = stride;
-      }
-      version (explain) {
-        writefln("    %s: %d functions", mp, m.dispatchTable.length);
-      }
-      m.info.dispatchTable = mp;
-      foreach (p; m.dispatchTable) {
+      if (m.info.vp.length > 1) {
         version (explain) {
-          writefln("      %s", p);
+          writefln("  %s:", *m);
+          writefln("    %s: %d strides: %s", mp, m.strides.length, m.strides);
         }
-        mp++.p = cast(void*) p;
+        m.info.strides = mp;
+        foreach (stride; m.strides) {
+          mp++.i = stride;
+        }
+        version (explain) {
+          writefln("    %s: %d functions", mp, m.dispatchTable.length);
+        }
+        m.info.dispatchTable = mp;
+        foreach (p; m.dispatchTable) {
+          version (explain) {
+            writefln("      %s", p);
+          }
+          mp++.p = cast(void*) p;
+        }
       }
     }
 
     foreach (m; methods) {
       auto slot = m.slots[0];
-      foreach (group; m.firstDim) {
-        foreach (c; group) {
-          //import std.stdio;
-          //writeln("*** ", *c);
-          Word* index = (cast(Word*) c.info.deallocator) + slot;
-          index.p = m.info.dispatchTable + index.i;
+      if (m.info.vp.length == 1) {
+        version (explain) {
+          writefln("  %s:", *m);
+          writeln("    1-method, storing fp in indexes");
+        }
+        int i = 0;
+        foreach (group; m.firstDim) {
+          foreach (c; group) {
+            Word* index = (cast(Word*) c.info.deallocator) + slot;
+            index.p = m.dispatchTable[i];
+            version (explain) {
+              writefln("      %s", index.p);
+            }
+          }
+          ++i;
+        }
+      } else {
+        foreach (group; m.firstDim) {
+          foreach (c; group) {
+            Word* index = (cast(Word*) c.info.deallocator) + slot;
+            index.p = m.info.dispatchTable + index.i;
+          }
         }
       }
       foreach (spec; m.specs) {

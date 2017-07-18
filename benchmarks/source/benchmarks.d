@@ -147,4 +147,16 @@ Using ldc2...
                vfunc_class_to_class : unary_method_class_to_class         0.650
            vfunc_interface_to_class : unary_method_interface_to_class     0.487
      double_dispatch_class_to_class : binary_method_class_to_class        0.768
+
+Results with unary method optimization
+--------------------------------------
+Using dmd...
+               vfunc_class_to_class : unary_method_class_to_class         0.391
+           vfunc_interface_to_class : unary_method_interface_to_class     0.139
+     double_dispatch_class_to_class : binary_method_class_to_class        0.560
+
+Using ldc2...
+               vfunc_class_to_class : unary_method_class_to_class         0.730
+           vfunc_interface_to_class : unary_method_interface_to_class     0.558
+     double_dispatch_class_to_class : binary_method_class_to_class        0.773
 */
