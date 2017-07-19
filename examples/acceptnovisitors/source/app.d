@@ -86,6 +86,6 @@ void main()
   } else {
     Node expr =
       new Times(new Number(2), new Plus(new Number(3), new Number(4)));
-    writefln("%s = %s", toRPN(expr), evaluate(expr));
+    writefln("%s = %s", toRPN(expr), evaluate(expr)); // 2 3 4 + * = 14
   }
 }
