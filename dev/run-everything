@@ -10,7 +10,7 @@ then
     errors=1
 fi
 
-for target in $(ls examples | grep -v synopsis) $(ls tests)
+for target in $(ls examples | grep -v synopsis) tests
 do
     echo test $target...
 
@@ -21,7 +21,7 @@ do
     fi
 done
 
-for target in $(ls examples)
+for target in $(ls examples) tests
 do
     echo run $target...
 

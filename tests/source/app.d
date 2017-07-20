@@ -1,7 +1,6 @@
 import openmethods; // import lib
 mixin(registerMethods); // once per module - don't forget!
 
-
 class ThreadClass { }
 
 void threadFunc(virtual!ThreadClass);
@@ -9,7 +8,7 @@ void threadFunc(virtual!ThreadClass);
 @method
 void _threadFunc(ThreadClass obj) { }
 
-unittest
+void main()
 {
   import std.concurrency;
 
@@ -25,8 +24,4 @@ unittest
   auto childTid = spawn(&child);
   updateMethods();
   send(childTid, 42);
-}
-
-void main()
-{
 }

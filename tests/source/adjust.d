@@ -20,9 +20,9 @@ interface B : A, C { }
 class X : B { }
 class Y : D { }
 
-// void* a(virtual!A);
-// @method void* _a(A obj) { return cast(void*) obj; }
-/*
+void* a(virtual!A);
+@method void* _a(A obj) { return cast(void*) obj; }
+
 void* b(virtual!A);
 @method void* _b(B obj) { return cast(void*) obj; }
 
@@ -37,11 +37,13 @@ void* d(virtual!C);
 
 void* y(virtual!C);
 @method void* _y(Y obj) { return cast(void*) obj; }
-*/
+
 unittest
 {
-  updateMethods();
-  /*
+  if (!Runtime.gdv) {
+    updateMethods();
+  }
+
   {
     X obj = new X;
     assert(x(obj) == cast(void*) obj);
@@ -66,9 +68,4 @@ unittest
     D pd = obj;
     assert(d(obj) == cast(void*) pc);
   }
-  */
-}
-
-void main()
-{
 }

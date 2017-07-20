@@ -1234,6 +1234,12 @@ mixin template _implement(string M, alias S)
   static __gshared typeof(mixin(M)(MethodTag.init, Parameters!(S).init)).Specialization!(S) spec;
 }
 
+template _implement2(string M, alias S)
+{
+  import std.traits;
+  static __gshared typeof(mixin(M)(MethodTag.init, Parameters!(S).init)).Specialization!(S) spec;
+}
+
 immutable bool hasVirtualParameters(alias F) = anySatisfy!(IsVirtual, Parameters!F);
 
 unittest
@@ -1272,20 +1278,26 @@ string _registerMethods(alias MODULE)()
 
 mixin template _registerSpecs(alias MODULE)
 {
+  static void wrap(T)()
+  {
+    static __gshared T spec;
+  }
+
+  import std.traits;
   static this() {
-    foreach (m; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-        foreach (o; __traits(getOverloads, MODULE, m)) {
-          static if (__traits(getAttributes, o).length) {
-            foreach (a; __traits(getAttributes, o)) {
-              static if (is(typeof(a) == method)) {
-                mixin _implement!(mixin(`"` ~ a.id ~ `"`), o);
+    foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
+        foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
+          static if (__traits(getAttributes, _openmethods_o_).length) {
+            foreach (_openmethods_a_; __traits(getAttributes, _openmethods_o_)) {
+              static if (is(typeof(_openmethods_a_) == method)) {
+                  wrap!(typeof(mixin(_openmethods_a_.id)(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
               } else {
-                static if (is(a == method)) {
-                  static assert(m[0] == '_',
+                static if (is(_openmethods_a_ == method)) {
+                  static assert(_openmethods_m_[0] == '_',
                                 m ~ ": method name must begin with an underscore, "
                                 ~ "or be set in @method()");
-                  mixin _implement!(m[1..$], o);
+                  wrap!(typeof(mixin(_openmethods_m_[1..$])(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
                 }
               }
             }
