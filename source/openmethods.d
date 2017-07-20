@@ -123,11 +123,6 @@ version (explain) {
  compile time mechanism that takes into account the $(I static) type of the
  arguments.
 
- Throws:
- `UndefinedCallError` if no method is compatible with the argument list$.$(BR)
- `AmbiguousCallError` if several compatible  methods exist but none of
- them is more specific than all the others$.$(BR)
-
  Examples:
  ---
  Matrix times(double, virtual!Matrix);
@@ -185,11 +180,6 @@ struct method
 
 /++ Call the _next most specialized override if it exists. In other words, call
  the override that would have been called if this one had not been defined.
-
- Throws:
- `UndefinedCallError` if the current method does not override any other overrides.$(BR)
- `AmbiguousCallError` if more than one '_next' overrides exist but none of
- them is more specific than all the others.
 
  Examples:
  ---
@@ -256,39 +246,45 @@ void updateMethods()
 }
 
 /++
- The base class of all the exceptions thrown by this module.
-+/
+ Information passed to the error handler function.
 
-class MethodError : Error
+ +/
+
+struct MethodError
 {
-  this(string msg, Throwable next = null)
-  {
-    super(msg, next);
-  }
+  enum { NotImplemented = 1, AmbiguousCall };
+  int reason;
+  string functionName;
+  TypeInfo[] args;
 }
+
+void defaultMethodErrorHandler(MethodError error)
+{
+  import std.stdio;
+  stderr.writefln("call to %s(%s) is %s, aborting...",
+                  error.functionName,
+                  error.args.map!(a => a.toString).join(", "),
+                  error.reason == MethodError.NotImplemented
+                  ? "not implemented" : "ambiguous");
+  import core.stdc.stdlib : abort;
+  abort();
+}
+
+alias MethodErrorHandler = void function(MethodError error);
+
+MethodErrorHandler errorHandler = &defaultMethodErrorHandler;
 
 /++
- Thrown if no override matches the argument list.
+ Set the function that is called if a method cannot be called with the
+ arguments. Default is to `abort` the program.
 +/
 
-class UndefinedCallError : MethodError
+void function(MethodError error)
+setMethodErrorHandler(void function(MethodError error) handler)
 {
-  this(string method, Throwable next = null)
-  {
-    super("this call to '" ~ method ~ "' is not implemented", next);
-  }
-}
-
-/++ Thrown if more than one override matches the argument list, but none is
- more specific than all the others.
-+/
-
-class AmbiguousCallError : MethodError
-{
-  this(string method, Throwable next = null)
-  {
-    super("this call to '" ~ method ~ "' is ambiguous", next);
-  }
+  auto prev = errorHandler;
+  errorHandler = handler;
+  return prev;
 }
 
 // ============================================================================
@@ -379,6 +375,15 @@ auto indexPtr(T)(T arg)
   }
 }
 
+auto TypeIds(T...)()
+{
+  TypeInfo[] result;
+  foreach (A; T) {
+    result ~= typeid(A);
+  }
+  return result;
+}
+
 struct Method(string id, R, T...)
 {
   import std.stdio;
@@ -393,14 +398,21 @@ struct Method(string id, R, T...)
 
   static __gshared Runtime.MethodInfo info;
 
-  static R throwUndefined(T...)
+  static R notImplementedError(T...)
   {
-    throw new UndefinedCallError(id);
+    import std.meta;
+    errorHandler(MethodError(MethodError.NotImplemented, id, TypeIds!(Params)()));
+    static if (!is(R == void)) {
+      return R.init;
+    }
   }
 
-  static R throwAmbiguousCall(T...)
+  static R ambiguousCallError(T...)
   {
-    throw new AmbiguousCallError(id);
+    errorHandler(MethodError(MethodError.AmbiguousCall, id, TypeIds!(Params)()));
+    static if (!is(R == void)) {
+      return R.init;
+    }
   }
 
   static Method discriminator(MethodTag, CallParams!T);
@@ -491,8 +503,8 @@ struct Method(string id, R, T...)
 
   static this() {
     info.name = id;
-    info.throwAmbiguousCall = &throwAmbiguousCall;
-    info.throwUndefined = &throwUndefined;
+    info.ambiguousCallError = &ambiguousCallError;
+    info.notImplementedError = &notImplementedError;
     foreach (QP; QualParams) {
       int i = 0;
       static if (IsVirtual!QP) {
@@ -549,8 +561,8 @@ struct Runtime
     Word* slots;
     Word* strides;
     Word* dispatchTable;
-    void* throwAmbiguousCall;
-    void* throwUndefined;
+    void* ambiguousCallError;
+    void* notImplementedError;
   }
 
   struct SpecInfo
@@ -982,9 +994,9 @@ struct Runtime
         auto specs = best(applicable);
 
         if (specs.length > 1) {
-          m.dispatchTable ~= m.info.throwAmbiguousCall;
+          m.dispatchTable ~= m.info.ambiguousCallError;
         } else if (specs.empty) {
-          m.dispatchTable ~= m.info.throwUndefined;
+          m.dispatchTable ~= m.info.notImplementedError;
         } else {
           import std.stdio;
           m.dispatchTable ~= specs[0].info.pf;
@@ -1551,21 +1563,27 @@ unittest
   rt.calculateInheritanceRelationships();
 
   rt.buildTables();
-  string error;
+  static string methodId;
 
-  try {
-    plus(new Matrix, new Matrix);
-  } catch (UndefinedCallError e) {
-    error = e.msg;
+  auto oldErrorHandler =
+    setMethodErrorHandler(function void(MethodError error) {
+        assert(error.reason == MethodError.NotImplemented);
+        methodId = error.functionName;
+      });
+
+  scope (exit) {
+    setMethodErrorHandler(oldErrorHandler);
   }
 
-  assert(error == "this call to 'plus' is not implemented");
+  plus(new Matrix, new Matrix);
+  assert(methodId == "plus");
 
-  try {
-    plus(new DiagonalMatrix, new DiagonalMatrix);
-  } catch (AmbiguousCallError e) {
-    error = e.msg;
-  }
+  methodId = "";
+  setMethodErrorHandler(function void(MethodError error) {
+      assert(error.reason == MethodError.AmbiguousCall);
+      methodId = error.functionName;
+    });
 
-  assert(error == "this call to 'plus' is ambiguous");
+  plus(new DiagonalMatrix, new DiagonalMatrix);
+  assert(methodId == "plus");
 }
