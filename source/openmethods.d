@@ -1228,18 +1228,6 @@ struct Runtime
   }
 }
 
-mixin template _implement(string M, alias S)
-{
-  import std.traits;
-  static __gshared typeof(mixin(M)(MethodTag.init, Parameters!(S).init)).Specialization!(S) spec;
-}
-
-template _implement2(string M, alias S)
-{
-  import std.traits;
-  static __gshared typeof(mixin(M)(MethodTag.init, Parameters!(S).init)).Specialization!(S) spec;
-}
-
 immutable bool hasVirtualParameters(alias F) = anySatisfy!(IsVirtual, Parameters!F);
 
 unittest
