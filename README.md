@@ -1,5 +1,13 @@
 # openmethods.d
 
+## STOP!
+
+Maybe you think that you don't need multi-methods, never needed them so
+far. Tell you what? You are probably right. But read on. This library is about
+_open_ methods. OK they are also multi-methods but that's just the icing on the
+cake. Open is good. Open methods rid you of the lame visitor pattern. For
+starters...
+
 ## TL;DR
 
 If you are familiar with the concept of open multi-methods, or prefer to learn by reading code, go directly to [the synopsis](examples/synopsis/source/app.d)
