@@ -98,7 +98,6 @@ import std.meta;
 import std.algorithm;
 import std.algorithm.iteration;
 import std.range;
-import std.container.rbtree;
 import std.bitmanip;
 
 version (explain) {
@@ -386,10 +385,6 @@ auto TypeIds(T...)()
 
 struct Method(string id, R, T...)
 {
-  import std.stdio;
-  import std.traits;
-  import std.meta;
-
   alias QualParams = T;
   alias Params = CallParams!T;
   alias R function(Params) Spec;
@@ -1245,18 +1240,14 @@ string _registerMethods(alias MODULE)()
   foreach (m; __traits(allMembers, MODULE)) {
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
-        foreach (p; Parameters!o) {
-          static if (IsVirtual!p) {
-            auto meth =
-              format(`Method!("%s", %s, %s)`,
-                     m,
-                     ReturnType!o.stringof,
-                     Parameters!o.stringof[1..$-1]);
-            code ~= format(`alias %s = %s.dispatcher;`, m, meth);
-            code ~= format(`alias %s = %s.discriminator;`, m, meth);
-            //code ~= format(`alias _%s = %s.discriminator;`, m, meth);
-            break;
-          }
+        static if (hasVirtualParameters!o) {
+          auto meth =
+            format(`Method!("%s", %s, %s)`,
+                   m,
+                   ReturnType!o.stringof,
+                   Parameters!o.stringof[1..$-1]);
+          code ~= format(`alias %s = %s.dispatcher;`, m, meth);
+          code ~= format(`alias %s = %s.discriminator;`, m, meth);
         }
       }
     }
@@ -1272,23 +1263,22 @@ mixin template _registerSpecs(alias MODULE)
   }
 
   import std.traits;
+
   static this() {
     foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
-          static if (__traits(getAttributes, _openmethods_o_).length) {
-            foreach (_openmethods_a_; __traits(getAttributes, _openmethods_o_)) {
-              static if (is(typeof(_openmethods_a_) == method)) {
-                  wrap!(typeof(mixin(_openmethods_a_.id)(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
-              } else {
-                static if (is(_openmethods_a_ == method)) {
-                  static assert(_openmethods_m_[0] == '_',
-                                m ~ ": method name must begin with an underscore, "
-                                ~ "or be set in @method()");
-                  wrap!(typeof(mixin(_openmethods_m_[1..$])(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
-                }
-              }
+          static if (hasUDA!(_openmethods_o_, method)) {
+            static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
+              immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
+            } else {
+              static assert(_openmethods_m_[0] == '_',
+                            m ~ ": method name must begin with an underscore, "
+                            ~ "or be set in @method()");
+              immutable _openmethods_id_ = _openmethods_m_[1..$];
             }
+            wrap!(typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init))
+                  .Specialization!(_openmethods_o_))();
           }
         }
       }
@@ -1532,58 +1522,4 @@ unittest
   assert(Runtime.findNext(specs[3], specs) == null);
 
   rt.buildTables();
-}
-
-unittest
-{
-  class Matrix { }
-  class DenseMatrix : Matrix { }
-  class DiagonalMatrix : Matrix { }
-
-  mixin _method!("plus", void, virtual!Matrix, virtual!Matrix);
-  // intentionally ambiguous
-  mixin implement!(plus, function void(DiagonalMatrix a, Matrix b) { });
-  mixin implement!(plus, function void(Matrix a, DiagonalMatrix b) { });
-
-  Runtime rt;
-  mixin Restrict!(Matrix, DenseMatrix, DiagonalMatrix);
-
-  rt.seed();
-
-  version (explain) {
-    writefln("Scooping...");
-  }
-
-  rt.scoop(DenseMatrix.classinfo);
-  rt.scoop(DiagonalMatrix.classinfo);
-
-  rt.initClasses();
-  rt.layer();
-  rt.allocateSlots();
-  rt.calculateInheritanceRelationships();
-
-  rt.buildTables();
-  static string methodId;
-
-  auto oldErrorHandler =
-    setMethodErrorHandler(function void(MethodError error) {
-        assert(error.reason == MethodError.NotImplemented);
-        methodId = error.functionName;
-      });
-
-  scope (exit) {
-    setMethodErrorHandler(oldErrorHandler);
-  }
-
-  plus(new Matrix, new Matrix);
-  assert(methodId == "plus");
-
-  methodId = "";
-  setMethodErrorHandler(function void(MethodError error) {
-      assert(error.reason == MethodError.AmbiguousCall);
-      methodId = error.functionName;
-    });
-
-  plus(new DiagonalMatrix, new DiagonalMatrix);
-  assert(methodId == "plus");
 }
