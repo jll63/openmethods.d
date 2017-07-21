@@ -95,13 +95,14 @@ unittest {
 
   updateMethods();
 
+  static bool error;
+
   foreach (CHARACTER; AliasSeq!(Character, Warrior)) {
     CHARACTER character = new CHARACTER;
     foreach (CREATURE; AliasSeq!(Dragon, Bear)) {
       CREATURE creature = new CREATURE;
       foreach (DEVICE; AliasSeq!(Hands, Banana, Axe)) {
         DEVICE device = new DEVICE;
-
         static if (is(CREATURE == Dragon) && is(DEVICE == Hands)) {
           assert(fight(character, creature, device).indexOf("Incredible") != -1);
         } else static if (is(DEVICE == Banana)) {
@@ -115,13 +116,16 @@ unittest {
             assert(fight(character, creature, device).indexOf("cuts") != -1);
           }
         } else {
-          string error;
-          try {
-            fight(character, creature, device);
-          } catch (MethodError e) {
-            error = e.msg;
+          auto oldErrorHandler =
+            setMethodErrorHandler(function void(MethodError) {
+                error = true;
+              });
+
+          scope (exit) {
+            setMethodErrorHandler(oldErrorHandler);
           }
-          assert(error == "this call to 'fight' is not implemented");
+
+          fight(character, creature, device);
         }
       }
     }
