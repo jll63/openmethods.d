@@ -1,0 +1,3 @@
+language: d
+
+script: dev/run-everything
