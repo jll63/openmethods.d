@@ -1,5 +1,7 @@
 # openmethods.d
 
+[![Build Status](https://travis-ci.org/jll63/openmethods.d.svg?branch=master)](https://travis-ci.org/jll63/openmethods.d)
+
 ## STOP!
 
 Maybe you think that you don't need multi-methods, never needed them so
