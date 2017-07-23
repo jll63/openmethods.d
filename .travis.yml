@@ -4,5 +4,4 @@ script: dev/run-everything
 
 d:
   - dmd
-  - gdc
   - ldc
