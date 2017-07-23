@@ -75,18 +75,15 @@ void main()
 {
   updateMethods();
 
-  version (unittest) {
-  } else {
-    Character bob = new Character, rambo = new Warrior;
-    Creature elliott = new Dragon, paddington = new Bear;
-    Device hands = new Hands, axe = new Axe, chiquita = new Banana;
+  Character bob = new Character, rambo = new Warrior;
+  Creature elliott = new Dragon, paddington = new Bear;
+  Device hands = new Hands, axe = new Axe, chiquita = new Banana;
 
-    writeln("bob fights elliot with axe: ", fight(bob, elliott, axe));
-    writeln("rambo fights paddington with axe: ", fight(rambo, paddington, axe));
-    writeln("rambo fights paddington with banana: ", fight(rambo, paddington, chiquita));
-    writeln("rambo fights elliott with axe: ", fight(rambo, elliott, axe));
-    writeln("bob fights elliot with hands: ", fight(bob, elliott, hands));
-  }
+  writeln("bob fights elliot with axe: ", fight(bob, elliott, axe));
+  writeln("rambo fights paddington with axe: ", fight(rambo, paddington, axe));
+  writeln("rambo fights paddington with banana: ", fight(rambo, paddington, chiquita));
+  writeln("rambo fights elliott with axe: ", fight(rambo, elliott, axe));
+  writeln("bob fights elliot with hands: ", fight(bob, elliott, hands));
 }
 
 unittest {

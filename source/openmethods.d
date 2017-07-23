@@ -245,6 +245,11 @@ void updateMethods()
   rt.update();
 }
 
+bool needUpdateMethods()
+{
+  return Runtime.needUpdate;
+}
+
 /++
  Information passed to the error handler function.
 
@@ -512,6 +517,7 @@ struct Method(string id, R, T...)
       }
     }
     Runtime.register(&info);
+    Runtime.needUpdate = true;
   }
 
   static class Specialization(alias fun)
@@ -537,6 +543,8 @@ struct Method(string id, R, T...)
       }
       info.specInfos ~= &si;
       si.nextPtr = cast(void**) &nextPtr!SpecParams;
+
+      Runtime.needUpdate = true;
     }
   }
 
@@ -637,6 +645,7 @@ struct Runtime
   static __gshared Registry methodInfos;
   static __gshared Word[] giv; // Global Index Vector
   static __gshared Word[] gdv; // Global Dispatch Vector
+  static __gshared needUpdate = true;
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
@@ -1213,6 +1222,8 @@ struct Runtime
     allocateSlots();
     calculateInheritanceRelationships();
     buildTables();
+
+    needUpdate = false;
   }
 
   version (unittest) {
