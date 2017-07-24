@@ -1,6 +1,7 @@
-import std.stdio;
-import std.datetime;
+import std.stdio, std.format, std.datetime, std.array;
+
 import openmethods;
+mixin(registerMethods);
 
 interface BaseInterface
 {
@@ -57,49 +58,67 @@ void _classToClass2(DerivedClass x, DerivedClass y)
 {
 }
 
-void vfunc_class_to_class()
-{
-  obj.vfClassToClass();
+version (GNU) {} else {
+  @mptr("hash")
+    void hClassToClass1(virtual!BaseClass);
+
+  @method
+    void _hClassToClass1(DerivedClass)
+  {
+  }
 }
 
-void unary_method_class_to_class()
+ulong[string] time;
+
+void pit(string base, string target)(string label1, string label2, ulong n = 1_000_000_000)
 {
-  classToClass1(obj);
+  StopWatch sw;
+  sw.start();
+
+  if (base !in time) {
+    mixin(base); // warm up
+    sw.reset();
+
+    for (ulong i = 0; i < n; i++) {
+      mixin(base);
+    }
+
+    time[base] = sw.peek().nsecs;
+  }
+
+  auto baseTime = time[base];
+
+  if (target !in time) {
+    mixin(target); // warm up too
+    sw.reset();
+
+    for (ulong i = 0; i < n; i++) {
+      mixin(target);
+    }
+
+    time[target] = sw.peek().nsecs;
+  }
+
+  auto targetTime = time[target];
+
+  writefln("%20s v %-20s %6.2f %6.2f %+8.2f%%",
+           label1, label2,
+           cast(double) baseTime / n,
+           cast(double) targetTime / n,
+           100. * (targetTime - baseTime) / baseTime);
 }
 
-void vfunc_interface_to_class()
+void writesec(T...)(T arg)
 {
-  intf.vfInterfaceToClass();
+  writeln("\n", arg);
+  writeln("-".replicate(67));
 }
-
-void unary_method_interface_to_class()
-{
-  interfaceToClass(intf);
-}
-
-void double_dispatch_class_to_class()
-{
-  obj.ddClassToClass(obj);
-}
-
-void binary_method_class_to_class()
-{
-  classToClass2(obj, obj);
-}
-
-void benchmark(string Base, string Compare)()
-{
-  auto result = comparingBenchmark!(mixin(Base), mixin(Compare), 500_000_000);
-  writefln("%35s : %-35s %.03f", Base, Compare, result.point);
-}
-
-mixin(registerMethods);
 
 void main()
 {
   updateMethods();
 
-  obj  = new DerivedClass;
+  obj = new DerivedClass;
   intf = obj;
 
   version(DigitalMars) {
@@ -114,9 +133,26 @@ void main()
     writeln("Using gdc...");
   }
 
-  benchmark!("vfunc_class_to_class", "unary_method_class_to_class");
-  benchmark!("vfunc_interface_to_class", "unary_method_interface_to_class");
-  benchmark!("double_dispatch_class_to_class", "binary_method_class_to_class");
+  writesec(`virtual functions vs methods - mptr("deallocator")`);
+
+  pit!("obj.vfClassToClass();", "classToClass1(obj);")
+    ("vfunc(obj)", "method(obj)");
+
+  pit!("obj.vfInterfaceToClass();", "interfaceToClass(obj);")
+    ("vfunc(intf)", "method(intf)");
+
+  pit!("obj.ddClassToClass(obj);", "classToClass2(obj, obj);")
+    ("double dispatch", "2-method");
+
+  version (GNU) {} else {
+    writesec(`using mptr("hash")`);
+
+    pit!("classToClass1(obj);", "hClassToClass1(obj);")
+      (`method deallocator`, "method hash");
+
+    pit!("obj.vfClassToClass();", "hClassToClass1(obj);")
+      ("vfunc(obj)", "method hash");
+  }
 }
 
 /*

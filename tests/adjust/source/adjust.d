@@ -40,9 +40,7 @@ void* y(virtual!C);
 
 unittest
 {
-  if (!Runtime.gdv) {
-    updateMethods();
-  }
+  updateMethods();
 
   {
     X obj = new X;

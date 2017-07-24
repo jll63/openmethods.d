@@ -367,18 +367,6 @@ template castArgs(T...)
   }
 }
 
-auto indexPtr(T)(T arg)
-{
-  alias Word = Runtime.Word;
-  static if (is(T == class)) {
-    return cast(const Word*) arg.classinfo.deallocator;
-  } else {
-    Object o = cast(Object)
-      (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-    return cast(const Word*) o.classinfo.deallocator;
-  }
-}
-
 auto TypeIds(T...)()
 {
   TypeInfo[] result;
@@ -388,7 +376,10 @@ auto TypeIds(T...)()
   return result;
 }
 
-struct Method(string id, R, T...)
+private immutable useDeallocator = "deallocator";
+private immutable useHash = "hash";
+
+struct Method(string id, string index, R, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!T;
@@ -417,6 +408,31 @@ struct Method(string id, R, T...)
 
   static Method discriminator(MethodTag, CallParams!T);
 
+  static if (index == useDeallocator) {
+    static auto getIndexTable(T)(T arg)
+    {
+      alias Word = Runtime.Word;
+      static if (is(T == class)) {
+        return cast(const Word*) arg.classinfo.deallocator;
+      } else {
+        Object o = cast(Object)
+          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+        return cast(const Word*) o.classinfo.deallocator;
+      }
+    }
+  } else static if (index == useHash) {
+    static auto getIndexTable(T)(T arg) {
+      alias Word = Runtime.Word;
+      static if (is(T == class)) {
+        return Runtime.hashTable[Runtime.hash(*cast (void**) arg)].pw;
+      } else {
+        Object o = cast(Object)
+          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+        return Runtime.hashTable[Runtime.hash(*cast (void**) o)].pw;
+      }
+    }
+  }
+
   template Indexer(Q...)
   {
     static const(Word)* move(P...)(const(Word)* slots, const(Word)* strides, P args)
@@ -424,7 +440,7 @@ struct Method(string id, R, T...)
       alias Q0 = Q[0];
       static if (IsVirtual!Q0) {
         alias arg = args[0];
-        const (Word)* indexes = indexPtr(arg);
+        const (Word)* indexes = getIndexTable(arg);
         return Indexer!(Q[1..$])
           .moveNext(cast(const(Word)*) indexes[slots.i].p,
                     slots + 1,
@@ -441,14 +457,7 @@ struct Method(string id, R, T...)
         alias Q0 = Q[0];
         static if (IsVirtual!Q0) {
           alias arg = args[0];
-          const (Word)* indexes;
-          static if (is(VirtualType!Q0 == class)) {
-            indexes = cast(const Word*) arg.classinfo.deallocator;
-          } else {
-            Object o = cast(Object)
-              (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-            indexes = cast(const Word*) o.classinfo.deallocator;
-          }
+          const (Word)* indexes = getIndexTable(arg);
           return Indexer!(Q[1..$])
             .moveNext(dt + indexes[slots.i].i * strides.i,
                       slots + 1,
@@ -466,7 +475,7 @@ struct Method(string id, R, T...)
     {
       alias Q0 = Q[0];
       static if (IsVirtual!Q0) {
-        return indexPtr(args[0]);
+        return getIndexTable(args[0]);
       } else {
         return Indexer!(Q[1..$]).unary(args[1..$]);
       }
@@ -503,6 +512,7 @@ struct Method(string id, R, T...)
 
   static this() {
     info.name = id;
+    info.useHash = index == useHash;
     info.ambiguousCallError = &ambiguousCallError;
     info.notImplementedError = &notImplementedError;
     foreach (QP; QualParams) {
@@ -511,6 +521,7 @@ struct Method(string id, R, T...)
         info.vp ~= VirtualType!(QP).classinfo;
       }
     }
+
     Runtime.register(&info);
     Runtime.needUpdate = true;
   }
@@ -553,6 +564,7 @@ struct Runtime
   union Word
   {
     void* p;
+    Word* pw;
     int i;
   }
 
@@ -561,6 +573,7 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
+    bool useHash;
     Word* slots;
     Word* strides;
     Word* dispatchTable;
@@ -641,6 +654,9 @@ struct Runtime
   static __gshared Word[] giv; // Global Index Vector
   static __gshared Word[] gdv; // Global Dispatch Vector
   static __gshared needUpdate = true;
+  static __gshared ulong hashMult;
+  static __gshared uint hashShift, hashSize;
+  static __gshared Word* hashTable;
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
@@ -837,16 +853,34 @@ struct Runtime
       writeln("Initializing the global index vector...");
     }
 
-    giv.length =
+    auto givLength =
       classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
       + methods.map!(m => m.vp.length).sum;
 
-    // dmd doesn't like this: giv.fill(-1);
+    bool useHash = methods.any!(c => c.info.useHash);
+
+    if (useHash) {
+      findHash();
+      givLength += hashSize;
+    }
+
+    giv.length = givLength;
 
     Word* sp = giv.ptr;
 
     version (explain) {
       writefln("  giv size: %d", giv.length);
+    }
+
+    if (useHash) {
+      hashTable = sp;
+      sp += hashSize;
+      version (explain) {
+        writefln("  reserved %d entries for hash table", hashSize);
+      }
+    }
+
+    version (explain) {
       writeln("  slots:");
     }
 
@@ -872,6 +906,13 @@ struct Runtime
                    sp, c.firstUsedSlot, c.nextSlot, c.name);
         }
         c.info.deallocator = cast(Word*) sp;
+        if (useHash) {
+          auto h = hash(c.info.vtbl.ptr);
+          version (explain) {
+            writefln("    -> hashTable[%d]", h);
+          }
+          hashTable[h].p = sp;
+        }
         sp += c.nextSlot - c.firstUsedSlot;
       }
     }
@@ -1025,6 +1066,81 @@ struct Runtime
     }
   }
 
+  void findHash()
+  {
+    import std.random, std.math;
+
+    void**[] vptrs;
+
+    foreach (c; classes) {
+      if (c.info.vtbl.ptr) {
+        vptrs ~= c.info.vtbl.ptr;
+      }
+	}
+
+    auto N = vptrs.length;
+
+    version (explain) {
+      writefln("  finding hash factor for %s vptrs", N);
+      import std.datetime;
+      StopWatch sw;
+      sw.start();
+    }
+
+    int M;
+    auto rnd = Random(unpredictableSeed);
+    ulong totalAttempts;
+
+    for (int room = 2; room <= 6; ++room) {
+      M = 0;
+
+      while ((1 << M) < room * N / 2) {
+        ++M;
+      }
+
+      hashShift = 64 - M;
+      hashSize = 1 << M;
+      int[] buckets;
+      buckets.length = hashSize;
+
+      version (explain) {
+        writefln("  trying with M = %s, %s buckets", M, buckets.length);
+      }
+
+      bool found;
+      int attempts;
+
+      while (!found && attempts < 100_000) {
+        ++attempts;
+        ++totalAttempts;
+        found = true;
+        hashMult = rnd.uniform!ulong | 1;
+        buckets[] = 0;
+        foreach (vptr; vptrs) {
+          auto h = hash(vptr);
+          if (buckets[h]++) {
+            found = false;
+            break;
+          }
+        }
+      }
+
+      if (found) {
+        version (explain) {
+          writefln("  found %s after %s attempts and %s msecs",
+                   hashMult, totalAttempts, sw.peek().msecs);
+        }
+        return;
+      }
+    }
+
+    throw new Error("cannot find hash factor");
+  }
+
+  static auto hash(void* p) {
+    return (hashMult * (cast(ulong) p)) >> hashShift;
+  }
+
   void buildTables()
   {
     foreach (m; methods) {
@@ -1126,14 +1242,15 @@ struct Runtime
       m.firstDim = groups[0];
     }
 
-    gdv.length = methods.filter!(m => m.vp.length > 1).map!
+    auto gdvLength  = methods.filter!(m => m.vp.length > 1).map!
       (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
+
+    gdv.length = gdvLength;
+    Word* mp = gdv.ptr;
 
     version (explain) {
       writefln("Initializing global dispatch table - %d words", gdv.length);
     }
-
-    Word* mp = gdv.ptr;
 
     foreach (m; methods) {
       if (m.info.vp.length > 1) {
@@ -1244,6 +1361,11 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
+struct mptr
+{
+  string index;
+}
+
 string _registerMethods(alias MODULE)()
 {
   import std.array;
@@ -1252,9 +1374,17 @@ string _registerMethods(alias MODULE)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!o) {
+          static if (hasUDA!(o, mptr)) {
+            static assert(getUDAs!(o, mptr).length == 1,
+                          "only une @mptr allowed");
+            immutable index = getUDAs!(o, mptr)[0].index;
+          } else {
+            immutable index = "deallocator";
+          }
           auto meth =
-            format(`Method!("%s", %s, %s)`,
+            format(`Method!("%s", "%s", %s, %s)`,
                    m,
+                   index,
                    ReturnType!o.stringof,
                    Parameters!o.stringof[1..$-1]);
           code ~= format(`alias %s = %s.dispatcher;`, m, meth);
@@ -1305,7 +1435,7 @@ version (unittest) {
 
   mixin template _method(string name, R, A...)
   {
-    alias ThisMethod = Method!(name, R, A);
+    alias ThisMethod = Method!(name, useDeallocator, R, A);
     mixin("alias " ~ name ~ " = ThisMethod.discriminator;");
     mixin("alias " ~ name ~ " = ThisMethod.dispatcher;");
   }
