@@ -75,18 +75,15 @@ void main()
 {
   updateMethods();
 
-  version (unittest) {
-  } else {
-    Character bob = new Character, rambo = new Warrior;
-    Creature elliott = new Dragon, paddington = new Bear;
-    Device hands = new Hands, axe = new Axe, chiquita = new Banana;
+  Character bob = new Character, rambo = new Warrior;
+  Creature elliott = new Dragon, paddington = new Bear;
+  Device hands = new Hands, axe = new Axe, chiquita = new Banana;
 
-    writeln("bob fights elliot with axe: ", fight(bob, elliott, axe));
-    writeln("rambo fights paddington with axe: ", fight(rambo, paddington, axe));
-    writeln("rambo fights paddington with banana: ", fight(rambo, paddington, chiquita));
-    writeln("rambo fights elliott with axe: ", fight(rambo, elliott, axe));
-    writeln("bob fights elliot with hands: ", fight(bob, elliott, hands));
-  }
+  writeln("bob fights elliot with axe: ", fight(bob, elliott, axe));
+  writeln("rambo fights paddington with axe: ", fight(rambo, paddington, axe));
+  writeln("rambo fights paddington with banana: ", fight(rambo, paddington, chiquita));
+  writeln("rambo fights elliott with axe: ", fight(rambo, elliott, axe));
+  writeln("bob fights elliot with hands: ", fight(bob, elliott, hands));
 }
 
 unittest {
@@ -95,13 +92,14 @@ unittest {
 
   updateMethods();
 
+  static bool error;
+
   foreach (CHARACTER; AliasSeq!(Character, Warrior)) {
     CHARACTER character = new CHARACTER;
     foreach (CREATURE; AliasSeq!(Dragon, Bear)) {
       CREATURE creature = new CREATURE;
       foreach (DEVICE; AliasSeq!(Hands, Banana, Axe)) {
         DEVICE device = new DEVICE;
-
         static if (is(CREATURE == Dragon) && is(DEVICE == Hands)) {
           assert(fight(character, creature, device).indexOf("Incredible") != -1);
         } else static if (is(DEVICE == Banana)) {
@@ -115,13 +113,16 @@ unittest {
             assert(fight(character, creature, device).indexOf("cuts") != -1);
           }
         } else {
-          string error;
-          try {
-            fight(character, creature, device);
-          } catch (MethodError e) {
-            error = e.msg;
+          auto oldErrorHandler =
+            setMethodErrorHandler(function void(MethodError) {
+                error = true;
+              });
+
+          scope (exit) {
+            setMethodErrorHandler(oldErrorHandler);
           }
-          assert(error == "this call to 'fight' is not implemented");
+
+          fight(character, creature, device);
         }
       }
     }

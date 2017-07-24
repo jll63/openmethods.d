@@ -1,0 +1,7 @@
+language: d
+
+script: dev/run-everything
+
+d:
+  - dmd
+  - ldc

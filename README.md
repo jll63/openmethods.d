@@ -1,5 +1,7 @@
 # openmethods.d
 
+[![Build Status](https://travis-ci.org/jll63/openmethods.d.svg?branch=master)](https://travis-ci.org/jll63/openmethods.d) on dmd and ldc, not on gdc, for this package needs a front end >= v2.073
+
 ## STOP!
 
 Maybe you think that you don't need multi-methods, never needed them so
@@ -63,7 +65,7 @@ The full code for the examples can be found in the following files:
   [densematrix.d](examples/matrix/source/densematrix.d)
   and [diagonalmatrix.d](examples/matrix/source/diagonalmatrix.d) - the matrix
   "library"
-* [app.d](examples/matrix/app.d) - the "application"
+* [app.d](examples/matrix/source/app.d) - the "application"
 
 [matrix.d](examples/matrix/source/matrix.d) defines the Matrix interface:
 
@@ -81,7 +83,7 @@ elements in a single array. So
 does [DiagonalMatrix](examples/matrix/source/diagonalmatrix.d), but it only stores
 the elements on the diagonal.
 
-The `print` method in [app.d](examples/matrix/app.d) is declared as follows:
+The `print` method in [app.d](examples/matrix/source/app.d) is declared as follows:
 
 ```D
 import openmethods;
