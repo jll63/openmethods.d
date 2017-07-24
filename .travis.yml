@@ -1,7 +1,8 @@
 language: d
 
-script: dev/run-everything
+script: dev/travis.sh
 
 d:
   - dmd
   - ldc
+  - gdc

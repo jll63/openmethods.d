@@ -1,6 +1,6 @@
 # openmethods.d
 
-[![Build Status](https://travis-ci.org/jll63/openmethods.d.svg?branch=master)](https://travis-ci.org/jll63/openmethods.d) on dmd and ldc, not on gdc, for this package needs a front end >= v2.073
+[![Build Status](https://travis-ci.org/jll63/openmethods.d.svg?branch=master)](https://travis-ci.org/jll63/openmethods.d)
 
 ## STOP!
 

@@ -1280,13 +1280,17 @@ mixin template _registerSpecs(alias MODULE)
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
           static if (hasUDA!(_openmethods_o_, method)) {
-            static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
-              immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
-            } else {
-              static assert(_openmethods_m_[0] == '_',
-                            m ~ ": method name must begin with an underscore, "
-                            ~ "or be set in @method()");
+            version (GNU) {
               immutable _openmethods_id_ = _openmethods_m_[1..$];
+            } else {
+              static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
+                immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
+              } else {
+                static assert(_openmethods_m_[0] == '_',
+                              m ~ ": method name must begin with an underscore, "
+                              ~ "or be set in @method()");
+                immutable _openmethods_id_ = _openmethods_m_[1..$];
+              }
             }
             wrap!(typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init))
                   .Specialization!(_openmethods_o_))();

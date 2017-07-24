@@ -1,0 +1,1 @@
+dub run openmethods:benchmarks --build release --compiler ldc2 $*

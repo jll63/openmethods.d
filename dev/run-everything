@@ -10,8 +10,14 @@ then
     errors=1
 fi
 
-for target in $(ls examples | grep -v synopsis) tests
+for target in $(ls examples | grep -v synopsis)
 do
+    if [[ "$DC" == 'gdc' ]] && grep --quiet 'method(' `find examples/$target -name '*.d'`;
+    then
+        echo SKIP $target
+        continue
+    fi
+
     echo test $target...
 
     if ! dub test -q openmethods:$target $*;
@@ -21,8 +27,14 @@ do
     fi
 done
 
-for target in $(ls examples) tests
+for target in $(ls examples)
 do
+    if [[ "$DC" == 'gdc' ]] && grep --quiet 'method(' `find examples/$target -name '*.d'`;
+    then
+        echo SKIP $target
+        continue
+    fi
+
     echo run $target...
 
     if ! dub run -q openmethods:$target $*;
