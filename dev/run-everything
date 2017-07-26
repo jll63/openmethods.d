@@ -8,50 +8,81 @@ echo test openmethods...
 
 if ! dub test -q openmethods $*;
 then
-        echo "ERROR"
+    echo "ERROR"
     errors=1
 fi
 
-for target in $(ls examples)
+for dir in tests examples
 do
-    if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find examples/$target -name '*.d'`;
-    then
-        echo SKIP $target
-        continue
-    fi
+    echo "$dir..."
 
-    echo test $target...
+    for target in $(ls $dir)
+    do
+        if [ -d $dir/$target ];
+        then
+            echo $target
+            if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find $dir/$target -name '*.d'`;
+            then
+                echo SKIP $target
+            else
 
-    if ! dub test -q openmethods:$target $*;
-    then
-        echo "ERROR"
-        errors=1
-    fi
+                if ! dub test -q openmethods:$target $*;
+                then
+                    echo "ERROR"
+                    errors=1
+                fi
 
-    echo run $target...
+                if ! grep --quiet library $dir/$target/dub.sdl;
+                then
+                    if ! dub run -q openmethods:$target $*;
+                    then
+                        echo "ERROR"
+                        errors=1
+                    fi
+                fi
+            fi
+        fi
 
-    if ! dub run -q openmethods:$target $*;
-    then
-        echo "ERROR"
-        errors=1
-    fi
-done
+        if [[ $target == *'.d' ]]
+        then
+            echo $target
 
-for target in $(ls tests)
-do
-    if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find tests/$target -name '*.d'`;
-    then
-        echo SKIP $target
-        continue
-    fi
+            if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS $dir/$target;
+            then
+                echo SKIP $target
+                continue
+            fi
 
-    echo test $target...
+            if ! dub run --single -q $dir/$target $*;
+            then
+                echo "ERROR"
+                errors=1
+            fi
+        fi
 
-    if ! dub test -q openmethods:$target $*;
-    then
-        echo "ERROR"
-        errors=1
-    fi
+
+        # if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find examples/$target -name '*.d'`;
+        # then
+        #     echo SKIP $target
+        #     continue
+        # fi
+
+        # echo test $target...
+
+        # if ! dub test -q openmethods:$target $*;
+        # then
+        #     echo "ERROR"
+        #     errors=1
+        # fi
+
+        # echo run $target...
+
+        # if ! dub run -q openmethods:$target $*;
+        # then
+        #     echo "ERROR"
+        #     errors=1
+        # fi
+    done
 done
 
 if [ $errors -ne 0 ]

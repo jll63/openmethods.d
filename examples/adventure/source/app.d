@@ -89,7 +89,7 @@ void main()
 unittest {
   import std.meta;
   import std.string;
-  assert(false);
+
   updateMethods();
 
   static bool error;
@@ -114,7 +114,7 @@ unittest {
           }
         } else {
           auto oldErrorHandler =
-            setMethodErrorHandler(function void(MethodError) {
+            setMethodErrorHandler(function void(MethodError e) {
                 error = true;
               });
 
