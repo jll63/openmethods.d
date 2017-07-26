@@ -12,16 +12,16 @@ unittest
 {
   import std.concurrency;
 
-  static void child()
-  {
-    receive((int i) {
-        auto a = new ThreadClass;
-        threadFunc(a);
-      });
-  }
+  // static void child()
+  // {
+  //   receive((int i) {
+  //       auto a = new ThreadClass;
+  //       threadFunc(a);
+  //     });
+  // }
 
-  assert(Runtime.gdv == null);
-  auto childTid = spawn(&child);
-  updateMethods();
-  send(childTid, 42);
+  // assert(Runtime.gdv == null);
+  // auto childTid = spawn(&child);
+  // updateMethods();
+  // send(childTid, 42);
 }
