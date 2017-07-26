@@ -114,7 +114,7 @@ unittest {
           }
         } else {
           auto oldErrorHandler =
-            setMethodErrorHandler(function void(MethodError) {
+            setMethodErrorHandler(function void(MethodError e) {
                 error = true;
               });
 
