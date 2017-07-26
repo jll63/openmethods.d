@@ -40,7 +40,8 @@ void* y(virtual!C);
 
 unittest
 {
-  updateMethods();
+  if (needUpdateMethods)
+    updateMethods();
 
   {
     X obj = new X;
