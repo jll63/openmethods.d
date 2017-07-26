@@ -462,7 +462,7 @@ struct Method(string id, string index, R, T...)
                     strides, // stride for dim 0 is 1, not stored
                     args[1..$]);
       } else {
-        return Indexer!(Q).move(slots, stride, args);
+        return Indexer!(Q[1..$]).move(slots, strides, args[1..$]);
       }
     }
 
