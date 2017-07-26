@@ -40,7 +40,7 @@ void _classToClass1(DerivedClass)
 void interfaceToClass(virtual!BaseInterface);
 
 @method
-void _interfaceToClass(DerivedInterface b)
+void _interfaceToClass(DerivedClass)
 {
 }
 

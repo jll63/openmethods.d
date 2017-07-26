@@ -100,11 +100,11 @@ import std.algorithm.iteration;
 import std.range;
 import std.bitmanip;
 
-version (explain) {
+debug(explain) {
   import std.stdio;
 }
 
-version (traceCalls) {
+debug(traceCalls) {
   import std.stdio;
 }
 
@@ -442,13 +442,13 @@ struct Method(string id, string index, R, T...)
     static const(Word)* move(P...)(const(Word)* slots, const(Word)* strides, P args)
     {
       alias Q0 = Q[0];
-      version (traceCalls) {
+      debug(traceCalls) {
         stderr.write(" | ", Q0.stringof, ":");
       }
       static if (IsVirtual!Q0) {
         alias arg = args[0];
         const (Word)* indexes = getIndexTable(arg);
-        version (traceCalls) {
+        debug(traceCalls) {
           stderr.writef(" %s ", indexes);
           stderr.writef(" %s ", slots.i);
           stderr.writef(" %s ", indexes[slots.i].p);
@@ -467,13 +467,13 @@ struct Method(string id, string index, R, T...)
     {
       static if (Q.length > 0) {
         alias Q0 = Q[0];
-        version (traceCalls) {
+        debug(traceCalls) {
           stderr.write(" | ", Q0.stringof, ":");
         }
         static if (IsVirtual!Q0) {
           alias arg = args[0];
           const (Word)* indexes = getIndexTable(arg);
-          version (traceCalls) {
+          debug(traceCalls) {
             stderr.writef(" %s, %s, %s", indexes, slots.i, indexes[slots.i].p);
           }
           return Indexer!(Q[1..$])
@@ -492,7 +492,7 @@ struct Method(string id, string index, R, T...)
     static const(Word)* unary(P...)(P args)
     {
       alias Q0 = Q[0];
-      version (traceCalls) {
+      debug(traceCalls) {
         stderr.write(" | ", Q0.stringof, ":");
       }
       static if (IsVirtual!Q0) {
@@ -505,7 +505,7 @@ struct Method(string id, string index, R, T...)
 
   static auto dispatcher(CallParams!T args)
   {
-    version (traceCalls) {
+    debug(traceCalls) {
       stderr.write(info.name);
     }
 
@@ -515,7 +515,7 @@ struct Method(string id, string index, R, T...)
     assert(info.vp.length == 1 || info.strides);
 
     static if (VirtualArity!QualParams == 1) {
-      version (traceCalls) {
+      debug(traceCalls) {
         stderr.writef("%s %s", Indexer!(QualParams).unary(args), info.slots[0].i);
       }
       auto pf = cast(Spec) Indexer!(QualParams).unary(args)[info.slots[0].i].p;
@@ -524,7 +524,7 @@ struct Method(string id, string index, R, T...)
         cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
     }
 
-    version (traceCalls) {
+    debug(traceCalls) {
       writefln(" pf = %s", pf);
     }
 
@@ -700,7 +700,7 @@ struct Runtime
 
   static void register(MethodInfo* mi)
   {
-    version (explain) {
+    debug(explain) {
       writefln("registering %s", *mi);
     }
 
@@ -709,7 +709,7 @@ struct Runtime
 
   void seed()
   {
-    version (explain) {
+    debug(explain) {
       write("Seeding...\n ");
     }
 
@@ -720,7 +720,7 @@ struct Runtime
         c = classMap[ci];
       } else {
         c = classMap[ci] = new Class(ci);
-        version (explain) {
+        debug(explain) {
           writef(" %s", c.name);
         }
       }
@@ -744,7 +744,7 @@ struct Runtime
 
     }
 
-    version (explain) {
+    debug(explain) {
       writeln();
     }
   }
@@ -770,7 +770,7 @@ struct Runtime
     } else if (hasMethods) {
       if (ci !in classMap) {
         auto c = classMap[ci] = new Class(ci);
-        version (explain) {
+        debug(explain) {
           writefln("  %s", c.name);
         }
       }
@@ -799,7 +799,7 @@ struct Runtime
 
   void layer()
   {
-    version (explain) {
+    debug(explain) {
       writefln("Layering...");
     }
 
@@ -807,7 +807,7 @@ struct Runtime
     auto m = assocArray(zip(v, v));
 
     while (!v.empty) {
-      version (explain) {
+      debug(explain) {
         writefln("  %s", v.map!(c => c.name).join(" "));
       }
 
@@ -845,20 +845,20 @@ struct Runtime
 
   void allocateSlots()
   {
-    version (explain) {
+    debug(explain) {
       writeln("Allocating slots...");
     }
 
     foreach (c; classes) {
       if (!c.methodParams.empty) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s...", c.name);
         }
 
         foreach (mp; c.methodParams) {
           int slot = c.nextSlot++;
 
-          version (explain) {
+          debug(explain) {
             writef("    for %s: allocate slot %d\n    also in", mp, slot);
           }
 
@@ -879,14 +879,14 @@ struct Runtime
             allocateSlotDown(d, slot, visited);
           }
 
-          version (explain) {
+          debug(explain) {
             writeln();
           }
         }
       }
     }
 
-    version (explain) {
+    debug(explain) {
       writeln("Initializing the global index vector...");
     }
 
@@ -905,24 +905,24 @@ struct Runtime
 
     Word* sp = giv.ptr;
 
-    version (explain) {
+    debug(explain) {
       writefln("  giv size: %d", giv.length);
     }
 
     if (useHash) {
       hashTable = sp;
       sp += hashSize;
-      version (explain) {
+      debug(explain) {
         writefln("  reserved %d entries for hash table", hashSize);
       }
     }
 
-    version (explain) {
+    debug(explain) {
       writeln("  slots:");
     }
 
     foreach (m; methods) {
-      version (explain) {
+      debug(explain) {
         writefln("    %s %02d-%02d %s",
                  sp, sp - giv.ptr, sp - giv.ptr + m.vp.length, *m);
       }
@@ -932,13 +932,13 @@ struct Runtime
       }
     }
 
-    version (explain) {
+    debug(explain) {
       writeln("  indexes:");
     }
 
     foreach (c; classes) {
       if (c.isClass) {
-        version (explain) {
+        debug(explain) {
           writefln("    %s %02d-%02d %s",
                    sp, c.firstUsedSlot, c.nextSlot, c.name);
         }
@@ -947,7 +947,7 @@ struct Runtime
         c.info.deallocator = mptr;
         if (useHash) {
           auto h = hash(c.info.vtbl.ptr);
-          version (explain) {
+          debug(explain) {
             writefln("    -> hashTable[%d]", h);
           }
           hashTable[h].p = mptr;
@@ -962,7 +962,7 @@ struct Runtime
     if (c in visited)
       return;
 
-    version (explain) {
+    debug(explain) {
       writef(" %s", c.name);
     }
 
@@ -990,7 +990,7 @@ struct Runtime
     if (c in visited)
       return;
 
-    version (explain) {
+    debug(explain) {
       writef(" %s", c.name);
     }
 
@@ -1067,7 +1067,7 @@ struct Runtime
           }
         }
 
-        version (explain) {
+        debug(explain) {
           writefln("%*s    dim %d group %d (%s): select best of %s",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
@@ -1085,7 +1085,7 @@ struct Runtime
           import std.stdio;
           m.dispatchTable ~= specs[0].info.pf;
 
-          version (explain) {
+          debug(explain) {
             writefln("%*s      %s: pf = %s",
                      (m.vp.length - dim) * 2, "",
                      specs.map!(spec => spec.toString).join(", "),
@@ -1093,7 +1093,7 @@ struct Runtime
           }
         }
       } else {
-        version (explain) {
+        debug(explain) {
           writefln("%*s    dim %d group %d (%s)",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
@@ -1119,7 +1119,7 @@ struct Runtime
 
     auto N = vptrs.length;
 
-    version (explain) {
+    debug(explain) {
       writefln("  finding hash factor for %s vptrs", N);
       import std.datetime;
       StopWatch sw;
@@ -1142,7 +1142,7 @@ struct Runtime
       int[] buckets;
       buckets.length = hashSize;
 
-      version (explain) {
+      debug(explain) {
         writefln("  trying with M = %s, %s buckets", M, buckets.length);
       }
 
@@ -1165,7 +1165,7 @@ struct Runtime
       }
 
       if (found) {
-        version (explain) {
+        debug(explain) {
           writefln("  found %s after %s attempts and %s msecs",
                    hashMult, totalAttempts, sw.peek().msecs);
         }
@@ -1183,7 +1183,7 @@ struct Runtime
   void buildTables()
   {
     foreach (m; methods) {
-      version (explain) {
+      debug(explain) {
         writefln("Building dispatch table for %s", *m);
       }
 
@@ -1192,13 +1192,13 @@ struct Runtime
       groups.length = dims;
 
       foreach (int dim, vp; m.vp) {
-        version (explain) {
+        debug(explain) {
           writefln("  make groups for param #%s, class %s", dim, vp.name);
         }
 
         foreach (conforming; vp.conforming) {
           if (conforming.isClass) {
-            version (explain) {
+            debug(explain) {
               writefln("    specs applicable to %s", conforming.name);
             }
 
@@ -1207,24 +1207,24 @@ struct Runtime
 
             foreach (int specIndex, spec; m.specs) {
               if (conforming in spec.params[dim].conforming) {
-                version (explain) {
+                debug(explain) {
                   writefln("      %s", *spec);
                 }
                 mask[specIndex] = 1;
               }
             }
 
-            version (explain) {
+            debug(explain) {
               writefln("      bit mask = %s", mask);
             }
 
             if (mask in groups[dim]) {
-              version (explain) {
+              debug(explain) {
                 writefln("      add class %s to existing group", conforming.name, mask);
               }
               groups[dim][mask] ~= conforming;
             } else {
-              version (explain) {
+              debug(explain) {
                 writefln("      create new group for %s", conforming.name);
               }
               groups[dim][mask] = [ conforming ];
@@ -1237,7 +1237,7 @@ struct Runtime
       m.strides.length = dims - 1;
 
       foreach (int dim, vp; m.vp[1..$]) {
-        version (explain) {
+        debug(explain) {
           writefln("    stride for dim %s = %s", dim + 1, stride);
         }
         stride *= groups[dim].length;
@@ -1247,25 +1247,25 @@ struct Runtime
       BitArray none;
       none.length = m.specs.length;
 
-      version (explain) {
+      debug(explain) {
         writefln("    assign specs");
       }
 
       buildTable(m, dims - 1, groups, ~none);
 
-      version (explain) {
+      debug(explain) {
         writefln("  assign slots");
       }
 
       foreach (int dim, vp; m.vp) {
-        version (explain) {
+        debug(explain) {
           writefln("    dim %s", dim);
         }
 
         int i = 0;
 
         foreach (group; groups[dim]) {
-          version (explain) {
+          debug(explain) {
             writefln("      group %d (%s)",
                      i,
                      group.map!(c => c.name).join(", "));
@@ -1287,13 +1287,13 @@ struct Runtime
     gdv.length = gdvLength;
     Word* mp = gdv.ptr;
 
-    version (explain) {
+    debug(explain) {
       writefln("Initializing global dispatch table - %d words", gdv.length);
     }
 
     foreach (m; methods) {
       if (m.info.vp.length > 1) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s:", *m);
           writefln("    %s: %d strides: %s", mp, m.strides.length, m.strides);
         }
@@ -1301,12 +1301,12 @@ struct Runtime
         foreach (stride; m.strides) {
           mp++.i = stride;
         }
-        version (explain) {
+        debug(explain) {
           writefln("    %s: %d functions", mp, m.dispatchTable.length);
         }
         m.info.dispatchTable = mp;
         foreach (p; m.dispatchTable) {
-          version (explain) {
+          debug(explain) {
             writefln("      %s", p);
           }
           mp++.p = cast(void*) p;
@@ -1317,7 +1317,7 @@ struct Runtime
     foreach (m; methods) {
       auto slot = m.slots[0];
       if (m.info.vp.length == 1) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s:", *m);
           writefln("    1-method, storing fp in indexes, slot = %s", slot);
         }
@@ -1326,7 +1326,7 @@ struct Runtime
           foreach (c; group) {
             Word* index = mtbls[c] + slot;
             index.p = m.dispatchTable[i];
-            version (explain) {
+            debug(explain) {
               writefln("      %s %s", i, index.p);
             }
           }
@@ -1358,7 +1358,7 @@ struct Runtime
   {
     seed();
 
-    version (explain) {
+    debug(explain) {
       writefln("Scooping...");
     }
 
@@ -1568,7 +1568,7 @@ unittest
   assert(B.classinfo in rt.classMap);
   assert(C.classinfo in rt.classMap);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping X...");
   }
 
@@ -1576,7 +1576,7 @@ unittest
   assert(rt.classMap.length == 4);
   assert(X.classinfo in rt.classMap);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping Y...");
   }
 
@@ -1645,7 +1645,7 @@ unittest
   rt.seed();
   assert(rt.classMap.length == 2);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping D...");
   }
 
@@ -1678,7 +1678,7 @@ unittest
 
   rt.seed();
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping...");
   }
 
