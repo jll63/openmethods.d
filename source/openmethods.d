@@ -419,12 +419,9 @@ struct Method(string id, string index, R, T...)
       static if (is(T == class)) {
         return cast(const Word*) arg.classinfo.deallocator;
       } else {
-        // Object o = cast(Object)
-        //   (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-        // return cast(const Word*) o.classinfo.deallocator;
-        import std.stdio;
-        //writeln((cast(Object) arg).classinfo.deallocator);
-        return cast(const Word*) (cast(Object) arg).classinfo.deallocator;
+        Object o = cast(Object)
+          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+        return cast(const Word*) o.classinfo.deallocator;
       }
     }
   } else static if (index == useHash) {
@@ -1274,7 +1271,7 @@ struct Runtime
                      group.map!(c => c.name).join(", "));
           }
           foreach (c; group) {
-            (cast(Word*) c.info.deallocator)[m.slots[dim] - c.firstUsedSlot].i = i;
+            mtbls[c][m.slots[dim]].i = i;
           }
 
           ++i;
