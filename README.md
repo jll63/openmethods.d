@@ -2,13 +2,12 @@
 
 [![Build Status](https://travis-ci.org/jll63/openmethods.d.svg?branch=master)](https://travis-ci.org/jll63/openmethods.d)
 
-## STOP!
-
-Maybe you think that you don't need multi-methods, never needed them so
-far. Tell you what? You are probably right. But read on. This library is about
-_open_ methods. OK they are also multi-methods but that's just the icing on the
-cake. Open is good. Open methods rid you of the lame visitor pattern. For
-starters...
+Open methods are a simple, expressive, and efficient mechanism to dynamically
+dispatch functions depending on the type of one or more objects. They combine
+the advantages of virtual methods with those of the Visitor pattern while
+avoiding their disadvantages (such as tight coupling, intricate dependencies,
+awkward setup, and extensive boilerplate requirements). Open methods scale up
+naturally to multiple dispatch in a pay-as-you-go manner.
 
 ## TL;DR
 
