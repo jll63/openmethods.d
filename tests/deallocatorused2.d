@@ -1,6 +1,6 @@
 /+
  dub.sdl:
- name "deallocatorused"
+ name "deallocatorused2"
  dependency "openmethods" path="../"
  +/
 
@@ -11,23 +11,14 @@ class Animal
 {
 }
 
-class Dog : Animal
-{
-  delete(void*)
-  {
-  }
-}
-
 void kick(virtual!Animal);
 
 void main()
 {
-  assert(Dog.classinfo.deallocator !is null);
-
+  updateMethods();
   try {
     updateMethods();
-    assert(false);
   } catch (MethodError e) {
-    assert(e.reason == MethodError.Reason.DeallocatorInUse);
+    assert(false);
   }
 }

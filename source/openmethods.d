@@ -261,10 +261,11 @@ class MethodError : Error
     this.meth = meth;
   }
 
+  @property string functionName() { return meth.name; }
+
   enum Reason { NotImplemented = 1, AmbiguousCall, DeallocatorInUse };
   const Runtime.MethodInfo* meth;
   Reason reason;
-  string functionName;
   TypeInfo[] args;
 }
 
@@ -398,7 +399,7 @@ struct Method(string id, string index, R, T...)
   static R notImplementedError(T...)
   {
     import std.meta;
-    errorHandler(new MethodError(MethodError.Reason.NotImplemented, id, TypeIds!(Params)()));
+    errorHandler(new MethodError(MethodError.Reason.NotImplemented, &info));
     static if (!is(R == void)) {
       return R.init;
     }
@@ -406,7 +407,7 @@ struct Method(string id, string index, R, T...)
 
   static R ambiguousCallError(T...)
   {
-    errorHandler(new MethodError(MethodError.Reason.AmbiguousCall, id, TypeIds!(Params)()));
+    errorHandler(new MethodError(MethodError.Reason.AmbiguousCall, &info));
     static if (!is(R == void)) {
       return R.init;
     }
@@ -541,9 +542,16 @@ struct Method(string id, string index, R, T...)
 
   static this() {
     info.name = id;
-    info.useHash = index == useHash;
+
+    static if (index == useDeallocator) {
+      ++Runtime.methodsUsingDeallocator;
+    } else static if (index == useHash) {
+      ++Runtime.methodsUsingHash;
+    }
+
     info.ambiguousCallError = &ambiguousCallError;
     info.notImplementedError = &notImplementedError;
+
     foreach (QP; QualParams) {
       int i = 0;
       static if (IsVirtual!QP) {
@@ -602,7 +610,6 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
-    bool useHash;
     Word* slots;
     Word* strides;
     Word* dispatchTable;
@@ -695,6 +702,8 @@ struct Runtime
   static __gshared ulong hashMult;
   static __gshared uint hashShift, hashSize;
   static __gshared Word* hashTable;
+  static __gshared uint methodsUsingDeallocator;
+  static __gshared uint methodsUsingHash;
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
@@ -791,6 +800,7 @@ struct Runtime
           b.directDerived ~= c;
         }
       }
+
       if (ci.base in classMap) {
         auto b = classMap[ci.base];
         c.directBases ~= b;
@@ -840,7 +850,21 @@ struct Runtime
         foreach (dc; d.conforming) {
           c.conforming[dc] = dc;
         }
+      }
+    }
+  }
 
+  void checkDeallocatorConflicts()
+  {
+    foreach (m; methods) {
+      foreach (vp; m.vp) {
+        foreach (c; vp.conforming) {
+          if (c.info.deallocator
+              && !(c.info.deallocator >= giv.ptr
+                  && c.info.deallocator <  giv.ptr + giv.length)) {
+            throw new MethodError(MethodError.Reason.DeallocatorInUse, m.info);
+          }
+        }
       }
     }
   }
@@ -896,9 +920,7 @@ struct Runtime
       classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
       + methods.map!(m => m.vp.length).sum;
 
-    bool useHash = methods.any!(c => c.info.useHash);
-
-    if (useHash) {
+    if (methodsUsingHash) {
       findHash();
       givLength += hashSize;
     }
@@ -911,7 +933,7 @@ struct Runtime
       writefln("  giv size: %d", giv.length);
     }
 
-    if (useHash) {
+    if (methodsUsingHash) {
       hashTable = sp;
       sp += hashSize;
       debug(explain) {
@@ -949,9 +971,11 @@ struct Runtime
         auto mptr = sp - c.firstUsedSlot;
         mtbls[c] = mptr;
 
-        c.info.deallocator = mptr;
+        if (methodsUsingDeallocator) {
+          c.info.deallocator = mptr;
+        }
 
-        if (useHash) {
+        if (methodsUsingHash) {
           auto h = hash(c.info.vtbl.ptr);
           debug(explain) {
             writefln("    -> hashTable[%d]", h);
@@ -1376,8 +1400,9 @@ struct Runtime
 
     initClasses();
     layer();
-    allocateSlots();
     calculateInheritanceRelationships();
+    checkDeallocatorConflicts();
+    allocateSlots();
     buildTables();
 
     needUpdate = false;

@@ -89,7 +89,7 @@ void main()
 unittest {
   import std.meta;
   import std.string;
-  assert(false);
+
   updateMethods();
 
   static bool error;
