@@ -8,7 +8,7 @@ void threadFunc(virtual!ThreadClass);
 @method
 void _threadFunc(ThreadClass obj) { }
 
-void main()
+unittest
 {
   import std.concurrency;
 

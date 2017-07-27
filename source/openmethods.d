@@ -98,10 +98,13 @@ import std.meta;
 import std.algorithm;
 import std.algorithm.iteration;
 import std.range;
-import std.container.rbtree;
 import std.bitmanip;
 
-version (explain) {
+debug(explain) {
+  import std.stdio;
+}
+
+debug(traceCalls) {
   import std.stdio;
 }
 
@@ -368,18 +371,6 @@ template castArgs(T...)
   }
 }
 
-auto indexPtr(T)(T arg)
-{
-  alias Word = Runtime.Word;
-  static if (is(T == class)) {
-    return cast(const Word*) arg.classinfo.deallocator;
-  } else {
-    Object o = cast(Object)
-      (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-    return cast(const Word*) o.classinfo.deallocator;
-  }
-}
-
 auto TypeIds(T...)()
 {
   TypeInfo[] result;
@@ -389,12 +380,11 @@ auto TypeIds(T...)()
   return result;
 }
 
-struct Method(string id, R, T...)
-{
-  import std.stdio;
-  import std.traits;
-  import std.meta;
+private immutable useDeallocator = "deallocator";
+private immutable useHash = "hash";
 
+struct Method(string id, string index, R, T...)
+{
   alias QualParams = T;
   alias Params = CallParams!T;
   alias R function(Params) Spec;
@@ -422,21 +412,54 @@ struct Method(string id, R, T...)
 
   static Method discriminator(MethodTag, CallParams!T);
 
+  static if (index == useDeallocator) {
+    static auto getIndexTable(T)(T arg)
+    {
+      alias Word = Runtime.Word;
+      static if (is(T == class)) {
+        return cast(const Word*) arg.classinfo.deallocator;
+      } else {
+        Object o = cast(Object)
+          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+        return cast(const Word*) o.classinfo.deallocator;
+      }
+    }
+  } else static if (index == useHash) {
+    static auto getIndexTable(T)(T arg) {
+      alias Word = Runtime.Word;
+      static if (is(T == class)) {
+        return Runtime.hashTable[Runtime.hash(*cast (void**) arg)].pw;
+      } else {
+        Object o = cast(Object)
+          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+        return Runtime.hashTable[Runtime.hash(*cast (void**) o)].pw;
+      }
+    }
+  }
+
   template Indexer(Q...)
   {
     static const(Word)* move(P...)(const(Word)* slots, const(Word)* strides, P args)
     {
       alias Q0 = Q[0];
+      debug(traceCalls) {
+        stderr.write(" | ", Q0.stringof, ":");
+      }
       static if (IsVirtual!Q0) {
         alias arg = args[0];
-        const (Word)* indexes = indexPtr(arg);
+        const (Word)* indexes = getIndexTable(arg);
+        debug(traceCalls) {
+          stderr.writef(" %s ", indexes);
+          stderr.writef(" %s ", slots.i);
+          stderr.writef(" %s ", indexes[slots.i].p);
+        }
         return Indexer!(Q[1..$])
           .moveNext(cast(const(Word)*) indexes[slots.i].p,
                     slots + 1,
                     strides, // stride for dim 0 is 1, not stored
                     args[1..$]);
       } else {
-        return Indexer!(Q).move(slots, stride, args);
+        return Indexer!(Q[1..$]).move(slots, strides, args[1..$]);
       }
     }
 
@@ -444,15 +467,14 @@ struct Method(string id, R, T...)
     {
       static if (Q.length > 0) {
         alias Q0 = Q[0];
+        debug(traceCalls) {
+          stderr.write(" | ", Q0.stringof, ":");
+        }
         static if (IsVirtual!Q0) {
           alias arg = args[0];
-          const (Word)* indexes;
-          static if (is(VirtualType!Q0 == class)) {
-            indexes = cast(const Word*) arg.classinfo.deallocator;
-          } else {
-            Object o = cast(Object)
-              (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-            indexes = cast(const Word*) o.classinfo.deallocator;
+          const (Word)* indexes = getIndexTable(arg);
+          debug(traceCalls) {
+            stderr.writef(" %s, %s, %s", indexes, slots.i, indexes[slots.i].p);
           }
           return Indexer!(Q[1..$])
             .moveNext(dt + indexes[slots.i].i * strides.i,
@@ -460,7 +482,7 @@ struct Method(string id, R, T...)
                       strides + 1,
                       args[1..$]);
         } else {
-          return Indexer!(Q[1..$]).moveNext(dt, slots, stride, args[1..$]);
+          return Indexer!(Q[1..$]).moveNext(dt, slots, strides, args[1..$]);
         }
       } else {
         return dt;
@@ -470,8 +492,11 @@ struct Method(string id, R, T...)
     static const(Word)* unary(P...)(P args)
     {
       alias Q0 = Q[0];
+      debug(traceCalls) {
+        stderr.write(" | ", Q0.stringof, ":");
+      }
       static if (IsVirtual!Q0) {
-        return indexPtr(args[0]);
+        return getIndexTable(args[0]);
       } else {
         return Indexer!(Q[1..$]).unary(args[1..$]);
       }
@@ -480,24 +505,30 @@ struct Method(string id, R, T...)
 
   static auto dispatcher(CallParams!T args)
   {
+    debug(traceCalls) {
+      stderr.write(info.name);
+    }
+
     alias Word = Runtime.Word;
     assert(info.vp.length == 1 || info.dispatchTable, "updateMethods not called");
     assert(info.vp.length == 1 || info.slots);
     assert(info.vp.length == 1 || info.strides);
 
     static if (VirtualArity!QualParams == 1) {
+      debug(traceCalls) {
+        stderr.writef("%s %s", Indexer!(QualParams).unary(args), info.slots[0].i);
+      }
       auto pf = cast(Spec) Indexer!(QualParams).unary(args)[info.slots[0].i].p;
-      import std.stdio;
     } else {
       auto pf =
         cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
     }
 
-    assert(pf);
-
-    version (traceCalls) {
-      writefln("dt = %s pf = %s", info.dispatchTable, pf);
+    debug(traceCalls) {
+      writefln(" pf = %s", pf);
     }
+
+    assert(pf);
 
     static if (is(R == void)) {
       pf(args);
@@ -508,6 +539,7 @@ struct Method(string id, R, T...)
 
   static this() {
     info.name = id;
+    info.useHash = index == useHash;
     info.ambiguousCallError = &ambiguousCallError;
     info.notImplementedError = &notImplementedError;
     foreach (QP; QualParams) {
@@ -516,6 +548,7 @@ struct Method(string id, R, T...)
         info.vp ~= VirtualType!(QP).classinfo;
       }
     }
+
     Runtime.register(&info);
     Runtime.needUpdate = true;
   }
@@ -558,6 +591,7 @@ struct Runtime
   union Word
   {
     void* p;
+    Word* pw;
     int i;
   }
 
@@ -566,6 +600,7 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
+    bool useHash;
     Word* slots;
     Word* strides;
     Word* dispatchTable;
@@ -636,23 +671,36 @@ struct Runtime
 
     @property auto isClass()
     {
-      return info.base is Object.classinfo || info.base !is null;
+      return info is Object.classinfo
+        || info.base is Object.classinfo
+        || info.base !is null;
     }
   }
 
   alias Registry = MethodInfo*[MethodInfo*];
 
+  struct HashInfo
+  {
+    ulong hashMult;
+    uint hashShift, hashSize;
+    Word* hashTable;
+  }
+
   static __gshared Registry methodInfos;
   static __gshared Word[] giv; // Global Index Vector
   static __gshared Word[] gdv; // Global Dispatch Vector
   static __gshared needUpdate = true;
+  static __gshared ulong hashMult;
+  static __gshared uint hashShift, hashSize;
+  static __gshared Word* hashTable;
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
+  Word*[Class*] mtbls;
 
   static void register(MethodInfo* mi)
   {
-    version (explain) {
+    debug(explain) {
       writefln("registering %s", *mi);
     }
 
@@ -661,7 +709,7 @@ struct Runtime
 
   void seed()
   {
-    version (explain) {
+    debug(explain) {
       write("Seeding...\n ");
     }
 
@@ -672,7 +720,7 @@ struct Runtime
         c = classMap[ci];
       } else {
         c = classMap[ci] = new Class(ci);
-        version (explain) {
+        debug(explain) {
           writef(" %s", c.name);
         }
       }
@@ -696,7 +744,7 @@ struct Runtime
 
     }
 
-    version (explain) {
+    debug(explain) {
       writeln();
     }
   }
@@ -722,7 +770,7 @@ struct Runtime
     } else if (hasMethods) {
       if (ci !in classMap) {
         auto c = classMap[ci] = new Class(ci);
-        version (explain) {
+        debug(explain) {
           writefln("  %s", c.name);
         }
       }
@@ -751,7 +799,7 @@ struct Runtime
 
   void layer()
   {
-    version (explain) {
+    debug(explain) {
       writefln("Layering...");
     }
 
@@ -759,7 +807,7 @@ struct Runtime
     auto m = assocArray(zip(v, v));
 
     while (!v.empty) {
-      version (explain) {
+      debug(explain) {
         writefln("  %s", v.map!(c => c.name).join(" "));
       }
 
@@ -797,20 +845,20 @@ struct Runtime
 
   void allocateSlots()
   {
-    version (explain) {
+    debug(explain) {
       writeln("Allocating slots...");
     }
 
     foreach (c; classes) {
       if (!c.methodParams.empty) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s...", c.name);
         }
 
         foreach (mp; c.methodParams) {
           int slot = c.nextSlot++;
 
-          version (explain) {
+          debug(explain) {
             writef("    for %s: allocate slot %d\n    also in", mp, slot);
           }
 
@@ -831,32 +879,50 @@ struct Runtime
             allocateSlotDown(d, slot, visited);
           }
 
-          version (explain) {
+          debug(explain) {
             writeln();
           }
         }
       }
     }
 
-    version (explain) {
+    debug(explain) {
       writeln("Initializing the global index vector...");
     }
 
-    giv.length =
+    auto givLength =
       classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
       + methods.map!(m => m.vp.length).sum;
 
-    // dmd doesn't like this: giv.fill(-1);
+    bool useHash = methods.any!(c => c.info.useHash);
+
+    if (useHash) {
+      findHash();
+      givLength += hashSize;
+    }
+
+    giv.length = givLength;
 
     Word* sp = giv.ptr;
 
-    version (explain) {
+    debug(explain) {
       writefln("  giv size: %d", giv.length);
+    }
+
+    if (useHash) {
+      hashTable = sp;
+      sp += hashSize;
+      debug(explain) {
+        writefln("  reserved %d entries for hash table", hashSize);
+      }
+    }
+
+    debug(explain) {
       writeln("  slots:");
     }
 
     foreach (m; methods) {
-      version (explain) {
+      debug(explain) {
         writefln("    %s %02d-%02d %s",
                  sp, sp - giv.ptr, sp - giv.ptr + m.vp.length, *m);
       }
@@ -866,17 +932,26 @@ struct Runtime
       }
     }
 
-    version (explain) {
+    debug(explain) {
       writeln("  indexes:");
     }
 
     foreach (c; classes) {
       if (c.isClass) {
-        version (explain) {
+        debug(explain) {
           writefln("    %s %02d-%02d %s",
                    sp, c.firstUsedSlot, c.nextSlot, c.name);
         }
-        c.info.deallocator = cast(Word*) sp;
+        auto mptr = sp - c.firstUsedSlot;
+        mtbls[c] = mptr;
+        c.info.deallocator = mptr;
+        if (useHash) {
+          auto h = hash(c.info.vtbl.ptr);
+          debug(explain) {
+            writefln("    -> hashTable[%d]", h);
+          }
+          hashTable[h].p = mptr;
+        }
         sp += c.nextSlot - c.firstUsedSlot;
       }
     }
@@ -887,7 +962,7 @@ struct Runtime
     if (c in visited)
       return;
 
-    version (explain) {
+    debug(explain) {
       writef(" %s", c.name);
     }
 
@@ -915,7 +990,7 @@ struct Runtime
     if (c in visited)
       return;
 
-    version (explain) {
+    debug(explain) {
       writef(" %s", c.name);
     }
 
@@ -992,7 +1067,7 @@ struct Runtime
           }
         }
 
-        version (explain) {
+        debug(explain) {
           writefln("%*s    dim %d group %d (%s): select best of %s",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
@@ -1010,7 +1085,7 @@ struct Runtime
           import std.stdio;
           m.dispatchTable ~= specs[0].info.pf;
 
-          version (explain) {
+          debug(explain) {
             writefln("%*s      %s: pf = %s",
                      (m.vp.length - dim) * 2, "",
                      specs.map!(spec => spec.toString).join(", "),
@@ -1018,7 +1093,7 @@ struct Runtime
           }
         }
       } else {
-        version (explain) {
+        debug(explain) {
           writefln("%*s    dim %d group %d (%s)",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
@@ -1030,10 +1105,85 @@ struct Runtime
     }
   }
 
+  void findHash()
+  {
+    import std.random, std.math;
+
+    void**[] vptrs;
+
+    foreach (c; classes) {
+      if (c.info.vtbl.ptr) {
+        vptrs ~= c.info.vtbl.ptr;
+      }
+	}
+
+    auto N = vptrs.length;
+
+    debug(explain) {
+      writefln("  finding hash factor for %s vptrs", N);
+      import std.datetime;
+      StopWatch sw;
+      sw.start();
+    }
+
+    int M;
+    auto rnd = Random(unpredictableSeed);
+    ulong totalAttempts;
+
+    for (int room = 2; room <= 6; ++room) {
+      M = 0;
+
+      while ((1 << M) < room * N / 2) {
+        ++M;
+      }
+
+      hashShift = 64 - M;
+      hashSize = 1 << M;
+      int[] buckets;
+      buckets.length = hashSize;
+
+      debug(explain) {
+        writefln("  trying with M = %s, %s buckets", M, buckets.length);
+      }
+
+      bool found;
+      int attempts;
+
+      while (!found && attempts < 100_000) {
+        ++attempts;
+        ++totalAttempts;
+        found = true;
+        hashMult = rnd.uniform!ulong | 1;
+        buckets[] = 0;
+        foreach (vptr; vptrs) {
+          auto h = hash(vptr);
+          if (buckets[h]++) {
+            found = false;
+            break;
+          }
+        }
+      }
+
+      if (found) {
+        debug(explain) {
+          writefln("  found %s after %s attempts and %s msecs",
+                   hashMult, totalAttempts, sw.peek().msecs);
+        }
+        return;
+      }
+    }
+
+    throw new Error("cannot find hash factor");
+  }
+
+  static auto hash(void* p) {
+    return (hashMult * (cast(ulong) p)) >> hashShift;
+  }
+
   void buildTables()
   {
     foreach (m; methods) {
-      version (explain) {
+      debug(explain) {
         writefln("Building dispatch table for %s", *m);
       }
 
@@ -1042,13 +1192,13 @@ struct Runtime
       groups.length = dims;
 
       foreach (int dim, vp; m.vp) {
-        version (explain) {
+        debug(explain) {
           writefln("  make groups for param #%s, class %s", dim, vp.name);
         }
 
         foreach (conforming; vp.conforming) {
           if (conforming.isClass) {
-            version (explain) {
+            debug(explain) {
               writefln("    specs applicable to %s", conforming.name);
             }
 
@@ -1057,24 +1207,24 @@ struct Runtime
 
             foreach (int specIndex, spec; m.specs) {
               if (conforming in spec.params[dim].conforming) {
-                version (explain) {
+                debug(explain) {
                   writefln("      %s", *spec);
                 }
                 mask[specIndex] = 1;
               }
             }
 
-            version (explain) {
+            debug(explain) {
               writefln("      bit mask = %s", mask);
             }
 
             if (mask in groups[dim]) {
-              version (explain) {
+              debug(explain) {
                 writefln("      add class %s to existing group", conforming.name, mask);
               }
               groups[dim][mask] ~= conforming;
             } else {
-              version (explain) {
+              debug(explain) {
                 writefln("      create new group for %s", conforming.name);
               }
               groups[dim][mask] = [ conforming ];
@@ -1087,7 +1237,7 @@ struct Runtime
       m.strides.length = dims - 1;
 
       foreach (int dim, vp; m.vp[1..$]) {
-        version (explain) {
+        debug(explain) {
           writefln("    stride for dim %s = %s", dim + 1, stride);
         }
         stride *= groups[dim].length;
@@ -1097,31 +1247,31 @@ struct Runtime
       BitArray none;
       none.length = m.specs.length;
 
-      version (explain) {
+      debug(explain) {
         writefln("    assign specs");
       }
 
       buildTable(m, dims - 1, groups, ~none);
 
-      version (explain) {
+      debug(explain) {
         writefln("  assign slots");
       }
 
       foreach (int dim, vp; m.vp) {
-        version (explain) {
+        debug(explain) {
           writefln("    dim %s", dim);
         }
 
         int i = 0;
 
         foreach (group; groups[dim]) {
-          version (explain) {
+          debug(explain) {
             writefln("      group %d (%s)",
                      i,
                      group.map!(c => c.name).join(", "));
           }
           foreach (c; group) {
-            (cast(Word*) c.info.deallocator)[m.slots[dim]].i = i;
+            mtbls[c][m.slots[dim]].i = i;
           }
 
           ++i;
@@ -1131,18 +1281,19 @@ struct Runtime
       m.firstDim = groups[0];
     }
 
-    gdv.length = methods.filter!(m => m.vp.length > 1).map!
+    auto gdvLength  = methods.filter!(m => m.vp.length > 1).map!
       (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
 
-    version (explain) {
+    gdv.length = gdvLength;
+    Word* mp = gdv.ptr;
+
+    debug(explain) {
       writefln("Initializing global dispatch table - %d words", gdv.length);
     }
 
-    Word* mp = gdv.ptr;
-
     foreach (m; methods) {
       if (m.info.vp.length > 1) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s:", *m);
           writefln("    %s: %d strides: %s", mp, m.strides.length, m.strides);
         }
@@ -1150,12 +1301,12 @@ struct Runtime
         foreach (stride; m.strides) {
           mp++.i = stride;
         }
-        version (explain) {
+        debug(explain) {
           writefln("    %s: %d functions", mp, m.dispatchTable.length);
         }
         m.info.dispatchTable = mp;
         foreach (p; m.dispatchTable) {
-          version (explain) {
+          debug(explain) {
             writefln("      %s", p);
           }
           mp++.p = cast(void*) p;
@@ -1166,17 +1317,17 @@ struct Runtime
     foreach (m; methods) {
       auto slot = m.slots[0];
       if (m.info.vp.length == 1) {
-        version (explain) {
+        debug(explain) {
           writefln("  %s:", *m);
-          writeln("    1-method, storing fp in indexes");
+          writefln("    1-method, storing fp in indexes, slot = %s", slot);
         }
         int i = 0;
         foreach (group; m.firstDim) {
           foreach (c; group) {
-            Word* index = (cast(Word*) c.info.deallocator) + slot;
+            Word* index = mtbls[c] + slot;
             index.p = m.dispatchTable[i];
-            version (explain) {
-              writefln("      %s", index.p);
+            debug(explain) {
+              writefln("      %s %s", i, index.p);
             }
           }
           ++i;
@@ -1184,7 +1335,7 @@ struct Runtime
       } else {
         foreach (group; m.firstDim) {
           foreach (c; group) {
-            Word* index = (cast(Word*) c.info.deallocator) + slot;
+            Word* index = mtbls[c] + slot;
             index.p = m.info.dispatchTable + index.i;
           }
         }
@@ -1207,7 +1358,7 @@ struct Runtime
   {
     seed();
 
-    version (explain) {
+    debug(explain) {
       writefln("Scooping...");
     }
 
@@ -1249,6 +1400,11 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
+struct mptr
+{
+  string index;
+}
+
 string _registerMethods(alias MODULE)()
 {
   import std.array;
@@ -1256,18 +1412,22 @@ string _registerMethods(alias MODULE)()
   foreach (m; __traits(allMembers, MODULE)) {
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
-        foreach (p; Parameters!o) {
-          static if (IsVirtual!p) {
-            auto meth =
-              format(`Method!("%s", %s, %s)`,
-                     m,
-                     ReturnType!o.stringof,
-                     Parameters!o.stringof[1..$-1]);
-            code ~= format(`alias %s = %s.dispatcher;`, m, meth);
-            code ~= format(`alias %s = %s.discriminator;`, m, meth);
-            //code ~= format(`alias _%s = %s.discriminator;`, m, meth);
-            break;
+        static if (hasVirtualParameters!o) {
+          static if (hasUDA!(o, mptr)) {
+            static assert(getUDAs!(o, mptr).length == 1,
+                          "only une @mptr allowed");
+            immutable index = getUDAs!(o, mptr)[0].index;
+          } else {
+            immutable index = "deallocator";
           }
+          auto meth =
+            format(`Method!("%s", "%s", %s, %s)`,
+                   m,
+                   index,
+                   ReturnType!o.stringof,
+                   Parameters!o.stringof[1..$-1]);
+          code ~= format(`alias %s = %s.dispatcher;`, m, meth);
+          code ~= format(`alias %s = %s.discriminator;`, m, meth);
         }
       }
     }
@@ -1283,23 +1443,26 @@ mixin template _registerSpecs(alias MODULE)
   }
 
   import std.traits;
+
   static this() {
     foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
-          static if (__traits(getAttributes, _openmethods_o_).length) {
-            foreach (_openmethods_a_; __traits(getAttributes, _openmethods_o_)) {
-              static if (is(typeof(_openmethods_a_) == method)) {
-                  wrap!(typeof(mixin(_openmethods_a_.id)(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
+          static if (hasUDA!(_openmethods_o_, method)) {
+            version (GNU) {
+              immutable _openmethods_id_ = _openmethods_m_[1..$];
+            } else {
+              static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
+                immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
               } else {
-                static if (is(_openmethods_a_ == method)) {
-                  static assert(_openmethods_m_[0] == '_',
-                                m ~ ": method name must begin with an underscore, "
-                                ~ "or be set in @method()");
-                  wrap!(typeof(mixin(_openmethods_m_[1..$])(MethodTag.init, Parameters!(_openmethods_o_).init)).Specialization!(_openmethods_o_))();
-                }
+                static assert(_openmethods_m_[0] == '_',
+                              m ~ ": method name must begin with an underscore, "
+                              ~ "or be set in @method()");
+                immutable _openmethods_id_ = _openmethods_m_[1..$];
               }
             }
+            wrap!(typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init))
+                  .Specialization!(_openmethods_o_))();
           }
         }
       }
@@ -1311,7 +1474,7 @@ version (unittest) {
 
   mixin template _method(string name, R, A...)
   {
-    alias ThisMethod = Method!(name, R, A);
+    alias ThisMethod = Method!(name, useDeallocator, R, A);
     mixin("alias " ~ name ~ " = ThisMethod.discriminator;");
     mixin("alias " ~ name ~ " = ThisMethod.dispatcher;");
   }
@@ -1405,7 +1568,7 @@ unittest
   assert(B.classinfo in rt.classMap);
   assert(C.classinfo in rt.classMap);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping X...");
   }
 
@@ -1413,7 +1576,7 @@ unittest
   assert(rt.classMap.length == 4);
   assert(X.classinfo in rt.classMap);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping Y...");
   }
 
@@ -1482,7 +1645,7 @@ unittest
   rt.seed();
   assert(rt.classMap.length == 2);
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping D...");
   }
 
@@ -1515,7 +1678,7 @@ unittest
 
   rt.seed();
 
-  version (explain) {
+  debug(explain) {
     writefln("Scooping...");
   }
 
@@ -1543,58 +1706,4 @@ unittest
   assert(Runtime.findNext(specs[3], specs) == null);
 
   rt.buildTables();
-}
-
-unittest
-{
-  class Matrix { }
-  class DenseMatrix : Matrix { }
-  class DiagonalMatrix : Matrix { }
-
-  mixin _method!("plus", void, virtual!Matrix, virtual!Matrix);
-  // intentionally ambiguous
-  mixin implement!(plus, function void(DiagonalMatrix a, Matrix b) { });
-  mixin implement!(plus, function void(Matrix a, DiagonalMatrix b) { });
-
-  Runtime rt;
-  mixin Restrict!(Matrix, DenseMatrix, DiagonalMatrix);
-
-  rt.seed();
-
-  version (explain) {
-    writefln("Scooping...");
-  }
-
-  rt.scoop(DenseMatrix.classinfo);
-  rt.scoop(DiagonalMatrix.classinfo);
-
-  rt.initClasses();
-  rt.layer();
-  rt.allocateSlots();
-  rt.calculateInheritanceRelationships();
-
-  rt.buildTables();
-  static string methodId;
-
-  auto oldErrorHandler =
-    setMethodErrorHandler(function void(MethodError error) {
-        assert(error.reason == MethodError.NotImplemented);
-        methodId = error.functionName;
-      });
-
-  scope (exit) {
-    setMethodErrorHandler(oldErrorHandler);
-  }
-
-  plus(new Matrix, new Matrix);
-  assert(methodId == "plus");
-
-  methodId = "";
-  setMethodErrorHandler(function void(MethodError error) {
-      assert(error.reason == MethodError.AmbiguousCall);
-      methodId = error.functionName;
-    });
-
-  plus(new DiagonalMatrix, new DiagonalMatrix);
-  assert(methodId == "plus");
 }

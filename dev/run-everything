@@ -2,6 +2,8 @@
 
 errors=0
 
+DC_EXCLUSIONS='mptr|method\('
+
 echo test openmethods...
 
 if ! dub test -q openmethods $*;
@@ -10,8 +12,14 @@ then
     errors=1
 fi
 
-for target in $(ls examples | grep -v synopsis) tests
+for target in $(ls examples)
 do
+    if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find examples/$target -name '*.d'`;
+    then
+        echo SKIP $target
+        continue
+    fi
+
     echo test $target...
 
     if ! dub test -q openmethods:$target $*;
@@ -19,13 +27,27 @@ do
         echo "ERROR"
         errors=1
     fi
-done
 
-for target in $(ls examples) tests
-do
     echo run $target...
 
     if ! dub run -q openmethods:$target $*;
+    then
+        echo "ERROR"
+        errors=1
+    fi
+done
+
+for target in $(ls tests)
+do
+    if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find tests/$target -name '*.d'`;
+    then
+        echo SKIP $target
+        continue
+    fi
+
+    echo test $target...
+
+    if ! dub test -q openmethods:$target $*;
     then
         echo "ERROR"
         errors=1
