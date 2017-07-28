@@ -1,3 +1,11 @@
+/+
+ dub.sdl:
+ name "calls"
+ description "benchmark calls"
+ targetType "executable"
+ dependency "openmethods" path="../"
++/
+
 import std.stdio, std.format, std.datetime, std.array;
 
 import openmethods;
