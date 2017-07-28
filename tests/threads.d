@@ -30,7 +30,6 @@ void main()
       });
   }
 
-  assert(Runtime.gdv == null);
   auto childTid = spawn(&child);
   updateMethods();
   send(childTid, 42);

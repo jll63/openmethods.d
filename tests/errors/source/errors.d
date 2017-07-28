@@ -13,7 +13,7 @@ void plus(virtual!Matrix, virtual!Matrix);
 
 unittest
 {
-  if (!Runtime.gdv) {
+  if (needUpdateMethods) {
     updateMethods();
   }
 

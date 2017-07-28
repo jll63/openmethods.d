@@ -383,10 +383,10 @@ auto TypeIds(T...)()
   return result;
 }
 
-private immutable useDeallocator = "deallocator";
-private immutable useHash = "hash";
+private immutable MptrInDeallocator = "deallocator";
+private immutable MptrViaHash = "hash";
 
-struct Method(string id, string index, R, T...)
+struct Method(string id, string Mptr, R, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!T;
@@ -415,8 +415,8 @@ struct Method(string id, string index, R, T...)
 
   static Method discriminator(MethodTag, CallParams!T);
 
-  static if (index == useDeallocator) {
-    static auto getIndexTable(T)(T arg)
+  static if (Mptr == MptrInDeallocator) {
+    static auto getMptr(T)(T arg)
     {
       alias Word = Runtime.Word;
       static if (is(T == class)) {
@@ -427,8 +427,8 @@ struct Method(string id, string index, R, T...)
         return cast(const Word*) o.classinfo.deallocator;
       }
     }
-  } else static if (index == useHash) {
-    static auto getIndexTable(T)(T arg) {
+  } else static if (Mptr == MptrViaHash) {
+    static auto getMptr(T)(T arg) {
       alias Word = Runtime.Word;
       static if (is(T == class)) {
         return Runtime.hashTable[Runtime.hash(*cast (void**) arg)].pw;
@@ -450,14 +450,14 @@ struct Method(string id, string index, R, T...)
       }
       static if (IsVirtual!Q0) {
         alias arg = args[0];
-        const (Word)* indexes = getIndexTable(arg);
+        const (Word)* mtbl = getMptr(arg);
         debug(traceCalls) {
-          stderr.writef(" %s ", indexes);
+          stderr.writef(" %s ", mtbl);
           stderr.writef(" %s ", slots.i);
-          stderr.writef(" %s ", indexes[slots.i].p);
+          stderr.writef(" %s ", mtbl[slots.i].p);
         }
         return Indexer!(Q[1..$])
-          .moveNext(cast(const(Word)*) indexes[slots.i].p,
+          .moveNext(cast(const(Word)*) mtbl[slots.i].p,
                     slots + 1,
                     strides, // stride for dim 0 is 1, not stored
                     args[1..$]);
@@ -475,12 +475,12 @@ struct Method(string id, string index, R, T...)
         }
         static if (IsVirtual!Q0) {
           alias arg = args[0];
-          const (Word)* indexes = getIndexTable(arg);
+          const (Word)* mtbl = getMptr(arg);
           debug(traceCalls) {
-            stderr.writef(" %s, %s, %s", indexes, slots.i, indexes[slots.i].p);
+            stderr.writef(" %s, %s, %s", mtbl, slots.i, mtbl[slots.i].p);
           }
           return Indexer!(Q[1..$])
-            .moveNext(dt + indexes[slots.i].i * strides.i,
+            .moveNext(dt + mtbl[slots.i].i * strides.i,
                       slots + 1,
                       strides + 1,
                       args[1..$]);
@@ -499,7 +499,7 @@ struct Method(string id, string index, R, T...)
         stderr.write(" | ", Q0.stringof, ":");
       }
       static if (IsVirtual!Q0) {
-        return getIndexTable(args[0]);
+        return getMptr(args[0]);
       } else {
         return Indexer!(Q[1..$]).unary(args[1..$]);
       }
@@ -543,9 +543,9 @@ struct Method(string id, string index, R, T...)
   shared static this() {
     info.name = id;
 
-    static if (index == useDeallocator) {
+    static if (Mptr == MptrInDeallocator) {
       ++Runtime.methodsUsingDeallocator;
-    } else static if (index == useHash) {
+    } else static if (Mptr == MptrViaHash) {
       ++Runtime.methodsUsingHash;
     }
 
@@ -695,8 +695,8 @@ struct Runtime
   }
 
   static __gshared Registry methodInfos;
-  static __gshared Word[] giv; // Global Index Vector
-  static __gshared Word[] gdv; // Global Dispatch Vector
+  static __gshared Word[] gmtbl; // Global Method Table
+  static __gshared Word[] gdtbl; // Global Dispatch Table
   static __gshared needUpdate = true;
   static __gshared ulong hashMult;
   static __gshared uint hashShift, hashSize;
@@ -859,8 +859,8 @@ struct Runtime
       foreach (vp; m.vp) {
         foreach (c; vp.conforming) {
           if (c.info.deallocator
-              && !(c.info.deallocator >= giv.ptr
-                  && c.info.deallocator <  giv.ptr + giv.length)) {
+              && !(c.info.deallocator >= gmtbl.ptr
+                  && c.info.deallocator <  gmtbl.ptr + gmtbl.length)) {
             throw new MethodError(MethodError.Reason.DeallocatorInUse, m.info);
           }
         }
@@ -912,24 +912,24 @@ struct Runtime
     }
 
     debug(explain) {
-      writeln("Initializing the global index vector...");
+      writeln("Initializing the global mtbl vector...");
     }
 
-    auto givLength =
+    auto gmtblLength =
       classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
       + methods.map!(m => m.vp.length).sum;
 
     if (methodsUsingHash) {
       findHash();
-      givLength += hashSize;
+      gmtblLength += hashSize;
     }
 
-    giv.length = givLength;
+    gmtbl.length = gmtblLength;
 
-    Word* sp = giv.ptr;
+    Word* sp = gmtbl.ptr;
 
     debug(explain) {
-      writefln("  giv size: %d", giv.length);
+      writefln("  gmtbl size: %d", gmtbl.length);
     }
 
     if (methodsUsingHash) {
@@ -947,7 +947,7 @@ struct Runtime
     foreach (m; methods) {
       debug(explain) {
         writefln("    %s %02d-%02d %s",
-                 sp, sp - giv.ptr, sp - giv.ptr + m.vp.length, *m);
+                 sp, sp - gmtbl.ptr, sp - gmtbl.ptr + m.vp.length, *m);
       }
 
       m.info.slots = sp;
@@ -958,7 +958,7 @@ struct Runtime
     }
 
     debug(explain) {
-      writeln("  indexes:");
+      writeln("  mtbl:");
     }
 
     foreach (c; classes) {
@@ -1310,14 +1310,14 @@ struct Runtime
       m.firstDim = groups[0];
     }
 
-    auto gdvLength  = methods.filter!(m => m.vp.length > 1).map!
+    auto gdtblLength  = methods.filter!(m => m.vp.length > 1).map!
       (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
 
-    gdv.length = gdvLength;
-    Word* mp = gdv.ptr;
+    gdtbl.length = gdtblLength;
+    Word* mp = gdtbl.ptr;
 
     debug(explain) {
-      writefln("Initializing global dispatch table - %d words", gdv.length);
+      writefln("Initializing global dispatch table - %d words", gdtbl.length);
     }
 
     foreach (m; methods) {
@@ -1348,7 +1348,7 @@ struct Runtime
       if (m.info.vp.length == 1) {
         debug(explain) {
           writefln("  %s:", *m);
-          writefln("    1-method, storing fp in indexes, slot = %s", slot);
+          writefln("    1-method, storing fp in mtbl, slot = %s", slot);
         }
         int i = 0;
         foreach (group; m.firstDim) {
@@ -1504,7 +1504,7 @@ version (unittest) {
 
   mixin template _method(string name, R, A...)
   {
-    alias ThisMethod = Method!(name, useDeallocator, R, A);
+    alias ThisMethod = Method!(name, MptrInDeallocator, R, A);
     mixin("alias " ~ name ~ " = ThisMethod.discriminator;");
     mixin("alias " ~ name ~ " = ThisMethod.dispatcher;");
   }

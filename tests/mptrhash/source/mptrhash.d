@@ -22,7 +22,7 @@ string _kick(Pitbull x)
 
 unittest
 {
-  if (!Runtime.gdv) {
+  if (needUpdateMethods) {
     updateMethods();
   }
 
