@@ -537,7 +537,7 @@ struct Method(string id, string index, R, T...)
     }
   }
 
-  static this() {
+  shared static this() {
     info.name = id;
     info.useHash = index == useHash;
     info.ambiguousCallError = &ambiguousCallError;
@@ -556,7 +556,7 @@ struct Method(string id, string index, R, T...)
   static class Specialization(alias fun)
   {
     alias Parameters!fun SpecParams;
-    static this() {
+    shared static this() {
       auto wrapper = function ReturnType(Params args) {
         static if (is(ReturnType == void)) {
           fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
@@ -567,7 +567,6 @@ struct Method(string id, string index, R, T...)
 
       static __gshared Runtime.SpecInfo si;
       si.pf = cast(void*) wrapper;
-
 
       foreach (i, QP; QualParams) {
         static if (IsVirtual!QP) {

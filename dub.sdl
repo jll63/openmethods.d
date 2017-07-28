@@ -13,7 +13,6 @@ subPackage "./examples/synopsis"
 subPackage "./examples/whytheunderscore"
 subPackage "./tests/errors"
 subPackage "./tests/mptrhash"
-subPackage "./tests/threads"
 subPackage "./tests/misc"
 subPackage "./benchmarks"
 
