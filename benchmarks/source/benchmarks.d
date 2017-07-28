@@ -86,7 +86,7 @@ void pit(string base, string target)(string label1, string label2, ulong n = 1_0
     time[base] = sw.peek().nsecs;
   }
 
-  auto baseTime = time[base];
+  double baseTime = time[base];
 
   if (target !in time) {
     mixin(target); // warm up too
@@ -99,13 +99,13 @@ void pit(string base, string target)(string label1, string label2, ulong n = 1_0
     time[target] = sw.peek().nsecs;
   }
 
-  auto targetTime = time[target];
+  double targetTime = time[target];
 
   writefln("%20s v %-20s %6.2f %6.2f %+8.2f%%",
            label1, label2,
-           cast(double) baseTime / n,
-           cast(double) targetTime / n,
-           100. * (targetTime - baseTime) / baseTime);
+           baseTime / n,
+           targetTime / n,
+           100 * (targetTime - baseTime) / baseTime);
 }
 
 void writesec(T...)(T arg)
@@ -136,10 +136,10 @@ void main()
   writesec(`virtual functions vs methods - mptr("deallocator")`);
 
   pit!("obj.vfClassToClass();", "classToClass1(obj);")
-    ("vfunc(obj)", "method(obj)");
+    ("obj.vfunc()", "method(obj)");
 
   pit!("obj.vfInterfaceToClass();", "interfaceToClass(obj);")
-    ("vfunc(intf)", "method(intf)");
+    ("intf.vfunc()", "method(intf)");
 
   pit!("obj.ddClassToClass(obj);", "classToClass2(obj, obj);")
     ("double dispatch", "2-method");
