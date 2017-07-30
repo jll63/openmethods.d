@@ -168,11 +168,6 @@ class virtual(T)
 
 struct method
 {
-  this(string name)
-  {
-    id = name;
-  }
-
   string id;
 }
 
@@ -227,7 +222,7 @@ mixin(registerMethods);
  ---
  +/
 
-string registerMethods(string moduleName = __MODULE__)
+string registerMethods(string moduleName = __MODULE__)()
 {
   return format("mixin(_registerMethods!%s);\nmixin _registerSpecs!%s;\n",
                 moduleName, moduleName);
