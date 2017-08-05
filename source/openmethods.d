@@ -222,7 +222,7 @@ mixin(registerMethods);
  ---
  +/
 
-string registerMethods(string moduleName = __MODULE__)()
+auto registerMethods(string moduleName = __MODULE__)
 {
   return format("mixin(_registerMethods!%s);\nmixin _registerSpecs!%s;\n",
                 moduleName, moduleName);
