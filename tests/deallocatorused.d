@@ -28,6 +28,6 @@ void main()
     updateMethods();
     assert(false);
   } catch (MethodError e) {
-    assert(e.reason == MethodError.Reason.DeallocatorInUse);
+    assert(e.reason == MethodError.DeallocatorInUse);
   }
 }

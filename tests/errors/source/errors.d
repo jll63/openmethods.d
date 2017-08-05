@@ -21,7 +21,7 @@ unittest
 
   auto oldErrorHandler =
     setMethodErrorHandler(function void(MethodError error) {
-        assert(error.reason == MethodError.Reason.NotImplemented);
+        assert(error.reason == MethodError.NotImplemented);
         methodId = error.functionName;
       });
 
@@ -34,7 +34,7 @@ unittest
 
   methodId = "";
   setMethodErrorHandler(function void(MethodError error) {
-      assert(error.reason == MethodError.Reason.AmbiguousCall);
+      assert(error.reason == MethodError.AmbiguousCall);
       methodId = error.functionName;
     });
 

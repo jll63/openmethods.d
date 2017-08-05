@@ -250,7 +250,7 @@ bool needUpdateMethods()
 
 class MethodError : Error
 {
-  this(Reason reason, const(Runtime.MethodInfo)* meth) {
+  this(int reason, const(Runtime.MethodInfo)* meth) {
     super(reason.stringof);
     this.reason = reason;
     this.meth = meth;
@@ -258,9 +258,9 @@ class MethodError : Error
 
   @property string functionName() { return meth.name; }
 
-  enum Reason { NotImplemented = 1, AmbiguousCall, DeallocatorInUse };
+  enum NotImplemented = 1, AmbiguousCall = 2, DeallocatorInUse = 3;
   const Runtime.MethodInfo* meth;
-  Reason reason;
+  int reason;
   TypeInfo[] args;
 }
 
@@ -270,7 +270,7 @@ void defaultMethodErrorHandler(MethodError error)
   stderr.writefln("call to %s(%s) is %s, aborting...",
                   error.functionName,
                   error.args.map!(a => a.toString).join(", "),
-                  error.reason == MethodError.Reason.NotImplemented
+                  error.reason == MethodError.NotImplemented
                   ? "not implemented" : "ambiguous");
   import core.stdc.stdlib : abort;
   abort();
@@ -394,7 +394,7 @@ struct Method(string id, string Mptr, R, T...)
   static R notImplementedError(T...)
   {
     import std.meta;
-    errorHandler(new MethodError(MethodError.Reason.NotImplemented, &info));
+    errorHandler(new MethodError(MethodError.NotImplemented, &info));
     static if (!is(R == void)) {
       return R.init;
     }
@@ -402,7 +402,7 @@ struct Method(string id, string Mptr, R, T...)
 
   static R ambiguousCallError(T...)
   {
-    errorHandler(new MethodError(MethodError.Reason.AmbiguousCall, &info));
+    errorHandler(new MethodError(MethodError.AmbiguousCall, &info));
     static if (!is(R == void)) {
       return R.init;
     }
@@ -856,7 +856,7 @@ struct Runtime
           if (c.info.deallocator
               && !(c.info.deallocator >= gmtbl.ptr
                   && c.info.deallocator <  gmtbl.ptr + gmtbl.length)) {
-            throw new MethodError(MethodError.Reason.DeallocatorInUse, m.info);
+            throw new MethodError(MethodError.DeallocatorInUse, m.info);
           }
         }
       }
