@@ -1,0 +1,24 @@
+HERE=`dirname $0`
+cd $HERE
+
+rm -f *.o *.di *.so
+
+DC=dmd
+
+DFLAGS="-g -I../../source $DFLAGS"
+
+SOFLAGS="-L-fPIC -shared"
+
+$DC $DFLAGS $SOFLAGS -c ../../source/openmethods.d
+$DC $DFLAGS $SOFLAGS openmethods.o -oflibopenmethods.so
+
+$DC $DFLAGS $SOFLAGS -c animals.d
+$DC $DFLAGS $SOFLAGS animals.o -oflibanimals.so
+
+$DC $DFLAGS $SOFLAGS -c moreanimals.d
+$DC $DFLAGS $SOFLAGS moreanimals.o -oflibmoreanimals.so
+
+$DC $DFLAGS -c app.d
+$DC $DFLAGS app.o -of=animals -L-L. -L-lanimals -L-lopenmethods -L-lphobos2 -L-rpath=`pwd`
+
+./animals

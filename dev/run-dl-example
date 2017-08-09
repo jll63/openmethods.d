@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dub build openmethods:animals $*
+dub build openmethods:moreanimals $*
+dub run openmethods:dlapp $*

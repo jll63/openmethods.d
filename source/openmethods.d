@@ -387,7 +387,8 @@ struct Method(string id, string Mptr, R, T...)
   alias Params = CallParams!T;
   alias R function(Params) Spec;
   alias ReturnType = R;
-  alias Word = Runtime.Word;
+  alias Word =  Runtime.Word;
+  enum name = id;
 
   static __gshared Runtime.MethodInfo info;
 
@@ -554,35 +555,36 @@ struct Method(string id, string Mptr, R, T...)
       }
     }
 
-    Runtime.register(&info);
+    debug(explain) {
+      writefln("registering %s", info);
+    }
+
+    Runtime.methodInfos[&info] = &info;
     Runtime.needUpdate = true;
   }
 
-  static class Specialization(alias fun)
+  shared static ~this() {
+    debug(explain) {
+      writefln("Unregistering %s", info);
+    }
+
+    Runtime.methodInfos.remove(&info);
+    Runtime.needUpdate = true;
+  }
+
+  static struct Specialization(alias fun)
   {
     alias Parameters!fun SpecParams;
-    shared static this() {
-      auto wrapper = function ReturnType(Params args) {
-        static if (is(ReturnType == void)) {
-          fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
-        } else {
-          return fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
-        }
-      };
 
-      static __gshared Runtime.SpecInfo si;
-      si.pf = cast(void*) wrapper;
+    static __gshared Runtime.SpecInfo si;
 
-      foreach (i, QP; QualParams) {
-        static if (IsVirtual!QP) {
-          si.vp ~= SpecParams[i].classinfo;
-        }
+    static wrapper = function ReturnType(Params args) {
+      static if (is(ReturnType == void)) {
+        fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
+      } else {
+        return fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
       }
-      info.specInfos ~= &si;
-      si.nextPtr = cast(void**) &nextPtr!SpecParams;
-
-      Runtime.needUpdate = true;
-    }
+    };
   }
 
   static Spec nextPtr(T...) = null;
@@ -702,15 +704,6 @@ struct Runtime
   Class*[ClassInfo] classMap;
   Class*[] classes;
   Word*[Class*] mtbls;
-
-  static void register(MethodInfo* mi)
-  {
-    debug(explain) {
-      writefln("registering %s", *mi);
-    }
-
-    methodInfos[mi] = mi;
-  }
 
   void seed()
   {
@@ -1462,14 +1455,53 @@ string _registerMethods(alias MODULE)()
 
 mixin template _registerSpecs(alias MODULE)
 {
-  static void wrap(T)()
+  mixin template wrap(M, S)
   {
-    static __gshared T spec;
+    // writefln("*** %s %s %s", MODULE.stringof, M.stringof, S.stringof);
+    static struct Register {
+
+      static __gshared Runtime.SpecInfo si;
+
+      shared static this() {
+        si.pf = cast(void*) S.wrapper;
+
+        debug(explain) {
+          import std.stdio;
+          writefln("Registering override %s%s", M.name, S.SpecParams.stringof);
+        }
+
+        foreach (i, QP; M.QualParams) {
+          static if (IsVirtual!QP) {
+            si.vp ~= S.SpecParams[i].classinfo;
+          }
+        }
+
+        M.info.specInfos ~= &si;
+        si.nextPtr = cast(void**) &M.nextPtr!(S.SpecParams);
+
+        Runtime.needUpdate = true;
+      }
+
+      shared static ~this()
+      {
+        debug(explain) {
+          import std.stdio;
+          writefln("Removing override %s%s", M.name, S.SpecParams.stringof);
+        }
+
+        import std.algorithm, std.array;
+        M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
+        Runtime.needUpdate = true;
+      }
+    }
+
+    __gshared Register r;
   }
 
   import std.traits;
 
-  static this() {
+  shared static this()
+  {
     foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
@@ -1486,249 +1518,19 @@ mixin template _registerSpecs(alias MODULE)
                 immutable _openmethods_id_ = _openmethods_m_[1..$];
               }
             }
-            wrap!(typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init))
-                  .Specialization!(_openmethods_o_))();
+            alias M = typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init));
+            mixin wrap!(M, M.Specialization!(_openmethods_o_));
           }
         }
       }
     }
   }
-}
 
-version (unittest) {
-
-  mixin template _method(string name, R, A...)
+  shared static ~this()
   {
-    alias ThisMethod = Method!(name, MptrInDeallocator, R, A);
-    mixin("alias " ~ name ~ " = ThisMethod.discriminator;");
-    mixin("alias " ~ name ~ " = ThisMethod.dispatcher;");
-  }
-
-  mixin template implement(alias M, alias S)
-  {
-    import std.traits;
-    static __gshared typeof(M(MethodTag.init, Parameters!(S).init)).Specialization!(S) spec;
-  }
-
-  struct Restriction
-  {
-    Runtime.Registry saved;
-
-    static auto save(M...)()
-    {
-      Runtime.Registry temp;
-      bool[ClassInfo] keep;
-
-      foreach (mi; M) {
-        keep[mi.classinfo] = true;
-      }
-
-      foreach (mi; Runtime.methodInfos.values) {
-        if (mi.vp.any!(vp => vp in keep)) {
-          temp[mi] = mi;
-        }
-      }
-
-      Restriction save = Restriction(Runtime.methodInfos);
-      Runtime.methodInfos = temp;
-
-      return save;
-    }
-
-    ~this()
-    {
-      Runtime.methodInfos = saved;
+    debug(explain) {
+      import std.stdio;
+      writefln("Unregistering specs from %s", MODULE.stringof);
     }
   }
-
-  private auto names(S)(S seq)
-  {
-    return seq.map!(c => c.name).join(",");
-  }
-
-  private auto sortedNames(S)(S seq)
-  {
-    string[] names = seq.map!(c => c.name).array;
-    sort(names);
-    return names.join(",");
-  }
-
-  mixin template Restrict(M...)
-  {
-    auto guard = Restriction.save!(M)();
-  }
-}
-
-unittest
-{
-  // A*  C*
-  //  \ / \
-  //   B*  D
-  //   |   |
-  //   X   Y
-
-  // A*   C*
-  // |   / \
-  // B* /   D
-  // | /    |
-  // X      Y
-
-  interface A { }
-  interface C { }
-  interface D : C { }
-  interface B : A, C { }
-  class X : B { }
-  class Y : D { }
-
-  mixin _method!("a", void, virtual!A) aA;
-  mixin _method!("c", void, virtual!C) cC;
-  mixin _method!("b", void, virtual!B) bB;
-
-  Runtime rt;
-  mixin Restrict!(A, B, C, D, X, Y);
-
-  rt.seed();
-  assert(rt.classMap.length == 3);
-  assert(A.classinfo in rt.classMap);
-  assert(B.classinfo in rt.classMap);
-  assert(C.classinfo in rt.classMap);
-
-  debug(explain) {
-    writefln("Scooping X...");
-  }
-
-  rt.scoop(X.classinfo);
-  assert(rt.classMap.length == 4);
-  assert(X.classinfo in rt.classMap);
-
-  debug(explain) {
-    writefln("Scooping Y...");
-  }
-
-  rt.scoop(Y.classinfo);
-  assert(Y.classinfo in rt.classMap);
-  assert(D.classinfo in rt.classMap);
-  assert(rt.classMap.length == 6);
-
-  int target = 2;
-  int[] a = [ 1, 2, 3 ];
-  assert(a.any!(x => x == target));
-
-  rt.initClasses();
-  assert(rt.classMap[A.classinfo].directBases.empty);
-  assert(rt.classMap[C.classinfo].directBases.empty);
-  assert(rt.classMap[B.classinfo].directBases.names == "A,C");
-  assert(rt.classMap[D.classinfo].directBases.names == "C");
-
-  assert(A.classinfo.base is null);
-  assert(Object.classinfo.base is null);
-  assert(X.classinfo.base !is null);
-  assert(!rt.classMap[A.classinfo].isClass);
-  assert(rt.classMap[X.classinfo].isClass);
-
-  rt.layer();
-  assert(rt.classes.names == "A,C,B,D,X,Y");
-
-  rt.allocateSlots();
-
-  assert(rt.slots!aA == [ 0 ]);
-  assert(rt.slots!cC == [ 1 ]);
-  assert(rt.slots!bB == [ 2 ]);
-
-  rt.calculateInheritanceRelationships();
-  assert(rt.getClass!(A).conforming.values.sortedNames == "A,B,X");
-  assert(rt.getClass!(B).conforming.values.sortedNames == "B,X");
-  assert(rt.getClass!(C).conforming.values.sortedNames == "B,C,D,X,Y");
-  assert(rt.getClass!(D).conforming.values.sortedNames == "D,Y");
-  assert(rt.getClass!(Y).conforming.values.sortedNames == "Y");
-
-  rt.buildTables();
-}
-
-unittest
-{
-  // A*
-  // |
-  // B
-  // |
-  // C*
-  // |
-  // D
-
-  interface A { }
-  interface B : A { }
-  interface C : B { }
-  class D : C { }
-
-  mixin _method!("a", void, virtual!A);
-  mixin _method!("c", void, virtual!C);
-
-  Runtime rt;
-  mixin Restrict!(A, B, C);
-  assert(rt.methodInfos.length == 2);
-
-  rt.seed();
-  assert(rt.classMap.length == 2);
-
-  debug(explain) {
-    writefln("Scooping D...");
-  }
-
-  rt.scoop(D.classinfo);
-  assert(A.classinfo in rt.classMap);
-  assert(B.classinfo in rt.classMap);
-  assert(C.classinfo in rt.classMap);
-  assert(D.classinfo in rt.classMap);
-
-  rt.initClasses();
-  rt.layer();
-  rt.allocateSlots();
-}
-
-unittest
-{
-  interface Matrix { }
-  class DenseMatrix : Matrix { }
-  class DiagonalMatrix : Matrix { }
-
-  mixin _method!("plus", void, virtual!(immutable Matrix), virtual!(immutable Matrix));
-
-  mixin implement!(plus, function void(immutable Matrix a, immutable Matrix b) { });
-  mixin implement!(plus, function void(immutable Matrix a, immutable DiagonalMatrix b) { });
-  mixin implement!(plus, function void(immutable DiagonalMatrix a, immutable Matrix b) { });
-  mixin implement!(plus, function void(immutable DiagonalMatrix a, immutable DiagonalMatrix b) { });
-
-  Runtime rt;
-  mixin Restrict!(Matrix, DenseMatrix, DiagonalMatrix);
-
-  rt.seed();
-
-  debug(explain) {
-    writefln("Scooping...");
-  }
-
-  rt.scoop(DenseMatrix.classinfo);
-  rt.scoop(DiagonalMatrix.classinfo);
-
-  rt.initClasses();
-  rt.layer();
-  rt.allocateSlots();
-  rt.calculateInheritanceRelationships();
-
-  auto specs = rt.methods[0].specs;
-
-  foreach (a; 0..3) {
-    foreach (b; 0..3) {
-      bool expected = a > b && !(a == 1 && b == 2 || a == 2 && b == 1);
-      assert(Runtime.isMoreSpecific(specs[a], specs[b]) == expected,
-             format("a = %d, b = %d: expected %s", a, b, expected));
-    }
-  }
-
-  assert(Runtime.findNext(specs[0], specs) == null);
-  assert(Runtime.findNext(specs[1], specs) == specs[0]);
-  assert(Runtime.findNext(specs[2], specs) == specs[0]);
-  assert(Runtime.findNext(specs[3], specs) == null);
-
-  rt.buildTables();
 }

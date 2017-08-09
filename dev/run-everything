@@ -2,6 +2,11 @@
 
 errors=0
 
+if [[ "$DC" == '' ]];
+then
+    DC=dmd
+fi
+
 DC_EXCLUSIONS='mptr|method\('
 
 echo test openmethods...
@@ -21,6 +26,17 @@ do
         if [ -d $dir/$target ];
         then
             echo $target
+            if [ "$target" = 'dl' ];
+            then
+                if [[ "$DC" == 'dmd' ]];
+                then
+                    ./examples/dl/run
+                else
+                    echo SKIP $target
+                fi
+                continue;
+            fi
+
             if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find $dir/$target -name '*.d'`;
             then
                 echo SKIP $target
@@ -59,29 +75,6 @@ do
                 errors=1
             fi
         fi
-
-
-        # if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS `find examples/$target -name '*.d'`;
-        # then
-        #     echo SKIP $target
-        #     continue
-        # fi
-
-        # echo test $target...
-
-        # if ! dub test -q openmethods:$target $*;
-        # then
-        #     echo "ERROR"
-        #     errors=1
-        # fi
-
-        # echo run $target...
-
-        # if ! dub run -q openmethods:$target $*;
-        # then
-        #     echo "ERROR"
-        #     errors=1
-        # fi
     done
 done
 
