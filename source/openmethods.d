@@ -1148,7 +1148,7 @@ struct Runtime
     ulong totalAttempts;
 
     for (int room = 2; room <= 6; ++room) {
-      M = 0;
+      M = 1;
 
       while ((1 << M) < room * N / 2) {
         ++M;
