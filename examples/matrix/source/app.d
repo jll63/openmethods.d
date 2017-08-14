@@ -28,7 +28,7 @@ void _print(DiagonalMatrix m)
   import std.algorithm;
   import std.format;
   import std.array;
-  writeln("diag(" ~ m.elems.map!(x => format("%g", x)).join(" ") ~ ")");
+  writeln("diag(", m.elems.map!(x => format("%g", x)).join(", "), ")");
 }
 
 void main()

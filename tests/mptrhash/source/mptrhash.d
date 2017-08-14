@@ -28,7 +28,7 @@ unittest
 
   import std.stdio;
 
-  Animal rex = new Pitbull, snoopy = new Dog;
+  Animal hector = new Pitbull, snoopy = new Dog;
   assert(kick(snoopy) == "bark");
-  assert(kick(rex) == "bark and bite");
+  assert(kick(hector) == "bark and bite");
 }

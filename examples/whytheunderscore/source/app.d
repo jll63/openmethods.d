@@ -34,8 +34,8 @@ string kick(Pitbull x)
 void main()
 {
   updateMethods();
-  Animal rex = new Pitbull;
-  writeln(kick(rex)); // bark and bite
+  Animal hector = new Pitbull;
+  writeln(kick(hector)); // bark and bite
   Dog pluto = new Pitbull; // just bark
   writeln(kick(pluto));
 }

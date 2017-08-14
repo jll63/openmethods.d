@@ -67,14 +67,14 @@ void main()
 
   import std.stdio;
 
-  Animal rex = new Pitbull, snoopy = new Dog;
+  Animal hector = new Pitbull, snoopy = new Dog;
   writeln("kick snoopy: ", kick(snoopy)); // bark
-  writeln("kick rex: ", kick(rex)); // bark and bite
+  writeln("kick hector: ", kick(hector)); // bark and bite
 
   Animal felix = new Cat, flipper = new Dolphin;
-  writeln("rex meets felix: ", meet(rex, felix)); // chase
-  writeln("rex meets snoopy: ", meet(rex, snoopy)); // wag tail
-  writeln("rex meets flipper: ", meet(rex, flipper)); // ignore
+  writeln("hector meets felix: ", meet(hector, felix)); // chase
+  writeln("hector meets snoopy: ", meet(hector, snoopy)); // wag tail
+  writeln("hector meets flipper: ", meet(hector, flipper)); // ignore
 }
 ---
 
