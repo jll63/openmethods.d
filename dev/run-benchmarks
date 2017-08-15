@@ -1,1 +1,8 @@
-dub run openmethods:benchmarks --build release --compiler ldc2 $*
+#!/bin/bash
+
+if [[ "$DC" == '' ]];
+then
+    DC=ldc2
+fi
+
+dub run --single benchmarks/calls.d --build release --compiler $DC $*
