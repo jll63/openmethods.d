@@ -67,11 +67,15 @@ void _classToClass2(DerivedClass x, DerivedClass y)
 }
 
 version (GNU) {} else {
-  @mptr("hash")
-    void hClassToClass1(virtual!BaseClass);
+  @mptr("hash") void hInterfaceToClass1(virtual!BaseInterface);
 
-  @method
-    void _hClassToClass1(DerivedClass)
+  @method void _hInterfaceToClass1(DerivedClass)
+  {
+  }
+
+  @mptr("hash") void hClassToClass1(virtual!BaseClass);
+
+  @method void _hClassToClass1(DerivedClass)
   {
   }
 }
@@ -155,7 +159,13 @@ void main()
   version (GNU) {} else {
     writesec(`using mptr("hash")`);
 
-    pit!("classToClass1(obj);", "hClassToClass1(obj);")
+    pit!("obj.interfaceToClass();", "hInterfaceToClass1(obj);")
+      (`method deallocator`, "method hash");
+
+    pit!("obj.vfInterfaceToClass();", "hInterfaceToClass1(obj);")
+      ("intf.vfunc()", "method hash");
+
+    pit!("obj.classToClass1();", "hClassToClass1(obj);")
       (`method deallocator`, "method hash");
 
     pit!("obj.vfClassToClass();", "hClassToClass1(obj);")
