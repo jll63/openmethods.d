@@ -9,16 +9,16 @@ interface  Animal
 
 class Dog : Animal
 {
-
 }
 
 class Pitbull : Dog
 {
-
 }
 
 string kick(virtual!Animal);
 
+// make the method and its overrides have the same name
+// note: this shadows kick(Animal)
 @method("kick")
 string kick(Dog x)
 {
@@ -34,8 +34,8 @@ string kick(Pitbull x)
 void main()
 {
   updateMethods();
-  Animal hector = new Pitbull;
-  writeln(kick(hector)); // bark and bite
-  Dog pluto = new Pitbull; // just bark
-  writeln(kick(pluto));
+  Dog defangled = new Pitbull;
+  Animal hector = defangled;
+  writeln(kick(hector)); // call kick(Animal): bark and bite
+  writeln(kick(defangled)); // call kick(Dog): just bark
 }
