@@ -1069,7 +1069,7 @@ struct Runtime
 
   alias GroupMap = Class*[][BitArray];
 
-  void buildTable(Method* m, ulong dim, GroupMap[] groups, BitArray candidates)
+  void buildTable(Method* m, size_t dim, GroupMap[] groups, BitArray candidates)
   {
     int groupIndex = 0;
 
@@ -1194,7 +1194,7 @@ struct Runtime
   }
 
   static auto hash(void* p) {
-    return (hashMult * (cast(ulong) p)) >> hashShift;
+    return cast(uint) ((hashMult * (cast(ulong) p)) >> hashShift);
   }
 
   void buildTables()
