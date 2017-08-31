@@ -24,7 +24,7 @@ void main()
   assert(meet(ralf, ralf) == "ignore");
   assert(meet(ralf, clarabelle) == "ignore");
 
-  auto moreanimals = core.runtime.Runtime.loadLibrary("libmoreanimals.so");
+  auto moreanimals = core.runtime.Runtime.loadLibrary("./libmoreanimals.so");
   enforce(moreanimals);
 
   updateMethods();
