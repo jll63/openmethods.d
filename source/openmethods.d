@@ -224,7 +224,9 @@ mixin(registerMethods);
 
 auto registerMethods(string moduleName = __MODULE__)
 {
-  return format("mixin(_registerMethods!%s);\nmixin _registerSpecs!%s;\n",
+  return format("static import openmethods;"
+                ~ "mixin(openmethods._registerMethods!%s);"
+                ~ "mixin openmethods._registerSpecs!%s;\n",
                 moduleName, moduleName);
 }
 
@@ -1431,15 +1433,15 @@ string _registerMethods(alias MODULE)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!o) {
-          static if (hasUDA!(o, mptr)) {
-            static assert(getUDAs!(o, mptr).length == 1,
+          static if (hasUDA!(o, openmethods.mptr)) {
+            static assert(getUDAs!(o, openmethods.mptr).length == 1,
                           "only une @mptr allowed");
-            immutable index = getUDAs!(o, mptr)[0].index;
+            immutable index = getUDAs!(o, openmethods.mptr)[0].index;
           } else {
             immutable index = "deallocator";
           }
           auto meth =
-            format(`Method!("%s", "%s", %s, %s)`,
+            format(`openmethods.Method!("%s", "%s", %s, %s)`,
                    m,
                    index,
                    ReturnType!o.stringof,
@@ -1455,6 +1457,7 @@ string _registerMethods(alias MODULE)()
 
 mixin template _registerSpecs(alias MODULE)
 {
+  import openmethods;
   mixin template wrap(M, S)
   {
     // writefln("*** %s %s %s", MODULE.stringof, M.stringof, S.stringof);
