@@ -22,7 +22,7 @@ class DiagonalMatrix : Matrix
 }
 
 @method
-Matrix _plus(DiagonalMatrix a, DiagonalMatrix b)
+DiagonalMatrix _plus(DiagonalMatrix a, DiagonalMatrix b)
 {
   assert(a.elems.length == b.elems.length);
   auto result = new DiagonalMatrix;
@@ -32,15 +32,14 @@ Matrix _plus(DiagonalMatrix a, DiagonalMatrix b)
 }
 
 @method("times")
-Matrix doubleTimesDiagonal(double a, DiagonalMatrix b) {
+DiagonalMatrix doubleTimesDiagonal(double a, DiagonalMatrix b) {
   auto result = new DiagonalMatrix;
   result.elems.length = b.elems.length;
   result.elems[] = a * b.elems[];
   return result;
 }
 
-
 @method("times")
-Matrix DiagonalTimesDouble(DiagonalMatrix a, double b) {
+DiagonalMatrix DiagonalTimesDouble(DiagonalMatrix a, double b) {
   return doubleTimesDiagonal(b, a);
 }

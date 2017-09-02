@@ -26,7 +26,7 @@ class DenseMatrix : Matrix
 }
 
 @method
-Matrix _plus(DenseMatrix a, DenseMatrix b)
+DenseMatrix _plus(DenseMatrix a, DenseMatrix b)
 {
   const int nr = a.rows;
   const int nc = a.cols;
@@ -41,7 +41,7 @@ Matrix _plus(DenseMatrix a, DenseMatrix b)
 }
 
 @method
-Matrix _plus(Matrix m1, Matrix m2)
+DenseMatrix _plus(Matrix m1, Matrix m2)
 {
   const int nr = m1.rows;
   const int nc = m1.cols;
@@ -59,7 +59,7 @@ Matrix _plus(Matrix m1, Matrix m2)
 }
 
 @method("times")
-Matrix doubleTimesDense(double a, DenseMatrix b) {
+DenseMatrix doubleTimesDense(double a, DenseMatrix b) {
   auto result = new DenseMatrix;
   result.nr = b.nr;
   result.nc = b.nc;
@@ -69,6 +69,6 @@ Matrix doubleTimesDense(double a, DenseMatrix b) {
 }
 
 @method("times")
-Matrix denseTimesD(DenseMatrix a, double b) {
+DenseMatrix denseTimesD(DenseMatrix a, double b) {
   return doubleTimesDense(b, a);
 }
