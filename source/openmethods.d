@@ -87,13 +87,12 @@ void main()
 
 module openmethods;
 
-import std.traits;
+import std.algorithm;
+import std.bitmanip;
 import std.format;
 import std.meta;
-import std.algorithm;
-import std.algorithm.iteration;
 import std.range;
-import std.bitmanip;
+import std.traits;
 
 debug(explain) {
   import std.stdio;
@@ -302,18 +301,9 @@ setMethodErrorHandler(void function(MethodError error) handler)
 enum IsVirtual(T) = false;
 enum IsVirtual(T : virtual!U, U) = true;
 
-alias VirtualType(T : virtual!U, U) = U;
+private alias VirtualType(T : virtual!U, U) = U;
 
-// enum VirtualArity(QP...) = 1 + VirtualArity!(QP[1..$])
-//   if IsVirtual!(QP[0]);
-
-// enum VirtualArity(QP...) = VirtualArity!(QP[1..$])
-//   if !IsVirtual!(QP[0]);
-
-// enum VirtualArity(QP...) = 0
-//   if QP.length == 0;
-
-template VirtualArity(QP...)
+private template VirtualArity(QP...)
 {
   static if (QP.length == 0) {
     enum VirtualArity = 0;
@@ -324,7 +314,7 @@ template VirtualArity(QP...)
   }
 }
 
-template CallParams(T...)
+private template CallParams(T...)
 {
   static if (T.length == 0) {
     alias CallParams = AliasSeq!();
@@ -337,7 +327,7 @@ template CallParams(T...)
   }
 }
 
-template castArgs(T...)
+private template castArgs(T...)
 {
   import std.typecons : tuple;
   static if (T.length) {
@@ -369,15 +359,6 @@ template castArgs(T...)
       }
     }
   }
-}
-
-auto TypeIds(T...)()
-{
-  TypeInfo[] result;
-  foreach (A; T) {
-    result ~= typeid(A);
-  }
-  return result;
 }
 
 private immutable MptrInDeallocator = "deallocator";
@@ -1460,7 +1441,6 @@ mixin template _registerSpecs(alias MODULE)
   import openmethods;
   mixin template wrap(M, S)
   {
-    // writefln("*** %s %s %s", MODULE.stringof, M.stringof, S.stringof);
     static struct Register {
 
       static __gshared Runtime.SpecInfo si;
