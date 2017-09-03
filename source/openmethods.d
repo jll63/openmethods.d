@@ -16,7 +16,7 @@
 ---
 
 import openmethods; // import lib
-mixin(registerMethods); // once per module - don't forget!
+mixin(registerMethods); // mixin must be called after importing module
 
 interface  Animal {}
 class Dog : Animal {}
