@@ -89,6 +89,7 @@ module openmethods;
 
 import std.algorithm;
 import std.bitmanip;
+import std.datetime;
 import std.format;
 import std.meta;
 import std.range;
@@ -261,10 +262,10 @@ auto registerMethods(string moduleName = __MODULE__)
  Update the runtime dispatch tables. Must be called once before calling any method. Typically this is done at the beginning of `main`.
  +/
 
-void updateMethods()
+Runtime.Metrics updateMethods()
 {
   Runtime rt;
-  rt.update();
+  return rt.update();
 }
 
 bool needUpdateMethods()
@@ -702,6 +703,25 @@ struct Runtime
     Word* hashTable;
   }
 
+  struct Metrics
+  {
+    size_t methodTableSize, dispatchTableSize, hashTableSize;
+    ulong hashSearchAttempts;
+    typeof(StopWatch.peek()) hashSearchTime;
+
+    auto toString() const
+    {
+      string hashMetrics;
+
+      if (hashSearchAttempts) {
+        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.nsecs / 1000.);
+      }
+
+      return format("method table size: %s, dispatchTableSize: %s%s",
+                    methodTableSize, dispatchTableSize, hashMetrics);
+    }
+  }
+
   static __gshared Registry methodInfos;
   static __gshared Word[] gmtbl; // Global Method Table
   static __gshared Word[] gdtbl; // Global Dispatch Table
@@ -715,6 +735,33 @@ struct Runtime
   Class*[ClassInfo] classMap;
   Class*[] classes;
   Word*[Class*] mtbls;
+  Metrics metrics;
+
+  Metrics update()
+  {
+    seed();
+
+    debug(explain) {
+      writefln("Scooping...");
+    }
+
+	foreach (mod; ModuleInfo) {
+      foreach (c; mod.localClasses) {
+        scoop(c);
+      }
+	}
+
+    initClasses();
+    layer();
+    calculateInheritanceRelationships();
+    checkDeallocatorConflicts();
+    allocateSlots();
+    buildTables();
+
+    needUpdate = false;
+
+    return metrics;
+  }
 
   void seed()
   {
@@ -892,6 +939,7 @@ struct Runtime
 
           mp.method.slots[mp.param] = slot;
 
+
           if (c.firstUsedSlot == -1) {
             c.firstUsedSlot = slot;
           }
@@ -917,6 +965,8 @@ struct Runtime
     auto gmtblLength =
       classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
       + methods.map!(m => m.vp.length).sum;
+
+    metrics.methodTableSize = gmtblLength;
 
     if (methodsUsingHash) {
       findHash();
@@ -1146,12 +1196,12 @@ struct Runtime
 	}
 
     auto N = vptrs.length;
+    StopWatch sw;
+    sw.start();
 
     debug(explain) {
       writefln("  finding hash factor for %s vptrs", N);
       import std.datetime;
-      StopWatch sw;
-      sw.start();
     }
 
     int M;
@@ -1192,10 +1242,14 @@ struct Runtime
         }
       }
 
+      metrics.hashSearchAttempts = totalAttempts;
+      metrics.hashSearchTime = sw.peek();
+      metrics.hashTableSize = hashSize;
+
       if (found) {
         debug(explain) {
           writefln("  found %s after %s attempts and %s msecs",
-                   hashMult, totalAttempts, sw.peek().msecs);
+                   hashMult, totalAttempts, metrics.hashSearchTime.msecs);
         }
         return;
       }
@@ -1311,8 +1365,9 @@ struct Runtime
 
     auto gdtblLength  = methods.filter!(m => m.vp.length > 1).map!
       (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
-
     gdtbl.length = gdtblLength;
+    metrics.dispatchTableSize = gdtblLength;
+
     Word* mp = gdtbl.ptr;
 
     debug(explain) {
@@ -1380,30 +1435,6 @@ struct Runtime
     auto candidates =
       best(specs.filter!(other => isMoreSpecific(spec, other)).array);
     return candidates.length == 1 ? candidates.front : null;
-  }
-
-  void update()
-  {
-    seed();
-
-    debug(explain) {
-      writefln("Scooping...");
-    }
-
-	foreach (mod; ModuleInfo) {
-      foreach (c; mod.localClasses) {
-        scoop(c);
-      }
-	}
-
-    initClasses();
-    layer();
-    calculateInheritanceRelationships();
-    checkDeallocatorConflicts();
-    allocateSlots();
-    buildTables();
-
-    needUpdate = false;
   }
 
   version (unittest) {
