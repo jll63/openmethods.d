@@ -123,11 +123,10 @@ debug(traceCalls) {
  Examples:
  ---
  Matrix times(double, virtual!Matrix);
- string fight(virtual!Character, virtual!Creature, virtual!Device);
-
  Matrix a = new DiagonalMatrix(...);
  auto result = times(2, a);
 
+ string fight(virtual!Character, virtual!Creature, virtual!Device);
  fight(player, room.guardian, bag[item]);
  ---
  +/
@@ -137,7 +136,36 @@ class virtual(T)
 }
 
 /++
- Used as an attribute: add an override to a method.
+ Attribute: Set the policy for storing and retrieving the method pointer (mptr).
+
+ Each class involved in method dispatch (either because it occurs as a virtual
+ parameter, or is derived from a class or an interface that occurs as a virtual
+ parameter) has an associated mptr. The first step of method dispatch consists
+ in retrieving the mptr for each virtual argument.
+
+ Two policies are supported: "deallocator": store the mptr in the deprecated
+ `deallocator` field of ClassInfo. This is the default, and delivers the best
+ performance. $(NOTE:) This policy is incompatible with classes that implement
+ `operator delete`.
+
+ "hash": store the mptr in a hash table. The mptr is obtained by
+ applying a perfect hash function to the class' vptr. This policy is only
+ slightly slower than the deallocator policy.
+
+ Example:
+ ---
+ @mptr("hash")
+ string fight(virtual!Character, virtual!Creature, virtual!Device);
+ ---
+ +/
+
+struct mptr
+{
+  string index;
+}
+
+/++
+ Attribute: Add an override to a method.
 
  If called without argument, the function name must consist in a method name,
  prefixed with an underscore. The function is added to the method as a
@@ -1399,11 +1427,6 @@ unittest
   static assert(hasVirtualParameters!meth);
   void nonmeth(Object);
   static assert(!hasVirtualParameters!nonmeth);
-}
-
-struct mptr
-{
-  string index;
 }
 
 string _registerMethods(alias MODULE)()
