@@ -1,0 +1,1950 @@
+614
+Artificial_Root 0
+
+Iostream_init 1
+0 
+ManagedWindowRep 1
+0 
+ManagedWindowHintInfo 1
+0 
+WindowVisual 1
+0 
+WindowVisualInfo 1
+0 
+WindowOverlayInfo 1
+0 
+SelectionManagerRep 1
+0 
+RasterRep 1
+0 
+PatternRep 1
+0 
+PainterRep 1
+0 
+FontFamilyRep 1
+0 
+EventRep 1
+0 
+XDrag 1
+0 
+DisplayRep 1
+0 
+ColorRep 1
+0 
+CanvasRep 1
+0 
+PathRenderInfo 1
+0 
+TextRenderInfo 1
+0 
+CanvasDamage 1
+0 
+BrushRep 1
+0 
+BitmapRep 1
+0 
+RpcWriter 1
+0 
+RpcRegistry 1
+0 
+RpcHdr 1
+0 
+PFile 1
+0 
+Memory 1
+0 
+Math 1
+0 
+Host 1
+0 
+Dispatcher 1
+0 
+Directory 1
+0 
+Cache 1
+0 
+World 1
+0 
+TGlue 1
+0 
+TextDisplay 1
+0 
+TextBuffer 1
+0 
+Shape 1
+0 
+UPage 1
+0 
+Unidraw 1
+0 
+UArray 1
+0 
+TIFFRaster 1
+0 
+TIFFRasterImpl 1
+0 
+BreakSet 1
+0 
+SMFKitImpl 1
+0 
+SliderImpl 1
+0 
+Session 1
+0 
+OptionDesc 1
+0 
+PropertyData 1
+0 
+TBScrollBoxInfo 1
+0 
+ReqErr 1
+0 
+Regexp2 1
+0 
+regexp 1
+0 
+PSFontImpl 1
+0 
+PrinterRep 1
+0 
+PrinterInfo 1
+0 
+Path 1
+0 
+PageInfo 1
+0 
+OL_SubMenuSpecs 1
+0 
+OL_ButtonMenuSpecs 1
+0 
+OL_GaugeSpecs 1
+0 
+OL_TickSpecs 1
+0 
+OL_SliderSpecs 1
+0 
+OL_MenuMarkSpecs 1
+0 
+OL_MenuButtonSpecs 1
+0 
+OL_CheckboxSpecs 1
+0 
+OL_SettingSpecs 1
+0 
+OL_ButtonSpecs 1
+0 
+OL_ScrollbarSpecs 1
+0 
+MonoKitImpl 1
+0 
+MFKitImpl 1
+0 
+MFDialogKitImpl 1
+0 
+LayoutKit 1
+0 
+LayoutKitImpl 1
+0 
+KeyMap 1
+0 
+Iterator 1
+0 
+Hit 1
+0 
+HitImpl 1
+0 
+HitTargetAreaList 1
+0 
+HitTargetArea 1
+0 
+HitStack 1
+0 
+PossibleHitTarget 1
+0 
+HitList 1
+0 
+HitTargetList 1
+0 
+HitTarget 1
+0 
+GVUpdater 1
+0 
+Grid 1
+0 
+Extent 1
+0 
+CoordinateSpace 1
+0 
+FontBoundingBox 1
+0 
+FontFamily 1
+0 
+FieldEditorImpl 1
+0 
+FileChooserImpl 1
+0 
+FileBrowserImpl 1
+0 
+FileBrowserKeyInfo 1
+0 
+Event 1
+0 
+Display 1
+0 
+Damage 1
+0 
+Cursor 1
+0 
+ControlInfo 1
+0 
+CSolverState 1
+0 
+CSolver 1
+0 
+CSolverInfo 1
+0 
+ConnInfo 1
+0 
+PeerInfo 1
+0 
+CUpdater 1
+0 
+CSGlue 1
+0 
+Creator 1
+0 
+CompositionComponent 1
+0 
+Clipboard 1
+0 
+ChoiceItem 1
+0 
+CGlue 1
+0 
+Catalog 1
+0 
+BoxImpl 1
+0 
+AllocationTable 1
+0 
+AllocationInfo 1
+0 
+AggregateInfo 1
+0 
+AdjustableImpl 1
+0 
+AdjustableInfo 1
+0 
+Resource 1
+0 
+FontRep 1
+118 
+CursorRep 1
+0 
+CursorRepXFont 1
+120 
+CursorRepFont 1
+120 
+CursorRepBitmap 1
+120 
+CursorRepData 1
+120 
+String 1
+0 
+UniqueString 1
+125 
+NullTerminatedString 1
+125 
+CopyString 1
+125 
+IOHandler 1
+0 
+RpcService 1
+129 
+RpcReader 1
+129 
+RpcPeer 1
+129 
+Ref 1
+0 
+RefList 1
+133 
+Persistent 1
+0 
+PFont 1
+135 
+PBrush 1
+135 
+PPattern 1
+135 
+PColor 1
+135 
+ObjectMan 1
+135 
+HashTable 1
+0 
+GraphicToPainter 1
+141 
+Sensor 1
+118 
+Perspective 1
+118 
+Painter 1
+118 
+Window 1
+0 
+InteractorWindow 1
+146 
+PopupWindow 1
+146 
+Command 1
+0 
+CloseEditorCmd 1
+149 
+OrientationCmd 1
+149 
+GravityCmd 1
+149 
+GridSpacingCmd 1
+149 
+GridCmd 1
+149 
+CenterCmd 1
+149 
+RedToFitCmd 1
+149 
+NormSizeCmd 1
+149 
+DirtyCmd 1
+149 
+UMap 1
+0 
+HistoryMap 1
+159 
+UMapElem 1
+0 
+History 1
+161 
+RotateCmd 1
+149 
+ScaleCmd 1
+149 
+MoveCmd 1
+149 
+Transformer 1
+118 
+Layout 1
+0 
+TileReversedFirstAligned 1
+167 
+TileFirstAligned 1
+167 
+TileReversed 1
+167 
+Tile 1
+167 
+Compositor 1
+0 
+TeXCompositor 1
+172 
+Superpose 1
+167 
+Style 1
+118 
+ValueString 1
+125 
+BackCmd 1
+149 
+FrontCmd 1
+149 
+UngroupCmd 1
+149 
+GroupCmd 1
+149 
+StateVar 1
+0 
+ColorVar 1
+181 
+PatternVar 1
+181 
+BrushVar 1
+181 
+FontVar 1
+181 
+GravityVar 1
+181 
+MagnifVar 1
+181 
+ModifStatusVar 1
+181 
+WidgetKit 1
+0 
+SMFKit 1
+189 
+SMFKitInfo 1
+118 
+SimpleCompositor 1
+172 
+SessionIOHandler 1
+129 
+SelectionHandler 1
+118 
+SelectionManager 1
+118 
+Raster 1
+118 
+Canvas 1
+0 
+Printer 1
+197 
+MarginLayout 1
+167 
+NaturalLayout 1
+167 
+VariableLayout 1
+167 
+FixedLayout 1
+167 
+CenterLayout 1
+167 
+PatternCmd 1
+149 
+OLKit 1
+189 
+OL_Specs 1
+118 
+DialogKit 1
+0 
+OLDialogKit 1
+207 
+NOPCmd 1
+149 
+MonoKit 1
+189 
+MonoKitInfo 1
+118 
+MFKit 1
+189 
+MFKitInfo 1
+118 
+MFDialogKit 1
+207 
+Manipulator 1
+0 
+TextManip 1
+215 
+ManipGroup 1
+215 
+UList 1
+0 
+ManipList 1
+218 
+ImportCmd 1
+149 
+UHashTable 1
+0 
+GVU_HashTable 1
+221 
+UHashElem 1
+0 
+GVU_HashElem 1
+223 
+BoxObj 1
+135 
+LineObj 1
+135 
+PointObj 1
+135 
+FieldEditorAction 1
+118 
+FileChooserAction 1
+118 
+EditorInfo 1
+159 
+StringStringElem 1
+161 
+MobilityCmd 1
+149 
+ConnectCmd 1
+149 
+SlctAllCmd 1
+149 
+DeleteCmd 1
+149 
+DupCmd 1
+149 
+PasteCmd 1
+149 
+CopyCmd 1
+149 
+CutCmd 1
+149 
+RedoCmd 1
+149 
+UndoCmd 1
+149 
+CU_HashElem 1
+223 
+CCnxn_HashElem 1
+223 
+CCnxn 1
+0 
+VCnxn 1
+244 
+HCnxn 1
+244 
+DataCache 1
+221 
+DataElem 1
+223 
+ColorCmd 1
+149 
+QuitCmd 1
+149 
+PrintCmd 1
+149 
+SaveCompAsCmd 1
+149 
+SaveCompCmd 1
+149 
+ViewCompCmd 1
+149 
+RevertCmd 1
+149 
+NewCompCmd 1
+149 
+ObjectMap 1
+159 
+ObjectMapElem 1
+223 
+VoidIntElem 1
+161 
+NameMap 1
+159 
+NameMapElem 1
+161 
+BrushCmd 1
+149 
+Bitmap 1
+118 
+ArrayCompositor 1
+172 
+Align 1
+167 
+File 1
+0 
+InputFile 1
+266 
+StdInput 1
+267 
+Rubberband 1
+118 
+RotatingRect 1
+269 
+RubberGroup 1
+269 
+Handler 1
+118 
+InteractorHandler 1
+272 
+Subject 1
+118 
+ControlState 1
+274 
+ManagedWindow 1
+146 
+IconWindow 1
+276 
+ApplicationWindow 1
+276 
+ComponentView 1
+0 
+GraphicView 1
+279 
+ViewerView 1
+280 
+Graphic 1
+135 
+Vertices 1
+282 
+UStencil 1
+282 
+PageGraphic 1
+282 
+TransferFunct 1
+0 
+TF_2Port 1
+286 
+TF_Direct 1
+287 
+TextView 1
+280 
+Component 1
+0 
+GraphicComp 1
+290 
+TextComp 1
+291 
+Observable 1
+0 
+TelltaleState 2
+118 293 
+StencilView 1
+280 
+StencilComp 1
+291 
+Stencil 1
+282 
+NameVar 1
+181 
+CompNameVar 1
+298 
+SlotGraphic 1
+282 
+RectView 1
+280 
+RectComp 1
+291 
+RasterRect 1
+282 
+RasterView 1
+280 
+RasterComp 1
+291 
+Pattern 1
+118 
+PSPattern 1
+306 
+Font 1
+118 
+PSFont2 1
+308 
+Color 1
+118 
+PSColor 1
+310 
+Brush 1
+118 
+PSBrush 1
+312 
+PSFont 1
+308 
+FixedPin 1
+269 
+PinGraphic 1
+282 
+Glyph 1
+118 
+Page 1
+317 
+PadGraphic 1
+282 
+OL_Anchor 1
+317 
+OL_AbbrevMenuButton 1
+317 
+DragManip 1
+215 
+ConnectManip 1
+322 
+VertexManip 1
+322 
+LinkView 1
+280 
+LinkComp 1
+291 
+Line 1
+282 
+Point 1
+282 
+LineView 1
+280 
+LineComp 1
+291 
+VStrut 1
+317 
+HStrut 1
+317 
+Strut 1
+317 
+Space 1
+317 
+ShapeOf 1
+317 
+Discretionary 1
+317 
+Label 1
+282 
+WidgetKitOverlay 1
+317 
+Image 1
+317 
+GraphicViews 1
+280 
+Group 1
+317 
+GridGraphic 1
+282 
+GraphicComps 1
+291 
+Data 1
+118 
+UngroupData 1
+344 
+MultiLineObj 1
+135 
+FillPolygonObj 1
+346 
+ExternView 1
+279 
+PostorderView 1
+348 
+InorderView 1
+348 
+EllipseView 1
+280 
+EllipseComp 1
+291 
+MacroCmd 1
+149 
+ReplaceCmd 1
+353 
+MobilityData 1
+344 
+GSData 1
+344 
+ColorData 1
+344 
+MoveData 1
+344 
+VoidData 1
+344 
+CS_HashTable 1
+221 
+CU_HashTable 1
+360 
+CCnxn_HashTable 1
+360 
+CNet 1
+218 
+VNet 1
+363 
+HNet 1
+363 
+_CSData 1
+344 
+Character 1
+317 
+Aggregate 1
+317 
+Action 1
+118 
+Macro 1
+369 
+FullGraphic 1
+282 
+Instance 1
+371 
+Interactor 1
+317 
+TextEditor 1
+373 
+GrowingVertices 1
+269 
+GrowingClosedBSpline 1
+375 
+GrowingBSpline 1
+375 
+GrowingPolygon 1
+375 
+GrowingMultiLine 1
+375 
+RubberRect 1
+269 
+ScalingRect 1
+380 
+StretchingRect 1
+380 
+SlidingRect 1
+380 
+RubberSquare 1
+380 
+RubberLine 1
+269 
+RotatingLine 1
+385 
+ScalingLine 1
+385 
+SlidingLine 1
+385 
+RubberAxis 1
+385 
+RubberPointList 1
+269 
+RotatingLineList 1
+390 
+ScalingLineList 1
+390 
+RubberEllipse 1
+269 
+RubberCircle 1
+393 
+Slider2 1
+373 
+Message 1
+373 
+Banner 1
+373 
+MonoGlyph 1
+317 
+XYMarker 1
+398 
+TopLevelWindow 1
+276 
+TransientWindow 1
+400 
+ULabel 1
+282 
+TextGraphic 1
+402 
+Target 1
+398 
+PatternInteractor 1
+373 
+BrushInteractor 1
+373 
+TextInteractor 1
+373 
+VerticesView 1
+280 
+ClosedSplineView 1
+408 
+VerticesComp 1
+291 
+ClosedSplineComp 1
+410 
+SplineView 1
+408 
+SplineComp 1
+410 
+SMFKitGlyph 1
+317 
+SMFKitThumb 1
+414 
+SMFKitDefaultArrow 1
+414 
+SMFKitIndicator 1
+414 
+SMFKitCheckmark 1
+414 
+Shadow 1
+398 
+Rule 1
+317 
+VRule 1
+420 
+HRule 1
+420 
+Rect 1
+282 
+FillRect 1
+423 
+PolygonView 1
+408 
+PolygonComp 1
+410 
+Placement 1
+398 
+ConnectorView 1
+280 
+PinView 1
+428 
+Connector 1
+291 
+PinComp 1
+430 
+Patch 1
+398 
+PadView 1
+428 
+PadComp 1
+430 
+MonoKitForeground 1
+398 
+MonoKitMenuItem 1
+398 
+MFKitForeground 1
+398 
+MFKitMenuItem 1
+398 
+LRMarker 1
+398 
+MultiLineView 1
+408 
+MultiLineComp 1
+410 
+LayoutLayer 1
+398 
+GLContext 1
+398 
+ButtonState 1
+274 
+FieldButton 1
+444 
+Ellipse 1
+282 
+Circle 1
+446 
+Drag 1
+398 
+PrintBS 1
+444 
+DebugGlyph 1
+398 
+Border 1
+398 
+Background 1
+398 
+_ios_fields 1
+0 
+ios 1
+453 
+ostream 1
+454 
+istream 1
+454 
+iostream 2
+456 455 
+Scene 1
+373 
+Tray 1
+458 
+Scroller 1
+373 
+VScroller 1
+460 
+HScroller 1
+460 
+SlidingPointList 1
+390 
+SlidingLineList 1
+463 
+RubberVertex 1
+390 
+RubberClosedSpline 1
+465 
+RubberSpline 1
+465 
+RubberHandles 1
+465 
+StringEditor 1
+373 
+MatchEditor 1
+469 
+StringBrowser 1
+373 
+FileBrowser2 1
+471 
+CompletionEditor 1
+469 
+GraphicBlock 1
+373 
+Viewer 1
+474 
+Picture 1
+371 
+ViewerGraphic 1
+476 
+UControlInteractor 1
+373 
+PanelInteractor 1
+478 
+CommandInteractor 1
+478 
+TransformSetter 1
+398 
+TransformFitter 1
+481 
+PreorderView 1
+348 
+PostScriptView 1
+483 
+PSText 1
+484 
+Button 1
+373 
+Stepper 1
+486 
+PSStencil 1
+484 
+SMFKitRadioFlag 1
+414 
+SMFKitRadioItem 1
+489 
+PSSlot 1
+484 
+SlotView 1
+428 
+VSlotView 1
+492 
+SlotComp 1
+430 
+VSlotComp 1
+494 
+HSlotView 1
+492 
+HSlotComp 1
+494 
+PSRect 1
+484 
+PSRaster 1
+484 
+PostScriptViews 1
+484 
+MultiLine 1
+282 
+Polygon 1
+501 
+FillPolygon 1
+502 
+SlidingEllipse 1
+393 
+SlidingPin 1
+504 
+PSPin 1
+484 
+PSPad 1
+484 
+Observer 1
+0 
+OL_Button 2
+398 508 
+PSLink 1
+484 
+PSLine 1
+484 
+Glue 1
+373 
+VGlue 1
+512 
+HGlue 1
+512 
+FieldStringEditor 1
+469 
+FillEllipse 1
+446 
+FillCircle 1
+516 
+PSEllipse 1
+484 
+InputHandler 1
+398 
+Editor 1
+519 
+DragZone 1
+398 
+DragZoneSink 1
+521 
+Deck 1
+458 
+Composition 1
+398 
+TBComposition 1
+524 
+LRComposition 1
+524 
+Telltale 2
+398 508 
+BevelFrame 1
+398 
+Bevel 1
+528 
+MonoScene 1
+458 
+Viewport 1
+530 
+Panner 1
+530 
+Adjuster 1
+373 
+Mover 1
+533 
+DownMover 1
+534 
+UpMover 1
+534 
+RightMover 1
+534 
+LeftMover 1
+534 
+Zoomer 1
+533 
+Reducer 1
+539 
+Enlarger 1
+539 
+BSpline 1
+501 
+ClosedBSpline 1
+542 
+FillBSpline 1
+543 
+PSVertices 1
+484 
+PSClosedSpline 1
+545 
+PSSpline 1
+545 
+Adjustable 1
+0 
+PolyGlyph 1
+317 
+ScrollBox 2
+549 548 
+TBScrollBox 1
+550 
+PSPolygon 1
+545 
+FieldEditor 1
+519 
+OL_FieldEditor 1
+553 
+PSMultiLine 1
+545 
+Dialog 1
+519 
+FileChooser 1
+556 
+TextButton 1
+486 
+CheckBox 1
+558 
+RadioButton 1
+558 
+PushButton 1
+558 
+Box 1
+458 
+VBox 1
+562 
+ScrollBar 1
+530 
+VScrollBar 1
+564 
+HScrollBar 1
+564 
+Frame 1
+530 
+MarginFrame 1
+567 
+ShadowFrame 1
+567 
+StringChooser 1
+556 
+FileChooser2 1
+570 
+StateVarView 1
+530 
+PatternVarView 1
+572 
+BrushVarView 1
+572 
+FontVarView 1
+572 
+GravityVarView 1
+572 
+MagnifVarView 1
+572 
+ModifStatusVarView 1
+572 
+CompNameVarView 1
+572 
+FileNameVarView 1
+572 
+NameVarView 1
+572 
+SMFKitFrame 1
+528 
+SMFKitButtonFrame 1
+582 
+SMFKitMenuItemFrame 1
+583 
+SMFKitPushButtonFrame 1
+583 
+HBox 1
+562 
+MenuBar 1
+586 
+Control 1
+530 
+MenuItem 1
+588 
+Browser 2
+519 508 
+FileBrowser 1
+590 
+ShowFrame 1
+567 
+BorderFrame 1
+592 
+TitleFrame 1
+592 
+UControl 1
+588 
+CommandControl 1
+595 
+ActiveHandler 1
+519 
+Slider 2
+597 508 
+XYSlider 1
+598 
+YSlider 1
+598 
+XSlider 1
+598 
+Menu 1
+588 
+PopupMenu 1
+602 
+PullrightMenu 1
+602 
+PulldownMenu 1
+602 
+iosb 1
+454 
+ostreamb 2
+606 455 
+istreamb 2
+606 456 
+iostreamb 2
+608 607 
+rpcstream 1
+609 
+PanelControl 1
+595 
+VPanelControl 1
+611 
+HPanelControl 1
+611 
+360
+execute 3
+369 370 229 
+append 7
+370 368 524 398 318 549 175 
+count 8
+370 368 524 75 398 318 549 30 
+insert 6
+370 368 524 398 318 549 
+prepend 6
+370 368 524 398 318 549 
+remove 8
+370 368 524 75 398 318 549 175 
+attach 2
+548 293 
+cur_length 2
+548 551 
+cur_lower 2
+548 551 
+cur_upper 2
+548 551 
+detach 2
+548 293 
+length 4
+548 551 266 268 
+lower 3
+548 551 146 
+notify 2
+548 293 
+page_backward 2
+548 551 
+page_forward 2
+548 551 
+scroll_backward 2
+548 551 
+scroll_forward 2
+548 551 
+scroll_to 2
+548 551 
+upper 2
+548 551 
+allocate 45
+368 265 113 452 528 451 367 524 448 521 341 339 519 338 442 334 333 167 439 398 554 321 320 318 432 427 203 202 201 200 199 420 551 419 598 414 174 481 171 170 169 168 399 373 395 
+allotment 5
+368 524 398 318 551 
+change 5
+368 524 398 318 549 
+component 5
+368 524 398 318 549 
+draw 64
+368 452 528 451 367 522 446 516 443 342 339 519 338 337 442 334 328 327 439 438 437 398 436 435 554 321 320 319 318 432 476 316 427 423 424 502 503 303 420 551 419 598 300 582 418 417 489 490 416 415 542 543 544 297 403 481 402 285 284 399 373 395 282 372 
+pick 24
+368 528 367 524 448 521 522 515 519 338 442 334 438 398 436 554 318 427 551 419 583 404 481 373 
+print 11
+368 452 528 451 515 442 398 318 427 419 481 
+replace 5
+368 524 398 318 549 
+request 41
+265 528 367 341 339 338 336 335 334 333 332 331 167 398 554 321 320 318 427 203 202 201 200 199 420 551 419 598 585 418 417 489 416 174 481 171 170 169 168 373 395 
+flush 6
+113 263 95 198 196 32 
+compose 5
+264 172 336 192 173 
+draw_frame 5
+528 529 582 583 584 
+ascent 2
+263 196 
+descent 2
+263 196 
+height 6
+263 197 95 196 146 32 
+left_bearing 2
+263 196 
+peek 2
+263 196 
+pheight 5
+263 197 95 196 32 
+poke 2
+263 196 
+pwidth 5
+263 197 95 196 32 
+right_bearing 2
+263 196 
+width 10
+263 312 197 95 308 314 309 196 146 32 
+ComputeShape 3
+562 586 563 
+DoChange 5
+562 523 458 530 459 
+DoInsert 5
+562 523 458 530 459 
+DoRemove 5
+562 523 458 530 459 
+Draw 27
+562 523 474 505 315 598 475 373 395 269 393 394 468 467 466 463 464 392 391 271 385 380 270 375 530 459 282 
+GetActual 3
+562 586 563 
+GetCanonical 3
+562 586 563 
+GetComponents 5
+562 523 373 530 459 
+PlaceElement 3
+562 586 563 
+Reconfig 36
+562 558 561 560 559 523 515 474 602 598 572 407 406 405 578 480 479 475 533 397 567 568 373 396 532 395 530 566 565 462 461 471 469 374 459 531 
+Resize 19
+562 523 474 598 480 479 475 397 567 568 373 395 530 460 471 469 374 459 531 
+cancel 2
+590 228 
+double_click 2
+590 519 
+drag 8
+590 591 553 519 597 598 472 395 
+press 8
+590 591 553 519 598 487 472 395 
+release 8
+590 591 553 519 598 487 472 395 
+select 4
+590 591 553 472 
+selected 3
+590 557 571 
+state 2
+590 527 
+update 5
+590 109 508 598 395 
+Copy 107
+262 111 256 255 254 253 252 251 250 108 249 149 290 244 246 245 98 241 240 239 238 237 354 236 235 234 233 232 352 446 516 447 517 343 342 220 337 330 441 328 327 501 326 353 209 434 319 204 476 431 316 426 423 424 502 503 305 303 302 300 497 495 413 411 542 543 544 181 298 299 188 187 186 185 184 183 182 297 296 180 179 178 177 292 403 286 288 165 164 163 402 158 285 284 283 157 156 155 154 153 152 151 150 145 282 371 372 
+Execute 36
+262 256 255 254 253 252 251 250 249 149 241 240 239 238 237 236 235 234 233 220 353 209 204 180 179 178 177 158 157 156 155 154 153 152 151 150 
+GetClassId 149
+262 256 255 254 253 252 251 250 249 149 290 279 430 428 241 240 239 238 237 354 236 235 234 233 232 352 351 518 446 516 447 517 348 483 350 349 227 226 225 346 347 291 343 280 340 220 337 330 329 511 441 440 555 328 327 501 326 325 510 353 209 434 433 507 204 476 431 429 506 426 425 552 423 424 502 503 484 500 305 304 499 303 302 301 498 494 492 497 496 495 493 491 413 412 547 411 409 546 542 543 544 181 298 299 188 187 186 185 184 183 182 297 296 295 488 180 179 178 177 292 289 485 286 287 288 165 164 163 158 410 408 545 157 156 155 154 153 152 151 150 282 371 372 140 135 139 138 137 136 
+IsA 149
+262 256 255 254 253 252 251 250 249 149 290 279 430 428 241 240 239 238 237 354 236 235 234 233 232 352 351 518 446 516 447 517 348 483 350 349 227 226 225 346 347 291 343 280 340 220 337 330 329 511 441 440 555 328 327 501 326 325 510 353 209 434 433 507 204 476 431 429 506 426 425 552 423 424 502 503 484 500 305 304 499 303 302 301 498 494 492 497 496 495 493 491 413 412 547 411 409 546 542 543 544 181 298 299 188 187 186 185 184 183 182 297 296 295 488 180 179 178 177 292 289 485 286 287 288 165 164 163 158 410 408 545 157 156 155 154 153 152 151 150 282 371 372 140 135 139 138 137 136 
+Read 41
+262 256 249 149 290 430 233 232 352 343 330 441 326 353 434 204 431 426 305 302 494 413 411 181 298 299 188 187 186 185 184 183 182 296 180 292 286 288 165 164 163 
+Write 41
+262 256 249 149 290 430 233 232 352 343 330 441 326 353 434 204 431 426 305 302 494 413 411 181 298 299 188 187 186 185 184 183 182 296 180 292 286 288 165 164 163 
+Handle 13
+486 598 475 533 588 592 373 395 462 461 471 570 469 
+Press 2
+486 559 
+Refresh 4
+486 561 560 559 
+Update 37
+486 559 290 279 520 351 591 557 474 340 84 329 326 325 433 429 500 304 301 598 492 572 295 289 38 408 281 475 397 472 571 373 395 392 391 462 461 
+Redraw 27
+561 560 559 512 474 598 407 406 405 478 475 533 397 567 593 569 568 373 396 395 269 462 461 471 469 374 531 
+character 2
+197 198 
+clip 2
+197 198 
+close_path 2
+197 198 
+curve_to 2
+197 198 
+damage 2
+197 524 
+fill 2
+197 198 
+image 2
+197 198 
+line_to 2
+197 198 
+move_to 7
+197 198 598 601 600 599 395 
+new_path 2
+197 198 
+pop_clipping 2
+197 198 
+pop_transform 3
+197 75 198 
+push_clipping 2
+197 198 
+push_transform 3
+197 75 198 
+redraw 3
+197 519 432 
+repair 4
+197 524 95 146 
+size 4
+197 308 314 309 
+stencil 2
+197 198 
+stroke 2
+197 198 
+to_coord 2
+197 198 
+to_pixels 2
+197 198 
+to_pixels_coord 2
+197 198 
+transform 6
+197 75 198 481 482 166 
+transformer 3
+197 519 481 
+id 5
+261 259 231 161 162 
+tag 5
+261 259 231 161 162 
+FindTag 3
+260 230 159 
+GetName 2
+111 298 
+Save 2
+111 135 
+Reversible 26
+256 255 254 253 252 251 250 149 241 240 238 237 234 233 220 353 209 180 157 156 155 154 153 152 151 150 
+disconnect 6
+527 508 45 601 600 599 
+Done 13
+149 290 279 343 340 326 325 353 217 589 500 596 588 
+First 10
+149 290 279 343 340 326 325 353 217 500 
+GetEditor 2
+149 475 
+GetSubstId 4
+149 290 181 286 
+Last 10
+149 290 279 343 340 326 325 353 217 500 
+Next 10
+149 290 279 343 340 326 325 353 217 500 
+Prev 10
+149 290 279 343 340 326 325 353 217 500 
+SetControlInfo 3
+149 595 478 
+SetEditor 2
+149 353 
+Unexecute 12
+149 239 237 236 235 233 353 180 179 178 177 158 
+Attach 3
+290 181 274 
+Detach 3
+290 181 274 
+GetParent 4
+290 279 291 280 
+GetState 2
+290 520 
+Interpret 21
+290 279 430 351 291 343 280 340 330 329 326 434 433 431 429 301 494 492 292 289 408 
+Notify 5
+290 449 445 181 274 
+SetParent 2
+290 279 
+Uninterpret 11
+290 279 430 291 343 280 326 434 431 494 292 
+make 3
+524 526 525 
+margin 2
+524 71 
+SetSubject 2
+279 572 
+Connect 5
+430 434 431 497 495 
+GetCenter 5
+430 244 246 245 282 
+CreateCnxn 3
+363 365 364 
+CreateNetwork 3
+363 365 364 
+Register 2
+360 221 
+CreateElem 3
+362 361 221 
+Adjust 7
+523 474 475 373 471 374 531 
+dismiss 3
+556 557 571 
+run 3
+556 45 32 
+make_field_editor 3
+207 214 208 
+make_file_chooser 3
+207 214 208 
+close 3
+95 30 266 
+style 5
+95 519 189 146 32 
+sync 2
+95 32 
+drop 2
+521 522 
+enter 2
+521 597 
+leave 2
+521 597 
+event 4
+522 272 75 273 
+Close 4
+520 602 38 588 
+GetComponent 3
+520 299 188 
+GetSelection 2
+520 475 
+GetViewer 7
+520 280 215 217 322 216 281 
+Open 4
+520 602 38 588 
+SetComponent 3
+520 299 188 
+SetViewer 5
+520 215 217 322 216 
+keystroke 5
+520 591 553 519 472 
+FindId 2
+230 159 
+CreateManipulator 13
+351 280 329 440 325 433 429 425 301 492 412 409 289 
+GetGraphic 17
+351 291 85 280 340 329 325 433 429 304 301 492 295 289 37 408 475 
+InterpretManipulator 13
+351 280 329 440 325 433 429 425 301 492 412 409 289 
+Definition 16
+518 348 483 350 349 511 510 507 506 500 499 498 491 488 485 545 
+GetBrush 13
+446 342 328 327 501 319 316 423 300 184 285 282 371 
+GetPattern 8
+446 501 423 183 402 284 282 371 
+SetBrush 17
+446 516 342 328 327 501 319 316 423 424 503 300 544 184 285 282 371 
+SetPattern 6
+446 501 423 183 282 371 
+br 7
+446 516 501 423 424 503 544 
+contains 21
+446 516 337 328 327 501 476 423 424 502 503 303 542 543 544 297 403 402 284 282 372 
+getExtent 23
+446 516 342 337 328 327 501 319 476 316 423 424 503 303 300 544 297 403 402 285 284 282 372 
+intersects 21
+446 516 337 328 327 501 476 423 424 502 503 303 542 543 544 297 403 402 284 282 372 
+pat 7
+446 516 501 423 424 503 544 
+read 26
+446 227 226 225 346 337 328 327 501 476 423 303 45 297 32 282 371 267 268 372 140 135 139 138 137 136 
+write 22
+446 227 226 225 346 337 328 327 501 476 423 303 297 282 371 372 140 135 139 138 137 136 
+Emit 3
+348 484 500 
+GetView 5
+348 280 340 325 500 
+SetView 5
+348 280 340 325 500 
+Acceptable 2
+591 472 
+adjustable 2
+591 472 
+focus_in 4
+591 553 519 472 
+focus_out 4
+591 553 519 472 
+refresh 2
+591 472 
+~FileBrowser 2
+591 472 
+Accept 3
+557 571 570 
+UpdateBrowser 3
+557 571 570 
+UpdateEditor 3
+557 571 570 
+reread 2
+557 571 
+~FileChooser 2
+557 571 
+undraw 13
+553 519 597 442 439 398 318 432 549 551 598 399 395 
+font 3
+89 189 32 
+cleanup 2
+308 118 
+encoding 3
+308 314 309 
+index 3
+308 75 30 
+name 7
+308 314 309 175 32 30 266 
+GetGraphicBox 2
+474 475 
+Highlight 6
+474 478 533 373 396 458 
+Invert 2
+474 478 
+LimitMagnification 2
+474 475 
+Append 5
+291 343 280 340 217 
+Bequeath 2
+291 343 
+GetComp 3
+291 343 326 
+GetMobility 4
+291 434 431 494 
+InsertAfter 3
+291 343 217 
+InsertBefore 5
+291 343 280 340 217 
+Prepend 3
+291 343 217 
+Remove 5
+291 343 280 340 217 
+SetComp 3
+291 343 326 
+SetGraphic 2
+291 280 
+SetMobility 6
+291 343 326 434 431 494 
+drawClipped 4
+342 476 282 372 
+Constrain 3
+85 322 475 
+Add 2
+280 340 
+ConnectorIntersecting 2
+280 340 
+CreateHandles 5
+280 329 325 301 408 
+DeleteView 2
+280 340 
+DrawHandles 2
+280 375 
+SelectAll 2
+280 340 
+ViewContaining 2
+280 340 
+ViewIntersecting 2
+280 340 
+ViewsContaining 2
+280 340 
+ViewsIntersecting 2
+280 340 
+ViewsWithin 2
+280 340 
+ViewCategory 2
+84 475 
+bottom 2
+75 146 
+handler 2
+75 519 
+left 2
+75 146 
+target 3
+75 146 147 
+allocation_changed 3
+519 598 395 
+canvas 2
+519 146 
+move 5
+519 597 598 146 395 
+parent 2
+519 175 
+repick 2
+519 432 
+alias 2
+189 175 
+background 2
+189 32 
+bright_inset_frame 5
+189 212 210 205 190 
+check_box_look 5
+189 212 210 205 190 
+check_menu_item_look 5
+189 212 210 205 190 
+default_button_look 5
+189 212 210 205 190 
+down_mover_look 5
+189 212 210 205 190 
+enlarger_look 5
+189 212 210 205 190 
+foreground 2
+189 32 
+gui 5
+189 212 210 205 190 
+inset_frame 5
+189 212 210 205 190 
+label 2
+189 210 
+left_mover_look 5
+189 212 210 205 190 
+menu_item_look 5
+189 212 210 205 190 
+menu_item_separator_look 5
+189 212 210 205 190 
+menubar 2
+189 205 
+menubar_item_look 5
+189 212 210 205 190 
+menubar_look 5
+189 212 210 205 190 
+outset_frame 5
+189 212 210 205 190 
+palette_button_look 5
+189 212 210 205 190 
+panner_look 5
+189 212 210 205 190 
+pulldown_look 5
+189 212 210 205 190 
+pullright_look 3
+189 205 190 
+push_button_look 5
+189 212 210 205 190 
+quit 3
+189 45 32 
+radio_button_look 5
+189 212 210 205 190 
+radio_menu_item_look 5
+189 212 210 205 190 
+reducer_look 5
+189 212 210 205 190 
+right_mover_look 5
+189 212 210 205 190 
+scroll_bar_look 5
+189 212 210 205 190 
+slider_look 5
+189 212 210 205 190 
+style_changed 4
+189 212 210 190 
+up_mover_look 5
+189 212 210 205 190 
+GetFont 5
+337 185 402 282 371 
+SetFont 5
+337 185 402 282 371 
+GetEndpoints 2
+329 325 
+VertexChanged 5
+440 425 412 409 408 
+Name 5
+555 552 547 546 545 
+GetOriginal 13
+327 501 315 283 393 465 463 392 391 385 380 270 375 
+extentCached 4
+501 476 283 282 
+operator!= 4
+501 403 283 125 
+operator== 5
+501 403 283 125 126 
+uncacheExtent 4
+501 476 283 282 
+NewSubject 6
+325 433 429 492 496 493 
+Effect 4
+215 217 322 216 
+GetTool 4
+215 217 322 216 
+Grasp 4
+215 217 322 216 
+Manipulating 6
+215 217 322 324 323 216 
+SetTool 4
+215 217 322 216 
+Busy 3
+589 596 588 
+Include 2
+602 587 
+Leave 3
+602 611 588 
+concatGS 4
+319 316 300 282 
+HasChildren 2
+476 282 
+readObjects 2
+476 135 
+uncacheChildren 2
+476 282 
+writeObjects 2
+476 135 
+modified 2
+549 551 
+resize 3
+198 146 276 
+~PSFont 2
+314 309 
+first_shown 2
+550 551 
+last_shown 2
+550 551 
+shown 2
+550 551 
+inputReady 5
+193 129 132 131 130 
+done 2
+45 32 
+pending 2
+45 32 
+poll 2
+45 32 
+unread 2
+45 32 
+Reshape 5
+598 533 373 395 459 
+allocate_thumb 5
+598 601 600 599 395 
+allot_thumb_major_axis 2
+598 395 
+allot_thumb_minor_axis 2
+598 395 
+apply_adjustment 5
+598 601 600 599 395 
+backward_stepper 2
+598 395 
+do_adjustment 2
+598 395 
+forward_stepper 2
+598 395 
+minimum_thumb_size 2
+598 395 
+normal_thumb 2
+598 395 
+old_thumb 2
+598 395 
+reallocate_thumb 2
+598 395 
+redraw_thumb 2
+598 395 
+visible_thumb 2
+598 395 
+~Slider 2
+598 395 
+operator= 15
+181 298 299 188 187 186 185 184 183 182 143 282 125 128 127 
+Activate 2
+186 373 
+GetBgColor 2
+182 282 
+GetFgColor 2
+182 282 
+SetColors 2
+182 282 
+Init 10
+572 581 580 579 578 577 576 575 574 573 
+Stale 8
+572 581 578 577 576 575 574 573 
+null_terminated 5
+176 125 128 127 126 
+Evaluate 2
+286 287 
+ChangedOutput 2
+287 288 
+GetInput 2
+287 288 
+GetOutput 2
+287 288 
+Inputs 2
+287 288 
+Outputs 2
+287 288 
+SetInput 2
+287 288 
+SetOutput 2
+287 288 
+Transfer 2
+287 288 
+Do 3
+596 611 588 
+Down 2
+611 588 
+Enter 2
+611 588 
+Select 2
+611 588 
+Hash 3
+221 141 142 
+bind 2
+146 147 
+compute_geometry 3
+146 276 278 
+configure 2
+146 401 
+display 2
+146 32 
+do_map 2
+146 277 
+map 2
+146 131 
+receive 2
+146 147 
+set_attributes 4
+146 401 148 147 
+set_props 4
+146 276 278 400 
+unbind 2
+146 147 
+AdjustView 3
+533 539 534 
+HandleChar 4
+473 470 471 469 
+Deactivate 2
+275 373 
+InsideFrame 3
+592 594 593 
+Wrap 2
+594 458 
+Orphan 2
+373 458 
+Match 3
+470 141 142 
+Erase 3
+269 271 282 
+SetCanvas 2
+269 271 
+SetPainter 2
+269 271 
+Track 6
+269 468 463 392 391 271 
+CurrentRadii 3
+393 504 394 
+GetCurrent 18
+393 504 465 463 392 391 385 389 388 387 386 380 384 383 382 381 270 375 
+OriginalRadii 3
+393 504 394 
+DrawVertices 5
+375 379 378 377 376 
+DoMove 2
+458 531 
+GetCluster 2
+282 135 
+hash 2
+125 126 
+set_value 2
+125 128 
+make_xcursor 5
+120 124 123 122 121 

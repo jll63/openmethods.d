@@ -1,0 +1,478 @@
+107
+java.lang.Object 0
+
+com.ibm.xml.internal.XCatalog$Parser$Resolver 1
+0 
+com.ibm.xml.internal.UTF8Reader$UTF8DataChunk 1
+0 
+com.ibm.xml.internal.UTF8CharReader$UTF8CharDataChunk 1
+0 
+com.ibm.xml.internal.StringHasher 1
+0 
+com.ibm.xml.internal.SimpleContentModel 1
+0 
+com.ibm.xml.internal.MixedContentModel 1
+0 
+com.ibm.xml.internal.MIME2Java 1
+0 
+com.ibm.xml.internal.ErrorCode 1
+0 
+com.ibm.xml.internal.DFAContentModel 1
+0 
+com.ibm.xml.internal.DefaultValidationHandler 1
+0 
+com.ibm.xml.internal.DefaultStringPool 1
+0 
+com.ibm.xml.internal.DefaultScanner 1
+0 
+com.ibm.xml.internal.DefaultEntityPool 1
+0 
+com.ibm.xml.internal.DefaultEntityHandler 1
+0 
+com.ibm.xml.internal.DefaultElementDeclPool 1
+0 
+com.ibm.xml.internal.DefaultAttrPool 1
+0 
+com.ibm.xml.internal.CMStateSet 1
+0 
+com.ibm.xml.internal.CharReader$CharDataChunk 1
+0 
+com.ibm.xml.framework.Version 1
+0 
+com.ibm.xml.framework.ScanContentState 1
+0 
+com.ibm.xml.framework.ParserState 1
+0 
+com.ibm.xml.framework.NotationDecl 1
+0 
+com.ibm.xml.framework.InsertableElementsInfo 1
+0 
+com.ibm.xml.framework.EntityDecl 1
+0 
+com.ibm.xml.framework.ElementDecl 1
+0 
+com.ibm.xml.framework.ContentSpecNode 1
+0 
+com.ibm.xml.framework.ChunkyCharArray 1
+0 
+com.ibm.xml.framework.ChunkyCharArray$CharArrayChunk 1
+0 
+com.ibm.xml.framework.Attr 1
+0 
+com.ibm.xml.framework.AttDef 1
+0 
+com.ibm.xml.domx.XUtil 1
+0 
+com.ibm.xml.domx.XNonValidatingSchemaParser$Resolver 1
+0 
+com.ibm.xml.domx.XNonValidatingSchemaParser$ErrorHandler 1
+0 
+com.ibm.xml.dom.NamedNodeMapImpl 1
+0 
+com.ibm.xml.dom.DOMImplementationImpl 1
+0 
+com.ibm.xml.dom.DeferredDocumentImpl$IntVector 1
+0 
+com.ibm.xml.dom.DeepNodeListImpl 1
+0 
+com.ibm.xml.dom.CharacterDataImpl$1 1
+0 
+com.ibm.xml.framework.XMLReader 1
+0 
+com.ibm.xml.internal.XMLDeclReader 1
+39 
+com.ibm.xml.internal.DefaultCatalog 1
+0 
+com.ibm.xml.internal.XCatalog 1
+41 
+com.ibm.xml.framework.XMLDeclRecognizer 1
+0 
+com.ibm.xml.internal.UTF8Recognizer 1
+43 
+com.ibm.xml.internal.UTF8Reader 1
+39 
+com.ibm.xml.internal.UTF8CharReader 1
+39 
+com.ibm.xml.internal.UCSRecognizer 1
+43 
+com.ibm.xml.internal.UCSReader 1
+39 
+com.ibm.xml.internal.TXCatalog 1
+41 
+com.ibm.xml.internal.StringReader 1
+39 
+com.ibm.xml.internal.EBCDICRecognizer 1
+43 
+com.ibm.xml.internal.CMNode 1
+0 
+com.ibm.xml.internal.CMUniOp 1
+52 
+com.ibm.xml.internal.CMLeaf 1
+52 
+com.ibm.xml.internal.CMBinOp 1
+52 
+com.ibm.xml.internal.CharReader 1
+39 
+java.io.InputStream 1
+0 
+com.ibm.xml.framework.ChunkyByteArray 1
+57 
+com.ibm.xml.dom.NodeImpl 1
+0 
+com.ibm.xml.dom.DocumentFragmentImpl 1
+59 
+java.util.ResourceBundle 1
+0 
+java.util.ListResourceBundle 1
+61 
+com.ibm.xml.internal.msg.Message 1
+62 
+java.lang.Throwable 1
+0 
+java.lang.Exception 1
+64 
+com.ibm.xml.internal.DefaultScanner$StopException 1
+65 
+com.ibm.xml.internal.CMException 1
+65 
+com.ibm.xml.framework.XMLParser 1
+0 
+com.ibm.xml.domx.XNonValidatingSchemaParser 1
+68 
+com.ibm.xml.domx.XSchemaParser 1
+69 
+com.ibm.xml.domx.XNonValidatingDOMParser 1
+68 
+com.ibm.xml.domx.XDOMParser 1
+71 
+com.ibm.xml.dom.DocumentImpl 1
+59 
+com.ibm.xml.domx.XDocumentImpl 1
+73 
+com.ibm.xml.dom.ProcessingInstructionImpl 1
+59 
+com.ibm.xml.dom.DeferredProcessingInstructionImpl 1
+75 
+com.ibm.xml.dom.NotationImpl 1
+59 
+com.ibm.xml.dom.DeferredNotationImpl 1
+77 
+com.ibm.xml.dom.EntityReferenceImpl 1
+59 
+com.ibm.xml.dom.DeferredEntityReferenceImpl 1
+79 
+com.ibm.xml.dom.EntityImpl 1
+59 
+com.ibm.xml.dom.DeferredEntityImpl 1
+81 
+com.ibm.xml.dom.ElementImpl 1
+59 
+com.ibm.xml.dom.DeferredElementImpl 1
+83 
+com.ibm.xml.dom.ElementDefinitionImpl 1
+59 
+com.ibm.xml.dom.DeferredElementDefinitionImpl 1
+85 
+com.ibm.xml.dom.DocumentTypeImpl 1
+59 
+com.ibm.xml.dom.DeferredDocumentTypeImpl 1
+87 
+com.ibm.xml.dom.DeferredDocumentImpl 1
+73 
+com.ibm.xml.dom.AttrImpl 1
+59 
+com.ibm.xml.dom.DeferredAttrImpl 1
+90 
+java.io.IOException 1
+65 
+com.ibm.xml.internal.InvalidEncodingException 1
+92 
+com.ibm.xml.parsers.NonValidatingDOMParser 1
+68 
+com.ibm.xml.parsers.DOMParser 1
+94 
+com.ibm.xml.domx.XNonValidatingSchemaParser$1 1
+95 
+com.ibm.xml.dom.CharacterDataImpl 1
+59 
+com.ibm.xml.dom.TextImpl 1
+97 
+com.ibm.xml.dom.DeferredTextImpl 1
+98 
+com.ibm.xml.dom.CommentImpl 1
+97 
+com.ibm.xml.dom.DeferredCommentImpl 1
+100 
+java.lang.RuntimeException 1
+65 
+org.w3c.dom.DOMException 1
+102 
+com.ibm.xml.dom.DOMExceptionImpl 1
+103 
+com.ibm.xml.dom.CDATASectionImpl 1
+98 
+com.ibm.xml.dom.DeferredCDATASectionImpl 1
+105 
+131
+java.lang.String-toString 5
+90 59 17 0 64 
+java.lang.String-getName 2
+90 87 
+java.lang.String-getValue 2
+90 83 
+short-getNodeType 14
+90 105 100 60 73 87 85 83 81 79 59 77 75 98 
+java.lang.String-getNodeValue 5
+90 73 83 81 59 
+org.w3c.dom.Node-getParentNode 2
+90 59 
+void-setNodeValue-java.lang.String 9
+90 60 73 87 83 81 79 59 77 
+org.w3c.dom.Node-cloneNode-boolean 9
+105 100 73 87 85 83 59 75 98 
+java.lang.String-getNodeName 7
+105 97 100 60 73 59 98 
+int-getLength 6
+38 97 37 34 59 16 
+org.w3c.dom.Node-item-int 4
+38 37 34 59 
+org.w3c.dom.NodeList-getChildNodes 2
+97 59 
+java.lang.String-getData 2
+97 75 
+void-setData-java.lang.String 2
+97 75 
+void-synchronizeData 14
+91 106 101 89 88 86 84 82 80 78 76 99 83 59 
+void-synchronizeChildren 8
+91 89 88 86 84 82 80 59 
+int-getNodeIndex 11
+91 106 101 88 86 84 82 80 78 76 99 
+org.w3c.dom.Node-insertBefore-org.w3c.dom.Node-org.w3c.dom.Node 2
+73 59 
+org.w3c.dom.Node-removeChild-org.w3c.dom.Node 2
+73 59 
+org.w3c.dom.NodeList-getElementsByTagName-java.lang.String 2
+73 83 
+void-setReadOnly-boolean-boolean 4
+87 83 79 59 
+org.w3c.dom.NamedNodeMap-getAttributes 3
+85 83 59 
+java.lang.String-getPublicId 4
+81 77 39 12 
+java.lang.String-getSystemId 4
+81 77 39 12 
+void-setPublicId-java.lang.String 2
+81 77 
+void-setSystemId-java.lang.String 2
+81 77 
+void-reset 8
+72 71 69 70 68 95 94 57 
+void-resetOrCopy 7
+72 71 69 70 68 95 94 
+void-init-com.ibm.xml.framework.ParserState 3
+71 69 94 
+void-ignorableWhitespace-int-boolean 5
+71 96 69 68 94 
+void-ignorableWhitespace-[C-int-int-boolean 5
+71 96 69 68 94 
+void-attlistDecl-int-int 4
+71 69 68 94 
+void-characters-[C-int-int-boolean 4
+71 69 68 94 
+void-characters-int-boolean 4
+71 69 68 94 
+void-checkHandlers 4
+71 69 68 94 
+void-comment-int 4
+71 69 68 94 
+void-doctypeDecl-int 4
+71 69 68 94 
+void-elementDecl-int 4
+71 69 68 94 
+void-endDocument 4
+71 69 68 94 
+void-endElement-int 4
+71 69 68 94 
+void-endEntityReference-int 4
+71 69 68 94 
+void-endExternalSubset 4
+71 69 68 94 
+void-endInternalSubset 4
+71 69 68 94 
+void-externalEntityDecl-int 4
+71 69 68 94 
+org.w3c.dom.Node-getCurrentNode 3
+71 69 94 
+org.w3c.dom.Document-getDocument 3
+71 69 94 
+boolean-getExpandEntityReferences 3
+71 69 94 
+void-internalEntityDecl-int 4
+71 69 68 94 
+void-notationDecl-int 4
+71 69 68 94 
+void-processingInstruction-int-int 4
+71 69 68 94 
+void-setExpandEntityReferences-boolean 3
+71 69 94 
+void-startDocument-int-int-int 4
+71 69 68 94 
+void-startElement-int-int 4
+71 69 68 94 
+void-startEntityReference-int 4
+71 69 68 94 
+void-startExternalSubset-int-int 4
+71 69 68 94 
+void-startInternalSubset 4
+71 69 68 94 
+void-unparsedEntityDecl-int 4
+71 69 68 94 
+org.xml.sax.InputSource-resolveEntity-java.lang.String-java.lang.String 4
+32 41 1 42 
+int-read-[B-int-int 2
+58 57 
+int-read 2
+58 57 
+void-checkEOF-int 4
+58 56 46 45 
+java.lang.String-toString-int-int 5
+28 18 48 3 2 
+void-append-com.ibm.xml.framework.ChunkyCharArray-int-int 12
+28 27 39 18 56 50 48 3 46 2 45 40 
+void-append-char 2
+28 27 
+void-setLength-int 2
+28 27 
+int-addSymbol-int-int 9
+28 27 39 56 50 48 46 45 40 
+int-addString-int-int 12
+28 27 39 18 56 50 48 3 46 2 45 40 
+boolean-equalsString-int-int-java.lang.String-int 5
+28 18 48 3 2 
+com.ibm.xml.framework.XMLValidationHandler-getValidationHandler 2
+21 68 
+boolean-getAllowJavaEncodingName 2
+21 68 
+boolean-getCheckNamespace 2
+21 68 
+com.ibm.xml.framework.XMLDocumentHandler-getDocumentHandler 2
+21 68 
+com.ibm.xml.framework.XMLDocumentTypeHandler-getDocumentTypeHandler 2
+21 68 
+com.ibm.xml.framework.XMLEntityHandler-getEntityHandler 2
+21 68 
+com.ibm.xml.framework.XMLErrorHandler-getErrorHandler 2
+21 68 
+com.ibm.xml.framework.XMLScanner-getScanner 2
+21 68 
+boolean-getWarningOnDuplicateAttDef 2
+21 68 
+com.ibm.xml.framework.XMLReader-recognize-com.ibm.xml.framework.ParserState-org.xml.sax.InputSource-com.ibm.xml.framework.ChunkyByteArray-boolean 4
+43 51 47 44 
+void-parse-org.xml.sax.InputSource 2
+68 94 
+com.ibm.xml.framework.ParserState-getParserState 3
+68 49 42 
+org.xml.sax.Locator-getLocator 2
+68 12 
+void-loadCatalog-org.xml.sax.InputSource 4
+68 41 49 42 
+void-setEntityResolver-org.xml.sax.EntityResolver 2
+68 14 
+int-getColumnNumber 2
+39 12 
+int-getLineNumber 2
+39 12 
+boolean-lookingAtChar-char 7
+39 56 50 48 46 45 40 
+int-skipPastSpaces 7
+39 56 50 48 46 45 40 
+boolean-skippedAlpha 7
+39 56 50 48 46 45 40 
+boolean-skippedChar-char 7
+39 56 50 48 46 45 40 
+boolean-skippedEncName 7
+39 56 50 48 46 45 40 
+boolean-skippedSpace 7
+39 56 50 48 46 45 40 
+boolean-skippedString-[C 7
+39 56 50 48 46 45 40 
+boolean-skippedVersionNum 7
+39 56 50 48 46 45 40 
+boolean-lookingAtSpace 7
+39 56 50 48 46 45 40 
+boolean-lookingAtValidChar 7
+39 56 50 48 46 45 40 
+int-scanContent-com.ibm.xml.framework.ScanContentState 7
+39 56 50 48 46 45 40 
+int-scanName-char-int 7
+39 56 50 48 46 45 40 
+int-skipAsciiChar 7
+39 56 50 48 46 45 40 
+int-skipDecimalDigit 7
+39 56 50 48 46 45 40 
+int-skipHexDigit 7
+39 56 50 48 46 45 40 
+int-skipInvalidChar-int 7
+39 56 50 48 46 45 40 
+int-skipOneChar 7
+39 56 50 48 46 45 40 
+int-skipPastChar-char 7
+39 56 50 48 46 45 40 
+int-skipPastName-char 7
+39 56 50 48 46 45 40 
+int-skipPastNmtoken-char 7
+39 56 50 48 46 45 40 
+int-skipToChar-char 7
+39 56 50 48 46 45 40 
+boolean-skippedPubidChar 7
+39 56 50 48 46 45 40 
+boolean-skippedValidChar 7
+39 56 50 48 46 45 40 
+[C-toCharArray 2
+18 3 
+int-addSymbol-int-int-int 6
+18 56 3 46 2 45 
+void-clearPreviousChunk 3
+18 3 2 
+void-setCharArray-[C 2
+18 3 
+void-callCharDataHandler-int-int-boolean 4
+56 48 46 45 
+void-callWSCharDataHandler-int-int-boolean 4
+56 48 46 45 
+boolean-exitNormalize-int-int-boolean 3
+56 46 45 
+int-fillCurrentChunk 3
+56 46 45 
+int-loadNextChar 2
+56 46 
+int-skipAsciiCharData 3
+56 46 45 
+boolean-skipMultiByteCharData-int 3
+56 46 45 
+boolean-skippedAsciiCharWithFlag-byte 3
+56 46 45 
+int-slowLoadNextChar 2
+56 46 
+void-calcFirstPos-com.ibm.xml.internal.CMStateSet 4
+55 54 52 53 
+void-calcLastPos-com.ibm.xml.internal.CMStateSet 4
+55 54 52 53 
+void-reset-com.ibm.xml.framework.ParserState 7
+16 15 14 13 12 11 10 
+int-getAttValue-int 2
+16 15 
+int-getAttType-int 2
+16 15 
+int-whatCanGoHere-boolean-com.ibm.xml.framework.InsertableElementsInfo 3
+9 6 5 
+int-validateContent-int-[I 3
+9 6 5 
+[[Ljava.lang.Object;-getContents 2
+63 62 
+java.lang.Object-handleGetObject-java.lang.String 2
+62 61 
+java.util.Enumeration-getKeys 2
+62 61 

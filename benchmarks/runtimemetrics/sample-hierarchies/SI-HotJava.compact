@@ -1,0 +1,2670 @@
+644
+java.lang.Object 0
+
+sunw.html.UnknownTag 1
+0 
+sunw.html.TagStack 1
+0 
+sunw.html.Entity 1
+0 
+sunw.html.Element 1
+0 
+sunw.html.DTD 1
+0 
+sunw.html.ContentModelState 1
+0 
+sunw.html.ContentModel 1
+0 
+sunw.html.Attributes 1
+0 
+sunw.html.AttributeList 1
+0 
+sunw.hotjava.ui.VisitFrequencyCompare 1
+0 
+sunw.hotjava.ui.UserVetoableChangeListener 1
+0 
+sunw.hotjava.ui.UIHJButtonGroup 1
+0 
+sunw.hotjava.ui.TimedMessage 1
+0 
+sunw.hotjava.ui.MultiLineLabel$LineFont 1
+0 
+sunw.hotjava.ui.Locator$LocatorFocusListener 1
+0 
+sunw.hotjava.ui.ListPanel$HotListEventListener 1
+0 
+sunw.hotjava.ui.ListContainerInfo 1
+0 
+sunw.hotjava.ui.ListCanvas$DnDListener 1
+0 
+sunw.hotjava.ui.LabelTag 1
+0 
+sunw.hotjava.ui.InputField$ActionEventsListener 1
+0 
+sunw.hotjava.ui.ImageToolTip 1
+0 
+sunw.hotjava.ui.HyperLinkListener 1
+0 
+sunw.hotjava.ui.HotListWriter 1
+0 
+sunw.hotjava.ui.HotListReader 1
+0 
+sunw.hotjava.ui.HotListFrame$DnDListener 1
+0 
+sunw.hotjava.ui.HotListFrame$ActionEventsListener 1
+0 
+sunw.hotjava.ui.HotListEventMulticaster 1
+0 
+sunw.hotjava.ui.HotListBuffer 1
+0 
+sunw.hotjava.ui.HotList 1
+0 
+sunw.hotjava.ui.HJMenuListener 1
+0 
+sunw.hotjava.ui.FolderPanel$HotListEventListener 1
+0 
+sunw.hotjava.ui.FolderDialog$ActionEventsListener 1
+0 
+sunw.hotjava.ui.FindStringDialog$ActionEventsListener 1
+0 
+sunw.hotjava.ui.DragStartInfo 1
+0 
+sunw.hotjava.ui.DragAndDropEventMulticaster 1
+0 
+sunw.hotjava.ui.DateVisitedCompare 1
+0 
+sunw.hotjava.ui.ConsoleOutput 1
+0 
+sunw.hotjava.ui.ConsoleFrame$CloseConsole 1
+0 
+sunw.hotjava.ui.ConsoleFrame$ClearConsole 1
+0 
+sunw.hotjava.ui.Console 1
+0 
+sunw.hotjava.ui.BookmarkDialog$ActionEventsListener 1
+0 
+sunw.hotjava.ui.AuthenticationDialog$ActionEventsListener 1
+0 
+sunw.hotjava.ui.AlphabeticalCompare 1
+0 
+sunw.hotjava.tags.TagAppletPanel$AppletEventListener 1
+0 
+sunw.hotjava.tags.TagAppletPanel$2 1
+0 
+sunw.hotjava.tags.ResizeTracker 1
+0 
+sunw.hotjava.tags.ImageMap 1
+0 
+sunw.hotjava.tags.EdgeInfo 1
+0 
+sunw.hotjava.tags.Align 1
+0 
+sunw.hotjava.tables.TableGrid 1
+0 
+sunw.hotjava.tables.TableElementPanelEnumerator 1
+0 
+sunw.hotjava.tables.ConstraintSummary 1
+0 
+sunw.hotjava.tables.CellSpec 1
+0 
+sunw.hotjava.tables.CellInfoVector 1
+0 
+sunw.hotjava.tables.BGColorInfo 1
+0 
+sunw.hotjava.security.TrustManager 1
+0 
+sunw.hotjava.security.SiteIdentity 1
+0 
+sunw.hotjava.security.SecurityGlobals 1
+0 
+sunw.hotjava.security.ExtPermissions 1
+0 
+sunw.hotjava.security.CertificateTrust 1
+0 
+sunw.hotjava.protocol.file.StringCompare 1
+0 
+sunw.hotjava.misc.URLCanonicalizer 1
+0 
+sunw.hotjava.misc.URLApplicationLauncher 1
+0 
+sunw.hotjava.misc.TimeStampObject 1
+0 
+sunw.hotjava.misc.Timer 1
+0 
+sunw.hotjava.misc.StaticStateWatcher 1
+0 
+sunw.hotjava.misc.StaticStateWatcher$Action 1
+0 
+sunw.hotjava.misc.SortVector 1
+0 
+sunw.hotjava.misc.Sort 1
+0 
+sunw.hotjava.misc.Set 1
+0 
+sunw.hotjava.misc.RfcDateParser 1
+0 
+sunw.hotjava.misc.RequestProcessor 1
+0 
+sunw.hotjava.misc.RequestProcessor$RequestNode 1
+0 
+sunw.hotjava.misc.Length 1
+0 
+sunw.hotjava.misc.HttpCookie 1
+0 
+sunw.hotjava.misc.HJURLStreamHandlerFactory 1
+0 
+sunw.hotjava.misc.Globals 1
+0 
+sunw.hotjava.misc.Globals$QuitHandler 1
+0 
+sunw.hotjava.misc.GlobalRegistry 1
+0 
+sunw.hotjava.misc.ColorNameTable 1
+0 
+sunw.hotjava.misc.ClockFormat 1
+0 
+sunw.hotjava.misc.CharacterEncoding 1
+0 
+sunw.hotjava.forms.PostURLConnector 1
+0 
+sunw.hotjava.forms.PostFilesURLConnector 1
+0 
+sunw.hotjava.forms.MoreChoicesJavaOSDialog$1 1
+0 
+sunw.hotjava.forms.MoreChoicesDialog$1 1
+0 
+sunw.hotjava.forms.HJEncoder 1
+0 
+sunw.hotjava.forms.FormTextField$2 1
+0 
+sunw.hotjava.forms.FormPanel$UserActionListener 1
+0 
+sunw.hotjava.forms.FormPanel$FormFocusListener 1
+0 
+sunw.hotjava.forms.FormEvent 1
+0 
+sunw.hotjava.forms.FormChoiceJavaOS$1 1
+0 
+sunw.hotjava.forms.FormChoice$1 1
+0 
+sunw.hotjava.doc.ToolTipInfo 1
+0 
+sunw.hotjava.doc.TextCharIterator 1
+0 
+sunw.hotjava.doc.StyleSheet 1
+0 
+sunw.hotjava.doc.StdPageMarker 1
+0 
+sunw.hotjava.doc.ResponsibilityRangeEnumeration 1
+0 
+sunw.hotjava.doc.ResponsibilityEnumeration 1
+0 
+sunw.hotjava.doc.Responsibility 1
+0 
+sunw.hotjava.doc.Range 1
+0 
+sunw.hotjava.doc.PreservedState 1
+0 
+sunw.hotjava.doc.PageMargins 1
+0 
+sunw.hotjava.doc.PageInfo 1
+0 
+sunw.hotjava.doc.OverlappingStringMatch 1
+0 
+sunw.hotjava.doc.NamedLink 1
+0 
+sunw.hotjava.doc.MouseDownInfo 1
+0 
+sunw.hotjava.doc.Measurement 1
+0 
+sunw.hotjava.doc.ItemIterator 1
+0 
+sunw.hotjava.doc.ItemComponent 1
+0 
+sunw.hotjava.doc.FloaterInfo 1
+0 
+sunw.hotjava.doc.FlexyText 1
+0 
+sunw.hotjava.doc.ElementInfo 1
+0 
+sunw.hotjava.doc.DocumentState 1
+0 
+sunw.hotjava.doc.DocumentStack 1
+0 
+sunw.hotjava.doc.DocumentStack$Node 1
+0 
+sunw.hotjava.doc.DocumentPanel$PanelDocListener 1
+0 
+sunw.hotjava.doc.DocumentPanel$AppletEventListener 1
+0 
+sunw.hotjava.doc.DocumentFormatterRef 1
+0 
+sunw.hotjava.doc.DocumentFormatterPresentation 1
+0 
+sunw.hotjava.doc.DocumentFormatter$DocListener 1
+0 
+sunw.hotjava.doc.DocumentEventMulticaster 1
+0 
+sunw.hotjava.doc.DocumentEventMulticaster$Node 1
+0 
+sunw.hotjava.doc.DocumentCache 1
+0 
+sunw.hotjava.doc.DocumentBackground 1
+0 
+sunw.hotjava.doc.Document 1
+0 
+sunw.hotjava.doc.DocStyle 1
+0 
+sunw.hotjava.doc.DocLine 1
+0 
+sunw.hotjava.doc.DocItemEnumeration 1
+0 
+sunw.hotjava.doc.BasefontTagRecord 1
+0 
+sunw.hotjava.bean.URLPool 1
+0 
+sunw.hotjava.bean.SystemProperties 1
+0 
+sunw.hotjava.bean.PoolEntry 1
+0 
+sunw.hotjava.bean.ImageCache 1
+0 
+sunw.hotjava.bean.ImageCache$DocumentImages 1
+0 
+sunw.hotjava.bean.HotJavaDocumentStack 1
+0 
+sunw.hotjava.bean.HotJavaBrowserBean$NewBeanPoster 1
+0 
+sunw.hotjava.bean.HotJavaBrowserBean$DocListener 1
+0 
+sunw.hotjava.bean.FrameToken 1
+0 
+sunw.hotjava.bean.DocumentSelection 1
+0 
+sunw.hotjava.bean.CurrentDocument 1
+0 
+sunw.hotjava.bean.CookieJar 1
+0 
+sunw.hotjava.applets.TypeSubtypeMap 1
+0 
+sunw.hotjava.applets.PrefAppletManager 1
+0 
+sunw.hotjava.applets.ExpireNowHandler 1
+0 
+sunw.hotjava.applets.AudioApplet$playAction 1
+0 
+sunw.hotjava.applet.BrowserAppletManager 1
+0 
+sunw.hotjava.applet.BasicAppletManager 1
+0 
+sunw.hotjava.applet.AppletSecurityContext 1
+0 
+sunw.hotjava.applet.AppletResourceLoader 1
+0 
+sunw.hotjava.applet.AppletPanel$QueueEntry 1
+0 
+sunw.hotjava.applet.AppletEventMulticaster 1
+0 
+sunw.hotjava.applet.AppletClassEntry 1
+0 
+sunw.hotjava.PeriodicSaveManager 1
+0 
+sunw.hotjava.PasswordCacheEntry 1
+0 
+sunw.hotjava.PasswordCache 1
+0 
+sunw.hotjava.Main 1
+0 
+sunw.hotjava.HJWindowManager 1
+0 
+sunw.hotjava.HJFrame$BeanPropertyListener 1
+0 
+sunw.hotjava.HJFrame$2 1
+0 
+sun.net.www.protocol.nfs.StringCompare 1
+0 
+com.sun.xfile.XRandomAccessFile 1
+0 
+com.sun.xfile.XFurl 1
+0 
+com.sun.xfile.XFile 1
+0 
+com.sun.rpc.Xdr 1
+0 
+com.sun.rpc.Rpc 1
+0 
+com.sun.nfs.XFileAccessor 1
+0 
+com.sun.nfs.NfsURL 1
+0 
+com.sun.nfs.NfsConnect 1
+0 
+com.sun.nfs.Mount 1
+0 
+com.sun.file.XFileAccessor 1
+0 
+sunw.hotjava.ui.HotListEntry 1
+0 
+sunw.hotjava.ui.Webmark 1
+172 
+java.awt.event.MouseAdapter 1
+0 
+sunw.hotjava.ui.UserImageButton$UserImageButtonMouseListener 1
+174 
+java.awt.event.FocusAdapter 1
+0 
+sunw.hotjava.ui.UserImageButton$1 1
+176 
+java.awt.event.WindowAdapter 1
+0 
+sunw.hotjava.ui.UserDialog$1 1
+178 
+sunw.hotjava.ui.UIHJButton$HJButtonMouseListener 1
+174 
+java.awt.event.KeyAdapter 1
+0 
+sunw.hotjava.ui.UIHJButton$HJButtonKeyListener 1
+181 
+sunw.hotjava.ui.UIHJButton$HJButtonFocusListener 1
+176 
+sunw.hotjava.misc.RequestProcessor$Request 1
+0 
+sunw.hotjava.ui.TimedMessage$TimedMessageRequest 1
+184 
+sunw.hotjava.ui.TimedMessage$MessageBoxKillRequest 1
+184 
+sunw.hotjava.ui.StopRequest 1
+184 
+sunw.hotjava.ui.Separator 1
+172 
+sunw.hotjava.ui.SecurityMonitorImageButton$ImageButtonMouseListener 1
+174 
+sunw.hotjava.ui.PageFolder 1
+172 
+sunw.hotjava.ui.MessageRequest 1
+184 
+sunw.hotjava.ui.MessageLine$1 1
+181 
+sunw.hotjava.ui.Locator$LocatorMouseListener 1
+174 
+sunw.hotjava.ui.Locator$LocatorKeyListener 1
+181 
+java.awt.event.MouseMotionAdapter 1
+0 
+sunw.hotjava.ui.ListPanel$2 1
+195 
+sunw.hotjava.ui.ListPanel$1 1
+174 
+sunw.hotjava.ui.ListCanvas$ListCanvasMouseListener 1
+174 
+java.awt.GridBagLayout 1
+0 
+sunw.hotjava.ui.InstrumentPanelMessageLayout 1
+199 
+sunw.hotjava.ui.InstrumentPanelLocatorLayout 1
+199 
+sunw.hotjava.ui.InstrumentPanelLayout 1
+199 
+sunw.hotjava.ui.InstrumentPanelControlsLayout 1
+199 
+sunw.hotjava.ui.InputField$KeyListener 1
+181 
+sunw.html.Parser 1
+0 
+sunw.hotjava.ui.HotListHTMLParser 1
+205 
+sunw.hotjava.ui.HotListFrame$3 1
+195 
+sunw.hotjava.ui.HotListFrame$2 1
+174 
+sunw.hotjava.ui.HotListFrame$1 1
+178 
+java.util.EventObject 1
+0 
+sunw.hotjava.ui.HotListEvent 1
+210 
+sunw.hotjava.ui.HotList$1 1
+184 
+java.awt.event.ComponentAdapter 1
+0 
+sunw.hotjava.ui.HotCanvas$2 1
+213 
+sunw.hotjava.ui.HotCanvas$1 1
+213 
+java.awt.Color 1
+0 
+sunw.hotjava.ui.HJColor 1
+216 
+sunw.hotjava.ui.FolderPanel$2 1
+195 
+sunw.hotjava.ui.FolderPanel$1 1
+174 
+sunw.hotjava.ui.FolderDialog$2 1
+176 
+sunw.hotjava.ui.FolderDialog$1 1
+178 
+sunw.hotjava.ui.FindStringDialog$EnterHitListener 1
+181 
+sunw.hotjava.ui.EnterKeyListener 1
+181 
+sunw.hotjava.ui.DragAndDropEvent 1
+210 
+sunw.hotjava.ui.ConsoleFrame$FrameCloseAdapter 1
+178 
+java.util.Observable 1
+0 
+sunw.hotjava.ui.ClockTicker 1
+226 
+sunw.hotjava.ui.BookmarkDialog$2 1
+176 
+sunw.hotjava.ui.BookmarkDialog$1 1
+178 
+sunw.hotjava.ui.AnimationRequest 1
+184 
+sunw.hotjava.ui.AnimationIcon$AnimationIconMouseListener 1
+174 
+sunw.hotjava.tags.TagAppletPanel$ThreadInterruptRequest 1
+184 
+sunw.hotjava.tags.TagAppletPanel$ThreadDestroyRequest 1
+184 
+sun.misc.Ref 1
+0 
+sunw.hotjava.tags.TagAppletPanel$AppletPanelThreadGroupRef 1
+234 
+sunw.hotjava.tags.TagAppletPanel$AppletMouseMotionListener 1
+195 
+sunw.hotjava.tags.TagAppletPanel$AppletMouseListener 1
+174 
+sunw.hotjava.tags.TagAppletPanel$1 1
+184 
+sunw.hotjava.tags.ResizeRequestEvent 1
+210 
+sunw.hotjava.tags.ImageArea 1
+0 
+sunw.hotjava.tags.RectArea 1
+240 
+sunw.hotjava.tags.PolygonArea 1
+240 
+sunw.hotjava.tags.ImageMapParser 1
+205 
+sunw.hotjava.tags.FramePanel$FramePanelJSInit 1
+184 
+sunw.hotjava.tags.CircleArea 1
+240 
+sunw.hotjava.tags.AppletPanelThreadGroupRef 1
+234 
+sunw.hotjava.doc.Formatter 1
+0 
+sunw.hotjava.tables.TableElementFormatter 1
+247 
+sunw.hotjava.tables.TableElementFormatter$FormatterMouseListener 1
+174 
+sunw.hotjava.security.BasePolicy 1
+0 
+sunw.hotjava.security.PolicyNone 1
+250 
+java.net.URLStreamHandler 1
+0 
+sunw.hotjava.protocol.mailto.Handler 1
+252 
+sunw.hotjava.protocol.http.HttpURLConnectionCookie$HandleUnclosedStream 1
+184 
+sunw.hotjava.protocol.file.Handler 1
+252 
+sunw.hotjava.protocol.doc.Handler 1
+252 
+sunw.hotjava.protocol.appletresource.Handler 1
+252 
+sun.misc.CharacterEncoder 1
+0 
+sunw.hotjava.misc.VerbatimHeaderEncoder 1
+258 
+sunw.hotjava.misc.URLApplicationLauncher$ErrorEvent 1
+210 
+sunw.hotjava.misc.StreamCopier 1
+226 
+sunw.hotjava.misc.QPHeaderEncoder 1
+258 
+sunw.hotjava.misc.QPEncoder 1
+258 
+sunw.hotjava.misc.HJColor 1
+216 
+java.lang.Thread 1
+0 
+sunw.hotjava.misc.GC 1
+265 
+sunw.hotjava.misc.EditorActionRequest 1
+184 
+sunw.hotjava.misc.ContentViewersManager 1
+226 
+sunw.hotjava.misc.Base64HeaderEncoder 1
+258 
+sunw.hotjava.forms.SubmitThread 1
+265 
+sunw.hotjava.forms.ImageCanvas$MouseEventListener 1
+174 
+sunw.hotjava.forms.FormTextField$1 1
+181 
+sunw.hotjava.forms.FormPanel$FormMouseListener 1
+174 
+java.awt.CheckboxGroup 1
+0 
+sunw.hotjava.forms.FormPanel$FormCheckboxGroup 1
+274 
+sunw.hotjava.forms.FormPanel$2 1
+184 
+sunw.hotjava.forms.FormPanel$1 1
+181 
+sunw.hotjava.forms.FormChoice$2 1
+174 
+sunw.hotjava.doc.DocItem 1
+0 
+sunw.hotjava.doc.TextItem 1
+279 
+sunw.hotjava.doc.ProcessActivationQueueThread 1
+265 
+sunw.hotjava.doc.TraversalState 1
+0 
+sunw.hotjava.doc.MeasureState 1
+282 
+sunw.hotjava.doc.Formatter$FormatterMouseListener 1
+174 
+sunw.hotjava.doc.Formatter$DocumentEventRequest 1
+184 
+sunw.hotjava.doc.FormatState 1
+282 
+sunw.hotjava.doc.EndTagItem 1
+279 
+sunw.hotjava.doc.DragThread 1
+265 
+sunw.hotjava.doc.DocumentRef 1
+234 
+sunw.hotjava.doc.DocumentPanel$1 1
+181 
+sunw.hotjava.doc.DocumentFormatterPanel$1 1
+181 
+sunw.hotjava.doc.DocumentFormatter 1
+247 
+sunw.hotjava.doc.DocumentFormatter$FinishFormatRequest 1
+184 
+sunw.hotjava.doc.DocumentEvent 1
+210 
+java.io.Reader 1
+0 
+sunw.hotjava.doc.DocReader 1
+295 
+sunw.hotjava.doc.DocParser 1
+205 
+java.awt.Font 1
+0 
+sunw.hotjava.doc.DocFont 1
+298 
+java.net.ContentHandler 1
+0 
+sunw.hotjava.content.application.pdf 1
+300 
+java.awt.Event 1
+0 
+sunw.hotjava.bean.URLPoolEvent 1
+302 
+java.beans.SimpleBeanInfo 1
+0 
+sunw.hotjava.bean.URLPoolBeanInfo 1
+304 
+sunw.hotjava.bean.LinkEvent 1
+302 
+sunw.hotjava.bean.ImageCacherImageRef 1
+234 
+sunw.hotjava.bean.HotJavaDocumentStackBeanInfo 1
+304 
+sunw.hotjava.bean.HotJavaBrowserBeanBeanInfo 1
+304 
+sunw.hotjava.bean.HotJavaBrowserBean$Blinker 1
+184 
+sunw.hotjava.bean.HotJavaBrowserBean$1 1
+265 
+sunw.hotjava.bean.HotJavaBrowserBean$1$LinkEventRequest 1
+184 
+sunw.hotjava.bean.CookieJarBeanInfo 1
+304 
+sunw.hotjava.bean.ClientPuller 1
+265 
+sunw.hotjava.bean.BrowserHistoryEvent 1
+210 
+sunw.hotjava.bean.BeanConfirmDialog$1 1
+178 
+sunw.hotjava.applets.IgnoreNonDigitsListener 1
+181 
+java.lang.ThreadGroup 1
+0 
+sunw.hotjava.applet.AppletThreadGroup 1
+318 
+sunw.hotjava.applet.AppletPanel$DocProtocolAppletThread 1
+265 
+sunw.hotjava.applet.AppletImageRef 1
+234 
+sunw.hotjava.applet.AppletEvent 1
+210 
+java.lang.ClassLoader 1
+0 
+sunw.hotjava.applet.AppletClassLoader 1
+323 
+sunw.hotjava.HJWindowManager$7 1
+184 
+sunw.hotjava.HJWindowManager$6 1
+184 
+sunw.hotjava.HJWindowManager$5 1
+184 
+sunw.hotjava.HJWindowManager$4 1
+265 
+sunw.hotjava.HJWindowManager$3 1
+178 
+sunw.hotjava.HJWindowManager$2 1
+178 
+sunw.hotjava.HJWindowManager$1 1
+178 
+sunw.hotjava.HJFrame$UpdateRequest 1
+184 
+sunw.hotjava.HJFrame$FrameRequest 1
+184 
+sunw.hotjava.HJFrame$4 1
+184 
+sunw.hotjava.HJFrame$3 1
+181 
+sunw.hotjava.HJFrame$1 1
+178 
+sunw.hotjava.HJFrame$1$CloseRequest 1
+184 
+sun.net.www.protocol.nfs.Handler 1
+252 
+java.io.OutputStream 1
+0 
+com.sun.xfile.XFileOutputStream 1
+339 
+java.io.InputStream 1
+0 
+com.sun.xfile.XFileInputStream 1
+341 
+com.sun.rpc.Cred 1
+0 
+com.sun.rpc.CredUnix 1
+343 
+com.sun.rpc.CredNone 1
+343 
+com.sun.rpc.RpcHandler 1
+0 
+com.sun.nfs.NfsHandler 1
+346 
+com.sun.nfs.Nfs 1
+0 
+com.sun.nfs.Nfs3 1
+348 
+com.sun.nfs.Nfs2 1
+348 
+com.sun.nfs.Fattr 1
+0 
+com.sun.nfs.Fattr3 1
+351 
+com.sun.nfs.Fattr2 1
+351 
+com.sun.nfs.Buffer 1
+265 
+java.io.Writer 1
+0 
+java.io.PrintWriter 1
+355 
+sunw.html.NPrintWriter 1
+356 
+java.io.FilterWriter 1
+355 
+sunw.html.HTMLOutputWriter 1
+358 
+java.awt.Component 1
+0 
+java.awt.Button 1
+360 
+sunw.hotjava.ui.UserTextButton 1
+361 
+java.awt.MenuComponent 1
+0 
+java.awt.MenuItem 1
+363 
+sunw.hotjava.ui.UserMenuItem 1
+364 
+java.awt.MenuBar 1
+363 
+sunw.hotjava.ui.UserMenuBar 1
+366 
+java.awt.Label 1
+360 
+sunw.hotjava.ui.UserLabel 1
+368 
+java.awt.Canvas 1
+360 
+sunw.hotjava.ui.UserImageLabel 1
+370 
+sunw.hotjava.ui.UserImageButton 1
+370 
+java.awt.Choice 1
+360 
+sunw.hotjava.ui.UserChoice 1
+373 
+java.awt.Checkbox 1
+360 
+sunw.hotjava.ui.UserCheckbox 1
+375 
+sunw.hotjava.ui.UIHJButton 1
+370 
+sunw.hotjava.ui.SplashImage 1
+370 
+sunw.hotjava.ui.SecurityMonitorImageButton 1
+370 
+sunw.hotjava.ui.MultiLineLabel 1
+370 
+sunw.hotjava.ui.Message 1
+370 
+sunw.hotjava.ui.ListItemComponent 1
+370 
+sunw.hotjava.ui.HJButton 1
+361 
+sunw.hotjava.ui.ListItem 1
+0 
+sunw.hotjava.ui.ListContainer 1
+384 
+sunw.hotjava.ui.Folder 1
+385 
+java.io.ByteArrayOutputStream 1
+339 
+sunw.hotjava.ui.ConsoleOutput$ConsoleOutputStream 1
+387 
+sunw.hotjava.ui.Clock 1
+370 
+sunw.hotjava.ui.ListElement 1
+384 
+sunw.hotjava.ui.Bookmark 1
+390 
+sunw.hotjava.ui.AnimationIcon 1
+370 
+sunw.hotjava.doc.TagItem 1
+279 
+sunw.hotjava.tags.SCRIPT 1
+393 
+sunw.hotjava.tags.OBJECT 1
+393 
+sunw.hotjava.tags.NOSCRIPT 1
+393 
+sunw.hotjava.tags.NOHOTJAVA 1
+393 
+sunw.hotjava.tags.NOFRAME 1
+393 
+sunw.hotjava.tags.MAP 1
+393 
+sunw.hotjava.tags.FRAMESET 1
+393 
+sunw.hotjava.tags.ANIMATE 1
+393 
+sunw.hotjava.tables.TR 1
+393 
+sunw.hotjava.tables.TD 1
+393 
+sunw.hotjava.doc.VBreakInfo 1
+0 
+sunw.hotjava.doc.CompoundVBreakInfo 1
+404 
+sunw.hotjava.tables.TableVBreakInfo 1
+405 
+java.awt.Container 1
+360 
+sunw.hotjava.tables.TablePanel 1
+407 
+sunw.hotjava.tables.TableElementPanel 1
+407 
+sunw.hotjava.tables.TABLE 1
+393 
+sunw.hotjava.tables.CAPTION 1
+393 
+sunw.hotjava.security.SDCheckbox 1
+375 
+sunw.hotjava.security.PolicyUntrusted 1
+250 
+sunw.hotjava.security.PolicyLow 1
+413 
+java.net.URLConnection 1
+0 
+sun.net.www.URLConnection 1
+415 
+sunw.hotjava.protocol.mailto.MailToURLConnection 1
+416 
+sun.net.www.protocol.http.Handler 1
+252 
+sunw.hotjava.protocol.http.Handler 1
+418 
+sunw.hotjava.protocol.file.FileURLConnection 1
+416 
+sunw.hotjava.protocol.doc.DocURLConnection 1
+416 
+sunw.hotjava.protocol.appletresource.AppletResourceURLConnection 1
+416 
+java.util.Dictionary 1
+0 
+java.util.Hashtable 1
+423 
+sunw.hotjava.misc.SelfCleaningHashtable 1
+424 
+java.io.FilterInputStream 1
+341 
+sunw.hotjava.misc.PlainTextInputStream 1
+426 
+sunw.hotjava.forms.ImageCanvas 1
+370 
+java.awt.image.ImageFilter 1
+0 
+java.awt.image.RGBImageFilter 1
+429 
+sunw.hotjava.forms.HighlightFilter 1
+430 
+sunw.hotjava.forms.FormChoiceJavaOS 1
+373 
+sunw.hotjava.forms.FormChoice 1
+373 
+sunw.hotjava.forms.ComboBox 1
+370 
+sunw.hotjava.doc.FormatterVBreakInfo 1
+405 
+java.lang.Throwable 1
+0 
+java.lang.Error 1
+436 
+sunw.hotjava.doc.DocError 1
+437 
+java.lang.Exception 1
+436 
+sunw.hotjava.bean.InvalidFrameException 1
+439 
+java.io.ObjectInputStream 1
+341 
+sunw.hotjava.applet.AppletObjectInputStream 1
+441 
+sun.net.www.protocol.nfs.NfsURLConnection 1
+416 
+java.io.OutputStreamWriter 1
+355 
+com.sun.xfile.XFileWriter 1
+444 
+java.io.InputStreamReader 1
+295 
+com.sun.xfile.XFileReader 1
+446 
+com.sun.rpc.Connection 1
+265 
+com.sun.rpc.ConnectSocket 1
+448 
+com.sun.rpc.ConnectDatagram 1
+448 
+com.sun.xfile.XFileExtensionAccessor 1
+0 
+com.sun.nfs.XFileExtensionAccessor 1
+451 
+com.sun.nfs.nfsXFileExtensionAccessor 1
+452 
+java.io.IOException 1
+439 
+sunw.html.IncorrectReaderException 1
+454 
+sunw.hotjava.ui.BarCanvas 1
+370 
+sunw.hotjava.ui.ValueBar 1
+456 
+java.awt.TextComponent 1
+360 
+java.awt.TextField 1
+458 
+sunw.hotjava.ui.UserTextField 1
+459 
+java.awt.TextArea 1
+458 
+sunw.hotjava.ui.UserTextArea 1
+461 
+java.awt.Menu 1
+364 
+sunw.hotjava.ui.UserMenu 1
+463 
+java.awt.CheckboxMenuItem 1
+364 
+sunw.hotjava.ui.UserCheckboxMenuItem 1
+465 
+java.awt.Panel 1
+407 
+sunw.hotjava.ui.Toolbar 1
+467 
+java.awt.Window 1
+407 
+sunw.hotjava.ui.SplashFrame 1
+469 
+sunw.hotjava.ui.PlacesMessageLine 1
+467 
+sunw.hotjava.ui.PanelWithInsets 1
+467 
+sunw.hotjava.ui.MessageLine 1
+467 
+sunw.hotjava.ui.MessageBox 1
+469 
+sunw.hotjava.ui.Locator 1
+467 
+sunw.hotjava.ui.ListPanel 1
+467 
+sunw.hotjava.ui.InstrumentPanelSpacer 1
+467 
+sunw.hotjava.ui.InputField 1
+459 
+sunw.hotjava.ui.InfoLabel 1
+467 
+sunw.hotjava.ui.GoToPlaceDialogFormPane 1
+467 
+sunw.hotjava.ui.GoToPlaceDialogButtonPane 1
+467 
+sunw.hotjava.ui.FolderPanel 1
+467 
+sunw.hotjava.ui.FindDialogFormPane 1
+467 
+sunw.hotjava.ui.FindDialogButtonPane 1
+467 
+sunw.hotjava.ui.ListItemSeparator 1
+390 
+sunw.hotjava.ui.EntrySeparator 1
+485 
+sunw.hotjava.ui.DraggableContainer 1
+469 
+sunw.hotjava.ui.ConfirmDialogPanel 1
+467 
+sunw.hotjava.ui.ClockPanel 1
+467 
+sunw.hotjava.ui.BytesTransferredInd 1
+467 
+sunw.hotjava.ui.BPSIndicator 1
+467 
+sunw.hotjava.ui.ActivityMonitor 1
+467 
+sunw.hotjava.ui.ActivityBar 1
+456 
+sunw.hotjava.doc.EmptyTagItem 1
+393 
+sunw.hotjava.tags.WBR 1
+494 
+sunw.hotjava.doc.BlockTagItem 1
+393 
+sunw.hotjava.tags.UL 1
+496 
+sunw.hotjava.tags.SPACER 1
+494 
+sunw.hotjava.tags.RuleWindow 1
+469 
+sunw.hotjava.tags.PARAM 1
+494 
+sunw.hotjava.tags.P 1
+496 
+sunw.hotjava.tags.OL 1
+496 
+sunw.hotjava.tags.IsindexPanel 1
+467 
+sunw.hotjava.tags.ISINDEX 1
+494 
+sunw.hotjava.tags.IMG 1
+494 
+sunw.hotjava.tags.HR 1
+494 
+sunw.hotjava.tags.Heading 1
+496 
+sunw.hotjava.tags.FrameSetPanel 1
+467 
+sunw.hotjava.tags.FramePanel 1
+467 
+sunw.hotjava.tags.FRAME 1
+494 
+sunw.hotjava.doc.FlowTagItem 1
+393 
+sunw.hotjava.tags.FONT 1
+511 
+sunw.hotjava.tags.DIV 1
+496 
+sunw.hotjava.doc.BreakTagItem 1
+393 
+sunw.hotjava.tags.BR 1
+514 
+sunw.hotjava.tags.BASEFONT 1
+494 
+sunw.hotjava.tags.AREA 1
+494 
+sunw.hotjava.tags.APPLET 1
+511 
+sunw.hotjava.tags.A 1
+511 
+sunw.hotjava.security.PolicyHigh 1
+413 
+sunw.hotjava.security.PolicyScript 1
+520 
+sunw.hotjava.security.PolicyMedium 1
+520 
+java.net.HttpURLConnection 1
+415 
+sun.net.www.protocol.http.HttpURLConnection 1
+523 
+sunw.hotjava.protocol.http.HttpURLConnectionCookie 1
+524 
+java.util.Properties 1
+424 
+sunw.hotjava.misc.HJBProperties 1
+526 
+sunw.hotjava.forms.SELECT 1
+393 
+sunw.hotjava.forms.TEXTAREA 1
+528 
+sunw.hotjava.forms.OPTION 1
+511 
+sunw.hotjava.forms.INPUT 1
+494 
+sunw.hotjava.forms.FormTextField 1
+459 
+sunw.hotjava.forms.FormPanel 1
+467 
+sunw.hotjava.forms.FORM 1
+496 
+sunw.hotjava.doc.DocumentFormatterPanel 1
+467 
+sunw.hotjava.doc.DocException 1
+439 
+sunw.hotjava.doc.DocNotEditableException 1
+536 
+sunw.hotjava.doc.DocBusyException 1
+536 
+sunw.hotjava.bean.ConfirmDialogPanel 1
+467 
+sunw.hotjava.applets.TextPanel 1
+467 
+sunw.hotjava.applets.SignedApplets 1
+467 
+sunw.hotjava.applets.ProxiesPanel 1
+467 
+sunw.hotjava.applets.OutgoingMailPanel 1
+467 
+sunw.hotjava.applets.DisplayPanel 1
+467 
+sunw.hotjava.applets.Cookies 1
+467 
+sunw.hotjava.applets.ContentViewersPreferencesDialog$ButtonPanel 1
+467 
+sunw.hotjava.applets.ClockPanel 1
+467 
+sunw.hotjava.applets.AppletsJS 1
+467 
+sunw.hotjava.applets.AppletsJavaScripts 1
+467 
+com.sun.nfs.NfsException 1
+454 
+sunw.hotjava.ui.DelegatingPanel 1
+467 
+sunw.hotjava.ui.TimedMessageContainer 1
+551 
+sunw.hotjava.ui.RaisedPanel 1
+467 
+sunw.hotjava.ui.SideBar 1
+553 
+java.awt.Frame 1
+469 
+sunw.hotjava.ui.ProgressDialog 1
+555 
+sunw.hotjava.ui.InstrumentPanelPart 1
+467 
+sunw.hotjava.ui.InstrumentPanelMessageLine 1
+557 
+sunw.hotjava.ui.InstrumentPanelLocator 1
+557 
+sunw.hotjava.ui.InstrumentPanelControls 1
+557 
+sunw.hotjava.ui.InstrumentPanel 1
+553 
+java.awt.PopupMenu 1
+463 
+sunw.hotjava.ui.HJPopupMenu 1
+562 
+sunw.hotjava.ui.ConsoleFrame 1
+555 
+sunw.hotjava.ui.ListCanvas 1
+370 
+sunw.hotjava.ui.HotCanvas 1
+565 
+sunw.hotjava.ui.BrowserListCanvas 1
+566 
+sunw.hotjava.applet.AppletPanel 1
+467 
+sunw.hotjava.tags.TagAppletPanel 1
+568 
+sunw.hotjava.tags.TagAppletPanel$AppletEmbeddedFrame 1
+555 
+sunw.hotjava.doc.BulletTagItem 1
+496 
+sunw.hotjava.tags.LI 1
+571 
+java.lang.RuntimeException 1
+439 
+java.lang.SecurityException 1
+573 
+sunw.hotjava.security.AppletSecurityException 1
+574 
+java.awt.Dialog 1
+469 
+sunw.hotjava.forms.MoreChoicesJavaOSDialog 1
+576 
+sunw.hotjava.forms.MoreChoicesDialog 1
+576 
+java.awt.ScrollPane 1
+407 
+sunw.hotjava.doc.DocumentPanel 1
+579 
+sunw.hotjava.bean.HotJavaBrowserBean 1
+580 
+sunw.hotjava.bean.BeanConfirmDialog 1
+576 
+sunw.hotjava.ui.NPanel 1
+467 
+sunw.hotjava.applets.secButtonPanel 1
+583 
+sunw.hotjava.applets.genButtonPanel 1
+583 
+java.security.SecureClassLoader 1
+323 
+java.net.URLClassLoader 1
+586 
+sun.applet.AppletClassLoader 1
+587 
+sunw.hotjava.applet.ScriptingEngineLoader 1
+588 
+sunw.hotjava.applet.AppletIOException 1
+454 
+sunw.hotjava.applet.AppletLoadRedirectException 1
+590 
+java.lang.IllegalArgumentException 1
+573 
+sunw.hotjava.applet.AppletIllegalArgumentException 1
+592 
+com.sun.rpc.RpcException 1
+454 
+com.sun.rpc.MsgRejectedException 1
+594 
+com.sun.rpc.MsgAcceptedException 1
+594 
+java.awt.FileDialog 1
+576 
+sunw.hotjava.ui.UserFileDialog 1
+597 
+sunw.hotjava.ui.UserFrame 1
+555 
+sunw.hotjava.ui.HotListFrame 1
+599 
+sunw.hotjava.ui.UserDialog 1
+576 
+sunw.hotjava.ui.GoToPlaceDialog 1
+601 
+sunw.hotjava.ui.FolderDialog 1
+601 
+sunw.hotjava.ui.FindStringDialog 1
+601 
+sunw.hotjava.ui.FindDialogNotFoundDialog 1
+601 
+sunw.hotjava.ui.ConfirmDialog 1
+601 
+sunw.hotjava.ui.BookmarkDialog 1
+601 
+sunw.hotjava.ui.AuthenticationDialog 1
+601 
+sunw.hotjava.tags.TagAppletPanel$ExceptionDialog 1
+601 
+java.applet.Applet 1
+467 
+sunw.hotjava.bean.applets.HotJavaBeanApplet 1
+610 
+sunw.hotjava.bean.applets.TextOverlayApplet 1
+611 
+sunw.hotjava.bean.applets.ContentViewerUnknownApplet 1
+611 
+sunw.hotjava.applets.HotJavaApplet 1
+610 
+sunw.hotjava.applets.ThreadListApplet 1
+614 
+sunw.hotjava.applets.ThreadCountApplet 1
+614 
+sunw.hotjava.applets.TextOverlayApplet 1
+614 
+sunw.hotjava.applets.ShowPropertyApplet 1
+614 
+sunw.hotjava.applets.SecurityPreferencesDialog 1
+601 
+sunw.hotjava.applets.SaveToFileApplet 1
+614 
+sunw.hotjava.applets.ProgressApplet 1
+614 
+sunw.hotjava.applets.OKApplet 1
+614 
+sunw.hotjava.applets.MemoryBarApplet 1
+614 
+sunw.hotjava.applets.MemoryApplet 1
+614 
+sunw.hotjava.applets.MailDocumentApplet 1
+614 
+sunw.hotjava.applets.GeneralPreferencesDialog 1
+601 
+sunw.hotjava.applets.ContentViewerUnknownApplet 1
+614 
+sunw.hotjava.applets.ContentViewersPreferencesDialog 1
+601 
+sunw.hotjava.applets.AudioApplet 1
+614 
+sunw.hotjava.applets.ApplyResetHelpApplet 1
+614 
+java.lang.SecurityManager 1
+0 
+sun.awt.AWTSecurityManager 1
+631 
+sun.applet.AppletSecurity 1
+632 
+sunw.hotjava.applet.AppletSecurity 1
+633 
+sunw.hotjava.security.CommonSecurity 1
+634 
+sunw.hotjava.applet.BrowserSecurityManager 1
+635 
+sunw.hotjava.HJFrame 1
+599 
+sunw.hotjava.ui.BagDialog 1
+601 
+sunw.hotjava.ui.SecureSiteWarnDialog 1
+638 
+sunw.hotjava.ui.CheckboxDialog 1
+638 
+sunw.hotjava.security.SecurityDialog 1
+638 
+sunw.hotjava.applets.PrefApplet 1
+614 
+sunw.hotjava.applets.AdvancedPreferenceApplet 1
+642 
+690
+java.lang.String-toString 71
+171 354 353 352 348 550 168 167 448 344 596 595 164 163 153 322 279 128 127 126 120 113 111 108 106 104 103 101 100 393 280 75 74 64 575 57 245 47 242 241 224 172 211 385 390 485 190 188 173 9 8 7 5 4 2 1 0 265 210 318 302 298 274 216 424 387 199 415 436 360 363 
+void-flush 16
+171 348 167 340 162 321 307 279 505 388 339 444 234 358 356 355 
+long-length 4
+171 167 164 162 
+[Ljava.lang.String;-list 3
+171 167 164 
+void-write-[B-int-int-long 2
+171 167 
+boolean-delete 3
+171 167 164 
+int-read-[B-int-int-long 2
+171 167 
+boolean-open-com.sun.xfile.XFile-boolean-boolean 2
+171 167 
+void-close 19
+171 348 167 342 340 162 296 341 339 446 444 416 441 295 426 387 358 356 355 
+boolean-exists 3
+171 167 164 
+boolean-isDirectory 3
+171 167 164 
+boolean-canRead 3
+171 167 164 
+boolean-canWrite 3
+171 167 164 
+boolean-isFile 3
+171 167 164 
+long-lastModified 3
+171 167 164 
+boolean-mkdir 3
+171 167 164 
+boolean-renameTo-com.sun.xfile.XFile 3
+171 167 164 
+com.sun.xfile.XFile-getXFile 2
+171 167 
+boolean-mkfile 2
+171 167 
+void-run 29
+354 448 328 154 320 568 547 624 623 616 615 314 311 581 131 297 288 281 270 266 72 261 63 243 608 227 24 23 265 
+void-finalize 10
+348 450 449 340 525 0 298 524 469 555 
+void-ok-java.lang.String 2
+347 346 
+boolean-timeout-java.lang.String-int-int 2
+347 346 
+java.lang.String-getFile 2
+168 597 
+int-hashCode 9
+164 153 126 125 57 0 298 216 424 
+boolean-equals-java.lang.Object 8
+164 126 125 57 0 298 216 424 
+java.lang.String-getName 19
+164 643 642 139 580 393 75 60 57 509 9 5 4 3 265 318 298 360 363 
+java.lang.String-getPath 2
+164 75 
+int-read-[B 4
+342 162 341 426 
+int-read 7
+342 162 341 446 441 295 426 
+int-read-[B-int-int 5
+342 162 341 441 426 
+long-skip-long 4
+342 341 295 426 
+int-available 4
+342 341 441 426 
+void-write-[B-int-int 4
+340 162 339 387 
+void-write-[B 3
+340 162 339 
+void-write-int 9
+340 162 359 339 444 387 358 356 355 
+java.lang.String-readLine 2
+162 441 
+int-readInt 2
+162 441 
+byte-readByte 2
+162 441 
+short-readShort 2
+162 441 
+java.lang.String-readUTF 2
+162 441 
+char-readChar 2
+162 441 
+float-readFloat 2
+162 441 
+void-readFully-[B 2
+162 441 
+void-readFully-[B-int-int 2
+162 441 
+boolean-readBoolean 2
+162 441 
+double-readDouble 2
+162 441 
+long-readLong 2
+162 441 
+int-readUnsignedByte 2
+162 441 
+int-readUnsignedShort 2
+162 441 
+int-skipBytes-int 2
+162 441 
+java.net.URLConnection-openConnection-java.net.URL 10
+338 84 83 257 256 255 419 253 252 418 
+java.io.InputStream-getInputStream 8
+443 422 421 420 525 417 524 415 
+void-connect 8
+443 422 421 420 525 417 524 415 
+int-doCompare-java.lang.Object-java.lang.Object 7
+161 143 268 61 43 36 10 
+void-execute 24
+337 334 333 332 327 326 325 312 310 293 285 276 184 254 244 238 233 232 230 212 191 187 186 185 
+void-windowClosing-java.awt.event.WindowEvent 9
+336 316 229 225 221 30 209 179 178 
+void-windowIconified-java.awt.event.WindowEvent 5
+336 225 30 209 178 
+void-windowDeiconified-java.awt.event.WindowEvent 5
+336 225 30 209 178 
+void-propertyChange-java.beans.PropertyChangeEvent 8
+160 159 581 126 22 475 473 379 
+void-keyPressed-java.awt.event.KeyEvent 13
+335 643 317 291 290 277 272 223 383 204 194 182 181 
+void-reset 15
+637 634 643 628 642 126 292 108 635 56 341 633 295 426 387 
+void-update-java.util.Observable-java.lang.Object 7
+637 621 581 392 389 473 556 
+java.awt.MenuItem-getMenuItem-java.lang.String 2
+637 367 
+void-nextDocument 2
+637 136 
+void-paste-java.lang.String 3
+637 478 475 
+void-previousDocument 2
+637 136 
+void-showStatus-java.lang.String 3
+637 569 610 
+void-stopLoading 3
+637 568 581 
+void-windowActivated-java.awt.event.WindowEvent 5
+331 330 329 30 178 
+void-vetoableChange-java.beans.PropertyChangeEvent 3
+154 581 11 
+void-hotlistChanged-sunw.hotjava.ui.HotListEvent 4
+154 31 27 16 
+java.lang.Class-loadClass-java.lang.String-boolean 3
+324 323 588 
+java.lang.Class-loadClass-java.lang.String 2
+324 323 
+java.io.InputStream-getResourceAsStream-java.lang.String 2
+324 323 
+java.net.URL-getResource-java.lang.String 2
+324 323 
+java.lang.ThreadGroup-getThreadGroup 5
+324 634 265 633 631 
+void-destroy 14
+324 292 580 247 533 409 408 509 508 503 569 265 318 610 
+java.lang.Object-getSecurityContext 3
+324 634 631 
+int-getID 4
+322 294 224 211 
+java.lang.Object-getArgument 4
+322 294 224 211 
+void-appletStateChanged-sunw.hotjava.applet.AppletEvent 3
+152 118 44 
+java.lang.String-getLocalizedMessage 5
+593 590 591 575 436 
+int-getReloadCount 2
+321 307 
+java.lang.Object-reconstitute 6
+321 307 289 246 235 234 
+java.lang.Class-resolveClass-java.io.ObjectStreamClass 2
+442 441 
+void-init 18
+568 643 630 629 627 625 624 623 622 620 618 617 616 615 613 612 468 610 
+java.net.URL-getCodeBase 4
+568 149 569 610 
+boolean-isActive 2
+568 610 
+java.awt.Dimension-preferredSize 12
+568 428 508 392 382 380 371 369 459 407 461 360 
+java.awt.Dimension-minimumSize 13
+568 533 508 392 389 382 380 371 369 459 407 461 360 
+int-getWidth 5
+568 292 569 384 360 
+int-getHeight 4
+568 569 384 360 
+java.lang.String-getJarFiles 2
+568 569 
+java.net.URL-getDocumentBase 3
+568 569 610 
+java.lang.String-getParameter-java.lang.String 3
+568 569 610 
+java.applet.AppletContext-getAppletContext 3
+568 569 610 
+java.lang.String-getCode 2
+568 569 
+java.lang.String-getSerializedObject 2
+568 569 
+boolean-isPriviledgedPage 2
+568 569 
+void-showAppletException-java.lang.Throwable 2
+568 569 
+void-showAppletLog-java.lang.String 2
+568 569 
+java.awt.Image-getImage-java.net.URL 3
+150 569 610 
+java.applet.AudioClip-getAudioClip-java.net.URL 3
+150 569 610 
+void-checkCreateClassLoader 3
+634 635 631 
+void-checkConnect-java.lang.String-int-java.lang.Object 2
+634 631 
+boolean-inThreadGroup-java.lang.ThreadGroup 2
+634 633 
+boolean-inThreadGroup-java.lang.Thread 2
+634 633 
+java.lang.ThreadGroup-getThreadGroup-java.net.URL 2
+148 147 
+void-destroyApplets-int 2
+148 147 
+java.applet.Applet-createApplet-java.lang.ClassLoader-java.lang.String-java.lang.String 2
+148 147 
+java.lang.Class-createScriptClass-java.lang.ClassLoader-java.lang.String-[B 2
+148 147 
+java.lang.Integer-deRefClassLoader-java.net.URL-boolean 2
+148 147 
+java.lang.ClassLoader-refClassLoader-java.net.URL-[Ljava.lang.String;-java.lang.Object 2
+148 147 
+void-removeThreadGroup-java.net.URL 2
+148 147 
+boolean-checkFrameAccess 4
+147 250 251 413 
+[Ljava.lang.Class;-getClassContext 2
+636 631 
+sunw.hotjava.security.BasePolicy-findPolicy-java.lang.ClassLoader 2
+636 635 
+void-focusGained-java.awt.event.FocusEvent 7
+643 90 228 220 15 183 176 
+void-focusLost-java.awt.event.FocusEvent 6
+643 90 15 183 177 176 
+void-keyTyped-java.awt.event.KeyEvent 9
+643 277 272 222 383 194 192 182 181 
+void-keyReleased-java.awt.event.KeyEvent 7
+643 277 272 383 194 182 181 
+void-apply 5
+643 628 642 268 56 
+[Ljava.lang.String;-getPropertyNames 2
+643 642 
+void-updateFields 2
+643 642 
+void-stop 35
+549 548 629 547 545 544 624 623 543 642 621 542 541 540 616 615 310 292 580 247 533 261 63 409 408 509 508 503 569 389 489 227 265 318 610 
+int-apply 9
+549 548 547 545 544 543 542 541 540 
+void-itemStateChanged-java.awt.event.ItemEvent 6
+548 628 619 93 92 30 
+void-actionPerformed-java.awt.event.ActionEvent 33
+630 146 546 628 545 145 585 625 622 584 582 434 89 86 85 641 45 42 41 640 606 39 38 605 33 32 602 30 26 20 556 639 468 
+void-start 24
+629 625 624 623 642 621 616 615 580 247 533 63 409 408 509 508 503 569 389 489 227 556 265 610 
+java.awt.Dimension-getPreferredSize 24
+546 585 584 582 581 535 434 533 456 389 551 479 477 382 476 475 381 377 601 372 459 407 461 360 
+java.awt.Dimension-getMinimumSize 17
+546 585 584 581 434 456 551 479 477 382 475 377 372 459 407 461 360 
+void-addButtons 3
+546 585 584 
+void-doDefaultAction 3
+546 585 584 
+void-clear 5
+628 581 126 564 424 
+boolean-action-java.awt.Event-java.lang.Object 8
+628 627 620 615 613 638 639 360 
+boolean-handleEvent-java.awt.Event 4
+628 615 362 360 
+void-processEnterEvent-java.awt.event.KeyEvent 7
+628 626 625 619 641 640 639 
+java.io.File-askUserForFile-java.lang.String-int-java.lang.String 2
+628 614 
+java.io.File-askUserForFile-java.lang.String-int 2
+628 614 
+void-dispose 4
+626 564 576 469 
+void-mousePressed-java.awt.event.MouseEvent 19
+626 619 284 434 278 273 271 249 509 46 231 219 198 197 193 189 180 175 174 
+void-mouseReleased-java.awt.event.MouseEvent 20
+626 619 284 434 273 271 249 509 46 237 231 219 208 198 197 193 189 180 175 174 
+void-mouseClicked-java.awt.event.MouseEvent 6
+626 619 434 509 46 174 
+void-mouseExited-java.awt.event.MouseEvent 15
+626 619 284 434 273 271 249 509 46 231 193 189 180 175 174 
+void-mouseEntered-java.awt.event.MouseEvent 13
+626 619 284 434 271 509 46 236 231 189 180 175 174 
+java.lang.String-getParameter-java.lang.String-java.lang.String 3
+614 611 612 
+void-showDocument-java.net.URL 2
+614 569 
+void-paint-java.awt.Graphics 39
+624 623 621 618 617 612 535 434 532 428 578 248 409 408 509 499 569 493 392 567 389 487 479 565 382 381 474 380 583 553 379 378 377 372 371 457 370 407 360 
+void-update-java.awt.Graphics 25
+618 617 612 535 580 434 409 408 509 499 392 456 491 490 487 382 380 556 379 378 377 372 371 407 360 
+java.awt.Component-add-java.awt.Component-int 5
+582 551 601 598 407 
+java.awt.Component-add-java.lang.String-java.awt.Component 5
+582 551 601 598 407 
+boolean-gotFocus-java.awt.Event-java.lang.Object 3
+582 606 360 
+int-getAnswer 3
+582 640 606 
+void-centerOnScreen 2
+582 601 
+void-setPrompt-java.lang.String 3
+582 640 606 
+void-setFocus-int 2
+582 606 
+java.awt.Insets-insets 4
+539 488 553 407 
+void-addVetoableChangeListener-java.beans.VetoableChangeListener 3
+142 581 126 
+void-removeVetoableChangeListener-java.beans.VetoableChangeListener 3
+142 581 126 
+[Ljava.beans.MethodDescriptor;-getMethodDescriptors 5
+313 309 308 305 304 
+int-getIndex 9
+139 299 279 110 109 95 518 505 4 
+void-documentChanged-sunw.hotjava.doc.DocumentEvent 7
+138 123 122 121 117 270 505 
+java.lang.Object-clone 12
+581 127 113 95 172 384 190 173 8 0 424 429 
+void-print-boolean 2
+581 356 
+void-addNotify 28
+581 580 434 433 392 473 371 467 576 579 370 373 459 375 407 469 555 361 562 465 597 368 463 366 364 461 360 458 
+void-removeNotify 12
+581 580 509 392 473 407 555 463 366 360 458 363 
+java.awt.Component-getComponent 3
+581 110 533 
+void-addPropertyChangeListener-java.beans.PropertyChangeListener 6
+581 136 297 126 475 360 
+void-removePropertyChangeListener-java.beans.PropertyChangeListener 5
+581 136 297 126 360 
+void-addBrowserHistoryListener-sunw.hotjava.bean.BrowserHistoryListener 2
+581 136 
+void-back 2
+581 115 
+void-forward 2
+581 115 
+void-executeHistoryCommand-sunw.hotjava.bean.BrowserHistoryEvent 2
+581 136 
+java.lang.String-getDocumentTitle 2
+581 126 
+void-reload 5
+581 126 580 509 508 
+void-removeBrowserHistoryListener-sunw.hotjava.bean.BrowserHistoryListener 2
+581 136 
+void-setDocumentSource-java.io.Reader 2
+581 580 
+void-readExternal-java.io.ObjectInput 2
+581 136 
+void-writeExternal-java.io.ObjectOutput 2
+581 136 
+boolean-canBack 2
+581 115 
+boolean-canForward 2
+581 115 
+void-deregisterInterestIn-sunw.hotjava.doc.Document 2
+581 580 
+java.awt.Frame-getContainingFrame 2
+581 580 
+java.lang.String-getDefaultStatusMessage 2
+581 292 
+void-processDocumentEvent-sunw.hotjava.doc.DocumentEvent 2
+581 292 
+void-processPanelKeyEvent-java.awt.event.KeyEvent 2
+581 580 
+void-registerInterestIn-sunw.hotjava.doc.Document 2
+581 580 
+void-setDocFont-sunw.hotjava.doc.DocFont 5
+581 119 115 247 248 
+void-setDocumentTitle-java.lang.String 2
+581 126 
+void-setErrorMessage-java.lang.String 2
+581 126 
+[Ljava.beans.PropertyDescriptor;-getPropertyDescriptors 3
+309 308 304 
+int-getDefaultPropertyIndex 3
+309 308 304 
+[Ljava.beans.EventSetDescriptor;-getEventSetDescriptors 3
+309 308 304 
+void-setContentsDepth-int 2
+136 115 
+void-setLogicalDepth-int 2
+136 115 
+int-getContentsDepth 2
+136 115 
+java.lang.Object-getKey 2
+135 60 
+boolean-imageUpdate-java.awt.Image-int-int-int-int-int 14
+135 125 292 247 428 531 248 505 569 392 378 372 371 360 
+java.lang.Object-get-boolean 2
+307 289 
+void-add-java.lang.String 4
+131 434 373 463 
+java.lang.Object-getContent-java.net.URLConnection 2
+301 300 
+int-basefontSizeAt-sunw.hotjava.doc.DocStyle-int 2
+130 126 
+void-init-sunw.hotjava.doc.Document 24
+496 393 534 531 410 519 518 516 515 513 512 510 400 507 506 505 504 572 395 502 501 394 498 497 
+int-paint-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int-sunw.hotjava.doc.DocLine 23
+496 514 571 279 494 287 511 280 531 528 401 518 506 505 504 399 398 397 396 395 394 498 497 
+java.lang.String-getText 7
+496 279 280 507 506 368 458 
+int-findEndTagX-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int-sunw.hotjava.doc.Formatter 5
+496 279 511 518 395 
+int-findStartTagX-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int-sunw.hotjava.doc.Formatter 7
+496 571 279 511 528 518 395 
+boolean-formatEndTag-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.FormatState 15
+496 571 279 511 534 528 411 410 403 402 518 395 502 501 497 
+boolean-formatStartTag-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.FormatState 22
+496 571 279 511 528 411 410 403 402 401 518 400 572 399 398 397 396 395 502 501 394 497 
+int-getEndTagWidth-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int 5
+496 571 279 511 395 
+int-getStartTagWidth-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int 5
+496 571 279 511 395 
+boolean-isBlock 7
+496 514 279 403 506 504 1 
+boolean-measureEndTag-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.Measurement-sunw.hotjava.doc.MeasureState 9
+496 279 287 511 411 410 403 402 518 
+boolean-measureStartTag-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.Measurement-sunw.hotjava.doc.MeasureState 17
+496 279 511 528 411 410 403 402 401 518 400 572 399 398 397 396 394 
+void-modifyStyle-sunw.hotjava.doc.DocStyle 13
+496 279 511 393 411 403 402 519 513 512 507 501 497 
+int-startOffset-sunw.hotjava.doc.Document-int 3
+496 279 280 
+boolean-isPreformatted 4
+496 393 529 1 
+boolean-beginState-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState 2
+496 507 
+boolean-leaveSpace-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState 3
+496 507 501 
+boolean-format-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.FormatState 14
+514 279 494 287 280 531 516 515 510 506 505 504 498 495 
+int-findX-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int-sunw.hotjava.doc.Formatter 4
+514 279 494 280 
+boolean-measureItem-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState-sunw.hotjava.doc.Measurement-sunw.hotjava.doc.MeasureState 11
+514 279 494 280 531 516 506 505 504 498 495 
+int-startOffset-int 2
+571 506 
+int-paintBullet-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int-sunw.hotjava.doc.DocLine 2
+571 572 
+void-load-sunw.hotjava.doc.Formatter 3
+279 505 395 
+int-find-java.lang.String-int-boolean-sunw.hotjava.doc.OverlappingStringMatch 2
+279 280 
+int-print-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.VBreakInfo 9
+279 280 531 528 410 518 505 504 395 
+void-write-sunw.html.HTMLOutputWriter 2
+279 393 
+void-delete-sunw.hotjava.doc.Document-int-int 2
+279 280 
+int-insert-sunw.hotjava.doc.Document-int-[C-int-int 2
+279 280 
+java.lang.String-getType 2
+279 393 
+int-getOffset 4
+279 109 518 505 
+sunw.hotjava.doc.NamedLink-map-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-java.lang.String-int-int 4
+279 519 505 395 
+int-paint-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int-sunw.hotjava.doc.DocLine-boolean 4
+279 410 400 505 
+int-getWidth-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.DocStyle 8
+279 494 531 528 410 518 505 395 
+int-getWidth-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int-int 3
+279 494 280 
+int-getAscent-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState 8
+279 494 531 410 518 505 395 498 
+int-getDescent-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FormatState 8
+279 494 531 410 518 505 395 498 
+void-setIndex-int-sunw.hotjava.doc.Document 2
+279 516 
+boolean-activate-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.Document 2
+279 505 
+void-addFormElement-sunw.hotjava.doc.TagItem 2
+279 534 
+java.awt.Component-createView-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.Document 11
+279 531 528 529 410 518 400 505 504 399 395 
+void-deactivate-sunw.hotjava.doc.Formatter 2
+279 505 
+int-findLabel-java.lang.String 4
+279 126 280 519 
+int-findSplitY-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FloaterInfo-int-int-sunw.hotjava.doc.VBreakInfo 2
+279 410 
+int-findSplitY-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.ItemIterator-sunw.hotjava.doc.DocStyle-int-int-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.VBreakInfo 2
+279 410 
+int-getActivateIncrement 2
+279 410 
+int-getFormPanel-sunw.hotjava.doc.Formatter-java.util.Vector 5
+279 534 531 528 410 
+sunw.hotjava.doc.TagItem-getFormParent 5
+279 531 530 528 529 
+java.net.URL-getImageURL 3
+279 505 395 
+java.lang.String-getMapAltText-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.DocStyle-int-int 2
+279 505 
+sunw.hotjava.doc.TagItem-getTag-sunw.hotjava.doc.Document 3
+279 287 393 
+boolean-isEnd 2
+279 287 
+boolean-isMappable 4
+279 519 505 395 
+boolean-isStart 2
+279 393 
+boolean-isText 2
+279 280 
+boolean-modifiesStyleInPlace 2
+279 516 
+sunw.hotjava.doc.DocStyle-modifyStyleInPlace-sunw.hotjava.doc.DocStyle 2
+279 516 
+boolean-needsActivation 10
+279 531 528 410 518 400 505 504 399 395 
+boolean-needsLoading 3
+279 505 395 
+void-recordBreakInfo-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.FloaterInfo-int-int-sunw.hotjava.doc.FormatterVBreakInfo-sunw.hotjava.doc.FormatterVBreakInfo 2
+279 410 
+void-recordBreakInfo-sunw.hotjava.doc.Formatter-sunw.hotjava.doc.ItemIterator-sunw.hotjava.doc.DocStyle-int-int-sunw.hotjava.doc.DocLine-sunw.hotjava.doc.FormatterVBreakInfo-sunw.hotjava.doc.FormatterVBreakInfo 2
+279 410 
+void-setFormParent-sunw.hotjava.doc.TagItem 5
+279 531 530 528 529 
+sunw.hotjava.doc.DocItem-split-sunw.hotjava.doc.Document-int 2
+279 280 
+boolean-visit-sunw.hotjava.doc.DocItemVisitor 10
+279 534 531 530 528 529 519 518 517 505 
+void-writeEndTag-sunw.html.HTMLOutputWriter 2
+279 393 
+void-writeStartTag-sunw.html.HTMLOutputWriter 2
+279 393 
+java.lang.Object-nextElement 4
+129 99 98 51 
+boolean-hasMoreElements 4
+129 99 98 51 
+void-error-java.lang.String-java.lang.String-java.lang.String-java.lang.String 3
+297 206 205 
+void-addDocumentListener-sunw.hotjava.doc.DocumentListener 5
+297 126 580 247 569 
+[C-handleScript-[C-java.lang.String 2
+297 205 
+void-removeDocumentListener-sunw.hotjava.doc.DocumentListener 5
+297 126 580 247 569 
+void-endTag-boolean 2
+297 205 
+sunw.html.Tag-makeTag-sunw.html.Element-sunw.html.Attributes 2
+297 205 
+void-checkForSurroundedTable-sunw.html.Element-sunw.html.Tag 2
+297 205 
+void-doNecessarySurroundedTableCleanup 2
+297 205 
+void-handleBodyTagAttributes-sunw.html.Attributes 2
+297 205 
+void-handleCommentOrScript-[C 2
+297 205 
+void-handleEmptyTag-sunw.html.Tag 4
+297 243 206 205 
+void-handleEndTag-sunw.html.Tag 4
+297 243 206 205 
+void-handleError-int-java.lang.String 3
+297 206 205 
+void-handleFormTagInTable-sunw.html.Tag 2
+297 205 
+void-handleStartTag-sunw.html.Tag 4
+297 243 206 205 
+void-handleText-[C-sunw.html.Tag 3
+297 206 205 
+void-handleTitle-[C-sunw.html.Tag 2
+297 205 
+void-incrementNumberFormsToEnd-sunw.html.Tag 2
+297 205 
+boolean-matchesInterestedType 2
+297 205 
+boolean-needToReopenTag-sunw.html.Tag-sunw.html.Tag 2
+297 205 
+void-printImmediateDocContext-int 2
+297 205 
+void-setTableSurroundedByForm-sunw.html.Tag 2
+297 205 
+void-timeStamp-java.lang.String 2
+297 205 
+int-read-[C-int-int 3
+296 446 295 
+int-length 2
+126 8 
+java.net.URL-getURL 5
+126 120 119 63 415 
+int-getSize 3
+126 115 298 
+java.lang.String-getTitle 6
+126 172 565 384 576 555 
+void-setState-int 2
+126 555 
+int-getState 3
+126 505 555 
+void-updateClient-java.lang.Object 5
+126 125 292 505 569 
+java.util.Date-getExpirationDate 2
+126 75 
+void-invalidateFrames 2
+126 508 
+sunw.hotjava.doc.Document-getDocument 8
+294 292 119 580 247 409 509 569 
+void-notify-sunw.hotjava.doc.Document-int-int-int 12
+292 580 247 533 270 248 409 408 509 508 503 569 
+java.awt.Container-getParent 6
+292 247 248 570 569 360 
+void-print-java.awt.PrintJob-sunw.hotjava.bean.HotJavaBrowserBean 4
+292 580 509 508 
+void-repaint 4
+292 409 408 360 
+void-layout 8
+292 533 408 508 551 579 407 360 
+void-setVisible-java.awt.Component-java.util.BitSet-int 3
+292 247 248 
+java.awt.Graphics-getGraphics 4
+292 247 248 360 
+void-processKeyEvent-java.awt.event.KeyEvent 8
+292 580 533 532 605 475 377 360 
+java.lang.String-getSelectedText 3
+292 533 458 
+void-select-int-int 4
+292 247 248 458 
+void-selectAll 2
+292 458 
+void-gotoLabel-java.lang.String 2
+292 580 
+void-activateSubItems 11
+292 580 247 533 248 409 408 509 508 503 569 
+int-getDocumentY 2
+292 247 
+void-interruptLoading 10
+292 580 247 533 409 408 509 508 503 569 
+void-reformat 11
+292 580 247 533 248 409 408 509 508 503 569 
+void-setMargins-int-int 2
+292 580 
+void-unregisterListeners 5
+292 247 248 409 408 
+void-addBlinker-sunw.hotjava.doc.TextItem 2
+292 247 
+void-connectBackgroundClient 2
+292 247 
+void-disconnectBackgroundClient 2
+292 247 
+void-disconnectFromParent-java.awt.Component 3
+292 247 248 
+int-getAvailableHeight 3
+292 247 248 
+int-getAvailableWidth 3
+292 247 248 
+void-getBackgroundDisplacement-java.awt.Point 3
+292 247 248 
+int-getMaxIndex 3
+292 247 248 
+boolean-getRepair 2
+292 247 
+int-getStartIndex 3
+292 247 248 
+int-getVScrollBarWidth 2
+292 247 
+boolean-handleMouseDown-java.awt.event.MouseEvent 2
+292 247 
+boolean-handleMouseDrag-java.awt.event.MouseEvent 2
+292 247 
+boolean-handleMouseEntered-java.awt.event.MouseEvent 2
+292 247 
+boolean-handleMouseUp-java.awt.event.MouseEvent 2
+292 247 
+void-quitViewingDoc 2
+292 247 
+void-setFormatterStarted-boolean 2
+292 247 
+void-setInvisible-java.awt.Component-java.util.BitSet-int 3
+292 247 248 
+void-setMouseDownInfo-sunw.hotjava.doc.MouseDownInfo 2
+292 247 
+void-setRepair-boolean 2
+292 247 
+void-setVScrollBarWidth-int 2
+292 247 
+void-touch-boolean-int-sunw.hotjava.doc.DocItem 3
+292 247 248 
+void-touch-boolean-int 3
+292 247 248 
+void-wakeScreenUpdater 2
+292 247 
+sunw.hotjava.doc.DocumentPanel-getDocumentPanel 2
+535 509 
+sunw.hotjava.doc.Formatter-getFormatter 3
+535 533 409 
+sunw.hotjava.doc.DocumentFormatter-getFormatter 3
+119 580 509 
+void-updateDocument 4
+119 247 509 508 
+void-setName-java.lang.String 5
+580 60 265 360 363 
+void-doLayout 4
+580 579 407 360 
+void-processKeyActionEvent-java.awt.event.KeyEvent 2
+580 473 
+void-dispatchDocumentEvent-int-java.lang.Object 3
+580 247 248 
+sunw.hotjava.bean.HotJavaBrowserBean-getContainingHotJavaBrowserBean 4
+580 533 508 503 
+sunw.hotjava.doc.DocFont-getDocFont 2
+580 247 
+void-activateItemComponents 2
+580 247 
+int-findYFor-int 9
+580 247 533 409 408 509 508 503 569 
+void-setObsolete-boolean 9
+580 247 533 409 408 509 508 503 569 
+int-getWidth-sunw.hotjava.doc.DocStyle 5
+494 531 506 505 498 
+int-getIncrement 2
+494 505 
+void-mouseMoved-java.awt.event.MouseEvent 8
+284 273 249 46 198 193 175 195 
+void-mouseDragged-java.awt.event.MouseEvent 11
+284 273 249 46 218 207 198 196 193 175 195 
+void-dispatchDocumentEvent-java.lang.Object-int-boolean-java.lang.Object 2
+247 248 
+void-getAppletPanels-java.util.Vector 3
+247 408 508 
+void-clipToDrawableArea-java.awt.Graphics 2
+247 248 
+sunw.hotjava.tags.TagAppletPanel-getAppletPanel-java.lang.String 2
+247 408 
+sunw.hotjava.doc.DocStyle-getBaseStyle 2
+247 248 
+java.awt.Color-getFormatterBackgroundColor 2
+247 248 
+sunw.hotjava.doc.Formatter-getParentFormatter 5
+247 248 409 408 509 
+boolean-isFormatterBackgroundColorDeliberate 2
+247 248 
+boolean-paintRange-java.awt.Graphics-int-int-boolean 2
+247 408 
+boolean-paintRangeNoFloaters-java.awt.Graphics-int-int-boolean 2
+247 408 
+void-processMouseAction-java.awt.event.MouseEvent 4
+247 533 248 475 
+int-getLength 2
+100 280 
+java.lang.String-getLabel 4
+96 375 361 364 
+sunw.html.Attributes-getAttributes 4
+393 518 505 1 
+java.awt.Font-getFont 3
+393 360 363 
+boolean-determineIfTagHasHandlers 2
+393 531 
+java.lang.String-elementString-boolean 2
+393 410 
+sunw.html.Element-getElement 2
+393 1 
+boolean-hasJavaScriptHandlers 2
+393 1 
+void-remove-int 5
+434 373 407 463 366 
+void-remove-java.lang.String 4
+434 268 527 373 
+void-removeAll 5
+434 551 373 407 463 
+void-insert-java.lang.String-int 4
+434 373 463 461 
+void-setFont-java.awt.Font 5
+434 380 407 360 363 
+java.lang.String-getItem-int 3
+434 433 373 
+void-setLabel-java.lang.String 5
+434 380 375 361 364 
+int-getItemCount 3
+434 373 463 
+void-select-java.lang.String 2
+434 373 
+void-select-int 3
+434 433 373 
+[Ljava.lang.Object;-getSelectedObjects 4
+434 373 375 465 
+void-addItemListener-java.awt.event.ItemListener 4
+434 373 375 465 
+void-removeItemListener-java.awt.event.ItemListener 4
+434 373 375 465 
+void-processItemEvent-java.awt.event.ItemEvent 4
+434 373 375 465 
+int-getSelectedIndex 3
+434 433 373 
+java.lang.String-getSelectedItem 2
+434 373 
+void-addItem-java.lang.String 2
+433 373 
+void-doItemEvent-java.awt.event.ItemEvent 2
+433 432 
+void-processEvent-java.awt.AWTEvent 13
+432 383 373 459 375 407 469 361 465 364 360 458 363 
+int-getType 6
+91 533 60 9 4 3 
+int-getCount 2
+275 190 
+java.lang.String-getValue 2
+533 9 
+void-processFocusEvent 2
+533 475 
+java.awt.Dimension-getPreferredSize-int 2
+532 459 
+void-setText-java.lang.String 4
+532 459 368 458 
+void-processTextEvent-java.awt.event.TextEvent 2
+532 458 
+int-filterRGB-int-int-int 2
+431 430 
+void-addActionListener-java.awt.event.ActionListener 8
+428 392 379 377 372 459 361 364 
+int-print-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int-sunw.hotjava.doc.VBreakInfo 6
+531 410 518 505 395 498 
+java.awt.Dimension-getSize 5
+531 505 377 372 360 
+int-paint-sunw.hotjava.doc.Formatter-java.awt.Graphics-int-int 6
+531 410 518 505 395 498 
+void-waiterTimedOut 3
+531 505 569 
+boolean-hasSize 3
+531 505 569 
+void-processActionEvent-java.awt.event.ActionEvent 5
+578 577 459 361 364 
+int-readFully-java.io.InputStream-[B 4
+269 262 259 258 
+int-bytesPerAtom 5
+269 263 262 259 258 
+int-bytesPerLine 5
+269 263 262 259 258 
+void-encode-java.io.InputStream-java.io.OutputStream 3
+269 262 258 
+void-encodeBufferPrefix-java.io.OutputStream 4
+269 262 259 258 
+void-encodeLinePrefix-java.io.OutputStream-int 4
+269 262 259 258 
+void-encodeLineSuffix-java.io.OutputStream 3
+269 262 258 
+void-encodeAtom-java.io.OutputStream-[B-int-int 5
+269 263 262 259 258 
+void-encodeBuffer-java.io.InputStream-java.io.OutputStream 4
+269 263 262 258 
+void-put-java.lang.String-java.lang.String 2
+527 8 
+java.lang.Object-put-java.lang.Object-java.lang.Object 4
+527 425 424 423 
+java.lang.String-getProperty-java.lang.String 2
+527 526 
+java.lang.String-getProperty-java.lang.String-java.lang.String 2
+527 526 
+java.awt.Color-brighter 3
+264 217 216 
+java.awt.Color-brighter-float 2
+264 217 
+java.awt.Color-darker 3
+264 217 216 
+boolean-similar-java.awt.Color 2
+264 217 
+java.lang.String-encode-[B 2
+263 258 
+java.lang.Object-get-java.lang.Object 3
+425 424 423 
+java.lang.Object-remove-java.lang.Object 3
+425 424 423 
+int-size 4
+70 424 387 423 
+void-parseURL-java.net.URL-java.lang.String-int-int 3
+257 253 252 
+long-getLastModified 2
+420 415 
+java.lang.String-getContentType 3
+525 416 415 
+java.io.OutputStream-getOutputStream 3
+417 524 415 
+boolean-checkPackageAccess-java.lang.String 6
+250 520 414 251 521 413 
+boolean-checkMemberAccess-java.lang.Class-int-int 5
+250 520 414 251 413 
+boolean-checkAccess-java.lang.ThreadGroup 5
+250 520 414 251 413 
+boolean-checkAccess-java.lang.Thread 5
+250 520 414 251 413 
+boolean-checkPropertiesAccess 4
+250 414 251 413 
+boolean-checkPropertyAccess-java.lang.String 6
+250 520 414 522 251 413 
+boolean-checkRead-java.lang.String-java.net.URL 6
+250 520 414 522 251 413 
+boolean-checkRead-java.io.FileDescriptor 6
+250 520 414 522 251 413 
+boolean-checkWrite-java.lang.String 6
+250 520 414 522 251 413 
+boolean-checkWrite-java.io.FileDescriptor 6
+250 520 414 522 251 413 
+boolean-checkDelete-java.lang.String 5
+250 414 522 251 413 
+boolean-checkSetFactory 5
+250 520 414 251 413 
+boolean-checkConnect-java.lang.String-int 6
+250 520 414 251 521 413 
+boolean-checkSecurityAccess-java.lang.String 3
+250 251 413 
+boolean-checkTopLevelWindow-java.lang.Object 8
+250 635 520 414 251 521 413 631 
+boolean-checkExit-int 3
+250 251 413 
+boolean-checkExec-java.lang.String 5
+250 414 522 251 413 
+boolean-checkLink-java.lang.String 4
+250 414 251 413 
+boolean-checkAwtEventQueueAccess 5
+250 520 414 251 413 
+boolean-checkPackageDefinition-java.lang.String 5
+250 520 414 251 413 
+boolean-checkListen-int 6
+250 520 414 522 251 413 
+boolean-checkAccept-java.lang.String-int 6
+250 520 414 522 251 413 
+boolean-checkMulticast-java.net.InetAddress 5
+250 414 522 251 413 
+boolean-checkPrintJobAccess 6
+250 520 414 251 521 413 
+boolean-checkSystemClipboardAccess 5
+250 520 414 251 413 
+boolean-checkRun 4
+250 520 251 413 
+int-getMode 2
+60 597 
+void-setMode-int 2
+60 597 
+void-checkPackageAccess-java.lang.String 3
+635 633 631 
+void-checkMemberAccess-java.lang.Class-int 2
+635 631 
+void-checkAccess-java.lang.Thread 3
+635 633 631 
+void-checkAccess-java.lang.ThreadGroup 3
+635 633 631 
+void-checkPropertiesAccess 2
+635 631 
+void-checkPropertyAccess-java.lang.String 2
+635 631 
+void-checkRead-java.io.FileDescriptor 2
+635 631 
+void-checkRead-java.lang.String-java.lang.Object 2
+635 631 
+void-checkRead-java.lang.String 2
+635 631 
+void-checkWrite-java.lang.String 2
+635 631 
+void-checkWrite-java.io.FileDescriptor 2
+635 631 
+void-checkDelete-java.lang.String 2
+635 631 
+void-checkSetFactory 2
+635 631 
+void-checkConnect-java.lang.String-int 2
+635 631 
+void-checkSecurityAccess-java.lang.String 2
+635 631 
+void-checkExit-int 2
+635 631 
+void-checkExec-java.lang.String 2
+635 631 
+void-checkLink-java.lang.String 2
+635 631 
+void-checkAwtEventQueueAccess 3
+635 633 631 
+void-checkPackageDefinition-java.lang.String 2
+635 631 
+void-checkListen-int 2
+635 631 
+void-checkAccept-java.lang.String-int 2
+635 631 
+void-checkMulticast-java.net.InetAddress 2
+635 631 
+void-checkPrintJobAccess 2
+635 631 
+void-checkSystemClipboardAccess 2
+635 631 
+boolean-checkConnect-java.lang.String-java.lang.String-boolean 4
+520 414 522 251 
+boolean-checkConnect-java.lang.String-java.lang.String 4
+520 414 251 413 
+boolean-checkRead-java.lang.String 3
+414 251 413 
+boolean-checkConnect-java.lang.String-int-java.lang.Object 2
+414 251 
+int-handleDialog 3
+641 638 639 
+void-setSize-int-int 4
+409 477 378 360 
+void-paintDeliberately-java.awt.Graphics 2
+409 408 
+void-setVisible-boolean 4
+408 604 602 360 
+void-init-sunw.hotjava.doc.Document-sunw.hotjava.tags.OBJECT 2
+518 505 
+sunw.hotjava.doc.DocItem-getObject 2
+518 505 
+int-getFrameIndex 2
+510 509 
+void-setBounds-int-int-int-int 3
+509 508 360 
+void-setBounds-java.awt.Rectangle 2
+509 360 
+void-setSelected-boolean 2
+509 384 
+void-setResizeListener-sunw.hotjava.tags.FrameSetPanel-java.awt.Point 2
+509 508 
+boolean-keyDown-java.awt.Event-int 2
+503 360 
+void-remove-java.awt.MenuComponent 5
+570 555 463 366 360 
+void-setIconImage-java.awt.Image 2
+570 555 
+void-setTitle-java.lang.String 5
+570 172 384 576 555 
+void-setMenuBar-java.awt.MenuBar 2
+570 555 
+boolean-isResizable 3
+570 576 555 
+void-setResizable-boolean 3
+570 576 555 
+void-action-java.awt.event.ActionEvent 2
+609 608 
+void-print-java.awt.Graphics 3
+569 407 360 
+void-updateValue-long 2
+493 457 
+void-reshape-int-int-int-int 2
+392 360 
+void-processMouseEvent-java.awt.event.MouseEvent 8
+392 600 379 13 552 377 372 360 
+void-removeActionListener-java.awt.event.ActionListener 6
+392 377 372 459 361 364 
+sunw.hotjava.ui.HotListEntry-getHotListEntry 3
+391 486 386 
+void-windowOpened-java.awt.event.WindowEvent 5
+229 221 30 209 178 
+boolean-action-java.awt.event.ActionEvent 2
+607 603 
+java.awt.Insets-getInsets 12
+491 490 389 484 483 481 480 561 560 557 472 407 
+boolean-isDragSource 2
+567 565 
+boolean-mousePressedOnCanvas-java.awt.event.MouseEvent 3
+567 566 565 
+void-processHiliteEvent-java.awt.Component-java.awt.Point 2
+567 565 
+void-toFront 2
+564 469 
+java.awt.Component-add-java.awt.Component 3
+551 598 407 
+void-remove-java.awt.Component 2
+551 407 
+boolean-isEnabled 3
+551 364 360 
+void-setEnabled-boolean 4
+551 372 364 360 
+int-getX 2
+224 360 
+int-getY 2
+224 360 
+java.awt.Point-getPoint 2
+224 384 
+void-dragAndDropPerformed-sunw.hotjava.ui.DragAndDropEvent 3
+35 25 18 
+void-move-int-int 2
+487 360 
+void-addDragAndDropListener-sunw.hotjava.ui.DragAndDropListener 2
+487 565 
+void-removeDragAndDropListener-sunw.hotjava.ui.DragAndDropListener 2
+487 565 
+void-drawItem-java.awt.Graphics 5
+486 385 390 384 485 
+void-initialize-sunw.hotjava.ui.PageFolder 2
+386 566 
+boolean-doubleClick-int-int 3
+386 385 384 
+boolean-removeItem-sunw.hotjava.ui.ListItem 2
+386 385 
+boolean-resolveItemLocation-sunw.hotjava.ui.ListItem-java.awt.Point 2
+386 385 
+void-notify-int-java.lang.Object 3
+482 600 476 
+void-initialize 2
+482 476 
+sunw.hotjava.ui.HotCanvas-getCanvas 2
+482 476 
+boolean-processHotListEvent-sunw.hotjava.ui.HotListEvent 2
+482 476 
+void-windowClosed-java.awt.event.WindowEvent 2
+30 178 
+void-windowDeactivated-java.awt.event.WindowEvent 2
+30 178 
+void-componentResized-java.awt.event.ComponentEvent 3
+215 214 213 
+sunw.hotjava.ui.HotList-getHotList 2
+566 600 
+void-createInitialFolder 2
+566 565 
+java.awt.Point-getAdjustedLocation-java.awt.Point 2
+566 565 
+boolean-mouseDraggedOnCanvas-java.awt.event.MouseEvent 2
+566 565 
+boolean-mouseReleasedOnCanvas-java.awt.event.MouseEvent 2
+566 565 
+boolean-processDragAndDropEvent-sunw.hotjava.ui.DragAndDropEvent 2
+566 565 
+boolean-isFinishedImporting 2
+29 24 
+sunw.hotjava.ui.PageFolder-getParent 3
+172 190 188 
+void-removeMyself 2
+172 384 
+void-saveStateToProperties 2
+600 599 
+void-show 4
+600 576 469 360 
+void-setMessage-java.lang.String 3
+600 473 471 
+boolean-parseMarkupDeclarations-java.lang.StringBuffer 2
+206 205 
+void-removeTimedMessage 2
+21 552 
+void-add-sunw.hotjava.ui.ClockPanel 2
+561 557 
+void-add-sunw.hotjava.ui.ActivityMonitor 2
+561 557 
+void-add-sunw.hotjava.ui.Locator 2
+561 559 
+void-add-sunw.hotjava.ui.Toolbar 2
+561 560 
+void-add-sunw.hotjava.ui.MessageLine 2
+561 558 
+boolean-isEmpty 9
+561 560 559 558 557 554 4 424 423 
+boolean-hasClock 2
+561 557 
+sunw.hotjava.ui.ActivityMonitor-removeActivityMonitor 2
+561 557 
+sunw.hotjava.ui.ClockPanel-removeClock 2
+561 557 
+sunw.hotjava.ui.Locator-removeLocator 2
+561 559 
+sunw.hotjava.ui.MessageLine-removeMessageLine 2
+561 558 
+boolean-hasActivityMonitor 3
+561 203 557 
+boolean-hasLocator 2
+561 559 
+boolean-hasMessageLine 2
+561 558 
+boolean-haveToolbars 3
+561 560 203 
+void-addLayoutComponent-java.awt.Component-java.lang.Object 5
+203 202 201 200 199 
+void-removeLayoutComponent-java.awt.Component 5
+203 202 201 200 199 
+void-resetConstraints 4
+203 202 201 200 
+void-setListContainerImages-java.awt.Image-java.awt.Image 2
+565 385 
+boolean-closed 2
+385 190 
+java.util.Vector-getContents 2
+385 190 
+void-drawChildren-java.awt.Graphics 2
+385 384 
+void-drawItemOnCanvas-java.awt.Graphics 2
+385 384 
+void-setClosedValue-boolean 2
+385 190 
+boolean-inside-int-int 2
+384 360 
+void-setColor-java.awt.Color 2
+384 473 
+void-setBoundingBox-java.awt.Graphics 2
+384 485 
+java.lang.String-getMessage 3
+473 471 436 
+void-setBackground-java.awt.Color 3
+380 360 458 
+void-setForeground-java.awt.Color 2
+380 360 
+void-setAlignment-int 2
+380 368 
+int-getAlignment 2
+380 368 
+java.awt.Image-getImage 3
+379 377 372 
+void-repaintImage 3
+379 377 372 
+java.awt.Dimension-getMaximumSize 3
+377 407 360 
+void-processFocusEvent-java.awt.event.FocusEvent 2
+377 360 
+boolean-isFocusTraversable 2
+377 360 
+java.lang.String-getActionCommand 3
+377 361 364 
+void-setActionCommand-java.lang.String 3
+377 361 364 
+void-dispatchActionEvent-java.awt.event.MouseEvent-java.lang.String 2
+377 372 
+java.lang.String-paramString 19
+466 576 302 579 373 459 375 407 555 361 465 597 368 463 364 461 360 458 363 
+boolean-postEvent-java.awt.Event 5
+466 365 469 360 363 
+void-setShortcut-java.awt.MenuShortcut 2
+365 364 
+sunw.html.Element-first 3
+7 6 2 
+void-write-java.lang.String 3
+359 356 355 
+void-startTag-sunw.html.Tag 2
+359 205 
+void-println-[C 2
+357 356 
+void-setDaemon-boolean 2
+265 318 
+void-checkAccess 2
+265 318 
+boolean-isDaemon 2
+265 318 
+void-resume 2
+265 318 
+void-interrupt 2
+265 318 
+void-suspend 2
+265 318 
+void-mark-int 3
+341 295 426 
+boolean-markSupported 3
+341 295 426 
+java.lang.String-getEncoding 2
+446 444 
+boolean-ready 2
+446 295 
+void-write-[C-int-int 4
+444 358 356 355 
+void-write-java.lang.String-int-int 4
+444 358 356 355 
+int-getDefaultPort 2
+252 418 
+int-getContentLength 2
+416 415 
+java.lang.String-getHeaderField-java.lang.String 3
+416 524 415 
+java.lang.String-getHeaderField-int 3
+416 524 415 
+java.lang.String-getHeaderFieldKey-int 3
+416 524 415 
+void-setRequestProperty-java.lang.String-java.lang.String 3
+416 524 415 
+java.lang.Class-findClass-java.lang.String 3
+323 588 587 
+java.net.URL-findResource-java.lang.String 3
+323 588 587 
+java.util.Enumeration-findResources-java.lang.String 3
+323 588 587 
+javax.accessibility.AccessibleContext-getAccessibleContext 21
+467 610 576 579 370 373 459 375 469 555 361 562 465 368 463 366 364 461 360 458 363 
+sun.awt.AppContext-getAppContext 2
+633 632 
+void-list 2
+318 360 
+java.security.PermissionCollection-getPermissions-java.security.CodeSource 3
+588 587 586 
+[Ljava.net.URL;-getURLs 2
+588 587 
+java.util.Locale-getLocale 3
+610 469 360 
+void-resize-int-int 2
+610 360 
+void-resize-java.awt.Dimension 2
+610 360 
+void-hide 3
+576 469 360 
+void-setLayout-java.awt.LayoutManager 2
+579 407 
+void-addImpl-java.awt.Component-java.lang.Object-int 2
+579 407 
+void-printComponents-java.awt.Graphics 2
+579 407 
+[Ljava.util.EventListener;-getListeners-java.lang.Class 10
+373 459 375 407 469 361 465 364 360 458 
+int-countItems 2
+373 463 
+int-getColumns 2
+459 461 
+void-setColumns-int 2
+459 461 
+void-setColorModel-java.awt.image.ColorModel 2
+430 429 
+void-setPixels-int-int-int-int-java.awt.image.ColorModel-[I-int-int 2
+430 429 
+void-setPixels-int-int-int-int-java.awt.image.ColorModel-[B-int-int 2
+430 429 
+void-list-java.io.PrintWriter 2
+526 360 
+void-list-java.io.PrintStream 2
+526 360 
+java.util.Enumeration-keys 2
+424 423 
+java.util.Enumeration-elements 2
+424 423 
+java.lang.String-getRequestProperty-java.lang.String 2
+524 415 
+void-disconnect 2
+524 523 
+boolean-usingProxy 2
+524 523 
+void-setState-boolean 2
+375 465 
+boolean-getState 2
+375 465 
+void-list-java.io.PrintWriter-int 2
+407 360 
+void-list-java.io.PrintStream-int 2
+407 360 
+void-invalidate 2
+407 360 
+void-validate 2
+407 360 
+float-getAlignmentX 2
+407 360 
+float-getAlignmentY 2
+407 360 
+void-deliverEvent-java.awt.Event 2
+407 360 
+java.awt.Component-getComponentAt-java.awt.Point 2
+407 360 
+java.awt.Component-getComponentAt-int-int 2
+407 360 
+java.awt.Component-locate-int-int 2
+407 360 
+java.awt.Toolkit-getToolkit 2
+469 360 
+boolean-isShowing 2
+469 360 
+void-setCursor-java.awt.Cursor 2
+469 360 
+java.awt.GraphicsConfiguration-getGraphicsConfiguration 2
+469 360 
+java.awt.im.InputContext-getInputContext 2
+469 360 
+void-enable 2
+364 360 
+void-enable-boolean 2
+364 360 
+void-disable 2
+364 360 
+void-enableEvents-long 2
+364 360 
+void-disableEvents-long 2
+364 360 
+void-write-[C 2
+356 355 
+java.security.Permission-getPermission 2
+415 523 
+long-getHeaderFieldDate-java.lang.String-long 2
+415 523 
+java.lang.Object-getTreeLock 2
+360 363 
+void-dispatchEvent-java.awt.AWTEvent 2
+360 363 
+void-enableInputMethods-boolean 2
+360 458 
+java.awt.Color-getBackground 2
+360 458 

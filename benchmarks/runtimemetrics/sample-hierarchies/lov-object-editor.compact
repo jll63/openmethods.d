@@ -1,0 +1,2200 @@
+436
+any 0
+
+to_special 1
+0 
+size 1
+0 
+rsize 1
+0 
+rpos 1
+0 
+pos 1
+0 
+oo_undo 1
+0 
+oo_strings 1
+0 
+oo_root_element 1
+0 
+oo_resource 1
+0 
+oo_property 1
+0 
+oo_fork 1
+0 
+oo_extern_base_ref 1
+0 
+oo_error_ref 1
+0 
+marker 1
+0 
+garbage 1
+0 
+g_name_widget 1
+0 
+file 1
+0 
+ed_menu_item 1
+0 
+ed_from_wind 1
+0 
+ed_ctrl_menu 1
+0 
+doublet 1
+0 
+directory 1
+0 
+list 1
+0 
+sub_list 1
+23 
+oo_referencable 1
+0 
+oo_undo_status 1
+25 
+oo_undo_ref 1
+25 
+oo_undo_prop 1
+25 
+oo_undo_pos 1
+25 
+oo_undo_note 1
+25 
+oo_undo_lref 1
+25 
+oo_undo_inhsub 1
+25 
+oo_undo_iclass 1
+25 
+oo_undo_iassoc 1
+25 
+oo_undo_agg 1
+25 
+oo_ref_item 1
+0 
+oo_n_ref_item 1
+36 
+comparable 1
+0 
+oo_mask 1
+38 
+ed_ctx 1
+0 
+oo_ctx 1
+40 
+oo_big_list 1
+23 
+g_cmd 1
+0 
+gx_cmd_close_sec_win 1
+43 
+conversions 1
+0 
+g_psfont 1
+45 
+g_null_cmd 1
+43 
+g_cmd_trans_label_b 1
+43 
+g_cmd_trans_label_a 1
+43 
+ed_switch_cst 1
+0 
+ed_switch 1
+50 
+ed_mapping_menu 1
+43 
+cm_error_cell 1
+0 
+ed_error_cell 1
+53 
+ed_cmd_button 1
+43 
+comp_namable 1
+38 
+string_note 1
+56 
+pl_const 1
+0 
+pl_calc_par 2
+58 45 
+ed_any 1
+0 
+t2uple 1
+60 
+oo_text_item 1
+61 
+base 1
+0 
+g_term_psfile 1
+63 
+oo_term_psfile 1
+64 
+oo_language 1
+56 
+g_const 1
+0 
+ed_selection 1
+67 
+oo_general_selection 1
+68 
+linked_list 1
+23 
+g_resource_list 1
+70 
+ed_selection_graphic 1
+68 
+ed_menu 1
+70 
+ed_ext_cmd 1
+63 
+ed_ext_mnu 1
+74 
+double_linked_list 1
+70 
+d_position 1
+25 
+d_inhsub_position 1
+77 
+d_inh_position 1
+77 
+d_agr_position 1
+77 
+calendar 2
+45 38 
+p_const 1
+0 
+pl_pos_par 3
+82 58 45 
+ed_communication 1
+50 
+ed_view 1
+84 
+oo_world 1
+85 
+g_term 1
+67 
+g_term_x11 1
+87 
+oo_term_x11 1
+88 
+g_term_ps 1
+87 
+oo_term_ps 1
+90 
+sorted_list 1
+70 
+new_sorted_list 1
+92 
+g_trans 1
+0 
+g_trans_proj_cent 2
+45 94 
+g_trans_projc_indirect 1
+95 
+g_trans_projc_direct 1
+95 
+internal 1
+0 
+g_resource 2
+98 67 
+g_resource_string 1
+99 
+g_resource_integer 1
+99 
+g_resource_boolean 1
+99 
+call 1
+0 
+g_cmd_call 2
+103 43 
+g_cmd_call_p 1
+104 
+std_files 1
+0 
+ed_trace 3
+50 106 98 
+hashable 1
+0 
+string 2
+108 38 
+pathname 1
+109 
+oo_pathname 1
+110 
+math 1
+0 
+geometry 1
+112 
+mgp_node 2
+82 113 
+oo_node 1
+114 
+help_item 1
+109 
+oo_help_item 1
+116 
+g_trans_zoom 3
+45 112 94 
+g_trans_zoom_indirect 1
+118 
+g_trans_zoom_direct 1
+118 
+g_resource_real 2
+99 45 
+g_sys_info 1
+0 
+ed_window 1
+122 
+ed_sec_window 2
+67 123 
+ed_properties_sheet 1
+124 
+ed_error_window 1
+124 
+pl_compute 4
+45 113 82 58 
+oo_compute 1
+127 
+callback 1
+0 
+g_imp 2
+63 98 
+g_obj_ihm 3
+67 130 129 
+g_sys 1
+131 
+g_switch_button 1
+131 
+g_switch_box 1
+131 
+g_separator 1
+131 
+g_paned_area 1
+131 
+g_label 1
+131 
+g_bar_menu 1
+131 
+g_dialog_cmd 1
+43 
+ed_connection 1
+0 
+help_dlg 1
+0 
+ed_multi_select_dlg 5
+122 67 141 140 139 
+ed_prop_dlg 4
+67 141 140 139 
+oo_status_filter_dlg 2
+122 143 
+oo_status_dlg 2
+122 143 
+oo_color 1
+0 
+p_plot_obj 1
+0 
+g_obj_gra 2
+147 67 
+g_obj_gra_sel 1
+148 
+g_obj_gra_sel_cp 1
+149 
+oo_pixmap 3
+150 146 63 
+help_manager 1
+131 
+oo_help_manager 1
+152 
+oo_errors_dlg 2
+122 143 
+g_buttons_box 1
+131 
+nt_buttons_box 1
+155 
+oo_fi_const 1
+0 
+ooa_cd_fi_const 1
+157 
+oo_nt_able 1
+0 
+oo_e_a 3
+159 25 56 
+id_attribute 2
+160 158 
+g_toggle_button 1
+131 
+g_toggle_button_lab 1
+162 
+g_text 1
+131 
+g_text_entry_box 1
+164 
+g_push_button 1
+131 
+g_push_button_lab 1
+166 
+p_logic_space 1
+82 
+g_logic_gra 2
+113 168 
+g_logic_gra_sel 1
+169 
+g_logic_gra_cp 2
+170 67 
+g_scrolled_box 1
+131 
+g_list_box 1
+172 
+g_free_contain 1
+131 
+g_contain_areas 1
+174 
+g_contain 1
+174 
+cd_template 2
+160 158 
+oo_ctx_undo 1
+0 
+oo_prop_dlg 2
+178 143 
+oo_dlg_elem_note 1
+179 
+cd_gr_entity 1
+160 
+id_class 2
+181 158 
+id_association 2
+181 158 
+p_line_obj 2
+147 112 
+g_line_sel 2
+149 184 
+g_zigzag 2
+185 113 
+g_text_scroll_box 2
+172 164 
+g_row_column 1
+131 
+g_toggle_box 1
+188 
+g_radio_box 1
+189 
+g_push_button_pic 1
+166 
+g_push_butpics 1
+191 
+g_window 1
+131 
+g_sec_window 1
+193 
+g_editeur_window 1
+194 
+g_check_box 1
+189 
+ed_trait_menu 1
+0 
+g_popup_menu 1
+131 
+ed_popup_menu 2
+198 197 
+oo_gr_module 1
+160 
+cd_instance 2
+200 158 
+g_line_sel_cp 2
+185 150 
+oo_line 1
+202 
+mgp_grid 3
+82 113 45 
+mgp_graph 1
+204 
+pl_label 3
+58 82 67 
+oo_graph 2
+206 205 
+g_edge_label 5
+38 148 112 58 82 
+oo_edge_label 2
+208 146 
+oo_dlg_version 2
+43 194 
+oo_prop_dlg_nf 1
+179 
+oo_dlg_elem_iassoc 1
+211 
+oo_dlg_elem_class 1
+211 
+oo_default_template_dlg 7
+122 158 178 67 141 140 139 
+limits_sight 1
+0 
+structure 1
+0 
+ith_acces 1
+0 
+indexable 2
+217 216 
+table 2
+218 215 
+array 2
+219 112 
+tb_list 2
+220 23 
+oo_comp_list 1
+221 
+oo_gra_const 1
+0 
+oo_tools 1
+45 
+oo_const 2
+224 223 
+ooa_tools 1
+158 
+ed_filter_any 1
+98 
+oo_clipboard 3
+227 226 225 
+cm_error 1
+0 
+ed_error 1
+229 
+oo_base 4
+230 56 224 157 
+oo_cd_base 2
+158 231 
+g_pull_button 1
+131 
+g_pull_button_lab 1
+233 
+ed_pull_button_lab 2
+234 197 
+oo_cd_e_a 2
+45 160 
+cd_role 2
+236 158 
+relation_2 1
+0 
+ctx_marker 1
+0 
+set 1
+0 
+linked_set 2
+70 240 
+quick_set 2
+241 239 
+ed_set 1
+242 
+rel_set 2
+243 238 
+rel_abs_gra 1
+244 
+oo_rel_abs_gra 1
+245 
+oo_object_list 1
+221 
+oo_ext_object_list 1
+247 
+oo_dlg_elem_namable 2
+122 211 
+g_form_window 2
+174 194 
+help_index 1
+250 
+help_find 1
+250 
+g_sel_box 3
+122 139 174 
+oo_typed_object 2
+158 236 
+cd_parameter 1
+254 
+cd_operation 1
+254 
+cd_type 2
+236 158 
+cd_named_type 1
+257 
+cd_module 3
+200 236 158 
+oo_meta_prop 1
+160 
+cd_meta_prop 3
+260 236 158 
+cd_inheritance 3
+181 236 158 
+cd_attribute 1
+254 
+cd_association 3
+181 236 158 
+help_text 1
+250 
+oo_help_text 1
+265 
+ed_help 1
+0 
+g_shell 1
+131 
+g_prim_window 2
+193 268 
+oo_help 3
+269 122 267 
+oo_entity_template_dlg 2
+211 158 
+oo_dlg_elem_type 2
+158 211 
+oo_dlg_class 2
+67 139 
+oo_dlg_cl 2
+194 273 
+oo_cpp_dlg_nf 1
+211 
+oo_cpp_dlg_type 2
+122 275 
+oo_cpp_dlg_parameter 2
+122 275 
+oo_cpp_dlg_class 2
+122 275 
+delete_sight 1
+0 
+dispensable_sight 1
+0 
+changeable_sight 1
+0 
+dispenser 4
+281 280 279 216 
+l_stack 2
+220 282 
+g_dialog_window 2
+194 155 
+g_simple_window 1
+284 
+g_question_window 1
+285 
+g_error_window 1
+285 
+cd_class 2
+257 181 
+g_cmd_drag 1
+43 
+g_cmd_sel 2
+67 43 
+ed_cmd_sel 1
+290 
+ed_info_ctx 1
+0 
+oo_info_ctx 1
+292 
+oo_cmd_sel 4
+293 225 291 289 
+ooi_cmd_sel 1
+294 
+ed_info_from_wind 1
+0 
+oo_cvag 5
+293 296 225 67 230 
+oo_c_nav 1
+297 
+ooa_id_c_nav 1
+298 
+oo_general_area 2
+174 139 
+ooa_cd_general_area 2
+158 300 
+oo_dlg_elem_template 3
+122 158 211 
+oo_prop_dlg_nfs 1
+211 
+oo_dlg_elem_association 2
+158 303 
+oo_dlg_cl_att_op 3
+122 194 273 
+oo_cpp_const 1
+0 
+oo_cpp_dlg_role 3
+122 306 275 
+oo_cpp_dlg_operation 3
+122 306 275 
+oo_cpp_dlg_inheritance 3
+122 306 275 
+oo_cpp_dlg_attribute 3
+122 306 275 
+oo_c_imp_filter 1
+297 
+oo_cd_c_imp_filter 1
+311 
+ed_once_menu 1
+0 
+ed_c_menu 1
+313 
+oo_ctx_clipboard 1
+0 
+oo_c_menu_general 6
+178 315 158 225 314 227 
+oo_c_link 2
+178 297 
+ooi_const 1
+0 
+ooi_dlg_filter 5
+140 141 139 194 318 
+oo_obj_movable 1
+225 
+oo_obj_rect 4
+150 320 146 112 
+oo_obj_iclass 1
+321 
+oo_obj_class 1
+321 
+oo_nt_able_editor 3
+122 225 179 
+oo_dlg_filter 5
+140 141 139 194 157 
+oo_dlg_bi_navig 3
+122 139 250 
+oo_v_model 2
+224 85 
+oo_cd_v_model 4
+227 226 225 327 
+oo_terminals 1
+0 
+oo_print_const 1
+63 
+oo_print 5
+330 329 67 45 112 
+oo_cd_print 4
+225 158 331 318 
+oo_c_ext_call 2
+139 297 
+g_obj_gra_mv 3
+149 129 122 
+oo_obj_mv 2
+334 223 
+oo_line_mv 2
+185 335 
+oo_line_mv_hor 1
+336 
+oo_line_mv_ver 1
+337 
+oo_dlg_elem_inheritance 2
+225 303 
+oo_dlg_assoc 3
+225 194 139 
+oo_c_print 3
+297 158 318 
+g_gra_refresh 1
+0 
+g_gra 4
+342 172 82 113 
+g_gra_cp 1
+343 
+g_gra_ps 1
+343 
+g_gra_cps 2
+345 344 
+ed_mul_select_dlg 4
+141 140 139 250 
+oo_c_menu 7
+227 314 158 178 315 225 293 
+ooi_c_menu 1
+348 
+oo_prop_class 1
+178 
+ooa_id_prop_icl 4
+179 350 158 225 
+ooa_cd_dlg_association 4
+122 293 225 179 
+ercl_manage_error 1
+67 
+oo_dlg_print 7
+122 141 330 353 140 139 194 
+oo_dlg_module 3
+141 139 297 
+oo_dlg_instance 1
+355 
+ed_select_dlg 4
+141 140 139 250 
+oo_dlg_add_superclass 1
+357 
+oo_dlg_add_subclass 1
+357 
+oo_cvag_general 2
+178 297 
+oo_cd_cvag_general 2
+158 360 
+oo_module_order_dlg 6
+122 178 141 140 139 250 
+oo_dlg_paste 5
+353 140 139 194 225 
+oo_dlg_elem_role 3
+158 225 303 
+ed_views_abs_gra 1
+0 
+ed_terminals 1
+0 
+ed_view_abs_gra 4
+85 366 365 82 
+oo_vag 2
+367 225 
+oo_vag_general 3
+368 67 139 
+oo_cd_vag_general 1
+369 
+g_cmd_boolean 1
+43 
+ed_c_really 3
+139 371 67 
+oo_c_really 3
+372 297 365 
+ooi_msg 1
+0 
+oo_pool_graphic 1
+225 
+oo_c_descr 5
+178 158 375 374 297 
+oo_c_close 3
+372 297 365 
+oo_abs_palette 3
+139 174 225 
+oo_cd_palette 1
+378 
+oo_palette_gra 1
+379 
+oo_bipalette_gra 1
+380 
+oo_c_prop_general 2
+365 297 
+oo_cd_c_prop_general 2
+158 382 
+ood_c_design 2
+383 178 
+oo_dlg_elem_typed_object 3
+158 225 303 
+oo_dlg_elem_parameter 1
+385 
+oo_dlg_elem_operation 1
+385 
+oo_dlg_elem_attribute 1
+385 
+oo_c_locate 3
+139 365 297 
+oo_cd_c_locate 2
+158 389 
+license_test 1
+0 
+oo_main 10
+296 67 139 391 225 293 230 50 122 63 
+oo_dh_main 1
+392 
+ooa_cd_root 1
+393 
+ooa_cd_dlg_class 6
+122 293 179 350 158 225 
+p_obj_grp 1
+0 
+g_obj_gra_sel_grp 2
+149 396 
+g_path 1
+397 
+mgp_path 2
+398 150 
+oo_basic_path 2
+399 146 
+oo_path 3
+400 320 112 
+oo_obj_inh 1
+401 
+oo_obj_aggreg 1
+401 
+g_select_box 1
+131 
+g_file_select_box 2
+155 404 
+g_file_select_window 2
+284 405 
+ed_open_dlg 4
+141 353 139 406 
+oo_dlg_open 1
+407 
+ed_prim_window 2
+123 366 
+ed_ext_tools 1
+63 
+oo_wind 6
+293 139 410 409 67 225 
+oo_cd_wind 2
+158 411 
+oo_trait_notes 1
+297 
+oo_c_pool 3
+178 158 413 
+oo_c_create 2
+375 414 
+ooi_c_create 2
+415 374 
+oo_cvag_graphic 1
+297 
+oo_cvag_module 3
+227 417 414 
+oo_c_prop 3
+227 365 414 
+ooi_c_prop 1
+419 
+oo_cvag_instance 4
+227 417 414 374 
+oo_c_ccp 4
+227 315 414 226 
+ooi_c_ccp 1
+422 
+oo_vag_print 2
+368 329 
+oo_vag_graphic 2
+424 67 
+oo_vag_cdid 1
+425 
+oo_vag_module 3
+426 158 227 
+oo_move_link 1
+225 
+oo_c_move 5
+414 375 428 227 112 
+ooi_c_move 1
+429 
+oo_vag_instance 4
+426 318 158 227 
+lock 1
+0 
+oo_c_io_base 3
+239 432 230 
+oo_c_opsv 6
+178 139 297 433 63 365 
+oo_cd_c_opsv 2
+158 434 
+663
+create 226
+0 220 264 263 288 181 262 201 261 259 258 256 255 237 177 53 80 79 78 77 22 21 372 55 291 84 40 54 126 74 75 52 18 347 407 199 235 357 72 85 367 17 138 155 196 104 105 49 48 176 175 208 195 287 405 406 250 174 343 344 346 345 137 185 173 169 171 170 397 136 398 198 269 234 192 167 191 286 190 99 102 101 121 100 188 172 194 253 404 135 268 134 133 132 90 64 165 187 163 97 96 120 119 186 44 252 251 116 265 183 161 182 283 391 205 114 399 156 231 42 377 373 232 236 379 332 328 370 412 228 294 275 41 214 340 326 273 304 388 213 339 249 180 387 386 364 302 272 325 355 408 363 354 210 160 271 154 248 12 11 300 69 207 270 117 266 66 336 337 392 39 362 37 115 159 324 403 323 322 402 321 401 111 151 10 36 8 145 144 6 35 34 33 32 31 30 29 28 27 26 327 369 424 411 352 395 301 394 351 319 184 396 110 127 206 5 4 3 2 92 109 57 221 284 274 305 
+trace_addr 3
+0 220 24 
+trace 9
+0 262 201 256 255 73 70 92 109 
+restore_addr 2
+0 220 
+restore 5
+0 73 70 92 109 
+save_addr 2
+0 220 
+save 5
+0 73 70 92 109 
+deep_duplicate_addr 4
+0 220 109 24 
+duplicate_addr 3
+0 220 24 
+duplicate 24
+0 264 263 288 262 201 259 258 256 255 237 177 80 79 78 77 183 182 70 236 159 184 109 57 
+deep_equal_addr 3
+0 220 109 
+equal_addr 3
+0 220 109 
+deep_equal 3
+0 220 109 
+equal 4
+0 220 109 61 
+default_attributes 9
+0 132 15 231 66 322 321 401 7 
+test 161
+220 63 81 262 256 255 38 45 239 22 20 126 74 75 410 19 292 296 73 18 142 313 199 125 235 124 50 366 107 85 365 123 17 43 290 195 342 46 102 101 121 100 253 87 64 119 15 113 44 108 98 283 70 241 432 14 112 156 42 310 278 309 308 277 307 276 214 326 305 249 302 354 154 300 270 66 39 362 324 145 144 352 395 394 82 396 147 110 5 242 244 238 4 3 240 2 92 106 109 24 61 236 231 297 327 382 409 294 377 373 339 364 385 351 333 389 355 392 411 422 348 316 419 328 228 421 418 130 378 407 347 357 340 274 325 363 210 319 433 434 118 429 331 367 368 369 431 427 343 204 114 169 127 83 208 321 151 397 401 184 186 
+clear 20
+220 143 128 278 308 276 180 302 271 154 207 324 211 303 145 144 352 395 351 109 
+enter 2
+220 109 
+entry 2
+220 109 
+garbage 12
+220 73 17 104 130 99 70 39 151 92 109 24 
+empty 11
+220 68 17 23 238 240 216 24 241 244 221 
+delete_all 3
+220 279 283 
+delete_one 3
+220 24 219 
+resize 6
+220 343 334 39 109 219 
+index_of_ith_eq 2
+220 218 
+index_of_eq 2
+220 218 
+index_of_ith 2
+220 218 
+index_of 6
+220 218 70 23 24 221 
+change_ith 2
+220 217 
+ith 2
+220 217 
+size 8
+220 17 94 97 96 120 119 216 
+upper 2
+220 215 
+lower 3
+220 269 215 
+format 2
+81 354 
+eq 14
+81 257 56 38 17 208 108 161 160 200 39 111 254 109 
+lt 11
+81 257 56 38 208 161 160 200 39 254 109 
+is_valid 2
+81 74 
+to_string 2
+81 45 
+affect 5
+81 241 59 83 240 
+set 13
+81 40 75 208 13 66 62 59 83 5 4 3 2 
+execute 24
+103 372 55 291 52 347 142 407 143 357 51 43 104 105 49 48 47 44 373 294 214 210 362 295 
+address 2
+103 129 
+unresolve_ref 13
+264 262 237 80 79 78 77 183 161 182 236 25 254 
+de_ref 5
+264 262 183 236 25 
+update_ref 13
+264 262 237 80 79 78 77 183 161 182 236 25 254 
+save_entity 19
+264 263 288 262 201 259 258 256 255 237 177 80 79 77 183 161 182 160 260 
+reconnect 25
+264 288 262 201 259 237 177 257 78 77 183 161 182 25 254 35 34 33 32 31 30 29 28 27 26 
+deconnect 26
+264 288 262 201 259 237 177 257 78 77 84 183 161 182 25 254 35 34 33 32 31 30 29 28 27 26 
+delete 15
+264 279 22 17 283 70 241 248 324 247 395 240 109 24 221 
+rem_role 4
+264 288 80 183 
+add_role 4
+264 288 80 183 
+set_prop_from 15
+264 263 288 262 201 259 256 255 237 177 257 161 182 236 160 
+forget_described_by 2
+264 183 
+set_described_by 2
+264 183 
+set_derived 5
+264 263 288 323 401 
+deep_remove_from_base 7
+264 288 201 259 256 182 160 
+deep_connect_to_base 7
+264 288 201 259 256 182 160 
+raz 15
+264 288 181 262 201 259 256 237 183 161 182 236 160 254 6 
+check_name 5
+264 262 237 183 182 
+set_name 21
+264 263 288 262 201 261 259 258 256 255 237 177 56 409 123 149 46 64 231 211 57 
+roles 3
+264 288 183 
+entity_type 16
+264 263 288 262 201 259 256 255 237 177 257 183 161 182 160 260 
+kind_entity 16
+264 263 288 262 201 261 259 256 255 237 177 257 183 161 182 160 
+module_anchor 9
+264 288 181 262 183 182 232 435 328 
+present_name 7
+263 288 256 255 257 160 351 
+rem_from_owner 4
+263 256 255 254 
+add_to_owner 4
+263 256 255 254 
+set_key 2
+263 237 
+set_meta 5
+263 256 237 182 322 
+type_mask 4
+263 256 255 254 
+signature 5
+263 288 256 255 254 
+prefix 12
+263 288 262 201 259 256 255 177 257 231 160 260 
+forget_describes 2
+288 182 
+set_describes 2
+288 182 
+add_child 4
+288 199 235 197 
+add_operation 2
+288 328 
+rem_attribute 2
+288 182 
+add_attribute 3
+288 182 328 
+sort 4
+288 256 182 92 
+set_pixmap 3
+288 322 319 
+set_abstract 2
+288 256 
+subclasses 2
+288 262 
+attributes 2
+288 182 
+kind_type 2
+288 257 
+rem_position 2
+181 200 
+add_position 2
+181 200 
+positions 3
+181 201 259 
+modules 2
+181 328 
+position_anchor 2
+181 262 
+trace_list 3
+262 201 256 
+add_subclass 2
+262 79 
+set_repeated 2
+262 402 
+set_discriminator 2
+262 402 
+deconnect_position 3
+201 259 200 
+connect_position 3
+201 259 200 
+inheritances 2
+259 328 
+associations 3
+259 182 328 
+classes 2
+259 328 
+set_kind_type 2
+258 257 
+add_parameter 2
+256 328 
+set_association 3
+237 183 340 
+set_class 2
+237 182 
+key 2
+237 273 
+meta 2
+237 273 
+entity_name 2
+177 232 
+set_text 7
+177 208 137 285 164 354 57 
+change 2
+281 283 
+insert 6
+281 283 241 240 92 221 
+set_error 2
+229 53 
+error 2
+229 106 
+error_cell 2
+229 230 
+set_message 2
+53 175 
+add_link 3
+79 114 11 
+rem_link 3
+79 114 11 
+set_positions 2
+77 232 
+set_module 2
+77 354 
+go 8
+22 17 70 23 42 247 24 221 
+writable 3
+22 17 433 
+readable 3
+22 17 433 
+is_directory 2
+22 17 
+exists 3
+22 51 17 
+item 2
+280 283 
+menu_name 3
+314 348 316 
+no 5
+372 377 333 373 408 
+yes 4
+372 377 333 373 
+test_exit 3
+372 377 373 
+set_view 5
+55 140 409 378 355 
+set_cmd_logic 2
+55 52 
+set_default_cmd 5
+291 173 192 253 300 
+reset 18
+54 367 139 297 340 273 369 431 427 352 395 351 377 333 389 434 373 355 
+set_status 2
+54 236 
+add_item 2
+75 270 
+garbage_off 2
+410 231 
+garbage_on 2
+410 231 
+index 3
+267 270 109 
+help 19
+267 139 141 340 326 273 363 270 347 142 407 143 357 214 325 355 354 362 319 
+ctx 2
+292 293 
+search_item 2
+73 173 
+set_label 4
+18 253 163 186 
+desactivate 18
+18 143 233 166 162 276 180 302 271 154 324 211 303 145 144 352 395 351 
+activate 20
+18 143 233 166 162 309 276 180 302 272 271 154 324 211 303 145 144 352 395 351 
+affect_context 8
+347 142 143 357 359 358 364 271 
+cancel 19
+347 142 407 143 357 139 214 340 326 273 325 408 363 354 392 362 352 395 319 
+ok 17
+347 142 407 143 357 139 214 340 326 273 325 355 408 363 354 362 319 
+set_selection 4
+347 173 253 404 
+set_items 4
+347 142 357 362 
+set_context 6
+347 142 143 357 85 369 
+set_logic_cmd 5
+347 142 143 357 362 
+build 55
+347 142 143 357 208 343 185 169 170 148 397 253 186 399 310 278 309 308 307 276 214 340 326 274 305 273 339 180 364 302 325 363 354 271 154 300 336 362 324 403 323 322 402 335 401 151 211 303 145 144 352 395 301 351 319 
+set_title 4
+142 143 269 194 
+init 11
+142 197 155 166 152 204 378 270 153 321 24 
+get_selection 5
+407 173 253 404 408 
+destroy 2
+409 367 
+realize 2
+409 269 
+reset_bar_menu 2
+409 412 
+build_bar_menu 2
+409 412 
+new_bar_menu 2
+409 411 
+get_graphic_area 2
+409 411 
+init_contain_areas 2
+409 412 
+set_close_command 2
+409 411 
+set_window_type 2
+409 411 
+set_sensitive 3
+143 340 273 
+pop_error 6
+143 353 141 411 407 354 
+set_position 3
+143 194 193 
+is_popup 4
+143 124 194 152 
+build_buttons_box 3
+143 340 273 
+refresh_with 11
+143 275 304 339 364 385 271 324 352 395 351 
+p_apply 4
+143 388 387 386 
+p_refresh 28
+143 310 278 309 308 277 307 276 304 388 213 212 339 249 180 387 386 364 302 272 271 154 324 145 144 352 395 351 
+refresh 5
+143 87 88 214 145 
+set_error_window 2
+143 125 
+sec_windows_view_update 2
+125 367 
+set_commands 4
+125 195 408 10 
+popdown 6
+124 194 152 273 274 305 
+popup 7
+124 194 152 274 305 273 355 
+select_item 7
+357 173 378 421 418 273 351 
+select_complement 2
+68 72 
+select_again 2
+68 72 
+deselect_all 2
+68 72 
+select_all 3
+68 72 417 
+remove_several 2
+68 72 
+deselect_several 2
+68 72 
+add_several 2
+68 72 
+select_several 2
+68 72 
+deselect_one 2
+68 72 
+remove_one 2
+68 72 
+select_one 2
+68 72 
+add_one 2
+68 72 
+present 5
+68 23 222 24 221 
+all_view_selected 2
+68 72 
+obj_abs 2
+68 69 
+obj_sel 3
+68 72 69 
+term_X11 2
+366 411 
+print 3
+107 341 332 
+close 5
+85 367 17 328 327 
+reset_popup_menu 2
+367 369 
+build_popup_menu 4
+367 369 431 427 
+new_popup_menu 4
+367 369 431 427 
+set_popup_menu_from_view 2
+367 369 
+set_graphic 3
+367 369 424 
+init_selection 4
+367 369 431 427 
+offleft 6
+17 23 42 247 24 221 
+offright 6
+17 23 42 247 24 221 
+back 6
+17 70 23 42 247 24 
+forth 8
+17 283 70 23 42 247 24 221 
+finish 6
+17 23 14 42 247 24 
+start 8
+17 283 23 14 42 247 24 221 
+position 5
+17 23 247 24 221 
+click 6
+155 198 233 192 166 164 
+set_button_cmd 3
+155 405 285 
+deselect_value 3
+196 190 189 
+select_value 3
+196 190 189 
+callback 2
+139 411 
+apply 29
+139 310 278 309 308 277 307 276 214 340 273 304 213 212 339 249 180 364 302 272 385 271 154 324 145 144 352 395 351 
+erase 17
+208 343 185 169 170 148 397 186 399 209 203 403 323 322 402 401 151 
+draw 22
+208 343 185 169 171 170 148 397 186 399 400 209 203 403 323 322 402 401 151 368 369 425 
+center 4
+208 95 91 184 
+unset_placed 2
+208 186 
+set_placed 2
+208 186 
+set_size 5
+208 345 193 184 168 
+clear_selection 2
+405 164 
+fit_logic_physic 2
+343 345 
+zoom 2
+343 118 
+span 2
+343 118 
+gra_pos 2
+343 345 
+gra_size 2
+343 345 
+selective_erase 2
+343 344 
+init_refresh_callbacks 2
+343 342 
+send 2
+343 345 
+set_gccopy 2
+344 346 
+set_gcxor 2
+344 346 
+redraw 3
+344 171 300 
+set_delta 2
+344 204 
+Iobj_ihm_is_realized 2
+345 130 
+is_a 2
+130 99 
+set_font 8
+137 234 167 133 163 321 331 206 
+is_pointed 4
+185 149 397 398 
+internal_select 8
+185 202 149 150 399 322 321 151 
+set_line_style 4
+185 87 90 88 
+select 17
+173 149 397 192 253 162 251 399 340 305 271 154 362 324 151 10 395 
+widget_to_use 2
+173 187 
+share_vertical_scrollbar 3
+173 172 187 
+set_nb_visible_items 3
+173 253 404 
+set_items_font 2
+173 404 
+deselect_all_items 2
+173 253 
+get_selection_pos 2
+173 253 
+deselect_pos 2
+173 253 
+select_pos 2
+173 253 
+change_items 3
+173 253 404 
+m1_logic_gra 3
+169 171 170 
+rem_obj_gra 2
+169 396 
+add_obj_gra 5
+169 205 396 206 207 
+set_cmd_sel 3
+170 149 400 
+move 4
+334 362 5 4 
+shadow 5
+334 336 337 338 335 
+after_resize 2
+334 335 
+before_resize 2
+334 335 
+after_move 2
+334 335 
+before_move 2
+334 335 
+deselect 7
+149 397 192 162 399 151 10 
+set_state 3
+149 397 399 
+set_drawcolor 2
+131 166 
+set_color 3
+131 166 146 
+set_min_size 2
+136 335 
+get_line 2
+398 400 
+add_line 2
+398 400 
+merge 7
+398 241 242 240 92 109 24 
+set_cmd_before_mapping 2
+198 233 
+exist_cmd_before_mapping 2
+198 233 
+when_close 2
+269 194 
+set_close_cmd 2
+269 194 
+disable_close_menu 2
+269 194 
+remove 2
+269 194 
+add_to_refresh_list 2
+269 194 
+disable 6
+233 166 15 340 305 273 
+enable 6
+233 166 15 340 305 273 
+set_mnemonic 3
+234 167 163 
+set_selected_color 2
+166 162 
+set_resource_info 5
+99 102 101 121 100 
+value 15
+99 102 101 121 100 134 283 70 23 42 247 240 24 221 241 
+set_nb_columns 4
+188 253 404 164 
+scroll_to_end 2
+172 404 
+set_value 2
+172 161 
+set_callbacks 4
+194 273 274 305 
+set_dialog_mode 2
+194 152 
+set_selection_label 2
+253 404 
+set_items_label 2
+253 404 
+set_label_font 2
+404 134 
+set_text_font 2
+285 164 
+select_default 5
+134 133 162 271 145 
+one_select_default 2
+133 162 
+add_string 2
+87 301 
+line_height 3
+87 90 88 
+print_page 2
+87 90 
+new_page 2
+87 90 
+set_indirect_coord 2
+87 90 
+set_direct_coord 2
+87 90 
+set_target_area 2
+87 90 
+set_source_area 2
+87 90 
+set_draw_font 3
+87 90 88 
+set_fill_pattern 3
+87 90 88 
+set_line_width 4
+87 90 88 91 
+normal_video 3
+87 90 88 
+inverse_video 3
+87 90 88 
+set_invert_color 2
+87 88 
+set_draw_color 3
+87 90 88 
+beep 3
+87 88 152 
+left_string 3
+87 90 88 
+right_string 3
+87 90 88 
+cadre_multiline_string_withfont 4
+87 90 88 91 
+cadre_line_string_withfont 3
+87 90 88 
+cadre_multiline_string 3
+87 90 88 
+cadre_line_string 3
+87 90 88 
+draw_string 3
+87 90 88 
+size_string 3
+87 90 88 
+draw_curve_to 3
+87 90 88 
+draw_arc_to 3
+87 90 88 
+draw_pixmap 4
+87 90 88 89 
+draw_fill_circle 3
+87 90 88 
+draw_circle 3
+87 90 88 
+draw_point 3
+87 90 88 
+draw_arc 3
+87 90 88 
+draw_fill_arc 3
+87 90 88 
+draw_fill_polygone 3
+87 90 88 
+draw_polyline 3
+87 90 88 
+draw_line 3
+87 90 88 
+draw_fill_rectangle 3
+87 90 88 
+draw_rectangle 3
+87 90 88 
+erase_draw_area 3
+87 90 88 
+erase_area 3
+87 90 88 
+erase_draw_gra 3
+87 90 88 
+erase_gra 3
+87 90 88 
+genere_newline 2
+90 64 
+genere_comment 2
+90 64 
+genere_poststring 2
+90 64 
+genere_ident 2
+90 64 
+genere_str 2
+90 64 
+genere_real 2
+90 64 
+genere_int 2
+90 64 
+without_clipping 2
+90 64 
+with_clipping 2
+90 64 
+set_portrait 2
+90 354 
+set_landscape 3
+90 354 331 
+disable_print 2
+90 64 
+enable_print 2
+90 64 
+set_filename 2
+90 331 
+set_ori 2
+94 168 
+inv_size 5
+94 97 96 120 119 
+inv_pos 5
+94 97 96 120 119 
+pos 5
+94 97 96 120 119 
+action 4
+15 320 321 401 
+full 2
+15 283 
+hash_code 2
+108 109 
+find 3
+252 152 265 
+open 3
+251 265 434 
+update_on_click 2
+251 265 
+update_buttons 2
+251 265 
+create_command_box 2
+251 265 
+set_help_button 2
+251 265 
+find_next 2
+116 117 
+present_in_file 2
+116 117 
+how_many_occurence 2
+116 117 
+file_pathname 2
+116 117 
+filter 3
+152 325 319 
+update 5
+265 434 228 69 395 
+update_content 2
+265 266 
+display_index 2
+265 153 
+set_range 4
+161 422 200 254 
+semi_forget_owner 2
+161 254 
+forget_owner 2
+161 254 
+set_owner 2
+161 254 
+rem_association 2
+182 328 
+add_association 3
+182 328 427 
+wipe_out 13
+283 70 23 248 12 247 396 244 238 240 24 221 241 
+top 3
+283 362 395 
+license_error 2
+391 392 
+merge_left 2
+70 92 
+merge_right 2
+70 92 
+delete_all_occurrences 2
+70 92 
+delete_left 2
+70 61 
+delete_right 2
+70 61 
+insert_last 4
+70 92 24 221 
+insert_first 3
+70 92 24 
+insert_left 2
+70 92 
+insert_right 2
+70 92 
+sublist 2
+70 23 
+goback 8
+70 23 42 247 240 24 221 241 
+mark 9
+70 23 14 42 247 240 24 221 241 
+search 4
+70 23 247 24 
+swap 4
+70 23 247 221 
+change_i_th 3
+70 23 221 
+change_value 4
+70 23 247 221 
+first 6
+70 23 42 247 24 221 
+i_th 5
+70 23 247 24 221 
+nb_elements 7
+70 23 42 240 24 221 241 
+all 2
+241 240 
+other_one 2
+241 240 
+last_one 2
+241 240 
+first_one 2
+241 240 
+member 2
+241 240 
+subset 3
+241 242 240 
+minus 3
+241 242 240 
+intersect 3
+241 242 240 
+last 5
+23 42 247 24 221 
+islast 3
+23 247 24 
+isfirst 3
+23 247 24 
+calc_size 2
+205 207 
+incr_refresh 3
+205 207 206 
+add_l_obj_gra 4
+205 396 206 207 
+upd_after_depend 2
+205 207 
+upd_before_depend 2
+205 207 
+insert_segment 2
+205 399 
+unlink 4
+205 207 244 238 
+move_link 3
+205 428 426 
+optimize_link 2
+205 207 
+link 4
+205 301 244 238 
+move_nodes 4
+205 429 207 426 
+set_gra 3
+205 207 206 
+set_batch_mode 4
+205 207 127 206 
+obj_link 2
+205 207 
+obj_node 2
+205 207 
+compute_link 2
+204 207 
+distribute 2
+114 115 
+rem_link_spec 2
+114 115 
+button_mode 2
+378 379 
+tool 2
+378 379 
+build_palette 2
+378 379 
+set_mode 7
+378 340 273 368 425 431 427 
+s_empty_string 2
+231 301 
+save_entities 2
+231 232 
+pr_entities 2
+231 232 
+c_schema 2
+231 232 
+validate_parse 2
+231 232 
+check_names 2
+231 232 
+deref_from_entity 2
+231 232 
+pre_revert 2
+231 232 
+re_enter_entity 4
+231 222 12 247 
+extract_entity 4
+231 222 12 247 
+rem_entity 5
+231 222 248 12 247 
+add_entity 5
+231 222 248 12 247 
+get_entity_instance 2
+231 232 
+entities_list 2
+231 12 
+unuse_entity 2
+231 160 
+use_entity 2
+231 160 
+deref_entity 2
+231 232 
+deref_base 2
+231 232 
+add_extern_base 2
+231 232 
+shared_entities 2
+231 232 
+set_pathname 2
+231 270 
+l_kind 2
+422 254 
+hide_cut_entities 2
+422 423 
+set_ctx 2
+422 297 
+cancel_save 3
+377 333 373 
+ok_save 3
+377 333 373 
+abandon 2
+377 373 
+E_QUESTION 2
+377 373 
+B_QUESTION 2
+377 373 
+duplicate_entity 3
+415 328 327 
+e_extern 2
+415 429 
+CMDLOG_IDESCR 2
+376 295 
+CMDLOG_DESCR 2
+376 294 
+set_import_filter_ctx 2
+311 312 
+import_filter_dlg 2
+311 411 
+get_resolution_mode 2
+433 434 
+get_load_mode 2
+433 434 
+get_name 2
+433 434 
+CMDLOG_OPTIMIZE 2
+317 294 
+ctx_base 2
+389 348 
+get_related 2
+389 390 
+locate 2
+389 154 
+set_undo_label 2
+348 316 
+undo_label 2
+348 316 
+menu_view 2
+348 316 
+menu_edit 2
+348 316 
+MESG 2
+348 316 
+s_flat 3
+316 414 361 
+resize_node 3
+429 207 426 
+FILTER 3
+298 325 319 
+revert 2
+434 408 
+context_base 2
+434 435 
+navigate_view 2
+434 435 
+init_new_base 2
+434 435 
+base_anchor 2
+434 435 
+view_model_anchor 2
+434 435 
+file_suffix 2
+434 435 
+create_primary_general 2
+414 360 
+printer 2
+341 354 
+modify_base 2
+419 160 
+update_prop_dlg 2
+419 382 
+p_prop_dlg 2
+419 382 
+annotable_dlg 2
+419 411 
+prop_dlg 2
+419 382 
+refresh_prop_from_cmd 2
+419 382 
+update_vag 2
+382 417 
+get_prop_selection 2
+382 383 
+get_OO_NOTE 2
+382 383 
+template_anchor 2
+232 328 
+named_type_anchor 3
+232 435 328 
+parameter_anchor 3
+232 328 395 
+operation_anchor 3
+232 328 395 
+attribute_anchor 3
+232 328 350 
+role_anchor 2
+232 328 
+inheritance_anchor 2
+232 328 
+association_anchor 2
+232 328 
+class_anchor 2
+232 328 
+p_move 2
+361 360 
+change_filter 3
+361 421 418 
+pop_filter_dlg 2
+361 418 
+del_cut_entities 2
+361 360 
+ext_save_entity 2
+236 160 
+connect_to_base 3
+236 160 254 
+remove_from_base 3
+236 160 254 
+buffer 2
+236 301 
+rem_template 2
+236 328 
+add_template 2
+236 328 
+COPYRIGHT 2
+332 331 
+set_base 8
+332 328 160 12 300 331 327 301 
+set_analysis 2
+332 354 
+set_selection_status 2
+328 384 
+add_iassociation 2
+328 431 
+add_iclass 2
+328 431 
+add_inheritance 2
+328 427 
+add_class 2
+328 427 
+w_set_text_popup 2
+370 369 
+w_text_popup 2
+370 369 
+w_get_general_area 2
+370 369 
+prod_icon 2
+412 411 
+prod_name 2
+412 411 
+help_window 2
+412 411 
+copyright 2
+412 411 
+ext_new_bar_menu 2
+412 411 
+is_prop_dlg_popup 2
+412 411 
+properties_dlg 2
+412 411 
+right 2
+228 246 
+to_slist 2
+222 247 
+to_set 2
+222 247 
+get_intern_index 2
+222 247 
+search_comp_entity 2
+222 247 
+NAV_VIEW_MODULE 2
+225 356 
+s_name 6
+310 278 308 277 307 276 
+default_refresh_with 7
+310 309 308 307 388 387 386 
+entity_label 15
+309 275 304 388 213 212 339 249 387 386 364 302 272 271 211 
+p_undo 2
+275 179 
+flags_labels 14
+275 304 388 213 212 339 249 387 386 364 302 272 271 211 
+s_properties 3
+275 324 179 
+s_semi_colon 2
+297 301 
+create_note_general 2
+360 413 
+move_bottom 2
+360 301 
+move_top 2
+360 301 
+move_down 2
+360 301 
+move_up 2
+360 301 
+cut_entities 4
+360 426 431 427 
+good_module 3
+417 421 418 
+end_mode 2
+421 418 
+update_palette 3
+421 418 425 
+new_mode 2
+421 418 
+select_template 2
+214 271 
+s_usage 2
+393 392 
+banner 2
+393 392 
+default_switch 2
+393 392 
+select_mul_button 2
+340 364 
+build_role_mul_box 2
+340 364 
+build_name_box 3
+340 273 211 
+set_dialog_cmd 2
+340 273 
+set_creation_allowed 2
+326 355 
+disable_commands 3
+274 305 273 
+enable_commands 3
+274 305 273 
+selection_mode 2
+274 273 
+center_button 2
+305 362 
+get_flag 2
+273 211 
+set_flag 2
+273 211 
+item_anchor 6
+304 339 364 385 271 303 
+selection_label 5
+304 339 364 385 303 
+items_label 5
+304 339 364 385 303 
+E_INCORRECT_NAME 3
+212 249 350 
+set_type 2
+325 254 
+NAV_NEW_MODULE 2
+356 355 
+M_RELATED_MODULES 2
+356 355 
+get_directory 2
+408 110 
+set_printer 2
+354 331 
+present_eq 2
+354 92 
+set_notes 2
+160 159 
+rem_note 2
+160 159 
+add_note 3
+160 159 327 
+editable 2
+160 425 
+selected_item 2
+271 303 
+refresh_list 2
+271 324 
+f_count 2
+248 12 
+count 2
+248 12 
+replace_entity 2
+248 12 
+wipe_out_entity 2
+248 12 
+decl_entity 2
+248 12 
+search_entity 2
+12 247 
+unset_comp_mode 2
+12 247 
+set_comp_mode 2
+12 247 
+extern_property_set 2
+300 301 
+unset_extern_property 2
+300 301 
+set_extern_property 2
+300 301 
+print_entity 2
+300 301 
+fill_main_text 2
+300 301 
+filter_off 2
+300 301 
+filter_on 2
+300 301 
+set_split_lines 2
+300 10 
+give_set_line 2
+207 206 
+give_set_box 2
+207 206 
+dissociate 3
+207 431 427 
+resize_fork 2
+207 427 
+change_fork 2
+207 427 
+move_fork 2
+207 427 
+adjust 2
+207 428 
+add_edge_label 2
+207 206 
+label_anchor 2
+207 206 
+move_resize 3
+337 338 335 
+bottom 2
+362 395 
+down 3
+362 324 395 
+up 3
+362 324 395 
+resolve 2
+37 36 
+set_descr_link 2
+115 401 
+add 2
+324 395 
+POINTS 2
+323 322 
+best_size 3
+323 322 321 
+set_rect_size 3
+335 321 147 
+set_bg_color 2
+321 151 
+set_rect_pos 2
+321 147 
+insert_after 3
+247 24 221 
+append 2
+111 109 
+fill_blank 2
+331 109 
+get_status 2
+145 144 
+set_sel_from_mask 2
+145 144 
+init_view 3
+368 426 369 
+upd_fi_other 2
+426 427 
+int_update_links 3
+426 431 427 
+set_filter 2
+426 301 
+re_all 3
+425 431 427 
+init_graphic 4
+425 431 427 424 
+change_title 2
+425 427 
+begin_title 3
+425 431 427 
+create_x11 3
+431 427 424 
+Class 2
+431 427 
+s_analysis 2
+427 301 
+go_item 2
+352 395 
+length 2
+184 109 
+are_valid 2
+59 83 
+rem_label 2
+127 206 
+compute_labels 2
+127 206 
+resize_grid 2
+127 206 
+init_grid 2
+127 206 
+sety 4
+5 4 3 2 
+setx 4
+5 4 3 2 
+lefts_from_set 3
+245 244 238 
+lefts 3
+245 244 238 
+are_linked 2
+244 238 
+rights_from_set 2
+244 238 
+rights 2
+244 238 
+unlink_right 2
+244 238 
+unlink_left 2
+244 238 
+present_right 2
+244 238 
+present_left 2
+244 238 
+nb_links 2
+244 238 
+maxy 2
+3 2 
+maxx 2
+3 2 
+sumy 2
+3 2 
+sumx 2
+3 2 

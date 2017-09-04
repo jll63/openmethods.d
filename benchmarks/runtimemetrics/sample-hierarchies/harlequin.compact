@@ -1,0 +1,1792 @@
+666
+<object>:dylan:dylan 0
+
+<untraceable-value-cell>:internal:dylan 1
+0 
+<untraceable-double-value-cell>:internal:dylan 1
+0 
+<unbound>:dylan-extensions:dylan 1
+0 
+<tree-node>:duim-gadgets:duim-gadgets 1
+0 
+<traceable-value-cell>:internal:dylan 1
+0 
+<table-vector>:dylan-extensions:dylan 1
+0 
+<table-item>:duim-gadgets:duim-gadgets 1
+0 
+<table-column>:duim-gadgets:duim-gadgets 1
+0 
+<symbol>:dylan:dylan 1
+0 
+<subjunctive-class-universe>:dylan-extensions:dylan 1
+0 
+<style-descriptor>:duim-dcs:duim-dcs 1
+0 
+<scu-node>:internal:dylan 1
+0 
+<rehashed-bits>:internal:dylan 1
+0 
+<rehash-token>:internal:dylan 1
+0 
+<random>:simple-random:harlequin-extensions 1
+0 
+<progress-note>:duim-frames:duim-frames 1
+0 
+<primitive>:dylan-primitives:dylan 1
+0 
+<obsolete-instance>:dylan-extensions:dylan 1
+0 
+<miscellaneous-obsolete-instance>:dylan-extensions:dylan 1
+0 
+<mirror>:duim-sheets-internals:duim-sheets 1
+0 
+<list-item>:duim-gadgets:duim-gadgets 1
+0 
+<layered-color-set>:duim-DCs-internals:duim-dcs 1
+0 
+<iteration-state>:internal:dylan 1
+0 
+<implementation-class>:dylan-extensions:dylan 1
+0 
+<image-label>:duim-gadgets-internals:duim-gadgets 1
+0 
+<help-system>:duim-frames-internals:duim-frames 1
+0 
+<help-source>:duim-frames:duim-frames 1
+0 
+<hash-state>:dylan-extensions:dylan 1
+0 
+<handler>:internal:dylan 1
+0 
+<event-queue>:duim-sheets-internals:duim-sheets 1
+0 
+<compound-label>:duim-gadgets:duim-gadgets 1
+0 
+<command-results>:commands:commands 1
+0 
+<clipboard>:duim-sheets:duim-sheets 1
+0 
+<boolean>:dylan:dylan 1
+0 
+<bit-set-iteration-state>:bit-set:bit-set 1
+0 
+<value-object>:internal:dylan 1
+0 
+<machine-word>:dylan-extensions:dylan 1
+36 
+<type>:dylan:dylan 1
+0 
+<union>:dylan-extensions:dylan 1
+38 
+<top-type>:internal:dylan 1
+38 
+<raw-type>:internal:dylan 1
+38 
+<bottom-type>:dylan-extensions:dylan 1
+38 
+<transform>:duim-geometry:duim-geometry 1
+0 
+<identity-transform>:duim-geometry-internals:duim-geometry 1
+43 
+<general-transform>:duim-extended-geometry-internals:duim-extended-geometry 1
+43 
+<text-style>:duim-dcs:duim-dcs 1
+0 
+<standard-text-style>:duim-DCs-internals:duim-dcs 1
+46 
+<device-font>:duim-dcs:duim-dcs 1
+46 
+<space-requirement>:duim-layouts:duim-layouts 1
+0 
+<unbounded-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<null-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<label-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<general-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<functional-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<fixed-space-requirement>:duim-layouts-internals:duim-layouts 1
+49 
+<slot-initial-value-descriptor>:internal:dylan 1
+0 
+<inherited-slot-descriptor>:dylan-extensions:dylan 1
+56 
+<signature>:dylan-extensions:dylan 1
+0 
+<object-signature>:dylan-extensions:dylan 1
+58 
+<region>:duim-geometry:duim-geometry 1
+0 
+<nowhere>:duim-geometry-internals:duim-geometry 1
+60 
+<everywhere>:duim-geometry-internals:duim-geometry 1
+60 
+<pointer>:duim-sheets:duim-sheets 1
+0 
+<standard-pointer>:duim-sheets-internals:duim-sheets 1
+63 
+<pen>:duim-dcs:duim-dcs 1
+0 
+<standard-pen>:duim-DCs-internals:duim-dcs 1
+65 
+<palette>:duim-dcs:duim-dcs 1
+0 
+<basic-palette>:duim-DCs-internals:duim-dcs 1
+67 
+<namespace>:dylan-extensions:dylan 1
+0 
+<module>:dylan-extensions:dylan 1
+69 
+<limited-stretchy-vector-representation>:internal:dylan 1
+0 
+<stretchy-object-vector-representation>:internal:dylan 1
+71 
+<stretchy-byte-character-vector-representation>:internal:dylan 1
+71 
+<library-version>:dylan-extensions:dylan 1
+0 
+<used-library>:dylan-extensions:dylan 1
+74 
+<ink>:duim-dcs:duim-dcs 1
+0 
+<layered-color>:duim-DCs-internals:duim-dcs 1
+76 
+<foreground>:duim-DCs-internals:duim-dcs 1
+76 
+<background>:duim-DCs-internals:duim-dcs 1
+76 
+<gesture>:duim-sheets:duim-sheets 1
+0 
+<pointer-gesture>:duim-sheets:duim-sheets 1
+80 
+<keyboard-gesture>:duim-sheets:duim-sheets 1
+80 
+<gadget-state>:duim-gadgets-internals:duim-gadgets 1
+0 
+<text-gadget-state>:duim-gadgets-internals:duim-gadgets 1
+83 
+<domain>:dylan-extensions:dylan 1
+0 
+<standalone-domain>:dylan-extensions:dylan 1
+85 
+<method-domain>:dylan-extensions:dylan 1
+85 
+<command>:commands:commands 1
+0 
+<command-decorator>:duim-frames:duim-frames 1
+88 
+<command-table>:duim-frames:duim-frames 1
+0 
+<standard-command-table>:duim-frames-internals:duim-frames 1
+90 
+<closable-object>:harlequin-extensions:harlequin-extensions 1
+0 
+<stream>:harlequin-extensions:harlequin-extensions 1
+92 
+<character>:dylan:dylan 1
+0 
+<unicode-character>:dylan-extensions:dylan 1
+94 
+<byte-character>:dylan-extensions:dylan 1
+94 
+<caret>:duim-sheets:duim-sheets 1
+0 
+<basic-caret>:duim-sheets-internals:duim-sheets 1
+97 
+<brush>:duim-dcs:duim-dcs 1
+0 
+<standard-brush>:duim-DCs-internals:duim-dcs 1
+99 
+<abstract-sheet>:duim-sheets:duim-sheets 1
+0 
+<null-repainting-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<null-input-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<delegate-input-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<raw-aggregate-type>:internal:dylan 1
+38 
+<raw-union-type>:internal:dylan 1
+105 
+<raw-struct-type>:internal:dylan 1
+105 
+<limited-type>:dylan-extensions:dylan 1
+38 
+<subclass>:dylan-extensions:dylan 1
+108 
+<singleton>:dylan:dylan 1
+108 
+<limited-integer>:dylan-extensions:dylan 1
+108 
+<class>:dylan:dylan 1
+38 
+<virtual-class>:internal:dylan 1
+112 
+<value-class>:internal:dylan 1
+112 
+<function-class>:internal:dylan 1
+112 
+<translation-transform>:duim-geometry-internals:duim-geometry 1
+43 
+<float-translation-transform>:duim-geometry-internals:duim-geometry 1
+116 
+<text-range>:duim-gadgets:duim-gadgets 1
+0 
+<simple-text-range>:duim-gadgets:duim-gadgets 1
+118 
+<active-text-range>:duim-gadgets:duim-gadgets 1
+119 
+<slot-keyword-initialization-descriptor>:dylan-extensions:dylan 1
+56 
+<init-arg-descriptor>:dylan-extensions:dylan 1
+121 
+<signature-rest-value-mixin>:internal:dylan 1
+58 
+<signature+rest-value>:internal:dylan 1
+123 
+<region-set>:duim-geometry:duim-geometry 1
+60 
+<region-union>:duim-geometry-internals:duim-geometry 1
+125 
+<region-intersection>:duim-geometry-internals:duim-geometry 1
+125 
+<region-difference>:duim-geometry-internals:duim-geometry 1
+125 
+<box-set>:duim-geometry-internals:duim-geometry 1
+125 
+<point>:duim-geometry:duim-geometry 1
+60 
+<standard-point>:duim-geometry:duim-geometry 1
+130 
+<bounding-box>:duim-geometry:duim-geometry 1
+60 
+<simple-box>:duim-geometry-internals:duim-geometry 1
+132 
+<general-box>:duim-geometry-internals:duim-geometry 1
+132 
+<portable-container>:threads-primitives:dylan 1
+0 
+<portable-double-container>:threads-primitives:dylan 1
+135 
+<thread>:threads:dylan 1
+136 
+<synchronization>:threads:dylan 1
+0 
+<notification>:threads:dylan 2
+135 138 
+<locator-defaults>:basic-locator-classes:harlequin-extensions 1
+0 
+<locator>:basic-locator-classes:harlequin-extensions 1
+140 
+<physical-locator>:basic-locator-classes:harlequin-extensions 1
+141 
+<library>:dylan-extensions:dylan 2
+69 74 
+<image>:duim-dcs:duim-dcs 1
+76 
+<pixmap>:duim-graphics:duim-graphics 1
+144 
+<color>:duim-dcs:duim-dcs 1
+76 
+<rgb-color>:duim-DCs-internals:duim-dcs 1
+146 
+<dynamic-color>:duim-dcs:duim-dcs 1
+146 
+<contrasting-color>:duim-dcs:duim-dcs 1
+146 
+<value-gadget-state>:duim-gadgets-internals:duim-gadgets 1
+83 
+<tree-control-state>:duim-gadgets-internals:duim-gadgets 1
+150 
+<slug-gadget-state>:duim-gadgets-internals:duim-gadgets 1
+150 
+<range-gadget-state>:duim-gadgets-internals:duim-gadgets 1
+150 
+<collection-gadget-state>:duim-gadgets-internals:duim-gadgets 1
+150 
+<function>:dylan:dylan 1
+0 
+<generic-function>:dylan:dylan 1
+155 
+<sealed-generic-function>:dylan-extensions:dylan 1
+156 
+<incremental-generic-function>:dylan-extensions:dylan 1
+156 
+<condition>:dylan:dylan 1
+0 
+<simple-condition>:dylan-extensions:dylan 1
+159 
+<ambiguous-methods>:dylan-extensions:dylan 1
+160 
+<serious-condition>:dylan:dylan 1
+159 
+<timeout-expired>:threads:dylan 1
+162 
+<out-of-memory-condition>:dylan-extensions:dylan 1
+162 
+<restart>:dylan:dylan 1
+159 
+<abort>:dylan:dylan 1
+165 
+<basic-command>:commands:commands 1
+88 
+<functional-command>:commands:commands 1
+167 
+<basic-undoable-command>:commands:commands 1
+167 
+<sheet-with-repainting-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<immediate-repainting-mixin>:duim-sheets-internals:duim-sheets 1
+170 
+<sheet-with-medium-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<shared-medium-mixin>:duim-sheets-internals:duim-sheets 1
+172 
+<sheet-with-event-queue-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<immediate-input-mixin>:duim-sheets-internals:duim-sheets 1
+174 
+<abstract-gadget>:duim-gadgets:duim-gadgets 1
+101 
+<selection-change-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<protected-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<abstract-port>:duim-sheets:duim-sheets 1
+0 
+<port>:duim-sheets:duim-sheets 1
+179 
+<basic-port>:duim-sheets-internals:duim-sheets 1
+180 
+<integer-translation-transform>:duim-geometry-internals:duim-geometry 1
+116 
+<mutable-translation-transform>:duim-geometry-internals:duim-geometry 1
+182 
+<slot-descriptor>:dylan-extensions:dylan 1
+121 
+<virtual-slot-descriptor>:internal:dylan 1
+184 
+<keyword-signature>:dylan-extensions:dylan 1
+58 
+<keyword-signature+rest-value>:internal:dylan 2
+123 186 
+<path>:duim-geometry:duim-geometry 1
+60 
+<line>:duim-extended-geometry:duim-extended-geometry 1
+188 
+<standard-line>:duim-extended-geometry-internals:duim-extended-geometry 1
+189 
+<area>:duim-geometry:duim-geometry 1
+60 
+<rectangle>:duim-extended-geometry:duim-extended-geometry 1
+191 
+<standard-rectangle>:duim-extended-geometry-internals:duim-extended-geometry 1
+192 
+<object-with-elements>:internal:dylan 1
+0 
+<collection>:dylan:dylan 1
+194 
+<sequence>:dylan:dylan 1
+195 
+<multiple-sequence>:internal:dylan 1
+196 
+<dummy>:internal:dylan 1
+196 
+<explicit-key-collection>:dylan:dylan 1
+195 
+<multiple-mixed-collection>:internal:dylan 1
+199 
+<multiple-explicit-key-collection>:internal:dylan 1
+199 
+<stencil>:duim-dcs:duim-dcs 1
+144 
+<pattern>:duim-dcs:duim-dcs 1
+202 
+<event>:duim-sheets:duim-sheets 1
+0 
+<basic-event>:duim-sheets-internals:duim-sheets 1
+204 
+<gadget-event>:duim-gadgets-internals:duim-gadgets 1
+205 
+<value-changing-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<value-changed-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<update-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<selection-changed-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<popup-menu-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<node-state-changed-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<key-press-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<column-click-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<activate-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<frame-event>:duim-sheets:duim-sheets 1
+205 
+<timer-event>:duim-sheets:duim-sheets 1
+216 
+<port-terminated-event>:duim-sheets:duim-sheets 1
+216 
+<page-changed-dialog-event>:duim-frames-internals:duim-frames 1
+216 
+<function-event>:duim-sheets-internals:duim-sheets 1
+216 
+<frame-unmapped-event>:duim-frames:duim-frames 1
+216 
+<frame-mapped-event>:duim-frames:duim-frames 1
+216 
+<frame-layed-out-event>:duim-frames:duim-frames 1
+216 
+<frame-input-focus-changed-event>:duim-frames:duim-frames 1
+216 
+<frame-destroyed-event>:duim-frames:duim-frames 1
+216 
+<frame-created-event>:duim-frames:duim-frames 1
+216 
+<command-event>:duim-frames-internals:duim-frames 1
+216 
+<warning>:dylan:dylan 1
+159 
+<simple-warning>:dylan:dylan 2
+228 160 
+<error>:dylan:dylan 1
+162 
+<undefined-text-style-mapping>:duim-sheets:duim-sheets 1
+230 
+<palette-full>:duim-dcs:duim-dcs 1
+230 
+<conditional-update-error>:threads:dylan 1
+230 
+<color-not-found>:duim-dcs:duim-dcs 1
+230 
+<simple-restart>:dylan:dylan 2
+165 160 
+<help-command>:duim-frames:duim-frames 1
+167 
+<help-quit>:duim-frames:duim-frames 1
+236 
+<string-command>:commands:commands 1
+88 
+<basic-string-command>:commands:commands 2
+167 238 
+<abstract-frame>:duim-sheets:duim-sheets 1
+0 
+<frame>:duim-sheets:duim-sheets 1
+240 
+<basic-frame>:duim-frames-internals:duim-frames 1
+241 
+<basic-embedded-frame>:duim-frames-internals:duim-frames 1
+242 
+<abstract-frame-manager>:duim-sheets:duim-sheets 1
+0 
+<frame-manager>:duim-sheets:duim-sheets 1
+244 
+<basic-frame-manager>:duim-sheets-internals:duim-sheets 1
+245 
+<portable-frame-manager>:duim-sheets-internals:duim-sheets 1
+246 
+<lock>:threads:dylan 1
+138 
+<exclusive-lock>:threads:dylan 1
+248 
+<read-write-lock>:threads:dylan 1
+249 
+<read-write-lock-i>:threads-internal:dylan 1
+250 
+<any-instance-slot-descriptor>:dylan-extensions:dylan 1
+184 
+<repeated-slot-descriptor>:dylan-extensions:dylan 1
+252 
+<instance-slot-descriptor>:dylan-extensions:dylan 1
+252 
+<constant-slot-descriptor>:internal:dylan 1
+252 
+<any-class-slot-descriptor>:dylan-extensions:dylan 1
+184 
+<each-subclass-slot-descriptor>:internal:dylan 1
+256 
+<class-slot-descriptor>:internal:dylan 1
+256 
+<signature-values-mixin>:internal:dylan 1
+58 
+<signature+values>:internal:dylan 1
+259 
+<signature+values+rest-value>:internal:dylan 2
+123 260 
+<semaphore>:threads:dylan 2
+135 248 
+<semaphore-i>:threads-internal:dylan 1
+262 
+<polyline>:duim-extended-geometry:duim-extended-geometry 1
+188 
+<polygon-mixin>:duim-extended-geometry-internals:duim-extended-geometry 1
+0 
+<standard-polyline>:duim-extended-geometry-internals:duim-extended-geometry 2
+265 264 
+<polygon>:duim-extended-geometry:duim-extended-geometry 1
+191 
+<standard-polygon>:duim-extended-geometry-internals:duim-extended-geometry 2
+265 267 
+<range>:dylan:dylan 1
+196 
+<infinite-range>:internal:dylan 1
+269 
+<finite-range>:internal:dylan 1
+269 
+<empty-range>:internal:dylan 1
+269 
+<constant-range>:internal:dylan 1
+269 
+<sheet-event>:duim-sheets:duim-sheets 1
+205 
+<window-event>:duim-sheets:duim-sheets 1
+274 
+<window-repaint-event>:duim-sheets:duim-sheets 1
+275 
+<window-configuration-event>:duim-sheets:duim-sheets 1
+275 
+<input-focus-event>:duim-sheets:duim-sheets 1
+274 
+<input-focus-out-event>:duim-sheets:duim-sheets 1
+278 
+<input-focus-in-event>:duim-sheets:duim-sheets 1
+278 
+<text-changing-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+206 
+<text-changed-gadget-event>:duim-gadgets-internals:duim-gadgets 1
+281 
+<frame-focus-event>:duim-frames:duim-frames 1
+216 
+<frame-focus-out-event>:duim-frames:duim-frames 1
+283 
+<frame-focus-in-event>:duim-frames:duim-frames 1
+283 
+<frame-exited-event>:duim-frames:duim-frames 1
+216 
+<application-exited-event>:duim-frames:duim-frames 1
+286 
+<frame-exit-event>:duim-frames:duim-frames 1
+216 
+<dialog-exit-event>:duim-frames:duim-frames 1
+288 
+<dialog-cancel-event>:duim-frames:duim-frames 1
+288 
+<elliptical-arc>:duim-extended-geometry:duim-extended-geometry 1
+188 
+<ellipse-mixin>:duim-extended-geometry-internals:duim-extended-geometry 1
+0 
+<standard-elliptical-arc>:duim-extended-geometry-internals:duim-extended-geometry 2
+292 291 
+<ellipse>:duim-extended-geometry:duim-extended-geometry 1
+191 
+<standard-ellipse>:duim-extended-geometry-internals:duim-extended-geometry 2
+292 294 
+<type-error>:dylan:dylan 1
+230 
+<slot-type-error>:dylan-extensions:dylan 1
+296 
+<transform-error>:duim-geometry:duim-geometry 1
+230 
+<singular-transform>:duim-geometry:duim-geometry 1
+298 
+<thread-error>:threads-internal:dylan 1
+230 
+<unexpected-thread-error>:threads-internal:dylan 1
+300 
+<thread-priority-error>:threads-internal:dylan 1
+300 
+<thread-inactive-error>:threads:dylan 1
+300 
+<thread-finalization-error>:threads-internal:dylan 1
+300 
+<thread-creation-error>:threads-internal:dylan 1
+300 
+<duplicate-join-error>:threads:dylan 1
+300 
+<synchronization-error>:threads-internal:dylan 1
+230 
+<unexpected-synchronization-error>:threads-internal:dylan 1
+307 
+<synchronization-finalization-error>:threads-internal:dylan 1
+307 
+<synchronization-creation-error>:threads-internal:dylan 1
+307 
+<lock-error>:threads-internal:dylan 1
+230 
+<not-owned-error>:threads:dylan 1
+311 
+<count-exceeded-error>:threads:dylan 1
+311 
+<already-owned-error>:threads-internal:dylan 1
+311 
+<invalid-bit-number>:machine-word-utilities-implementation:machine-word 1
+230 
+<invalid-shift-quantity>:machine-word-utilities-implementation:machine-word 1
+315 
+<invalid-bit-index>:machine-word-utilities-implementation:machine-word 1
+315 
+<help-on-subject>:duim-frames-internals:duim-frames 1
+236 
+<help-on-version>:duim-frames:duim-frames 1
+318 
+<help-on-help>:duim-frames:duim-frames 1
+318 
+<abstract-medium>:duim-sheets:duim-sheets 1
+0 
+<medium>:duim-sheets:duim-sheets 1
+321 
+<pixmap-medium>:duim-graphics:duim-graphics 1
+322 
+<basic-medium>:duim-sheets-internals:duim-sheets 1
+322 
+<basic-pixmap-medium>:duim-graphics-internals:duim-graphics 2
+324 323 
+<simple-frame>:duim-frames:duim-frames 1
+242 
+<container-frame>:duim-frames-internals:duim-frames 1
+326 
+<concrete-simple-frame>:duim-frames-internals:duim-frames 1
+326 
+<keyword-signature+values>:internal:dylan 2
+259 186 
+<keyword-signature+values+rest-value>:internal:dylan 2
+123 329 
+<simple-lock>:threads:dylan 2
+135 249 
+<simple-lock-i>:threads-internal:dylan 1
+331 
+<recursive-lock>:threads:dylan 2
+135 249 
+<recursive-lock-i>:threads-internal:dylan 1
+333 
+<method>:dylan:dylan 1
+155 
+<lambda>:dylan-extensions:dylan 1
+335 
+<simple-method>:dylan-extensions:dylan 1
+336 
+<copy-down-method>:internal:dylan 1
+335 
+<simple-copy-down-method>:internal:dylan 2
+338 337 
+<keyword-method>:dylan-extensions:dylan 1
+336 
+<keyword-copy-down-method>:internal:dylan 2
+338 340 
+<accessor-method>:dylan-extensions:dylan 1
+335 
+<single-accessor-method>:dylan-extensions:dylan 1
+342 
+<setter-accessor-method>:dylan-extensions:dylan 1
+342 
+<setter-method>:internal:dylan 2
+344 343 
+<repeated-accessor-method>:dylan-extensions:dylan 1
+342 
+<repeated-setter-method>:internal:dylan 2
+344 346 
+<getter-accessor-method>:dylan-extensions:dylan 1
+342 
+<repeated-getter-method>:internal:dylan 2
+348 346 
+<getter-method>:internal:dylan 2
+348 343 
+<device-event>:duim-sheets:duim-sheets 1
+274 
+<keyboard-event>:duim-sheets:duim-sheets 1
+351 
+<key-release-event>:duim-sheets:duim-sheets 1
+352 
+<key-press-event>:duim-sheets:duim-sheets 1
+352 
+<transform-underspecified>:duim-extended-geometry:duim-extended-geometry 1
+298 
+<reflection-underspecified>:duim-extended-geometry:duim-extended-geometry 1
+355 
+<simple-error>:dylan:dylan 2
+230 160 
+<user-assertion-error>:harlequin-extensions-internals:harlequin-extensions 1
+357 
+<stack-overflow-error>:dylan-extensions:dylan 1
+357 
+<natural-number-error>:internal:dylan 1
+357 
+<library-version-error>:internal:dylan 1
+357 
+<key-test-error>:internal:dylan 1
+357 
+<iteration-error>:internal:dylan 1
+357 
+<integer-overflow-error>:dylan-extensions:dylan 1
+357 
+<infinite-range-error>:internal:dylan 1
+357 
+<inconsistent-precedence-class-error>:internal:dylan 1
+357 
+<incompatible-range-error>:internal:dylan 1
+357 
+<improper-list-error>:internal:dylan 1
+357 
+<immutable-error>:internal:dylan 1
+357 
+<empty-collection-error>:internal:dylan 1
+357 
+<dispatch-error>:internal:dylan 1
+357 
+<capacity-size-error>:internal:dylan 1
+357 
+<assert-error>:internal:dylan 1
+357 
+<sealed-object-error>:dylan:dylan 1
+230 
+<sealed-class-error>:internal:dylan 2
+374 160 
+<help-from-source>:duim-frames-internals:duim-frames 1
+318 
+<help-run-macro>:duim-frames:duim-frames 1
+376 
+<help-reposition>:duim-frames:duim-frames 1
+376 
+<help-on-topics>:duim-frames:duim-frames 1
+376 
+<help-on-index>:duim-frames:duim-frames 1
+376 
+<help-on-contents>:duim-frames:duim-frames 1
+376 
+<closure-method-mixin>:internal:dylan 1
+0 
+<simple-closure-method>:internal:dylan 2
+337 382 
+<keyword-closure-method>:dylan-extensions:dylan 2
+340 382 
+<dialog-frame>:duim-frames:duim-frames 1
+326 
+<simple-chooser-dialog>:duim-frames-internals:duim-frames 1
+385 
+<concrete-dialog-frame>:duim-frames-internals:duim-frames 1
+385 
+<mutable-object-with-elements>:internal:dylan 1
+194 
+<mutable-collection>:dylan:dylan 2
+195 388 
+<accumulator>:internal:dylan 1
+389 
+<sequence-accumulator>:internal:dylan 2
+390 196 
+<keyed-accumulator>:internal:dylan 2
+390 199 
+<number>:dylan:dylan 1
+0 
+<complex>:dylan:dylan 1
+393 
+<real>:dylan:dylan 1
+394 
+<machine-number>:internal:dylan 1
+395 
+<rational>:dylan:dylan 1
+395 
+<abstract-integer>:dylan-extensions:dylan 1
+397 
+<integer>:dylan:dylan 2
+398 396 
+<float>:dylan:dylan 1
+396 
+<single-float>:dylan:dylan 2
+400 36 
+<double-float>:dylan:dylan 2
+400 36 
+<pointer-event>:duim-sheets:duim-sheets 1
+351 
+<pointer-button-event>:duim-sheets:duim-sheets 1
+403 
+<button-release-event>:duim-sheets:duim-sheets 1
+404 
+<slot-error>:internal:dylan 1
+230 
+<simple-slot-error>:internal:dylan 2
+406 357 
+<help-system-error>:duim-frames-internals:duim-frames 1
+357 
+<no-help-system>:duim-frames-internals:duim-frames 1
+408 
+<help-system-not-installed>:duim-frames-internals:duim-frames 1
+408 
+<argument-error>:internal:dylan 1
+357 
+<argument-count-overflow-error>:internal:dylan 1
+411 
+<argument-count-error>:internal:dylan 1
+411 
+<sealed-generic-function-error>:dylan-extensions:dylan 2
+374 160 
+<domain-sealed-generic-function-error>:dylan-extensions:dylan 1
+414 
+<object-incomplete>:dylan-extensions:dylan 1
+159 
+<incomplete-error>:internal:dylan 2
+416 230 
+<function-type-incomplete-error>:dylan-extensions:dylan 2
+160 417 
+<class-incomplete-error>:dylan-extensions:dylan 2
+160 417 
+<help-on-pane>:duim-frames-internals:duim-frames 1
+376 
+<help-on-keyword>:duim-frames:duim-frames 1
+420 
+<help-on-context>:duim-frames:duim-frames 1
+420 
+<gadget>:duim-gadgets:duim-gadgets 1
+176 
+<basic-gadget>:duim-gadgets-internals:duim-gadgets 1
+423 
+<layout>:duim-layouts:duim-layouts 1
+101 
+<splitter>:duim-gadgets:duim-gadgets 2
+425 424 
+<row-splitter>:duim-gadgets:duim-gadgets 1
+426 
+<column-splitter>:duim-gadgets:duim-gadgets 1
+426 
+<multi-page-dialog-frame>:duim-frames-internals:duim-frames 1
+385 
+<wizard-frame>:duim-frames:duim-frames 1
+429 
+<property-frame>:duim-frames:duim-frames 1
+429 
+<mutable-sequence>:dylan:dylan 2
+389 196 
+<list>:dylan:dylan 1
+432 
+<pair>:dylan:dylan 1
+433 
+<empty-list>:dylan:dylan 1
+433 
+<mutable-explicit-key-collection>:dylan:dylan 2
+199 389 
+<set>:dylan-extensions:dylan 1
+436 
+<object-set>:dylan-extensions:dylan 1
+437 
+<bit-set>:bit-set:bit-set 1
+437 
+<big-integer>:dylan-extensions:dylan 1
+398 
+<double-integer>:dylan-extensions:dylan 2
+440 36 
+<pointer-motion-event>:duim-sheets:duim-sheets 1
+403 
+<pointer-boundary-event>:duim-sheets:duim-sheets 1
+442 
+<pointer-exit-event>:duim-sheets:duim-sheets 1
+443 
+<pointer-enter-event>:duim-sheets:duim-sheets 1
+443 
+<pointer-drag-event>:duim-sheets:duim-sheets 2
+442 404 
+<button-press-event>:duim-sheets:duim-sheets 1
+404 
+<double-click-event>:duim-sheets:duim-sheets 1
+447 
+<not-found-error>:dylan-extensions:dylan 1
+357 
+<invalid-index-error>:internal:dylan 1
+449 
+<subscript-out-of-bounds-error>:internal:dylan 1
+450 
+<keyword-error>:internal:dylan 1
+411 
+<unknown-keyword-argument-error>:internal:dylan 1
+452 
+<odd-keyword-arguments-error>:internal:dylan 1
+452 
+<missing-keyword-error>:internal:dylan 1
+452 
+<sheet>:duim-sheets:duim-sheets 1
+101 
+<basic-sheet>:duim-sheets-internals:duim-sheets 1
+456 
+<sheet-with-resource-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<mirrored-sheet-mixin>:duim-sheets-internals:duim-sheets 1
+458 
+<permanent-medium-mixin>:duim-sheets-internals:duim-sheets 1
+172 
+<pixmap-sheet>:duim-graphics-internals:duim-graphics 3
+460 459 457 
+<array>:dylan:dylan 1
+432 
+<vector>:dylan:dylan 1
+462 
+<entry-vector>:internal:dylan 1
+463 
+<stretchy-collection>:dylan:dylan 1
+195 
+<table>:dylan:dylan 2
+436 465 
+<symbol-table>:internal:dylan 1
+466 
+<string-table>:dylan-extensions:dylan 1
+466 
+<layered-color-set-table>:duim-DCs-internals:duim-dcs 1
+466 
+<ordered-key-collection>:internal:dylan 2
+436 465 
+<ordered-string-table>:dylan-extensions:dylan 1
+470 
+<ordered-object-table>:dylan-extensions:dylan 1
+470 
+<ordered-object-set>:dylan-extensions:dylan 1
+470 
+<value-gadget>:duim-gadgets:duim-gadgets 1
+423 
+<value-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+474 
+<key-press-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<oriented-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<tab-control>:duim-gadgets:duim-gadgets 4
+477 476 475 424 
+<updatable-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<gadget-bar-mixin>:duim-gadgets-internals:duim-gadgets 1
+479 
+<no-value-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+474 
+<menu-bar>:duim-gadgets:duim-gadgets 3
+481 480 424 
+<limited-list>:dylan-extensions:dylan 1
+432 
+<simple-object-list>:internal:dylan 1
+483 
+<non-empty-limited-list>:dylan-extensions:dylan 1
+483 
+non-empty-<simple-object-list>:internal:dylan 2
+485 484 
+<simple-method-list>:internal:dylan 1
+483 
+non-empty-<simple-method-list>:internal:dylan 2
+485 487 
+<simple-class-list>:internal:dylan 1
+483 
+non-empty-<simple-class-list>:internal:dylan 2
+485 489 
+<empty-limited-list>:dylan-extensions:dylan 1
+483 
+empty-<simple-object-list>:internal:dylan 2
+491 484 
+empty-<simple-method-list>:internal:dylan 2
+491 487 
+empty-<simple-class-list>:internal:dylan 2
+491 489 
+<string>:dylan:dylan 1
+432 
+<unicode-string>:dylan:dylan 2
+495 463 
+<simple-vector>:dylan:dylan 1
+463 
+<simple-single-float-vector>:dylan-extensions:dylan 1
+497 
+<simple-object-vector>:dylan:dylan 1
+497 
+<simple-machine-word-vector>:dylan-extensions:dylan 1
+497 
+<simple-integer-vector>:dylan-extensions:dylan 1
+497 
+<simple-double-float-vector>:dylan-extensions:dylan 1
+497 
+<simple-double-byte-vector>:dylan-extensions:dylan 1
+497 
+<simple-byte-vector>:dylan-extensions:dylan 1
+497 
+<byte-string>:dylan:dylan 2
+495 463 
+<bit-vector>:bit-vector:bit-vector 1
+463 
+<bit-vector-internal>:bit-vector:bit-vector 1
+506 
+<multidimensional-array>:internal:dylan 1
+462 
+<simple-array>:internal:dylan 1
+508 
+<simple-single-float-array>:dylan-extensions:dylan 1
+509 
+<simple-object-array>:internal:dylan 1
+509 
+<simple-machine-word-array>:dylan-extensions:dylan 1
+509 
+<simple-integer-array>:dylan-extensions:dylan 1
+509 
+<simple-double-float-array>:dylan-extensions:dylan 1
+509 
+<simple-double-byte-array>:dylan-extensions:dylan 1
+509 
+<simple-byte-array>:dylan-extensions:dylan 1
+509 
+<object-table>:dylan:dylan 1
+466 
+<standard-object-table>:internal:dylan 1
+517 
+<layout-mixin>:duim-layouts-internals:duim-layouts 1
+425 
+<composite-layout-mixin>:duim-layouts-internals:duim-layouts 1
+519 
+<cached-space-requirement-mixin>:duim-layouts-internals:duim-layouts 1
+101 
+<basic-composite-pane>:duim-layouts:duim-layouts 3
+521 520 457 
+<single-child-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<single-child-composite-pane>:duim-layouts:duim-layouts 2
+523 522 
+<scrolling-sheet-mixin>:duim-gadgets-internals:duim-gadgets 1
+101 
+<client-overridability-mixin>:duim-layouts-internals:duim-layouts 1
+101 
+<standard-input-mixin>:duim-sheets-internals:duim-sheets 1
+174 
+<viewport>:duim-gadgets:duim-gadgets 5
+424 527 526 525 523 
+<abstract-display>:duim-sheets:duim-sheets 1
+101 
+<display>:duim-sheets:duim-sheets 2
+456 529 
+<multiple-child-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<basic-display>:duim-sheets-internals:duim-sheets 4
+459 531 457 530 
+<standard-display>:duim-sheets-internals:duim-sheets 1
+532 
+<stretchy-sequence>:dylan-extensions:dylan 2
+465 196 
+<stretchy-mutable-sequence>:internal:dylan 2
+534 432 
+<deque>:dylan:dylan 1
+535 
+<object-deque>:dylan-extensions:dylan 1
+536 
+<island-deque>:internal:dylan 1
+536 
+<basic-value-gadget>:duim-gadgets-internals:duim-gadgets 2
+475 424 
+<value-range-gadget>:duim-gadgets:duim-gadgets 1
+474 
+<range-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+540 
+<progress-bar>:duim-gadgets:duim-gadgets 3
+477 541 539 
+<collection-gadget>:duim-gadgets:duim-gadgets 1
+474 
+<collection-gadget-mixin>:duim-gadgets-internals:duim-gadgets 2
+475 543 
+<gadget-selection-mixin>:duim-gadgets-internals:duim-gadgets 1
+543 
+<bordered-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<spin-box>:duim-gadgets:duim-gadgets 4
+546 545 544 424 
+<wrapping-layout-mixin>:duim-layouts-internals:duim-layouts 1
+520 
+<single-child-wrapping-pane>:duim-layouts-internals:duim-layouts 5
+521 526 548 523 457 
+<basic-user-pane>:duim-layouts:duim-layouts 1
+549 
+<leaf-layout-mixin>:duim-layouts-internals:duim-layouts 1
+519 
+<space-requirement-mixin>:duim-layouts-internals:duim-layouts 1
+101 
+<leaf-pane>:duim-layouts:duim-layouts 5
+521 526 552 551 457 
+<null-pane>:duim-layouts:duim-layouts 1
+553 
+<concrete-null-pane>:duim-layouts-internals:duim-layouts 1
+554 
+<layout-pane>:duim-layouts-internals:duim-layouts 5
+521 526 520 531 457 
+<pinboard-layout>:duim-layouts:duim-layouts 1
+556 
+<pinboard-layout-pane>:duim-layouts-internals:duim-layouts 1
+557 
+<fixed-layout>:duim-layouts:duim-layouts 1
+556 
+<fixed-layout-pane>:duim-layouts-internals:duim-layouts 1
+559 
+<spacing>:duim-gadgets:duim-gadgets 5
+521 526 548 523 424 
+<stretchy-vector>:dylan:dylan 2
+534 463 
+<limited-stretchy-vector>:internal:dylan 1
+562 
+<stretchy-object-vector>:dylan-extensions:dylan 1
+563 
+<stretchy-byte-character-vector>:dylan-extensions:dylan 1
+563 
+<top-level-sheet>:duim-layouts:duim-layouts 1
+549 
+<embedded-top-level-sheet>:duim-frames-internals:duim-frames 1
+566 
+<layout-border-mixin>:duim-layouts-internals:duim-layouts 1
+425 
+<stack-layout>:duim-layouts:duim-layouts 2
+568 556 
+<stack-layout-pane>:duim-layouts-internals:duim-layouts 1
+569 
+<changing-value-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+474 
+<slug-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+541 
+<scroll-bar>:duim-gadgets:duim-gadgets 4
+477 572 571 539 
+<labelled-gadget>:duim-gadgets:duim-gadgets 1
+176 
+<labelled-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+574 
+<mnemonic-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<gadget-command-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<menu>:duim-gadgets:duim-gadgets 6
+481 577 480 576 575 424 
+<text-gadget>:duim-gadgets:duim-gadgets 1
+474 
+<action-gadget>:duim-gadgets:duim-gadgets 1
+423 
+<action-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+580 
+<text-field>:duim-gadgets:duim-gadgets 6
+546 581 571 475 579 424 
+<password-field>:duim-gadgets:duim-gadgets 1
+582 
+<basic-choice-gadget>:duim-gadgets-internals:duim-gadgets 3
+545 544 424 
+<scrolling-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<option-box>:duim-gadgets:duim-gadgets 3
+546 585 584 
+<vertical-layout-mixin>:duim-layouts-internals:duim-layouts 1
+425 
+<horizontal-layout-mixin>:duim-layouts-internals:duim-layouts 1
+425 
+<table-layout>:duim-layouts:duim-layouts 4
+568 588 587 556 
+<table-layout-pane>:duim-layouts-internals:duim-layouts 1
+589 
+<box-layout-pane>:duim-layouts-internals:duim-layouts 2
+568 556 
+<row-layout>:duim-layouts:duim-layouts 2
+588 591 
+<row-layout-pane>:duim-layouts-internals:duim-layouts 1
+592 
+<column-layout>:duim-layouts:duim-layouts 2
+587 591 
+<column-layout-pane>:duim-layouts-internals:duim-layouts 1
+594 
+<text-editor>:duim-gadgets:duim-gadgets 2
+585 582 
+<rich-text-editor>:duim-gadgets:duim-gadgets 1
+596 
+<slider>:duim-gadgets:duim-gadgets 6
+477 541 575 546 571 539 
+<list-box>:duim-gadgets:duim-gadgets 4
+546 585 581 584 
+<grid-layout>:duim-layouts:duim-layouts 1
+589 
+<grid-layout-pane>:duim-layouts-internals:duim-layouts 1
+600 
+<border>:duim-gadgets:duim-gadgets 6
+521 526 548 523 546 424 
+<group-box>:duim-gadgets:duim-gadgets 2
+575 602 
+<accelerator-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<button>:duim-gadgets:duim-gadgets 5
+604 576 575 577 474 
+<radio-button>:duim-gadgets:duim-gadgets 3
+605 581 539 
+<menu-button>:duim-gadgets:duim-gadgets 2
+479 605 
+<radio-menu-button>:duim-gadgets:duim-gadgets 2
+607 539 
+<check-menu-button>:duim-gadgets:duim-gadgets 2
+607 539 
+<check-button>:duim-gadgets:duim-gadgets 3
+605 581 539 
+<scroller>:duim-gadgets:duim-gadgets 2
+585 424 
+<scroller-pane>:duim-gadgets-internals:duim-gadgets 2
+611 549 
+<popup-menu-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+176 
+<tree-control>:duim-gadgets:duim-gadgets 6
+546 585 581 476 613 584 
+<table-control>:duim-gadgets:duim-gadgets 6
+546 585 581 476 613 584 
+<list-control>:duim-gadgets:duim-gadgets 6
+546 585 581 476 613 584 
+<combo-box>:duim-gadgets:duim-gadgets 6
+546 585 581 571 579 584 
+<default-gadget-mixin>:duim-gadgets-internals:duim-gadgets 1
+581 
+<push-button>:duim-gadgets:duim-gadgets 3
+605 618 539 
+<multiple-child-wrapping-pane>:duim-layouts-internals:duim-layouts 5
+521 526 548 531 457 
+<pane-display-function-mixin>:duim-layouts-internals:duim-layouts 1
+101 
+<standard-repainting-mixin>:duim-sheets-internals:duim-sheets 1
+170 
+<simple-pane>:duim-layouts:duim-layouts 4
+527 622 621 620 
+<concrete-simple-pane>:duim-layouts-internals:duim-layouts 1
+623 
+<page>:duim-gadgets:duim-gadgets 1
+423 
+<basic-page>:duim-gadgets-internals:duim-gadgets 3
+575 625 424 
+<tab-control-page>:duim-gadgets:duim-gadgets 2
+626 549 
+<push-menu-button>:duim-gadgets:duim-gadgets 3
+607 618 539 
+<tool-bar>:duim-gadgets:duim-gadgets 3
+481 480 424 
+<tool-bar-pane>:duim-gadgets-internals:duim-gadgets 2
+629 549 
+<wizard-page>:duim-frames:duim-frames 1
+626 
+<wizard-page-pane>:duim-frames-internals:duim-frames 2
+631 549 
+<property-page>:duim-frames:duim-frames 1
+626 
+<property-page-pane>:duim-frames-internals:duim-frames 2
+633 549 
+<sheet-with-caret-mixin>:duim-sheets-internals:duim-sheets 1
+101 
+<drawing-pane>:duim-layouts:duim-layouts 7
+527 622 460 459 635 621 620 
+<concrete-drawing-pane>:duim-layouts-internals:duim-layouts 1
+636 
+<basic-action-gadget>:duim-gadgets-internals:duim-gadgets 2
+581 424 
+<active-label>:duim-gadgets:duim-gadgets 4
+613 575 474 638 
+<active-label-pane>:duim-gadgets-internals:duim-gadgets 6
+639 527 622 521 551 457 
+<label>:duim-gadgets:duim-gadgets 2
+575 424 
+<label-pane>:duim-gadgets-internals:duim-gadgets 2
+641 623 
+<multiple-child-composite-pane>:duim-layouts:duim-layouts 2
+531 522 
+<gadget-box>:duim-gadgets-internals:duim-gadgets 4
+477 577 544 479 
+<menu-box>:duim-gadgets:duim-gadgets 2
+644 424 
+<radio-menu-box>:duim-gadgets:duim-gadgets 2
+545 645 
+<gadget-box-pane-mixin>:duim-gadgets-internals:duim-gadgets 1
+543 
+<menu-box-pane>:duim-gadgets-internals:duim-gadgets 1
+647 
+<radio-menu-box-pane>:duim-gadgets-internals:duim-gadgets 3
+648 646 643 
+<check-menu-box>:duim-gadgets:duim-gadgets 2
+545 645 
+<check-menu-box-pane>:duim-gadgets-internals:duim-gadgets 3
+648 650 643 
+<status-bar>:duim-gadgets:duim-gadgets 6
+475 541 546 575 480 424 
+<status-bar-pane>:duim-gadgets-internals:duim-gadgets 2
+652 592 
+<push-menu-box>:duim-gadgets:duim-gadgets 3
+581 645 539 
+<push-menu-box-pane>:duim-gadgets-internals:duim-gadgets 3
+648 654 643 
+<separator>:duim-gadgets:duim-gadgets 3
+477 481 424 
+<separator-pane>:duim-gadgets-internals:duim-gadgets 2
+656 636 
+<button-box>:duim-gadgets:duim-gadgets 2
+644 424 
+<radio-box>:duim-gadgets:duim-gadgets 3
+545 581 658 
+<button-box-pane-mixin>:duim-gadgets-internals:duim-gadgets 1
+647 
+<radio-box-pane>:duim-gadgets-internals:duim-gadgets 3
+660 659 549 
+<push-box>:duim-gadgets:duim-gadgets 3
+581 658 539 
+<push-box-pane>:duim-gadgets-internals:duim-gadgets 3
+660 662 549 
+<check-box>:duim-gadgets:duim-gadgets 3
+545 581 658 
+<check-box-pane>:duim-gadgets-internals:duim-gadgets 3
+660 664 549 
+229
+gadget-state-setter:duim-gadgets:duim-gadgets/2:A:0/2 7
+150 84 152 153 83 151 154 
+gadget-state-setter:duim-gadgets:duim-gadgets/2:B:1/2 30
+474 579 572 541 424 629 478 652 547 656 582 578 482 645 646 650 658 659 664 539 598 573 542 654 662 584 617 639 614 543 
+=:dylan:dylan/2:A:0/2 36
+0 43 9 47 66 100 110 60 37 396 401 399 80 168 400 441 402 146 147 195 196 433 269 270 271 272 273 434 435 94 439 462 463 496 505 398 
+=:dylan:dylan/2:B:1/2 36
+0 43 9 47 66 100 110 60 37 398 396 401 399 441 80 168 400 402 146 147 195 196 269 270 271 272 273 433 434 435 94 439 462 463 496 505 
+element:dylan:dylan/2:A:0/2 33
+496 466 564 565 498 510 499 511 500 512 501 513 502 514 503 515 504 516 470 438 537 197 200 201 433 483 270 271 272 273 505 506 439 
+element:dylan:dylan/2:B:1/2 2
+399 0 
+handle-event:duim-sheets:duim-sheets/2:A:0/2 50
+0 528 475 479 614 579 615 386 456 613 429 476 545 241 385 571 640 581 584 478 573 547 582 598 652 644 646 650 654 659 662 664 599 617 606 608 609 628 610 619 616 639 630 661 663 665 653 649 651 655 
+handle-event:duim-sheets:duim-sheets/2:B:1/2 28
+204 208 209 212 281 282 214 285 276 218 404 211 220 227 219 213 210 286 288 289 290 207 444 445 405 447 448 215 
+region-union:duim-geometry:duim-geometry/2:A:0/2 9
+60 126 130 188 61 62 129 132 191 
+region-union:duim-geometry:duim-geometry/2:B:1/2 9
+60 126 61 62 130 188 191 129 132 
+region-intersection:duim-geometry:duim-geometry/2:A:0/2 11
+60 190 127 130 131 188 61 62 129 132 191 
+region-intersection:duim-geometry:duim-geometry/2:B:1/2 11
+60 190 127 61 62 130 131 188 191 129 132 
+element-no-bounds-check:dylan-extensions:dylan/2:A:0/2 23
+195 496 564 565 498 510 499 511 500 512 501 513 502 514 503 515 504 516 537 433 483 505 506 
+element-no-bounds-check:dylan-extensions:dylan/2:B:1/2 2
+0 399 
+element-setter:dylan:dylan/3:A:0/3 7
+95 401 0 37 399 402 96 
+element-setter:dylan:dylan/3:B:1/3 22
+496 498 510 466 564 499 511 470 438 537 433 483 392 500 512 501 513 439 502 514 565 505 
+element-setter:dylan:dylan/3:C:2/3 2
+399 0 
+region-contains-region?:duim-geometry:duim-geometry/2:A:0/2 9
+60 193 190 131 125 192 61 62 132 
+region-contains-region?:duim-geometry:duim-geometry/2:B:1/2 7
+60 193 190 131 61 62 132 
+map-into-rigid-one:internal:dylan/3:A:0/2 3
+389 432 462 
+map-into-rigid-one:internal:dylan/3:B:1/2 6
+195 196 433 462 564 499 
+element-no-bounds-check-setter:dylan-extensions:dylan/3:A:0/3 7
+0 95 401 37 399 402 96 
+element-no-bounds-check-setter:dylan-extensions:dylan/3:B:1/3 18
+389 496 498 510 564 499 511 537 433 483 500 512 501 513 502 514 565 505 
+element-no-bounds-check-setter:dylan-extensions:dylan/3:C:2/3 2
+0 399 
+subjunctive-subtype?:internal:dylan/3:A:0/2 6
+39 38 109 110 111 112 
+subjunctive-subtype?:internal:dylan/3:B:1/2 6
+38 39 110 109 112 111 
+subtype?:dylan:dylan/2:A:0/2 6
+39 38 109 110 111 112 
+subtype?:dylan:dylan/2:B:1/2 6
+38 39 110 109 112 111 
+<:dylan:dylan/2:A:0/2 12
+496 9 37 396 401 399 400 441 402 94 505 398 
+<:dylan:dylan/2:B:1/2 12
+496 9 37 398 396 401 399 441 400 402 94 505 
+add!:dylan:dylan/2:A:0/2 15
+196 391 269 473 438 433 563 564 565 270 271 272 536 273 439 
+add!:dylan:dylan/2:B:1/2 4
+0 96 393 399 
+remove!:dylan:dylan/2:A:0/2 14
+196 499 269 438 537 433 563 564 565 270 271 272 273 439 
+remove!:dylan:dylan/2:B:1/2 4
+0 96 393 399 
+region-intersects-region?:duim-geometry:duim-geometry/2:A:0/2 7
+60 193 131 190 192 62 132 
+region-intersects-region?:duim-geometry:duim-geometry/2:B:1/2 7
+60 193 190 192 131 62 132 
+do-dispatch-event:duim-sheets-internals:duim-sheets/2:A:0/2 9
+527 456 623 636 640 103 175 104 242 
+do-dispatch-event:duim-sheets-internals:duim-sheets/2:B:1/2 2
+204 277 
+region-difference:duim-geometry:duim-geometry/2:A:0/2 6
+60 188 61 129 132 191 
+region-difference:duim-geometry:duim-geometry/2:B:1/2 7
+60 61 62 130 129 132 188 
+copy-bytes:byte-vector:byte-vector/5:A:0/2 5
+196 463 495 496 505 
+copy-bytes:byte-vector:byte-vector/5:B:1/2 5
+196 463 495 496 505 
+id?-intersection:internal:dylan/2:A:0/2 5
+269 270 271 272 273 
+id?-intersection:internal:dylan/2:B:1/2 5
+272 270 271 273 269 
+region-equal:duim-geometry:duim-geometry/2:A:0/2 11
+60 193 266 268 131 190 293 295 61 62 132 
+region-equal:duim-geometry:duim-geometry/2:B:1/2 11
+60 193 266 268 131 190 293 295 61 62 132 
+map-into-stretchy-one:internal:dylan/3:A:0/2 3
+389 432 462 
+map-into-stretchy-one:internal:dylan/3:B:1/2 5
+195 196 564 499 433 
+fill!:dylan:dylan/2:A:0/2 9
+389 432 462 510 499 511 512 513 514 
+fill!:dylan:dylan/2:B:1/2 5
+0 401 37 399 402 
+^:dylan:dylan/2:A:0/2 4
+401 395 399 402 
+^:dylan:dylan/2:B:1/2 4
+399 400 401 402 
+member?:dylan:dylan/2:A:0/2 3
+0 393 399 
+member?:dylan:dylan/2:B:1/2 8
+195 463 499 473 438 433 269 439 
+floor/:Double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+floor/:Double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+floor/:Double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+truncate/:Double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+truncate/:Double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+truncate/:Double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+divide:Unsigned-double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+divide:Unsigned-double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+divide:Unsigned-double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+divide:Double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+divide:Double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+divide:Double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+round/:Double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+round/:Double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+round/:Double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+ceiling/:Double-machine-integer:machine-word/3:A:0/3 2
+37 398 
+ceiling/:Double-machine-integer:machine-word/3:B:1/3 2
+37 398 
+ceiling/:Double-machine-integer:machine-word/3:C:2/3 2
+37 398 
+compose-transforms:duim-geometry:duim-geometry/2:A:0/2 5
+116 43 182 44 45 
+compose-transforms:duim-geometry:duim-geometry/2:B:1/2 5
+116 45 44 182 43 
+size-setter:dylan:dylan/2:A:0/2 2
+0 399 
+size-setter:dylan:dylan/2:B:1/2 7
+198 537 563 564 565 271 506 
+remove:dylan:dylan/2:A:0/2 7
+196 564 565 499 269 433 536 
+remove:dylan:dylan/2:B:1/2 3
+0 96 393 
+domain-match?:dylan-extensions:dylan/2:A:0/2 3
+0 86 87 
+domain-match?:dylan-extensions:dylan/2:B:1/2 4
+0 86 499 87 
+add:dylan:dylan/2:A:0/2 6
+196 463 499 269 433 536 
+add:dylan:dylan/2:B:1/2 2
+0 393 
+replace-subsequence!:dylan:dylan/2:A:0/2 5
+196 432 463 535 433 
+replace-subsequence!:dylan:dylan/2:B:1/2 2
+196 463 
+transform-position:duim-geometry:duim-geometry/3:A:0/3 4
+116 182 44 45 
+transform-position:duim-geometry:duim-geometry/3:B:1/3 2
+395 399 
+transform-position:duim-geometry:duim-geometry/3:C:2/3 2
+395 399 
+do-execute-value-changed-callback:duim-gadgets-internals:duim-gadgets/3:A:0/2 5
+475 608 606 609 610 
+do-execute-value-changed-callback:duim-gadgets-internals:duim-gadgets/3:B:1/2 5
+0 649 661 651 665 
+atan2:transcendentals:transcendentals/2:A:0/2 3
+395 401 402 
+atan2:transcendentals:transcendentals/2:B:1/2 3
+395 401 402 
+do-execute-activate-callback:duim-gadgets-internals:duim-gadgets/3:A:0/2 5
+581 606 628 619 610 
+do-execute-activate-callback:duim-gadgets-internals:duim-gadgets/3:B:1/2 5
+0 661 655 663 665 
+/:dylan:dylan/2:A:0/2 4
+399 400 401 402 
+/:dylan:dylan/2:B:1/2 4
+400 399 401 402 
+untransform-position:duim-geometry:duim-geometry/3:A:0/3 4
+116 182 44 45 
+untransform-position:duim-geometry:duim-geometry/3:B:1/3 2
+395 399 
+untransform-position:duim-geometry:duim-geometry/3:C:2/3 2
+395 399 
+divide:Unsigned-machine-integer:machine-word/2:A:0/2 2
+37 398 
+divide:Unsigned-machine-integer:machine-word/2:B:1/2 2
+37 398 
+binary-%logand:Machine-integer-implementation:machine-word/2:A:0/2 2
+37 398 
+binary-%logand:Machine-integer-implementation:machine-word/2:B:1/2 2
+37 398 
+do-execute-command:commands:commands/2:A:0/2 2
+0 242 
+do-execute-command:commands:commands/2:B:1/2 4
+168 89 236 319 
+binary-%logior:Machine-integer-implementation:machine-word/2:A:0/2 2
+37 398 
+binary-%logior:Machine-integer-implementation:machine-word/2:B:1/2 2
+37 398 
+binary-%logxor:Machine-integer-implementation:machine-word/2:A:0/2 2
+37 398 
+binary-%logxor:Machine-integer-implementation:machine-word/2:B:1/2 2
+37 398 
+ceiling/:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+ceiling/:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+<:Unsigned-machine-integer:machine-word/2:A:0/2 2
+37 398 
+<:Unsigned-machine-integer:machine-word/2:B:1/2 2
+37 398 
+-:dylan:dylan/2:A:0/2 4
+396 401 399 402 
+-:dylan:dylan/2:B:1/2 4
+396 401 399 402 
+-:Unsigned-machine-integer:machine-word/2:A:0/2 2
+37 398 
+-:Unsigned-machine-integer:machine-word/2:B:1/2 2
+37 398 
+-:Signal-overflow-machine-integer:machine-word/2:A:0/2 2
+37 398 
+-:Signal-overflow-machine-integer:machine-word/2:B:1/2 2
+37 398 
+-:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+-:Machine-integer:machine-word/2:B:1/2 2
+37 398 
++:dylan:dylan/2:A:0/2 4
+396 401 399 402 
++:dylan:dylan/2:B:1/2 4
+396 401 399 402 
++:Unsigned-machine-integer:machine-word/2:A:0/2 2
+37 398 
++:Unsigned-machine-integer:machine-word/2:B:1/2 2
+37 398 
+floor/:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+floor/:Machine-integer:machine-word/2:B:1/2 2
+37 398 
++:Signal-overflow-machine-integer:machine-word/2:A:0/2 2
+37 398 
++:Signal-overflow-machine-integer:machine-word/2:B:1/2 2
+37 398 
++:Machine-integer:machine-word/2:A:0/2 2
+37 398 
++:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+*:dylan:dylan/2:A:0/2 4
+396 401 399 402 
+*:dylan:dylan/2:B:1/2 4
+396 401 399 402 
+*:Unsigned-machine-integer:machine-word/2:A:0/2 2
+37 398 
+*:Unsigned-machine-integer:machine-word/2:B:1/2 2
+37 398 
+*:Signal-overflow-machine-integer:machine-word/2:A:0/2 2
+37 398 
+*:Signal-overflow-machine-integer:machine-word/2:B:1/2 2
+37 398 
+*:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+*:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+event-matches-gesture?:duim-sheets:duim-sheets/2:A:0/2 3
+352 204 404 
+event-matches-gesture?:duim-sheets:duim-sheets/2:B:1/2 4
+94 80 81 82 
+divide:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+divide:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+execute-callback:duim-gadgets-internals:duim-gadgets/2:A:0/2 2
+423 241 
+execute-callback:duim-gadgets-internals:duim-gadgets/2:B:1/2 2
+433 88 
+truncate/:dylan:dylan/2:A:0/2 4
+396 401 399 402 
+truncate/:dylan:dylan/2:B:1/2 4
+396 401 399 402 
+truncate/:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+truncate/:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+transform-equal:duim-geometry:duim-geometry/2:A:0/2 4
+43 116 44 45 
+transform-equal:duim-geometry:duim-geometry/2:B:1/2 4
+43 116 44 45 
+transform-distance:duim-geometry:duim-geometry/3:A:0/3 3
+116 44 45 
+transform-distance:duim-geometry:duim-geometry/3:B:1/3 2
+395 399 
+transform-distance:duim-geometry:duim-geometry/3:C:2/3 2
+395 399 
+text-size:duim-sheets:duim-sheets/2:A:0/2 2
+181 324 
+text-size:duim-sheets:duim-sheets/2:B:1/2 2
+495 94 
+note-child-added:duim-sheets-internals:duim-sheets/2:A:0/2 2
+456 569 
+note-child-added:duim-sheets-internals:duim-sheets/2:B:1/2 2
+456 457 
+round/:Machine-integer:machine-word/2:A:0/2 2
+37 398 
+round/:Machine-integer:machine-word/2:B:1/2 2
+37 398 
+untransform-distance:duim-geometry:duim-geometry/3:A:0/3 3
+116 44 45 
+untransform-distance:duim-geometry:duim-geometry/3:B:1/3 2
+395 399 
+untransform-distance:duim-geometry:duim-geometry/3:C:2/3 2
+395 399 
+shift-right:Unsigned-double-machine-integer:machine-word/3:A:0/2 2
+37 398 
+shift-right:Unsigned-double-machine-integer:machine-word/3:B:1/2 2
+37 398 
+shift-left:Unsigned-double-machine-integer:machine-word/3:A:0/2 2
+37 398 
+shift-left:Unsigned-double-machine-integer:machine-word/3:B:1/2 2
+37 398 
+limited-list-first-setter:dylan-extensions:dylan/2:A:0/2 3
+0 335 112 
+limited-list-first-setter:dylan-extensions:dylan/2:B:1/2 3
+486 488 490 
+merge-text-styles:duim-dcs:duim-dcs/2:A:0/2 2
+47 48 
+merge-text-styles:duim-dcs:duim-dcs/2:B:1/2 2
+47 48 
+prepend:dylan-extensions:dylan/2:A:0/2 3
+0 335 112 
+prepend:dylan-extensions:dylan/2:B:1/2 3
+484 487 489 
+do-remove-child:duim-sheets-internals:duim-sheets/2:A:0/2 3
+523 531 589 
+do-remove-child:duim-sheets-internals:duim-sheets/2:B:1/2 2
+457 456 
+do-add-child:duim-sheets-internals:duim-sheets/2:A:0/2 3
+523 531 589 
+do-add-child:duim-sheets-internals:duim-sheets/2:B:1/2 2
+457 456 
+gesture-equal:duim-sheets:duim-sheets/2:A:0/2 3
+80 81 82 
+gesture-equal:duim-sheets:duim-sheets/2:B:1/2 3
+80 81 82 
+compose-transform-into!:duim-geometry-internals:duim-geometry/2:A:0/2 3
+43 182 44 
+compose-transform-into!:duim-geometry-internals:duim-geometry/2:B:1/2 2
+43 183 
+limited-list-rest-setter:dylan-extensions:dylan/2:A:0/2 3
+484 487 489 
+limited-list-rest-setter:dylan-extensions:dylan/2:B:1/2 3
+486 488 490 
+as:dylan:dylan/2:A:0/2 2
+38 111 
+as:dylan:dylan/2:B:1/2 3
+0 95 96 
+subsequence-position:dylan:dylan/2:A:0/2 3
+196 463 505 
+subsequence-position:dylan:dylan/2:B:1/2 3
+196 463 505 
+class-constructor-setter:internal:dylan/2:A:0/2 2
+0 335 
+class-constructor-setter:internal:dylan/2:B:1/2 2
+112 24 
+remove-item:duim-gadgets:duim-gadgets/2:A:0/2 2
+615 616 
+remove-item:duim-gadgets:duim-gadgets/2:B:1/2 2
+7 21 
+remainder:dylan:dylan/2:A:0/2 2
+396 399 
+remainder:dylan:dylan/2:B:1/2 2
+396 399 
+every?-two:internal:dylan/3:A:0/2 2
+195 196 
+every?-two:internal:dylan/3:B:1/2 2
+195 196 
+round/:dylan:dylan/2:A:0/2 2
+396 399 
+round/:dylan:dylan/2:B:1/2 2
+396 399 
+floor/:dylan:dylan/2:A:0/2 2
+396 399 
+floor/:dylan:dylan/2:B:1/2 2
+396 399 
+gadget-label-setter:duim-gadgets:duim-gadgets/2:A:0/2 2
+0 495 
+gadget-label-setter:duim-gadgets:duim-gadgets/2:B:1/2 2
+575 652 
+stretchy-representation-setter:internal:dylan/2:A:0/2 2
+72 73 
+stretchy-representation-setter:internal:dylan/2:B:1/2 2
+564 565 
+stretchy-vector-element-setter:internal:dylan/3:A:0/2 2
+0 96 
+stretchy-vector-element-setter:internal:dylan/3:B:1/2 2
+72 73 
+any?-two:internal:dylan/3:A:0/2 2
+195 196 
+any?-two:internal:dylan/3:B:1/2 2
+195 196 
+string-element-setter:internal:dylan/3:A:0/2 2
+95 96 
+string-element-setter:internal:dylan/3:B:1/2 2
+496 505 
+add-item:duim-gadgets:duim-gadgets/2:A:0/2 2
+615 616 
+add-item:duim-gadgets:duim-gadgets/2:B:1/2 2
+7 21 
+normalize-gadget-value:duim-gadgets-internals:duim-gadgets/2:A:0/2 2
+474 541 
+normalize-gadget-value:duim-gadgets-internals:duim-gadgets/2:B:1/2 2
+0 393 
+modulo:dylan:dylan/2:A:0/2 2
+396 399 
+modulo:dylan:dylan/2:B:1/2 2
+396 399 
+intersection:dylan:dylan/2:A:0/2 2
+196 269 
+intersection:dylan:dylan/2:B:1/2 2
+196 269 
+%ty-setter:duim-geometry-internals:duim-geometry/2:A:0/2 2
+401 399 
+%ty-setter:duim-geometry-internals:duim-geometry/2:B:1/2 2
+117 182 
+%tx-setter:duim-geometry-internals:duim-geometry/2:A:0/2 2
+401 399 
+%tx-setter:duim-geometry-internals:duim-geometry/2:B:1/2 2
+117 182 
+ceiling/:dylan:dylan/2:A:0/2 2
+396 399 
+ceiling/:dylan:dylan/2:B:1/2 2
+396 399 
+make-translation-transform-into!:duim-geometry-internals:duim-geometry/3:A:0/3 2
+395 399 
+make-translation-transform-into!:duim-geometry-internals:duim-geometry/3:B:1/3 2
+395 399 
+make-translation-transform-into!:duim-geometry-internals:duim-geometry/3:C:2/3 2
+43 183 
+case-insensitive-equal:dylan-extensions:dylan/2:A:0/2 2
+496 505 
+case-insensitive-equal:dylan-extensions:dylan/2:B:1/2 2
+496 505 
+%add-domains:dylan-incremental:dylan/2:A:0/2 2
+157 158 
+%add-domains:dylan-incremental:dylan/2:B:1/2 2
+0 499 

@@ -1,0 +1,2996 @@
+535
+Artificial_Root 0
+
+SelfInitializingObject 1
+0 
+Object 1
+0 
+TextSelection 1
+2 
+Rectangle 1
+2 
+Point 1
+2 
+ObjectLibraryBind 1
+2 
+Icon 1
+2 
+UndefinedObject 1
+2 
+CompilerInterface 1
+2 
+Semaphore 1
+2 
+MenuItem 1
+2 
+Font 1
+2 
+NotificationManager 1
+2 
+InputEvent 1
+2 
+ProcessScheduler 1
+2 
+NationalLanguageSupport 1
+2 
+MethodExecutor 1
+2 
+ObjectLibraryExternal 1
+2 
+ClassReader 1
+2 
+SessionModel 1
+2 
+DeletedClass 1
+2 
+Directory 1
+2 
+EmptySlot 1
+2 
+ObjectMutator 1
+2 
+StringDictionaryReader 1
+2 
+ClassInstaller 1
+2 
+DIB 1
+2 
+CallBack 1
+2 
+DragDropList 1
+2 
+CompilationError 1
+2 
+CompilationResult 1
+2 
+File 1
+2 
+ProtectedFrameMarker 1
+2 
+OperatingSystemInformation 1
+2 
+ClipboardManager 1
+2 
+ExceptionHandler 1
+2 
+HelpManager 1
+2 
+Menu 1
+2 
+CursorManager 1
+2 
+StringModel 1
+2 
+Enumerator 1
+2 
+EvaluableAction 1
+2 
+CollectionAccessor 1
+42 
+GraphicsMedium 1
+2 
+Screen 1
+44 
+DynamicDataExchange 1
+2 
+DDEClient 1
+46 
+ExternalBuffer 1
+2 
+SelfDefinedStructure 1
+48 
+WinSystemTime 1
+48 
+CompilerNameScope 1
+2 
+MultiplePoolScope 1
+51 
+Window 1
+2 
+MenuWindow 1
+53 
+WinOfstruct 1
+48 
+WinMeasureItemStruct 1
+48 
+Collection 1
+2 
+Bag 1
+57 
+ViewManager 1
+2 
+ClassHierarchyBrowser 1
+59 
+WinLogFont 1
+48 
+Context 1
+2 
+ZeroArgumentBlock 1
+62 
+OneArgumentBlock 1
+62 
+WinDropFile 1
+48 
+Bitmap 1
+44 
+WinLogicalObject 1
+2 
+WinLogicalPalette 1
+67 
+DiskBrowser 1
+59 
+WinLogPalette 1
+48 
+Stream 1
+2 
+ReadStream 1
+71 
+WinRectangle 1
+48 
+Win32FindData 1
+48 
+WinLogPen 1
+48 
+WinPaintStructure 1
+48 
+WinTextMetrics 1
+48 
+Magnitude 1
+2 
+Character 1
+78 
+ConstantAccessor 1
+42 
+WinFileTime 1
+48 
+WinBitmapFileHeader 1
+48 
+Printer 1
+44 
+WinMessage 1
+48 
+ExternalHandle 1
+2 
+Atom 1
+85 
+WinDrawItemStruct 1
+48 
+DeviceContext 1
+85 
+WindowHandle 1
+85 
+WinBitmapStruct 1
+48 
+Boolean 1
+2 
+False 1
+91 
+WinStructArray 1
+48 
+FileHandle 1
+85 
+ObjectLibraryReference 1
+48 
+WinPoint 1
+48 
+ClassBrowser 1
+59 
+StoredPicture 1
+44 
+WindowPolicy 1
+2 
+NoMenusWindowPolicy 1
+99 
+SystemWindow 1
+53 
+WinDialogInfo 1
+48 
+TwoArgumentBlock 1
+62 
+Date 1
+78 
+CompilerErrorHandler 1
+2 
+NonInteractiveErrorHandler 1
+105 
+Association 1
+78 
+HomeContext 1
+62 
+Behavior 1
+2 
+MetaClass 1
+109 
+WinLogicalPen 1
+67 
+VirtualMachineConfiguration 1
+48 
+Pattern 1
+2 
+WildPattern 1
+113 
+WinWindowPlacement 1
+48 
+Time 1
+78 
+WinWindowClass 1
+48 
+True 1
+91 
+WinLogicalBrush 1
+67 
+Debugger 1
+59 
+WinLogBrush 1
+48 
+Class 1
+109 
+METACLASS_SelfInitializingObject 1
+122 
+DynamicLinkLibrary 1
+85 
+GDIDLL 1
+124 
+DictionaryScope 1
+51 
+GlobalPoolScope 1
+126 
+WindowDialog 1
+59 
+PrintAbortDialog 1
+128 
+Inspector 1
+59 
+DoubleByteStringInspector 1
+130 
+OrderedCollectionInspector 1
+130 
+SilentErrorHandler 1
+105 
+TraditionalCompilerErrorHandler 1
+133 
+Prompter 1
+128 
+GraphicInspector 1
+130 
+SubPane 1
+53 
+GraphPane 1
+137 
+ByteArrayInspector 1
+130 
+ExternalMemoryHandle 1
+85 
+ExternalGlobalHandle 1
+140 
+DialogBox 1
+53 
+NewSubclassDialog 1
+142 
+GroupPane 1
+137 
+Number 1
+78 
+Float 1
+145 
+ProgressIndicatorDialog 1
+128 
+CommonDialogDLL 1
+124 
+SaveImageAsDialog 1
+128 
+StandardWindowPolicy 1
+99 
+SmalltalkWindowPolicy 1
+150 
+MethodBrowser 1
+59 
+SelectorBrowser 1
+152 
+SaveImageDialog 1
+128 
+KernelDLL 1
+124 
+TextPaneErrorHandler 1
+105 
+WorkspaceErrorHandler 1
+156 
+VirtualMachineDLL 1
+124 
+Fraction 1
+145 
+Exception 1
+2 
+Notification 1
+160 
+VetoAction 1
+161 
+ShellDLL 1
+124 
+MessageBox 1
+142 
+DDEAuxWindow 1
+53 
+DDEAuxClient 1
+165 
+CompatibleWindowPolicy 1
+150 
+TextWindow 1
+59 
+WalkbackWindow 1
+168 
+SelfDefinedStructureInspector 1
+130 
+DDEAuxServer 1
+165 
+KeyboardInterrupt 1
+161 
+DDEServer 1
+46 
+SmalltalkEmulator 1
+173 
+Message 1
+42 
+LinkMessage 1
+175 
+WinBitmapInfoHeader 1
+48 
+WinBitmapInfo 1
+177 
+UserDLL 1
+124 
+DictionaryInspector 1
+130 
+TranscriptWindow 1
+168 
+VirtualMachineExe 1
+124 
+FindReplaceDialog 1
+128 
+ExternalHeapHandle 1
+140 
+Set 1
+57 
+SymbolSet 1
+185 
+AboutDialog 1
+128 
+Error 1
+160 
+FileError 1
+188 
+ProcessTermination 1
+161 
+METACLASS_Object 1
+122 
+METACLASS_TextSelection 1
+191 
+METACLASS_Rectangle 1
+191 
+METACLASS_Point 1
+191 
+METACLASS_ObjectLibraryBind 1
+191 
+METACLASS_Icon 1
+191 
+METACLASS_UndefinedObject 1
+191 
+METACLASS_CompilerInterface 1
+191 
+METACLASS_Semaphore 1
+191 
+METACLASS_MenuItem 1
+191 
+METACLASS_Font 1
+191 
+METACLASS_NotificationManager 1
+191 
+METACLASS_InputEvent 1
+191 
+METACLASS_ProcessScheduler 1
+191 
+METACLASS_NationalLanguageSupport 1
+191 
+METACLASS_MethodExecutor 1
+191 
+METACLASS_ObjectLibraryExternal 1
+191 
+METACLASS_ClassReader 1
+191 
+METACLASS_SessionModel 1
+191 
+METACLASS_DeletedClass 1
+191 
+METACLASS_Directory 1
+191 
+METACLASS_EmptySlot 1
+191 
+METACLASS_ObjectMutator 1
+191 
+METACLASS_StringDictionaryReader 1
+191 
+METACLASS_ClassInstaller 1
+191 
+METACLASS_DIB 1
+191 
+METACLASS_CallBack 1
+191 
+METACLASS_DragDropList 1
+191 
+METACLASS_CompilationError 1
+191 
+METACLASS_CompilationResult 1
+191 
+METACLASS_File 1
+191 
+METACLASS_ProtectedFrameMarker 1
+191 
+METACLASS_OperatingSystemInformation 1
+191 
+METACLASS_ClipboardManager 1
+191 
+METACLASS_ExceptionHandler 1
+191 
+METACLASS_HelpManager 1
+191 
+METACLASS_Menu 1
+191 
+METACLASS_CursorManager 1
+191 
+METACLASS_StringModel 1
+191 
+METACLASS_Enumerator 1
+191 
+Dictionary 1
+185 
+SystemDictionary 1
+231 
+Warning 1
+161 
+LoggedWarning 1
+233 
+ControlError 1
+188 
+MessageNotUnderstood 1
+235 
+IndexedCollection 1
+57 
+OrderedCollection 1
+237 
+Process 1
+238 
+ControlPane 1
+137 
+GroupBox 1
+240 
+CommonSystemDialog 1
+142 
+FileDialog 1
+242 
+TextPane 1
+137 
+WorkspaceTextPane 1
+244 
+DynamicLinkLibrary16 1
+124 
+KernelDLL16 1
+246 
+Integer 1
+145 
+SmallInteger 1
+248 
+FixedSizeCollection 1
+237 
+Interval 1
+250 
+ApplicationWindow 1
+53 
+TopPane 1
+252 
+DialogTopPane 1
+253 
+ExternalLong 1
+48 
+ExternalAddress 1
+255 
+ExternalGlobalAddress 1
+256 
+ScrollBar 1
+240 
+ThunkDLL16 1
+246 
+PrintDialog 1
+242 
+ArithmeticError 1
+188 
+ZeroDivide 1
+261 
+ColorDialog 1
+242 
+ExternalSegmentedAddress 1
+256 
+SortedCollection 1
+238 
+ByteArray 1
+250 
+ExternalHeapAddress 1
+256 
+FontDialog 1
+242 
+GraphicsTool 1
+2 
+TextTool 1
+269 
+Pen 1
+270 
+RecordingPen 1
+271 
+METACLASS_EvaluableAction 1
+191 
+METACLASS_CollectionAccessor 1
+273 
+METACLASS_DynamicDataExchange 1
+191 
+METACLASS_DDEClient 1
+275 
+METACLASS_GraphicsMedium 1
+191 
+METACLASS_Screen 1
+277 
+METACLASS_ExternalBuffer 1
+191 
+METACLASS_SelfDefinedStructure 1
+279 
+METACLASS_WinSystemTime 1
+279 
+METACLASS_CompilerNameScope 1
+191 
+METACLASS_MultiplePoolScope 1
+282 
+METACLASS_Window 1
+191 
+METACLASS_MenuWindow 1
+284 
+METACLASS_WinOfstruct 1
+279 
+METACLASS_Collection 1
+191 
+METACLASS_Bag 1
+287 
+METACLASS_WinMeasureItemStruct 1
+279 
+METACLASS_ViewManager 1
+191 
+METACLASS_ClassHierarchyBrowser 1
+290 
+METACLASS_WinLogFont 1
+279 
+METACLASS_Context 1
+191 
+METACLASS_ZeroArgumentBlock 1
+293 
+METACLASS_OneArgumentBlock 1
+293 
+METACLASS_WinDropFile 1
+279 
+METACLASS_Bitmap 1
+277 
+METACLASS_WinLogicalObject 1
+191 
+METACLASS_WinLogicalPalette 1
+298 
+METACLASS_DiskBrowser 1
+290 
+METACLASS_WinLogPalette 1
+279 
+METACLASS_Stream 1
+191 
+METACLASS_ReadStream 1
+302 
+METACLASS_WinRectangle 1
+279 
+METACLASS_Win32FindData 1
+279 
+METACLASS_WinLogPen 1
+279 
+METACLASS_WinPaintStructure 1
+279 
+METACLASS_WinTextMetrics 1
+279 
+METACLASS_Magnitude 1
+191 
+METACLASS_Character 1
+309 
+METACLASS_ConstantAccessor 1
+273 
+METACLASS_WinFileTime 1
+279 
+METACLASS_WinBitmapFileHeader 1
+279 
+METACLASS_Printer 1
+277 
+METACLASS_WinMessage 1
+279 
+METACLASS_WinDrawItemStruct 1
+279 
+METACLASS_ExternalHandle 1
+191 
+METACLASS_Atom 1
+317 
+METACLASS_DeviceContext 1
+317 
+METACLASS_WindowHandle 1
+317 
+METACLASS_WinBitmapStruct 1
+279 
+METACLASS_Boolean 1
+191 
+METACLASS_False 1
+322 
+METACLASS_WinStructArray 1
+279 
+METACLASS_FileHandle 1
+317 
+METACLASS_ObjectLibraryReference 1
+279 
+METACLASS_ClassBrowser 1
+290 
+METACLASS_WinPoint 1
+279 
+METACLASS_StoredPicture 1
+277 
+METACLASS_WindowPolicy 1
+191 
+METACLASS_NoMenusWindowPolicy 1
+330 
+METACLASS_SystemWindow 1
+284 
+METACLASS_WinDialogInfo 1
+279 
+METACLASS_TwoArgumentBlock 1
+293 
+METACLASS_Date 1
+309 
+METACLASS_CompilerErrorHandler 1
+191 
+METACLASS_NonInteractiveErrorHandler 1
+336 
+METACLASS_Association 1
+309 
+METACLASS_HomeContext 1
+293 
+METACLASS_Behavior 1
+191 
+METACLASS_MetaClass 1
+340 
+METACLASS_WinLogicalPen 1
+298 
+METACLASS_VirtualMachineConfiguration 1
+279 
+METACLASS_Pattern 1
+191 
+METACLASS_WildPattern 1
+344 
+METACLASS_WinWindowPlacement 1
+279 
+METACLASS_Time 1
+309 
+METACLASS_Class 1
+340 
+METACLASS_WinWindowClass 1
+279 
+METACLASS_True 1
+322 
+METACLASS_WinLogicalBrush 1
+298 
+METACLASS_Debugger 1
+290 
+METACLASS_WinLogBrush 1
+279 
+StaticPane 1
+240 
+StaticGraphic 1
+354 
+StaticBox 1
+354 
+ListBox 1
+240 
+MultipleSelectListBox 1
+357 
+IdentityDictionary 1
+231 
+MethodDictionary 1
+359 
+EntryField 1
+240 
+ComboEntryField 1
+361 
+Button 1
+240 
+DrawnButton 1
+363 
+Array 1
+250 
+ActionSequence 1
+365 
+ListPane 1
+357 
+LargeInteger 1
+248 
+LargePositiveInteger 1
+368 
+LargeNegativeInteger 1
+368 
+WriteStream 1
+71 
+ReadWriteStream 1
+371 
+FileStream 1
+372 
+MixedFileStream 1
+373 
+String 1
+250 
+Symbol 1
+375 
+StaticText 1
+354 
+METACLASS_DynamicLinkLibrary 1
+317 
+METACLASS_GDIDLL 1
+378 
+METACLASS_DictionaryScope 1
+282 
+METACLASS_GlobalPoolScope 1
+380 
+METACLASS_WindowDialog 1
+290 
+METACLASS_PrintAbortDialog 1
+382 
+METACLASS_Inspector 1
+290 
+METACLASS_DoubleByteStringInspector 1
+384 
+METACLASS_OrderedCollectionInspector 1
+384 
+METACLASS_SilentErrorHandler 1
+336 
+METACLASS_TraditionalCompilerErrorHandler 1
+387 
+METACLASS_Prompter 1
+382 
+METACLASS_GraphicInspector 1
+384 
+METACLASS_SubPane 1
+284 
+METACLASS_GraphPane 1
+391 
+METACLASS_ExternalMemoryHandle 1
+317 
+METACLASS_ExternalGlobalHandle 1
+393 
+METACLASS_ByteArrayInspector 1
+384 
+METACLASS_DialogBox 1
+284 
+METACLASS_NewSubclassDialog 1
+396 
+METACLASS_GroupPane 1
+391 
+METACLASS_Number 1
+309 
+METACLASS_Float 1
+399 
+METACLASS_ProgressIndicatorDialog 1
+382 
+METACLASS_CommonDialogDLL 1
+378 
+METACLASS_SaveImageAsDialog 1
+382 
+METACLASS_StandardWindowPolicy 1
+330 
+METACLASS_SmalltalkWindowPolicy 1
+404 
+METACLASS_MethodBrowser 1
+290 
+METACLASS_SelectorBrowser 1
+406 
+METACLASS_SaveImageDialog 1
+382 
+METACLASS_KernelDLL 1
+378 
+METACLASS_TextPaneErrorHandler 1
+336 
+METACLASS_WorkspaceErrorHandler 1
+410 
+METACLASS_VirtualMachineDLL 1
+378 
+METACLASS_Fraction 1
+399 
+METACLASS_ShellDLL 1
+378 
+METACLASS_MessageBox 1
+396 
+METACLASS_Exception 1
+191 
+METACLASS_Notification 1
+416 
+METACLASS_VetoAction 1
+417 
+METACLASS_CompatibleWindowPolicy 1
+404 
+METACLASS_TextWindow 1
+290 
+METACLASS_WalkbackWindow 1
+420 
+METACLASS_SelfDefinedStructureInspector 1
+384 
+METACLASS_DDEAuxWindow 1
+284 
+METACLASS_DDEAuxClient 1
+423 
+METACLASS_DDEAuxServer 1
+423 
+METACLASS_KeyboardInterrupt 1
+417 
+METACLASS_DDEServer 1
+275 
+METACLASS_SmalltalkEmulator 1
+427 
+METACLASS_Message 1
+273 
+METACLASS_LinkMessage 1
+429 
+METACLASS_WinBitmapInfoHeader 1
+279 
+METACLASS_WinBitmapInfo 1
+431 
+METACLASS_UserDLL 1
+378 
+METACLASS_DictionaryInspector 1
+384 
+METACLASS_TranscriptWindow 1
+420 
+METACLASS_VirtualMachineExe 1
+378 
+METACLASS_FindReplaceDialog 1
+382 
+METACLASS_ExternalHeapHandle 1
+393 
+METACLASS_Set 1
+287 
+METACLASS_SymbolSet 1
+439 
+METACLASS_AboutDialog 1
+382 
+METACLASS_Error 1
+416 
+METACLASS_FileError 1
+442 
+METACLASS_ProcessTermination 1
+417 
+TextEdit 1
+361 
+TextPaneControl 1
+445 
+CompiledMethod 1
+365 
+CompiledInitializer 1
+447 
+Toggle 1
+363 
+RadioButton 1
+449 
+DoubleByteString 1
+375 
+DoubleByteSymbol 1
+451 
+DropDownList 1
+357 
+ComboBox 1
+453 
+METACLASS_Dictionary 1
+439 
+METACLASS_SystemDictionary 1
+455 
+METACLASS_Warning 1
+417 
+METACLASS_LoggedWarning 1
+457 
+METACLASS_IndexedCollection 1
+287 
+METACLASS_OrderedCollection 1
+459 
+METACLASS_Process 1
+460 
+METACLASS_ControlError 1
+442 
+METACLASS_MessageNotUnderstood 1
+462 
+METACLASS_ControlPane 1
+391 
+METACLASS_GroupBox 1
+464 
+METACLASS_CommonSystemDialog 1
+396 
+METACLASS_FileDialog 1
+466 
+METACLASS_TextPane 1
+391 
+METACLASS_WorkspaceTextPane 1
+468 
+METACLASS_DynamicLinkLibrary16 1
+378 
+METACLASS_KernelDLL16 1
+470 
+METACLASS_Integer 1
+399 
+METACLASS_SmallInteger 1
+472 
+METACLASS_FixedSizeCollection 1
+459 
+METACLASS_Interval 1
+474 
+METACLASS_ApplicationWindow 1
+284 
+METACLASS_TopPane 1
+476 
+METACLASS_DialogTopPane 1
+477 
+METACLASS_ExternalLong 1
+279 
+METACLASS_ExternalAddress 1
+479 
+METACLASS_ExternalGlobalAddress 1
+480 
+METACLASS_ScrollBar 1
+464 
+METACLASS_PrintDialog 1
+466 
+METACLASS_ThunkDLL16 1
+470 
+METACLASS_ArithmeticError 1
+442 
+METACLASS_ZeroDivide 1
+485 
+METACLASS_ColorDialog 1
+466 
+METACLASS_ExternalSegmentedAddress 1
+480 
+METACLASS_ByteArray 1
+474 
+METACLASS_SortedCollection 1
+460 
+METACLASS_ExternalHeapAddress 1
+480 
+METACLASS_FontDialog 1
+466 
+METACLASS_GraphicsTool 1
+191 
+METACLASS_TextTool 1
+493 
+METACLASS_Pen 1
+494 
+METACLASS_RecordingPen 1
+495 
+CheckBox 1
+449 
+ThreeStateButton 1
+497 
+METACLASS_StaticPane 1
+464 
+METACLASS_StaticGraphic 1
+499 
+METACLASS_StaticBox 1
+499 
+METACLASS_ListBox 1
+464 
+METACLASS_MultipleSelectListBox 1
+502 
+METACLASS_IdentityDictionary 1
+455 
+METACLASS_MethodDictionary 1
+504 
+METACLASS_EntryField 1
+464 
+METACLASS_ComboEntryField 1
+506 
+METACLASS_Button 1
+464 
+METACLASS_DrawnButton 1
+508 
+METACLASS_Array 1
+474 
+METACLASS_ActionSequence 1
+510 
+METACLASS_ListPane 1
+502 
+METACLASS_LargeInteger 1
+472 
+METACLASS_LargePositiveInteger 1
+513 
+METACLASS_LargeNegativeInteger 1
+513 
+METACLASS_WriteStream 1
+302 
+METACLASS_ReadWriteStream 1
+516 
+METACLASS_FileStream 1
+517 
+METACLASS_MixedFileStream 1
+518 
+METACLASS_String 1
+474 
+METACLASS_Symbol 1
+520 
+METACLASS_StaticText 1
+499 
+METACLASS_TextEdit 1
+506 
+METACLASS_TextPaneControl 1
+523 
+METACLASS_CompiledMethod 1
+510 
+METACLASS_CompiledInitializer 1
+525 
+METACLASS_Toggle 1
+508 
+METACLASS_RadioButton 1
+527 
+METACLASS_DoubleByteString 1
+520 
+METACLASS_DoubleByteSymbol 1
+529 
+METACLASS_DropDownList 1
+502 
+METACLASS_ComboBox 1
+531 
+METACLASS_CheckBox 1
+527 
+METACLASS_ThreeStateButton 1
+533 
+962
+style: 7
+121 117 53 240 11 252 59 
+color: 2
+121 263 
+color 2
+121 75 
+style 5
+121 111 53 75 11 
+popupMenu 3
+137 244 446 
+amountToPageUp 2
+137 138 
+font 3
+137 270 53 
+button1Down: 4
+137 244 53 138 
+charsInColumn 2
+137 138 
+update:with: 2
+137 2 
+helpManager 4
+137 142 254 53 
+amountToScrollLeft 2
+137 138 
+backColor 3
+137 269 53 
+foreColor 3
+137 269 53 
+updateVerticalSlider 2
+137 138 
+isOkToChange 2
+137 357 
+handlers 3
+137 53 253 
+update: 6
+137 244 2 449 446 60 
+releaseEventTable 3
+137 2 253 
+contextForItem: 6
+137 38 142 254 54 252 
+aboutToSaveImage 16
+137 20 53 449 240 13 446 66 138 252 445 123 471 297 196 278 
+button2Up: 5
+137 53 362 253 138 
+button1Up: 4
+137 244 53 138 
+defaultDragDropCursor 2
+137 358 
+charsInRow 2
+137 138 
+framingBlock: 2
+137 253 
+totalLength 3
+137 40 244 
+framingRatio: 2
+137 253 
+zoom 3
+137 252 59 
+wmErasebkgnd:with: 5
+137 53 240 138 252 
+resize:deferInfo: 2
+137 253 
+initialText 4
+137 361 240 355 
+buildWindow: 5
+137 38 254 240 54 
+initialize 78
+137 120 122 152 38 272 268 34 29 269 263 260 447 271 364 258 83 244 165 164 361 53 16 15 253 449 13 446 147 12 10 357 138 243 51 7 6 58 239 54 252 59 3 445 351 347 227 492 225 342 224 335 493 487 217 483 495 209 314 468 415 340 518 191 207 378 505 524 299 469 397 344 467 198 282 195 461 280 
+popup 2
+137 53 
+basicStyle 10
+137 453 244 254 53 354 240 138 241 252 
+updateHorizontalSlider 2
+137 138 
+buildDialogItem: 2
+137 240 
+resize: 3
+137 244 252 
+losingFocus 9
+137 454 363 364 244 361 53 362 449 
+subPaneWithFocus: 2
+137 252 
+previousTabStop 2
+137 144 
+helpRequest 3
+137 253 252 
+defaultDragDropObjects 3
+137 357 358 
+isSubPane 2
+137 2 
+handlersAttribute: 2
+137 253 
+buildControl: 7
+137 258 361 449 240 357 445 
+update 8
+137 244 449 69 446 138 60 445 
+colorChange 3
+137 53 240 
+font: 4
+137 270 53 240 
+name: 4
+137 7 6 239 
+handlersAttribute 2
+137 253 
+wmVScroll:with: 4
+137 53 240 138 
+wmHScroll:with: 4
+137 53 240 138 
+getGraphicsTool 2
+137 138 
+framingBlock 4
+137 53 253 252 
+wmDropfiles:with: 2
+137 53 
+topCorner 2
+137 445 
+mouseMove: 3
+137 53 138 
+dragDropObjects 4
+137 152 97 60 
+initSize: 2
+137 252 
+eventTableForEdit 4
+137 2 253 6 
+controlKeyInput: 6
+137 363 244 361 53 362 
+defaultStyle 22
+137 454 453 377 498 363 450 364 258 254 361 53 497 449 357 144 358 241 356 252 445 355 
+validate 20
+137 454 363 26 244 254 165 361 253 449 240 446 357 66 138 358 241 252 445 355 
+virtualKeyInput:withKeys: 10
+137 363 244 361 53 362 240 446 357 138 
+isATabStop 2
+137 450 
+selection: 4
+137 449 357 358 
+selection 7
+137 260 244 449 357 358 445 
+initGraphics 3
+137 54 252 
+graphicsToolClass 2
+137 138 
+button1Move: 4
+137 244 53 138 
+canArrowInto 2
+137 144 
+amountToScrollUp 2
+137 138 
+resizeWindow: 2
+137 53 
+close 25
+137 120 454 35 181 32 98 94 142 244 254 165 373 246 53 124 253 71 128 138 6 54 252 59 355 
+gettingFocus 5
+137 363 364 53 449 
+tabWithKeys: 3
+137 244 446 
+deactivate 4
+137 53 253 138 
+performMenuItem: 4
+137 38 54 252 
+updateSliders 2
+137 144 
+nextTabStop 2
+137 144 
+contextForPopup: 6
+137 38 142 254 54 252 
+eventTable 4
+137 2 253 6 
+amountToPageLeft 2
+137 138 
+open 21
+137 268 187 35 32 263 260 171 244 254 165 166 164 240 69 149 147 243 6 252 378 
+className: 3
+41 117 26 
+enableInspectItem 3
+120 180 130 
+messages 5
+120 152 31 447 60 
+restartable 2
+120 239 
+instance: 7
+120 180 170 130 139 136 132 
+resume 3
+120 160 239 
+accept: 10
+120 152 97 180 170 69 153 130 60 132 
+inspectSelection: 2
+120 130 
+inspectSelection 5
+120 180 170 130 132 
+method: 4
+120 152 108 17 
+compilerClass 3
+120 26 245 
+label: 6
+120 363 364 241 252 59 
+doItResult:error: 2
+120 130 
+label 8
+120 363 364 240 69 60 241 252 
+senders 4
+120 152 97 60 
+skip: 2
+120 71 
+implementors 4
+120 152 97 60 
+initWindowSize 18
+120 152 187 183 181 169 154 253 69 153 149 147 128 135 60 168 129 252 
+inspectMenu: 4
+120 180 130 139 
+menu: 2
+120 60 
+selectInstance: 4
+120 170 130 136 
+windowPolicyClass 8
+120 152 97 69 130 60 168 59 
+debug: 2
+120 169 
+terminate 4
+120 173 239 47 
+convert:to:offset: 2
+120 198 
+style:color:hatch: 2
+119 351 
+getHandle 4
+119 111 68 378 
+attributeArray 3
+119 111 68 
+fromStruct: 4
+119 111 68 299 
+cutSelection 3
+454 244 361 
+text 2
+454 228 
+triggerChanged 6
+454 258 244 361 357 358 
+isComboBox 2
+454 2 
+triggerChangedForSelect 2
+454 453 
+dropDown 2
+454 532 
+setValue: 9
+454 377 258 244 361 449 357 358 355 
+clear 3
+454 35 361 
+previousValue 3
+454 244 361 
+previousValue: 3
+454 244 361 
+modified 3
+454 244 361 
+modified: 3
+454 244 361 
+isDropDownList 3
+454 453 2 
+autoHScroll 2
+454 361 
+asyncControlEvent: 10
+454 453 363 450 361 497 449 240 357 358 
+recreateWindow 2
+454 53 
+copySelection 3
+454 244 361 
+text: 4
+454 152 97 60 
+pasteSelection 3
+454 244 361 
+value 13
+454 377 107 31 258 244 361 18 449 357 63 358 355 
+value: 13
+454 377 107 258 244 361 18 449 357 64 358 355 310 
+fileInFrom: 4
+40 244 19 446 
+fileOutOn: 6
+40 122 110 244 19 446 
+charAt: 2
+40 446 
+topCorner: 3
+40 244 445 
+appendChar: 3
+40 244 446 
+appendText: 2
+40 244 
+extent 9
+40 269 27 44 53 66 7 4 3 
+lineAt: 4
+40 244 446 357 
+display: 2
+40 187 
+asParameter 19
+118 85 48 376 67 266 28 93 92 451 53 375 145 66 8 7 5 4 59 
+eqv: 2
+118 92 
+not 2
+118 92 
+| 4
+118 368 92 249 
+ifTrue:ifFalse: 2
+118 92 
+basicHash 5
+118 376 452 2 248 
+ifFalse:ifTrue: 2
+118 92 
+ifTrue: 2
+118 92 
+xor: 2
+118 92 
+or: 2
+118 92 
+and: 3
+118 92 248 
+hash 24
+118 85 116 368 237 78 184 107 376 104 452 176 256 175 447 79 109 2 159 375 70 248 146 5 
+ifFalse: 2
+118 92 
+& 4
+118 368 92 249 
+asInteger 8
+255 85 256 79 246 375 145 248 
+- 9
+255 368 251 79 159 249 145 146 5 
++ 9
+255 368 251 79 159 249 145 146 5 
+printOn: 42
+255 85 116 38 107 376 104 32 452 95 370 369 256 175 447 22 57 80 79 109 2 373 18 159 249 375 448 145 248 12 146 11 91 51 8 6 5 239 4 365 49 43 
+asBoolean 2
+255 248 
+name 9
+122 110 34 363 32 53 7 6 239 
+edit 2
+122 375 
+isClass 2
+122 2 
+variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries: 2
+122 8 
+changeSuperclassTo: 3
+122 110 109 
+classVarNames 2
+122 110 
+subclass:instanceVariableNames:classVariableNames:poolDictionaries: 3
+122 109 8 
+variableByteSubclass:classVariableNames:poolDictionaries: 2
+122 8 
+recomputeMethodDictionaries 3
+122 110 109 
+variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries: 3
+122 109 8 
+classPool 2
+122 110 
+sharedPools 2
+122 110 
+handle 10
+39 160 98 67 269 53 66 7 6 59 
+displayAt:with: 5
+39 27 2 66 7 
+inspect 11
+39 266 27 451 231 2 66 7 239 49 238 
+hide 2
+39 3 
+display 7
+39 244 53 446 138 252 3 
+displayAt: 4
+39 375 66 7 
+release 8
+39 272 98 269 28 2 66 7 
+handle: 9
+39 36 98 67 269 53 7 6 284 
+reset 4
+39 114 71 113 
+enableMethodsMenu 3
+152 97 60 
+openOn: 9
+152 97 170 153 130 139 136 60 168 
+localImplementors 2
+152 60 
+fileOutMethod 3
+152 97 60 
+disableMethodsMenu 3
+152 97 60 
+localSenders 2
+152 60 
+= 24
+85 116 368 237 78 184 107 376 104 452 176 256 175 447 22 79 2 159 249 375 70 146 5 4 
+isExternalHandle 2
+85 2 
+replaceBytesFrom:to:with:startingAt: 8
+85 376 452 266 256 451 375 146 
+uLongAtOffset: 3
+85 48 246 
+fillFromAddress: 2
+85 48 
+uLongAtOffset:put: 3
+85 48 246 
+replaceFrom:to:with:startingAt: 10
+85 368 237 376 452 266 256 451 375 146 
+isValid 6
+85 256 89 53 66 7 
+contents 17
+48 377 372 185 22 364 244 371 361 72 240 71 11 357 6 168 355 
+contents: 12
+48 22 364 244 361 240 446 11 357 168 445 355 
+size 12
+48 237 32 185 451 251 2 375 250 71 58 238 
+<= 13
+116 78 107 104 370 369 451 79 159 249 375 146 5 
+< 12
+116 78 107 104 370 369 79 159 249 375 146 5 
+>= 11
+116 368 78 107 104 79 159 249 375 146 5 
+> 11
+116 368 78 107 104 79 159 249 375 146 5 
+asSeconds 2
+116 104 
+bitAnd: 2
+368 249 
+isLargeInteger 2
+368 2 
+at: 13
+368 185 256 451 231 251 2 249 375 359 58 49 238 
+bitOr: 2
+368 249 
+~= 3
+368 2 249 
+byteSize 2
+368 249 
+/ 6
+368 159 145 248 146 5 
+// 6
+368 159 249 145 146 5 
+bitShift: 3
+368 249 248 
+bitXor: 2
+368 249 
+deepCopy 14
+368 376 452 265 451 231 57 79 109 2 250 145 91 8 
+bitAt: 2
+368 249 
+reduce 4
+368 370 369 249 
+* 6
+368 159 249 145 146 5 
+quo: 3
+368 249 145 
+absoluteLessThan: 3
+368 249 248 
+isDisabled: 2
+38 54 
+popUpAt:in: 2
+38 54 
+title: 3
+38 164 243 
+deleteItem: 3
+38 357 54 
+selector: 8
+38 97 176 175 447 153 11 60 
+window: 3
+38 46 99 
+findWindow: 3
+38 13 54 
+destroy 4
+38 269 53 54 
+owner: 7
+38 268 263 260 53 243 59 
+owner 3
+38 53 59 
+labels:lines:selectors: 2
+38 227 
+isThere: 2
+38 325 
+selectorOf: 2
+38 54 
+deleteAll 3
+38 357 445 
+selector 5
+38 31 175 447 11 
+isMenu 2
+38 2 
+flags 5
+115 268 263 260 243 
+bitBlt:x:y:width:height:srcDC:xSrc:ySrc:rop: 4
+272 269 125 297 
+saveSegments 2
+272 269 
+selectObject: 2
+272 269 
+stretchBlt:x:y:dWidth:dHeight:srcDC:xSrc:ySrc:sWidth:sHeight:rop: 3
+272 269 125 
+location 3
+272 29 269 
+allHandles 2
+272 269 
+match:index: 2
+114 113 
+build: 2
+114 113 
+match: 2
+114 113 
+selectIndex: 3
+453 357 358 
+getSelection 4
+453 361 357 358 
+deleteMessage 2
+453 357 
+oemConvert 2
+453 361 
+deleteAllFromControl 2
+453 357 
+sort 2
+453 357 
+dropDownList 2
+453 532 
+winClass 11
+453 363 258 361 53 354 357 138 241 252 284 
+noIntegralHeight 2
+453 357 
+wmCtlcolorlistbox:with: 2
+453 53 
+disableNoScroll 2
+453 357 
+insertItemInControl: 2
+453 357 
+wmCtlcoloredit:with: 2
+453 53 
+copyStruct 4
+268 263 260 243 
+chosen 2
+268 263 
+cleanUp 4
+268 263 260 243 
+flags: 2
+268 243 
+checkFlags 4
+268 263 260 243 
+close: 5
+187 181 169 149 168 
+ok: 3
+187 149 135 
+topPaneClass 3
+187 128 59 
+do: 9
+237 185 451 231 57 359 71 58 238 
+replaceFrom:to:withObject: 5
+237 376 452 451 375 
+isIndexedCollection 2
+237 2 
+reversed 2
+237 250 
+copyFrom:to: 7
+237 374 265 256 373 71 238 
+unquote 4
+237 375 51 238 
+includes: 6
+237 185 231 57 58 238 
+grow 8
+237 186 265 185 231 371 359 238 
+indexOf: 3
+237 71 357 
+replaceFrom:to:with: 2
+237 238 
+copyReplaceFrom:to:with: 2
+237 250 
+shallowCopy 16
+237 376 452 265 231 447 57 251 79 109 2 250 360 145 91 8 
+add: 13
+186 265 185 231 57 359 250 13 360 58 52 232 238 
+findElementIndex: 2
+186 185 
+species 5
+186 376 452 251 2 
+buildMenuBar 3
+37 253 252 
+initMenu 5
+37 244 53 446 59 
+max: 2
+78 5 
+min: 2
+78 5 
+between:and: 2
+78 5 
+resume: 6
+36 160 169 15 13 239 
+return: 3
+36 108 160 
+retry 3
+36 160 30 
+initialize: 2
+184 185 
+free 4
+184 267 257 124 
+style:color:width: 2
+111 342 
+width 11
+111 269 27 90 44 53 75 177 12 66 4 
+instanceVariableNames: 2
+110 26 
+newNameSymbol: 2
+110 109 
+isMetaClass 2
+110 2 
+empty 2
+35 13 
+receiver 4
+108 175 17 62 
+asActionSequence 5
+108 366 175 42 62 
+method 2
+108 31 
+centered 3
+377 445 522 
+rightJustified 3
+377 445 522 
+leftJustified 3
+377 445 522 
+key: 2
+107 338 
+isInBase 2
+107 2 
+isAssociation 2
+107 2 
+storeOn: 13
+107 376 452 231 57 79 2 375 250 145 91 8 365 
+open:replace: 2
+183 437 
+cancel: 6
+183 154 149 147 135 129 
+at:put: 16
+376 452 265 185 256 451 231 251 2 375 359 360 58 49 232 238 
+initContents: 2
+376 452 
+asMixedString 3
+376 451 375 
+asNormalizedString 3
+376 451 375 
+asNormalizedString: 3
+376 451 375 
+replace:with: 6
+376 452 266 256 451 375 
+asString 9
+376 31 452 266 86 79 2 18 375 
+asSymbol 4
+376 452 451 375 
+asExternalString 3
+376 451 375 
+asCompactString 4
+376 452 451 375 
+isSymbol 3
+376 452 2 
+changedEventFor: 4
+498 450 497 449 
+setValue 2
+498 449 
+getValue 5
+498 361 449 240 357 
+closeSignOn 2
+182 20 
+reportWarning: 4
+106 133 156 105 
+numberOfArguments 5
+103 176 62 64 63 
+evaluateWithArguments: 9
+103 176 366 175 80 2 64 63 43 
+evaluate 11
+103 31 176 366 175 80 2 17 64 63 43 
+version 3
+34 6 232 
+canApplyStyle 3
+363 53 240 
+applyStyle 2
+363 53 
+isDefaultPushButton 3
+363 364 449 
+setLabel: 3
+363 364 241 
+defaultPushButton 2
+363 253 
+buttonFont: 2
+363 53 
+saveString: 2
+181 168 
+saveAs 4
+181 253 69 168 
+textPaneClass 3
+181 169 168 
+next 4
+374 372 373 72 
+nextPutAll: 8
+374 372 270 244 371 373 446 168 
+leadBytes 2
+374 16 
+upTo: 3
+374 375 71 
+setLimits 5
+374 372 371 373 72 
+reverseContents 2
+374 71 
+asByteFileStream 2
+374 373 
+asMixedFileStream: 2
+374 373 
+setLineDelimiterFromFirstPage 2
+374 373 
+nextWord 2
+374 71 
+nextByte 2
+374 372 
+directory 2
+32 243 
+pathName 3
+32 22 373 
+flush 2
+32 373 
+wmWininichange:with: 2
+101 53 
+errorMessage 2
+31 30 
+nameScope 2
+31 9 
+canGenerateCompilationResult 2
+31 2 
+isCompilationResult 2
+31 2 
+sourceCode 2
+31 30 
+description 2
+160 51 
+defaultDescriptionString 2
+160 172 
+isResumable 4
+160 262 236 161 
+defaultAction 6
+160 233 172 236 234 161 
+isActive 2
+160 53 
+signal 3
+160 10 416 
+addMenus 3
+100 167 99 
+create: 2
+98 211 
+drawUsing: 4
+98 83 44 66 
+isStoredPicture 2
+98 2 
+isDoubleByteSymbol 2
+452 2 
+equals: 2
+452 375 
+containsDBCharacter 3
+452 451 375 
+replaceBytes:with: 4
+452 266 256 451 
+id: 3
+452 53 11 
+id 4
+452 53 11 252 
+sourcePosition 2
+30 447 
+privateHandle 3
+67 269 7 
+initHandle 3
+67 66 7 
+stockObject: 3
+67 298 299 
+dictionary: 2
+97 126 
+droppedOnTextPane: 2
+97 60 
+removeSelector 2
+97 60 
+selectorMenu: 2
+97 60 
+selectors: 3
+97 153 60 
+droppedOnSelectorList: 2
+97 60 
+memoryHandle 2
+267 257 
+memorySize: 2
+267 257 
+memorySize 2
+267 257 
+x 2
+96 5 
+x: 2
+96 5 
+y 2
+96 5 
+y: 2
+96 5 
+boundingBox 6
+269 27 87 44 53 66 
+width: 4
+269 90 177 4 
+backColor: 4
+269 271 53 59 
+height 11
+269 27 90 44 53 177 12 357 66 4 3 
+foreColor: 5
+269 271 270 53 59 
+height: 5
+269 90 177 357 4 
+erase 2
+269 138 
+deleteObject: 2
+269 125 
+resetAttributes 2
+269 270 
+isGraphicsTool 2
+269 2 
+dllName 2
+95 2 
+sizeInBytes 27
+95 66 49 353 479 349 279 346 343 328 326 321 316 315 313 312 308 307 306 305 304 301 431 292 289 286 281 
+asExternalLong 2
+266 375 
+isByteArray 2
+266 2 
+replaceFrom:to:withAddress:startingAt: 2
+266 375 
+asExternalAddress 3
+266 375 248 
+asExternalHandle 2
+266 375 
+addFirst: 2
+265 238 
+addAll: 2
+265 57 
+add:after: 2
+265 238 
+select: 4
+265 231 57 250 
+sortBlock 2
+265 348 
+sortBlock: 2
+265 490 
+addAllFirst: 2
+265 238 
+addLast: 2
+265 238 
+addAllLast: 2
+265 238 
+add:before: 2
+265 238 
+remove 3
+180 22 6 
+instVarList: 3
+180 170 130 
+setInstList 4
+180 130 132 131 
+asSegmentedAddress 2
+264 256 
+asFlatAddress 2
+264 256 
+negated 7
+370 369 159 145 248 146 5 
+negative 5
+370 369 145 248 146 
+positive 5
+370 369 145 248 146 
+signedAt: 3
+370 369 249 
+sign 3
+370 369 145 
+strictlyPositive 5
+370 369 145 248 146 
+abs 6
+370 369 145 248 146 5 
+\\ 5
+370 369 249 145 5 
+asUnsigned 3
+370 369 248 
+setToEnd 3
+372 371 71 
+getBytesFor:from:to: 2
+372 373 
+nextPut: 7
+372 270 244 371 373 446 168 
+registerMessage:parameterTypes:returnType:callingConvention: 2
+28 217 
+newFile: 3
+94 22 221 
+collection 2
+93 371 
+realizePalette: 2
+179 125 
+destroyCaret 2
+179 3 
+selectPalette:with:forceBackground: 2
+179 125 
+showCaret: 2
+179 3 
+fillRect:rectangle:brush: 2
+179 125 
+setFocus 2
+450 53 
+createDIBPalette 2
+27 66 
+colorTable 2
+27 178 
+numberOfColors 2
+27 66 
+bitCount 3
+27 177 66 
+colorTable: 2
+27 178 
+isDIB 2
+27 2 
+allSubclasses 2
+26 109 
+superclass: 2
+26 109 
+errorString 2
+26 124 
+isPointers 2
+26 109 
+allInstVarNames 2
+26 109 
+superclass 2
+26 109 
+isVariable 2
+26 109 
+recompile: 2
+26 109 
+install 3
+26 252 59 
+warning: 3
+25 105 415 
+arguments: 2
+176 175 
+collectArguments: 2
+176 175 
+receiver:selector:arguments: 3
+176 175 429 
+perform 2
+176 175 
+doIt: 3
+174 244 446 
+compilerError:at:in:for: 6
+174 244 149 446 135 198 
+localBind:to: 3
+126 51 52 
+removeLocalBindingFor: 3
+126 51 52 
+localBindingFor: 4
+126 51 52 127 
+rehash 2
+185 359 
+occurrencesOf: 4
+185 231 57 58 
+adjustSize 2
+185 359 
+rehashFrom: 3
+185 231 359 
+remove:ifAbsent: 7
+185 231 57 250 58 238 221 
+isExternalAddress 2
+256 2 
+dividend: 2
+262 486 
+doesNotUnderstand: 3
+1 2 49 
+isSelfInitializingObject 2
+1 2 
+asByteArray 2
+451 375 
+isDoubleByteString 2
+451 2 
+fromMixedString:leadBytes: 2
+451 529 
+asAsciiZ 2
+451 375 
+associationAt:ifAbsent: 2
+231 359 
+includesKey: 2
+231 359 
+removeAll 2
+231 57 
+at:ifAbsentPut: 2
+231 359 
+keys 2
+231 359 
+associationsDo: 2
+231 359 
+removeKey: 2
+231 232 
+at:ifAbsent: 3
+231 359 238 
+findKeyIndex: 2
+231 359 
+keysAndValuesDo: 2
+231 359 
+values 2
+231 359 
+removeKey:ifAbsent: 3
+231 359 360 
+keyAtValue:ifAbsent: 2
+231 359 
+planes 3
+90 177 66 
+planes: 2
+90 177 
+wmChar:with: 4
+142 361 53 357 
+processInput 3
+142 254 128 
+itemIds 2
+142 143 
+wmCommand:with: 2
+142 53 
+isDialogWindow 3
+142 254 2 
+paneAt: 2
+142 59 
+statusPane 5
+142 254 53 252 59 
+cancel 4
+142 244 446 143 
+childAtId: 2
+142 53 
+fromModule:id: 7
+142 7 228 216 520 297 196 
+wmHelp:with: 2
+142 53 
+wmInitdialog:with: 3
+142 254 53 
+isMessage 2
+175 2 
+receiver: 2
+175 17 
+isCompiledMethod 2
+447 2 
+type: 2
+447 18 
+type 2
+447 18 
+argumentCount 2
+447 62 
+classField: 2
+447 360 
+classField 3
+447 19 360 
+recompile 2
+447 448 
+pathName: 3
+22 221 211 
+fileReadOnly: 2
+22 69 
+isDirectory 2
+22 2 
+file: 2
+22 69 
+rectangle: 2
+271 76 
+boxOfSize: 3
+271 254 252 
+white 2
+271 45 
+wmDdeExecute:with: 2
+171 53 
+wmDdePoke:with: 2
+171 53 
+wmDdeAck:with: 3
+171 166 53 
+wmDdeTerminate:with: 3
+171 166 53 
+ddeTerminate: 2
+171 166 
+wmDdeAdvise:with: 2
+171 53 
+removeClientFromList: 2
+171 173 
+wmDdeRequest:with: 2
+171 53 
+ddeAck:msg:ack:busy:appReturnCode:item: 2
+171 166 
+wmDdeUnadvise:with: 2
+171 53 
+wmDdeInitiate:with: 2
+171 53 
+fixedSize 2
+364 296 
+drawItem: 4
+364 53 253 357 
+drawFocus: 4
+364 53 253 357 
+disabled 2
+364 53 
+highlight: 4
+364 53 253 357 
+showWindowAtTop 2
+89 53 
+getDC 2
+89 53 
+disableRedraw 2
+89 53 
+enableRedraw 2
+89 53 
+enable 2
+89 53 
+showMaximizedWindow 2
+89 252 
+propertyAt:put: 2
+89 53 
+hideWindow 2
+89 53 
+propertyAt: 2
+89 53 
+disable 2
+89 53 
+showIconicWindow 2
+89 252 
+noRedraw: 2
+89 53 
+showWindow 2
+89 53 
+ctlType 2
+87 56 
+itemId 2
+87 56 
+ctlId 2
+87 56 
+itemData 2
+87 56 
+imageName 2
+20 232 
+isRunTime 2
+20 232 
+getCommandLine 3
+20 155 232 
+cr 6
+270 244 371 373 446 168 
+position: 5
+258 371 373 71 11 
+horizontal 2
+258 482 
+position 4
+258 373 71 11 
+vertical 2
+258 482 
+matchBracketFrom:to: 2
+244 446 
+addParens 2
+244 446 
+selectBefore: 3
+244 446 3 
+searchFor: 2
+244 446 
+readWrite 2
+244 445 
+scrollTopCornerTo: 2
+244 138 
+addSquareBrackets 2
+244 446 
+search 2
+244 446 
+isTextPane 3
+244 2 446 
+matchBracketChars 2
+244 446 
+textFont: 3
+244 53 446 
+inspectIt 3
+244 446 59 
+searchOld 2
+244 446 
+addDoubleQuotes 2
+244 446 
+addSingleQuotes 2
+244 446 
+setEvaluate: 2
+244 446 
+findReplace 2
+244 446 
+doItcompilerError:at:in:for: 2
+244 446 
+scrollTopCorner: 2
+244 138 
+defaultCursor 2
+244 53 
+print 4
+244 446 252 59 
+updateRectangle 3
+244 53 138 
+saveCompilerError:at:in:for: 2
+244 446 
+selectAfter: 3
+244 446 3 
+printIt 3
+244 446 59 
+undo 2
+244 445 
+addLeftBracket:rightBracket: 2
+244 446 
+replaceString: 2
+244 446 
+selectFrom:to: 3
+244 361 446 
+selectAtEnd 2
+244 446 
+wmGetdlgcode:with: 2
+244 53 
+addCurlyBrackets 2
+244 446 
+wmSetfocus:with: 2
+244 53 
+fileItIn 3
+244 446 59 
+selectedItem 3
+244 357 445 
+restore 5
+244 69 446 357 252 
+replaceAtPattern 2
+244 446 
+characterInput: 2
+244 53 
+selectTo: 2
+244 3 
+wmKillfocus:with: 2
+244 53 
+forceEndOntoDisplay 2
+244 446 
+doIt 3
+244 446 59 
+isReadOnly 3
+244 361 445 
+forceSelectionOntoDisplay 2
+244 446 
+showSelectionFrom:to: 2
+244 446 
+searchBackOld 2
+244 446 
+button1DownShift: 3
+244 53 138 
+selectAll 2
+244 361 
+readOnly 4
+244 361 7 445 
+again 2
+244 446 
+button1DoubleClick: 3
+244 53 138 
+scrollHorizontal: 2
+244 138 
+queryReplaceAtPattern 2
+244 446 
+wmTimer:with: 4
+244 166 53 253 
+reinitialize 2
+244 13 
+selectedString 2
+244 446 
+clearSelection 4
+244 361 357 358 
+searchForDefaultTextPane 3
+244 446 252 
+accept 4
+244 446 252 59 
+evaluate:ifError: 2
+244 245 
+printSelection 2
+244 446 
+hideSelection 2
+244 3 
+deviceContext 2
+44 53 
+graphicsTool: 2
+44 53 
+pen 4
+44 53 240 66 
+openOn:label: 2
+169 421 
+openModal: 2
+254 128 
+wmPaint:with: 4
+254 53 240 138 
+wmSize:with: 4
+254 53 138 252 
+buildWindow 2
+254 252 
+isDialogTopPane 2
+254 2 
+mainWindow 3
+254 53 252 
+openModeless 2
+254 128 
+addSystemMenus 2
+167 99 
+addStandardLeftMenus 4
+167 151 150 99 
+addSmalltalkMenu 2
+167 151 
+isCollection 2
+57 2 
+remove: 4
+57 13 221 211 
+collect: 2
+57 250 
+errorNotIndexable 2
+57 109 
+isEmpty 2
+57 71 
+makeActive 2
+165 53 
+waitForData 2
+165 166 
+wmDdeData:with: 2
+166 53 
+message: 6
+164 147 236 227 415 463 
+ok 2
+164 143 
+asUpperCase 2
+79 375 
+asLowerCase 2
+79 375 
+asCharacter 2
+79 248 
+to:do: 2
+79 145 
+isCharacter 2
+79 2 
+to: 2
+79 145 
+to:by: 2
+79 145 
+to:by:do: 2
+79 145 
+methods 2
+109 6 
+implementorsOf: 2
+109 232 
+isFixed 2
+109 143 
+pools 2
+109 245 
+sendersOf: 2
+109 232 
+new: 17
+109 279 513 345 521 530 490 439 529 525 473 504 399 344 322 197 460 
+compile: 2
+109 9 
+new 28
+109 317 279 227 223 218 439 525 314 310 470 284 205 504 399 401 201 400 199 322 282 197 196 288 461 460 290 192 
+isBehavior 2
+109 2 
+setCompilationOptions: 2
+109 378 
+space 2
+371 168 
+putBytesFrom:from:to: 2
+371 373 
+tab 2
+371 168 
+isBoolean 2
+2 91 
+isFileStream 2
+2 373 
+isGroupBox 2
+2 241 
+isString 2
+2 375 
+isBitmap 2
+2 66 
+printString 2
+2 249 
+eventTableCreate 2
+2 253 
+canTriggerEvent: 6
+2 227 209 191 284 290 
+basicAt: 2
+2 375 
+isStream 2
+2 71 
+isFloat 2
+2 146 
+isInteger 2
+2 248 
+changed: 3
+2 252 59 
+dependents 2
+2 252 
+isNil 2
+2 8 
+isContext 2
+2 62 
+isPoint 2
+2 5 
+isSmallInteger 2
+2 249 
+isFont 2
+2 12 
+isGraphPane 2
+2 138 
+isTopPane 2
+2 253 
+isIcon 2
+2 7 
+isRectangle 2
+2 4 
+isNumber 2
+2 145 
+changed:with: 3
+2 252 59 
+isMethodDictionary 2
+2 360 
+methodDictionaryArray: 2
+2 207 
+basicAt:put: 2
+2 375 
+isApplicationWindow 2
+2 252 
+isDynamicLinkLibrary 2
+2 124 
+changed:with:with: 3
+2 252 59 
+isArray 2
+2 365 
+notNil 2
+2 8 
+isTextSelection 2
+2 3 
+isFraction 2
+2 159 
+isObjectLibraryExternal 2
+2 18 
+isWindow 2
+2 53 
+backupOver: 2
+373 71 
+file 3
+373 69 243 
+nextLine 2
+373 71 
+readLimit 2
+373 71 
+nextChunk 2
+373 71 
+atEnd 2
+373 71 
+lineDelimiter: 2
+373 71 
+lineDelimiter 2
+373 71 
+readOnly: 2
+361 7 
+wmCharResultFor: 2
+361 445 
+fileOut 2
+19 60 
+getClass:ifAbsent: 2
+18 207 
+resolve 2
+18 6 
+queryProcAddr: 2
+246 124 
+getResourceString:id: 2
+246 124 
+rectangle 2
+76 53 
+sendInputEvent:with: 2
+53 59 
+measureControl: 3
+53 253 357 
+listFont: 2
+53 357 
+canTab 4
+53 354 253 241 
+previousTabStop: 2
+53 144 
+defaultDrawItem: 2
+53 357 
+defaultFont 6
+53 508 468 284 524 502 
+sizeChanged: 2
+53 252 
+defaultBackColor 2
+53 284 
+button2Move: 2
+53 138 
+defaultForeColor 2
+53 284 
+wmInitmenu:with: 2
+53 253 
+wmLbuttondblclk:with: 2
+53 446 
+parent: 2
+53 59 
+wmLbuttondown:with: 3
+53 446 138 
+wmQueryendsession:with: 2
+53 253 
+wmSyscommand:with: 2
+53 252 
+wmQuerydragicon:with: 2
+53 252 
+controlColor: 3
+53 240 144 
+menuWindow 3
+53 252 59 
+model: 2
+53 59 
+tabScope 3
+53 253 144 
+systemMenuHandle 2
+53 252 
+wmCreate:with: 2
+53 252 
+button2DoubleClick: 2
+53 138 
+wmMousemove:with: 2
+53 357 
+wmSetcursor:with: 2
+53 240 
+sendInputEvent: 2
+53 59 
+defaultMeasureControl: 2
+53 357 
+nextTabStop: 2
+53 144 
+wmKeydown:with: 2
+53 446 
+itemSize 2
+53 357 
+button2Down: 2
+53 138 
+drawIndex 2
+53 252 
+isHandleOk 2
+53 240 
+activate 3
+53 253 252 
+minimizeWindow 2
+53 253 
+itemSize: 2
+53 357 
+addSubpane: 4
+53 253 144 59 
+when:perform: 2
+53 59 
+ownerDrawPen 2
+53 252 
+graphicsTool 2
+53 240 
+truncated 6
+159 145 248 146 5 4 
+reciprocal 4
+159 145 248 146 
+denominator 2
+159 145 
+asFloat 4
+159 375 248 146 
+numerator 2
+159 145 
+squared 2
+159 145 
+numerator:denominator: 2
+159 413 
+rem: 3
+249 145 248 
+exit 12
+158 232 226 438 332 217 314 412 297 196 195 278 
+fileName 10
+375 436 433 484 414 412 409 471 402 379 
+outputToPrinter 3
+375 66 45 
+undeclaredAssignment: 4
+157 156 134 105 
+check 2
+497 6 
+freeLibrary: 2
+155 247 
+loadLibrary: 2
+155 247 
+getProcAddress:procName: 2
+155 247 
+getModuleHandle: 2
+155 247 
+status 2
+15 400 
+yield 2
+15 13 
+terminateActive 2
+15 461 
+copyStack 2
+15 461 
+flip 2
+15 66 
+okToClose 2
+253 135 
+triggerOpenedEvent 2
+253 252 
+show: 2
+71 168 
+fileIn 2
+71 243 
+next:put: 2
+71 168 
+directory: 2
+69 243 
+hideShow: 2
+69 60 
+dropped: 2
+69 168 
+hideShow 2
+69 60 
+ceiling 2
+145 248 
+radiansToDegrees 2
+145 146 
+degreesToRadians 2
+145 146 
+truncateTo: 2
+145 5 
+printFraction: 2
+145 146 
+left: 3
+145 5 4 
+printFraction:decimalSeparator: 2
+145 146 
+floor 2
+145 248 
+exp 2
+145 146 
+right: 3
+145 5 4 
+cos 2
+145 146 
+up: 2
+145 5 
+tan 2
+145 146 
+sqrt 2
+145 146 
+ln 2
+145 146 
+down: 2
+145 5 
+rounded 4
+145 248 5 4 
+timesTwoPower: 2
+145 146 
+sin 2
+145 146 
+arcTan 2
+145 146 
+addStandardRightMenus 3
+151 150 99 
+radix: 2
+248 139 
+canceled 2
+149 147 
+saveImage 3
+149 252 59 
+toggleWrap 2
+446 59 
+compiler 2
+245 9 
+addApplicationMenus 2
+150 99 
+addHelpManager 2
+130 139 
+itemHeight 2
+357 56 
+itemHeight: 2
+357 56 
+deselect 2
+357 66 
+isIndexSelected: 2
+357 358 
+createBitmapIndirect: 2
+66 125 
+screenExtent: 2
+66 297 
+width:height: 2
+66 297 
+width:height:planes:bitCount: 3
+66 431 297 
+width:height:bits: 2
+66 297 
+createBitmap:height:planes:bitCount:bits: 3
+66 125 297 
+outputToPrinter: 2
+66 45 
+outputToFile: 2
+66 7 
+screenWidth:height: 2
+66 297 
+pane 2
+156 168 
+pane: 2
+156 3 
+undeclaredAccess: 3
+156 134 105 
+open: 4
+143 470 378 397 
+openWindow 3
+128 252 59 
+bitmap: 2
+138 500 
+bitmap 2
+138 500 
+save 2
+243 232 
+openFile 3
+243 252 59 
+saveFile: 2
+243 168 
+hasInvalidBindingFor: 2
+51 52 
+descriptionFor: 2
+51 52 
+unbound 2
+51 282 
+describeInvalidBindingFor: 2
+51 52 
+evaluate: 3
+9 239 198 
+defaultGlobalDictionary 2
+9 215 
+prompt:default: 2
+135 389 
+title:prompt:default: 2
+135 389 
+fromFileStream: 2
+7 196 
+bindTo: 2
+6 195 
+extent: 3
+5 4 297 
+mapClientToScreen: 2
+5 4 
+mapToScreen: 2
+5 4 
+moveBy: 2
+5 4 
+mapFromWindow:to: 2
+5 4 
+mapToWindow: 2
+5 4 
+corner: 3
+5 4 3 
+rightBottom: 2
+5 4 
+mapScreenToClient: 2
+5 4 
+evaluateProtectionBlock 2
+239 461 
+menuTitled: 3
+54 252 59 
+merge: 2
+4 3 
+origin:extent: 2
+4 193 
+leftBottom:rightTop: 2
+4 193 
+origin 3
+4 3 228 
+origin: 2
+4 3 
+top 2
+4 3 
+leftTop:rightBottom: 2
+4 193 
+leftBottom:extent: 2
+4 193 
+intersect: 2
+4 3 
+leftTop:extent: 2
+4 193 
+origin:corner: 4
+4 3 193 192 
+corner 2
+4 3 
+textModified 2
+252 59 
+noSmalltalkMenuBar 2
+252 59 
+openWorkspace 2
+252 59 
+openClassBrowser 2
+252 59 
+printSetup 2
+252 59 
+setForegroundColor 2
+252 59 
+openDiskBrowser 2
+252 59 
+icon: 3
+252 59 500 
+openIn: 2
+252 59 
+labelWithoutPrefix: 2
+252 59 
+setFonts 2
+252 59 
+setBackgroundColor 2
+252 59 
+fileMenu 5
+252 419 405 404 476 
+saveImageAs 2
+252 59 
+icon 2
+252 500 
+clearTextModified 2
+252 59 
+toolWindowPolicyClass 2
+59 290 
+toolTextPaneClass 2
+59 290 
+getStockObject: 2
+125 493 
+createCompatibleDC: 2
+125 297 
+iconId 2
+352 435 
+constructEventsTriggered 22
+391 532 531 534 508 528 509 482 468 478 506 284 507 533 477 527 524 502 392 503 285 523 
+supportedEvents 15
+391 532 531 508 509 482 468 478 506 284 477 524 502 392 523 
+threshold 3
+351 342 299 
+winStruct 3
+351 342 299 
+anchorDictionary 3
+351 342 299 
+fromAttributes: 2
+351 342 
+fromHandle:style: 6
+532 508 506 499 464 502 
+for: 4
+229 380 311 274 
+fromString: 7
+479 347 335 529 318 207 400 
+startUp 18
+228 226 438 224 223 332 217 325 483 396 314 205 378 201 297 467 196 278 
+fromBytes: 2
+317 279 
+fromInteger: 7
+317 279 328 470 284 400 194 
+fromAddress: 4
+279 529 520 296 
+dateAndTimeNow 2
+347 335 
+eventsTriggered 5
+227 209 284 195 290 
+fromFile: 4
+343 216 297 196 
+mustBeSymbol: 2
+521 530 
+intern: 2
+521 530 
+nonAuto 3
+534 528 533 
+auto 3
+534 528 533 
+open:in: 2
+221 325 
+exists: 2
+221 211 
+open:in:attribute:mode: 2
+221 325 
+open:in:action:fileSize:attribute:flags:mode: 2
+221 325 
+allocateMemory: 3
+491 480 481 
+from: 2
+326 213 
+negativeClass 2
+515 514 
+fromCollection: 2
+324 511 
+fromFile:in: 2
+216 297 
+receiver:selector: 2
+430 429 
+with: 3
+123 287 474 
+memoryHandleFrom:withAllocFlag: 2
+480 481 
+copyToNonSmalltalkMemory:withAllocFlag: 2
+480 481 
+memoryHandleFrom: 2
+480 481 
+fromAddress:length: 2
+529 520 
+current 3
+211 209 461 
+editMenu 5
+468 419 405 524 404 
+bracketsMenu 3
+468 524 404 
+smalltalkMenu 3
+468 419 524 
+with:with:with:with: 2
+287 474 
+with:with: 2
+287 474 
+with:with:with: 2
+287 474 
+on: 3
+518 302 330 
+forClass: 2
+208 198 
+getHandle: 2
+470 378 
+apiPrimitiveMap 2
+470 378 
+readFrom: 2
+520 472 
+fromHandle: 2
+464 297 
+additiveIdentity 2
+399 400 
+multiplicativeIdentity 2
+399 400 
+defaultPoolNames 2
+469 198 
+releaseAllHandles 3
+201 297 196 
+nameOf: 2
+195 280 
+named: 2
+195 280 

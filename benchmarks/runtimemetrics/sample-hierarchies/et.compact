@@ -1,0 +1,1336 @@
+371
+Artificial_Root 0
+
+RunArrayIter 1
+0 
+TabEntry 1
+0 
+IterIter 1
+0 
+ContainerTypes 1
+0 
+Iter 1
+0 
+GrShowWaitCursor 1
+0 
+batchInfo 1
+0 
+_enum 1
+0 
+_bool 1
+0 
+_flags 1
+0 
+polygon 1
+0 
+line 1
+0 
+Token 1
+0 
+Time 1
+0 
+SelPoint 1
+0 
+SmartParaStyles 1
+0 
+ParaDesc 1
+0 
+ParaTabs 1
+0 
+TabStop 1
+0 
+SmartCharStyles 1
+0 
+CharDesc 1
+0 
+CharStyleChange 1
+0 
+CharStyleSpec 1
+0 
+outmap 1
+0 
+LineDesc 1
+0 
+AutoTextIter 1
+0 
+TextChanges 1
+0 
+Symbol 1
+0 
+block 1
+0 
+ConnectionStack 1
+0 
+Storage 1
+0 
+MemPool 1
+0 
+Chunk 1
+0 
+FreeNode 1
+0 
+SmartRegularExp 1
+0 
+RegExRegs 1
+0 
+OldRegion 1
+0 
+RegionRectIter 1
+0 
+Region 1
+0 
+re_registers 1
+0 
+re_pattern_buffer 1
+0 
+Rectangle 1
+0 
+PttyConnection 1
+0 
+PttyChars 1
+0 
+SmartAnyProgEnv 1
+0 
+SmartProgenv 1
+0 
+SmartPrintManager 1
+0 
+ImageCache 1
+0 
+GrState 1
+0 
+Point 1
+0 
+C_Point 1
+0 
+PathIter 1
+0 
+DoDelayChanges 1
+0 
+Metric 1
+0 
+Math 1
+0 
+FindFocus 1
+0 
+Look 1
+0 
+Layout 1
+0 
+HSVColor 1
+0 
+RGB 1
+0 
+gridinfo 1
+0 
+FindChange 1
+0 
+TextViewOverlay 1
+0 
+ExceptionContext 1
+0 
+Dir 1
+0 
+Directory 1
+0 
+DevFont 1
+0 
+BitmapInfo 1
+0 
+BitmapCache 1
+0 
+Date 1
+0 
+CType 1
+0 
+IdRange 1
+0 
+CLib 1
+0 
+rcinfo 1
+0 
+BitSetIter 1
+0 
+SmartBitmap 1
+0 
+XPMelem 1
+0 
+ClientData 1
+0 
+RpcCheckTimer 1
+0 
+Object 1
+0 
+RunArray 1
+80 
+ObjLink 1
+80 
+DeletedObject 1
+80 
+ParaStyle 1
+80 
+CharStyle 1
+80 
+TextReader 1
+80 
+TextPainter 1
+80 
+System 1
+80 
+SymbolTable 1
+80 
+Message 1
+80 
+KeyValueAssoc 1
+80 
+Stream 1
+0 
+IStream 1
+92 
+OStream 1
+92 
+RegularExp 1
+80 
+StreamBuf 1
+0 
+ProgressFilter 1
+96 
+AnyProgEnv 1
+80 
+ObjectViewPolicy 1
+80 
+ProgEnv 1
+80 
+PrintManager 1
+80 
+PrinterSettings 1
+80 
+Printer 1
+80 
+Picture 1
+80 
+PathLookup 1
+80 
+ObjInt 1
+80 
+ObjectTable 1
+80 
+AccessMembers 1
+0 
+FindMember 1
+108 
+ChangeMessage 1
+80 
+MemBuf 1
+96 
+MarkList 1
+80 
+Interpreter 1
+80 
+InkManager 1
+80 
+NamedRGB 1
+80 
+TextIter 1
+0 
+GapTextIter 1
+116 
+FontManager 1
+80 
+Font 1
+80 
+FontFamily 1
+80 
+Filebuf 1
+96 
+Env 1
+80 
+EnvRec 1
+80 
+EnvParser 1
+0 
+WriteEnvParser 1
+124 
+ReadEnvParser 1
+124 
+Converter 1
+80 
+CodeAnalyzer 1
+0 
+PrettyPrinter 1
+128 
+ClipBoard 1
+80 
+ClassManager 1
+80 
+Class 1
+80 
+CheapTextIter 1
+116 
+ByteArray 1
+80 
+BitSet 1
+80 
+AccessObjPtrs 1
+108 
+IteratorBase 1
+0 
+Iterator 1
+137 
+SetIter 1
+138 
+HashTable 1
+80 
+RobustHashTable 1
+140 
+ObjArrayIter 1
+138 
+Iterator0 1
+138 
+DictionaryHashTable 1
+140 
+DictionaryIterator 1
+138 
+SysEvtHandler 1
+80 
+WindowSystem 1
+146 
+Command 1
+80 
+StretchWrapperStretcher 1
+148 
+TypeMatcher 1
+80 
+ExecMatcher 1
+150 
+DirectoryMatcher 1
+150 
+OFileTypeMatcher 1
+150 
+CFileTypeMatcher 1
+150 
+TreeNodeSelector 1
+148 
+TextPager 1
+80 
+LinePager 1
+156 
+TextFormatter 1
+80 
+FoldingFormatter 1
+158 
+SimpleFormatter 1
+158 
+Mark 1
+80 
+LineMark 1
+161 
+MoveTextCommand 1
+148 
+DragAndDropSelector 1
+148 
+PagerCommand 1
+148 
+ThumbMover 1
+148 
+ShellZombieHandler 1
+146 
+PttyInputHandler 1
+146 
+Progress 1
+80 
+ProgressImpl 1
+169 
+AlarmHandler 1
+146 
+ObjectTableIter 1
+138 
+MenuItemSelector 1
+148 
+MouseTracker 1
+148 
+ChangeMarkerCommand 1
+148 
+GridSelector 1
+148 
+GraphNodeMover 1
+148 
+RefCounted 1
+80 
+DevBitmap 1
+178 
+Iterator1 1
+138 
+PickerCommand 1
+148 
+MultiCellSelector 1
+148 
+CellSelector 1
+148 
+Text 1
+80 
+CheapText 1
+184 
+ButtonCommand 1
+148 
+SplitMover 1
+148 
+Ink 1
+80 
+Bitmap 1
+188 
+ApplIntHandler 1
+146 
+OrdCollectionIter 1
+138 
+RevOrdCollectionIter 1
+191 
+ObjListIter 1
+138 
+RevObjListIter 1
+193 
+Container 1
+80 
+Dictionary 1
+195 
+IdDictionary 1
+196 
+Port 1
+146 
+WindowPort 1
+198 
+WindowColorMap 1
+178 
+WindowIndexMapper 1
+200 
+TextCommand 1
+148 
+PasteVObjectCommand 1
+202 
+VObjectCommand 1
+148 
+VObjectStretcher 1
+204 
+VObjectMover 1
+204 
+VisualMark 1
+161 
+ReferenceMark 1
+207 
+VObjectMark 1
+207 
+EvtHandler 1
+80 
+VObject 1
+210 
+TextItem 1
+211 
+ParaStyleCommand 1
+202 
+CharStyleCommand 1
+202 
+TypingCommand 1
+202 
+PasteCommand 1
+202 
+CutCopyCommand 1
+202 
+RangeSelector 1
+148 
+QuickPasteSelector 1
+218 
+ExtendRangeSelector 1
+218 
+SplitBar 1
+211 
+Manager 1
+210 
+ShellTool 1
+222 
+Separator 1
+211 
+ProgressBar 1
+211 
+PictureItem 1
+211 
+Menu 1
+222 
+MarkerItem 1
+207 
+LineItem 1
+211 
+RGBColor 1
+188 
+RGBColorCell 1
+230 
+DashedRGBColor 1
+230 
+ImageItem 1
+211 
+GraphReference 1
+211 
+GraphPath 1
+211 
+Filler 1
+211 
+EditDialog 1
+222 
+Document 1
+222 
+Data 1
+178 
+ObjectData 1
+239 
+StreamBufData 1
+239 
+FileData 1
+239 
+CommandProcessor 1
+178 
+BoundedCommandProcessor 1
+243 
+UnboundedCommandProcessor 1
+243 
+SingleCommandProcessor 1
+243 
+ColorWheel 1
+211 
+ColorCell 1
+211 
+ColorMapper 1
+178 
+DirectMapper 1
+249 
+IndexMapper 1
+249 
+MonoMapper 1
+249 
+SplitHandle 1
+211 
+Application 1
+222 
+StreamConnection 1
+146 
+AppRpcConnection 1
+255 
+Collection 1
+195 
+Set 1
+257 
+IdSet 1
+258 
+SeqCollection 1
+257 
+ObjArray 1
+260 
+CompositeVObject 1
+211 
+MenuBorderItem 1
+262 
+Clipper 1
+211 
+Window 1
+264 
+StretchWrapper 1
+262 
+GapText 1
+184 
+StyledText 1
+267 
+VObjectText 1
+268 
+Dialog 1
+222 
+TextBox 1
+270 
+StringInputDiag 1
+270 
+Dispatchable 1
+146 
+Proxy 1
+273 
+ObjectSvc 1
+274 
+ObjectProxy 1
+274 
+ProxyReference 1
+274 
+Splitter 1
+262 
+Thumb 1
+211 
+ScrollBarThumb 1
+279 
+ProgressDialog 1
+270 
+PrintDialog 1
+270 
+PrintPort 1
+198 
+PictPort 1
+283 
+ListBox 1
+270 
+GotoDialog 1
+270 
+ConfigureDiag 1
+270 
+ConverterDialog 1
+270 
+ColorPicker 1
+270 
+BorderItem 1
+262 
+Matte 1
+262 
+BackgroundItem 1
+262 
+Alert 1
+270 
+Scroller 1
+262 
+Zoomer 1
+294 
+OrdCollection 1
+260 
+ParaStyleManager 1
+296 
+CharStyleManager 1
+296 
+View 1
+211 
+GridView 1
+299 
+StringGridView 1
+300 
+Field 1
+211 
+EditField 1
+302 
+CellEditField 1
+303 
+Service 1
+273 
+ServiceConnection 1
+305 
+ServiceConnectionProxy 1
+306 
+ServiceConnectionSvc 1
+306 
+SplitScroller 1
+294 
+Slider 1
+262 
+ScrollBarSlider 1
+310 
+Button 1
+262 
+ScrollBarButton 1
+312 
+Panner 1
+310 
+Box 1
+262 
+MenuBar 1
+315 
+TreeNode 1
+262 
+GraphNode 1
+317 
+Form 1
+315 
+FileDialog 1
+270 
+DirectoryDialog 1
+320 
+CollectionView 1
+299 
+MultiSelCollView 1
+322 
+FindDialog 1
+270 
+ChangeDialog 1
+324 
+ActionButton 1
+312 
+ObjList 1
+260 
+SortedObjList 1
+327 
+VisualMarkList 1
+328 
+HBox 1
+315 
+VObjectPair 1
+330 
+StaticTextView 1
+299 
+TextView 1
+332 
+ShellTextView 1
+333 
+Expander 1
+315 
+ScrollBar 1
+335 
+Cluster 1
+315 
+OneOfCluster 1
+337 
+StateButton 1
+312 
+MenuButtonItem 1
+339 
+ManyOfCluster 1
+337 
+DialogView 1
+299 
+TreeView 1
+342 
+GraphView 1
+343 
+FileItem 1
+330 
+TextField 1
+303 
+RegExpField 1
+346 
+FormatField 1
+303 
+FloatField 1
+348 
+IntField 1
+348 
+MultiLineField 1
+346 
+VExpander 1
+335 
+HExpander 1
+335 
+CPicker 1
+315 
+PalettePicker 1
+354 
+RGBPicker 1
+354 
+HSVPicker 1
+354 
+VBox 1
+315 
+ColorSlider 1
+358 
+CumSortedObjList 1
+328 
+MarkToggleButton 1
+339 
+ToggleButton 1
+339 
+RadioButton 1
+339 
+VObjectButton 1
+339 
+MenuButton 1
+339 
+MenuItem 1
+365 
+PullDownButton 1
+365 
+PopupButton 1
+365 
+VObjectTextView 1
+333 
+CodeTextView 1
+369 
+296
+Member 3
+108 136 109 
+DoMakeContent 21
+293 325 354 357 356 355 289 288 270 237 320 287 324 286 285 222 282 281 223 272 271 
+InspectorId 14
+293 134 264 148 123 120 222 80 95 332 184 299 195 81 
+Show 6
+293 189 132 222 104 281 
+Dispatch 7
+256 255 273 305 308 276 275 
+Error 3
+256 255 146 
+Received 3
+256 334 255 
+ServerQuit 2
+256 255 
+SetTimeout 2
+256 255 
+Notify 6
+190 171 168 167 255 146 
+Control 36
+254 326 361 325 264 359 357 356 355 289 288 270 321 237 210 303 320 287 324 285 222 341 227 338 314 368 282 281 336 294 223 309 278 88 369 266 
+DoMenuCommand 13
+254 370 238 210 303 320 113 222 334 333 343 299 295 
+DoSetupInterpreter 5
+254 238 210 222 333 
+DoSetupMenu 11
+254 238 210 303 320 222 223 334 333 299 295 
+ExtCommand 7
+254 238 210 222 223 305 306 
+GetInitialWindowPos 2
+254 222 
+MakeFileDialog 2
+254 238 
+RemoveManager 2
+254 222 
+Run 2
+254 222 
+DrawInner 13
+292 326 364 363 362 361 264 340 366 313 224 221 211 
+PrintOn 70
+292 189 135 291 315 339 134 185 132 264 322 249 251 262 239 242 240 210 302 346 351 348 350 349 347 236 119 267 233 188 230 231 229 161 112 228 227 80 106 104 226 365 102 95 294 334 278 332 90 273 306 274 277 268 184 212 209 208 85 84 343 211 269 266 257 195 196 140 261 81 
+ReadFrom 68
+292 189 135 291 315 339 134 185 264 322 249 251 262 239 242 240 210 302 346 351 348 350 349 347 236 267 233 188 230 231 229 161 112 228 227 80 106 104 226 365 102 95 294 334 278 332 90 273 306 274 277 268 184 212 209 208 333 343 211 269 369 266 257 195 196 140 261 81 
+SetExtent 23
+292 291 290 315 264 262 342 303 58 340 316 294 278 332 301 212 343 317 299 211 266 265 263 
+SetOrigin 28
+292 291 290 315 312 363 362 361 264 322 262 342 303 58 340 316 366 294 310 221 278 301 317 211 369 266 265 263 
+SetInk 5
+189 188 230 232 231 
+deepclone 6
+189 242 161 80 85 84 
+Hash 11
+135 134 132 119 80 106 91 274 184 195 261 
+IsEqual 17
+135 134 132 302 119 188 222 80 106 91 146 184 212 85 84 195 261 
+GetMinSize 40
+291 290 315 253 312 326 364 363 362 264 322 247 342 302 236 300 233 58 229 340 316 314 226 368 366 225 313 280 311 294 224 310 279 278 332 212 317 211 266 263 
+Draw 38
+290 253 322 247 342 302 303 236 318 344 235 234 300 233 229 228 316 226 368 225 280 311 336 294 334 310 279 332 207 212 209 208 87 333 317 211 266 263 
+TrackConstrain 5
+187 148 204 205 149 
+TrackFeedback 15
+187 186 183 181 148 177 176 174 173 166 165 164 155 204 149 
+TrackMouse 20
+187 186 183 182 181 148 177 176 174 173 166 165 218 219 164 155 204 206 205 149 
+DoLeftButtonDownCommand 15
+253 312 370 322 323 247 344 300 310 279 221 333 317 211 266 
+DoTrackMouse 6
+312 339 368 367 366 211 
+DrawHighlight 4
+312 57 367 211 
+Compare 12
+134 132 123 302 345 161 340 80 106 212 150 261 
+DoSetup 9
+325 289 288 270 321 320 287 324 282 
+CopyInStr 3
+185 267 184 
+GetLineAccess 3
+185 267 184 
+InitNew 17
+185 267 80 178 276 268 184 333 269 195 196 197 261 327 296 258 259 
+MakeIterator 11
+185 262 267 184 211 195 196 261 327 296 258 
+MakeScratchText 3
+185 267 184 
+PrintOnAsPureText 3
+185 267 184 
+ReadFromAsPureText 5
+185 267 268 184 269 
+ReplaceRange 5
+185 267 268 184 269 
+Search 3
+185 267 184 
+Size 5
+185 262 267 184 211 
+operatorleftsquarebracketrightsquarebracket 3
+185 267 184 
+Token 3
+133 117 116 
+operatorleftbracketrightbracket 15
+133 180 66 117 172 116 145 137 143 142 193 194 191 192 139 
+AsString 16
+132 357 356 355 346 350 349 345 119 340 80 106 332 184 271 212 
+ReadAndMap 9
+132 119 188 230 231 80 277 85 84 
+CompareObjects 3
+360 329 328 
+Add 9
+264 262 211 257 140 261 260 258 328 
+CollectParts 15
+264 322 342 238 120 118 222 80 104 365 332 209 208 211 269 
+ConstrainScroll 3
+264 322 299 
+ContainerPoint 2
+264 211 
+Detect 6
+264 322 342 317 211 257 
+DispatchEvents 10
+264 342 303 316 368 301 343 317 211 369 
+Enable 4
+264 224 333 211 
+ExtentChanged 5
+264 342 299 211 265 
+Focus 3
+264 211 265 
+GetViewedRect 3
+264 299 211 
+InvalidateViewRect 2
+264 211 
+Open 11
+264 322 342 303 222 294 278 317 299 211 265 
+ReadEvent 3
+264 211 265 
+Remove 8
+264 262 211 257 140 261 260 258 
+RevealAlign 3
+264 299 211 
+RevealRect 3
+264 299 211 
+Scroll 3
+264 299 211 
+SendDown 10
+264 210 324 222 278 207 209 208 211 266 
+SetContainer 10
+264 354 368 336 310 207 209 208 299 211 
+TrackInContent 2
+264 211 
+CursorPos 2
+370 333 
+DoCursorKeyCommand 4
+370 333 299 211 
+DoKeyCommand 6
+370 322 334 333 211 266 
+DoObserve 10
+370 322 262 233 80 314 226 275 333 299 
+DoOtherEventCommand 2
+370 211 
+SetFont 2
+370 332 
+ClassDecl 2
+128 129 
+Comment 2
+128 129 
+End 2
+128 129 
+Function 2
+128 129 
+Start 5
+128 129 103 100 334 
+ClearSelection 5
+322 323 300 333 299 
+PrintOnWhenObserving 3
+322 80 333 
+Update 2
+322 299 
+ChangeRGB 2
+249 251 
+HasMask 2
+249 251 
+IsGrey 4
+249 252 251 250 
+MapColors 3
+249 251 250 
+MaxPixel 4
+249 252 251 250 
+Pixel2RGB 4
+249 252 251 250 
+RGB2Pixel 4
+249 252 251 250 
+DrawAll 3
+248 299 211 
+GetColor 4
+354 357 356 355 
+SetColor 4
+354 357 356 355 
+DoSetDefaults 7
+289 270 320 287 324 286 282 
+DoIt 11
+148 177 175 217 216 163 214 213 204 149 203 
+Done 2
+148 334 
+RedoIt 6
+148 202 215 214 213 203 
+UndoIt 12
+148 177 175 217 216 163 215 214 213 204 149 203 
+FinishFrom 4
+243 246 245 244 
+GetAt 4
+243 246 245 244 
+PerformNormalCommand 4
+243 246 245 244 
+Reset 10
+180 117 116 145 137 138 143 142 193 139 
+At 4
+262 211 261 260 
+SetAt 2
+262 211 
+CanConvert 3
+127 239 240 
+GetBitmap 6
+239 154 153 152 151 150 
+GetContents 2
+239 242 
+GetParent 2
+239 242 
+GetStreamBuf 3
+239 242 241 
+MakeObject 3
+239 242 240 
+SaveObject 2
+239 242 
+ShortName 2
+239 242 
+UpdateFields 2
+239 242 
+CharAsBitmap 2
+67 119 
+AboutToDismiss 2
+270 222 
+DoCreateDialog 4
+270 342 344 343 
+DoMakeMenuBar 7
+270 321 238 237 320 222 223 
+DoRestore 2
+270 320 
+DoStore 2
+270 287 
+EnableItem 2
+270 342 
+GetInitialPos 3
+270 222 227 
+GetInitialWindowSize 4
+270 237 222 223 
+MakeButtons 2
+321 320 
+MakeFileItem 2
+321 320 
+WrongType 2
+321 320 
+Close 3
+238 222 96 
+MakeCmdProcessor 3
+238 237 222 
+MakeMenu 2
+238 222 
+UniqueId 2
+238 222 
+Char 2
+124 125 
+KeyValue 3
+124 126 125 
+GetInterpreter 2
+210 333 
+GetMenu 2
+210 222 
+GetNextHandler 6
+210 222 227 299 211 265 
+Input 9
+210 303 294 304 207 209 208 299 211 
+InputKbd 4
+210 320 222 340 
+KbdFocus 4
+210 303 333 266 
+PerformCommand 2
+210 222 
+Send 2
+210 80 
+SetFirstHandler 2
+210 222 
+GetLines 2
+302 351 
+GetStringForDrawing 3
+302 350 349 
+GetStringForEditing 2
+303 304 
+ValidateString 6
+303 346 350 349 347 304 
+Overflow 3
+121 97 96 
+Seek 2
+121 96 
+Underflow 3
+121 97 96 
+ChangeDirectory 2
+320 88 
+DoMiddleButtonDownCommand 3
+344 317 211 
+MakeChildrenIter 2
+344 343 
+CellSize 2
+300 301 
+DrawCell 2
+300 301 
+SetSelection 2
+300 343 
+DoMakeWindows 2
+222 227 
+FreeAll 13
+112 80 209 208 211 257 196 261 82 327 296 81 258 
+overflow 2
+111 96 
+Clone 3
+80 257 196 
+DestroyObserverColl 2
+80 184 
+GetObservers 2
+80 184 
+MakeObserverColl 2
+80 184 
+SetObserverColl 2
+80 184 
+Scan 2
+105 93 
+DevClip 2
+284 198 
+DevClosePage 2
+284 283 
+DevFillOval 2
+284 198 
+DevFillPolygon 2
+284 198 
+DevFillRRect 2
+284 198 
+DevFillRect 2
+284 198 
+DevFillWedge 2
+284 198 
+DevGiveHint 2
+284 198 
+DevOpenPage 2
+284 283 
+DevShowBitmap 2
+284 198 
+DevShowChar 2
+284 198 
+DevShowPicture 2
+284 198 
+DevStrokeLine 2
+284 198 
+DevStrokeOval 2
+284 198 
+DevStrokePolygon 2
+284 198 
+DevStrokeRRect 2
+284 198 
+DevStrokeRect 2
+284 198 
+DevStrokeWedge 2
+284 198 
+DevImageCacheBegin 2
+198 199 
+DevImageCacheEnd 2
+198 199 
+DevSetColor 2
+198 199 
+GetCursor 10
+198 310 279 333 317 211 369 266 265 199 
+SetCursor 2
+198 199 
+SetWaitCursor 2
+198 199 
+GetName 5
+103 273 305 306 274 
+Abort 3
+169 170 88 
+SetMessage 2
+169 170 
+SetStop 2
+169 170 
+SetUp 2
+169 170 
+SetVal 2
+169 170 
+BecomeConsole 2
+43 334 
+GetPid 2
+43 88 
+MakeThumb 2
+311 310 
+MakeClipper 2
+294 295 
+DeleteRequest 2
+334 333 
+Paste 3
+334 184 333 
+SelectAll 2
+334 333 
+SetText 4
+334 332 333 369 
+ContentRectForPrinting 2
+332 299 
+IsReadOnly 3
+332 333 299 
+NextPageBreak 4
+332 156 157 299 
+PrintAdorn 2
+332 299 
+RepairAll 2
+332 333 
+SetString 3
+332 301 333 
+HasInterest 2
+255 146 
+Cut 3
+268 184 333 
+GetCharStyle 2
+268 184 
+GetCurrentCharStyle 2
+268 184 
+GetNextFontChange 2
+268 184 
+GetParaStyle 2
+268 184 
+ReplaceCharStyles 2
+268 269 
+ResetCurrentCharStyle 2
+268 184 
+SetCharStyle 3
+268 184 269 
+SetFStringVL 2
+268 184 
+SetParaStyle 2
+268 184 
+Init 2
+88 147 
+Base 3
+207 209 208 
+CalcExtent 2
+207 209 
+GetExtent 3
+207 209 208 
+GetVObject 3
+207 209 208 
+WantsInput 3
+207 209 208 
+Copy 2
+184 333 
+GetMarkChar 2
+184 269 
+GetVisualMarkAt 2
+184 269 
+IsVisualMark 2
+184 269 
+DoMove 2
+218 220 
+DoPress 2
+218 220 
+DoFormat 3
+158 160 159 
+HasSelection 3
+333 343 299 
+PasteData 3
+333 299 369 
+ShowSelection 2
+333 299 
+Highlight 2
+317 211 
+Outline2 2
+317 211 
+MatchExtension 3
+154 153 150 
+MatchNameAndContents 4
+154 153 151 150 
+MatchPathName 2
+152 150 
+ClearContainer 2
+299 211 
+DoFunctionKeyCommand 2
+299 211 
+DoOtherFunctionKeyCommand 2
+299 211 
+InvalidateRect 3
+299 211 265 
+DevIndex2RGB 2
+200 201 
+DevRGB2Index 2
+200 201 
+DevBell 2
+199 147 
+Empty 8
+257 196 144 140 327 296 141 258 
+RemovePtr 4
+257 261 260 258 
+AnyElement 2
+195 260 
+Capacity 3
+195 196 258 
+Find 4
+195 140 260 258 
+FindPtr 3
+195 260 258 
+OccurrencesOf 2
+195 258 
+OccurrencesOfPtr 2
+195 258 
+RemoveDeleted 2
+195 260 
+RemoveKey 2
+196 144 
+GetContainer 5
+145 138 193 191 139 
+AddAt 2
+144 260 
+Assign 3
+144 140 141 
+DoRehash 2
+144 140 
+KeyAt 3
+144 140 141 
+MakeNew 3
+144 140 141 
+NullAt 3
+144 140 141 
+SetKeyAt 3
+144 140 141 
+Swap 3
+144 140 141 
+AtNextIndex 2
+140 141 
+AtPrevIndex 2
+140 141 
+GetInitialIndex 2
+140 141 
+IndexOf 3
+140 261 260 
+Rehash 2
+140 141 
+RemoveSlot 2
+140 141 
+Detach 3
+138 193 191 
+IndexOfPtr 2
+261 260 
+RemoveAt 2
+261 260 
+AddRelative 2
+327 260 
+RemoveRelative 2
+327 260 
+primAddAt 3
+327 296 260 
+primAt 3
+327 296 260 
+primIndexOf 3
+327 296 260 
+primIndexOfPtr 3
+327 296 260 
+primPutAt 3
+327 296 260 
+primRemoveAt 3
+327 296 260 
+OnAddAt 2
+191 192 
+OnEmpty 2
+191 192 
+OnRemoveAt 2
+191 192 
+AddAfter 2
+260 328 
+AddAfterPtr 2
+260 328 
+AddBefore 2
+260 328 
+AddBeforePtr 2
+260 328 
+AddFirst 2
+260 328 
+AddLast 2
+260 328 
+PutAt 2
+260 328 
