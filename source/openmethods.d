@@ -714,7 +714,7 @@ struct Runtime
       string hashMetrics;
 
       if (hashSearchAttempts) {
-        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.nsecs / 1000.);
+        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %.3f msecs", hashTableSize, hashSearchAttempts, hashSearchTime.usecs / 1000.);
       }
 
       return format("method table size: %s, dispatchTableSize: %s%s",
@@ -1539,6 +1539,10 @@ mixin template _registerSpecs(alias MODULE)
 
   shared static this()
   {
+    debug(explain) {
+      import std.stdio;
+      writefln("Registering specs from %s", MODULE.stringof);
+    }
     foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {

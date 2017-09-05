@@ -9,6 +9,30 @@ import compactparser;
 
 //enum sample = import("digitalk2.compact");
 
+enum header = `
+/+
+/+
+ dub.sdl:
+ name "digitalk2"
+ dependency "openmethods" path="../../"
+ dflags "-Jbenchmarks/runtimemetrics"
+ debugVersions "explain"
+ +/
+
+import std.stdio;
+import openmethods;
+ +/
+`;
+
+enum footer = `
+void main()
+{
+  Runtime rt;
+  rt.update;
+  writeln(rt.metrics);
+}
+`;
+
 void main(string[] args)
 {
   auto sample =
@@ -45,7 +69,7 @@ void main(string[] args)
       if (matchFirst(id, r"\W"))
         continue;
 
-      if (matchFirst(id, r"auto|for|do|debug|return|version|new|with"))
+      if (matchFirst(id, r"auto|for|do|debug|return|version|new|with|method"))
         continue;
 
       auto nargs = parts.length - 1;

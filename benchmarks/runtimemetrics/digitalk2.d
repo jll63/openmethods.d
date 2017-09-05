@@ -534,6 +534,7 @@ class METACLASS_ComboBox : METACLASS_DropDownList {}
 class METACLASS_CheckBox : METACLASS_Toggle {}
 class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ style(virtual!Object_, Object_);
+@mptr("hash") Object_ style(virtual!Object_);
 @method Object_ _style(WinLogBrush, Object_) { return new Object_(); }
 @method Object_ _style(WinWindowClass, Object_) { return new Object_(); }
 @method Object_ _style(Window, Object_) { return new Object_(); }
@@ -547,7 +548,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ color(virtual!ExternalBuffer);
 @method Object_ _color(WinLogBrush) { return new Object_(); }
 @method Object_ _color(WinLogPen) { return new Object_(); }
-@mptr("hash") Object_ style(virtual!Object_);
 @method Object_ _style(WinLogBrush) { return new Object_(); }
 @method Object_ _style(WinLogicalPen) { return new Object_(); }
 @method Object_ _style(Window) { return new Object_(); }
@@ -1114,11 +1114,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _inspectSelection(SelfDefinedStructureInspector) { return new Object_(); }
 @method Object_ _inspectSelection(Inspector) { return new Object_(); }
 @method Object_ _inspectSelection(OrderedCollectionInspector) { return new Object_(); }
-@mptr("hash") Object_ method(virtual!Object_, Object_);
-@method Object_ _method(Debugger, Object_) { return new Object_(); }
-@method Object_ _method(MethodBrowser, Object_) { return new Object_(); }
-@method Object_ _method(HomeContext, Object_) { return new Object_(); }
-@method Object_ _method(MethodExecutor, Object_) { return new Object_(); }
 @mptr("hash") Object_ compilerClass(virtual!Object_);
 @method Object_ _compilerClass(Debugger) { return new Object_(); }
 @method Object_ _compilerClass(ClassInstaller) { return new Object_(); }
@@ -2122,9 +2117,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _asActionSequence(Message) { return new Object_(); }
 @method Object_ _asActionSequence(EvaluableAction) { return new Object_(); }
 @method Object_ _asActionSequence(Context) { return new Object_(); }
-@mptr("hash") Object_ method(virtual!Object_);
-@method Object_ _method(HomeContext) { return new Object_(); }
-@method Object_ _method(CompilationResult) { return new Object_(); }
 @mptr("hash") Object_ centered(virtual!Object_);
 @method Object_ _centered(StaticText) { return new Object_(); }
 @method Object_ _centered(TextEdit) { return new Object_(); }
@@ -3430,9 +3422,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ toByDo(virtual!Magnitude, Object_, Object_, Object_);
 @method Object_ _toByDo(Character, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _toByDo(Number, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ methods(virtual!Object_);
-@method Object_ _methods(Behavior) { return new Object_(); }
-@method Object_ _methods(ObjectLibraryBind) { return new Object_(); }
 @mptr("hash") Object_ implementorsOf(virtual!Object_, Object_);
 @method Object_ _implementorsOf(Behavior, Object_) { return new Object_(); }
 @method Object_ _implementorsOf(SystemDictionary, Object_) { return new Object_(); }
@@ -3547,9 +3536,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ isMethodDictionary(virtual!Object_);
 @method Object_ _isMethodDictionary(Object_) { return new Object_(); }
 @method Object_ _isMethodDictionary(MethodDictionary) { return new Object_(); }
-@mptr("hash") Object_ methodDictionaryArray(virtual!Object_, Object_);
-@method Object_ _methodDictionaryArray(Object_, Object_) { return new Object_(); }
-@method Object_ _methodDictionaryArray(METACLASS_ObjectLibraryExternal, Object_) { return new Object_(); }
 @mptr("hash") Object_ basicAtPut(virtual!Object_, Object_, Object_);
 @method Object_ _basicAtPut(Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _basicAtPut(String, Object_, Object_) { return new Object_(); }
