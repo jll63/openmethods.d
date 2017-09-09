@@ -10,15 +10,14 @@ import std.string;
 enum header = `
 /+
  dub.sdl:
- name "digitalk2"
+ name "%s"
  dependency "openmethods" path="../../"
- dflags "-Jbenchmarks/runtimemetrics"
- debugVersions "explain"
  +/
 
 import std.stdio;
 import openmethods;
- +/
+mixin(registerMethods);
+
 `;
 
 enum footer = `
@@ -32,12 +31,15 @@ void main()
 
 void main(string[] args)
 {
-  auto sample =
-    File("benchmarks/runtimemetrics/sample-hierarchies/digitalk2.compact", "r");
-  Content content;
-  parse(sample, content);
+  auto sample = args[1];
 
-  stderr.writefln("%d classes and %d methods", content.classes.length, content.methods.length);
+  Content content;
+  parse(File("samples/%s.compact".format(sample), "r"), content);
+
+  auto generated = File("%s.d".format(sample), "w");
+  generated.writef(header, sample);
+
+  stdout.writefln("%d classes and %d methods", content.classes.length, content.methods.length);
 
   foreach (ref c; content.classes) {
     if (c.name == "Object" || c.name == "Exception" || c.name == "Error") {
@@ -48,9 +50,9 @@ void main(string[] args)
   with (content) {
     foreach (c; classes) {
       if (c.bases.length) {
-        writefln("class %s : %s {}", c.name, c.bases[0].name);
+        generated.writefln("class %s : %s {}", c.name, c.bases[0].name);
       } else {
-        writefln("class %s {}", c.name);
+        generated.writefln("class %s {}", c.name);
       }
     }
 
@@ -66,23 +68,26 @@ void main(string[] args)
       if (matchFirst(id, r"\W"))
         continue;
 
-      if (matchFirst(id, r"auto|for|do|debug|return|version|new|with|method"))
+      if (matchFirst(id, r"auto|for|do|debug|return|version|new|delete|with"
+                     ~ "|template|default|object|method"))
         continue;
 
       auto nargs = parts.length - 1;
-      writefln(`@mptr("hash") Object_ %s(%s);`, id,
+      generated.writefln(`@mptr("hash") Object_ %s(%s);`, id,
                chain([ "virtual!" ~ ancestor.name ],
               "Object_".repeat.take(nargs))
                .join(", "));
 
       foreach (c; m.classes) {
-      writefln(`@method Object_ _%s(%s) { return new Object_(); }`, id,
+      generated.writefln(`@method Object_ _%s(%s) { return new Object_(); }`, id,
                chain([ c.name ],
               "Object_".repeat.take(nargs))
                .join(", "));
       }
     }
   }
+
+  generated.write(footer);
 }
 
 struct Content
