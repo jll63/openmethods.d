@@ -41,13 +41,15 @@ void main(string[] args)
 
   stdout.writefln("%d classes and %d methods", content.classes.length, content.methods.length);
 
-  foreach (ref c; content.classes) {
-    if (c.name == "Object" || c.name == "Exception" || c.name == "Error") {
-      c.name ~= '_';
-    }
-  }
-
   with (content) {
+    foreach (ref c; classes) {
+      c.name ~= "_gen_";
+    }
+
+    foreach (ref m; methods) {
+      m.name ~= "_gen_";
+    }
+
     foreach (c; classes) {
       if (c.bases.length) {
         generated.writefln("class %s : %s {}", c.name, c.bases[0].name);
@@ -68,21 +70,18 @@ void main(string[] args)
       if (matchFirst(id, r"\W"))
         continue;
 
-      if (matchFirst(id, r"auto|for|do|debug|return|version|new|delete|with"
-                     ~ "|template|default|object|method"))
-        continue;
-
       auto nargs = parts.length - 1;
-      generated.writefln(`@mptr("hash") Object_ %s(%s);`, id,
-               chain([ "virtual!" ~ ancestor.name ],
-              "Object_".repeat.take(nargs))
-               .join(", "));
+      generated.writefln(`@mptr("hash") Object_gen_ %s(%s);`, id,
+                         chain([ "virtual!" ~ ancestor.name ],
+                               "Object_gen_".repeat.take(nargs))
+                         .join(", "));
 
       foreach (c; m.classes) {
-      generated.writefln(`@method Object_ _%s(%s) { return new Object_(); }`, id,
-               chain([ c.name ],
-              "Object_".repeat.take(nargs))
-               .join(", "));
+        generated.writefln(`@method Object_gen_ _%s(%s) { return new Object_gen_(); }`,
+                           id,
+                           chain([ c.name ],
+                                 "Object_gen_".repeat.take(nargs))
+                           .join(", "));
       }
     }
   }
@@ -142,7 +141,6 @@ Class* findCommonAncestor(Class*[] classes...)
     Class*[] lineage;
     Class* p = c;
     while (true) {
-      version (none) write(c.name, " ");
       enforce(c.bases.length <= 1);
       lineage ~= c;
       if (c.bases.empty) {
@@ -152,14 +150,6 @@ Class* findCommonAncestor(Class*[] classes...)
     }
     reverse(lineage);
     lineages[i] = lineage;
-    version (none) writeln;
-  }
-
-  version (none) {
-    writeln("lineages:");
-    foreach (lineage; lineages) {
-      writeln(lineage.map!(c => c.name).join(" "));
-    }
   }
 
   Class* ancestor;
@@ -219,10 +209,6 @@ void parse(File sample, ref Content content)
       int[] baseIndex = toIntArray(sample.readln, baseCount);
       classes[classIndex] = Class(name, baseIndex.map!(i => &classes[i]).array);
     }
-
-    // foreach (c; classes) {
-    //   writeln(c.name, ": ", c.bases.map!(b => b.name).join(" "));
-    // }
 
     int methodCount;
     sample.readf!"%d"(methodCount);

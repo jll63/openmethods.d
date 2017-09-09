@@ -11,184 +11,184 @@ mixin(registerMethods);
 
 class Artificial_Root {}
 class SelfInitializingObject : Artificial_Root {}
-class Object_ : Artificial_Root {}
-class UndefinedObject : Object_ {}
-class EmptySlot : Object_ {}
-class ProcessScheduler : Object_ {}
-class ProtectedFrameMarker : Object_ {}
-class PARTSPropertyStructure : Object_ {}
-class PARTSLinkEditState : Object_ {}
-class Point : Object_ {}
-class NationalLanguageSupport : Object_ {}
-class PARTSDragResult : Object_ {}
-class InputEvent : Object_ {}
-class UpgraderForFile : Object_ {}
-class PARTSApplication : Object_ {}
-class PARTSFile : Object_ {}
-class ClipboardManager : Object_ {}
-class MenuItem : Object_ {}
-class PARTSCatalog : Object_ {}
-class Font : Object_ {}
-class CallBack : Object_ {}
-class ClassReader : Object_ {}
-class Enumerator : Object_ {}
-class ObjectChangeMap : Object_ {}
-class P1106 : Object_ {}
-class P1112 : Object_ {}
-class P1120 : Object_ {}
-class SourceManager : Object_ {}
-class ExceptionHandler : Object_ {}
-class ObjectStoreSpaceExternals : Object_ {}
-class ExceptionFilter : Object_ {}
-class StatusBox : Object_ {}
-class PARTSIniFile : Object_ {}
-class PARTSWrapper : Object_ {}
-class FileVolume : Object_ {}
-class PARTSFormGeneratorItem : Object_ {}
-class PARTSScriptContext : Object_ {}
-class PARTSFramer : Object_ {}
-class PARTSLinkSettings : Object_ {}
-class NotificationManager : Object_ {}
-class PARTSSettings : Object_ {}
-class OperatingSystemInformation : Object_ {}
-class ObjectReference : Object_ {}
-class ServiceRegistry : Object_ {}
-class StringModel : Object_ {}
-class ObjectStoreSpace : Object_ {}
-class PARTSFileType : Object_ {}
-class MethodExecutor : Object_ {}
-class ExceptionSet : Object_ {}
-class UpgraderForDirectory : Object_ {}
-class CompilationResult : Object_ {}
-class DefinitionInstaller : Object_ {}
-class PARTSScriptSource : Object_ {}
-class PARTSEditorState : Object_ {}
-class DeletedClass : Object_ {}
-class PARTSHostInterface : Object_ {}
-class PARTSEditor : Object_ {}
-class P1000 : Object_ {}
-class ObjectStoreObject : Object_ {}
-class DIB : Object_ {}
-class TextSelection : Object_ {}
-class PARTSException : Object_ {}
-class PARTSInterfaceList : Object_ {}
-class ClassInstaller : Object_ {}
-class StringDictionaryReader : Object_ {}
-class P1153 : Object_ {}
-class ObjectFiler : Object_ {}
-class Rectangle : Object_ {}
-class PARTSFileVersion : Object_ {}
-class P1111 : Object_ {}
-class P1109 : Object_ {}
-class P1107 : Object_ {}
-class PARTSStringTemplate : Object_ {}
-class FileSearchResults : Object_ {}
-class Border : Object_ {}
-class PARTSFormGenerator : Object_ {}
-class PARTSDial : Object_ {}
-class PARTSApplicationProperty : Object_ {}
-class KeyboardInputEvent : Object_ {}
-class SmalltalkToolInterface : Object_ {}
-class ResidueObject : Object_ {}
-class PARTSTextIcon : Object_ {}
-class CompilationError : Object_ {}
-class ObjectStoreRoot : Object_ {}
-class Semaphore : Object_ {}
-class ObjectMutator : Object_ {}
-class LayoutUnit : Object_ {}
+class Object : Artificial_Root {}
+class UndefinedObject : Object {}
+class EmptySlot : Object {}
+class ProcessScheduler : Object {}
+class ProtectedFrameMarker : Object {}
+class PARTSPropertyStructure : Object {}
+class PARTSLinkEditState : Object {}
+class Point : Object {}
+class NationalLanguageSupport : Object {}
+class PARTSDragResult : Object {}
+class InputEvent : Object {}
+class UpgraderForFile : Object {}
+class PARTSApplication : Object {}
+class PARTSFile : Object {}
+class ClipboardManager : Object {}
+class MenuItem : Object {}
+class PARTSCatalog : Object {}
+class Font : Object {}
+class CallBack : Object {}
+class ClassReader : Object {}
+class Enumerator : Object {}
+class ObjectChangeMap : Object {}
+class P1106 : Object {}
+class P1112 : Object {}
+class P1120 : Object {}
+class SourceManager : Object {}
+class ExceptionHandler : Object {}
+class ObjectStoreSpaceExternals : Object {}
+class ExceptionFilter : Object {}
+class StatusBox : Object {}
+class PARTSIniFile : Object {}
+class PARTSWrapper : Object {}
+class FileVolume : Object {}
+class PARTSFormGeneratorItem : Object {}
+class PARTSScriptContext : Object {}
+class PARTSFramer : Object {}
+class PARTSLinkSettings : Object {}
+class NotificationManager : Object {}
+class PARTSSettings : Object {}
+class OperatingSystemInformation : Object {}
+class ObjectReference : Object {}
+class ServiceRegistry : Object {}
+class StringModel : Object {}
+class ObjectStoreSpace : Object {}
+class PARTSFileType : Object {}
+class MethodExecutor : Object {}
+class ExceptionSet : Object {}
+class UpgraderForDirectory : Object {}
+class CompilationResult : Object {}
+class DefinitionInstaller : Object {}
+class PARTSScriptSource : Object {}
+class PARTSEditorState : Object {}
+class DeletedClass : Object {}
+class PARTSHostInterface : Object {}
+class PARTSEditor : Object {}
+class P1000 : Object {}
+class ObjectStoreObject : Object {}
+class DIB : Object {}
+class TextSelection : Object {}
+class PARTSException : Object {}
+class PARTSInterfaceList : Object {}
+class ClassInstaller : Object {}
+class StringDictionaryReader : Object {}
+class P1153 : Object {}
+class ObjectFiler : Object {}
+class Rectangle : Object {}
+class PARTSFileVersion : Object {}
+class P1111 : Object {}
+class P1109 : Object {}
+class P1107 : Object {}
+class PARTSStringTemplate : Object {}
+class FileSearchResults : Object {}
+class Border : Object {}
+class PARTSFormGenerator : Object {}
+class PARTSDial : Object {}
+class PARTSApplicationProperty : Object {}
+class KeyboardInputEvent : Object {}
+class SmalltalkToolInterface : Object {}
+class ResidueObject : Object {}
+class PARTSTextIcon : Object {}
+class CompilationError : Object {}
+class ObjectStoreRoot : Object {}
+class Semaphore : Object {}
+class ObjectMutator : Object {}
+class LayoutUnit : Object {}
 class ComputedLayout : LayoutUnit {}
-class ExternalBuffer : Object_ {}
+class ExternalBuffer : Object {}
 class Win32FindData : ExternalBuffer {}
-class PARTSNonvisualPart : Object_ {}
+class PARTSNonvisualPart : Object {}
 class PARTSFileAccessorPart : PARTSNonvisualPart {}
 class PARTSDiskAccessorPart : PARTSNonvisualPart {}
 class PARTSPartAccessorPart : PARTSNonvisualPart {}
-class EventManager : Object_ {}
+class EventManager : Object {}
 class Timer : EventManager {}
-class GraphicsMedium : Object_ {}
+class GraphicsMedium : Object {}
 class Bitmap : GraphicsMedium {}
 class WinPoint : ExternalBuffer {}
-class WinLogicalObject : Object_ {}
+class WinLogicalObject : Object {}
 class WinLogicalPen : WinLogicalObject {}
-class PARTSPropertyUnit : Object_ {}
+class PARTSPropertyUnit : Object {}
 class PARTSPropertyGraphic : PARTSPropertyUnit {}
-class Magnitude : Object_ {}
+class Magnitude : Object {}
 class Association : Magnitude {}
-class CompilerInterface : Object_ {}
+class CompilerInterface : Object {}
 class PARTSScriptCompilerInterface : CompilerInterface {}
-class ExpressionEvaluator : Object_ {}
+class ExpressionEvaluator : Object {}
 class WorkspaceExpressionEvaluator : ExpressionEvaluator {}
-class PARTSFileOperationContext : Object_ {}
+class PARTSFileOperationContext : Object {}
 class PARTSLoadContext : PARTSFileOperationContext {}
-class Coff : Object_ {}
+class Coff : Object {}
 class PeFixup : Coff {}
 class PARTSStringTemplatePart : PARTSNonvisualPart {}
-class Context : Object_ {}
+class Context : Object {}
 class OneArgumentBlock : Context {}
-class ObjectStoreFile : Object_ {}
+class ObjectStoreFile : Object {}
 class ObjectStoreFileWithVersion : ObjectStoreFile {}
-class StreamReference : Object_ {}
+class StreamReference : Object {}
 class SystemStreamReference : StreamReference {}
-class CompilerNameScope : Object_ {}
+class CompilerNameScope : Object {}
 class MultiplePoolScope : CompilerNameScope {}
 class WinMetaheader : ExternalBuffer {}
 class PARTSClipboardAccessorPart : PARTSNonvisualPart {}
 class PeFixupBlock : Coff {}
-class PARTSFileDescriptor : Object_ {}
+class PARTSFileDescriptor : Object {}
 class PARTSDosFileDescriptor : PARTSFileDescriptor {}
 class WinMeasureItemStruct : ExternalBuffer {}
-class ObjectStoreObjects : Object_ {}
+class ObjectStoreObjects : Object {}
 class ObjectStoreFileObjects : ObjectStoreObjects {}
-class PARTSNotebookPage : Object_ {}
+class PARTSNotebookPage : Object {}
 class PARTSNotebookPageAttributes : PARTSNotebookPage {}
-class PARTSLink : Object_ {}
+class PARTSLink : Object {}
 class P1122 : PARTSLink {}
-class Color : Object_ {}
+class Color : Object {}
 class RGBColor : Color {}
 class PARTSSpeakerPart : PARTSNonvisualPart {}
-class ObjectStoreReader : Object_ {}
+class ObjectStoreReader : Object {}
 class SmalltalkLibraryBinder : ObjectStoreReader {}
-class P1117 : Object_ {}
+class P1117 : Object {}
 class P1118 : P1117 {}
 class P1110 : PARTSNotebookPage {}
 class TwoArgumentBlock : Context {}
 class WinBitmapFileHeader : ExternalBuffer {}
-class Tool : Object_ {}
+class Tool : Object {}
 class P1108 : Tool {}
-class ViewManager : Object_ {}
+class ViewManager : Object {}
 class P1100 : ViewManager {}
-class PARTSFileProcessor : Object_ {}
+class PARTSFileProcessor : Object {}
 class PARTSExeFileProcessor : PARTSFileProcessor {}
 class WinMetafileheader : ExternalBuffer {}
 class CoffDataTableEntry : Coff {}
 class WinRectangle : ExternalBuffer {}
-class Collection : Object_ {}
+class Collection : Object {}
 class Bag : Collection {}
 class IndexedColor : Color {}
 class PARTSLaunchPadPart : PARTSNonvisualPart {}
 class ZeroArgumentBlock : Context {}
 class WinSystemTime : ExternalBuffer {}
-class PARTSCodeGeneratorInterface : Object_ {}
+class PARTSCodeGeneratorInterface : Object {}
 class PARTSCodeGeneratorWriterInterface : PARTSCodeGeneratorInterface {}
 class PARTSCodeGeneratorReaderInterface : PARTSCodeGeneratorInterface {}
 class Printer : GraphicsMedium {}
 class WinLogicalPalette : WinLogicalObject {}
 class PARTSPrinterPart : PARTSNonvisualPart {}
 class WinPaintStructure : ExternalBuffer {}
-class StringReference : Object_ {}
+class StringReference : Object {}
 class SourceChunkReference : StringReference {}
 class WinPaletteEntry : ExternalBuffer {}
-class ObjectStore : Object_ {}
+class ObjectStore : Object {}
 class ObjectStoreWithClient : ObjectStore {}
 class SessionModel : EventManager {}
-class PARTSSessionManager : Object_ {}
+class PARTSSessionManager : Object {}
 class PARTSWorkbenchSessionManager : PARTSSessionManager {}
-class Behavior : Object_ {}
+class Behavior : Object {}
 class MetaClass : Behavior {}
 class ObjectLoader : ObjectStoreReader {}
-class ObjectStoreWriter : Object_ {}
+class ObjectStoreWriter : Object {}
 class ObjectDumper : ObjectStoreWriter {}
-class WindowPolicy : Object_ {}
+class WindowPolicy : Object {}
 class NoMenusWindowPolicy : WindowPolicy {}
 class CompositeLayout : LayoutUnit {}
 class HomeContext : Context {}
@@ -197,34 +197,34 @@ class Character : Magnitude {}
 class PARTSPropertyFixedList : PARTSPropertyUnit {}
 class WinFileTime : ExternalBuffer {}
 class WinDialogInfo : ExternalBuffer {}
-class CompilerErrorHandler : Object_ {}
+class CompilerErrorHandler : Object {}
 class NonInteractiveErrorHandler : CompilerErrorHandler {}
 class Screen : GraphicsMedium {}
 class PARTSPropertyStaticText : PARTSPropertyUnit {}
 class PARTSPropertyDateFormat : PARTSPropertyUnit {}
 class PARTSSourceFileProcessor : PARTSFileProcessor {}
 class WinMetafilepict : ExternalBuffer {}
-class ObjectStoreExternal : Object_ {}
+class ObjectStoreExternal : Object {}
 class ObjectStoreFileExternal : ObjectStoreExternal {}
 class PARTSConversionPart : PARTSNonvisualPart {}
 class PARTSComparisonPart : PARTSNonvisualPart {}
-class Boolean : Object_ {}
+class Boolean : Object {}
 class False : Boolean {}
 class PARTSPropertyColorAndFont : PARTSPropertyUnit {}
 class PARTSStoreContext : PARTSFileOperationContext {}
 class PARTSPropertyList : PARTSPropertyUnit {}
-class ExternalHandle : Object_ {}
+class ExternalHandle : Object {}
 class FileHandle : ExternalHandle {}
 class Time : Magnitude {}
 class WinLogBrush : ExternalBuffer {}
-class CompiledMethodDefinition : Object_ {}
+class CompiledMethodDefinition : Object {}
 class PARTSScriptDefinition : CompiledMethodDefinition {}
 class WinLogicalBrush : WinLogicalObject {}
 class PARTSPropertyIcon : PARTSPropertyUnit {}
 class PARTSPropertyMenuAccelerator : PARTSPropertyUnit {}
 class PARTSPropertyLineOfButtons : PARTSPropertyUnit {}
 class WinWindowPlacement : ExternalBuffer {}
-class HelpManager : Object_ {}
+class HelpManager : Object {}
 class PARTSHelpManager : HelpManager {}
 class PARTSComputationPart : PARTSNonvisualPart {}
 class WinTextMetrics : ExternalBuffer {}
@@ -244,18 +244,18 @@ class WinLogFont : ExternalBuffer {}
 class Atom : ExternalHandle {}
 class StoredPicture : GraphicsMedium {}
 class SmalltalkLibrary : ObjectStore {}
-class CursorManager : Object_ {}
+class CursorManager : Object {}
 class PARTSCursorManager : CursorManager {}
-class Pattern : Object_ {}
+class Pattern : Object {}
 class WildPattern : Pattern {}
 class SelfDefinedStructure : ExternalBuffer {}
 class WinDrawItemStruct : ExternalBuffer {}
 class PARTSLinkJunctionPart : PARTSNonvisualPart {}
 class PARTSDevelopmentSessionManager : PARTSSessionManager {}
 class WinMessage : ExternalBuffer {}
-class Exception_ : Object_ {}
-class HostFileSystemError : Exception_ {}
-class EvaluableAction : Object_ {}
+class Exception : Object {}
+class HostFileSystemError : Exception {}
+class EvaluableAction : Object {}
 class CollectionAccessor : EvaluableAction {}
 class WinLogPalette : ExternalBuffer {}
 class WinLogPen : ExternalBuffer {}
@@ -263,13 +263,13 @@ class PARTSRuntimeSessionManager : PARTSSessionManager {}
 class WinWindowClass : ExternalBuffer {}
 class PARTSTimerPart : PARTSNonvisualPart {}
 class ConstantAccessor : EvaluableAction {}
-class Stream : Object_ {}
+class Stream : Object {}
 class ReadStream : Stream {}
 class DeviceContext : ExternalHandle {}
-class Icon : Object_ {}
+class Icon : Object {}
 class PARTSIcon : Icon {}
 class WinBitmapStruct : ExternalBuffer {}
-class PARTSGetExecutionContext : Exception_ {}
+class PARTSGetExecutionContext : Exception {}
 class PeExport : Coff {}
 class Class : Behavior {}
 class METACLASS_SelfInitializingObject : Class {}
@@ -278,12 +278,12 @@ class ExternalHeapHandle : ExternalMemoryHandle {}
 class ExternalGlobalHandle : ExternalMemoryHandle {}
 class PARTSPrebuiltDialog : PARTSNonvisualPart {}
 class PARTSFileDialogPart : PARTSPrebuiltDialog {}
-class Menu : Object_ {}
+class Menu : Object {}
 class PARTSStandardMenu : Menu {}
 class PARTSStandardBracketsMenu : PARTSStandardMenu {}
 class PARTSPropertyBoolean : PARTSPropertyUnit {}
 class PARTSPropertyPseudoStyle : PARTSPropertyBoolean {}
-class FileSystemEntity : Object_ {}
+class FileSystemEntity : Object {}
 class FileSystemComponent : FileSystemEntity {}
 class File : FileSystemComponent {}
 class DynamicLinkLibrary : ExternalHandle {}
@@ -294,15 +294,15 @@ class TextPaneErrorHandler : CompilerErrorHandler {}
 class WorkspaceErrorHandler : TextPaneErrorHandler {}
 class CoffFileWriter : Coff {}
 class PeFileWriter : CoffFileWriter {}
-class FileSystemLocator : Object_ {}
+class FileSystemLocator : Object {}
 class FileSystemPath : FileSystemLocator {}
 class NetworkFilePath : FileSystemPath {}
-class Window : Object_ {}
+class Window : Object {}
 class SubPane : Window {}
 class ListConnectionPane : SubPane {}
 class DialogBox : Window {}
 class NewSubclassDialog : DialogBox {}
-class Notification : Exception_ {}
+class Notification : Exception {}
 class ProcessTermination : Notification {}
 class SilentErrorHandler : CompilerErrorHandler {}
 class TraditionalCompilerErrorHandler : SilentErrorHandler {}
@@ -313,7 +313,7 @@ class CoffFileSection : Coff {}
 class P1001 : CoffFileSection {}
 class ProgressNotification : Notification {}
 class RecompilationNotification : Notification {}
-class PARTSApplicationHolder : Object_ {}
+class PARTSApplicationHolder : Object {}
 class PARTSWindow : PARTSApplicationHolder {}
 class PARTSPictureMaskEditor : PARTSWindow {}
 class LayoutFrame : LayoutUnit {}
@@ -323,16 +323,16 @@ class SaveImageAsDialog : WindowDialog {}
 class Number : Magnitude {}
 class Float : Number {}
 class PeExportSection : CoffFileSection {}
-class P1147 : Object_ {}
+class P1147 : Object {}
 class P1151 : P1147 {}
 class P1152 : P1151 {}
-class P1124 : Object_ {}
+class P1124 : Object {}
 class P1125 : P1124 {}
 class P1126 : P1125 {}
 class VRelocationSection : CoffFileSection {}
 class P1148 : P1147 {}
 class P1150 : P1148 {}
-class P1113 : Object_ {}
+class P1113 : Object {}
 class P1114 : P1113 {}
 class P1116 : P1114 {}
 class ObjectWindow : Window {}
@@ -340,8 +340,8 @@ class PARTSTimerWindow : ObjectWindow {}
 class CommonDialogDLL : DynamicLinkLibrary {}
 class PARTSSilentErrorHandler : SilentErrorHandler {}
 class CoffDataTable : CoffFileSection {}
-class Error_ : Exception_ {}
-class UnknownImport : Error_ {}
+class Error : Exception {}
+class UnknownImport : Error {}
 class Fraction : Number {}
 class PeResourceSection : CoffFileSection {}
 class ProgressIndicatorDialog : WindowDialog {}
@@ -369,7 +369,7 @@ class ObjectLoadDialog : WindowDialog {}
 class SharedValue : EventManager {}
 class SharedBoolean : SharedValue {}
 class PeTextSection : CoffFileSection {}
-class ApplicationCoordinator : Object_ {}
+class ApplicationCoordinator : Object {}
 class DialogCoordinator : ApplicationCoordinator {}
 class ListChooser : DialogCoordinator {}
 class StandardWindowPolicy : WindowPolicy {}
@@ -487,7 +487,7 @@ class METACLASS_ObjectMutator : METACLASS_Object {}
 class Browser : ViewManager {}
 class CodeBrowser : Browser {}
 class ClassHierarchyBrowser : CodeBrowser {}
-class ControlError : Error_ {}
+class ControlError : Error {}
 class MessageNotUnderstood : ControlError {}
 class IndexedCollection : Collection {}
 class OrderedCollection : IndexedCollection {}
@@ -496,13 +496,13 @@ class PARTSPropertyFormGeneratorButton : PARTSPropertyButton {}
 class PARTSPropertyCreateTable : PARTSPropertyFormGeneratorButton {}
 class PARTSPropertyWindowStyle : PARTSPropertyBoolean {}
 class PARTSPropertyBinaryStyle : PARTSPropertyWindowStyle {}
-class DragDropSession : Object_ {}
+class DragDropSession : Object {}
 class LocalDragDropSession : DragDropSession {}
 class PARTSLocalDragDropSession : LocalDragDropSession {}
 class PARTSDragSession : PARTSLocalDragDropSession {}
 class PARTSPrebuiltMessageBox : PARTSPrebuiltDialog {}
 class PARTSConfirmerPart : PARTSPrebuiltMessageBox {}
-class ArithmeticError : Error_ {}
+class ArithmeticError : Error {}
 class ZeroDivide : ArithmeticError {}
 class CommonSystemDialog : DialogBox {}
 class FontDialog : CommonSystemDialog {}
@@ -538,7 +538,7 @@ class ExternalGlobalAddress : ExternalAddress {}
 class PrintDialog : CommonSystemDialog {}
 class PARTSOrderedCollectionHolderPart : PARTSTypedValueHolder {}
 class P1128 : PARTSDialog {}
-class DragDropObject : Object_ {}
+class DragDropObject : Object {}
 class LocalDragDropObject : DragDropObject {}
 class PARTSLocalDragDropObject : LocalDragDropObject {}
 class PARTSEditorMoveObject : PARTSLocalDragDropObject {}
@@ -548,10 +548,10 @@ class PARTSMenuBar : MenuWindow {}
 class Prompter : WindowDialog {}
 class PARTSPrompter : Prompter {}
 class PARTSClientAreaPaneWindows : GroupPane {}
-class FileError : Error_ {}
+class FileError : Error {}
 class FileAlreadyExists : FileError {}
 class PARTSInformationDialogPart : PARTSPrebuiltMessageBox {}
-class APICallError : Error_ {}
+class APICallError : Error {}
 class APICallInvalidArgumentType : APICallError {}
 class FixedSizeCollection : IndexedCollection {}
 class ByteArray : FixedSizeCollection {}
@@ -560,7 +560,7 @@ class IdentitySet : Set {}
 class Warning : Notification {}
 class LoggedWarning : Warning {}
 class FileSystemAccessDenied : FileError {}
-class GraphicsTool : Object_ {}
+class GraphicsTool : Object {}
 class TextTool : GraphicsTool {}
 class Pen : TextTool {}
 class RecordingPen : Pen {}
@@ -569,7 +569,7 @@ class ClassBrowser : CodeBrowser {}
 class ApplicationWindow : Window {}
 class TopPane : ApplicationWindow {}
 class MainWindow : TopPane {}
-class PARTSUpgradeObject : Object_ {}
+class PARTSUpgradeObject : Object {}
 class PARTSUpgradeVisualPart : PARTSUpgradeObject {}
 class PARTSUpgradePanePart : PARTSUpgradeVisualPart {}
 class PARTSUpgradeTablePane : PARTSUpgradePanePart {}
@@ -599,7 +599,7 @@ class ControlPane : SubPane {}
 class ScrollBar : ControlPane {}
 class PARTSNotebookPagePane : GroupPane {}
 class PARTSPropertyCreateForm : PARTSPropertyFormGeneratorButton {}
-class BindError : Error_ {}
+class BindError : Error {}
 class ClassShapeMismatch : BindError {}
 class OrderedCollectionInspector : Inspector {}
 class PARTSPropertiesEditor : PARTSDialog {}
@@ -1374,7 +1374,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ collisions(virtual!LinearInlineHashTable);
 @method Object_ _collisions(LinearSymbolHashTable) { return new Object_(); }
 @method Object_ _collisions(LinearIdentityHashTable) { return new Object_(); }
-@mptr("hash") Object_ name(virtual!Object_);
+@mptr("hash") Object_ name(virtual!Object);
 @method Object_ _name(PeExport) { return new Object_(); }
 @method Object_ _name(Icon) { return new Object_(); }
 @method Object_ _name(PARTSTextIcon) { return new Object_(); }
@@ -1403,7 +1403,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _name(Button) { return new Object_(); }
 @method Object_ _name(PARTSApplication) { return new Object_(); }
 @method Object_ _name(Process) { return new Object_(); }
-@mptr("hash") Object_ name(virtual!Object_, Object_);
+@mptr("hash") Object_ name(virtual!Object, Object_);
 @method Object_ _name(PeExport, Object_) { return new Object_(); }
 @method Object_ _name(Icon, Object_) { return new Object_(); }
 @method Object_ _name(PARTSTextIcon, Object_) { return new Object_(); }
@@ -1420,20 +1420,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _name(CoffDataTableEntry, Object_) { return new Object_(); }
 @method Object_ _name(PeExportSection, Object_) { return new Object_(); }
 @method Object_ _name(Process, Object_) { return new Object_(); }
-@mptr("hash") Object_ offset(virtual!Object_);
+@mptr("hash") Object_ offset(virtual!Object);
 @method Object_ _offset(PeExport) { return new Object_(); }
 @method Object_ _offset(CursorManager) { return new Object_(); }
 @method Object_ _offset(ObjectStoreObject) { return new Object_(); }
 @method Object_ _offset(PARTSPasteObject) { return new Object_(); }
 @method Object_ _offset(PARTSAddPartObject) { return new Object_(); }
 @method Object_ _offset(PeFixup) { return new Object_(); }
-@mptr("hash") Object_ offset(virtual!Object_, Object_);
+@mptr("hash") Object_ offset(virtual!Object, Object_);
 @method Object_ _offset(PeExport, Object_) { return new Object_(); }
 @method Object_ _offset(CursorManager, Object_) { return new Object_(); }
 @method Object_ _offset(ObjectStoreObject, Object_) { return new Object_(); }
 @method Object_ _offset(CoffDataTableEntry, Object_) { return new Object_(); }
 @method Object_ _offset(PARTSAddPartObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ initialize(virtual!Object_);
+@mptr("hash") Object_ initialize(virtual!Object);
 @method Object_ _initialize(Semaphore) { return new Object_(); }
 @method Object_ _initialize(Icon) { return new Object_(); }
 @method Object_ _initialize(CompilerNameScope) { return new Object_(); }
@@ -1472,7 +1472,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initialize(PeTextSection) { return new Object_(); }
 @method Object_ _initialize(DrawnButton) { return new Object_(); }
 @method Object_ _initialize(SharedBoolean) { return new Object_(); }
-@method Object_ _initialize(Object_) { return new Object_(); }
+@method Object_ _initialize(Object) { return new Object_(); }
 @method Object_ _initialize(ObjectStoreReader) { return new Object_(); }
 @method Object_ _initialize(ObjectStoreWriter) { return new Object_(); }
 @method Object_ _initialize(TextSelection) { return new Object_(); }
@@ -1689,17 +1689,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initialize(METACLASS_PARTSFileDialogPart) { return new Object_(); }
 @method Object_ _initialize(METACLASS_Process) { return new Object_(); }
 @method Object_ _initialize(METACLASS_PARTSStandardMenu) { return new Object_(); }
-@mptr("hash") Object_ signal(virtual!Object_);
+@mptr("hash") Object_ signal(virtual!Object);
 @method Object_ _signal(Semaphore) { return new Object_(); }
-@method Object_ _signal(Exception_) { return new Object_(); }
+@method Object_ _signal(Exception) { return new Object_(); }
 @method Object_ _signal(METACLASS_HostFileSystemError) { return new Object_(); }
 @method Object_ _signal(METACLASS_Exception) { return new Object_(); }
-@mptr("hash") Object_ root(virtual!Object_);
+@mptr("hash") Object_ root(virtual!Object);
 @method Object_ _root(ObjectStoreRoot) { return new Object_(); }
 @method Object_ _root(ObjectStore) { return new Object_(); }
-@mptr("hash") Object_ root(virtual!Object_, Object_);
+@mptr("hash") Object_ root(virtual!Object, Object_);
 @method Object_ _root(ObjectStoreRoot, Object_) { return new Object_(); }
 @method Object_ _root(ObjectStore, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultFileName(virtual!Object);
+@method Object_ _defaultFileName(PARTSChooseFileDialog) { return new Object_(); }
+@method Object_ _defaultFileName(PARTSApplication) { return new Object_(); }
+@method Object_ _defaultFileName(METACLASS_PARTSIniFile) { return new Object_(); }
 @mptr("hash") Object_ initializePartValues(virtual!PARTSWindow);
 @method Object_ _initializePartValues(PARTSChooseFileDialog) { return new Object_(); }
 @method Object_ _initializePartValues(PARTSPartPropertiesEditor) { return new Object_(); }
@@ -1712,7 +1716,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initializePartValues(PARTSOpenSaveFileDialog) { return new Object_(); }
 @method Object_ _initializePartValues(PARTSPartPropertyDialog) { return new Object_(); }
 @method Object_ _initializePartValues(PARTSWindowSizeEditor) { return new Object_(); }
-@mptr("hash") Object_ promptDialogInitialfileFiletypesDefaultpatternTitle(virtual!Object_, Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ openDialogWindow(virtual!PARTSWindow);
+@method Object_ _openDialogWindow(PARTSChooseFileDialog) { return new Object_(); }
+@method Object_ _openDialogWindow(PARTSPartPropertiesEditor) { return new Object_(); }
+@method Object_ _openDialogWindow(PARTSOpenSaveFileDialog) { return new Object_(); }
+@mptr("hash") Object_ promptDialogInitialfileFiletypesDefaultpatternTitle(virtual!Object, Object_, Object_, Object_, Object_, Object_);
 @method Object_ _promptDialogInitialfileFiletypesDefaultpatternTitle(PARTSChooseFileDialog, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _promptDialogInitialfileFiletypesDefaultpatternTitle(METACLASS_PARTSFileDescriptor, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ initializeEventHandlers(virtual!PARTSWindow);
@@ -1727,14 +1735,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initializeEventHandlers(PARTSOpenSaveFileDialog) { return new Object_(); }
 @method Object_ _initializeEventHandlers(PARTSPartPropertyDialog) { return new Object_(); }
 @method Object_ _initializeEventHandlers(PARTSWindowSizeEditor) { return new Object_(); }
-@mptr("hash") Object_ operation(virtual!Object_);
+@mptr("hash") Object_ operation(virtual!Object);
 @method Object_ _operation(PARTSChooseFileDialog) { return new Object_(); }
 @method Object_ _operation(PARTSMirrorCopyDictionary) { return new Object_(); }
 @method Object_ _operation(PARTSDragResult) { return new Object_(); }
 @method Object_ _operation(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _operation(PARTSDragSession) { return new Object_(); }
 @method Object_ _operation(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ title(virtual!Object_);
+@mptr("hash") Object_ title(virtual!Object);
 @method Object_ _title(PARTSChooseFileDialog) { return new Object_(); }
 @method Object_ _title(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _title(P1129) { return new Object_(); }
@@ -1750,7 +1758,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _title(METACLASS_PARTSStandardHelpMenu) { return new Object_(); }
 @method Object_ _title(METACLASS_PARTSStandardBracketsMenu) { return new Object_(); }
 @method Object_ _title(METACLASS_PARTSStandardMenu) { return new Object_(); }
-@mptr("hash") Object_ contents(virtual!Object_);
+@mptr("hash") Object_ contents(virtual!Object);
 @method Object_ _contents(PARTSGetExecutionContext) { return new Object_(); }
 @method Object_ _contents(ReadStream) { return new Object_(); }
 @method Object_ _contents(ObjectStore) { return new Object_(); }
@@ -1785,18 +1793,29 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _contents(ExtendedListBox) { return new Object_(); }
 @method Object_ _contents(PARTSPartAccessorPart) { return new Object_(); }
 @method Object_ _contents(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ isResumable(virtual!Object_);
+@mptr("hash") Object_ defaultAction(virtual!Exception);
+@method Object_ _defaultAction(PARTSGetExecutionContext) { return new Object_(); }
+@method Object_ _defaultAction(KeyboardInterrupt) { return new Object_(); }
+@method Object_ _defaultAction(AboutToReplaceFile) { return new Object_(); }
+@method Object_ _defaultAction(HostFileSystemError) { return new Object_(); }
+@method Object_ _defaultAction(Exception) { return new Object_(); }
+@method Object_ _defaultAction(Notification) { return new Object_(); }
+@method Object_ _defaultAction(LoggedWarning) { return new Object_(); }
+@method Object_ _defaultAction(RecompilationNotification) { return new Object_(); }
+@method Object_ _defaultAction(Warning) { return new Object_(); }
+@method Object_ _defaultAction(MessageNotUnderstood) { return new Object_(); }
+@mptr("hash") Object_ isResumable(virtual!Object);
 @method Object_ _isResumable(PARTSGetExecutionContext) { return new Object_(); }
 @method Object_ _isResumable(UnresolvedExternal) { return new Object_(); }
 @method Object_ _isResumable(BindDuplicate) { return new Object_(); }
-@method Object_ _isResumable(Exception_) { return new Object_(); }
+@method Object_ _isResumable(Exception) { return new Object_(); }
 @method Object_ _isResumable(ClassShapeMismatch) { return new Object_(); }
 @method Object_ _isResumable(Notification) { return new Object_(); }
 @method Object_ _isResumable(Debugger) { return new Object_(); }
 @method Object_ _isResumable(UnknownImport) { return new Object_(); }
 @method Object_ _isResumable(ZeroDivide) { return new Object_(); }
 @method Object_ _isResumable(MessageNotUnderstood) { return new Object_(); }
-@mptr("hash") Object_ contents(virtual!Object_, Object_);
+@mptr("hash") Object_ contents(virtual!Object, Object_);
 @method Object_ _contents(PARTSGetExecutionContext, Object_) { return new Object_(); }
 @method Object_ _contents(ListBox, Object_) { return new Object_(); }
 @method Object_ _contents(PARTSMenuLabelPart, Object_) { return new Object_(); }
@@ -1828,7 +1847,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _contents(ExtendedListBox, Object_) { return new Object_(); }
 @method Object_ _contents(PARTSFormattedEntryField, Object_) { return new Object_(); }
 @method Object_ _contents(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ printOn(virtual!Object_, Object_);
+@mptr("hash") Object_ printOn(virtual!Object, Object_);
 @method Object_ _printOn(PARTSTimeStamp, Object_) { return new Object_(); }
 @method Object_ _printOn(CompilerNameScope, Object_) { return new Object_(); }
 @method Object_ _printOn(ConstantAccessor, Object_) { return new Object_(); }
@@ -1852,7 +1871,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _printOn(Rectangle, Object_) { return new Object_(); }
 @method Object_ _printOn(SmallInteger, Object_) { return new Object_(); }
 @method Object_ _printOn(ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _printOn(Object_, Object_) { return new Object_(); }
+@method Object_ _printOn(Object, Object_) { return new Object_(); }
 @method Object_ _printOn(CompiledInitializer, Object_) { return new Object_(); }
 @method Object_ _printOn(Menu, Object_) { return new Object_(); }
 @method Object_ _printOn(Time, Object_) { return new Object_(); }
@@ -1895,7 +1914,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _printOn(UndefinedObject, Object_) { return new Object_(); }
 @method Object_ _printOn(PARTSScript, Object_) { return new Object_(); }
 @method Object_ _printOn(ExternalLong, Object_) { return new Object_(); }
-@mptr("hash") Object_ hash(virtual!Object_);
+@mptr("hash") Object_ hash(virtual!Object);
 @method Object_ _hash(PARTSTimeStamp) { return new Object_(); }
 @method Object_ _hash(String) { return new Object_(); }
 @method Object_ _hash(WinLogPalette) { return new Object_(); }
@@ -1908,7 +1927,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _hash(True) { return new Object_(); }
 @method Object_ _hash(Rectangle) { return new Object_(); }
 @method Object_ _hash(ExternalHandle) { return new Object_(); }
-@method Object_ _hash(Object_) { return new Object_(); }
+@method Object_ _hash(Object) { return new Object_(); }
 @method Object_ _hash(Time) { return new Object_(); }
 @method Object_ _hash(Integer) { return new Object_(); }
 @method Object_ _hash(False) { return new Object_(); }
@@ -1937,14 +1956,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _hash(CompiledMethod) { return new Object_(); }
 @method Object_ _hash(Directory) { return new Object_(); }
 @method Object_ _hash(ExternalHeapHandle) { return new Object_(); }
-@mptr("hash") Object_ readOnly(virtual!Object_);
+@mptr("hash") Object_ readOnly(virtual!Object);
 @method Object_ _readOnly(Icon) { return new Object_(); }
 @method Object_ _readOnly(EntryField) { return new Object_(); }
 @method Object_ _readOnly(TextPane) { return new Object_(); }
-@mptr("hash") Object_ releaseBitmaps(virtual!Object_);
+@mptr("hash") Object_ releaseBitmaps(virtual!Object);
 @method Object_ _releaseBitmaps(Icon) { return new Object_(); }
 @method Object_ _releaseBitmaps(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ asParameter(virtual!Object_);
+@mptr("hash") Object_ asParameter(virtual!Object);
 @method Object_ _asParameter(Icon) { return new Object_(); }
 @method Object_ _asParameter(String) { return new Object_(); }
 @method Object_ _asParameter(Window) { return new Object_(); }
@@ -1967,27 +1986,27 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asParameter(Bitmap) { return new Object_(); }
 @method Object_ _asParameter(Number) { return new Object_(); }
 @method Object_ _asParameter(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ displayAtWith(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ displayAtWith(virtual!Object, Object_, Object_);
 @method Object_ _displayAtWith(Icon, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(PARTSIcon, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(PARTSTextIcon, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(StoredPicture, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(CursorManager, Object_, Object_) { return new Object_(); }
-@method Object_ _displayAtWith(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _displayAtWith(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(DIB, Object_, Object_) { return new Object_(); }
 @method Object_ _displayAtWith(Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ initHandle(virtual!Object_);
+@mptr("hash") Object_ initHandle(virtual!Object);
 @method Object_ _initHandle(Icon) { return new Object_(); }
 @method Object_ _initHandle(WinLogicalObject) { return new Object_(); }
 @method Object_ _initHandle(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ readOnly(virtual!Object_, Object_);
+@mptr("hash") Object_ readOnly(virtual!Object, Object_);
 @method Object_ _readOnly(Icon, Object_) { return new Object_(); }
 @method Object_ _readOnly(EntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ privateHandle(virtual!Object_);
+@mptr("hash") Object_ privateHandle(virtual!Object);
 @method Object_ _privateHandle(Icon) { return new Object_(); }
 @method Object_ _privateHandle(WinLogicalObject) { return new Object_(); }
 @method Object_ _privateHandle(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ extent(virtual!Object_);
+@mptr("hash") Object_ extent(virtual!Object);
 @method Object_ _extent(Icon) { return new Object_(); }
 @method Object_ _extent(PARTSTextIcon) { return new Object_(); }
 @method Object_ _extent(Window) { return new Object_(); }
@@ -2005,18 +2024,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _extent(GraphicsTool) { return new Object_(); }
 @method Object_ _extent(P1148) { return new Object_(); }
 @method Object_ _extent(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ release(virtual!Object_);
+@mptr("hash") Object_ release(virtual!Object);
 @method Object_ _release(Icon) { return new Object_(); }
 @method Object_ _release(PARTSTextIcon) { return new Object_(); }
 @method Object_ _release(StoredPicture) { return new Object_(); }
 @method Object_ _release(CursorManager) { return new Object_(); }
-@method Object_ _release(Object_) { return new Object_(); }
+@method Object_ _release(Object) { return new Object_(); }
 @method Object_ _release(Printer) { return new Object_(); }
 @method Object_ _release(RecordingPen) { return new Object_(); }
 @method Object_ _release(GraphicsTool) { return new Object_(); }
 @method Object_ _release(CallBack) { return new Object_(); }
 @method Object_ _release(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ handle(virtual!Object_, Object_);
+@mptr("hash") Object_ handle(virtual!Object, Object_);
 @method Object_ _handle(Icon, Object_) { return new Object_(); }
 @method Object_ _handle(StoredPicture, Object_) { return new Object_(); }
 @method Object_ _handle(Window, Object_) { return new Object_(); }
@@ -2025,12 +2044,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _handle(GraphicsTool, Object_) { return new Object_(); }
 @method Object_ _handle(ExceptionHandler, Object_) { return new Object_(); }
 @method Object_ _handle(METACLASS_Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromFileStream(virtual!Object_, Object_);
+@mptr("hash") Object_ fromFileStream(virtual!Object, Object_);
 @method Object_ _fromFileStream(Icon, Object_) { return new Object_(); }
 @method Object_ _fromFileStream(METACLASS_Icon, Object_) { return new Object_(); }
 @method Object_ _fromFileStream(METACLASS_DIB, Object_) { return new Object_(); }
 @method Object_ _fromFileStream(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ validate(virtual!Object_);
+@mptr("hash") Object_ validate(virtual!Object);
 @method Object_ _validate(Icon) { return new Object_(); }
 @method Object_ _validate(PARTSTextIcon) { return new Object_(); }
 @method Object_ _validate(PARTSTopPane) { return new Object_(); }
@@ -2070,12 +2089,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _validate(ExtendedListBox) { return new Object_(); }
 @method Object_ _validate(Bitmap) { return new Object_(); }
 @method Object_ _validate(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ fileOutSurrogate(virtual!Object_, Object_);
+@mptr("hash") Object_ fileOutSurrogate(virtual!Object, Object_);
 @method Object_ _fileOutSurrogate(Icon, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(True, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _fileOutSurrogate(Object_, Object_) { return new Object_(); }
+@method Object_ _fileOutSurrogate(Object, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(False, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(WinLogicalObject, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(Screen, Object_) { return new Object_(); }
@@ -2091,28 +2110,28 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileOutSurrogate(ProcessScheduler, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(Process, Object_) { return new Object_(); }
 @method Object_ _fileOutSurrogate(UndefinedObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ outputToFile(virtual!Object_, Object_);
+@mptr("hash") Object_ outputToFile(virtual!Object, Object_);
 @method Object_ _outputToFile(Icon, Object_) { return new Object_(); }
 @method Object_ _outputToFile(StoredPicture, Object_) { return new Object_(); }
 @method Object_ _outputToFile(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ handle(virtual!Object_);
+@mptr("hash") Object_ handle(virtual!Object);
 @method Object_ _handle(Icon) { return new Object_(); }
 @method Object_ _handle(StoredPicture) { return new Object_(); }
 @method Object_ _handle(Window) { return new Object_(); }
 @method Object_ _handle(CursorManager) { return new Object_(); }
-@method Object_ _handle(Exception_) { return new Object_(); }
+@method Object_ _handle(Exception) { return new Object_(); }
 @method Object_ _handle(WinLogicalObject) { return new Object_(); }
 @method Object_ _handle(GraphicsTool) { return new Object_(); }
 @method Object_ _handle(ViewManager) { return new Object_(); }
 @method Object_ _handle(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ createMasks(virtual!Object_);
+@mptr("hash") Object_ createMasks(virtual!Object);
 @method Object_ _createMasks(Icon) { return new Object_(); }
 @method Object_ _createMasks(PARTSIconEditor) { return new Object_(); }
-@mptr("hash") Object_ inspect(virtual!Object_);
+@mptr("hash") Object_ inspect(virtual!Object);
 @method Object_ _inspect(Icon) { return new Object_(); }
 @method Object_ _inspect(StoredPicture) { return new Object_(); }
 @method Object_ _inspect(CursorManager) { return new Object_(); }
-@method Object_ _inspect(Object_) { return new Object_(); }
+@method Object_ _inspect(Object) { return new Object_(); }
 @method Object_ _inspect(DIB) { return new Object_(); }
 @method Object_ _inspect(FileSystemEntity) { return new Object_(); }
 @method Object_ _inspect(OrderedCollection) { return new Object_(); }
@@ -2122,23 +2141,23 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _inspect(ExternalBuffer) { return new Object_(); }
 @method Object_ _inspect(Bitmap) { return new Object_(); }
 @method Object_ _inspect(Process) { return new Object_(); }
-@mptr("hash") Object_ archiveAndRelease(virtual!Object_);
+@mptr("hash") Object_ archiveAndRelease(virtual!Object);
 @method Object_ _archiveAndRelease(Icon) { return new Object_(); }
 @method Object_ _archiveAndRelease(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ isValid(virtual!Object_);
+@mptr("hash") Object_ isValid(virtual!Object);
 @method Object_ _isValid(Icon) { return new Object_(); }
 @method Object_ _isValid(Window) { return new Object_(); }
 @method Object_ _isValid(WindowHandle) { return new Object_(); }
 @method Object_ _isValid(ExternalHandle) { return new Object_(); }
 @method Object_ _isValid(ExternalAddress) { return new Object_(); }
 @method Object_ _isValid(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ clone(virtual!Object_);
+@mptr("hash") Object_ clone(virtual!Object);
 @method Object_ _clone(Icon) { return new Object_(); }
 @method Object_ _clone(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ outputToFileStream(virtual!Object_, Object_);
+@mptr("hash") Object_ outputToFileStream(virtual!Object, Object_);
 @method Object_ _outputToFileStream(Icon, Object_) { return new Object_(); }
 @method Object_ _outputToFileStream(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromModuleId(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ fromModuleId(virtual!Object, Object_, Object_);
 @method Object_ _fromModuleId(Icon, Object_, Object_) { return new Object_(); }
 @method Object_ _fromModuleId(DialogBox, Object_, Object_) { return new Object_(); }
 @method Object_ _fromModuleId(Tool, Object_, Object_) { return new Object_(); }
@@ -2150,10 +2169,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fromModuleId(METACLASS_CursorManager, Object_, Object_) { return new Object_(); }
 @method Object_ _fromModuleId(METACLASS_DIB, Object_, Object_) { return new Object_(); }
 @method Object_ _fromModuleId(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isIcon(virtual!Object_);
+@mptr("hash") Object_ isIcon(virtual!Object);
 @method Object_ _isIcon(Icon) { return new Object_(); }
 @method Object_ _isIcon(PARTSTextIcon) { return new Object_(); }
-@method Object_ _isIcon(Object_) { return new Object_(); }
+@method Object_ _isIcon(Object) { return new Object_(); }
 @mptr("hash") Object_ removeLocalBindingFor(virtual!CompilerNameScope, Object_);
 @method Object_ _removeLocalBindingFor(CompilerNameScope, Object_) { return new Object_(); }
 @method Object_ _removeLocalBindingFor(DictionaryScope, Object_) { return new Object_(); }
@@ -2169,7 +2188,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ descriptionFor(virtual!CompilerNameScope, Object_);
 @method Object_ _descriptionFor(CompilerNameScope, Object_) { return new Object_(); }
 @method Object_ _descriptionFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ unquote(virtual!Object_);
+@mptr("hash") Object_ unquote(virtual!Object);
 @method Object_ _unquote(CompilerNameScope) { return new Object_(); }
 @method Object_ _unquote(String) { return new Object_(); }
 @method Object_ _unquote(IndexedCollection) { return new Object_(); }
@@ -2179,18 +2198,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _unquote(OrderedCollection) { return new Object_(); }
 @method Object_ _unquote(ExceptionFilter) { return new Object_(); }
 @method Object_ _unquote(METACLASS_Exception) { return new Object_(); }
-@mptr("hash") Object_ description(virtual!Object_);
+@mptr("hash") Object_ description(virtual!Object);
 @method Object_ _description(CompilerNameScope) { return new Object_(); }
 @method Object_ _description(ObjectStore) { return new Object_(); }
 @method Object_ _description(HostFileSystemError) { return new Object_(); }
 @method Object_ _description(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _description(PARTSLink) { return new Object_(); }
 @method Object_ _description(PARTSFileVersion) { return new Object_(); }
-@method Object_ _description(Exception_) { return new Object_(); }
+@method Object_ _description(Exception) { return new Object_(); }
 @method Object_ _description(PARTSFileType) { return new Object_(); }
 @method Object_ _description(ObjectReference) { return new Object_(); }
 @method Object_ _description(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ description(virtual!Object_, Object_);
+@mptr("hash") Object_ description(virtual!Object, Object_);
 @method Object_ _description(CompilerNameScope, Object_) { return new Object_(); }
 @method Object_ _description(ObjectStore, Object_) { return new Object_(); }
 @method Object_ _description(PARTSApplicationProperty, Object_) { return new Object_(); }
@@ -2205,22 +2224,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ describeInvalidBindingFor(virtual!CompilerNameScope, Object_);
 @method Object_ _describeInvalidBindingFor(CompilerNameScope, Object_) { return new Object_(); }
 @method Object_ _describeInvalidBindingFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ unbound(virtual!Object_);
+@mptr("hash") Object_ unbound(virtual!Object);
 @method Object_ _unbound(CompilerNameScope) { return new Object_(); }
 @method Object_ _unbound(METACLASS_CompilerNameScope) { return new Object_(); }
 @method Object_ _unbound(METACLASS_Coff) { return new Object_(); }
-@mptr("hash") Object_ height(virtual!Object_, Object_);
+@mptr("hash") Object_ height(virtual!Object, Object_);
 @method Object_ _height(WinBitmapStruct, Object_) { return new Object_(); }
 @method Object_ _height(StatusPane, Object_) { return new Object_(); }
 @method Object_ _height(Rectangle, Object_) { return new Object_(); }
 @method Object_ _height(ToolPane, Object_) { return new Object_(); }
 @method Object_ _height(WinBitmapInfoHeader, Object_) { return new Object_(); }
 @method Object_ _height(GraphicsTool, Object_) { return new Object_(); }
-@mptr("hash") Object_ planes(virtual!Object_);
+@mptr("hash") Object_ planes(virtual!Object);
 @method Object_ _planes(WinBitmapStruct) { return new Object_(); }
 @method Object_ _planes(WinBitmapInfoHeader) { return new Object_(); }
 @method Object_ _planes(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ width(virtual!Object_);
+@mptr("hash") Object_ width(virtual!Object);
 @method Object_ _width(WinBitmapStruct) { return new Object_(); }
 @method Object_ _width(WinLogPen) { return new Object_(); }
 @method Object_ _width(Window) { return new Object_(); }
@@ -2240,7 +2259,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ planes(virtual!ExternalBuffer, Object_);
 @method Object_ _planes(WinBitmapStruct, Object_) { return new Object_(); }
 @method Object_ _planes(WinBitmapInfoHeader, Object_) { return new Object_(); }
-@mptr("hash") Object_ width(virtual!Object_, Object_);
+@mptr("hash") Object_ width(virtual!Object, Object_);
 @method Object_ _width(WinBitmapStruct, Object_) { return new Object_(); }
 @method Object_ _width(WinLogPen, Object_) { return new Object_(); }
 @method Object_ _width(P1111, Object_) { return new Object_(); }
@@ -2249,7 +2268,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _width(StatusBox, Object_) { return new Object_(); }
 @method Object_ _width(GraphicsTool, Object_) { return new Object_(); }
 @method Object_ _width(P1112, Object_) { return new Object_(); }
-@mptr("hash") Object_ height(virtual!Object_);
+@mptr("hash") Object_ height(virtual!Object);
 @method Object_ _height(WinBitmapStruct) { return new Object_(); }
 @method Object_ _height(Window) { return new Object_(); }
 @method Object_ _height(P1147) { return new Object_(); }
@@ -2270,31 +2289,34 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _height(GraphicsTool) { return new Object_(); }
 @method Object_ _height(Font) { return new Object_(); }
 @method Object_ _height(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ hasMessagePattern(virtual!Object_);
+@mptr("hash") Object_ hasMessagePattern(virtual!Object);
 @method Object_ _hasMessagePattern(CompiledMethodDefinition) { return new Object_(); }
 @method Object_ _hasMessagePattern(CompiledInitializer) { return new Object_(); }
 @method Object_ _hasMessagePattern(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ compiledMethod(virtual!Object_);
+@mptr("hash") Object_ compiledMethod(virtual!Object);
 @method Object_ _compiledMethod(CompiledMethodDefinition) { return new Object_(); }
 @method Object_ _compiledMethod(RecompilationNotification) { return new Object_(); }
-@mptr("hash") Object_ sourceString(virtual!Object_);
+@mptr("hash") Object_ sourceString(virtual!Object);
 @method Object_ _sourceString(CompiledMethodDefinition) { return new Object_(); }
 @method Object_ _sourceString(CompiledMethod) { return new Object_(); }
 @method Object_ _sourceString(PARTSScript) { return new Object_(); }
 @mptr("hash") Object_ sourceStringNotifying(virtual!CompiledMethodDefinition, Object_, Object_);
 @method Object_ _sourceStringNotifying(CompiledMethodDefinition, Object_, Object_) { return new Object_(); }
 @method Object_ _sourceStringNotifying(PARTSScriptDefinition, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ debugInfo(virtual!CompiledMethodDefinition);
+@method Object_ _debugInfo(CompiledMethodDefinition) { return new Object_(); }
+@method Object_ _debugInfo(PARTSScriptDefinition) { return new Object_(); }
 @mptr("hash") Object_ setSourceString(virtual!CompiledMethodDefinition, Object_);
 @method Object_ _setSourceString(CompiledMethodDefinition, Object_) { return new Object_(); }
 @method Object_ _setSourceString(PARTSScriptDefinition, Object_) { return new Object_(); }
-@mptr("hash") Object_ compiledMethod(virtual!Object_, Object_);
+@mptr("hash") Object_ compiledMethod(virtual!Object, Object_);
 @method Object_ _compiledMethod(CompiledMethodDefinition, Object_) { return new Object_(); }
 @method Object_ _compiledMethod(RecompilationNotification, Object_) { return new Object_(); }
 @method Object_ _compiledMethod(METACLASS_ObjectStoreExternal, Object_) { return new Object_(); }
 @mptr("hash") Object_ recompile(virtual!CompiledMethodDefinition);
 @method Object_ _recompile(CompiledMethodDefinition) { return new Object_(); }
 @method Object_ _recompile(PARTSScriptDefinition) { return new Object_(); }
-@mptr("hash") Object_ selector(virtual!Object_);
+@mptr("hash") Object_ selector(virtual!Object);
 @method Object_ _selector(CompiledMethodDefinition) { return new Object_(); }
 @method Object_ _selector(PARTSLink) { return new Object_(); }
 @method Object_ _selector(Tool) { return new Object_(); }
@@ -2307,7 +2329,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ sourceStringErrorhandler(virtual!CompiledMethodDefinition, Object_, Object_);
 @method Object_ _sourceStringErrorhandler(CompiledMethodDefinition, Object_, Object_) { return new Object_(); }
 @method Object_ _sourceStringErrorhandler(PARTSScriptDefinition, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ boundingBox(virtual!Object_);
+@mptr("hash") Object_ partContainingWindow(virtual!Object);
+@method Object_ _partContainingWindow(PARTSIcon) { return new Object_(); }
+@method Object_ _partContainingWindow(PARTSTextIcon) { return new Object_(); }
+@method Object_ _partContainingWindow(Window) { return new Object_(); }
+@mptr("hash") Object_ boundingBox(virtual!Object);
 @method Object_ _boundingBox(PARTSIcon) { return new Object_(); }
 @method Object_ _boundingBox(PARTSTextIcon) { return new Object_(); }
 @method Object_ _boundingBox(WinDrawItemStruct) { return new Object_(); }
@@ -2316,12 +2342,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _boundingBox(GraphicsMedium) { return new Object_(); }
 @method Object_ _boundingBox(GraphicsTool) { return new Object_(); }
 @method Object_ _boundingBox(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ helpInfo(virtual!Object_);
+@mptr("hash") Object_ helpInfo(virtual!Object);
 @method Object_ _helpInfo(PARTSIcon) { return new Object_(); }
 @method Object_ _helpInfo(P1151) { return new Object_(); }
 @method Object_ _helpInfo(PARTSWrapper) { return new Object_(); }
 @method Object_ _helpInfo(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ fileInUpgrade(virtual!Object_, Object_);
+@mptr("hash") Object_ fileInUpgrade(virtual!Object, Object_);
 @method Object_ _fileInUpgrade(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSComboBoxPart, Object_) { return new Object_(); }
@@ -2331,7 +2357,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileInUpgrade(PARTSTypedValueHolder, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSUpgradePanePart, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(EntryField, Object_) { return new Object_(); }
-@method Object_ _fileInUpgrade(Object_, Object_) { return new Object_(); }
+@method Object_ _fileInUpgrade(Object, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(UpgraderForDirectory, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSDialogWindowPart, Object_) { return new Object_(); }
@@ -2358,15 +2384,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileInUpgrade(CompiledMethod, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSPartAccessorPart, Object_) { return new Object_(); }
 @method Object_ _fileInUpgrade(PARTSPrebuiltDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ partIsSelected(virtual!Object_);
+@mptr("hash") Object_ partIsSelected(virtual!Object);
 @method Object_ _partIsSelected(PARTSIcon) { return new Object_(); }
 @method Object_ _partIsSelected(PARTSTextIcon) { return new Object_(); }
 @method Object_ _partIsSelected(Window) { return new Object_(); }
 @method Object_ _partIsSelected(P1127) { return new Object_(); }
-@mptr("hash") Object_ connection(virtual!Object_, Object_);
+@mptr("hash") Object_ connection(virtual!Object, Object_);
 @method Object_ _connection(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _connection(PARTSTextIcon, Object_) { return new Object_(); }
-@mptr("hash") Object_ setLabel(virtual!Object_, Object_);
+@mptr("hash") Object_ setLabel(virtual!Object, Object_);
 @method Object_ _setLabel(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _setLabel(PARTSTopPane, Object_) { return new Object_(); }
 @method Object_ _setLabel(PARTSMenuLabelPart, Object_) { return new Object_(); }
@@ -2374,40 +2400,40 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _setLabel(DrawnButton, Object_) { return new Object_(); }
 @method Object_ _setLabel(Button, Object_) { return new Object_(); }
 @method Object_ _setLabel(PARTSMenuTextItemPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ parent(virtual!Object_);
+@mptr("hash") Object_ parent(virtual!Object);
 @method Object_ _parent(PARTSIcon) { return new Object_(); }
 @method Object_ _parent(PARTSTextIcon) { return new Object_(); }
 @method Object_ _parent(Window) { return new Object_(); }
 @method Object_ _parent(PARTSWrapper) { return new Object_(); }
-@mptr("hash") Object_ isPARTSIcon(virtual!Object_);
+@mptr("hash") Object_ isPARTSIcon(virtual!Object);
 @method Object_ _isPARTSIcon(PARTSIcon) { return new Object_(); }
-@method Object_ _isPARTSIcon(Object_) { return new Object_(); }
-@mptr("hash") Object_ partStoreResourceOn(virtual!Object_, Object_);
+@method Object_ _isPARTSIcon(Object) { return new Object_(); }
+@mptr("hash") Object_ partStoreResourceOn(virtual!Object, Object_);
 @method Object_ _partStoreResourceOn(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _partStoreResourceOn(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ partIsShrunk(virtual!Object_);
+@mptr("hash") Object_ partIsShrunk(virtual!Object);
 @method Object_ _partIsShrunk(PARTSIcon) { return new Object_(); }
 @method Object_ _partIsShrunk(PARTSTextIcon) { return new Object_(); }
 @method Object_ _partIsShrunk(Window) { return new Object_(); }
-@method Object_ _partIsShrunk(Object_) { return new Object_(); }
-@mptr("hash") Object_ origin(virtual!Object_);
+@method Object_ _partIsShrunk(Object) { return new Object_(); }
+@mptr("hash") Object_ origin(virtual!Object);
 @method Object_ _origin(PARTSIcon) { return new Object_(); }
 @method Object_ _origin(PARTSTextIcon) { return new Object_(); }
 @method Object_ _origin(Rectangle) { return new Object_(); }
 @method Object_ _origin(TextSelection) { return new Object_(); }
 @method Object_ _origin(METACLASS_CursorManager) { return new Object_(); }
-@mptr("hash") Object_ parent(virtual!Object_, Object_);
+@mptr("hash") Object_ parent(virtual!Object, Object_);
 @method Object_ _parent(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _parent(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _parent(Window, Object_) { return new Object_(); }
 @method Object_ _parent(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _parent(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ origin(virtual!Object_, Object_);
+@mptr("hash") Object_ origin(virtual!Object, Object_);
 @method Object_ _origin(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _origin(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _origin(Rectangle, Object_) { return new Object_(); }
 @method Object_ _origin(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ label(virtual!Object_);
+@mptr("hash") Object_ label(virtual!Object);
 @method Object_ _label(PARTSIcon) { return new Object_(); }
 @method Object_ _label(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _label(GroupBox) { return new Object_(); }
@@ -2423,7 +2449,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _label(Button) { return new Object_(); }
 @method Object_ _label(MenuItem) { return new Object_(); }
 @method Object_ _label(PARTSMenuTextItemPart) { return new Object_(); }
-@mptr("hash") Object_ label(virtual!Object_, Object_);
+@mptr("hash") Object_ label(virtual!Object, Object_);
 @method Object_ _label(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _label(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _label(PARTSMenuLabelPart, Object_) { return new Object_(); }
@@ -2441,24 +2467,37 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _label(PARTSTextWindow, Object_) { return new Object_(); }
 @method Object_ _label(PARTSMenuTextItemPart, Object_) { return new Object_(); }
 @method Object_ _label(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ partFinalize(virtual!Object_);
+@mptr("hash") Object_ partFinalize(virtual!Object);
 @method Object_ _partFinalize(PARTSIcon) { return new Object_(); }
 @method Object_ _partFinalize(Message) { return new Object_(); }
-@method Object_ _partFinalize(Object_) { return new Object_(); }
+@method Object_ _partFinalize(Object) { return new Object_(); }
 @method Object_ _partFinalize(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _partFinalize(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _partFinalize(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ frameRectangle(virtual!Object_);
+@mptr("hash") Object_ partRedoDirectEdit(virtual!Object, Object_);
+@method Object_ _partRedoDirectEdit(PARTSIcon, Object_) { return new Object_(); }
+@method Object_ _partRedoDirectEdit(Window, Object_) { return new Object_(); }
+@mptr("hash") Object_ partUndoDirectEdit(virtual!Object, Object_);
+@method Object_ _partUndoDirectEdit(PARTSIcon, Object_) { return new Object_(); }
+@method Object_ _partUndoDirectEdit(PARTSMenuLabelPart, Object_) { return new Object_(); }
+@method Object_ _partUndoDirectEdit(Window, Object_) { return new Object_(); }
+@method Object_ _partUndoDirectEdit(PARTSMenuTextItemPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ frameRectangle(virtual!Object);
 @method Object_ _frameRectangle(PARTSIcon) { return new Object_(); }
 @method Object_ _frameRectangle(PARTSTextIcon) { return new Object_(); }
 @method Object_ _frameRectangle(PARTSComboBoxPart) { return new Object_(); }
 @method Object_ _frameRectangle(Window) { return new Object_(); }
 @method Object_ _frameRectangle(PARTSEditorState) { return new Object_(); }
 @method Object_ _frameRectangle(PARTSDropDownListPart) { return new Object_(); }
-@mptr("hash") Object_ reverseWith(virtual!Object_, Object_);
+@mptr("hash") Object_ reverseWith(virtual!Object, Object_);
 @method Object_ _reverseWith(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _reverseWith(PARTSTextIcon, Object_) { return new Object_(); }
-@mptr("hash") Object_ bitmap(virtual!Object_);
+@mptr("hash") Object_ superWindow(virtual!Object);
+@method Object_ _superWindow(PARTSIcon) { return new Object_(); }
+@method Object_ _superWindow(PARTSTextIcon) { return new Object_(); }
+@method Object_ _superWindow(Window) { return new Object_(); }
+@method Object_ _superWindow(PARTSMenuBar) { return new Object_(); }
+@mptr("hash") Object_ bitmap(virtual!Object);
 @method Object_ _bitmap(PARTSIcon) { return new Object_(); }
 @method Object_ _bitmap(Tool) { return new Object_(); }
 @method Object_ _bitmap(GraphPane) { return new Object_(); }
@@ -2467,7 +2506,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _bitmap(DragDropObject) { return new Object_(); }
 @method Object_ _bitmap(PARTSMenuBitmapItemPart) { return new Object_(); }
 @method Object_ _bitmap(METACLASS_StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ partEditDirect(virtual!Object_);
+@mptr("hash") Object_ partEditDirect(virtual!Object);
 @method Object_ _partEditDirect(PARTSIcon) { return new Object_(); }
 @method Object_ _partEditDirect(PARTSTextIcon) { return new Object_(); }
 @method Object_ _partEditDirect(PARTSMenuPart) { return new Object_(); }
@@ -2480,20 +2519,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partEditDirect(PARTSMenuBitmapItemPart) { return new Object_(); }
 @method Object_ _partEditDirect(PARTSMenuSeparatorPart) { return new Object_(); }
 @method Object_ _partEditDirect(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ frameRelativeRectangle(virtual!Object_);
+@mptr("hash") Object_ frameRelativeRectangle(virtual!Object);
 @method Object_ _frameRelativeRectangle(PARTSIcon) { return new Object_(); }
 @method Object_ _frameRelativeRectangle(PARTSTextIcon) { return new Object_(); }
 @method Object_ _frameRelativeRectangle(Window) { return new Object_(); }
-@mptr("hash") Object_ visibleExtent(virtual!Object_);
+@mptr("hash") Object_ visibleExtent(virtual!Object);
 @method Object_ _visibleExtent(PARTSIcon) { return new Object_(); }
 @method Object_ _visibleExtent(ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ helpInfoPacked(virtual!Object_);
+@mptr("hash") Object_ helpInfoPacked(virtual!Object);
 @method Object_ _helpInfoPacked(PARTSIcon) { return new Object_(); }
 @method Object_ _helpInfoPacked(P1109) { return new Object_(); }
-@mptr("hash") Object_ copyToClipboard(virtual!Object_);
+@mptr("hash") Object_ copyToClipboard(virtual!Object);
 @method Object_ _copyToClipboard(PARTSIcon) { return new Object_(); }
 @method Object_ _copyToClipboard(PARTSGraphPanePart) { return new Object_(); }
-@mptr("hash") Object_ button1DoubleClick(virtual!Object_, Object_);
+@mptr("hash") Object_ button1DoubleClick(virtual!Object, Object_);
 @method Object_ _button1DoubleClick(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _button1DoubleClick(Window, Object_) { return new Object_(); }
 @method Object_ _button1DoubleClick(StatusPane, Object_) { return new Object_(); }
@@ -2504,26 +2543,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _button1DoubleClick(PARTSIconPane, Object_) { return new Object_(); }
 @method Object_ _button1DoubleClick(P1124, Object_) { return new Object_(); }
 @method Object_ _button1DoubleClick(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ frameWithLabel(virtual!Object_, Object_);
+@mptr("hash") Object_ frameWithLabel(virtual!Object, Object_);
 @method Object_ _frameWithLabel(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _frameWithLabel(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _frameWithLabel(P1105, Object_) { return new Object_(); }
-@mptr("hash") Object_ mainObject(virtual!Object_);
+@mptr("hash") Object_ mainObject(virtual!Object);
 @method Object_ _mainObject(PARTSIcon) { return new Object_(); }
 @method Object_ _mainObject(P1109) { return new Object_(); }
 @method Object_ _mainObject(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ partFrame(virtual!Object_);
+@mptr("hash") Object_ partFrame(virtual!Object);
 @method Object_ _partFrame(PARTSIcon) { return new Object_(); }
 @method Object_ _partFrame(PARTSTextIcon) { return new Object_(); }
 @method Object_ _partFrame(Window) { return new Object_(); }
-@mptr("hash") Object_ containsPoint(virtual!Object_, Object_);
+@mptr("hash") Object_ containsPoint(virtual!Object, Object_);
 @method Object_ _containsPoint(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _containsPoint(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _containsPoint(P1111, Object_) { return new Object_(); }
 @method Object_ _containsPoint(P1113, Object_) { return new Object_(); }
 @method Object_ _containsPoint(Rectangle, Object_) { return new Object_(); }
 @method Object_ _containsPoint(P1112, Object_) { return new Object_(); }
-@mptr("hash") Object_ partMirrorCopyReal(virtual!Object_, Object_);
+@mptr("hash") Object_ partMirrorCopyReal(virtual!Object, Object_);
 @method Object_ _partMirrorCopyReal(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSTimerPart, Object_) { return new Object_(); }
@@ -2535,7 +2574,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partMirrorCopyReal(PARTSDial, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(Window, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
-@method Object_ _partMirrorCopyReal(Object_, Object_) { return new Object_(); }
+@method Object_ _partMirrorCopyReal(Object, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSMessageBox, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSDialPanePart, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSTextPanePart, Object_) { return new Object_(); }
@@ -2561,7 +2600,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partMirrorCopyReal(PARTSPartAccessorPart, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSFormattedEntryField, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyReal(PARTSScript, Object_) { return new Object_(); }
-@mptr("hash") Object_ partCodeGeneratorExpression(virtual!Object_, Object_);
+@mptr("hash") Object_ partCodeGeneratorExpression(virtual!Object, Object_);
 @method Object_ _partCodeGeneratorExpression(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _partCodeGeneratorExpression(PARTSTimerPart, Object_) { return new Object_(); }
 @method Object_ _partCodeGeneratorExpression(PARTSTextIcon, Object_) { return new Object_(); }
@@ -2610,41 +2649,41 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partCodeGeneratorExpression(PARTSDiskAccessorPart, Object_) { return new Object_(); }
 @method Object_ _partCodeGeneratorExpression(PARTSFileAccessorPart, Object_) { return new Object_(); }
 @method Object_ _partCodeGeneratorExpression(PARTSFileDialogPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ soleObject(virtual!Object_);
+@mptr("hash") Object_ soleObject(virtual!Object);
 @method Object_ _soleObject(PARTSIcon) { return new Object_(); }
 @method Object_ _soleObject(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ showLabel(virtual!Object_);
+@mptr("hash") Object_ showLabel(virtual!Object);
 @method Object_ _showLabel(PARTSIcon) { return new Object_(); }
 @method Object_ _showLabel(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ showLabel(virtual!Object_, Object_);
+@mptr("hash") Object_ showLabel(virtual!Object, Object_);
 @method Object_ _showLabel(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _showLabel(PARTSTextIcon, Object_) { return new Object_(); }
-@mptr("hash") Object_ connection(virtual!Object_);
+@mptr("hash") Object_ connection(virtual!Object);
 @method Object_ _connection(PARTSIcon) { return new Object_(); }
 @method Object_ _connection(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ displayLabel(virtual!Object_, Object_);
+@mptr("hash") Object_ displayLabel(virtual!Object, Object_);
 @method Object_ _displayLabel(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _displayLabel(PARTSTextIcon, Object_) { return new Object_(); }
-@mptr("hash") Object_ displayWith(virtual!Object_, Object_);
+@mptr("hash") Object_ displayWith(virtual!Object, Object_);
 @method Object_ _displayWith(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _displayWith(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _displayWith(StoredPicture, Object_) { return new Object_(); }
-@method Object_ _displayWith(Object_, Object_) { return new Object_(); }
+@method Object_ _displayWith(Object, Object_) { return new Object_(); }
 @method Object_ _displayWith(StatusBox, Object_) { return new Object_(); }
 @method Object_ _displayWith(P1108, Object_) { return new Object_(); }
-@mptr("hash") Object_ isShrunk(virtual!Object_);
+@mptr("hash") Object_ isShrunk(virtual!Object);
 @method Object_ _isShrunk(PARTSIcon) { return new Object_(); }
 @method Object_ _isShrunk(PARTSEditorState) { return new Object_(); }
-@mptr("hash") Object_ connectionPrivate(virtual!Object_);
+@mptr("hash") Object_ connectionPrivate(virtual!Object);
 @method Object_ _connectionPrivate(PARTSIcon) { return new Object_(); }
 @method Object_ _connectionPrivate(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ transparent(virtual!Object_);
+@mptr("hash") Object_ transparent(virtual!Object);
 @method Object_ _transparent(PARTSIcon) { return new Object_(); }
 @method Object_ _transparent(METACLASS_PARTSIcon) { return new Object_(); }
-@mptr("hash") Object_ visibleFrame(virtual!Object_);
+@mptr("hash") Object_ visibleFrame(virtual!Object);
 @method Object_ _visibleFrame(PARTSIcon) { return new Object_(); }
 @method Object_ _visibleFrame(PARTSTextIcon) { return new Object_(); }
-@mptr("hash") Object_ button1Down(virtual!Object_, Object_);
+@mptr("hash") Object_ button1Down(virtual!Object, Object_);
 @method Object_ _button1Down(PARTSIcon, Object_) { return new Object_(); }
 @method Object_ _button1Down(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _button1Down(Window, Object_) { return new Object_(); }
@@ -2666,10 +2705,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ upgradeSelectorFromTo(virtual!PARTSLink, Object_, Object_);
 @method Object_ _upgradeSelectorFromTo(PARTSAliasLink, Object_, Object_) { return new Object_(); }
 @method Object_ _upgradeSelectorFromTo(PARTSLink, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ realSelector(virtual!Object_, Object_);
+@mptr("hash") Object_ realSelector(virtual!Object, Object_);
 @method Object_ _realSelector(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _realSelector(PARTSAliasMessage, Object_) { return new Object_(); }
-@mptr("hash") Object_ changeDestinationProperties(virtual!Object_, Object_);
+@mptr("hash") Object_ changeDestinationProperties(virtual!Object, Object_);
 @method Object_ _changeDestinationProperties(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _changeDestinationProperties(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _changeDestinationProperties(P1113, Object_) { return new Object_(); }
@@ -2679,7 +2718,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ usesSelectorIn(virtual!PARTSLink, Object_);
 @method Object_ _usesSelectorIn(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _usesSelectorIn(PARTSLink, Object_) { return new Object_(); }
-@mptr("hash") Object_ partAsExecutableAction(virtual!Object_);
+@mptr("hash") Object_ partAsExecutableAction(virtual!Object);
 @method Object_ _partAsExecutableAction(PARTSAliasLink) { return new Object_(); }
 @method Object_ _partAsExecutableAction(PARTSLink) { return new Object_(); }
 @method Object_ _partAsExecutableAction(Message) { return new Object_(); }
@@ -2691,6 +2730,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ fireSelfWith(virtual!PARTSLink, Object_);
 @method Object_ _fireSelfWith(PARTSAliasLink, Object_) { return new Object_(); }
 @method Object_ _fireSelfWith(PARTSLink, Object_) { return new Object_(); }
+@mptr("hash") Object_ debugLinkClass(virtual!PARTSLink);
+@method Object_ _debugLinkClass(PARTSAliasLink) { return new Object_(); }
+@method Object_ _debugLinkClass(PARTSLink) { return new Object_(); }
 @mptr("hash") Object_ runtimeCloneSkeleton(virtual!PARTSLink);
 @method Object_ _runtimeCloneSkeleton(PARTSAliasLink) { return new Object_(); }
 @method Object_ _runtimeCloneSkeleton(PARTSLink) { return new Object_(); }
@@ -2757,7 +2799,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _inspectSelection(OrderedCollectionInspector) { return new Object_(); }
 @method Object_ _inspectSelection(Debugger) { return new Object_(); }
 @method Object_ _inspectSelection(DictionaryInspector) { return new Object_(); }
-@mptr("hash") Object_ openOn(virtual!Object_, Object_);
+@mptr("hash") Object_ openOn(virtual!Object, Object_);
 @method Object_ _openOn(Inspector, Object_) { return new Object_(); }
 @method Object_ _openOn(PARTSDictionaryEditor, Object_) { return new Object_(); }
 @method Object_ _openOn(MethodBrowser, Object_) { return new Object_(); }
@@ -2809,6 +2851,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _instance(OrderedCollectionInspector, Object_) { return new Object_(); }
 @method Object_ _instance(Debugger, Object_) { return new Object_(); }
 @method Object_ _instance(DictionaryInspector, Object_) { return new Object_(); }
+@mptr("hash") Object_ doItResultError(virtual!Object, Object_, Object_);
+@method Object_ _doItResultError(Inspector, Object_, Object_) { return new Object_(); }
+@method Object_ _doItResultError(Debugger, Object_, Object_) { return new Object_(); }
+@method Object_ _doItResultError(P1140, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ accept(virtual!Browser, Object_);
 @method Object_ _accept(Inspector, Object_) { return new Object_(); }
 @method Object_ _accept(FieldInspector, Object_) { return new Object_(); }
@@ -2833,12 +2879,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _setLimits(ReadWriteStream) { return new Object_(); }
 @method Object_ _setLimits(MixedFileStream) { return new Object_(); }
 @method Object_ _setLimits(WriteStream) { return new Object_(); }
-@mptr("hash") Object_ evaluate(virtual!Object_);
+@mptr("hash") Object_ object(virtual!Object, Object_);
+@method Object_ _object(ConstantAccessor, Object_) { return new Object_(); }
+@method Object_ _object(PARTSPropertiesEditor, Object_) { return new Object_(); }
+@method Object_ _object(PARTSLocalDragDropObject, Object_) { return new Object_(); }
+@method Object_ _object(PARTSWrapper, Object_) { return new Object_(); }
+@method Object_ _object(DragDropObject, Object_) { return new Object_(); }
+@method Object_ _object(UnknownImport, Object_) { return new Object_(); }
+@method Object_ _object(METACLASS_DragDropObject, Object_) { return new Object_(); }
+@mptr("hash") Object_ evaluate(virtual!Object);
 @method Object_ _evaluate(ConstantAccessor) { return new Object_(); }
 @method Object_ _evaluate(CollectionAccessor) { return new Object_(); }
 @method Object_ _evaluate(PARTSLink) { return new Object_(); }
 @method Object_ _evaluate(Message) { return new Object_(); }
-@method Object_ _evaluate(Object_) { return new Object_(); }
+@method Object_ _evaluate(Object) { return new Object_(); }
 @method Object_ _evaluate(CompilationResult) { return new Object_(); }
 @method Object_ _evaluate(MethodExecutor) { return new Object_(); }
 @method Object_ _evaluate(ActionSequence) { return new Object_(); }
@@ -2846,13 +2900,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _evaluate(LinkMessage) { return new Object_(); }
 @method Object_ _evaluate(TwoArgumentBlock) { return new Object_(); }
 @method Object_ _evaluate(OneArgumentBlock) { return new Object_(); }
-@mptr("hash") Object_ evaluateWithArguments(virtual!Object_, Object_);
+@mptr("hash") Object_ evaluateWithArguments(virtual!Object, Object_);
 @method Object_ _evaluateWithArguments(ConstantAccessor, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(CollectionAccessor, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(Message, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(P1121, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(Object_, Object_) { return new Object_(); }
+@method Object_ _evaluateWithArguments(Object, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(PARTSAliasMessage, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(ActionSequence, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(ZeroArgumentBlock, Object_) { return new Object_(); }
@@ -2860,24 +2914,29 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _evaluateWithArguments(TwoArgumentBlock, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(P1122, Object_) { return new Object_(); }
 @method Object_ _evaluateWithArguments(OneArgumentBlock, Object_) { return new Object_(); }
-@mptr("hash") Object_ sourceCode(virtual!Object_);
+@mptr("hash") Object_ defaultDescriptionString(virtual!Exception);
+@method Object_ _defaultDescriptionString(KeyboardInterrupt) { return new Object_(); }
+@method Object_ _defaultDescriptionString(HostFileSystemError) { return new Object_(); }
+@method Object_ _defaultDescriptionString(Exception) { return new Object_(); }
+@method Object_ _defaultDescriptionString(MessageNotUnderstood) { return new Object_(); }
+@mptr("hash") Object_ sourceCode(virtual!Object);
 @method Object_ _sourceCode(CompilationError) { return new Object_(); }
 @method Object_ _sourceCode(CompilationResult) { return new Object_(); }
-@mptr("hash") Object_ sourcePosition(virtual!Object_);
+@mptr("hash") Object_ sourcePosition(virtual!Object);
 @method Object_ _sourcePosition(CompilationError) { return new Object_(); }
 @method Object_ _sourcePosition(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ errorMessage(virtual!Object_);
+@mptr("hash") Object_ errorMessage(virtual!Object);
 @method Object_ _errorMessage(CompilationError) { return new Object_(); }
 @method Object_ _errorMessage(CompilationResult) { return new Object_(); }
 @method Object_ _errorMessage(PARTSEntryFieldPart) { return new Object_(); }
-@mptr("hash") Object_ retry(virtual!Object_);
+@mptr("hash") Object_ retry(virtual!Object);
 @method Object_ _retry(CompilationError) { return new Object_(); }
-@method Object_ _retry(Exception_) { return new Object_(); }
+@method Object_ _retry(Exception) { return new Object_(); }
 @method Object_ _retry(ExceptionHandler) { return new Object_(); }
-@mptr("hash") Object_ recompileWith(virtual!Object_, Object_);
+@mptr("hash") Object_ recompileWith(virtual!Object, Object_);
 @method Object_ _recompileWith(CompilationError, Object_) { return new Object_(); }
 @method Object_ _recompileWith(PARTSScript, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEvents(virtual!Object_);
+@mptr("hash") Object_ partEvents(virtual!Object);
 @method Object_ _partEvents(PARTSTimerPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSComboBoxPart) { return new Object_(); }
@@ -2886,7 +2945,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partEvents(StaticPane) { return new Object_(); }
 @method Object_ _partEvents(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _partEvents(PARTSGroupPane) { return new Object_(); }
-@method Object_ _partEvents(Object_) { return new Object_(); }
+@method Object_ _partEvents(Object) { return new Object_(); }
 @method Object_ _partEvents(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSMultipleChoiceListPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSComparisonPart) { return new Object_(); }
@@ -2920,7 +2979,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partEvents(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSFileAccessorPart) { return new Object_(); }
 @method Object_ _partEvents(PARTSFileDialogPart) { return new Object_(); }
-@mptr("hash") Object_ partTypeSimpleName(virtual!Object_);
+@mptr("hash") Object_ partTypeSimpleName(virtual!Object);
 @method Object_ _partTypeSimpleName(PARTSTimerPart) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSComboBoxPart) { return new Object_(); }
@@ -2929,7 +2988,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partTypeSimpleName(PARTSConfirmerWithCancelPart) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSTypedValueHolder) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSComputationPart) { return new Object_(); }
-@method Object_ _partTypeSimpleName(Object_) { return new Object_(); }
+@method Object_ _partTypeSimpleName(Object) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSCollectionHolder) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSMultipleChoiceListPart) { return new Object_(); }
@@ -2983,10 +3042,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partTypeSimpleName(PARTSFileAccessorPart) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSFormattedEntryField) { return new Object_(); }
 @method Object_ _partTypeSimpleName(PARTSFileDialogPart) { return new Object_(); }
-@mptr("hash") Object_ interval(virtual!Object_, Object_);
+@mptr("hash") Object_ interval(virtual!Object, Object_);
 @method Object_ _interval(PARTSTimerPart, Object_) { return new Object_(); }
 @method Object_ _interval(PARTSDial, Object_) { return new Object_(); }
-@mptr("hash") Object_ partMessages(virtual!Object_);
+@mptr("hash") Object_ partMessages(virtual!Object);
 @method Object_ _partMessages(PARTSTimerPart) { return new Object_(); }
 @method Object_ _partMessages(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partMessages(String) { return new Object_(); }
@@ -3005,7 +3064,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partMessages(PARTSComputationPart) { return new Object_(); }
 @method Object_ _partMessages(CursorManager) { return new Object_(); }
 @method Object_ _partMessages(PARTSGroupPane) { return new Object_(); }
-@method Object_ _partMessages(Object_) { return new Object_(); }
+@method Object_ _partMessages(Object) { return new Object_(); }
 @method Object_ _partMessages(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partMessages(Time) { return new Object_(); }
 @method Object_ _partMessages(PARTSMultipleChoiceListPart) { return new Object_(); }
@@ -3061,13 +3120,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partMessages(PARTSPrebuiltDialog) { return new Object_(); }
 @method Object_ _partMessages(Number) { return new Object_(); }
 @method Object_ _partMessages(Directory) { return new Object_(); }
-@mptr("hash") Object_ partProperties(virtual!Object_);
+@mptr("hash") Object_ partProperties(virtual!Object);
 @method Object_ _partProperties(PARTSTimerPart) { return new Object_(); }
 @method Object_ _partProperties(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partProperties(PARTSComboBoxPart) { return new Object_(); }
 @method Object_ _partProperties(PARTSFixedDecimalEntryFieldPart) { return new Object_(); }
 @method Object_ _partProperties(PARTSGroupPane) { return new Object_(); }
-@method Object_ _partProperties(Object_) { return new Object_(); }
+@method Object_ _partProperties(Object) { return new Object_(); }
 @method Object_ _partProperties(PARTSCollectionHolder) { return new Object_(); }
 @method Object_ _partProperties(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partProperties(PARTSMultipleChoiceListPart) { return new Object_(); }
@@ -3123,7 +3182,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _bitOr(LargeNegativeInteger, Object_) { return new Object_(); }
 @method Object_ _bitOr(LargePositiveInteger, Object_) { return new Object_(); }
 @method Object_ _bitOr(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ negated(virtual!Object_);
+@mptr("hash") Object_ negated(virtual!Object);
 @method Object_ _negated(LargeNegativeInteger) { return new Object_(); }
 @method Object_ _negated(LargePositiveInteger) { return new Object_(); }
 @method Object_ _negated(Integer) { return new Object_(); }
@@ -3154,7 +3213,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _strictlyPositive(Integer) { return new Object_(); }
 @method Object_ _strictlyPositive(Float) { return new Object_(); }
 @method Object_ _strictlyPositive(Number) { return new Object_(); }
-@mptr("hash") Object_ abs(virtual!Object_);
+@mptr("hash") Object_ abs(virtual!Object);
 @method Object_ _abs(LargeNegativeInteger) { return new Object_(); }
 @method Object_ _abs(LargePositiveInteger) { return new Object_(); }
 @method Object_ _abs(Integer) { return new Object_(); }
@@ -3165,15 +3224,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asUnsigned(LargeNegativeInteger) { return new Object_(); }
 @method Object_ _asUnsigned(LargePositiveInteger) { return new Object_(); }
 @method Object_ _asUnsigned(Integer) { return new Object_(); }
-@mptr("hash") Object_ text(virtual!Object_);
+@mptr("hash") Object_ text(virtual!Object);
 @method Object_ _text(PARTSTextIcon) { return new Object_(); }
 @method Object_ _text(ComboBox) { return new Object_(); }
 @method Object_ _text(PARTSPrebuiltMessageBox) { return new Object_(); }
 @method Object_ _text(METACLASS_CursorManager) { return new Object_(); }
-@mptr("hash") Object_ isPARTSTextIcon(virtual!Object_);
+@mptr("hash") Object_ isPARTSTextIcon(virtual!Object);
 @method Object_ _isPARTSTextIcon(PARTSTextIcon) { return new Object_(); }
-@method Object_ _isPARTSTextIcon(Object_) { return new Object_(); }
-@mptr("hash") Object_ display(virtual!Object_);
+@method Object_ _isPARTSTextIcon(Object) { return new Object_(); }
+@mptr("hash") Object_ display(virtual!Object);
 @method Object_ _display(PARTSTextIcon) { return new Object_(); }
 @method Object_ _display(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _display(StoredPicture) { return new Object_(); }
@@ -3200,15 +3259,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _display(ListConnectionPane) { return new Object_(); }
 @method Object_ _display(PARTSMenuBitmapItemPart) { return new Object_(); }
 @method Object_ _display(PARTSMenuSeparatorPart) { return new Object_(); }
-@mptr("hash") Object_ partDeselect(virtual!Object_);
+@mptr("hash") Object_ partDeselect(virtual!Object);
 @method Object_ _partDeselect(PARTSTextIcon) { return new Object_(); }
 @method Object_ _partDeselect(Window) { return new Object_(); }
 @method Object_ _partDeselect(P1105) { return new Object_(); }
-@mptr("hash") Object_ computeExtent(virtual!Object_);
+@mptr("hash") Object_ computeExtent(virtual!Object);
 @method Object_ _computeExtent(PARTSTextIcon) { return new Object_(); }
 @method Object_ _computeExtent(P1117) { return new Object_(); }
 @method Object_ _computeExtent(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ rectangle(virtual!Object_);
+@mptr("hash") Object_ rectangle(virtual!Object);
 @method Object_ _rectangle(PARTSTextIcon) { return new Object_(); }
 @method Object_ _rectangle(Window) { return new Object_(); }
 @method Object_ _rectangle(Tool) { return new Object_(); }
@@ -3223,10 +3282,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _rectangle(P1124) { return new Object_(); }
 @method Object_ _rectangle(PARTSApplication) { return new Object_(); }
 @method Object_ _rectangle(PARTSNonvisualPart) { return new Object_(); }
-@mptr("hash") Object_ displayAt(virtual!Object_, Object_);
+@mptr("hash") Object_ displayAt(virtual!Object, Object_);
 @method Object_ _displayAt(PARTSTextIcon, Object_) { return new Object_(); }
-@method Object_ _displayAt(Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ updateRectangle(virtual!Object_);
+@method Object_ _displayAt(Object, Object_) { return new Object_(); }
+@mptr("hash") Object_ updateRectangle(virtual!Object);
 @method Object_ _updateRectangle(PARTSTextIcon) { return new Object_(); }
 @method Object_ _updateRectangle(Window) { return new Object_(); }
 @method Object_ _updateRectangle(StatusPane) { return new Object_(); }
@@ -3234,32 +3293,32 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _updateRectangle(TextPane) { return new Object_(); }
 @method Object_ _updateRectangle(PARTSNotebook) { return new Object_(); }
 @method Object_ _updateRectangle(P1124) { return new Object_(); }
-@mptr("hash") Object_ pen(virtual!Object_);
+@mptr("hash") Object_ pen(virtual!Object);
 @method Object_ _pen(PARTSTextIcon) { return new Object_(); }
 @method Object_ _pen(Window) { return new Object_(); }
 @method Object_ _pen(GraphicsMedium) { return new Object_(); }
 @method Object_ _pen(ControlPane) { return new Object_(); }
 @method Object_ _pen(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ spacing(virtual!Object_);
+@mptr("hash") Object_ spacing(virtual!Object);
 @method Object_ _spacing(PARTSTextIcon) { return new Object_(); }
 @method Object_ _spacing(PARTSMenuPaneWindows) { return new Object_(); }
 @method Object_ _spacing(PARTSMenuBar) { return new Object_(); }
-@mptr("hash") Object_ text(virtual!Object_, Object_);
+@mptr("hash") Object_ text(virtual!Object, Object_);
 @method Object_ _text(PARTSTextIcon, Object_) { return new Object_(); }
 @method Object_ _text(MethodBrowser, Object_) { return new Object_(); }
 @method Object_ _text(ComboBox, Object_) { return new Object_(); }
 @method Object_ _text(PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
 @method Object_ _text(ClassBrowser, Object_) { return new Object_(); }
 @method Object_ _text(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ shapes(virtual!Object_);
+@mptr("hash") Object_ shapes(virtual!Object);
 @method Object_ _shapes(ObjectStore) { return new Object_(); }
 @method Object_ _shapes(ObjectStoreFileObjects) { return new Object_(); }
 @method Object_ _shapes(ObjectStoreObjects) { return new Object_(); }
-@mptr("hash") Object_ file(virtual!Object_);
+@mptr("hash") Object_ file(virtual!Object);
 @method Object_ _file(ObjectStore) { return new Object_(); }
 @method Object_ _file(FileDialog) { return new Object_(); }
 @method Object_ _file(FileStream) { return new Object_(); }
-@mptr("hash") Object_ fileName(virtual!Object_);
+@mptr("hash") Object_ fileName(virtual!Object);
 @method Object_ _fileName(ObjectStore) { return new Object_(); }
 @method Object_ _fileName(String) { return new Object_(); }
 @method Object_ _fileName(PARTSNonvisualPartPropertyDialog) { return new Object_(); }
@@ -3299,18 +3358,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileName(METACLASS_ThunkDLL16) { return new Object_(); }
 @method Object_ _fileName(METACLASS_CommonDialogDLL) { return new Object_(); }
 @method Object_ _fileName(METACLASS_GDIDLL) { return new Object_(); }
-@mptr("hash") Object_ metaInfo(virtual!Object_);
+@mptr("hash") Object_ metaInfo(virtual!Object);
 @method Object_ _metaInfo(ObjectStore) { return new Object_(); }
 @method Object_ _metaInfo(ObjectStoreReader) { return new Object_(); }
 @method Object_ _metaInfo(ObjectStoreFile) { return new Object_(); }
-@mptr("hash") Object_ eventTableForEdit(virtual!Object_);
+@mptr("hash") Object_ eventTableForEdit(virtual!Object);
 @method Object_ _eventTableForEdit(ObjectStore) { return new Object_(); }
 @method Object_ _eventTableForEdit(TopPane) { return new Object_(); }
 @method Object_ _eventTableForEdit(EventManager) { return new Object_(); }
 @method Object_ _eventTableForEdit(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _eventTableForEdit(P1101) { return new Object_(); }
 @method Object_ _eventTableForEdit(ObjectFiler) { return new Object_(); }
-@method Object_ _eventTableForEdit(Object_) { return new Object_(); }
+@method Object_ _eventTableForEdit(Object) { return new Object_(); }
 @method Object_ _eventTableForEdit(ObjectStoreReader) { return new Object_(); }
 @method Object_ _eventTableForEdit(PARTSEditorState) { return new Object_(); }
 @method Object_ _eventTableForEdit(ApplicationCoordinator) { return new Object_(); }
@@ -3320,14 +3379,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _eventTableForEdit(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _eventTableForEdit(PARTSNonvisualPart) { return new Object_(); }
 @method Object_ _eventTableForEdit(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ releaseEventTable(virtual!Object_);
+@mptr("hash") Object_ releaseEventTable(virtual!Object);
 @method Object_ _releaseEventTable(ObjectStore) { return new Object_(); }
 @method Object_ _releaseEventTable(TopPane) { return new Object_(); }
 @method Object_ _releaseEventTable(EventManager) { return new Object_(); }
 @method Object_ _releaseEventTable(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _releaseEventTable(P1101) { return new Object_(); }
 @method Object_ _releaseEventTable(ObjectFiler) { return new Object_(); }
-@method Object_ _releaseEventTable(Object_) { return new Object_(); }
+@method Object_ _releaseEventTable(Object) { return new Object_(); }
 @method Object_ _releaseEventTable(ObjectStoreReader) { return new Object_(); }
 @method Object_ _releaseEventTable(PARTSEditorState) { return new Object_(); }
 @method Object_ _releaseEventTable(ApplicationCoordinator) { return new Object_(); }
@@ -3337,17 +3396,47 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _releaseEventTable(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _releaseEventTable(PARTSNonvisualPart) { return new Object_(); }
 @method Object_ _releaseEventTable(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ integralSource(virtual!Object_);
+@mptr("hash") Object_ integralSource(virtual!Object);
 @method Object_ _integralSource(ObjectStore) { return new Object_(); }
 @method Object_ _integralSource(LibrarySourceReference) { return new Object_(); }
-@mptr("hash") Object_ eventTable(virtual!Object_);
+@mptr("hash") Object_ formatVersion(virtual!Object);
+@method Object_ _formatVersion(ObjectStore) { return new Object_(); }
+@method Object_ _formatVersion(ObjectStoreFileWithVersion) { return new Object_(); }
+@method Object_ _formatVersion(ObjectStoreFile) { return new Object_(); }
+@method Object_ _formatVersion(METACLASS_ObjectStore) { return new Object_(); }
+@mptr("hash") Object_ formatVersion(virtual!ObjectStore, Object_);
+@method Object_ _formatVersion(ObjectStore, Object_) { return new Object_(); }
+@method Object_ _formatVersion(ObjectStoreWithClient, Object_) { return new Object_(); }
+@mptr("hash") Object_ version(virtual!Object);
+@method Object_ _version(ObjectStore) { return new Object_(); }
+@method Object_ _version(WinLogPalette) { return new Object_(); }
+@method Object_ _version(PARTSApplicationProperty) { return new Object_(); }
+@method Object_ _version(SystemDictionary) { return new Object_(); }
+@method Object_ _version(ObjectStoreWriter) { return new Object_(); }
+@method Object_ _version(OperatingSystemInformation) { return new Object_(); }
+@method Object_ _version(WinMetaheader) { return new Object_(); }
+@method Object_ _version(PARTSApplication) { return new Object_(); }
+@method Object_ _version(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _version(METACLASS_ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ version(virtual!Object, Object_);
+@method Object_ _version(ObjectStore, Object_) { return new Object_(); }
+@method Object_ _version(WinLogPalette, Object_) { return new Object_(); }
+@method Object_ _version(PARTSApplicationProperty, Object_) { return new Object_(); }
+@method Object_ _version(WinMetaheader, Object_) { return new Object_(); }
+@method Object_ _version(PARTSApplication, Object_) { return new Object_(); }
+@mptr("hash") Object_ objects(virtual!Object);
+@method Object_ _objects(ObjectStore) { return new Object_(); }
+@method Object_ _objects(ObjectStoreSpace) { return new Object_(); }
+@method Object_ _objects(ObjectStoreObjects) { return new Object_(); }
+@method Object_ _objects(DragDropSession) { return new Object_(); }
+@mptr("hash") Object_ eventTable(virtual!Object);
 @method Object_ _eventTable(ObjectStore) { return new Object_(); }
 @method Object_ _eventTable(TopPane) { return new Object_(); }
 @method Object_ _eventTable(EventManager) { return new Object_(); }
 @method Object_ _eventTable(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _eventTable(P1101) { return new Object_(); }
 @method Object_ _eventTable(ObjectFiler) { return new Object_(); }
-@method Object_ _eventTable(Object_) { return new Object_(); }
+@method Object_ _eventTable(Object) { return new Object_(); }
 @method Object_ _eventTable(ObjectStoreReader) { return new Object_(); }
 @method Object_ _eventTable(PARTSEditorState) { return new Object_(); }
 @method Object_ _eventTable(ApplicationCoordinator) { return new Object_(); }
@@ -3357,15 +3446,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _eventTable(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _eventTable(PARTSNonvisualPart) { return new Object_(); }
 @method Object_ _eventTable(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ file(virtual!Object_, Object_);
+@mptr("hash") Object_ file(virtual!Object, Object_);
 @method Object_ _file(ObjectStore, Object_) { return new Object_(); }
 @method Object_ _file(ObjectStoreReader, Object_) { return new Object_(); }
 @method Object_ _file(SmalltalkLibraryBinder, Object_) { return new Object_(); }
 @method Object_ _file(Directory, Object_) { return new Object_(); }
+@mptr("hash") Object_ objects(virtual!Object, Object_);
+@method Object_ _objects(ObjectStore, Object_) { return new Object_(); }
+@method Object_ _objects(DragDropSession, Object_) { return new Object_(); }
 @mptr("hash") Object_ prevMethods(virtual!ObjectStore);
 @method Object_ _prevMethods(ObjectStore) { return new Object_(); }
 @method Object_ _prevMethods(SmalltalkLibrary) { return new Object_(); }
-@mptr("hash") Object_ fileName(virtual!Object_, Object_);
+@mptr("hash") Object_ fileName(virtual!Object, Object_);
 @method Object_ _fileName(ObjectStore, Object_) { return new Object_(); }
 @method Object_ _fileName(StringDictionaryReader, Object_) { return new Object_(); }
 @method Object_ _fileName(ObjectStoreWriter, Object_) { return new Object_(); }
@@ -3374,14 +3466,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileName(PARTSDosFileDescriptor, Object_) { return new Object_(); }
 @method Object_ _fileName(ObjectStoreFile, Object_) { return new Object_(); }
 @method Object_ _fileName(PARTSFileAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ className(virtual!Object_, Object_);
+@mptr("hash") Object_ className(virtual!Object, Object_);
 @method Object_ _className(WinWindowClass, Object_) { return new Object_(); }
 @method Object_ _className(ClassInstaller, Object_) { return new Object_(); }
 @method Object_ _className(Enumerator, Object_) { return new Object_(); }
-@mptr("hash") Object_ menuName(virtual!Object_, Object_);
+@mptr("hash") Object_ menuName(virtual!Object, Object_);
 @method Object_ _menuName(WinWindowClass, Object_) { return new Object_(); }
 @method Object_ _menuName(P1108, Object_) { return new Object_(); }
-@mptr("hash") Object_ style(virtual!Object_);
+@mptr("hash") Object_ style(virtual!Object);
 @method Object_ _style(WinWindowClass) { return new Object_(); }
 @method Object_ _style(WinLogPen) { return new Object_(); }
 @method Object_ _style(PARTSNotebookPage) { return new Object_(); }
@@ -3392,10 +3484,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _style(MenuItem) { return new Object_(); }
 @method Object_ _style(WinLogicalPen) { return new Object_(); }
 @method Object_ _style(PARTSPropertyWindowStyle) { return new Object_(); }
-@mptr("hash") Object_ hInstance(virtual!Object_);
+@mptr("hash") Object_ hInstance(virtual!Object);
 @method Object_ _hInstance(WinWindowClass) { return new Object_(); }
 @method Object_ _hInstance(OperatingSystemInformation) { return new Object_(); }
-@mptr("hash") Object_ style(virtual!Object_, Object_);
+@mptr("hash") Object_ style(virtual!Object, Object_);
 @method Object_ _style(WinWindowClass, Object_) { return new Object_(); }
 @method Object_ _style(WinLogPen, Object_) { return new Object_(); }
 @method Object_ _style(PARTSConfirmerWithCancelPart, Object_) { return new Object_(); }
@@ -3408,10 +3500,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _style(MenuItem, Object_) { return new Object_(); }
 @method Object_ _style(ViewManager, Object_) { return new Object_(); }
 @method Object_ _style(PARTSConfirmerPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ menuName(virtual!Object_);
+@mptr("hash") Object_ menuName(virtual!Object);
 @method Object_ _menuName(WinWindowClass) { return new Object_(); }
 @method Object_ _menuName(P1108) { return new Object_(); }
-@mptr("hash") Object_ className(virtual!Object_);
+@mptr("hash") Object_ className(virtual!Object);
 @method Object_ _className(WinWindowClass) { return new Object_(); }
 @method Object_ _className(ClassInstaller) { return new Object_(); }
 @mptr("hash") Object_ atKeyPutFor(virtual!HashTable, Object_, Object_, Object_);
@@ -3482,16 +3574,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _closeView(ApplicationWindow) { return new Object_(); }
 @method Object_ _closeView(PARTSDialogTopPane) { return new Object_(); }
 @method Object_ _closeView(P1102) { return new Object_(); }
-@mptr("hash") Object_ partDisableWorkbenchDragDrop(virtual!Object_);
+@mptr("hash") Object_ partDisableWorkbenchDragDrop(virtual!Object);
 @method Object_ _partDisableWorkbenchDragDrop(PARTSTopPane) { return new Object_(); }
 @method Object_ _partDisableWorkbenchDragDrop(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partDisableWorkbenchDragDrop(Window) { return new Object_(); }
-@method Object_ _partDisableWorkbenchDragDrop(Object_) { return new Object_(); }
+@method Object_ _partDisableWorkbenchDragDrop(Object) { return new Object_(); }
 @method Object_ _partDisableWorkbenchDragDrop(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _partDisableWorkbenchDragDrop(PARTSApplication) { return new Object_(); }
 @mptr("hash") Object_ osOwner(virtual!TopPane, Object_);
 @method Object_ _osOwner(PARTSTopPane, Object_) { return new Object_(); }
 @method Object_ _osOwner(PARTSDialogTopPane, Object_) { return new Object_(); }
+@mptr("hash") Object_ frameWindowClass(virtual!Object);
+@method Object_ _frameWindowClass(PARTSTopPane) { return new Object_(); }
+@method Object_ _frameWindowClass(P1127) { return new Object_(); }
+@method Object_ _frameWindowClass(METACLASS_PARTSTopPane) { return new Object_(); }
+@method Object_ _frameWindowClass(METACLASS_P1127) { return new Object_(); }
 @mptr("hash") Object_ initSize(virtual!Window, Object_);
 @method Object_ _initSize(PARTSTopPane, Object_) { return new Object_(); }
 @method Object_ _initSize(PARTSMenuLabelPart, Object_) { return new Object_(); }
@@ -3500,22 +3597,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initSize(PARTSBaseNotebook, Object_) { return new Object_(); }
 @method Object_ _initSize(PARTSMenuItemPane, Object_) { return new Object_(); }
 @method Object_ _initSize(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEnableWorkbenchDragDrop(virtual!Object_);
+@mptr("hash") Object_ partEnableWorkbenchDragDrop(virtual!Object);
 @method Object_ _partEnableWorkbenchDragDrop(PARTSTopPane) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(Window) { return new Object_(); }
-@method Object_ _partEnableWorkbenchDragDrop(Object_) { return new Object_(); }
+@method Object_ _partEnableWorkbenchDragDrop(Object) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSNotebook) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSMenuPaneWindows) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSMenuBar) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _partEnableWorkbenchDragDrop(PARTSApplication) { return new Object_(); }
+@mptr("hash") Object_ showRestoredWindow(virtual!Object);
+@method Object_ _showRestoredWindow(PARTSTopPane) { return new Object_(); }
+@method Object_ _showRestoredWindow(WindowHandle) { return new Object_(); }
+@method Object_ _showRestoredWindow(ApplicationWindow) { return new Object_(); }
 @mptr("hash") Object_ getSelection(virtual!ControlPane);
 @method Object_ _getSelection(ListBox) { return new Object_(); }
 @method Object_ _getSelection(EntryField) { return new Object_(); }
 @method Object_ _getSelection(MultipleSelectListBox) { return new Object_(); }
 @method Object_ _getSelection(ExtendedListBox) { return new Object_(); }
-@mptr("hash") Object_ itemHeight(virtual!Object_);
+@mptr("hash") Object_ itemHeight(virtual!Object);
 @method Object_ _itemHeight(ListBox) { return new Object_(); }
 @method Object_ _itemHeight(WinMeasureItemStruct) { return new Object_(); }
 @mptr("hash") Object_ getValue(virtual!SubPane);
@@ -3562,7 +3663,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ printSelector(virtual!SubPane, Object_);
 @method Object_ _printSelector(ListBox, Object_) { return new Object_(); }
 @method Object_ _printSelector(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ deselect(virtual!Object_);
+@mptr("hash") Object_ deselect(virtual!Object);
 @method Object_ _deselect(ListBox) { return new Object_(); }
 @method Object_ _deselect(ListPane) { return new Object_(); }
 @method Object_ _deselect(Bitmap) { return new Object_(); }
@@ -3591,7 +3692,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _drawHighlight(TopPane, Object_) { return new Object_(); }
 @method Object_ _drawHighlight(Window, Object_) { return new Object_(); }
 @method Object_ _drawHighlight(DrawnButton, Object_) { return new Object_(); }
-@mptr("hash") Object_ list(virtual!Object_);
+@mptr("hash") Object_ list(virtual!Object);
 @method Object_ _list(ListBox) { return new Object_(); }
 @method Object_ _list(ListChooser) { return new Object_(); }
 @method Object_ _list(ListPane) { return new Object_(); }
@@ -3600,6 +3701,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _dragTargetEraseSeparatorEmphasis(TextPane) { return new Object_(); }
 @method Object_ _dragTargetEraseSeparatorEmphasis(TextPaneControl) { return new Object_(); }
 @method Object_ _dragTargetEraseSeparatorEmphasis(ListPane) { return new Object_(); }
+@mptr("hash") Object_ defaultDrawItem(virtual!Window, Object_);
+@method Object_ _defaultDrawItem(ListBox, Object_) { return new Object_(); }
+@method Object_ _defaultDrawItem(Window, Object_) { return new Object_(); }
+@method Object_ _defaultDrawItem(ExtendedListBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ bitmaps(virtual!ControlPane);
 @method Object_ _bitmaps(ListBox) { return new Object_(); }
 @method Object_ _bitmaps(PARTSNotebook) { return new Object_(); }
@@ -3612,9 +3717,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ itemSize(virtual!Window, Object_);
 @method Object_ _itemSize(ListBox, Object_) { return new Object_(); }
 @method Object_ _itemSize(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditContentsProperties(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ partEditContentsProperties(virtual!Object, Object_, Object_);
 @method Object_ _partEditContentsProperties(ListBox, Object_, Object_) { return new Object_(); }
-@method Object_ _partEditContentsProperties(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _partEditContentsProperties(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _partEditContentsProperties(PARTSDialPanePart, Object_, Object_) { return new Object_(); }
 @method Object_ _partEditContentsProperties(PARTSTextPanePart, Object_, Object_) { return new Object_(); }
 @method Object_ _partEditContentsProperties(PARTSNestedPart, Object_, Object_) { return new Object_(); }
@@ -3625,7 +3730,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ stringForItem(virtual!SubPane, Object_);
 @method Object_ _stringForItem(ListBox, Object_) { return new Object_(); }
 @method Object_ _stringForItem(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ indexOf(virtual!Object_, Object_);
+@mptr("hash") Object_ indexOf(virtual!Object, Object_);
 @method Object_ _indexOf(ListBox, Object_) { return new Object_(); }
 @method Object_ _indexOf(IndexedCollection, Object_) { return new Object_(); }
 @method Object_ _indexOf(Stream, Object_) { return new Object_(); }
@@ -3638,7 +3743,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ dragTargetEraseItemEmphasis(virtual!SubPane);
 @method Object_ _dragTargetEraseItemEmphasis(ListBox) { return new Object_(); }
 @method Object_ _dragTargetEraseItemEmphasis(ListPane) { return new Object_(); }
-@mptr("hash") Object_ button1Move(virtual!Object_, Object_);
+@mptr("hash") Object_ button1Move(virtual!Object, Object_);
 @method Object_ _button1Move(ListBox, Object_) { return new Object_(); }
 @method Object_ _button1Move(Window, Object_) { return new Object_(); }
 @method Object_ _button1Move(GraphPane, Object_) { return new Object_(); }
@@ -3652,11 +3757,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _button1Move(P1124, Object_) { return new Object_(); }
 @method Object_ _button1Move(ListPane, Object_) { return new Object_(); }
 @method Object_ _button1Move(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ partContents(virtual!Object_);
+@mptr("hash") Object_ partContents(virtual!Object);
 @method Object_ _partContents(ListBox) { return new Object_(); }
-@method Object_ _partContents(Object_) { return new Object_(); }
+@method Object_ _partContents(Object) { return new Object_(); }
 @method Object_ _partContents(PARTSDialPanePart) { return new Object_(); }
-@mptr("hash") Object_ keyboardInput(virtual!Object_, Object_);
+@mptr("hash") Object_ keyboardInput(virtual!Object, Object_);
 @method Object_ _keyboardInput(ListBox, Object_) { return new Object_(); }
 @method Object_ _keyboardInput(Window, Object_) { return new Object_(); }
 @method Object_ _keyboardInput(GraphPane, Object_) { return new Object_(); }
@@ -3673,7 +3778,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _keyboardInput(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _keyboardInput(Button, Object_) { return new Object_(); }
 @method Object_ _keyboardInput(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ value(virtual!Object_);
+@mptr("hash") Object_ value(virtual!Object);
 @method Object_ _value(ListBox) { return new Object_(); }
 @method Object_ _value(PARTSStringTemplate) { return new Object_(); }
 @method Object_ _value(EntryField) { return new Object_(); }
@@ -3703,7 +3808,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _value(Association) { return new Object_(); }
 @method Object_ _value(PARTSEntryFieldPart) { return new Object_(); }
 @method Object_ _value(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ value(virtual!Object_, Object_);
+@mptr("hash") Object_ value(virtual!Object, Object_);
 @method Object_ _value(ListBox, Object_) { return new Object_(); }
 @method Object_ _value(EntryField, Object_) { return new Object_(); }
 @method Object_ _value(LayoutUnit, Object_) { return new Object_(); }
@@ -3725,10 +3830,34 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _value(OneArgumentBlock, Object_) { return new Object_(); }
 @method Object_ _value(Association, Object_) { return new Object_(); }
 @method Object_ _value(METACLASS_Character, Object_) { return new Object_(); }
+@mptr("hash") Object_ deleteIndex(virtual!SubPane, Object_);
+@method Object_ _deleteIndex(ListBox, Object_) { return new Object_(); }
+@method Object_ _deleteIndex(ListPane, Object_) { return new Object_(); }
+@method Object_ _deleteIndex(ExtendedListBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ characterTyped(virtual!SubPane);
 @method Object_ _characterTyped(ListBox) { return new Object_(); }
 @method Object_ _characterTyped(ListPane) { return new Object_(); }
-@mptr("hash") Object_ partDefaultExtent(virtual!Object_);
+@mptr("hash") Object_ deleteAllMessage(virtual!ListBox);
+@method Object_ _deleteAllMessage(ListBox) { return new Object_(); }
+@method Object_ _deleteAllMessage(DropDownList) { return new Object_(); }
+@mptr("hash") Object_ windowClass(virtual!Object);
+@method Object_ _windowClass(ListBox) { return new Object_(); }
+@method Object_ _windowClass(Window) { return new Object_(); }
+@method Object_ _windowClass(StaticPane) { return new Object_(); }
+@method Object_ _windowClass(StatusPane) { return new Object_(); }
+@method Object_ _windowClass(GroupBox) { return new Object_(); }
+@method Object_ _windowClass(DropDownList) { return new Object_(); }
+@method Object_ _windowClass(GraphPane) { return new Object_(); }
+@method Object_ _windowClass(EntryField) { return new Object_(); }
+@method Object_ _windowClass(ScrollBar) { return new Object_(); }
+@method Object_ _windowClass(ToolPane) { return new Object_(); }
+@method Object_ _windowClass(ApplicationWindow) { return new Object_(); }
+@method Object_ _windowClass(Button) { return new Object_(); }
+@method Object_ _windowClass(METACLASS_Window) { return new Object_(); }
+@method Object_ _windowClass(METACLASS_ApplicationCoordinator) { return new Object_(); }
+@method Object_ _windowClass(METACLASS_PARTSStarterWindow) { return new Object_(); }
+@method Object_ _windowClass(METACLASS_DialogCoordinator) { return new Object_(); }
+@mptr("hash") Object_ partDefaultExtent(virtual!Object);
 @method Object_ _partDefaultExtent(ListBox) { return new Object_(); }
 @method Object_ _partDefaultExtent(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partDefaultExtent(PARTSMenuPart) { return new Object_(); }
@@ -3772,7 +3901,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _restore(ApplicationWindow) { return new Object_(); }
 @method Object_ _restore(TextPaneControl) { return new Object_(); }
 @method Object_ _restore(ListPane) { return new Object_(); }
-@mptr("hash") Object_ selectedItem(virtual!Object_);
+@mptr("hash") Object_ selectedItem(virtual!Object);
 @method Object_ _selectedItem(ListBox) { return new Object_(); }
 @method Object_ _selectedItem(P1141) { return new Object_(); }
 @method Object_ _selectedItem(P1143) { return new Object_(); }
@@ -3787,7 +3916,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isOkToChange(SubPane) { return new Object_(); }
 @method Object_ _isOkToChange(PARTSBaseNotebook) { return new Object_(); }
 @method Object_ _isOkToChange(ListPane) { return new Object_(); }
-@mptr("hash") Object_ characterInput(virtual!Object_, Object_);
+@mptr("hash") Object_ characterInput(virtual!Object, Object_);
 @method Object_ _characterInput(ListBox, Object_) { return new Object_(); }
 @method Object_ _characterInput(Window, Object_) { return new Object_(); }
 @method Object_ _characterInput(P1127, Object_) { return new Object_(); }
@@ -3797,11 +3926,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _characterInput(PARTSWindowPart, Object_) { return new Object_(); }
 @method Object_ _characterInput(Button, Object_) { return new Object_(); }
 @method Object_ _characterInput(ListPane, Object_) { return new Object_(); }
+@mptr("hash") Object_ deleteItem(virtual!Object, Object_);
+@method Object_ _deleteItem(ListBox, Object_) { return new Object_(); }
+@method Object_ _deleteItem(Menu, Object_) { return new Object_(); }
+@method Object_ _deleteItem(ListPane, Object_) { return new Object_(); }
+@method Object_ _deleteItem(ExtendedListBox, Object_) { return new Object_(); }
+@method Object_ _deleteItem(MenuWindow, Object_) { return new Object_(); }
 @mptr("hash") Object_ scrollVerticalCharacters(virtual!SubPane, Object_);
 @method Object_ _scrollVerticalCharacters(ListBox, Object_) { return new Object_(); }
 @method Object_ _scrollVerticalCharacters(SubPane, Object_) { return new Object_(); }
 @method Object_ _scrollVerticalCharacters(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ setValue(virtual!Object_, Object_);
+@mptr("hash") Object_ setValue(virtual!Object, Object_);
 @method Object_ _setValue(ListBox, Object_) { return new Object_(); }
 @method Object_ _setValue(EntryField, Object_) { return new Object_(); }
 @method Object_ _setValue(ScrollBar, Object_) { return new Object_(); }
@@ -3824,14 +3959,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _setValue(PARTSEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _setValue(PARTSDictionaryHolderPart, Object_) { return new Object_(); }
 @method Object_ _setValue(PARTSFormattedEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ itemHeight(virtual!Object_, Object_);
+@mptr("hash") Object_ itemHeight(virtual!Object, Object_);
 @method Object_ _itemHeight(ListBox, Object_) { return new Object_(); }
 @method Object_ _itemHeight(WinMeasureItemStruct, Object_) { return new Object_(); }
 @method Object_ _itemHeight(ExtendedListBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ selectionMessage(virtual!ListBox);
 @method Object_ _selectionMessage(ListBox) { return new Object_(); }
 @method Object_ _selectionMessage(DropDownList) { return new Object_(); }
-@mptr("hash") Object_ lineAt(virtual!Object_, Object_);
+@mptr("hash") Object_ lineAt(virtual!Object, Object_);
 @method Object_ _lineAt(ListBox, Object_) { return new Object_(); }
 @method Object_ _lineAt(TextPane, Object_) { return new Object_(); }
 @method Object_ _lineAt(StringModel, Object_) { return new Object_(); }
@@ -3861,7 +3996,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ itemSize(virtual!Window);
 @method Object_ _itemSize(ListBox) { return new Object_(); }
 @method Object_ _itemSize(Window) { return new Object_(); }
-@mptr("hash") Object_ font(virtual!Object_, Object_);
+@mptr("hash") Object_ font(virtual!Object, Object_);
 @method Object_ _font(ListBox, Object_) { return new Object_(); }
 @method Object_ _font(Window, Object_) { return new Object_(); }
 @method Object_ _font(ListDialog, Object_) { return new Object_(); }
@@ -3899,6 +4034,47 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmMousemoveWith(ListBox, Object_, Object_) { return new Object_(); }
 @method Object_ _wmMousemoveWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmMousemoveWith(P1154, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultStyle(virtual!Object);
+@method Object_ _defaultStyle(ListBox) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSMenuLabelPart) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSNotebookPage) { return new Object_(); }
+@method Object_ _defaultStyle(Window) { return new Object_(); }
+@method Object_ _defaultStyle(StatusPane) { return new Object_(); }
+@method Object_ _defaultStyle(GroupBox) { return new Object_(); }
+@method Object_ _defaultStyle(DropDownList) { return new Object_(); }
+@method Object_ _defaultStyle(P1105) { return new Object_(); }
+@method Object_ _defaultStyle(GroupPane) { return new Object_(); }
+@method Object_ _defaultStyle(EntryField) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSSequencePane) { return new Object_(); }
+@method Object_ _defaultStyle(DrawnButton) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSGroupPane) { return new Object_(); }
+@method Object_ _defaultStyle(DialogTopPane) { return new Object_(); }
+@method Object_ _defaultStyle(CheckBox) { return new Object_(); }
+@method Object_ _defaultStyle(ScrollBar) { return new Object_(); }
+@method Object_ _defaultStyle(ToolPane) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSDialPanePart) { return new Object_(); }
+@method Object_ _defaultStyle(StaticGraphic) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSTextPanePart) { return new Object_(); }
+@method Object_ _defaultStyle(ThreeStateButton) { return new Object_(); }
+@method Object_ _defaultStyle(ApplicationWindow) { return new Object_(); }
+@method Object_ _defaultStyle(ComboBox) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSStaticGraphicPart) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSNotebook) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSGraphPanePart) { return new Object_(); }
+@method Object_ _defaultStyle(MultipleSelectListBox) { return new Object_(); }
+@method Object_ _defaultStyle(StaticBox) { return new Object_(); }
+@method Object_ _defaultStyle(SubPane) { return new Object_(); }
+@method Object_ _defaultStyle(RadioButton) { return new Object_(); }
+@method Object_ _defaultStyle(P1102) { return new Object_(); }
+@method Object_ _defaultStyle(P1104) { return new Object_(); }
+@method Object_ _defaultStyle(StaticText) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSNotebookClientAreaPane) { return new Object_(); }
+@method Object_ _defaultStyle(PARTSMenuItemPane) { return new Object_(); }
+@method Object_ _defaultStyle(Button) { return new Object_(); }
+@method Object_ _defaultStyle(TextEdit) { return new Object_(); }
+@method Object_ _defaultStyle(Toggle) { return new Object_(); }
+@method Object_ _defaultStyle(ListPane) { return new Object_(); }
 @mptr("hash") Object_ commitSelection(virtual!SubPane);
 @method Object_ _commitSelection(ListBox) { return new Object_(); }
 @method Object_ _commitSelection(PARTSComboBoxPart) { return new Object_(); }
@@ -3907,7 +4083,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _commitSelection(PARTSListPanePart) { return new Object_(); }
 @method Object_ _commitSelection(PARTSBaseNotebook) { return new Object_(); }
 @method Object_ _commitSelection(ListPane) { return new Object_(); }
-@mptr("hash") Object_ list(virtual!Object_, Object_);
+@mptr("hash") Object_ list(virtual!Object, Object_);
 @method Object_ _list(ListBox, Object_) { return new Object_(); }
 @method Object_ _list(ListChooser, Object_) { return new Object_(); }
 @method Object_ _list(ListDialog, Object_) { return new Object_(); }
@@ -3923,7 +4099,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _dragSourceNeedsObject(TextPaneControl, Object_) { return new Object_(); }
 @method Object_ _dragSourceNeedsObject(ListPane, Object_) { return new Object_(); }
 @method Object_ _dragSourceNeedsObject(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ selection(virtual!Object_);
+@mptr("hash") Object_ selection(virtual!Object);
 @method Object_ _selection(ListBox) { return new Object_(); }
 @method Object_ _selection(EntryField) { return new Object_(); }
 @method Object_ _selection(ListChooser) { return new Object_(); }
@@ -3935,7 +4111,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _selection(Toggle) { return new Object_(); }
 @method Object_ _selection(ListPane) { return new Object_(); }
 @method Object_ _selection(ExtendedListBox) { return new Object_(); }
-@mptr("hash") Object_ selection(virtual!Object_, Object_);
+@mptr("hash") Object_ selection(virtual!Object, Object_);
 @method Object_ _selection(ListBox, Object_) { return new Object_(); }
 @method Object_ _selection(ListChooser, Object_) { return new Object_(); }
 @method Object_ _selection(PARTSPropertyButtonGroup, Object_) { return new Object_(); }
@@ -3954,7 +4130,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ selectItem(virtual!SubPane, Object_);
 @method Object_ _selectItem(ListBox, Object_) { return new Object_(); }
 @method Object_ _selectItem(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ setList(virtual!Object_, Object_);
+@mptr("hash") Object_ setList(virtual!Object, Object_);
 @method Object_ _setList(ListBox, Object_) { return new Object_(); }
 @method Object_ _setList(ListChooser, Object_) { return new Object_(); }
 @method Object_ _setList(ListPane, Object_) { return new Object_(); }
@@ -3964,9 +4140,24 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _clearSelection(TextPane) { return new Object_(); }
 @method Object_ _clearSelection(MultipleSelectListBox) { return new Object_(); }
 @method Object_ _clearSelection(ListPane) { return new Object_(); }
+@mptr("hash") Object_ deleteMessage(virtual!Object);
+@method Object_ _deleteMessage(ListBox) { return new Object_(); }
+@method Object_ _deleteMessage(DropDownList) { return new Object_(); }
+@method Object_ _deleteMessage(P1141) { return new Object_(); }
+@method Object_ _deleteMessage(P1142) { return new Object_(); }
 @mptr("hash") Object_ insertMessage(virtual!ListBox);
 @method Object_ _insertMessage(ListBox) { return new Object_(); }
 @method Object_ _insertMessage(DropDownList) { return new Object_(); }
+@mptr("hash") Object_ defaultMeasureControl(virtual!Window, Object_);
+@method Object_ _defaultMeasureControl(ListBox, Object_) { return new Object_(); }
+@method Object_ _defaultMeasureControl(Window, Object_) { return new Object_(); }
+@mptr("hash") Object_ deleteAll(virtual!Object);
+@method Object_ _deleteAll(ListBox) { return new Object_(); }
+@method Object_ _deleteAll(Menu) { return new Object_(); }
+@method Object_ _deleteAll(ComboBox) { return new Object_(); }
+@method Object_ _deleteAll(TextEdit) { return new Object_(); }
+@method Object_ _deleteAll(ListPane) { return new Object_(); }
+@method Object_ _deleteAll(PARTSEntryFieldPart) { return new Object_(); }
 @mptr("hash") Object_ isIndexSelected(virtual!SubPane, Object_);
 @method Object_ _isIndexSelected(ListBox, Object_) { return new Object_(); }
 @method Object_ _isIndexSelected(MultipleSelectListBox, Object_) { return new Object_(); }
@@ -3982,12 +4173,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ restoreSelected(virtual!SubPane);
 @method Object_ _restoreSelected(ListBox) { return new Object_(); }
 @method Object_ _restoreSelected(ListPane) { return new Object_(); }
-@mptr("hash") Object_ color(virtual!Object_);
+@mptr("hash") Object_ color(virtual!Object);
 @method Object_ _color(WinLogPen) { return new Object_(); }
 @method Object_ _color(Border) { return new Object_(); }
 @method Object_ _color(P1113) { return new Object_(); }
 @method Object_ _color(WinLogBrush) { return new Object_(); }
-@mptr("hash") Object_ color(virtual!Object_, Object_);
+@mptr("hash") Object_ color(virtual!Object, Object_);
 @method Object_ _color(WinLogPen, Object_) { return new Object_(); }
 @method Object_ _color(WinLogBrush, Object_) { return new Object_(); }
 @method Object_ _color(ColorDialog, Object_) { return new Object_(); }
@@ -3999,12 +4190,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partDirectEditFrameRectangle(Button) { return new Object_(); }
 @method Object_ _partDirectEditFrameRectangle(Toggle) { return new Object_(); }
 @method Object_ _partDirectEditFrameRectangle(PARTSMenuTextItemPart) { return new Object_(); }
-@mptr("hash") Object_ isPARTSMenuComponent(virtual!Object_);
+@mptr("hash") Object_ isPARTSMenuComponent(virtual!Object);
 @method Object_ _isPARTSMenuComponent(PARTSMenuLabelPart) { return new Object_(); }
-@method Object_ _isPARTSMenuComponent(Object_) { return new Object_(); }
+@method Object_ _isPARTSMenuComponent(Object) { return new Object_(); }
 @method Object_ _isPARTSMenuComponent(PARTSMenuPart) { return new Object_(); }
 @method Object_ _isPARTSMenuComponent(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ font(virtual!Object_);
+@mptr("hash") Object_ font(virtual!Object);
 @method Object_ _font(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _font(PARTSDialog) { return new Object_(); }
 @method Object_ _font(Window) { return new Object_(); }
@@ -4044,7 +4235,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partPrintColorAndFontPropertiesOnMargin(PARTSGraphPanePart, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintColorAndFontPropertiesOnMargin(PARTSMenuItemPane, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintColorAndFontPropertiesOnMargin(PARTSNestedPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partSize(virtual!Object_);
+@mptr("hash") Object_ partSize(virtual!Object);
 @method Object_ _partSize(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _partSize(PARTSVisualPartPropertyDialog) { return new Object_(); }
 @method Object_ _partSize(PARTSMenuItemPane) { return new Object_(); }
@@ -4060,6 +4251,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmErasebkgndWith(PARTSMenuItemPane, Object_, Object_) { return new Object_(); }
 @method Object_ _wmErasebkgndWith(PARTSNestedPart, Object_, Object_) { return new Object_(); }
 @method Object_ _wmErasebkgndWith(PARTSMenuTextItemPart, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ buildWindow(virtual!Object, Object_);
+@method Object_ _buildWindow(PARTSMenuLabelPart, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSMenuPart, Object_) { return new Object_(); }
+@method Object_ _buildWindow(Menu, Object_) { return new Object_(); }
+@method Object_ _buildWindow(DialogTopPane, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSMenuPaneWindows, Object_) { return new Object_(); }
+@method Object_ _buildWindow(ControlPane, Object_) { return new Object_(); }
+@method Object_ _buildWindow(SubPane, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSMenuBar, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSNotebookClientAreaPane, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSWindowPart, Object_) { return new Object_(); }
+@method Object_ _buildWindow(PARTSNestedPart, Object_) { return new Object_(); }
+@method Object_ _buildWindow(ExtendedListBox, Object_) { return new Object_(); }
+@method Object_ _buildWindow(MenuWindow, Object_) { return new Object_(); }
 @mptr("hash") Object_ updateSliders(virtual!Window);
 @method Object_ _updateSliders(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _updateSliders(Window) { return new Object_(); }
@@ -4071,9 +4276,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _updateSliders(ControlPane) { return new Object_(); }
 @method Object_ _updateSliders(SubPane) { return new Object_(); }
 @method Object_ _updateSliders(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ partCanHaveParent(virtual!Object_, Object_);
+@mptr("hash") Object_ partCanHaveParent(virtual!Object, Object_);
 @method Object_ _partCanHaveParent(PARTSMenuLabelPart, Object_) { return new Object_(); }
-@method Object_ _partCanHaveParent(Object_, Object_) { return new Object_(); }
+@method Object_ _partCanHaveParent(Object, Object_) { return new Object_(); }
 @method Object_ _partCanHaveParent(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _partCanHaveParent(PARTSMenuItemPane, Object_) { return new Object_(); }
 @mptr("hash") Object_ partApplicableStylePrefixes(virtual!SubPane);
@@ -4088,11 +4293,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _frameStyle(PARTSMenuLabelPart) { return new Object_(); }
 @method Object_ _frameStyle(PARTSDialPanePart) { return new Object_(); }
 @method Object_ _frameStyle(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ asTime(virtual!Object_);
+@mptr("hash") Object_ asTime(virtual!Object);
 @method Object_ _asTime(String) { return new Object_(); }
 @method Object_ _asTime(WinFileTime) { return new Object_(); }
 @method Object_ _asTime(WinSystemTime) { return new Object_(); }
-@mptr("hash") Object_ replaceBytesFromToWithStartingat(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ replaceBytesFromToWithStartingat(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _replaceBytesFromToWithStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesFromToWithStartingat(DoubleByteSymbol, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesFromToWithStartingat(ExternalHandle, Object_, Object_, Object_, Object_) { return new Object_(); }
@@ -4101,10 +4306,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _replaceBytesFromToWithStartingat(ByteArray, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesFromToWithStartingat(Float, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesFromToWithStartingat(ExternalAddress, Object_, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ replaceFromToWithobject(virtual!Object, Object_, Object_, Object_);
+@method Object_ _replaceFromToWithobject(String, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _replaceFromToWithobject(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _replaceFromToWithobject(DoubleByteSymbol, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _replaceFromToWithobject(Symbol, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _replaceFromToWithobject(DoubleByteString, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _replaceFromToWithobject(PARTSArrayHolderPart, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ asByteArray(virtual!String);
 @method Object_ _asByteArray(String) { return new Object_(); }
 @method Object_ _asByteArray(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ asExternalLong(virtual!Object_);
+@mptr("hash") Object_ asExternalLong(virtual!Object);
 @method Object_ _asExternalLong(String) { return new Object_(); }
 @method Object_ _asExternalLong(ByteArray) { return new Object_(); }
 @method Object_ _asExternalLong(ExternalLong) { return new Object_(); }
@@ -4112,21 +4324,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _containsDBCharacter(String) { return new Object_(); }
 @method Object_ _containsDBCharacter(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _containsDBCharacter(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ asFileSystemPath(virtual!Object_);
+@mptr("hash") Object_ asFileSystemPath(virtual!Object);
 @method Object_ _asFileSystemPath(String) { return new Object_(); }
 @method Object_ _asFileSystemPath(FileSystemLocator) { return new Object_(); }
 @method Object_ _asFileSystemPath(FileSystemPath) { return new Object_(); }
 @method Object_ _asFileSystemPath(FileSystemEntity) { return new Object_(); }
 @method Object_ _asFileSystemPath(FileVolume) { return new Object_(); }
-@mptr("hash") Object_ edit(virtual!Object_);
+@mptr("hash") Object_ edit(virtual!Object);
 @method Object_ _edit(String) { return new Object_(); }
 @method Object_ _edit(Class) { return new Object_(); }
-@mptr("hash") Object_ asString(virtual!Object_);
+@mptr("hash") Object_ asString(virtual!Object);
 @method Object_ _asString(String) { return new Object_(); }
 @method Object_ _asString(Atom) { return new Object_(); }
 @method Object_ _asString(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _asString(StringReference) { return new Object_(); }
-@method Object_ _asString(Object_) { return new Object_(); }
+@method Object_ _asString(Object) { return new Object_(); }
 @method Object_ _asString(PARTSScriptSource) { return new Object_(); }
 @method Object_ _asString(CompilationResult) { return new Object_(); }
 @method Object_ _asString(Symbol) { return new Object_(); }
@@ -4137,27 +4349,27 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asString(ByteArray) { return new Object_(); }
 @method Object_ _asString(PARTSValueHolderPart) { return new Object_(); }
 @method Object_ _asString(NetworkFilePath) { return new Object_(); }
-@mptr("hash") Object_ asExternalAddress(virtual!Object_);
+@mptr("hash") Object_ asExternalAddress(virtual!Object);
 @method Object_ _asExternalAddress(String) { return new Object_(); }
 @method Object_ _asExternalAddress(ExternalHandle) { return new Object_(); }
 @method Object_ _asExternalAddress(Integer) { return new Object_(); }
 @method Object_ _asExternalAddress(ByteArray) { return new Object_(); }
 @method Object_ _asExternalAddress(ExternalAddress) { return new Object_(); }
 @method Object_ _asExternalAddress(ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ fileExtension(virtual!Object_);
+@mptr("hash") Object_ fileExtension(virtual!Object);
 @method Object_ _fileExtension(String) { return new Object_(); }
 @method Object_ _fileExtension(METACLASS_ObjectStore) { return new Object_(); }
-@mptr("hash") Object_ isString(virtual!Object_);
+@mptr("hash") Object_ isString(virtual!Object);
 @method Object_ _isString(String) { return new Object_(); }
-@method Object_ _isString(Object_) { return new Object_(); }
+@method Object_ _isString(Object) { return new Object_(); }
 @mptr("hash") Object_ copyToExternalMemory(virtual!FixedSizeCollection);
 @method Object_ _copyToExternalMemory(String) { return new Object_(); }
 @method Object_ _copyToExternalMemory(ByteArray) { return new Object_(); }
-@mptr("hash") Object_ storeOn(virtual!Object_, Object_);
+@mptr("hash") Object_ storeOn(virtual!Object, Object_);
 @method Object_ _storeOn(String, Object_) { return new Object_(); }
 @method Object_ _storeOn(DoubleByteSymbol, Object_) { return new Object_(); }
 @method Object_ _storeOn(Collection, Object_) { return new Object_(); }
-@method Object_ _storeOn(Object_, Object_) { return new Object_(); }
+@method Object_ _storeOn(Object, Object_) { return new Object_(); }
 @method Object_ _storeOn(Array, Object_) { return new Object_(); }
 @method Object_ _storeOn(Symbol, Object_) { return new Object_(); }
 @method Object_ _storeOn(Character, Object_) { return new Object_(); }
@@ -4168,29 +4380,29 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _storeOn(FixedSizeCollection, Object_) { return new Object_(); }
 @method Object_ _storeOn(Number, Object_) { return new Object_(); }
 @method Object_ _storeOn(UndefinedObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ partHint(virtual!Object_);
+@mptr("hash") Object_ partHint(virtual!Object);
 @method Object_ _partHint(String) { return new Object_(); }
 @method Object_ _partHint(PARTSLink) { return new Object_(); }
 @method Object_ _partHint(P1127) { return new Object_(); }
-@method Object_ _partHint(Object_) { return new Object_(); }
+@method Object_ _partHint(Object) { return new Object_(); }
 @method Object_ _partHint(PARTSValueHolderPart) { return new Object_(); }
 @method Object_ _partHint(PARTSNestedPart) { return new Object_(); }
 @method Object_ _partHint(PARTSApplication) { return new Object_(); }
 @method Object_ _partHint(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ basicAtPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ basicAtPut(virtual!Object, Object_, Object_);
 @method Object_ _basicAtPut(String, Object_, Object_) { return new Object_(); }
-@method Object_ _basicAtPut(Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceWith(virtual!Object_, Object_, Object_);
+@method Object_ _basicAtPut(Object, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ replaceWith(virtual!Object, Object_, Object_);
 @method Object_ _replaceWith(String, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceWith(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceWith(Symbol, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceWith(DoubleByteString, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceWith(ByteArray, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceWith(ExternalAddress, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ setFromReference(virtual!Object_, Object_);
+@mptr("hash") Object_ setFromReference(virtual!Object, Object_);
 @method Object_ _setFromReference(String, Object_) { return new Object_(); }
 @method Object_ _setFromReference(PARTSStringHolderPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ asDate(virtual!Object_);
+@mptr("hash") Object_ asDate(virtual!Object);
 @method Object_ _asDate(String) { return new Object_(); }
 @method Object_ _asDate(WinFileTime) { return new Object_(); }
 @method Object_ _asDate(WinSystemTime) { return new Object_(); }
@@ -4199,10 +4411,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asSymbol(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _asSymbol(Symbol) { return new Object_(); }
 @method Object_ _asSymbol(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ size(virtual!Object_);
+@mptr("hash") Object_ size(virtual!Object);
 @method Object_ _size(String) { return new Object_(); }
 @method Object_ _size(IndexedCollection) { return new Object_(); }
-@method Object_ _size(Object_) { return new Object_(); }
+@method Object_ _size(Object) { return new Object_(); }
 @method Object_ _size(Interval) { return new Object_(); }
 @method Object_ _size(Stream) { return new Object_(); }
 @method Object_ _size(ObjectStoreSpace) { return new Object_(); }
@@ -4221,24 +4433,24 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ asAsciiZ(virtual!String);
 @method Object_ _asAsciiZ(String) { return new Object_(); }
 @method Object_ _asAsciiZ(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ asExternalGlobalAddress(virtual!Object_);
+@mptr("hash") Object_ asExternalGlobalAddress(virtual!Object);
 @method Object_ _asExternalGlobalAddress(String) { return new Object_(); }
 @method Object_ _asExternalGlobalAddress(ExternalHandle) { return new Object_(); }
 @method Object_ _asExternalGlobalAddress(Integer) { return new Object_(); }
 @method Object_ _asExternalGlobalAddress(ByteArray) { return new Object_(); }
 @method Object_ _asExternalGlobalAddress(ExternalGlobalAddress) { return new Object_(); }
 @method Object_ _asExternalGlobalAddress(ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ asStream(virtual!Object_);
+@mptr("hash") Object_ asStream(virtual!Object);
 @method Object_ _asStream(String) { return new Object_(); }
 @method Object_ _asStream(Stream) { return new Object_(); }
-@mptr("hash") Object_ atPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ atPut(virtual!Object, Object_, Object_);
 @method Object_ _atPut(String, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(SelfDefinedStructure, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(SortedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(SmallInteger, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _atPut(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(MethodDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(Symbol, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(Interval, Object_, Object_) { return new Object_(); }
@@ -4255,31 +4467,31 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _atPut(PARTSStringHolderPart, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(HashedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _atPut(PARTSDictionaryHolderPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asLowerCase(virtual!Object_);
+@mptr("hash") Object_ asLowerCase(virtual!Object);
 @method Object_ _asLowerCase(String) { return new Object_(); }
 @method Object_ _asLowerCase(Character) { return new Object_(); }
-@mptr("hash") Object_ asLowercase(virtual!Object_);
+@mptr("hash") Object_ asLowercase(virtual!Object);
 @method Object_ _asLowercase(String) { return new Object_(); }
 @method Object_ _asLowercase(Character) { return new Object_(); }
-@mptr("hash") Object_ asUpperCase(virtual!Object_);
+@mptr("hash") Object_ asUpperCase(virtual!Object);
 @method Object_ _asUpperCase(String) { return new Object_(); }
 @method Object_ _asUpperCase(Character) { return new Object_(); }
-@mptr("hash") Object_ asUppercase(virtual!Object_);
+@mptr("hash") Object_ asUppercase(virtual!Object);
 @method Object_ _asUppercase(String) { return new Object_(); }
 @method Object_ _asUppercase(Character) { return new Object_(); }
-@mptr("hash") Object_ basicAt(virtual!Object_, Object_);
+@mptr("hash") Object_ basicAt(virtual!Object, Object_);
 @method Object_ _basicAt(String, Object_) { return new Object_(); }
-@method Object_ _basicAt(Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ outputToPrinter(virtual!Object_);
+@method Object_ _basicAt(Object, Object_) { return new Object_(); }
+@mptr("hash") Object_ outputToPrinter(virtual!Object);
 @method Object_ _outputToPrinter(String) { return new Object_(); }
 @method Object_ _outputToPrinter(Screen) { return new Object_(); }
 @method Object_ _outputToPrinter(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ asFloat(virtual!Object_);
+@mptr("hash") Object_ asFloat(virtual!Object);
 @method Object_ _asFloat(String) { return new Object_(); }
 @method Object_ _asFloat(Integer) { return new Object_(); }
 @method Object_ _asFloat(Fraction) { return new Object_(); }
 @method Object_ _asFloat(Float) { return new Object_(); }
-@mptr("hash") Object_ asInteger(virtual!Object_);
+@mptr("hash") Object_ asInteger(virtual!Object);
 @method Object_ _asInteger(String) { return new Object_(); }
 @method Object_ _asInteger(ExternalHandle) { return new Object_(); }
 @method Object_ _asInteger(Integer) { return new Object_(); }
@@ -4290,12 +4502,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asInteger(ExternalAddress) { return new Object_(); }
 @method Object_ _asInteger(Number) { return new Object_(); }
 @method Object_ _asInteger(ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ at(virtual!Object_, Object_);
+@mptr("hash") Object_ at(virtual!Object, Object_);
 @method Object_ _at(String, Object_) { return new Object_(); }
 @method Object_ _at(SelfDefinedStructure, Object_) { return new Object_(); }
 @method Object_ _at(LargeInteger, Object_) { return new Object_(); }
 @method Object_ _at(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _at(Object_, Object_) { return new Object_(); }
+@method Object_ _at(Object, Object_) { return new Object_(); }
 @method Object_ _at(Interval, Object_) { return new Object_(); }
 @method Object_ _at(OrderedCollection, Object_) { return new Object_(); }
 @method Object_ _at(PARTSFileOperationContext, Object_) { return new Object_(); }
@@ -4312,12 +4524,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ replaceFromToWithaddressStartingat(virtual!FixedSizeCollection, Object_, Object_, Object_, Object_);
 @method Object_ _replaceFromToWithaddressStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceFromToWithaddressStartingat(ByteArray, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asFileSystemLocator(virtual!Object_);
+@mptr("hash") Object_ asFileSystemLocator(virtual!Object);
 @method Object_ _asFileSystemLocator(String) { return new Object_(); }
 @method Object_ _asFileSystemLocator(FileSystemLocator) { return new Object_(); }
 @method Object_ _asFileSystemLocator(FileSystemEntity) { return new Object_(); }
 @method Object_ _asFileSystemLocator(FileVolume) { return new Object_(); }
-@mptr("hash") Object_ asExternalHandle(virtual!Object_);
+@mptr("hash") Object_ asExternalHandle(virtual!Object);
 @method Object_ _asExternalHandle(String) { return new Object_(); }
 @method Object_ _asExternalHandle(ExternalHandle) { return new Object_(); }
 @method Object_ _asExternalHandle(ByteArray) { return new Object_(); }
@@ -4330,6 +4542,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asCompactString(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _asCompactString(Symbol) { return new Object_(); }
 @method Object_ _asCompactString(DoubleByteString) { return new Object_(); }
+@mptr("hash") Object_ asWindowHandle(virtual!FixedSizeCollection);
+@method Object_ _asWindowHandle(String) { return new Object_(); }
+@method Object_ _asWindowHandle(ByteArray) { return new Object_(); }
 @mptr("hash") Object_ asMixedString(virtual!String);
 @method Object_ _asMixedString(String) { return new Object_(); }
 @method Object_ _asMixedString(Symbol) { return new Object_(); }
@@ -4338,7 +4553,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asNormalizedString(String) { return new Object_(); }
 @method Object_ _asNormalizedString(Symbol) { return new Object_(); }
 @method Object_ _asNormalizedString(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ upTo(virtual!Object_, Object_);
+@mptr("hash") Object_ upTo(virtual!Object, Object_);
 @method Object_ _upTo(String, Object_) { return new Object_(); }
 @method Object_ _upTo(Stream, Object_) { return new Object_(); }
 @method Object_ _upTo(MixedFileStream, Object_) { return new Object_(); }
@@ -4351,7 +4566,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asExistingSymbolOrNil(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _asExistingSymbolOrNil(Symbol) { return new Object_(); }
 @method Object_ _asExistingSymbolOrNil(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWithStartingat(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ replaceFromToWithStartingat(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _replaceFromToWithStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceFromToWithStartingat(LargeInteger, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceFromToWithStartingat(IndexedCollection, Object_, Object_, Object_, Object_) { return new Object_(); }
@@ -4367,26 +4582,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asExternalString(String) { return new Object_(); }
 @method Object_ _asExternalString(Symbol) { return new Object_(); }
 @method Object_ _asExternalString(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ asPARTSDirectory(virtual!Object_);
+@mptr("hash") Object_ asPARTSDirectory(virtual!Object);
 @method Object_ _asPARTSDirectory(FileSystemLocator) { return new Object_(); }
 @method Object_ _asPARTSDirectory(FileSystemPath) { return new Object_(); }
 @method Object_ _asPARTSDirectory(PARTSDosDirectory) { return new Object_(); }
 @method Object_ _asPARTSDirectory(Directory) { return new Object_(); }
-@mptr("hash") Object_ asDirectory(virtual!Object_);
+@mptr("hash") Object_ asDirectory(virtual!Object);
 @method Object_ _asDirectory(FileSystemLocator) { return new Object_(); }
 @method Object_ _asDirectory(UpgraderForDirectory) { return new Object_(); }
 @method Object_ _asDirectory(FileSystemPath) { return new Object_(); }
 @mptr("hash") Object_ asFile(virtual!FileSystemLocator);
 @method Object_ _asFile(FileSystemLocator) { return new Object_(); }
 @method Object_ _asFile(FileSystemPath) { return new Object_(); }
-@mptr("hash") Object_ entityName(virtual!Object_);
+@mptr("hash") Object_ entityName(virtual!Object);
 @method Object_ _entityName(FileSystemLocator) { return new Object_(); }
 @method Object_ _entityName(FileSearchResults) { return new Object_(); }
 @method Object_ _entityName(FileSystemPath) { return new Object_(); }
 @mptr("hash") Object_ isNetworkPath(virtual!FileSystemLocator);
 @method Object_ _isNetworkPath(FileSystemLocator) { return new Object_(); }
 @method Object_ _isNetworkPath(NetworkFilePath) { return new Object_(); }
-@mptr("hash") Object_ resolve(virtual!Object_);
+@mptr("hash") Object_ resolve(virtual!Object);
 @method Object_ _resolve(FileSystemLocator) { return new Object_(); }
 @method Object_ _resolve(FileSystemPath) { return new Object_(); }
 @method Object_ _resolve(ObjectReference) { return new Object_(); }
@@ -4398,6 +4613,50 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _cancel(FindReplaceDialog, Object_) { return new Object_(); }
 @method Object_ _cancel(ProgressIndicatorDialog, Object_) { return new Object_(); }
 @method Object_ _cancel(SaveImageAsDialog, Object_) { return new Object_(); }
+@mptr("hash") Object_ initWindowSize(virtual!Object);
+@method Object_ _initWindowSize(SaveImageDialog) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSDictionaryEditor) { return new Object_(); }
+@method Object_ _initWindowSize(TopPane) { return new Object_(); }
+@method Object_ _initWindowSize(Prompter) { return new Object_(); }
+@method Object_ _initWindowSize(MethodBrowser) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSTabOrderEditor) { return new Object_(); }
+@method Object_ _initWindowSize(PrintAbortDialog) { return new Object_(); }
+@method Object_ _initWindowSize(P1101) { return new Object_(); }
+@method Object_ _initWindowSize(P1123) { return new Object_(); }
+@method Object_ _initWindowSize(AboutDialog) { return new Object_(); }
+@method Object_ _initWindowSize(P1139) { return new Object_(); }
+@method Object_ _initWindowSize(P1135) { return new Object_(); }
+@method Object_ _initWindowSize(FindReplaceDialog) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSSimpleTextEditor) { return new Object_(); }
+@method Object_ _initWindowSize(ObjectLoadDialog) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSPropertiesEditor) { return new Object_(); }
+@method Object_ _initWindowSize(ListDialog) { return new Object_(); }
+@method Object_ _initWindowSize(SelectorBrowser) { return new Object_(); }
+@method Object_ _initWindowSize(TranscriptWindow) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSFieldOrderDialog) { return new Object_(); }
+@method Object_ _initWindowSize(ApplicationWindow) { return new Object_(); }
+@method Object_ _initWindowSize(Debugger) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSPointEditor) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSBitEditor) { return new Object_(); }
+@method Object_ _initWindowSize(ProgressIndicatorDialog) { return new Object_(); }
+@method Object_ _initWindowSize(P1100) { return new Object_(); }
+@method Object_ _initWindowSize(P1128) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSDialEditor) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSArrayEditor) { return new Object_(); }
+@method Object_ _initWindowSize(WindowDialog) { return new Object_(); }
+@method Object_ _initWindowSize(SaveImageAsDialog) { return new Object_(); }
+@method Object_ _initWindowSize(WalkbackWindow) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSPathSequenceEditor) { return new Object_(); }
+@method Object_ _initWindowSize(PARTSOrderedCollectionEditor) { return new Object_(); }
+@method Object_ _initWindowSize(ClassHierarchyBrowser) { return new Object_(); }
+@method Object_ _initWindowSize(TextWindow) { return new Object_(); }
+@mptr("hash") Object_ defaultDialogFont(virtual!WindowDialog);
+@method Object_ _defaultDialogFont(SaveImageDialog) { return new Object_(); }
+@method Object_ _defaultDialogFont(Prompter) { return new Object_(); }
+@method Object_ _defaultDialogFont(PrintAbortDialog) { return new Object_(); }
+@method Object_ _defaultDialogFont(FindReplaceDialog) { return new Object_(); }
+@method Object_ _defaultDialogFont(ProgressIndicatorDialog) { return new Object_(); }
+@method Object_ _defaultDialogFont(SaveImageAsDialog) { return new Object_(); }
 @mptr("hash") Object_ undeclaredAccess(virtual!CompilerErrorHandler, Object_);
 @method Object_ _undeclaredAccess(PARTSTextPaneErrorHandler, Object_) { return new Object_(); }
 @method Object_ _undeclaredAccess(PARTSSilentErrorHandler, Object_) { return new Object_(); }
@@ -4421,10 +4680,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ rightRelativeTo(virtual!LayoutFrame, Object_);
 @method Object_ _rightRelativeTo(LayoutFrame, Object_) { return new Object_(); }
 @method Object_ _rightRelativeTo(DialogLayoutFrame, Object_) { return new Object_(); }
-@mptr("hash") Object_ bottomRightRatio(virtual!Object_, Object_);
+@mptr("hash") Object_ bottomRightRatio(virtual!Object, Object_);
 @method Object_ _bottomRightRatio(LayoutFrame, Object_) { return new Object_(); }
 @method Object_ _bottomRightRatio(METACLASS_LayoutFrame, Object_) { return new Object_(); }
-@mptr("hash") Object_ topLeftRatio(virtual!Object_, Object_);
+@mptr("hash") Object_ topLeftRatio(virtual!Object, Object_);
 @method Object_ _topLeftRatio(LayoutFrame, Object_) { return new Object_(); }
 @method Object_ _topLeftRatio(METACLASS_LayoutFrame, Object_) { return new Object_(); }
 @mptr("hash") Object_ topRelativeTo(virtual!LayoutFrame, Object_);
@@ -4433,7 +4692,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ bottomRelativeTo(virtual!LayoutFrame, Object_);
 @method Object_ _bottomRelativeTo(LayoutFrame, Object_) { return new Object_(); }
 @method Object_ _bottomRelativeTo(DialogLayoutFrame, Object_) { return new Object_(); }
-@mptr("hash") Object_ relativeTo(virtual!Object_, Object_);
+@mptr("hash") Object_ relativeTo(virtual!Object, Object_);
 @method Object_ _relativeTo(LayoutFrame, Object_) { return new Object_(); }
 @method Object_ _relativeTo(Rectangle, Object_) { return new Object_(); }
 @method Object_ _relativeTo(LayoutUnit, Object_) { return new Object_(); }
@@ -4452,7 +4711,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ entryFieldClass(virtual!ComboBox);
 @method Object_ _entryFieldClass(PARTSComboBoxPart) { return new Object_(); }
 @method Object_ _entryFieldClass(ComboBox) { return new Object_(); }
-@mptr("hash") Object_ close(virtual!Object_);
+@mptr("hash") Object_ close(virtual!Object);
 @method Object_ _close(PARTSComboBoxPart) { return new Object_(); }
 @method Object_ _close(TopPane) { return new Object_(); }
 @method Object_ _close(PARTSPartPropertiesEditor) { return new Object_(); }
@@ -4504,6 +4763,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partSetValueMessage(PARTSListPanePart) { return new Object_(); }
 @method Object_ _partSetValueMessage(PARTSGraphPanePart) { return new Object_(); }
 @method Object_ _partSetValueMessage(SubPane) { return new Object_(); }
+@mptr("hash") Object_ recreateWindow(virtual!Window);
+@method Object_ _recreateWindow(PARTSComboBoxPart) { return new Object_(); }
+@method Object_ _recreateWindow(Window) { return new Object_(); }
+@method Object_ _recreateWindow(PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _recreateWindow(PARTSTextPanePart) { return new Object_(); }
+@method Object_ _recreateWindow(ComboBox) { return new Object_(); }
 @mptr("hash") Object_ partNewValueEvent(virtual!SubPane);
 @method Object_ _partNewValueEvent(PARTSComboBoxPart) { return new Object_(); }
 @method Object_ _partNewValueEvent(PARTSMultipleChoiceListPart) { return new Object_(); }
@@ -4536,35 +4801,35 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ applyPartName(virtual!PARTSPartPropertyDialog, Object_);
 @method Object_ _applyPartName(PARTSNonvisualPartPropertyDialog, Object_) { return new Object_(); }
 @method Object_ _applyPartName(PARTSPartPropertyDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ closedAction(virtual!Object_, Object_);
+@mptr("hash") Object_ closedAction(virtual!Object, Object_);
 @method Object_ _closedAction(PARTSFileDialog, Object_) { return new Object_(); }
 @method Object_ _closedAction(PARTSMessageBox, Object_) { return new Object_(); }
 @method Object_ _closedAction(PARTSPrompter, Object_) { return new Object_(); }
-@mptr("hash") Object_ saveFile(virtual!Object_, Object_);
+@mptr("hash") Object_ saveFile(virtual!Object, Object_);
 @method Object_ _saveFile(PARTSFileDialog, Object_) { return new Object_(); }
 @method Object_ _saveFile(FileDialog, Object_) { return new Object_(); }
 @method Object_ _saveFile(PARTSFileDialogPart, Object_) { return new Object_(); }
 @method Object_ _saveFile(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ openFile(virtual!Object_, Object_);
+@mptr("hash") Object_ openFile(virtual!Object, Object_);
 @method Object_ _openFile(PARTSFileDialog, Object_) { return new Object_(); }
 @method Object_ _openFile(FileDialog, Object_) { return new Object_(); }
 @method Object_ _openFile(PARTSFileDialogPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isResidueOrNil(virtual!Object_);
+@mptr("hash") Object_ isResidueOrNil(virtual!Object);
 @method Object_ _isResidueOrNil(ResidueObject) { return new Object_(); }
-@method Object_ _isResidueOrNil(Object_) { return new Object_(); }
+@method Object_ _isResidueOrNil(Object) { return new Object_(); }
 @method Object_ _isResidueOrNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ isResidue(virtual!Object_);
+@mptr("hash") Object_ isResidue(virtual!Object);
 @method Object_ _isResidue(ResidueObject) { return new Object_(); }
-@method Object_ _isResidue(Object_) { return new Object_(); }
+@method Object_ _isResidue(Object) { return new Object_(); }
 @mptr("hash") Object_ listSelect(virtual!PARTSContentsEditor, Object_);
 @method Object_ _listSelect(PARTSDictionaryEditor, Object_) { return new Object_(); }
 @method Object_ _listSelect(PARTSArrayEditor, Object_) { return new Object_(); }
 @method Object_ _listSelect(PARTSOrderedCollectionEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ clickedRemove(virtual!Object_);
+@mptr("hash") Object_ clickedRemove(virtual!Object);
 @method Object_ _clickedRemove(PARTSDictionaryEditor) { return new Object_(); }
 @method Object_ _clickedRemove(PARTSPropertyList) { return new Object_(); }
 @method Object_ _clickedRemove(PARTSOrderedCollectionEditor) { return new Object_(); }
-@mptr("hash") Object_ listContents(virtual!Object_, Object_);
+@mptr("hash") Object_ listContents(virtual!Object, Object_);
 @method Object_ _listContents(PARTSDictionaryEditor, Object_) { return new Object_(); }
 @method Object_ _listContents(PARTSPropertyList, Object_) { return new Object_(); }
 @method Object_ _listContents(PARTSArrayEditor, Object_) { return new Object_(); }
@@ -4572,7 +4837,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ clickedRemoveAll(virtual!PARTSContentsEditor);
 @method Object_ _clickedRemoveAll(PARTSDictionaryEditor) { return new Object_(); }
 @method Object_ _clickedRemoveAll(PARTSOrderedCollectionEditor) { return new Object_(); }
-@mptr("hash") Object_ ok(virtual!Object_);
+@mptr("hash") Object_ ok(virtual!Object);
 @method Object_ _ok(PARTSDictionaryEditor) { return new Object_(); }
 @method Object_ _ok(PARTSPartPropertiesEditor) { return new Object_(); }
 @method Object_ _ok(PARTSDialog) { return new Object_(); }
@@ -4595,18 +4860,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _ok(PARTSPathSequenceEditor) { return new Object_(); }
 @method Object_ _ok(PARTSPartPropertyDialog) { return new Object_(); }
 @method Object_ _ok(PARTSOrderedCollectionEditor) { return new Object_(); }
-@mptr("hash") Object_ clickedAdd(virtual!Object_);
+@mptr("hash") Object_ clickedAdd(virtual!Object);
 @method Object_ _clickedAdd(PARTSDictionaryEditor) { return new Object_(); }
 @method Object_ _clickedAdd(PARTSPropertyList) { return new Object_(); }
 @method Object_ _clickedAdd(PARTSOrderedCollectionEditor) { return new Object_(); }
-@mptr("hash") Object_ asActionSequence(virtual!Object_);
+@mptr("hash") Object_ asActionSequence(virtual!Object);
 @method Object_ _asActionSequence(EvaluableAction) { return new Object_(); }
 @method Object_ _asActionSequence(PARTSLink) { return new Object_(); }
 @method Object_ _asActionSequence(Message) { return new Object_(); }
 @method Object_ _asActionSequence(HomeContext) { return new Object_(); }
 @method Object_ _asActionSequence(ActionSequence) { return new Object_(); }
 @method Object_ _asActionSequence(Context) { return new Object_(); }
-@mptr("hash") Object_ addSubpane(virtual!Object_, Object_);
+@mptr("hash") Object_ maximizingWindow(virtual!Window);
+@method Object_ _maximizingWindow(TopPane) { return new Object_(); }
+@method Object_ _maximizingWindow(Window) { return new Object_(); }
+@mptr("hash") Object_ minimizingWindow(virtual!Window);
+@method Object_ _minimizingWindow(TopPane) { return new Object_(); }
+@method Object_ _minimizingWindow(Window) { return new Object_(); }
+@method Object_ _minimizingWindow(P1103) { return new Object_(); }
+@method Object_ _minimizingWindow(P1102) { return new Object_(); }
+@mptr("hash") Object_ addSubpane(virtual!Object, Object_);
 @method Object_ _addSubpane(TopPane, Object_) { return new Object_(); }
 @method Object_ _addSubpane(Window, Object_) { return new Object_(); }
 @method Object_ _addSubpane(P1105, Object_) { return new Object_(); }
@@ -4619,10 +4892,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _triggerOpenedEvent(TopPane) { return new Object_(); }
 @method Object_ _triggerOpenedEvent(ApplicationWindow) { return new Object_(); }
 @method Object_ _triggerOpenedEvent(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ defaultPushButton(virtual!Window);
+@method Object_ _defaultPushButton(TopPane) { return new Object_(); }
+@method Object_ _defaultPushButton(Button) { return new Object_(); }
 @mptr("hash") Object_ deferredResizeRectangleFor(virtual!TopPane, Object_);
 @method Object_ _deferredResizeRectangleFor(TopPane, Object_) { return new Object_(); }
 @method Object_ _deferredResizeRectangleFor(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ initMenu(virtual!Object_);
+@mptr("hash") Object_ initMenu(virtual!Object);
 @method Object_ _initMenu(TopPane) { return new Object_(); }
 @method Object_ _initMenu(Window) { return new Object_(); }
 @method Object_ _initMenu(ApplicationCoordinator) { return new Object_(); }
@@ -4631,6 +4907,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initMenu(TextPaneControl) { return new Object_(); }
 @method Object_ _initMenu(P1140) { return new Object_(); }
 @method Object_ _initMenu(ViewManager) { return new Object_(); }
+@mptr("hash") Object_ restoringWindow(virtual!Window);
+@method Object_ _restoringWindow(TopPane) { return new Object_(); }
+@method Object_ _restoringWindow(Window) { return new Object_(); }
+@method Object_ _restoringWindow(P1103) { return new Object_(); }
+@method Object_ _restoringWindow(P1102) { return new Object_(); }
 @mptr("hash") Object_ button2Up(virtual!Window, Object_);
 @method Object_ _button2Up(TopPane, Object_) { return new Object_(); }
 @method Object_ _button2Up(Window, Object_) { return new Object_(); }
@@ -4643,7 +4924,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _button2Up(SubPane, Object_) { return new Object_(); }
 @method Object_ _button2Up(PARTSBaseNotebook, Object_) { return new Object_(); }
 @method Object_ _button2Up(P1104, Object_) { return new Object_(); }
-@mptr("hash") Object_ aboutToSaveImage(virtual!Object_);
+@mptr("hash") Object_ aboutToSaveImage(virtual!Object);
 @method Object_ _aboutToSaveImage(TopPane) { return new Object_(); }
 @method Object_ _aboutToSaveImage(Window) { return new Object_(); }
 @method Object_ _aboutToSaveImage(GraphPane) { return new Object_(); }
@@ -4676,7 +4957,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ framingRatio(virtual!Window, Object_);
 @method Object_ _framingRatio(TopPane, Object_) { return new Object_(); }
 @method Object_ _framingRatio(SubPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ buildMenuBar(virtual!Object_);
+@mptr("hash") Object_ buildMenuBar(virtual!Object);
 @method Object_ _buildMenuBar(TopPane) { return new Object_(); }
 @method Object_ _buildMenuBar(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _buildMenuBar(HelpManager) { return new Object_(); }
@@ -4695,9 +4976,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _canTab(PARTSClientAreaPaneWindows) { return new Object_(); }
 @method Object_ _canTab(PARTSMenuBar) { return new Object_(); }
 @method Object_ _canTab(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ eventTableCreate(virtual!Object_);
+@mptr("hash") Object_ eventTableCreate(virtual!Object);
 @method Object_ _eventTableCreate(TopPane) { return new Object_(); }
-@method Object_ _eventTableCreate(Object_) { return new Object_(); }
+@method Object_ _eventTableCreate(Object) { return new Object_(); }
 @mptr("hash") Object_ wmQueryendsessionWith(virtual!Window, Object_, Object_);
 @method Object_ _wmQueryendsessionWith(TopPane, Object_, Object_) { return new Object_(); }
 @method Object_ _wmQueryendsessionWith(Window, Object_, Object_) { return new Object_(); }
@@ -4715,7 +4996,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _helpRequest(TopPane) { return new Object_(); }
 @method Object_ _helpRequest(ApplicationWindow) { return new Object_(); }
 @method Object_ _helpRequest(SubPane) { return new Object_(); }
-@mptr("hash") Object_ initialSize(virtual!Object_, Object_);
+@mptr("hash") Object_ initialSize(virtual!Object, Object_);
 @method Object_ _initialSize(TopPane, Object_) { return new Object_(); }
 @method Object_ _initialSize(DialogTopPane, Object_) { return new Object_(); }
 @method Object_ _initialSize(OrderedCollection, Object_) { return new Object_(); }
@@ -4737,7 +5018,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _activate(PARTSNotebook) { return new Object_(); }
 @method Object_ _activate(TextPaneControl) { return new Object_(); }
 @method Object_ _activate(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ okToClose(virtual!Object_);
+@mptr("hash") Object_ okToClose(virtual!Object);
 @method Object_ _okToClose(TopPane) { return new Object_(); }
 @method Object_ _okToClose(Prompter) { return new Object_(); }
 @method Object_ _okToClose(P1101) { return new Object_(); }
@@ -4746,7 +5027,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _okToClose(P1100) { return new Object_(); }
 @method Object_ _okToClose(P1140) { return new Object_(); }
 @method Object_ _okToClose(P1142) { return new Object_(); }
-@mptr("hash") Object_ framingBlock(virtual!Object_);
+@mptr("hash") Object_ framingBlock(virtual!Object);
 @method Object_ _framingBlock(TopPane) { return new Object_(); }
 @method Object_ _framingBlock(Window) { return new Object_(); }
 @method Object_ _framingBlock(PARTSPropertyUnit) { return new Object_(); }
@@ -4759,7 +5040,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _sizeChanged(Window, Object_) { return new Object_(); }
 @method Object_ _sizeChanged(P1103, Object_) { return new Object_(); }
 @method Object_ _sizeChanged(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ saveAs(virtual!Object_);
+@mptr("hash") Object_ saveAs(virtual!Object);
 @method Object_ _saveAs(TopPane) { return new Object_(); }
 @method Object_ _saveAs(TranscriptWindow) { return new Object_(); }
 @method Object_ _saveAs(TextWindow) { return new Object_(); }
@@ -4771,7 +5052,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmTimerWith(SubPane, Object_, Object_) { return new Object_(); }
 @method Object_ _wmTimerWith(PARTSTimerWindow, Object_, Object_) { return new Object_(); }
 @method Object_ _wmTimerWith(ListPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ deactivate(virtual!Object_);
+@mptr("hash") Object_ deactivate(virtual!Object);
 @method Object_ _deactivate(TopPane) { return new Object_(); }
 @method Object_ _deactivate(Window) { return new Object_(); }
 @method Object_ _deactivate(GraphPane) { return new Object_(); }
@@ -4782,35 +5063,40 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ isOkToClose(virtual!TopPane);
 @method Object_ _isOkToClose(TopPane) { return new Object_(); }
 @method Object_ _isOkToClose(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ isTopPane(virtual!Object_);
+@mptr("hash") Object_ isTopPane(virtual!Object);
 @method Object_ _isTopPane(TopPane) { return new Object_(); }
-@method Object_ _isTopPane(Object_) { return new Object_(); }
+@method Object_ _isTopPane(Object) { return new Object_(); }
 @mptr("hash") Object_ isDialog(virtual!TopPane);
 @method Object_ _isDialog(TopPane) { return new Object_(); }
 @method Object_ _isDialog(DialogTopPane) { return new Object_(); }
-@mptr("hash") Object_ entity(virtual!Exception_, Object_);
+@mptr("hash") Object_ entity(virtual!Exception, Object_);
 @method Object_ _entity(AboutToReplaceFile, Object_) { return new Object_(); }
 @method Object_ _entity(FileError, Object_) { return new Object_(); }
-@mptr("hash") Object_ entity(virtual!Object_);
+@mptr("hash") Object_ entity(virtual!Object);
 @method Object_ _entity(AboutToReplaceFile) { return new Object_(); }
 @method Object_ _entity(FileError) { return new Object_(); }
 @method Object_ _entity(FileSearchResults) { return new Object_(); }
-@mptr("hash") Object_ helpDirectoryName(virtual!Object_);
+@mptr("hash") Object_ helpDirectoryName(virtual!Object);
 @method Object_ _helpDirectoryName(SmalltalkToolInterface) { return new Object_(); }
 @method Object_ _helpDirectoryName(METACLASS_PARTSHelpManager) { return new Object_(); }
-@mptr("hash") Object_ fullHelpPathName(virtual!Object_, Object_);
+@mptr("hash") Object_ fullHelpPathName(virtual!Object, Object_);
 @method Object_ _fullHelpPathName(SmalltalkToolInterface, Object_) { return new Object_(); }
 @method Object_ _fullHelpPathName(METACLASS_PARTSHelpManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ resourceFileName(virtual!Object_);
+@mptr("hash") Object_ resourceFileName(virtual!Object);
 @method Object_ _resourceFileName(SmalltalkToolInterface) { return new Object_(); }
 @method Object_ _resourceFileName(METACLASS_Browser) { return new Object_(); }
 @method Object_ _resourceFileName(METACLASS_ViewManager) { return new Object_(); }
-@mptr("hash") Object_ textPaneClass(virtual!Object_);
+@mptr("hash") Object_ windowPolicyClass(virtual!Object);
+@method Object_ _windowPolicyClass(SmalltalkToolInterface) { return new Object_(); }
+@method Object_ _windowPolicyClass(Browser) { return new Object_(); }
+@method Object_ _windowPolicyClass(ViewManager) { return new Object_(); }
+@method Object_ _windowPolicyClass(METACLASS_ApplicationCoordinator) { return new Object_(); }
+@mptr("hash") Object_ textPaneClass(virtual!Object);
 @method Object_ _textPaneClass(SmalltalkToolInterface) { return new Object_(); }
 @method Object_ _textPaneClass(P1123) { return new Object_(); }
 @method Object_ _textPaneClass(WalkbackWindow) { return new Object_(); }
 @method Object_ _textPaneClass(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ exit(virtual!Object_);
+@mptr("hash") Object_ exit(virtual!Object);
 @method Object_ _exit(VirtualMachineDLL) { return new Object_(); }
 @method Object_ _exit(SystemDictionary) { return new Object_(); }
 @method Object_ _exit(METACLASS_Icon) { return new Object_(); }
@@ -4830,7 +5116,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _realSize(VRelocationSection) { return new Object_(); }
 @method Object_ _realSize(PeExportSection) { return new Object_(); }
 @method Object_ _realSize(P1001) { return new Object_(); }
-@mptr("hash") Object_ flags(virtual!Object_);
+@mptr("hash") Object_ flags(virtual!Object);
 @method Object_ _flags(VDataSection) { return new Object_(); }
 @method Object_ _flags(CoffFileModel) { return new Object_(); }
 @method Object_ _flags(PeTextSection) { return new Object_(); }
@@ -4847,7 +5133,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _flags(PeExportSection) { return new Object_(); }
 @method Object_ _flags(P1001) { return new Object_(); }
 @method Object_ _flags(FontDialog) { return new Object_(); }
-@mptr("hash") Object_ flags(virtual!Object_, Object_);
+@mptr("hash") Object_ flags(virtual!Object, Object_);
 @method Object_ _flags(VDataSection, Object_) { return new Object_(); }
 @method Object_ _flags(CoffFileModel, Object_) { return new Object_(); }
 @method Object_ _flags(FileDialog, Object_) { return new Object_(); }
@@ -4870,10 +5156,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _sectionSize(VImageSection) { return new Object_(); }
 @method Object_ _sectionSize(CoffFileSection) { return new Object_(); }
 @method Object_ _sectionSize(VRelocationSection) { return new Object_(); }
-@mptr("hash") Object_ cancelButton(virtual!Object_);
+@mptr("hash") Object_ cancelButton(virtual!Object);
 @method Object_ _cancelButton(PARTSPartPropertiesEditor) { return new Object_(); }
 @method Object_ _cancelButton(P1123) { return new Object_(); }
-@mptr("hash") Object_ cancel(virtual!Object_);
+@mptr("hash") Object_ cancel(virtual!Object);
 @method Object_ _cancel(PARTSPartPropertiesEditor) { return new Object_(); }
 @method Object_ _cancel(DialogBox) { return new Object_(); }
 @method Object_ _cancel(PARTSDialog) { return new Object_(); }
@@ -4883,6 +5169,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _cancel(TextPane) { return new Object_(); }
 @method Object_ _cancel(TextPaneControl) { return new Object_(); }
 @method Object_ _cancel(NewSubclassDialog) { return new Object_(); }
+@mptr("hash") Object_ dialogWindow(virtual!Object);
+@method Object_ _dialogWindow(PARTSPartPropertiesEditor) { return new Object_(); }
+@method Object_ _dialogWindow(PARTSPropertyUnit) { return new Object_(); }
+@method Object_ _dialogWindow(PARTSPropertyFormGeneratorButton) { return new Object_(); }
+@method Object_ _dialogWindow(PARTSPropertyStructure) { return new Object_(); }
 @mptr("hash") Object_ initializeParts(virtual!PARTSApplicationHolder);
 @method Object_ _initializeParts(PARTSPartPropertiesEditor) { return new Object_(); }
 @method Object_ _initializeParts(PARTSApplicationHolder) { return new Object_(); }
@@ -4890,7 +5181,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initializeParts(P1140) { return new Object_(); }
 @method Object_ _initializeParts(PARTSSettingsEditor) { return new Object_(); }
 @method Object_ _initializeParts(PARTSSettingsViewer) { return new Object_(); }
-@mptr("hash") Object_ fileAlignment(virtual!Object_);
+@mptr("hash") Object_ fileAlignment(virtual!Object);
 @method Object_ _fileAlignment(PeFileModel) { return new Object_(); }
 @method Object_ _fileAlignment(CoffFileWriter) { return new Object_(); }
 @method Object_ _fileAlignment(CoffFileSection) { return new Object_(); }
@@ -4901,25 +5192,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ sizeOfOptionalHeader(virtual!CoffFileModel);
 @method Object_ _sizeOfOptionalHeader(PeFileModel) { return new Object_(); }
 @method Object_ _sizeOfOptionalHeader(CoffFileModel) { return new Object_(); }
-@mptr("hash") Object_ time(virtual!Object_);
+@mptr("hash") Object_ time(virtual!Object);
 @method Object_ _time(WinMessage) { return new Object_(); }
 @method Object_ _time(TimeStamp) { return new Object_(); }
-@mptr("hash") Object_ scanCode(virtual!Object_);
+@mptr("hash") Object_ scanCode(virtual!Object);
 @method Object_ _scanCode(WinMessage) { return new Object_(); }
 @method Object_ _scanCode(KeyboardInputEvent) { return new Object_(); }
-@mptr("hash") Object_ isAltKeyDown(virtual!Object_);
+@mptr("hash") Object_ isAltKeyDown(virtual!Object);
 @method Object_ _isAltKeyDown(KeyboardInputEvent) { return new Object_(); }
 @method Object_ _isAltKeyDown(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ isShiftKeyDown(virtual!Object_);
+@mptr("hash") Object_ isShiftKeyDown(virtual!Object);
 @method Object_ _isShiftKeyDown(KeyboardInputEvent) { return new Object_(); }
 @method Object_ _isShiftKeyDown(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ isControlKeyDown(virtual!Object_);
+@mptr("hash") Object_ isControlKeyDown(virtual!Object);
 @method Object_ _isControlKeyDown(KeyboardInputEvent) { return new Object_(); }
 @method Object_ _isControlKeyDown(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ trigger(virtual!Object_);
+@mptr("hash") Object_ trigger(virtual!Object);
 @method Object_ _trigger(PARTSLinkJunctionPart) { return new Object_(); }
 @method Object_ _trigger(PARTSLink) { return new Object_(); }
-@mptr("hash") Object_ trigger(virtual!Object_, Object_);
+@mptr("hash") Object_ trigger(virtual!Object, Object_);
 @method Object_ _trigger(PARTSLinkJunctionPart, Object_) { return new Object_(); }
 @method Object_ _trigger(PARTSLink, Object_) { return new Object_(); }
 @mptr("hash") Object_ ctlType(virtual!ExternalBuffer);
@@ -4934,11 +5225,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ itemData(virtual!ExternalBuffer);
 @method Object_ _itemData(WinDrawItemStruct) { return new Object_(); }
 @method Object_ _itemData(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ privateAtPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ privateAtPut(virtual!Object, Object_, Object_);
 @method Object_ _privateAtPut(SelfDefinedStructure, Object_, Object_) { return new Object_(); }
 @method Object_ _privateAtPut(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _privateAtPut(MethodDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ inspectorFields(virtual!Object_);
+@mptr("hash") Object_ inspectorFields(virtual!Object);
 @method Object_ _inspectorFields(SelfDefinedStructure) { return new Object_(); }
 @method Object_ _inspectorFields(FileSystemEntity) { return new Object_(); }
 @method Object_ _inspectorFields(ExternalBuffer) { return new Object_(); }
@@ -4975,7 +5266,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _inspectorFields(METACLASS_WinPoint) { return new Object_(); }
 @method Object_ _inspectorFields(METACLASS_Win32FindData) { return new Object_(); }
 @method Object_ _inspectorFields(METACLASS_ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ sizeInBytes(virtual!Object_);
+@mptr("hash") Object_ sizeInBytes(virtual!Object);
 @method Object_ _sizeInBytes(SelfDefinedStructure) { return new Object_(); }
 @method Object_ _sizeInBytes(Bitmap) { return new Object_(); }
 @method Object_ _sizeInBytes(METACLASS_WinBitmapStruct) { return new Object_(); }
@@ -5007,20 +5298,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _sizeInBytes(METACLASS_WinPoint) { return new Object_(); }
 @method Object_ _sizeInBytes(METACLASS_Win32FindData) { return new Object_(); }
 @method Object_ _sizeInBytes(METACLASS_ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ definition(virtual!Object_);
+@mptr("hash") Object_ definition(virtual!Object);
 @method Object_ _definition(SelfDefinedStructure) { return new Object_(); }
 @method Object_ _definition(CompiledMethod) { return new Object_(); }
+@mptr("hash") Object_ doesNotUnderstand(virtual!Artificial_Root, Object_);
+@method Object_ _doesNotUnderstand(SelfDefinedStructure, Object_) { return new Object_(); }
+@method Object_ _doesNotUnderstand(Object, Object_) { return new Object_(); }
+@method Object_ _doesNotUnderstand(SelfInitializingObject, Object_) { return new Object_(); }
+@method Object_ _doesNotUnderstand(P1124, Object_) { return new Object_(); }
 @mptr("hash") Object_ matchBackwardIndexEach(virtual!Pattern, Object_, Object_, Object_);
 @method Object_ _matchBackwardIndexEach(WildPattern, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _matchBackwardIndexEach(Pattern, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ reset(virtual!Object_);
+@mptr("hash") Object_ reset(virtual!Object);
 @method Object_ _reset(WildPattern) { return new Object_(); }
 @method Object_ _reset(P1105) { return new Object_(); }
 @method Object_ _reset(P1127) { return new Object_(); }
 @method Object_ _reset(CursorManager) { return new Object_(); }
 @method Object_ _reset(Pattern) { return new Object_(); }
 @method Object_ _reset(Stream) { return new Object_(); }
-@mptr("hash") Object_ match(virtual!Object_, Object_);
+@mptr("hash") Object_ match(virtual!Object, Object_);
 @method Object_ _match(WildPattern, Object_) { return new Object_(); }
 @method Object_ _match(Pattern, Object_) { return new Object_(); }
 @method Object_ _match(ExceptionFilter, Object_) { return new Object_(); }
@@ -5030,29 +5326,29 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ matchIndexEach(virtual!Pattern, Object_, Object_, Object_);
 @method Object_ _matchIndexEach(WildPattern, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _matchIndexEach(Pattern, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ messageText(virtual!Exception_);
+@mptr("hash") Object_ messageText(virtual!Exception);
 @method Object_ _messageText(APICallEntryPointNotFound) { return new Object_(); }
 @method Object_ _messageText(UnresolvedExternal) { return new Object_(); }
 @method Object_ _messageText(BindDuplicate) { return new Object_(); }
 @method Object_ _messageText(APICallUnknownPrimitiveFailure) { return new Object_(); }
-@method Object_ _messageText(Exception_) { return new Object_(); }
+@method Object_ _messageText(Exception) { return new Object_(); }
 @method Object_ _messageText(APICallInvalidArgumentType) { return new Object_(); }
 @method Object_ _messageText(UnknownImport) { return new Object_(); }
 @mptr("hash") Object_ change(virtual!CursorManager);
 @method Object_ _change(PARTSCursorManager) { return new Object_(); }
 @method Object_ _change(CursorManager) { return new Object_(); }
-@mptr("hash") Object_ hint(virtual!Object_, Object_);
+@mptr("hash") Object_ hint(virtual!Object, Object_);
 @method Object_ _hint(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _hint(P1108, Object_) { return new Object_(); }
-@mptr("hash") Object_ manufacturer(virtual!Object_);
+@mptr("hash") Object_ manufacturer(virtual!Object);
 @method Object_ _manufacturer(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _manufacturer(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ propertyAtIfabsent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ propertyAtIfabsent(virtual!Object, Object_, Object_);
 @method Object_ _propertyAtIfabsent(PARTSApplicationProperty, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtIfabsent(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtIfabsent(PARTSWrapper, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtIfabsent(PARTSPropertyStructure, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ icon(virtual!Object_, Object_);
+@mptr("hash") Object_ icon(virtual!Object, Object_);
 @method Object_ _icon(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _icon(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _icon(PARTSWrapper, Object_) { return new Object_(); }
@@ -5063,10 +5359,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _icon(PARTSDragSession, Object_) { return new Object_(); }
 @method Object_ _icon(METACLASS_StaticGraphic, Object_) { return new Object_(); }
 @method Object_ _icon(METACLASS_PARTSStaticGraphicPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ userPropertyNamed(virtual!Object_, Object_);
+@mptr("hash") Object_ userPropertyNamed(virtual!Object, Object_);
 @method Object_ _userPropertyNamed(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _userPropertyNamed(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileDescriptor(virtual!Object_, Object_);
+@mptr("hash") Object_ fileDescriptor(virtual!Object, Object_);
 @method Object_ _fileDescriptor(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSFileProcessor, Object_) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSFileOperationContext, Object_) { return new Object_(); }
@@ -5074,7 +5370,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileDescriptor(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSApplication, Object_) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ title(virtual!Object_, Object_);
+@mptr("hash") Object_ title(virtual!Object, Object_);
 @method Object_ _title(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _title(PARTSFormGenerator, Object_) { return new Object_(); }
 @method Object_ _title(Menu, Object_) { return new Object_(); }
@@ -5083,42 +5379,42 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _title(PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
 @method Object_ _title(MessageBox, Object_) { return new Object_(); }
 @method Object_ _title(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ reuseMode(virtual!Object_);
+@mptr("hash") Object_ reuseMode(virtual!Object);
 @method Object_ _reuseMode(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _reuseMode(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ reuseMode(virtual!Object_, Object_);
+@mptr("hash") Object_ reuseMode(virtual!Object, Object_);
 @method Object_ _reuseMode(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _reuseMode(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ properties(virtual!Object_, Object_);
+@mptr("hash") Object_ properties(virtual!Object, Object_);
 @method Object_ _properties(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _properties(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ manufacturer(virtual!Object_, Object_);
+@mptr("hash") Object_ manufacturer(virtual!Object, Object_);
 @method Object_ _manufacturer(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _manufacturer(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ propertyAt(virtual!Object_, Object_);
+@mptr("hash") Object_ propertyAt(virtual!Object, Object_);
 @method Object_ _propertyAt(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _propertyAt(Window, Object_) { return new Object_(); }
 @method Object_ _propertyAt(WindowHandle, Object_) { return new Object_(); }
 @method Object_ _propertyAt(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _propertyAt(PARTSPropertyStructure, Object_) { return new Object_(); }
-@mptr("hash") Object_ orderedChildren(virtual!Object_);
+@mptr("hash") Object_ orderedChildren(virtual!Object);
 @method Object_ _orderedChildren(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _orderedChildren(Window) { return new Object_(); }
 @method Object_ _orderedChildren(PARTSWindowPart) { return new Object_(); }
 @method Object_ _orderedChildren(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ orderedChildren(virtual!Object_, Object_);
+@mptr("hash") Object_ orderedChildren(virtual!Object, Object_);
 @method Object_ _orderedChildren(PARTSApplicationProperty, Object_) { return new Object_(); }
 @method Object_ _orderedChildren(Window, Object_) { return new Object_(); }
 @method Object_ _orderedChildren(PARTSWindowPart, Object_) { return new Object_(); }
 @method Object_ _orderedChildren(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileDescriptor(virtual!Object_);
+@mptr("hash") Object_ fileDescriptor(virtual!Object);
 @method Object_ _fileDescriptor(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSFileProcessor) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSFileOperationContext) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSNestedPart) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSApplication) { return new Object_(); }
 @method Object_ _fileDescriptor(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ icon(virtual!Object_);
+@mptr("hash") Object_ icon(virtual!Object);
 @method Object_ _icon(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _icon(Window) { return new Object_(); }
 @method Object_ _icon(ApplicationWindow) { return new Object_(); }
@@ -5129,19 +5425,19 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _icon(PARTSPartAccessorPart) { return new Object_(); }
 @method Object_ _icon(METACLASS_StaticGraphic) { return new Object_(); }
 @method Object_ _icon(METACLASS_ViewManager) { return new Object_(); }
-@mptr("hash") Object_ hint(virtual!Object_);
+@mptr("hash") Object_ hint(virtual!Object);
 @method Object_ _hint(PARTSApplicationProperty) { return new Object_(); }
 @method Object_ _hint(P1109) { return new Object_(); }
 @method Object_ _hint(P1108) { return new Object_(); }
-@mptr("hash") Object_ propertyAtPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ propertyAtPut(virtual!Object, Object_, Object_);
 @method Object_ _propertyAtPut(PARTSApplicationProperty, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtPut(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtPut(WindowHandle, Object_, Object_) { return new Object_(); }
 @method Object_ _propertyAtPut(PARTSWrapper, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isLargeInteger(virtual!Object_);
+@mptr("hash") Object_ isLargeInteger(virtual!Object);
 @method Object_ _isLargeInteger(LargeInteger) { return new Object_(); }
-@method Object_ _isLargeInteger(Object_) { return new Object_(); }
-@mptr("hash") Object_ byteSize(virtual!Object_);
+@method Object_ _isLargeInteger(Object) { return new Object_(); }
+@mptr("hash") Object_ byteSize(virtual!Object);
 @method Object_ _byteSize(LargeInteger) { return new Object_(); }
 @method Object_ _byteSize(SmallInteger) { return new Object_(); }
 @method Object_ _byteSize(FileVolume) { return new Object_(); }
@@ -5152,13 +5448,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _bitShift(LargeInteger, Object_) { return new Object_(); }
 @method Object_ _bitShift(SmallInteger, Object_) { return new Object_(); }
 @method Object_ _bitShift(Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ deepCopy(virtual!Object_);
+@mptr("hash") Object_ deepCopy(virtual!Object);
 @method Object_ _deepCopy(LargeInteger) { return new Object_(); }
 @method Object_ _deepCopy(SortedCollection) { return new Object_(); }
 @method Object_ _deepCopy(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _deepCopy(Behavior) { return new Object_(); }
 @method Object_ _deepCopy(Collection) { return new Object_(); }
-@method Object_ _deepCopy(Object_) { return new Object_(); }
+@method Object_ _deepCopy(Object) { return new Object_(); }
 @method Object_ _deepCopy(Symbol) { return new Object_(); }
 @method Object_ _deepCopy(Character) { return new Object_(); }
 @method Object_ _deepCopy(DoubleByteString) { return new Object_(); }
@@ -5188,9 +5484,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isValidNumberOfCharacters(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidNumberOfCharacters(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidNumberOfCharacters(PARTSEntryFieldPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultTextLimit(virtual!PARTSEntryFieldPart);
+@method Object_ _defaultTextLimit(PARTSNumericField) { return new Object_(); }
+@method Object_ _defaultTextLimit(PARTSEntryFieldPart) { return new Object_(); }
 @mptr("hash") Object_ partPropertyMaxSizeLabel(virtual!PARTSEntryFieldPart);
 @method Object_ _partPropertyMaxSizeLabel(PARTSNumericField) { return new Object_(); }
 @method Object_ _partPropertyMaxSizeLabel(PARTSEntryFieldPart) { return new Object_(); }
+@mptr("hash") Object_ defaultEmptyValue(virtual!PARTSEntryFieldPart);
+@method Object_ _defaultEmptyValue(PARTSNumericField) { return new Object_(); }
+@method Object_ _defaultEmptyValue(PARTSDateEntryFieldPart) { return new Object_(); }
+@method Object_ _defaultEmptyValue(PARTSEntryFieldPart) { return new Object_(); }
 @mptr("hash") Object_ isValidString(virtual!PARTSFormattedEntryField, Object_);
 @method Object_ _isValidString(PARTSNumericField, Object_) { return new Object_(); }
 @method Object_ _isValidString(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
@@ -5201,7 +5504,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partPropertyAddEmptyValueItem(virtual!PARTSEntryFieldPart, Object_);
 @method Object_ _partPropertyAddEmptyValueItem(PARTSNumericField, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddEmptyValueItem(PARTSEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ add(virtual!Object_, Object_);
+@mptr("hash") Object_ add(virtual!Object, Object_);
 @method Object_ _add(PARTSNumericField, Object_) { return new Object_(); }
 @method Object_ _add(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _add(Collection, Object_) { return new Object_(); }
@@ -5226,7 +5529,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isValidFormat(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidFormat(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidFormat(PARTSEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileOutOn(virtual!Object_, Object_);
+@mptr("hash") Object_ fileOutOn(virtual!Object, Object_);
 @method Object_ _fileOutOn(SmalltalkLibrary, Object_) { return new Object_(); }
 @method Object_ _fileOutOn(TextPane, Object_) { return new Object_(); }
 @method Object_ _fileOutOn(Class, Object_) { return new Object_(); }
@@ -5234,13 +5537,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileOutOn(MetaClass, Object_) { return new Object_(); }
 @method Object_ _fileOutOn(TextPaneControl, Object_) { return new Object_(); }
 @method Object_ _fileOutOn(ClassReader, Object_) { return new Object_(); }
-@mptr("hash") Object_ abortUnbind(virtual!Object_);
+@mptr("hash") Object_ abortUnbind(virtual!Object);
 @method Object_ _abortUnbind(SmalltalkLibrary) { return new Object_(); }
 @method Object_ _abortUnbind(SmalltalkLibraryBinder) { return new Object_(); }
-@mptr("hash") Object_ unBind(virtual!Object_);
+@mptr("hash") Object_ methods(virtual!Object);
+@method Object_ _methods(SmalltalkLibrary) { return new Object_(); }
+@method Object_ _methods(Behavior) { return new Object_(); }
+@mptr("hash") Object_ unBind(virtual!Object);
 @method Object_ _unBind(SmalltalkLibrary) { return new Object_(); }
 @method Object_ _unBind(SmalltalkLibraryBinder) { return new Object_(); }
-@mptr("hash") Object_ processInput(virtual!Object_);
+@mptr("hash") Object_ processInput(virtual!Object);
 @method Object_ _processInput(DialogBox) { return new Object_(); }
 @method Object_ _processInput(DialogTopPane) { return new Object_(); }
 @method Object_ _processInput(WindowDialog) { return new Object_(); }
@@ -5249,7 +5555,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _helpManager(Window) { return new Object_(); }
 @method Object_ _helpManager(DialogTopPane) { return new Object_(); }
 @method Object_ _helpManager(SubPane) { return new Object_(); }
-@mptr("hash") Object_ contextForItem(virtual!Object_, Object_);
+@mptr("hash") Object_ isDialogWindow(virtual!Object);
+@method Object_ _isDialogWindow(DialogBox) { return new Object_(); }
+@method Object_ _isDialogWindow(Object) { return new Object_(); }
+@method Object_ _isDialogWindow(DialogTopPane) { return new Object_(); }
+@mptr("hash") Object_ contextForItem(virtual!Object, Object_);
 @method Object_ _contextForItem(DialogBox, Object_) { return new Object_(); }
 @method Object_ _contextForItem(Menu, Object_) { return new Object_(); }
 @method Object_ _contextForItem(DialogTopPane, Object_) { return new Object_(); }
@@ -5257,12 +5567,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _contextForItem(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _contextForItem(SubPane, Object_) { return new Object_(); }
 @method Object_ _contextForItem(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ paneAt(virtual!Object_, Object_);
+@mptr("hash") Object_ paneAt(virtual!Object, Object_);
 @method Object_ _paneAt(DialogBox, Object_) { return new Object_(); }
 @method Object_ _paneAt(PARTSWindow, Object_) { return new Object_(); }
 @method Object_ _paneAt(PARTSPropertyDateFormat, Object_) { return new Object_(); }
 @method Object_ _paneAt(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ statusPane(virtual!Object_);
+@mptr("hash") Object_ statusPane(virtual!Object);
 @method Object_ _statusPane(DialogBox) { return new Object_(); }
 @method Object_ _statusPane(Window) { return new Object_(); }
 @method Object_ _statusPane(DialogTopPane) { return new Object_(); }
@@ -5289,14 +5599,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmInitdialogWith(DialogBox, Object_, Object_) { return new Object_(); }
 @method Object_ _wmInitdialogWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmInitdialogWith(DialogTopPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ contextForPopup(virtual!Object_, Object_);
+@mptr("hash") Object_ contextForPopup(virtual!Object, Object_);
 @method Object_ _contextForPopup(DialogBox, Object_) { return new Object_(); }
 @method Object_ _contextForPopup(Menu, Object_) { return new Object_(); }
 @method Object_ _contextForPopup(DialogTopPane, Object_) { return new Object_(); }
 @method Object_ _contextForPopup(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _contextForPopup(SubPane, Object_) { return new Object_(); }
 @method Object_ _contextForPopup(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPropertyAddStyleItems(virtual!Object_, Object_);
+@mptr("hash") Object_ partPropertyAddStyleItems(virtual!Object, Object_);
 @method Object_ _partPropertyAddStyleItems(PARTSConfirmerWithCancelPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddStyleItems(PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddStyleItems(PARTSInformationDialogPart, Object_) { return new Object_(); }
@@ -5315,7 +5625,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _buttonValues(PARTSPrebuiltMessageBox) { return new Object_(); }
 @method Object_ _buttonValues(PARTSInformationDialogPart) { return new Object_(); }
 @method Object_ _buttonValues(PARTSConfirmerPart) { return new Object_(); }
-@mptr("hash") Object_ getGraphicsTool(virtual!Object_);
+@mptr("hash") Object_ getGraphicsTool(virtual!Object);
 @method Object_ _getGraphicsTool(StoredPicture) { return new Object_(); }
 @method Object_ _getGraphicsTool(Window) { return new Object_(); }
 @method Object_ _getGraphicsTool(GraphPane) { return new Object_(); }
@@ -5331,17 +5641,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _drawUsing(GraphicsMedium, Object_) { return new Object_(); }
 @method Object_ _drawUsing(Printer, Object_) { return new Object_(); }
 @method Object_ _drawUsing(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ graphicsToolClass(virtual!Object_);
+@mptr("hash") Object_ graphicsToolClass(virtual!Object);
 @method Object_ _graphicsToolClass(StoredPicture) { return new Object_(); }
 @method Object_ _graphicsToolClass(Window) { return new Object_(); }
 @method Object_ _graphicsToolClass(GraphPane) { return new Object_(); }
 @method Object_ _graphicsToolClass(P1127) { return new Object_(); }
 @method Object_ _graphicsToolClass(PARTSIconPane) { return new Object_(); }
 @method Object_ _graphicsToolClass(Printer) { return new Object_(); }
-@mptr("hash") Object_ isStoredPicture(virtual!Object_);
+@mptr("hash") Object_ isStoredPicture(virtual!Object);
 @method Object_ _isStoredPicture(StoredPicture) { return new Object_(); }
-@method Object_ _isStoredPicture(Object_) { return new Object_(); }
-@mptr("hash") Object_ fromFile(virtual!Object_, Object_);
+@method Object_ _isStoredPicture(Object) { return new Object_(); }
+@mptr("hash") Object_ fromFile(virtual!Object, Object_);
 @method Object_ _fromFile(StoredPicture, Object_) { return new Object_(); }
 @method Object_ _fromFile(Tool, Object_) { return new Object_(); }
 @method Object_ _fromFile(PARTSIconEditor, Object_) { return new Object_(); }
@@ -5354,27 +5664,27 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fromFile(METACLASS_WinFileTime, Object_) { return new Object_(); }
 @method Object_ _fromFile(METACLASS_PARTSApplication, Object_) { return new Object_(); }
 @method Object_ _fromFile(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ setStatusText(virtual!Object_, Object_);
+@mptr("hash") Object_ setStatusText(virtual!Object, Object_);
 @method Object_ _setStatusText(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _setStatusText(PARTSNotebookPagePane, Object_) { return new Object_(); }
-@mptr("hash") Object_ key(virtual!Object_);
+@mptr("hash") Object_ key(virtual!Object);
 @method Object_ _key(PARTSNotebookPage) { return new Object_(); }
 @method Object_ _key(WinMetafileheader) { return new Object_(); }
 @method Object_ _key(Association) { return new Object_(); }
 @method Object_ _key(METACLASS_WinMetafileheader) { return new Object_(); }
-@mptr("hash") Object_ key(virtual!Object_, Object_);
+@mptr("hash") Object_ key(virtual!Object, Object_);
 @method Object_ _key(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _key(WinMetafileheader, Object_) { return new Object_(); }
 @method Object_ _key(Association, Object_) { return new Object_(); }
 @method Object_ _key(METACLASS_Association, Object_) { return new Object_(); }
-@mptr("hash") Object_ addStyle(virtual!Object_, Object_);
+@mptr("hash") Object_ addStyle(virtual!Object, Object_);
 @method Object_ _addStyle(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _addStyle(Window, Object_) { return new Object_(); }
 @method Object_ _addStyle(PARTSNotebook, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeStyle(virtual!Object_, Object_);
+@mptr("hash") Object_ removeStyle(virtual!Object, Object_);
 @method Object_ _removeStyle(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _removeStyle(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ id(virtual!Object_, Object_);
+@mptr("hash") Object_ id(virtual!Object, Object_);
 @method Object_ _id(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _id(Window, Object_) { return new Object_(); }
 @method Object_ _id(DoubleByteSymbol, Object_) { return new Object_(); }
@@ -5382,16 +5692,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _id(SubPane, Object_) { return new Object_(); }
 @method Object_ _id(MenuItem, Object_) { return new Object_(); }
 @method Object_ _id(Timer, Object_) { return new Object_(); }
-@mptr("hash") Object_ tab(virtual!Object_);
+@mptr("hash") Object_ tab(virtual!Object);
 @method Object_ _tab(PARTSNotebookPage) { return new Object_(); }
 @method Object_ _tab(P1110) { return new Object_(); }
 @method Object_ _tab(WriteStream) { return new Object_(); }
 @method Object_ _tab(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ tab(virtual!Object_, Object_);
+@mptr("hash") Object_ tab(virtual!Object, Object_);
 @method Object_ _tab(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _tab(PARTSNotebookPageAttributes, Object_) { return new Object_(); }
 @method Object_ _tab(WriteStream, Object_) { return new Object_(); }
-@mptr("hash") Object_ id(virtual!Object_);
+@mptr("hash") Object_ id(virtual!Object);
 @method Object_ _id(PARTSNotebookPage) { return new Object_(); }
 @method Object_ _id(Window) { return new Object_(); }
 @method Object_ _id(PeResource) { return new Object_(); }
@@ -5400,32 +5710,54 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _id(PARTSWindowPart) { return new Object_(); }
 @method Object_ _id(MenuItem) { return new Object_(); }
 @method Object_ _id(Timer) { return new Object_(); }
-@mptr("hash") Object_ statusText(virtual!Object_, Object_);
+@mptr("hash") Object_ statusText(virtual!Object, Object_);
 @method Object_ _statusText(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _statusText(P1101, Object_) { return new Object_(); }
-@mptr("hash") Object_ getMnemonicHandler(virtual!Object_, Object_);
+@mptr("hash") Object_ window(virtual!Object);
+@method Object_ _window(PARTSNotebookPage) { return new Object_(); }
+@method Object_ _window(Menu) { return new Object_(); }
+@mptr("hash") Object_ window(virtual!Object, Object_);
+@method Object_ _window(PARTSNotebookPage, Object_) { return new Object_(); }
+@method Object_ _window(WindowPolicy, Object_) { return new Object_(); }
+@method Object_ _window(Menu, Object_) { return new Object_(); }
+@mptr("hash") Object_ getMnemonicHandler(virtual!Object, Object_);
 @method Object_ _getMnemonicHandler(PARTSNotebookPage, Object_) { return new Object_(); }
 @method Object_ _getMnemonicHandler(Window, Object_) { return new Object_(); }
 @method Object_ _getMnemonicHandler(PARTSBaseNotebook, Object_) { return new Object_(); }
 @method Object_ _getMnemonicHandler(Button, Object_) { return new Object_(); }
-@mptr("hash") Object_ max(virtual!Object_, Object_);
+@mptr("hash") Object_ buildWindow(virtual!Object);
+@method Object_ _buildWindow(PARTSNotebookPage) { return new Object_(); }
+@method Object_ _buildWindow(DialogTopPane) { return new Object_(); }
+@method Object_ _buildWindow(ApplicationWindow) { return new Object_(); }
+@method Object_ _buildWindow(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ updateWindow(virtual!Object);
+@method Object_ _updateWindow(PARTSNotebookPage) { return new Object_(); }
+@method Object_ _updateWindow(Window) { return new Object_(); }
+@mptr("hash") Object_ max(virtual!Object, Object_);
 @method Object_ _max(Magnitude, Object_) { return new Object_(); }
 @method Object_ _max(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ min(virtual!Object_, Object_);
+@mptr("hash") Object_ min(virtual!Object, Object_);
 @method Object_ _min(Magnitude, Object_) { return new Object_(); }
 @method Object_ _min(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ betweenAnd(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ betweenAnd(virtual!Object, Object_, Object_);
 @method Object_ _betweenAnd(Magnitude, Object_, Object_) { return new Object_(); }
 @method Object_ _betweenAnd(Character, Object_, Object_) { return new Object_(); }
 @method Object_ _betweenAnd(Point, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partHasOtherEvents(virtual!Object_);
+@mptr("hash") Object_ partHasOtherEvents(virtual!Object);
 @method Object_ _partHasOtherEvents(PARTSLink) { return new Object_(); }
-@method Object_ _partHasOtherEvents(Object_) { return new Object_(); }
+@method Object_ _partHasOtherEvents(Object) { return new Object_(); }
 @method Object_ _partHasOtherEvents(PARTSValueHolderPart) { return new Object_(); }
 @method Object_ _partHasOtherEvents(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ fileInActivate(virtual!Object_, Object_);
+@mptr("hash") Object_ debugger(virtual!Object);
+@method Object_ _debugger(PARTSLink) { return new Object_(); }
+@method Object_ _debugger(P1121) { return new Object_(); }
+@method Object_ _debugger(PARTSMirrorCopyDictionary) { return new Object_(); }
+@method Object_ _debugger(P1122) { return new Object_(); }
+@method Object_ _debugger(PARTSLoadContext) { return new Object_(); }
+@method Object_ _debugger(Process) { return new Object_(); }
+@mptr("hash") Object_ fileInActivate(virtual!Object, Object_);
 @method Object_ _fileInActivate(PARTSLink, Object_) { return new Object_(); }
-@method Object_ _fileInActivate(Object_, Object_) { return new Object_(); }
+@method Object_ _fileInActivate(Object, Object_) { return new Object_(); }
 @method Object_ _fileInActivate(PARTSEditorState, Object_) { return new Object_(); }
 @method Object_ _fileInActivate(UpgraderForDirectory, Object_) { return new Object_(); }
 @method Object_ _fileInActivate(HomeContext, Object_) { return new Object_(); }
@@ -5443,13 +5775,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileInActivate(CompiledMethod, Object_) { return new Object_(); }
 @method Object_ _fileInActivate(Process, Object_) { return new Object_(); }
 @method Object_ _fileInActivate(PARTSScript, Object_) { return new Object_(); }
-@mptr("hash") Object_ resultAction(virtual!Object_, Object_);
+@mptr("hash") Object_ resultAction(virtual!Object, Object_);
 @method Object_ _resultAction(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _resultAction(LinkMessage, Object_) { return new Object_(); }
-@mptr("hash") Object_ changeSourceProperties(virtual!Object_, Object_);
+@mptr("hash") Object_ changeSourceProperties(virtual!Object, Object_);
 @method Object_ _changeSourceProperties(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _changeSourceProperties(P1113, Object_) { return new Object_(); }
-@mptr("hash") Object_ selector(virtual!Object_, Object_);
+@mptr("hash") Object_ selector(virtual!Object, Object_);
 @method Object_ _selector(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _selector(Tool, Object_) { return new Object_(); }
 @method Object_ _selector(Message, Object_) { return new Object_(); }
@@ -5460,46 +5792,60 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _selector(MenuItem, Object_) { return new Object_(); }
 @method Object_ _selector(CompiledMethod, Object_) { return new Object_(); }
 @method Object_ _selector(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ addLinksAttachedToTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ addLinksAttachedToTo(virtual!Object, Object_, Object_);
 @method Object_ _addLinksAttachedToTo(PARTSLink, Object_, Object_) { return new Object_(); }
 @method Object_ _addLinksAttachedToTo(PARTSWrapper, Object_, Object_) { return new Object_(); }
 @method Object_ _addLinksAttachedToTo(P1106, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ runtimeCloneFor(virtual!Object_, Object_);
+@mptr("hash") Object_ runtimeCloneFor(virtual!Object, Object_);
 @method Object_ _runtimeCloneFor(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _runtimeCloneFor(PARTSWrapper, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeLink(virtual!Object_, Object_);
+@mptr("hash") Object_ removeLink(virtual!Object, Object_);
 @method Object_ _removeLink(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _removeLink(P1101, Object_) { return new Object_(); }
 @method Object_ _removeLink(PARTSWrapper, Object_) { return new Object_(); }
-@mptr("hash") Object_ dependentLinks(virtual!Object_);
+@mptr("hash") Object_ dependentLinks(virtual!Object);
 @method Object_ _dependentLinks(PARTSLink) { return new Object_(); }
 @method Object_ _dependentLinks(P1113) { return new Object_(); }
-@mptr("hash") Object_ sourceObject(virtual!Object_);
+@mptr("hash") Object_ sourceObject(virtual!Object);
 @method Object_ _sourceObject(PARTSLink) { return new Object_(); }
 @method Object_ _sourceObject(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ receiver(virtual!Object_, Object_);
+@mptr("hash") Object_ receiver(virtual!Object, Object_);
 @method Object_ _receiver(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _receiver(Message, Object_) { return new Object_(); }
 @method Object_ _receiver(MethodExecutor, Object_) { return new Object_(); }
-@mptr("hash") Object_ arguments(virtual!Object_, Object_);
+@mptr("hash") Object_ withAllDependents(virtual!Object);
+@method Object_ _withAllDependents(PARTSLink) { return new Object_(); }
+@method Object_ _withAllDependents(P1113) { return new Object_(); }
+@mptr("hash") Object_ withAllDependents(virtual!Object, Object_);
+@method Object_ _withAllDependents(PARTSLink, Object_) { return new Object_(); }
+@method Object_ _withAllDependents(P1113, Object_) { return new Object_(); }
+@mptr("hash") Object_ arguments(virtual!Object, Object_);
 @method Object_ _arguments(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _arguments(Message, Object_) { return new Object_(); }
 @method Object_ _arguments(LinkMessage, Object_) { return new Object_(); }
-@mptr("hash") Object_ arguments(virtual!Object_);
+@mptr("hash") Object_ arguments(virtual!Object);
 @method Object_ _arguments(PARTSLink) { return new Object_(); }
 @method Object_ _arguments(Message) { return new Object_(); }
-@mptr("hash") Object_ collectArguments(virtual!Object_, Object_);
+@mptr("hash") Object_ object(virtual!Object);
+@method Object_ _object(PARTSLink) { return new Object_(); }
+@method Object_ _object(P1109) { return new Object_(); }
+@method Object_ _object(PARTSPropertiesEditor) { return new Object_(); }
+@method Object_ _object(PARTSLocalDragDropObject) { return new Object_(); }
+@method Object_ _object(PARTSWrapper) { return new Object_(); }
+@method Object_ _object(DragDropObject) { return new Object_(); }
+@method Object_ _object(UnknownImport) { return new Object_(); }
+@mptr("hash") Object_ collectArguments(virtual!Object, Object_);
 @method Object_ _collectArguments(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _collectArguments(Message, Object_) { return new Object_(); }
 @method Object_ _collectArguments(LinkMessage, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPrintOnMargin(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ partPrintOnMargin(virtual!Object, Object_, Object_);
 @method Object_ _partPrintOnMargin(PARTSLink, Object_, Object_) { return new Object_(); }
-@method Object_ _partPrintOnMargin(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _partPrintOnMargin(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintOnMargin(PARTSWrapper, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ sourceObject(virtual!Object_, Object_);
+@mptr("hash") Object_ sourceObject(virtual!Object, Object_);
 @method Object_ _sourceObject(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _sourceObject(CompiledMethod, Object_) { return new Object_(); }
-@mptr("hash") Object_ application(virtual!Object_);
+@mptr("hash") Object_ application(virtual!Object);
 @method Object_ _application(PARTSLink) { return new Object_(); }
 @method Object_ _application(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _application(P1101) { return new Object_(); }
@@ -5507,36 +5853,40 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _application(PARTSWrapper) { return new Object_(); }
 @method Object_ _application(PARTSNestedPart) { return new Object_(); }
 @method Object_ _application(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ receiver(virtual!Object_);
+@mptr("hash") Object_ receiver(virtual!Object);
 @method Object_ _receiver(PARTSLink) { return new Object_(); }
 @method Object_ _receiver(Message) { return new Object_(); }
 @method Object_ _receiver(HomeContext) { return new Object_(); }
 @method Object_ _receiver(MethodExecutor) { return new Object_(); }
 @method Object_ _receiver(Context) { return new Object_(); }
-@mptr("hash") Object_ source(virtual!Object_, Object_);
+@mptr("hash") Object_ source(virtual!Object, Object_);
 @method Object_ _source(PARTSLink, Object_) { return new Object_(); }
 @method Object_ _source(PARTSScriptSource, Object_) { return new Object_(); }
 @method Object_ _source(DragDropSession, Object_) { return new Object_(); }
 @method Object_ _source(METACLASS_PARTSCatalogDragSession, Object_) { return new Object_(); }
 @method Object_ _source(METACLASS_PARTSEditorMoveSession, Object_) { return new Object_(); }
 @method Object_ _source(METACLASS_DragDropSession, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPARTSLink(virtual!Object_);
+@mptr("hash") Object_ isPARTSLink(virtual!Object);
 @method Object_ _isPARTSLink(PARTSLink) { return new Object_(); }
-@method Object_ _isPARTSLink(Object_) { return new Object_(); }
-@mptr("hash") Object_ source(virtual!Object_);
+@method Object_ _isPARTSLink(Object) { return new Object_(); }
+@mptr("hash") Object_ source(virtual!Object);
 @method Object_ _source(PARTSLink) { return new Object_(); }
 @method Object_ _source(PARTSScriptSource) { return new Object_(); }
 @method Object_ _source(ObjectStoreFileObjects) { return new Object_(); }
 @method Object_ _source(CompiledMethod) { return new Object_(); }
 @method Object_ _source(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ promptDefault(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ delete(virtual!Object);
+@method Object_ _delete(Atom) { return new Object_(); }
+@method Object_ _delete(P1124) { return new Object_(); }
+@method Object_ _delete(PARTSPictureFieldPart) { return new Object_(); }
+@mptr("hash") Object_ promptDefault(virtual!Object, Object_, Object_);
 @method Object_ _promptDefault(Prompter, Object_, Object_) { return new Object_(); }
 @method Object_ _promptDefault(PARTSPrompterPart, Object_, Object_) { return new Object_(); }
 @method Object_ _promptDefault(METACLASS_Prompter, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ cancelAnswer(virtual!Prompter);
 @method Object_ _cancelAnswer(Prompter) { return new Object_(); }
 @method Object_ _cancelAnswer(PARTSPrompter) { return new Object_(); }
-@mptr("hash") Object_ titlePromptDefault(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ titlePromptDefault(virtual!Object, Object_, Object_, Object_);
 @method Object_ _titlePromptDefault(Prompter, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _titlePromptDefault(METACLASS_Prompter, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ ok(virtual!WindowDialog, Object_);
@@ -5544,7 +5894,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _ok(AboutDialog, Object_) { return new Object_(); }
 @method Object_ _ok(PARTSSimpleTextEditor, Object_) { return new Object_(); }
 @method Object_ _ok(SaveImageAsDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ compilerErrorAtInFor(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ compilerErrorAtInFor(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _compilerErrorAtInFor(Prompter, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _compilerErrorAtInFor(TextPane, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _compilerErrorAtInFor(ExpressionEvaluator, Object_, Object_, Object_, Object_) { return new Object_(); }
@@ -5553,25 +5903,30 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _compilerErrorAtInFor(PARTSExpressionEntryField, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _compilerErrorAtInFor(SaveImageAsDialog, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _compilerErrorAtInFor(METACLASS_CompilerInterface, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ parameters(virtual!Object_);
+@mptr("hash") Object_ parameters(virtual!Object);
 @method Object_ _parameters(PARTSDial) { return new Object_(); }
 @method Object_ _parameters(PARTSStringTemplate) { return new Object_(); }
 @method Object_ _parameters(PARTSStringTemplatePart) { return new Object_(); }
-@mptr("hash") Object_ partCodeGenerated(virtual!Object_, Object_);
+@mptr("hash") Object_ partCodeGenerated(virtual!Object, Object_);
 @method Object_ _partCodeGenerated(PARTSDial, Object_) { return new Object_(); }
 @method Object_ _partCodeGenerated(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _partCodeGenerated(PARTSDialPanePart, Object_) { return new Object_(); }
 @method Object_ _partCodeGenerated(PARTSWindowPart, Object_) { return new Object_(); }
 @method Object_ _partCodeGenerated(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ lowReading(virtual!Object_, Object_);
+@mptr("hash") Object_ lowReading(virtual!Object, Object_);
 @method Object_ _lowReading(PARTSDial, Object_) { return new Object_(); }
 @method Object_ _lowReading(PARTSDialPanePart, Object_) { return new Object_(); }
-@mptr("hash") Object_ parameters(virtual!Object_, Object_);
+@mptr("hash") Object_ parameters(virtual!Object, Object_);
 @method Object_ _parameters(PARTSDial, Object_) { return new Object_(); }
 @method Object_ _parameters(PARTSStringTemplate, Object_) { return new Object_(); }
-@mptr("hash") Object_ highReading(virtual!Object_, Object_);
+@mptr("hash") Object_ highReading(virtual!Object, Object_);
 @method Object_ _highReading(PARTSDial, Object_) { return new Object_(); }
 @method Object_ _highReading(PARTSDialPanePart, Object_) { return new Object_(); }
+@mptr("hash") Object_ method(virtual!Object, Object_);
+@method Object_ _method(MethodBrowser, Object_) { return new Object_(); }
+@method Object_ _method(HomeContext, Object_) { return new Object_(); }
+@method Object_ _method(MethodExecutor, Object_) { return new Object_(); }
+@method Object_ _method(Debugger, Object_) { return new Object_(); }
 @mptr("hash") Object_ removeSelector(virtual!CodeBrowser);
 @method Object_ _removeSelector(MethodBrowser) { return new Object_(); }
 @method Object_ _removeSelector(ClassBrowser) { return new Object_(); }
@@ -5607,6 +5962,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _selectedMethod(ClassBrowser) { return new Object_(); }
 @method Object_ _selectedMethod(CodeBrowser) { return new Object_(); }
 @method Object_ _selectedMethod(ClassHierarchyBrowser) { return new Object_(); }
+@mptr("hash") Object_ methodListCut(virtual!CodeBrowser, Object_);
+@method Object_ _methodListCut(MethodBrowser, Object_) { return new Object_(); }
+@method Object_ _methodListCut(Debugger, Object_) { return new Object_(); }
+@method Object_ _methodListCut(ClassBrowser, Object_) { return new Object_(); }
+@method Object_ _methodListCut(ClassHierarchyBrowser, Object_) { return new Object_(); }
 @mptr("hash") Object_ topPaneClass(virtual!ViewManager);
 @method Object_ _topPaneClass(PARTSDialog) { return new Object_(); }
 @method Object_ _topPaneClass(P1101) { return new Object_(); }
@@ -5618,9 +5978,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _topPaneClass(WindowDialog) { return new Object_(); }
 @method Object_ _topPaneClass(PARTSTextWindow) { return new Object_(); }
 @method Object_ _topPaneClass(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ mouseButtonDrag(virtual!Object_);
+@mptr("hash") Object_ mouseButtonDrag(virtual!Object);
 @method Object_ _mouseButtonDrag(PARTSDialog) { return new Object_(); }
 @method Object_ _mouseButtonDrag(PARTSSettings) { return new Object_(); }
+@mptr("hash") Object_ doubleClickedList(virtual!ListDialog);
+@method Object_ _doubleClickedList(MultiSelectListDialog) { return new Object_(); }
+@method Object_ _doubleClickedList(ListDialog) { return new Object_(); }
 @mptr("hash") Object_ listPaneClass(virtual!WindowDialog);
 @method Object_ _listPaneClass(MultiSelectListDialog) { return new Object_(); }
 @method Object_ _listPaneClass(P1137) { return new Object_(); }
@@ -5629,17 +5992,28 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _listPaneClass(ListDialog) { return new Object_(); }
 @method Object_ _listPaneClass(P1138) { return new Object_(); }
 @method Object_ _listPaneClass(P1136) { return new Object_(); }
-@mptr("hash") Object_ atAllPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ do(virtual!Object, Object_);
+@method Object_ _do(IndexedCollection, Object_) { return new Object_(); }
+@method Object_ _do(Collection, Object_) { return new Object_(); }
+@method Object_ _do(P1111, Object_) { return new Object_(); }
+@method Object_ _do(Stream, Object_) { return new Object_(); }
+@method Object_ _do(OrderedCollection, Object_) { return new Object_(); }
+@method Object_ _do(IdentityDictionary, Object_) { return new Object_(); }
+@method Object_ _do(DoubleByteString, Object_) { return new Object_(); }
+@method Object_ _do(Dictionary, Object_) { return new Object_(); }
+@method Object_ _do(Bag, Object_) { return new Object_(); }
+@method Object_ _do(HashedCollection, Object_) { return new Object_(); }
+@mptr("hash") Object_ atAllPut(virtual!Object, Object_, Object_);
 @method Object_ _atAllPut(IndexedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _atAllPut(PARTSArrayHolderPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isIndexedCollection(virtual!Object_);
+@mptr("hash") Object_ isIndexedCollection(virtual!Object);
 @method Object_ _isIndexedCollection(IndexedCollection) { return new Object_(); }
-@method Object_ _isIndexedCollection(Object_) { return new Object_(); }
+@method Object_ _isIndexedCollection(Object) { return new Object_(); }
 @mptr("hash") Object_ reversed(virtual!IndexedCollection);
 @method Object_ _reversed(IndexedCollection) { return new Object_(); }
 @method Object_ _reversed(Interval) { return new Object_(); }
 @method Object_ _reversed(FixedSizeCollection) { return new Object_(); }
-@mptr("hash") Object_ copyFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ copyFromTo(virtual!Object, Object_, Object_);
 @method Object_ _copyFromTo(IndexedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _copyFromTo(SortedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _copyFromTo(FileStream, Object_, Object_) { return new Object_(); }
@@ -5647,7 +6021,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _copyFromTo(OrderedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _copyFromTo(ExternalAddress, Object_, Object_) { return new Object_(); }
 @method Object_ _copyFromTo(MixedFileStream, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ includes(virtual!Object_, Object_);
+@mptr("hash") Object_ includes(virtual!Object, Object_);
 @method Object_ _includes(IndexedCollection, Object_) { return new Object_(); }
 @method Object_ _includes(Collection, Object_) { return new Object_(); }
 @method Object_ _includes(OrderedCollection, Object_) { return new Object_(); }
@@ -5655,13 +6029,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _includes(Bag, Object_) { return new Object_(); }
 @method Object_ _includes(HashedCollection, Object_) { return new Object_(); }
 @method Object_ _includes(ObjectStoreObjects, Object_) { return new Object_(); }
-@mptr("hash") Object_ grow(virtual!Object_);
+@mptr("hash") Object_ grow(virtual!Object);
 @method Object_ _grow(IndexedCollection) { return new Object_(); }
 @method Object_ _grow(SortedCollection) { return new Object_(); }
 @method Object_ _grow(OrderedCollection) { return new Object_(); }
 @method Object_ _grow(HashedCollection) { return new Object_(); }
 @method Object_ _grow(WriteStream) { return new Object_(); }
-@mptr("hash") Object_ atIfabsent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ atIfabsent(virtual!Object, Object_, Object_);
 @method Object_ _atIfabsent(IndexedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _atIfabsent(OrderedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _atIfabsent(PARTSFileOperationContext, Object_, Object_) { return new Object_(); }
@@ -5669,26 +6043,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ indexOfIfabsent(virtual!Collection, Object_, Object_);
 @method Object_ _indexOfIfabsent(IndexedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _indexOfIfabsent(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWith(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ replaceFromToWith(virtual!Object, Object_, Object_, Object_);
 @method Object_ _replaceFromToWith(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceFromToWith(OrderedCollection, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceFromToWith(PARTSArrayHolderPart, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ atAllPut(virtual!Object_, Object_);
+@mptr("hash") Object_ atAllPut(virtual!Object, Object_);
 @method Object_ _atAllPut(IndexedCollection, Object_) { return new Object_(); }
 @method Object_ _atAllPut(PARTSArrayHolderPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ copyReplaceFromToWith(virtual!IndexedCollection, Object_, Object_, Object_);
 @method Object_ _copyReplaceFromToWith(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _copyReplaceFromToWith(FixedSizeCollection, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ findFirst(virtual!Object_, Object_);
+@mptr("hash") Object_ findFirst(virtual!Object, Object_);
 @method Object_ _findFirst(IndexedCollection, Object_) { return new Object_(); }
 @method Object_ _findFirst(Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ shallowCopy(virtual!Object_);
+@mptr("hash") Object_ shallowCopy(virtual!Object);
 @method Object_ _shallowCopy(IndexedCollection) { return new Object_(); }
 @method Object_ _shallowCopy(SortedCollection) { return new Object_(); }
 @method Object_ _shallowCopy(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _shallowCopy(Behavior) { return new Object_(); }
 @method Object_ _shallowCopy(Collection) { return new Object_(); }
-@method Object_ _shallowCopy(Object_) { return new Object_(); }
+@method Object_ _shallowCopy(Object) { return new Object_(); }
 @method Object_ _shallowCopy(MethodDictionary) { return new Object_(); }
 @method Object_ _shallowCopy(Symbol) { return new Object_(); }
 @method Object_ _shallowCopy(Character) { return new Object_(); }
@@ -5700,26 +6074,32 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _shallowCopy(HashTable) { return new Object_(); }
 @method Object_ _shallowCopy(Number) { return new Object_(); }
 @method Object_ _shallowCopy(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ setTabStop(virtual!Object_);
+@mptr("hash") Object_ setTabStop(virtual!Object);
 @method Object_ _setTabStop(PARTSTabOrderEditor) { return new Object_(); }
 @method Object_ _setTabStop(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ startGroup(virtual!Object_);
+@mptr("hash") Object_ startGroup(virtual!Object);
 @method Object_ _startGroup(PARTSTabOrderEditor) { return new Object_(); }
 @method Object_ _startGroup(SubPane) { return new Object_(); }
-@mptr("hash") Object_ partEditor(virtual!Object_);
+@mptr("hash") Object_ initializeWindow(virtual!PARTSDialog);
+@method Object_ _initializeWindow(PARTSTabOrderEditor) { return new Object_(); }
+@method Object_ _initializeWindow(P1137) { return new Object_(); }
+@method Object_ _initializeWindow(P1139) { return new Object_(); }
+@method Object_ _initializeWindow(P1135) { return new Object_(); }
+@method Object_ _initializeWindow(P1136) { return new Object_(); }
+@mptr("hash") Object_ partEditor(virtual!Object);
 @method Object_ _partEditor(PARTSFormGenerator) { return new Object_(); }
 @method Object_ _partEditor(Window) { return new Object_(); }
 @method Object_ _partEditor(P1117) { return new Object_(); }
 @method Object_ _partEditor(P1105) { return new Object_(); }
 @method Object_ _partEditor(P1113) { return new Object_(); }
 @method Object_ _partEditor(P1127) { return new Object_(); }
-@method Object_ _partEditor(Object_) { return new Object_(); }
+@method Object_ _partEditor(Object) { return new Object_(); }
 @method Object_ _partEditor(PARTSColorFontPropertiesEditor) { return new Object_(); }
 @method Object_ _partEditor(PARTSWrapper) { return new Object_(); }
 @method Object_ _partEditor(PARTSPropertyFormGeneratorButton) { return new Object_(); }
 @method Object_ _partEditor(PARTSApplication) { return new Object_(); }
 @method Object_ _partEditor(PARTSPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ cancelChanges(virtual!Object_);
+@mptr("hash") Object_ cancelChanges(virtual!Object);
 @method Object_ _cancelChanges(PARTSFormGenerator) { return new Object_(); }
 @method Object_ _cancelChanges(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _cancelChanges(PARTSPropertyFormGeneratorButton) { return new Object_(); }
@@ -5728,7 +6108,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ addAfter(virtual!OrderedCollection, Object_, Object_);
 @method Object_ _addAfter(SortedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _addAfter(OrderedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ addAll(virtual!Object_, Object_);
+@mptr("hash") Object_ addAll(virtual!Object, Object_);
 @method Object_ _addAll(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _addAll(Collection, Object_) { return new Object_(); }
 @method Object_ _addAll(Dictionary, Object_) { return new Object_(); }
@@ -5743,13 +6123,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ addLast(virtual!OrderedCollection, Object_);
 @method Object_ _addLast(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _addLast(OrderedCollection, Object_) { return new Object_(); }
+@mptr("hash") Object_ addBefore(virtual!OrderedCollection, Object_, Object_);
+@method Object_ _addBefore(SortedCollection, Object_, Object_) { return new Object_(); }
+@method Object_ _addBefore(OrderedCollection, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ asSortedCollection(virtual!Collection);
 @method Object_ _asSortedCollection(SortedCollection) { return new Object_(); }
 @method Object_ _asSortedCollection(Collection) { return new Object_(); }
 @mptr("hash") Object_ addFirst(virtual!OrderedCollection, Object_);
 @method Object_ _addFirst(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _addFirst(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ select(virtual!Object_, Object_);
+@mptr("hash") Object_ select(virtual!Object, Object_);
 @method Object_ _select(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _select(Collection, Object_) { return new Object_(); }
 @method Object_ _select(P1101, Object_) { return new Object_(); }
@@ -5757,79 +6140,79 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _select(PARTSPropertyFixedList, Object_) { return new Object_(); }
 @method Object_ _select(Dictionary, Object_) { return new Object_(); }
 @method Object_ _select(FixedSizeCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ sortBlock(virtual!Object_);
+@mptr("hash") Object_ sortBlock(virtual!Object);
 @method Object_ _sortBlock(SortedCollection) { return new Object_(); }
 @method Object_ _sortBlock(METACLASS_Class) { return new Object_(); }
-@mptr("hash") Object_ sortBlock(virtual!Object_, Object_);
+@mptr("hash") Object_ sortBlock(virtual!Object, Object_);
 @method Object_ _sortBlock(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _sortBlock(METACLASS_SortedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ valueValue(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ valueValue(virtual!Object, Object_, Object_);
 @method Object_ _valueValue(SortedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _valueValue(Message, Object_, Object_) { return new Object_(); }
 @method Object_ _valueValue(TwoArgumentBlock, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ addAllLast(virtual!OrderedCollection, Object_);
 @method Object_ _addAllLast(SortedCollection, Object_) { return new Object_(); }
 @method Object_ _addAllLast(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ isGreaterthanorequalto(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ isGreaterthanorequalto(virtual!Object, Object_, Object_);
 @method Object_ _isGreaterthanorequalto(SortedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _isGreaterthanorequalto(PARTSComparisonPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asRectangle(virtual!Object_);
+@mptr("hash") Object_ asRectangle(virtual!Object);
 @method Object_ _asRectangle(Border) { return new Object_(); }
 @method Object_ _asRectangle(Rectangle) { return new Object_(); }
 @method Object_ _asRectangle(WinRectangle) { return new Object_(); }
-@mptr("hash") Object_ bottom(virtual!Object_);
+@mptr("hash") Object_ bottom(virtual!Object);
 @method Object_ _bottom(Border) { return new Object_(); }
 @method Object_ _bottom(Rectangle) { return new Object_(); }
 @method Object_ _bottom(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _bottom(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ left(virtual!Object_);
+@mptr("hash") Object_ left(virtual!Object);
 @method Object_ _left(Border) { return new Object_(); }
 @method Object_ _left(Rectangle) { return new Object_(); }
 @method Object_ _left(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _left(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ left(virtual!Object_, Object_);
+@mptr("hash") Object_ left(virtual!Object, Object_);
 @method Object_ _left(Border, Object_) { return new Object_(); }
 @method Object_ _left(Rectangle, Object_) { return new Object_(); }
 @method Object_ _left(PARTSFramer, Object_) { return new Object_(); }
 @method Object_ _left(Point, Object_) { return new Object_(); }
 @method Object_ _left(Number, Object_) { return new Object_(); }
 @method Object_ _left(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ topLeft(virtual!Object_, Object_);
+@mptr("hash") Object_ topLeft(virtual!Object, Object_);
 @method Object_ _topLeft(Border, Object_) { return new Object_(); }
 @method Object_ _topLeft(Rectangle, Object_) { return new Object_(); }
 @method Object_ _topLeft(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ borderWidth(virtual!Object_, Object_);
+@mptr("hash") Object_ borderWidth(virtual!Object, Object_);
 @method Object_ _borderWidth(Border, Object_) { return new Object_(); }
 @method Object_ _borderWidth(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ right(virtual!Object_);
+@mptr("hash") Object_ right(virtual!Object);
 @method Object_ _right(Border) { return new Object_(); }
 @method Object_ _right(Rectangle) { return new Object_(); }
 @method Object_ _right(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _right(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ right(virtual!Object_, Object_);
+@mptr("hash") Object_ right(virtual!Object, Object_);
 @method Object_ _right(Border, Object_) { return new Object_(); }
 @method Object_ _right(Rectangle, Object_) { return new Object_(); }
 @method Object_ _right(PARTSFramer, Object_) { return new Object_(); }
 @method Object_ _right(Point, Object_) { return new Object_(); }
 @method Object_ _right(Number, Object_) { return new Object_(); }
 @method Object_ _right(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ top(virtual!Object_);
+@mptr("hash") Object_ top(virtual!Object);
 @method Object_ _top(Border) { return new Object_(); }
 @method Object_ _top(Rectangle) { return new Object_(); }
 @method Object_ _top(TextSelection) { return new Object_(); }
 @method Object_ _top(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _top(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ bottom(virtual!Object_, Object_);
+@mptr("hash") Object_ bottom(virtual!Object, Object_);
 @method Object_ _bottom(Border, Object_) { return new Object_(); }
 @method Object_ _bottom(Rectangle, Object_) { return new Object_(); }
 @method Object_ _bottom(PARTSFramer, Object_) { return new Object_(); }
 @method Object_ _bottom(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ top(virtual!Object_, Object_);
+@mptr("hash") Object_ top(virtual!Object, Object_);
 @method Object_ _top(Border, Object_) { return new Object_(); }
 @method Object_ _top(Rectangle, Object_) { return new Object_(); }
 @method Object_ _top(PARTSFramer, Object_) { return new Object_(); }
 @method Object_ _top(METACLASS_Border, Object_) { return new Object_(); }
-@mptr("hash") Object_ bottomRight(virtual!Object_, Object_);
+@mptr("hash") Object_ bottomRight(virtual!Object, Object_);
 @method Object_ _bottomRight(Border, Object_) { return new Object_(); }
 @method Object_ _bottomRight(Rectangle, Object_) { return new Object_(); }
 @method Object_ _bottomRight(METACLASS_Border, Object_) { return new Object_(); }
@@ -5839,39 +6222,49 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ memorySize(virtual!ExternalAddress, Object_);
 @method Object_ _memorySize(ExternalHeapAddress, Object_) { return new Object_(); }
 @method Object_ _memorySize(ExternalGlobalAddress, Object_) { return new Object_(); }
-@mptr("hash") Object_ free(virtual!Object_);
+@mptr("hash") Object_ free(virtual!Object);
 @method Object_ _free(ExternalHeapAddress) { return new Object_(); }
 @method Object_ _free(ExternalGlobalAddress) { return new Object_(); }
 @method Object_ _free(ExternalHeapHandle) { return new Object_(); }
 @mptr("hash") Object_ memorySize(virtual!ExternalAddress);
 @method Object_ _memorySize(ExternalHeapAddress) { return new Object_(); }
 @method Object_ _memorySize(ExternalGlobalAddress) { return new Object_(); }
-@mptr("hash") Object_ partApplication(virtual!Object_);
+@mptr("hash") Object_ partApplication(virtual!Object);
 @method Object_ _partApplication(Window) { return new Object_(); }
-@method Object_ _partApplication(Object_) { return new Object_(); }
-@mptr("hash") Object_ sendInputEventWith(virtual!Object_, Object_, Object_);
+@method Object_ _partApplication(Object) { return new Object_(); }
+@mptr("hash") Object_ sendInputEventWith(virtual!Object, Object_, Object_);
 @method Object_ _sendInputEventWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _sendInputEventWith(ViewManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDragButton(virtual!Object_, Object_);
+@mptr("hash") Object_ isDragButton(virtual!Object, Object_);
 @method Object_ _isDragButton(Window, Object_) { return new Object_(); }
 @method Object_ _isDragButton(ExtendedListBox, Object_) { return new Object_(); }
 @method Object_ _isDragButton(METACLASS_DragDropSession, Object_) { return new Object_(); }
+@mptr("hash") Object_ doDragDropAt(virtual!Object, Object_);
+@method Object_ _doDragDropAt(Window, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(P1105, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(PARTSCatalogDragSession, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(LocalDragDropSession, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(PARTSEditorMoveSession, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(PARTSLocalDragDropSession, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(ExtendedListBox, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(PARTSDragSession, Object_) { return new Object_(); }
+@method Object_ _doDragDropAt(DragDropSession, Object_) { return new Object_(); }
 @mptr("hash") Object_ partSetDirectEditAttribute(virtual!Window, Object_);
 @method Object_ _partSetDirectEditAttribute(Window, Object_) { return new Object_(); }
 @method Object_ _partSetDirectEditAttribute(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _partSetDirectEditAttribute(PARTSFormattedEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ popup(virtual!Object_);
+@mptr("hash") Object_ popup(virtual!Object);
 @method Object_ _popup(Window) { return new Object_(); }
 @method Object_ _popup(Menu) { return new Object_(); }
 @method Object_ _popup(SubPane) { return new Object_(); }
-@mptr("hash") Object_ disabled(virtual!Object_);
+@mptr("hash") Object_ disabled(virtual!Object);
 @method Object_ _disabled(Window) { return new Object_(); }
 @method Object_ _disabled(DrawnButton) { return new Object_(); }
 @method Object_ _disabled(PARTSPropertyUnit) { return new Object_(); }
 @mptr("hash") Object_ dragTargetNoScrollRectangle(virtual!Window);
 @method Object_ _dragTargetNoScrollRectangle(Window) { return new Object_(); }
 @method Object_ _dragTargetNoScrollRectangle(ExtendedListBox) { return new Object_(); }
-@mptr("hash") Object_ owner(virtual!Object_);
+@mptr("hash") Object_ owner(virtual!Object);
 @method Object_ _owner(Window) { return new Object_(); }
 @method Object_ _owner(Tool) { return new Object_(); }
 @method Object_ _owner(Menu) { return new Object_(); }
@@ -5883,14 +6276,47 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _mouseMove(GraphPane, Object_) { return new Object_(); }
 @method Object_ _mouseMove(P1127, Object_) { return new Object_(); }
 @method Object_ _mouseMove(SubPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ partWrapper(virtual!Object_);
+@mptr("hash") Object_ defaultFont(virtual!Object);
+@method Object_ _defaultFont(Window) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_ListBox) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSComboBoxPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_Window) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_EntryField) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_ListChooser) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSMultipleChoiceListPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSDialPanePart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSPushButtonPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSDropDownListPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_TextPane) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSListPanePart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSTextPanePart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSDrawnButtonPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSRadioButtonPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSGroupPanePart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSCheckBoxPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSLinkSettings) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_StaticText) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSStaticTextPart) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_Button) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_ListPane) { return new Object_(); }
+@method Object_ _defaultFont(METACLASS_PARTSEntryFieldPart) { return new Object_(); }
+@mptr("hash") Object_ partWrapper(virtual!Object);
 @method Object_ _partWrapper(Window) { return new Object_(); }
-@method Object_ _partWrapper(Object_) { return new Object_(); }
+@method Object_ _partWrapper(Object) { return new Object_(); }
 @method Object_ _partWrapper(PARTSNestedPart) { return new Object_(); }
 @method Object_ _partWrapper(PARTSApplication) { return new Object_(); }
 @method Object_ _partWrapper(PARTSNonvisualPart) { return new Object_(); }
 @method Object_ _partWrapper(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ button2Move(virtual!Object_, Object_);
+@mptr("hash") Object_ defaultBackColor(virtual!Object);
+@method Object_ _defaultBackColor(Window) { return new Object_(); }
+@method Object_ _defaultBackColor(ListConnectionPane) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_PARTSMenuLabelPart) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_Window) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_PARTSMenuPart) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_DialogTopPane) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _defaultBackColor(METACLASS_PARTSMenuItemPane) { return new Object_(); }
+@mptr("hash") Object_ button2Move(virtual!Object, Object_);
 @method Object_ _button2Move(Window, Object_) { return new Object_(); }
 @method Object_ _button2Move(GraphPane, Object_) { return new Object_(); }
 @method Object_ _button2Move(P1105, Object_) { return new Object_(); }
@@ -5900,7 +6326,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _button2Move(P1104, Object_) { return new Object_(); }
 @method Object_ _button2Move(P1124, Object_) { return new Object_(); }
 @method Object_ _button2Move(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ destroyCaret(virtual!Object_);
+@mptr("hash") Object_ defaultForeColor(virtual!Object);
+@method Object_ _defaultForeColor(Window) { return new Object_(); }
+@method Object_ _defaultForeColor(METACLASS_PARTSMenuLabelPart) { return new Object_(); }
+@method Object_ _defaultForeColor(METACLASS_Window) { return new Object_(); }
+@method Object_ _defaultForeColor(METACLASS_PARTSMenuPart) { return new Object_(); }
+@method Object_ _defaultForeColor(METACLASS_PARTSNotebookPagePane) { return new Object_(); }
+@method Object_ _defaultForeColor(METACLASS_PARTSMenuItemPane) { return new Object_(); }
+@mptr("hash") Object_ destroyCaret(virtual!Object);
 @method Object_ _destroyCaret(Window) { return new Object_(); }
 @method Object_ _destroyCaret(TextSelection) { return new Object_(); }
 @method Object_ _destroyCaret(UserDLL) { return new Object_(); }
@@ -5913,7 +6346,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ getStyle(virtual!Window);
 @method Object_ _getStyle(Window) { return new Object_(); }
 @method Object_ _getStyle(P1127) { return new Object_(); }
-@mptr("hash") Object_ clearMouseCapture(virtual!Object_);
+@mptr("hash") Object_ clearMouseCapture(virtual!Object);
 @method Object_ _clearMouseCapture(Window) { return new Object_(); }
 @method Object_ _clearMouseCapture(ObjectFiler) { return new Object_(); }
 @mptr("hash") Object_ wmSetfocusWith(virtual!Window, Object_, Object_);
@@ -5935,6 +6368,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partDirectEditTextIsCentered(Button) { return new Object_(); }
 @method Object_ _partDirectEditTextIsCentered(Toggle) { return new Object_(); }
 @method Object_ _partDirectEditTextIsCentered(PARTSEntryFieldPart) { return new Object_(); }
+@mptr("hash") Object_ foreColor(virtual!Object, Object_);
+@method Object_ _foreColor(Window, Object_) { return new Object_(); }
+@method Object_ _foreColor(TextTool, Object_) { return new Object_(); }
+@method Object_ _foreColor(GraphicsTool, Object_) { return new Object_(); }
+@method Object_ _foreColor(Pen, Object_) { return new Object_(); }
+@method Object_ _foreColor(ViewManager, Object_) { return new Object_(); }
 @mptr("hash") Object_ partDragTargetDrop(virtual!Window, Object_);
 @method Object_ _partDragTargetDrop(Window, Object_) { return new Object_(); }
 @method Object_ _partDragTargetDrop(P1104, Object_) { return new Object_(); }
@@ -5949,14 +6388,28 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ wmSyscharWith(virtual!Window, Object_, Object_);
 @method Object_ _wmSyscharWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmSyscharWith(SubPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partFrameRectangleFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ partFrameRectangleFrom(virtual!Object, Object_);
 @method Object_ _partFrameRectangleFrom(Window, Object_) { return new Object_(); }
-@method Object_ _partFrameRectangleFrom(Object_, Object_) { return new Object_(); }
+@method Object_ _partFrameRectangleFrom(Object, Object_) { return new Object_(); }
 @method Object_ _partFrameRectangleFrom(PARTSMenuPaneWindows, Object_) { return new Object_(); }
 @method Object_ _partFrameRectangleFrom(PARTSMenuBar, Object_) { return new Object_(); }
-@mptr("hash") Object_ noRedraw(virtual!Object_, Object_);
+@mptr("hash") Object_ noRedraw(virtual!Object, Object_);
 @method Object_ _noRedraw(Window, Object_) { return new Object_(); }
 @method Object_ _noRedraw(WindowHandle, Object_) { return new Object_(); }
+@mptr("hash") Object_ partFileInUpgradeLoadedWindows(virtual!Window, Object_);
+@method Object_ _partFileInUpgradeLoadedWindows(Window, Object_) { return new Object_(); }
+@method Object_ _partFileInUpgradeLoadedWindows(ControlPane, Object_) { return new Object_(); }
+@method Object_ _partFileInUpgradeLoadedWindows(SubPane, Object_) { return new Object_(); }
+@method Object_ _partFileInUpgradeLoadedWindows(PARTSWindowPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ wmRbuttondownWith(virtual!Window, Object_, Object_);
+@method Object_ _wmRbuttondownWith(Window, Object_, Object_) { return new Object_(); }
+@method Object_ _wmRbuttondownWith(P1127, Object_, Object_) { return new Object_(); }
+@method Object_ _wmRbuttondownWith(P1154, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ wmLbuttondownWith(virtual!Window, Object_, Object_);
+@method Object_ _wmLbuttondownWith(Window, Object_, Object_) { return new Object_(); }
+@method Object_ _wmLbuttondownWith(P1127, Object_, Object_) { return new Object_(); }
+@method Object_ _wmLbuttondownWith(TextPaneControl, Object_, Object_) { return new Object_(); }
+@method Object_ _wmLbuttondownWith(P1154, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ partDrawTargetEmphasis(virtual!Window, Object_);
 @method Object_ _partDrawTargetEmphasis(Window, Object_) { return new Object_(); }
 @method Object_ _partDrawTargetEmphasis(PARTSMenuPart, Object_) { return new Object_(); }
@@ -5971,7 +6424,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ realInvalidateRect(virtual!Window, Object_);
 @method Object_ _realInvalidateRect(Window, Object_) { return new Object_(); }
 @method Object_ _realInvalidateRect(PARTSGroupPanePart, Object_) { return new Object_(); }
-@mptr("hash") Object_ moveCaret(virtual!Object_, Object_);
+@mptr("hash") Object_ moveCaret(virtual!Object, Object_);
 @method Object_ _moveCaret(Window, Object_) { return new Object_(); }
 @method Object_ _moveCaret(TextSelection, Object_) { return new Object_(); }
 @mptr("hash") Object_ buttonFont(virtual!Window, Object_);
@@ -5988,7 +6441,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _givesUpFocusWithMnemonic(ApplicationWindow) { return new Object_(); }
 @method Object_ _givesUpFocusWithMnemonic(PARTSBaseNotebook) { return new Object_(); }
 @method Object_ _givesUpFocusWithMnemonic(Button) { return new Object_(); }
-@mptr("hash") Object_ destroy(virtual!Object_);
+@mptr("hash") Object_ destroy(virtual!Object);
 @method Object_ _destroy(Window) { return new Object_(); }
 @method Object_ _destroy(P1103) { return new Object_(); }
 @method Object_ _destroy(WindowHandle) { return new Object_(); }
@@ -5996,7 +6449,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _destroy(SubPane) { return new Object_(); }
 @method Object_ _destroy(GraphicsTool) { return new Object_(); }
 @method Object_ _destroy(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ colorChange(virtual!Object_);
+@mptr("hash") Object_ colorChange(virtual!Object);
 @method Object_ _colorChange(Window) { return new Object_(); }
 @method Object_ _colorChange(Tool) { return new Object_(); }
 @method Object_ _colorChange(StatusPane) { return new Object_(); }
@@ -6030,14 +6483,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partShrunkenIconFile(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partShrunkenIconFile(PARTSWindowPart) { return new Object_(); }
 @method Object_ _partShrunkenIconFile(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ pen(virtual!Object_, Object_);
+@mptr("hash") Object_ partRealWindowUnderPoint(virtual!Window);
+@method Object_ _partRealWindowUnderPoint(Window) { return new Object_(); }
+@method Object_ _partRealWindowUnderPoint(PARTSNotebookClientAreaPane) { return new Object_(); }
+@mptr("hash") Object_ pen(virtual!Object, Object_);
 @method Object_ _pen(Window, Object_) { return new Object_(); }
 @method Object_ _pen(GraphicsMedium, Object_) { return new Object_(); }
 @method Object_ _pen(P1124, Object_) { return new Object_(); }
 @mptr("hash") Object_ partDirectEditValueIsValid(virtual!Window, Object_);
 @method Object_ _partDirectEditValueIsValid(Window, Object_) { return new Object_(); }
 @method Object_ _partDirectEditValueIsValid(Button, Object_) { return new Object_(); }
-@mptr("hash") Object_ sendInputEvent(virtual!Object_, Object_);
+@mptr("hash") Object_ sendInputEvent(virtual!Object, Object_);
 @method Object_ _sendInputEvent(Window, Object_) { return new Object_(); }
 @method Object_ _sendInputEvent(ViewManager, Object_) { return new Object_(); }
 @mptr("hash") Object_ adjustFraming(virtual!Window, Object_);
@@ -6056,18 +6512,27 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _nextTabStop(Window, Object_) { return new Object_(); }
 @method Object_ _nextTabStop(GroupPane, Object_) { return new Object_(); }
 @method Object_ _nextTabStop(PARTSNotebookPagePane, Object_) { return new Object_(); }
-@mptr("hash") Object_ partIsEditing(virtual!Object_);
+@mptr("hash") Object_ wmKeydownWith(virtual!Window, Object_, Object_);
+@method Object_ _wmKeydownWith(Window, Object_, Object_) { return new Object_(); }
+@method Object_ _wmKeydownWith(TextPaneControl, Object_, Object_) { return new Object_(); }
+@method Object_ _wmKeydownWith(PARTSPictureFieldPart, Object_, Object_) { return new Object_(); }
+@method Object_ _wmKeydownWith(P1154, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partIsEditing(virtual!Object);
 @method Object_ _partIsEditing(Window) { return new Object_(); }
 @method Object_ _partIsEditing(P1103) { return new Object_(); }
 @method Object_ _partIsEditing(P1105) { return new Object_(); }
-@method Object_ _partIsEditing(Object_) { return new Object_(); }
+@method Object_ _partIsEditing(Object) { return new Object_(); }
 @method Object_ _partIsEditing(PARTSDialPanePart) { return new Object_(); }
 @method Object_ _partIsEditing(PARTSComboEntryField) { return new Object_(); }
 @method Object_ _partIsEditing(PARTSWrapper) { return new Object_(); }
 @method Object_ _partIsEditing(P1102) { return new Object_(); }
 @method Object_ _partIsEditing(PARTSNotebookClientAreaPane) { return new Object_(); }
 @method Object_ _partIsEditing(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ button2Down(virtual!Object_, Object_);
+@mptr("hash") Object_ resizeWindow(virtual!Object);
+@method Object_ _resizeWindow(Window) { return new Object_(); }
+@method Object_ _resizeWindow(PARTSStaticGraphicPart) { return new Object_(); }
+@method Object_ _resizeWindow(P1100) { return new Object_(); }
+@mptr("hash") Object_ button2Down(virtual!Object, Object_);
 @method Object_ _button2Down(Window, Object_) { return new Object_(); }
 @method Object_ _button2Down(GraphPane, Object_) { return new Object_(); }
 @method Object_ _button2Down(P1127, Object_) { return new Object_(); }
@@ -6078,13 +6543,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _button2Down(P1154, Object_) { return new Object_(); }
 @method Object_ _button2Down(ListConnectionPane, Object_) { return new Object_(); }
 @method Object_ _button2Down(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ enableRedraw(virtual!Object_);
+@mptr("hash") Object_ enableRedraw(virtual!Object);
 @method Object_ _enableRedraw(Window) { return new Object_(); }
 @method Object_ _enableRedraw(WindowHandle) { return new Object_(); }
-@mptr("hash") Object_ partIsSizable(virtual!Object_);
+@mptr("hash") Object_ partIsSizable(virtual!Object);
 @method Object_ _partIsSizable(Window) { return new Object_(); }
 @method Object_ _partIsSizable(P1105) { return new Object_(); }
-@method Object_ _partIsSizable(Object_) { return new Object_(); }
+@method Object_ _partIsSizable(Object) { return new Object_(); }
 @method Object_ _partIsSizable(PARTSStaticGraphicPart) { return new Object_(); }
 @method Object_ _partIsSizable(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _partIsSizable(PARTSMenuBitmapItemPart) { return new Object_(); }
@@ -6096,10 +6561,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ dragTargetEraseEmphasisDefault(virtual!Window, Object_);
 @method Object_ _dragTargetEraseEmphasisDefault(Window, Object_) { return new Object_(); }
 @method Object_ _dragTargetEraseEmphasisDefault(SubPane, Object_) { return new Object_(); }
+@mptr("hash") Object_ frameWindow(virtual!Window);
+@method Object_ _frameWindow(Window) { return new Object_(); }
+@method Object_ _frameWindow(PARTSMenuBar) { return new Object_(); }
 @mptr("hash") Object_ partMirrorCopyPropertiesTo(virtual!Window, Object_, Object_);
 @method Object_ _partMirrorCopyPropertiesTo(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyPropertiesTo(PARTSMenuBar, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ owner(virtual!Object_, Object_);
+@mptr("hash") Object_ owner(virtual!Object, Object_);
 @method Object_ _owner(Window, Object_) { return new Object_(); }
 @method Object_ _owner(Tool, Object_) { return new Object_(); }
 @method Object_ _owner(Menu, Object_) { return new Object_(); }
@@ -6111,14 +6579,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _owner(PrintDialog, Object_) { return new Object_(); }
 @method Object_ _owner(ViewManager, Object_) { return new Object_(); }
 @method Object_ _owner(FontDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ disableUpdate(virtual!Object_);
+@mptr("hash") Object_ disableUpdate(virtual!Object);
 @method Object_ _disableUpdate(Window) { return new Object_(); }
 @method Object_ _disableUpdate(WindowHandle) { return new Object_(); }
 @mptr("hash") Object_ partOnTopWhenSelected(virtual!Window);
 @method Object_ _partOnTopWhenSelected(Window) { return new Object_(); }
 @method Object_ _partOnTopWhenSelected(PARTSWindowPart) { return new Object_(); }
 @method Object_ _partOnTopWhenSelected(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ partWrapper(virtual!Object_, Object_);
+@mptr("hash") Object_ partWrapper(virtual!Object, Object_);
 @method Object_ _partWrapper(Window, Object_) { return new Object_(); }
 @method Object_ _partWrapper(PARTSBitEditor, Object_) { return new Object_(); }
 @method Object_ _partWrapper(PARTSNestedPart, Object_) { return new Object_(); }
@@ -6146,7 +6614,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _gettingFocus(Button) { return new Object_(); }
 @method Object_ _gettingFocus(Toggle) { return new Object_(); }
 @method Object_ _gettingFocus(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ backColor(virtual!Object_);
+@mptr("hash") Object_ backColor(virtual!Object);
 @method Object_ _backColor(Window) { return new Object_(); }
 @method Object_ _backColor(PARTSNotebook) { return new Object_(); }
 @method Object_ _backColor(GraphicsTool) { return new Object_(); }
@@ -6156,31 +6624,35 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _addTabInfoFor(P1105, Object_) { return new Object_(); }
 @method Object_ _addTabInfoFor(PARTSNotebookPagePane, Object_) { return new Object_(); }
 @method Object_ _addTabInfoFor(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ deviceContext(virtual!Object_);
+@mptr("hash") Object_ deviceContext(virtual!Object);
 @method Object_ _deviceContext(Window) { return new Object_(); }
 @method Object_ _deviceContext(GraphicsMedium) { return new Object_(); }
-@mptr("hash") Object_ display(virtual!Object_, Object_);
+@mptr("hash") Object_ display(virtual!Object, Object_);
 @method Object_ _display(Window, Object_) { return new Object_(); }
 @method Object_ _display(P1113, Object_) { return new Object_(); }
 @method Object_ _display(AboutDialog, Object_) { return new Object_(); }
 @method Object_ _display(StringModel, Object_) { return new Object_(); }
+@mptr("hash") Object_ showWindow(virtual!Object);
+@method Object_ _showWindow(Window) { return new Object_(); }
+@method Object_ _showWindow(WindowHandle) { return new Object_(); }
+@method Object_ _showWindow(PARTSWindowPart) { return new Object_(); }
 @mptr("hash") Object_ drawBox(virtual!Window);
 @method Object_ _drawBox(Window) { return new Object_(); }
 @method Object_ _drawBox(ExtendedListBox) { return new Object_(); }
 @mptr("hash") Object_ altKeyInputFrom(virtual!Window, Object_, Object_);
 @method Object_ _altKeyInputFrom(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _altKeyInputFrom(PARTSBaseNotebook, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ showCaret(virtual!Object_, Object_);
+@mptr("hash") Object_ showCaret(virtual!Object, Object_);
 @method Object_ _showCaret(Window, Object_) { return new Object_(); }
 @method Object_ _showCaret(TextSelection, Object_) { return new Object_(); }
 @method Object_ _showCaret(UserDLL, Object_) { return new Object_(); }
 @mptr("hash") Object_ ownerDrawPen(virtual!Window);
 @method Object_ _ownerDrawPen(Window) { return new Object_(); }
 @method Object_ _ownerDrawPen(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ stopTimer(virtual!Object_, Object_);
+@mptr("hash") Object_ stopTimer(virtual!Object, Object_);
 @method Object_ _stopTimer(Window, Object_) { return new Object_(); }
 @method Object_ _stopTimer(METACLASS_PARTSTimerWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ graphicsTool(virtual!Object_);
+@mptr("hash") Object_ graphicsTool(virtual!Object);
 @method Object_ _graphicsTool(Window) { return new Object_(); }
 @method Object_ _graphicsTool(GraphicsMedium) { return new Object_(); }
 @method Object_ _graphicsTool(Printer) { return new Object_(); }
@@ -6206,7 +6678,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ isDragSource(virtual!Window);
 @method Object_ _isDragSource(Window) { return new Object_(); }
 @method Object_ _isDragSource(PARTSIconPane) { return new Object_(); }
-@mptr("hash") Object_ losingFocus(virtual!Object_);
+@mptr("hash") Object_ losingFocus(virtual!Object);
 @method Object_ _losingFocus(Window) { return new Object_(); }
 @method Object_ _losingFocus(EntryField) { return new Object_(); }
 @method Object_ _losingFocus(ComboEntryField) { return new Object_(); }
@@ -6220,7 +6692,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _losingFocus(Toggle) { return new Object_(); }
 @method Object_ _losingFocus(PARTSEntryFieldPart) { return new Object_(); }
 @method Object_ _losingFocus(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ enableUpdate(virtual!Object_);
+@mptr("hash") Object_ enableUpdate(virtual!Object);
 @method Object_ _enableUpdate(Window) { return new Object_(); }
 @method Object_ _enableUpdate(WindowHandle) { return new Object_(); }
 @mptr("hash") Object_ createTitleStyleRectangleParent(virtual!Window, Object_, Object_, Object_, Object_, Object_);
@@ -6230,16 +6702,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _previousTabStop(Window, Object_) { return new Object_(); }
 @method Object_ _previousTabStop(GroupPane, Object_) { return new Object_(); }
 @method Object_ _previousTabStop(PARTSNotebookPagePane, Object_) { return new Object_(); }
-@mptr("hash") Object_ partIsDragable(virtual!Object_);
+@mptr("hash") Object_ partIsDragable(virtual!Object);
 @method Object_ _partIsDragable(Window) { return new Object_(); }
 @method Object_ _partIsDragable(P1105) { return new Object_(); }
-@method Object_ _partIsDragable(Object_) { return new Object_(); }
+@method Object_ _partIsDragable(Object) { return new Object_(); }
 @mptr("hash") Object_ partNeedsResizeToContents(virtual!Window);
 @method Object_ _partNeedsResizeToContents(Window) { return new Object_(); }
 @method Object_ _partNeedsResizeToContents(PARTSStaticTextPart) { return new Object_(); }
 @method Object_ _partNeedsResizeToContents(Button) { return new Object_(); }
 @method Object_ _partNeedsResizeToContents(Toggle) { return new Object_(); }
-@mptr("hash") Object_ rectangle(virtual!Object_, Object_);
+@mptr("hash") Object_ rectangle(virtual!Object, Object_);
 @method Object_ _rectangle(Window, Object_) { return new Object_(); }
 @method Object_ _rectangle(Tool, Object_) { return new Object_(); }
 @method Object_ _rectangle(P1127, Object_) { return new Object_(); }
@@ -6249,9 +6721,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _rectangle(Pen, Object_) { return new Object_(); }
 @method Object_ _rectangle(P1124, Object_) { return new Object_(); }
 @method Object_ _rectangle(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ partName(virtual!Object_, Object_);
+@mptr("hash") Object_ partName(virtual!Object, Object_);
 @method Object_ _partName(Window, Object_) { return new Object_(); }
-@method Object_ _partName(Object_, Object_) { return new Object_(); }
+@method Object_ _partName(Object, Object_) { return new Object_(); }
 @mptr("hash") Object_ partShrinkWrap(virtual!Window);
 @method Object_ _partShrinkWrap(Window) { return new Object_(); }
 @method Object_ _partShrinkWrap(P1103) { return new Object_(); }
@@ -6261,10 +6733,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _currentCursor(Window) { return new Object_(); }
 @method Object_ _currentCursor(TextPane) { return new Object_(); }
 @method Object_ _currentCursor(TextPaneControl) { return new Object_(); }
+@mptr("hash") Object_ defaultCursor(virtual!Window);
+@method Object_ _defaultCursor(Window) { return new Object_(); }
+@method Object_ _defaultCursor(P1105) { return new Object_(); }
+@method Object_ _defaultCursor(P1127) { return new Object_(); }
+@method Object_ _defaultCursor(TextPane) { return new Object_(); }
 @mptr("hash") Object_ isDragTarget(virtual!Window);
 @method Object_ _isDragTarget(Window) { return new Object_(); }
 @method Object_ _isDragTarget(PARTSIconPane) { return new Object_(); }
-@mptr("hash") Object_ isHidden(virtual!Object_);
+@mptr("hash") Object_ isHidden(virtual!Object);
 @method Object_ _isHidden(Window) { return new Object_(); }
 @method Object_ _isHidden(File) { return new Object_(); }
 @mptr("hash") Object_ dragSessionClass(virtual!Window);
@@ -6274,16 +6751,19 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partExpand(virtual!Window);
 @method Object_ _partExpand(Window) { return new Object_(); }
 @method Object_ _partExpand(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ disableRedraw(virtual!Object_);
+@mptr("hash") Object_ disableRedraw(virtual!Object);
 @method Object_ _disableRedraw(Window) { return new Object_(); }
 @method Object_ _disableRedraw(WindowHandle) { return new Object_(); }
+@mptr("hash") Object_ resizeWindow(virtual!Window, Object_);
+@method Object_ _resizeWindow(Window, Object_) { return new Object_(); }
+@method Object_ _resizeWindow(SubPane, Object_) { return new Object_(); }
 @mptr("hash") Object_ wmGetdlgcodeWith(virtual!Window, Object_, Object_);
 @method Object_ _wmGetdlgcodeWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmGetdlgcodeWith(TextPane, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ partDirectEditErrorMessage(virtual!Window);
 @method Object_ _partDirectEditErrorMessage(Window) { return new Object_(); }
 @method Object_ _partDirectEditErrorMessage(Button) { return new Object_(); }
-@mptr("hash") Object_ backColor(virtual!Object_, Object_);
+@mptr("hash") Object_ backColor(virtual!Object, Object_);
 @method Object_ _backColor(Window, Object_) { return new Object_(); }
 @method Object_ _backColor(GraphicsTool, Object_) { return new Object_(); }
 @method Object_ _backColor(Pen, Object_) { return new Object_(); }
@@ -6314,9 +6794,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmKillfocusWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmKillfocusWith(TextPane, Object_, Object_) { return new Object_(); }
 @method Object_ _wmKillfocusWith(PARTSEntryFieldPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partAddUnderWrapper(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ partAddUnderWrapper(virtual!Object, Object_, Object_);
 @method Object_ _partAddUnderWrapper(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _partAddUnderWrapper(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _partAddUnderWrapper(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _partAddUnderWrapper(SubPane, Object_, Object_) { return new Object_(); }
 @method Object_ _partAddUnderWrapper(PARTSWindowPart, Object_, Object_) { return new Object_(); }
 @method Object_ _partAddUnderWrapper(PARTSApplication, Object_, Object_) { return new Object_(); }
@@ -6325,12 +6805,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ wmMenuselectWith(virtual!Window, Object_, Object_);
 @method Object_ _wmMenuselectWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmMenuselectWith(PARTSWindowPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partCanBeNestedChild(virtual!Object_, Object_);
+@mptr("hash") Object_ partCanBeNestedChild(virtual!Object, Object_);
 @method Object_ _partCanBeNestedChild(Window, Object_) { return new Object_(); }
-@method Object_ _partCanBeNestedChild(Object_, Object_) { return new Object_(); }
+@method Object_ _partCanBeNestedChild(Object, Object_) { return new Object_(); }
 @method Object_ _partCanBeNestedChild(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _partCanBeNestedChild(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPropertiesIndexOf(virtual!Object_, Object_);
+@mptr("hash") Object_ partPropertiesIndexOf(virtual!Object, Object_);
 @method Object_ _partPropertiesIndexOf(Window, Object_) { return new Object_(); }
 @method Object_ _partPropertiesIndexOf(PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
 @method Object_ _partPropertiesIndexOf(PARTSWindowPart, Object_) { return new Object_(); }
@@ -6362,6 +6842,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ wmQuerydragiconWith(virtual!Window, Object_, Object_);
 @method Object_ _wmQuerydragiconWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmQuerydragiconWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ hideWindow(virtual!Object);
+@method Object_ _hideWindow(Window) { return new Object_(); }
+@method Object_ _hideWindow(WindowHandle) { return new Object_(); }
+@method Object_ _hideWindow(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ mainWindow(virtual!Object);
+@method Object_ _mainWindow(Window) { return new Object_(); }
+@method Object_ _mainWindow(DialogTopPane) { return new Object_(); }
+@method Object_ _mainWindow(PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _mainWindow(ApplicationWindow) { return new Object_(); }
+@method Object_ _mainWindow(PARTSClientAreaPaneWindows) { return new Object_(); }
+@method Object_ _mainWindow(P1140) { return new Object_(); }
+@method Object_ _mainWindow(PARTSSettingsViewer) { return new Object_(); }
+@mptr("hash") Object_ menuWindow(virtual!Object);
+@method Object_ _menuWindow(Window) { return new Object_(); }
+@method Object_ _menuWindow(ApplicationWindow) { return new Object_(); }
+@method Object_ _menuWindow(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ button1DownShift(virtual!Window, Object_);
 @method Object_ _button1DownShift(Window, Object_) { return new Object_(); }
 @method Object_ _button1DownShift(GraphPane, Object_) { return new Object_(); }
@@ -6379,14 +6875,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmLbuttonupWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmLbuttonupWith(P1104, Object_, Object_) { return new Object_(); }
 @method Object_ _wmLbuttonupWith(P1154, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ makeActive(virtual!Object_);
+@mptr("hash") Object_ makeActive(virtual!Object);
 @method Object_ _makeActive(Window) { return new Object_(); }
 @method Object_ _makeActive(WindowHandle) { return new Object_(); }
 @method Object_ _makeActive(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ partOverlappedWindow(virtual!Window, Object_);
+@method Object_ _partOverlappedWindow(Window, Object_) { return new Object_(); }
+@method Object_ _partOverlappedWindow(PARTSComboEntryField, Object_) { return new Object_(); }
+@mptr("hash") Object_ wmNclbuttondownWith(virtual!Window, Object_, Object_);
+@method Object_ _wmNclbuttondownWith(Window, Object_, Object_) { return new Object_(); }
+@method Object_ _wmNclbuttondownWith(PARTSWindowPart, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ wmKeyupWith(virtual!Window, Object_, Object_);
 @method Object_ _wmKeyupWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmKeyupWith(P1154, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ hasStyle(virtual!Object_, Object_);
+@mptr("hash") Object_ hasStyle(virtual!Object, Object_);
 @method Object_ _hasStyle(Window, Object_) { return new Object_(); }
 @method Object_ _hasStyle(PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ partDragTargetImport(virtual!Window, Object_);
@@ -6394,9 +6896,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partDragTargetImport(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _partDragTargetImport(PARTSMenuPaneWindows, Object_) { return new Object_(); }
 @method Object_ _partDragTargetImport(PARTSMenuBar, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPrintPropertiesOnMargin(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ partPrintPropertiesOnMargin(virtual!Object, Object_, Object_);
 @method Object_ _partPrintPropertiesOnMargin(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _partPrintPropertiesOnMargin(Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _partPrintPropertiesOnMargin(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintPropertiesOnMargin(PARTSPropertyIcon, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintPropertiesOnMargin(PARTSPropertyList, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintPropertiesOnMargin(PARTSPropertyUnit, Object_, Object_) { return new Object_(); }
@@ -6409,7 +6911,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partPrintPropertiesOnMargin(PARTSApplication, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintPropertiesOnMargin(PARTSPropertyGraphic, Object_, Object_) { return new Object_(); }
 @method Object_ _partPrintPropertiesOnMargin(PARTSPropertyStructure, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ unorderedChildren(virtual!Object_);
+@mptr("hash") Object_ defaultDrawHighlight(virtual!Window, Object_);
+@method Object_ _defaultDrawHighlight(Window, Object_) { return new Object_(); }
+@method Object_ _defaultDrawHighlight(ExtendedListBox, Object_) { return new Object_(); }
+@mptr("hash") Object_ unorderedChildren(virtual!Object);
 @method Object_ _unorderedChildren(Window) { return new Object_(); }
 @method Object_ _unorderedChildren(PARTSApplication) { return new Object_(); }
 @mptr("hash") Object_ wmPaintWith(virtual!Window, Object_, Object_);
@@ -6424,7 +6929,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partRelativeToParent(virtual!Window, Object_);
 @method Object_ _partRelativeToParent(Window, Object_) { return new Object_(); }
 @method Object_ _partRelativeToParent(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ addPane(virtual!Object_, Object_);
+@mptr("hash") Object_ addPane(virtual!Object, Object_);
 @method Object_ _addPane(Window, Object_) { return new Object_(); }
 @method Object_ _addPane(ViewManager, Object_) { return new Object_(); }
 @mptr("hash") Object_ partEditorPane(virtual!Window);
@@ -6436,10 +6941,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ wmGetminmaxinfoWith(virtual!Window, Object_, Object_);
 @method Object_ _wmGetminmaxinfoWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmGetminmaxinfoWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ isWindow(virtual!Object);
+@method Object_ _isWindow(Window) { return new Object_(); }
+@method Object_ _isWindow(Object) { return new Object_(); }
+@method Object_ _isWindow(PARTSMenuPart) { return new Object_(); }
+@method Object_ _isWindow(PARTSWindowPart) { return new Object_(); }
+@method Object_ _isWindow(PARTSNestedPart) { return new Object_(); }
+@mptr("hash") Object_ showWindowAtTop(virtual!Object);
+@method Object_ _showWindowAtTop(Window) { return new Object_(); }
+@method Object_ _showWindowAtTop(WindowHandle) { return new Object_(); }
+@mptr("hash") Object_ doDragDropAtButton(virtual!Object, Object_, Object_);
+@method Object_ _doDragDropAtButton(Window, Object_, Object_) { return new Object_(); }
+@method Object_ _doDragDropAtButton(LocalDragDropSession, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ drawIndex(virtual!Window);
 @method Object_ _drawIndex(Window) { return new Object_(); }
 @method Object_ _drawIndex(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ button1Up(virtual!Object_, Object_);
+@mptr("hash") Object_ button1Up(virtual!Object, Object_);
 @method Object_ _button1Up(Window, Object_) { return new Object_(); }
 @method Object_ _button1Up(GraphPane, Object_) { return new Object_(); }
 @method Object_ _button1Up(P1105, Object_) { return new Object_(); }
@@ -6453,7 +6970,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partMirrorCopyChildrenTo(virtual!Window, Object_, Object_);
 @method Object_ _partMirrorCopyChildrenTo(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopyChildrenTo(PARTSNestedPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ disable(virtual!Object_);
+@mptr("hash") Object_ disable(virtual!Object);
 @method Object_ _disable(Window) { return new Object_(); }
 @method Object_ _disable(WindowHandle) { return new Object_(); }
 @method Object_ _disable(PARTSPropertyUnit) { return new Object_(); }
@@ -6464,13 +6981,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _disable(P1108) { return new Object_(); }
 @method Object_ _disable(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _disable(Button) { return new Object_(); }
-@mptr("hash") Object_ isActive(virtual!Object_);
+@mptr("hash") Object_ isActive(virtual!Object);
 @method Object_ _isActive(Window) { return new Object_(); }
-@method Object_ _isActive(Exception_) { return new Object_(); }
+@method Object_ _isActive(Exception) { return new Object_(); }
 @method Object_ _isActive(P1154) { return new Object_(); }
-@mptr("hash") Object_ partHasVisualParts(virtual!Object_);
+@mptr("hash") Object_ partHasVisualParts(virtual!Object);
 @method Object_ _partHasVisualParts(Window) { return new Object_(); }
-@method Object_ _partHasVisualParts(Object_) { return new Object_(); }
+@method Object_ _partHasVisualParts(Object) { return new Object_(); }
 @method Object_ _partHasVisualParts(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partHasVisualParts(PARTSMenuBar) { return new Object_(); }
 @method Object_ _partHasVisualParts(PARTSMenuItemPane) { return new Object_(); }
@@ -6482,10 +6999,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partDirectEditInitialValue(Window) { return new Object_(); }
 @method Object_ _partDirectEditInitialValue(PARTSPictureFieldPart) { return new Object_(); }
 @method Object_ _partDirectEditInitialValue(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ getDC(virtual!Object_);
+@mptr("hash") Object_ getDC(virtual!Object);
 @method Object_ _getDC(Window) { return new Object_(); }
 @method Object_ _getDC(WindowHandle) { return new Object_(); }
-@mptr("hash") Object_ childrenInBuildOrder(virtual!Object_);
+@mptr("hash") Object_ childrenInBuildOrder(virtual!Object);
 @method Object_ _childrenInBuildOrder(Window) { return new Object_(); }
 @method Object_ _childrenInBuildOrder(PARTSWindowPart) { return new Object_(); }
 @method Object_ _childrenInBuildOrder(PARTSApplication) { return new Object_(); }
@@ -6495,7 +7012,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partDirectEditValue(virtual!Window);
 @method Object_ _partDirectEditValue(Window) { return new Object_(); }
 @method Object_ _partDirectEditValue(PARTSDialPanePart) { return new Object_(); }
-@mptr("hash") Object_ graphicsTool(virtual!Object_, Object_);
+@mptr("hash") Object_ foreColor(virtual!Object);
+@method Object_ _foreColor(Window) { return new Object_(); }
+@method Object_ _foreColor(GraphicsTool) { return new Object_(); }
+@mptr("hash") Object_ graphicsTool(virtual!Object, Object_);
 @method Object_ _graphicsTool(Window, Object_) { return new Object_(); }
 @method Object_ _graphicsTool(GraphicsMedium, Object_) { return new Object_(); }
 @mptr("hash") Object_ initColors(virtual!Window);
@@ -6505,7 +7025,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _addInterestin(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _addInterestin(ApplicationWindow, Object_, Object_) { return new Object_(); }
 @method Object_ _addInterestin(PARTSWindowPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ enable(virtual!Object_);
+@mptr("hash") Object_ enable(virtual!Object);
 @method Object_ _enable(Window) { return new Object_(); }
 @method Object_ _enable(WindowHandle) { return new Object_(); }
 @method Object_ _enable(PARTSPropertyUnit) { return new Object_(); }
@@ -6515,15 +7035,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _enable(P1108) { return new Object_(); }
 @method Object_ _enable(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _enable(Button) { return new Object_(); }
+@mptr("hash") Object_ windowText(virtual!Object);
+@method Object_ _windowText(Window) { return new Object_(); }
+@method Object_ _windowText(METACLASS_Color) { return new Object_(); }
 @mptr("hash") Object_ dragTargetDrawEmphasisDefault(virtual!Window, Object_);
 @method Object_ _dragTargetDrawEmphasisDefault(Window, Object_) { return new Object_(); }
 @method Object_ _dragTargetDrawEmphasisDefault(SubPane, Object_) { return new Object_(); }
 @mptr("hash") Object_ dragTargetDoScroll(virtual!Window);
 @method Object_ _dragTargetDoScroll(Window) { return new Object_(); }
 @method Object_ _dragTargetDoScroll(SubPane) { return new Object_(); }
-@mptr("hash") Object_ partEnableExecution(virtual!Object_);
+@mptr("hash") Object_ partEnableExecution(virtual!Object);
 @method Object_ _partEnableExecution(Window) { return new Object_(); }
-@method Object_ _partEnableExecution(Object_) { return new Object_(); }
+@method Object_ _partEnableExecution(Object) { return new Object_(); }
 @method Object_ _partEnableExecution(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partEnableExecution(PARTSValueHolderPart) { return new Object_(); }
 @method Object_ _partEnableExecution(PARTSWindowPart) { return new Object_(); }
@@ -6538,23 +7061,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partDroppedPartHotspotOrigin(PARTSMenuPart, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _partDroppedPartHotspotOrigin(PARTSMenuPaneWindows, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _partDroppedPartHotspotOrigin(PARTSMenuBar, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ sysColors(virtual!Object_);
+@mptr("hash") Object_ sysColors(virtual!Object);
 @method Object_ _sysColors(Tool) { return new Object_(); }
 @method Object_ _sysColors(StatusPane) { return new Object_(); }
 @method Object_ _sysColors(ToolPane) { return new Object_(); }
-@mptr("hash") Object_ fromBitmap(virtual!Object_, Object_);
+@mptr("hash") Object_ fromBitmap(virtual!Object, Object_);
 @method Object_ _fromBitmap(Tool, Object_) { return new Object_(); }
 @method Object_ _fromBitmap(METACLASS_Icon, Object_) { return new Object_(); }
 @method Object_ _fromBitmap(METACLASS_Tool, Object_) { return new Object_(); }
-@mptr("hash") Object_ space(virtual!Object_);
+@mptr("hash") Object_ space(virtual!Object);
 @method Object_ _space(Tool) { return new Object_(); }
 @method Object_ _space(StatusBox) { return new Object_(); }
 @method Object_ _space(WriteStream) { return new Object_(); }
 @method Object_ _space(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ space(virtual!Object_, Object_);
+@mptr("hash") Object_ space(virtual!Object, Object_);
 @method Object_ _space(Tool, Object_) { return new Object_(); }
 @method Object_ _space(StatusBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ extent(virtual!Object_, Object_);
+@mptr("hash") Object_ defaultExtent(virtual!Object);
+@method Object_ _defaultExtent(Tool) { return new Object_(); }
+@method Object_ _defaultExtent(METACLASS_Tool) { return new Object_(); }
+@mptr("hash") Object_ extent(virtual!Object, Object_);
 @method Object_ _extent(Tool, Object_) { return new Object_(); }
 @method Object_ _extent(P1147, Object_) { return new Object_(); }
 @method Object_ _extent(Rectangle, Object_) { return new Object_(); }
@@ -6571,18 +7097,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ initContents(virtual!String, Object_);
 @method Object_ _initContents(DoubleByteSymbol, Object_) { return new Object_(); }
 @method Object_ _initContents(Symbol, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceBytesWith(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ replaceBytesWith(virtual!Object, Object_, Object_);
 @method Object_ _replaceBytesWith(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesWith(DoubleByteString, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesWith(ByteArray, Object_, Object_) { return new Object_(); }
 @method Object_ _replaceBytesWith(ExternalAddress, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partMirrorCopy(virtual!Object_, Object_);
+@mptr("hash") Object_ partMirrorCopy(virtual!Object, Object_);
 @method Object_ _partMirrorCopy(DoubleByteSymbol, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(Behavior, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(P1101, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(P1105, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(P1113, Object_) { return new Object_(); }
-@method Object_ _partMirrorCopy(Object_, Object_) { return new Object_(); }
+@method Object_ _partMirrorCopy(Object, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(Symbol, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(Screen, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(Character, Object_) { return new Object_(); }
@@ -6593,25 +7119,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partMirrorCopy(Font, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(Number, Object_) { return new Object_(); }
 @method Object_ _partMirrorCopy(UndefinedObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDoubleByteSymbol(virtual!Object_);
+@mptr("hash") Object_ isDoubleByteSymbol(virtual!Object);
 @method Object_ _isDoubleByteSymbol(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _isDoubleByteSymbol(Object_) { return new Object_(); }
-@mptr("hash") Object_ basicHash(virtual!Object_);
+@method Object_ _isDoubleByteSymbol(Object) { return new Object_(); }
+@mptr("hash") Object_ basicHash(virtual!Object);
 @method Object_ _basicHash(DoubleByteSymbol) { return new Object_(); }
 @method Object_ _basicHash(True) { return new Object_(); }
-@method Object_ _basicHash(Object_) { return new Object_(); }
+@method Object_ _basicHash(Object) { return new Object_(); }
 @method Object_ _basicHash(Integer) { return new Object_(); }
 @method Object_ _basicHash(False) { return new Object_(); }
 @method Object_ _basicHash(Symbol) { return new Object_(); }
-@mptr("hash") Object_ species(virtual!Object_);
+@mptr("hash") Object_ species(virtual!Object);
 @method Object_ _species(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _species(Object_) { return new Object_(); }
+@method Object_ _species(Object) { return new Object_(); }
 @method Object_ _species(Symbol) { return new Object_(); }
 @method Object_ _species(Interval) { return new Object_(); }
 @method Object_ _species(SymbolSet) { return new Object_(); }
-@mptr("hash") Object_ isSymbol(virtual!Object_);
+@mptr("hash") Object_ isSymbol(virtual!Object);
 @method Object_ _isSymbol(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _isSymbol(Object_) { return new Object_(); }
+@method Object_ _isSymbol(Object) { return new Object_(); }
 @method Object_ _isSymbol(Symbol) { return new Object_(); }
 @mptr("hash") Object_ addStandardRightMenus(virtual!WindowPolicy);
 @method Object_ _addStandardRightMenus(WindowPolicy) { return new Object_(); }
@@ -6627,7 +7153,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _addStandardLeftMenus(WindowPolicy) { return new Object_(); }
 @method Object_ _addStandardLeftMenus(StandardWindowPolicy) { return new Object_(); }
 @method Object_ _addStandardLeftMenus(SmalltalkWindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ radix(virtual!Object_, Object_);
+@mptr("hash") Object_ radix(virtual!Object, Object_);
 @method Object_ _radix(ByteArrayInspector, Object_) { return new Object_(); }
 @method Object_ _radix(Integer, Object_) { return new Object_(); }
 @mptr("hash") Object_ partPropertyValidateNewValue(virtual!PARTSValueHolderPart, Object_);
@@ -6665,55 +7191,55 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isATabStop(SubPane) { return new Object_(); }
 @method Object_ _isATabStop(RadioButton) { return new Object_(); }
 @method Object_ _isATabStop(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ colorTable(virtual!Object_);
+@mptr("hash") Object_ colorTable(virtual!Object);
 @method Object_ _colorTable(WinBitmapInfo) { return new Object_(); }
 @method Object_ _colorTable(DIB) { return new Object_(); }
-@mptr("hash") Object_ colorTable(virtual!Object_, Object_);
+@mptr("hash") Object_ colorTable(virtual!Object, Object_);
 @method Object_ _colorTable(WinBitmapInfo, Object_) { return new Object_(); }
 @method Object_ _colorTable(DIB, Object_) { return new Object_(); }
 @mptr("hash") Object_ ptMaxPosition(virtual!ExternalBuffer);
 @method Object_ _ptMaxPosition(WinMinmaxinfo) { return new Object_(); }
 @method Object_ _ptMaxPosition(WinWindowPlacement) { return new Object_(); }
-@mptr("hash") Object_ directory(virtual!Object_);
+@mptr("hash") Object_ directory(virtual!Object);
 @method Object_ _directory(FileSearchResults) { return new Object_(); }
 @method Object_ _directory(FileDialog) { return new Object_(); }
 @method Object_ _directory(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _directory(FileSystemEntity) { return new Object_(); }
 @method Object_ _directory(PARTSApplication) { return new Object_(); }
 @method Object_ _directory(ObjectStoreFile) { return new Object_(); }
-@mptr("hash") Object_ isFile(virtual!Object_);
+@mptr("hash") Object_ isFile(virtual!Object);
 @method Object_ _isFile(FileSearchResults) { return new Object_(); }
-@method Object_ _isFile(Object_) { return new Object_(); }
+@method Object_ _isFile(Object) { return new Object_(); }
 @method Object_ _isFile(File) { return new Object_(); }
-@mptr("hash") Object_ isDirectory(virtual!Object_);
+@mptr("hash") Object_ isDirectory(virtual!Object);
 @method Object_ _isDirectory(FileSearchResults) { return new Object_(); }
-@method Object_ _isDirectory(Object_) { return new Object_(); }
+@method Object_ _isDirectory(Object) { return new Object_(); }
 @method Object_ _isDirectory(Directory) { return new Object_(); }
-@mptr("hash") Object_ directorySearchhandleFinddata(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ directorySearchhandleFinddata(virtual!Object, Object_, Object_, Object_);
 @method Object_ _directorySearchhandleFinddata(FileSearchResults, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _directorySearchhandleFinddata(METACLASS_FileSearchResults, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ creationTime(virtual!Object_);
+@mptr("hash") Object_ creationTime(virtual!Object);
 @method Object_ _creationTime(FileSearchResults) { return new Object_(); }
 @method Object_ _creationTime(FileSystemEntity) { return new Object_(); }
 @method Object_ _creationTime(FileSystemComponent) { return new Object_(); }
 @method Object_ _creationTime(File) { return new Object_(); }
 @method Object_ _creationTime(Directory) { return new Object_(); }
-@mptr("hash") Object_ fileSize(virtual!Object_);
+@mptr("hash") Object_ fileSize(virtual!Object);
 @method Object_ _fileSize(FileSearchResults) { return new Object_(); }
 @method Object_ _fileSize(WinMetaheader) { return new Object_(); }
 @mptr("hash") Object_ fixedSize(virtual!SubPane);
 @method Object_ _fixedSize(StatusPane) { return new Object_(); }
 @method Object_ _fixedSize(DrawnButton) { return new Object_(); }
-@mptr("hash") Object_ rightJustified(virtual!Object_);
+@mptr("hash") Object_ rightJustified(virtual!Object);
 @method Object_ _rightJustified(StatusPane) { return new Object_(); }
 @method Object_ _rightJustified(P1124) { return new Object_(); }
 @method Object_ _rightJustified(StaticText) { return new Object_(); }
 @method Object_ _rightJustified(TextEdit) { return new Object_(); }
 @method Object_ _rightJustified(METACLASS_StaticText) { return new Object_(); }
-@mptr("hash") Object_ isStatusPane(virtual!Object_);
+@mptr("hash") Object_ isStatusPane(virtual!Object);
 @method Object_ _isStatusPane(StatusPane) { return new Object_(); }
-@method Object_ _isStatusPane(Object_) { return new Object_(); }
-@mptr("hash") Object_ leftJustified(virtual!Object_);
+@method Object_ _isStatusPane(Object) { return new Object_(); }
+@mptr("hash") Object_ leftJustified(virtual!Object);
 @method Object_ _leftJustified(StatusPane) { return new Object_(); }
 @method Object_ _leftJustified(P1124) { return new Object_(); }
 @method Object_ _leftJustified(StaticText) { return new Object_(); }
@@ -6722,28 +7248,32 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ showHelp(virtual!SubPane, Object_);
 @method Object_ _showHelp(StatusPane, Object_) { return new Object_(); }
 @method Object_ _showHelp(ToolPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ isGroupBox(virtual!Object_);
+@mptr("hash") Object_ isGroupBox(virtual!Object);
 @method Object_ _isGroupBox(GroupBox) { return new Object_(); }
-@method Object_ _isGroupBox(Object_) { return new Object_(); }
+@method Object_ _isGroupBox(Object) { return new Object_(); }
 @mptr("hash") Object_ isTransparent(virtual!Window);
 @method Object_ _isTransparent(GroupBox) { return new Object_(); }
 @method Object_ _isTransparent(SubPane) { return new Object_(); }
 @method Object_ _isTransparent(StaticText) { return new Object_(); }
 @method Object_ _isTransparent(PARTSWindowPart) { return new Object_(); }
 @method Object_ _isTransparent(Toggle) { return new Object_(); }
-@mptr("hash") Object_ valueWith(virtual!Object_, Object_);
+@mptr("hash") Object_ valueWith(virtual!Object, Object_);
 @method Object_ _valueWith(PARTSStringTemplate, Object_) { return new Object_(); }
 @method Object_ _valueWith(PARTSStringTemplatePart, Object_) { return new Object_(); }
-@mptr("hash") Object_ wildcardChar(virtual!Object_);
+@mptr("hash") Object_ wildcardChar(virtual!Object);
 @method Object_ _wildcardChar(PARTSStringTemplate) { return new Object_(); }
 @method Object_ _wildcardChar(METACLASS_Pattern) { return new Object_(); }
-@mptr("hash") Object_ parameterNames(virtual!Object_);
+@mptr("hash") Object_ parameterNames(virtual!Object);
 @method Object_ _parameterNames(PARTSStringTemplate) { return new Object_(); }
 @method Object_ _parameterNames(PARTSStringTemplatePart) { return new Object_(); }
-@mptr("hash") Object_ valueSample(virtual!Object_);
+@mptr("hash") Object_ valueSample(virtual!Object);
 @method Object_ _valueSample(PARTSStringTemplate) { return new Object_(); }
 @method Object_ _valueSample(PARTSStringTemplatePart) { return new Object_(); }
-@mptr("hash") Object_ open(virtual!Object_);
+@mptr("hash") Object_ template(virtual!Object);
+@method Object_ _template(PARTSStringTemplate) { return new Object_(); }
+@method Object_ _template(CodeBrowser) { return new Object_(); }
+@method Object_ _template(PARTSStringTemplatePart) { return new Object_(); }
+@mptr("hash") Object_ open(virtual!Object);
 @method Object_ _open(ObjectWindow) { return new Object_(); }
 @method Object_ _open(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _open(GraphPane) { return new Object_(); }
@@ -6781,106 +7311,217 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _open(METACLASS_PARTSEditor) { return new Object_(); }
 @method Object_ _open(METACLASS_ApplicationCoordinator) { return new Object_(); }
 @method Object_ _open(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ blue(virtual!Object_);
+@mptr("hash") Object_ blue(virtual!Object);
 @method Object_ _blue(WinColorref) { return new Object_(); }
 @method Object_ _blue(WinPaletteEntry) { return new Object_(); }
 @method Object_ _blue(RGBColor) { return new Object_(); }
 @method Object_ _blue(METACLASS_Color) { return new Object_(); }
-@mptr("hash") Object_ blue(virtual!Object_, Object_);
+@mptr("hash") Object_ blue(virtual!Object, Object_);
 @method Object_ _blue(WinColorref, Object_) { return new Object_(); }
 @method Object_ _blue(WinPaletteEntry, Object_) { return new Object_(); }
 @method Object_ _blue(RGBColor, Object_) { return new Object_(); }
-@mptr("hash") Object_ red(virtual!Object_);
+@mptr("hash") Object_ red(virtual!Object);
 @method Object_ _red(WinColorref) { return new Object_(); }
 @method Object_ _red(WinPaletteEntry) { return new Object_(); }
 @method Object_ _red(RGBColor) { return new Object_(); }
 @method Object_ _red(METACLASS_Color) { return new Object_(); }
-@mptr("hash") Object_ red(virtual!Object_, Object_);
+@mptr("hash") Object_ red(virtual!Object, Object_);
 @method Object_ _red(WinColorref, Object_) { return new Object_(); }
 @method Object_ _red(WinPaletteEntry, Object_) { return new Object_(); }
 @method Object_ _red(RGBColor, Object_) { return new Object_(); }
-@mptr("hash") Object_ green(virtual!Object_);
+@mptr("hash") Object_ green(virtual!Object);
 @method Object_ _green(WinColorref) { return new Object_(); }
 @method Object_ _green(WinPaletteEntry) { return new Object_(); }
 @method Object_ _green(RGBColor) { return new Object_(); }
 @method Object_ _green(METACLASS_Color) { return new Object_(); }
-@mptr("hash") Object_ green(virtual!Object_, Object_);
+@mptr("hash") Object_ green(virtual!Object, Object_);
 @method Object_ _green(WinColorref, Object_) { return new Object_(); }
 @method Object_ _green(WinPaletteEntry, Object_) { return new Object_(); }
 @method Object_ _green(RGBColor, Object_) { return new Object_(); }
-@mptr("hash") Object_ asColor(virtual!Object_);
+@mptr("hash") Object_ asColor(virtual!Object);
 @method Object_ _asColor(WinColorref) { return new Object_(); }
 @method Object_ _asColor(Integer) { return new Object_(); }
 @mptr("hash") Object_ privateChangeSuperclassTo(virtual!Behavior, Object_);
 @method Object_ _privateChangeSuperclassTo(Behavior, Object_) { return new Object_(); }
 @method Object_ _privateChangeSuperclassTo(Class, Object_) { return new Object_(); }
 @method Object_ _privateChangeSuperclassTo(MetaClass, Object_) { return new Object_(); }
-@mptr("hash") Object_ compile(virtual!Object_, Object_);
+@mptr("hash") Object_ compile(virtual!Object, Object_);
 @method Object_ _compile(Behavior, Object_) { return new Object_(); }
 @method Object_ _compile(CompilerInterface, Object_) { return new Object_(); }
-@mptr("hash") Object_ allSubclasses(virtual!Object_);
+@mptr("hash") Object_ allSubclasses(virtual!Object);
 @method Object_ _allSubclasses(Behavior) { return new Object_(); }
 @method Object_ _allSubclasses(ClassInstaller) { return new Object_(); }
-@mptr("hash") Object_ superclass(virtual!Object_, Object_);
+@mptr("hash") Object_ superclass(virtual!Object, Object_);
 @method Object_ _superclass(Behavior, Object_) { return new Object_(); }
 @method Object_ _superclass(ClassInstaller, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPointers(virtual!Object_);
+@mptr("hash") Object_ isPointers(virtual!Object);
 @method Object_ _isPointers(Behavior) { return new Object_(); }
 @method Object_ _isPointers(ClassInstaller) { return new Object_(); }
-@mptr("hash") Object_ implementorsOf(virtual!Object_, Object_);
+@mptr("hash") Object_ implementorsOf(virtual!Object, Object_);
 @method Object_ _implementorsOf(Behavior, Object_) { return new Object_(); }
 @method Object_ _implementorsOf(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _implementorsOf(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _implementorsOf(SourceManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ isFixed(virtual!Object_);
+@mptr("hash") Object_ methodDictionaries(virtual!Object);
+@method Object_ _methodDictionaries(Behavior) { return new Object_(); }
+@method Object_ _methodDictionaries(Object) { return new Object_(); }
+@mptr("hash") Object_ isFixed(virtual!Object);
 @method Object_ _isFixed(Behavior) { return new Object_(); }
 @method Object_ _isFixed(NewSubclassDialog) { return new Object_(); }
-@mptr("hash") Object_ errorNotIndexable(virtual!Object_);
+@mptr("hash") Object_ errorNotIndexable(virtual!Object);
 @method Object_ _errorNotIndexable(Behavior) { return new Object_(); }
 @method Object_ _errorNotIndexable(Collection) { return new Object_(); }
-@mptr("hash") Object_ pools(virtual!Object_);
+@mptr("hash") Object_ pools(virtual!Object);
 @method Object_ _pools(Behavior) { return new Object_(); }
 @method Object_ _pools(WorkspaceExpressionEvaluator) { return new Object_(); }
 @method Object_ _pools(METACLASS_PARTSScriptContext) { return new Object_(); }
-@mptr("hash") Object_ referencesToString(virtual!Object_, Object_);
+@mptr("hash") Object_ referencesToString(virtual!Object, Object_);
 @method Object_ _referencesToString(Behavior, Object_) { return new Object_(); }
 @method Object_ _referencesToString(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _referencesToString(SourceManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ allInstVarNames(virtual!Object_);
+@mptr("hash") Object_ allInstVarNames(virtual!Object);
 @method Object_ _allInstVarNames(Behavior) { return new Object_(); }
 @method Object_ _allInstVarNames(ClassInstaller) { return new Object_(); }
-@mptr("hash") Object_ superclass(virtual!Object_);
+@mptr("hash") Object_ superclass(virtual!Object);
 @method Object_ _superclass(Behavior) { return new Object_(); }
 @method Object_ _superclass(ClassInstaller) { return new Object_(); }
-@mptr("hash") Object_ sendersOf(virtual!Object_, Object_);
+@mptr("hash") Object_ sendersOf(virtual!Object, Object_);
 @method Object_ _sendersOf(Behavior, Object_) { return new Object_(); }
 @method Object_ _sendersOf(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _sendersOf(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _sendersOf(SourceManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ isVariable(virtual!Object_);
+@mptr("hash") Object_ isVariable(virtual!Object);
 @method Object_ _isVariable(Behavior) { return new Object_(); }
 @method Object_ _isVariable(ClassInstaller) { return new Object_(); }
+@mptr("hash") Object_ new(virtual!Behavior);
+@method Object_ _new(Behavior) { return new Object_(); }
+@method Object_ _new(METACLASS_Semaphore) { return new Object_(); }
+@method Object_ _new(METACLASS_Icon) { return new Object_(); }
+@method Object_ _new(METACLASS_CompilerNameScope) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStore) { return new Object_(); }
+@method Object_ _new(METACLASS_ResidueObject) { return new Object_(); }
+@method Object_ _new(METACLASS_SmalltalkToolInterface) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSApplicationProperty) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSNotebookPage) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSLink) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSFormGenerator) { return new Object_(); }
+@method Object_ _new(METACLASS_Border) { return new Object_(); }
+@method Object_ _new(METACLASS_Window) { return new Object_(); }
+@method Object_ _new(METACLASS_Tool) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSTypedValueHolder) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSStringTemplate) { return new Object_(); }
+@method Object_ _new(METACLASS_EventManager) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSApplicationHolder) { return new Object_(); }
+@method Object_ _new(METACLASS_P1111) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSFileVersion) { return new Object_(); }
+@method Object_ _new(METACLASS_P1105) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSMirrorCopyDictionary) { return new Object_(); }
+@method Object_ _new(METACLASS_LayoutUnit) { return new Object_(); }
+@method Object_ _new(METACLASS_Color) { return new Object_(); }
+@method Object_ _new(METACLASS_ExternalHandle) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreReader) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreWriter) { return new Object_(); }
+@method Object_ _new(METACLASS_TextSelection) { return new Object_(); }
+@method Object_ _new(METACLASS_Menu) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSPropertyUnit) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSEditorState) { return new Object_(); }
+@method Object_ _new(METACLASS_ApplicationCoordinator) { return new Object_(); }
+@method Object_ _new(METACLASS_Character) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreSpace) { return new Object_(); }
+@method Object_ _new(METACLASS_ServiceRegistry) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSIconEditor) { return new Object_(); }
+@method Object_ _new(METACLASS_OrderedCollection) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSStarterWindow) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSStarterWindowWindows) { return new Object_(); }
+@method Object_ _new(METACLASS_OperatingSystemInformation) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSSettings) { return new Object_(); }
+@method Object_ _new(METACLASS_NotificationManager) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSLinkSettings) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSFramer) { return new Object_(); }
+@method Object_ _new(METACLASS_SelfInitializingObject) { return new Object_(); }
+@method Object_ _new(METACLASS_Printer) { return new Object_(); }
+@method Object_ _new(METACLASS_StatusBox) { return new Object_(); }
+@method Object_ _new(METACLASS_Boolean) { return new Object_(); }
+@method Object_ _new(METACLASS_DragDropObject) { return new Object_(); }
+@method Object_ _new(METACLASS_Bag) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreSpaceExternals) { return new Object_(); }
+@method Object_ _new(METACLASS_GraphicsTool) { return new Object_(); }
+@method Object_ _new(METACLASS_P1124) { return new Object_(); }
+@method Object_ _new(METACLASS_P1148) { return new Object_(); }
+@method Object_ _new(METACLASS_ExternalBuffer) { return new Object_(); }
+@method Object_ _new(METACLASS_Coff) { return new Object_(); }
+@method Object_ _new(METACLASS_P1154) { return new Object_(); }
+@method Object_ _new(METACLASS_Float) { return new Object_(); }
+@method Object_ _new(METACLASS_Font) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSIconEditorWindows) { return new Object_(); }
+@method Object_ _new(METACLASS_HashedCollection) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSApplication) { return new Object_(); }
+@method Object_ _new(METACLASS_ViewManager) { return new Object_(); }
+@method Object_ _new(METACLASS_NationalLanguageSupport) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreObjects) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSPropertyStructure) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSNonvisualPart) { return new Object_(); }
+@method Object_ _new(METACLASS_ExtendedListBox) { return new Object_(); }
+@method Object_ _new(METACLASS_CompiledMethod) { return new Object_(); }
+@method Object_ _new(METACLASS_HashTable) { return new Object_(); }
+@method Object_ _new(METACLASS_Number) { return new Object_(); }
+@method Object_ _new(METACLASS_Process) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSStandardMenu) { return new Object_(); }
+@method Object_ _new(METACLASS_UndefinedObject) { return new Object_(); }
+@mptr("hash") Object_ new(virtual!Behavior, Object_);
+@method Object_ _new(Behavior, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_WildPattern, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_LargeInteger, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_SortedCollection, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_DoubleByteSymbol, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_BucketHashTable, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSStringTemplate, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_SmallInteger, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_PARTSMirrorCopyDictionary, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreWriter, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_MethodDictionary, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Pattern, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_LinearInlineHashTable, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Symbol, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreSpace, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_OrderedCollection, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_DoubleByteString, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Boolean, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Bag, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_P1112, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_ExternalBuffer, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Float, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_HashedCollection, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_ObjectStoreFile, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_CompiledMethod, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_HashTable, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_Number, Object_) { return new Object_(); }
+@method Object_ _new(METACLASS_UndefinedObject, Object_) { return new Object_(); }
 @mptr("hash") Object_ setCompilationOptions(virtual!Behavior, Object_);
 @method Object_ _setCompilationOptions(Behavior, Object_) { return new Object_(); }
 @method Object_ _setCompilationOptions(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
 @method Object_ _setCompilationOptions(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
-@mptr("hash") Object_ isBehavior(virtual!Object_);
+@mptr("hash") Object_ isBehavior(virtual!Object);
 @method Object_ _isBehavior(Behavior) { return new Object_(); }
-@method Object_ _isBehavior(Object_) { return new Object_(); }
-@mptr("hash") Object_ recompile(virtual!Object_, Object_);
+@method Object_ _isBehavior(Object) { return new Object_(); }
+@mptr("hash") Object_ recompile(virtual!Object, Object_);
 @method Object_ _recompile(Behavior, Object_) { return new Object_(); }
 @method Object_ _recompile(ClassInstaller, Object_) { return new Object_(); }
-@mptr("hash") Object_ isMessage(virtual!Object_);
+@mptr("hash") Object_ isMessage(virtual!Object);
 @method Object_ _isMessage(Message) { return new Object_(); }
-@method Object_ _isMessage(Object_) { return new Object_(); }
-@mptr("hash") Object_ receiverSelectorArguments(virtual!Object_, Object_, Object_, Object_);
+@method Object_ _isMessage(Object) { return new Object_(); }
+@mptr("hash") Object_ receiverSelectorArguments(virtual!Object, Object_, Object_, Object_);
 @method Object_ _receiverSelectorArguments(Message, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _receiverSelectorArguments(LinkMessage, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _receiverSelectorArguments(METACLASS_Message, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ perform(virtual!Message);
+@method Object_ _perform(Message) { return new Object_(); }
+@method Object_ _perform(LinkMessage) { return new Object_(); }
 @mptr("hash") Object_ resetParts(virtual!PARTSApplicationHolder);
 @method Object_ _resetParts(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _resetParts(PARTSWindow) { return new Object_(); }
-@mptr("hash") Object_ supportsRecycling(virtual!Object_);
+@mptr("hash") Object_ supportsRecycling(virtual!Object);
 @method Object_ _supportsRecycling(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _supportsRecycling(METACLASS_PARTSChooseFileDialog) { return new Object_(); }
 @method Object_ _supportsRecycling(METACLASS_PARTSApplicationHolder) { return new Object_(); }
@@ -6894,21 +7535,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _prepareToBeRecycled(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _prepareToBeRecycled(P1143) { return new Object_(); }
 @method Object_ _prepareToBeRecycled(P1140) { return new Object_(); }
-@mptr("hash") Object_ loadApplication(virtual!Object_);
+@mptr("hash") Object_ loadApplication(virtual!Object);
 @method Object_ _loadApplication(PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _loadApplication(PARTSNestedPart) { return new Object_(); }
 @method Object_ _loadApplication(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ notEmpty(virtual!Object_);
+@mptr("hash") Object_ notEmpty(virtual!Object);
 @method Object_ _notEmpty(Collection) { return new Object_(); }
 @method Object_ _notEmpty(PARTSInterfaceList) { return new Object_(); }
-@mptr("hash") Object_ isCollection(virtual!Object_);
+@mptr("hash") Object_ isCollection(virtual!Object);
 @method Object_ _isCollection(Collection) { return new Object_(); }
-@method Object_ _isCollection(Object_) { return new Object_(); }
-@mptr("hash") Object_ removeAll(virtual!Object_);
+@method Object_ _isCollection(Object) { return new Object_(); }
+@mptr("hash") Object_ removeAll(virtual!Object);
 @method Object_ _removeAll(Collection) { return new Object_(); }
 @method Object_ _removeAll(FileSystemContainer) { return new Object_(); }
 @method Object_ _removeAll(Dictionary) { return new Object_(); }
-@mptr("hash") Object_ remove(virtual!Object_, Object_);
+@mptr("hash") Object_ remove(virtual!Object, Object_);
 @method Object_ _remove(Collection, Object_) { return new Object_(); }
 @method Object_ _remove(NotificationManager, Object_) { return new Object_(); }
 @method Object_ _remove(METACLASS_File, Object_) { return new Object_(); }
@@ -6916,7 +7557,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ collect(virtual!Collection, Object_);
 @method Object_ _collect(Collection, Object_) { return new Object_(); }
 @method Object_ _collect(FixedSizeCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeIfabsent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ removeIfabsent(virtual!Object, Object_, Object_);
 @method Object_ _removeIfabsent(Collection, Object_, Object_) { return new Object_(); }
 @method Object_ _removeIfabsent(OrderedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _removeIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
@@ -6924,7 +7565,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _removeIfabsent(HashedCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _removeIfabsent(FixedSizeCollection, Object_, Object_) { return new Object_(); }
 @method Object_ _removeIfabsent(METACLASS_File, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ detect(virtual!Object_, Object_);
+@mptr("hash") Object_ detect(virtual!Object, Object_);
 @method Object_ _detect(Collection, Object_) { return new Object_(); }
 @method Object_ _detect(PARTSWrapper, Object_) { return new Object_(); }
 @mptr("hash") Object_ asBag(virtual!Collection);
@@ -6935,7 +7576,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _occurrencesOf(Dictionary, Object_) { return new Object_(); }
 @method Object_ _occurrencesOf(Bag, Object_) { return new Object_(); }
 @method Object_ _occurrencesOf(HashedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ isEmpty(virtual!Object_);
+@mptr("hash") Object_ isEmpty(virtual!Object);
 @method Object_ _isEmpty(Collection) { return new Object_(); }
 @method Object_ _isEmpty(PARTSInterfaceList) { return new Object_(); }
 @method Object_ _isEmpty(FileSystemPath) { return new Object_(); }
@@ -6945,9 +7586,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _asArray(Collection) { return new Object_(); }
 @method Object_ _asArray(Array) { return new Object_(); }
 @method Object_ _asArray(ActionSequence) { return new Object_(); }
-@mptr("hash") Object_ isDropDownList(virtual!Object_);
+@mptr("hash") Object_ isDropDownList(virtual!Object);
 @method Object_ _isDropDownList(DropDownList) { return new Object_(); }
-@method Object_ _isDropDownList(Object_) { return new Object_(); }
+@method Object_ _isDropDownList(Object) { return new Object_(); }
 @method Object_ _isDropDownList(ComboBox) { return new Object_(); }
 @mptr("hash") Object_ oemConvert(virtual!ControlPane);
 @method Object_ _oemConvert(DropDownList) { return new Object_(); }
@@ -6955,7 +7596,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ triggerChangedForSelect(virtual!DropDownList);
 @method Object_ _triggerChangedForSelect(DropDownList) { return new Object_(); }
 @method Object_ _triggerChangedForSelect(ComboBox) { return new Object_(); }
-@mptr("hash") Object_ dropDownList(virtual!Object_);
+@mptr("hash") Object_ dropDownList(virtual!Object);
 @method Object_ _dropDownList(DropDownList) { return new Object_(); }
 @method Object_ _dropDownList(METACLASS_DropDownList) { return new Object_(); }
 @mptr("hash") Object_ isSimpleList(virtual!DropDownList);
@@ -6964,25 +7605,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partDroppedControlRectangle(virtual!DropDownList);
 @method Object_ _partDroppedControlRectangle(DropDownList) { return new Object_(); }
 @method Object_ _partDroppedControlRectangle(PARTSDropDownListPart) { return new Object_(); }
-@mptr("hash") Object_ isPublic(virtual!Object_, Object_);
+@mptr("hash") Object_ isPublic(virtual!Object, Object_);
 @method Object_ _isPublic(P1107, Object_) { return new Object_(); }
 @method Object_ _isPublic(METACLASS_P1107, Object_) { return new Object_(); }
-@mptr("hash") Object_ nextToken(virtual!Object_);
+@mptr("hash") Object_ nextToken(virtual!Object);
 @method Object_ _nextToken(P1107) { return new Object_(); }
 @method Object_ _nextToken(StringDictionaryReader) { return new Object_(); }
-@mptr("hash") Object_ readStream(virtual!Object_);
+@mptr("hash") Object_ readStream(virtual!Object);
 @method Object_ _readStream(StreamReference) { return new Object_(); }
 @method Object_ _readStream(LibrarySourceReference) { return new Object_(); }
 @method Object_ _readStream(FileSystemComponent) { return new Object_(); }
 @method Object_ _readStream(SystemStreamReference) { return new Object_(); }
 @method Object_ _readStream(File) { return new Object_(); }
-@mptr("hash") Object_ backupCreate(virtual!Object_, Object_);
+@mptr("hash") Object_ backupCreate(virtual!Object, Object_);
 @method Object_ _backupCreate(P1101, Object_) { return new Object_(); }
 @method Object_ _backupCreate(PARTSExeFileProcessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ backupDelete(virtual!Object_, Object_);
+@mptr("hash") Object_ backupDelete(virtual!Object, Object_);
 @method Object_ _backupDelete(P1101, Object_) { return new Object_(); }
 @method Object_ _backupDelete(PARTSExeFileProcessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ editMenu(virtual!Object_);
+@mptr("hash") Object_ editMenu(virtual!Object);
 @method Object_ _editMenu(P1101) { return new Object_(); }
 @method Object_ _editMenu(PARTSBitEditor) { return new Object_(); }
 @method Object_ _editMenu(P1140) { return new Object_(); }
@@ -6996,28 +7637,31 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _editCopy(P1101) { return new Object_(); }
 @method Object_ _editCopy(PARTSIconEditor) { return new Object_(); }
 @method Object_ _editCopy(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ tutorial(virtual!Object_);
+@mptr("hash") Object_ tutorial(virtual!Object);
 @method Object_ _tutorial(P1101) { return new Object_(); }
 @method Object_ _tutorial(PARTSHelpManager) { return new Object_(); }
 @mptr("hash") Object_ fileOpen(virtual!ViewManager);
 @method Object_ _fileOpen(P1101) { return new Object_(); }
 @method Object_ _fileOpen(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ toolPane(virtual!Object_, Object_);
+@mptr("hash") Object_ toolPane(virtual!Object, Object_);
 @method Object_ _toolPane(P1101, Object_) { return new Object_(); }
 @method Object_ _toolPane(P1108, Object_) { return new Object_(); }
-@mptr("hash") Object_ editMenuCreate(virtual!Object_);
+@mptr("hash") Object_ editMenuCreate(virtual!Object);
 @method Object_ _editMenuCreate(P1101) { return new Object_(); }
 @method Object_ _editMenuCreate(PARTSIconEditor) { return new Object_(); }
 @method Object_ _editMenuCreate(PARTSBitEditor) { return new Object_(); }
 @method Object_ _editMenuCreate(P1140) { return new Object_(); }
 @method Object_ _editMenuCreate(PARTSTextWindow) { return new Object_(); }
-@mptr("hash") Object_ selectOff(virtual!Object_, Object_);
+@mptr("hash") Object_ selectOff(virtual!Object, Object_);
 @method Object_ _selectOff(P1101, Object_) { return new Object_(); }
 @method Object_ _selectOff(P1105, Object_) { return new Object_(); }
 @mptr("hash") Object_ fileNew(virtual!ViewManager);
 @method Object_ _fileNew(P1101) { return new Object_(); }
 @method Object_ _fileNew(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ renamedWrapper(virtual!Object_, Object_);
+@mptr("hash") Object_ workbenchWindow(virtual!Object);
+@method Object_ _workbenchWindow(P1101) { return new Object_(); }
+@method Object_ _workbenchWindow(PARTSWrapper) { return new Object_(); }
+@mptr("hash") Object_ renamedWrapper(virtual!Object, Object_);
 @method Object_ _renamedWrapper(P1101, Object_) { return new Object_(); }
 @method Object_ _renamedWrapper(P1141, Object_) { return new Object_(); }
 @method Object_ _renamedWrapper(P1143, Object_) { return new Object_(); }
@@ -7026,60 +7670,68 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fileExit(P1101) { return new Object_(); }
 @method Object_ _fileExit(PARTSIconEditor) { return new Object_(); }
 @method Object_ _fileExit(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ findLinksSendingTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ findLinksSendingTo(virtual!Object, Object_, Object_);
 @method Object_ _findLinksSendingTo(P1101, Object_, Object_) { return new Object_(); }
 @method Object_ _findLinksSendingTo(P1106, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openOnUpdate(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ openOnUpdate(virtual!Object, Object_, Object_);
 @method Object_ _openOnUpdate(P1101, Object_, Object_) { return new Object_(); }
 @method Object_ _openOnUpdate(METACLASS_PARTSEditor, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDirectEditing(virtual!Object_, Object_);
+@mptr("hash") Object_ isDirectEditing(virtual!Object, Object_);
 @method Object_ _isDirectEditing(P1101, Object_) { return new Object_(); }
 @method Object_ _isDirectEditing(P1105, Object_) { return new Object_(); }
-@mptr("hash") Object_ getVisibleRectOf(virtual!Object_, Object_);
+@mptr("hash") Object_ windowUnderPoint(virtual!Object, Object_);
+@method Object_ _windowUnderPoint(P1101, Object_) { return new Object_(); }
+@method Object_ _windowUnderPoint(P1105, Object_) { return new Object_(); }
+@method Object_ _windowUnderPoint(METACLASS_Window, Object_) { return new Object_(); }
+@mptr("hash") Object_ getVisibleRectOf(virtual!Object, Object_);
 @method Object_ _getVisibleRectOf(P1101, Object_) { return new Object_(); }
 @method Object_ _getVisibleRectOf(P1106, Object_) { return new Object_(); }
-@mptr("hash") Object_ help(virtual!Object_, Object_);
+@mptr("hash") Object_ help(virtual!Object, Object_);
 @method Object_ _help(P1101, Object_) { return new Object_(); }
 @method Object_ _help(P1123, Object_) { return new Object_(); }
 @method Object_ _help(ToolPane, Object_) { return new Object_(); }
 @method Object_ _help(P1100, Object_) { return new Object_(); }
+@mptr("hash") Object_ setWindowTitle(virtual!ViewManager);
+@method Object_ _setWindowTitle(P1101) { return new Object_(); }
+@method Object_ _setWindowTitle(PARTSBitEditor) { return new Object_(); }
+@method Object_ _setWindowTitle(P1100) { return new Object_(); }
 @mptr("hash") Object_ mouseMovedIn(virtual!ViewManager, Object_);
 @method Object_ _mouseMovedIn(P1101, Object_) { return new Object_(); }
 @method Object_ _mouseMovedIn(P1100, Object_) { return new Object_(); }
-@mptr("hash") Object_ lastUpdateTime(virtual!Object_);
+@mptr("hash") Object_ lastUpdateTime(virtual!Object);
 @method Object_ _lastUpdateTime(P1101) { return new Object_(); }
 @method Object_ _lastUpdateTime(PARTSNestedPart) { return new Object_(); }
 @method Object_ _lastUpdateTime(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ fileMenu(virtual!Object_);
+@mptr("hash") Object_ fileMenu(virtual!Object);
 @method Object_ _fileMenu(P1101) { return new Object_(); }
 @method Object_ _fileMenu(ApplicationWindow) { return new Object_(); }
 @method Object_ _fileMenu(ViewManager) { return new Object_(); }
 @method Object_ _fileMenu(METACLASS_StandardWindowPolicy) { return new Object_(); }
 @method Object_ _fileMenu(METACLASS_SmalltalkWindowPolicy) { return new Object_(); }
 @method Object_ _fileMenu(METACLASS_ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ moveTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ moveTo(virtual!Object, Object_, Object_);
 @method Object_ _moveTo(P1101, Object_, Object_) { return new Object_(); }
 @method Object_ _moveTo(P1105, Object_, Object_) { return new Object_(); }
 @method Object_ _moveTo(PARTSMenuPart, Object_, Object_) { return new Object_(); }
 @method Object_ _moveTo(PARTSMenuPaneWindows, Object_, Object_) { return new Object_(); }
 @method Object_ _moveTo(PARTSMenuBar, Object_, Object_) { return new Object_(); }
 @method Object_ _moveTo(METACLASS_FileSystemEntity, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpMenu(virtual!Object_);
+@mptr("hash") Object_ helpMenu(virtual!Object);
 @method Object_ _helpMenu(P1101) { return new Object_(); }
 @method Object_ _helpMenu(HelpManager) { return new Object_(); }
-@mptr("hash") Object_ removeLinks(virtual!Object_, Object_);
+@mptr("hash") Object_ removeLinks(virtual!Object, Object_);
 @method Object_ _removeLinks(P1101, Object_) { return new Object_(); }
 @method Object_ _removeLinks(P1106, Object_) { return new Object_(); }
 @mptr("hash") Object_ createHelpManagerFor(virtual!ViewManager, Object_);
 @method Object_ _createHelpManagerFor(P1101, Object_) { return new Object_(); }
 @method Object_ _createHelpManagerFor(P1100, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileCopyFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ fileCopyFromTo(virtual!Object, Object_, Object_);
 @method Object_ _fileCopyFromTo(P1101, Object_, Object_) { return new Object_(); }
 @method Object_ _fileCopyFromTo(METACLASS_P1000, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ resizeTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ resizeTo(virtual!Object, Object_, Object_);
 @method Object_ _resizeTo(P1101, Object_, Object_) { return new Object_(); }
 @method Object_ _resizeTo(P1105, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ findWrapper(virtual!Object_, Object_);
+@mptr("hash") Object_ findWrapper(virtual!Object, Object_);
 @method Object_ _findWrapper(P1101, Object_) { return new Object_(); }
 @method Object_ _findWrapper(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _findWrapper(P1106, Object_) { return new Object_(); }
@@ -7087,7 +7739,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ fileSave(virtual!ViewManager);
 @method Object_ _fileSave(P1101) { return new Object_(); }
 @method Object_ _fileSave(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ gridExtent(virtual!Object_);
+@mptr("hash") Object_ gridExtent(virtual!Object);
 @method Object_ _gridExtent(P1101) { return new Object_(); }
 @method Object_ _gridExtent(PARTSSettings) { return new Object_(); }
 @mptr("hash") Object_ fileMenuCreate(virtual!ViewManager);
@@ -7105,16 +7757,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _changesHandled(P1101) { return new Object_(); }
 @method Object_ _changesHandled(PARTSBitEditor) { return new Object_(); }
 @method Object_ _changesHandled(P1100) { return new Object_(); }
-@mptr("hash") Object_ workbenchPane(virtual!Object_);
+@mptr("hash") Object_ workbenchPane(virtual!Object);
 @method Object_ _workbenchPane(P1101) { return new Object_(); }
 @method Object_ _workbenchPane(PARTSWrapper) { return new Object_(); }
-@mptr("hash") Object_ statusPaneHelp(virtual!Object_, Object_);
+@mptr("hash") Object_ statusPaneHelp(virtual!Object, Object_);
 @method Object_ _statusPaneHelp(P1101, Object_) { return new Object_(); }
-@method Object_ _statusPaneHelp(Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ editDelete(virtual!Object_);
+@method Object_ _statusPaneHelp(Object, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultCatalogs(virtual!Object);
+@method Object_ _defaultCatalogs(P1101) { return new Object_(); }
+@method Object_ _defaultCatalogs(PARTSSettings) { return new Object_(); }
+@mptr("hash") Object_ undoDelete(virtual!Object, Object_);
+@method Object_ _undoDelete(P1101, Object_) { return new Object_(); }
+@method Object_ _undoDelete(P1113, Object_) { return new Object_(); }
+@mptr("hash") Object_ editDelete(virtual!Object);
 @method Object_ _editDelete(P1101) { return new Object_(); }
 @method Object_ _editDelete(P1124) { return new Object_(); }
-@mptr("hash") Object_ aboutToClose(virtual!Object_, Object_);
+@mptr("hash") Object_ aboutToClose(virtual!Object, Object_);
 @method Object_ _aboutToClose(P1101, Object_) { return new Object_(); }
 @method Object_ _aboutToClose(PARTSBitEditor, Object_) { return new Object_(); }
 @method Object_ _aboutToClose(P1100, Object_) { return new Object_(); }
@@ -7122,33 +7780,33 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ fileSaveAs(virtual!ViewManager);
 @method Object_ _fileSaveAs(P1101) { return new Object_(); }
 @method Object_ _fileSaveAs(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ application(virtual!Object_, Object_);
+@mptr("hash") Object_ application(virtual!Object, Object_);
 @method Object_ _application(P1101, Object_) { return new Object_(); }
 @method Object_ _application(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _application(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPARTSEditor(virtual!Object_);
+@mptr("hash") Object_ isPARTSEditor(virtual!Object);
 @method Object_ _isPARTSEditor(P1101) { return new Object_(); }
-@method Object_ _isPARTSEditor(Object_) { return new Object_(); }
-@mptr("hash") Object_ createMenuBarMenus(virtual!Object_, Object_);
+@method Object_ _isPARTSEditor(Object) { return new Object_(); }
+@mptr("hash") Object_ createMenuBarMenus(virtual!Object, Object_);
 @method Object_ _createMenuBarMenus(P1101, Object_) { return new Object_(); }
 @method Object_ _createMenuBarMenus(P1123, Object_) { return new Object_(); }
 @method Object_ _createMenuBarMenus(PARTSBitEditor, Object_) { return new Object_(); }
 @method Object_ _createMenuBarMenus(P1140, Object_) { return new Object_(); }
 @method Object_ _createMenuBarMenus(P1142, Object_) { return new Object_(); }
 @method Object_ _createMenuBarMenus(PARTSTextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ createViewFor(virtual!Object_, Object_);
+@mptr("hash") Object_ createViewFor(virtual!Object, Object_);
 @method Object_ _createViewFor(P1101, Object_) { return new Object_(); }
 @method Object_ _createViewFor(METACLASS_ApplicationCoordinator, Object_) { return new Object_(); }
-@mptr("hash") Object_ statusPane(virtual!Object_, Object_);
+@mptr("hash") Object_ statusPane(virtual!Object, Object_);
 @method Object_ _statusPane(P1101, Object_) { return new Object_(); }
 @method Object_ _statusPane(StatusBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ editPaste(virtual!ViewManager);
 @method Object_ _editPaste(P1101) { return new Object_(); }
 @method Object_ _editPaste(PARTSIconEditor) { return new Object_(); }
 @method Object_ _editPaste(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ isPARTSCatalogIconConnection(virtual!Object_);
+@mptr("hash") Object_ isPARTSCatalogIconConnection(virtual!Object);
 @method Object_ _isPARTSCatalogIconConnection(P1109) { return new Object_(); }
-@method Object_ _isPARTSCatalogIconConnection(Object_) { return new Object_(); }
+@method Object_ _isPARTSCatalogIconConnection(Object) { return new Object_(); }
 @mptr("hash") Object_ amountToPageUp(virtual!SubPane);
 @method Object_ _amountToPageUp(GraphPane) { return new Object_(); }
 @method Object_ _amountToPageUp(SubPane) { return new Object_(); }
@@ -7163,13 +7821,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _updateVerticalSlider(GraphPane) { return new Object_(); }
 @method Object_ _updateVerticalSlider(ControlPane) { return new Object_(); }
 @method Object_ _updateVerticalSlider(SubPane) { return new Object_(); }
-@mptr("hash") Object_ bitmapIfAbsent(virtual!Object_, Object_);
+@mptr("hash") Object_ bitmapIfAbsent(virtual!Object, Object_);
 @method Object_ _bitmapIfAbsent(GraphPane, Object_) { return new Object_(); }
 @method Object_ _bitmapIfAbsent(DragDropObject, Object_) { return new Object_(); }
 @mptr("hash") Object_ charsInRow(virtual!SubPane);
 @method Object_ _charsInRow(GraphPane) { return new Object_(); }
 @method Object_ _charsInRow(SubPane) { return new Object_(); }
-@mptr("hash") Object_ totalLength(virtual!Object_);
+@mptr("hash") Object_ totalLength(virtual!Object);
 @method Object_ _totalLength(GraphPane) { return new Object_(); }
 @method Object_ _totalLength(TextPane) { return new Object_(); }
 @method Object_ _totalLength(StringModel) { return new Object_(); }
@@ -7187,7 +7845,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _updateHorizontalSlider(SubPane) { return new Object_(); }
 @method Object_ _updateHorizontalSlider(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _updateHorizontalSlider(ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ bitmap(virtual!Object_, Object_);
+@mptr("hash") Object_ bitmap(virtual!Object, Object_);
 @method Object_ _bitmap(GraphPane, Object_) { return new Object_(); }
 @method Object_ _bitmap(PARTSDrawnButtonPart, Object_) { return new Object_(); }
 @method Object_ _bitmap(PARTSGraphPanePart, Object_) { return new Object_(); }
@@ -7195,10 +7853,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _bitmap(PARTSMenuBitmapItemPart, Object_) { return new Object_(); }
 @method Object_ _bitmap(METACLASS_StaticGraphic, Object_) { return new Object_(); }
 @method Object_ _bitmap(METACLASS_DragDropObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ erase(virtual!Object_);
+@mptr("hash") Object_ displayWindow(virtual!GraphPane);
+@method Object_ _displayWindow(GraphPane) { return new Object_(); }
+@method Object_ _displayWindow(P1105) { return new Object_(); }
+@method Object_ _displayWindow(PARTSSequencePane) { return new Object_(); }
+@method Object_ _displayWindow(PARTSDialPanePart) { return new Object_(); }
+@method Object_ _displayWindow(PARTSIconPane) { return new Object_(); }
+@mptr("hash") Object_ erase(virtual!Object);
 @method Object_ _erase(GraphPane) { return new Object_(); }
 @method Object_ _erase(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ update(virtual!Object_);
+@mptr("hash") Object_ update(virtual!Object);
 @method Object_ _update(GraphPane) { return new Object_(); }
 @method Object_ _update(PARTSSequencePane) { return new Object_(); }
 @method Object_ _update(TextPane) { return new Object_(); }
@@ -7235,16 +7899,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _amountToScrollUp(GraphPane) { return new Object_(); }
 @method Object_ _amountToScrollUp(SubPane) { return new Object_(); }
 @method Object_ _amountToScrollUp(ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ isGraphPane(virtual!Object_);
+@mptr("hash") Object_ isGraphPane(virtual!Object);
 @method Object_ _isGraphPane(GraphPane) { return new Object_(); }
-@method Object_ _isGraphPane(Object_) { return new Object_(); }
+@method Object_ _isGraphPane(Object) { return new Object_(); }
 @mptr("hash") Object_ charsInColumn(virtual!SubPane);
 @method Object_ _charsInColumn(GraphPane) { return new Object_(); }
 @method Object_ _charsInColumn(SubPane) { return new Object_(); }
 @mptr("hash") Object_ amountToPageLeft(virtual!SubPane);
 @method Object_ _amountToPageLeft(GraphPane) { return new Object_(); }
 @method Object_ _amountToPageLeft(SubPane) { return new Object_(); }
-@mptr("hash") Object_ openIn(virtual!Object_, Object_);
+@mptr("hash") Object_ openIn(virtual!Object, Object_);
 @method Object_ _openIn(P1103, Object_) { return new Object_(); }
 @method Object_ _openIn(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _openIn(ApplicationWindow, Object_) { return new Object_(); }
@@ -7264,11 +7928,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ activeTextPaneNoSetFocus(virtual!ApplicationWindow, Object_);
 @method Object_ _activeTextPaneNoSetFocus(P1103, Object_) { return new Object_(); }
 @method Object_ _activeTextPaneNoSetFocus(ApplicationWindow, Object_) { return new Object_(); }
+@mptr("hash") Object_ openWindow(virtual!Object);
+@method Object_ _openWindow(P1103) { return new Object_(); }
+@method Object_ _openWindow(PARTSWindow) { return new Object_(); }
+@method Object_ _openWindow(ApplicationWindow) { return new Object_(); }
+@method Object_ _openWindow(WindowDialog) { return new Object_(); }
+@method Object_ _openWindow(PARTSTextWindow) { return new Object_(); }
+@method Object_ _openWindow(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ dataSlotColor(virtual!P1117, Object_);
 @method Object_ _dataSlotColor(P1117, Object_) { return new Object_(); }
 @method Object_ _dataSlotColor(P1119, Object_) { return new Object_(); }
 @method Object_ _dataSlotColor(P1118, Object_) { return new Object_(); }
-@mptr("hash") Object_ getDisplayPen(virtual!Object_);
+@mptr("hash") Object_ getDisplayPen(virtual!Object);
 @method Object_ _getDisplayPen(P1117) { return new Object_(); }
 @method Object_ _getDisplayPen(P1113) { return new Object_(); }
 @mptr("hash") Object_ computeBorderAndInteriorAnchor(virtual!P1117);
@@ -7279,17 +7950,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _dragFinishDelta(P1117, Object_, Object_) { return new Object_(); }
 @method Object_ _dragFinishDelta(P1119, Object_, Object_) { return new Object_(); }
 @method Object_ _dragFinishDelta(P1118, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ linkEditor(virtual!Object_, Object_);
+@mptr("hash") Object_ linkEditor(virtual!Object, Object_);
 @method Object_ _linkEditor(P1117, Object_) { return new Object_(); }
 @method Object_ _linkEditor(P1113, Object_) { return new Object_(); }
-@mptr("hash") Object_ resetDisplayPen(virtual!Object_, Object_);
+@mptr("hash") Object_ resetDisplayPen(virtual!Object, Object_);
 @method Object_ _resetDisplayPen(P1117, Object_) { return new Object_(); }
 @method Object_ _resetDisplayPen(P1113, Object_) { return new Object_(); }
 @mptr("hash") Object_ getLabel(virtual!P1117);
 @method Object_ _getLabel(P1117) { return new Object_(); }
 @method Object_ _getLabel(P1119) { return new Object_(); }
 @method Object_ _getLabel(P1118) { return new Object_(); }
-@mptr("hash") Object_ computeRectangle(virtual!Object_);
+@mptr("hash") Object_ editWindow(virtual!Object, Object_);
+@method Object_ _editWindow(P1117, Object_) { return new Object_(); }
+@method Object_ _editWindow(P1113, Object_) { return new Object_(); }
+@method Object_ _editWindow(P1106, Object_) { return new Object_(); }
+@mptr("hash") Object_ computeRectangle(virtual!Object);
 @method Object_ _computeRectangle(P1117) { return new Object_(); }
 @method Object_ _computeRectangle(P1119) { return new Object_(); }
 @method Object_ _computeRectangle(P1113) { return new Object_(); }
@@ -7303,11 +7978,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _numberOfDataSlots(P1117) { return new Object_(); }
 @method Object_ _numberOfDataSlots(P1119) { return new Object_(); }
 @method Object_ _numberOfDataSlots(P1118) { return new Object_(); }
-@mptr("hash") Object_ computeLayout(virtual!Object_);
+@mptr("hash") Object_ computeLayout(virtual!Object);
 @method Object_ _computeLayout(P1117) { return new Object_(); }
 @method Object_ _computeLayout(P1113) { return new Object_(); }
 @method Object_ _computeLayout(ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ type(virtual!Object_, Object_);
+@mptr("hash") Object_ type(virtual!Object, Object_);
 @method Object_ _type(PeResource, Object_) { return new Object_(); }
 @method Object_ _type(PARTSFileType, Object_) { return new Object_(); }
 @method Object_ _type(ObjectStoreSpace, Object_) { return new Object_(); }
@@ -7316,11 +7991,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _type(WinMetaheader, Object_) { return new Object_(); }
 @method Object_ _type(PeFixup, Object_) { return new Object_(); }
 @method Object_ _type(CompiledMethod, Object_) { return new Object_(); }
-@mptr("hash") Object_ size(virtual!Object_, Object_);
+@mptr("hash") Object_ size(virtual!Object, Object_);
 @method Object_ _size(PeResource, Object_) { return new Object_(); }
 @method Object_ _size(CoffDataTableEntry, Object_) { return new Object_(); }
 @method Object_ _size(PARTSFileAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ type(virtual!Object_);
+@mptr("hash") Object_ type(virtual!Object);
 @method Object_ _type(PeResource) { return new Object_(); }
 @method Object_ _type(PARTSFileType) { return new Object_(); }
 @method Object_ _type(ObjectStoreSpace) { return new Object_(); }
@@ -7329,15 +8004,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _type(WinMetaheader) { return new Object_(); }
 @method Object_ _type(PeFixup) { return new Object_(); }
 @method Object_ _type(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ partLinkEditor(virtual!Object_);
+@mptr("hash") Object_ partLinkEditor(virtual!Object);
 @method Object_ _partLinkEditor(P1105) { return new Object_(); }
 @method Object_ _partLinkEditor(PARTSWrapper) { return new Object_(); }
-@mptr("hash") Object_ resetPenFromTracking(virtual!Object_);
+@mptr("hash") Object_ resetPenFromTracking(virtual!Object);
 @method Object_ _resetPenFromTracking(P1105) { return new Object_(); }
 @method Object_ _resetPenFromTracking(Screen) { return new Object_(); }
-@mptr("hash") Object_ isPARTSEditorPane(virtual!Object_);
+@mptr("hash") Object_ isPARTSEditorPane(virtual!Object);
 @method Object_ _isPARTSEditorPane(P1105) { return new Object_(); }
-@method Object_ _isPARTSEditorPane(Object_) { return new Object_(); }
+@method Object_ _isPARTSEditorPane(Object) { return new Object_(); }
 @mptr("hash") Object_ wmButton1DownAt(virtual!SubPane, Object_);
 @method Object_ _wmButton1DownAt(P1105, Object_) { return new Object_(); }
 @method Object_ _wmButton1DownAt(P1127, Object_) { return new Object_(); }
@@ -7367,7 +8042,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ singleSelectAt(virtual!PARTSIconPane, Object_);
 @method Object_ _singleSelectAt(P1105, Object_) { return new Object_(); }
 @method Object_ _singleSelectAt(P1104, Object_) { return new Object_(); }
-@mptr("hash") Object_ setPenForTracking(virtual!Object_);
+@mptr("hash") Object_ setPenForTracking(virtual!Object);
 @method Object_ _setPenForTracking(P1105) { return new Object_(); }
 @method Object_ _setPenForTracking(Screen) { return new Object_(); }
 @mptr("hash") Object_ updateIcon(virtual!PARTSIconPane, Object_);
@@ -7379,7 +8054,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ openItemAt(virtual!PARTSIconPane, Object_);
 @method Object_ _openItemAt(P1105, Object_) { return new Object_(); }
 @method Object_ _openItemAt(P1104, Object_) { return new Object_(); }
-@mptr("hash") Object_ dragStart(virtual!Object_);
+@mptr("hash") Object_ dragStart(virtual!Object);
 @method Object_ _dragStart(P1105) { return new Object_(); }
 @method Object_ _dragStart(PARTSLocalDragDropSession) { return new Object_(); }
 @method Object_ _dragStart(ExtendedListBox) { return new Object_(); }
@@ -7387,29 +8062,32 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _transferValuesToNewPart(PARTSUpgradePanePart, Object_) { return new Object_(); }
 @method Object_ _transferValuesToNewPart(PARTSUpgradeTablePane, Object_) { return new Object_(); }
 @method Object_ _transferValuesToNewPart(PARTSUpgradeVisualPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromToWidth(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ fromToWidth(virtual!Object, Object_, Object_, Object_);
 @method Object_ _fromToWidth(P1111, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _fromToWidth(METACLASS_P1111, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ length(virtual!Object_);
+@mptr("hash") Object_ length(virtual!Object);
 @method Object_ _length(P1111) { return new Object_(); }
 @method Object_ _length(WinWindowPlacement) { return new Object_(); }
-@mptr("hash") Object_ intersects(virtual!Object_, Object_);
+@mptr("hash") Object_ intersects(virtual!Object, Object_);
 @method Object_ _intersects(P1111, Object_) { return new Object_(); }
 @method Object_ _intersects(P1113, Object_) { return new Object_(); }
 @method Object_ _intersects(Rectangle, Object_) { return new Object_(); }
 @method Object_ _intersects(P1112, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultAttachmentSide(virtual!P1117);
+@method Object_ _defaultAttachmentSide(P1119) { return new Object_(); }
+@method Object_ _defaultAttachmentSide(P1118) { return new Object_(); }
 @mptr("hash") Object_ saveLocation(virtual!P1117, Object_);
 @method Object_ _saveLocation(P1119, Object_) { return new Object_(); }
 @method Object_ _saveLocation(P1118, Object_) { return new Object_(); }
 @mptr("hash") Object_ expandLabelsRepaint(virtual!P1113, Object_);
 @method Object_ _expandLabelsRepaint(P1113, Object_) { return new Object_(); }
 @method Object_ _expandLabelsRepaint(P1115, Object_) { return new Object_(); }
-@mptr("hash") Object_ launchSide(virtual!Object_);
+@mptr("hash") Object_ launchSide(virtual!Object);
 @method Object_ _launchSide(P1113) { return new Object_(); }
 @method Object_ _launchSide(PARTSLinkEditState) { return new Object_(); }
-@mptr("hash") Object_ removeDependent(virtual!Object_, Object_);
+@mptr("hash") Object_ removeDependent(virtual!Object, Object_);
 @method Object_ _removeDependent(P1113, Object_) { return new Object_(); }
-@method Object_ _removeDependent(Object_, Object_) { return new Object_(); }
+@method Object_ _removeDependent(Object, Object_) { return new Object_(); }
 @mptr("hash") Object_ restoreLayout(virtual!P1113);
 @method Object_ _restoreLayout(P1113) { return new Object_(); }
 @method Object_ _restoreLayout(P1114) { return new Object_(); }
@@ -7426,7 +8104,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ labelState(virtual!P1113);
 @method Object_ _labelState(P1113) { return new Object_(); }
 @method Object_ _labelState(P1115) { return new Object_(); }
-@mptr("hash") Object_ interceptRightClick(virtual!Object_, Object_);
+@mptr("hash") Object_ interceptRightClick(virtual!Object, Object_);
 @method Object_ _interceptRightClick(P1113, Object_) { return new Object_(); }
 @method Object_ _interceptRightClick(P1115, Object_) { return new Object_(); }
 @method Object_ _interceptRightClick(P1106, Object_) { return new Object_(); }
@@ -7437,7 +8115,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ rectLandingPlug(virtual!P1113);
 @method Object_ _rectLandingPlug(P1113) { return new Object_(); }
 @method Object_ _rectLandingPlug(P1115) { return new Object_(); }
-@mptr("hash") Object_ landingSide(virtual!Object_);
+@mptr("hash") Object_ landingSide(virtual!Object);
 @method Object_ _landingSide(P1113) { return new Object_(); }
 @method Object_ _landingSide(PARTSLinkEditState) { return new Object_(); }
 @mptr("hash") Object_ launchPlugIsInside(virtual!P1113);
@@ -7449,7 +8127,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ launchPlugHeight(virtual!P1113);
 @method Object_ _launchPlugHeight(P1113) { return new Object_(); }
 @method Object_ _launchPlugHeight(P1116) { return new Object_(); }
-@mptr("hash") Object_ linkTriggerContaining(virtual!Object_, Object_);
+@mptr("hash") Object_ linkTriggerContaining(virtual!Object, Object_);
 @method Object_ _linkTriggerContaining(P1113, Object_) { return new Object_(); }
 @method Object_ _linkTriggerContaining(P1115, Object_) { return new Object_(); }
 @method Object_ _linkTriggerContaining(P1106, Object_) { return new Object_(); }
@@ -7475,7 +8153,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ dragLaunchPlugFromCapturepaneEventprefix(virtual!P1113, Object_, Object_, Object_);
 @method Object_ _dragLaunchPlugFromCapturepaneEventprefix(P1113, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _dragLaunchPlugFromCapturepaneEventprefix(P1116, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ link(virtual!Object_, Object_);
+@mptr("hash") Object_ link(virtual!Object, Object_);
 @method Object_ _link(P1113, Object_) { return new Object_(); }
 @method Object_ _link(P1120, Object_) { return new Object_(); }
 @mptr("hash") Object_ menuEditSourceCommandsSelectors(virtual!P1113, Object_, Object_);
@@ -7485,20 +8163,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ anchorLinkPath(virtual!P1113);
 @method Object_ _anchorLinkPath(P1113) { return new Object_(); }
 @method Object_ _anchorLinkPath(P1115) { return new Object_(); }
-@mptr("hash") Object_ interceptLafDragFromEventprefix(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ interceptLafDragFromEventprefix(virtual!Object, Object_, Object_, Object_);
 @method Object_ _interceptLafDragFromEventprefix(P1113, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _interceptLafDragFromEventprefix(P1106, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ launchPlugBase(virtual!P1113);
 @method Object_ _launchPlugBase(P1113) { return new Object_(); }
 @method Object_ _launchPlugBase(P1115) { return new Object_(); }
-@mptr("hash") Object_ menu(virtual!Object_);
+@mptr("hash") Object_ menu(virtual!Object);
 @method Object_ _menu(P1113) { return new Object_(); }
 @method Object_ _menu(SubPane) { return new Object_(); }
 @mptr("hash") Object_ removeLinkGuts(virtual!P1113);
 @method Object_ _removeLinkGuts(P1113) { return new Object_(); }
 @method Object_ _removeLinkGuts(P1115) { return new Object_(); }
 @method Object_ _removeLinkGuts(P1116) { return new Object_(); }
-@mptr("hash") Object_ link(virtual!Object_);
+@mptr("hash") Object_ link(virtual!Object);
 @method Object_ _link(P1113) { return new Object_(); }
 @method Object_ _link(P1120) { return new Object_(); }
 @mptr("hash") Object_ saveLayout(virtual!P1113);
@@ -7532,15 +8210,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _pasteSelection(EntryField) { return new Object_(); }
 @method Object_ _pasteSelection(TextPane) { return new Object_(); }
 @method Object_ _pasteSelection(ComboBox) { return new Object_(); }
-@mptr("hash") Object_ selectAll(virtual!Object_);
+@mptr("hash") Object_ selectAll(virtual!Object);
 @method Object_ _selectAll(P1127) { return new Object_(); }
 @method Object_ _selectAll(EntryField) { return new Object_(); }
 @method Object_ _selectAll(TextPane) { return new Object_(); }
 @method Object_ _selectAll(P1124) { return new Object_(); }
-@mptr("hash") Object_ library(virtual!Object_, Object_);
+@mptr("hash") Object_ library(virtual!Object, Object_);
 @method Object_ _library(LibrarySourceReference, Object_) { return new Object_(); }
 @method Object_ _library(METACLASS_LibrarySourceReference, Object_) { return new Object_(); }
-@mptr("hash") Object_ stream(virtual!Object_, Object_);
+@mptr("hash") Object_ stream(virtual!Object, Object_);
 @method Object_ _stream(LibrarySourceReference, Object_) { return new Object_(); }
 @method Object_ _stream(ObjectStoreReader, Object_) { return new Object_(); }
 @method Object_ _stream(ObjectDumper, Object_) { return new Object_(); }
@@ -7550,15 +8228,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ asSeconds(virtual!Magnitude);
 @method Object_ _asSeconds(Date) { return new Object_(); }
 @method Object_ _asSeconds(Time) { return new Object_(); }
-@mptr("hash") Object_ isDate(virtual!Object_);
+@mptr("hash") Object_ isDate(virtual!Object);
 @method Object_ _isDate(Date) { return new Object_(); }
-@method Object_ _isDate(Object_) { return new Object_(); }
-@mptr("hash") Object_ timeStamp(virtual!Object_);
+@method Object_ _isDate(Object) { return new Object_(); }
+@mptr("hash") Object_ timeStamp(virtual!Object);
 @method Object_ _timeStamp(CoffFileModel) { return new Object_(); }
 @method Object_ _timeStamp(PARTSFileDescriptor) { return new Object_(); }
 @mptr("hash") Object_ sectionAlignment(virtual!Coff);
 @method Object_ _sectionAlignment(CoffFileModel) { return new Object_(); }
 @method Object_ _sectionAlignment(CoffFileSection) { return new Object_(); }
+@mptr("hash") Object_ debugger(virtual!Object, Object_);
+@method Object_ _debugger(P1121, Object_) { return new Object_(); }
+@method Object_ _debugger(PARTSMirrorCopyDictionary, Object_) { return new Object_(); }
+@method Object_ _debugger(P1122, Object_) { return new Object_(); }
+@method Object_ _debugger(PARTSLoadContext, Object_) { return new Object_(); }
+@method Object_ _debugger(Process, Object_) { return new Object_(); }
 @mptr("hash") Object_ areValuesValidForXAndy(virtual!PARTSPointEditor, Object_, Object_);
 @method Object_ _areValuesValidForXAndy(P1129, Object_, Object_) { return new Object_(); }
 @method Object_ _areValuesValidForXAndy(PARTSPointEditor, Object_, Object_) { return new Object_(); }
@@ -7597,29 +8281,40 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ suspendTimers(virtual!ViewManager);
 @method Object_ _suspendTimers(P1123) { return new Object_(); }
 @method Object_ _suspendTimers(PARTSDeveloperDebugger) { return new Object_(); }
-@mptr("hash") Object_ aboutToChangeList(virtual!Object_, Object_);
+@mptr("hash") Object_ aboutToChangeList(virtual!Object, Object_);
 @method Object_ _aboutToChangeList(P1123, Object_) { return new Object_(); }
 @method Object_ _aboutToChangeList(P1143, Object_) { return new Object_(); }
-@mptr("hash") Object_ close(virtual!Object_, Object_);
+@mptr("hash") Object_ close(virtual!Object, Object_);
 @method Object_ _close(P1123, Object_) { return new Object_(); }
 @method Object_ _close(AboutDialog, Object_) { return new Object_(); }
 @method Object_ _close(TranscriptWindow, Object_) { return new Object_(); }
 @method Object_ _close(P1140, Object_) { return new Object_(); }
 @method Object_ _close(SaveImageAsDialog, Object_) { return new Object_(); }
 @method Object_ _close(WalkbackWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ go(virtual!Object_);
+@mptr("hash") Object_ go(virtual!Object);
 @method Object_ _go(P1123) { return new Object_(); }
 @method Object_ _go(ObjectDumper) { return new Object_(); }
 @method Object_ _go(ObjectStoreObjects) { return new Object_(); }
+@mptr("hash") Object_ windowTitle(virtual!Object);
+@method Object_ _windowTitle(P1123) { return new Object_(); }
+@method Object_ _windowTitle(P1141) { return new Object_(); }
+@method Object_ _windowTitle(PARTSPropertiesEditor) { return new Object_(); }
+@method Object_ _windowTitle(PARTSIconEditor) { return new Object_(); }
+@method Object_ _windowTitle(PARTSBitEditor) { return new Object_(); }
+@method Object_ _windowTitle(P1142) { return new Object_(); }
 @mptr("hash") Object_ extentForLabel(virtual!ViewManager, Object_);
 @method Object_ _extentForLabel(P1123, Object_) { return new Object_(); }
 @method Object_ _extentForLabel(ObjectLoadDialog, Object_) { return new Object_(); }
 @method Object_ _extentForLabel(ListDialog, Object_) { return new Object_(); }
 @method Object_ _extentForLabel(PARTSRelativeLayoutDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ enableDisableButtons(virtual!Object_);
+@mptr("hash") Object_ enableDisableButtons(virtual!Object);
 @method Object_ _enableDisableButtons(P1123) { return new Object_(); }
 @method Object_ _enableDisableButtons(P1141) { return new Object_(); }
 @method Object_ _enableDisableButtons(P1142) { return new Object_(); }
+@mptr("hash") Object_ openedWindow(virtual!Object);
+@method Object_ _openedWindow(P1123) { return new Object_(); }
+@method Object_ _openedWindow(P1141) { return new Object_(); }
+@method Object_ _openedWindow(P1143) { return new Object_(); }
 @mptr("hash") Object_ numListEntries(virtual!P1135, Object_);
 @method Object_ _numListEntries(P1137, Object_) { return new Object_(); }
 @method Object_ _numListEntries(P1135, Object_) { return new Object_(); }
@@ -7632,6 +8327,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _nameMessageList(P1137) { return new Object_(); }
 @method Object_ _nameMessageList(P1135) { return new Object_(); }
 @method Object_ _nameMessageList(P1136) { return new Object_(); }
+@mptr("hash") Object_ newListPaneFor(virtual!P1135, Object_);
+@method Object_ _newListPaneFor(P1137, Object_) { return new Object_(); }
+@method Object_ _newListPaneFor(P1135, Object_) { return new Object_(); }
+@method Object_ _newListPaneFor(P1136, Object_) { return new Object_(); }
 @mptr("hash") Object_ eqv(virtual!Boolean, Object_);
 @method Object_ _eqv(True, Object_) { return new Object_(); }
 @method Object_ _eqv(False, Object_) { return new Object_(); }
@@ -7653,14 +8352,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ or(virtual!Boolean, Object_);
 @method Object_ _or(True, Object_) { return new Object_(); }
 @method Object_ _or(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ and(virtual!Object_, Object_);
+@mptr("hash") Object_ and(virtual!Object, Object_);
 @method Object_ _and(True, Object_) { return new Object_(); }
 @method Object_ _and(Integer, Object_) { return new Object_(); }
 @method Object_ _and(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ isFixedObject(virtual!Object_);
+@mptr("hash") Object_ isFixedObject(virtual!Object);
 @method Object_ _isFixedObject(True) { return new Object_(); }
 @method Object_ _isFixedObject(SmallInteger) { return new Object_(); }
-@method Object_ _isFixedObject(Object_) { return new Object_(); }
+@method Object_ _isFixedObject(Object) { return new Object_(); }
 @method Object_ _isFixedObject(False) { return new Object_(); }
 @method Object_ _isFixedObject(Character) { return new Object_(); }
 @method Object_ _isFixedObject(UndefinedObject) { return new Object_(); }
@@ -7670,50 +8369,59 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ privateRemoveKeyIfabsent(virtual!Dictionary, Object_, Object_);
 @method Object_ _privateRemoveKeyIfabsent(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _privateRemoveKeyIfabsent(MethodDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ referencesTo(virtual!Object_, Object_);
+@mptr("hash") Object_ referencesTo(virtual!Object, Object_);
 @method Object_ _referencesTo(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _referencesTo(SourceManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ atIfabsentput(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ atIfabsentput(virtual!Object, Object_, Object_);
 @method Object_ _atIfabsentput(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _atIfabsentput(PARTSFileOperationContext, Object_, Object_) { return new Object_(); }
 @method Object_ _atIfabsentput(Dictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ imageName(virtual!Object_);
+@mptr("hash") Object_ imageName(virtual!Object);
 @method Object_ _imageName(SystemDictionary) { return new Object_(); }
 @method Object_ _imageName(SessionModel) { return new Object_(); }
-@mptr("hash") Object_ save(virtual!Object_);
+@mptr("hash") Object_ versionNumbers(virtual!Object);
+@method Object_ _versionNumbers(SystemDictionary) { return new Object_(); }
+@method Object_ _versionNumbers(METACLASS_PARTSSessionManager) { return new Object_(); }
+@mptr("hash") Object_ save(virtual!Object);
 @method Object_ _save(SystemDictionary) { return new Object_(); }
 @method Object_ _save(FileDialog) { return new Object_(); }
 @method Object_ _save(PARTSTextPanePart) { return new Object_(); }
 @method Object_ _save(PARTSTextWindow) { return new Object_(); }
-@mptr("hash") Object_ implementorsOfIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ implementorsOfIn(virtual!Object, Object_, Object_);
 @method Object_ _implementorsOfIn(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _implementorsOfIn(SourceManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ referencesToIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ versionNumberString(virtual!Object);
+@method Object_ _versionNumberString(SystemDictionary) { return new Object_(); }
+@method Object_ _versionNumberString(METACLASS_PARTSSessionManager) { return new Object_(); }
+@mptr("hash") Object_ referencesToIn(virtual!Object, Object_, Object_);
 @method Object_ _referencesToIn(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _referencesToIn(SourceManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ privateAdd(virtual!Object_, Object_);
+@mptr("hash") Object_ platform(virtual!Object);
+@method Object_ _platform(SystemDictionary) { return new Object_(); }
+@method Object_ _platform(ListConnectionPane) { return new Object_(); }
+@mptr("hash") Object_ privateAdd(virtual!Object, Object_);
 @method Object_ _privateAdd(SystemDictionary, Object_) { return new Object_(); }
 @method Object_ _privateAdd(SymbolSet, Object_) { return new Object_(); }
 @method Object_ _privateAdd(ObjectStoreFileObjects, Object_) { return new Object_(); }
 @method Object_ _privateAdd(HashedCollection, Object_) { return new Object_(); }
 @method Object_ _privateAdd(ObjectStoreObjects, Object_) { return new Object_(); }
-@mptr("hash") Object_ sendersOfIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ sendersOfIn(virtual!Object, Object_, Object_);
 @method Object_ _sendersOfIn(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _sendersOfIn(SourceManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ referencesToStringIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ referencesToStringIn(virtual!Object, Object_, Object_);
 @method Object_ _referencesToStringIn(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _referencesToStringIn(SourceManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ launch(virtual!Object_);
+@mptr("hash") Object_ launch(virtual!Object);
 @method Object_ _launch(SystemDictionary) { return new Object_(); }
 @method Object_ _launch(PARTSLaunchPadPart) { return new Object_(); }
-@mptr("hash") Object_ isRunTime(virtual!Object_);
+@mptr("hash") Object_ isRunTime(virtual!Object);
 @method Object_ _isRunTime(SystemDictionary) { return new Object_(); }
 @method Object_ _isRunTime(SessionModel) { return new Object_(); }
 @mptr("hash") Object_ removeKeyIfabsent(virtual!Dictionary, Object_, Object_);
 @method Object_ _removeKeyIfabsent(SystemDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _removeKeyIfabsent(MethodDictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _removeKeyIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ entryHeight(virtual!Object_);
+@mptr("hash") Object_ entryHeight(virtual!Object);
 @method Object_ _entryHeight(P1139) { return new Object_(); }
 @method Object_ _entryHeight(PARTSSequenceEditor) { return new Object_(); }
 @method Object_ _entryHeight(PARTSPathSequenceEditor) { return new Object_(); }
@@ -7729,10 +8437,19 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _numberOfEntries(P1139) { return new Object_(); }
 @method Object_ _numberOfEntries(PARTSSequenceEditor) { return new Object_(); }
 @method Object_ _numberOfEntries(PARTSPathSequenceEditor) { return new Object_(); }
-@mptr("hash") Object_ nominalFlipSizeBytes(virtual!Object_, Object_);
+@mptr("hash") Object_ showMaximizedWindow(virtual!Object);
+@method Object_ _showMaximizedWindow(WindowHandle) { return new Object_(); }
+@method Object_ _showMaximizedWindow(ApplicationWindow) { return new Object_(); }
+@mptr("hash") Object_ showIconicWindow(virtual!Object);
+@method Object_ _showIconicWindow(WindowHandle) { return new Object_(); }
+@method Object_ _showIconicWindow(ApplicationWindow) { return new Object_(); }
+@mptr("hash") Object_ showWindow(virtual!Object, Object_);
+@method Object_ _showWindow(WindowHandle, Object_) { return new Object_(); }
+@method Object_ _showWindow(PARTSWindowPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ nominalFlipSizeBytes(virtual!Object, Object_);
 @method Object_ _nominalFlipSizeBytes(VirtualMachineConfiguration, Object_) { return new Object_(); }
 @method Object_ _nominalFlipSizeBytes(VirtualMachineExe, Object_) { return new Object_(); }
-@mptr("hash") Object_ paddingSizeBytes(virtual!Object_, Object_);
+@mptr("hash") Object_ paddingSizeBytes(virtual!Object, Object_);
 @method Object_ _paddingSizeBytes(VirtualMachineConfiguration, Object_) { return new Object_(); }
 @method Object_ _paddingSizeBytes(VirtualMachineExe, Object_) { return new Object_(); }
 @mptr("hash") Object_ reserved(virtual!ExternalBuffer);
@@ -7744,7 +8461,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ reserved(virtual!ExternalBuffer, Object_);
 @method Object_ _reserved(VirtualMachineConfiguration, Object_) { return new Object_(); }
 @method Object_ _reserved(WinMetafileheader, Object_) { return new Object_(); }
-@mptr("hash") Object_ location(virtual!Object_);
+@mptr("hash") Object_ location(virtual!Object);
 @method Object_ _location(P1147) { return new Object_(); }
 @method Object_ _location(RecordingPen) { return new Object_(); }
 @method Object_ _location(GraphicsTool) { return new Object_(); }
@@ -7780,9 +8497,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ isItem(virtual!P1147);
 @method Object_ _isItem(P1147) { return new Object_(); }
 @method Object_ _isItem(P1151) { return new Object_(); }
-@mptr("hash") Object_ copy(virtual!Object_);
+@mptr("hash") Object_ copy(virtual!Object);
 @method Object_ _copy(P1147) { return new Object_(); }
-@method Object_ _copy(Object_) { return new Object_(); }
+@method Object_ _copy(Object) { return new Object_(); }
 @method Object_ _copy(FileSystemPath) { return new Object_(); }
 @method Object_ _copy(CompiledMethod) { return new Object_(); }
 @mptr("hash") Object_ hasLandingPlug(virtual!P1114);
@@ -7831,7 +8548,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _interfaceMenuDeleteSelector(P1141) { return new Object_(); }
 @method Object_ _interfaceMenuDeleteSelector(P1143) { return new Object_(); }
 @method Object_ _interfaceMenuDeleteSelector(P1140) { return new Object_(); }
-@mptr("hash") Object_ isValidEvent(virtual!Object_, Object_);
+@mptr("hash") Object_ isValidEvent(virtual!Object, Object_);
 @method Object_ _isValidEvent(P1141, Object_) { return new Object_(); }
 @method Object_ _isValidEvent(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _isValidEvent(P1142, Object_) { return new Object_(); }
@@ -7863,6 +8580,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fillInterfaceList(P1141, Object_) { return new Object_(); }
 @method Object_ _fillInterfaceList(P1143, Object_) { return new Object_(); }
 @method Object_ _fillInterfaceList(P1142, Object_) { return new Object_(); }
+@mptr("hash") Object_ deletedWrappers(virtual!Object, Object_);
+@method Object_ _deletedWrappers(P1141, Object_) { return new Object_(); }
+@method Object_ _deletedWrappers(P1143, Object_) { return new Object_(); }
+@method Object_ _deletedWrappers(PARTSBitEditor, Object_) { return new Object_(); }
+@method Object_ _deletedWrappers(P1142, Object_) { return new Object_(); }
 @mptr("hash") Object_ scriptPaneChanged(virtual!P1140);
 @method Object_ _scriptPaneChanged(P1141) { return new Object_(); }
 @method Object_ _scriptPaneChanged(P1140) { return new Object_(); }
@@ -7870,114 +8592,123 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ defineEvent(virtual!P1141);
 @method Object_ _defineEvent(P1141) { return new Object_(); }
 @method Object_ _defineEvent(P1142) { return new Object_(); }
+@mptr("hash") Object_ deleteEvent(virtual!P1141);
+@method Object_ _deleteEvent(P1141) { return new Object_(); }
+@method Object_ _deleteEvent(P1142) { return new Object_(); }
 @mptr("hash") Object_ interfacePrintTitle(virtual!P1140);
 @method Object_ _interfacePrintTitle(P1141) { return new Object_(); }
 @method Object_ _interfacePrintTitle(P1143) { return new Object_(); }
 @method Object_ _interfacePrintTitle(P1140) { return new Object_(); }
 @method Object_ _interfacePrintTitle(P1142) { return new Object_(); }
-@mptr("hash") Object_ closeSignOn(virtual!Object_);
+@mptr("hash") Object_ closeSignOn(virtual!Object);
 @method Object_ _closeSignOn(VirtualMachineExe) { return new Object_(); }
 @method Object_ _closeSignOn(SessionModel) { return new Object_(); }
-@mptr("hash") Object_ addObjectsExternalsObjects(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ addObjectsExternalsObjects(virtual!Object, Object_, Object_, Object_);
 @method Object_ _addObjectsExternalsObjects(VirtualMachineExe, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _addObjectsExternalsObjects(ObjectLoader, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ rightTop(virtual!Object_);
+@mptr("hash") Object_ rightTop(virtual!Object);
 @method Object_ _rightTop(Rectangle) { return new Object_(); }
 @method Object_ _rightTop(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ merge(virtual!Object_, Object_);
+@mptr("hash") Object_ merge(virtual!Object, Object_);
 @method Object_ _merge(Rectangle, Object_) { return new Object_(); }
 @method Object_ _merge(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ isRectangle(virtual!Object_);
+@mptr("hash") Object_ isRectangle(virtual!Object);
 @method Object_ _isRectangle(Rectangle) { return new Object_(); }
-@method Object_ _isRectangle(Object_) { return new Object_(); }
-@mptr("hash") Object_ originExtent(virtual!Object_, Object_, Object_);
+@method Object_ _isRectangle(Object) { return new Object_(); }
+@mptr("hash") Object_ originExtent(virtual!Object, Object_, Object_);
 @method Object_ _originExtent(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _originExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ mapToScreen(virtual!Object_, Object_);
+@mptr("hash") Object_ mapToScreen(virtual!Object, Object_);
 @method Object_ _mapToScreen(Rectangle, Object_) { return new Object_(); }
 @method Object_ _mapToScreen(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ mapClientToScreen(virtual!Object_, Object_);
+@mptr("hash") Object_ mapClientToScreen(virtual!Object, Object_);
 @method Object_ _mapClientToScreen(Rectangle, Object_) { return new Object_(); }
 @method Object_ _mapClientToScreen(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftBottomRighttop(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ leftBottomRighttop(virtual!Object, Object_, Object_);
 @method Object_ _leftBottomRighttop(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _leftBottomRighttop(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ moveBy(virtual!Object_, Object_);
+@mptr("hash") Object_ moveBy(virtual!Object, Object_);
 @method Object_ _moveBy(Rectangle, Object_) { return new Object_(); }
 @method Object_ _moveBy(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ moveTo(virtual!Object_, Object_);
+@mptr("hash") Object_ moveTo(virtual!Object, Object_);
 @method Object_ _moveTo(Rectangle, Object_) { return new Object_(); }
 @method Object_ _moveTo(FileSystemEntity, Object_) { return new Object_(); }
-@mptr("hash") Object_ asLayout(virtual!Object_);
+@mptr("hash") Object_ mapFromWindowTo(virtual!Object, Object_, Object_);
+@method Object_ _mapFromWindowTo(Rectangle, Object_, Object_) { return new Object_(); }
+@method Object_ _mapFromWindowTo(Point, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ asLayout(virtual!Object);
 @method Object_ _asLayout(Rectangle) { return new Object_(); }
 @method Object_ _asLayout(LayoutUnit) { return new Object_(); }
-@mptr("hash") Object_ corner(virtual!Object_, Object_);
+@mptr("hash") Object_ mapToWindow(virtual!Object, Object_);
+@method Object_ _mapToWindow(Rectangle, Object_) { return new Object_(); }
+@method Object_ _mapToWindow(Point, Object_) { return new Object_(); }
+@mptr("hash") Object_ corner(virtual!Object, Object_);
 @method Object_ _corner(Rectangle, Object_) { return new Object_(); }
 @method Object_ _corner(TextSelection, Object_) { return new Object_(); }
 @method Object_ _corner(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftTop(virtual!Object_);
+@mptr("hash") Object_ leftTop(virtual!Object);
 @method Object_ _leftTop(Rectangle) { return new Object_(); }
 @method Object_ _leftTop(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ expandBy(virtual!Object_, Object_);
+@mptr("hash") Object_ expandBy(virtual!Object, Object_);
 @method Object_ _expandBy(Rectangle, Object_) { return new Object_(); }
 @method Object_ _expandBy(PARTSMenuPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftTop(virtual!Object_, Object_);
+@mptr("hash") Object_ leftTop(virtual!Object, Object_);
 @method Object_ _leftTop(Rectangle, Object_) { return new Object_(); }
 @method Object_ _leftTop(PARTSPropertyUnit, Object_) { return new Object_(); }
-@mptr("hash") Object_ truncated(virtual!Object_);
+@mptr("hash") Object_ truncated(virtual!Object);
 @method Object_ _truncated(Rectangle) { return new Object_(); }
 @method Object_ _truncated(Integer) { return new Object_(); }
 @method Object_ _truncated(Fraction) { return new Object_(); }
 @method Object_ _truncated(Float) { return new Object_(); }
 @method Object_ _truncated(Point) { return new Object_(); }
 @method Object_ _truncated(Number) { return new Object_(); }
-@mptr("hash") Object_ leftBottom(virtual!Object_, Object_);
+@mptr("hash") Object_ leftBottom(virtual!Object, Object_);
 @method Object_ _leftBottom(Rectangle, Object_) { return new Object_(); }
 @method Object_ _leftBottom(PARTSPropertyUnit, Object_) { return new Object_(); }
-@mptr("hash") Object_ rightBottom(virtual!Object_);
+@mptr("hash") Object_ rightBottom(virtual!Object);
 @method Object_ _rightBottom(Rectangle) { return new Object_(); }
 @method Object_ _rightBottom(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ rightBottom(virtual!Object_, Object_);
+@mptr("hash") Object_ rightBottom(virtual!Object, Object_);
 @method Object_ _rightBottom(Rectangle, Object_) { return new Object_(); }
 @method Object_ _rightBottom(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ scaleFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ scaleFrom(virtual!Object, Object_);
 @method Object_ _scaleFrom(Rectangle, Object_) { return new Object_(); }
 @method Object_ _scaleFrom(PARTSFramer, Object_) { return new Object_(); }
-@mptr("hash") Object_ deviceToLogical(virtual!Object_, Object_);
+@mptr("hash") Object_ deviceToLogical(virtual!Object, Object_);
 @method Object_ _deviceToLogical(Rectangle, Object_) { return new Object_(); }
 @method Object_ _deviceToLogical(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftTopRightbottom(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ leftTopRightbottom(virtual!Object, Object_, Object_);
 @method Object_ _leftTopRightbottom(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _leftTopRightbottom(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftBottom(virtual!Object_);
+@mptr("hash") Object_ leftBottom(virtual!Object);
 @method Object_ _leftBottom(Rectangle) { return new Object_(); }
 @method Object_ _leftBottom(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ mapScreenToClient(virtual!Object_, Object_);
+@mptr("hash") Object_ mapScreenToClient(virtual!Object, Object_);
 @method Object_ _mapScreenToClient(Rectangle, Object_) { return new Object_(); }
 @method Object_ _mapScreenToClient(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftBottomExtent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ leftBottomExtent(virtual!Object, Object_, Object_);
 @method Object_ _leftBottomExtent(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _leftBottomExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ rounded(virtual!Object_);
+@mptr("hash") Object_ rounded(virtual!Object);
 @method Object_ _rounded(Rectangle) { return new Object_(); }
 @method Object_ _rounded(Integer) { return new Object_(); }
 @method Object_ _rounded(Point) { return new Object_(); }
 @method Object_ _rounded(Number) { return new Object_(); }
-@mptr("hash") Object_ intersect(virtual!Object_, Object_);
+@mptr("hash") Object_ intersect(virtual!Object, Object_);
 @method Object_ _intersect(Rectangle, Object_) { return new Object_(); }
 @method Object_ _intersect(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftTopExtent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ leftTopExtent(virtual!Object, Object_, Object_);
 @method Object_ _leftTopExtent(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _leftTopExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ originCorner(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ originCorner(virtual!Object, Object_, Object_);
 @method Object_ _originCorner(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _originCorner(TextSelection, Object_, Object_) { return new Object_(); }
 @method Object_ _originCorner(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _originCorner(METACLASS_TextSelection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ changeContainingRectTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ changeContainingRectTo(virtual!Object, Object_, Object_);
 @method Object_ _changeContainingRectTo(Rectangle, Object_, Object_) { return new Object_(); }
 @method Object_ _changeContainingRectTo(PARTSFramer, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ corner(virtual!Object_);
+@mptr("hash") Object_ corner(virtual!Object);
 @method Object_ _corner(Rectangle) { return new Object_(); }
 @method Object_ _corner(TextSelection) { return new Object_(); }
 @mptr("hash") Object_ translateOriginByextent(virtual!P1148, Object_, Object_);
@@ -8011,59 +8742,59 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _rem(SmallInteger, Object_) { return new Object_(); }
 @method Object_ _rem(Integer, Object_) { return new Object_(); }
 @method Object_ _rem(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ isSmallInteger(virtual!Object_);
+@mptr("hash") Object_ isSmallInteger(virtual!Object);
 @method Object_ _isSmallInteger(SmallInteger) { return new Object_(); }
-@method Object_ _isSmallInteger(Object_) { return new Object_(); }
-@mptr("hash") Object_ printString(virtual!Object_);
+@method Object_ _isSmallInteger(Object) { return new Object_(); }
+@mptr("hash") Object_ printString(virtual!Object);
 @method Object_ _printString(SmallInteger) { return new Object_(); }
-@method Object_ _printString(Object_) { return new Object_(); }
+@method Object_ _printString(Object) { return new Object_(); }
 @mptr("hash") Object_ computeOptionalLayoutDeltalefttop(virtual!P1135, Object_, Object_);
 @method Object_ _computeOptionalLayoutDeltalefttop(P1135, Object_, Object_) { return new Object_(); }
 @method Object_ _computeOptionalLayoutDeltalefttop(P1138, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openReplace(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ openReplace(virtual!Object, Object_, Object_);
 @method Object_ _openReplace(FindReplaceDialog, Object_, Object_) { return new Object_(); }
 @method Object_ _openReplace(METACLASS_FindReplaceDialog, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ dumpOn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ dumpOn(virtual!Object, Object_, Object_);
 @method Object_ _dumpOn(ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _dumpOn(ObjectDumper, Object_, Object_) { return new Object_(); }
 @method Object_ _dumpOn(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _dumpOn(METACLASS_ObjectDumper, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ clientMessageHandler(virtual!Object_, Object_);
+@mptr("hash") Object_ clientMessageHandler(virtual!Object, Object_);
 @method Object_ _clientMessageHandler(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _clientMessageHandler(ObjectDumper, Object_) { return new Object_(); }
 @method Object_ _clientMessageHandler(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadFromLoadmaps(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ loadFromLoadmaps(virtual!Object, Object_, Object_);
 @method Object_ _loadFromLoadmaps(ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _loadFromLoadmaps(ObjectLoader, Object_, Object_) { return new Object_(); }
 @method Object_ _loadFromLoadmaps(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _loadFromLoadmaps(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ recordMessageTypePrefix(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ recordMessageTypePrefix(virtual!Object, Object_, Object_, Object_);
 @method Object_ _recordMessageTypePrefix(ObjectFiler, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _recordMessageTypePrefix(ObjectLoader, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isLoadingCurrentVersion(virtual!Object_);
+@mptr("hash") Object_ isLoadingCurrentVersion(virtual!Object);
 @method Object_ _isLoadingCurrentVersion(ObjectFiler) { return new Object_(); }
 @method Object_ _isLoadingCurrentVersion(ObjectLoader) { return new Object_(); }
-@mptr("hash") Object_ recordSummaryMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ recordSummaryMessage(virtual!Object, Object_);
 @method Object_ _recordSummaryMessage(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _recordSummaryMessage(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ log(virtual!Object_, Object_);
+@mptr("hash") Object_ log(virtual!Object, Object_);
 @method Object_ _log(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _log(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadMapsDictFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ loadMapsDictFrom(virtual!Object, Object_);
 @method Object_ _loadMapsDictFrom(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadMapsDictFrom(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadMapIsValidSourcevariablesDestinationvariables(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ loadMapIsValidSourcevariablesDestinationvariables(virtual!Object, Object_, Object_, Object_);
 @method Object_ _loadMapIsValidSourcevariablesDestinationvariables(ObjectFiler, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _loadMapIsValidSourcevariablesDestinationvariables(ObjectStoreFileExternal, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ restoreLoadedObjects(virtual!Object_, Object_);
+@mptr("hash") Object_ restoreLoadedObjects(virtual!Object, Object_);
 @method Object_ _restoreLoadedObjects(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _restoreLoadedObjects(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ loadFrom(virtual!Object, Object_);
 @method Object_ _loadFrom(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadFrom(ObjectLoader, Object_) { return new Object_(); }
 @method Object_ _loadFrom(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadFrom(METACLASS_PARTSDosFileDescriptor, Object_) { return new Object_(); }
-@mptr("hash") Object_ currentVersion(virtual!Object_);
+@mptr("hash") Object_ currentVersion(virtual!Object);
 @method Object_ _currentVersion(ObjectFiler) { return new Object_(); }
 @method Object_ _currentVersion(ObjectDumper) { return new Object_(); }
 @method Object_ _currentVersion(ObjectLoader) { return new Object_(); }
@@ -8074,115 +8805,139 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _currentVersion(METACLASS_ObjectLoader) { return new Object_(); }
 @method Object_ _currentVersion(METACLASS_P1100) { return new Object_(); }
 @method Object_ _currentVersion(METACLASS_PARTSFile) { return new Object_(); }
-@mptr("hash") Object_ clientAllocateDictionaryAction(virtual!Object_, Object_);
+@mptr("hash") Object_ clientAllocateDictionaryAction(virtual!Object, Object_);
 @method Object_ _clientAllocateDictionaryAction(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _clientAllocateDictionaryAction(ObjectDumper, Object_) { return new Object_(); }
-@mptr("hash") Object_ clientContext(virtual!Object_, Object_);
+@mptr("hash") Object_ objectVersion(virtual!Object);
+@method Object_ _objectVersion(ObjectFiler) { return new Object_(); }
+@method Object_ _objectVersion(ObjectDumper) { return new Object_(); }
+@method Object_ _objectVersion(ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ clientContext(virtual!Object, Object_);
 @method Object_ _clientContext(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _clientContext(ObjectDumper, Object_) { return new Object_(); }
 @method Object_ _clientContext(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ clientContext(virtual!Object_);
+@mptr("hash") Object_ clientContext(virtual!Object);
 @method Object_ _clientContext(ObjectFiler) { return new Object_(); }
 @method Object_ _clientContext(ObjectDumper) { return new Object_(); }
 @method Object_ _clientContext(ObjectLoader) { return new Object_(); }
-@mptr("hash") Object_ upgradeFromPreviousVersion(virtual!Object_, Object_);
+@mptr("hash") Object_ upgradeFromPreviousVersion(virtual!Object, Object_);
 @method Object_ _upgradeFromPreviousVersion(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _upgradeFromPreviousVersion(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ libraryNameOf(virtual!Object_, Object_);
+@mptr("hash") Object_ libraryNameOf(virtual!Object, Object_);
 @method Object_ _libraryNameOf(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _libraryNameOf(ObjectDumper, Object_) { return new Object_(); }
-@mptr("hash") Object_ recordWarningMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ recordWarningMessage(virtual!Object, Object_);
 @method Object_ _recordWarningMessage(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _recordWarningMessage(ObjectStoreFileExternal, Object_) { return new Object_(); }
 @method Object_ _recordWarningMessage(ObjectDumper, Object_) { return new Object_(); }
 @method Object_ _recordWarningMessage(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ restoreLoadedHashStructures(virtual!Object_, Object_);
+@mptr("hash") Object_ restoreLoadedHashStructures(virtual!Object, Object_);
 @method Object_ _restoreLoadedHashStructures(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _restoreLoadedHashStructures(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ registerUpgradeMutationFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ registerUpgradeMutationFromTo(virtual!Object, Object_, Object_);
 @method Object_ _registerUpgradeMutationFromTo(ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _registerUpgradeMutationFromTo(ObjectLoader, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ warningLoadCancelled(virtual!Object_);
+@mptr("hash") Object_ warningLoadCancelled(virtual!Object);
 @method Object_ _warningLoadCancelled(ObjectFiler) { return new Object_(); }
 @method Object_ _warningLoadCancelled(ObjectLoader) { return new Object_(); }
-@mptr("hash") Object_ describeClassesFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ describeClassesFromTo(virtual!Object, Object_, Object_);
 @method Object_ _describeClassesFromTo(ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeClassesFromTo(ObjectLoader, Object_, Object_) { return new Object_(); }
 @method Object_ _describeClassesFromTo(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeClassesFromTo(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ initializeForOperationOn(virtual!Object_, Object_);
+@mptr("hash") Object_ initializeForOperationOn(virtual!Object, Object_);
 @method Object_ _initializeForOperationOn(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _initializeForOperationOn(ObjectDumper, Object_) { return new Object_(); }
 @method Object_ _initializeForOperationOn(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ messageStream(virtual!Object_);
+@mptr("hash") Object_ messageStream(virtual!Object);
 @method Object_ _messageStream(ObjectFiler) { return new Object_(); }
 @method Object_ _messageStream(ObjectLoader) { return new Object_(); }
-@mptr("hash") Object_ libraryMappings(virtual!Object_, Object_);
+@mptr("hash") Object_ libraryMappings(virtual!Object, Object_);
 @method Object_ _libraryMappings(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _libraryMappings(ObjectDumper, Object_) { return new Object_(); }
-@mptr("hash") Object_ recordAbortMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ recordAbortMessage(virtual!Object, Object_);
 @method Object_ _recordAbortMessage(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _recordAbortMessage(ObjectStoreFileExternal, Object_) { return new Object_(); }
 @method Object_ _recordAbortMessage(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ recordInfoMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ recordInfoMessage(virtual!Object, Object_);
 @method Object_ _recordInfoMessage(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _recordInfoMessage(ObjectStoreFileExternal, Object_) { return new Object_(); }
 @method Object_ _recordInfoMessage(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadMapUsedFor(virtual!Object_, Object_);
+@mptr("hash") Object_ loadMapUsedFor(virtual!Object, Object_);
 @method Object_ _loadMapUsedFor(ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadMapUsedFor(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ libraryDependencies(virtual!Object_);
+@mptr("hash") Object_ libraryDependencies(virtual!Object);
 @method Object_ _libraryDependencies(ObjectFiler) { return new Object_(); }
 @method Object_ _libraryDependencies(ObjectStoreReader) { return new Object_(); }
 @method Object_ _libraryDependencies(ObjectDumper) { return new Object_(); }
 @method Object_ _libraryDependencies(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ describeFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ describeFromTo(virtual!Object, Object_, Object_);
 @method Object_ _describeFromTo(ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeFromTo(ObjectLoader, Object_, Object_) { return new Object_(); }
 @method Object_ _describeFromTo(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeFromTo(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openWorkspace(virtual!Object_);
+@mptr("hash") Object_ objectCountEstimate(virtual!Object, Object_);
+@method Object_ _objectCountEstimate(ObjectFiler, Object_) { return new Object_(); }
+@method Object_ _objectCountEstimate(ObjectStoreWriter, Object_) { return new Object_(); }
+@method Object_ _objectCountEstimate(ObjectDumper, Object_) { return new Object_(); }
+@method Object_ _objectCountEstimate(ObjectStoreObjects, Object_) { return new Object_(); }
+@mptr("hash") Object_ useBindingInformation(virtual!Object);
+@method Object_ _useBindingInformation(ObjectFiler) { return new Object_(); }
+@method Object_ _useBindingInformation(ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ useBindingInformation(virtual!Object, Object_);
+@method Object_ _useBindingInformation(ObjectFiler, Object_) { return new Object_(); }
+@method Object_ _useBindingInformation(ObjectLoader, Object_) { return new Object_(); }
+@mptr("hash") Object_ openWorkspace(virtual!Object);
 @method Object_ _openWorkspace(Browser) { return new Object_(); }
 @method Object_ _openWorkspace(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ printIt(virtual!Object_);
+@mptr("hash") Object_ printIt(virtual!Object);
 @method Object_ _printIt(Browser) { return new Object_(); }
 @method Object_ _printIt(TextPane) { return new Object_(); }
 @method Object_ _printIt(ApplicationWindow) { return new Object_(); }
 @method Object_ _printIt(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ saveImage(virtual!Object_);
+@mptr("hash") Object_ saveImage(virtual!Object);
 @method Object_ _saveImage(Browser) { return new Object_(); }
 @method Object_ _saveImage(ApplicationWindow) { return new Object_(); }
 @method Object_ _saveImage(SaveImageAsDialog) { return new Object_(); }
-@mptr("hash") Object_ fileItIn(virtual!Object_);
+@mptr("hash") Object_ fileItIn(virtual!Object);
 @method Object_ _fileItIn(Browser) { return new Object_(); }
 @method Object_ _fileItIn(TextPane) { return new Object_(); }
 @method Object_ _fileItIn(ApplicationWindow) { return new Object_(); }
 @method Object_ _fileItIn(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ openClassBrowser(virtual!Object_);
+@mptr("hash") Object_ openClassBrowser(virtual!Object);
 @method Object_ _openClassBrowser(Browser) { return new Object_(); }
 @method Object_ _openClassBrowser(ApplicationWindow) { return new Object_(); }
+@mptr("hash") Object_ doIt(virtual!Object);
+@method Object_ _doIt(Browser) { return new Object_(); }
+@method Object_ _doIt(TextPane) { return new Object_(); }
+@method Object_ _doIt(ApplicationWindow) { return new Object_(); }
+@method Object_ _doIt(TextPaneControl) { return new Object_(); }
+@method Object_ _doIt(P1140) { return new Object_(); }
 @mptr("hash") Object_ aboutDialogClass(virtual!Browser);
 @method Object_ _aboutDialogClass(Browser) { return new Object_(); }
 @method Object_ _aboutDialogClass(TranscriptWindow) { return new Object_(); }
 @mptr("hash") Object_ optionsMenu(virtual!ViewManager);
 @method Object_ _optionsMenu(Browser) { return new Object_(); }
 @method Object_ _optionsMenu(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ install(virtual!Object_);
+@mptr("hash") Object_ install(virtual!Object);
 @method Object_ _install(Browser) { return new Object_(); }
 @method Object_ _install(ClassInstaller) { return new Object_(); }
 @method Object_ _install(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ openDiskBrowser(virtual!Object_);
+@mptr("hash") Object_ openDiskBrowser(virtual!Object);
 @method Object_ _openDiskBrowser(Browser) { return new Object_(); }
 @method Object_ _openDiskBrowser(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ saveImageAs(virtual!Object_);
+@mptr("hash") Object_ saveImageAs(virtual!Object);
 @method Object_ _saveImageAs(Browser) { return new Object_(); }
 @method Object_ _saveImageAs(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ inspectIt(virtual!Object_);
+@mptr("hash") Object_ inspectIt(virtual!Object);
 @method Object_ _inspectIt(Browser) { return new Object_(); }
 @method Object_ _inspectIt(TextPane) { return new Object_(); }
 @method Object_ _inspectIt(ApplicationWindow) { return new Object_(); }
 @method Object_ _inspectIt(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ operation(virtual!Object_, Object_);
+@mptr("hash") Object_ forLaunch(virtual!Object);
+@method Object_ _forLaunch(PARTSMirrorCopyDictionary) { return new Object_(); }
+@method Object_ _forLaunch(PARTSNestedPart) { return new Object_(); }
+@mptr("hash") Object_ operation(virtual!Object, Object_);
 @method Object_ _operation(PARTSMirrorCopyDictionary, Object_) { return new Object_(); }
 @method Object_ _operation(PARTSCatalogDragSession, Object_) { return new Object_(); }
 @method Object_ _operation(PARTSEditorMoveSession, Object_) { return new Object_(); }
@@ -8202,7 +8957,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _previousValue(EntryField, Object_) { return new Object_(); }
 @method Object_ _previousValue(TextPane, Object_) { return new Object_(); }
 @method Object_ _previousValue(ComboBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ clear(virtual!Object_);
+@mptr("hash") Object_ clear(virtual!Object);
 @method Object_ _clear(EntryField) { return new Object_(); }
 @method Object_ _clear(ComboBox) { return new Object_(); }
 @method Object_ _clear(PARTSBitEditor) { return new Object_(); }
@@ -8224,7 +8979,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _initialText(ComboBox) { return new Object_(); }
 @method Object_ _initialText(ControlPane) { return new Object_(); }
 @method Object_ _initialText(SubPane) { return new Object_(); }
-@mptr("hash") Object_ isReadOnly(virtual!Object_);
+@mptr("hash") Object_ isReadOnly(virtual!Object);
 @method Object_ _isReadOnly(EntryField) { return new Object_(); }
 @method Object_ _isReadOnly(TextPane) { return new Object_(); }
 @method Object_ _isReadOnly(File) { return new Object_(); }
@@ -8237,10 +8992,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ textChanged(virtual!EntryField);
 @method Object_ _textChanged(EntryField) { return new Object_(); }
 @method Object_ _textChanged(TextEdit) { return new Object_(); }
+@mptr("hash") Object_ deleteSelection(virtual!Object);
+@method Object_ _deleteSelection(EntryField) { return new Object_(); }
+@method Object_ _deleteSelection(P1124) { return new Object_(); }
 @mptr("hash") Object_ setContents(virtual!SubPane);
 @method Object_ _setContents(EntryField) { return new Object_(); }
 @method Object_ _setContents(ToolPane) { return new Object_(); }
-@mptr("hash") Object_ modified(virtual!Object_);
+@mptr("hash") Object_ modified(virtual!Object);
 @method Object_ _modified(EntryField) { return new Object_(); }
 @method Object_ _modified(PARTSPropertyString) { return new Object_(); }
 @method Object_ _modified(PARTSPropertyUnit) { return new Object_(); }
@@ -8249,7 +9007,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _modified(SubPane) { return new Object_(); }
 @method Object_ _modified(P1124) { return new Object_(); }
 @method Object_ _modified(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ nextPutAll(virtual!Object_, Object_);
+@mptr("hash") Object_ nextPutAll(virtual!Object, Object_);
 @method Object_ _nextPutAll(EntryField, Object_) { return new Object_(); }
 @method Object_ _nextPutAll(FileStream, Object_) { return new Object_(); }
 @method Object_ _nextPutAll(TextPane, Object_) { return new Object_(); }
@@ -8262,6 +9020,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ setTextLimit(virtual!EntryField);
 @method Object_ _setTextLimit(EntryField) { return new Object_(); }
 @method Object_ _setTextLimit(TextEdit) { return new Object_(); }
+@mptr("hash") Object_ autoHScroll(virtual!ControlPane);
+@method Object_ _autoHScroll(EntryField) { return new Object_(); }
+@method Object_ _autoHScroll(ComboBox) { return new Object_(); }
 @mptr("hash") Object_ copySelection(virtual!SubPane);
 @method Object_ _copySelection(EntryField) { return new Object_(); }
 @method Object_ _copySelection(TextPane) { return new Object_(); }
@@ -8274,7 +9035,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _selectFromTo(EntryField, Object_, Object_) { return new Object_(); }
 @method Object_ _selectFromTo(TextPane, Object_, Object_) { return new Object_(); }
 @method Object_ _selectFromTo(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ nextPut(virtual!Object_, Object_);
+@mptr("hash") Object_ nextPut(virtual!Object, Object_);
 @method Object_ _nextPut(EntryField, Object_) { return new Object_(); }
 @method Object_ _nextPut(FileStream, Object_) { return new Object_(); }
 @method Object_ _nextPut(TextPane, Object_) { return new Object_(); }
@@ -8283,15 +9044,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _nextPut(TextPaneControl, Object_) { return new Object_(); }
 @method Object_ _nextPut(WriteStream, Object_) { return new Object_(); }
 @method Object_ _nextPut(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ asBoolean(virtual!Object_, Object_);
+@mptr("hash") Object_ asBoolean(virtual!Object, Object_);
 @method Object_ _asBoolean(PARTSComputationPart, Object_) { return new Object_(); }
 @method Object_ _asBoolean(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _asBoolean(PARTSPrebuiltDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ asInteger(virtual!Object_, Object_);
+@mptr("hash") Object_ asInteger(virtual!Object, Object_);
 @method Object_ _asInteger(StringDictionaryReader, Object_) { return new Object_(); }
 @method Object_ _asInteger(PARTSConversionPart, Object_) { return new Object_(); }
 @method Object_ _asInteger(PARTSNonvisualPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ warning(virtual!Object_, Object_);
+@mptr("hash") Object_ warning(virtual!Object, Object_);
 @method Object_ _warning(StringDictionaryReader, Object_) { return new Object_(); }
 @method Object_ _warning(NotificationManager, Object_) { return new Object_(); }
 @method Object_ _warning(CompilerErrorHandler, Object_) { return new Object_(); }
@@ -8299,7 +9060,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ composedWith(virtual!LayoutUnit, Object_);
 @method Object_ _composedWith(LayoutUnit, Object_) { return new Object_(); }
 @method Object_ _composedWith(CompositeLayout, Object_) { return new Object_(); }
-@mptr("hash") Object_ errorString(virtual!Object_);
+@mptr("hash") Object_ errorString(virtual!Object);
 @method Object_ _errorString(ClassInstaller) { return new Object_(); }
 @method Object_ _errorString(PARTSFixedDecimalEntryFieldPart) { return new Object_(); }
 @method Object_ _errorString(PARTSPhoneNumberEntryFieldPart) { return new Object_(); }
@@ -8310,29 +9071,29 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _errorString(PARTSDateEntryFieldPart) { return new Object_(); }
 @method Object_ _errorString(PARTSEntryFieldPart) { return new Object_(); }
 @method Object_ _errorString(PARTSFormattedEntryField) { return new Object_(); }
-@mptr("hash") Object_ compilerClass(virtual!Object_);
+@mptr("hash") Object_ compilerClass(virtual!Object);
 @method Object_ _compilerClass(ClassInstaller) { return new Object_(); }
 @method Object_ _compilerClass(WorkspaceExpressionEvaluator) { return new Object_(); }
-@mptr("hash") Object_ maxInstanceVariables(virtual!Object_);
+@mptr("hash") Object_ maxInstanceVariables(virtual!Object);
 @method Object_ _maxInstanceVariables(ClassInstaller) { return new Object_(); }
 @method Object_ _maxInstanceVariables(METACLASS_Behavior) { return new Object_(); }
-@mptr("hash") Object_ validateClassVariables(virtual!Object_);
+@mptr("hash") Object_ validateClassVariables(virtual!Object);
 @method Object_ _validateClassVariables(ClassInstaller) { return new Object_(); }
 @method Object_ _validateClassVariables(METACLASS_ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ instanceVariableNames(virtual!Object_, Object_);
+@mptr("hash") Object_ instanceVariableNames(virtual!Object, Object_);
 @method Object_ _instanceVariableNames(ClassInstaller, Object_) { return new Object_(); }
 @method Object_ _instanceVariableNames(MetaClass, Object_) { return new Object_(); }
-@mptr("hash") Object_ subclasses(virtual!Object_);
+@mptr("hash") Object_ subclasses(virtual!Object);
 @method Object_ _subclasses(ClassInstaller) { return new Object_(); }
 @method Object_ _subclasses(Class) { return new Object_(); }
 @method Object_ _subclasses(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ setSelection(virtual!Object_, Object_);
+@mptr("hash") Object_ setSelection(virtual!Object, Object_);
 @method Object_ _setSelection(ListChooser, Object_) { return new Object_(); }
 @method Object_ _setSelection(PARTSNotebook, Object_) { return new Object_(); }
-@mptr("hash") Object_ initialSelection(virtual!Object_, Object_);
+@mptr("hash") Object_ initialSelection(virtual!Object, Object_);
 @method Object_ _initialSelection(ListChooser, Object_) { return new Object_(); }
 @method Object_ _initialSelection(PARTSPropertyButtonGroup, Object_) { return new Object_(); }
-@mptr("hash") Object_ launchSession(virtual!Object_);
+@mptr("hash") Object_ launchSession(virtual!Object);
 @method Object_ _launchSession(PARTSSessionManager) { return new Object_(); }
 @method Object_ _launchSession(METACLASS_PARTSSessionManager) { return new Object_(); }
 @mptr("hash") Object_ partPropertyAddSignedItem(virtual!PARTSFixedDecimalEntryFieldPart, Object_);
@@ -8350,16 +9111,27 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partPropertyAddContentsItem(PARTSStaticTextPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddContentsItem(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddContentsItem(PARTSEntryFieldPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ createUnformattedStringFromValue(virtual!PARTSFormattedEntryField, Object_);
+@method Object_ _createUnformattedStringFromValue(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _createUnformattedStringFromValue(PARTSPictureFieldPart, Object_) { return new Object_(); }
+@method Object_ _createUnformattedStringFromValue(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _createUnformattedStringFromValue(PARTSFormattedEntryField, Object_) { return new Object_(); }
 @mptr("hash") Object_ partPropertyMaxSizeChanged(virtual!PARTSEntryFieldPart, Object_);
 @method Object_ _partPropertyMaxSizeChanged(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyMaxSizeChanged(PARTSEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ decimalPlace(virtual!Object_);
+@mptr("hash") Object_ decimalPlace(virtual!Object);
 @method Object_ _decimalPlace(PARTSFixedDecimalEntryFieldPart) { return new Object_(); }
 @method Object_ _decimalPlace(PARTSCurrencyEntryFieldPart) { return new Object_(); }
 @method Object_ _decimalPlace(NationalLanguageSupport) { return new Object_(); }
 @mptr("hash") Object_ isValidDigit(virtual!PARTSFixedDecimalEntryFieldPart, Object_);
 @method Object_ _isValidDigit(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidDigit(PARTSCurrencyEntryFieldPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ unformattedTextLimit(virtual!PARTSEntryFieldPart);
+@method Object_ _unformattedTextLimit(PARTSFixedDecimalEntryFieldPart) { return new Object_(); }
+@method Object_ _unformattedTextLimit(PARTSPhoneNumberEntryFieldPart) { return new Object_(); }
+@method Object_ _unformattedTextLimit(PARTSPictureFieldPart) { return new Object_(); }
+@method Object_ _unformattedTextLimit(PARTSDateEntryFieldPart) { return new Object_(); }
+@method Object_ _unformattedTextLimit(PARTSEntryFieldPart) { return new Object_(); }
 @mptr("hash") Object_ isValidType(virtual!PARTSFormattedEntryField, Object_);
 @method Object_ _isValidType(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidType(PARTSIntegerEntryFieldPart, Object_) { return new Object_(); }
@@ -8387,6 +9159,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isValidCharacter(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidCharacter(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _isValidCharacter(PARTSFormattedEntryField, Object_) { return new Object_(); }
+@mptr("hash") Object_ formattedString(virtual!PARTSFormattedEntryField);
+@method Object_ _formattedString(PARTSFixedDecimalEntryFieldPart) { return new Object_(); }
+@method Object_ _formattedString(PARTSPictureFieldPart) { return new Object_(); }
+@method Object_ _formattedString(PARTSDateEntryFieldPart) { return new Object_(); }
+@method Object_ _formattedString(PARTSFormattedEntryField) { return new Object_(); }
 @mptr("hash") Object_ partPropertyBeginApply(virtual!PARTSEntryFieldPart, Object_);
 @method Object_ _partPropertyBeginApply(PARTSFixedDecimalEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyBeginApply(PARTSCurrencyEntryFieldPart, Object_) { return new Object_(); }
@@ -8399,41 +9176,41 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _createDatumFrom(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _createDatumFrom(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _createDatumFrom(PARTSFormattedEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ asIndexedColor(virtual!Object_);
+@mptr("hash") Object_ asIndexedColor(virtual!Object);
 @method Object_ _asIndexedColor(Color) { return new Object_(); }
 @method Object_ _asIndexedColor(Integer) { return new Object_(); }
 @method Object_ _asIndexedColor(IndexedColor) { return new Object_(); }
 @method Object_ _asIndexedColor(RGBColor) { return new Object_(); }
-@mptr("hash") Object_ asRGBColor(virtual!Object_);
+@mptr("hash") Object_ asRGBColor(virtual!Object);
 @method Object_ _asRGBColor(Color) { return new Object_(); }
 @method Object_ _asRGBColor(Integer) { return new Object_(); }
 @method Object_ _asRGBColor(IndexedColor) { return new Object_(); }
 @method Object_ _asRGBColor(RGBColor) { return new Object_(); }
-@mptr("hash") Object_ isColor(virtual!Object_);
+@mptr("hash") Object_ isColor(virtual!Object);
 @method Object_ _isColor(Color) { return new Object_(); }
-@method Object_ _isColor(Object_) { return new Object_(); }
+@method Object_ _isColor(Object) { return new Object_(); }
 @mptr("hash") Object_ rightButtonScroll(virtual!SubPane, Object_);
 @method Object_ _rightButtonScroll(PARTSSequencePane, Object_) { return new Object_(); }
 @method Object_ _rightButtonScroll(PARTSDialPanePart, Object_) { return new Object_(); }
 @method Object_ _rightButtonScroll(PARTSIconPane, Object_) { return new Object_(); }
 @method Object_ _rightButtonScroll(SubPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ isExternalHandle(virtual!Object_);
+@mptr("hash") Object_ isExternalHandle(virtual!Object);
 @method Object_ _isExternalHandle(ExternalHandle) { return new Object_(); }
-@method Object_ _isExternalHandle(Object_) { return new Object_(); }
-@mptr("hash") Object_ uLongAtOffset(virtual!Object_, Object_);
+@method Object_ _isExternalHandle(Object) { return new Object_(); }
+@mptr("hash") Object_ uLongAtOffset(virtual!Object, Object_);
 @method Object_ _uLongAtOffset(ExternalHandle, Object_) { return new Object_(); }
 @method Object_ _uLongAtOffset(ExternalBuffer, Object_) { return new Object_(); }
-@mptr("hash") Object_ uShortAtOffset(virtual!Object_, Object_);
+@mptr("hash") Object_ uShortAtOffset(virtual!Object, Object_);
 @method Object_ _uShortAtOffset(ExternalHandle, Object_) { return new Object_(); }
 @method Object_ _uShortAtOffset(DynamicLinkLibrary16, Object_) { return new Object_(); }
 @method Object_ _uShortAtOffset(ExternalBuffer, Object_) { return new Object_(); }
-@mptr("hash") Object_ fillFromAddress(virtual!Object_, Object_);
+@mptr("hash") Object_ fillFromAddress(virtual!Object, Object_);
 @method Object_ _fillFromAddress(ExternalHandle, Object_) { return new Object_(); }
 @method Object_ _fillFromAddress(ExternalBuffer, Object_) { return new Object_(); }
-@mptr("hash") Object_ uLongAtOffsetPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ uLongAtOffsetPut(virtual!Object, Object_, Object_);
 @method Object_ _uLongAtOffsetPut(ExternalHandle, Object_, Object_) { return new Object_(); }
 @method Object_ _uLongAtOffsetPut(ExternalBuffer, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ uShortAtOffsetPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ uShortAtOffsetPut(virtual!Object, Object_, Object_);
 @method Object_ _uShortAtOffsetPut(ExternalHandle, Object_, Object_) { return new Object_(); }
 @method Object_ _uShortAtOffsetPut(DynamicLinkLibrary16, Object_, Object_) { return new Object_(); }
 @method Object_ _uShortAtOffsetPut(ExternalBuffer, Object_, Object_) { return new Object_(); }
@@ -8442,15 +9219,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isDefaultPushButton(PARTSPushButtonPart) { return new Object_(); }
 @method Object_ _isDefaultPushButton(Button) { return new Object_(); }
 @method Object_ _isDefaultPushButton(Toggle) { return new Object_(); }
-@mptr("hash") Object_ showCursor(virtual!Object_, Object_);
+@mptr("hash") Object_ showCursor(virtual!Object, Object_);
 @method Object_ _showCursor(CursorManager, Object_) { return new Object_(); }
 @method Object_ _showCursor(UserDLL, Object_) { return new Object_(); }
-@mptr("hash") Object_ hide(virtual!Object_);
+@mptr("hash") Object_ hide(virtual!Object);
 @method Object_ _hide(CursorManager) { return new Object_(); }
 @method Object_ _hide(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ isCursor(virtual!Object_);
+@mptr("hash") Object_ isCursor(virtual!Object);
 @method Object_ _isCursor(CursorManager) { return new Object_(); }
-@method Object_ _isCursor(Object_) { return new Object_(); }
+@method Object_ _isCursor(Object) { return new Object_(); }
 @mptr("hash") Object_ initModel(virtual!Coff, Object_);
 @method Object_ _initModel(CoffFileReader, Object_) { return new Object_(); }
 @method Object_ _initModel(CoffFileSection, Object_) { return new Object_(); }
@@ -8458,7 +9235,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ openOnSelection(virtual!ListDialog, Object_, Object_);
 @method Object_ _openOnSelection(SeparatedListDialog, Object_, Object_) { return new Object_(); }
 @method Object_ _openOnSelection(ListDialog, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ heightInDialogUnits(virtual!Object_, Object_);
+@mptr("hash") Object_ newListPane(virtual!ListDialog);
+@method Object_ _newListPane(SeparatedListDialog) { return new Object_(); }
+@method Object_ _newListPane(ListDialog) { return new Object_(); }
+@mptr("hash") Object_ heightInDialogUnits(virtual!Object, Object_);
 @method Object_ _heightInDialogUnits(SeparatedListDialog, Object_) { return new Object_(); }
 @method Object_ _heightInDialogUnits(ObjectLoadDialog, Object_) { return new Object_(); }
 @method Object_ _heightInDialogUnits(METACLASS_PARTSDialog, Object_) { return new Object_(); }
@@ -8472,7 +9252,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ writeHeader(virtual!CoffFileWriter, Object_);
 @method Object_ _writeHeader(CoffFileWriter, Object_) { return new Object_(); }
 @method Object_ _writeHeader(PeFileWriter, Object_) { return new Object_(); }
-@mptr("hash") Object_ writeOn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ writeOn(virtual!Object, Object_, Object_);
 @method Object_ _writeOn(CoffFileWriter, Object_, Object_) { return new Object_(); }
 @method Object_ _writeOn(PARTSCodeGeneratorWriterInterface, Object_, Object_) { return new Object_(); }
 @method Object_ _writeOn(METACLASS_PARTSCodeGeneratorWriterInterface, Object_, Object_) { return new Object_(); }
@@ -8494,7 +9274,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ allowWorkbenchToBeDisabled(virtual!TopPane, Object_);
 @method Object_ _allowWorkbenchToBeDisabled(PARTSPrebuiltDialogTopPane, Object_) { return new Object_(); }
 @method Object_ _allowWorkbenchToBeDisabled(PARTSDialogWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isWorkbenchSession(virtual!Object_);
+@mptr("hash") Object_ isWorkbenchSession(virtual!Object);
 @method Object_ _isWorkbenchSession(PARTSPrebuiltDialogTopPane) { return new Object_(); }
 @method Object_ _isWorkbenchSession(METACLASS_PARTSSessionManager) { return new Object_(); }
 @mptr("hash") Object_ isOkToDisable(virtual!TopPane, Object_);
@@ -8503,6 +9283,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ allowWorkbenchToBeDisabled(virtual!TopPane);
 @method Object_ _allowWorkbenchToBeDisabled(PARTSPrebuiltDialogTopPane) { return new Object_(); }
 @method Object_ _allowWorkbenchToBeDisabled(PARTSDialogWindowPart) { return new Object_(); }
+@mptr("hash") Object_ getWindowToDisable(virtual!TopPane, Object_);
+@method Object_ _getWindowToDisable(PARTSPrebuiltDialogTopPane, Object_) { return new Object_(); }
+@method Object_ _getWindowToDisable(DialogTopPane, Object_) { return new Object_(); }
+@method Object_ _getWindowToDisable(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ computeWidth(virtual!PARTSPropertyUnit);
 @method Object_ _computeWidth(PARTSPropertyLineOfButtons) { return new Object_(); }
 @method Object_ _computeWidth(PARTSPropertyMenuAccelerator) { return new Object_(); }
@@ -8520,6 +9304,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _computeWidth(PARTSPropertyFixedList) { return new Object_(); }
 @method Object_ _computeWidth(PARTSPropertyButtonGroup) { return new Object_(); }
 @method Object_ _computeWidth(PARTSPropertyGraphic) { return new Object_(); }
+@mptr("hash") Object_ addToWindow(virtual!PARTSPropertyUnit, Object_);
+@method Object_ _addToWindow(PARTSPropertyLineOfButtons, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyMenuAccelerator, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyIcon, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyString, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyList, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyUnit, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyButton, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyColorAndFont, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyBoolean, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyDateFormat, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyStaticText, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyFixedList, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyButtonGroup, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyFormGeneratorButton, Object_) { return new Object_(); }
+@method Object_ _addToWindow(PARTSPropertyGraphic, Object_) { return new Object_(); }
 @mptr("hash") Object_ framingBlockFor(virtual!PARTSPropertyUnit, Object_);
 @method Object_ _framingBlockFor(PARTSPropertyLineOfButtons, Object_) { return new Object_(); }
 @method Object_ _framingBlockFor(PARTSPropertyButtonGroup, Object_) { return new Object_(); }
@@ -8545,245 +9345,257 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _labelWidth(PARTSPropertyMenuAccelerator) { return new Object_(); }
 @method Object_ _labelWidth(PARTSPropertyString) { return new Object_(); }
 @method Object_ _labelWidth(PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ items(virtual!Object_);
+@mptr("hash") Object_ items(virtual!Object);
 @method Object_ _items(PARTSInterfaceList) { return new Object_(); }
 @method Object_ _items(Menu) { return new Object_(); }
-@mptr("hash") Object_ separators(virtual!Object_, Object_);
+@mptr("hash") Object_ separators(virtual!Object, Object_);
 @method Object_ _separators(PARTSInterfaceList, Object_) { return new Object_(); }
 @method Object_ _separators(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ separators(virtual!Object_);
+@mptr("hash") Object_ separators(virtual!Object);
 @method Object_ _separators(PARTSInterfaceList) { return new Object_(); }
 @method Object_ _separators(ExtendedListBox) { return new Object_(); }
-@mptr("hash") Object_ isPARTSException(virtual!Object_);
+@mptr("hash") Object_ isPARTSException(virtual!Object);
 @method Object_ _isPARTSException(PARTSException) { return new Object_(); }
-@method Object_ _isPARTSException(Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditProperties(virtual!Object_);
-@method Object_ _partEditProperties(Object_) { return new Object_(); }
+@method Object_ _isPARTSException(Object) { return new Object_(); }
+@mptr("hash") Object_ partEditProperties(virtual!Object);
+@method Object_ _partEditProperties(Object) { return new Object_(); }
 @method Object_ _partEditProperties(TextPane) { return new Object_(); }
 @method Object_ _partEditProperties(PARTSGroupPanePart) { return new Object_(); }
-@mptr("hash") Object_ isBoolean(virtual!Object_);
-@method Object_ _isBoolean(Object_) { return new Object_(); }
+@mptr("hash") Object_ isBoolean(virtual!Object);
+@method Object_ _isBoolean(Object) { return new Object_(); }
 @method Object_ _isBoolean(Boolean) { return new Object_(); }
-@mptr("hash") Object_ isRadioButton(virtual!Object_);
-@method Object_ _isRadioButton(Object_) { return new Object_(); }
+@mptr("hash") Object_ isRadioButton(virtual!Object);
+@method Object_ _isRadioButton(Object) { return new Object_(); }
 @method Object_ _isRadioButton(RadioButton) { return new Object_(); }
-@mptr("hash") Object_ isPARTSWrapper(virtual!Object_);
-@method Object_ _isPARTSWrapper(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSWrapper(virtual!Object);
+@method Object_ _isPARTSWrapper(Object) { return new Object_(); }
 @method Object_ _isPARTSWrapper(PARTSWrapper) { return new Object_(); }
-@mptr("hash") Object_ isFileStream(virtual!Object_);
-@method Object_ _isFileStream(Object_) { return new Object_(); }
+@mptr("hash") Object_ isFileStream(virtual!Object);
+@method Object_ _isFileStream(Object) { return new Object_(); }
 @method Object_ _isFileStream(FileStream) { return new Object_(); }
 @mptr("hash") Object_ isSelfInitializingObject(virtual!Artificial_Root);
-@method Object_ _isSelfInitializingObject(Object_) { return new Object_(); }
+@method Object_ _isSelfInitializingObject(Object) { return new Object_(); }
 @method Object_ _isSelfInitializingObject(SelfInitializingObject) { return new Object_(); }
-@mptr("hash") Object_ isMetaClass(virtual!Object_);
-@method Object_ _isMetaClass(Object_) { return new Object_(); }
+@mptr("hash") Object_ isMetaClass(virtual!Object);
+@method Object_ _isMetaClass(Object) { return new Object_(); }
 @method Object_ _isMetaClass(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ isBitmap(virtual!Object_);
-@method Object_ _isBitmap(Object_) { return new Object_(); }
+@mptr("hash") Object_ isBitmap(virtual!Object);
+@method Object_ _isBitmap(Object) { return new Object_(); }
 @method Object_ _isBitmap(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ isExternalAddress(virtual!Object_);
-@method Object_ _isExternalAddress(Object_) { return new Object_(); }
+@mptr("hash") Object_ isExternalAddress(virtual!Object);
+@method Object_ _isExternalAddress(Object) { return new Object_(); }
 @method Object_ _isExternalAddress(ExternalAddress) { return new Object_(); }
-@mptr("hash") Object_ partLinkClassFor(virtual!Object_, Object_);
-@method Object_ _partLinkClassFor(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partLinkClassFor(virtual!Object, Object_);
+@method Object_ _partLinkClassFor(Object, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSCollectionHolder, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSValueHolderPart, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSApplication, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSStringTemplatePart, Object_) { return new Object_(); }
 @method Object_ _partLinkClassFor(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partHasObjectMessages(virtual!Object_);
-@method Object_ _partHasObjectMessages(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSWindow(virtual!Object);
+@method Object_ _isPARTSWindow(Object) { return new Object_(); }
+@method Object_ _isPARTSWindow(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ partHasObjectMessages(virtual!Object);
+@method Object_ _partHasObjectMessages(Object) { return new Object_(); }
 @method Object_ _partHasObjectMessages(PARTSValueHolderPart) { return new Object_(); }
-@mptr("hash") Object_ isPARTSNestedPart(virtual!Object_);
-@method Object_ _isPARTSNestedPart(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSNestedPart(virtual!Object);
+@method Object_ _isPARTSNestedPart(Object) { return new Object_(); }
 @method Object_ _isPARTSNestedPart(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ isClass(virtual!Object_);
-@method Object_ _isClass(Object_) { return new Object_(); }
+@mptr("hash") Object_ isClass(virtual!Object);
+@method Object_ _isClass(Object) { return new Object_(); }
 @method Object_ _isClass(Class) { return new Object_(); }
-@mptr("hash") Object_ isStream(virtual!Object_);
-@method Object_ _isStream(Object_) { return new Object_(); }
+@mptr("hash") Object_ isStream(virtual!Object);
+@method Object_ _isStream(Object) { return new Object_(); }
 @method Object_ _isStream(Stream) { return new Object_(); }
-@mptr("hash") Object_ isDoubleByteString(virtual!Object_);
-@method Object_ _isDoubleByteString(Object_) { return new Object_(); }
+@mptr("hash") Object_ isDoubleByteString(virtual!Object);
+@method Object_ _isDoubleByteString(Object) { return new Object_(); }
 @method Object_ _isDoubleByteString(DoubleByteString) { return new Object_(); }
-@mptr("hash") Object_ isCharacter(virtual!Object_);
-@method Object_ _isCharacter(Object_) { return new Object_(); }
+@mptr("hash") Object_ isCharacter(virtual!Object);
+@method Object_ _isCharacter(Object) { return new Object_(); }
 @method Object_ _isCharacter(Character) { return new Object_(); }
-@mptr("hash") Object_ isFloat(virtual!Object_);
-@method Object_ _isFloat(Object_) { return new Object_(); }
+@mptr("hash") Object_ isFloat(virtual!Object);
+@method Object_ _isFloat(Object) { return new Object_(); }
 @method Object_ _isFloat(Float) { return new Object_(); }
-@mptr("hash") Object_ isInteger(virtual!Object_);
-@method Object_ _isInteger(Object_) { return new Object_(); }
+@mptr("hash") Object_ isInteger(virtual!Object);
+@method Object_ _isInteger(Object) { return new Object_(); }
 @method Object_ _isInteger(Integer) { return new Object_(); }
-@mptr("hash") Object_ isContext(virtual!Object_);
-@method Object_ _isContext(Object_) { return new Object_(); }
+@mptr("hash") Object_ isContext(virtual!Object);
+@method Object_ _isContext(Object) { return new Object_(); }
 @method Object_ _isContext(Context) { return new Object_(); }
-@mptr("hash") Object_ isFont(virtual!Object_);
-@method Object_ _isFont(Object_) { return new Object_(); }
+@mptr("hash") Object_ isFont(virtual!Object);
+@method Object_ _isFont(Object) { return new Object_(); }
 @method Object_ _isFont(Font) { return new Object_(); }
-@mptr("hash") Object_ isRGBColor(virtual!Object_);
-@method Object_ _isRGBColor(Object_) { return new Object_(); }
+@mptr("hash") Object_ isRGBColor(virtual!Object);
+@method Object_ _isRGBColor(Object) { return new Object_(); }
 @method Object_ _isRGBColor(RGBColor) { return new Object_(); }
-@mptr("hash") Object_ isPoint(virtual!Object_);
-@method Object_ _isPoint(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPoint(virtual!Object);
+@method Object_ _isPoint(Object) { return new Object_(); }
 @method Object_ _isPoint(Point) { return new Object_(); }
-@mptr("hash") Object_ partChildren(virtual!Object_);
-@method Object_ _partChildren(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSDialogWindow(virtual!Object);
+@method Object_ _isPARTSDialogWindow(Object) { return new Object_(); }
+@method Object_ _isPARTSDialogWindow(PARTSDialogWindowPart) { return new Object_(); }
+@mptr("hash") Object_ partChildren(virtual!Object);
+@method Object_ _partChildren(Object) { return new Object_(); }
 @method Object_ _partChildren(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partChildren(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ isPARTSStoreContext(virtual!Object_);
-@method Object_ _isPARTSStoreContext(Object_) { return new Object_(); }
+@mptr("hash") Object_ partCanWindowHavechild(virtual!Object, Object_, Object_);
+@method Object_ _partCanWindowHavechild(Object, Object_, Object_) { return new Object_(); }
+@method Object_ _partCanWindowHavechild(P1104, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSStoreContext(virtual!Object);
+@method Object_ _isPARTSStoreContext(Object) { return new Object_(); }
 @method Object_ _isPARTSStoreContext(PARTSStoreContext) { return new Object_(); }
-@mptr("hash") Object_ partHasOtherMessages(virtual!Object_);
-@method Object_ _partHasOtherMessages(Object_) { return new Object_(); }
+@mptr("hash") Object_ partHasOtherMessages(virtual!Object);
+@method Object_ _partHasOtherMessages(Object) { return new Object_(); }
 @method Object_ _partHasOtherMessages(PARTSValueHolderPart) { return new Object_(); }
 @method Object_ _partHasOtherMessages(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ isPARTSRectangle(virtual!Object_);
-@method Object_ _isPARTSRectangle(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSRectangle(virtual!Object);
+@method Object_ _isPARTSRectangle(Object) { return new Object_(); }
 @method Object_ _isPARTSRectangle(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ isCompilationResult(virtual!Object_);
-@method Object_ _isCompilationResult(Object_) { return new Object_(); }
+@mptr("hash") Object_ isCompilationResult(virtual!Object);
+@method Object_ _isCompilationResult(Object) { return new Object_(); }
 @method Object_ _isCompilationResult(CompilationResult) { return new Object_(); }
-@mptr("hash") Object_ isMenu(virtual!Object_);
-@method Object_ _isMenu(Object_) { return new Object_(); }
+@mptr("hash") Object_ isMenu(virtual!Object);
+@method Object_ _isMenu(Object) { return new Object_(); }
 @method Object_ _isMenu(Menu) { return new Object_(); }
-@mptr("hash") Object_ partPropertyEditGraphic(virtual!Object_, Object_);
-@method Object_ _partPropertyEditGraphic(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partPropertyEditGraphic(virtual!Object, Object_);
+@method Object_ _partPropertyEditGraphic(Object, Object_) { return new Object_(); }
 @method Object_ _partPropertyEditGraphic(PARTSStaticGraphicPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isTime(virtual!Object_);
-@method Object_ _isTime(Object_) { return new Object_(); }
+@mptr("hash") Object_ isTime(virtual!Object);
+@method Object_ _isTime(Object) { return new Object_(); }
 @method Object_ _isTime(Time) { return new Object_(); }
-@mptr("hash") Object_ isByteArray(virtual!Object_);
-@method Object_ _isByteArray(Object_) { return new Object_(); }
+@mptr("hash") Object_ isByteArray(virtual!Object);
+@method Object_ _isByteArray(Object) { return new Object_(); }
 @method Object_ _isByteArray(ByteArray) { return new Object_(); }
-@mptr("hash") Object_ isNumber(virtual!Object_);
-@method Object_ _isNumber(Object_) { return new Object_(); }
+@mptr("hash") Object_ isNumber(virtual!Object);
+@method Object_ _isNumber(Object) { return new Object_(); }
 @method Object_ _isNumber(Number) { return new Object_(); }
-@mptr("hash") Object_ partParent(virtual!Object_);
-@method Object_ _partParent(Object_) { return new Object_(); }
+@mptr("hash") Object_ partParent(virtual!Object);
+@method Object_ _partParent(Object) { return new Object_(); }
 @method Object_ _partParent(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ partOpen(virtual!Object_);
-@method Object_ _partOpen(Object_) { return new Object_(); }
+@mptr("hash") Object_ partOpen(virtual!Object);
+@method Object_ _partOpen(Object) { return new Object_(); }
 @method Object_ _partOpen(SubPane) { return new Object_(); }
 @method Object_ _partOpen(PARTSWindowPart) { return new Object_(); }
 @method Object_ _partOpen(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ partManufacturer(virtual!Object_);
-@method Object_ _partManufacturer(Object_) { return new Object_(); }
+@mptr("hash") Object_ partManufacturer(virtual!Object);
+@method Object_ _partManufacturer(Object) { return new Object_(); }
 @method Object_ _partManufacturer(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ isDIB(virtual!Object_);
-@method Object_ _isDIB(Object_) { return new Object_(); }
+@mptr("hash") Object_ isDIB(virtual!Object);
+@method Object_ _isDIB(Object) { return new Object_(); }
 @method Object_ _isDIB(DIB) { return new Object_(); }
-@mptr("hash") Object_ isMethodDictionary(virtual!Object_);
-@method Object_ _isMethodDictionary(Object_) { return new Object_(); }
+@mptr("hash") Object_ isMethodDictionary(virtual!Object);
+@method Object_ _isMethodDictionary(Object) { return new Object_(); }
 @method Object_ _isMethodDictionary(MethodDictionary) { return new Object_(); }
-@mptr("hash") Object_ isPARTSCatalog(virtual!Object_);
-@method Object_ _isPARTSCatalog(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSCatalog(virtual!Object);
+@method Object_ _isPARTSCatalog(Object) { return new Object_(); }
 @method Object_ _isPARTSCatalog(P1100) { return new Object_(); }
-@mptr("hash") Object_ isDynamicLinkLibrary(virtual!Object_);
-@method Object_ _isDynamicLinkLibrary(Object_) { return new Object_(); }
+@mptr("hash") Object_ isApplicationWindow(virtual!Object);
+@method Object_ _isApplicationWindow(Object) { return new Object_(); }
+@method Object_ _isApplicationWindow(ApplicationWindow) { return new Object_(); }
+@mptr("hash") Object_ isDynamicLinkLibrary(virtual!Object);
+@method Object_ _isDynamicLinkLibrary(Object) { return new Object_(); }
 @method Object_ _isDynamicLinkLibrary(DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ frameCanBeRescaled(virtual!Object_);
-@method Object_ _frameCanBeRescaled(Object_) { return new Object_(); }
+@mptr("hash") Object_ frameCanBeRescaled(virtual!Object);
+@method Object_ _frameCanBeRescaled(Object) { return new Object_(); }
 @method Object_ _frameCanBeRescaled(PARTSFramer) { return new Object_(); }
-@mptr("hash") Object_ isArray(virtual!Object_);
-@method Object_ _isArray(Object_) { return new Object_(); }
+@mptr("hash") Object_ isArray(virtual!Object);
+@method Object_ _isArray(Object) { return new Object_(); }
 @method Object_ _isArray(Array) { return new Object_(); }
-@mptr("hash") Object_ partDefineScript(virtual!Object_, Object_);
-@method Object_ _partDefineScript(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partDefineScript(virtual!Object, Object_);
+@method Object_ _partDefineScript(Object, Object_) { return new Object_(); }
 @method Object_ _partDefineScript(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ notNil(virtual!Object_);
-@method Object_ _notNil(Object_) { return new Object_(); }
+@mptr("hash") Object_ notNil(virtual!Object);
+@method Object_ _notNil(Object) { return new Object_(); }
 @method Object_ _notNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ partIsSelectable(virtual!Object_);
-@method Object_ _partIsSelectable(Object_) { return new Object_(); }
+@mptr("hash") Object_ partIsSelectable(virtual!Object);
+@method Object_ _partIsSelectable(Object) { return new Object_(); }
 @method Object_ _partIsSelectable(PARTSMenuPaneWindows) { return new Object_(); }
 @method Object_ _partIsSelectable(PARTSClientAreaPaneWindows) { return new Object_(); }
 @method Object_ _partIsSelectable(PARTSMenuBar) { return new Object_(); }
 @method Object_ _partIsSelectable(PARTSNotebookClientAreaPane) { return new Object_(); }
-@mptr("hash") Object_ partIsShrinkable(virtual!Object_);
-@method Object_ _partIsShrinkable(Object_) { return new Object_(); }
+@mptr("hash") Object_ partIsShrinkable(virtual!Object);
+@method Object_ _partIsShrinkable(Object) { return new Object_(); }
 @method Object_ _partIsShrinkable(PARTSMenuPart) { return new Object_(); }
 @method Object_ _partIsShrinkable(PARTSWindowPart) { return new Object_(); }
 @method Object_ _partIsShrinkable(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ isFraction(virtual!Object_);
-@method Object_ _isFraction(Object_) { return new Object_(); }
+@mptr("hash") Object_ isFraction(virtual!Object);
+@method Object_ _isFraction(Object) { return new Object_(); }
 @method Object_ _isFraction(Fraction) { return new Object_(); }
-@mptr("hash") Object_ partAboutToAddTo(virtual!Object_, Object_);
-@method Object_ _partAboutToAddTo(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partAboutToAddTo(virtual!Object, Object_);
+@method Object_ _partAboutToAddTo(Object, Object_) { return new Object_(); }
 @method Object_ _partAboutToAddTo(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partAboutToAddTo(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ partDoitWitharguments(virtual!Object_, Object_, Object_);
-@method Object_ _partDoitWitharguments(Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partDoitWitharguments(virtual!Object, Object_, Object_);
+@method Object_ _partDoitWitharguments(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _partDoitWitharguments(PARTSValueHolderPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partObjectMessages(virtual!Object_, Object_);
-@method Object_ _partObjectMessages(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partObjectMessages(virtual!Object, Object_);
+@method Object_ _partObjectMessages(Object, Object_) { return new Object_(); }
 @method Object_ _partObjectMessages(PARTSValueHolderPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditInterface(virtual!Object_);
-@method Object_ _partEditInterface(Object_) { return new Object_(); }
+@mptr("hash") Object_ partEditInterface(virtual!Object);
+@method Object_ _partEditInterface(Object) { return new Object_(); }
 @method Object_ _partEditInterface(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ isPARTSMenuPane(virtual!Object_);
-@method Object_ _isPARTSMenuPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSMenuPane(virtual!Object);
+@method Object_ _isPARTSMenuPane(Object) { return new Object_(); }
 @method Object_ _isPARTSMenuPane(PARTSMenuPaneWindows) { return new Object_(); }
-@mptr("hash") Object_ partAddedTo(virtual!Object_, Object_);
-@method Object_ _partAddedTo(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partAddedTo(virtual!Object, Object_);
+@method Object_ _partAddedTo(Object, Object_) { return new Object_(); }
 @method Object_ _partAddedTo(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _partAddedTo(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPushButton(virtual!Object_);
-@method Object_ _isPushButton(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPushButton(virtual!Object);
+@method Object_ _isPushButton(Object) { return new Object_(); }
 @method Object_ _isPushButton(Button) { return new Object_(); }
 @method Object_ _isPushButton(Toggle) { return new Object_(); }
-@mptr("hash") Object_ isGraphicsTool(virtual!Object_);
-@method Object_ _isGraphicsTool(Object_) { return new Object_(); }
+@mptr("hash") Object_ isGraphicsTool(virtual!Object);
+@method Object_ _isGraphicsTool(Object) { return new Object_(); }
 @method Object_ _isGraphicsTool(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ isObjectReference(virtual!Object_);
-@method Object_ _isObjectReference(Object_) { return new Object_(); }
+@mptr("hash") Object_ isObjectReference(virtual!Object);
+@method Object_ _isObjectReference(Object) { return new Object_(); }
 @method Object_ _isObjectReference(ObjectReference) { return new Object_(); }
-@mptr("hash") Object_ isNotebookPagePane(virtual!Object_);
-@method Object_ _isNotebookPagePane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isNotebookPagePane(virtual!Object);
+@method Object_ _isNotebookPagePane(Object) { return new Object_(); }
 @method Object_ _isNotebookPagePane(PARTSNotebookPagePane) { return new Object_(); }
-@mptr("hash") Object_ isToolPane(virtual!Object_);
-@method Object_ _isToolPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isToolPane(virtual!Object);
+@method Object_ _isToolPane(Object) { return new Object_(); }
 @method Object_ _isToolPane(ToolPane) { return new Object_(); }
-@mptr("hash") Object_ isCompiledMethod(virtual!Object_);
-@method Object_ _isCompiledMethod(Object_) { return new Object_(); }
+@mptr("hash") Object_ isCompiledMethod(virtual!Object);
+@method Object_ _isCompiledMethod(Object) { return new Object_(); }
 @method Object_ _isCompiledMethod(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ isComboBox(virtual!Object_);
-@method Object_ _isComboBox(Object_) { return new Object_(); }
+@mptr("hash") Object_ isComboBox(virtual!Object);
+@method Object_ _isComboBox(Object) { return new Object_(); }
 @method Object_ _isComboBox(ComboBox) { return new Object_(); }
-@mptr("hash") Object_ isPARTSTransientPart(virtual!Object_);
-@method Object_ _isPARTSTransientPart(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSTransientPart(virtual!Object);
+@method Object_ _isPARTSTransientPart(Object) { return new Object_(); }
 @method Object_ _isPARTSTransientPart(PARTSMenuPaneWindows) { return new Object_(); }
 @method Object_ _isPARTSTransientPart(PARTSClientAreaPaneWindows) { return new Object_(); }
 @method Object_ _isPARTSTransientPart(PARTSMenuBar) { return new Object_(); }
 @method Object_ _isPARTSTransientPart(PARTSNotebookClientAreaPane) { return new Object_(); }
-@mptr("hash") Object_ partName(virtual!Object_);
-@method Object_ _partName(Object_) { return new Object_(); }
+@mptr("hash") Object_ partName(virtual!Object);
+@method Object_ _partName(Object) { return new Object_(); }
 @method Object_ _partName(PARTSPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ isPARTSApplication(virtual!Object_);
-@method Object_ _isPARTSApplication(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSApplication(virtual!Object);
+@method Object_ _isPARTSApplication(Object) { return new Object_(); }
 @method Object_ _isPARTSApplication(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ partRealSelectorFor(virtual!Object_, Object_);
-@method Object_ _partRealSelectorFor(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partRealSelectorFor(virtual!Object, Object_);
+@method Object_ _partRealSelectorFor(Object, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSCollectionHolder, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSValueHolderPart, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSApplication, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSStringTemplatePart, Object_) { return new Object_(); }
 @method Object_ _partRealSelectorFor(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isTextPane(virtual!Object_);
-@method Object_ _isTextPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isTextPane(virtual!Object);
+@method Object_ _isTextPane(Object) { return new Object_(); }
 @method Object_ _isTextPane(TextPane) { return new Object_(); }
 @method Object_ _isTextPane(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ isButton(virtual!Object_);
-@method Object_ _isButton(Object_) { return new Object_(); }
+@mptr("hash") Object_ isButton(virtual!Object);
+@method Object_ _isButton(Object) { return new Object_(); }
 @method Object_ _isButton(Button) { return new Object_(); }
-@mptr("hash") Object_ isIndexedColor(virtual!Object_);
-@method Object_ _isIndexedColor(Object_) { return new Object_(); }
+@mptr("hash") Object_ isIndexedColor(virtual!Object);
+@method Object_ _isIndexedColor(Object) { return new Object_(); }
 @method Object_ _isIndexedColor(IndexedColor) { return new Object_(); }
-@mptr("hash") Object_ canTriggerEvent(virtual!Object_, Object_);
-@method Object_ _canTriggerEvent(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ canTriggerEvent(virtual!Object, Object_);
+@method Object_ _canTriggerEvent(Object, Object_) { return new Object_(); }
 @method Object_ _canTriggerEvent(PARTSEditorState, Object_) { return new Object_(); }
 @method Object_ _canTriggerEvent(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _canTriggerEvent(PARTSApplication, Object_) { return new Object_(); }
@@ -8791,125 +9603,138 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _canTriggerEvent(PARTSNonvisualPart, Object_) { return new Object_(); }
 @method Object_ _canTriggerEvent(METACLASS_Object, Object_) { return new Object_(); }
 @method Object_ _canTriggerEvent(METACLASS_PARTSEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ isSubPane(virtual!Object_);
-@method Object_ _isSubPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isSubPane(virtual!Object);
+@method Object_ _isSubPane(Object) { return new Object_(); }
 @method Object_ _isSubPane(SubPane) { return new Object_(); }
-@mptr("hash") Object_ isPARTSNotebookPagePane(virtual!Object_);
-@method Object_ _isPARTSNotebookPagePane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSNotebookPagePane(virtual!Object);
+@method Object_ _isPARTSNotebookPagePane(Object) { return new Object_(); }
 @method Object_ _isPARTSNotebookPagePane(PARTSNotebookPagePane) { return new Object_(); }
 @mptr("hash") Object_ vmInterrupt(virtual!Artificial_Root, Object_);
-@method Object_ _vmInterrupt(Object_, Object_) { return new Object_(); }
+@method Object_ _vmInterrupt(Object, Object_) { return new Object_(); }
 @method Object_ _vmInterrupt(SelfInitializingObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPARTSClientAreaPane(virtual!Object_);
-@method Object_ _isPARTSClientAreaPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSClientAreaPane(virtual!Object);
+@method Object_ _isPARTSClientAreaPane(Object) { return new Object_(); }
 @method Object_ _isPARTSClientAreaPane(PARTSClientAreaPaneWindows) { return new Object_(); }
-@mptr("hash") Object_ isInBase(virtual!Object_);
-@method Object_ _isInBase(Object_) { return new Object_(); }
+@mptr("hash") Object_ isInBase(virtual!Object);
+@method Object_ _isInBase(Object) { return new Object_(); }
 @method Object_ _isInBase(Association) { return new Object_(); }
-@mptr("hash") Object_ isPARTSNotebook(virtual!Object_);
-@method Object_ _isPARTSNotebook(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSNotebook(virtual!Object);
+@method Object_ _isPARTSNotebook(Object) { return new Object_(); }
 @method Object_ _isPARTSNotebook(PARTSNotebook) { return new Object_(); }
-@mptr("hash") Object_ isDictionary(virtual!Object_);
-@method Object_ _isDictionary(Object_) { return new Object_(); }
+@mptr("hash") Object_ isDictionary(virtual!Object);
+@method Object_ _isDictionary(Object) { return new Object_(); }
 @method Object_ _isDictionary(Dictionary) { return new Object_(); }
-@mptr("hash") Object_ osError(virtual!Object_, Object_);
-@method Object_ _osError(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ osError(virtual!Object, Object_);
+@method Object_ _osError(Object, Object_) { return new Object_(); }
 @method Object_ _osError(FileHandle, Object_) { return new Object_(); }
 @method Object_ _osError(FileSystemEntity, Object_) { return new Object_(); }
 @method Object_ _osError(METACLASS_FileHandle, Object_) { return new Object_(); }
 @method Object_ _osError(METACLASS_FileSystemEntity, Object_) { return new Object_(); }
-@mptr("hash") Object_ changed(virtual!Object_, Object_);
-@method Object_ _changed(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ changed(virtual!Object, Object_);
+@method Object_ _changed(Object, Object_) { return new Object_(); }
 @method Object_ _changed(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _changed(P1140, Object_) { return new Object_(); }
 @method Object_ _changed(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ dependents(virtual!Object_);
-@method Object_ _dependents(Object_) { return new Object_(); }
+@mptr("hash") Object_ dependents(virtual!Object);
+@method Object_ _dependents(Object) { return new Object_(); }
 @method Object_ _dependents(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ isDialogTopPane(virtual!Object_);
-@method Object_ _isDialogTopPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isDialogTopPane(virtual!Object);
+@method Object_ _isDialogTopPane(Object) { return new Object_(); }
 @method Object_ _isDialogTopPane(DialogTopPane) { return new Object_(); }
-@mptr("hash") Object_ isNil(virtual!Object_);
-@method Object_ _isNil(Object_) { return new Object_(); }
+@mptr("hash") Object_ isNil(virtual!Object);
+@method Object_ _isNil(Object) { return new Object_(); }
 @method Object_ _isNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ partCanTriggerEvent(virtual!Object_, Object_);
-@method Object_ _partCanTriggerEvent(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partCanTriggerEvent(virtual!Object, Object_);
+@method Object_ _partCanTriggerEvent(Object, Object_) { return new Object_(); }
 @method Object_ _partCanTriggerEvent(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _partCanTriggerEvent(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partCanTriggerEvent(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ wrapper(virtual!Object_);
-@method Object_ _wrapper(Object_) { return new Object_(); }
+@mptr("hash") Object_ wrapper(virtual!Object);
+@method Object_ _wrapper(Object) { return new Object_(); }
 @method Object_ _wrapper(PARTSPasteObject) { return new Object_(); }
-@mptr("hash") Object_ isPARTSNotebookClientAreaPane(virtual!Object_);
-@method Object_ _isPARTSNotebookClientAreaPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSNotebookClientAreaPane(virtual!Object);
+@method Object_ _isPARTSNotebookClientAreaPane(Object) { return new Object_(); }
 @method Object_ _isPARTSNotebookClientAreaPane(PARTSNotebookClientAreaPane) { return new Object_(); }
-@mptr("hash") Object_ partDefineEvent(virtual!Object_, Object_);
-@method Object_ _partDefineEvent(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partDefineEvent(virtual!Object, Object_);
+@method Object_ _partDefineEvent(Object, Object_) { return new Object_(); }
 @method Object_ _partDefineEvent(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditValue(virtual!Object_);
-@method Object_ _partEditValue(Object_) { return new Object_(); }
+@mptr("hash") Object_ partEditValue(virtual!Object);
+@method Object_ _partEditValue(Object) { return new Object_(); }
 @method Object_ _partEditValue(Array) { return new Object_(); }
 @method Object_ _partEditValue(OrderedCollection) { return new Object_(); }
 @method Object_ _partEditValue(Dictionary) { return new Object_(); }
-@mptr("hash") Object_ isPARTSMenuItem(virtual!Object_);
-@method Object_ _isPARTSMenuItem(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSMenuItem(virtual!Object);
+@method Object_ _isPARTSMenuItem(Object) { return new Object_(); }
 @method Object_ _isPARTSMenuItem(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ partOtherMessages(virtual!Object_, Object_);
-@method Object_ _partOtherMessages(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ performWitharguments(virtual!Object, Object_, Object_);
+@method Object_ _performWitharguments(Object, Object_, Object_) { return new Object_(); }
+@method Object_ _performWitharguments(PARTSValueHolderPart, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ partOtherMessages(virtual!Object, Object_);
+@method Object_ _partOtherMessages(Object, Object_) { return new Object_(); }
 @method Object_ _partOtherMessages(PARTSValueHolderPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isControlPane(virtual!Object_);
-@method Object_ _isControlPane(Object_) { return new Object_(); }
+@mptr("hash") Object_ isControlPane(virtual!Object);
+@method Object_ _isControlPane(Object) { return new Object_(); }
 @method Object_ _isControlPane(ControlPane) { return new Object_(); }
-@mptr("hash") Object_ updateWith(virtual!Object_, Object_, Object_);
-@method Object_ _updateWith(Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ updateWith(virtual!Object, Object_, Object_);
+@method Object_ _updateWith(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _updateWith(SubPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ changedWith(virtual!Object_, Object_, Object_);
-@method Object_ _changedWith(Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ changedWith(virtual!Object, Object_, Object_);
+@method Object_ _changedWith(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _changedWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
 @method Object_ _changedWith(ViewManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ update(virtual!Object_, Object_);
-@method Object_ _update(Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ update(virtual!Object, Object_);
+@method Object_ _update(Object, Object_) { return new Object_(); }
 @method Object_ _update(TextPane, Object_) { return new Object_(); }
 @method Object_ _update(SubPane, Object_) { return new Object_(); }
 @method Object_ _update(TextPaneControl, Object_) { return new Object_(); }
 @method Object_ _update(Toggle, Object_) { return new Object_(); }
 @method Object_ _update(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ whenEvaluate(virtual!Object_, Object_, Object_);
-@method Object_ _whenEvaluate(Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ whenEvaluate(virtual!Object, Object_, Object_);
+@method Object_ _whenEvaluate(Object, Object_, Object_) { return new Object_(); }
 @method Object_ _whenEvaluate(PARTSWrapper, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPARTSLoadContext(virtual!Object_);
-@method Object_ _isPARTSLoadContext(Object_) { return new Object_(); }
+@mptr("hash") Object_ methodDictionaryArray(virtual!Object, Object_);
+@method Object_ _methodDictionaryArray(Object, Object_) { return new Object_(); }
+@method Object_ _methodDictionaryArray(METACLASS_ObjectStoreExternal, Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSLoadContext(virtual!Object);
+@method Object_ _isPARTSLoadContext(Object) { return new Object_(); }
 @method Object_ _isPARTSLoadContext(PARTSLoadContext) { return new Object_(); }
-@mptr("hash") Object_ isPARTSPartAccessorPart(virtual!Object_);
-@method Object_ _isPARTSPartAccessorPart(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSPartAccessorPart(virtual!Object);
+@method Object_ _isPARTSPartAccessorPart(Object) { return new Object_(); }
 @method Object_ _isPARTSPartAccessorPart(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ changedWithWith(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _changedWithWith(Object_, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ changedWithWith(virtual!Object, Object_, Object_, Object_);
+@method Object_ _changedWithWith(Object, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _changedWithWith(ApplicationWindow, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _changedWithWith(ViewManager, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isPARTSMenuBar(virtual!Object_);
-@method Object_ _isPARTSMenuBar(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSMenuBar(virtual!Object);
+@method Object_ _isPARTSMenuBar(Object) { return new Object_(); }
 @method Object_ _isPARTSMenuBar(PARTSMenuBar) { return new Object_(); }
-@mptr("hash") Object_ isAssociation(virtual!Object_);
-@method Object_ _isAssociation(Object_) { return new Object_(); }
+@mptr("hash") Object_ isAssociation(virtual!Object);
+@method Object_ _isAssociation(Object) { return new Object_(); }
 @method Object_ _isAssociation(Association) { return new Object_(); }
-@mptr("hash") Object_ isTextSelection(virtual!Object_);
-@method Object_ _isTextSelection(Object_) { return new Object_(); }
+@mptr("hash") Object_ isTextSelection(virtual!Object);
+@method Object_ _isTextSelection(Object) { return new Object_(); }
 @method Object_ _isTextSelection(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ isPARTSMenuPart(virtual!Object_);
-@method Object_ _isPARTSMenuPart(Object_) { return new Object_(); }
+@mptr("hash") Object_ isPARTSMenuPart(virtual!Object);
+@method Object_ _isPARTSMenuPart(Object) { return new Object_(); }
 @method Object_ _isPARTSMenuPart(PARTSMenuPart) { return new Object_(); }
-@mptr("hash") Object_ partsExceptionIfNil(virtual!Object_);
-@method Object_ _partsExceptionIfNil(Object_) { return new Object_(); }
+@mptr("hash") Object_ partsExceptionIfNil(virtual!Object);
+@method Object_ _partsExceptionIfNil(Object) { return new Object_(); }
 @method Object_ _partsExceptionIfNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ isTimeStamp(virtual!Object_);
-@method Object_ _isTimeStamp(Object_) { return new Object_(); }
+@mptr("hash") Object_ isTimeStamp(virtual!Object);
+@method Object_ _isTimeStamp(Object) { return new Object_(); }
 @method Object_ _isTimeStamp(TimeStamp) { return new Object_(); }
 @mptr("hash") Object_ resolveExternals(virtual!ObjectStoreReader);
 @method Object_ _resolveExternals(ObjectStoreReader) { return new Object_(); }
 @method Object_ _resolveExternals(ObjectLoader) { return new Object_(); }
 @method Object_ _resolveExternals(SmalltalkLibraryBinder) { return new Object_(); }
-@mptr("hash") Object_ allocateMemory(virtual!Object_, Object_);
+@mptr("hash") Object_ objectStore(virtual!Object);
+@method Object_ _objectStore(ObjectStoreReader) { return new Object_(); }
+@method Object_ _objectStore(ObjectStoreWriter) { return new Object_(); }
+@mptr("hash") Object_ objectStore(virtual!Object, Object_);
+@method Object_ _objectStore(ObjectStoreReader, Object_) { return new Object_(); }
+@method Object_ _objectStore(ObjectStoreFileObjects, Object_) { return new Object_(); }
+@method Object_ _objectStore(ObjectStoreFile, Object_) { return new Object_(); }
+@mptr("hash") Object_ allocateMemory(virtual!Object, Object_);
 @method Object_ _allocateMemory(ObjectStoreReader, Object_) { return new Object_(); }
 @method Object_ _allocateMemory(METACLASS_ExternalHeapAddress, Object_) { return new Object_(); }
 @method Object_ _allocateMemory(METACLASS_ExternalGlobalAddress, Object_) { return new Object_(); }
@@ -8924,87 +9749,113 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _getObjects(ObjectStoreReader) { return new Object_(); }
 @method Object_ _getObjects(ObjectLoader) { return new Object_(); }
 @method Object_ _getObjects(SmalltalkLibraryBinder) { return new Object_(); }
-@mptr("hash") Object_ globalNameSpace(virtual!Object_, Object_);
+@mptr("hash") Object_ globalNameSpace(virtual!Object, Object_);
 @method Object_ _globalNameSpace(ObjectStoreReader, Object_) { return new Object_(); }
 @method Object_ _globalNameSpace(METACLASS_ObjectStoreExternal, Object_) { return new Object_(); }
-@mptr("hash") Object_ directory(virtual!Object_, Object_);
+@mptr("hash") Object_ directory(virtual!Object, Object_);
 @method Object_ _directory(ObjectStoreWriter, Object_) { return new Object_(); }
 @method Object_ _directory(FileDialog, Object_) { return new Object_(); }
 @method Object_ _directory(PARTSFileDescriptor, Object_) { return new Object_(); }
 @method Object_ _directory(ObjectStoreFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ addImportFromlibrary(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ windowFeedback(virtual!Object);
+@method Object_ _windowFeedback(ObjectStoreWriter) { return new Object_(); }
+@method Object_ _windowFeedback(ObjectDumper) { return new Object_(); }
+@method Object_ _windowFeedback(ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ addImportFromlibrary(virtual!Object, Object_, Object_);
 @method Object_ _addImportFromlibrary(ObjectStoreWriter, Object_, Object_) { return new Object_(); }
 @method Object_ _addImportFromlibrary(ObjectStoreObjects, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ feedbackCr(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ feedbackCr(virtual!Object, Object_, Object_);
 @method Object_ _feedbackCr(ObjectStoreWriter, Object_, Object_) { return new Object_(); }
 @method Object_ _feedbackCr(ObjectLoader, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ feedback(virtual!Object_, Object_);
+@mptr("hash") Object_ feedback(virtual!Object, Object_);
 @method Object_ _feedback(ObjectStoreWriter, Object_) { return new Object_(); }
 @method Object_ _feedback(ObjectLoader, Object_) { return new Object_(); }
-@mptr("hash") Object_ interestingImports(virtual!Object_);
+@mptr("hash") Object_ interestingImports(virtual!Object);
 @method Object_ _interestingImports(ObjectStoreWriter) { return new Object_(); }
 @method Object_ _interestingImports(ObjectStoreObjects) { return new Object_(); }
-@mptr("hash") Object_ remapTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ remapTo(virtual!Object, Object_, Object_);
 @method Object_ _remapTo(ObjectStoreWriter, Object_, Object_) { return new Object_(); }
 @method Object_ _remapTo(ObjectStoreObjects, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ addImport(virtual!Object_, Object_);
+@mptr("hash") Object_ addImport(virtual!Object, Object_);
 @method Object_ _addImport(ObjectStoreWriter, Object_) { return new Object_(); }
 @method Object_ _addImport(ObjectStoreObjects, Object_) { return new Object_(); }
-@mptr("hash") Object_ writeFile(virtual!Object_);
+@mptr("hash") Object_ writeFile(virtual!Object);
 @method Object_ _writeFile(ObjectStoreWriter) { return new Object_(); }
 @method Object_ _writeFile(ObjectStoreFile) { return new Object_(); }
-@mptr("hash") Object_ assignAddresses(virtual!Object_);
+@mptr("hash") Object_ assignAddresses(virtual!Object);
 @method Object_ _assignAddresses(ObjectStoreWriter) { return new Object_(); }
 @method Object_ _assignAddresses(ObjectStoreFile) { return new Object_(); }
 @mptr("hash") Object_ fileClass(virtual!ObjectStoreWriter);
 @method Object_ _fileClass(ObjectStoreWriter) { return new Object_(); }
 @method Object_ _fileClass(ObjectDumper) { return new Object_(); }
-@mptr("hash") Object_ writeDescription(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ writeDescription(virtual!Object, Object_, Object_);
 @method Object_ _writeDescription(ObjectStoreWriter, Object_, Object_) { return new Object_(); }
 @method Object_ _writeDescription(ObjectStoreFile, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ pane(virtual!Object_, Object_);
+@mptr("hash") Object_ objectsClass(virtual!ObjectStoreWriter);
+@method Object_ _objectsClass(ObjectStoreWriter) { return new Object_(); }
+@method Object_ _objectsClass(ObjectDumper) { return new Object_(); }
+@mptr("hash") Object_ pane(virtual!Object, Object_);
 @method Object_ _pane(TextSelection, Object_) { return new Object_(); }
 @method Object_ _pane(ExpressionEvaluator, Object_) { return new Object_(); }
 @method Object_ _pane(P1124, Object_) { return new Object_(); }
 @method Object_ _pane(TextPaneErrorHandler, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectTo(virtual!Object_, Object_);
+@mptr("hash") Object_ selectBefore(virtual!Object, Object_);
+@method Object_ _selectBefore(TextSelection, Object_) { return new Object_(); }
+@method Object_ _selectBefore(TextPane, Object_) { return new Object_(); }
+@method Object_ _selectBefore(TextEdit, Object_) { return new Object_(); }
+@mptr("hash") Object_ selectTo(virtual!Object, Object_);
 @method Object_ _selectTo(TextSelection, Object_) { return new Object_(); }
 @method Object_ _selectTo(TextPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ displaySelection(virtual!Object_);
+@mptr("hash") Object_ displaySelection(virtual!Object);
 @method Object_ _displaySelection(TextSelection) { return new Object_(); }
 @method Object_ _displaySelection(PARTSIconPane) { return new Object_(); }
 @method Object_ _displaySelection(PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ selectAfter(virtual!Object_, Object_);
+@mptr("hash") Object_ selectAfter(virtual!Object, Object_);
 @method Object_ _selectAfter(TextSelection, Object_) { return new Object_(); }
 @method Object_ _selectAfter(TextPane, Object_) { return new Object_(); }
 @method Object_ _selectAfter(TextEdit, Object_) { return new Object_(); }
-@mptr("hash") Object_ hideSelection(virtual!Object_);
+@mptr("hash") Object_ hideSelection(virtual!Object);
 @method Object_ _hideSelection(TextSelection) { return new Object_(); }
 @method Object_ _hideSelection(TextPane) { return new Object_(); }
 @method Object_ _hideSelection(PARTSBitEditor) { return new Object_(); }
 @method Object_ _hideSelection(ListPane) { return new Object_(); }
-@mptr("hash") Object_ bitCoordinate(virtual!Object_, Object_);
+@mptr("hash") Object_ bitCoordinate(virtual!Object, Object_);
 @method Object_ _bitCoordinate(TextSelection, Object_) { return new Object_(); }
 @method Object_ _bitCoordinate(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ createDIBPalette(virtual!Object_);
+@mptr("hash") Object_ createDIBPalette(virtual!Object);
 @method Object_ _createDIBPalette(DIB) { return new Object_(); }
 @method Object_ _createDIBPalette(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ numberOfColors(virtual!Object_);
+@mptr("hash") Object_ numberOfColors(virtual!Object);
 @method Object_ _numberOfColors(DIB) { return new Object_(); }
 @method Object_ _numberOfColors(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ bitCount(virtual!Object_);
+@mptr("hash") Object_ bitCount(virtual!Object);
 @method Object_ _bitCount(DIB) { return new Object_(); }
 @method Object_ _bitCount(WinBitmapInfoHeader) { return new Object_(); }
 @method Object_ _bitCount(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ pushButtonWidth(virtual!Object_);
+@mptr("hash") Object_ pushButtonWidth(virtual!Object);
 @method Object_ _pushButtonWidth(PARTSPropertyIcon) { return new Object_(); }
 @method Object_ _pushButtonWidth(PARTSPropertyList) { return new Object_(); }
 @method Object_ _pushButtonWidth(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _pushButtonWidth(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ editIcon(virtual!Object_);
+@mptr("hash") Object_ editIcon(virtual!Object);
 @method Object_ _editIcon(PARTSPropertyIcon) { return new Object_(); }
 @method Object_ _editIcon(PARTSPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ partPropertyEditDone(virtual!Object_, Object_);
+@mptr("hash") Object_ undoChanges(virtual!PARTSPropertyUnit);
+@method Object_ _undoChanges(PARTSPropertyIcon) { return new Object_(); }
+@method Object_ _undoChanges(PARTSPropertyUnit) { return new Object_(); }
+@method Object_ _undoChanges(PARTSPropertyButton) { return new Object_(); }
+@method Object_ _undoChanges(PARTSPropertyEditButton) { return new Object_(); }
+@mptr("hash") Object_ doChanges(virtual!Object);
+@method Object_ _doChanges(PARTSPropertyIcon) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyUnit) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyButton) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyColorAndFont) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyEditButton) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyButtonGroupWS) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyButtonGroup) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyStructure) { return new Object_(); }
+@method Object_ _doChanges(PARTSPropertyWindowStyle) { return new Object_(); }
+@mptr("hash") Object_ partPropertyEditDone(virtual!Object, Object_);
 @method Object_ _partPropertyEditDone(PARTSCollectionHolder, Object_) { return new Object_(); }
 @method Object_ _partPropertyEditDone(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyEditDone(PARTSPartAccessorPart, Object_) { return new Object_(); }
@@ -9060,7 +9911,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ entryFrameIn(virtual!PARTSPropertyString, Object_);
 @method Object_ _entryFrameIn(PARTSPropertyString, Object_) { return new Object_(); }
 @method Object_ _entryFrameIn(PARTSPropertyText, Object_) { return new Object_(); }
-@mptr("hash") Object_ canDoChanges(virtual!Object_);
+@mptr("hash") Object_ addLabelToWindow(virtual!PARTSPropertyString, Object_);
+@method Object_ _addLabelToWindow(PARTSPropertyString, Object_) { return new Object_(); }
+@method Object_ _addLabelToWindow(PARTSPropertyText, Object_) { return new Object_(); }
+@mptr("hash") Object_ canDoChanges(virtual!Object);
 @method Object_ _canDoChanges(PARTSPropertyString) { return new Object_(); }
 @method Object_ _canDoChanges(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _canDoChanges(PARTSPropertyNumber) { return new Object_(); }
@@ -9068,7 +9922,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _canDoChanges(PARTSPropertyFormattedString) { return new Object_(); }
 @method Object_ _canDoChanges(PARTSPropertyFormGeneratorButton) { return new Object_(); }
 @method Object_ _canDoChanges(PARTSPropertyStructure) { return new Object_(); }
-@mptr("hash") Object_ openOnLabel(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ openOnLabel(virtual!Object, Object_, Object_);
 @method Object_ _openOnLabel(PARTSSimpleTextEditor, Object_, Object_) { return new Object_(); }
 @method Object_ _openOnLabel(WalkbackWindow, Object_, Object_) { return new Object_(); }
 @method Object_ _openOnLabel(METACLASS_WalkbackWindow, Object_, Object_) { return new Object_(); }
@@ -9083,23 +9937,23 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _titleBarWidth(ObjectLoadDialog, Object_) { return new Object_(); }
 @method Object_ _titleBarWidth(ListDialog, Object_) { return new Object_(); }
 @method Object_ _titleBarWidth(PARTSRelativeLayoutDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthInDialogUnits(virtual!Object_, Object_);
+@mptr("hash") Object_ widthInDialogUnits(virtual!Object, Object_);
 @method Object_ _widthInDialogUnits(ObjectLoadDialog, Object_) { return new Object_(); }
 @method Object_ _widthInDialogUnits(METACLASS_PARTSDialog, Object_) { return new Object_(); }
 @method Object_ _widthInDialogUnits(METACLASS_ListDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ getHandle(virtual!Object_);
+@mptr("hash") Object_ getHandle(virtual!Object);
 @method Object_ _getHandle(WinLogicalBrush) { return new Object_(); }
 @method Object_ _getHandle(WinLogicalPalette) { return new Object_(); }
 @method Object_ _getHandle(WinLogicalPen) { return new Object_(); }
 @method Object_ _getHandle(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ styleColorHatch(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ styleColorHatch(virtual!Object, Object_, Object_, Object_);
 @method Object_ _styleColorHatch(WinLogicalBrush, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _styleColorHatch(METACLASS_WinLogicalBrush, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ attributeArray(virtual!WinLogicalObject);
 @method Object_ _attributeArray(WinLogicalBrush) { return new Object_(); }
 @method Object_ _attributeArray(WinLogicalPalette) { return new Object_(); }
 @method Object_ _attributeArray(WinLogicalPen) { return new Object_(); }
-@mptr("hash") Object_ fromStruct(virtual!Object_, Object_);
+@mptr("hash") Object_ fromStruct(virtual!Object, Object_);
 @method Object_ _fromStruct(WinLogicalBrush, Object_) { return new Object_(); }
 @method Object_ _fromStruct(WinLogicalPalette, Object_) { return new Object_(); }
 @method Object_ _fromStruct(WinLogicalPen, Object_) { return new Object_(); }
@@ -9117,10 +9971,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _createDragObjects(PARTSAddPartSession, Object_) { return new Object_(); }
 @method Object_ _createDragObjects(PARTSCatalogDragSession, Object_) { return new Object_(); }
 @method Object_ _createDragObjects(PARTSEditorMoveSession, Object_) { return new Object_(); }
-@mptr("hash") Object_ compilerInterfaceClass(virtual!Object_);
+@mptr("hash") Object_ compilerInterfaceClass(virtual!Object);
 @method Object_ _compilerInterfaceClass(PARTSScriptDefinition) { return new Object_(); }
 @method Object_ _compilerInterfaceClass(METACLASS_PARTSScript) { return new Object_(); }
-@mptr("hash") Object_ scriptPart(virtual!Object_);
+@mptr("hash") Object_ scriptPart(virtual!Object);
 @method Object_ _scriptPart(PARTSScriptDefinition) { return new Object_(); }
 @method Object_ _scriptPart(PARTSScript) { return new Object_(); }
 @mptr("hash") Object_ drawInsertionErase(virtual!Window, Object_, Object_);
@@ -9143,9 +9997,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _getPositionAfter(PARTSMenuPart, Object_, Object_) { return new Object_(); }
 @method Object_ _getPositionAfter(PARTSMenuPaneWindows, Object_, Object_) { return new Object_(); }
 @method Object_ _getPositionAfter(PARTSMenuBar, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ popUp(virtual!Object_);
+@mptr("hash") Object_ popUp(virtual!Object);
 @method Object_ _popUp(PARTSMenuPart) { return new Object_(); }
 @method Object_ _popUp(Menu) { return new Object_(); }
+@mptr("hash") Object_ adjustPositionAfterUndoDelete(virtual!Window, Object_);
+@method Object_ _adjustPositionAfterUndoDelete(PARTSMenuPart, Object_) { return new Object_(); }
+@method Object_ _adjustPositionAfterUndoDelete(PARTSMenuPaneWindows, Object_) { return new Object_(); }
+@method Object_ _adjustPositionAfterUndoDelete(PARTSMenuBar, Object_) { return new Object_(); }
 @mptr("hash") Object_ draggingOver(virtual!Window, Object_);
 @method Object_ _draggingOver(PARTSMenuPart, Object_) { return new Object_(); }
 @method Object_ _draggingOver(PARTSMenuPaneWindows, Object_) { return new Object_(); }
@@ -9178,34 +10036,46 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _moveFromToAfter(PARTSMenuPart, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _moveFromToAfter(PARTSMenuPaneWindows, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _moveFromToAfter(PARTSMenuBar, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDisabled(virtual!Object_, Object_);
+@mptr("hash") Object_ isDisabled(virtual!Object, Object_);
 @method Object_ _isDisabled(Menu, Object_) { return new Object_(); }
 @method Object_ _isDisabled(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ menuItem(virtual!Object_);
+@mptr("hash") Object_ menuItem(virtual!Object);
 @method Object_ _menuItem(Menu) { return new Object_(); }
 @method Object_ _menuItem(P1108) { return new Object_(); }
-@mptr("hash") Object_ popUpAtIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ popUpAtIn(virtual!Object, Object_, Object_);
 @method Object_ _popUpAtIn(Menu, Object_, Object_) { return new Object_(); }
 @method Object_ _popUpAtIn(PARTSMenuBar, Object_, Object_) { return new Object_(); }
 @method Object_ _popUpAtIn(MenuWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ labelsLinesSelectors(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ findWindow(virtual!Object, Object_);
+@method Object_ _findWindow(Menu, Object_) { return new Object_(); }
+@method Object_ _findWindow(NotificationManager, Object_) { return new Object_(); }
+@method Object_ _findWindow(MenuWindow, Object_) { return new Object_(); }
+@mptr("hash") Object_ labelsLinesSelectors(virtual!Object, Object_, Object_, Object_);
 @method Object_ _labelsLinesSelectors(Menu, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _labelsLinesSelectors(METACLASS_Menu, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isThere(virtual!Object_, Object_);
+@mptr("hash") Object_ isThere(virtual!Object, Object_);
 @method Object_ _isThere(Menu, Object_) { return new Object_(); }
 @method Object_ _isThere(METACLASS_FileHandle, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectorOf(virtual!Object_, Object_);
+@mptr("hash") Object_ selectorOf(virtual!Object, Object_);
 @method Object_ _selectorOf(Menu, Object_) { return new Object_(); }
 @method Object_ _selectorOf(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpTopic(virtual!Object_);
+@mptr("hash") Object_ helpTopic(virtual!Object);
 @method Object_ _helpTopic(Menu) { return new Object_(); }
 @method Object_ _helpTopic(PARTSWrapper) { return new Object_(); }
 @method Object_ _helpTopic(SubPane) { return new Object_(); }
 @method Object_ _helpTopic(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ getMenuItem(virtual!Object_, Object_);
+@mptr("hash") Object_ getMenuItem(virtual!Object, Object_);
 @method Object_ _getMenuItem(Menu, Object_) { return new Object_(); }
 @method Object_ _getMenuItem(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ position(virtual!Object_, Object_);
+@mptr("hash") Object_ performMenuItem(virtual!Object, Object_);
+@method Object_ _performMenuItem(Menu, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(PARTSTextPanePart, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(ApplicationWindow, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(SubPane, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(PARTSMenuBar, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(P1124, Object_) { return new Object_(); }
+@method Object_ _performMenuItem(MenuWindow, Object_) { return new Object_(); }
+@mptr("hash") Object_ position(virtual!Object, Object_);
 @method Object_ _position(FileHandle, Object_) { return new Object_(); }
 @method Object_ _position(ScrollBar, Object_) { return new Object_(); }
 @method Object_ _position(FileStream, Object_) { return new Object_(); }
@@ -9213,38 +10083,41 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _position(SourceChunkReference, Object_) { return new Object_(); }
 @method Object_ _position(MenuItem, Object_) { return new Object_(); }
 @method Object_ _position(WriteStream, Object_) { return new Object_(); }
-@mptr("hash") Object_ position(virtual!Object_);
+@mptr("hash") Object_ position(virtual!Object);
 @method Object_ _position(FileHandle) { return new Object_(); }
 @method Object_ _position(ScrollBar) { return new Object_(); }
 @method Object_ _position(FileStream) { return new Object_(); }
 @method Object_ _position(Stream) { return new Object_(); }
 @method Object_ _position(MenuItem) { return new Object_(); }
-@mptr("hash") Object_ setEndOfFileTo(virtual!Object_, Object_);
+@mptr("hash") Object_ setEndOfFileTo(virtual!Object, Object_);
 @method Object_ _setEndOfFileTo(FileHandle, Object_) { return new Object_(); }
 @method Object_ _setEndOfFileTo(File, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpAndHintFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ versionFrom(virtual!Object, Object_);
+@method Object_ _versionFrom(P1000, Object_) { return new Object_(); }
+@method Object_ _versionFrom(METACLASS_PARTSFile, Object_) { return new Object_(); }
+@mptr("hash") Object_ helpAndHintFrom(virtual!Object, Object_);
 @method Object_ _helpAndHintFrom(P1000, Object_) { return new Object_(); }
 @method Object_ _helpAndHintFrom(METACLASS_PARTSFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ iconFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ iconFrom(virtual!Object, Object_);
 @method Object_ _iconFrom(P1000, Object_) { return new Object_(); }
 @method Object_ _iconFrom(METACLASS_PARTSFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ propertiesFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ propertiesFrom(virtual!Object, Object_);
 @method Object_ _propertiesFrom(P1000, Object_) { return new Object_(); }
 @method Object_ _propertiesFrom(METACLASS_PARTSFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ gapX(virtual!Object_);
+@mptr("hash") Object_ gapX(virtual!Object);
 @method Object_ _gapX(PARTSPropertiesEditor) { return new Object_(); }
 @method Object_ _gapX(PARTSPropertyColorAndFont) { return new Object_(); }
 @mptr("hash") Object_ setIcon(virtual!WindowDialog, Object_);
 @method Object_ _setIcon(PARTSPropertiesEditor, Object_) { return new Object_(); }
 @method Object_ _setIcon(SaveImageAsDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ boxOfSize(virtual!Object_, Object_);
+@mptr("hash") Object_ boxOfSize(virtual!Object, Object_);
 @method Object_ _boxOfSize(DialogTopPane, Object_) { return new Object_(); }
 @method Object_ _boxOfSize(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _boxOfSize(Pen, Object_) { return new Object_(); }
-@mptr("hash") Object_ openModeless(virtual!Object_);
+@mptr("hash") Object_ openModeless(virtual!Object);
 @method Object_ _openModeless(DialogTopPane) { return new Object_(); }
 @method Object_ _openModeless(WindowDialog) { return new Object_(); }
-@mptr("hash") Object_ openModal(virtual!Object_, Object_);
+@mptr("hash") Object_ openModal(virtual!Object, Object_);
 @method Object_ _openModal(DialogTopPane, Object_) { return new Object_(); }
 @method Object_ _openModal(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _openModal(WindowDialog, Object_) { return new Object_(); }
@@ -9253,13 +10126,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _copyStruct(ColorDialog) { return new Object_(); }
 @method Object_ _copyStruct(PrintDialog) { return new Object_(); }
 @method Object_ _copyStruct(FontDialog) { return new Object_(); }
-@mptr("hash") Object_ openFile(virtual!Object_);
+@mptr("hash") Object_ openFile(virtual!Object);
 @method Object_ _openFile(FileDialog) { return new Object_(); }
 @method Object_ _openFile(ApplicationWindow) { return new Object_(); }
 @method Object_ _openFile(PARTSTextWindow) { return new Object_(); }
 @method Object_ _openFile(ViewManager) { return new Object_(); }
 @method Object_ _openFile(ObjectStoreFile) { return new Object_(); }
-@mptr("hash") Object_ cleanUp(virtual!Object_);
+@mptr("hash") Object_ cleanUp(virtual!Object);
 @method Object_ _cleanUp(FileDialog) { return new Object_(); }
 @method Object_ _cleanUp(ColorDialog) { return new Object_(); }
 @method Object_ _cleanUp(PrintDialog) { return new Object_(); }
@@ -9270,17 +10143,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _checkFlags(ColorDialog) { return new Object_(); }
 @method Object_ _checkFlags(PrintDialog) { return new Object_(); }
 @method Object_ _checkFlags(FontDialog) { return new Object_(); }
-@mptr("hash") Object_ resume(virtual!Object_);
-@method Object_ _resume(Exception_) { return new Object_(); }
+@mptr("hash") Object_ resume(virtual!Object);
+@method Object_ _resume(Exception) { return new Object_(); }
 @method Object_ _resume(Debugger) { return new Object_(); }
 @method Object_ _resume(Process) { return new Object_(); }
-@mptr("hash") Object_ resume(virtual!Object_, Object_);
-@method Object_ _resume(Exception_, Object_) { return new Object_(); }
+@mptr("hash") Object_ resume(virtual!Object, Object_);
+@method Object_ _resume(Exception, Object_) { return new Object_(); }
 @method Object_ _resume(NotificationManager, Object_) { return new Object_(); }
 @method Object_ _resume(ExceptionHandler, Object_) { return new Object_(); }
 @method Object_ _resume(WalkbackWindow, Object_) { return new Object_(); }
 @method Object_ _resume(ProcessScheduler, Object_) { return new Object_(); }
 @method Object_ _resume(Process, Object_) { return new Object_(); }
+@mptr("hash") Object_ return(virtual!Object, Object_);
+@method Object_ _return(Exception, Object_) { return new Object_(); }
+@method Object_ _return(HomeContext, Object_) { return new Object_(); }
+@method Object_ _return(ExceptionHandler, Object_) { return new Object_(); }
 @mptr("hash") Object_ listPaneName(virtual!WindowDialog);
 @method Object_ _listPaneName(ListDialog) { return new Object_(); }
 @method Object_ _listPaneName(PARTSFieldOrderDialog) { return new Object_(); }
@@ -9297,14 +10174,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ loadLibrary(virtual!DynamicLinkLibrary, Object_);
 @method Object_ _loadLibrary(KernelDLL, Object_) { return new Object_(); }
 @method Object_ _loadLibrary(KernelDLL16, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeDirectory(virtual!Object_, Object_);
+@mptr("hash") Object_ removeDirectory(virtual!Object, Object_);
 @method Object_ _removeDirectory(KernelDLL, Object_) { return new Object_(); }
 @method Object_ _removeDirectory(PARTSSettingsEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ beepFor(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ beepFor(virtual!Object, Object_, Object_);
 @method Object_ _beepFor(KernelDLL, Object_, Object_) { return new Object_(); }
 @method Object_ _beepFor(PARTSSpeakerDLL, Object_, Object_) { return new Object_(); }
 @method Object_ _beepFor(PARTSSpeakerPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ getCommandLine(virtual!Object_);
+@mptr("hash") Object_ getCommandLine(virtual!Object);
 @method Object_ _getCommandLine(KernelDLL) { return new Object_(); }
 @method Object_ _getCommandLine(SessionModel) { return new Object_(); }
 @mptr("hash") Object_ ceiling(virtual!Number);
@@ -9321,27 +10198,31 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ asCharacter(virtual!Magnitude);
 @method Object_ _asCharacter(Integer) { return new Object_(); }
 @method Object_ _asCharacter(Character) { return new Object_(); }
-@mptr("hash") Object_ asBoolean(virtual!Object_);
+@mptr("hash") Object_ asBoolean(virtual!Object);
 @method Object_ _asBoolean(Integer) { return new Object_(); }
 @method Object_ _asBoolean(Boolean) { return new Object_(); }
 @method Object_ _asBoolean(ExternalLong) { return new Object_(); }
-@mptr("hash") Object_ entryField(virtual!Object_);
+@mptr("hash") Object_ entryField(virtual!Object);
 @method Object_ _entryField(PARTSPropertyList) { return new Object_(); }
 @method Object_ _entryField(ComboBox) { return new Object_(); }
-@mptr("hash") Object_ entryField(virtual!Object_, Object_);
+@mptr("hash") Object_ newValue(virtual!PARTSPropertyUnit);
+@method Object_ _newValue(PARTSPropertyList) { return new Object_(); }
+@method Object_ _newValue(PARTSPropertyUnit) { return new Object_(); }
+@method Object_ _newValue(PARTSPropertyStaticText) { return new Object_(); }
+@mptr("hash") Object_ entryField(virtual!Object, Object_);
 @method Object_ _entryField(PARTSPropertyList, Object_) { return new Object_(); }
 @method Object_ _entryField(ComboBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ lineHeight(virtual!Object_);
+@mptr("hash") Object_ lineHeight(virtual!Object);
 @method Object_ _lineHeight(PARTSPropertyText) { return new Object_(); }
 @method Object_ _lineHeight(ListConnectionPane) { return new Object_(); }
-@mptr("hash") Object_ textExtent(virtual!Object_, Object_);
+@mptr("hash") Object_ textExtent(virtual!Object, Object_);
 @method Object_ _textExtent(PARTSPropertyText, Object_) { return new Object_(); }
 @method Object_ _textExtent(PARTSArrayEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ entryFieldHeight(virtual!Object_);
+@mptr("hash") Object_ entryFieldHeight(virtual!Object);
 @method Object_ _entryFieldHeight(PARTSPropertyText) { return new Object_(); }
 @method Object_ _entryFieldHeight(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _entryFieldHeight(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ entryFieldWidth(virtual!Object_);
+@mptr("hash") Object_ entryFieldWidth(virtual!Object);
 @method Object_ _entryFieldWidth(PARTSPropertyText) { return new Object_(); }
 @method Object_ _entryFieldWidth(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _entryFieldWidth(PARTSPropertyNumber) { return new Object_(); }
@@ -9349,17 +10230,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ canMirrorCopy(virtual!PARTSAddPartSession);
 @method Object_ _canMirrorCopy(PARTSAddPartSession) { return new Object_(); }
 @method Object_ _canMirrorCopy(PARTSCatalogDragSession) { return new Object_(); }
-@mptr("hash") Object_ targetLocation(virtual!Object_);
+@mptr("hash") Object_ targetLocation(virtual!Object);
 @method Object_ _targetLocation(PARTSAddPartSession) { return new Object_(); }
 @method Object_ _targetLocation(PARTSLocalDragDropObject) { return new Object_(); }
 @method Object_ _targetLocation(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ validationMessage(virtual!Object_);
+@mptr("hash") Object_ validationMessage(virtual!Object);
 @method Object_ _validationMessage(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _validationMessage(PARTSPrompter) { return new Object_(); }
-@mptr("hash") Object_ validationMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ validationMessage(virtual!Object, Object_);
 @method Object_ _validationMessage(PARTSPropertyUnit, Object_) { return new Object_(); }
 @method Object_ _validationMessage(PARTSPrompter, Object_) { return new Object_(); }
-@mptr("hash") Object_ radioButtonHeight(virtual!Object_);
+@mptr("hash") Object_ radioButtonHeight(virtual!Object);
 @method Object_ _radioButtonHeight(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _radioButtonHeight(METACLASS_PARTSPropertyUnit) { return new Object_(); }
 @mptr("hash") Object_ isStyle(virtual!PARTSPropertyUnit);
@@ -9367,31 +10248,31 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _isStyle(PARTSPropertyButtonGroupWS) { return new Object_(); }
 @method Object_ _isStyle(PARTSPropertyPseudoStyle) { return new Object_(); }
 @method Object_ _isStyle(PARTSPropertyWindowStyle) { return new Object_(); }
-@mptr("hash") Object_ verticalGap(virtual!Object_);
+@mptr("hash") Object_ verticalGap(virtual!Object);
 @method Object_ _verticalGap(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _verticalGap(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ part(virtual!Object_);
+@mptr("hash") Object_ part(virtual!Object);
 @method Object_ _part(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _part(PARTSScriptSource) { return new Object_(); }
 @method Object_ _part(PARTSFormGeneratorItem) { return new Object_(); }
 @method Object_ _part(PARTSPropertyStructure) { return new Object_(); }
 @method Object_ _part(PARTSPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ horizontalGap(virtual!Object_);
+@mptr("hash") Object_ horizontalGap(virtual!Object);
 @method Object_ _horizontalGap(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _horizontalGap(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ checkBoxHeight(virtual!Object_);
+@mptr("hash") Object_ checkBoxHeight(virtual!Object);
 @method Object_ _checkBoxHeight(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _checkBoxHeight(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ pushButtonExtent(virtual!Object_);
+@mptr("hash") Object_ pushButtonExtent(virtual!Object);
 @method Object_ _pushButtonExtent(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _pushButtonExtent(METACLASS_PARTSPropertyUnit) { return new Object_(); }
 @mptr("hash") Object_ entryFieldFrameWidth(virtual!PARTSPropertyUnit);
 @method Object_ _entryFieldFrameWidth(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _entryFieldFrameWidth(PARTSPropertyFormattedString) { return new Object_(); }
-@mptr("hash") Object_ pushButtonHeight(virtual!Object_);
+@mptr("hash") Object_ pushButtonHeight(virtual!Object);
 @method Object_ _pushButtonHeight(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _pushButtonHeight(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ entryFieldFrameHeight(virtual!Object_);
+@mptr("hash") Object_ entryFieldFrameHeight(virtual!Object);
 @method Object_ _entryFieldFrameHeight(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _entryFieldFrameHeight(METACLASS_PARTSPropertyUnit) { return new Object_(); }
 @mptr("hash") Object_ setDisableState(virtual!PARTSPropertyUnit);
@@ -9399,7 +10280,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _setDisableState(PARTSPropertyButton) { return new Object_(); }
 @method Object_ _setDisableState(PARTSPropertyBoolean) { return new Object_(); }
 @method Object_ _setDisableState(PARTSPropertyButtonGroup) { return new Object_(); }
-@mptr("hash") Object_ labelEntryFieldGap(virtual!Object_);
+@mptr("hash") Object_ labelEntryFieldGap(virtual!Object);
 @method Object_ _labelEntryFieldGap(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _labelEntryFieldGap(METACLASS_PARTSPropertyUnit) { return new Object_(); }
 @mptr("hash") Object_ addToStyle(virtual!PARTSPropertyUnit, Object_);
@@ -9407,10 +10288,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _addToStyle(PARTSPropertyButtonGroupWS, Object_) { return new Object_(); }
 @method Object_ _addToStyle(PARTSPropertyBinaryStyle, Object_) { return new Object_(); }
 @method Object_ _addToStyle(PARTSPropertyWindowStyle, Object_) { return new Object_(); }
-@mptr("hash") Object_ numberFieldWidth(virtual!Object_);
+@mptr("hash") Object_ numberFieldWidth(virtual!Object);
 @method Object_ _numberFieldWidth(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _numberFieldWidth(METACLASS_PARTSPropertyUnit) { return new Object_(); }
-@mptr("hash") Object_ clearModified(virtual!Object_);
+@mptr("hash") Object_ clearModified(virtual!Object);
 @method Object_ _clearModified(PARTSPropertyUnit) { return new Object_(); }
 @method Object_ _clearModified(TextPaneControl) { return new Object_(); }
 @mptr("hash") Object_ bucketClass(virtual!HashedCollection);
@@ -9422,17 +10303,26 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _adjustSize(MethodDictionary) { return new Object_(); }
 @method Object_ _adjustSize(IdentityDictionary) { return new Object_(); }
 @method Object_ _adjustSize(HashedCollection) { return new Object_(); }
-@mptr("hash") Object_ classField(virtual!Object_);
+@mptr("hash") Object_ classField(virtual!Object);
 @method Object_ _classField(MethodDictionary) { return new Object_(); }
 @method Object_ _classField(ClassReader) { return new Object_(); }
 @method Object_ _classField(CompiledMethod) { return new Object_(); }
+@mptr("hash") Object_ newContents(virtual!HashedCollection, Object_);
+@method Object_ _newContents(MethodDictionary, Object_) { return new Object_(); }
+@method Object_ _newContents(SymbolSet, Object_) { return new Object_(); }
+@method Object_ _newContents(IdentityDictionary, Object_) { return new Object_(); }
+@method Object_ _newContents(HashedCollection, Object_) { return new Object_(); }
 @mptr("hash") Object_ classField(virtual!Collection, Object_);
 @method Object_ _classField(MethodDictionary, Object_) { return new Object_(); }
 @method Object_ _classField(CompiledMethod, Object_) { return new Object_(); }
+@mptr("hash") Object_ doClick(virtual!Button, Object_);
+@method Object_ _doClick(CheckBox, Object_) { return new Object_(); }
+@method Object_ _doClick(RadioButton, Object_) { return new Object_(); }
+@method Object_ _doClick(Button, Object_) { return new Object_(); }
 @mptr("hash") Object_ uncheck(virtual!SubPane);
 @method Object_ _uncheck(CheckBox) { return new Object_(); }
 @method Object_ _uncheck(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ check(virtual!Object_);
+@mptr("hash") Object_ check(virtual!Object);
 @method Object_ _check(CheckBox) { return new Object_(); }
 @method Object_ _check(ObjectLoader) { return new Object_(); }
 @method Object_ _check(SmalltalkLibraryBinder) { return new Object_(); }
@@ -9442,7 +10332,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _changedEventFor(ThreeStateButton, Object_) { return new Object_(); }
 @method Object_ _changedEventFor(RadioButton, Object_) { return new Object_(); }
 @method Object_ _changedEventFor(Toggle, Object_) { return new Object_(); }
-@mptr("hash") Object_ pushButton(virtual!Object_);
+@mptr("hash") Object_ pushButton(virtual!Object);
 @method Object_ _pushButton(PARTSPropertyButton) { return new Object_(); }
 @method Object_ _pushButton(Button) { return new Object_(); }
 @mptr("hash") Object_ clickedSelector(virtual!PARTSPropertyButton, Object_);
@@ -9451,10 +10341,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ clicked(virtual!PARTSPropertyButton);
 @method Object_ _clicked(PARTSPropertyButton) { return new Object_(); }
 @method Object_ _clicked(PARTSPropertyFormGeneratorButton) { return new Object_(); }
-@mptr("hash") Object_ currentForeColor(virtual!Object_);
+@mptr("hash") Object_ currentForeColor(virtual!Object);
 @method Object_ _currentForeColor(PARTSPropertyColorAndFont) { return new Object_(); }
 @method Object_ _currentForeColor(PARTSVisualPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ currentBackColor(virtual!Object_);
+@mptr("hash") Object_ currentBackColor(virtual!Object);
 @method Object_ _currentBackColor(PARTSPropertyColorAndFont) { return new Object_(); }
 @method Object_ _currentBackColor(PARTSVisualPartPropertyDialog) { return new Object_(); }
 @mptr("hash") Object_ partFont(virtual!PARTSVisualPartPropertyDialog);
@@ -9491,17 +10381,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partBackColor(virtual!PARTSVisualPartPropertyDialog);
 @method Object_ _partBackColor(PARTSColorFontPropertiesEditor) { return new Object_(); }
 @method Object_ _partBackColor(PARTSVisualPartPropertyDialog) { return new Object_(); }
-@mptr("hash") Object_ eventTable(virtual!Object_, Object_);
+@mptr("hash") Object_ eventTable(virtual!Object, Object_);
 @method Object_ _eventTable(PARTSEditorState, Object_) { return new Object_(); }
 @method Object_ _eventTable(PARTSApplication, Object_) { return new Object_(); }
 @method Object_ _eventTable(PARTSNonvisualPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ componentDictionary(virtual!Object_, Object_);
+@mptr("hash") Object_ componentDictionary(virtual!Object, Object_);
 @method Object_ _componentDictionary(PARTSScriptSource, Object_) { return new Object_(); }
 @method Object_ _componentDictionary(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ componentDictionary(virtual!Object_);
+@mptr("hash") Object_ componentDictionary(virtual!Object);
 @method Object_ _componentDictionary(PARTSScriptSource) { return new Object_(); }
 @method Object_ _componentDictionary(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ part(virtual!Object_, Object_);
+@mptr("hash") Object_ part(virtual!Object, Object_);
 @method Object_ _part(PARTSScriptSource, Object_) { return new Object_(); }
 @method Object_ _part(PARTSPropertyStructure, Object_) { return new Object_(); }
 @method Object_ _part(PARTSPartPropertyDialog, Object_) { return new Object_(); }
@@ -9509,7 +10399,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _createPartsWith(PARTSPropertyCreateForm, Object_) { return new Object_(); }
 @method Object_ _createPartsWith(PARTSPropertyFormGeneratorButton, Object_) { return new Object_(); }
 @method Object_ _createPartsWith(PARTSPropertyCreateTable, Object_) { return new Object_(); }
-@mptr("hash") Object_ setGraphics(virtual!Object_, Object_);
+@mptr("hash") Object_ setGraphics(virtual!Object, Object_);
 @method Object_ _setGraphics(PARTSNotebookPagePane, Object_) { return new Object_(); }
 @method Object_ _setGraphics(PARTSDrawnButtonPart, Object_) { return new Object_(); }
 @method Object_ _setGraphics(PARTSStaticGraphicPart, Object_) { return new Object_(); }
@@ -9530,26 +10420,30 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _getGraphics(PARTSGraphPanePart) { return new Object_(); }
 @method Object_ _getGraphics(PARTSWindowPart) { return new Object_(); }
 @method Object_ _getGraphics(PARTSMenuBitmapItemPart) { return new Object_(); }
-@mptr("hash") Object_ stockObject(virtual!Object_, Object_);
+@mptr("hash") Object_ stockObject(virtual!Object, Object_);
 @method Object_ _stockObject(WinLogicalObject, Object_) { return new Object_(); }
 @method Object_ _stockObject(METACLASS_WinLogicalObject, Object_) { return new Object_(); }
 @method Object_ _stockObject(METACLASS_WinLogicalPalette, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeClass(virtual!Object_, Object_);
+@mptr("hash") Object_ removeClass(virtual!Object, Object_);
 @method Object_ _removeClass(DefinitionInstaller, Object_) { return new Object_(); }
 @method Object_ _removeClass(METACLASS_PARTSFileProcessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ vertical(virtual!Object_);
+@mptr("hash") Object_ defaultGlobalDictionary(virtual!Object);
+@method Object_ _defaultGlobalDictionary(DefinitionInstaller) { return new Object_(); }
+@method Object_ _defaultGlobalDictionary(CompilerInterface) { return new Object_(); }
+@method Object_ _defaultGlobalDictionary(METACLASS_ClassInstaller) { return new Object_(); }
+@mptr("hash") Object_ vertical(virtual!Object);
 @method Object_ _vertical(ScrollBar) { return new Object_(); }
 @method Object_ _vertical(METACLASS_ScrollBar) { return new Object_(); }
-@mptr("hash") Object_ horizontal(virtual!Object_);
+@mptr("hash") Object_ horizontal(virtual!Object);
 @method Object_ _horizontal(ScrollBar) { return new Object_(); }
 @method Object_ _horizontal(METACLASS_ScrollBar) { return new Object_(); }
 @mptr("hash") Object_ syncControlEventWith(virtual!ControlPane, Object_, Object_);
 @method Object_ _syncControlEventWith(ScrollBar, Object_, Object_) { return new Object_(); }
 @method Object_ _syncControlEventWith(ControlPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asLowerCase(virtual!Object_, Object_);
+@mptr("hash") Object_ asLowerCase(virtual!Object, Object_);
 @method Object_ _asLowerCase(PARTSConversionPart, Object_) { return new Object_(); }
 @method Object_ _asLowerCase(NationalLanguageSupport, Object_) { return new Object_(); }
-@mptr("hash") Object_ asUpperCase(virtual!Object_, Object_);
+@mptr("hash") Object_ asUpperCase(virtual!Object, Object_);
 @method Object_ _asUpperCase(PARTSConversionPart, Object_) { return new Object_(); }
 @method Object_ _asUpperCase(NationalLanguageSupport, Object_) { return new Object_(); }
 @mptr("hash") Object_ asString(virtual!PARTSNonvisualPart, Object_);
@@ -9558,13 +10452,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ asNumber(virtual!PARTSNonvisualPart, Object_);
 @method Object_ _asNumber(PARTSConversionPart, Object_) { return new Object_(); }
 @method Object_ _asNumber(PARTSNonvisualPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ nameScope(virtual!Object_);
+@mptr("hash") Object_ nameScope(virtual!Object);
 @method Object_ _nameScope(CompilationResult) { return new Object_(); }
 @method Object_ _nameScope(CompilerInterface) { return new Object_(); }
-@mptr("hash") Object_ messages(virtual!Object_);
+@mptr("hash") Object_ messages(virtual!Object);
 @method Object_ _messages(CompilationResult) { return new Object_(); }
 @method Object_ _messages(CodeBrowser) { return new Object_(); }
 @method Object_ _messages(CompiledMethod) { return new Object_(); }
+@mptr("hash") Object_ method(virtual!Object);
+@method Object_ _method(CompilationResult) { return new Object_(); }
+@method Object_ _method(HomeContext) { return new Object_(); }
 @mptr("hash") Object_ selectors(virtual!CodeBrowser, Object_);
 @method Object_ _selectors(SelectorBrowser, Object_) { return new Object_(); }
 @method Object_ _selectors(ClassBrowser, Object_) { return new Object_(); }
@@ -9577,7 +10474,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _storeIntoLibrarymappings(PARTSSourceFileProcessor, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _storeIntoLibrarymappings(PARTSFileProcessor, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _storeIntoLibrarymappings(PARTSExeFileProcessor, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadFromContext(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ loadFromContext(virtual!Object, Object_, Object_);
 @method Object_ _loadFromContext(PARTSPartFileProcessor, Object_, Object_) { return new Object_(); }
 @method Object_ _loadFromContext(PARTSSourceFileProcessor, Object_, Object_) { return new Object_(); }
 @method Object_ _loadFromContext(PARTSFileProcessor, Object_, Object_) { return new Object_(); }
@@ -9603,14 +10500,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ nextLine(virtual!Stream);
 @method Object_ _nextLine(FileStream) { return new Object_(); }
 @method Object_ _nextLine(Stream) { return new Object_(); }
-@mptr("hash") Object_ cr(virtual!Object_);
+@mptr("hash") Object_ cr(virtual!Object);
 @method Object_ _cr(FileStream) { return new Object_(); }
 @method Object_ _cr(TextPane) { return new Object_(); }
 @method Object_ _cr(TextTool) { return new Object_(); }
 @method Object_ _cr(TextPaneControl) { return new Object_(); }
 @method Object_ _cr(WriteStream) { return new Object_(); }
 @method Object_ _cr(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ pathName(virtual!Object_);
+@mptr("hash") Object_ pathName(virtual!Object);
 @method Object_ _pathName(FileStream) { return new Object_(); }
 @method Object_ _pathName(FileSystemPath) { return new Object_(); }
 @method Object_ _pathName(File) { return new Object_(); }
@@ -9619,7 +10516,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ readLimit(virtual!Stream);
 @method Object_ _readLimit(FileStream) { return new Object_(); }
 @method Object_ _readLimit(Stream) { return new Object_(); }
-@mptr("hash") Object_ collection(virtual!Object_);
+@mptr("hash") Object_ collection(virtual!Object);
 @method Object_ _collection(FileStream) { return new Object_(); }
 @method Object_ _collection(WinStructArray) { return new Object_(); }
 @method Object_ _collection(Stream) { return new Object_(); }
@@ -9635,7 +10532,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ atEnd(virtual!Stream);
 @method Object_ _atEnd(FileStream) { return new Object_(); }
 @method Object_ _atEnd(Stream) { return new Object_(); }
-@mptr("hash") Object_ flush(virtual!Object_);
+@mptr("hash") Object_ flush(virtual!Object);
 @method Object_ _flush(FileStream) { return new Object_(); }
 @method Object_ _flush(File) { return new Object_(); }
 @mptr("hash") Object_ lineDelimiter(virtual!Stream);
@@ -9644,45 +10541,57 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ lineDelimiter(virtual!Stream, Object_);
 @method Object_ _lineDelimiter(FileStream, Object_) { return new Object_(); }
 @method Object_ _lineDelimiter(Stream, Object_) { return new Object_(); }
-@mptr("hash") Object_ evaluateFor(virtual!Object_, Object_);
+@mptr("hash") Object_ evaluateFor(virtual!Object, Object_);
 @method Object_ _evaluateFor(Symbol, Object_) { return new Object_(); }
 @method Object_ _evaluateFor(ZeroArgumentBlock, Object_) { return new Object_(); }
 @method Object_ _evaluateFor(OneArgumentBlock, Object_) { return new Object_(); }
-@mptr("hash") Object_ twoDigitYear(virtual!Object_);
+@mptr("hash") Object_ twoDigitYear(virtual!Object);
 @method Object_ _twoDigitYear(PARTSPropertyDateFormat) { return new Object_(); }
 @method Object_ _twoDigitYear(PARTSDateEntryFieldPart) { return new Object_(); }
-@mptr("hash") Object_ dateSeparator(virtual!Object_);
+@mptr("hash") Object_ dateSeparator(virtual!Object);
 @method Object_ _dateSeparator(PARTSPropertyDateFormat) { return new Object_(); }
 @method Object_ _dateSeparator(PARTSDateEntryFieldPart) { return new Object_(); }
 @method Object_ _dateSeparator(NationalLanguageSupport) { return new Object_(); }
-@mptr("hash") Object_ dateSeparator(virtual!Object_, Object_);
+@mptr("hash") Object_ dateSeparator(virtual!Object, Object_);
 @method Object_ _dateSeparator(PARTSPropertyDateFormat, Object_) { return new Object_(); }
 @method Object_ _dateSeparator(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ useSystemFormat(virtual!Object_);
+@mptr("hash") Object_ useSystemFormat(virtual!Object);
 @method Object_ _useSystemFormat(PARTSPropertyDateFormat) { return new Object_(); }
 @method Object_ _useSystemFormat(PARTSDateEntryFieldPart) { return new Object_(); }
-@mptr("hash") Object_ dateFormat(virtual!Object_);
+@mptr("hash") Object_ dateFormat(virtual!Object);
 @method Object_ _dateFormat(PARTSPropertyDateFormat) { return new Object_(); }
 @method Object_ _dateFormat(PARTSDateEntryFieldPart) { return new Object_(); }
 @method Object_ _dateFormat(NationalLanguageSupport) { return new Object_(); }
-@mptr("hash") Object_ useSystemFormat(virtual!Object_, Object_);
+@mptr("hash") Object_ useSystemFormat(virtual!Object, Object_);
 @method Object_ _useSystemFormat(PARTSPropertyDateFormat, Object_) { return new Object_(); }
 @method Object_ _useSystemFormat(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ disableItems(virtual!Object_);
+@mptr("hash") Object_ disableItems(virtual!Object);
 @method Object_ _disableItems(PARTSPropertyDateFormat) { return new Object_(); }
 @method Object_ _disableItems(PARTSOrderedCollectionEditor) { return new Object_(); }
+@mptr("hash") Object_ formatString(virtual!PARTSFormattedEntryField, Object_);
+@method Object_ _formatString(PARTSPhoneNumberEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _formatString(PARTSCurrencyEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _formatString(PARTSPictureFieldPart, Object_) { return new Object_(); }
+@method Object_ _formatString(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _formatString(PARTSFormattedEntryField, Object_) { return new Object_(); }
+@mptr("hash") Object_ unformatString(virtual!PARTSFormattedEntryField, Object_);
+@method Object_ _unformatString(PARTSPhoneNumberEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _unformatString(PARTSCurrencyEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _unformatString(PARTSPictureFieldPart, Object_) { return new Object_(); }
+@method Object_ _unformatString(PARTSDateEntryFieldPart, Object_) { return new Object_(); }
+@method Object_ _unformatString(PARTSFormattedEntryField, Object_) { return new Object_(); }
 @mptr("hash") Object_ supportsMaxSizeItem(virtual!PARTSEntryFieldPart);
 @method Object_ _supportsMaxSizeItem(PARTSPhoneNumberEntryFieldPart) { return new Object_(); }
 @method Object_ _supportsMaxSizeItem(PARTSFloatEntryFieldPart) { return new Object_(); }
 @method Object_ _supportsMaxSizeItem(PARTSEntryFieldPart) { return new Object_(); }
-@mptr("hash") Object_ black(virtual!Object_);
+@mptr("hash") Object_ black(virtual!Object);
 @method Object_ _black(Screen) { return new Object_(); }
 @method Object_ _black(Pen) { return new Object_(); }
 @method Object_ _black(METACLASS_Color) { return new Object_(); }
 @mptr("hash") Object_ outputToPrinter(virtual!GraphicsMedium, Object_);
 @method Object_ _outputToPrinter(Screen, Object_) { return new Object_(); }
 @method Object_ _outputToPrinter(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ white(virtual!Object_);
+@mptr("hash") Object_ white(virtual!Object);
 @method Object_ _white(Screen) { return new Object_(); }
 @method Object_ _white(Pen) { return new Object_(); }
 @method Object_ _white(METACLASS_Color) { return new Object_(); }
@@ -9694,39 +10603,46 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ saveString(virtual!TextWindow, Object_);
 @method Object_ _saveString(TranscriptWindow, Object_) { return new Object_(); }
 @method Object_ _saveString(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ initialState(virtual!Object_, Object_);
+@mptr("hash") Object_ initialState(virtual!Object, Object_);
 @method Object_ _initialState(ApplicationCoordinator, Object_) { return new Object_(); }
 @method Object_ _initialState(PARTSWindowPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ asTimeStamp(virtual!ExternalBuffer);
 @method Object_ _asTimeStamp(WinFileTime) { return new Object_(); }
 @method Object_ _asTimeStamp(WinSystemTime) { return new Object_(); }
-@mptr("hash") Object_ componentNames(virtual!Object_);
+@mptr("hash") Object_ componentNames(virtual!Object);
 @method Object_ _componentNames(FileSystemPath) { return new Object_(); }
 @method Object_ _componentNames(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ drive(virtual!Object_);
+@mptr("hash") Object_ drive(virtual!Object);
 @method Object_ _drive(FileSystemPath) { return new Object_(); }
 @method Object_ _drive(Directory) { return new Object_(); }
-@mptr("hash") Object_ components(virtual!Object_);
+@mptr("hash") Object_ components(virtual!Object);
 @method Object_ _components(FileSystemPath) { return new Object_(); }
 @method Object_ _components(PARTSWrapper) { return new Object_(); }
 @method Object_ _components(P1148) { return new Object_(); }
 @method Object_ _components(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ absolute(virtual!Object_, Object_);
+@mptr("hash") Object_ absolute(virtual!Object, Object_);
 @method Object_ _absolute(FileSystemPath, Object_) { return new Object_(); }
 @method Object_ _absolute(METACLASS_FileSystemPath, Object_) { return new Object_(); }
-@mptr("hash") Object_ absolutePath(virtual!Object_);
+@mptr("hash") Object_ absolutePath(virtual!Object);
 @method Object_ _absolutePath(FileSystemPath) { return new Object_(); }
 @method Object_ _absolutePath(FileSystemEntity) { return new Object_(); }
 @mptr("hash") Object_ chosen(virtual!CommonSystemDialog);
 @method Object_ _chosen(ColorDialog) { return new Object_(); }
 @method Object_ _chosen(FontDialog) { return new Object_(); }
-@mptr("hash") Object_ handles(virtual!Object_, Object_);
+@mptr("hash") Object_ handles(virtual!Object, Object_);
 @method Object_ _handles(ExceptionSet, Object_) { return new Object_(); }
 @method Object_ _handles(ExceptionFilter, Object_) { return new Object_(); }
 @method Object_ _handles(METACLASS_Exception, Object_) { return new Object_(); }
 @mptr("hash") Object_ hasMenuBar(virtual!PARTSWindowPart);
 @method Object_ _hasMenuBar(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _hasMenuBar(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ defaultFrameCreationFlags(virtual!Window);
+@method Object_ _defaultFrameCreationFlags(PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _defaultFrameCreationFlags(PARTSDialPanePart) { return new Object_(); }
+@method Object_ _defaultFrameCreationFlags(PARTSPane) { return new Object_(); }
+@method Object_ _defaultFrameCreationFlags(PARTSIconPane) { return new Object_(); }
+@method Object_ _defaultFrameCreationFlags(P1102) { return new Object_(); }
+@method Object_ _defaultFrameCreationFlags(PARTSWindowPart) { return new Object_(); }
 @mptr("hash") Object_ lafAddEditPanes(virtual!PARTSWindowPart);
 @method Object_ _lafAddEditPanes(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _lafAddEditPanes(PARTSWindowPart) { return new Object_(); }
@@ -9736,22 +10652,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ lafAddMenuBar(virtual!PARTSWindowPart);
 @method Object_ _lafAddMenuBar(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _lafAddMenuBar(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ suspendClient(virtual!Object_);
+@mptr("hash") Object_ suspendClient(virtual!Object);
 @method Object_ _suspendClient(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _suspendClient(PARTSPrebuiltDialog) { return new Object_(); }
-@mptr("hash") Object_ suspendClient(virtual!Object_, Object_);
+@mptr("hash") Object_ suspendClient(virtual!Object, Object_);
 @method Object_ _suspendClient(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _suspendClient(PARTSPrebuiltDialog, Object_) { return new Object_(); }
 @mptr("hash") Object_ partPropertyLabel(virtual!PARTSWindowPart);
 @method Object_ _partPropertyLabel(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partPropertyLabel(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ defaultWindowTitle(virtual!PARTSWindowPart);
+@method Object_ _defaultWindowTitle(PARTSDialogWindowPart) { return new Object_(); }
+@method Object_ _defaultWindowTitle(PARTSWindowPart) { return new Object_(); }
 @mptr("hash") Object_ partPropertyDefaultBorderStyle(virtual!PARTSWindowPart);
 @method Object_ _partPropertyDefaultBorderStyle(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partPropertyDefaultBorderStyle(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ setWaitForAnswer(virtual!Object_, Object_);
+@mptr("hash") Object_ setWaitForAnswer(virtual!Object, Object_);
 @method Object_ _setWaitForAnswer(PARTSDialogWindowPart, Object_) { return new Object_(); }
 @method Object_ _setWaitForAnswer(PARTSPrebuiltDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ partMessagesProperties(virtual!Object_);
+@mptr("hash") Object_ partMessagesProperties(virtual!Object);
 @method Object_ _partMessagesProperties(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partMessagesProperties(PARTSPrompterPart) { return new Object_(); }
 @method Object_ _partMessagesProperties(PARTSPrebuiltMessageBox) { return new Object_(); }
@@ -9764,10 +10683,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ supportsMenuBar(virtual!PARTSWindowPart);
 @method Object_ _supportsMenuBar(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _supportsMenuBar(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ waitForAnswer(virtual!Object_);
+@mptr("hash") Object_ waitForAnswer(virtual!Object);
 @method Object_ _waitForAnswer(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _waitForAnswer(PARTSPrebuiltDialog) { return new Object_(); }
-@mptr("hash") Object_ partMessagesOperations(virtual!Object_);
+@mptr("hash") Object_ partMessagesOperations(virtual!Object);
 @method Object_ _partMessagesOperations(PARTSDialogWindowPart) { return new Object_(); }
 @method Object_ _partMessagesOperations(PARTSPrompterPart) { return new Object_(); }
 @method Object_ _partMessagesOperations(PARTSPrebuiltMessageBox) { return new Object_(); }
@@ -9784,7 +10703,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ writeToStream(virtual!PARTSFileDescriptor, Object_);
 @method Object_ _writeToStream(PARTSFileDescriptor, Object_) { return new Object_(); }
 @method Object_ _writeToStream(PARTSDosFileDescriptor, Object_) { return new Object_(); }
-@mptr("hash") Object_ exists(virtual!Object_);
+@mptr("hash") Object_ exists(virtual!Object);
 @method Object_ _exists(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _exists(FileSystemEntity) { return new Object_(); }
 @method Object_ _exists(FileSystemComponent) { return new Object_(); }
@@ -9794,20 +10713,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ storeLibrarymappings(virtual!PARTSFileDescriptor, Object_, Object_);
 @method Object_ _storeLibrarymappings(PARTSFileDescriptor, Object_, Object_) { return new Object_(); }
 @method Object_ _storeLibrarymappings(PARTSDosFileDescriptor, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ displayName(virtual!Object_);
+@mptr("hash") Object_ displayName(virtual!Object);
 @method Object_ _displayName(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _displayName(PARTSDosDirectory) { return new Object_(); }
-@mptr("hash") Object_ fileType(virtual!Object_);
+@mptr("hash") Object_ fileType(virtual!Object);
 @method Object_ _fileType(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _fileType(METACLASS_PARTSExecutablePartFileProcessor) { return new Object_(); }
 @method Object_ _fileType(METACLASS_PARTSPartFileProcessor) { return new Object_(); }
 @method Object_ _fileType(METACLASS_PARTSSourceFileProcessor) { return new Object_(); }
 @method Object_ _fileType(METACLASS_PARTSFileProcessor) { return new Object_(); }
 @method Object_ _fileType(METACLASS_PARTSExeFileProcessor) { return new Object_(); }
-@mptr("hash") Object_ fullPathName(virtual!Object_);
+@mptr("hash") Object_ fullPathName(virtual!Object);
 @method Object_ _fullPathName(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _fullPathName(ObjectStoreFile) { return new Object_(); }
-@mptr("hash") Object_ revisionNumber(virtual!Object_);
+@mptr("hash") Object_ revisionNumber(virtual!Object);
 @method Object_ _revisionNumber(PARTSFileDescriptor) { return new Object_(); }
 @method Object_ _revisionNumber(METACLASS_PARTSSessionManager) { return new Object_(); }
 @mptr("hash") Object_ toDo(virtual!Magnitude, Object_, Object_);
@@ -9822,18 +10741,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ toByDo(virtual!Magnitude, Object_, Object_, Object_);
 @method Object_ _toByDo(Character, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _toByDo(Number, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultDial(virtual!Object);
+@method Object_ _defaultDial(PARTSDialPanePart) { return new Object_(); }
+@method Object_ _defaultDial(METACLASS_PARTSDial) { return new Object_(); }
 @mptr("hash") Object_ dialogBoxCreate(virtual!PARTSPrebuiltDialog);
 @method Object_ _dialogBoxCreate(PARTSPrompterPart) { return new Object_(); }
 @method Object_ _dialogBoxCreate(PARTSPrebuiltMessageBox) { return new Object_(); }
 @method Object_ _dialogBoxCreate(PARTSPrebuiltDialog) { return new Object_(); }
 @method Object_ _dialogBoxCreate(PARTSFileDialogPart) { return new Object_(); }
-@mptr("hash") Object_ removeBlanks(virtual!Object_, Object_);
+@mptr("hash") Object_ removeBlanks(virtual!Object, Object_);
 @method Object_ _removeBlanks(PARTSPrompterPart, Object_) { return new Object_(); }
 @method Object_ _removeBlanks(PARTSPrompter, Object_) { return new Object_(); }
 @mptr("hash") Object_ partAddBorder(virtual!Button, Object_);
 @method Object_ _partAddBorder(PARTSPushButtonPart, Object_) { return new Object_(); }
 @method Object_ _partAddBorder(PARTSDrawnButtonPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPropertySelectFont(virtual!Object_, Object_);
+@mptr("hash") Object_ partPropertySelectFont(virtual!Object, Object_);
 @method Object_ _partPropertySelectFont(PARTSPushButtonPart, Object_) { return new Object_(); }
 @method Object_ _partPropertySelectFont(PARTSPrinterPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ removeButtonName(virtual!PARTSDialog);
@@ -9842,7 +10764,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ openOnTitle(virtual!PARTSDialog, Object_, Object_);
 @method Object_ _openOnTitle(PARTSFieldOrderDialog, Object_, Object_) { return new Object_(); }
 @method Object_ _openOnTitle(PARTSExtentEditor, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ showSelection(virtual!Object_);
+@mptr("hash") Object_ showSelection(virtual!Object);
 @method Object_ _showSelection(TextPane) { return new Object_(); }
 @method Object_ _showSelection(P1124) { return new Object_(); }
 @method Object_ _showSelection(ListPane) { return new Object_(); }
@@ -9871,6 +10793,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ matchBracketChars(virtual!SubPane);
 @method Object_ _matchBracketChars(TextPane) { return new Object_(); }
 @method Object_ _matchBracketChars(TextPaneControl) { return new Object_(); }
+@mptr("hash") Object_ doIt(virtual!SubPane, Object_);
+@method Object_ _doIt(TextPane, Object_) { return new Object_(); }
+@method Object_ _doIt(TextPaneControl, Object_) { return new Object_(); }
 @mptr("hash") Object_ selectLineAtCurrentSelection(virtual!SubPane);
 @method Object_ _selectLineAtCurrentSelection(TextPane) { return new Object_(); }
 @method Object_ _selectLineAtCurrentSelection(TextPaneControl) { return new Object_(); }
@@ -9895,12 +10820,12 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ findReplace(virtual!SubPane);
 @method Object_ _findReplace(TextPane) { return new Object_(); }
 @method Object_ _findReplace(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ topCorner(virtual!Object_, Object_);
+@mptr("hash") Object_ topCorner(virtual!Object, Object_);
 @method Object_ _topCorner(TextPane, Object_) { return new Object_(); }
 @method Object_ _topCorner(StringModel, Object_) { return new Object_(); }
 @method Object_ _topCorner(TextEdit, Object_) { return new Object_(); }
 @method Object_ _topCorner(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ print(virtual!Object_);
+@mptr("hash") Object_ print(virtual!Object);
 @method Object_ _print(TextPane) { return new Object_(); }
 @method Object_ _print(ApplicationWindow) { return new Object_(); }
 @method Object_ _print(TextPaneControl) { return new Object_(); }
@@ -9912,7 +10837,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ makeVisible(virtual!SubPane, Object_);
 @method Object_ _makeVisible(TextPane, Object_) { return new Object_(); }
 @method Object_ _makeVisible(ListPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ expressionEvaluatorClass(virtual!Object_);
+@mptr("hash") Object_ undo(virtual!SubPane);
+@method Object_ _undo(TextPane) { return new Object_(); }
+@method Object_ _undo(TextEdit) { return new Object_(); }
+@mptr("hash") Object_ expressionEvaluatorClass(virtual!Object);
 @method Object_ _expressionEvaluatorClass(TextPane) { return new Object_(); }
 @method Object_ _expressionEvaluatorClass(TextPaneControl) { return new Object_(); }
 @method Object_ _expressionEvaluatorClass(TextWindow) { return new Object_(); }
@@ -9931,37 +10859,43 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ addCurlyBrackets(virtual!SubPane);
 @method Object_ _addCurlyBrackets(TextPane) { return new Object_(); }
 @method Object_ _addCurlyBrackets(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ appendChar(virtual!Object_, Object_);
+@mptr("hash") Object_ appendChar(virtual!Object, Object_);
 @method Object_ _appendChar(TextPane, Object_) { return new Object_(); }
 @method Object_ _appendChar(StringModel, Object_) { return new Object_(); }
 @method Object_ _appendChar(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ appendText(virtual!Object_, Object_);
+@mptr("hash") Object_ appendText(virtual!Object, Object_);
 @method Object_ _appendText(TextPane, Object_) { return new Object_(); }
 @method Object_ _appendText(StringModel, Object_) { return new Object_(); }
 @mptr("hash") Object_ replaceAtPattern(virtual!SubPane);
 @method Object_ _replaceAtPattern(TextPane) { return new Object_(); }
 @method Object_ _replaceAtPattern(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ insert(virtual!Object_, Object_);
+@mptr("hash") Object_ insert(virtual!Object, Object_);
 @method Object_ _insert(TextPane, Object_) { return new Object_(); }
 @method Object_ _insert(P1124, Object_) { return new Object_(); }
 @method Object_ _insert(TextEdit, Object_) { return new Object_(); }
 @mptr("hash") Object_ selectionIncludesPoint(virtual!SubPane, Object_);
 @method Object_ _selectionIncludesPoint(TextPane, Object_) { return new Object_(); }
 @method Object_ _selectionIncludesPoint(TextPaneControl, Object_) { return new Object_(); }
+@mptr("hash") Object_ forceEndOntoDisplay(virtual!SubPane);
+@method Object_ _forceEndOntoDisplay(TextPane) { return new Object_(); }
+@method Object_ _forceEndOntoDisplay(TextPaneControl) { return new Object_(); }
+@mptr("hash") Object_ forceSelectionOntoDisplay(virtual!SubPane);
+@method Object_ _forceSelectionOntoDisplay(TextPane) { return new Object_(); }
+@method Object_ _forceSelectionOntoDisplay(TextPaneControl) { return new Object_(); }
 @mptr("hash") Object_ resize(virtual!Window, Object_);
 @method Object_ _resize(TextPane, Object_) { return new Object_(); }
 @method Object_ _resize(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _resize(SubPane, Object_) { return new Object_(); }
 @method Object_ _resize(PARTSWindowPart, Object_) { return new Object_(); }
 @method Object_ _resize(PARTSNestedPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ showSelectionFromTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ showSelectionFromTo(virtual!Object, Object_, Object_);
 @method Object_ _showSelectionFromTo(TextPane, Object_, Object_) { return new Object_(); }
 @method Object_ _showSelectionFromTo(TextPaneControl, Object_, Object_) { return new Object_(); }
 @method Object_ _showSelectionFromTo(P1124, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ searchBackOld(virtual!SubPane);
 @method Object_ _searchBackOld(TextPane) { return new Object_(); }
 @method Object_ _searchBackOld(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ fileInFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ fileInFrom(virtual!Object, Object_);
 @method Object_ _fileInFrom(TextPane, Object_) { return new Object_(); }
 @method Object_ _fileInFrom(StringModel, Object_) { return new Object_(); }
 @method Object_ _fileInFrom(TextPaneControl, Object_) { return new Object_(); }
@@ -9982,7 +10916,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ queryReplaceAtPattern(virtual!SubPane);
 @method Object_ _queryReplaceAtPattern(TextPane) { return new Object_(); }
 @method Object_ _queryReplaceAtPattern(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ reinitialize(virtual!Object_);
+@mptr("hash") Object_ reinitialize(virtual!Object);
 @method Object_ _reinitialize(TextPane) { return new Object_(); }
 @method Object_ _reinitialize(NotificationManager) { return new Object_(); }
 @mptr("hash") Object_ scrollHorizontalCharacters(virtual!SubPane, Object_);
@@ -9995,7 +10929,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ selectedString(virtual!SubPane);
 @method Object_ _selectedString(TextPane) { return new Object_(); }
 @method Object_ _selectedString(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ accept(virtual!Object_);
+@mptr("hash") Object_ accept(virtual!Object);
 @method Object_ _accept(TextPane) { return new Object_(); }
 @method Object_ _accept(ApplicationWindow) { return new Object_(); }
 @method Object_ _accept(PARTSIconEditor) { return new Object_(); }
@@ -10015,10 +10949,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _compareCandidate(Dictionary, Object_, Object_) { return new Object_(); }
 @method Object_ _compareCandidate(IdentitySet, Object_, Object_) { return new Object_(); }
 @method Object_ _compareCandidate(HashedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ subclassInstancevariablenamesClassvariablenamesPooldictionariesIsvariableIspointers(virtual!Object_, Object_, Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ newNameSymbol(virtual!Behavior, Object_);
+@method Object_ _newNameSymbol(Class, Object_) { return new Object_(); }
+@method Object_ _newNameSymbol(MetaClass, Object_) { return new Object_(); }
+@mptr("hash") Object_ subclassInstancevariablenamesClassvariablenamesPooldictionariesIsvariableIspointers(virtual!Object, Object_, Object_, Object_, Object_, Object_, Object_);
 @method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionariesIsvariableIspointers(Class, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionariesIsvariableIspointers(UndefinedObject, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ classVarNames(virtual!Behavior);
@@ -10030,13 +10967,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ symbol(virtual!Behavior);
 @method Object_ _symbol(Class) { return new Object_(); }
 @method Object_ _symbol(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ subclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ subclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ variableByteSubclassClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ variableByteSubclassClassvariablenamesPooldictionaries(virtual!Object, Object_, Object_, Object_);
 @method Object_ _variableByteSubclassClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _variableByteSubclassClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ instanceClass(virtual!Behavior);
@@ -10067,7 +11004,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partPropertyValidate(virtual!Window, Object_);
 @method Object_ _partPropertyValidate(PARTSTextPanePart, Object_) { return new Object_(); }
 @method Object_ _partPropertyValidate(PARTSWindowPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ menuTitled(virtual!Object_, Object_);
+@mptr("hash") Object_ menuTitled(virtual!Object, Object_);
 @method Object_ _menuTitled(PARTSTextPanePart, Object_) { return new Object_(); }
 @method Object_ _menuTitled(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _menuTitled(ViewManager, Object_) { return new Object_(); }
@@ -10075,18 +11012,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ resetAttributes(virtual!GraphicsTool);
 @method Object_ _resetAttributes(TextTool) { return new Object_(); }
 @method Object_ _resetAttributes(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ indeterminate(virtual!Object_);
+@mptr("hash") Object_ indeterminate(virtual!Object);
 @method Object_ _indeterminate(ThreeStateButton) { return new Object_(); }
 @method Object_ _indeterminate(METACLASS_ThreeStateButton) { return new Object_(); }
 @mptr("hash") Object_ setValue(virtual!Toggle);
 @method Object_ _setValue(ThreeStateButton) { return new Object_(); }
 @method Object_ _setValue(Toggle) { return new Object_(); }
-@mptr("hash") Object_ setBitmap(virtual!Object_, Object_);
+@mptr("hash") Object_ setBitmap(virtual!Object, Object_);
 @method Object_ _setBitmap(PARTSDrawnButtonPart, Object_) { return new Object_(); }
 @method Object_ _setBitmap(PARTSGraphPanePart, Object_) { return new Object_(); }
 @method Object_ _setBitmap(ClipboardManager, Object_) { return new Object_(); }
 @method Object_ _setBitmap(PARTSMenuBitmapItemPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ dropLocation(virtual!Object_);
+@mptr("hash") Object_ defaultBitmap(virtual!Object);
+@method Object_ _defaultBitmap(PARTSDrawnButtonPart) { return new Object_(); }
+@method Object_ _defaultBitmap(METACLASS_Bitmap) { return new Object_(); }
+@mptr("hash") Object_ dropLocation(virtual!Object);
 @method Object_ _dropLocation(PARTSCatalogDragSession) { return new Object_(); }
 @method Object_ _dropLocation(P1104) { return new Object_(); }
 @mptr("hash") Object_ targetDrop(virtual!DragDropSession);
@@ -10100,10 +11040,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _sourceFeedback(PARTSEditorMoveSession) { return new Object_(); }
 @method Object_ _sourceFeedback(PARTSLocalDragDropSession) { return new Object_(); }
 @method Object_ _sourceFeedback(PARTSDragSession) { return new Object_(); }
-@mptr("hash") Object_ registerClass(virtual!Object_, Object_);
+@mptr("hash") Object_ registerClass(virtual!Object, Object_);
 @method Object_ _registerClass(UserDLL, Object_) { return new Object_(); }
 @method Object_ _registerClass(METACLASS_PARTSFileProcessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ show(virtual!Object_, Object_);
+@mptr("hash") Object_ show(virtual!Object, Object_);
 @method Object_ _show(Stream, Object_) { return new Object_(); }
 @method Object_ _show(StatusBox, Object_) { return new Object_(); }
 @method Object_ _show(TextWindow, Object_) { return new Object_(); }
@@ -10117,33 +11057,36 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ reverseContents(virtual!Stream);
 @method Object_ _reverseContents(Stream) { return new Object_(); }
 @method Object_ _reverseContents(MixedFileStream) { return new Object_(); }
-@mptr("hash") Object_ nextPut(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ nextPut(virtual!Object, Object_, Object_);
 @method Object_ _nextPut(Stream, Object_, Object_) { return new Object_(); }
 @method Object_ _nextPut(TextWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ skip(virtual!Object_, Object_);
+@mptr("hash") Object_ skip(virtual!Object, Object_);
 @method Object_ _skip(Stream, Object_) { return new Object_(); }
 @method Object_ _skip(Debugger, Object_) { return new Object_(); }
-@mptr("hash") Object_ pattern(virtual!Object_);
+@mptr("hash") Object_ pattern(virtual!Object);
 @method Object_ _pattern(PARTSFileType) { return new Object_(); }
 @method Object_ _pattern(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _pattern(PARTSFileDialogPart) { return new Object_(); }
-@mptr("hash") Object_ pattern(virtual!Object_, Object_);
+@mptr("hash") Object_ pattern(virtual!Object, Object_);
 @method Object_ _pattern(PARTSFileType, Object_) { return new Object_(); }
 @method Object_ _pattern(PARTSDiskAccessorPart, Object_) { return new Object_(); }
 @method Object_ _pattern(PARTSFileDialogPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpFileName(virtual!Object_);
+@mptr("hash") Object_ forTitleFileDialogsAboutdlgclass(virtual!Object, Object_, Object_, Object_, Object_, Object_);
+@method Object_ _forTitleFileDialogsAboutdlgclass(HelpManager, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _forTitleFileDialogsAboutdlgclass(METACLASS_HelpManager, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ helpFileName(virtual!Object);
 @method Object_ _helpFileName(HelpManager) { return new Object_(); }
 @method Object_ _helpFileName(METACLASS_P1101) { return new Object_(); }
 @mptr("hash") Object_ nextByte(virtual!ReadWriteStream);
 @method Object_ _nextByte(ReadWriteStream) { return new Object_(); }
 @method Object_ _nextByte(MixedFileStream) { return new Object_(); }
-@mptr("hash") Object_ headerSize(virtual!Object_, Object_);
+@mptr("hash") Object_ headerSize(virtual!Object, Object_);
 @method Object_ _headerSize(ObjectStoreSpace, Object_) { return new Object_(); }
 @method Object_ _headerSize(WinMetaheader, Object_) { return new Object_(); }
-@mptr("hash") Object_ assignAddress(virtual!Object_, Object_);
+@mptr("hash") Object_ assignAddress(virtual!Object, Object_);
 @method Object_ _assignAddress(ObjectStoreSpace, Object_) { return new Object_(); }
 @method Object_ _assignAddress(ObjectStoreFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ remove(virtual!Object_);
+@mptr("hash") Object_ remove(virtual!Object);
 @method Object_ _remove(FileSystemEntity) { return new Object_(); }
 @method Object_ _remove(SmalltalkLibraryBinder) { return new Object_(); }
 @method Object_ _remove(DictionaryInspector) { return new Object_(); }
@@ -10156,13 +11099,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ isComponentEntity(virtual!FileSystemEntity);
 @method Object_ _isComponentEntity(FileSystemEntity) { return new Object_(); }
 @method Object_ _isComponentEntity(FileSystemComponent) { return new Object_(); }
-@mptr("hash") Object_ volumeLabel(virtual!Object_);
+@mptr("hash") Object_ volumeLabel(virtual!Object);
 @method Object_ _volumeLabel(FileSystemEntity) { return new Object_(); }
 @method Object_ _volumeLabel(FileVolume) { return new Object_(); }
-@mptr("hash") Object_ fileSystemLocator(virtual!Object_);
+@mptr("hash") Object_ fileSystemLocator(virtual!Object);
 @method Object_ _fileSystemLocator(FileSystemEntity) { return new Object_(); }
 @method Object_ _fileSystemLocator(FileVolume) { return new Object_(); }
-@mptr("hash") Object_ fileSystemLocator(virtual!Object_, Object_);
+@mptr("hash") Object_ fileSystemLocator(virtual!Object, Object_);
 @method Object_ _fileSystemLocator(FileSystemEntity, Object_) { return new Object_(); }
 @method Object_ _fileSystemLocator(FileVolume, Object_) { return new Object_(); }
 @mptr("hash") Object_ lastModificationTime(virtual!FileSystemEntity);
@@ -10184,67 +11127,74 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _create(FileSystemEntity) { return new Object_(); }
 @method Object_ _create(File) { return new Object_(); }
 @method Object_ _create(Directory) { return new Object_(); }
-@mptr("hash") Object_ volume(virtual!Object_);
+@mptr("hash") Object_ volume(virtual!Object);
 @method Object_ _volume(FileSystemEntity) { return new Object_(); }
 @method Object_ _volume(FileVolume) { return new Object_(); }
-@mptr("hash") Object_ noSmalltalkMenuBar(virtual!Object_);
+@mptr("hash") Object_ noSmalltalkMenuBar(virtual!Object);
 @method Object_ _noSmalltalkMenuBar(ApplicationWindow) { return new Object_(); }
 @method Object_ _noSmalltalkMenuBar(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ hasSmalltalkMenuBar(virtual!ApplicationWindow);
 @method Object_ _hasSmalltalkMenuBar(ApplicationWindow) { return new Object_(); }
 @method Object_ _hasSmalltalkMenuBar(PARTSWindowPart) { return new Object_(); }
-@mptr("hash") Object_ zoom(virtual!Object_);
+@mptr("hash") Object_ zoom(virtual!Object);
 @method Object_ _zoom(ApplicationWindow) { return new Object_(); }
 @method Object_ _zoom(SubPane) { return new Object_(); }
 @method Object_ _zoom(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ setBackgroundColor(virtual!Object_);
+@mptr("hash") Object_ closeInnerWindows(virtual!ApplicationWindow);
+@method Object_ _closeInnerWindows(ApplicationWindow) { return new Object_(); }
+@method Object_ _closeInnerWindows(PARTSWindowPart) { return new Object_(); }
+@mptr("hash") Object_ setBackgroundColor(virtual!Object);
 @method Object_ _setBackgroundColor(ApplicationWindow) { return new Object_(); }
 @method Object_ _setBackgroundColor(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ setForegroundColor(virtual!Object_);
+@mptr("hash") Object_ setForegroundColor(virtual!Object);
 @method Object_ _setForegroundColor(ApplicationWindow) { return new Object_(); }
 @method Object_ _setForegroundColor(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ toggleWrap(virtual!Object_);
+@mptr("hash") Object_ toggleWrap(virtual!Object);
 @method Object_ _toggleWrap(ApplicationWindow) { return new Object_(); }
 @method Object_ _toggleWrap(TextPaneControl) { return new Object_(); }
 @method Object_ _toggleWrap(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ minimized(virtual!ApplicationWindow);
 @method Object_ _minimized(ApplicationWindow) { return new Object_(); }
 @method Object_ _minimized(P1102) { return new Object_(); }
-@mptr("hash") Object_ clearTextModified(virtual!Object_);
+@mptr("hash") Object_ clearTextModified(virtual!Object);
 @method Object_ _clearTextModified(ApplicationWindow) { return new Object_(); }
 @method Object_ _clearTextModified(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ textModified(virtual!Object_);
+@mptr("hash") Object_ textModified(virtual!Object);
 @method Object_ _textModified(ApplicationWindow) { return new Object_(); }
 @method Object_ _textModified(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ printSetup(virtual!Object_);
+@mptr("hash") Object_ printSetup(virtual!Object);
 @method Object_ _printSetup(ApplicationWindow) { return new Object_(); }
 @method Object_ _printSetup(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ subPaneWithFocus(virtual!Window, Object_);
 @method Object_ _subPaneWithFocus(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _subPaneWithFocus(SubPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ labelWithoutPrefix(virtual!Object_, Object_);
+@mptr("hash") Object_ labelWithoutPrefix(virtual!Object, Object_);
 @method Object_ _labelWithoutPrefix(ApplicationWindow, Object_) { return new Object_(); }
 @method Object_ _labelWithoutPrefix(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ setFonts(virtual!Object_);
+@mptr("hash") Object_ setFonts(virtual!Object);
 @method Object_ _setFonts(ApplicationWindow) { return new Object_(); }
 @method Object_ _setFonts(ViewManager) { return new Object_(); }
 @mptr("hash") Object_ initSize(virtual!ApplicationWindow);
 @method Object_ _initSize(ApplicationWindow) { return new Object_(); }
 @method Object_ _initSize(P1102) { return new Object_(); }
-@mptr("hash") Object_ charAt(virtual!Object_, Object_);
+@mptr("hash") Object_ charAt(virtual!Object, Object_);
 @method Object_ _charAt(StringModel, Object_) { return new Object_(); }
 @method Object_ _charAt(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ maxLineBetweenAnd(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ delete(virtual!Object, Object_);
+@method Object_ _delete(StringModel, Object_) { return new Object_(); }
+@method Object_ _delete(PARTSDiskAccessorPart, Object_) { return new Object_(); }
+@method Object_ _delete(PARTSFileAccessorPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ maxLineBetweenAnd(virtual!Object, Object_, Object_);
 @method Object_ _maxLineBetweenAnd(StringModel, Object_, Object_) { return new Object_(); }
 @method Object_ _maxLineBetweenAnd(ListPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ string(virtual!Object_);
+@mptr("hash") Object_ string(virtual!Object);
 @method Object_ _string(StringModel) { return new Object_(); }
 @method Object_ _string(DragDropObject) { return new Object_(); }
-@mptr("hash") Object_ string(virtual!Object_, Object_);
+@mptr("hash") Object_ string(virtual!Object, Object_);
 @method Object_ _string(StringModel, Object_) { return new Object_(); }
 @method Object_ _string(DragDropObject, Object_) { return new Object_(); }
 @method Object_ _string(METACLASS_DragDropObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ dropDown(virtual!Object_);
+@mptr("hash") Object_ dropDown(virtual!Object);
 @method Object_ _dropDown(ComboBox) { return new Object_(); }
 @method Object_ _dropDown(METACLASS_ComboBox) { return new Object_(); }
 @mptr("hash") Object_ moveFileAs(virtual!FileSystemContainer, Object_, Object_);
@@ -10268,13 +11218,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ existingEntityNamedIfabsent(virtual!FileSystemContainer, Object_, Object_);
 @method Object_ _existingEntityNamedIfabsent(FileSystemContainer, Object_, Object_) { return new Object_(); }
 @method Object_ _existingEntityNamedIfabsent(Directory, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ dumpOnObjectcountestimate(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ dumpOnObjectcountestimate(virtual!Object, Object_, Object_, Object_);
 @method Object_ _dumpOnObjectcountestimate(ObjectDumper, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _dumpOnObjectcountestimate(METACLASS_ObjectDumper, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ currentVersionDescription(virtual!Object_);
+@mptr("hash") Object_ currentVersionDescription(virtual!Object);
 @method Object_ _currentVersionDescription(ObjectDumper) { return new Object_(); }
 @method Object_ _currentVersionDescription(METACLASS_ObjectDumper) { return new Object_(); }
 @method Object_ _currentVersionDescription(METACLASS_PARTSFile) { return new Object_(); }
+@mptr("hash") Object_ doPrerequisites(virtual!ObjectStoreReader);
+@method Object_ _doPrerequisites(ObjectLoader) { return new Object_(); }
+@method Object_ _doPrerequisites(SmalltalkLibraryBinder) { return new Object_(); }
+@mptr("hash") Object_ versionOf(virtual!Object, Object_);
+@method Object_ _versionOf(ServiceRegistry, Object_) { return new Object_(); }
+@method Object_ _versionOf(METACLASS_SmalltalkLibraryBinder, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultFileExtension(virtual!PARTSBitEditor);
+@method Object_ _defaultFileExtension(PARTSIconEditor) { return new Object_(); }
+@method Object_ _defaultFileExtension(PARTSBitEditor) { return new Object_(); }
 @mptr("hash") Object_ fill(virtual!PARTSBitEditor);
 @method Object_ _fill(PARTSIconEditor) { return new Object_(); }
 @method Object_ _fill(PARTSBitEditor) { return new Object_(); }
@@ -10311,13 +11270,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ addButtonGroup(virtual!PARTSBitEditor, Object_);
 @method Object_ _addButtonGroup(PARTSIconEditor, Object_) { return new Object_(); }
 @method Object_ _addButtonGroup(PARTSBitEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ resolveGlobal(virtual!Object_);
+@mptr("hash") Object_ resolveGlobal(virtual!Object);
 @method Object_ _resolveGlobal(ObjectReference) { return new Object_(); }
 @method Object_ _resolveGlobal(ObjectStoreExternal) { return new Object_(); }
-@mptr("hash") Object_ typeValue(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ typeValue(virtual!Object, Object_, Object_);
 @method Object_ _typeValue(ObjectReference, Object_, Object_) { return new Object_(); }
 @method Object_ _typeValue(ObjectStoreExternal, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ getClassIfabsent(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ getClassIfabsent(virtual!Object, Object_, Object_);
 @method Object_ _getClassIfabsent(ObjectReference, Object_, Object_) { return new Object_(); }
 @method Object_ _getClassIfabsent(ObjectStoreExternal, Object_, Object_) { return new Object_(); }
 @method Object_ _getClassIfabsent(METACLASS_ObjectStoreFileExternal, Object_, Object_) { return new Object_(); }
@@ -10332,7 +11291,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _wmExternalCallWith(PARTSStarterWindow, Object_, Object_) { return new Object_(); }
 @method Object_ _wmExternalCallWith(PARTSStarterWindowWindows, Object_, Object_) { return new Object_(); }
 @method Object_ _wmExternalCallWith(PARTSMenuBar, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ exception(virtual!Object_);
+@mptr("hash") Object_ exception(virtual!Object);
 @method Object_ _exception(DynamicLinkLibrary) { return new Object_(); }
 @method Object_ _exception(ExceptionHandler) { return new Object_(); }
 @mptr("hash") Object_ queryProcAddr(virtual!DynamicLinkLibrary, Object_);
@@ -10341,6 +11300,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ pageButtonExtent(virtual!PARTSBaseNotebook);
 @method Object_ _pageButtonExtent(PARTSNotebook) { return new Object_(); }
 @method Object_ _pageButtonExtent(PARTSBaseNotebook) { return new Object_(); }
+@mptr("hash") Object_ receiveAllWindowMessages(virtual!ControlPane);
+@method Object_ _receiveAllWindowMessages(PARTSNotebook) { return new Object_(); }
+@method Object_ _receiveAllWindowMessages(ControlPane) { return new Object_(); }
 @mptr("hash") Object_ deferUntilValid(virtual!PARTSBaseNotebook);
 @method Object_ _deferUntilValid(PARTSNotebook) { return new Object_(); }
 @method Object_ _deferUntilValid(PARTSBaseNotebook) { return new Object_(); }
@@ -10350,7 +11312,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ minorTabExtent(virtual!PARTSBaseNotebook);
 @method Object_ _minorTabExtent(PARTSNotebook) { return new Object_(); }
 @method Object_ _minorTabExtent(PARTSBaseNotebook) { return new Object_(); }
-@mptr("hash") Object_ restartable(virtual!Object_);
+@mptr("hash") Object_ restartable(virtual!Object);
 @method Object_ _restartable(Debugger) { return new Object_(); }
 @method Object_ _restartable(PARTSDeveloperDebugger) { return new Object_(); }
 @method Object_ _restartable(Process) { return new Object_(); }
@@ -10360,66 +11322,79 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ walkbackForLabel(virtual!Debugger, Object_, Object_);
 @method Object_ _walkbackForLabel(Debugger, Object_, Object_) { return new Object_(); }
 @method Object_ _walkbackForLabel(PARTSDeveloperDebugger, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ terminate(virtual!Object_);
+@mptr("hash") Object_ debug(virtual!Debugger);
+@method Object_ _debug(Debugger) { return new Object_(); }
+@method Object_ _debug(PARTSDeveloperDebugger) { return new Object_(); }
+@mptr("hash") Object_ debug(virtual!Browser, Object_);
+@method Object_ _debug(Debugger, Object_) { return new Object_(); }
+@method Object_ _debug(WalkbackWindow, Object_) { return new Object_(); }
+@mptr("hash") Object_ terminate(virtual!Object);
 @method Object_ _terminate(Debugger) { return new Object_(); }
 @method Object_ _terminate(Process) { return new Object_(); }
 @mptr("hash") Object_ resumable(virtual!Debugger);
 @method Object_ _resumable(Debugger) { return new Object_(); }
 @method Object_ _resumable(PARTSDeveloperDebugger) { return new Object_(); }
+@mptr("hash") Object_ createWindow(virtual!ObjectWindow);
+@method Object_ _createWindow(PARTSStarterWindowWindows) { return new Object_(); }
+@method Object_ _createWindow(PARTSTimerWindow) { return new Object_(); }
 @mptr("hash") Object_ partPropertyHasFrameCreationFlags(virtual!Window);
 @method Object_ _partPropertyHasFrameCreationFlags(PARTSGraphPanePart) { return new Object_(); }
 @method Object_ _partPropertyHasFrameCreationFlags(PARTSWindowPart) { return new Object_(); }
 @mptr("hash") Object_ buildAppToBeRun(virtual!SubPane);
 @method Object_ _buildAppToBeRun(PARTSGroupPanePart) { return new Object_(); }
 @method Object_ _buildAppToBeRun(PARTSNestedPart) { return new Object_(); }
-@mptr("hash") Object_ isOS2(virtual!Object_);
+@mptr("hash") Object_ isOS2(virtual!Object);
 @method Object_ _isOS2(OperatingSystemInformation) { return new Object_(); }
 @method Object_ _isOS2(ListConnectionPane) { return new Object_(); }
 @method Object_ _isOS2(METACLASS_PARTSHostInterface) { return new Object_(); }
-@mptr("hash") Object_ getSystemColor(virtual!Object_, Object_);
+@mptr("hash") Object_ isWindows(virtual!Object);
+@method Object_ _isWindows(OperatingSystemInformation) { return new Object_(); }
+@method Object_ _isWindows(ListConnectionPane) { return new Object_(); }
+@method Object_ _isWindows(METACLASS_PARTSHostInterface) { return new Object_(); }
+@mptr("hash") Object_ getSystemColor(virtual!Object, Object_);
 @method Object_ _getSystemColor(OperatingSystemInformation, Object_) { return new Object_(); }
 @method Object_ _getSystemColor(METACLASS_Color, Object_) { return new Object_(); }
-@mptr("hash") Object_ showLinksWithSelection(virtual!Object_);
+@mptr("hash") Object_ showLinksWithSelection(virtual!Object);
 @method Object_ _showLinksWithSelection(PARTSSettings) { return new Object_(); }
 @method Object_ _showLinksWithSelection(PARTSSettingsEditor) { return new Object_(); }
-@mptr("hash") Object_ userName(virtual!Object_);
+@mptr("hash") Object_ userName(virtual!Object);
 @method Object_ _userName(PARTSSettings) { return new Object_(); }
 @method Object_ _userName(PARTSSettingsEditor) { return new Object_(); }
-@mptr("hash") Object_ writeSettingsFile(virtual!Object_);
+@mptr("hash") Object_ writeSettingsFile(virtual!Object);
 @method Object_ _writeSettingsFile(PARTSSettings) { return new Object_(); }
 @method Object_ _writeSettingsFile(METACLASS_PARTSIniFile) { return new Object_(); }
-@mptr("hash") Object_ showLinkLabels(virtual!Object_, Object_);
+@mptr("hash") Object_ showLinkLabels(virtual!Object, Object_);
 @method Object_ _showLinkLabels(PARTSSettings, Object_) { return new Object_(); }
 @method Object_ _showLinkLabels(PARTSSettingsEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ showHints(virtual!Object_);
+@mptr("hash") Object_ showHints(virtual!Object);
 @method Object_ _showHints(PARTSSettings) { return new Object_(); }
 @method Object_ _showHints(PARTSSettingsEditor) { return new Object_(); }
-@mptr("hash") Object_ showHints(virtual!Object_, Object_);
+@mptr("hash") Object_ showHints(virtual!Object, Object_);
 @method Object_ _showHints(PARTSSettings, Object_) { return new Object_(); }
 @method Object_ _showHints(PARTSSettingsEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ userName(virtual!Object_, Object_);
+@mptr("hash") Object_ userName(virtual!Object, Object_);
 @method Object_ _userName(PARTSSettings, Object_) { return new Object_(); }
 @method Object_ _userName(PARTSSettingsEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ showLinksWithSelection(virtual!Object_, Object_);
+@mptr("hash") Object_ showLinksWithSelection(virtual!Object, Object_);
 @method Object_ _showLinksWithSelection(PARTSSettings, Object_) { return new Object_(); }
 @method Object_ _showLinksWithSelection(PARTSSettingsEditor, Object_) { return new Object_(); }
-@mptr("hash") Object_ showLinkLabels(virtual!Object_);
+@mptr("hash") Object_ showLinkLabels(virtual!Object);
 @method Object_ _showLinkLabels(PARTSSettings) { return new Object_(); }
 @method Object_ _showLinkLabels(PARTSSettingsEditor) { return new Object_(); }
-@mptr("hash") Object_ loadSettings(virtual!Object_);
+@mptr("hash") Object_ loadSettings(virtual!Object);
 @method Object_ _loadSettings(PARTSSettings) { return new Object_(); }
 @method Object_ _loadSettings(METACLASS_PARTSIniFile) { return new Object_(); }
-@mptr("hash") Object_ colorDictionary(virtual!Object_);
+@mptr("hash") Object_ colorDictionary(virtual!Object);
 @method Object_ _colorDictionary(PARTSSettings) { return new Object_(); }
 @method Object_ _colorDictionary(METACLASS_PARTSIniFile) { return new Object_(); }
 @method Object_ _colorDictionary(METACLASS_PARTSBitEditor) { return new Object_(); }
-@mptr("hash") Object_ empty(virtual!Object_);
+@mptr("hash") Object_ empty(virtual!Object);
 @method Object_ _empty(NotificationManager) { return new Object_(); }
 @method Object_ _empty(ClipboardManager) { return new Object_(); }
-@mptr("hash") Object_ yield(virtual!Object_);
+@mptr("hash") Object_ yield(virtual!Object);
 @method Object_ _yield(NotificationManager) { return new Object_(); }
 @method Object_ _yield(ProcessScheduler) { return new Object_(); }
-@mptr("hash") Object_ initializeTranscript(virtual!Object_);
+@mptr("hash") Object_ initializeTranscript(virtual!Object);
 @method Object_ _initializeTranscript(NotificationManager) { return new Object_(); }
 @method Object_ _initializeTranscript(METACLASS_TranscriptWindow) { return new Object_(); }
 @mptr("hash") Object_ appendOpenItem(virtual!PARTSStandardFileMenu, Object_);
@@ -10434,42 +11409,48 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ appendRestoreItem(virtual!PARTSStandardFileMenu, Object_);
 @method Object_ _appendRestoreItem(PARTSStandardFileMenu, Object_) { return new Object_(); }
 @method Object_ _appendRestoreItem(PARTSFileMenu, Object_) { return new Object_(); }
-@mptr("hash") Object_ getClassIfabsentornil(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ getClassIfabsentornil(virtual!Object, Object_, Object_);
 @method Object_ _getClassIfabsentornil(ObjectStoreExternal, Object_, Object_) { return new Object_(); }
 @method Object_ _getClassIfabsentornil(METACLASS_ObjectStoreExternal, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ block(virtual!Artificial_Root, Object_);
 @method Object_ _block(SelfInitializingObject, Object_) { return new Object_(); }
 @method Object_ _block(ComputedLayout, Object_) { return new Object_(); }
-@mptr("hash") Object_ includesKey(virtual!Object_, Object_);
+@mptr("hash") Object_ includesKey(virtual!Object, Object_);
 @method Object_ _includesKey(PARTSFileOperationContext, Object_) { return new Object_(); }
 @method Object_ _includesKey(Dictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ filePathName(virtual!Object_);
+@mptr("hash") Object_ filePathName(virtual!Object);
 @method Object_ _filePathName(PARTSFileOperationContext) { return new Object_(); }
 @method Object_ _filePathName(PARTSNestedPart) { return new Object_(); }
 @method Object_ _filePathName(PARTSApplication) { return new Object_(); }
 @method Object_ _filePathName(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ bytesAllocated(virtual!Object_);
+@mptr("hash") Object_ bytesAllocated(virtual!Object);
 @method Object_ _bytesAllocated(FileVolume) { return new Object_(); }
 @method Object_ _bytesAllocated(File) { return new Object_(); }
-@mptr("hash") Object_ printer(virtual!Object_);
+@mptr("hash") Object_ printer(virtual!Object);
 @method Object_ _printer(PARTSPrinterPart) { return new Object_(); }
 @method Object_ _printer(PrintDialog) { return new Object_(); }
-@mptr("hash") Object_ printerNames(virtual!Object_);
+@mptr("hash") Object_ printerNames(virtual!Object);
 @method Object_ _printerNames(PARTSPrinterPart) { return new Object_(); }
 @method Object_ _printerNames(METACLASS_Printer) { return new Object_(); }
-@mptr("hash") Object_ printerSetup(virtual!Object_);
+@mptr("hash") Object_ printerSetup(virtual!Object);
 @method Object_ _printerSetup(PARTSPrinterPart) { return new Object_(); }
 @method Object_ _printerSetup(METACLASS_PrintDialog) { return new Object_(); }
+@mptr("hash") Object_ formFeed(virtual!Object);
+@method Object_ _formFeed(PARTSPrinterPart) { return new Object_(); }
+@method Object_ _formFeed(Printer) { return new Object_(); }
+@mptr("hash") Object_ defaultPrinterName(virtual!Object);
+@method Object_ _defaultPrinterName(PARTSPrinterPart) { return new Object_(); }
+@method Object_ _defaultPrinterName(METACLASS_Printer) { return new Object_(); }
 @mptr("hash") Object_ selectedItems(virtual!SubPane);
 @method Object_ _selectedItems(MultipleSelectListBox) { return new Object_(); }
 @method Object_ _selectedItems(PARTSIconPane) { return new Object_(); }
-@mptr("hash") Object_ addIconToSelection(virtual!Object_, Object_);
+@mptr("hash") Object_ addIconToSelection(virtual!Object, Object_);
 @method Object_ _addIconToSelection(PARTSIconPane, Object_) { return new Object_(); }
 @method Object_ _addIconToSelection(P1100, Object_) { return new Object_(); }
-@mptr("hash") Object_ icons(virtual!Object_, Object_);
+@mptr("hash") Object_ icons(virtual!Object, Object_);
 @method Object_ _icons(PARTSIconPane, Object_) { return new Object_(); }
 @method Object_ _icons(P1110, Object_) { return new Object_(); }
-@mptr("hash") Object_ icons(virtual!Object_);
+@mptr("hash") Object_ icons(virtual!Object);
 @method Object_ _icons(PARTSIconPane) { return new Object_(); }
 @method Object_ _icons(P1110) { return new Object_(); }
 @mptr("hash") Object_ dragButton(virtual!SubPane);
@@ -10479,15 +11460,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ createNewPart(virtual!PARTSUpgradeVisualPart);
 @method Object_ _createNewPart(PARTSUpgradeTablePane) { return new Object_(); }
 @method Object_ _createNewPart(PARTSUpgradeVisualPart) { return new Object_(); }
-@mptr("hash") Object_ dictionary(virtual!Object_, Object_);
+@mptr("hash") Object_ dictionary(virtual!Object, Object_);
 @method Object_ _dictionary(ClassBrowser, Object_) { return new Object_(); }
 @method Object_ _dictionary(DictionaryScope, Object_) { return new Object_(); }
+@mptr("hash") Object_ newMethod(virtual!CodeBrowser);
+@method Object_ _newMethod(ClassBrowser) { return new Object_(); }
+@method Object_ _newMethod(ClassHierarchyBrowser) { return new Object_(); }
 @mptr("hash") Object_ classButton(virtual!CodeBrowser, Object_);
 @method Object_ _classButton(ClassBrowser, Object_) { return new Object_(); }
 @method Object_ _classButton(ClassHierarchyBrowser, Object_) { return new Object_(); }
 @mptr("hash") Object_ selectorMenu(virtual!CodeBrowser, Object_);
 @method Object_ _selectorMenu(ClassBrowser, Object_) { return new Object_(); }
 @method Object_ _selectorMenu(ClassHierarchyBrowser, Object_) { return new Object_(); }
+@mptr("hash") Object_ methodListDrop(virtual!CodeBrowser, Object_);
+@method Object_ _methodListDrop(ClassBrowser, Object_) { return new Object_(); }
+@method Object_ _methodListDrop(ClassHierarchyBrowser, Object_) { return new Object_(); }
 @mptr("hash") Object_ disableMethodsMenu(virtual!CodeBrowser);
 @method Object_ _disableMethodsMenu(ClassBrowser) { return new Object_(); }
 @method Object_ _disableMethodsMenu(CodeBrowser) { return new Object_(); }
@@ -10498,41 +11485,45 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ initialTopCorner(virtual!SubPane);
 @method Object_ _initialTopCorner(ControlPane) { return new Object_(); }
 @method Object_ _initialTopCorner(SubPane) { return new Object_(); }
-@mptr("hash") Object_ asyncControlEventWith(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ asyncControlEventWith(virtual!Object, Object_, Object_);
 @method Object_ _asyncControlEventWith(ControlPane, Object_, Object_) { return new Object_(); }
 @method Object_ _asyncControlEventWith(P1124, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ buildDialogItem(virtual!SubPane, Object_);
 @method Object_ _buildDialogItem(ControlPane, Object_) { return new Object_(); }
 @method Object_ _buildDialogItem(SubPane, Object_) { return new Object_(); }
 @method Object_ _buildDialogItem(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpFile(virtual!Object_, Object_);
+@mptr("hash") Object_ helpFile(virtual!Object, Object_);
 @method Object_ _helpFile(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _helpFile(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ enableExecution(virtual!Object_, Object_);
+@mptr("hash") Object_ enableExecution(virtual!Object, Object_);
 @method Object_ _enableExecution(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _enableExecution(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeLinksAttachedTo(virtual!Object_, Object_);
+@mptr("hash") Object_ removeLinksAttachedTo(virtual!Object, Object_);
 @method Object_ _removeLinksAttachedTo(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _removeLinksAttachedTo(P1106, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpFileHelptopic(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ helpFileHelptopic(virtual!Object, Object_, Object_);
 @method Object_ _helpFileHelptopic(PARTSWrapper, Object_, Object_) { return new Object_(); }
 @method Object_ _helpFileHelptopic(PARTSApplication, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ addComponent(virtual!Object_, Object_);
+@mptr("hash") Object_ addComponent(virtual!Object, Object_);
 @method Object_ _addComponent(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _addComponent(P1148, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpFile(virtual!Object_);
+@mptr("hash") Object_ helpFile(virtual!Object);
 @method Object_ _helpFile(PARTSWrapper) { return new Object_(); }
 @method Object_ _helpFile(PARTSApplication) { return new Object_(); }
-@mptr("hash") Object_ helpTopic(virtual!Object_, Object_);
+@mptr("hash") Object_ helpTopic(virtual!Object, Object_);
 @method Object_ _helpTopic(PARTSWrapper, Object_) { return new Object_(); }
 @method Object_ _helpTopic(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ readStreamRemoveclassFiledescriptor(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ readStreamRemoveclassFiledescriptor(virtual!Object, Object_, Object_, Object_);
 @method Object_ _readStreamRemoveclassFiledescriptor(PARTSCodeGeneratorReaderInterface, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _readStreamRemoveclassFiledescriptor(METACLASS_PARTSCodeGeneratorReaderInterface, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ readStreamRemoveclass(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ readStreamRemoveclass(virtual!Object, Object_, Object_);
 @method Object_ _readStreamRemoveclass(PARTSCodeGeneratorReaderInterface, Object_, Object_) { return new Object_(); }
 @method Object_ _readStreamRemoveclass(METACLASS_PARTSCodeGeneratorReaderInterface, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ writeOnFiledescriptor(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ logWindowLabel(virtual!PARTSCodeGeneratorInterface);
+@method Object_ _logWindowLabel(PARTSCodeGeneratorReaderInterface) { return new Object_(); }
+@method Object_ _logWindowLabel(PARTSCodeGeneratorWriterInterface) { return new Object_(); }
+@method Object_ _logWindowLabel(PARTSCodeGeneratorInterface) { return new Object_(); }
+@mptr("hash") Object_ writeOnFiledescriptor(virtual!Object, Object_, Object_, Object_);
 @method Object_ _writeOnFiledescriptor(PARTSCodeGeneratorWriterInterface, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _writeOnFiledescriptor(METACLASS_PARTSCodeGeneratorWriterInterface, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ associationAt(virtual!Dictionary, Object_);
@@ -10572,7 +11563,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ asFlatAddress(virtual!ExternalAddress);
 @method Object_ _asFlatAddress(ExternalSegmentedAddress) { return new Object_(); }
 @method Object_ _asFlatAddress(ExternalAddress) { return new Object_(); }
-@mptr("hash") Object_ dragTargetDefaultEmphasis(virtual!Object_);
+@mptr("hash") Object_ dragTargetDefaultEmphasis(virtual!Object);
 @method Object_ _dragTargetDefaultEmphasis(SubPane) { return new Object_(); }
 @method Object_ _dragTargetDefaultEmphasis(METACLASS_ListBox) { return new Object_(); }
 @method Object_ _dragTargetDefaultEmphasis(METACLASS_TextPane) { return new Object_(); }
@@ -10588,17 +11579,17 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ initGraphics(virtual!Window);
 @method Object_ _initGraphics(SubPane) { return new Object_(); }
 @method Object_ _initGraphics(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ border(virtual!Object_);
+@mptr("hash") Object_ border(virtual!Object);
 @method Object_ _border(SubPane) { return new Object_(); }
 @method Object_ _border(P1148) { return new Object_(); }
-@mptr("hash") Object_ dragTargetEmphasisTypesSupported(virtual!Object_);
+@mptr("hash") Object_ dragTargetEmphasisTypesSupported(virtual!Object);
 @method Object_ _dragTargetEmphasisTypesSupported(SubPane) { return new Object_(); }
 @method Object_ _dragTargetEmphasisTypesSupported(METACLASS_ListBox) { return new Object_(); }
 @method Object_ _dragTargetEmphasisTypesSupported(METACLASS_TextPane) { return new Object_(); }
 @method Object_ _dragTargetEmphasisTypesSupported(METACLASS_SubPane) { return new Object_(); }
 @method Object_ _dragTargetEmphasisTypesSupported(METACLASS_TextPaneControl) { return new Object_(); }
 @method Object_ _dragTargetEmphasisTypesSupported(METACLASS_ListPane) { return new Object_(); }
-@mptr("hash") Object_ border(virtual!Object_, Object_);
+@mptr("hash") Object_ border(virtual!Object, Object_);
 @method Object_ _border(SubPane, Object_) { return new Object_(); }
 @method Object_ _border(P1148, Object_) { return new Object_(); }
 @mptr("hash") Object_ buildControl(virtual!SubPane, Object_);
@@ -10609,28 +11600,28 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _getContentsFrom(CoffFileSection, Object_, Object_) { return new Object_(); }
 @method Object_ _getContentsFrom(PeExportSection, Object_, Object_) { return new Object_(); }
 @method Object_ _getContentsFrom(P1001, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ demandLoad(virtual!Object_, Object_);
+@mptr("hash") Object_ demandLoad(virtual!Object, Object_);
 @method Object_ _demandLoad(PARTSBaseNotebook, Object_) { return new Object_(); }
 @method Object_ _demandLoad(PARTSPartAccessorPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ previousSelection(virtual!SubPane);
 @method Object_ _previousSelection(PARTSBaseNotebook) { return new Object_(); }
 @method Object_ _previousSelection(ListPane) { return new Object_(); }
-@mptr("hash") Object_ insertPageAfter(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ insertPageAfter(virtual!Object, Object_, Object_);
 @method Object_ _insertPageAfter(PARTSBaseNotebook, Object_, Object_) { return new Object_(); }
 @method Object_ _insertPageAfter(P1100, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ pages(virtual!Window);
 @method Object_ _pages(PARTSBaseNotebook) { return new Object_(); }
 @method Object_ _pages(PrintDialog) { return new Object_(); }
-@mptr("hash") Object_ pageSelected(virtual!Object_, Object_);
+@mptr("hash") Object_ pageSelected(virtual!Object, Object_);
 @method Object_ _pageSelected(PARTSBaseNotebook, Object_) { return new Object_(); }
 @method Object_ _pageSelected(P1100, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadSettingsFromInto(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ loadSettingsFromInto(virtual!Object, Object_, Object_);
 @method Object_ _loadSettingsFromInto(PARTSIniFile, Object_, Object_) { return new Object_(); }
 @method Object_ _loadSettingsFromInto(METACLASS_PARTSIniFile, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ writeSettingsFileForNewfile(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ writeSettingsFileForNewfile(virtual!Object, Object_, Object_);
 @method Object_ _writeSettingsFileForNewfile(PARTSIniFile, Object_, Object_) { return new Object_(); }
 @method Object_ _writeSettingsFileForNewfile(METACLASS_PARTSIniFile, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openOnPathName(virtual!Object_, Object_);
+@mptr("hash") Object_ openOnPathName(virtual!Object, Object_);
 @method Object_ _openOnPathName(PARTSBitEditor, Object_) { return new Object_(); }
 @method Object_ _openOnPathName(TextWindow, Object_) { return new Object_(); }
 @method Object_ _openOnPathName(METACLASS_PARTSEditor, Object_) { return new Object_(); }
@@ -10644,7 +11635,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ setColorBoxes(virtual!PARTSBitEditor);
 @method Object_ _setColorBoxes(PARTSBitEditor) { return new Object_(); }
 @method Object_ _setColorBoxes(PARTSIconEditorWindows) { return new Object_(); }
-@mptr("hash") Object_ bitBltXYWidthHeightSrcdcXsrcYsrcRop(virtual!Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ bitBltXYWidthHeightSrcdcXsrcYsrcRop(virtual!Object, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
 @method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(RecordingPen, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(GraphicsTool, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(GDIDLL, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
@@ -10655,7 +11646,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ selectObject(virtual!GraphicsTool, Object_);
 @method Object_ _selectObject(RecordingPen, Object_) { return new Object_(); }
 @method Object_ _selectObject(GraphicsTool, Object_) { return new Object_(); }
-@mptr("hash") Object_ stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(virtual!Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(virtual!Object, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
 @method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(RecordingPen, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(GraphicsTool, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(GDIDLL, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
@@ -10668,6 +11659,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ hasFormat(virtual!DragDropObject, Object_);
 @method Object_ _hasFormat(LocalDragDropObject, Object_) { return new Object_(); }
 @method Object_ _hasFormat(DragDropObject, Object_) { return new Object_(); }
+@mptr("hash") Object_ formatData(virtual!DragDropObject, Object_, Object_);
+@method Object_ _formatData(LocalDragDropObject, Object_, Object_) { return new Object_(); }
+@method Object_ _formatData(DragDropObject, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ format(virtual!DragDropObject, Object_);
+@method Object_ _format(LocalDragDropObject, Object_) { return new Object_(); }
+@method Object_ _format(DragDropObject, Object_) { return new Object_(); }
+@mptr("hash") Object_ formatIfabsent(virtual!DragDropObject, Object_, Object_);
+@method Object_ _formatIfabsent(LocalDragDropObject, Object_, Object_) { return new Object_(); }
+@method Object_ _formatIfabsent(DragDropObject, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ acceptProperties(virtual!PARTSWindow);
 @method Object_ _acceptProperties(PARTSPartPropertySubdialog) { return new Object_(); }
 @method Object_ _acceptProperties(PARTSSettingsEditor) { return new Object_(); }
@@ -10677,20 +11677,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ canceled(virtual!WindowDialog);
 @method Object_ _canceled(ProgressIndicatorDialog) { return new Object_(); }
 @method Object_ _canceled(SaveImageAsDialog) { return new Object_(); }
-@mptr("hash") Object_ message(virtual!Object_, Object_);
+@mptr("hash") Object_ message(virtual!Object, Object_);
 @method Object_ _message(ProgressIndicatorDialog, Object_) { return new Object_(); }
 @method Object_ _message(MessageBox, Object_) { return new Object_(); }
 @method Object_ _message(MessageNotUnderstood, Object_) { return new Object_(); }
 @method Object_ _message(METACLASS_Menu, Object_) { return new Object_(); }
 @method Object_ _message(METACLASS_MessageBox, Object_) { return new Object_(); }
 @method Object_ _message(METACLASS_MessageNotUnderstood, Object_) { return new Object_(); }
-@mptr("hash") Object_ numberOfArguments(virtual!Object_);
+@mptr("hash") Object_ numberOfArguments(virtual!Object);
 @method Object_ _numberOfArguments(ZeroArgumentBlock) { return new Object_(); }
 @method Object_ _numberOfArguments(LinkMessage) { return new Object_(); }
 @method Object_ _numberOfArguments(TwoArgumentBlock) { return new Object_(); }
 @method Object_ _numberOfArguments(Context) { return new Object_(); }
 @method Object_ _numberOfArguments(OneArgumentBlock) { return new Object_(); }
-@mptr("hash") Object_ fromMixedStringLeadbytes(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ fromMixedStringLeadbytes(virtual!Object, Object_, Object_);
 @method Object_ _fromMixedStringLeadbytes(DoubleByteString, Object_, Object_) { return new Object_(); }
 @method Object_ _fromMixedStringLeadbytes(METACLASS_DoubleByteString, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ extractKey(virtual!HashedCollection, Object_);
@@ -10705,54 +11705,66 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ squared(virtual!Number);
 @method Object_ _squared(Fraction) { return new Object_(); }
 @method Object_ _squared(Number) { return new Object_(); }
-@mptr("hash") Object_ numeratorDenominator(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ numeratorDenominator(virtual!Object, Object_, Object_);
 @method Object_ _numeratorDenominator(Fraction, Object_, Object_) { return new Object_(); }
 @method Object_ _numeratorDenominator(METACLASS_Fraction, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ pane(virtual!Object_);
+@mptr("hash") Object_ pane(virtual!Object);
 @method Object_ _pane(ExpressionEvaluator) { return new Object_(); }
 @method Object_ _pane(TextPaneErrorHandler) { return new Object_(); }
 @method Object_ _pane(TextWindow) { return new Object_(); }
 @mptr("hash") Object_ evaluateIferror(virtual!ExpressionEvaluator, Object_, Object_);
 @method Object_ _evaluateIferror(ExpressionEvaluator, Object_, Object_) { return new Object_(); }
 @method Object_ _evaluateIferror(WorkspaceExpressionEvaluator, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ index(virtual!Object_);
+@mptr("hash") Object_ index(virtual!Object);
 @method Object_ _index(IndexedColor) { return new Object_(); }
 @method Object_ _index(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _index(PARTSMenuSeparatorPart) { return new Object_(); }
-@mptr("hash") Object_ index(virtual!Object_, Object_);
+@mptr("hash") Object_ index(virtual!Object, Object_);
 @method Object_ _index(IndexedColor, Object_) { return new Object_(); }
 @method Object_ _index(PARTSMenuItemPane, Object_) { return new Object_(); }
 @method Object_ _index(METACLASS_Color, Object_) { return new Object_(); }
 @method Object_ _index(METACLASS_IndexedColor, Object_) { return new Object_(); }
-@mptr("hash") Object_ metafile(virtual!Object_, Object_);
+@mptr("hash") Object_ metafile(virtual!Object, Object_);
 @method Object_ _metafile(DragDropObject, Object_) { return new Object_(); }
 @method Object_ _metafile(METACLASS_DragDropObject, Object_) { return new Object_(); }
-@mptr("hash") Object_ graphicsMedium(virtual!Object_);
+@mptr("hash") Object_ deleteObject(virtual!Object, Object_);
+@method Object_ _deleteObject(GraphicsTool, Object_) { return new Object_(); }
+@method Object_ _deleteObject(GDIDLL, Object_) { return new Object_(); }
+@mptr("hash") Object_ graphicsMedium(virtual!Object);
 @method Object_ _graphicsMedium(GraphicsTool) { return new Object_(); }
 @method Object_ _graphicsMedium(Font) { return new Object_(); }
-@mptr("hash") Object_ graphicsMedium(virtual!Object_, Object_);
+@mptr("hash") Object_ graphicsMedium(virtual!Object, Object_);
 @method Object_ _graphicsMedium(GraphicsTool, Object_) { return new Object_(); }
 @method Object_ _graphicsMedium(Font, Object_) { return new Object_(); }
 @mptr("hash") Object_ triggerClickedEvent(virtual!Button);
 @method Object_ _triggerClickedEvent(RadioButton) { return new Object_(); }
 @method Object_ _triggerClickedEvent(Button) { return new Object_(); }
 @method Object_ _triggerClickedEvent(Toggle) { return new Object_(); }
-@mptr("hash") Object_ clearCachedPartsFrom(virtual!Object_, Object_);
+@mptr("hash") Object_ clearCachedPartsFrom(virtual!Object, Object_);
 @method Object_ _clearCachedPartsFrom(P1100, Object_) { return new Object_(); }
 @method Object_ _clearCachedPartsFrom(METACLASS_PARTSCatalog, Object_) { return new Object_(); }
-@mptr("hash") Object_ clearAllCachedParts(virtual!Object_);
+@mptr("hash") Object_ clearAllCachedParts(virtual!Object);
 @method Object_ _clearAllCachedParts(P1100) { return new Object_(); }
 @method Object_ _clearAllCachedParts(METACLASS_PARTSCatalog) { return new Object_(); }
-@mptr("hash") Object_ isDisabled(virtual!Object_);
+@mptr("hash") Object_ performItemIdIn(virtual!MenuWindow, Object_, Object_);
+@method Object_ _performItemIdIn(PARTSMenuBar, Object_, Object_) { return new Object_(); }
+@method Object_ _performItemIdIn(MenuWindow, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ isDisabled(virtual!Object);
 @method Object_ _isDisabled(P1108) { return new Object_(); }
 @method Object_ _isDisabled(PARTSMenuItemPane) { return new Object_(); }
-@mptr("hash") Object_ argumentCount(virtual!Object_);
+@mptr("hash") Object_ defaultTabStopInterval(virtual!TextEdit);
+@method Object_ _defaultTabStopInterval(TextPaneControl) { return new Object_(); }
+@method Object_ _defaultTabStopInterval(TextEdit) { return new Object_(); }
+@mptr("hash") Object_ argumentCount(virtual!Object);
 @method Object_ _argumentCount(Context) { return new Object_(); }
 @method Object_ _argumentCount(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ speakerLibrary(virtual!Object_);
+@mptr("hash") Object_ speakerLibrary(virtual!Object);
 @method Object_ _speakerLibrary(PARTSSpeakerPart) { return new Object_(); }
 @method Object_ _speakerLibrary(METACLASS_PARTSSpeakerPart) { return new Object_(); }
-@mptr("hash") Object_ result(virtual!Object_);
+@mptr("hash") Object_ forLinkInputargumentsDebugger(virtual!Object, Object_, Object_, Object_);
+@method Object_ _forLinkInputargumentsDebugger(P1120, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _forLinkInputargumentsDebugger(METACLASS_P1120, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ result(virtual!Object);
 @method Object_ _result(P1120) { return new Object_(); }
 @method Object_ _result(MessageBox) { return new Object_(); }
 @mptr("hash") Object_ getTarget(virtual!LocalDragDropSession);
@@ -10762,14 +11774,14 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ supportsScrolling(virtual!DragDropSession);
 @method Object_ _supportsScrolling(LocalDragDropSession) { return new Object_(); }
 @method Object_ _supportsScrolling(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ invalidCursor(virtual!Object_);
+@mptr("hash") Object_ invalidCursor(virtual!Object);
 @method Object_ _invalidCursor(LocalDragDropSession) { return new Object_(); }
 @method Object_ _invalidCursor(PARTSLocalDragDropSession) { return new Object_(); }
 @method Object_ _invalidCursor(METACLASS_LocalDragDropSession) { return new Object_(); }
-@mptr("hash") Object_ vertices(virtual!Object_, Object_);
+@mptr("hash") Object_ vertices(virtual!Object, Object_);
 @method Object_ _vertices(P1112, Object_) { return new Object_(); }
 @method Object_ _vertices(METACLASS_P1112, Object_) { return new Object_(); }
-@mptr("hash") Object_ copyTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ copyTo(virtual!Object, Object_, Object_);
 @method Object_ _copyTo(P1104, Object_, Object_) { return new Object_(); }
 @method Object_ _copyTo(PARTSFileAccessorPart, Object_, Object_) { return new Object_(); }
 @method Object_ _copyTo(METACLASS_File, Object_, Object_) { return new Object_(); }
@@ -10788,10 +11800,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ relayMessageArguments(virtual!PARTSNonvisualPart, Object_, Object_);
 @method Object_ _relayMessageArguments(PARTSValueHolderPart, Object_, Object_) { return new Object_(); }
 @method Object_ _relayMessageArguments(PARTSPrebuiltDialog, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ stopAllTimers(virtual!Object_);
+@mptr("hash") Object_ stopAllTimers(virtual!Object);
 @method Object_ _stopAllTimers(PARTSTimerWindow) { return new Object_(); }
 @method Object_ _stopAllTimers(METACLASS_PARTSTimerWindow) { return new Object_(); }
-@mptr("hash") Object_ activeTimers(virtual!Object_);
+@mptr("hash") Object_ activeTimers(virtual!Object);
 @method Object_ _activeTimers(PARTSTimerWindow) { return new Object_(); }
 @method Object_ _activeTimers(METACLASS_PARTSTimerWindow) { return new Object_(); }
 @mptr("hash") Object_ resetScriptPane(virtual!P1140);
@@ -10815,7 +11827,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ rectangleWithoutMargin(virtual!EntryField, Object_);
 @method Object_ _rectangleWithoutMargin(PARTSExpressionEntryField, Object_) { return new Object_(); }
 @method Object_ _rectangleWithoutMargin(PARTSEntryFieldPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPropertyApplyEdit(virtual!Object_, Object_);
+@mptr("hash") Object_ partPropertyApplyEdit(virtual!Object, Object_);
 @method Object_ _partPropertyApplyEdit(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyApplyEdit(PARTSStringTemplatePart, Object_) { return new Object_(); }
 @mptr("hash") Object_ inputSize(virtual!PARTSFormattedEntryField);
@@ -10825,10 +11837,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _partPropertyAddAlignmentItem(PARTSPictureFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddAlignmentItem(PARTSStaticTextPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddAlignmentItem(PARTSEntryFieldPart, Object_) { return new Object_(); }
+@mptr("hash") Object_ wmCharWindowsWith(virtual!PARTSFormattedEntryField, Object_, Object_);
+@method Object_ _wmCharWindowsWith(PARTSPictureFieldPart, Object_, Object_) { return new Object_(); }
+@method Object_ _wmCharWindowsWith(PARTSFormattedEntryField, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ wmCharOS2With(virtual!PARTSFormattedEntryField, Object_, Object_);
 @method Object_ _wmCharOS2With(PARTSPictureFieldPart, Object_, Object_) { return new Object_(); }
 @method Object_ _wmCharOS2With(PARTSFormattedEntryField, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ centered(virtual!Object_);
+@mptr("hash") Object_ centered(virtual!Object);
 @method Object_ _centered(StaticText) { return new Object_(); }
 @method Object_ _centered(TextEdit) { return new Object_(); }
 @method Object_ _centered(METACLASS_StaticText) { return new Object_(); }
@@ -10881,7 +11896,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ arcTan(virtual!Number);
 @method Object_ _arcTan(Float) { return new Object_(); }
 @method Object_ _arcTan(Number) { return new Object_(); }
-@mptr("hash") Object_ registerMessageParametertypesReturntypeCallingconvention(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ registerMessageParametertypesReturntypeCallingconvention(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _registerMessageParametertypesReturntypeCallingconvention(CallBack, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _registerMessageParametertypesReturntypeCallingconvention(METACLASS_CallBack, Object_, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ maybeAddFrom(virtual!ObjectStoreObjects, Object_, Object_);
@@ -10902,52 +11917,52 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ click(virtual!SubPane);
 @method Object_ _click(PARTSMenuItemPane) { return new Object_(); }
 @method Object_ _click(Button) { return new Object_(); }
-@mptr("hash") Object_ orderChildrenAndDisplay(virtual!Object_, Object_);
+@mptr("hash") Object_ orderChildrenAndDisplay(virtual!Object, Object_);
 @method Object_ _orderChildrenAndDisplay(PARTSWindowPart, Object_) { return new Object_(); }
 @method Object_ _orderChildrenAndDisplay(PARTSApplication, Object_) { return new Object_(); }
-@mptr("hash") Object_ updateApplication(virtual!Object_, Object_);
+@mptr("hash") Object_ updateApplication(virtual!Object, Object_);
 @method Object_ _updateApplication(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _updateApplication(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ validateApplication(virtual!Object_);
+@mptr("hash") Object_ validateApplication(virtual!Object);
 @method Object_ _validateApplication(PARTSNestedPart) { return new Object_(); }
 @method Object_ _validateApplication(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ partPropertyFileNamePrefix(virtual!Object_);
+@mptr("hash") Object_ partPropertyFileNamePrefix(virtual!Object);
 @method Object_ _partPropertyFileNamePrefix(PARTSNestedPart) { return new Object_(); }
 @method Object_ _partPropertyFileNamePrefix(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ refreshApplication(virtual!Object_);
+@mptr("hash") Object_ refreshApplication(virtual!Object);
 @method Object_ _refreshApplication(PARTSNestedPart) { return new Object_(); }
 @method Object_ _refreshApplication(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ fileNotFoundError(virtual!Object_);
+@mptr("hash") Object_ fileNotFoundError(virtual!Object);
 @method Object_ _fileNotFoundError(PARTSNestedPart) { return new Object_(); }
 @method Object_ _fileNotFoundError(PARTSPartAccessorPart) { return new Object_(); }
-@mptr("hash") Object_ relayLinkArguments(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ relayLinkArguments(virtual!Object, Object_, Object_);
 @method Object_ _relayLinkArguments(PARTSNestedPart, Object_, Object_) { return new Object_(); }
 @method Object_ _relayLinkArguments(PARTSPartAccessorPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditorTitle(virtual!Object_, Object_);
+@mptr("hash") Object_ partEditorTitle(virtual!Object, Object_);
 @method Object_ _partEditorTitle(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partEditorTitle(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ changeFile(virtual!Object_, Object_);
+@mptr("hash") Object_ changeFile(virtual!Object, Object_);
 @method Object_ _changeFile(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _changeFile(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isOkToSaveContents(virtual!Object_, Object_);
+@mptr("hash") Object_ isOkToSaveContents(virtual!Object, Object_);
 @method Object_ _isOkToSaveContents(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _isOkToSaveContents(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ isApplicationMessage(virtual!Object_, Object_);
+@mptr("hash") Object_ isApplicationMessage(virtual!Object, Object_);
 @method Object_ _isApplicationMessage(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _isApplicationMessage(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partUpdate(virtual!Object_, Object_);
+@mptr("hash") Object_ partUpdate(virtual!Object, Object_);
 @method Object_ _partUpdate(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partUpdate(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partEditDirect(virtual!Object_, Object_);
+@mptr("hash") Object_ partEditDirect(virtual!Object, Object_);
 @method Object_ _partEditDirect(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partEditDirect(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partPropertyChangeFile(virtual!Object_, Object_);
+@mptr("hash") Object_ partPropertyChangeFile(virtual!Object, Object_);
 @method Object_ _partPropertyChangeFile(PARTSNestedPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyChangeFile(PARTSPartAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ daysInMonthForyear(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ daysInMonthForyear(virtual!Object, Object_, Object_);
 @method Object_ _daysInMonthForyear(PARTSDateEntryFieldPart, Object_, Object_) { return new Object_(); }
 @method Object_ _daysInMonthForyear(METACLASS_Date, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ checkDayMonthYear(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ checkDayMonthYear(virtual!Object, Object_, Object_, Object_);
 @method Object_ _checkDayMonthYear(PARTSDateEntryFieldPart, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _checkDayMonthYear(METACLASS_Date, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ editorPane(virtual!PARTSLocalDragDropSession);
@@ -10961,7 +11976,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _sourceNeedsObject(PARTSLocalDragDropSession) { return new Object_(); }
 @method Object_ _sourceNeedsObject(PARTSDragSession) { return new Object_(); }
 @method Object_ _sourceNeedsObject(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ dragStart(virtual!Object_, Object_);
+@mptr("hash") Object_ dragStart(virtual!Object, Object_);
 @method Object_ _dragStart(PARTSEditorMoveSession, Object_) { return new Object_(); }
 @method Object_ _dragStart(PARTSLocalDragDropSession, Object_) { return new Object_(); }
 @method Object_ _dragStart(ExtendedListBox, Object_) { return new Object_(); }
@@ -10985,16 +12000,16 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ targetOver(virtual!DragDropSession);
 @method Object_ _targetOver(PARTSLocalDragDropSession) { return new Object_(); }
 @method Object_ _targetOver(DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ getString(virtual!Object_);
+@mptr("hash") Object_ getString(virtual!Object);
 @method Object_ _getString(PARTSClipboardAccessorPart) { return new Object_(); }
 @method Object_ _getString(ClipboardManager) { return new Object_(); }
-@mptr("hash") Object_ getBitmap(virtual!Object_);
+@mptr("hash") Object_ getBitmap(virtual!Object);
 @method Object_ _getBitmap(PARTSClipboardAccessorPart) { return new Object_(); }
 @method Object_ _getBitmap(ClipboardManager) { return new Object_(); }
 @mptr("hash") Object_ validFile(virtual!Directory, Object_);
 @method Object_ _validFile(PARTSDosDirectory, Object_) { return new Object_(); }
 @method Object_ _validFile(Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ compileIn(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ compileIn(virtual!Object, Object_, Object_);
 @method Object_ _compileIn(CodeBrowser, Object_, Object_) { return new Object_(); }
 @method Object_ _compileIn(METACLASS_CompilerInterface, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ iconEditorClass(virtual!PARTSTypedValueHolder);
@@ -11003,22 +12018,22 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ textValue(virtual!PARTSTypedValueHolder, Object_);
 @method Object_ _textValue(PARTSStringHolderPart, Object_) { return new Object_(); }
 @method Object_ _textValue(PARTSNumberHolderPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ partAddAddComponentExpressionToApplication(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ partAddAddComponentExpressionToApplication(virtual!Object, Object_, Object_);
 @method Object_ _partAddAddComponentExpressionToApplication(PARTSApplication, Object_, Object_) { return new Object_(); }
 @method Object_ _partAddAddComponentExpressionToApplication(PARTSNonvisualPart, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDebuggable(virtual!Object_);
+@mptr("hash") Object_ isDebuggable(virtual!Object);
 @method Object_ _isDebuggable(PARTSApplication) { return new Object_(); }
 @method Object_ _isDebuggable(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ leadBytes(virtual!Object_);
+@mptr("hash") Object_ leadBytes(virtual!Object);
 @method Object_ _leadBytes(MixedFileStream) { return new Object_(); }
 @method Object_ _leadBytes(NationalLanguageSupport) { return new Object_(); }
-@mptr("hash") Object_ open(virtual!Object_, Object_);
+@mptr("hash") Object_ open(virtual!Object, Object_);
 @method Object_ _open(NewSubclassDialog, Object_) { return new Object_(); }
 @method Object_ _open(METACLASS_ApplicationCoordinator, Object_) { return new Object_(); }
 @method Object_ _open(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
 @method Object_ _open(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
 @method Object_ _open(METACLASS_NewSubclassDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ evaluate(virtual!Object_, Object_);
+@mptr("hash") Object_ evaluate(virtual!Object, Object_);
 @method Object_ _evaluate(CompilerInterface, Object_) { return new Object_(); }
 @method Object_ _evaluate(Process, Object_) { return new Object_(); }
 @method Object_ _evaluate(METACLASS_CompilerInterface, Object_) { return new Object_(); }
@@ -11028,57 +12043,60 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ scopeForGlobals(virtual!CompilerInterface);
 @method Object_ _scopeForGlobals(CompilerInterface) { return new Object_(); }
 @method Object_ _scopeForGlobals(PARTSScriptCompilerInterface) { return new Object_(); }
-@mptr("hash") Object_ compiler(virtual!Object_);
+@mptr("hash") Object_ compiler(virtual!Object);
 @method Object_ _compiler(CompilerInterface) { return new Object_(); }
 @method Object_ _compiler(WorkspaceExpressionEvaluator) { return new Object_(); }
 @mptr("hash") Object_ dragButton(virtual!SubPane, Object_);
 @method Object_ _dragButton(ListConnectionPane, Object_) { return new Object_(); }
 @method Object_ _dragButton(ExtendedListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ truncateTo(virtual!Object_, Object_);
+@mptr("hash") Object_ truncateTo(virtual!Object, Object_);
 @method Object_ _truncateTo(Point, Object_) { return new Object_(); }
 @method Object_ _truncateTo(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ up(virtual!Object_, Object_);
+@mptr("hash") Object_ up(virtual!Object, Object_);
 @method Object_ _up(Point, Object_) { return new Object_(); }
 @method Object_ _up(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ x(virtual!Object_);
+@mptr("hash") Object_ x(virtual!Object);
 @method Object_ _x(Point) { return new Object_(); }
 @method Object_ _x(WinPoint) { return new Object_(); }
-@mptr("hash") Object_ x(virtual!Object_, Object_);
+@mptr("hash") Object_ x(virtual!Object, Object_);
 @method Object_ _x(Point, Object_) { return new Object_(); }
 @method Object_ _x(WinPoint, Object_) { return new Object_(); }
-@mptr("hash") Object_ asPoint(virtual!Object_);
+@mptr("hash") Object_ asPoint(virtual!Object);
 @method Object_ _asPoint(Point) { return new Object_(); }
 @method Object_ _asPoint(WinPoint) { return new Object_(); }
 @method Object_ _asPoint(Number) { return new Object_(); }
-@mptr("hash") Object_ y(virtual!Object_);
+@mptr("hash") Object_ down(virtual!Object, Object_);
+@method Object_ _down(Point, Object_) { return new Object_(); }
+@method Object_ _down(Number, Object_) { return new Object_(); }
+@mptr("hash") Object_ y(virtual!Object);
 @method Object_ _y(Point) { return new Object_(); }
 @method Object_ _y(WinPoint) { return new Object_(); }
-@mptr("hash") Object_ y(virtual!Object_, Object_);
+@mptr("hash") Object_ y(virtual!Object, Object_);
 @method Object_ _y(Point, Object_) { return new Object_(); }
 @method Object_ _y(WinPoint, Object_) { return new Object_(); }
-@mptr("hash") Object_ time(virtual!Object_, Object_);
+@mptr("hash") Object_ time(virtual!Object, Object_);
 @method Object_ _time(TimeStamp, Object_) { return new Object_(); }
 @method Object_ _time(PARTSFileAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ date(virtual!Object_, Object_);
+@mptr("hash") Object_ date(virtual!Object, Object_);
 @method Object_ _date(TimeStamp, Object_) { return new Object_(); }
 @method Object_ _date(PARTSFileAccessorPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ dividend(virtual!Object_, Object_);
+@mptr("hash") Object_ dividend(virtual!Object, Object_);
 @method Object_ _dividend(ZeroDivide, Object_) { return new Object_(); }
 @method Object_ _dividend(METACLASS_ZeroDivide, Object_) { return new Object_(); }
-@mptr("hash") Object_ createBitmapIndirect(virtual!Object_, Object_);
+@mptr("hash") Object_ createBitmapIndirect(virtual!Object, Object_);
 @method Object_ _createBitmapIndirect(GDIDLL, Object_) { return new Object_(); }
 @method Object_ _createBitmapIndirect(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ getStockObject(virtual!Object_, Object_);
+@mptr("hash") Object_ getStockObject(virtual!Object, Object_);
 @method Object_ _getStockObject(GDIDLL, Object_) { return new Object_(); }
 @method Object_ _getStockObject(METACLASS_GraphicsTool, Object_) { return new Object_(); }
-@mptr("hash") Object_ createBitmapHeightPlanesBitcountBits(virtual!Object_, Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ createBitmapHeightPlanesBitcountBits(virtual!Object, Object_, Object_, Object_, Object_, Object_);
 @method Object_ _createBitmapHeightPlanesBitcountBits(GDIDLL, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _createBitmapHeightPlanesBitcountBits(Bitmap, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _createBitmapHeightPlanesBitcountBits(METACLASS_Bitmap, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ createCompatibleDC(virtual!Object_, Object_);
+@mptr("hash") Object_ createCompatibleDC(virtual!Object, Object_);
 @method Object_ _createCompatibleDC(GDIDLL, Object_) { return new Object_(); }
 @method Object_ _createCompatibleDC(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ styleColorWidth(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ styleColorWidth(virtual!Object, Object_, Object_, Object_);
 @method Object_ _styleColorWidth(WinLogicalPen, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _styleColorWidth(METACLASS_WinLogicalPen, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ validateInput(virtual!PARTSEntryFieldPart, Object_);
@@ -11087,23 +12105,23 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ partPropertyAddConvertItem(virtual!PARTSEntryFieldPart, Object_);
 @method Object_ _partPropertyAddConvertItem(PARTSEntryFieldPart, Object_) { return new Object_(); }
 @method Object_ _partPropertyAddConvertItem(PARTSFormattedEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ flip(virtual!Object_);
+@mptr("hash") Object_ flip(virtual!Object);
 @method Object_ _flip(Bitmap) { return new Object_(); }
 @method Object_ _flip(ProcessScheduler) { return new Object_(); }
-@mptr("hash") Object_ screenExtent(virtual!Object_, Object_);
+@mptr("hash") Object_ screenExtent(virtual!Object, Object_);
 @method Object_ _screenExtent(Bitmap, Object_) { return new Object_(); }
 @method Object_ _screenExtent(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeight(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ widthHeight(virtual!Object, Object_, Object_);
 @method Object_ _widthHeight(Bitmap, Object_, Object_) { return new Object_(); }
 @method Object_ _widthHeight(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeightPlanesBitcount(virtual!Object_, Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ widthHeightPlanesBitcount(virtual!Object, Object_, Object_, Object_, Object_);
 @method Object_ _widthHeightPlanesBitcount(Bitmap, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _widthHeightPlanesBitcount(METACLASS_WinBitmapInfoHeader, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _widthHeightPlanesBitcount(METACLASS_Bitmap, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeightBits(virtual!Object_, Object_, Object_, Object_);
+@mptr("hash") Object_ widthHeightBits(virtual!Object, Object_, Object_, Object_);
 @method Object_ _widthHeightBits(Bitmap, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _widthHeightBits(METACLASS_Bitmap, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ screenWidthHeight(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ screenWidthHeight(virtual!Object, Object_, Object_);
 @method Object_ _screenWidthHeight(Bitmap, Object_, Object_) { return new Object_(); }
 @method Object_ _screenWidthHeight(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ compiledMethodDefinitionClass(virtual!CompiledMethod);
@@ -11121,75 +12139,87 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ isPARTSScript(virtual!CompiledMethod);
 @method Object_ _isPARTSScript(CompiledMethod) { return new Object_(); }
 @method Object_ _isPARTSScript(PARTSScript) { return new Object_(); }
-@mptr("hash") Object_ load(virtual!Object_);
+@mptr("hash") Object_ load(virtual!Object);
 @method Object_ _load(PARTSPartAccessorPart) { return new Object_(); }
 @method Object_ _load(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _load(METACLASS_ObjectLoader) { return new Object_(); }
-@mptr("hash") Object_ files(virtual!Object_);
+@mptr("hash") Object_ files(virtual!Object);
 @method Object_ _files(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _files(Directory) { return new Object_(); }
-@mptr("hash") Object_ create(virtual!Object_, Object_);
+@mptr("hash") Object_ create(virtual!Object, Object_);
 @method Object_ _create(PARTSDiskAccessorPart, Object_) { return new Object_(); }
 @method Object_ _create(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ exists(virtual!Object_, Object_);
+@mptr("hash") Object_ exists(virtual!Object, Object_);
 @method Object_ _exists(PARTSDiskAccessorPart, Object_) { return new Object_(); }
 @method Object_ _exists(PARTSFileAccessorPart, Object_) { return new Object_(); }
 @method Object_ _exists(METACLASS_PARTSFileDescriptor, Object_) { return new Object_(); }
 @method Object_ _exists(METACLASS_PARTSFile, Object_) { return new Object_(); }
 @method Object_ _exists(METACLASS_File, Object_) { return new Object_(); }
 @method Object_ _exists(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ currentDirectory(virtual!Object_);
+@mptr("hash") Object_ currentDirectory(virtual!Object);
 @method Object_ _currentDirectory(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _currentDirectory(METACLASS_PARTSFile) { return new Object_(); }
-@mptr("hash") Object_ subdirectories(virtual!Object_);
+@mptr("hash") Object_ subdirectories(virtual!Object);
 @method Object_ _subdirectories(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _subdirectories(Directory) { return new Object_(); }
 @mptr("hash") Object_ setPattern(virtual!PARTSNonvisualPart, Object_);
 @method Object_ _setPattern(PARTSDiskAccessorPart, Object_) { return new Object_(); }
 @method Object_ _setPattern(PARTSFileDialogPart, Object_) { return new Object_(); }
-@mptr("hash") Object_ drivePathName(virtual!Object_);
+@mptr("hash") Object_ drivePathName(virtual!Object);
 @method Object_ _drivePathName(PARTSDiskAccessorPart) { return new Object_(); }
 @method Object_ _drivePathName(Directory) { return new Object_(); }
-@mptr("hash") Object_ renameTo(virtual!Object_, Object_, Object_);
+@mptr("hash") Object_ renameTo(virtual!Object, Object_, Object_);
 @method Object_ _renameTo(PARTSFileAccessorPart, Object_, Object_) { return new Object_(); }
 @method Object_ _renameTo(METACLASS_File, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ directoryContaining(virtual!Object_, Object_);
+@mptr("hash") Object_ directoryContaining(virtual!Object, Object_);
 @method Object_ _directoryContaining(PARTSFileAccessorPart, Object_) { return new Object_(); }
 @method Object_ _directoryContaining(METACLASS_PARTSFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ bracketsMenu(virtual!Object_);
+@mptr("hash") Object_ bracketsMenu(virtual!Object);
 @method Object_ _bracketsMenu(PARTSStandardBracketsMenu) { return new Object_(); }
 @method Object_ _bracketsMenu(METACLASS_SmalltalkWindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ isGlobalDragDropSession(virtual!Object_);
+@mptr("hash") Object_ isGlobalDragDropSession(virtual!Object);
 @method Object_ _isGlobalDragDropSession(DragDropSession) { return new Object_(); }
 @method Object_ _isGlobalDragDropSession(METACLASS_LocalDragDropSession) { return new Object_(); }
 @method Object_ _isGlobalDragDropSession(METACLASS_DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ isLocalDragDropSession(virtual!Object_);
+@mptr("hash") Object_ objectClass(virtual!Object);
+@method Object_ _objectClass(DragDropSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_PARTSPasteSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_PARTSAddPartSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_PARTSCatalogDragSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_LocalDragDropSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_PARTSEditorMoveSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_PARTSDragSession) { return new Object_(); }
+@method Object_ _objectClass(METACLASS_DragDropSession) { return new Object_(); }
+@mptr("hash") Object_ isLocalDragDropSession(virtual!Object);
 @method Object_ _isLocalDragDropSession(DragDropSession) { return new Object_(); }
 @method Object_ _isLocalDragDropSession(METACLASS_LocalDragDropSession) { return new Object_(); }
 @method Object_ _isLocalDragDropSession(METACLASS_DragDropSession) { return new Object_(); }
-@mptr("hash") Object_ status(virtual!Object_);
+@mptr("hash") Object_ status(virtual!Object);
 @method Object_ _status(ProcessScheduler) { return new Object_(); }
 @method Object_ _status(METACLASS_Float) { return new Object_(); }
-@mptr("hash") Object_ terminateActive(virtual!Object_);
+@mptr("hash") Object_ terminateActive(virtual!Object);
 @method Object_ _terminateActive(ProcessScheduler) { return new Object_(); }
 @method Object_ _terminateActive(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ copyStack(virtual!Object_);
+@mptr("hash") Object_ copyStack(virtual!Object);
 @method Object_ _copyStack(ProcessScheduler) { return new Object_(); }
 @method Object_ _copyStack(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ compact(virtual!Object_);
+@mptr("hash") Object_ compact(virtual!Object);
 @method Object_ _compact(ProcessScheduler) { return new Object_(); }
 @method Object_ _compact(METACLASS_SmalltalkLibraryBinder) { return new Object_(); }
-@mptr("hash") Object_ evaluateProtectionBlock(virtual!Object_);
+@mptr("hash") Object_ evaluateProtectionBlock(virtual!Object);
 @method Object_ _evaluateProtectionBlock(Process) { return new Object_(); }
 @method Object_ _evaluateProtectionBlock(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ pathName(virtual!Object_, Object_);
+@mptr("hash") Object_ pathName(virtual!Object, Object_);
 @method Object_ _pathName(Directory, Object_) { return new Object_(); }
 @method Object_ _pathName(METACLASS_PeFileReader, Object_) { return new Object_(); }
 @method Object_ _pathName(METACLASS_CoffFileReader, Object_) { return new Object_(); }
 @method Object_ _pathName(METACLASS_PARTSFileDescriptor, Object_) { return new Object_(); }
 @method Object_ _pathName(METACLASS_File, Object_) { return new Object_(); }
 @method Object_ _pathName(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ openOnFile(virtual!Object_, Object_);
+@mptr("hash") Object_ newFile(virtual!Object, Object_);
+@method Object_ _newFile(Directory, Object_) { return new Object_(); }
+@method Object_ _newFile(METACLASS_File, Object_) { return new Object_(); }
+@mptr("hash") Object_ openOnFile(virtual!Object, Object_);
 @method Object_ _openOnFile(TextWindow, Object_) { return new Object_(); }
 @method Object_ _openOnFile(METACLASS_PARTSEditor, Object_) { return new Object_(); }
 @method Object_ _openOnFile(METACLASS_PARTSCatalog, Object_) { return new Object_(); }
@@ -11353,6 +12383,15 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _iconId(METACLASS_ViewManager) { return new Object_(); }
 @method Object_ _iconId(METACLASS_ClassHierarchyBrowser) { return new Object_(); }
 @method Object_ _iconId(METACLASS_TextWindow) { return new Object_(); }
+@mptr("hash") Object_ for(virtual!METACLASS_Object, Object_);
+@method Object_ _for(METACLASS_ConstantAccessor, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_CollectionAccessor, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_PARTSMirrorCopyDictionary, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_StringModel, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_DictionaryScope, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_PARTSDosFileDescriptor, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_PARTSLoadContext, Object_) { return new Object_(); }
+@method Object_ _for(METACLASS_PARTSStandardMenu, Object_) { return new Object_(); }
 @mptr("hash") Object_ negativeClass(virtual!METACLASS_LargeInteger);
 @method Object_ _negativeClass(METACLASS_LargeNegativeInteger) { return new Object_(); }
 @method Object_ _negativeClass(METACLASS_LargePositiveInteger) { return new Object_(); }
@@ -11413,6 +12452,13 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _constructEventsTriggered(METACLASS_Timer) { return new Object_(); }
 @method Object_ _constructEventsTriggered(METACLASS_ProcessScheduler) { return new Object_(); }
 @method Object_ _constructEventsTriggered(METACLASS_MenuWindow) { return new Object_(); }
+@mptr("hash") Object_ initializeFrameWindowClass(virtual!METACLASS_Window);
+@method Object_ _initializeFrameWindowClass(METACLASS_PARTSTopPane) { return new Object_(); }
+@method Object_ _initializeFrameWindowClass(METACLASS_P1103) { return new Object_(); }
+@method Object_ _initializeFrameWindowClass(METACLASS_P1127) { return new Object_(); }
+@mptr("hash") Object_ frameWindowClass(virtual!METACLASS_Window, Object_);
+@method Object_ _frameWindowClass(METACLASS_PARTSTopPane, Object_) { return new Object_(); }
+@method Object_ _frameWindowClass(METACLASS_P1127, Object_) { return new Object_(); }
 @mptr("hash") Object_ initializeRuntimeData(virtual!METACLASS_Object);
 @method Object_ _initializeRuntimeData(METACLASS_PARTSRuntimeSessionManager) { return new Object_(); }
 @method Object_ _initializeRuntimeData(METACLASS_PARTSLinkJunctionPart) { return new Object_(); }
@@ -11515,6 +12561,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _named(METACLASS_FileVolume, Object_) { return new Object_(); }
 @method Object_ _named(METACLASS_Printer, Object_) { return new Object_(); }
 @method Object_ _named(METACLASS_SmalltalkLibraryBinder, Object_) { return new Object_(); }
+@mptr("hash") Object_ withAll(virtual!METACLASS_Collection, Object_);
+@method Object_ _withAll(METACLASS_IndexedCollection, Object_) { return new Object_(); }
+@method Object_ _withAll(METACLASS_HashedCollection, Object_) { return new Object_(); }
 @mptr("hash") Object_ dragSourceSensitivity(virtual!METACLASS_Window);
 @method Object_ _dragSourceSensitivity(METACLASS_Window) { return new Object_(); }
 @method Object_ _dragSourceSensitivity(METACLASS_P1104) { return new Object_(); }
@@ -11565,11 +12614,19 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _canEdit(METACLASS_PARTSExecutablePartFileProcessor) { return new Object_(); }
 @method Object_ _canEdit(METACLASS_PARTSFileProcessor) { return new Object_(); }
 @method Object_ _canEdit(METACLASS_PARTSExeFileProcessor) { return new Object_(); }
+@mptr("hash") Object_ forClass(virtual!METACLASS_Object, Object_);
+@method Object_ _forClass(METACLASS_PARTSTypedValueHolder, Object_) { return new Object_(); }
+@method Object_ _forClass(METACLASS_ObjectChangeMap, Object_) { return new Object_(); }
+@method Object_ _forClass(METACLASS_ClassReader, Object_) { return new Object_(); }
+@method Object_ _forClass(METACLASS_CompilerInterface, Object_) { return new Object_(); }
 @mptr("hash") Object_ supportedEvents(virtual!METACLASS_SubPane);
 @method Object_ _supportedEvents(METACLASS_StatusPane) { return new Object_(); }
 @method Object_ _supportedEvents(METACLASS_ToolPane) { return new Object_(); }
 @method Object_ _supportedEvents(METACLASS_PARTSNotebook) { return new Object_(); }
 @method Object_ _supportedEvents(METACLASS_PARTSBaseNotebook) { return new Object_(); }
+@mptr("hash") Object_ defaultHeight(virtual!METACLASS_SubPane);
+@method Object_ _defaultHeight(METACLASS_StatusPane) { return new Object_(); }
+@method Object_ _defaultHeight(METACLASS_ToolPane) { return new Object_(); }
 @mptr("hash") Object_ receiverSelector(virtual!METACLASS_Message, Object_, Object_);
 @method Object_ _receiverSelector(METACLASS_Message, Object_, Object_) { return new Object_(); }
 @method Object_ _receiverSelector(METACLASS_LinkMessage, Object_, Object_) { return new Object_(); }
@@ -11577,6 +12634,20 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _recyclingThreshold(METACLASS_PARTSApplicationHolder) { return new Object_(); }
 @method Object_ _recyclingThreshold(METACLASS_P1140) { return new Object_(); }
 @method Object_ _recyclingThreshold(METACLASS_PARTSWindowSizeEditor) { return new Object_(); }
+@mptr("hash") Object_ withWith(virtual!METACLASS_Collection, Object_, Object_);
+@method Object_ _withWith(METACLASS_Collection, Object_, Object_) { return new Object_(); }
+@method Object_ _withWith(METACLASS_FixedSizeCollection, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ withWithWith(virtual!METACLASS_Collection, Object_, Object_, Object_);
+@method Object_ _withWithWith(METACLASS_Collection, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _withWithWith(METACLASS_FixedSizeCollection, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ withWithWithWith(virtual!METACLASS_Collection, Object_, Object_, Object_, Object_);
+@method Object_ _withWithWithWith(METACLASS_Collection, Object_, Object_, Object_, Object_) { return new Object_(); }
+@method Object_ _withWithWithWith(METACLASS_FixedSizeCollection, Object_, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ with(virtual!Class, Object_);
+@method Object_ _with(METACLASS_Collection, Object_) { return new Object_(); }
+@method Object_ _with(METACLASS_ExceptionSet, Object_) { return new Object_(); }
+@method Object_ _with(METACLASS_SelfInitializingObject, Object_) { return new Object_(); }
+@method Object_ _with(METACLASS_FixedSizeCollection, Object_) { return new Object_(); }
 @mptr("hash") Object_ indexed(virtual!METACLASS_StreamReference, Object_);
 @method Object_ _indexed(METACLASS_StreamReference, Object_) { return new Object_(); }
 @method Object_ _indexed(METACLASS_SystemStreamReference, Object_) { return new Object_(); }
@@ -11604,6 +12675,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _nullValue(METACLASS_WindowHandle) { return new Object_(); }
 @method Object_ _nullValue(METACLASS_ExternalHandle) { return new Object_(); }
 @method Object_ _nullValue(METACLASS_ExternalAddress) { return new Object_(); }
+@mptr("hash") Object_ documentation(virtual!METACLASS_P1147);
+@method Object_ _documentation(METACLASS_P1147) { return new Object_(); }
+@method Object_ _documentation(METACLASS_P1151) { return new Object_(); }
+@method Object_ _documentation(METACLASS_P1148) { return new Object_(); }
 @mptr("hash") Object_ findOrOpenOn(virtual!METACLASS_PARTSWindow, Object_);
 @method Object_ _findOrOpenOn(METACLASS_P1141, Object_) { return new Object_(); }
 @method Object_ _findOrOpenOn(METACLASS_PARTSSettingsEditor, Object_) { return new Object_(); }
@@ -11615,6 +12690,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ constructSupportedVersions(virtual!METACLASS_Object);
 @method Object_ _constructSupportedVersions(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _constructSupportedVersions(METACLASS_ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ createLogWindow(virtual!METACLASS_Object);
+@method Object_ _createLogWindow(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _createLogWindow(METACLASS_ObjectLoader) { return new Object_(); }
 @mptr("hash") Object_ describe(virtual!METACLASS_Object);
 @method Object_ _describe(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _describe(METACLASS_ObjectLoader) { return new Object_(); }
@@ -11630,6 +12708,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ dumpAllNewfile(virtual!METACLASS_Object, Object_, Object_);
 @method Object_ _dumpAllNewfile(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _dumpAllNewfile(METACLASS_ObjectDumper, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ removeChangeMapsSatisfyingForversion(virtual!METACLASS_Object, Object_, Object_);
+@method Object_ _removeChangeMapsSatisfyingForversion(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
+@method Object_ _removeChangeMapsSatisfyingForversion(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
+@method Object_ _removeChangeMapsSatisfyingForversion(METACLASS_PARTSFile, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ describeClasses(virtual!METACLASS_Object);
 @method Object_ _describeClasses(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _describeClasses(METACLASS_ObjectLoader) { return new Object_(); }
@@ -11646,10 +12728,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ dump(virtual!METACLASS_Object, Object_);
 @method Object_ _dump(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _dump(METACLASS_ObjectDumper, Object_) { return new Object_(); }
+@mptr("hash") Object_ versionCanBeDescribed(virtual!METACLASS_Object, Object_);
+@method Object_ _versionCanBeDescribed(METACLASS_ObjectFiler, Object_) { return new Object_(); }
+@method Object_ _versionCanBeDescribed(METACLASS_P1000, Object_) { return new Object_(); }
+@method Object_ _versionCanBeDescribed(METACLASS_ObjectLoader, Object_) { return new Object_(); }
 @mptr("hash") Object_ removeAllChangeMapsForClass(virtual!METACLASS_Object, Object_);
 @method Object_ _removeAllChangeMapsForClass(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _removeAllChangeMapsForClass(METACLASS_ObjectLoader, Object_) { return new Object_(); }
 @method Object_ _removeAllChangeMapsForClass(METACLASS_PARTSFile, Object_) { return new Object_(); }
+@mptr("hash") Object_ registerChangeMapForversion(virtual!METACLASS_Object, Object_, Object_);
+@method Object_ _registerChangeMapForversion(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
+@method Object_ _registerChangeMapForversion(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
+@method Object_ _registerChangeMapForversion(METACLASS_PARTSFile, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ standardLoadMapsDictionary(virtual!METACLASS_Object);
 @method Object_ _standardLoadMapsDictionary(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _standardLoadMapsDictionary(METACLASS_ObjectLoader) { return new Object_(); }
@@ -11659,12 +12749,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ getFileNameToOpen(virtual!METACLASS_Object);
 @method Object_ _getFileNameToOpen(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _getFileNameToOpen(METACLASS_ObjectLoader) { return new Object_(); }
+@mptr("hash") Object_ initializePlatformVersion(virtual!METACLASS_Object);
+@method Object_ _initializePlatformVersion(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _initializePlatformVersion(METACLASS_ObjectLoader) { return new Object_(); }
 @mptr("hash") Object_ loadFromPathName(virtual!METACLASS_Object, Object_);
 @method Object_ _loadFromPathName(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadFromPathName(METACLASS_ObjectLoader, Object_) { return new Object_(); }
 @mptr("hash") Object_ standardLoadMapsFor(virtual!METACLASS_Object, Object_);
 @method Object_ _standardLoadMapsFor(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _standardLoadMapsFor(METACLASS_ObjectLoader, Object_) { return new Object_(); }
+@mptr("hash") Object_ versionCanBeLoaded(virtual!METACLASS_Object, Object_);
+@method Object_ _versionCanBeLoaded(METACLASS_ObjectFiler, Object_) { return new Object_(); }
+@method Object_ _versionCanBeLoaded(METACLASS_P1000, Object_) { return new Object_(); }
+@method Object_ _versionCanBeLoaded(METACLASS_ObjectLoader, Object_) { return new Object_(); }
+@method Object_ _versionCanBeLoaded(METACLASS_P1100, Object_) { return new Object_(); }
+@method Object_ _versionCanBeLoaded(METACLASS_PARTSFile, Object_) { return new Object_(); }
 @mptr("hash") Object_ describeFromPathNameNewfile(virtual!METACLASS_Object, Object_, Object_);
 @method Object_ _describeFromPathNameNewfile(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeFromPathNameNewfile(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
@@ -11676,10 +12775,21 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _installComponent(METACLASS_ObjectLoadDialog) { return new Object_(); }
 @method Object_ _installComponent(METACLASS_ObjectLoader) { return new Object_(); }
 @method Object_ _installComponent(METACLASS_ObjectReference) { return new Object_(); }
+@mptr("hash") Object_ removeChangeMapForClassForversion(virtual!METACLASS_Object, Object_, Object_);
+@method Object_ _removeChangeMapForClassForversion(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
+@method Object_ _removeChangeMapForClassForversion(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
+@method Object_ _removeChangeMapForClassForversion(METACLASS_PARTSFile, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ currentVersion(virtual!METACLASS_Object, Object_);
 @method Object_ _currentVersion(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _currentVersion(METACLASS_ObjectLoader, Object_) { return new Object_(); }
 @method Object_ _currentVersion(METACLASS_PARTSFile, Object_) { return new Object_(); }
+@mptr("hash") Object_ createLogWindowLabelled(virtual!METACLASS_Object, Object_);
+@method Object_ _createLogWindowLabelled(METACLASS_ObjectFiler, Object_) { return new Object_(); }
+@method Object_ _createLogWindowLabelled(METACLASS_ObjectDumper, Object_) { return new Object_(); }
+@method Object_ _createLogWindowLabelled(METACLASS_ObjectLoader, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultDictionaryClass(virtual!METACLASS_Object);
+@method Object_ _defaultDictionaryClass(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _defaultDictionaryClass(METACLASS_DictionaryScope) { return new Object_(); }
 @mptr("hash") Object_ getFileNameToCreate(virtual!METACLASS_Object);
 @method Object_ _getFileNameToCreate(METACLASS_ObjectFiler) { return new Object_(); }
 @method Object_ _getFileNameToCreate(METACLASS_ObjectDumper) { return new Object_(); }
@@ -11692,13 +12802,25 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ describeAllFromPathNameNewfile(virtual!METACLASS_Object, Object_, Object_);
 @method Object_ _describeAllFromPathNameNewfile(METACLASS_ObjectFiler, Object_, Object_) { return new Object_(); }
 @method Object_ _describeAllFromPathNameNewfile(METACLASS_ObjectLoader, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ currentPlatform(virtual!METACLASS_Object);
+@method Object_ _currentPlatform(METACLASS_ObjectFiler) { return new Object_(); }
+@method Object_ _currentPlatform(METACLASS_ObjectLoader) { return new Object_(); }
+@method Object_ _currentPlatform(METACLASS_ExtendedListBox) { return new Object_(); }
 @mptr("hash") Object_ loadAllFromPathName(virtual!METACLASS_Object, Object_);
 @method Object_ _loadAllFromPathName(METACLASS_ObjectFiler, Object_) { return new Object_(); }
 @method Object_ _loadAllFromPathName(METACLASS_ObjectLoader, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultInitialSize(virtual!METACLASS_HashedCollection);
+@method Object_ _defaultInitialSize(METACLASS_PARTSMirrorCopyDictionary) { return new Object_(); }
+@method Object_ _defaultInitialSize(METACLASS_MethodDictionary) { return new Object_(); }
+@method Object_ _defaultInitialSize(METACLASS_HashedCollection) { return new Object_(); }
 @mptr("hash") Object_ redGreenBlue(virtual!METACLASS_Object, Object_, Object_, Object_);
 @method Object_ _redGreenBlue(METACLASS_Color, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _redGreenBlue(METACLASS_GraphicsTool, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _redGreenBlue(METACLASS_RGBColor, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultColorClass(virtual!METACLASS_Color);
+@method Object_ _defaultColorClass(METACLASS_Color) { return new Object_(); }
+@method Object_ _defaultColorClass(METACLASS_IndexedColor) { return new Object_(); }
+@method Object_ _defaultColorClass(METACLASS_RGBColor) { return new Object_(); }
 @mptr("hash") Object_ initializeSystemColors(virtual!METACLASS_Object);
 @method Object_ _initializeSystemColors(METACLASS_Color) { return new Object_(); }
 @method Object_ _initializeSystemColors(METACLASS_OperatingSystemInformation) { return new Object_(); }
@@ -11733,6 +12855,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ openInAttributeMode(virtual!METACLASS_Object, Object_, Object_, Object_, Object_);
 @method Object_ _openInAttributeMode(METACLASS_FileHandle, Object_, Object_, Object_, Object_) { return new Object_(); }
 @method Object_ _openInAttributeMode(METACLASS_File, Object_, Object_, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ versionDescriptionOf(virtual!METACLASS_Object, Object_);
+@method Object_ _versionDescriptionOf(METACLASS_P1000, Object_) { return new Object_(); }
+@method Object_ _versionDescriptionOf(METACLASS_PARTSFile, Object_) { return new Object_(); }
 @mptr("hash") Object_ initializeVersionInfo(virtual!METACLASS_Object);
 @method Object_ _initializeVersionInfo(METACLASS_P1000) { return new Object_(); }
 @method Object_ _initializeVersionInfo(METACLASS_PARTSFile) { return new Object_(); }
@@ -11742,6 +12867,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ setAttributesOfPathName(virtual!METACLASS_Object, Object_);
 @method Object_ _setAttributesOfPathName(METACLASS_P1000, Object_) { return new Object_(); }
 @method Object_ _setAttributesOfPathName(METACLASS_PARTSFile, Object_) { return new Object_(); }
+@mptr("hash") Object_ initializePlatformValues(virtual!METACLASS_Object);
+@method Object_ _initializePlatformValues(METACLASS_P1000) { return new Object_(); }
+@method Object_ _initializePlatformValues(METACLASS_PARTSHostInterface) { return new Object_(); }
 @mptr("hash") Object_ supportsShowDisabledScrollbarStyle(virtual!METACLASS_ListBox);
 @method Object_ _supportsShowDisabledScrollbarStyle(METACLASS_PARTSMultipleChoiceListPart) { return new Object_(); }
 @method Object_ _supportsShowDisabledScrollbarStyle(METACLASS_PARTSListPanePart) { return new Object_(); }
@@ -11764,6 +12892,18 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _nonAuto(METACLASS_CheckBox) { return new Object_(); }
 @method Object_ _nonAuto(METACLASS_ThreeStateButton) { return new Object_(); }
 @method Object_ _nonAuto(METACLASS_RadioButton) { return new Object_(); }
+@mptr("hash") Object_ auto(virtual!METACLASS_Toggle);
+@method Object_ _auto(METACLASS_CheckBox) { return new Object_(); }
+@method Object_ _auto(METACLASS_ThreeStateButton) { return new Object_(); }
+@method Object_ _auto(METACLASS_RadioButton) { return new Object_(); }
+@mptr("hash") Object_ defaultClass(virtual!METACLASS_Object);
+@method Object_ _defaultClass(METACLASS_TranscriptWindow) { return new Object_(); }
+@method Object_ _defaultClass(METACLASS_ClassReader) { return new Object_(); }
+@method Object_ _defaultClass(METACLASS_DragDropSession) { return new Object_(); }
+@mptr("hash") Object_ defaultClass(virtual!METACLASS_Object, Object_);
+@method Object_ _defaultClass(METACLASS_TranscriptWindow, Object_) { return new Object_(); }
+@method Object_ _defaultClass(METACLASS_ClassReader, Object_) { return new Object_(); }
+@method Object_ _defaultClass(METACLASS_DragDropSession, Object_) { return new Object_(); }
 @mptr("hash") Object_ fromDateTime(virtual!METACLASS_ExternalBuffer, Object_, Object_);
 @method Object_ _fromDateTime(METACLASS_WinFileTime, Object_, Object_) { return new Object_(); }
 @method Object_ _fromDateTime(METACLASS_WinSystemTime, Object_, Object_) { return new Object_(); }
@@ -11783,6 +12923,11 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _existsIn(METACLASS_PARTSFileDescriptor, Object_, Object_) { return new Object_(); }
 @method Object_ _existsIn(METACLASS_PARTSFile, Object_, Object_) { return new Object_(); }
 @method Object_ _existsIn(METACLASS_File, Object_, Object_) { return new Object_(); }
+@mptr("hash") Object_ forPWO20Dialog(virtual!METACLASS_PARTSPrebuiltDialog, Object_);
+@method Object_ _forPWO20Dialog(METACLASS_PARTSPrompterPart, Object_) { return new Object_(); }
+@method Object_ _forPWO20Dialog(METACLASS_PARTSPrebuiltMessageBox, Object_) { return new Object_(); }
+@method Object_ _forPWO20Dialog(METACLASS_PARTSPrebuiltDialog, Object_) { return new Object_(); }
+@method Object_ _forPWO20Dialog(METACLASS_PARTSFileDialogPart, Object_) { return new Object_(); }
 @mptr("hash") Object_ labelFindAgain(virtual!METACLASS_PARTSStandardEditMenu);
 @method Object_ _labelFindAgain(METACLASS_PARTSEditMenu) { return new Object_(); }
 @method Object_ _labelFindAgain(METACLASS_PARTSStandardEditMenu) { return new Object_(); }
@@ -11819,6 +12964,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _fields(METACLASS_FileVolume) { return new Object_(); }
 @method Object_ _fields(METACLASS_File) { return new Object_(); }
 @method Object_ _fields(METACLASS_Directory) { return new Object_(); }
+@mptr("hash") Object_ conversions(virtual!METACLASS_Object);
+@method Object_ _conversions(METACLASS_FileSystemEntity) { return new Object_(); }
+@method Object_ _conversions(METACLASS_FileVolume) { return new Object_(); }
 @mptr("hash") Object_ initializeCurrentClass(virtual!METACLASS_Object);
 @method Object_ _initializeCurrentClass(METACLASS_PARTSIconEditor) { return new Object_(); }
 @method Object_ _initializeCurrentClass(METACLASS_PARTSStarterWindow) { return new Object_(); }
@@ -11828,6 +12976,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @method Object_ _applicationName(METACLASS_PARTSSettingsEditor) { return new Object_(); }
 @method Object_ _applicationName(METACLASS_PARTSSettingsViewer) { return new Object_(); }
 @method Object_ _applicationName(METACLASS_PARTSMouseButtonsSettingsEditor) { return new Object_(); }
+@mptr("hash") Object_ shutdown(virtual!METACLASS_Object);
+@method Object_ _shutdown(METACLASS_PARTSStarterWindow) { return new Object_(); }
+@method Object_ _shutdown(METACLASS_PARTSSpeakerPart) { return new Object_(); }
 @mptr("hash") Object_ removeExternalCallHandler(virtual!METACLASS_PARTSStarterWindow);
 @method Object_ _removeExternalCallHandler(METACLASS_PARTSStarterWindow) { return new Object_(); }
 @method Object_ _removeExternalCallHandler(METACLASS_PARTSStarterWindowWindows) { return new Object_(); }
@@ -11840,6 +12991,10 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ getHandle(virtual!METACLASS_DynamicLinkLibrary, Object_);
 @method Object_ _getHandle(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
 @method Object_ _getHandle(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
+@mptr("hash") Object_ default(virtual!METACLASS_Object);
+@method Object_ _default(METACLASS_Debugger) { return new Object_(); }
+@method Object_ _default(METACLASS_Printer) { return new Object_(); }
+@method Object_ _default(METACLASS_Directory) { return new Object_(); }
 @mptr("hash") Object_ standardRuntimeMenuFor(virtual!METACLASS_PARTSStandardMenu, Object_);
 @method Object_ _standardRuntimeMenuFor(METACLASS_PARTSStandardEditMenu, Object_) { return new Object_(); }
 @method Object_ _standardRuntimeMenuFor(METACLASS_PARTSStandardFileMenu, Object_) { return new Object_(); }
@@ -11855,6 +13010,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ labelSaveAs(virtual!METACLASS_PARTSStandardFileMenu);
 @method Object_ _labelSaveAs(METACLASS_PARTSStandardFileMenu) { return new Object_(); }
 @method Object_ _labelSaveAs(METACLASS_PARTSFileMenu) { return new Object_(); }
+@mptr("hash") Object_ labelProductInformation(virtual!METACLASS_PARTSStandardHelpMenu);
+@method Object_ _labelProductInformation(METACLASS_PARTSStandardHelpMenu) { return new Object_(); }
+@method Object_ _labelProductInformation(METACLASS_PARTSHelpMenu) { return new Object_(); }
 @mptr("hash") Object_ partsFramingBlock(virtual!METACLASS_GroupPane, Object_);
 @method Object_ _partsFramingBlock(METACLASS_PARTSMenuPaneWindows, Object_) { return new Object_(); }
 @method Object_ _partsFramingBlock(METACLASS_PARTSClientAreaPaneWindows, Object_) { return new Object_(); }
@@ -11894,6 +13052,9 @@ class METACLASS_PARTSCurrencyEntryFieldPart : METACLASS_PARTSFixedDecimalEntryFi
 @mptr("hash") Object_ fullPathName(virtual!METACLASS_Object, Object_);
 @method Object_ _fullPathName(METACLASS_PARTSFile, Object_) { return new Object_(); }
 @method Object_ _fullPathName(METACLASS_File, Object_) { return new Object_(); }
+@mptr("hash") Object_ defaultPoolNames(virtual!METACLASS_Object);
+@method Object_ _defaultPoolNames(METACLASS_CompilerInterface) { return new Object_(); }
+@method Object_ _defaultPoolNames(METACLASS_WorkspaceExpressionEvaluator) { return new Object_(); }
 
 void main()
 {

@@ -9,4317 +9,4696 @@ import std.stdio;
 import openmethods;
 mixin(registerMethods);
 
-class Artificial_Root {}
-class SelfInitializingObject : Artificial_Root {}
-class Object_ : Artificial_Root {}
-class TextSelection : Object_ {}
-class Rectangle : Object_ {}
-class Point : Object_ {}
-class ObjectLibraryBind : Object_ {}
-class Icon : Object_ {}
-class UndefinedObject : Object_ {}
-class CompilerInterface : Object_ {}
-class Semaphore : Object_ {}
-class MenuItem : Object_ {}
-class Font : Object_ {}
-class NotificationManager : Object_ {}
-class InputEvent : Object_ {}
-class ProcessScheduler : Object_ {}
-class NationalLanguageSupport : Object_ {}
-class MethodExecutor : Object_ {}
-class ObjectLibraryExternal : Object_ {}
-class ClassReader : Object_ {}
-class SessionModel : Object_ {}
-class DeletedClass : Object_ {}
-class Directory : Object_ {}
-class EmptySlot : Object_ {}
-class ObjectMutator : Object_ {}
-class StringDictionaryReader : Object_ {}
-class ClassInstaller : Object_ {}
-class DIB : Object_ {}
-class CallBack : Object_ {}
-class DragDropList : Object_ {}
-class CompilationError : Object_ {}
-class CompilationResult : Object_ {}
-class File : Object_ {}
-class ProtectedFrameMarker : Object_ {}
-class OperatingSystemInformation : Object_ {}
-class ClipboardManager : Object_ {}
-class ExceptionHandler : Object_ {}
-class HelpManager : Object_ {}
-class Menu : Object_ {}
-class CursorManager : Object_ {}
-class StringModel : Object_ {}
-class Enumerator : Object_ {}
-class EvaluableAction : Object_ {}
-class CollectionAccessor : EvaluableAction {}
-class GraphicsMedium : Object_ {}
-class Screen : GraphicsMedium {}
-class DynamicDataExchange : Object_ {}
-class DDEClient : DynamicDataExchange {}
-class ExternalBuffer : Object_ {}
-class SelfDefinedStructure : ExternalBuffer {}
-class WinSystemTime : ExternalBuffer {}
-class CompilerNameScope : Object_ {}
-class MultiplePoolScope : CompilerNameScope {}
-class Window : Object_ {}
-class MenuWindow : Window {}
-class WinOfstruct : ExternalBuffer {}
-class WinMeasureItemStruct : ExternalBuffer {}
-class Collection : Object_ {}
-class Bag : Collection {}
-class ViewManager : Object_ {}
-class ClassHierarchyBrowser : ViewManager {}
-class WinLogFont : ExternalBuffer {}
-class Context : Object_ {}
-class ZeroArgumentBlock : Context {}
-class OneArgumentBlock : Context {}
-class WinDropFile : ExternalBuffer {}
-class Bitmap : GraphicsMedium {}
-class WinLogicalObject : Object_ {}
-class WinLogicalPalette : WinLogicalObject {}
-class DiskBrowser : ViewManager {}
-class WinLogPalette : ExternalBuffer {}
-class Stream : Object_ {}
-class ReadStream : Stream {}
-class WinRectangle : ExternalBuffer {}
-class Win32FindData : ExternalBuffer {}
-class WinLogPen : ExternalBuffer {}
-class WinPaintStructure : ExternalBuffer {}
-class WinTextMetrics : ExternalBuffer {}
-class Magnitude : Object_ {}
-class Character : Magnitude {}
-class ConstantAccessor : EvaluableAction {}
-class WinFileTime : ExternalBuffer {}
-class WinBitmapFileHeader : ExternalBuffer {}
-class Printer : GraphicsMedium {}
-class WinMessage : ExternalBuffer {}
-class ExternalHandle : Object_ {}
-class Atom : ExternalHandle {}
-class WinDrawItemStruct : ExternalBuffer {}
-class DeviceContext : ExternalHandle {}
-class WindowHandle : ExternalHandle {}
-class WinBitmapStruct : ExternalBuffer {}
-class Boolean : Object_ {}
-class False : Boolean {}
-class WinStructArray : ExternalBuffer {}
-class FileHandle : ExternalHandle {}
-class ObjectLibraryReference : ExternalBuffer {}
-class WinPoint : ExternalBuffer {}
-class ClassBrowser : ViewManager {}
-class StoredPicture : GraphicsMedium {}
-class WindowPolicy : Object_ {}
-class NoMenusWindowPolicy : WindowPolicy {}
-class SystemWindow : Window {}
-class WinDialogInfo : ExternalBuffer {}
-class TwoArgumentBlock : Context {}
-class Date : Magnitude {}
-class CompilerErrorHandler : Object_ {}
-class NonInteractiveErrorHandler : CompilerErrorHandler {}
-class Association : Magnitude {}
-class HomeContext : Context {}
-class Behavior : Object_ {}
-class MetaClass : Behavior {}
-class WinLogicalPen : WinLogicalObject {}
-class VirtualMachineConfiguration : ExternalBuffer {}
-class Pattern : Object_ {}
-class WildPattern : Pattern {}
-class WinWindowPlacement : ExternalBuffer {}
-class Time : Magnitude {}
-class WinWindowClass : ExternalBuffer {}
-class True : Boolean {}
-class WinLogicalBrush : WinLogicalObject {}
-class Debugger : ViewManager {}
-class WinLogBrush : ExternalBuffer {}
-class Class : Behavior {}
-class METACLASS_SelfInitializingObject : Class {}
-class DynamicLinkLibrary : ExternalHandle {}
-class GDIDLL : DynamicLinkLibrary {}
-class DictionaryScope : CompilerNameScope {}
-class GlobalPoolScope : DictionaryScope {}
-class WindowDialog : ViewManager {}
-class PrintAbortDialog : WindowDialog {}
-class Inspector : ViewManager {}
-class DoubleByteStringInspector : Inspector {}
-class OrderedCollectionInspector : Inspector {}
-class SilentErrorHandler : CompilerErrorHandler {}
-class TraditionalCompilerErrorHandler : SilentErrorHandler {}
-class Prompter : WindowDialog {}
-class GraphicInspector : Inspector {}
-class SubPane : Window {}
-class GraphPane : SubPane {}
-class ByteArrayInspector : Inspector {}
-class ExternalMemoryHandle : ExternalHandle {}
-class ExternalGlobalHandle : ExternalMemoryHandle {}
-class DialogBox : Window {}
-class NewSubclassDialog : DialogBox {}
-class GroupPane : SubPane {}
-class Number : Magnitude {}
-class Float : Number {}
-class ProgressIndicatorDialog : WindowDialog {}
-class CommonDialogDLL : DynamicLinkLibrary {}
-class SaveImageAsDialog : WindowDialog {}
-class StandardWindowPolicy : WindowPolicy {}
-class SmalltalkWindowPolicy : StandardWindowPolicy {}
-class MethodBrowser : ViewManager {}
-class SelectorBrowser : MethodBrowser {}
-class SaveImageDialog : WindowDialog {}
-class KernelDLL : DynamicLinkLibrary {}
-class TextPaneErrorHandler : CompilerErrorHandler {}
-class WorkspaceErrorHandler : TextPaneErrorHandler {}
-class VirtualMachineDLL : DynamicLinkLibrary {}
-class Fraction : Number {}
-class Exception_ : Object_ {}
-class Notification : Exception_ {}
-class VetoAction : Notification {}
-class ShellDLL : DynamicLinkLibrary {}
-class MessageBox : DialogBox {}
-class DDEAuxWindow : Window {}
-class DDEAuxClient : DDEAuxWindow {}
-class CompatibleWindowPolicy : StandardWindowPolicy {}
-class TextWindow : ViewManager {}
-class WalkbackWindow : TextWindow {}
-class SelfDefinedStructureInspector : Inspector {}
-class DDEAuxServer : DDEAuxWindow {}
-class KeyboardInterrupt : Notification {}
-class DDEServer : DynamicDataExchange {}
-class SmalltalkEmulator : DDEServer {}
-class Message : EvaluableAction {}
-class LinkMessage : Message {}
-class WinBitmapInfoHeader : ExternalBuffer {}
-class WinBitmapInfo : WinBitmapInfoHeader {}
-class UserDLL : DynamicLinkLibrary {}
-class DictionaryInspector : Inspector {}
-class TranscriptWindow : TextWindow {}
-class VirtualMachineExe : DynamicLinkLibrary {}
-class FindReplaceDialog : WindowDialog {}
-class ExternalHeapHandle : ExternalMemoryHandle {}
-class Set : Collection {}
-class SymbolSet : Set {}
-class AboutDialog : WindowDialog {}
-class Error_ : Exception_ {}
-class FileError : Error_ {}
-class ProcessTermination : Notification {}
-class METACLASS_Object : Class {}
-class METACLASS_TextSelection : METACLASS_Object {}
-class METACLASS_Rectangle : METACLASS_Object {}
-class METACLASS_Point : METACLASS_Object {}
-class METACLASS_ObjectLibraryBind : METACLASS_Object {}
-class METACLASS_Icon : METACLASS_Object {}
-class METACLASS_UndefinedObject : METACLASS_Object {}
-class METACLASS_CompilerInterface : METACLASS_Object {}
-class METACLASS_Semaphore : METACLASS_Object {}
-class METACLASS_MenuItem : METACLASS_Object {}
-class METACLASS_Font : METACLASS_Object {}
-class METACLASS_NotificationManager : METACLASS_Object {}
-class METACLASS_InputEvent : METACLASS_Object {}
-class METACLASS_ProcessScheduler : METACLASS_Object {}
-class METACLASS_NationalLanguageSupport : METACLASS_Object {}
-class METACLASS_MethodExecutor : METACLASS_Object {}
-class METACLASS_ObjectLibraryExternal : METACLASS_Object {}
-class METACLASS_ClassReader : METACLASS_Object {}
-class METACLASS_SessionModel : METACLASS_Object {}
-class METACLASS_DeletedClass : METACLASS_Object {}
-class METACLASS_Directory : METACLASS_Object {}
-class METACLASS_EmptySlot : METACLASS_Object {}
-class METACLASS_ObjectMutator : METACLASS_Object {}
-class METACLASS_StringDictionaryReader : METACLASS_Object {}
-class METACLASS_ClassInstaller : METACLASS_Object {}
-class METACLASS_DIB : METACLASS_Object {}
-class METACLASS_CallBack : METACLASS_Object {}
-class METACLASS_DragDropList : METACLASS_Object {}
-class METACLASS_CompilationError : METACLASS_Object {}
-class METACLASS_CompilationResult : METACLASS_Object {}
-class METACLASS_File : METACLASS_Object {}
-class METACLASS_ProtectedFrameMarker : METACLASS_Object {}
-class METACLASS_OperatingSystemInformation : METACLASS_Object {}
-class METACLASS_ClipboardManager : METACLASS_Object {}
-class METACLASS_ExceptionHandler : METACLASS_Object {}
-class METACLASS_HelpManager : METACLASS_Object {}
-class METACLASS_Menu : METACLASS_Object {}
-class METACLASS_CursorManager : METACLASS_Object {}
-class METACLASS_StringModel : METACLASS_Object {}
-class METACLASS_Enumerator : METACLASS_Object {}
-class Dictionary : Set {}
-class SystemDictionary : Dictionary {}
-class Warning : Notification {}
-class LoggedWarning : Warning {}
-class ControlError : Error_ {}
-class MessageNotUnderstood : ControlError {}
-class IndexedCollection : Collection {}
-class OrderedCollection : IndexedCollection {}
-class Process : OrderedCollection {}
-class ControlPane : SubPane {}
-class GroupBox : ControlPane {}
-class CommonSystemDialog : DialogBox {}
-class FileDialog : CommonSystemDialog {}
-class TextPane : SubPane {}
-class WorkspaceTextPane : TextPane {}
-class DynamicLinkLibrary16 : DynamicLinkLibrary {}
-class KernelDLL16 : DynamicLinkLibrary16 {}
-class Integer : Number {}
-class SmallInteger : Integer {}
-class FixedSizeCollection : IndexedCollection {}
-class Interval : FixedSizeCollection {}
-class ApplicationWindow : Window {}
-class TopPane : ApplicationWindow {}
-class DialogTopPane : TopPane {}
-class ExternalLong : ExternalBuffer {}
-class ExternalAddress : ExternalLong {}
-class ExternalGlobalAddress : ExternalAddress {}
-class ScrollBar : ControlPane {}
-class ThunkDLL16 : DynamicLinkLibrary16 {}
-class PrintDialog : CommonSystemDialog {}
-class ArithmeticError : Error_ {}
-class ZeroDivide : ArithmeticError {}
-class ColorDialog : CommonSystemDialog {}
-class ExternalSegmentedAddress : ExternalAddress {}
-class SortedCollection : OrderedCollection {}
-class ByteArray : FixedSizeCollection {}
-class ExternalHeapAddress : ExternalAddress {}
-class FontDialog : CommonSystemDialog {}
-class GraphicsTool : Object_ {}
-class TextTool : GraphicsTool {}
-class Pen : TextTool {}
-class RecordingPen : Pen {}
-class METACLASS_EvaluableAction : METACLASS_Object {}
-class METACLASS_CollectionAccessor : METACLASS_EvaluableAction {}
-class METACLASS_DynamicDataExchange : METACLASS_Object {}
-class METACLASS_DDEClient : METACLASS_DynamicDataExchange {}
-class METACLASS_GraphicsMedium : METACLASS_Object {}
-class METACLASS_Screen : METACLASS_GraphicsMedium {}
-class METACLASS_ExternalBuffer : METACLASS_Object {}
-class METACLASS_SelfDefinedStructure : METACLASS_ExternalBuffer {}
-class METACLASS_WinSystemTime : METACLASS_ExternalBuffer {}
-class METACLASS_CompilerNameScope : METACLASS_Object {}
-class METACLASS_MultiplePoolScope : METACLASS_CompilerNameScope {}
-class METACLASS_Window : METACLASS_Object {}
-class METACLASS_MenuWindow : METACLASS_Window {}
-class METACLASS_WinOfstruct : METACLASS_ExternalBuffer {}
-class METACLASS_Collection : METACLASS_Object {}
-class METACLASS_Bag : METACLASS_Collection {}
-class METACLASS_WinMeasureItemStruct : METACLASS_ExternalBuffer {}
-class METACLASS_ViewManager : METACLASS_Object {}
-class METACLASS_ClassHierarchyBrowser : METACLASS_ViewManager {}
-class METACLASS_WinLogFont : METACLASS_ExternalBuffer {}
-class METACLASS_Context : METACLASS_Object {}
-class METACLASS_ZeroArgumentBlock : METACLASS_Context {}
-class METACLASS_OneArgumentBlock : METACLASS_Context {}
-class METACLASS_WinDropFile : METACLASS_ExternalBuffer {}
-class METACLASS_Bitmap : METACLASS_GraphicsMedium {}
-class METACLASS_WinLogicalObject : METACLASS_Object {}
-class METACLASS_WinLogicalPalette : METACLASS_WinLogicalObject {}
-class METACLASS_DiskBrowser : METACLASS_ViewManager {}
-class METACLASS_WinLogPalette : METACLASS_ExternalBuffer {}
-class METACLASS_Stream : METACLASS_Object {}
-class METACLASS_ReadStream : METACLASS_Stream {}
-class METACLASS_WinRectangle : METACLASS_ExternalBuffer {}
-class METACLASS_Win32FindData : METACLASS_ExternalBuffer {}
-class METACLASS_WinLogPen : METACLASS_ExternalBuffer {}
-class METACLASS_WinPaintStructure : METACLASS_ExternalBuffer {}
-class METACLASS_WinTextMetrics : METACLASS_ExternalBuffer {}
-class METACLASS_Magnitude : METACLASS_Object {}
-class METACLASS_Character : METACLASS_Magnitude {}
-class METACLASS_ConstantAccessor : METACLASS_EvaluableAction {}
-class METACLASS_WinFileTime : METACLASS_ExternalBuffer {}
-class METACLASS_WinBitmapFileHeader : METACLASS_ExternalBuffer {}
-class METACLASS_Printer : METACLASS_GraphicsMedium {}
-class METACLASS_WinMessage : METACLASS_ExternalBuffer {}
-class METACLASS_WinDrawItemStruct : METACLASS_ExternalBuffer {}
-class METACLASS_ExternalHandle : METACLASS_Object {}
-class METACLASS_Atom : METACLASS_ExternalHandle {}
-class METACLASS_DeviceContext : METACLASS_ExternalHandle {}
-class METACLASS_WindowHandle : METACLASS_ExternalHandle {}
-class METACLASS_WinBitmapStruct : METACLASS_ExternalBuffer {}
-class METACLASS_Boolean : METACLASS_Object {}
-class METACLASS_False : METACLASS_Boolean {}
-class METACLASS_WinStructArray : METACLASS_ExternalBuffer {}
-class METACLASS_FileHandle : METACLASS_ExternalHandle {}
-class METACLASS_ObjectLibraryReference : METACLASS_ExternalBuffer {}
-class METACLASS_ClassBrowser : METACLASS_ViewManager {}
-class METACLASS_WinPoint : METACLASS_ExternalBuffer {}
-class METACLASS_StoredPicture : METACLASS_GraphicsMedium {}
-class METACLASS_WindowPolicy : METACLASS_Object {}
-class METACLASS_NoMenusWindowPolicy : METACLASS_WindowPolicy {}
-class METACLASS_SystemWindow : METACLASS_Window {}
-class METACLASS_WinDialogInfo : METACLASS_ExternalBuffer {}
-class METACLASS_TwoArgumentBlock : METACLASS_Context {}
-class METACLASS_Date : METACLASS_Magnitude {}
-class METACLASS_CompilerErrorHandler : METACLASS_Object {}
-class METACLASS_NonInteractiveErrorHandler : METACLASS_CompilerErrorHandler {}
-class METACLASS_Association : METACLASS_Magnitude {}
-class METACLASS_HomeContext : METACLASS_Context {}
-class METACLASS_Behavior : METACLASS_Object {}
-class METACLASS_MetaClass : METACLASS_Behavior {}
-class METACLASS_WinLogicalPen : METACLASS_WinLogicalObject {}
-class METACLASS_VirtualMachineConfiguration : METACLASS_ExternalBuffer {}
-class METACLASS_Pattern : METACLASS_Object {}
-class METACLASS_WildPattern : METACLASS_Pattern {}
-class METACLASS_WinWindowPlacement : METACLASS_ExternalBuffer {}
-class METACLASS_Time : METACLASS_Magnitude {}
-class METACLASS_Class : METACLASS_Behavior {}
-class METACLASS_WinWindowClass : METACLASS_ExternalBuffer {}
-class METACLASS_True : METACLASS_Boolean {}
-class METACLASS_WinLogicalBrush : METACLASS_WinLogicalObject {}
-class METACLASS_Debugger : METACLASS_ViewManager {}
-class METACLASS_WinLogBrush : METACLASS_ExternalBuffer {}
-class StaticPane : ControlPane {}
-class StaticGraphic : StaticPane {}
-class StaticBox : StaticPane {}
-class ListBox : ControlPane {}
-class MultipleSelectListBox : ListBox {}
-class IdentityDictionary : Dictionary {}
-class MethodDictionary : IdentityDictionary {}
-class EntryField : ControlPane {}
-class ComboEntryField : EntryField {}
-class Button : ControlPane {}
-class DrawnButton : Button {}
-class Array : FixedSizeCollection {}
-class ActionSequence : Array {}
-class ListPane : ListBox {}
-class LargeInteger : Integer {}
-class LargePositiveInteger : LargeInteger {}
-class LargeNegativeInteger : LargeInteger {}
-class WriteStream : Stream {}
-class ReadWriteStream : WriteStream {}
-class FileStream : ReadWriteStream {}
-class MixedFileStream : FileStream {}
-class String : FixedSizeCollection {}
-class Symbol : String {}
-class StaticText : StaticPane {}
-class METACLASS_DynamicLinkLibrary : METACLASS_ExternalHandle {}
-class METACLASS_GDIDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_DictionaryScope : METACLASS_CompilerNameScope {}
-class METACLASS_GlobalPoolScope : METACLASS_DictionaryScope {}
-class METACLASS_WindowDialog : METACLASS_ViewManager {}
-class METACLASS_PrintAbortDialog : METACLASS_WindowDialog {}
-class METACLASS_Inspector : METACLASS_ViewManager {}
-class METACLASS_DoubleByteStringInspector : METACLASS_Inspector {}
-class METACLASS_OrderedCollectionInspector : METACLASS_Inspector {}
-class METACLASS_SilentErrorHandler : METACLASS_CompilerErrorHandler {}
-class METACLASS_TraditionalCompilerErrorHandler : METACLASS_SilentErrorHandler {}
-class METACLASS_Prompter : METACLASS_WindowDialog {}
-class METACLASS_GraphicInspector : METACLASS_Inspector {}
-class METACLASS_SubPane : METACLASS_Window {}
-class METACLASS_GraphPane : METACLASS_SubPane {}
-class METACLASS_ExternalMemoryHandle : METACLASS_ExternalHandle {}
-class METACLASS_ExternalGlobalHandle : METACLASS_ExternalMemoryHandle {}
-class METACLASS_ByteArrayInspector : METACLASS_Inspector {}
-class METACLASS_DialogBox : METACLASS_Window {}
-class METACLASS_NewSubclassDialog : METACLASS_DialogBox {}
-class METACLASS_GroupPane : METACLASS_SubPane {}
-class METACLASS_Number : METACLASS_Magnitude {}
-class METACLASS_Float : METACLASS_Number {}
-class METACLASS_ProgressIndicatorDialog : METACLASS_WindowDialog {}
-class METACLASS_CommonDialogDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_SaveImageAsDialog : METACLASS_WindowDialog {}
-class METACLASS_StandardWindowPolicy : METACLASS_WindowPolicy {}
-class METACLASS_SmalltalkWindowPolicy : METACLASS_StandardWindowPolicy {}
-class METACLASS_MethodBrowser : METACLASS_ViewManager {}
-class METACLASS_SelectorBrowser : METACLASS_MethodBrowser {}
-class METACLASS_SaveImageDialog : METACLASS_WindowDialog {}
-class METACLASS_KernelDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_TextPaneErrorHandler : METACLASS_CompilerErrorHandler {}
-class METACLASS_WorkspaceErrorHandler : METACLASS_TextPaneErrorHandler {}
-class METACLASS_VirtualMachineDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_Fraction : METACLASS_Number {}
-class METACLASS_ShellDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_MessageBox : METACLASS_DialogBox {}
-class METACLASS_Exception : METACLASS_Object {}
-class METACLASS_Notification : METACLASS_Exception {}
-class METACLASS_VetoAction : METACLASS_Notification {}
-class METACLASS_CompatibleWindowPolicy : METACLASS_StandardWindowPolicy {}
-class METACLASS_TextWindow : METACLASS_ViewManager {}
-class METACLASS_WalkbackWindow : METACLASS_TextWindow {}
-class METACLASS_SelfDefinedStructureInspector : METACLASS_Inspector {}
-class METACLASS_DDEAuxWindow : METACLASS_Window {}
-class METACLASS_DDEAuxClient : METACLASS_DDEAuxWindow {}
-class METACLASS_DDEAuxServer : METACLASS_DDEAuxWindow {}
-class METACLASS_KeyboardInterrupt : METACLASS_Notification {}
-class METACLASS_DDEServer : METACLASS_DynamicDataExchange {}
-class METACLASS_SmalltalkEmulator : METACLASS_DDEServer {}
-class METACLASS_Message : METACLASS_EvaluableAction {}
-class METACLASS_LinkMessage : METACLASS_Message {}
-class METACLASS_WinBitmapInfoHeader : METACLASS_ExternalBuffer {}
-class METACLASS_WinBitmapInfo : METACLASS_WinBitmapInfoHeader {}
-class METACLASS_UserDLL : METACLASS_DynamicLinkLibrary {}
-class METACLASS_DictionaryInspector : METACLASS_Inspector {}
-class METACLASS_TranscriptWindow : METACLASS_TextWindow {}
-class METACLASS_VirtualMachineExe : METACLASS_DynamicLinkLibrary {}
-class METACLASS_FindReplaceDialog : METACLASS_WindowDialog {}
-class METACLASS_ExternalHeapHandle : METACLASS_ExternalMemoryHandle {}
-class METACLASS_Set : METACLASS_Collection {}
-class METACLASS_SymbolSet : METACLASS_Set {}
-class METACLASS_AboutDialog : METACLASS_WindowDialog {}
-class METACLASS_Error : METACLASS_Exception {}
-class METACLASS_FileError : METACLASS_Error {}
-class METACLASS_ProcessTermination : METACLASS_Notification {}
-class TextEdit : EntryField {}
-class TextPaneControl : TextEdit {}
-class CompiledMethod : Array {}
-class CompiledInitializer : CompiledMethod {}
-class Toggle : Button {}
-class RadioButton : Toggle {}
-class DoubleByteString : String {}
-class DoubleByteSymbol : DoubleByteString {}
-class DropDownList : ListBox {}
-class ComboBox : DropDownList {}
-class METACLASS_Dictionary : METACLASS_Set {}
-class METACLASS_SystemDictionary : METACLASS_Dictionary {}
-class METACLASS_Warning : METACLASS_Notification {}
-class METACLASS_LoggedWarning : METACLASS_Warning {}
-class METACLASS_IndexedCollection : METACLASS_Collection {}
-class METACLASS_OrderedCollection : METACLASS_IndexedCollection {}
-class METACLASS_Process : METACLASS_OrderedCollection {}
-class METACLASS_ControlError : METACLASS_Error {}
-class METACLASS_MessageNotUnderstood : METACLASS_ControlError {}
-class METACLASS_ControlPane : METACLASS_SubPane {}
-class METACLASS_GroupBox : METACLASS_ControlPane {}
-class METACLASS_CommonSystemDialog : METACLASS_DialogBox {}
-class METACLASS_FileDialog : METACLASS_CommonSystemDialog {}
-class METACLASS_TextPane : METACLASS_SubPane {}
-class METACLASS_WorkspaceTextPane : METACLASS_TextPane {}
-class METACLASS_DynamicLinkLibrary16 : METACLASS_DynamicLinkLibrary {}
-class METACLASS_KernelDLL16 : METACLASS_DynamicLinkLibrary16 {}
-class METACLASS_Integer : METACLASS_Number {}
-class METACLASS_SmallInteger : METACLASS_Integer {}
-class METACLASS_FixedSizeCollection : METACLASS_IndexedCollection {}
-class METACLASS_Interval : METACLASS_FixedSizeCollection {}
-class METACLASS_ApplicationWindow : METACLASS_Window {}
-class METACLASS_TopPane : METACLASS_ApplicationWindow {}
-class METACLASS_DialogTopPane : METACLASS_TopPane {}
-class METACLASS_ExternalLong : METACLASS_ExternalBuffer {}
-class METACLASS_ExternalAddress : METACLASS_ExternalLong {}
-class METACLASS_ExternalGlobalAddress : METACLASS_ExternalAddress {}
-class METACLASS_ScrollBar : METACLASS_ControlPane {}
-class METACLASS_PrintDialog : METACLASS_CommonSystemDialog {}
-class METACLASS_ThunkDLL16 : METACLASS_DynamicLinkLibrary16 {}
-class METACLASS_ArithmeticError : METACLASS_Error {}
-class METACLASS_ZeroDivide : METACLASS_ArithmeticError {}
-class METACLASS_ColorDialog : METACLASS_CommonSystemDialog {}
-class METACLASS_ExternalSegmentedAddress : METACLASS_ExternalAddress {}
-class METACLASS_ByteArray : METACLASS_FixedSizeCollection {}
-class METACLASS_SortedCollection : METACLASS_OrderedCollection {}
-class METACLASS_ExternalHeapAddress : METACLASS_ExternalAddress {}
-class METACLASS_FontDialog : METACLASS_CommonSystemDialog {}
-class METACLASS_GraphicsTool : METACLASS_Object {}
-class METACLASS_TextTool : METACLASS_GraphicsTool {}
-class METACLASS_Pen : METACLASS_TextTool {}
-class METACLASS_RecordingPen : METACLASS_Pen {}
-class CheckBox : Toggle {}
-class ThreeStateButton : CheckBox {}
-class METACLASS_StaticPane : METACLASS_ControlPane {}
-class METACLASS_StaticGraphic : METACLASS_StaticPane {}
-class METACLASS_StaticBox : METACLASS_StaticPane {}
-class METACLASS_ListBox : METACLASS_ControlPane {}
-class METACLASS_MultipleSelectListBox : METACLASS_ListBox {}
-class METACLASS_IdentityDictionary : METACLASS_Dictionary {}
-class METACLASS_MethodDictionary : METACLASS_IdentityDictionary {}
-class METACLASS_EntryField : METACLASS_ControlPane {}
-class METACLASS_ComboEntryField : METACLASS_EntryField {}
-class METACLASS_Button : METACLASS_ControlPane {}
-class METACLASS_DrawnButton : METACLASS_Button {}
-class METACLASS_Array : METACLASS_FixedSizeCollection {}
-class METACLASS_ActionSequence : METACLASS_Array {}
-class METACLASS_ListPane : METACLASS_ListBox {}
-class METACLASS_LargeInteger : METACLASS_Integer {}
-class METACLASS_LargePositiveInteger : METACLASS_LargeInteger {}
-class METACLASS_LargeNegativeInteger : METACLASS_LargeInteger {}
-class METACLASS_WriteStream : METACLASS_Stream {}
-class METACLASS_ReadWriteStream : METACLASS_WriteStream {}
-class METACLASS_FileStream : METACLASS_ReadWriteStream {}
-class METACLASS_MixedFileStream : METACLASS_FileStream {}
-class METACLASS_String : METACLASS_FixedSizeCollection {}
-class METACLASS_Symbol : METACLASS_String {}
-class METACLASS_StaticText : METACLASS_StaticPane {}
-class METACLASS_TextEdit : METACLASS_EntryField {}
-class METACLASS_TextPaneControl : METACLASS_TextEdit {}
-class METACLASS_CompiledMethod : METACLASS_Array {}
-class METACLASS_CompiledInitializer : METACLASS_CompiledMethod {}
-class METACLASS_Toggle : METACLASS_Button {}
-class METACLASS_RadioButton : METACLASS_Toggle {}
-class METACLASS_DoubleByteString : METACLASS_String {}
-class METACLASS_DoubleByteSymbol : METACLASS_DoubleByteString {}
-class METACLASS_DropDownList : METACLASS_ListBox {}
-class METACLASS_ComboBox : METACLASS_DropDownList {}
-class METACLASS_CheckBox : METACLASS_Toggle {}
-class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
-@mptr("hash") Object_ style(virtual!Object_, Object_);
-@method Object_ _style(WinLogBrush, Object_) { return new Object_(); }
-@method Object_ _style(WinWindowClass, Object_) { return new Object_(); }
-@method Object_ _style(Window, Object_) { return new Object_(); }
-@method Object_ _style(ControlPane, Object_) { return new Object_(); }
-@method Object_ _style(MenuItem, Object_) { return new Object_(); }
-@method Object_ _style(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _style(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ color(virtual!Object_, Object_);
-@method Object_ _color(WinLogBrush, Object_) { return new Object_(); }
-@method Object_ _color(ColorDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ color(virtual!ExternalBuffer);
-@method Object_ _color(WinLogBrush) { return new Object_(); }
-@method Object_ _color(WinLogPen) { return new Object_(); }
-@mptr("hash") Object_ style(virtual!Object_);
-@method Object_ _style(WinLogBrush) { return new Object_(); }
-@method Object_ _style(WinLogicalPen) { return new Object_(); }
-@method Object_ _style(Window) { return new Object_(); }
-@method Object_ _style(WinLogPen) { return new Object_(); }
-@method Object_ _style(MenuItem) { return new Object_(); }
-@mptr("hash") Object_ popupMenu(virtual!SubPane);
-@method Object_ _popupMenu(SubPane) { return new Object_(); }
-@method Object_ _popupMenu(TextPane) { return new Object_(); }
-@method Object_ _popupMenu(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ amountToPageUp(virtual!SubPane);
-@method Object_ _amountToPageUp(SubPane) { return new Object_(); }
-@method Object_ _amountToPageUp(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ font(virtual!Object_);
-@method Object_ _font(SubPane) { return new Object_(); }
-@method Object_ _font(TextTool) { return new Object_(); }
-@method Object_ _font(Window) { return new Object_(); }
-@mptr("hash") Object_ button1Down(virtual!Window, Object_);
-@method Object_ _button1Down(SubPane, Object_) { return new Object_(); }
-@method Object_ _button1Down(TextPane, Object_) { return new Object_(); }
-@method Object_ _button1Down(Window, Object_) { return new Object_(); }
-@method Object_ _button1Down(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ charsInColumn(virtual!SubPane);
-@method Object_ _charsInColumn(SubPane) { return new Object_(); }
-@method Object_ _charsInColumn(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ updateWith(virtual!Object_, Object_, Object_);
-@method Object_ _updateWith(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _updateWith(Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ helpManager(virtual!Window);
-@method Object_ _helpManager(SubPane) { return new Object_(); }
-@method Object_ _helpManager(DialogBox) { return new Object_(); }
-@method Object_ _helpManager(DialogTopPane) { return new Object_(); }
-@method Object_ _helpManager(Window) { return new Object_(); }
-@mptr("hash") Object_ amountToScrollLeft(virtual!SubPane);
-@method Object_ _amountToScrollLeft(SubPane) { return new Object_(); }
-@method Object_ _amountToScrollLeft(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ backColor(virtual!Object_);
-@method Object_ _backColor(SubPane) { return new Object_(); }
-@method Object_ _backColor(GraphicsTool) { return new Object_(); }
-@method Object_ _backColor(Window) { return new Object_(); }
-@mptr("hash") Object_ updateVerticalSlider(virtual!SubPane);
-@method Object_ _updateVerticalSlider(SubPane) { return new Object_(); }
-@method Object_ _updateVerticalSlider(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ isOkToChange(virtual!SubPane);
-@method Object_ _isOkToChange(SubPane) { return new Object_(); }
-@method Object_ _isOkToChange(ListBox) { return new Object_(); }
-@mptr("hash") Object_ handlers(virtual!Window);
-@method Object_ _handlers(SubPane) { return new Object_(); }
-@method Object_ _handlers(Window) { return new Object_(); }
-@method Object_ _handlers(TopPane) { return new Object_(); }
-@mptr("hash") Object_ update(virtual!Object_, Object_);
-@method Object_ _update(SubPane, Object_) { return new Object_(); }
-@method Object_ _update(TextPane, Object_) { return new Object_(); }
-@method Object_ _update(Object_, Object_) { return new Object_(); }
-@method Object_ _update(Toggle, Object_) { return new Object_(); }
-@method Object_ _update(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _update(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ releaseEventTable(virtual!Object_);
-@method Object_ _releaseEventTable(SubPane) { return new Object_(); }
-@method Object_ _releaseEventTable(Object_) { return new Object_(); }
-@method Object_ _releaseEventTable(TopPane) { return new Object_(); }
-@mptr("hash") Object_ contextForItem(virtual!Object_, Object_);
-@method Object_ _contextForItem(SubPane, Object_) { return new Object_(); }
-@method Object_ _contextForItem(Menu, Object_) { return new Object_(); }
-@method Object_ _contextForItem(DialogBox, Object_) { return new Object_(); }
-@method Object_ _contextForItem(DialogTopPane, Object_) { return new Object_(); }
-@method Object_ _contextForItem(MenuWindow, Object_) { return new Object_(); }
-@method Object_ _contextForItem(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ aboutToSaveImage(virtual!Object_);
-@method Object_ _aboutToSaveImage(SubPane) { return new Object_(); }
-@method Object_ _aboutToSaveImage(SessionModel) { return new Object_(); }
-@method Object_ _aboutToSaveImage(Window) { return new Object_(); }
-@method Object_ _aboutToSaveImage(Toggle) { return new Object_(); }
-@method Object_ _aboutToSaveImage(ControlPane) { return new Object_(); }
-@method Object_ _aboutToSaveImage(NotificationManager) { return new Object_(); }
-@method Object_ _aboutToSaveImage(TextPaneControl) { return new Object_(); }
-@method Object_ _aboutToSaveImage(Bitmap) { return new Object_(); }
-@method Object_ _aboutToSaveImage(GraphPane) { return new Object_(); }
-@method Object_ _aboutToSaveImage(ApplicationWindow) { return new Object_(); }
-@method Object_ _aboutToSaveImage(TextEdit) { return new Object_(); }
-@method Object_ _aboutToSaveImage(METACLASS_SelfInitializingObject) { return new Object_(); }
-@method Object_ _aboutToSaveImage(METACLASS_KernelDLL16) { return new Object_(); }
-@method Object_ _aboutToSaveImage(METACLASS_Bitmap) { return new Object_(); }
-@method Object_ _aboutToSaveImage(METACLASS_Icon) { return new Object_(); }
-@method Object_ _aboutToSaveImage(METACLASS_Screen) { return new Object_(); }
-@mptr("hash") Object_ button2Up(virtual!Window, Object_);
-@method Object_ _button2Up(SubPane, Object_) { return new Object_(); }
-@method Object_ _button2Up(Window, Object_) { return new Object_(); }
-@method Object_ _button2Up(ComboEntryField, Object_) { return new Object_(); }
-@method Object_ _button2Up(TopPane, Object_) { return new Object_(); }
-@method Object_ _button2Up(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ button1Up(virtual!Window, Object_);
-@method Object_ _button1Up(SubPane, Object_) { return new Object_(); }
-@method Object_ _button1Up(TextPane, Object_) { return new Object_(); }
-@method Object_ _button1Up(Window, Object_) { return new Object_(); }
-@method Object_ _button1Up(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ charsInRow(virtual!SubPane);
-@method Object_ _charsInRow(SubPane) { return new Object_(); }
-@method Object_ _charsInRow(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ framingBlock(virtual!Window, Object_);
-@method Object_ _framingBlock(SubPane, Object_) { return new Object_(); }
-@method Object_ _framingBlock(TopPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ totalLength(virtual!Object_);
-@method Object_ _totalLength(SubPane) { return new Object_(); }
-@method Object_ _totalLength(StringModel) { return new Object_(); }
-@method Object_ _totalLength(TextPane) { return new Object_(); }
-@mptr("hash") Object_ framingRatio(virtual!Window, Object_);
-@method Object_ _framingRatio(SubPane, Object_) { return new Object_(); }
-@method Object_ _framingRatio(TopPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ zoom(virtual!Object_);
-@method Object_ _zoom(SubPane) { return new Object_(); }
-@method Object_ _zoom(ApplicationWindow) { return new Object_(); }
-@method Object_ _zoom(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ wmErasebkgndWith(virtual!Window, Object_, Object_);
-@method Object_ _wmErasebkgndWith(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmErasebkgndWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmErasebkgndWith(ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmErasebkgndWith(GraphPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmErasebkgndWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ resizeDeferinfo(virtual!Window, Object_, Object_);
-@method Object_ _resizeDeferinfo(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _resizeDeferinfo(TopPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ initialText(virtual!SubPane);
-@method Object_ _initialText(SubPane) { return new Object_(); }
-@method Object_ _initialText(EntryField) { return new Object_(); }
-@method Object_ _initialText(ControlPane) { return new Object_(); }
-@method Object_ _initialText(StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ initialize(virtual!Object_);
-@method Object_ _initialize(SubPane) { return new Object_(); }
-@method Object_ _initialize(Debugger) { return new Object_(); }
-@method Object_ _initialize(Class) { return new Object_(); }
-@method Object_ _initialize(MethodBrowser) { return new Object_(); }
-@method Object_ _initialize(Menu) { return new Object_(); }
-@method Object_ _initialize(RecordingPen) { return new Object_(); }
-@method Object_ _initialize(FontDialog) { return new Object_(); }
-@method Object_ _initialize(OperatingSystemInformation) { return new Object_(); }
-@method Object_ _initialize(DragDropList) { return new Object_(); }
-@method Object_ _initialize(GraphicsTool) { return new Object_(); }
-@method Object_ _initialize(ColorDialog) { return new Object_(); }
-@method Object_ _initialize(PrintDialog) { return new Object_(); }
-@method Object_ _initialize(CompiledMethod) { return new Object_(); }
-@method Object_ _initialize(Pen) { return new Object_(); }
-@method Object_ _initialize(DrawnButton) { return new Object_(); }
-@method Object_ _initialize(ScrollBar) { return new Object_(); }
-@method Object_ _initialize(Printer) { return new Object_(); }
-@method Object_ _initialize(TextPane) { return new Object_(); }
-@method Object_ _initialize(DDEAuxWindow) { return new Object_(); }
-@method Object_ _initialize(MessageBox) { return new Object_(); }
-@method Object_ _initialize(EntryField) { return new Object_(); }
-@method Object_ _initialize(Window) { return new Object_(); }
-@method Object_ _initialize(NationalLanguageSupport) { return new Object_(); }
-@method Object_ _initialize(ProcessScheduler) { return new Object_(); }
-@method Object_ _initialize(TopPane) { return new Object_(); }
-@method Object_ _initialize(Toggle) { return new Object_(); }
-@method Object_ _initialize(NotificationManager) { return new Object_(); }
-@method Object_ _initialize(TextPaneControl) { return new Object_(); }
-@method Object_ _initialize(ProgressIndicatorDialog) { return new Object_(); }
-@method Object_ _initialize(Font) { return new Object_(); }
-@method Object_ _initialize(Semaphore) { return new Object_(); }
-@method Object_ _initialize(ListBox) { return new Object_(); }
-@method Object_ _initialize(GraphPane) { return new Object_(); }
-@method Object_ _initialize(FileDialog) { return new Object_(); }
-@method Object_ _initialize(CompilerNameScope) { return new Object_(); }
-@method Object_ _initialize(Icon) { return new Object_(); }
-@method Object_ _initialize(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _initialize(Bag) { return new Object_(); }
-@method Object_ _initialize(Process) { return new Object_(); }
-@method Object_ _initialize(MenuWindow) { return new Object_(); }
-@method Object_ _initialize(ApplicationWindow) { return new Object_(); }
-@method Object_ _initialize(ViewManager) { return new Object_(); }
-@method Object_ _initialize(TextSelection) { return new Object_(); }
-@method Object_ _initialize(TextEdit) { return new Object_(); }
-@method Object_ _initialize(METACLASS_WinLogicalBrush) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Time) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Menu) { return new Object_(); }
-@method Object_ _initialize(METACLASS_FontDialog) { return new Object_(); }
-@method Object_ _initialize(METACLASS_ExceptionHandler) { return new Object_(); }
-@method Object_ _initialize(METACLASS_WinLogicalPen) { return new Object_(); }
-@method Object_ _initialize(METACLASS_ClipboardManager) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Date) { return new Object_(); }
-@method Object_ _initialize(METACLASS_GraphicsTool) { return new Object_(); }
-@method Object_ _initialize(METACLASS_ColorDialog) { return new Object_(); }
-@method Object_ _initialize(METACLASS_CallBack) { return new Object_(); }
-@method Object_ _initialize(METACLASS_PrintDialog) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Pen) { return new Object_(); }
-@method Object_ _initialize(METACLASS_SessionModel) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Printer) { return new Object_(); }
-@method Object_ _initialize(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _initialize(METACLASS_MessageBox) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Behavior) { return new Object_(); }
-@method Object_ _initialize(METACLASS_FileStream) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Object) { return new Object_(); }
-@method Object_ _initialize(METACLASS_ObjectLibraryExternal) { return new Object_(); }
-@method Object_ _initialize(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@method Object_ _initialize(METACLASS_MethodDictionary) { return new Object_(); }
-@method Object_ _initialize(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _initialize(METACLASS_WinLogicalPalette) { return new Object_(); }
-@method Object_ _initialize(METACLASS_WorkspaceTextPane) { return new Object_(); }
-@method Object_ _initialize(METACLASS_NewSubclassDialog) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Pattern) { return new Object_(); }
-@method Object_ _initialize(METACLASS_FileDialog) { return new Object_(); }
-@method Object_ _initialize(METACLASS_CompilerInterface) { return new Object_(); }
-@method Object_ _initialize(METACLASS_CompilerNameScope) { return new Object_(); }
-@method Object_ _initialize(METACLASS_ObjectLibraryBind) { return new Object_(); }
-@method Object_ _initialize(METACLASS_Process) { return new Object_(); }
-@method Object_ _initialize(METACLASS_SelfDefinedStructure) { return new Object_(); }
-@mptr("hash") Object_ popup(virtual!Window);
-@method Object_ _popup(SubPane) { return new Object_(); }
-@method Object_ _popup(Window) { return new Object_(); }
-@mptr("hash") Object_ basicStyle(virtual!Window);
-@method Object_ _basicStyle(SubPane) { return new Object_(); }
-@method Object_ _basicStyle(DropDownList) { return new Object_(); }
-@method Object_ _basicStyle(TextPane) { return new Object_(); }
-@method Object_ _basicStyle(DialogTopPane) { return new Object_(); }
-@method Object_ _basicStyle(Window) { return new Object_(); }
-@method Object_ _basicStyle(StaticPane) { return new Object_(); }
-@method Object_ _basicStyle(ControlPane) { return new Object_(); }
-@method Object_ _basicStyle(GraphPane) { return new Object_(); }
-@method Object_ _basicStyle(GroupBox) { return new Object_(); }
-@method Object_ _basicStyle(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ updateHorizontalSlider(virtual!SubPane);
-@method Object_ _updateHorizontalSlider(SubPane) { return new Object_(); }
-@method Object_ _updateHorizontalSlider(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ buildDialogItem(virtual!SubPane, Object_);
-@method Object_ _buildDialogItem(SubPane, Object_) { return new Object_(); }
-@method Object_ _buildDialogItem(ControlPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ resize(virtual!Window, Object_);
-@method Object_ _resize(SubPane, Object_) { return new Object_(); }
-@method Object_ _resize(TextPane, Object_) { return new Object_(); }
-@method Object_ _resize(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ losingFocus(virtual!Window);
-@method Object_ _losingFocus(SubPane) { return new Object_(); }
-@method Object_ _losingFocus(ComboBox) { return new Object_(); }
-@method Object_ _losingFocus(Button) { return new Object_(); }
-@method Object_ _losingFocus(DrawnButton) { return new Object_(); }
-@method Object_ _losingFocus(TextPane) { return new Object_(); }
-@method Object_ _losingFocus(EntryField) { return new Object_(); }
-@method Object_ _losingFocus(Window) { return new Object_(); }
-@method Object_ _losingFocus(ComboEntryField) { return new Object_(); }
-@method Object_ _losingFocus(Toggle) { return new Object_(); }
-@mptr("hash") Object_ subPaneWithFocus(virtual!Window, Object_);
-@method Object_ _subPaneWithFocus(SubPane, Object_) { return new Object_(); }
-@method Object_ _subPaneWithFocus(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ previousTabStop(virtual!SubPane);
-@method Object_ _previousTabStop(SubPane) { return new Object_(); }
-@method Object_ _previousTabStop(GroupPane) { return new Object_(); }
-@mptr("hash") Object_ helpRequest(virtual!Window);
-@method Object_ _helpRequest(SubPane) { return new Object_(); }
-@method Object_ _helpRequest(TopPane) { return new Object_(); }
-@method Object_ _helpRequest(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ isSubPane(virtual!Object_);
-@method Object_ _isSubPane(SubPane) { return new Object_(); }
-@method Object_ _isSubPane(Object_) { return new Object_(); }
-@mptr("hash") Object_ handlersAttribute(virtual!Window, Object_);
-@method Object_ _handlersAttribute(SubPane, Object_) { return new Object_(); }
-@method Object_ _handlersAttribute(TopPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ buildControl(virtual!SubPane, Object_);
-@method Object_ _buildControl(SubPane, Object_) { return new Object_(); }
-@method Object_ _buildControl(ScrollBar, Object_) { return new Object_(); }
-@method Object_ _buildControl(EntryField, Object_) { return new Object_(); }
-@method Object_ _buildControl(Toggle, Object_) { return new Object_(); }
-@method Object_ _buildControl(ControlPane, Object_) { return new Object_(); }
-@method Object_ _buildControl(ListBox, Object_) { return new Object_(); }
-@method Object_ _buildControl(TextEdit, Object_) { return new Object_(); }
-@mptr("hash") Object_ update(virtual!Object_);
-@method Object_ _update(SubPane) { return new Object_(); }
-@method Object_ _update(TextPane) { return new Object_(); }
-@method Object_ _update(Toggle) { return new Object_(); }
-@method Object_ _update(DiskBrowser) { return new Object_(); }
-@method Object_ _update(TextPaneControl) { return new Object_(); }
-@method Object_ _update(GraphPane) { return new Object_(); }
-@method Object_ _update(ClassHierarchyBrowser) { return new Object_(); }
-@method Object_ _update(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ colorChange(virtual!Window);
-@method Object_ _colorChange(SubPane) { return new Object_(); }
-@method Object_ _colorChange(Window) { return new Object_(); }
-@method Object_ _colorChange(ControlPane) { return new Object_(); }
-@mptr("hash") Object_ font(virtual!Object_, Object_);
-@method Object_ _font(SubPane, Object_) { return new Object_(); }
-@method Object_ _font(TextTool, Object_) { return new Object_(); }
-@method Object_ _font(Window, Object_) { return new Object_(); }
-@method Object_ _font(ControlPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ name(virtual!Object_, Object_);
-@method Object_ _name(SubPane, Object_) { return new Object_(); }
-@method Object_ _name(Icon, Object_) { return new Object_(); }
-@method Object_ _name(ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _name(Process, Object_) { return new Object_(); }
-@mptr("hash") Object_ handlersAttribute(virtual!Window);
-@method Object_ _handlersAttribute(SubPane) { return new Object_(); }
-@method Object_ _handlersAttribute(TopPane) { return new Object_(); }
-@mptr("hash") Object_ wmVScrollWith(virtual!Window, Object_, Object_);
-@method Object_ _wmVScrollWith(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmVScrollWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmVScrollWith(ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmVScrollWith(GraphPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmHScrollWith(virtual!Window, Object_, Object_);
-@method Object_ _wmHScrollWith(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmHScrollWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmHScrollWith(ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmHScrollWith(GraphPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ getGraphicsTool(virtual!SubPane);
-@method Object_ _getGraphicsTool(SubPane) { return new Object_(); }
-@method Object_ _getGraphicsTool(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ framingBlock(virtual!Window);
-@method Object_ _framingBlock(SubPane) { return new Object_(); }
-@method Object_ _framingBlock(Window) { return new Object_(); }
-@method Object_ _framingBlock(TopPane) { return new Object_(); }
-@method Object_ _framingBlock(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ wmDropfilesWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDropfilesWith(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDropfilesWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ topCorner(virtual!SubPane);
-@method Object_ _topCorner(SubPane) { return new Object_(); }
-@method Object_ _topCorner(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ mouseMove(virtual!Window, Object_);
-@method Object_ _mouseMove(SubPane, Object_) { return new Object_(); }
-@method Object_ _mouseMove(Window, Object_) { return new Object_(); }
-@method Object_ _mouseMove(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ dragDropObjects(virtual!Object_);
-@method Object_ _dragDropObjects(SubPane) { return new Object_(); }
-@method Object_ _dragDropObjects(MethodBrowser) { return new Object_(); }
-@method Object_ _dragDropObjects(ClassBrowser) { return new Object_(); }
-@method Object_ _dragDropObjects(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ initSize(virtual!Window, Object_);
-@method Object_ _initSize(SubPane, Object_) { return new Object_(); }
-@method Object_ _initSize(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ eventTableForEdit(virtual!Object_);
-@method Object_ _eventTableForEdit(SubPane) { return new Object_(); }
-@method Object_ _eventTableForEdit(Object_) { return new Object_(); }
-@method Object_ _eventTableForEdit(TopPane) { return new Object_(); }
-@method Object_ _eventTableForEdit(ObjectLibraryBind) { return new Object_(); }
-@mptr("hash") Object_ controlKeyInput(virtual!Window, Object_);
-@method Object_ _controlKeyInput(SubPane, Object_) { return new Object_(); }
-@method Object_ _controlKeyInput(Button, Object_) { return new Object_(); }
-@method Object_ _controlKeyInput(TextPane, Object_) { return new Object_(); }
-@method Object_ _controlKeyInput(EntryField, Object_) { return new Object_(); }
-@method Object_ _controlKeyInput(Window, Object_) { return new Object_(); }
-@method Object_ _controlKeyInput(ComboEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ validate(virtual!Object_);
-@method Object_ _validate(SubPane) { return new Object_(); }
-@method Object_ _validate(ComboBox) { return new Object_(); }
-@method Object_ _validate(Button) { return new Object_(); }
-@method Object_ _validate(ClassInstaller) { return new Object_(); }
-@method Object_ _validate(TextPane) { return new Object_(); }
-@method Object_ _validate(DialogTopPane) { return new Object_(); }
-@method Object_ _validate(DDEAuxWindow) { return new Object_(); }
-@method Object_ _validate(EntryField) { return new Object_(); }
-@method Object_ _validate(TopPane) { return new Object_(); }
-@method Object_ _validate(Toggle) { return new Object_(); }
-@method Object_ _validate(ControlPane) { return new Object_(); }
-@method Object_ _validate(TextPaneControl) { return new Object_(); }
-@method Object_ _validate(ListBox) { return new Object_(); }
-@method Object_ _validate(Bitmap) { return new Object_(); }
-@method Object_ _validate(GraphPane) { return new Object_(); }
-@method Object_ _validate(MultipleSelectListBox) { return new Object_(); }
-@method Object_ _validate(GroupBox) { return new Object_(); }
-@method Object_ _validate(ApplicationWindow) { return new Object_(); }
-@method Object_ _validate(TextEdit) { return new Object_(); }
-@method Object_ _validate(StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ virtualKeyInputWithkeys(virtual!Window, Object_, Object_);
-@method Object_ _virtualKeyInputWithkeys(SubPane, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(Button, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(EntryField, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(ComboEntryField, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(TextPaneControl, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(ListBox, Object_, Object_) { return new Object_(); }
-@method Object_ _virtualKeyInputWithkeys(GraphPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isATabStop(virtual!SubPane);
-@method Object_ _isATabStop(SubPane) { return new Object_(); }
-@method Object_ _isATabStop(RadioButton) { return new Object_(); }
-@mptr("hash") Object_ selection(virtual!SubPane, Object_);
-@method Object_ _selection(SubPane, Object_) { return new Object_(); }
-@method Object_ _selection(Toggle, Object_) { return new Object_(); }
-@method Object_ _selection(ListBox, Object_) { return new Object_(); }
-@method Object_ _selection(MultipleSelectListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ selection(virtual!Window);
-@method Object_ _selection(SubPane) { return new Object_(); }
-@method Object_ _selection(PrintDialog) { return new Object_(); }
-@method Object_ _selection(TextPane) { return new Object_(); }
-@method Object_ _selection(Toggle) { return new Object_(); }
-@method Object_ _selection(ListBox) { return new Object_(); }
-@method Object_ _selection(MultipleSelectListBox) { return new Object_(); }
-@method Object_ _selection(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ initGraphics(virtual!Window);
-@method Object_ _initGraphics(SubPane) { return new Object_(); }
-@method Object_ _initGraphics(MenuWindow) { return new Object_(); }
-@method Object_ _initGraphics(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ graphicsToolClass(virtual!SubPane);
-@method Object_ _graphicsToolClass(SubPane) { return new Object_(); }
-@method Object_ _graphicsToolClass(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ button1Move(virtual!Window, Object_);
-@method Object_ _button1Move(SubPane, Object_) { return new Object_(); }
-@method Object_ _button1Move(TextPane, Object_) { return new Object_(); }
-@method Object_ _button1Move(Window, Object_) { return new Object_(); }
-@method Object_ _button1Move(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ canArrowInto(virtual!SubPane);
-@method Object_ _canArrowInto(SubPane) { return new Object_(); }
-@method Object_ _canArrowInto(GroupPane) { return new Object_(); }
-@mptr("hash") Object_ amountToScrollUp(virtual!SubPane);
-@method Object_ _amountToScrollUp(SubPane) { return new Object_(); }
-@method Object_ _amountToScrollUp(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ close(virtual!Object_);
-@method Object_ _close(SubPane) { return new Object_(); }
-@method Object_ _close(Debugger) { return new Object_(); }
-@method Object_ _close(ComboBox) { return new Object_(); }
-@method Object_ _close(ClipboardManager) { return new Object_(); }
-@method Object_ _close(TranscriptWindow) { return new Object_(); }
-@method Object_ _close(File) { return new Object_(); }
-@method Object_ _close(StoredPicture) { return new Object_(); }
-@method Object_ _close(FileHandle) { return new Object_(); }
-@method Object_ _close(DialogBox) { return new Object_(); }
-@method Object_ _close(TextPane) { return new Object_(); }
-@method Object_ _close(DialogTopPane) { return new Object_(); }
-@method Object_ _close(DDEAuxWindow) { return new Object_(); }
-@method Object_ _close(FileStream) { return new Object_(); }
-@method Object_ _close(DynamicLinkLibrary16) { return new Object_(); }
-@method Object_ _close(Window) { return new Object_(); }
-@method Object_ _close(DynamicLinkLibrary) { return new Object_(); }
-@method Object_ _close(TopPane) { return new Object_(); }
-@method Object_ _close(Stream) { return new Object_(); }
-@method Object_ _close(WindowDialog) { return new Object_(); }
-@method Object_ _close(GraphPane) { return new Object_(); }
-@method Object_ _close(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _close(MenuWindow) { return new Object_(); }
-@method Object_ _close(ApplicationWindow) { return new Object_(); }
-@method Object_ _close(ViewManager) { return new Object_(); }
-@method Object_ _close(StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ gettingFocus(virtual!Window);
-@method Object_ _gettingFocus(SubPane) { return new Object_(); }
-@method Object_ _gettingFocus(Button) { return new Object_(); }
-@method Object_ _gettingFocus(DrawnButton) { return new Object_(); }
-@method Object_ _gettingFocus(Window) { return new Object_(); }
-@method Object_ _gettingFocus(Toggle) { return new Object_(); }
-@mptr("hash") Object_ tabWithKeys(virtual!SubPane, Object_);
-@method Object_ _tabWithKeys(SubPane, Object_) { return new Object_(); }
-@method Object_ _tabWithKeys(TextPane, Object_) { return new Object_(); }
-@method Object_ _tabWithKeys(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ deactivate(virtual!Window);
-@method Object_ _deactivate(SubPane) { return new Object_(); }
-@method Object_ _deactivate(Window) { return new Object_(); }
-@method Object_ _deactivate(TopPane) { return new Object_(); }
-@method Object_ _deactivate(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ updateSliders(virtual!SubPane);
-@method Object_ _updateSliders(SubPane) { return new Object_(); }
-@method Object_ _updateSliders(GroupPane) { return new Object_(); }
-@mptr("hash") Object_ nextTabStop(virtual!SubPane);
-@method Object_ _nextTabStop(SubPane) { return new Object_(); }
-@method Object_ _nextTabStop(GroupPane) { return new Object_(); }
-@mptr("hash") Object_ contextForPopup(virtual!Object_, Object_);
-@method Object_ _contextForPopup(SubPane, Object_) { return new Object_(); }
-@method Object_ _contextForPopup(Menu, Object_) { return new Object_(); }
-@method Object_ _contextForPopup(DialogBox, Object_) { return new Object_(); }
-@method Object_ _contextForPopup(DialogTopPane, Object_) { return new Object_(); }
-@method Object_ _contextForPopup(MenuWindow, Object_) { return new Object_(); }
-@method Object_ _contextForPopup(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ eventTable(virtual!Object_);
-@method Object_ _eventTable(SubPane) { return new Object_(); }
-@method Object_ _eventTable(Object_) { return new Object_(); }
-@method Object_ _eventTable(TopPane) { return new Object_(); }
-@method Object_ _eventTable(ObjectLibraryBind) { return new Object_(); }
-@mptr("hash") Object_ amountToPageLeft(virtual!SubPane);
-@method Object_ _amountToPageLeft(SubPane) { return new Object_(); }
-@method Object_ _amountToPageLeft(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ open(virtual!Object_);
-@method Object_ _open(SubPane) { return new Object_(); }
-@method Object_ _open(FontDialog) { return new Object_(); }
-@method Object_ _open(AboutDialog) { return new Object_(); }
-@method Object_ _open(ClipboardManager) { return new Object_(); }
-@method Object_ _open(File) { return new Object_(); }
-@method Object_ _open(ColorDialog) { return new Object_(); }
-@method Object_ _open(PrintDialog) { return new Object_(); }
-@method Object_ _open(DDEAuxServer) { return new Object_(); }
-@method Object_ _open(TextPane) { return new Object_(); }
-@method Object_ _open(DialogTopPane) { return new Object_(); }
-@method Object_ _open(DDEAuxWindow) { return new Object_(); }
-@method Object_ _open(DDEAuxClient) { return new Object_(); }
-@method Object_ _open(MessageBox) { return new Object_(); }
-@method Object_ _open(ControlPane) { return new Object_(); }
-@method Object_ _open(DiskBrowser) { return new Object_(); }
-@method Object_ _open(SaveImageAsDialog) { return new Object_(); }
-@method Object_ _open(ProgressIndicatorDialog) { return new Object_(); }
-@method Object_ _open(FileDialog) { return new Object_(); }
-@method Object_ _open(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _open(ApplicationWindow) { return new Object_(); }
-@method Object_ _open(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ className(virtual!Object_, Object_);
-@method Object_ _className(Enumerator, Object_) { return new Object_(); }
-@method Object_ _className(WinWindowClass, Object_) { return new Object_(); }
-@method Object_ _className(ClassInstaller, Object_) { return new Object_(); }
-@mptr("hash") Object_ enableInspectItem(virtual!ViewManager);
-@method Object_ _enableInspectItem(Debugger) { return new Object_(); }
-@method Object_ _enableInspectItem(DictionaryInspector) { return new Object_(); }
-@method Object_ _enableInspectItem(Inspector) { return new Object_(); }
-@mptr("hash") Object_ messages(virtual!Object_);
-@method Object_ _messages(Debugger) { return new Object_(); }
-@method Object_ _messages(MethodBrowser) { return new Object_(); }
-@method Object_ _messages(CompilationResult) { return new Object_(); }
-@method Object_ _messages(CompiledMethod) { return new Object_(); }
-@method Object_ _messages(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ restartable(virtual!Object_);
-@method Object_ _restartable(Debugger) { return new Object_(); }
-@method Object_ _restartable(Process) { return new Object_(); }
-@mptr("hash") Object_ instance(virtual!ViewManager, Object_);
-@method Object_ _instance(Debugger, Object_) { return new Object_(); }
-@method Object_ _instance(DictionaryInspector, Object_) { return new Object_(); }
-@method Object_ _instance(SelfDefinedStructureInspector, Object_) { return new Object_(); }
-@method Object_ _instance(Inspector, Object_) { return new Object_(); }
-@method Object_ _instance(ByteArrayInspector, Object_) { return new Object_(); }
-@method Object_ _instance(GraphicInspector, Object_) { return new Object_(); }
-@method Object_ _instance(OrderedCollectionInspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ resume(virtual!Object_);
-@method Object_ _resume(Debugger) { return new Object_(); }
-@method Object_ _resume(Exception_) { return new Object_(); }
-@method Object_ _resume(Process) { return new Object_(); }
-@mptr("hash") Object_ accept(virtual!ViewManager, Object_);
-@method Object_ _accept(Debugger, Object_) { return new Object_(); }
-@method Object_ _accept(MethodBrowser, Object_) { return new Object_(); }
-@method Object_ _accept(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _accept(DictionaryInspector, Object_) { return new Object_(); }
-@method Object_ _accept(SelfDefinedStructureInspector, Object_) { return new Object_(); }
-@method Object_ _accept(DiskBrowser, Object_) { return new Object_(); }
-@method Object_ _accept(SelectorBrowser, Object_) { return new Object_(); }
-@method Object_ _accept(Inspector, Object_) { return new Object_(); }
-@method Object_ _accept(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@method Object_ _accept(OrderedCollectionInspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ inspectSelection(virtual!ViewManager, Object_);
-@method Object_ _inspectSelection(Debugger, Object_) { return new Object_(); }
-@method Object_ _inspectSelection(Inspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ inspectSelection(virtual!ViewManager);
-@method Object_ _inspectSelection(Debugger) { return new Object_(); }
-@method Object_ _inspectSelection(DictionaryInspector) { return new Object_(); }
-@method Object_ _inspectSelection(SelfDefinedStructureInspector) { return new Object_(); }
-@method Object_ _inspectSelection(Inspector) { return new Object_(); }
-@method Object_ _inspectSelection(OrderedCollectionInspector) { return new Object_(); }
-@mptr("hash") Object_ compilerClass(virtual!Object_);
-@method Object_ _compilerClass(Debugger) { return new Object_(); }
-@method Object_ _compilerClass(ClassInstaller) { return new Object_(); }
-@method Object_ _compilerClass(WorkspaceTextPane) { return new Object_(); }
-@mptr("hash") Object_ label(virtual!Object_, Object_);
-@method Object_ _label(Debugger, Object_) { return new Object_(); }
-@method Object_ _label(Button, Object_) { return new Object_(); }
-@method Object_ _label(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _label(GroupBox, Object_) { return new Object_(); }
-@method Object_ _label(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _label(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ label(virtual!Object_);
-@method Object_ _label(Debugger) { return new Object_(); }
-@method Object_ _label(Button) { return new Object_(); }
-@method Object_ _label(DrawnButton) { return new Object_(); }
-@method Object_ _label(ControlPane) { return new Object_(); }
-@method Object_ _label(DiskBrowser) { return new Object_(); }
-@method Object_ _label(ClassHierarchyBrowser) { return new Object_(); }
-@method Object_ _label(GroupBox) { return new Object_(); }
-@method Object_ _label(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ senders(virtual!ViewManager);
-@method Object_ _senders(Debugger) { return new Object_(); }
-@method Object_ _senders(MethodBrowser) { return new Object_(); }
-@method Object_ _senders(ClassBrowser) { return new Object_(); }
-@method Object_ _senders(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ skip(virtual!Object_, Object_);
-@method Object_ _skip(Debugger, Object_) { return new Object_(); }
-@method Object_ _skip(Stream, Object_) { return new Object_(); }
-@mptr("hash") Object_ implementors(virtual!ViewManager);
-@method Object_ _implementors(Debugger) { return new Object_(); }
-@method Object_ _implementors(MethodBrowser) { return new Object_(); }
-@method Object_ _implementors(ClassBrowser) { return new Object_(); }
-@method Object_ _implementors(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ inspectMenu(virtual!ViewManager, Object_);
-@method Object_ _inspectMenu(Debugger, Object_) { return new Object_(); }
-@method Object_ _inspectMenu(DictionaryInspector, Object_) { return new Object_(); }
-@method Object_ _inspectMenu(Inspector, Object_) { return new Object_(); }
-@method Object_ _inspectMenu(ByteArrayInspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ menu(virtual!ViewManager, Object_);
-@method Object_ _menu(Debugger, Object_) { return new Object_(); }
-@method Object_ _menu(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectInstance(virtual!ViewManager, Object_);
-@method Object_ _selectInstance(Debugger, Object_) { return new Object_(); }
-@method Object_ _selectInstance(SelfDefinedStructureInspector, Object_) { return new Object_(); }
-@method Object_ _selectInstance(Inspector, Object_) { return new Object_(); }
-@method Object_ _selectInstance(GraphicInspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ terminate(virtual!Object_);
-@method Object_ _terminate(Debugger) { return new Object_(); }
-@method Object_ _terminate(DDEServer) { return new Object_(); }
-@method Object_ _terminate(Process) { return new Object_(); }
-@method Object_ _terminate(DDEClient) { return new Object_(); }
-@mptr("hash") Object_ convertToOffset(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _convertToOffset(Debugger, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _convertToOffset(METACLASS_CompilerInterface, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ styleColorHatch(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _styleColorHatch(WinLogicalBrush, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _styleColorHatch(METACLASS_WinLogicalBrush, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ getHandle(virtual!Object_);
-@method Object_ _getHandle(WinLogicalBrush) { return new Object_(); }
-@method Object_ _getHandle(WinLogicalPen) { return new Object_(); }
-@method Object_ _getHandle(WinLogicalPalette) { return new Object_(); }
-@method Object_ _getHandle(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ attributeArray(virtual!WinLogicalObject);
-@method Object_ _attributeArray(WinLogicalBrush) { return new Object_(); }
-@method Object_ _attributeArray(WinLogicalPen) { return new Object_(); }
-@method Object_ _attributeArray(WinLogicalPalette) { return new Object_(); }
-@mptr("hash") Object_ fromStruct(virtual!Object_, Object_);
-@method Object_ _fromStruct(WinLogicalBrush, Object_) { return new Object_(); }
-@method Object_ _fromStruct(WinLogicalPen, Object_) { return new Object_(); }
-@method Object_ _fromStruct(WinLogicalPalette, Object_) { return new Object_(); }
-@method Object_ _fromStruct(METACLASS_WinLogicalPalette, Object_) { return new Object_(); }
-@mptr("hash") Object_ cutSelection(virtual!SubPane);
-@method Object_ _cutSelection(ComboBox) { return new Object_(); }
-@method Object_ _cutSelection(TextPane) { return new Object_(); }
-@method Object_ _cutSelection(EntryField) { return new Object_(); }
-@mptr("hash") Object_ text(virtual!Object_);
-@method Object_ _text(ComboBox) { return new Object_(); }
-@method Object_ _text(METACLASS_CursorManager) { return new Object_(); }
-@mptr("hash") Object_ triggerChanged(virtual!SubPane);
-@method Object_ _triggerChanged(ComboBox) { return new Object_(); }
-@method Object_ _triggerChanged(ScrollBar) { return new Object_(); }
-@method Object_ _triggerChanged(TextPane) { return new Object_(); }
-@method Object_ _triggerChanged(EntryField) { return new Object_(); }
-@method Object_ _triggerChanged(ListBox) { return new Object_(); }
-@method Object_ _triggerChanged(MultipleSelectListBox) { return new Object_(); }
-@mptr("hash") Object_ isComboBox(virtual!Object_);
-@method Object_ _isComboBox(ComboBox) { return new Object_(); }
-@method Object_ _isComboBox(Object_) { return new Object_(); }
-@mptr("hash") Object_ triggerChangedForSelect(virtual!DropDownList);
-@method Object_ _triggerChangedForSelect(ComboBox) { return new Object_(); }
-@method Object_ _triggerChangedForSelect(DropDownList) { return new Object_(); }
-@mptr("hash") Object_ dropDown(virtual!Object_);
-@method Object_ _dropDown(ComboBox) { return new Object_(); }
-@method Object_ _dropDown(METACLASS_ComboBox) { return new Object_(); }
-@mptr("hash") Object_ setValue(virtual!SubPane, Object_);
-@method Object_ _setValue(ComboBox, Object_) { return new Object_(); }
-@method Object_ _setValue(StaticText, Object_) { return new Object_(); }
-@method Object_ _setValue(ScrollBar, Object_) { return new Object_(); }
-@method Object_ _setValue(TextPane, Object_) { return new Object_(); }
-@method Object_ _setValue(EntryField, Object_) { return new Object_(); }
-@method Object_ _setValue(Toggle, Object_) { return new Object_(); }
-@method Object_ _setValue(ListBox, Object_) { return new Object_(); }
-@method Object_ _setValue(MultipleSelectListBox, Object_) { return new Object_(); }
-@method Object_ _setValue(StaticGraphic, Object_) { return new Object_(); }
-@mptr("hash") Object_ clear(virtual!Object_);
-@method Object_ _clear(ComboBox) { return new Object_(); }
-@method Object_ _clear(ClipboardManager) { return new Object_(); }
-@method Object_ _clear(EntryField) { return new Object_(); }
-@mptr("hash") Object_ previousValue(virtual!SubPane);
-@method Object_ _previousValue(ComboBox) { return new Object_(); }
-@method Object_ _previousValue(TextPane) { return new Object_(); }
-@method Object_ _previousValue(EntryField) { return new Object_(); }
-@mptr("hash") Object_ previousValue(virtual!SubPane, Object_);
-@method Object_ _previousValue(ComboBox, Object_) { return new Object_(); }
-@method Object_ _previousValue(TextPane, Object_) { return new Object_(); }
-@method Object_ _previousValue(EntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ modified(virtual!SubPane);
-@method Object_ _modified(ComboBox) { return new Object_(); }
-@method Object_ _modified(TextPane) { return new Object_(); }
-@method Object_ _modified(EntryField) { return new Object_(); }
-@mptr("hash") Object_ modified(virtual!SubPane, Object_);
-@method Object_ _modified(ComboBox, Object_) { return new Object_(); }
-@method Object_ _modified(TextPane, Object_) { return new Object_(); }
-@method Object_ _modified(EntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDropDownList(virtual!Object_);
-@method Object_ _isDropDownList(ComboBox) { return new Object_(); }
-@method Object_ _isDropDownList(DropDownList) { return new Object_(); }
-@method Object_ _isDropDownList(Object_) { return new Object_(); }
-@mptr("hash") Object_ asyncControlEvent(virtual!ControlPane, Object_);
-@method Object_ _asyncControlEvent(ComboBox, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(DropDownList, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(Button, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(RadioButton, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(EntryField, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(CheckBox, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(Toggle, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(ControlPane, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(ListBox, Object_) { return new Object_(); }
-@method Object_ _asyncControlEvent(MultipleSelectListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ copySelection(virtual!SubPane);
-@method Object_ _copySelection(ComboBox) { return new Object_(); }
-@method Object_ _copySelection(TextPane) { return new Object_(); }
-@method Object_ _copySelection(EntryField) { return new Object_(); }
-@mptr("hash") Object_ text(virtual!Object_, Object_);
-@method Object_ _text(ComboBox, Object_) { return new Object_(); }
-@method Object_ _text(MethodBrowser, Object_) { return new Object_(); }
-@method Object_ _text(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _text(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ pasteSelection(virtual!SubPane);
-@method Object_ _pasteSelection(ComboBox) { return new Object_(); }
-@method Object_ _pasteSelection(TextPane) { return new Object_(); }
-@method Object_ _pasteSelection(EntryField) { return new Object_(); }
-@mptr("hash") Object_ value(virtual!Object_);
-@method Object_ _value(ComboBox) { return new Object_(); }
-@method Object_ _value(StaticText) { return new Object_(); }
-@method Object_ _value(Association) { return new Object_(); }
-@method Object_ _value(CompilationResult) { return new Object_(); }
-@method Object_ _value(ScrollBar) { return new Object_(); }
-@method Object_ _value(TextPane) { return new Object_(); }
-@method Object_ _value(EntryField) { return new Object_(); }
-@method Object_ _value(ObjectLibraryExternal) { return new Object_(); }
-@method Object_ _value(Toggle) { return new Object_(); }
-@method Object_ _value(ListBox) { return new Object_(); }
-@method Object_ _value(ZeroArgumentBlock) { return new Object_(); }
-@method Object_ _value(MultipleSelectListBox) { return new Object_(); }
-@method Object_ _value(StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ value(virtual!Object_, Object_);
-@method Object_ _value(ComboBox, Object_) { return new Object_(); }
-@method Object_ _value(StaticText, Object_) { return new Object_(); }
-@method Object_ _value(Association, Object_) { return new Object_(); }
-@method Object_ _value(ScrollBar, Object_) { return new Object_(); }
-@method Object_ _value(TextPane, Object_) { return new Object_(); }
-@method Object_ _value(EntryField, Object_) { return new Object_(); }
-@method Object_ _value(ObjectLibraryExternal, Object_) { return new Object_(); }
-@method Object_ _value(Toggle, Object_) { return new Object_(); }
-@method Object_ _value(ListBox, Object_) { return new Object_(); }
-@method Object_ _value(OneArgumentBlock, Object_) { return new Object_(); }
-@method Object_ _value(MultipleSelectListBox, Object_) { return new Object_(); }
-@method Object_ _value(StaticGraphic, Object_) { return new Object_(); }
-@method Object_ _value(METACLASS_Character, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileInFrom(virtual!Object_, Object_);
-@method Object_ _fileInFrom(StringModel, Object_) { return new Object_(); }
-@method Object_ _fileInFrom(TextPane, Object_) { return new Object_(); }
-@method Object_ _fileInFrom(ClassReader, Object_) { return new Object_(); }
-@method Object_ _fileInFrom(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileOutOn(virtual!Object_, Object_);
-@method Object_ _fileOutOn(StringModel, Object_) { return new Object_(); }
-@method Object_ _fileOutOn(Class, Object_) { return new Object_(); }
-@method Object_ _fileOutOn(MetaClass, Object_) { return new Object_(); }
-@method Object_ _fileOutOn(TextPane, Object_) { return new Object_(); }
-@method Object_ _fileOutOn(ClassReader, Object_) { return new Object_(); }
-@method Object_ _fileOutOn(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ charAt(virtual!Object_, Object_);
-@method Object_ _charAt(StringModel, Object_) { return new Object_(); }
-@method Object_ _charAt(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ topCorner(virtual!Object_, Object_);
-@method Object_ _topCorner(StringModel, Object_) { return new Object_(); }
-@method Object_ _topCorner(TextPane, Object_) { return new Object_(); }
-@method Object_ _topCorner(TextEdit, Object_) { return new Object_(); }
-@mptr("hash") Object_ appendChar(virtual!Object_, Object_);
-@method Object_ _appendChar(StringModel, Object_) { return new Object_(); }
-@method Object_ _appendChar(TextPane, Object_) { return new Object_(); }
-@method Object_ _appendChar(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ appendText(virtual!Object_, Object_);
-@method Object_ _appendText(StringModel, Object_) { return new Object_(); }
-@method Object_ _appendText(TextPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ extent(virtual!Object_);
-@method Object_ _extent(StringModel) { return new Object_(); }
-@method Object_ _extent(GraphicsTool) { return new Object_(); }
-@method Object_ _extent(DIB) { return new Object_(); }
-@method Object_ _extent(GraphicsMedium) { return new Object_(); }
-@method Object_ _extent(Window) { return new Object_(); }
-@method Object_ _extent(Bitmap) { return new Object_(); }
-@method Object_ _extent(Icon) { return new Object_(); }
-@method Object_ _extent(Rectangle) { return new Object_(); }
-@method Object_ _extent(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ lineAt(virtual!Object_, Object_);
-@method Object_ _lineAt(StringModel, Object_) { return new Object_(); }
-@method Object_ _lineAt(TextPane, Object_) { return new Object_(); }
-@method Object_ _lineAt(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _lineAt(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ display(virtual!Object_, Object_);
-@method Object_ _display(StringModel, Object_) { return new Object_(); }
-@method Object_ _display(AboutDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ asParameter(virtual!Object_);
-@method Object_ _asParameter(True) { return new Object_(); }
-@method Object_ _asParameter(ExternalHandle) { return new Object_(); }
-@method Object_ _asParameter(ExternalBuffer) { return new Object_(); }
-@method Object_ _asParameter(Symbol) { return new Object_(); }
-@method Object_ _asParameter(WinLogicalObject) { return new Object_(); }
-@method Object_ _asParameter(ByteArray) { return new Object_(); }
-@method Object_ _asParameter(CallBack) { return new Object_(); }
-@method Object_ _asParameter(WinStructArray) { return new Object_(); }
-@method Object_ _asParameter(False) { return new Object_(); }
-@method Object_ _asParameter(DoubleByteString) { return new Object_(); }
-@method Object_ _asParameter(Window) { return new Object_(); }
-@method Object_ _asParameter(String) { return new Object_(); }
-@method Object_ _asParameter(Number) { return new Object_(); }
-@method Object_ _asParameter(Bitmap) { return new Object_(); }
-@method Object_ _asParameter(UndefinedObject) { return new Object_(); }
-@method Object_ _asParameter(Icon) { return new Object_(); }
-@method Object_ _asParameter(Point) { return new Object_(); }
-@method Object_ _asParameter(Rectangle) { return new Object_(); }
-@method Object_ _asParameter(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ eqv(virtual!Boolean, Object_);
-@method Object_ _eqv(True, Object_) { return new Object_(); }
-@method Object_ _eqv(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ not(virtual!Boolean);
-@method Object_ _not(True) { return new Object_(); }
-@method Object_ _not(False) { return new Object_(); }
-@mptr("hash") Object_ ifTrueIffalse(virtual!Boolean, Object_, Object_);
-@method Object_ _ifTrueIffalse(True, Object_, Object_) { return new Object_(); }
-@method Object_ _ifTrueIffalse(False, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ basicHash(virtual!Object_);
-@method Object_ _basicHash(True) { return new Object_(); }
-@method Object_ _basicHash(Symbol) { return new Object_(); }
-@method Object_ _basicHash(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _basicHash(Object_) { return new Object_(); }
-@method Object_ _basicHash(Integer) { return new Object_(); }
-@mptr("hash") Object_ ifFalseIftrue(virtual!Boolean, Object_, Object_);
-@method Object_ _ifFalseIftrue(True, Object_, Object_) { return new Object_(); }
-@method Object_ _ifFalseIftrue(False, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ ifTrue(virtual!Boolean, Object_);
-@method Object_ _ifTrue(True, Object_) { return new Object_(); }
-@method Object_ _ifTrue(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ xor(virtual!Boolean, Object_);
-@method Object_ _xor(True, Object_) { return new Object_(); }
-@method Object_ _xor(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ or(virtual!Boolean, Object_);
-@method Object_ _or(True, Object_) { return new Object_(); }
-@method Object_ _or(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ and(virtual!Object_, Object_);
-@method Object_ _and(True, Object_) { return new Object_(); }
-@method Object_ _and(False, Object_) { return new Object_(); }
-@method Object_ _and(Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ hash(virtual!Object_);
-@method Object_ _hash(True) { return new Object_(); }
-@method Object_ _hash(ExternalHandle) { return new Object_(); }
-@method Object_ _hash(Time) { return new Object_(); }
-@method Object_ _hash(LargeInteger) { return new Object_(); }
-@method Object_ _hash(IndexedCollection) { return new Object_(); }
-@method Object_ _hash(Magnitude) { return new Object_(); }
-@method Object_ _hash(ExternalHeapHandle) { return new Object_(); }
-@method Object_ _hash(Association) { return new Object_(); }
-@method Object_ _hash(Symbol) { return new Object_(); }
-@method Object_ _hash(Date) { return new Object_(); }
-@method Object_ _hash(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _hash(LinkMessage) { return new Object_(); }
-@method Object_ _hash(ExternalAddress) { return new Object_(); }
-@method Object_ _hash(Message) { return new Object_(); }
-@method Object_ _hash(CompiledMethod) { return new Object_(); }
-@method Object_ _hash(Character) { return new Object_(); }
-@method Object_ _hash(Behavior) { return new Object_(); }
-@method Object_ _hash(Object_) { return new Object_(); }
-@method Object_ _hash(Fraction) { return new Object_(); }
-@method Object_ _hash(String) { return new Object_(); }
-@method Object_ _hash(WinLogPalette) { return new Object_(); }
-@method Object_ _hash(Integer) { return new Object_(); }
-@method Object_ _hash(Float) { return new Object_(); }
-@method Object_ _hash(Point) { return new Object_(); }
-@mptr("hash") Object_ ifFalse(virtual!Boolean, Object_);
-@method Object_ _ifFalse(True, Object_) { return new Object_(); }
-@method Object_ _ifFalse(False, Object_) { return new Object_(); }
-@mptr("hash") Object_ asInteger(virtual!Object_);
-@method Object_ _asInteger(ExternalLong) { return new Object_(); }
-@method Object_ _asInteger(ExternalHandle) { return new Object_(); }
-@method Object_ _asInteger(ExternalAddress) { return new Object_(); }
-@method Object_ _asInteger(Character) { return new Object_(); }
-@method Object_ _asInteger(DynamicLinkLibrary16) { return new Object_(); }
-@method Object_ _asInteger(String) { return new Object_(); }
-@method Object_ _asInteger(Number) { return new Object_(); }
-@method Object_ _asInteger(Integer) { return new Object_(); }
-@mptr("hash") Object_ printOn(virtual!Object_, Object_);
-@method Object_ _printOn(ExternalLong, Object_) { return new Object_(); }
-@method Object_ _printOn(ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _printOn(Time, Object_) { return new Object_(); }
-@method Object_ _printOn(Menu, Object_) { return new Object_(); }
-@method Object_ _printOn(Association, Object_) { return new Object_(); }
-@method Object_ _printOn(Symbol, Object_) { return new Object_(); }
-@method Object_ _printOn(Date, Object_) { return new Object_(); }
-@method Object_ _printOn(File, Object_) { return new Object_(); }
-@method Object_ _printOn(DoubleByteSymbol, Object_) { return new Object_(); }
-@method Object_ _printOn(ObjectLibraryReference, Object_) { return new Object_(); }
-@method Object_ _printOn(LargeNegativeInteger, Object_) { return new Object_(); }
-@method Object_ _printOn(LargePositiveInteger, Object_) { return new Object_(); }
-@method Object_ _printOn(ExternalAddress, Object_) { return new Object_(); }
-@method Object_ _printOn(Message, Object_) { return new Object_(); }
-@method Object_ _printOn(CompiledMethod, Object_) { return new Object_(); }
-@method Object_ _printOn(Directory, Object_) { return new Object_(); }
-@method Object_ _printOn(Collection, Object_) { return new Object_(); }
-@method Object_ _printOn(ConstantAccessor, Object_) { return new Object_(); }
-@method Object_ _printOn(Character, Object_) { return new Object_(); }
-@method Object_ _printOn(Behavior, Object_) { return new Object_(); }
-@method Object_ _printOn(Object_, Object_) { return new Object_(); }
-@method Object_ _printOn(FileStream, Object_) { return new Object_(); }
-@method Object_ _printOn(ObjectLibraryExternal, Object_) { return new Object_(); }
-@method Object_ _printOn(Fraction, Object_) { return new Object_(); }
-@method Object_ _printOn(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _printOn(String, Object_) { return new Object_(); }
-@method Object_ _printOn(CompiledInitializer, Object_) { return new Object_(); }
-@method Object_ _printOn(Number, Object_) { return new Object_(); }
-@method Object_ _printOn(Integer, Object_) { return new Object_(); }
-@method Object_ _printOn(Font, Object_) { return new Object_(); }
-@method Object_ _printOn(Float, Object_) { return new Object_(); }
-@method Object_ _printOn(MenuItem, Object_) { return new Object_(); }
-@method Object_ _printOn(Boolean, Object_) { return new Object_(); }
-@method Object_ _printOn(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _printOn(UndefinedObject, Object_) { return new Object_(); }
-@method Object_ _printOn(ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _printOn(Point, Object_) { return new Object_(); }
-@method Object_ _printOn(Process, Object_) { return new Object_(); }
-@method Object_ _printOn(Rectangle, Object_) { return new Object_(); }
-@method Object_ _printOn(Array, Object_) { return new Object_(); }
-@method Object_ _printOn(SelfDefinedStructure, Object_) { return new Object_(); }
-@method Object_ _printOn(CollectionAccessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ asBoolean(virtual!Object_);
-@method Object_ _asBoolean(ExternalLong) { return new Object_(); }
-@method Object_ _asBoolean(Integer) { return new Object_(); }
-@mptr("hash") Object_ name(virtual!Object_);
-@method Object_ _name(Class) { return new Object_(); }
-@method Object_ _name(MetaClass) { return new Object_(); }
-@method Object_ _name(OperatingSystemInformation) { return new Object_(); }
-@method Object_ _name(Button) { return new Object_(); }
-@method Object_ _name(File) { return new Object_(); }
-@method Object_ _name(Window) { return new Object_(); }
-@method Object_ _name(Icon) { return new Object_(); }
-@method Object_ _name(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _name(Process) { return new Object_(); }
-@mptr("hash") Object_ edit(virtual!Object_);
-@method Object_ _edit(Class) { return new Object_(); }
-@method Object_ _edit(String) { return new Object_(); }
-@mptr("hash") Object_ isClass(virtual!Object_);
-@method Object_ _isClass(Class) { return new Object_(); }
-@method Object_ _isClass(Object_) { return new Object_(); }
-@mptr("hash") Object_ variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ changeSuperclassTo(virtual!Behavior, Object_);
-@method Object_ _changeSuperclassTo(Class, Object_) { return new Object_(); }
-@method Object_ _changeSuperclassTo(MetaClass, Object_) { return new Object_(); }
-@method Object_ _changeSuperclassTo(Behavior, Object_) { return new Object_(); }
-@mptr("hash") Object_ classVarNames(virtual!Behavior);
-@method Object_ _classVarNames(Class) { return new Object_(); }
-@method Object_ _classVarNames(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ subclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries(Behavior, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ variableByteSubclassClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _variableByteSubclassClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _variableByteSubclassClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ recomputeMethodDictionaries(virtual!Behavior);
-@method Object_ _recomputeMethodDictionaries(Class) { return new Object_(); }
-@method Object_ _recomputeMethodDictionaries(MetaClass) { return new Object_(); }
-@method Object_ _recomputeMethodDictionaries(Behavior) { return new Object_(); }
-@mptr("hash") Object_ variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(Class, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(Behavior, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries(UndefinedObject, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ classPool(virtual!Behavior);
-@method Object_ _classPool(Class) { return new Object_(); }
-@method Object_ _classPool(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ sharedPools(virtual!Behavior);
-@method Object_ _sharedPools(Class) { return new Object_(); }
-@method Object_ _sharedPools(MetaClass) { return new Object_(); }
-@mptr("hash") Object_ handle(virtual!Object_);
-@method Object_ _handle(CursorManager) { return new Object_(); }
-@method Object_ _handle(Exception_) { return new Object_(); }
-@method Object_ _handle(StoredPicture) { return new Object_(); }
-@method Object_ _handle(WinLogicalObject) { return new Object_(); }
-@method Object_ _handle(GraphicsTool) { return new Object_(); }
-@method Object_ _handle(Window) { return new Object_(); }
-@method Object_ _handle(Bitmap) { return new Object_(); }
-@method Object_ _handle(Icon) { return new Object_(); }
-@method Object_ _handle(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _handle(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ displayAtWith(virtual!Object_, Object_, Object_);
-@method Object_ _displayAtWith(CursorManager, Object_, Object_) { return new Object_(); }
-@method Object_ _displayAtWith(DIB, Object_, Object_) { return new Object_(); }
-@method Object_ _displayAtWith(Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _displayAtWith(Bitmap, Object_, Object_) { return new Object_(); }
-@method Object_ _displayAtWith(Icon, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ inspect(virtual!Object_);
-@method Object_ _inspect(CursorManager) { return new Object_(); }
-@method Object_ _inspect(ByteArray) { return new Object_(); }
-@method Object_ _inspect(DIB) { return new Object_(); }
-@method Object_ _inspect(DoubleByteString) { return new Object_(); }
-@method Object_ _inspect(Dictionary) { return new Object_(); }
-@method Object_ _inspect(Object_) { return new Object_(); }
-@method Object_ _inspect(Bitmap) { return new Object_(); }
-@method Object_ _inspect(Icon) { return new Object_(); }
-@method Object_ _inspect(Process) { return new Object_(); }
-@method Object_ _inspect(SelfDefinedStructure) { return new Object_(); }
-@method Object_ _inspect(OrderedCollection) { return new Object_(); }
-@mptr("hash") Object_ hide(virtual!Object_);
-@method Object_ _hide(CursorManager) { return new Object_(); }
-@method Object_ _hide(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ display(virtual!Object_);
-@method Object_ _display(CursorManager) { return new Object_(); }
-@method Object_ _display(TextPane) { return new Object_(); }
-@method Object_ _display(Window) { return new Object_(); }
-@method Object_ _display(TextPaneControl) { return new Object_(); }
-@method Object_ _display(GraphPane) { return new Object_(); }
-@method Object_ _display(ApplicationWindow) { return new Object_(); }
-@method Object_ _display(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ displayAt(virtual!Object_, Object_);
-@method Object_ _displayAt(CursorManager, Object_) { return new Object_(); }
-@method Object_ _displayAt(String, Object_) { return new Object_(); }
-@method Object_ _displayAt(Bitmap, Object_) { return new Object_(); }
-@method Object_ _displayAt(Icon, Object_) { return new Object_(); }
-@mptr("hash") Object_ release(virtual!Object_);
-@method Object_ _release(CursorManager) { return new Object_(); }
-@method Object_ _release(RecordingPen) { return new Object_(); }
-@method Object_ _release(StoredPicture) { return new Object_(); }
-@method Object_ _release(GraphicsTool) { return new Object_(); }
-@method Object_ _release(CallBack) { return new Object_(); }
-@method Object_ _release(Object_) { return new Object_(); }
-@method Object_ _release(Bitmap) { return new Object_(); }
-@method Object_ _release(Icon) { return new Object_(); }
-@mptr("hash") Object_ handle(virtual!Object_, Object_);
-@method Object_ _handle(CursorManager, Object_) { return new Object_(); }
-@method Object_ _handle(ExceptionHandler, Object_) { return new Object_(); }
-@method Object_ _handle(StoredPicture, Object_) { return new Object_(); }
-@method Object_ _handle(WinLogicalObject, Object_) { return new Object_(); }
-@method Object_ _handle(GraphicsTool, Object_) { return new Object_(); }
-@method Object_ _handle(Window, Object_) { return new Object_(); }
-@method Object_ _handle(Icon, Object_) { return new Object_(); }
-@method Object_ _handle(ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _handle(METACLASS_Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ reset(virtual!Object_);
-@method Object_ _reset(CursorManager) { return new Object_(); }
-@method Object_ _reset(WildPattern) { return new Object_(); }
-@method Object_ _reset(Stream) { return new Object_(); }
-@method Object_ _reset(Pattern) { return new Object_(); }
-@mptr("hash") Object_ enableMethodsMenu(virtual!ViewManager);
-@method Object_ _enableMethodsMenu(MethodBrowser) { return new Object_(); }
-@method Object_ _enableMethodsMenu(ClassBrowser) { return new Object_(); }
-@method Object_ _enableMethodsMenu(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ openOn(virtual!ViewManager, Object_);
-@method Object_ _openOn(MethodBrowser, Object_) { return new Object_(); }
-@method Object_ _openOn(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _openOn(SelfDefinedStructureInspector, Object_) { return new Object_(); }
-@method Object_ _openOn(SelectorBrowser, Object_) { return new Object_(); }
-@method Object_ _openOn(Inspector, Object_) { return new Object_(); }
-@method Object_ _openOn(ByteArrayInspector, Object_) { return new Object_(); }
-@method Object_ _openOn(GraphicInspector, Object_) { return new Object_(); }
-@method Object_ _openOn(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@method Object_ _openOn(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ localImplementors(virtual!ViewManager);
-@method Object_ _localImplementors(MethodBrowser) { return new Object_(); }
-@method Object_ _localImplementors(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ fileOutMethod(virtual!ViewManager);
-@method Object_ _fileOutMethod(MethodBrowser) { return new Object_(); }
-@method Object_ _fileOutMethod(ClassBrowser) { return new Object_(); }
-@method Object_ _fileOutMethod(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ disableMethodsMenu(virtual!ViewManager);
-@method Object_ _disableMethodsMenu(MethodBrowser) { return new Object_(); }
-@method Object_ _disableMethodsMenu(ClassBrowser) { return new Object_(); }
-@method Object_ _disableMethodsMenu(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ localSenders(virtual!ViewManager);
-@method Object_ _localSenders(MethodBrowser) { return new Object_(); }
-@method Object_ _localSenders(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ isExternalHandle(virtual!Object_);
-@method Object_ _isExternalHandle(ExternalHandle) { return new Object_(); }
-@method Object_ _isExternalHandle(Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceBytesFromToWithStartingat(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _replaceBytesFromToWithStartingat(ExternalHandle, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(Symbol, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(DoubleByteSymbol, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(ByteArray, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(ExternalAddress, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(DoubleByteString, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesFromToWithStartingat(Float, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ uLongAtOffset(virtual!Object_, Object_);
-@method Object_ _uLongAtOffset(ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _uLongAtOffset(ExternalBuffer, Object_) { return new Object_(); }
-@method Object_ _uLongAtOffset(DynamicLinkLibrary16, Object_) { return new Object_(); }
-@mptr("hash") Object_ fillFromAddress(virtual!Object_, Object_);
-@method Object_ _fillFromAddress(ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _fillFromAddress(ExternalBuffer, Object_) { return new Object_(); }
-@mptr("hash") Object_ uLongAtOffsetPut(virtual!Object_, Object_, Object_);
-@method Object_ _uLongAtOffsetPut(ExternalHandle, Object_, Object_) { return new Object_(); }
-@method Object_ _uLongAtOffsetPut(ExternalBuffer, Object_, Object_) { return new Object_(); }
-@method Object_ _uLongAtOffsetPut(DynamicLinkLibrary16, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWithStartingat(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _replaceFromToWithStartingat(ExternalHandle, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(LargeInteger, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(IndexedCollection, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(Symbol, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(DoubleByteSymbol, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(ByteArray, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(ExternalAddress, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(DoubleByteString, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithStartingat(Float, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isValid(virtual!Object_);
-@method Object_ _isValid(ExternalHandle) { return new Object_(); }
-@method Object_ _isValid(ExternalAddress) { return new Object_(); }
-@method Object_ _isValid(WindowHandle) { return new Object_(); }
-@method Object_ _isValid(Window) { return new Object_(); }
-@method Object_ _isValid(Bitmap) { return new Object_(); }
-@method Object_ _isValid(Icon) { return new Object_(); }
-@mptr("hash") Object_ contents(virtual!Object_);
-@method Object_ _contents(ExternalBuffer) { return new Object_(); }
-@method Object_ _contents(StaticText) { return new Object_(); }
-@method Object_ _contents(ReadWriteStream) { return new Object_(); }
-@method Object_ _contents(Set) { return new Object_(); }
-@method Object_ _contents(Directory) { return new Object_(); }
-@method Object_ _contents(DrawnButton) { return new Object_(); }
-@method Object_ _contents(TextPane) { return new Object_(); }
-@method Object_ _contents(WriteStream) { return new Object_(); }
-@method Object_ _contents(EntryField) { return new Object_(); }
-@method Object_ _contents(ReadStream) { return new Object_(); }
-@method Object_ _contents(ControlPane) { return new Object_(); }
-@method Object_ _contents(Stream) { return new Object_(); }
-@method Object_ _contents(MenuItem) { return new Object_(); }
-@method Object_ _contents(ListBox) { return new Object_(); }
-@method Object_ _contents(ObjectLibraryBind) { return new Object_(); }
-@method Object_ _contents(TextWindow) { return new Object_(); }
-@method Object_ _contents(StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ contents(virtual!Object_, Object_);
-@method Object_ _contents(ExternalBuffer, Object_) { return new Object_(); }
-@method Object_ _contents(Directory, Object_) { return new Object_(); }
-@method Object_ _contents(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _contents(TextPane, Object_) { return new Object_(); }
-@method Object_ _contents(EntryField, Object_) { return new Object_(); }
-@method Object_ _contents(ControlPane, Object_) { return new Object_(); }
-@method Object_ _contents(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _contents(MenuItem, Object_) { return new Object_(); }
-@method Object_ _contents(ListBox, Object_) { return new Object_(); }
-@method Object_ _contents(TextWindow, Object_) { return new Object_(); }
-@method Object_ _contents(TextEdit, Object_) { return new Object_(); }
-@method Object_ _contents(StaticGraphic, Object_) { return new Object_(); }
-@mptr("hash") Object_ size(virtual!Object_);
-@method Object_ _size(ExternalBuffer) { return new Object_(); }
-@method Object_ _size(IndexedCollection) { return new Object_(); }
-@method Object_ _size(File) { return new Object_(); }
-@method Object_ _size(Set) { return new Object_(); }
-@method Object_ _size(DoubleByteString) { return new Object_(); }
-@method Object_ _size(Interval) { return new Object_(); }
-@method Object_ _size(Object_) { return new Object_(); }
-@method Object_ _size(String) { return new Object_(); }
-@method Object_ _size(FixedSizeCollection) { return new Object_(); }
-@method Object_ _size(Stream) { return new Object_(); }
-@method Object_ _size(Bag) { return new Object_(); }
-@method Object_ _size(OrderedCollection) { return new Object_(); }
-@mptr("hash") Object_ asSeconds(virtual!Magnitude);
-@method Object_ _asSeconds(Time) { return new Object_(); }
-@method Object_ _asSeconds(Date) { return new Object_(); }
-@mptr("hash") Object_ bitAnd(virtual!Integer, Object_);
-@method Object_ _bitAnd(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _bitAnd(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ isLargeInteger(virtual!Object_);
-@method Object_ _isLargeInteger(LargeInteger) { return new Object_(); }
-@method Object_ _isLargeInteger(Object_) { return new Object_(); }
-@mptr("hash") Object_ at(virtual!Object_, Object_);
-@method Object_ _at(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _at(Set, Object_) { return new Object_(); }
-@method Object_ _at(ExternalAddress, Object_) { return new Object_(); }
-@method Object_ _at(DoubleByteString, Object_) { return new Object_(); }
-@method Object_ _at(Dictionary, Object_) { return new Object_(); }
-@method Object_ _at(Interval, Object_) { return new Object_(); }
-@method Object_ _at(Object_, Object_) { return new Object_(); }
-@method Object_ _at(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _at(String, Object_) { return new Object_(); }
-@method Object_ _at(IdentityDictionary, Object_) { return new Object_(); }
-@method Object_ _at(Bag, Object_) { return new Object_(); }
-@method Object_ _at(SelfDefinedStructure, Object_) { return new Object_(); }
-@method Object_ _at(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ bitOr(virtual!Integer, Object_);
-@method Object_ _bitOr(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _bitOr(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ byteSize(virtual!Integer);
-@method Object_ _byteSize(LargeInteger) { return new Object_(); }
-@method Object_ _byteSize(SmallInteger) { return new Object_(); }
-@mptr("hash") Object_ bitShift(virtual!Integer, Object_);
-@method Object_ _bitShift(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _bitShift(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _bitShift(Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ bitXor(virtual!Integer, Object_);
-@method Object_ _bitXor(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _bitXor(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ deepCopy(virtual!Object_);
-@method Object_ _deepCopy(LargeInteger) { return new Object_(); }
-@method Object_ _deepCopy(Symbol) { return new Object_(); }
-@method Object_ _deepCopy(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _deepCopy(SortedCollection) { return new Object_(); }
-@method Object_ _deepCopy(DoubleByteString) { return new Object_(); }
-@method Object_ _deepCopy(Dictionary) { return new Object_(); }
-@method Object_ _deepCopy(Collection) { return new Object_(); }
-@method Object_ _deepCopy(Character) { return new Object_(); }
-@method Object_ _deepCopy(Behavior) { return new Object_(); }
-@method Object_ _deepCopy(Object_) { return new Object_(); }
-@method Object_ _deepCopy(FixedSizeCollection) { return new Object_(); }
-@method Object_ _deepCopy(Number) { return new Object_(); }
-@method Object_ _deepCopy(Boolean) { return new Object_(); }
-@method Object_ _deepCopy(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ bitAt(virtual!Integer, Object_);
-@method Object_ _bitAt(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _bitAt(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ reduce(virtual!Integer);
-@method Object_ _reduce(LargeInteger) { return new Object_(); }
-@method Object_ _reduce(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _reduce(LargePositiveInteger) { return new Object_(); }
-@method Object_ _reduce(SmallInteger) { return new Object_(); }
-@mptr("hash") Object_ quo(virtual!Number, Object_);
-@method Object_ _quo(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _quo(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _quo(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ absoluteLessThan(virtual!Integer, Object_);
-@method Object_ _absoluteLessThan(LargeInteger, Object_) { return new Object_(); }
-@method Object_ _absoluteLessThan(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _absoluteLessThan(Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDisabled(virtual!Object_, Object_);
-@method Object_ _isDisabled(Menu, Object_) { return new Object_(); }
-@method Object_ _isDisabled(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ popUpAtIn(virtual!Object_, Object_, Object_);
-@method Object_ _popUpAtIn(Menu, Object_, Object_) { return new Object_(); }
-@method Object_ _popUpAtIn(MenuWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ title(virtual!Object_, Object_);
-@method Object_ _title(Menu, Object_) { return new Object_(); }
-@method Object_ _title(MessageBox, Object_) { return new Object_(); }
-@method Object_ _title(FileDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ selector(virtual!Object_, Object_);
-@method Object_ _selector(Menu, Object_) { return new Object_(); }
-@method Object_ _selector(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _selector(LinkMessage, Object_) { return new Object_(); }
-@method Object_ _selector(Message, Object_) { return new Object_(); }
-@method Object_ _selector(CompiledMethod, Object_) { return new Object_(); }
-@method Object_ _selector(SelectorBrowser, Object_) { return new Object_(); }
-@method Object_ _selector(MenuItem, Object_) { return new Object_(); }
-@method Object_ _selector(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ destroy(virtual!Object_);
-@method Object_ _destroy(Menu) { return new Object_(); }
-@method Object_ _destroy(GraphicsTool) { return new Object_(); }
-@method Object_ _destroy(Window) { return new Object_(); }
-@method Object_ _destroy(MenuWindow) { return new Object_(); }
-@mptr("hash") Object_ owner(virtual!Object_, Object_);
-@method Object_ _owner(Menu, Object_) { return new Object_(); }
-@method Object_ _owner(FontDialog, Object_) { return new Object_(); }
-@method Object_ _owner(ColorDialog, Object_) { return new Object_(); }
-@method Object_ _owner(PrintDialog, Object_) { return new Object_(); }
-@method Object_ _owner(Window, Object_) { return new Object_(); }
-@method Object_ _owner(FileDialog, Object_) { return new Object_(); }
-@method Object_ _owner(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ owner(virtual!Object_);
-@method Object_ _owner(Menu) { return new Object_(); }
-@method Object_ _owner(Window) { return new Object_(); }
-@method Object_ _owner(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ labelsLinesSelectors(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _labelsLinesSelectors(Menu, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _labelsLinesSelectors(METACLASS_Menu, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isThere(virtual!Object_, Object_);
-@method Object_ _isThere(Menu, Object_) { return new Object_(); }
-@method Object_ _isThere(METACLASS_FileHandle, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectorOf(virtual!Object_, Object_);
-@method Object_ _selectorOf(Menu, Object_) { return new Object_(); }
-@method Object_ _selectorOf(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ selector(virtual!Object_);
-@method Object_ _selector(Menu) { return new Object_(); }
-@method Object_ _selector(CompilationResult) { return new Object_(); }
-@method Object_ _selector(Message) { return new Object_(); }
-@method Object_ _selector(CompiledMethod) { return new Object_(); }
-@method Object_ _selector(MenuItem) { return new Object_(); }
-@mptr("hash") Object_ isMenu(virtual!Object_);
-@method Object_ _isMenu(Menu) { return new Object_(); }
-@method Object_ _isMenu(Object_) { return new Object_(); }
-@mptr("hash") Object_ flags(virtual!Object_);
-@method Object_ _flags(WinWindowPlacement) { return new Object_(); }
-@method Object_ _flags(FontDialog) { return new Object_(); }
-@method Object_ _flags(ColorDialog) { return new Object_(); }
-@method Object_ _flags(PrintDialog) { return new Object_(); }
-@method Object_ _flags(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ bitBltXYWidthHeightSrcdcXsrcYsrcRop(virtual!Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
-@method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(RecordingPen, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(GraphicsTool, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(GDIDLL, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop(METACLASS_Bitmap, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ saveSegments(virtual!GraphicsTool);
-@method Object_ _saveSegments(RecordingPen) { return new Object_(); }
-@method Object_ _saveSegments(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ selectObject(virtual!GraphicsTool, Object_);
-@method Object_ _selectObject(RecordingPen, Object_) { return new Object_(); }
-@method Object_ _selectObject(GraphicsTool, Object_) { return new Object_(); }
-@mptr("hash") Object_ stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(virtual!Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
-@method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(RecordingPen, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(GraphicsTool, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop(GDIDLL, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ location(virtual!Object_);
-@method Object_ _location(RecordingPen) { return new Object_(); }
-@method Object_ _location(DragDropList) { return new Object_(); }
-@method Object_ _location(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ allHandles(virtual!GraphicsTool);
-@method Object_ _allHandles(RecordingPen) { return new Object_(); }
-@method Object_ _allHandles(GraphicsTool) { return new Object_(); }
-@mptr("hash") Object_ matchIndex(virtual!Pattern, Object_, Object_);
-@method Object_ _matchIndex(WildPattern, Object_, Object_) { return new Object_(); }
-@method Object_ _matchIndex(Pattern, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ build(virtual!Pattern, Object_);
-@method Object_ _build(WildPattern, Object_) { return new Object_(); }
-@method Object_ _build(Pattern, Object_) { return new Object_(); }
-@mptr("hash") Object_ match(virtual!Pattern, Object_);
-@method Object_ _match(WildPattern, Object_) { return new Object_(); }
-@method Object_ _match(Pattern, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectIndex(virtual!ListBox, Object_);
-@method Object_ _selectIndex(DropDownList, Object_) { return new Object_(); }
-@method Object_ _selectIndex(ListBox, Object_) { return new Object_(); }
-@method Object_ _selectIndex(MultipleSelectListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ getSelection(virtual!ControlPane);
-@method Object_ _getSelection(DropDownList) { return new Object_(); }
-@method Object_ _getSelection(EntryField) { return new Object_(); }
-@method Object_ _getSelection(ListBox) { return new Object_(); }
-@method Object_ _getSelection(MultipleSelectListBox) { return new Object_(); }
-@mptr("hash") Object_ oemConvert(virtual!ControlPane);
-@method Object_ _oemConvert(DropDownList) { return new Object_(); }
-@method Object_ _oemConvert(EntryField) { return new Object_(); }
-@mptr("hash") Object_ sort(virtual!ListBox);
-@method Object_ _sort(DropDownList) { return new Object_(); }
-@method Object_ _sort(ListBox) { return new Object_(); }
-@mptr("hash") Object_ dropDownList(virtual!Object_);
-@method Object_ _dropDownList(DropDownList) { return new Object_(); }
-@method Object_ _dropDownList(METACLASS_ComboBox) { return new Object_(); }
-@mptr("hash") Object_ winClass(virtual!Object_);
-@method Object_ _winClass(DropDownList) { return new Object_(); }
-@method Object_ _winClass(Button) { return new Object_(); }
-@method Object_ _winClass(ScrollBar) { return new Object_(); }
-@method Object_ _winClass(EntryField) { return new Object_(); }
-@method Object_ _winClass(Window) { return new Object_(); }
-@method Object_ _winClass(StaticPane) { return new Object_(); }
-@method Object_ _winClass(ListBox) { return new Object_(); }
-@method Object_ _winClass(GraphPane) { return new Object_(); }
-@method Object_ _winClass(GroupBox) { return new Object_(); }
-@method Object_ _winClass(ApplicationWindow) { return new Object_(); }
-@method Object_ _winClass(METACLASS_Window) { return new Object_(); }
-@mptr("hash") Object_ noIntegralHeight(virtual!ListBox);
-@method Object_ _noIntegralHeight(DropDownList) { return new Object_(); }
-@method Object_ _noIntegralHeight(ListBox) { return new Object_(); }
-@mptr("hash") Object_ wmCtlcolorlistboxWith(virtual!Window, Object_, Object_);
-@method Object_ _wmCtlcolorlistboxWith(DropDownList, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCtlcolorlistboxWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ disableNoScroll(virtual!ListBox);
-@method Object_ _disableNoScroll(DropDownList) { return new Object_(); }
-@method Object_ _disableNoScroll(ListBox) { return new Object_(); }
-@mptr("hash") Object_ insertItemInControl(virtual!ListBox, Object_);
-@method Object_ _insertItemInControl(DropDownList, Object_) { return new Object_(); }
-@method Object_ _insertItemInControl(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmCtlcoloreditWith(virtual!Window, Object_, Object_);
-@method Object_ _wmCtlcoloreditWith(DropDownList, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCtlcoloreditWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ copyStruct(virtual!CommonSystemDialog);
-@method Object_ _copyStruct(FontDialog) { return new Object_(); }
-@method Object_ _copyStruct(ColorDialog) { return new Object_(); }
-@method Object_ _copyStruct(PrintDialog) { return new Object_(); }
-@method Object_ _copyStruct(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ chosen(virtual!CommonSystemDialog);
-@method Object_ _chosen(FontDialog) { return new Object_(); }
-@method Object_ _chosen(ColorDialog) { return new Object_(); }
-@mptr("hash") Object_ cleanUp(virtual!CommonSystemDialog);
-@method Object_ _cleanUp(FontDialog) { return new Object_(); }
-@method Object_ _cleanUp(ColorDialog) { return new Object_(); }
-@method Object_ _cleanUp(PrintDialog) { return new Object_(); }
-@method Object_ _cleanUp(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ flags(virtual!CommonSystemDialog, Object_);
-@method Object_ _flags(FontDialog, Object_) { return new Object_(); }
-@method Object_ _flags(FileDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ checkFlags(virtual!CommonSystemDialog);
-@method Object_ _checkFlags(FontDialog) { return new Object_(); }
-@method Object_ _checkFlags(ColorDialog) { return new Object_(); }
-@method Object_ _checkFlags(PrintDialog) { return new Object_(); }
-@method Object_ _checkFlags(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ close(virtual!ViewManager, Object_);
-@method Object_ _close(AboutDialog, Object_) { return new Object_(); }
-@method Object_ _close(TranscriptWindow, Object_) { return new Object_(); }
-@method Object_ _close(WalkbackWindow, Object_) { return new Object_(); }
-@method Object_ _close(SaveImageAsDialog, Object_) { return new Object_(); }
-@method Object_ _close(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ ok(virtual!WindowDialog, Object_);
-@method Object_ _ok(AboutDialog, Object_) { return new Object_(); }
-@method Object_ _ok(SaveImageAsDialog, Object_) { return new Object_(); }
-@method Object_ _ok(Prompter, Object_) { return new Object_(); }
-@mptr("hash") Object_ topPaneClass(virtual!ViewManager);
-@method Object_ _topPaneClass(AboutDialog) { return new Object_(); }
-@method Object_ _topPaneClass(WindowDialog) { return new Object_(); }
-@method Object_ _topPaneClass(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ isIndexedCollection(virtual!Object_);
-@method Object_ _isIndexedCollection(IndexedCollection) { return new Object_(); }
-@method Object_ _isIndexedCollection(Object_) { return new Object_(); }
-@mptr("hash") Object_ reversed(virtual!IndexedCollection);
-@method Object_ _reversed(IndexedCollection) { return new Object_(); }
-@method Object_ _reversed(FixedSizeCollection) { return new Object_(); }
-@mptr("hash") Object_ copyFromTo(virtual!Object_, Object_, Object_);
-@method Object_ _copyFromTo(IndexedCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(MixedFileStream, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(SortedCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(FileStream, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(Stream, Object_, Object_) { return new Object_(); }
-@method Object_ _copyFromTo(OrderedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ unquote(virtual!Object_);
-@method Object_ _unquote(IndexedCollection) { return new Object_(); }
-@method Object_ _unquote(String) { return new Object_(); }
-@method Object_ _unquote(CompilerNameScope) { return new Object_(); }
-@method Object_ _unquote(OrderedCollection) { return new Object_(); }
-@mptr("hash") Object_ includes(virtual!Collection, Object_);
-@method Object_ _includes(IndexedCollection, Object_) { return new Object_(); }
-@method Object_ _includes(Set, Object_) { return new Object_(); }
-@method Object_ _includes(Dictionary, Object_) { return new Object_(); }
-@method Object_ _includes(Collection, Object_) { return new Object_(); }
-@method Object_ _includes(Bag, Object_) { return new Object_(); }
-@method Object_ _includes(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ grow(virtual!Object_);
-@method Object_ _grow(IndexedCollection) { return new Object_(); }
-@method Object_ _grow(SymbolSet) { return new Object_(); }
-@method Object_ _grow(SortedCollection) { return new Object_(); }
-@method Object_ _grow(Set) { return new Object_(); }
-@method Object_ _grow(Dictionary) { return new Object_(); }
-@method Object_ _grow(WriteStream) { return new Object_(); }
-@method Object_ _grow(IdentityDictionary) { return new Object_(); }
-@method Object_ _grow(OrderedCollection) { return new Object_(); }
-@mptr("hash") Object_ indexOf(virtual!Object_, Object_);
-@method Object_ _indexOf(IndexedCollection, Object_) { return new Object_(); }
-@method Object_ _indexOf(Stream, Object_) { return new Object_(); }
-@method Object_ _indexOf(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWith(virtual!IndexedCollection, Object_, Object_, Object_);
-@method Object_ _replaceFromToWith(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWith(OrderedCollection, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ copyReplaceFromToWith(virtual!IndexedCollection, Object_, Object_, Object_);
-@method Object_ _copyReplaceFromToWith(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _copyReplaceFromToWith(FixedSizeCollection, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ shallowCopy(virtual!Object_);
-@method Object_ _shallowCopy(IndexedCollection) { return new Object_(); }
-@method Object_ _shallowCopy(Symbol) { return new Object_(); }
-@method Object_ _shallowCopy(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _shallowCopy(SortedCollection) { return new Object_(); }
-@method Object_ _shallowCopy(Dictionary) { return new Object_(); }
-@method Object_ _shallowCopy(CompiledMethod) { return new Object_(); }
-@method Object_ _shallowCopy(Collection) { return new Object_(); }
-@method Object_ _shallowCopy(Interval) { return new Object_(); }
-@method Object_ _shallowCopy(Character) { return new Object_(); }
-@method Object_ _shallowCopy(Behavior) { return new Object_(); }
-@method Object_ _shallowCopy(Object_) { return new Object_(); }
-@method Object_ _shallowCopy(FixedSizeCollection) { return new Object_(); }
-@method Object_ _shallowCopy(MethodDictionary) { return new Object_(); }
-@method Object_ _shallowCopy(Number) { return new Object_(); }
-@method Object_ _shallowCopy(Boolean) { return new Object_(); }
-@method Object_ _shallowCopy(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ add(virtual!Object_, Object_);
-@method Object_ _add(SymbolSet, Object_) { return new Object_(); }
-@method Object_ _add(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _add(Set, Object_) { return new Object_(); }
-@method Object_ _add(Dictionary, Object_) { return new Object_(); }
-@method Object_ _add(Collection, Object_) { return new Object_(); }
-@method Object_ _add(IdentityDictionary, Object_) { return new Object_(); }
-@method Object_ _add(FixedSizeCollection, Object_) { return new Object_(); }
-@method Object_ _add(NotificationManager, Object_) { return new Object_(); }
-@method Object_ _add(MethodDictionary, Object_) { return new Object_(); }
-@method Object_ _add(Bag, Object_) { return new Object_(); }
-@method Object_ _add(MultiplePoolScope, Object_) { return new Object_(); }
-@method Object_ _add(SystemDictionary, Object_) { return new Object_(); }
-@method Object_ _add(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ findElementIndex(virtual!Set, Object_);
-@method Object_ _findElementIndex(SymbolSet, Object_) { return new Object_(); }
-@method Object_ _findElementIndex(Set, Object_) { return new Object_(); }
-@mptr("hash") Object_ species(virtual!Object_);
-@method Object_ _species(SymbolSet) { return new Object_(); }
-@method Object_ _species(Symbol) { return new Object_(); }
-@method Object_ _species(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _species(Interval) { return new Object_(); }
-@method Object_ _species(Object_) { return new Object_(); }
-@mptr("hash") Object_ buildMenuBar(virtual!Object_);
-@method Object_ _buildMenuBar(HelpManager) { return new Object_(); }
-@method Object_ _buildMenuBar(TopPane) { return new Object_(); }
-@method Object_ _buildMenuBar(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ initMenu(virtual!Object_);
-@method Object_ _initMenu(HelpManager) { return new Object_(); }
-@method Object_ _initMenu(TextPane) { return new Object_(); }
-@method Object_ _initMenu(Window) { return new Object_(); }
-@method Object_ _initMenu(TextPaneControl) { return new Object_(); }
-@method Object_ _initMenu(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ max(virtual!Object_, Object_);
-@method Object_ _max(Magnitude, Object_) { return new Object_(); }
-@method Object_ _max(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ min(virtual!Object_, Object_);
-@method Object_ _min(Magnitude, Object_) { return new Object_(); }
-@method Object_ _min(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ betweenAnd(virtual!Object_, Object_, Object_);
-@method Object_ _betweenAnd(Magnitude, Object_, Object_) { return new Object_(); }
-@method Object_ _betweenAnd(Point, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ resume(virtual!Object_, Object_);
-@method Object_ _resume(ExceptionHandler, Object_) { return new Object_(); }
-@method Object_ _resume(Exception_, Object_) { return new Object_(); }
-@method Object_ _resume(WalkbackWindow, Object_) { return new Object_(); }
-@method Object_ _resume(ProcessScheduler, Object_) { return new Object_(); }
-@method Object_ _resume(NotificationManager, Object_) { return new Object_(); }
-@method Object_ _resume(Process, Object_) { return new Object_(); }
-@mptr("hash") Object_ retry(virtual!Object_);
-@method Object_ _retry(ExceptionHandler) { return new Object_(); }
-@method Object_ _retry(Exception_) { return new Object_(); }
-@method Object_ _retry(CompilationError) { return new Object_(); }
-@mptr("hash") Object_ initialize(virtual!Object_, Object_);
-@method Object_ _initialize(ExternalHeapHandle, Object_) { return new Object_(); }
-@method Object_ _initialize(Set, Object_) { return new Object_(); }
-@mptr("hash") Object_ free(virtual!Object_);
-@method Object_ _free(ExternalHeapHandle) { return new Object_(); }
-@method Object_ _free(ExternalHeapAddress) { return new Object_(); }
-@method Object_ _free(ExternalGlobalAddress) { return new Object_(); }
-@method Object_ _free(DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ styleColorWidth(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _styleColorWidth(WinLogicalPen, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _styleColorWidth(METACLASS_WinLogicalPen, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ width(virtual!Object_);
-@method Object_ _width(WinLogicalPen) { return new Object_(); }
-@method Object_ _width(GraphicsTool) { return new Object_(); }
-@method Object_ _width(DIB) { return new Object_(); }
-@method Object_ _width(WinBitmapStruct) { return new Object_(); }
-@method Object_ _width(GraphicsMedium) { return new Object_(); }
-@method Object_ _width(Window) { return new Object_(); }
-@method Object_ _width(WinLogPen) { return new Object_(); }
-@method Object_ _width(WinBitmapInfoHeader) { return new Object_(); }
-@method Object_ _width(Font) { return new Object_(); }
-@method Object_ _width(Bitmap) { return new Object_(); }
-@method Object_ _width(Rectangle) { return new Object_(); }
-@mptr("hash") Object_ instanceVariableNames(virtual!Object_, Object_);
-@method Object_ _instanceVariableNames(MetaClass, Object_) { return new Object_(); }
-@method Object_ _instanceVariableNames(ClassInstaller, Object_) { return new Object_(); }
-@mptr("hash") Object_ isMetaClass(virtual!Object_);
-@method Object_ _isMetaClass(MetaClass) { return new Object_(); }
-@method Object_ _isMetaClass(Object_) { return new Object_(); }
-@mptr("hash") Object_ empty(virtual!Object_);
-@method Object_ _empty(ClipboardManager) { return new Object_(); }
-@method Object_ _empty(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ receiver(virtual!Object_);
-@method Object_ _receiver(HomeContext) { return new Object_(); }
-@method Object_ _receiver(Message) { return new Object_(); }
-@method Object_ _receiver(MethodExecutor) { return new Object_(); }
-@method Object_ _receiver(Context) { return new Object_(); }
-@mptr("hash") Object_ asActionSequence(virtual!Object_);
-@method Object_ _asActionSequence(HomeContext) { return new Object_(); }
-@method Object_ _asActionSequence(ActionSequence) { return new Object_(); }
-@method Object_ _asActionSequence(Message) { return new Object_(); }
-@method Object_ _asActionSequence(EvaluableAction) { return new Object_(); }
-@method Object_ _asActionSequence(Context) { return new Object_(); }
-@mptr("hash") Object_ centered(virtual!Object_);
-@method Object_ _centered(StaticText) { return new Object_(); }
-@method Object_ _centered(TextEdit) { return new Object_(); }
-@method Object_ _centered(METACLASS_StaticText) { return new Object_(); }
-@mptr("hash") Object_ rightJustified(virtual!Object_);
-@method Object_ _rightJustified(StaticText) { return new Object_(); }
-@method Object_ _rightJustified(TextEdit) { return new Object_(); }
-@method Object_ _rightJustified(METACLASS_StaticText) { return new Object_(); }
-@mptr("hash") Object_ leftJustified(virtual!Object_);
-@method Object_ _leftJustified(StaticText) { return new Object_(); }
-@method Object_ _leftJustified(TextEdit) { return new Object_(); }
-@method Object_ _leftJustified(METACLASS_StaticText) { return new Object_(); }
-@mptr("hash") Object_ key(virtual!Object_, Object_);
-@method Object_ _key(Association, Object_) { return new Object_(); }
-@method Object_ _key(METACLASS_Association, Object_) { return new Object_(); }
-@mptr("hash") Object_ isInBase(virtual!Object_);
-@method Object_ _isInBase(Association) { return new Object_(); }
-@method Object_ _isInBase(Object_) { return new Object_(); }
-@mptr("hash") Object_ isAssociation(virtual!Object_);
-@method Object_ _isAssociation(Association) { return new Object_(); }
-@method Object_ _isAssociation(Object_) { return new Object_(); }
-@mptr("hash") Object_ storeOn(virtual!Object_, Object_);
-@method Object_ _storeOn(Association, Object_) { return new Object_(); }
-@method Object_ _storeOn(Symbol, Object_) { return new Object_(); }
-@method Object_ _storeOn(DoubleByteSymbol, Object_) { return new Object_(); }
-@method Object_ _storeOn(Dictionary, Object_) { return new Object_(); }
-@method Object_ _storeOn(Collection, Object_) { return new Object_(); }
-@method Object_ _storeOn(Character, Object_) { return new Object_(); }
-@method Object_ _storeOn(Object_, Object_) { return new Object_(); }
-@method Object_ _storeOn(String, Object_) { return new Object_(); }
-@method Object_ _storeOn(FixedSizeCollection, Object_) { return new Object_(); }
-@method Object_ _storeOn(Number, Object_) { return new Object_(); }
-@method Object_ _storeOn(Boolean, Object_) { return new Object_(); }
-@method Object_ _storeOn(UndefinedObject, Object_) { return new Object_(); }
-@method Object_ _storeOn(Array, Object_) { return new Object_(); }
-@mptr("hash") Object_ openReplace(virtual!Object_, Object_, Object_);
-@method Object_ _openReplace(FindReplaceDialog, Object_, Object_) { return new Object_(); }
-@method Object_ _openReplace(METACLASS_FindReplaceDialog, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ cancel(virtual!WindowDialog, Object_);
-@method Object_ _cancel(FindReplaceDialog, Object_) { return new Object_(); }
-@method Object_ _cancel(SaveImageDialog, Object_) { return new Object_(); }
-@method Object_ _cancel(SaveImageAsDialog, Object_) { return new Object_(); }
-@method Object_ _cancel(ProgressIndicatorDialog, Object_) { return new Object_(); }
-@method Object_ _cancel(Prompter, Object_) { return new Object_(); }
-@method Object_ _cancel(PrintAbortDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ atPut(virtual!Object_, Object_, Object_);
-@method Object_ _atPut(Symbol, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(SortedCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Set, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(DoubleByteString, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Interval, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(String, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(MethodDictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(Bag, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(SelfDefinedStructure, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(SystemDictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atPut(OrderedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ initContents(virtual!String, Object_);
-@method Object_ _initContents(Symbol, Object_) { return new Object_(); }
-@method Object_ _initContents(DoubleByteSymbol, Object_) { return new Object_(); }
-@mptr("hash") Object_ asMixedString(virtual!String);
-@method Object_ _asMixedString(Symbol) { return new Object_(); }
-@method Object_ _asMixedString(DoubleByteString) { return new Object_(); }
-@method Object_ _asMixedString(String) { return new Object_(); }
-@mptr("hash") Object_ asNormalizedString(virtual!String);
-@method Object_ _asNormalizedString(Symbol) { return new Object_(); }
-@method Object_ _asNormalizedString(DoubleByteString) { return new Object_(); }
-@method Object_ _asNormalizedString(String) { return new Object_(); }
-@mptr("hash") Object_ asNormalizedString(virtual!String, Object_);
-@method Object_ _asNormalizedString(Symbol, Object_) { return new Object_(); }
-@method Object_ _asNormalizedString(DoubleByteString, Object_) { return new Object_(); }
-@method Object_ _asNormalizedString(String, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceWith(virtual!Object_, Object_, Object_);
-@method Object_ _replaceWith(Symbol, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceWith(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceWith(ByteArray, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceWith(ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceWith(DoubleByteString, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceWith(String, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asString(virtual!Object_);
-@method Object_ _asString(Symbol) { return new Object_(); }
-@method Object_ _asString(CompilationResult) { return new Object_(); }
-@method Object_ _asString(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _asString(ByteArray) { return new Object_(); }
-@method Object_ _asString(Atom) { return new Object_(); }
-@method Object_ _asString(Character) { return new Object_(); }
-@method Object_ _asString(Object_) { return new Object_(); }
-@method Object_ _asString(ObjectLibraryExternal) { return new Object_(); }
-@method Object_ _asString(String) { return new Object_(); }
-@mptr("hash") Object_ asSymbol(virtual!String);
-@method Object_ _asSymbol(Symbol) { return new Object_(); }
-@method Object_ _asSymbol(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _asSymbol(DoubleByteString) { return new Object_(); }
-@method Object_ _asSymbol(String) { return new Object_(); }
-@mptr("hash") Object_ asExternalString(virtual!String);
-@method Object_ _asExternalString(Symbol) { return new Object_(); }
-@method Object_ _asExternalString(DoubleByteString) { return new Object_(); }
-@method Object_ _asExternalString(String) { return new Object_(); }
-@mptr("hash") Object_ asCompactString(virtual!String);
-@method Object_ _asCompactString(Symbol) { return new Object_(); }
-@method Object_ _asCompactString(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _asCompactString(DoubleByteString) { return new Object_(); }
-@method Object_ _asCompactString(String) { return new Object_(); }
-@mptr("hash") Object_ isSymbol(virtual!Object_);
-@method Object_ _isSymbol(Symbol) { return new Object_(); }
-@method Object_ _isSymbol(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _isSymbol(Object_) { return new Object_(); }
-@mptr("hash") Object_ changedEventFor(virtual!Toggle, Object_);
-@method Object_ _changedEventFor(ThreeStateButton, Object_) { return new Object_(); }
-@method Object_ _changedEventFor(RadioButton, Object_) { return new Object_(); }
-@method Object_ _changedEventFor(CheckBox, Object_) { return new Object_(); }
-@method Object_ _changedEventFor(Toggle, Object_) { return new Object_(); }
-@mptr("hash") Object_ setValue(virtual!Toggle);
-@method Object_ _setValue(ThreeStateButton) { return new Object_(); }
-@method Object_ _setValue(Toggle) { return new Object_(); }
-@mptr("hash") Object_ getValue(virtual!ControlPane);
-@method Object_ _getValue(ThreeStateButton) { return new Object_(); }
-@method Object_ _getValue(EntryField) { return new Object_(); }
-@method Object_ _getValue(Toggle) { return new Object_(); }
-@method Object_ _getValue(ControlPane) { return new Object_(); }
-@method Object_ _getValue(ListBox) { return new Object_(); }
-@mptr("hash") Object_ closeSignOn(virtual!Object_);
-@method Object_ _closeSignOn(VirtualMachineExe) { return new Object_(); }
-@method Object_ _closeSignOn(SessionModel) { return new Object_(); }
-@mptr("hash") Object_ reportWarning(virtual!CompilerErrorHandler, Object_);
-@method Object_ _reportWarning(NonInteractiveErrorHandler, Object_) { return new Object_(); }
-@method Object_ _reportWarning(SilentErrorHandler, Object_) { return new Object_(); }
-@method Object_ _reportWarning(TextPaneErrorHandler, Object_) { return new Object_(); }
-@method Object_ _reportWarning(CompilerErrorHandler, Object_) { return new Object_(); }
-@mptr("hash") Object_ numberOfArguments(virtual!Object_);
-@method Object_ _numberOfArguments(TwoArgumentBlock) { return new Object_(); }
-@method Object_ _numberOfArguments(LinkMessage) { return new Object_(); }
-@method Object_ _numberOfArguments(Context) { return new Object_(); }
-@method Object_ _numberOfArguments(OneArgumentBlock) { return new Object_(); }
-@method Object_ _numberOfArguments(ZeroArgumentBlock) { return new Object_(); }
-@mptr("hash") Object_ evaluateWithArguments(virtual!Object_, Object_);
-@method Object_ _evaluateWithArguments(TwoArgumentBlock, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(LinkMessage, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(ActionSequence, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(Message, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(ConstantAccessor, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(Object_, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(OneArgumentBlock, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(ZeroArgumentBlock, Object_) { return new Object_(); }
-@method Object_ _evaluateWithArguments(CollectionAccessor, Object_) { return new Object_(); }
-@mptr("hash") Object_ evaluate(virtual!Object_);
-@method Object_ _evaluate(TwoArgumentBlock) { return new Object_(); }
-@method Object_ _evaluate(CompilationResult) { return new Object_(); }
-@method Object_ _evaluate(LinkMessage) { return new Object_(); }
-@method Object_ _evaluate(ActionSequence) { return new Object_(); }
-@method Object_ _evaluate(Message) { return new Object_(); }
-@method Object_ _evaluate(ConstantAccessor) { return new Object_(); }
-@method Object_ _evaluate(Object_) { return new Object_(); }
-@method Object_ _evaluate(MethodExecutor) { return new Object_(); }
-@method Object_ _evaluate(OneArgumentBlock) { return new Object_(); }
-@method Object_ _evaluate(ZeroArgumentBlock) { return new Object_(); }
-@method Object_ _evaluate(CollectionAccessor) { return new Object_(); }
-@mptr("hash") Object_ canApplyStyle(virtual!Window);
-@method Object_ _canApplyStyle(Button) { return new Object_(); }
-@method Object_ _canApplyStyle(Window) { return new Object_(); }
-@method Object_ _canApplyStyle(ControlPane) { return new Object_(); }
-@mptr("hash") Object_ applyStyle(virtual!Window);
-@method Object_ _applyStyle(Button) { return new Object_(); }
-@method Object_ _applyStyle(Window) { return new Object_(); }
-@mptr("hash") Object_ isDefaultPushButton(virtual!Button);
-@method Object_ _isDefaultPushButton(Button) { return new Object_(); }
-@method Object_ _isDefaultPushButton(DrawnButton) { return new Object_(); }
-@method Object_ _isDefaultPushButton(Toggle) { return new Object_(); }
-@mptr("hash") Object_ setLabel(virtual!ControlPane, Object_);
-@method Object_ _setLabel(Button, Object_) { return new Object_(); }
-@method Object_ _setLabel(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _setLabel(GroupBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ buttonFont(virtual!Window, Object_);
-@method Object_ _buttonFont(Button, Object_) { return new Object_(); }
-@method Object_ _buttonFont(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ saveString(virtual!TextWindow, Object_);
-@method Object_ _saveString(TranscriptWindow, Object_) { return new Object_(); }
-@method Object_ _saveString(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ saveAs(virtual!Object_);
-@method Object_ _saveAs(TranscriptWindow) { return new Object_(); }
-@method Object_ _saveAs(TopPane) { return new Object_(); }
-@method Object_ _saveAs(DiskBrowser) { return new Object_(); }
-@method Object_ _saveAs(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ textPaneClass(virtual!TextWindow);
-@method Object_ _textPaneClass(TranscriptWindow) { return new Object_(); }
-@method Object_ _textPaneClass(WalkbackWindow) { return new Object_(); }
-@method Object_ _textPaneClass(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ next(virtual!Stream);
-@method Object_ _next(MixedFileStream) { return new Object_(); }
-@method Object_ _next(ReadWriteStream) { return new Object_(); }
-@method Object_ _next(FileStream) { return new Object_(); }
-@method Object_ _next(ReadStream) { return new Object_(); }
-@mptr("hash") Object_ nextPutAll(virtual!Object_, Object_);
-@method Object_ _nextPutAll(MixedFileStream, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(ReadWriteStream, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(TextTool, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(TextPane, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(WriteStream, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(FileStream, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _nextPutAll(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ leadBytes(virtual!Object_);
-@method Object_ _leadBytes(MixedFileStream) { return new Object_(); }
-@method Object_ _leadBytes(NationalLanguageSupport) { return new Object_(); }
-@mptr("hash") Object_ upTo(virtual!Object_, Object_);
-@method Object_ _upTo(MixedFileStream, Object_) { return new Object_(); }
-@method Object_ _upTo(String, Object_) { return new Object_(); }
-@method Object_ _upTo(Stream, Object_) { return new Object_(); }
-@mptr("hash") Object_ setLimits(virtual!Stream);
-@method Object_ _setLimits(MixedFileStream) { return new Object_(); }
-@method Object_ _setLimits(ReadWriteStream) { return new Object_(); }
-@method Object_ _setLimits(WriteStream) { return new Object_(); }
-@method Object_ _setLimits(FileStream) { return new Object_(); }
-@method Object_ _setLimits(ReadStream) { return new Object_(); }
-@mptr("hash") Object_ reverseContents(virtual!Stream);
-@method Object_ _reverseContents(MixedFileStream) { return new Object_(); }
-@method Object_ _reverseContents(Stream) { return new Object_(); }
-@mptr("hash") Object_ asByteFileStream(virtual!FileStream);
-@method Object_ _asByteFileStream(MixedFileStream) { return new Object_(); }
-@method Object_ _asByteFileStream(FileStream) { return new Object_(); }
-@mptr("hash") Object_ asMixedFileStream(virtual!FileStream, Object_);
-@method Object_ _asMixedFileStream(MixedFileStream, Object_) { return new Object_(); }
-@method Object_ _asMixedFileStream(FileStream, Object_) { return new Object_(); }
-@mptr("hash") Object_ setLineDelimiterFromFirstPage(virtual!FileStream);
-@method Object_ _setLineDelimiterFromFirstPage(MixedFileStream) { return new Object_(); }
-@method Object_ _setLineDelimiterFromFirstPage(FileStream) { return new Object_(); }
-@mptr("hash") Object_ nextWord(virtual!Stream);
-@method Object_ _nextWord(MixedFileStream) { return new Object_(); }
-@method Object_ _nextWord(Stream) { return new Object_(); }
-@mptr("hash") Object_ nextByte(virtual!ReadWriteStream);
-@method Object_ _nextByte(MixedFileStream) { return new Object_(); }
-@method Object_ _nextByte(ReadWriteStream) { return new Object_(); }
-@mptr("hash") Object_ directory(virtual!Object_);
-@method Object_ _directory(File) { return new Object_(); }
-@method Object_ _directory(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ pathName(virtual!Object_);
-@method Object_ _pathName(File) { return new Object_(); }
-@method Object_ _pathName(Directory) { return new Object_(); }
-@method Object_ _pathName(FileStream) { return new Object_(); }
-@mptr("hash") Object_ flush(virtual!Object_);
-@method Object_ _flush(File) { return new Object_(); }
-@method Object_ _flush(FileStream) { return new Object_(); }
-@mptr("hash") Object_ wmWininichangeWith(virtual!Window, Object_, Object_);
-@method Object_ _wmWininichangeWith(SystemWindow, Object_, Object_) { return new Object_(); }
-@method Object_ _wmWininichangeWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ errorMessage(virtual!Object_);
-@method Object_ _errorMessage(CompilationResult) { return new Object_(); }
-@method Object_ _errorMessage(CompilationError) { return new Object_(); }
-@mptr("hash") Object_ nameScope(virtual!Object_);
-@method Object_ _nameScope(CompilationResult) { return new Object_(); }
-@method Object_ _nameScope(CompilerInterface) { return new Object_(); }
-@mptr("hash") Object_ canGenerateCompilationResult(virtual!Object_);
-@method Object_ _canGenerateCompilationResult(CompilationResult) { return new Object_(); }
-@method Object_ _canGenerateCompilationResult(Object_) { return new Object_(); }
-@mptr("hash") Object_ isCompilationResult(virtual!Object_);
-@method Object_ _isCompilationResult(CompilationResult) { return new Object_(); }
-@method Object_ _isCompilationResult(Object_) { return new Object_(); }
-@mptr("hash") Object_ sourceCode(virtual!Object_);
-@method Object_ _sourceCode(CompilationResult) { return new Object_(); }
-@method Object_ _sourceCode(CompilationError) { return new Object_(); }
-@mptr("hash") Object_ description(virtual!Object_);
-@method Object_ _description(Exception_) { return new Object_(); }
-@method Object_ _description(CompilerNameScope) { return new Object_(); }
-@mptr("hash") Object_ isResumable(virtual!Exception_);
-@method Object_ _isResumable(Exception_) { return new Object_(); }
-@method Object_ _isResumable(ZeroDivide) { return new Object_(); }
-@method Object_ _isResumable(MessageNotUnderstood) { return new Object_(); }
-@method Object_ _isResumable(Notification) { return new Object_(); }
-@mptr("hash") Object_ isActive(virtual!Object_);
-@method Object_ _isActive(Exception_) { return new Object_(); }
-@method Object_ _isActive(Window) { return new Object_(); }
-@mptr("hash") Object_ signal(virtual!Object_);
-@method Object_ _signal(Exception_) { return new Object_(); }
-@method Object_ _signal(Semaphore) { return new Object_(); }
-@method Object_ _signal(METACLASS_Exception) { return new Object_(); }
-@mptr("hash") Object_ addMenus(virtual!WindowPolicy);
-@method Object_ _addMenus(NoMenusWindowPolicy) { return new Object_(); }
-@method Object_ _addMenus(CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _addMenus(WindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ create(virtual!Object_, Object_);
-@method Object_ _create(StoredPicture, Object_) { return new Object_(); }
-@method Object_ _create(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ drawUsing(virtual!GraphicsMedium, Object_);
-@method Object_ _drawUsing(StoredPicture, Object_) { return new Object_(); }
-@method Object_ _drawUsing(Printer, Object_) { return new Object_(); }
-@method Object_ _drawUsing(GraphicsMedium, Object_) { return new Object_(); }
-@method Object_ _drawUsing(Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ isStoredPicture(virtual!Object_);
-@method Object_ _isStoredPicture(StoredPicture) { return new Object_(); }
-@method Object_ _isStoredPicture(Object_) { return new Object_(); }
-@mptr("hash") Object_ isDoubleByteSymbol(virtual!Object_);
-@method Object_ _isDoubleByteSymbol(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _isDoubleByteSymbol(Object_) { return new Object_(); }
-@mptr("hash") Object_ equals(virtual!String, Object_);
-@method Object_ _equals(DoubleByteSymbol, Object_) { return new Object_(); }
-@method Object_ _equals(String, Object_) { return new Object_(); }
-@mptr("hash") Object_ containsDBCharacter(virtual!String);
-@method Object_ _containsDBCharacter(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _containsDBCharacter(DoubleByteString) { return new Object_(); }
-@method Object_ _containsDBCharacter(String) { return new Object_(); }
-@mptr("hash") Object_ replaceBytesWith(virtual!Object_, Object_, Object_);
-@method Object_ _replaceBytesWith(DoubleByteSymbol, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesWith(ByteArray, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesWith(ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceBytesWith(DoubleByteString, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ id(virtual!Object_, Object_);
-@method Object_ _id(DoubleByteSymbol, Object_) { return new Object_(); }
-@method Object_ _id(Window, Object_) { return new Object_(); }
-@method Object_ _id(MenuItem, Object_) { return new Object_(); }
-@mptr("hash") Object_ id(virtual!Object_);
-@method Object_ _id(DoubleByteSymbol) { return new Object_(); }
-@method Object_ _id(Window) { return new Object_(); }
-@method Object_ _id(MenuItem) { return new Object_(); }
-@method Object_ _id(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ sourcePosition(virtual!Object_);
-@method Object_ _sourcePosition(CompilationError) { return new Object_(); }
-@method Object_ _sourcePosition(CompiledMethod) { return new Object_(); }
-@mptr("hash") Object_ privateHandle(virtual!Object_);
-@method Object_ _privateHandle(WinLogicalObject) { return new Object_(); }
-@method Object_ _privateHandle(GraphicsTool) { return new Object_(); }
-@method Object_ _privateHandle(Icon) { return new Object_(); }
-@mptr("hash") Object_ initHandle(virtual!Object_);
-@method Object_ _initHandle(WinLogicalObject) { return new Object_(); }
-@method Object_ _initHandle(Bitmap) { return new Object_(); }
-@method Object_ _initHandle(Icon) { return new Object_(); }
-@mptr("hash") Object_ stockObject(virtual!Object_, Object_);
-@method Object_ _stockObject(WinLogicalObject, Object_) { return new Object_(); }
-@method Object_ _stockObject(METACLASS_WinLogicalObject, Object_) { return new Object_(); }
-@method Object_ _stockObject(METACLASS_WinLogicalPalette, Object_) { return new Object_(); }
-@mptr("hash") Object_ dictionary(virtual!Object_, Object_);
-@method Object_ _dictionary(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _dictionary(DictionaryScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ droppedOnTextPane(virtual!ViewManager, Object_);
-@method Object_ _droppedOnTextPane(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _droppedOnTextPane(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeSelector(virtual!ViewManager);
-@method Object_ _removeSelector(ClassBrowser) { return new Object_(); }
-@method Object_ _removeSelector(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ selectorMenu(virtual!ViewManager, Object_);
-@method Object_ _selectorMenu(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _selectorMenu(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectors(virtual!ViewManager, Object_);
-@method Object_ _selectors(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _selectors(SelectorBrowser, Object_) { return new Object_(); }
-@method Object_ _selectors(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ droppedOnSelectorList(virtual!ViewManager, Object_);
-@method Object_ _droppedOnSelectorList(ClassBrowser, Object_) { return new Object_(); }
-@method Object_ _droppedOnSelectorList(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ memoryHandle(virtual!ExternalAddress);
-@method Object_ _memoryHandle(ExternalHeapAddress) { return new Object_(); }
-@method Object_ _memoryHandle(ExternalGlobalAddress) { return new Object_(); }
-@mptr("hash") Object_ memorySize(virtual!ExternalAddress, Object_);
-@method Object_ _memorySize(ExternalHeapAddress, Object_) { return new Object_(); }
-@method Object_ _memorySize(ExternalGlobalAddress, Object_) { return new Object_(); }
-@mptr("hash") Object_ memorySize(virtual!ExternalAddress);
-@method Object_ _memorySize(ExternalHeapAddress) { return new Object_(); }
-@method Object_ _memorySize(ExternalGlobalAddress) { return new Object_(); }
-@mptr("hash") Object_ x(virtual!Object_);
-@method Object_ _x(WinPoint) { return new Object_(); }
-@method Object_ _x(Point) { return new Object_(); }
-@mptr("hash") Object_ x(virtual!Object_, Object_);
-@method Object_ _x(WinPoint, Object_) { return new Object_(); }
-@method Object_ _x(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ y(virtual!Object_);
-@method Object_ _y(WinPoint) { return new Object_(); }
-@method Object_ _y(Point) { return new Object_(); }
-@mptr("hash") Object_ y(virtual!Object_, Object_);
-@method Object_ _y(WinPoint, Object_) { return new Object_(); }
-@method Object_ _y(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ boundingBox(virtual!Object_);
-@method Object_ _boundingBox(GraphicsTool) { return new Object_(); }
-@method Object_ _boundingBox(DIB) { return new Object_(); }
-@method Object_ _boundingBox(WinDrawItemStruct) { return new Object_(); }
-@method Object_ _boundingBox(GraphicsMedium) { return new Object_(); }
-@method Object_ _boundingBox(Window) { return new Object_(); }
-@method Object_ _boundingBox(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ width(virtual!Object_, Object_);
-@method Object_ _width(GraphicsTool, Object_) { return new Object_(); }
-@method Object_ _width(WinBitmapStruct, Object_) { return new Object_(); }
-@method Object_ _width(WinBitmapInfoHeader, Object_) { return new Object_(); }
-@method Object_ _width(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ backColor(virtual!Object_, Object_);
-@method Object_ _backColor(GraphicsTool, Object_) { return new Object_(); }
-@method Object_ _backColor(Pen, Object_) { return new Object_(); }
-@method Object_ _backColor(Window, Object_) { return new Object_(); }
-@method Object_ _backColor(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ height(virtual!Object_);
-@method Object_ _height(GraphicsTool) { return new Object_(); }
-@method Object_ _height(DIB) { return new Object_(); }
-@method Object_ _height(WinBitmapStruct) { return new Object_(); }
-@method Object_ _height(GraphicsMedium) { return new Object_(); }
-@method Object_ _height(Window) { return new Object_(); }
-@method Object_ _height(WinBitmapInfoHeader) { return new Object_(); }
-@method Object_ _height(Font) { return new Object_(); }
-@method Object_ _height(ListBox) { return new Object_(); }
-@method Object_ _height(Bitmap) { return new Object_(); }
-@method Object_ _height(Rectangle) { return new Object_(); }
-@method Object_ _height(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ height(virtual!Object_, Object_);
-@method Object_ _height(GraphicsTool, Object_) { return new Object_(); }
-@method Object_ _height(WinBitmapStruct, Object_) { return new Object_(); }
-@method Object_ _height(WinBitmapInfoHeader, Object_) { return new Object_(); }
-@method Object_ _height(ListBox, Object_) { return new Object_(); }
-@method Object_ _height(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ erase(virtual!Object_);
-@method Object_ _erase(GraphicsTool) { return new Object_(); }
-@method Object_ _erase(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ resetAttributes(virtual!GraphicsTool);
-@method Object_ _resetAttributes(GraphicsTool) { return new Object_(); }
-@method Object_ _resetAttributes(TextTool) { return new Object_(); }
-@mptr("hash") Object_ isGraphicsTool(virtual!Object_);
-@method Object_ _isGraphicsTool(GraphicsTool) { return new Object_(); }
-@method Object_ _isGraphicsTool(Object_) { return new Object_(); }
-@mptr("hash") Object_ dllName(virtual!Object_);
-@method Object_ _dllName(ObjectLibraryReference) { return new Object_(); }
-@method Object_ _dllName(Object_) { return new Object_(); }
-@mptr("hash") Object_ sizeInBytes(virtual!Object_);
-@method Object_ _sizeInBytes(ObjectLibraryReference) { return new Object_(); }
-@method Object_ _sizeInBytes(Bitmap) { return new Object_(); }
-@method Object_ _sizeInBytes(SelfDefinedStructure) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinLogBrush) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_ExternalLong) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinWindowClass) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_ExternalBuffer) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinWindowPlacement) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_VirtualMachineConfiguration) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinPoint) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_ObjectLibraryReference) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinBitmapStruct) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinDrawItemStruct) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinMessage) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinBitmapFileHeader) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinFileTime) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinTextMetrics) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinPaintStructure) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinLogPen) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_Win32FindData) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinRectangle) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinLogPalette) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinBitmapInfoHeader) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinLogFont) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinMeasureItemStruct) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinOfstruct) { return new Object_(); }
-@method Object_ _sizeInBytes(METACLASS_WinSystemTime) { return new Object_(); }
-@mptr("hash") Object_ asExternalLong(virtual!FixedSizeCollection);
-@method Object_ _asExternalLong(ByteArray) { return new Object_(); }
-@method Object_ _asExternalLong(String) { return new Object_(); }
-@mptr("hash") Object_ isByteArray(virtual!Object_);
-@method Object_ _isByteArray(ByteArray) { return new Object_(); }
-@method Object_ _isByteArray(Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWithaddressStartingat(virtual!FixedSizeCollection, Object_, Object_, Object_, Object_);
-@method Object_ _replaceFromToWithaddressStartingat(ByteArray, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithaddressStartingat(String, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asExternalAddress(virtual!Object_);
-@method Object_ _asExternalAddress(ByteArray) { return new Object_(); }
-@method Object_ _asExternalAddress(String) { return new Object_(); }
-@method Object_ _asExternalAddress(Integer) { return new Object_(); }
-@mptr("hash") Object_ asExternalHandle(virtual!FixedSizeCollection);
-@method Object_ _asExternalHandle(ByteArray) { return new Object_(); }
-@method Object_ _asExternalHandle(String) { return new Object_(); }
-@mptr("hash") Object_ addFirst(virtual!OrderedCollection, Object_);
-@method Object_ _addFirst(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _addFirst(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ addAll(virtual!Collection, Object_);
-@method Object_ _addAll(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _addAll(Collection, Object_) { return new Object_(); }
-@mptr("hash") Object_ addAfter(virtual!OrderedCollection, Object_, Object_);
-@method Object_ _addAfter(SortedCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _addAfter(OrderedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ select(virtual!Collection, Object_);
-@method Object_ _select(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _select(Dictionary, Object_) { return new Object_(); }
-@method Object_ _select(Collection, Object_) { return new Object_(); }
-@method Object_ _select(FixedSizeCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ sortBlock(virtual!Object_);
-@method Object_ _sortBlock(SortedCollection) { return new Object_(); }
-@method Object_ _sortBlock(METACLASS_Class) { return new Object_(); }
-@mptr("hash") Object_ sortBlock(virtual!Object_, Object_);
-@method Object_ _sortBlock(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _sortBlock(METACLASS_SortedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ addAllFirst(virtual!OrderedCollection, Object_);
-@method Object_ _addAllFirst(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _addAllFirst(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ addLast(virtual!OrderedCollection, Object_);
-@method Object_ _addLast(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _addLast(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ addAllLast(virtual!OrderedCollection, Object_);
-@method Object_ _addAllLast(SortedCollection, Object_) { return new Object_(); }
-@method Object_ _addAllLast(OrderedCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ remove(virtual!Object_);
-@method Object_ _remove(DictionaryInspector) { return new Object_(); }
-@method Object_ _remove(Directory) { return new Object_(); }
-@method Object_ _remove(ObjectLibraryBind) { return new Object_(); }
-@mptr("hash") Object_ instVarList(virtual!Inspector, Object_);
-@method Object_ _instVarList(DictionaryInspector, Object_) { return new Object_(); }
-@method Object_ _instVarList(SelfDefinedStructureInspector, Object_) { return new Object_(); }
-@method Object_ _instVarList(Inspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ setInstList(virtual!Inspector);
-@method Object_ _setInstList(DictionaryInspector) { return new Object_(); }
-@method Object_ _setInstList(Inspector) { return new Object_(); }
-@method Object_ _setInstList(OrderedCollectionInspector) { return new Object_(); }
-@method Object_ _setInstList(DoubleByteStringInspector) { return new Object_(); }
-@mptr("hash") Object_ asSegmentedAddress(virtual!ExternalAddress);
-@method Object_ _asSegmentedAddress(ExternalSegmentedAddress) { return new Object_(); }
-@method Object_ _asSegmentedAddress(ExternalAddress) { return new Object_(); }
-@mptr("hash") Object_ asFlatAddress(virtual!ExternalAddress);
-@method Object_ _asFlatAddress(ExternalSegmentedAddress) { return new Object_(); }
-@method Object_ _asFlatAddress(ExternalAddress) { return new Object_(); }
-@mptr("hash") Object_ negated(virtual!Object_);
-@method Object_ _negated(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _negated(LargePositiveInteger) { return new Object_(); }
-@method Object_ _negated(Fraction) { return new Object_(); }
-@method Object_ _negated(Number) { return new Object_(); }
-@method Object_ _negated(Integer) { return new Object_(); }
-@method Object_ _negated(Float) { return new Object_(); }
-@method Object_ _negated(Point) { return new Object_(); }
-@mptr("hash") Object_ negative(virtual!Number);
-@method Object_ _negative(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _negative(LargePositiveInteger) { return new Object_(); }
-@method Object_ _negative(Number) { return new Object_(); }
-@method Object_ _negative(Integer) { return new Object_(); }
-@method Object_ _negative(Float) { return new Object_(); }
-@mptr("hash") Object_ positive(virtual!Number);
-@method Object_ _positive(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _positive(LargePositiveInteger) { return new Object_(); }
-@method Object_ _positive(Number) { return new Object_(); }
-@method Object_ _positive(Integer) { return new Object_(); }
-@method Object_ _positive(Float) { return new Object_(); }
-@mptr("hash") Object_ signedAt(virtual!Integer, Object_);
-@method Object_ _signedAt(LargeNegativeInteger, Object_) { return new Object_(); }
-@method Object_ _signedAt(LargePositiveInteger, Object_) { return new Object_(); }
-@method Object_ _signedAt(SmallInteger, Object_) { return new Object_(); }
-@mptr("hash") Object_ sign(virtual!Number);
-@method Object_ _sign(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _sign(LargePositiveInteger) { return new Object_(); }
-@method Object_ _sign(Number) { return new Object_(); }
-@mptr("hash") Object_ strictlyPositive(virtual!Number);
-@method Object_ _strictlyPositive(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _strictlyPositive(LargePositiveInteger) { return new Object_(); }
-@method Object_ _strictlyPositive(Number) { return new Object_(); }
-@method Object_ _strictlyPositive(Integer) { return new Object_(); }
-@method Object_ _strictlyPositive(Float) { return new Object_(); }
-@mptr("hash") Object_ abs(virtual!Object_);
-@method Object_ _abs(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _abs(LargePositiveInteger) { return new Object_(); }
-@method Object_ _abs(Number) { return new Object_(); }
-@method Object_ _abs(Integer) { return new Object_(); }
-@method Object_ _abs(Float) { return new Object_(); }
-@method Object_ _abs(Point) { return new Object_(); }
-@mptr("hash") Object_ asUnsigned(virtual!Integer);
-@method Object_ _asUnsigned(LargeNegativeInteger) { return new Object_(); }
-@method Object_ _asUnsigned(LargePositiveInteger) { return new Object_(); }
-@method Object_ _asUnsigned(Integer) { return new Object_(); }
-@mptr("hash") Object_ setToEnd(virtual!Stream);
-@method Object_ _setToEnd(ReadWriteStream) { return new Object_(); }
-@method Object_ _setToEnd(WriteStream) { return new Object_(); }
-@method Object_ _setToEnd(Stream) { return new Object_(); }
-@mptr("hash") Object_ getBytesForFromTo(virtual!ReadWriteStream, Object_, Object_, Object_);
-@method Object_ _getBytesForFromTo(ReadWriteStream, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _getBytesForFromTo(FileStream, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ nextPut(virtual!Object_, Object_);
-@method Object_ _nextPut(ReadWriteStream, Object_) { return new Object_(); }
-@method Object_ _nextPut(TextTool, Object_) { return new Object_(); }
-@method Object_ _nextPut(TextPane, Object_) { return new Object_(); }
-@method Object_ _nextPut(WriteStream, Object_) { return new Object_(); }
-@method Object_ _nextPut(FileStream, Object_) { return new Object_(); }
-@method Object_ _nextPut(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _nextPut(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ registerMessageParametertypesReturntypeCallingconvention(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _registerMessageParametertypesReturntypeCallingconvention(CallBack, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _registerMessageParametertypesReturntypeCallingconvention(METACLASS_CallBack, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ collection(virtual!Object_);
-@method Object_ _collection(WinStructArray) { return new Object_(); }
-@method Object_ _collection(WriteStream) { return new Object_(); }
-@mptr("hash") Object_ realizePalette(virtual!DynamicLinkLibrary, Object_);
-@method Object_ _realizePalette(UserDLL, Object_) { return new Object_(); }
-@method Object_ _realizePalette(GDIDLL, Object_) { return new Object_(); }
-@mptr("hash") Object_ destroyCaret(virtual!Object_);
-@method Object_ _destroyCaret(UserDLL) { return new Object_(); }
-@method Object_ _destroyCaret(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ selectPaletteWithForcebackground(virtual!DynamicLinkLibrary, Object_, Object_, Object_);
-@method Object_ _selectPaletteWithForcebackground(UserDLL, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _selectPaletteWithForcebackground(GDIDLL, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ showCaret(virtual!Object_, Object_);
-@method Object_ _showCaret(UserDLL, Object_) { return new Object_(); }
-@method Object_ _showCaret(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ fillRectRectangleBrush(virtual!DynamicLinkLibrary, Object_, Object_, Object_);
-@method Object_ _fillRectRectangleBrush(UserDLL, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _fillRectRectangleBrush(GDIDLL, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ setFocus(virtual!Window);
-@method Object_ _setFocus(RadioButton) { return new Object_(); }
-@method Object_ _setFocus(Window) { return new Object_(); }
-@mptr("hash") Object_ createDIBPalette(virtual!Object_);
-@method Object_ _createDIBPalette(DIB) { return new Object_(); }
-@method Object_ _createDIBPalette(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ colorTable(virtual!Object_);
-@method Object_ _colorTable(DIB) { return new Object_(); }
-@method Object_ _colorTable(WinBitmapInfo) { return new Object_(); }
-@mptr("hash") Object_ numberOfColors(virtual!Object_);
-@method Object_ _numberOfColors(DIB) { return new Object_(); }
-@method Object_ _numberOfColors(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ bitCount(virtual!Object_);
-@method Object_ _bitCount(DIB) { return new Object_(); }
-@method Object_ _bitCount(WinBitmapInfoHeader) { return new Object_(); }
-@method Object_ _bitCount(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ colorTable(virtual!Object_, Object_);
-@method Object_ _colorTable(DIB, Object_) { return new Object_(); }
-@method Object_ _colorTable(WinBitmapInfo, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDIB(virtual!Object_);
-@method Object_ _isDIB(DIB) { return new Object_(); }
-@method Object_ _isDIB(Object_) { return new Object_(); }
-@mptr("hash") Object_ allSubclasses(virtual!Object_);
-@method Object_ _allSubclasses(ClassInstaller) { return new Object_(); }
-@method Object_ _allSubclasses(Behavior) { return new Object_(); }
-@mptr("hash") Object_ superclass(virtual!Object_, Object_);
-@method Object_ _superclass(ClassInstaller, Object_) { return new Object_(); }
-@method Object_ _superclass(Behavior, Object_) { return new Object_(); }
-@mptr("hash") Object_ errorString(virtual!Object_);
-@method Object_ _errorString(ClassInstaller) { return new Object_(); }
-@method Object_ _errorString(DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ isPointers(virtual!Object_);
-@method Object_ _isPointers(ClassInstaller) { return new Object_(); }
-@method Object_ _isPointers(Behavior) { return new Object_(); }
-@mptr("hash") Object_ allInstVarNames(virtual!Object_);
-@method Object_ _allInstVarNames(ClassInstaller) { return new Object_(); }
-@method Object_ _allInstVarNames(Behavior) { return new Object_(); }
-@mptr("hash") Object_ superclass(virtual!Object_);
-@method Object_ _superclass(ClassInstaller) { return new Object_(); }
-@method Object_ _superclass(Behavior) { return new Object_(); }
-@mptr("hash") Object_ isVariable(virtual!Object_);
-@method Object_ _isVariable(ClassInstaller) { return new Object_(); }
-@method Object_ _isVariable(Behavior) { return new Object_(); }
-@mptr("hash") Object_ recompile(virtual!Object_, Object_);
-@method Object_ _recompile(ClassInstaller, Object_) { return new Object_(); }
-@method Object_ _recompile(Behavior, Object_) { return new Object_(); }
-@mptr("hash") Object_ install(virtual!Object_);
-@method Object_ _install(ClassInstaller) { return new Object_(); }
-@method Object_ _install(ApplicationWindow) { return new Object_(); }
-@method Object_ _install(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ warning(virtual!Object_, Object_);
-@method Object_ _warning(StringDictionaryReader, Object_) { return new Object_(); }
-@method Object_ _warning(CompilerErrorHandler, Object_) { return new Object_(); }
-@method Object_ _warning(METACLASS_MessageBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ arguments(virtual!Message, Object_);
-@method Object_ _arguments(LinkMessage, Object_) { return new Object_(); }
-@method Object_ _arguments(Message, Object_) { return new Object_(); }
-@mptr("hash") Object_ collectArguments(virtual!Message, Object_);
-@method Object_ _collectArguments(LinkMessage, Object_) { return new Object_(); }
-@method Object_ _collectArguments(Message, Object_) { return new Object_(); }
-@mptr("hash") Object_ receiverSelectorArguments(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _receiverSelectorArguments(LinkMessage, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _receiverSelectorArguments(Message, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _receiverSelectorArguments(METACLASS_Message, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ compilerErrorAtInFor(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _compilerErrorAtInFor(SmalltalkEmulator, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _compilerErrorAtInFor(TextPane, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _compilerErrorAtInFor(SaveImageAsDialog, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _compilerErrorAtInFor(TextPaneControl, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _compilerErrorAtInFor(Prompter, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _compilerErrorAtInFor(METACLASS_CompilerInterface, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ localBindTo(virtual!CompilerNameScope, Object_, Object_);
-@method Object_ _localBindTo(DictionaryScope, Object_, Object_) { return new Object_(); }
-@method Object_ _localBindTo(CompilerNameScope, Object_, Object_) { return new Object_(); }
-@method Object_ _localBindTo(MultiplePoolScope, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeLocalBindingFor(virtual!CompilerNameScope, Object_);
-@method Object_ _removeLocalBindingFor(DictionaryScope, Object_) { return new Object_(); }
-@method Object_ _removeLocalBindingFor(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _removeLocalBindingFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ localBindingFor(virtual!CompilerNameScope, Object_);
-@method Object_ _localBindingFor(DictionaryScope, Object_) { return new Object_(); }
-@method Object_ _localBindingFor(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _localBindingFor(MultiplePoolScope, Object_) { return new Object_(); }
-@method Object_ _localBindingFor(GlobalPoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ rehash(virtual!Set);
-@method Object_ _rehash(Set) { return new Object_(); }
-@method Object_ _rehash(IdentityDictionary) { return new Object_(); }
-@mptr("hash") Object_ occurrencesOf(virtual!Collection, Object_);
-@method Object_ _occurrencesOf(Set, Object_) { return new Object_(); }
-@method Object_ _occurrencesOf(Dictionary, Object_) { return new Object_(); }
-@method Object_ _occurrencesOf(Collection, Object_) { return new Object_(); }
-@method Object_ _occurrencesOf(Bag, Object_) { return new Object_(); }
-@mptr("hash") Object_ adjustSize(virtual!Set);
-@method Object_ _adjustSize(Set) { return new Object_(); }
-@method Object_ _adjustSize(IdentityDictionary) { return new Object_(); }
-@mptr("hash") Object_ rehashFrom(virtual!Set, Object_);
-@method Object_ _rehashFrom(Set, Object_) { return new Object_(); }
-@method Object_ _rehashFrom(Dictionary, Object_) { return new Object_(); }
-@method Object_ _rehashFrom(IdentityDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeIfabsent(virtual!Object_, Object_, Object_);
-@method Object_ _removeIfabsent(Set, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(Collection, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(FixedSizeCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(Bag, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(OrderedCollection, Object_, Object_) { return new Object_(); }
-@method Object_ _removeIfabsent(METACLASS_File, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isExternalAddress(virtual!Object_);
-@method Object_ _isExternalAddress(ExternalAddress) { return new Object_(); }
-@method Object_ _isExternalAddress(Object_) { return new Object_(); }
-@mptr("hash") Object_ dividend(virtual!Object_, Object_);
-@method Object_ _dividend(ZeroDivide, Object_) { return new Object_(); }
-@method Object_ _dividend(METACLASS_ZeroDivide, Object_) { return new Object_(); }
-@mptr("hash") Object_ isSelfInitializingObject(virtual!Artificial_Root);
-@method Object_ _isSelfInitializingObject(SelfInitializingObject) { return new Object_(); }
-@method Object_ _isSelfInitializingObject(Object_) { return new Object_(); }
-@mptr("hash") Object_ asByteArray(virtual!String);
-@method Object_ _asByteArray(DoubleByteString) { return new Object_(); }
-@method Object_ _asByteArray(String) { return new Object_(); }
-@mptr("hash") Object_ isDoubleByteString(virtual!Object_);
-@method Object_ _isDoubleByteString(DoubleByteString) { return new Object_(); }
-@method Object_ _isDoubleByteString(Object_) { return new Object_(); }
-@mptr("hash") Object_ fromMixedStringLeadbytes(virtual!Object_, Object_, Object_);
-@method Object_ _fromMixedStringLeadbytes(DoubleByteString, Object_, Object_) { return new Object_(); }
-@method Object_ _fromMixedStringLeadbytes(METACLASS_DoubleByteString, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ asAsciiZ(virtual!String);
-@method Object_ _asAsciiZ(DoubleByteString) { return new Object_(); }
-@method Object_ _asAsciiZ(String) { return new Object_(); }
-@mptr("hash") Object_ associationAtIfabsent(virtual!Dictionary, Object_, Object_);
-@method Object_ _associationAtIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _associationAtIfabsent(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ includesKey(virtual!Dictionary, Object_);
-@method Object_ _includesKey(Dictionary, Object_) { return new Object_(); }
-@method Object_ _includesKey(IdentityDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeAll(virtual!Collection);
-@method Object_ _removeAll(Dictionary) { return new Object_(); }
-@method Object_ _removeAll(Collection) { return new Object_(); }
-@mptr("hash") Object_ atIfabsentput(virtual!Dictionary, Object_, Object_);
-@method Object_ _atIfabsentput(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atIfabsentput(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ keys(virtual!Dictionary);
-@method Object_ _keys(Dictionary) { return new Object_(); }
-@method Object_ _keys(IdentityDictionary) { return new Object_(); }
-@mptr("hash") Object_ associationsDo(virtual!Dictionary, Object_);
-@method Object_ _associationsDo(Dictionary, Object_) { return new Object_(); }
-@method Object_ _associationsDo(IdentityDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeKey(virtual!Dictionary, Object_);
-@method Object_ _removeKey(Dictionary, Object_) { return new Object_(); }
-@method Object_ _removeKey(SystemDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ atIfabsent(virtual!Collection, Object_, Object_);
-@method Object_ _atIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atIfabsent(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _atIfabsent(OrderedCollection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ findKeyIndex(virtual!Dictionary, Object_);
-@method Object_ _findKeyIndex(Dictionary, Object_) { return new Object_(); }
-@method Object_ _findKeyIndex(IdentityDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ keysAndValuesDo(virtual!Dictionary, Object_);
-@method Object_ _keysAndValuesDo(Dictionary, Object_) { return new Object_(); }
-@method Object_ _keysAndValuesDo(IdentityDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ values(virtual!Dictionary);
-@method Object_ _values(Dictionary) { return new Object_(); }
-@method Object_ _values(IdentityDictionary) { return new Object_(); }
-@mptr("hash") Object_ removeKeyIfabsent(virtual!Dictionary, Object_, Object_);
-@method Object_ _removeKeyIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _removeKeyIfabsent(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _removeKeyIfabsent(MethodDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ keyAtValueIfabsent(virtual!Dictionary, Object_, Object_);
-@method Object_ _keyAtValueIfabsent(Dictionary, Object_, Object_) { return new Object_(); }
-@method Object_ _keyAtValueIfabsent(IdentityDictionary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ planes(virtual!Object_);
-@method Object_ _planes(WinBitmapStruct) { return new Object_(); }
-@method Object_ _planes(WinBitmapInfoHeader) { return new Object_(); }
-@method Object_ _planes(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ planes(virtual!ExternalBuffer, Object_);
-@method Object_ _planes(WinBitmapStruct, Object_) { return new Object_(); }
-@method Object_ _planes(WinBitmapInfoHeader, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmCharWith(virtual!Window, Object_, Object_);
-@method Object_ _wmCharWith(DialogBox, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCharWith(EntryField, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCharWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCharWith(ListBox, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ processInput(virtual!Object_);
-@method Object_ _processInput(DialogBox) { return new Object_(); }
-@method Object_ _processInput(DialogTopPane) { return new Object_(); }
-@method Object_ _processInput(WindowDialog) { return new Object_(); }
-@mptr("hash") Object_ itemIds(virtual!DialogBox);
-@method Object_ _itemIds(DialogBox) { return new Object_(); }
-@method Object_ _itemIds(NewSubclassDialog) { return new Object_(); }
-@mptr("hash") Object_ wmCommandWith(virtual!Window, Object_, Object_);
-@method Object_ _wmCommandWith(DialogBox, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCommandWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ paneAt(virtual!Object_, Object_);
-@method Object_ _paneAt(DialogBox, Object_) { return new Object_(); }
-@method Object_ _paneAt(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ statusPane(virtual!Object_);
-@method Object_ _statusPane(DialogBox) { return new Object_(); }
-@method Object_ _statusPane(DialogTopPane) { return new Object_(); }
-@method Object_ _statusPane(Window) { return new Object_(); }
-@method Object_ _statusPane(ApplicationWindow) { return new Object_(); }
-@method Object_ _statusPane(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ cancel(virtual!Window);
-@method Object_ _cancel(DialogBox) { return new Object_(); }
-@method Object_ _cancel(TextPane) { return new Object_(); }
-@method Object_ _cancel(TextPaneControl) { return new Object_(); }
-@method Object_ _cancel(NewSubclassDialog) { return new Object_(); }
-@mptr("hash") Object_ childAtId(virtual!Window, Object_);
-@method Object_ _childAtId(DialogBox, Object_) { return new Object_(); }
-@method Object_ _childAtId(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromModuleId(virtual!Object_, Object_, Object_);
-@method Object_ _fromModuleId(DialogBox, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(Icon, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(METACLASS_CursorManager, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(METACLASS_DIB, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(METACLASS_String, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@method Object_ _fromModuleId(METACLASS_Icon, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmHelpWith(virtual!Window, Object_, Object_);
-@method Object_ _wmHelpWith(DialogBox, Object_, Object_) { return new Object_(); }
-@method Object_ _wmHelpWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmInitdialogWith(virtual!Window, Object_, Object_);
-@method Object_ _wmInitdialogWith(DialogBox, Object_, Object_) { return new Object_(); }
-@method Object_ _wmInitdialogWith(DialogTopPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmInitdialogWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isMessage(virtual!Object_);
-@method Object_ _isMessage(Message) { return new Object_(); }
-@method Object_ _isMessage(Object_) { return new Object_(); }
-@mptr("hash") Object_ receiver(virtual!Object_, Object_);
-@method Object_ _receiver(Message, Object_) { return new Object_(); }
-@method Object_ _receiver(MethodExecutor, Object_) { return new Object_(); }
-@mptr("hash") Object_ isCompiledMethod(virtual!Object_);
-@method Object_ _isCompiledMethod(CompiledMethod) { return new Object_(); }
-@method Object_ _isCompiledMethod(Object_) { return new Object_(); }
-@mptr("hash") Object_ type(virtual!Object_, Object_);
-@method Object_ _type(CompiledMethod, Object_) { return new Object_(); }
-@method Object_ _type(ObjectLibraryExternal, Object_) { return new Object_(); }
-@mptr("hash") Object_ type(virtual!Object_);
-@method Object_ _type(CompiledMethod) { return new Object_(); }
-@method Object_ _type(ObjectLibraryExternal) { return new Object_(); }
-@mptr("hash") Object_ argumentCount(virtual!Object_);
-@method Object_ _argumentCount(CompiledMethod) { return new Object_(); }
-@method Object_ _argumentCount(Context) { return new Object_(); }
-@mptr("hash") Object_ classField(virtual!Collection, Object_);
-@method Object_ _classField(CompiledMethod, Object_) { return new Object_(); }
-@method Object_ _classField(MethodDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ classField(virtual!Object_);
-@method Object_ _classField(CompiledMethod) { return new Object_(); }
-@method Object_ _classField(ClassReader) { return new Object_(); }
-@method Object_ _classField(MethodDictionary) { return new Object_(); }
-@mptr("hash") Object_ recompile(virtual!CompiledMethod);
-@method Object_ _recompile(CompiledMethod) { return new Object_(); }
-@method Object_ _recompile(CompiledInitializer) { return new Object_(); }
-@mptr("hash") Object_ pathName(virtual!Object_, Object_);
-@method Object_ _pathName(Directory, Object_) { return new Object_(); }
-@method Object_ _pathName(METACLASS_File, Object_) { return new Object_(); }
-@method Object_ _pathName(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileReadOnly(virtual!Object_, Object_);
-@method Object_ _fileReadOnly(Directory, Object_) { return new Object_(); }
-@method Object_ _fileReadOnly(DiskBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDirectory(virtual!Object_);
-@method Object_ _isDirectory(Directory) { return new Object_(); }
-@method Object_ _isDirectory(Object_) { return new Object_(); }
-@mptr("hash") Object_ file(virtual!Object_, Object_);
-@method Object_ _file(Directory, Object_) { return new Object_(); }
-@method Object_ _file(DiskBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ rectangle(virtual!Object_, Object_);
-@method Object_ _rectangle(Pen, Object_) { return new Object_(); }
-@method Object_ _rectangle(WinPaintStructure, Object_) { return new Object_(); }
-@mptr("hash") Object_ boxOfSize(virtual!Object_, Object_);
-@method Object_ _boxOfSize(Pen, Object_) { return new Object_(); }
-@method Object_ _boxOfSize(DialogTopPane, Object_) { return new Object_(); }
-@method Object_ _boxOfSize(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ white(virtual!Object_);
-@method Object_ _white(Pen) { return new Object_(); }
-@method Object_ _white(Screen) { return new Object_(); }
-@mptr("hash") Object_ wmDdeExecuteWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeExecuteWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeExecuteWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdePokeWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdePokeWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdePokeWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeAckWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeAckWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeAckWith(DDEAuxClient, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeAckWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeTerminateWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeTerminateWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeTerminateWith(DDEAuxClient, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeTerminateWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ ddeTerminate(virtual!DDEAuxWindow, Object_);
-@method Object_ _ddeTerminate(DDEAuxServer, Object_) { return new Object_(); }
-@method Object_ _ddeTerminate(DDEAuxClient, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeAdviseWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeAdviseWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeAdviseWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ removeClientFromList(virtual!Object_, Object_);
-@method Object_ _removeClientFromList(DDEAuxServer, Object_) { return new Object_(); }
-@method Object_ _removeClientFromList(DDEServer, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeRequestWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeRequestWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeRequestWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeUnadviseWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeUnadviseWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeUnadviseWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmDdeInitiateWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeInitiateWith(DDEAuxServer, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeInitiateWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ fixedSize(virtual!Object_);
-@method Object_ _fixedSize(DrawnButton) { return new Object_(); }
-@method Object_ _fixedSize(METACLASS_WinDropFile) { return new Object_(); }
-@mptr("hash") Object_ drawItem(virtual!Window, Object_);
-@method Object_ _drawItem(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _drawItem(Window, Object_) { return new Object_(); }
-@method Object_ _drawItem(TopPane, Object_) { return new Object_(); }
-@method Object_ _drawItem(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ drawFocus(virtual!Window, Object_);
-@method Object_ _drawFocus(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _drawFocus(Window, Object_) { return new Object_(); }
-@method Object_ _drawFocus(TopPane, Object_) { return new Object_(); }
-@method Object_ _drawFocus(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ disabled(virtual!Window);
-@method Object_ _disabled(DrawnButton) { return new Object_(); }
-@method Object_ _disabled(Window) { return new Object_(); }
-@mptr("hash") Object_ highlight(virtual!Window, Object_);
-@method Object_ _highlight(DrawnButton, Object_) { return new Object_(); }
-@method Object_ _highlight(Window, Object_) { return new Object_(); }
-@method Object_ _highlight(TopPane, Object_) { return new Object_(); }
-@method Object_ _highlight(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ getDC(virtual!Object_);
-@method Object_ _getDC(WindowHandle) { return new Object_(); }
-@method Object_ _getDC(Window) { return new Object_(); }
-@mptr("hash") Object_ disableRedraw(virtual!Object_);
-@method Object_ _disableRedraw(WindowHandle) { return new Object_(); }
-@method Object_ _disableRedraw(Window) { return new Object_(); }
-@mptr("hash") Object_ enableRedraw(virtual!Object_);
-@method Object_ _enableRedraw(WindowHandle) { return new Object_(); }
-@method Object_ _enableRedraw(Window) { return new Object_(); }
-@mptr("hash") Object_ enable(virtual!Object_);
-@method Object_ _enable(WindowHandle) { return new Object_(); }
-@method Object_ _enable(Window) { return new Object_(); }
-@mptr("hash") Object_ propertyAtPut(virtual!Object_, Object_, Object_);
-@method Object_ _propertyAtPut(WindowHandle, Object_, Object_) { return new Object_(); }
-@method Object_ _propertyAtPut(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ propertyAt(virtual!Object_, Object_);
-@method Object_ _propertyAt(WindowHandle, Object_) { return new Object_(); }
-@method Object_ _propertyAt(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ disable(virtual!Object_);
-@method Object_ _disable(WindowHandle) { return new Object_(); }
-@method Object_ _disable(Window) { return new Object_(); }
-@mptr("hash") Object_ noRedraw(virtual!Object_, Object_);
-@method Object_ _noRedraw(WindowHandle, Object_) { return new Object_(); }
-@method Object_ _noRedraw(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ ctlType(virtual!ExternalBuffer);
-@method Object_ _ctlType(WinDrawItemStruct) { return new Object_(); }
-@method Object_ _ctlType(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ itemId(virtual!ExternalBuffer);
-@method Object_ _itemId(WinDrawItemStruct) { return new Object_(); }
-@method Object_ _itemId(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ ctlId(virtual!ExternalBuffer);
-@method Object_ _ctlId(WinDrawItemStruct) { return new Object_(); }
-@method Object_ _ctlId(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ itemData(virtual!ExternalBuffer);
-@method Object_ _itemData(WinDrawItemStruct) { return new Object_(); }
-@method Object_ _itemData(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ imageName(virtual!Object_);
-@method Object_ _imageName(SessionModel) { return new Object_(); }
-@method Object_ _imageName(SystemDictionary) { return new Object_(); }
-@mptr("hash") Object_ isRunTime(virtual!Object_);
-@method Object_ _isRunTime(SessionModel) { return new Object_(); }
-@method Object_ _isRunTime(SystemDictionary) { return new Object_(); }
-@mptr("hash") Object_ getCommandLine(virtual!Object_);
-@method Object_ _getCommandLine(SessionModel) { return new Object_(); }
-@method Object_ _getCommandLine(KernelDLL) { return new Object_(); }
-@method Object_ _getCommandLine(SystemDictionary) { return new Object_(); }
-@mptr("hash") Object_ cr(virtual!Object_);
-@method Object_ _cr(TextTool) { return new Object_(); }
-@method Object_ _cr(TextPane) { return new Object_(); }
-@method Object_ _cr(WriteStream) { return new Object_(); }
-@method Object_ _cr(FileStream) { return new Object_(); }
-@method Object_ _cr(TextPaneControl) { return new Object_(); }
-@method Object_ _cr(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ position(virtual!Object_, Object_);
-@method Object_ _position(ScrollBar, Object_) { return new Object_(); }
-@method Object_ _position(WriteStream, Object_) { return new Object_(); }
-@method Object_ _position(FileStream, Object_) { return new Object_(); }
-@method Object_ _position(Stream, Object_) { return new Object_(); }
-@method Object_ _position(MenuItem, Object_) { return new Object_(); }
-@mptr("hash") Object_ horizontal(virtual!Object_);
-@method Object_ _horizontal(ScrollBar) { return new Object_(); }
-@method Object_ _horizontal(METACLASS_ScrollBar) { return new Object_(); }
-@mptr("hash") Object_ position(virtual!Object_);
-@method Object_ _position(ScrollBar) { return new Object_(); }
-@method Object_ _position(FileStream) { return new Object_(); }
-@method Object_ _position(Stream) { return new Object_(); }
-@method Object_ _position(MenuItem) { return new Object_(); }
-@mptr("hash") Object_ vertical(virtual!Object_);
-@method Object_ _vertical(ScrollBar) { return new Object_(); }
-@method Object_ _vertical(METACLASS_ScrollBar) { return new Object_(); }
-@mptr("hash") Object_ matchBracketFromTo(virtual!SubPane, Object_, Object_);
-@method Object_ _matchBracketFromTo(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _matchBracketFromTo(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ addParens(virtual!SubPane);
-@method Object_ _addParens(TextPane) { return new Object_(); }
-@method Object_ _addParens(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ searchFor(virtual!SubPane, Object_);
-@method Object_ _searchFor(TextPane, Object_) { return new Object_(); }
-@method Object_ _searchFor(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ readWrite(virtual!SubPane);
-@method Object_ _readWrite(TextPane) { return new Object_(); }
-@method Object_ _readWrite(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ scrollTopCornerTo(virtual!SubPane, Object_);
-@method Object_ _scrollTopCornerTo(TextPane, Object_) { return new Object_(); }
-@method Object_ _scrollTopCornerTo(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ addSquareBrackets(virtual!SubPane);
-@method Object_ _addSquareBrackets(TextPane) { return new Object_(); }
-@method Object_ _addSquareBrackets(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ search(virtual!SubPane);
-@method Object_ _search(TextPane) { return new Object_(); }
-@method Object_ _search(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ isTextPane(virtual!Object_);
-@method Object_ _isTextPane(TextPane) { return new Object_(); }
-@method Object_ _isTextPane(Object_) { return new Object_(); }
-@method Object_ _isTextPane(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ matchBracketChars(virtual!SubPane);
-@method Object_ _matchBracketChars(TextPane) { return new Object_(); }
-@method Object_ _matchBracketChars(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ textFont(virtual!Window, Object_);
-@method Object_ _textFont(TextPane, Object_) { return new Object_(); }
-@method Object_ _textFont(Window, Object_) { return new Object_(); }
-@method Object_ _textFont(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ inspectIt(virtual!Object_);
-@method Object_ _inspectIt(TextPane) { return new Object_(); }
-@method Object_ _inspectIt(TextPaneControl) { return new Object_(); }
-@method Object_ _inspectIt(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ searchOld(virtual!SubPane);
-@method Object_ _searchOld(TextPane) { return new Object_(); }
-@method Object_ _searchOld(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ addDoubleQuotes(virtual!SubPane);
-@method Object_ _addDoubleQuotes(TextPane) { return new Object_(); }
-@method Object_ _addDoubleQuotes(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ addSingleQuotes(virtual!SubPane);
-@method Object_ _addSingleQuotes(TextPane) { return new Object_(); }
-@method Object_ _addSingleQuotes(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ setEvaluate(virtual!SubPane, Object_);
-@method Object_ _setEvaluate(TextPane, Object_) { return new Object_(); }
-@method Object_ _setEvaluate(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ findReplace(virtual!SubPane);
-@method Object_ _findReplace(TextPane) { return new Object_(); }
-@method Object_ _findReplace(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ scrollTopCorner(virtual!SubPane, Object_);
-@method Object_ _scrollTopCorner(TextPane, Object_) { return new Object_(); }
-@method Object_ _scrollTopCorner(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ print(virtual!Object_);
-@method Object_ _print(TextPane) { return new Object_(); }
-@method Object_ _print(TextPaneControl) { return new Object_(); }
-@method Object_ _print(ApplicationWindow) { return new Object_(); }
-@method Object_ _print(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ updateRectangle(virtual!Window);
-@method Object_ _updateRectangle(TextPane) { return new Object_(); }
-@method Object_ _updateRectangle(Window) { return new Object_(); }
-@method Object_ _updateRectangle(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ saveCompilerErrorAtInFor(virtual!SubPane, Object_, Object_, Object_, Object_);
-@method Object_ _saveCompilerErrorAtInFor(TextPane, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _saveCompilerErrorAtInFor(TextPaneControl, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectAfter(virtual!Object_, Object_);
-@method Object_ _selectAfter(TextPane, Object_) { return new Object_(); }
-@method Object_ _selectAfter(TextPaneControl, Object_) { return new Object_(); }
-@method Object_ _selectAfter(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ printIt(virtual!Object_);
-@method Object_ _printIt(TextPane) { return new Object_(); }
-@method Object_ _printIt(TextPaneControl) { return new Object_(); }
-@method Object_ _printIt(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ addLeftBracketRightbracket(virtual!SubPane, Object_, Object_);
-@method Object_ _addLeftBracketRightbracket(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _addLeftBracketRightbracket(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ replaceString(virtual!SubPane, Object_);
-@method Object_ _replaceString(TextPane, Object_) { return new Object_(); }
-@method Object_ _replaceString(TextPaneControl, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectFromTo(virtual!SubPane, Object_, Object_);
-@method Object_ _selectFromTo(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _selectFromTo(EntryField, Object_, Object_) { return new Object_(); }
-@method Object_ _selectFromTo(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectAtEnd(virtual!SubPane);
-@method Object_ _selectAtEnd(TextPane) { return new Object_(); }
-@method Object_ _selectAtEnd(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ wmGetdlgcodeWith(virtual!Window, Object_, Object_);
-@method Object_ _wmGetdlgcodeWith(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmGetdlgcodeWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ addCurlyBrackets(virtual!SubPane);
-@method Object_ _addCurlyBrackets(TextPane) { return new Object_(); }
-@method Object_ _addCurlyBrackets(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ wmSetfocusWith(virtual!Window, Object_, Object_);
-@method Object_ _wmSetfocusWith(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSetfocusWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileItIn(virtual!Object_);
-@method Object_ _fileItIn(TextPane) { return new Object_(); }
-@method Object_ _fileItIn(TextPaneControl) { return new Object_(); }
-@method Object_ _fileItIn(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ selectedItem(virtual!SubPane);
-@method Object_ _selectedItem(TextPane) { return new Object_(); }
-@method Object_ _selectedItem(ListBox) { return new Object_(); }
-@method Object_ _selectedItem(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ restore(virtual!Object_);
-@method Object_ _restore(TextPane) { return new Object_(); }
-@method Object_ _restore(DiskBrowser) { return new Object_(); }
-@method Object_ _restore(TextPaneControl) { return new Object_(); }
-@method Object_ _restore(ListBox) { return new Object_(); }
-@method Object_ _restore(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ replaceAtPattern(virtual!SubPane);
-@method Object_ _replaceAtPattern(TextPane) { return new Object_(); }
-@method Object_ _replaceAtPattern(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ characterInput(virtual!Window, Object_);
-@method Object_ _characterInput(TextPane, Object_) { return new Object_(); }
-@method Object_ _characterInput(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectTo(virtual!Object_, Object_);
-@method Object_ _selectTo(TextPane, Object_) { return new Object_(); }
-@method Object_ _selectTo(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmKillfocusWith(virtual!Window, Object_, Object_);
-@method Object_ _wmKillfocusWith(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmKillfocusWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isReadOnly(virtual!SubPane);
-@method Object_ _isReadOnly(TextPane) { return new Object_(); }
-@method Object_ _isReadOnly(EntryField) { return new Object_(); }
-@method Object_ _isReadOnly(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ showSelectionFromTo(virtual!SubPane, Object_, Object_);
-@method Object_ _showSelectionFromTo(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _showSelectionFromTo(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ searchBackOld(virtual!SubPane);
-@method Object_ _searchBackOld(TextPane) { return new Object_(); }
-@method Object_ _searchBackOld(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ button1DownShift(virtual!Window, Object_);
-@method Object_ _button1DownShift(TextPane, Object_) { return new Object_(); }
-@method Object_ _button1DownShift(Window, Object_) { return new Object_(); }
-@method Object_ _button1DownShift(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ selectAll(virtual!SubPane);
-@method Object_ _selectAll(TextPane) { return new Object_(); }
-@method Object_ _selectAll(EntryField) { return new Object_(); }
-@mptr("hash") Object_ readOnly(virtual!Object_);
-@method Object_ _readOnly(TextPane) { return new Object_(); }
-@method Object_ _readOnly(EntryField) { return new Object_(); }
-@method Object_ _readOnly(Icon) { return new Object_(); }
-@method Object_ _readOnly(TextEdit) { return new Object_(); }
-@mptr("hash") Object_ again(virtual!SubPane);
-@method Object_ _again(TextPane) { return new Object_(); }
-@method Object_ _again(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ button1DoubleClick(virtual!Window, Object_);
-@method Object_ _button1DoubleClick(TextPane, Object_) { return new Object_(); }
-@method Object_ _button1DoubleClick(Window, Object_) { return new Object_(); }
-@method Object_ _button1DoubleClick(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ scrollHorizontal(virtual!SubPane, Object_);
-@method Object_ _scrollHorizontal(TextPane, Object_) { return new Object_(); }
-@method Object_ _scrollHorizontal(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ queryReplaceAtPattern(virtual!SubPane);
-@method Object_ _queryReplaceAtPattern(TextPane) { return new Object_(); }
-@method Object_ _queryReplaceAtPattern(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ wmTimerWith(virtual!Window, Object_, Object_);
-@method Object_ _wmTimerWith(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmTimerWith(DDEAuxClient, Object_, Object_) { return new Object_(); }
-@method Object_ _wmTimerWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmTimerWith(TopPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ reinitialize(virtual!Object_);
-@method Object_ _reinitialize(TextPane) { return new Object_(); }
-@method Object_ _reinitialize(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ selectedString(virtual!SubPane);
-@method Object_ _selectedString(TextPane) { return new Object_(); }
-@method Object_ _selectedString(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ clearSelection(virtual!SubPane);
-@method Object_ _clearSelection(TextPane) { return new Object_(); }
-@method Object_ _clearSelection(EntryField) { return new Object_(); }
-@method Object_ _clearSelection(ListBox) { return new Object_(); }
-@method Object_ _clearSelection(MultipleSelectListBox) { return new Object_(); }
-@mptr("hash") Object_ searchForDefaultTextPane(virtual!Window);
-@method Object_ _searchForDefaultTextPane(TextPane) { return new Object_(); }
-@method Object_ _searchForDefaultTextPane(TextPaneControl) { return new Object_(); }
-@method Object_ _searchForDefaultTextPane(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ accept(virtual!Object_);
-@method Object_ _accept(TextPane) { return new Object_(); }
-@method Object_ _accept(TextPaneControl) { return new Object_(); }
-@method Object_ _accept(ApplicationWindow) { return new Object_(); }
-@method Object_ _accept(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ evaluateIferror(virtual!TextPane, Object_, Object_);
-@method Object_ _evaluateIferror(TextPane, Object_, Object_) { return new Object_(); }
-@method Object_ _evaluateIferror(WorkspaceTextPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ printSelection(virtual!SubPane);
-@method Object_ _printSelection(TextPane) { return new Object_(); }
-@method Object_ _printSelection(TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ hideSelection(virtual!Object_);
-@method Object_ _hideSelection(TextPane) { return new Object_(); }
-@method Object_ _hideSelection(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ deviceContext(virtual!Object_);
-@method Object_ _deviceContext(GraphicsMedium) { return new Object_(); }
-@method Object_ _deviceContext(Window) { return new Object_(); }
-@mptr("hash") Object_ graphicsTool(virtual!Object_, Object_);
-@method Object_ _graphicsTool(GraphicsMedium, Object_) { return new Object_(); }
-@method Object_ _graphicsTool(Window, Object_) { return new Object_(); }
-@mptr("hash") Object_ pen(virtual!Object_);
-@method Object_ _pen(GraphicsMedium) { return new Object_(); }
-@method Object_ _pen(Window) { return new Object_(); }
-@method Object_ _pen(ControlPane) { return new Object_(); }
-@method Object_ _pen(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ openOnLabel(virtual!Object_, Object_, Object_);
-@method Object_ _openOnLabel(WalkbackWindow, Object_, Object_) { return new Object_(); }
-@method Object_ _openOnLabel(METACLASS_WalkbackWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openModal(virtual!Object_, Object_);
-@method Object_ _openModal(DialogTopPane, Object_) { return new Object_(); }
-@method Object_ _openModal(WindowDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmPaintWith(virtual!Window, Object_, Object_);
-@method Object_ _wmPaintWith(DialogTopPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmPaintWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmPaintWith(ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmPaintWith(GraphPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmSizeWith(virtual!Window, Object_, Object_);
-@method Object_ _wmSizeWith(DialogTopPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSizeWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSizeWith(GraphPane, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSizeWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDialogTopPane(virtual!Object_);
-@method Object_ _isDialogTopPane(DialogTopPane) { return new Object_(); }
-@method Object_ _isDialogTopPane(Object_) { return new Object_(); }
-@mptr("hash") Object_ openModeless(virtual!Object_);
-@method Object_ _openModeless(DialogTopPane) { return new Object_(); }
-@method Object_ _openModeless(WindowDialog) { return new Object_(); }
-@mptr("hash") Object_ addSystemMenus(virtual!WindowPolicy);
-@method Object_ _addSystemMenus(CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _addSystemMenus(WindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ addStandardLeftMenus(virtual!WindowPolicy);
-@method Object_ _addStandardLeftMenus(CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _addStandardLeftMenus(SmalltalkWindowPolicy) { return new Object_(); }
-@method Object_ _addStandardLeftMenus(StandardWindowPolicy) { return new Object_(); }
-@method Object_ _addStandardLeftMenus(WindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ addSmalltalkMenu(virtual!StandardWindowPolicy);
-@method Object_ _addSmalltalkMenu(CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _addSmalltalkMenu(SmalltalkWindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ isCollection(virtual!Object_);
-@method Object_ _isCollection(Collection) { return new Object_(); }
-@method Object_ _isCollection(Object_) { return new Object_(); }
-@mptr("hash") Object_ remove(virtual!Object_, Object_);
-@method Object_ _remove(Collection, Object_) { return new Object_(); }
-@method Object_ _remove(NotificationManager, Object_) { return new Object_(); }
-@method Object_ _remove(METACLASS_File, Object_) { return new Object_(); }
-@method Object_ _remove(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ collect(virtual!Collection, Object_);
-@method Object_ _collect(Collection, Object_) { return new Object_(); }
-@method Object_ _collect(FixedSizeCollection, Object_) { return new Object_(); }
-@mptr("hash") Object_ errorNotIndexable(virtual!Object_);
-@method Object_ _errorNotIndexable(Collection) { return new Object_(); }
-@method Object_ _errorNotIndexable(Behavior) { return new Object_(); }
-@mptr("hash") Object_ isEmpty(virtual!Object_);
-@method Object_ _isEmpty(Collection) { return new Object_(); }
-@method Object_ _isEmpty(Stream) { return new Object_(); }
-@mptr("hash") Object_ makeActive(virtual!Window);
-@method Object_ _makeActive(DDEAuxWindow) { return new Object_(); }
-@method Object_ _makeActive(Window) { return new Object_(); }
-@mptr("hash") Object_ waitForData(virtual!DDEAuxWindow);
-@method Object_ _waitForData(DDEAuxWindow) { return new Object_(); }
-@method Object_ _waitForData(DDEAuxClient) { return new Object_(); }
-@mptr("hash") Object_ wmDdeDataWith(virtual!Window, Object_, Object_);
-@method Object_ _wmDdeDataWith(DDEAuxClient, Object_, Object_) { return new Object_(); }
-@method Object_ _wmDdeDataWith(Window, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ message(virtual!Object_, Object_);
-@method Object_ _message(MessageBox, Object_) { return new Object_(); }
-@method Object_ _message(ProgressIndicatorDialog, Object_) { return new Object_(); }
-@method Object_ _message(MessageNotUnderstood, Object_) { return new Object_(); }
-@method Object_ _message(METACLASS_Menu, Object_) { return new Object_(); }
-@method Object_ _message(METACLASS_MessageBox, Object_) { return new Object_(); }
-@method Object_ _message(METACLASS_MessageNotUnderstood, Object_) { return new Object_(); }
-@mptr("hash") Object_ ok(virtual!DialogBox);
-@method Object_ _ok(MessageBox) { return new Object_(); }
-@method Object_ _ok(NewSubclassDialog) { return new Object_(); }
-@mptr("hash") Object_ asUpperCase(virtual!Object_);
-@method Object_ _asUpperCase(Character) { return new Object_(); }
-@method Object_ _asUpperCase(String) { return new Object_(); }
-@mptr("hash") Object_ asLowerCase(virtual!Object_);
-@method Object_ _asLowerCase(Character) { return new Object_(); }
-@method Object_ _asLowerCase(String) { return new Object_(); }
-@mptr("hash") Object_ asCharacter(virtual!Magnitude);
-@method Object_ _asCharacter(Character) { return new Object_(); }
-@method Object_ _asCharacter(Integer) { return new Object_(); }
-@mptr("hash") Object_ toDo(virtual!Magnitude, Object_, Object_);
-@method Object_ _toDo(Character, Object_, Object_) { return new Object_(); }
-@method Object_ _toDo(Number, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isCharacter(virtual!Object_);
-@method Object_ _isCharacter(Character) { return new Object_(); }
-@method Object_ _isCharacter(Object_) { return new Object_(); }
-@mptr("hash") Object_ to(virtual!Magnitude, Object_);
-@method Object_ _to(Character, Object_) { return new Object_(); }
-@method Object_ _to(Number, Object_) { return new Object_(); }
-@mptr("hash") Object_ toBy(virtual!Magnitude, Object_, Object_);
-@method Object_ _toBy(Character, Object_, Object_) { return new Object_(); }
-@method Object_ _toBy(Number, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ toByDo(virtual!Magnitude, Object_, Object_, Object_);
-@method Object_ _toByDo(Character, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _toByDo(Number, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ implementorsOf(virtual!Object_, Object_);
-@method Object_ _implementorsOf(Behavior, Object_) { return new Object_(); }
-@method Object_ _implementorsOf(SystemDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ isFixed(virtual!Object_);
-@method Object_ _isFixed(Behavior) { return new Object_(); }
-@method Object_ _isFixed(NewSubclassDialog) { return new Object_(); }
-@mptr("hash") Object_ pools(virtual!Object_);
-@method Object_ _pools(Behavior) { return new Object_(); }
-@method Object_ _pools(WorkspaceTextPane) { return new Object_(); }
-@mptr("hash") Object_ sendersOf(virtual!Object_, Object_);
-@method Object_ _sendersOf(Behavior, Object_) { return new Object_(); }
-@method Object_ _sendersOf(SystemDictionary, Object_) { return new Object_(); }
-@mptr("hash") Object_ compile(virtual!Object_, Object_);
-@method Object_ _compile(Behavior, Object_) { return new Object_(); }
-@method Object_ _compile(CompilerInterface, Object_) { return new Object_(); }
-@mptr("hash") Object_ isBehavior(virtual!Object_);
-@method Object_ _isBehavior(Behavior) { return new Object_(); }
-@method Object_ _isBehavior(Object_) { return new Object_(); }
-@mptr("hash") Object_ setCompilationOptions(virtual!Behavior, Object_);
-@method Object_ _setCompilationOptions(Behavior, Object_) { return new Object_(); }
-@method Object_ _setCompilationOptions(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
-@mptr("hash") Object_ space(virtual!Object_);
-@method Object_ _space(WriteStream) { return new Object_(); }
-@method Object_ _space(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ putBytesFromFromTo(virtual!WriteStream, Object_, Object_, Object_);
-@method Object_ _putBytesFromFromTo(WriteStream, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _putBytesFromFromTo(FileStream, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ tab(virtual!Object_);
-@method Object_ _tab(WriteStream) { return new Object_(); }
-@method Object_ _tab(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ isBoolean(virtual!Object_);
-@method Object_ _isBoolean(Object_) { return new Object_(); }
-@method Object_ _isBoolean(Boolean) { return new Object_(); }
-@mptr("hash") Object_ isFileStream(virtual!Object_);
-@method Object_ _isFileStream(Object_) { return new Object_(); }
-@method Object_ _isFileStream(FileStream) { return new Object_(); }
-@mptr("hash") Object_ isGroupBox(virtual!Object_);
-@method Object_ _isGroupBox(Object_) { return new Object_(); }
-@method Object_ _isGroupBox(GroupBox) { return new Object_(); }
-@mptr("hash") Object_ isString(virtual!Object_);
-@method Object_ _isString(Object_) { return new Object_(); }
-@method Object_ _isString(String) { return new Object_(); }
-@mptr("hash") Object_ isBitmap(virtual!Object_);
-@method Object_ _isBitmap(Object_) { return new Object_(); }
-@method Object_ _isBitmap(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ printString(virtual!Object_);
-@method Object_ _printString(Object_) { return new Object_(); }
-@method Object_ _printString(SmallInteger) { return new Object_(); }
-@mptr("hash") Object_ eventTableCreate(virtual!Object_);
-@method Object_ _eventTableCreate(Object_) { return new Object_(); }
-@method Object_ _eventTableCreate(TopPane) { return new Object_(); }
-@mptr("hash") Object_ canTriggerEvent(virtual!Object_, Object_);
-@method Object_ _canTriggerEvent(Object_, Object_) { return new Object_(); }
-@method Object_ _canTriggerEvent(METACLASS_Menu, Object_) { return new Object_(); }
-@method Object_ _canTriggerEvent(METACLASS_SessionModel, Object_) { return new Object_(); }
-@method Object_ _canTriggerEvent(METACLASS_Object, Object_) { return new Object_(); }
-@method Object_ _canTriggerEvent(METACLASS_Window, Object_) { return new Object_(); }
-@method Object_ _canTriggerEvent(METACLASS_ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ basicAt(virtual!Object_, Object_);
-@method Object_ _basicAt(Object_, Object_) { return new Object_(); }
-@method Object_ _basicAt(String, Object_) { return new Object_(); }
-@mptr("hash") Object_ isStream(virtual!Object_);
-@method Object_ _isStream(Object_) { return new Object_(); }
-@method Object_ _isStream(Stream) { return new Object_(); }
-@mptr("hash") Object_ isFloat(virtual!Object_);
-@method Object_ _isFloat(Object_) { return new Object_(); }
-@method Object_ _isFloat(Float) { return new Object_(); }
-@mptr("hash") Object_ isInteger(virtual!Object_);
-@method Object_ _isInteger(Object_) { return new Object_(); }
-@method Object_ _isInteger(Integer) { return new Object_(); }
-@mptr("hash") Object_ changed(virtual!Object_, Object_);
-@method Object_ _changed(Object_, Object_) { return new Object_(); }
-@method Object_ _changed(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _changed(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ dependents(virtual!Object_);
-@method Object_ _dependents(Object_) { return new Object_(); }
-@method Object_ _dependents(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ isNil(virtual!Object_);
-@method Object_ _isNil(Object_) { return new Object_(); }
-@method Object_ _isNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ isContext(virtual!Object_);
-@method Object_ _isContext(Object_) { return new Object_(); }
-@method Object_ _isContext(Context) { return new Object_(); }
-@mptr("hash") Object_ isPoint(virtual!Object_);
-@method Object_ _isPoint(Object_) { return new Object_(); }
-@method Object_ _isPoint(Point) { return new Object_(); }
-@mptr("hash") Object_ isSmallInteger(virtual!Object_);
-@method Object_ _isSmallInteger(Object_) { return new Object_(); }
-@method Object_ _isSmallInteger(SmallInteger) { return new Object_(); }
-@mptr("hash") Object_ isFont(virtual!Object_);
-@method Object_ _isFont(Object_) { return new Object_(); }
-@method Object_ _isFont(Font) { return new Object_(); }
-@mptr("hash") Object_ isGraphPane(virtual!Object_);
-@method Object_ _isGraphPane(Object_) { return new Object_(); }
-@method Object_ _isGraphPane(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ isTopPane(virtual!Object_);
-@method Object_ _isTopPane(Object_) { return new Object_(); }
-@method Object_ _isTopPane(TopPane) { return new Object_(); }
-@mptr("hash") Object_ isIcon(virtual!Object_);
-@method Object_ _isIcon(Object_) { return new Object_(); }
-@method Object_ _isIcon(Icon) { return new Object_(); }
-@mptr("hash") Object_ isRectangle(virtual!Object_);
-@method Object_ _isRectangle(Object_) { return new Object_(); }
-@method Object_ _isRectangle(Rectangle) { return new Object_(); }
-@mptr("hash") Object_ isNumber(virtual!Object_);
-@method Object_ _isNumber(Object_) { return new Object_(); }
-@method Object_ _isNumber(Number) { return new Object_(); }
-@mptr("hash") Object_ changedWith(virtual!Object_, Object_, Object_);
-@method Object_ _changedWith(Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _changedWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@method Object_ _changedWith(ViewManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isMethodDictionary(virtual!Object_);
-@method Object_ _isMethodDictionary(Object_) { return new Object_(); }
-@method Object_ _isMethodDictionary(MethodDictionary) { return new Object_(); }
-@mptr("hash") Object_ basicAtPut(virtual!Object_, Object_, Object_);
-@method Object_ _basicAtPut(Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _basicAtPut(String, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isDynamicLinkLibrary(virtual!Object_);
-@method Object_ _isDynamicLinkLibrary(Object_) { return new Object_(); }
-@method Object_ _isDynamicLinkLibrary(DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ changedWithWith(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _changedWithWith(Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _changedWithWith(ApplicationWindow, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _changedWithWith(ViewManager, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ isArray(virtual!Object_);
-@method Object_ _isArray(Object_) { return new Object_(); }
-@method Object_ _isArray(Array) { return new Object_(); }
-@mptr("hash") Object_ notNil(virtual!Object_);
-@method Object_ _notNil(Object_) { return new Object_(); }
-@method Object_ _notNil(UndefinedObject) { return new Object_(); }
-@mptr("hash") Object_ isTextSelection(virtual!Object_);
-@method Object_ _isTextSelection(Object_) { return new Object_(); }
-@method Object_ _isTextSelection(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ isFraction(virtual!Object_);
-@method Object_ _isFraction(Object_) { return new Object_(); }
-@method Object_ _isFraction(Fraction) { return new Object_(); }
-@mptr("hash") Object_ isObjectLibraryExternal(virtual!Object_);
-@method Object_ _isObjectLibraryExternal(Object_) { return new Object_(); }
-@method Object_ _isObjectLibraryExternal(ObjectLibraryExternal) { return new Object_(); }
-@mptr("hash") Object_ backupOver(virtual!Stream, Object_);
-@method Object_ _backupOver(FileStream, Object_) { return new Object_(); }
-@method Object_ _backupOver(Stream, Object_) { return new Object_(); }
-@mptr("hash") Object_ file(virtual!Object_);
-@method Object_ _file(FileStream) { return new Object_(); }
-@method Object_ _file(DiskBrowser) { return new Object_(); }
-@method Object_ _file(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ nextLine(virtual!Stream);
-@method Object_ _nextLine(FileStream) { return new Object_(); }
-@method Object_ _nextLine(Stream) { return new Object_(); }
-@mptr("hash") Object_ readLimit(virtual!Stream);
-@method Object_ _readLimit(FileStream) { return new Object_(); }
-@method Object_ _readLimit(Stream) { return new Object_(); }
-@mptr("hash") Object_ nextChunk(virtual!Stream);
-@method Object_ _nextChunk(FileStream) { return new Object_(); }
-@method Object_ _nextChunk(Stream) { return new Object_(); }
-@mptr("hash") Object_ atEnd(virtual!Stream);
-@method Object_ _atEnd(FileStream) { return new Object_(); }
-@method Object_ _atEnd(Stream) { return new Object_(); }
-@mptr("hash") Object_ lineDelimiter(virtual!Stream, Object_);
-@method Object_ _lineDelimiter(FileStream, Object_) { return new Object_(); }
-@method Object_ _lineDelimiter(Stream, Object_) { return new Object_(); }
-@mptr("hash") Object_ lineDelimiter(virtual!Stream);
-@method Object_ _lineDelimiter(FileStream) { return new Object_(); }
-@method Object_ _lineDelimiter(Stream) { return new Object_(); }
-@mptr("hash") Object_ readOnly(virtual!Object_, Object_);
-@method Object_ _readOnly(EntryField, Object_) { return new Object_(); }
-@method Object_ _readOnly(Icon, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmCharResultFor(virtual!EntryField, Object_);
-@method Object_ _wmCharResultFor(EntryField, Object_) { return new Object_(); }
-@method Object_ _wmCharResultFor(TextEdit, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileOut(virtual!Object_);
-@method Object_ _fileOut(ClassReader) { return new Object_(); }
-@method Object_ _fileOut(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ getClassIfabsent(virtual!Object_, Object_, Object_);
-@method Object_ _getClassIfabsent(ObjectLibraryExternal, Object_, Object_) { return new Object_(); }
-@method Object_ _getClassIfabsent(METACLASS_ObjectLibraryExternal, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ resolve(virtual!Object_);
-@method Object_ _resolve(ObjectLibraryExternal) { return new Object_(); }
-@method Object_ _resolve(ObjectLibraryBind) { return new Object_(); }
-@mptr("hash") Object_ queryProcAddr(virtual!DynamicLinkLibrary, Object_);
-@method Object_ _queryProcAddr(DynamicLinkLibrary16, Object_) { return new Object_(); }
-@method Object_ _queryProcAddr(DynamicLinkLibrary, Object_) { return new Object_(); }
-@mptr("hash") Object_ getResourceStringId(virtual!DynamicLinkLibrary, Object_, Object_);
-@method Object_ _getResourceStringId(DynamicLinkLibrary16, Object_, Object_) { return new Object_(); }
-@method Object_ _getResourceStringId(DynamicLinkLibrary, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ rectangle(virtual!Object_);
-@method Object_ _rectangle(WinPaintStructure) { return new Object_(); }
-@method Object_ _rectangle(Window) { return new Object_(); }
-@mptr("hash") Object_ sendInputEventWith(virtual!Object_, Object_, Object_);
-@method Object_ _sendInputEventWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _sendInputEventWith(ViewManager, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ measureControl(virtual!Window, Object_);
-@method Object_ _measureControl(Window, Object_) { return new Object_(); }
-@method Object_ _measureControl(TopPane, Object_) { return new Object_(); }
-@method Object_ _measureControl(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ listFont(virtual!Window, Object_);
-@method Object_ _listFont(Window, Object_) { return new Object_(); }
-@method Object_ _listFont(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ canTab(virtual!Window);
-@method Object_ _canTab(Window) { return new Object_(); }
-@method Object_ _canTab(StaticPane) { return new Object_(); }
-@method Object_ _canTab(TopPane) { return new Object_(); }
-@method Object_ _canTab(GroupBox) { return new Object_(); }
-@mptr("hash") Object_ previousTabStop(virtual!Window, Object_);
-@method Object_ _previousTabStop(Window, Object_) { return new Object_(); }
-@method Object_ _previousTabStop(GroupPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ sizeChanged(virtual!Window, Object_);
-@method Object_ _sizeChanged(Window, Object_) { return new Object_(); }
-@method Object_ _sizeChanged(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ button2Move(virtual!Window, Object_);
-@method Object_ _button2Move(Window, Object_) { return new Object_(); }
-@method Object_ _button2Move(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmInitmenuWith(virtual!Window, Object_, Object_);
-@method Object_ _wmInitmenuWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmInitmenuWith(TopPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmLbuttondblclkWith(virtual!Window, Object_, Object_);
-@method Object_ _wmLbuttondblclkWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmLbuttondblclkWith(TextPaneControl, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ parent(virtual!Object_, Object_);
-@method Object_ _parent(Window, Object_) { return new Object_(); }
-@method Object_ _parent(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmQueryendsessionWith(virtual!Window, Object_, Object_);
-@method Object_ _wmQueryendsessionWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmQueryendsessionWith(TopPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmSyscommandWith(virtual!Window, Object_, Object_);
-@method Object_ _wmSyscommandWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSyscommandWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmQuerydragiconWith(virtual!Window, Object_, Object_);
-@method Object_ _wmQuerydragiconWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmQuerydragiconWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ controlColor(virtual!Window, Object_);
-@method Object_ _controlColor(Window, Object_) { return new Object_(); }
-@method Object_ _controlColor(ControlPane, Object_) { return new Object_(); }
-@method Object_ _controlColor(GroupPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ model(virtual!Object_, Object_);
-@method Object_ _model(Window, Object_) { return new Object_(); }
-@method Object_ _model(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ tabScope(virtual!Window);
-@method Object_ _tabScope(Window) { return new Object_(); }
-@method Object_ _tabScope(TopPane) { return new Object_(); }
-@method Object_ _tabScope(GroupPane) { return new Object_(); }
-@mptr("hash") Object_ systemMenuHandle(virtual!Window);
-@method Object_ _systemMenuHandle(Window) { return new Object_(); }
-@method Object_ _systemMenuHandle(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ wmCreateWith(virtual!Window, Object_, Object_);
-@method Object_ _wmCreateWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmCreateWith(ApplicationWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ button2DoubleClick(virtual!Window, Object_);
-@method Object_ _button2DoubleClick(Window, Object_) { return new Object_(); }
-@method Object_ _button2DoubleClick(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmMousemoveWith(virtual!Window, Object_, Object_);
-@method Object_ _wmMousemoveWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmMousemoveWith(ListBox, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ wmSetcursorWith(virtual!Window, Object_, Object_);
-@method Object_ _wmSetcursorWith(Window, Object_, Object_) { return new Object_(); }
-@method Object_ _wmSetcursorWith(ControlPane, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ sendInputEvent(virtual!Object_, Object_);
-@method Object_ _sendInputEvent(Window, Object_) { return new Object_(); }
-@method Object_ _sendInputEvent(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ nextTabStop(virtual!Window, Object_);
-@method Object_ _nextTabStop(Window, Object_) { return new Object_(); }
-@method Object_ _nextTabStop(GroupPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ itemSize(virtual!Window);
-@method Object_ _itemSize(Window) { return new Object_(); }
-@method Object_ _itemSize(ListBox) { return new Object_(); }
-@mptr("hash") Object_ button2Down(virtual!Window, Object_);
-@method Object_ _button2Down(Window, Object_) { return new Object_(); }
-@method Object_ _button2Down(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ drawIndex(virtual!Window);
-@method Object_ _drawIndex(Window) { return new Object_(); }
-@method Object_ _drawIndex(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ isHandleOk(virtual!Window);
-@method Object_ _isHandleOk(Window) { return new Object_(); }
-@method Object_ _isHandleOk(ControlPane) { return new Object_(); }
-@mptr("hash") Object_ activate(virtual!Window);
-@method Object_ _activate(Window) { return new Object_(); }
-@method Object_ _activate(TopPane) { return new Object_(); }
-@method Object_ _activate(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ itemSize(virtual!Window, Object_);
-@method Object_ _itemSize(Window, Object_) { return new Object_(); }
-@method Object_ _itemSize(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ addSubpane(virtual!Object_, Object_);
-@method Object_ _addSubpane(Window, Object_) { return new Object_(); }
-@method Object_ _addSubpane(TopPane, Object_) { return new Object_(); }
-@method Object_ _addSubpane(GroupPane, Object_) { return new Object_(); }
-@method Object_ _addSubpane(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ ownerDrawPen(virtual!Window);
-@method Object_ _ownerDrawPen(Window) { return new Object_(); }
-@method Object_ _ownerDrawPen(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ graphicsTool(virtual!Window);
-@method Object_ _graphicsTool(Window) { return new Object_(); }
-@method Object_ _graphicsTool(ControlPane) { return new Object_(); }
-@mptr("hash") Object_ truncated(virtual!Object_);
-@method Object_ _truncated(Fraction) { return new Object_(); }
-@method Object_ _truncated(Number) { return new Object_(); }
-@method Object_ _truncated(Integer) { return new Object_(); }
-@method Object_ _truncated(Float) { return new Object_(); }
-@method Object_ _truncated(Point) { return new Object_(); }
-@method Object_ _truncated(Rectangle) { return new Object_(); }
-@mptr("hash") Object_ reciprocal(virtual!Number);
-@method Object_ _reciprocal(Fraction) { return new Object_(); }
-@method Object_ _reciprocal(Number) { return new Object_(); }
-@method Object_ _reciprocal(Integer) { return new Object_(); }
-@method Object_ _reciprocal(Float) { return new Object_(); }
-@mptr("hash") Object_ denominator(virtual!Number);
-@method Object_ _denominator(Fraction) { return new Object_(); }
-@method Object_ _denominator(Number) { return new Object_(); }
-@mptr("hash") Object_ asFloat(virtual!Object_);
-@method Object_ _asFloat(Fraction) { return new Object_(); }
-@method Object_ _asFloat(String) { return new Object_(); }
-@method Object_ _asFloat(Integer) { return new Object_(); }
-@method Object_ _asFloat(Float) { return new Object_(); }
-@mptr("hash") Object_ numerator(virtual!Number);
-@method Object_ _numerator(Fraction) { return new Object_(); }
-@method Object_ _numerator(Number) { return new Object_(); }
-@mptr("hash") Object_ squared(virtual!Number);
-@method Object_ _squared(Fraction) { return new Object_(); }
-@method Object_ _squared(Number) { return new Object_(); }
-@mptr("hash") Object_ numeratorDenominator(virtual!Object_, Object_, Object_);
-@method Object_ _numeratorDenominator(Fraction, Object_, Object_) { return new Object_(); }
-@method Object_ _numeratorDenominator(METACLASS_Fraction, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ rem(virtual!Number, Object_);
-@method Object_ _rem(SmallInteger, Object_) { return new Object_(); }
-@method Object_ _rem(Number, Object_) { return new Object_(); }
-@method Object_ _rem(Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ exit(virtual!Object_);
-@method Object_ _exit(VirtualMachineDLL) { return new Object_(); }
-@method Object_ _exit(SystemDictionary) { return new Object_(); }
-@method Object_ _exit(METACLASS_HelpManager) { return new Object_(); }
-@method Object_ _exit(METACLASS_ExternalHeapHandle) { return new Object_(); }
-@method Object_ _exit(METACLASS_SystemWindow) { return new Object_(); }
-@method Object_ _exit(METACLASS_CallBack) { return new Object_(); }
-@method Object_ _exit(METACLASS_Printer) { return new Object_(); }
-@method Object_ _exit(METACLASS_VirtualMachineDLL) { return new Object_(); }
-@method Object_ _exit(METACLASS_Bitmap) { return new Object_(); }
-@method Object_ _exit(METACLASS_Icon) { return new Object_(); }
-@method Object_ _exit(METACLASS_ObjectLibraryBind) { return new Object_(); }
-@method Object_ _exit(METACLASS_Screen) { return new Object_(); }
-@mptr("hash") Object_ fileName(virtual!Object_);
-@method Object_ _fileName(String) { return new Object_(); }
-@method Object_ _fileName(METACLASS_VirtualMachineExe) { return new Object_(); }
-@method Object_ _fileName(METACLASS_UserDLL) { return new Object_(); }
-@method Object_ _fileName(METACLASS_ThunkDLL16) { return new Object_(); }
-@method Object_ _fileName(METACLASS_ShellDLL) { return new Object_(); }
-@method Object_ _fileName(METACLASS_VirtualMachineDLL) { return new Object_(); }
-@method Object_ _fileName(METACLASS_KernelDLL) { return new Object_(); }
-@method Object_ _fileName(METACLASS_KernelDLL16) { return new Object_(); }
-@method Object_ _fileName(METACLASS_CommonDialogDLL) { return new Object_(); }
-@method Object_ _fileName(METACLASS_GDIDLL) { return new Object_(); }
-@mptr("hash") Object_ outputToPrinter(virtual!Object_);
-@method Object_ _outputToPrinter(String) { return new Object_(); }
-@method Object_ _outputToPrinter(Bitmap) { return new Object_(); }
-@method Object_ _outputToPrinter(Screen) { return new Object_(); }
-@mptr("hash") Object_ undeclaredAssignment(virtual!CompilerErrorHandler, Object_);
-@method Object_ _undeclaredAssignment(WorkspaceErrorHandler, Object_) { return new Object_(); }
-@method Object_ _undeclaredAssignment(TextPaneErrorHandler, Object_) { return new Object_(); }
-@method Object_ _undeclaredAssignment(TraditionalCompilerErrorHandler, Object_) { return new Object_(); }
-@method Object_ _undeclaredAssignment(CompilerErrorHandler, Object_) { return new Object_(); }
-@mptr("hash") Object_ check(virtual!Object_);
-@method Object_ _check(CheckBox) { return new Object_(); }
-@method Object_ _check(ObjectLibraryBind) { return new Object_(); }
-@mptr("hash") Object_ freeLibrary(virtual!DynamicLinkLibrary, Object_);
-@method Object_ _freeLibrary(KernelDLL, Object_) { return new Object_(); }
-@method Object_ _freeLibrary(KernelDLL16, Object_) { return new Object_(); }
-@mptr("hash") Object_ loadLibrary(virtual!DynamicLinkLibrary, Object_);
-@method Object_ _loadLibrary(KernelDLL, Object_) { return new Object_(); }
-@method Object_ _loadLibrary(KernelDLL16, Object_) { return new Object_(); }
-@mptr("hash") Object_ getProcAddressProcname(virtual!DynamicLinkLibrary, Object_, Object_);
-@method Object_ _getProcAddressProcname(KernelDLL, Object_, Object_) { return new Object_(); }
-@method Object_ _getProcAddressProcname(KernelDLL16, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ getModuleHandle(virtual!DynamicLinkLibrary, Object_);
-@method Object_ _getModuleHandle(KernelDLL, Object_) { return new Object_(); }
-@method Object_ _getModuleHandle(KernelDLL16, Object_) { return new Object_(); }
-@mptr("hash") Object_ status(virtual!Object_);
-@method Object_ _status(ProcessScheduler) { return new Object_(); }
-@method Object_ _status(METACLASS_Float) { return new Object_(); }
-@mptr("hash") Object_ yield(virtual!Object_);
-@method Object_ _yield(ProcessScheduler) { return new Object_(); }
-@method Object_ _yield(NotificationManager) { return new Object_(); }
-@mptr("hash") Object_ terminateActive(virtual!Object_);
-@method Object_ _terminateActive(ProcessScheduler) { return new Object_(); }
-@method Object_ _terminateActive(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ copyStack(virtual!Object_);
-@method Object_ _copyStack(ProcessScheduler) { return new Object_(); }
-@method Object_ _copyStack(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ flip(virtual!Object_);
-@method Object_ _flip(ProcessScheduler) { return new Object_(); }
-@method Object_ _flip(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ okToClose(virtual!Object_);
-@method Object_ _okToClose(TopPane) { return new Object_(); }
-@method Object_ _okToClose(Prompter) { return new Object_(); }
-@mptr("hash") Object_ triggerOpenedEvent(virtual!ApplicationWindow);
-@method Object_ _triggerOpenedEvent(TopPane) { return new Object_(); }
-@method Object_ _triggerOpenedEvent(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ show(virtual!Object_, Object_);
-@method Object_ _show(Stream, Object_) { return new Object_(); }
-@method Object_ _show(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ fileIn(virtual!Object_);
-@method Object_ _fileIn(Stream) { return new Object_(); }
-@method Object_ _fileIn(FileDialog) { return new Object_(); }
-@mptr("hash") Object_ nextPut(virtual!Object_, Object_, Object_);
-@method Object_ _nextPut(Stream, Object_, Object_) { return new Object_(); }
-@method Object_ _nextPut(TextWindow, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ directory(virtual!Object_, Object_);
-@method Object_ _directory(DiskBrowser, Object_) { return new Object_(); }
-@method Object_ _directory(FileDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ hideShow(virtual!ViewManager, Object_);
-@method Object_ _hideShow(DiskBrowser, Object_) { return new Object_(); }
-@method Object_ _hideShow(ClassHierarchyBrowser, Object_) { return new Object_(); }
-@mptr("hash") Object_ dropped(virtual!ViewManager, Object_);
-@method Object_ _dropped(DiskBrowser, Object_) { return new Object_(); }
-@method Object_ _dropped(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ hideShow(virtual!ViewManager);
-@method Object_ _hideShow(DiskBrowser) { return new Object_(); }
-@method Object_ _hideShow(ClassHierarchyBrowser) { return new Object_(); }
-@mptr("hash") Object_ ceiling(virtual!Number);
-@method Object_ _ceiling(Number) { return new Object_(); }
-@method Object_ _ceiling(Integer) { return new Object_(); }
-@mptr("hash") Object_ radiansToDegrees(virtual!Number);
-@method Object_ _radiansToDegrees(Number) { return new Object_(); }
-@method Object_ _radiansToDegrees(Float) { return new Object_(); }
-@mptr("hash") Object_ degreesToRadians(virtual!Number);
-@method Object_ _degreesToRadians(Number) { return new Object_(); }
-@method Object_ _degreesToRadians(Float) { return new Object_(); }
-@mptr("hash") Object_ truncateTo(virtual!Object_, Object_);
-@method Object_ _truncateTo(Number, Object_) { return new Object_(); }
-@method Object_ _truncateTo(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ printFraction(virtual!Number, Object_);
-@method Object_ _printFraction(Number, Object_) { return new Object_(); }
-@method Object_ _printFraction(Float, Object_) { return new Object_(); }
-@mptr("hash") Object_ left(virtual!Object_, Object_);
-@method Object_ _left(Number, Object_) { return new Object_(); }
-@method Object_ _left(Point, Object_) { return new Object_(); }
-@method Object_ _left(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ printFractionDecimalseparator(virtual!Number, Object_, Object_);
-@method Object_ _printFractionDecimalseparator(Number, Object_, Object_) { return new Object_(); }
-@method Object_ _printFractionDecimalseparator(Float, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ floor(virtual!Number);
-@method Object_ _floor(Number) { return new Object_(); }
-@method Object_ _floor(Integer) { return new Object_(); }
-@mptr("hash") Object_ exp(virtual!Number);
-@method Object_ _exp(Number) { return new Object_(); }
-@method Object_ _exp(Float) { return new Object_(); }
-@mptr("hash") Object_ right(virtual!Object_, Object_);
-@method Object_ _right(Number, Object_) { return new Object_(); }
-@method Object_ _right(Point, Object_) { return new Object_(); }
-@method Object_ _right(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ cos(virtual!Number);
-@method Object_ _cos(Number) { return new Object_(); }
-@method Object_ _cos(Float) { return new Object_(); }
-@mptr("hash") Object_ up(virtual!Object_, Object_);
-@method Object_ _up(Number, Object_) { return new Object_(); }
-@method Object_ _up(Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ tan(virtual!Number);
-@method Object_ _tan(Number) { return new Object_(); }
-@method Object_ _tan(Float) { return new Object_(); }
-@mptr("hash") Object_ sqrt(virtual!Number);
-@method Object_ _sqrt(Number) { return new Object_(); }
-@method Object_ _sqrt(Float) { return new Object_(); }
-@mptr("hash") Object_ ln(virtual!Number);
-@method Object_ _ln(Number) { return new Object_(); }
-@method Object_ _ln(Float) { return new Object_(); }
-@mptr("hash") Object_ rounded(virtual!Object_);
-@method Object_ _rounded(Number) { return new Object_(); }
-@method Object_ _rounded(Integer) { return new Object_(); }
-@method Object_ _rounded(Point) { return new Object_(); }
-@method Object_ _rounded(Rectangle) { return new Object_(); }
-@mptr("hash") Object_ timesTwoPower(virtual!Number, Object_);
-@method Object_ _timesTwoPower(Number, Object_) { return new Object_(); }
-@method Object_ _timesTwoPower(Float, Object_) { return new Object_(); }
-@mptr("hash") Object_ sin(virtual!Number);
-@method Object_ _sin(Number) { return new Object_(); }
-@method Object_ _sin(Float) { return new Object_(); }
-@mptr("hash") Object_ arcTan(virtual!Number);
-@method Object_ _arcTan(Number) { return new Object_(); }
-@method Object_ _arcTan(Float) { return new Object_(); }
-@mptr("hash") Object_ addStandardRightMenus(virtual!WindowPolicy);
-@method Object_ _addStandardRightMenus(SmalltalkWindowPolicy) { return new Object_(); }
-@method Object_ _addStandardRightMenus(StandardWindowPolicy) { return new Object_(); }
-@method Object_ _addStandardRightMenus(WindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ radix(virtual!Object_, Object_);
-@method Object_ _radix(Integer, Object_) { return new Object_(); }
-@method Object_ _radix(ByteArrayInspector, Object_) { return new Object_(); }
-@mptr("hash") Object_ canceled(virtual!WindowDialog);
-@method Object_ _canceled(SaveImageAsDialog) { return new Object_(); }
-@method Object_ _canceled(ProgressIndicatorDialog) { return new Object_(); }
-@mptr("hash") Object_ saveImage(virtual!Object_);
-@method Object_ _saveImage(SaveImageAsDialog) { return new Object_(); }
-@method Object_ _saveImage(ApplicationWindow) { return new Object_(); }
-@method Object_ _saveImage(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ toggleWrap(virtual!Object_);
-@method Object_ _toggleWrap(TextPaneControl) { return new Object_(); }
-@method Object_ _toggleWrap(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ compiler(virtual!Object_);
-@method Object_ _compiler(WorkspaceTextPane) { return new Object_(); }
-@method Object_ _compiler(CompilerInterface) { return new Object_(); }
-@mptr("hash") Object_ addApplicationMenus(virtual!WindowPolicy);
-@method Object_ _addApplicationMenus(StandardWindowPolicy) { return new Object_(); }
-@method Object_ _addApplicationMenus(WindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ addHelpManager(virtual!Inspector);
-@method Object_ _addHelpManager(Inspector) { return new Object_(); }
-@method Object_ _addHelpManager(ByteArrayInspector) { return new Object_(); }
-@mptr("hash") Object_ itemHeight(virtual!Object_);
-@method Object_ _itemHeight(ListBox) { return new Object_(); }
-@method Object_ _itemHeight(WinMeasureItemStruct) { return new Object_(); }
-@mptr("hash") Object_ itemHeight(virtual!Object_, Object_);
-@method Object_ _itemHeight(ListBox, Object_) { return new Object_(); }
-@method Object_ _itemHeight(WinMeasureItemStruct, Object_) { return new Object_(); }
-@mptr("hash") Object_ deselect(virtual!Object_);
-@method Object_ _deselect(ListBox) { return new Object_(); }
-@method Object_ _deselect(Bitmap) { return new Object_(); }
-@mptr("hash") Object_ isIndexSelected(virtual!ListBox, Object_);
-@method Object_ _isIndexSelected(ListBox, Object_) { return new Object_(); }
-@method Object_ _isIndexSelected(MultipleSelectListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ createBitmapIndirect(virtual!Object_, Object_);
-@method Object_ _createBitmapIndirect(Bitmap, Object_) { return new Object_(); }
-@method Object_ _createBitmapIndirect(GDIDLL, Object_) { return new Object_(); }
-@mptr("hash") Object_ screenExtent(virtual!Object_, Object_);
-@method Object_ _screenExtent(Bitmap, Object_) { return new Object_(); }
-@method Object_ _screenExtent(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeight(virtual!Object_, Object_, Object_);
-@method Object_ _widthHeight(Bitmap, Object_, Object_) { return new Object_(); }
-@method Object_ _widthHeight(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeightPlanesBitcount(virtual!Object_, Object_, Object_, Object_, Object_);
-@method Object_ _widthHeightPlanesBitcount(Bitmap, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _widthHeightPlanesBitcount(METACLASS_WinBitmapInfoHeader, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _widthHeightPlanesBitcount(METACLASS_Bitmap, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ widthHeightBits(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _widthHeightBits(Bitmap, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _widthHeightBits(METACLASS_Bitmap, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ createBitmapHeightPlanesBitcountBits(virtual!Object_, Object_, Object_, Object_, Object_, Object_);
-@method Object_ _createBitmapHeightPlanesBitcountBits(Bitmap, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _createBitmapHeightPlanesBitcountBits(GDIDLL, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _createBitmapHeightPlanesBitcountBits(METACLASS_Bitmap, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ outputToPrinter(virtual!GraphicsMedium, Object_);
-@method Object_ _outputToPrinter(Bitmap, Object_) { return new Object_(); }
-@method Object_ _outputToPrinter(Screen, Object_) { return new Object_(); }
-@mptr("hash") Object_ outputToFile(virtual!Object_, Object_);
-@method Object_ _outputToFile(Bitmap, Object_) { return new Object_(); }
-@method Object_ _outputToFile(Icon, Object_) { return new Object_(); }
-@mptr("hash") Object_ screenWidthHeight(virtual!Object_, Object_, Object_);
-@method Object_ _screenWidthHeight(Bitmap, Object_, Object_) { return new Object_(); }
-@method Object_ _screenWidthHeight(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ pane(virtual!Object_);
-@method Object_ _pane(TextPaneErrorHandler) { return new Object_(); }
-@method Object_ _pane(TextWindow) { return new Object_(); }
-@mptr("hash") Object_ pane(virtual!Object_, Object_);
-@method Object_ _pane(TextPaneErrorHandler, Object_) { return new Object_(); }
-@method Object_ _pane(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ undeclaredAccess(virtual!CompilerErrorHandler, Object_);
-@method Object_ _undeclaredAccess(TextPaneErrorHandler, Object_) { return new Object_(); }
-@method Object_ _undeclaredAccess(TraditionalCompilerErrorHandler, Object_) { return new Object_(); }
-@method Object_ _undeclaredAccess(CompilerErrorHandler, Object_) { return new Object_(); }
-@mptr("hash") Object_ open(virtual!Object_, Object_);
-@method Object_ _open(NewSubclassDialog, Object_) { return new Object_(); }
-@method Object_ _open(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
-@method Object_ _open(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
-@method Object_ _open(METACLASS_NewSubclassDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ bitmap(virtual!Object_, Object_);
-@method Object_ _bitmap(GraphPane, Object_) { return new Object_(); }
-@method Object_ _bitmap(METACLASS_StaticGraphic, Object_) { return new Object_(); }
-@mptr("hash") Object_ bitmap(virtual!Object_);
-@method Object_ _bitmap(GraphPane) { return new Object_(); }
-@method Object_ _bitmap(METACLASS_StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ save(virtual!Object_);
-@method Object_ _save(FileDialog) { return new Object_(); }
-@method Object_ _save(SystemDictionary) { return new Object_(); }
-@mptr("hash") Object_ openFile(virtual!Object_);
-@method Object_ _openFile(FileDialog) { return new Object_(); }
-@method Object_ _openFile(ApplicationWindow) { return new Object_(); }
-@method Object_ _openFile(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ saveFile(virtual!Object_, Object_);
-@method Object_ _saveFile(FileDialog, Object_) { return new Object_(); }
-@method Object_ _saveFile(TextWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ hasInvalidBindingFor(virtual!CompilerNameScope, Object_);
-@method Object_ _hasInvalidBindingFor(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _hasInvalidBindingFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ descriptionFor(virtual!CompilerNameScope, Object_);
-@method Object_ _descriptionFor(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _descriptionFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ unbound(virtual!Object_);
-@method Object_ _unbound(CompilerNameScope) { return new Object_(); }
-@method Object_ _unbound(METACLASS_CompilerNameScope) { return new Object_(); }
-@mptr("hash") Object_ describeInvalidBindingFor(virtual!CompilerNameScope, Object_);
-@method Object_ _describeInvalidBindingFor(CompilerNameScope, Object_) { return new Object_(); }
-@method Object_ _describeInvalidBindingFor(MultiplePoolScope, Object_) { return new Object_(); }
-@mptr("hash") Object_ evaluate(virtual!Object_, Object_);
-@method Object_ _evaluate(CompilerInterface, Object_) { return new Object_(); }
-@method Object_ _evaluate(Process, Object_) { return new Object_(); }
-@method Object_ _evaluate(METACLASS_CompilerInterface, Object_) { return new Object_(); }
-@mptr("hash") Object_ promptDefault(virtual!Object_, Object_, Object_);
-@method Object_ _promptDefault(Prompter, Object_, Object_) { return new Object_(); }
-@method Object_ _promptDefault(METACLASS_Prompter, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ titlePromptDefault(virtual!Object_, Object_, Object_, Object_);
-@method Object_ _titlePromptDefault(Prompter, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _titlePromptDefault(METACLASS_Prompter, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromFileStream(virtual!Object_, Object_);
-@method Object_ _fromFileStream(Icon, Object_) { return new Object_(); }
-@method Object_ _fromFileStream(METACLASS_Icon, Object_) { return new Object_(); }
-@mptr("hash") Object_ bindTo(virtual!Object_, Object_);
-@method Object_ _bindTo(ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _bindTo(METACLASS_ObjectLibraryBind, Object_) { return new Object_(); }
-@mptr("hash") Object_ extent(virtual!Object_, Object_);
-@method Object_ _extent(Point, Object_) { return new Object_(); }
-@method Object_ _extent(Rectangle, Object_) { return new Object_(); }
-@method Object_ _extent(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ mapClientToScreen(virtual!Object_, Object_);
-@method Object_ _mapClientToScreen(Point, Object_) { return new Object_(); }
-@method Object_ _mapClientToScreen(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ mapToScreen(virtual!Object_, Object_);
-@method Object_ _mapToScreen(Point, Object_) { return new Object_(); }
-@method Object_ _mapToScreen(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ moveBy(virtual!Object_, Object_);
-@method Object_ _moveBy(Point, Object_) { return new Object_(); }
-@method Object_ _moveBy(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ corner(virtual!Object_, Object_);
-@method Object_ _corner(Point, Object_) { return new Object_(); }
-@method Object_ _corner(Rectangle, Object_) { return new Object_(); }
-@method Object_ _corner(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ rightBottom(virtual!Object_, Object_);
-@method Object_ _rightBottom(Point, Object_) { return new Object_(); }
-@method Object_ _rightBottom(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ mapScreenToClient(virtual!Object_, Object_);
-@method Object_ _mapScreenToClient(Point, Object_) { return new Object_(); }
-@method Object_ _mapScreenToClient(Rectangle, Object_) { return new Object_(); }
-@mptr("hash") Object_ evaluateProtectionBlock(virtual!Object_);
-@method Object_ _evaluateProtectionBlock(Process) { return new Object_(); }
-@method Object_ _evaluateProtectionBlock(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ menuTitled(virtual!Object_, Object_);
-@method Object_ _menuTitled(MenuWindow, Object_) { return new Object_(); }
-@method Object_ _menuTitled(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _menuTitled(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ merge(virtual!Object_, Object_);
-@method Object_ _merge(Rectangle, Object_) { return new Object_(); }
-@method Object_ _merge(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ originExtent(virtual!Object_, Object_, Object_);
-@method Object_ _originExtent(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _originExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftBottomRighttop(virtual!Object_, Object_, Object_);
-@method Object_ _leftBottomRighttop(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _leftBottomRighttop(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ origin(virtual!Object_);
-@method Object_ _origin(Rectangle) { return new Object_(); }
-@method Object_ _origin(TextSelection) { return new Object_(); }
-@method Object_ _origin(METACLASS_CursorManager) { return new Object_(); }
-@mptr("hash") Object_ origin(virtual!Object_, Object_);
-@method Object_ _origin(Rectangle, Object_) { return new Object_(); }
-@method Object_ _origin(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ top(virtual!Object_);
-@method Object_ _top(Rectangle) { return new Object_(); }
-@method Object_ _top(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ leftTopRightbottom(virtual!Object_, Object_, Object_);
-@method Object_ _leftTopRightbottom(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _leftTopRightbottom(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftBottomExtent(virtual!Object_, Object_, Object_);
-@method Object_ _leftBottomExtent(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _leftBottomExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ intersect(virtual!Object_, Object_);
-@method Object_ _intersect(Rectangle, Object_) { return new Object_(); }
-@method Object_ _intersect(TextSelection, Object_) { return new Object_(); }
-@mptr("hash") Object_ leftTopExtent(virtual!Object_, Object_, Object_);
-@method Object_ _leftTopExtent(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _leftTopExtent(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ originCorner(virtual!Object_, Object_, Object_);
-@method Object_ _originCorner(Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _originCorner(TextSelection, Object_, Object_) { return new Object_(); }
-@method Object_ _originCorner(METACLASS_Rectangle, Object_, Object_) { return new Object_(); }
-@method Object_ _originCorner(METACLASS_TextSelection, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ corner(virtual!Object_);
-@method Object_ _corner(Rectangle) { return new Object_(); }
-@method Object_ _corner(TextSelection) { return new Object_(); }
-@mptr("hash") Object_ textModified(virtual!Object_);
-@method Object_ _textModified(ApplicationWindow) { return new Object_(); }
-@method Object_ _textModified(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ noSmalltalkMenuBar(virtual!Object_);
-@method Object_ _noSmalltalkMenuBar(ApplicationWindow) { return new Object_(); }
-@method Object_ _noSmalltalkMenuBar(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ openWorkspace(virtual!Object_);
-@method Object_ _openWorkspace(ApplicationWindow) { return new Object_(); }
-@method Object_ _openWorkspace(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ openClassBrowser(virtual!Object_);
-@method Object_ _openClassBrowser(ApplicationWindow) { return new Object_(); }
-@method Object_ _openClassBrowser(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ printSetup(virtual!Object_);
-@method Object_ _printSetup(ApplicationWindow) { return new Object_(); }
-@method Object_ _printSetup(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ setForegroundColor(virtual!Object_);
-@method Object_ _setForegroundColor(ApplicationWindow) { return new Object_(); }
-@method Object_ _setForegroundColor(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ openDiskBrowser(virtual!Object_);
-@method Object_ _openDiskBrowser(ApplicationWindow) { return new Object_(); }
-@method Object_ _openDiskBrowser(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ icon(virtual!Object_, Object_);
-@method Object_ _icon(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _icon(ViewManager, Object_) { return new Object_(); }
-@method Object_ _icon(METACLASS_StaticGraphic, Object_) { return new Object_(); }
-@mptr("hash") Object_ openIn(virtual!Object_, Object_);
-@method Object_ _openIn(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _openIn(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ labelWithoutPrefix(virtual!Object_, Object_);
-@method Object_ _labelWithoutPrefix(ApplicationWindow, Object_) { return new Object_(); }
-@method Object_ _labelWithoutPrefix(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ setFonts(virtual!Object_);
-@method Object_ _setFonts(ApplicationWindow) { return new Object_(); }
-@method Object_ _setFonts(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ setBackgroundColor(virtual!Object_);
-@method Object_ _setBackgroundColor(ApplicationWindow) { return new Object_(); }
-@method Object_ _setBackgroundColor(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ fileMenu(virtual!Object_);
-@method Object_ _fileMenu(ApplicationWindow) { return new Object_(); }
-@method Object_ _fileMenu(METACLASS_CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _fileMenu(METACLASS_SmalltalkWindowPolicy) { return new Object_(); }
-@method Object_ _fileMenu(METACLASS_StandardWindowPolicy) { return new Object_(); }
-@method Object_ _fileMenu(METACLASS_ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ saveImageAs(virtual!Object_);
-@method Object_ _saveImageAs(ApplicationWindow) { return new Object_(); }
-@method Object_ _saveImageAs(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ icon(virtual!Object_);
-@method Object_ _icon(ApplicationWindow) { return new Object_(); }
-@method Object_ _icon(METACLASS_StaticGraphic) { return new Object_(); }
-@mptr("hash") Object_ clearTextModified(virtual!Object_);
-@method Object_ _clearTextModified(ApplicationWindow) { return new Object_(); }
-@method Object_ _clearTextModified(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ toolTextPaneClass(virtual!Object_);
-@method Object_ _toolTextPaneClass(ViewManager) { return new Object_(); }
-@method Object_ _toolTextPaneClass(METACLASS_ViewManager) { return new Object_(); }
-@mptr("hash") Object_ getStockObject(virtual!Object_, Object_);
-@method Object_ _getStockObject(GDIDLL, Object_) { return new Object_(); }
-@method Object_ _getStockObject(METACLASS_GraphicsTool, Object_) { return new Object_(); }
-@mptr("hash") Object_ createCompatibleDC(virtual!Object_, Object_);
-@method Object_ _createCompatibleDC(GDIDLL, Object_) { return new Object_(); }
-@method Object_ _createCompatibleDC(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ iconId(virtual!METACLASS_ViewManager);
-@method Object_ _iconId(METACLASS_Debugger) { return new Object_(); }
-@method Object_ _iconId(METACLASS_TranscriptWindow) { return new Object_(); }
-@mptr("hash") Object_ constructEventsTriggered(virtual!METACLASS_Window);
-@method Object_ _constructEventsTriggered(METACLASS_SubPane) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_ComboBox) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_DropDownList) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_ThreeStateButton) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_Button) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_RadioButton) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_DrawnButton) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_ScrollBar) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_DialogTopPane) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_EntryField) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_Window) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_ComboEntryField) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_CheckBox) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_TopPane) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_Toggle) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_ListBox) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_GraphPane) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_MultipleSelectListBox) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_MenuWindow) { return new Object_(); }
-@method Object_ _constructEventsTriggered(METACLASS_TextEdit) { return new Object_(); }
-@mptr("hash") Object_ supportedEvents(virtual!METACLASS_Window);
-@method Object_ _supportedEvents(METACLASS_SubPane) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_ComboBox) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_DropDownList) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_Button) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_DrawnButton) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_ScrollBar) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_DialogTopPane) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_EntryField) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_Window) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_TopPane) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_ListBox) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_GraphPane) { return new Object_(); }
-@method Object_ _supportedEvents(METACLASS_TextEdit) { return new Object_(); }
-@mptr("hash") Object_ threshold(virtual!METACLASS_WinLogicalObject);
-@method Object_ _threshold(METACLASS_WinLogicalBrush) { return new Object_(); }
-@method Object_ _threshold(METACLASS_WinLogicalPen) { return new Object_(); }
-@method Object_ _threshold(METACLASS_WinLogicalPalette) { return new Object_(); }
-@mptr("hash") Object_ winStruct(virtual!METACLASS_WinLogicalObject);
-@method Object_ _winStruct(METACLASS_WinLogicalBrush) { return new Object_(); }
-@method Object_ _winStruct(METACLASS_WinLogicalPen) { return new Object_(); }
-@method Object_ _winStruct(METACLASS_WinLogicalPalette) { return new Object_(); }
-@mptr("hash") Object_ anchorDictionary(virtual!METACLASS_WinLogicalObject);
-@method Object_ _anchorDictionary(METACLASS_WinLogicalBrush) { return new Object_(); }
-@method Object_ _anchorDictionary(METACLASS_WinLogicalPen) { return new Object_(); }
-@method Object_ _anchorDictionary(METACLASS_WinLogicalPalette) { return new Object_(); }
-@mptr("hash") Object_ fromAttributes(virtual!METACLASS_WinLogicalObject, Object_);
-@method Object_ _fromAttributes(METACLASS_WinLogicalBrush, Object_) { return new Object_(); }
-@method Object_ _fromAttributes(METACLASS_WinLogicalPen, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromHandleStyle(virtual!METACLASS_ControlPane, Object_, Object_);
-@method Object_ _fromHandleStyle(METACLASS_ComboBox, Object_, Object_) { return new Object_(); }
-@method Object_ _fromHandleStyle(METACLASS_Button, Object_, Object_) { return new Object_(); }
-@method Object_ _fromHandleStyle(METACLASS_EntryField, Object_, Object_) { return new Object_(); }
-@method Object_ _fromHandleStyle(METACLASS_StaticPane, Object_, Object_) { return new Object_(); }
-@method Object_ _fromHandleStyle(METACLASS_ControlPane, Object_, Object_) { return new Object_(); }
-@method Object_ _fromHandleStyle(METACLASS_ListBox, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromString(virtual!METACLASS_Object, Object_);
-@method Object_ _fromString(METACLASS_ExternalLong, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_Time, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_Date, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_DoubleByteString, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_Atom, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_ObjectLibraryExternal, Object_) { return new Object_(); }
-@method Object_ _fromString(METACLASS_Float, Object_) { return new Object_(); }
-@mptr("hash") Object_ startUp(virtual!METACLASS_Object);
-@method Object_ _startUp(METACLASS_CursorManager) { return new Object_(); }
-@method Object_ _startUp(METACLASS_HelpManager) { return new Object_(); }
-@method Object_ _startUp(METACLASS_ExternalHeapHandle) { return new Object_(); }
-@method Object_ _startUp(METACLASS_ClipboardManager) { return new Object_(); }
-@method Object_ _startUp(METACLASS_OperatingSystemInformation) { return new Object_(); }
-@method Object_ _startUp(METACLASS_SystemWindow) { return new Object_(); }
-@method Object_ _startUp(METACLASS_CallBack) { return new Object_(); }
-@method Object_ _startUp(METACLASS_FileHandle) { return new Object_(); }
-@method Object_ _startUp(METACLASS_PrintDialog) { return new Object_(); }
-@method Object_ _startUp(METACLASS_DialogBox) { return new Object_(); }
-@method Object_ _startUp(METACLASS_Printer) { return new Object_(); }
-@method Object_ _startUp(METACLASS_NationalLanguageSupport) { return new Object_(); }
-@method Object_ _startUp(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@method Object_ _startUp(METACLASS_Font) { return new Object_(); }
-@method Object_ _startUp(METACLASS_Bitmap) { return new Object_(); }
-@method Object_ _startUp(METACLASS_FileDialog) { return new Object_(); }
-@method Object_ _startUp(METACLASS_Icon) { return new Object_(); }
-@method Object_ _startUp(METACLASS_Screen) { return new Object_(); }
-@mptr("hash") Object_ fromBytes(virtual!METACLASS_Object, Object_);
-@method Object_ _fromBytes(METACLASS_ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _fromBytes(METACLASS_ExternalBuffer, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromInteger(virtual!METACLASS_Object, Object_);
-@method Object_ _fromInteger(METACLASS_ExternalHandle, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_ExternalBuffer, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_WinPoint, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_Window, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_Float, Object_) { return new Object_(); }
-@method Object_ _fromInteger(METACLASS_Point, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromAddress(virtual!METACLASS_Object, Object_);
-@method Object_ _fromAddress(METACLASS_ExternalBuffer, Object_) { return new Object_(); }
-@method Object_ _fromAddress(METACLASS_DoubleByteString, Object_) { return new Object_(); }
-@method Object_ _fromAddress(METACLASS_String, Object_) { return new Object_(); }
-@method Object_ _fromAddress(METACLASS_WinDropFile, Object_) { return new Object_(); }
-@mptr("hash") Object_ dateAndTimeNow(virtual!METACLASS_Magnitude);
-@method Object_ _dateAndTimeNow(METACLASS_Time) { return new Object_(); }
-@method Object_ _dateAndTimeNow(METACLASS_Date) { return new Object_(); }
-@mptr("hash") Object_ eventsTriggered(virtual!METACLASS_Object);
-@method Object_ _eventsTriggered(METACLASS_Menu) { return new Object_(); }
-@method Object_ _eventsTriggered(METACLASS_SessionModel) { return new Object_(); }
-@method Object_ _eventsTriggered(METACLASS_Window) { return new Object_(); }
-@method Object_ _eventsTriggered(METACLASS_ObjectLibraryBind) { return new Object_(); }
-@method Object_ _eventsTriggered(METACLASS_ViewManager) { return new Object_(); }
-@mptr("hash") Object_ fromFile(virtual!METACLASS_Object, Object_);
-@method Object_ _fromFile(METACLASS_VirtualMachineConfiguration, Object_) { return new Object_(); }
-@method Object_ _fromFile(METACLASS_DIB, Object_) { return new Object_(); }
-@method Object_ _fromFile(METACLASS_Bitmap, Object_) { return new Object_(); }
-@method Object_ _fromFile(METACLASS_Icon, Object_) { return new Object_(); }
-@mptr("hash") Object_ mustBeSymbol(virtual!METACLASS_String, Object_);
-@method Object_ _mustBeSymbol(METACLASS_Symbol, Object_) { return new Object_(); }
-@method Object_ _mustBeSymbol(METACLASS_DoubleByteSymbol, Object_) { return new Object_(); }
-@mptr("hash") Object_ intern(virtual!METACLASS_String, Object_);
-@method Object_ _intern(METACLASS_Symbol, Object_) { return new Object_(); }
-@method Object_ _intern(METACLASS_DoubleByteSymbol, Object_) { return new Object_(); }
-@mptr("hash") Object_ nonAuto(virtual!METACLASS_Toggle);
-@method Object_ _nonAuto(METACLASS_ThreeStateButton) { return new Object_(); }
-@method Object_ _nonAuto(METACLASS_RadioButton) { return new Object_(); }
-@method Object_ _nonAuto(METACLASS_CheckBox) { return new Object_(); }
-@mptr("hash") Object_ openIn(virtual!METACLASS_Object, Object_, Object_);
-@method Object_ _openIn(METACLASS_File, Object_, Object_) { return new Object_(); }
-@method Object_ _openIn(METACLASS_FileHandle, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ exists(virtual!METACLASS_Object, Object_);
-@method Object_ _exists(METACLASS_File, Object_) { return new Object_(); }
-@method Object_ _exists(METACLASS_Directory, Object_) { return new Object_(); }
-@mptr("hash") Object_ openInAttributeMode(virtual!METACLASS_Object, Object_, Object_, Object_, Object_);
-@method Object_ _openInAttributeMode(METACLASS_File, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _openInAttributeMode(METACLASS_FileHandle, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ openInActionFilesizeAttributeFlagsMode(virtual!METACLASS_Object, Object_, Object_, Object_, Object_, Object_, Object_, Object_);
-@method Object_ _openInActionFilesizeAttributeFlagsMode(METACLASS_File, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _openInActionFilesizeAttributeFlagsMode(METACLASS_FileHandle, Object_, Object_, Object_, Object_, Object_, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ allocateMemory(virtual!METACLASS_ExternalAddress, Object_);
-@method Object_ _allocateMemory(METACLASS_ExternalHeapAddress, Object_) { return new Object_(); }
-@method Object_ _allocateMemory(METACLASS_ExternalAddress, Object_) { return new Object_(); }
-@method Object_ _allocateMemory(METACLASS_ExternalGlobalAddress, Object_) { return new Object_(); }
-@mptr("hash") Object_ from(virtual!METACLASS_Object, Object_);
-@method Object_ _from(METACLASS_ObjectLibraryReference, Object_) { return new Object_(); }
-@method Object_ _from(METACLASS_ObjectMutator, Object_) { return new Object_(); }
-@mptr("hash") Object_ negativeClass(virtual!METACLASS_LargeInteger);
-@method Object_ _negativeClass(METACLASS_LargeNegativeInteger) { return new Object_(); }
-@method Object_ _negativeClass(METACLASS_LargePositiveInteger) { return new Object_(); }
-@mptr("hash") Object_ fromCollection(virtual!METACLASS_Object, Object_);
-@method Object_ _fromCollection(METACLASS_WinStructArray, Object_) { return new Object_(); }
-@method Object_ _fromCollection(METACLASS_ActionSequence, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromFileIn(virtual!METACLASS_Object, Object_, Object_);
-@method Object_ _fromFileIn(METACLASS_DIB, Object_, Object_) { return new Object_(); }
-@method Object_ _fromFileIn(METACLASS_Bitmap, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ receiverSelector(virtual!METACLASS_Message, Object_, Object_);
-@method Object_ _receiverSelector(METACLASS_LinkMessage, Object_, Object_) { return new Object_(); }
-@method Object_ _receiverSelector(METACLASS_Message, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ memoryHandleFromWithallocflag(virtual!METACLASS_ExternalAddress, Object_, Object_);
-@method Object_ _memoryHandleFromWithallocflag(METACLASS_ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _memoryHandleFromWithallocflag(METACLASS_ExternalGlobalAddress, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ copyToNonSmalltalkMemoryWithallocflag(virtual!METACLASS_ExternalAddress, Object_, Object_);
-@method Object_ _copyToNonSmalltalkMemoryWithallocflag(METACLASS_ExternalAddress, Object_, Object_) { return new Object_(); }
-@method Object_ _copyToNonSmalltalkMemoryWithallocflag(METACLASS_ExternalGlobalAddress, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ memoryHandleFrom(virtual!METACLASS_ExternalAddress, Object_);
-@method Object_ _memoryHandleFrom(METACLASS_ExternalAddress, Object_) { return new Object_(); }
-@method Object_ _memoryHandleFrom(METACLASS_ExternalGlobalAddress, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromAddressLength(virtual!METACLASS_String, Object_, Object_);
-@method Object_ _fromAddressLength(METACLASS_DoubleByteString, Object_, Object_) { return new Object_(); }
-@method Object_ _fromAddressLength(METACLASS_String, Object_, Object_) { return new Object_(); }
-@mptr("hash") Object_ current(virtual!METACLASS_Object);
-@method Object_ _current(METACLASS_Directory) { return new Object_(); }
-@method Object_ _current(METACLASS_SessionModel) { return new Object_(); }
-@method Object_ _current(METACLASS_Process) { return new Object_(); }
-@mptr("hash") Object_ editMenu(virtual!METACLASS_Object);
-@method Object_ _editMenu(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _editMenu(METACLASS_CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _editMenu(METACLASS_SmalltalkWindowPolicy) { return new Object_(); }
-@method Object_ _editMenu(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _editMenu(METACLASS_StandardWindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ bracketsMenu(virtual!METACLASS_Object);
-@method Object_ _bracketsMenu(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _bracketsMenu(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _bracketsMenu(METACLASS_StandardWindowPolicy) { return new Object_(); }
-@mptr("hash") Object_ smalltalkMenu(virtual!METACLASS_Object);
-@method Object_ _smalltalkMenu(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _smalltalkMenu(METACLASS_CompatibleWindowPolicy) { return new Object_(); }
-@method Object_ _smalltalkMenu(METACLASS_TextPaneControl) { return new Object_(); }
-@mptr("hash") Object_ on(virtual!METACLASS_Object, Object_);
-@method Object_ _on(METACLASS_FileStream, Object_) { return new Object_(); }
-@method Object_ _on(METACLASS_Stream, Object_) { return new Object_(); }
-@method Object_ _on(METACLASS_WindowPolicy, Object_) { return new Object_(); }
-@mptr("hash") Object_ getHandle(virtual!METACLASS_DynamicLinkLibrary, Object_);
-@method Object_ _getHandle(METACLASS_DynamicLinkLibrary16, Object_) { return new Object_(); }
-@method Object_ _getHandle(METACLASS_DynamicLinkLibrary, Object_) { return new Object_(); }
-@mptr("hash") Object_ apiPrimitiveMap(virtual!METACLASS_DynamicLinkLibrary);
-@method Object_ _apiPrimitiveMap(METACLASS_DynamicLinkLibrary16) { return new Object_(); }
-@method Object_ _apiPrimitiveMap(METACLASS_DynamicLinkLibrary) { return new Object_(); }
-@mptr("hash") Object_ readFrom(virtual!METACLASS_Object, Object_);
-@method Object_ _readFrom(METACLASS_String, Object_) { return new Object_(); }
-@method Object_ _readFrom(METACLASS_Integer, Object_) { return new Object_(); }
-@mptr("hash") Object_ fromHandle(virtual!METACLASS_Object, Object_);
-@method Object_ _fromHandle(METACLASS_ControlPane, Object_) { return new Object_(); }
-@method Object_ _fromHandle(METACLASS_Bitmap, Object_) { return new Object_(); }
-@mptr("hash") Object_ additiveIdentity(virtual!METACLASS_Number);
-@method Object_ _additiveIdentity(METACLASS_Number) { return new Object_(); }
-@method Object_ _additiveIdentity(METACLASS_Float) { return new Object_(); }
-@mptr("hash") Object_ multiplicativeIdentity(virtual!METACLASS_Number);
-@method Object_ _multiplicativeIdentity(METACLASS_Number) { return new Object_(); }
-@method Object_ _multiplicativeIdentity(METACLASS_Float) { return new Object_(); }
-@mptr("hash") Object_ releaseAllHandles(virtual!METACLASS_Object);
-@method Object_ _releaseAllHandles(METACLASS_Font) { return new Object_(); }
-@method Object_ _releaseAllHandles(METACLASS_Bitmap) { return new Object_(); }
-@method Object_ _releaseAllHandles(METACLASS_Icon) { return new Object_(); }
-@mptr("hash") Object_ nameOf(virtual!METACLASS_Object, Object_);
-@method Object_ _nameOf(METACLASS_ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _nameOf(METACLASS_SelfDefinedStructure, Object_) { return new Object_(); }
-@mptr("hash") Object_ named(virtual!METACLASS_Object, Object_);
-@method Object_ _named(METACLASS_ObjectLibraryBind, Object_) { return new Object_(); }
-@method Object_ _named(METACLASS_SelfDefinedStructure, Object_) { return new Object_(); }
+class Artificial_Root_gen_ {}
+class SelfInitializingObject_gen_ : Artificial_Root_gen_ {}
+class Object_gen_ : Artificial_Root_gen_ {}
+class TextSelection_gen_ : Object_gen_ {}
+class Rectangle_gen_ : Object_gen_ {}
+class Point_gen_ : Object_gen_ {}
+class ObjectLibraryBind_gen_ : Object_gen_ {}
+class Icon_gen_ : Object_gen_ {}
+class UndefinedObject_gen_ : Object_gen_ {}
+class CompilerInterface_gen_ : Object_gen_ {}
+class Semaphore_gen_ : Object_gen_ {}
+class MenuItem_gen_ : Object_gen_ {}
+class Font_gen_ : Object_gen_ {}
+class NotificationManager_gen_ : Object_gen_ {}
+class InputEvent_gen_ : Object_gen_ {}
+class ProcessScheduler_gen_ : Object_gen_ {}
+class NationalLanguageSupport_gen_ : Object_gen_ {}
+class MethodExecutor_gen_ : Object_gen_ {}
+class ObjectLibraryExternal_gen_ : Object_gen_ {}
+class ClassReader_gen_ : Object_gen_ {}
+class SessionModel_gen_ : Object_gen_ {}
+class DeletedClass_gen_ : Object_gen_ {}
+class Directory_gen_ : Object_gen_ {}
+class EmptySlot_gen_ : Object_gen_ {}
+class ObjectMutator_gen_ : Object_gen_ {}
+class StringDictionaryReader_gen_ : Object_gen_ {}
+class ClassInstaller_gen_ : Object_gen_ {}
+class DIB_gen_ : Object_gen_ {}
+class CallBack_gen_ : Object_gen_ {}
+class DragDropList_gen_ : Object_gen_ {}
+class CompilationError_gen_ : Object_gen_ {}
+class CompilationResult_gen_ : Object_gen_ {}
+class File_gen_ : Object_gen_ {}
+class ProtectedFrameMarker_gen_ : Object_gen_ {}
+class OperatingSystemInformation_gen_ : Object_gen_ {}
+class ClipboardManager_gen_ : Object_gen_ {}
+class ExceptionHandler_gen_ : Object_gen_ {}
+class HelpManager_gen_ : Object_gen_ {}
+class Menu_gen_ : Object_gen_ {}
+class CursorManager_gen_ : Object_gen_ {}
+class StringModel_gen_ : Object_gen_ {}
+class Enumerator_gen_ : Object_gen_ {}
+class EvaluableAction_gen_ : Object_gen_ {}
+class CollectionAccessor_gen_ : EvaluableAction_gen_ {}
+class GraphicsMedium_gen_ : Object_gen_ {}
+class Screen_gen_ : GraphicsMedium_gen_ {}
+class DynamicDataExchange_gen_ : Object_gen_ {}
+class DDEClient_gen_ : DynamicDataExchange_gen_ {}
+class ExternalBuffer_gen_ : Object_gen_ {}
+class SelfDefinedStructure_gen_ : ExternalBuffer_gen_ {}
+class WinSystemTime_gen_ : ExternalBuffer_gen_ {}
+class CompilerNameScope_gen_ : Object_gen_ {}
+class MultiplePoolScope_gen_ : CompilerNameScope_gen_ {}
+class Window_gen_ : Object_gen_ {}
+class MenuWindow_gen_ : Window_gen_ {}
+class WinOfstruct_gen_ : ExternalBuffer_gen_ {}
+class WinMeasureItemStruct_gen_ : ExternalBuffer_gen_ {}
+class Collection_gen_ : Object_gen_ {}
+class Bag_gen_ : Collection_gen_ {}
+class ViewManager_gen_ : Object_gen_ {}
+class ClassHierarchyBrowser_gen_ : ViewManager_gen_ {}
+class WinLogFont_gen_ : ExternalBuffer_gen_ {}
+class Context_gen_ : Object_gen_ {}
+class ZeroArgumentBlock_gen_ : Context_gen_ {}
+class OneArgumentBlock_gen_ : Context_gen_ {}
+class WinDropFile_gen_ : ExternalBuffer_gen_ {}
+class Bitmap_gen_ : GraphicsMedium_gen_ {}
+class WinLogicalObject_gen_ : Object_gen_ {}
+class WinLogicalPalette_gen_ : WinLogicalObject_gen_ {}
+class DiskBrowser_gen_ : ViewManager_gen_ {}
+class WinLogPalette_gen_ : ExternalBuffer_gen_ {}
+class Stream_gen_ : Object_gen_ {}
+class ReadStream_gen_ : Stream_gen_ {}
+class WinRectangle_gen_ : ExternalBuffer_gen_ {}
+class Win32FindData_gen_ : ExternalBuffer_gen_ {}
+class WinLogPen_gen_ : ExternalBuffer_gen_ {}
+class WinPaintStructure_gen_ : ExternalBuffer_gen_ {}
+class WinTextMetrics_gen_ : ExternalBuffer_gen_ {}
+class Magnitude_gen_ : Object_gen_ {}
+class Character_gen_ : Magnitude_gen_ {}
+class ConstantAccessor_gen_ : EvaluableAction_gen_ {}
+class WinFileTime_gen_ : ExternalBuffer_gen_ {}
+class WinBitmapFileHeader_gen_ : ExternalBuffer_gen_ {}
+class Printer_gen_ : GraphicsMedium_gen_ {}
+class WinMessage_gen_ : ExternalBuffer_gen_ {}
+class ExternalHandle_gen_ : Object_gen_ {}
+class Atom_gen_ : ExternalHandle_gen_ {}
+class WinDrawItemStruct_gen_ : ExternalBuffer_gen_ {}
+class DeviceContext_gen_ : ExternalHandle_gen_ {}
+class WindowHandle_gen_ : ExternalHandle_gen_ {}
+class WinBitmapStruct_gen_ : ExternalBuffer_gen_ {}
+class Boolean_gen_ : Object_gen_ {}
+class False_gen_ : Boolean_gen_ {}
+class WinStructArray_gen_ : ExternalBuffer_gen_ {}
+class FileHandle_gen_ : ExternalHandle_gen_ {}
+class ObjectLibraryReference_gen_ : ExternalBuffer_gen_ {}
+class WinPoint_gen_ : ExternalBuffer_gen_ {}
+class ClassBrowser_gen_ : ViewManager_gen_ {}
+class StoredPicture_gen_ : GraphicsMedium_gen_ {}
+class WindowPolicy_gen_ : Object_gen_ {}
+class NoMenusWindowPolicy_gen_ : WindowPolicy_gen_ {}
+class SystemWindow_gen_ : Window_gen_ {}
+class WinDialogInfo_gen_ : ExternalBuffer_gen_ {}
+class TwoArgumentBlock_gen_ : Context_gen_ {}
+class Date_gen_ : Magnitude_gen_ {}
+class CompilerErrorHandler_gen_ : Object_gen_ {}
+class NonInteractiveErrorHandler_gen_ : CompilerErrorHandler_gen_ {}
+class Association_gen_ : Magnitude_gen_ {}
+class HomeContext_gen_ : Context_gen_ {}
+class Behavior_gen_ : Object_gen_ {}
+class MetaClass_gen_ : Behavior_gen_ {}
+class WinLogicalPen_gen_ : WinLogicalObject_gen_ {}
+class VirtualMachineConfiguration_gen_ : ExternalBuffer_gen_ {}
+class Pattern_gen_ : Object_gen_ {}
+class WildPattern_gen_ : Pattern_gen_ {}
+class WinWindowPlacement_gen_ : ExternalBuffer_gen_ {}
+class Time_gen_ : Magnitude_gen_ {}
+class WinWindowClass_gen_ : ExternalBuffer_gen_ {}
+class True_gen_ : Boolean_gen_ {}
+class WinLogicalBrush_gen_ : WinLogicalObject_gen_ {}
+class Debugger_gen_ : ViewManager_gen_ {}
+class WinLogBrush_gen_ : ExternalBuffer_gen_ {}
+class Class_gen_ : Behavior_gen_ {}
+class METACLASS_SelfInitializingObject_gen_ : Class_gen_ {}
+class DynamicLinkLibrary_gen_ : ExternalHandle_gen_ {}
+class GDIDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class DictionaryScope_gen_ : CompilerNameScope_gen_ {}
+class GlobalPoolScope_gen_ : DictionaryScope_gen_ {}
+class WindowDialog_gen_ : ViewManager_gen_ {}
+class PrintAbortDialog_gen_ : WindowDialog_gen_ {}
+class Inspector_gen_ : ViewManager_gen_ {}
+class DoubleByteStringInspector_gen_ : Inspector_gen_ {}
+class OrderedCollectionInspector_gen_ : Inspector_gen_ {}
+class SilentErrorHandler_gen_ : CompilerErrorHandler_gen_ {}
+class TraditionalCompilerErrorHandler_gen_ : SilentErrorHandler_gen_ {}
+class Prompter_gen_ : WindowDialog_gen_ {}
+class GraphicInspector_gen_ : Inspector_gen_ {}
+class SubPane_gen_ : Window_gen_ {}
+class GraphPane_gen_ : SubPane_gen_ {}
+class ByteArrayInspector_gen_ : Inspector_gen_ {}
+class ExternalMemoryHandle_gen_ : ExternalHandle_gen_ {}
+class ExternalGlobalHandle_gen_ : ExternalMemoryHandle_gen_ {}
+class DialogBox_gen_ : Window_gen_ {}
+class NewSubclassDialog_gen_ : DialogBox_gen_ {}
+class GroupPane_gen_ : SubPane_gen_ {}
+class Number_gen_ : Magnitude_gen_ {}
+class Float_gen_ : Number_gen_ {}
+class ProgressIndicatorDialog_gen_ : WindowDialog_gen_ {}
+class CommonDialogDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class SaveImageAsDialog_gen_ : WindowDialog_gen_ {}
+class StandardWindowPolicy_gen_ : WindowPolicy_gen_ {}
+class SmalltalkWindowPolicy_gen_ : StandardWindowPolicy_gen_ {}
+class MethodBrowser_gen_ : ViewManager_gen_ {}
+class SelectorBrowser_gen_ : MethodBrowser_gen_ {}
+class SaveImageDialog_gen_ : WindowDialog_gen_ {}
+class KernelDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class TextPaneErrorHandler_gen_ : CompilerErrorHandler_gen_ {}
+class WorkspaceErrorHandler_gen_ : TextPaneErrorHandler_gen_ {}
+class VirtualMachineDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class Fraction_gen_ : Number_gen_ {}
+class Exception_gen_ : Object_gen_ {}
+class Notification_gen_ : Exception_gen_ {}
+class VetoAction_gen_ : Notification_gen_ {}
+class ShellDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class MessageBox_gen_ : DialogBox_gen_ {}
+class DDEAuxWindow_gen_ : Window_gen_ {}
+class DDEAuxClient_gen_ : DDEAuxWindow_gen_ {}
+class CompatibleWindowPolicy_gen_ : StandardWindowPolicy_gen_ {}
+class TextWindow_gen_ : ViewManager_gen_ {}
+class WalkbackWindow_gen_ : TextWindow_gen_ {}
+class SelfDefinedStructureInspector_gen_ : Inspector_gen_ {}
+class DDEAuxServer_gen_ : DDEAuxWindow_gen_ {}
+class KeyboardInterrupt_gen_ : Notification_gen_ {}
+class DDEServer_gen_ : DynamicDataExchange_gen_ {}
+class SmalltalkEmulator_gen_ : DDEServer_gen_ {}
+class Message_gen_ : EvaluableAction_gen_ {}
+class LinkMessage_gen_ : Message_gen_ {}
+class WinBitmapInfoHeader_gen_ : ExternalBuffer_gen_ {}
+class WinBitmapInfo_gen_ : WinBitmapInfoHeader_gen_ {}
+class UserDLL_gen_ : DynamicLinkLibrary_gen_ {}
+class DictionaryInspector_gen_ : Inspector_gen_ {}
+class TranscriptWindow_gen_ : TextWindow_gen_ {}
+class VirtualMachineExe_gen_ : DynamicLinkLibrary_gen_ {}
+class FindReplaceDialog_gen_ : WindowDialog_gen_ {}
+class ExternalHeapHandle_gen_ : ExternalMemoryHandle_gen_ {}
+class Set_gen_ : Collection_gen_ {}
+class SymbolSet_gen_ : Set_gen_ {}
+class AboutDialog_gen_ : WindowDialog_gen_ {}
+class Error_gen_ : Exception_gen_ {}
+class FileError_gen_ : Error_gen_ {}
+class ProcessTermination_gen_ : Notification_gen_ {}
+class METACLASS_Object_gen_ : Class_gen_ {}
+class METACLASS_TextSelection_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Rectangle_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Point_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ObjectLibraryBind_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Icon_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_UndefinedObject_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CompilerInterface_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Semaphore_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_MenuItem_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Font_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_NotificationManager_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_InputEvent_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ProcessScheduler_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_NationalLanguageSupport_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_MethodExecutor_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ObjectLibraryExternal_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ClassReader_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_SessionModel_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_DeletedClass_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Directory_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_EmptySlot_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ObjectMutator_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_StringDictionaryReader_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ClassInstaller_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_DIB_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CallBack_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_DragDropList_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CompilationError_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CompilationResult_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_File_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ProtectedFrameMarker_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_OperatingSystemInformation_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ClipboardManager_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ExceptionHandler_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_HelpManager_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Menu_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CursorManager_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_StringModel_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Enumerator_gen_ : METACLASS_Object_gen_ {}
+class Dictionary_gen_ : Set_gen_ {}
+class SystemDictionary_gen_ : Dictionary_gen_ {}
+class Warning_gen_ : Notification_gen_ {}
+class LoggedWarning_gen_ : Warning_gen_ {}
+class ControlError_gen_ : Error_gen_ {}
+class MessageNotUnderstood_gen_ : ControlError_gen_ {}
+class IndexedCollection_gen_ : Collection_gen_ {}
+class OrderedCollection_gen_ : IndexedCollection_gen_ {}
+class Process_gen_ : OrderedCollection_gen_ {}
+class ControlPane_gen_ : SubPane_gen_ {}
+class GroupBox_gen_ : ControlPane_gen_ {}
+class CommonSystemDialog_gen_ : DialogBox_gen_ {}
+class FileDialog_gen_ : CommonSystemDialog_gen_ {}
+class TextPane_gen_ : SubPane_gen_ {}
+class WorkspaceTextPane_gen_ : TextPane_gen_ {}
+class DynamicLinkLibrary16_gen_ : DynamicLinkLibrary_gen_ {}
+class KernelDLL16_gen_ : DynamicLinkLibrary16_gen_ {}
+class Integer_gen_ : Number_gen_ {}
+class SmallInteger_gen_ : Integer_gen_ {}
+class FixedSizeCollection_gen_ : IndexedCollection_gen_ {}
+class Interval_gen_ : FixedSizeCollection_gen_ {}
+class ApplicationWindow_gen_ : Window_gen_ {}
+class TopPane_gen_ : ApplicationWindow_gen_ {}
+class DialogTopPane_gen_ : TopPane_gen_ {}
+class ExternalLong_gen_ : ExternalBuffer_gen_ {}
+class ExternalAddress_gen_ : ExternalLong_gen_ {}
+class ExternalGlobalAddress_gen_ : ExternalAddress_gen_ {}
+class ScrollBar_gen_ : ControlPane_gen_ {}
+class ThunkDLL16_gen_ : DynamicLinkLibrary16_gen_ {}
+class PrintDialog_gen_ : CommonSystemDialog_gen_ {}
+class ArithmeticError_gen_ : Error_gen_ {}
+class ZeroDivide_gen_ : ArithmeticError_gen_ {}
+class ColorDialog_gen_ : CommonSystemDialog_gen_ {}
+class ExternalSegmentedAddress_gen_ : ExternalAddress_gen_ {}
+class SortedCollection_gen_ : OrderedCollection_gen_ {}
+class ByteArray_gen_ : FixedSizeCollection_gen_ {}
+class ExternalHeapAddress_gen_ : ExternalAddress_gen_ {}
+class FontDialog_gen_ : CommonSystemDialog_gen_ {}
+class GraphicsTool_gen_ : Object_gen_ {}
+class TextTool_gen_ : GraphicsTool_gen_ {}
+class Pen_gen_ : TextTool_gen_ {}
+class RecordingPen_gen_ : Pen_gen_ {}
+class METACLASS_EvaluableAction_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_CollectionAccessor_gen_ : METACLASS_EvaluableAction_gen_ {}
+class METACLASS_DynamicDataExchange_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_DDEClient_gen_ : METACLASS_DynamicDataExchange_gen_ {}
+class METACLASS_GraphicsMedium_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Screen_gen_ : METACLASS_GraphicsMedium_gen_ {}
+class METACLASS_ExternalBuffer_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_SelfDefinedStructure_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinSystemTime_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_CompilerNameScope_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_MultiplePoolScope_gen_ : METACLASS_CompilerNameScope_gen_ {}
+class METACLASS_Window_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_MenuWindow_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_WinOfstruct_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Collection_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Bag_gen_ : METACLASS_Collection_gen_ {}
+class METACLASS_WinMeasureItemStruct_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_ViewManager_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ClassHierarchyBrowser_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_WinLogFont_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Context_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ZeroArgumentBlock_gen_ : METACLASS_Context_gen_ {}
+class METACLASS_OneArgumentBlock_gen_ : METACLASS_Context_gen_ {}
+class METACLASS_WinDropFile_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Bitmap_gen_ : METACLASS_GraphicsMedium_gen_ {}
+class METACLASS_WinLogicalObject_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_WinLogicalPalette_gen_ : METACLASS_WinLogicalObject_gen_ {}
+class METACLASS_DiskBrowser_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_WinLogPalette_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Stream_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_ReadStream_gen_ : METACLASS_Stream_gen_ {}
+class METACLASS_WinRectangle_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Win32FindData_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinLogPen_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinPaintStructure_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinTextMetrics_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Magnitude_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Character_gen_ : METACLASS_Magnitude_gen_ {}
+class METACLASS_ConstantAccessor_gen_ : METACLASS_EvaluableAction_gen_ {}
+class METACLASS_WinFileTime_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinBitmapFileHeader_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Printer_gen_ : METACLASS_GraphicsMedium_gen_ {}
+class METACLASS_WinMessage_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinDrawItemStruct_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_ExternalHandle_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Atom_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_DeviceContext_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_WindowHandle_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_WinBitmapStruct_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Boolean_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_False_gen_ : METACLASS_Boolean_gen_ {}
+class METACLASS_WinStructArray_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_FileHandle_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_ObjectLibraryReference_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_ClassBrowser_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_WinPoint_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_StoredPicture_gen_ : METACLASS_GraphicsMedium_gen_ {}
+class METACLASS_WindowPolicy_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_NoMenusWindowPolicy_gen_ : METACLASS_WindowPolicy_gen_ {}
+class METACLASS_SystemWindow_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_WinDialogInfo_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_TwoArgumentBlock_gen_ : METACLASS_Context_gen_ {}
+class METACLASS_Date_gen_ : METACLASS_Magnitude_gen_ {}
+class METACLASS_CompilerErrorHandler_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_NonInteractiveErrorHandler_gen_ : METACLASS_CompilerErrorHandler_gen_ {}
+class METACLASS_Association_gen_ : METACLASS_Magnitude_gen_ {}
+class METACLASS_HomeContext_gen_ : METACLASS_Context_gen_ {}
+class METACLASS_Behavior_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_MetaClass_gen_ : METACLASS_Behavior_gen_ {}
+class METACLASS_WinLogicalPen_gen_ : METACLASS_WinLogicalObject_gen_ {}
+class METACLASS_VirtualMachineConfiguration_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Pattern_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_WildPattern_gen_ : METACLASS_Pattern_gen_ {}
+class METACLASS_WinWindowPlacement_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_Time_gen_ : METACLASS_Magnitude_gen_ {}
+class METACLASS_Class_gen_ : METACLASS_Behavior_gen_ {}
+class METACLASS_WinWindowClass_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_True_gen_ : METACLASS_Boolean_gen_ {}
+class METACLASS_WinLogicalBrush_gen_ : METACLASS_WinLogicalObject_gen_ {}
+class METACLASS_Debugger_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_WinLogBrush_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class StaticPane_gen_ : ControlPane_gen_ {}
+class StaticGraphic_gen_ : StaticPane_gen_ {}
+class StaticBox_gen_ : StaticPane_gen_ {}
+class ListBox_gen_ : ControlPane_gen_ {}
+class MultipleSelectListBox_gen_ : ListBox_gen_ {}
+class IdentityDictionary_gen_ : Dictionary_gen_ {}
+class MethodDictionary_gen_ : IdentityDictionary_gen_ {}
+class EntryField_gen_ : ControlPane_gen_ {}
+class ComboEntryField_gen_ : EntryField_gen_ {}
+class Button_gen_ : ControlPane_gen_ {}
+class DrawnButton_gen_ : Button_gen_ {}
+class Array_gen_ : FixedSizeCollection_gen_ {}
+class ActionSequence_gen_ : Array_gen_ {}
+class ListPane_gen_ : ListBox_gen_ {}
+class LargeInteger_gen_ : Integer_gen_ {}
+class LargePositiveInteger_gen_ : LargeInteger_gen_ {}
+class LargeNegativeInteger_gen_ : LargeInteger_gen_ {}
+class WriteStream_gen_ : Stream_gen_ {}
+class ReadWriteStream_gen_ : WriteStream_gen_ {}
+class FileStream_gen_ : ReadWriteStream_gen_ {}
+class MixedFileStream_gen_ : FileStream_gen_ {}
+class String_gen_ : FixedSizeCollection_gen_ {}
+class Symbol_gen_ : String_gen_ {}
+class StaticText_gen_ : StaticPane_gen_ {}
+class METACLASS_DynamicLinkLibrary_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_GDIDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_DictionaryScope_gen_ : METACLASS_CompilerNameScope_gen_ {}
+class METACLASS_GlobalPoolScope_gen_ : METACLASS_DictionaryScope_gen_ {}
+class METACLASS_WindowDialog_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_PrintAbortDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_Inspector_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_DoubleByteStringInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_OrderedCollectionInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_SilentErrorHandler_gen_ : METACLASS_CompilerErrorHandler_gen_ {}
+class METACLASS_TraditionalCompilerErrorHandler_gen_ : METACLASS_SilentErrorHandler_gen_ {}
+class METACLASS_Prompter_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_GraphicInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_SubPane_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_GraphPane_gen_ : METACLASS_SubPane_gen_ {}
+class METACLASS_ExternalMemoryHandle_gen_ : METACLASS_ExternalHandle_gen_ {}
+class METACLASS_ExternalGlobalHandle_gen_ : METACLASS_ExternalMemoryHandle_gen_ {}
+class METACLASS_ByteArrayInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_DialogBox_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_NewSubclassDialog_gen_ : METACLASS_DialogBox_gen_ {}
+class METACLASS_GroupPane_gen_ : METACLASS_SubPane_gen_ {}
+class METACLASS_Number_gen_ : METACLASS_Magnitude_gen_ {}
+class METACLASS_Float_gen_ : METACLASS_Number_gen_ {}
+class METACLASS_ProgressIndicatorDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_CommonDialogDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_SaveImageAsDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_StandardWindowPolicy_gen_ : METACLASS_WindowPolicy_gen_ {}
+class METACLASS_SmalltalkWindowPolicy_gen_ : METACLASS_StandardWindowPolicy_gen_ {}
+class METACLASS_MethodBrowser_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_SelectorBrowser_gen_ : METACLASS_MethodBrowser_gen_ {}
+class METACLASS_SaveImageDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_KernelDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_TextPaneErrorHandler_gen_ : METACLASS_CompilerErrorHandler_gen_ {}
+class METACLASS_WorkspaceErrorHandler_gen_ : METACLASS_TextPaneErrorHandler_gen_ {}
+class METACLASS_VirtualMachineDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_Fraction_gen_ : METACLASS_Number_gen_ {}
+class METACLASS_ShellDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_MessageBox_gen_ : METACLASS_DialogBox_gen_ {}
+class METACLASS_Exception_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_Notification_gen_ : METACLASS_Exception_gen_ {}
+class METACLASS_VetoAction_gen_ : METACLASS_Notification_gen_ {}
+class METACLASS_CompatibleWindowPolicy_gen_ : METACLASS_StandardWindowPolicy_gen_ {}
+class METACLASS_TextWindow_gen_ : METACLASS_ViewManager_gen_ {}
+class METACLASS_WalkbackWindow_gen_ : METACLASS_TextWindow_gen_ {}
+class METACLASS_SelfDefinedStructureInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_DDEAuxWindow_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_DDEAuxClient_gen_ : METACLASS_DDEAuxWindow_gen_ {}
+class METACLASS_DDEAuxServer_gen_ : METACLASS_DDEAuxWindow_gen_ {}
+class METACLASS_KeyboardInterrupt_gen_ : METACLASS_Notification_gen_ {}
+class METACLASS_DDEServer_gen_ : METACLASS_DynamicDataExchange_gen_ {}
+class METACLASS_SmalltalkEmulator_gen_ : METACLASS_DDEServer_gen_ {}
+class METACLASS_Message_gen_ : METACLASS_EvaluableAction_gen_ {}
+class METACLASS_LinkMessage_gen_ : METACLASS_Message_gen_ {}
+class METACLASS_WinBitmapInfoHeader_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_WinBitmapInfo_gen_ : METACLASS_WinBitmapInfoHeader_gen_ {}
+class METACLASS_UserDLL_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_DictionaryInspector_gen_ : METACLASS_Inspector_gen_ {}
+class METACLASS_TranscriptWindow_gen_ : METACLASS_TextWindow_gen_ {}
+class METACLASS_VirtualMachineExe_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_FindReplaceDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_ExternalHeapHandle_gen_ : METACLASS_ExternalMemoryHandle_gen_ {}
+class METACLASS_Set_gen_ : METACLASS_Collection_gen_ {}
+class METACLASS_SymbolSet_gen_ : METACLASS_Set_gen_ {}
+class METACLASS_AboutDialog_gen_ : METACLASS_WindowDialog_gen_ {}
+class METACLASS_Error_gen_ : METACLASS_Exception_gen_ {}
+class METACLASS_FileError_gen_ : METACLASS_Error_gen_ {}
+class METACLASS_ProcessTermination_gen_ : METACLASS_Notification_gen_ {}
+class TextEdit_gen_ : EntryField_gen_ {}
+class TextPaneControl_gen_ : TextEdit_gen_ {}
+class CompiledMethod_gen_ : Array_gen_ {}
+class CompiledInitializer_gen_ : CompiledMethod_gen_ {}
+class Toggle_gen_ : Button_gen_ {}
+class RadioButton_gen_ : Toggle_gen_ {}
+class DoubleByteString_gen_ : String_gen_ {}
+class DoubleByteSymbol_gen_ : DoubleByteString_gen_ {}
+class DropDownList_gen_ : ListBox_gen_ {}
+class ComboBox_gen_ : DropDownList_gen_ {}
+class METACLASS_Dictionary_gen_ : METACLASS_Set_gen_ {}
+class METACLASS_SystemDictionary_gen_ : METACLASS_Dictionary_gen_ {}
+class METACLASS_Warning_gen_ : METACLASS_Notification_gen_ {}
+class METACLASS_LoggedWarning_gen_ : METACLASS_Warning_gen_ {}
+class METACLASS_IndexedCollection_gen_ : METACLASS_Collection_gen_ {}
+class METACLASS_OrderedCollection_gen_ : METACLASS_IndexedCollection_gen_ {}
+class METACLASS_Process_gen_ : METACLASS_OrderedCollection_gen_ {}
+class METACLASS_ControlError_gen_ : METACLASS_Error_gen_ {}
+class METACLASS_MessageNotUnderstood_gen_ : METACLASS_ControlError_gen_ {}
+class METACLASS_ControlPane_gen_ : METACLASS_SubPane_gen_ {}
+class METACLASS_GroupBox_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_CommonSystemDialog_gen_ : METACLASS_DialogBox_gen_ {}
+class METACLASS_FileDialog_gen_ : METACLASS_CommonSystemDialog_gen_ {}
+class METACLASS_TextPane_gen_ : METACLASS_SubPane_gen_ {}
+class METACLASS_WorkspaceTextPane_gen_ : METACLASS_TextPane_gen_ {}
+class METACLASS_DynamicLinkLibrary16_gen_ : METACLASS_DynamicLinkLibrary_gen_ {}
+class METACLASS_KernelDLL16_gen_ : METACLASS_DynamicLinkLibrary16_gen_ {}
+class METACLASS_Integer_gen_ : METACLASS_Number_gen_ {}
+class METACLASS_SmallInteger_gen_ : METACLASS_Integer_gen_ {}
+class METACLASS_FixedSizeCollection_gen_ : METACLASS_IndexedCollection_gen_ {}
+class METACLASS_Interval_gen_ : METACLASS_FixedSizeCollection_gen_ {}
+class METACLASS_ApplicationWindow_gen_ : METACLASS_Window_gen_ {}
+class METACLASS_TopPane_gen_ : METACLASS_ApplicationWindow_gen_ {}
+class METACLASS_DialogTopPane_gen_ : METACLASS_TopPane_gen_ {}
+class METACLASS_ExternalLong_gen_ : METACLASS_ExternalBuffer_gen_ {}
+class METACLASS_ExternalAddress_gen_ : METACLASS_ExternalLong_gen_ {}
+class METACLASS_ExternalGlobalAddress_gen_ : METACLASS_ExternalAddress_gen_ {}
+class METACLASS_ScrollBar_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_PrintDialog_gen_ : METACLASS_CommonSystemDialog_gen_ {}
+class METACLASS_ThunkDLL16_gen_ : METACLASS_DynamicLinkLibrary16_gen_ {}
+class METACLASS_ArithmeticError_gen_ : METACLASS_Error_gen_ {}
+class METACLASS_ZeroDivide_gen_ : METACLASS_ArithmeticError_gen_ {}
+class METACLASS_ColorDialog_gen_ : METACLASS_CommonSystemDialog_gen_ {}
+class METACLASS_ExternalSegmentedAddress_gen_ : METACLASS_ExternalAddress_gen_ {}
+class METACLASS_ByteArray_gen_ : METACLASS_FixedSizeCollection_gen_ {}
+class METACLASS_SortedCollection_gen_ : METACLASS_OrderedCollection_gen_ {}
+class METACLASS_ExternalHeapAddress_gen_ : METACLASS_ExternalAddress_gen_ {}
+class METACLASS_FontDialog_gen_ : METACLASS_CommonSystemDialog_gen_ {}
+class METACLASS_GraphicsTool_gen_ : METACLASS_Object_gen_ {}
+class METACLASS_TextTool_gen_ : METACLASS_GraphicsTool_gen_ {}
+class METACLASS_Pen_gen_ : METACLASS_TextTool_gen_ {}
+class METACLASS_RecordingPen_gen_ : METACLASS_Pen_gen_ {}
+class CheckBox_gen_ : Toggle_gen_ {}
+class ThreeStateButton_gen_ : CheckBox_gen_ {}
+class METACLASS_StaticPane_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_StaticGraphic_gen_ : METACLASS_StaticPane_gen_ {}
+class METACLASS_StaticBox_gen_ : METACLASS_StaticPane_gen_ {}
+class METACLASS_ListBox_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_MultipleSelectListBox_gen_ : METACLASS_ListBox_gen_ {}
+class METACLASS_IdentityDictionary_gen_ : METACLASS_Dictionary_gen_ {}
+class METACLASS_MethodDictionary_gen_ : METACLASS_IdentityDictionary_gen_ {}
+class METACLASS_EntryField_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_ComboEntryField_gen_ : METACLASS_EntryField_gen_ {}
+class METACLASS_Button_gen_ : METACLASS_ControlPane_gen_ {}
+class METACLASS_DrawnButton_gen_ : METACLASS_Button_gen_ {}
+class METACLASS_Array_gen_ : METACLASS_FixedSizeCollection_gen_ {}
+class METACLASS_ActionSequence_gen_ : METACLASS_Array_gen_ {}
+class METACLASS_ListPane_gen_ : METACLASS_ListBox_gen_ {}
+class METACLASS_LargeInteger_gen_ : METACLASS_Integer_gen_ {}
+class METACLASS_LargePositiveInteger_gen_ : METACLASS_LargeInteger_gen_ {}
+class METACLASS_LargeNegativeInteger_gen_ : METACLASS_LargeInteger_gen_ {}
+class METACLASS_WriteStream_gen_ : METACLASS_Stream_gen_ {}
+class METACLASS_ReadWriteStream_gen_ : METACLASS_WriteStream_gen_ {}
+class METACLASS_FileStream_gen_ : METACLASS_ReadWriteStream_gen_ {}
+class METACLASS_MixedFileStream_gen_ : METACLASS_FileStream_gen_ {}
+class METACLASS_String_gen_ : METACLASS_FixedSizeCollection_gen_ {}
+class METACLASS_Symbol_gen_ : METACLASS_String_gen_ {}
+class METACLASS_StaticText_gen_ : METACLASS_StaticPane_gen_ {}
+class METACLASS_TextEdit_gen_ : METACLASS_EntryField_gen_ {}
+class METACLASS_TextPaneControl_gen_ : METACLASS_TextEdit_gen_ {}
+class METACLASS_CompiledMethod_gen_ : METACLASS_Array_gen_ {}
+class METACLASS_CompiledInitializer_gen_ : METACLASS_CompiledMethod_gen_ {}
+class METACLASS_Toggle_gen_ : METACLASS_Button_gen_ {}
+class METACLASS_RadioButton_gen_ : METACLASS_Toggle_gen_ {}
+class METACLASS_DoubleByteString_gen_ : METACLASS_String_gen_ {}
+class METACLASS_DoubleByteSymbol_gen_ : METACLASS_DoubleByteString_gen_ {}
+class METACLASS_DropDownList_gen_ : METACLASS_ListBox_gen_ {}
+class METACLASS_ComboBox_gen_ : METACLASS_DropDownList_gen_ {}
+class METACLASS_CheckBox_gen_ : METACLASS_Toggle_gen_ {}
+class METACLASS_ThreeStateButton_gen_ : METACLASS_CheckBox_gen_ {}
+@mptr("hash") Object_gen_ style_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _style_gen_(WinLogBrush_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(WinWindowClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ color_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _color_gen_(WinLogBrush_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _color_gen_(ColorDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ color_gen_(virtual!ExternalBuffer_gen_);
+@method Object_gen_ _color_gen_(WinLogBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _color_gen_(WinLogPen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ style_gen_(virtual!Object_gen_);
+@method Object_gen_ _style_gen_(WinLogBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(WinLogPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _style_gen_(MenuItem_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ popupMenu_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _popupMenu_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _popupMenu_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _popupMenu_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ amountToPageUp_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _amountToPageUp_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _amountToPageUp_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ font_gen_(virtual!Object_gen_);
+@method Object_gen_ _font_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _font_gen_(TextTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _font_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button1Down_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button1Down_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Down_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Down_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Down_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ charsInColumn_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _charsInColumn_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _charsInColumn_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ updateWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _updateWith_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateWith_gen_(Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ helpManager_gen_(virtual!Window_gen_);
+@method Object_gen_ _helpManager_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _helpManager_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _helpManager_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _helpManager_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ amountToScrollLeft_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _amountToScrollLeft_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _amountToScrollLeft_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ backColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _backColor_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backColor_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backColor_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ foreColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _foreColor_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ updateVerticalSlider_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _updateVerticalSlider_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateVerticalSlider_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isOkToChange_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _isOkToChange_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isOkToChange_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ handlers_gen_(virtual!Window_gen_);
+@method Object_gen_ _handlers_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handlers_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handlers_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ update_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _update_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ releaseEventTable_gen_(virtual!Object_gen_);
+@method Object_gen_ _releaseEventTable_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _releaseEventTable_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _releaseEventTable_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ contextForItem_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _contextForItem_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForItem_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForItem_gen_(DialogBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForItem_gen_(DialogTopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForItem_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForItem_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ aboutToSaveImage_gen_(virtual!Object_gen_);
+@method Object_gen_ _aboutToSaveImage_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(NotificationManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(METACLASS_SelfInitializingObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(METACLASS_KernelDLL16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(METACLASS_Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(METACLASS_Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _aboutToSaveImage_gen_(METACLASS_Screen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button2Up_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button2Up_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Up_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Up_gen_(ComboEntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Up_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Up_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button1Up_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button1Up_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Up_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Up_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Up_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultDragDropCursor_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _defaultDragDropCursor_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultDragDropCursor_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ charsInRow_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _charsInRow_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _charsInRow_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ framingBlock_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _framingBlock_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _framingBlock_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ totalLength_gen_(virtual!Object_gen_);
+@method Object_gen_ _totalLength_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _totalLength_gen_(StringModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _totalLength_gen_(TextPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ framingRatio_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _framingRatio_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _framingRatio_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ zoom_gen_(virtual!Object_gen_);
+@method Object_gen_ _zoom_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _zoom_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _zoom_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmErasebkgndWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmErasebkgndWith_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmErasebkgndWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmErasebkgndWith_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmErasebkgndWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmErasebkgndWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resizeDeferinfo_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _resizeDeferinfo_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resizeDeferinfo_gen_(TopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initialText_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _initialText_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialText_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialText_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialText_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buildWindow_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _buildWindow_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildWindow_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildWindow_gen_(DialogTopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildWindow_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildWindow_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initialize_gen_(virtual!Object_gen_);
+@method Object_gen_ _initialize_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(RecordingPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(OperatingSystemInformation_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(DragDropList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Pen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Printer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(MessageBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(NationalLanguageSupport_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(NotificationManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ProgressIndicatorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Semaphore_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(CompilerNameScope_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Bag_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(MenuWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Time_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_ExceptionHandler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Date_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_CallBack_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Pen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Printer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_MessageBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_MethodDictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_WinLogicalPalette_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_WorkspaceTextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_NewSubclassDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Pattern_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_CompilerInterface_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_CompilerNameScope_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(METACLASS_SelfDefinedStructure_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ popup_gen_(virtual!Window_gen_);
+@method Object_gen_ _popup_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _popup_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ basicStyle_gen_(virtual!Window_gen_);
+@method Object_gen_ _basicStyle_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(StaticPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicStyle_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ updateHorizontalSlider_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _updateHorizontalSlider_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateHorizontalSlider_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buildDialogItem_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _buildDialogItem_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildDialogItem_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resize_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _resize_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resize_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resize_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ losingFocus_gen_(virtual!Window_gen_);
+@method Object_gen_ _losingFocus_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(ComboEntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _losingFocus_gen_(Toggle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ subPaneWithFocus_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _subPaneWithFocus_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _subPaneWithFocus_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ previousTabStop_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _previousTabStop_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousTabStop_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ helpRequest_gen_(virtual!Window_gen_);
+@method Object_gen_ _helpRequest_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _helpRequest_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _helpRequest_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultDragDropObjects_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _defaultDragDropObjects_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultDragDropObjects_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultDragDropObjects_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isSubPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _isSubPane_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isSubPane_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ handlersAttribute_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _handlersAttribute_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handlersAttribute_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buildControl_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _buildControl_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(ScrollBar_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildControl_gen_(TextEdit_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ update_gen_(virtual!Object_gen_);
+@method Object_gen_ _update_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _update_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ colorChange_gen_(virtual!Window_gen_);
+@method Object_gen_ _colorChange_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _colorChange_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _colorChange_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ font_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _font_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _font_gen_(TextTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _font_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _font_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ name_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _name_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Process_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ handlersAttribute_gen_(virtual!Window_gen_);
+@method Object_gen_ _handlersAttribute_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handlersAttribute_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmVScrollWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmVScrollWith_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmVScrollWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmVScrollWith_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmVScrollWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmHScrollWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmHScrollWith_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmHScrollWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmHScrollWith_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmHScrollWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getGraphicsTool_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _getGraphicsTool_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getGraphicsTool_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ framingBlock_gen_(virtual!Window_gen_);
+@method Object_gen_ _framingBlock_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _framingBlock_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _framingBlock_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _framingBlock_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDropfilesWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDropfilesWith_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDropfilesWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ topCorner_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _topCorner_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _topCorner_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mouseMove_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _mouseMove_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mouseMove_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mouseMove_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dragDropObjects_gen_(virtual!Object_gen_);
+@method Object_gen_ _dragDropObjects_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dragDropObjects_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dragDropObjects_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dragDropObjects_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initSize_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _initSize_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initSize_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ eventTableForEdit_gen_(virtual!Object_gen_);
+@method Object_gen_ _eventTableForEdit_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTableForEdit_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTableForEdit_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTableForEdit_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ controlKeyInput_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _controlKeyInput_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlKeyInput_gen_(Button_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlKeyInput_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlKeyInput_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlKeyInput_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlKeyInput_gen_(ComboEntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultStyle_gen_(virtual!Window_gen_);
+@method Object_gen_ _defaultStyle_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(RadioButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(CheckBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(StaticBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultStyle_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ validate_gen_(virtual!Object_gen_);
+@method Object_gen_ _validate_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _validate_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ virtualKeyInputWithkeys_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(SubPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(Button_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(EntryField_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(ComboEntryField_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(ListBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _virtualKeyInputWithkeys_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isATabStop_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _isATabStop_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isATabStop_gen_(RadioButton_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selection_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _selection_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selection_gen_(virtual!Window_gen_);
+@method Object_gen_ _selection_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selection_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initGraphics_gen_(virtual!Window_gen_);
+@method Object_gen_ _initGraphics_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initGraphics_gen_(MenuWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initGraphics_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ graphicsToolClass_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _graphicsToolClass_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _graphicsToolClass_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button1Move_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button1Move_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Move_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Move_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1Move_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canArrowInto_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _canArrowInto_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canArrowInto_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ amountToScrollUp_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _amountToScrollUp_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _amountToScrollUp_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resizeWindow_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _resizeWindow_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resizeWindow_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ close_gen_(virtual!Object_gen_);
+@method Object_gen_ _close_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(TranscriptWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(StoredPicture_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(FileHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(DynamicLinkLibrary16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(MenuWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ gettingFocus_gen_(virtual!Window_gen_);
+@method Object_gen_ _gettingFocus_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _gettingFocus_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _gettingFocus_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _gettingFocus_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _gettingFocus_gen_(Toggle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ tabWithKeys_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _tabWithKeys_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tabWithKeys_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tabWithKeys_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deactivate_gen_(virtual!Window_gen_);
+@method Object_gen_ _deactivate_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deactivate_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deactivate_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deactivate_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ performMenuItem_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _performMenuItem_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _performMenuItem_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _performMenuItem_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _performMenuItem_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ updateSliders_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _updateSliders_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateSliders_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextTabStop_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _nextTabStop_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextTabStop_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ contextForPopup_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _contextForPopup_gen_(SubPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForPopup_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForPopup_gen_(DialogBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForPopup_gen_(DialogTopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForPopup_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contextForPopup_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ eventTable_gen_(virtual!Object_gen_);
+@method Object_gen_ _eventTable_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTable_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTable_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTable_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ amountToPageLeft_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _amountToPageLeft_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _amountToPageLeft_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ open_gen_(virtual!Object_gen_);
+@method Object_gen_ _open_gen_(SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(AboutDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(DDEAuxServer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(DDEAuxClient_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(MessageBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(SaveImageAsDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ProgressIndicatorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(METACLASS_DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ className_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _className_gen_(Enumerator_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _className_gen_(WinWindowClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _className_gen_(ClassInstaller_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ enableInspectItem_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _enableInspectItem_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enableInspectItem_gen_(DictionaryInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enableInspectItem_gen_(Inspector_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ messages_gen_(virtual!Object_gen_);
+@method Object_gen_ _messages_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _messages_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _messages_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _messages_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _messages_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ restartable_gen_(virtual!Object_gen_);
+@method Object_gen_ _restartable_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _restartable_gen_(Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ instance_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _instance_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(DictionaryInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(SelfDefinedStructureInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(ByteArrayInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(GraphicInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instance_gen_(OrderedCollectionInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resume_gen_(virtual!Object_gen_);
+@method Object_gen_ _resume_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ accept_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _accept_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(MethodBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(DictionaryInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(SelfDefinedStructureInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(SelectorBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(OrderedCollectionInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ inspectSelection_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _inspectSelection_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectSelection_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ inspectSelection_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _inspectSelection_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectSelection_gen_(DictionaryInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectSelection_gen_(SelfDefinedStructureInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectSelection_gen_(Inspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectSelection_gen_(OrderedCollectionInspector_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ method_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _method_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _method_gen_(MethodBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _method_gen_(HomeContext_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _method_gen_(MethodExecutor_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ compilerClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _compilerClass_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerClass_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerClass_gen_(WorkspaceTextPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ label_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _label_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(Button_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(GroupBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ doItResultError_gen_(virtual!ViewManager_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _doItResultError_gen_(Debugger_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doItResultError_gen_(Inspector_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ label_gen_(virtual!Object_gen_);
+@method Object_gen_ _label_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _label_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ senders_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _senders_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _senders_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _senders_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _senders_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ skip_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _skip_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _skip_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ implementors_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _implementors_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _implementors_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _implementors_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _implementors_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initWindowSize_gen_(virtual!Object_gen_);
+@method Object_gen_ _initWindowSize_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(AboutDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(FindReplaceDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(TranscriptWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(WalkbackWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(SaveImageDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(SelectorBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(SaveImageAsDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(ProgressIndicatorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(Prompter_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(PrintAbortDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initWindowSize_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ inspectMenu_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _inspectMenu_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectMenu_gen_(DictionaryInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectMenu_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectMenu_gen_(ByteArrayInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ menu_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _menu_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _menu_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectInstance_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _selectInstance_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectInstance_gen_(SelfDefinedStructureInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectInstance_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectInstance_gen_(GraphicInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ windowPolicyClass_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _windowPolicyClass_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(Inspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _windowPolicyClass_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ debug_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _debug_gen_(Debugger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _debug_gen_(WalkbackWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ terminate_gen_(virtual!Object_gen_);
+@method Object_gen_ _terminate_gen_(Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _terminate_gen_(DDEServer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _terminate_gen_(Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _terminate_gen_(DDEClient_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ convertToOffset_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _convertToOffset_gen_(Debugger_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _convertToOffset_gen_(METACLASS_CompilerInterface_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ styleColorHatch_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _styleColorHatch_gen_(WinLogicalBrush_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _styleColorHatch_gen_(METACLASS_WinLogicalBrush_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getHandle_gen_(virtual!Object_gen_);
+@method Object_gen_ _getHandle_gen_(WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getHandle_gen_(WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getHandle_gen_(WinLogicalPalette_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getHandle_gen_(METACLASS_DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ attributeArray_gen_(virtual!WinLogicalObject_gen_);
+@method Object_gen_ _attributeArray_gen_(WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _attributeArray_gen_(WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _attributeArray_gen_(WinLogicalPalette_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromStruct_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fromStruct_gen_(WinLogicalBrush_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromStruct_gen_(WinLogicalPen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromStruct_gen_(WinLogicalPalette_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromStruct_gen_(METACLASS_WinLogicalPalette_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cutSelection_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _cutSelection_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cutSelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cutSelection_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ text_gen_(virtual!Object_gen_);
+@method Object_gen_ _text_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _text_gen_(METACLASS_CursorManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ triggerChanged_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _triggerChanged_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChanged_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChanged_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChanged_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChanged_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChanged_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isComboBox_gen_(virtual!Object_gen_);
+@method Object_gen_ _isComboBox_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isComboBox_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ triggerChangedForSelect_gen_(virtual!DropDownList_gen_);
+@method Object_gen_ _triggerChangedForSelect_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerChangedForSelect_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dropDown_gen_(virtual!Object_gen_);
+@method Object_gen_ _dropDown_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dropDown_gen_(METACLASS_ComboBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setValue_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _setValue_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(StaticText_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(ScrollBar_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(StaticGraphic_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ clear_gen_(virtual!Object_gen_);
+@method Object_gen_ _clear_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clear_gen_(ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clear_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ previousValue_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _previousValue_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousValue_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousValue_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ previousValue_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _previousValue_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousValue_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousValue_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ modified_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _modified_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _modified_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _modified_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ modified_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _modified_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _modified_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _modified_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDropDownList_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDropDownList_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDropDownList_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDropDownList_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ autoHScroll_gen_(virtual!ControlPane_gen_);
+@method Object_gen_ _autoHScroll_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _autoHScroll_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asyncControlEvent_gen_(virtual!ControlPane_gen_, Object_gen_);
+@method Object_gen_ _asyncControlEvent_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(DropDownList_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(Button_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(RadioButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(CheckBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asyncControlEvent_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ recreateWindow_gen_(virtual!Window_gen_);
+@method Object_gen_ _recreateWindow_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _recreateWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copySelection_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _copySelection_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copySelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copySelection_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ text_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _text_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _text_gen_(MethodBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _text_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _text_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pasteSelection_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _pasteSelection_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pasteSelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pasteSelection_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ value_gen_(virtual!Object_gen_);
+@method Object_gen_ _value_gen_(ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(Association_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ZeroArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ value_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _value_gen_(ComboBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(StaticText_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(Association_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ScrollBar_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ObjectLibraryExternal_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(OneArgumentBlock_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(StaticGraphic_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _value_gen_(METACLASS_Character_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileInFrom_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fileInFrom_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileInFrom_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileInFrom_gen_(ClassReader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileInFrom_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileOutOn_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fileOutOn_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutOn_gen_(Class_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutOn_gen_(MetaClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutOn_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutOn_gen_(ClassReader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutOn_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ charAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _charAt_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _charAt_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ topCorner_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _topCorner_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _topCorner_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _topCorner_gen_(TextEdit_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ appendChar_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _appendChar_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _appendChar_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _appendChar_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ appendText_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _appendText_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _appendText_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ extent_gen_(virtual!Object_gen_);
+@method Object_gen_ _extent_gen_(StringModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ lineAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _lineAt_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _lineAt_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _lineAt_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _lineAt_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ display_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _display_gen_(StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(AboutDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asParameter_gen_(virtual!Object_gen_);
+@method Object_gen_ _asParameter_gen_(True_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(ExternalBuffer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(WinLogicalObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(CallBack_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(WinStructArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(False_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(UndefinedObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Point_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asParameter_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ eqv_gen_(virtual!Boolean_gen_, Object_gen_);
+@method Object_gen_ _eqv_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eqv_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ not_gen_(virtual!Boolean_gen_);
+@method Object_gen_ _not_gen_(True_gen_) { return new Object_gen_(); }
+@method Object_gen_ _not_gen_(False_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ifTrueIffalse_gen_(virtual!Boolean_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _ifTrueIffalse_gen_(True_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ifTrueIffalse_gen_(False_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ basicHash_gen_(virtual!Object_gen_);
+@method Object_gen_ _basicHash_gen_(True_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicHash_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicHash_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicHash_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicHash_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ifFalseIftrue_gen_(virtual!Boolean_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _ifFalseIftrue_gen_(True_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ifFalseIftrue_gen_(False_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ifTrue_gen_(virtual!Boolean_gen_, Object_gen_);
+@method Object_gen_ _ifTrue_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ifTrue_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ xor_gen_(virtual!Boolean_gen_, Object_gen_);
+@method Object_gen_ _xor_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _xor_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ or_gen_(virtual!Boolean_gen_, Object_gen_);
+@method Object_gen_ _or_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _or_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ and_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _and_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _and_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _and_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hash_gen_(virtual!Object_gen_);
+@method Object_gen_ _hash_gen_(True_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Time_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(LargeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Magnitude_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(ExternalHeapHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Association_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Date_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(LinkMessage_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(WinLogPalette_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Float_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hash_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ifFalse_gen_(virtual!Boolean_gen_, Object_gen_);
+@method Object_gen_ _ifFalse_gen_(True_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ifFalse_gen_(False_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asInteger_gen_(virtual!Object_gen_);
+@method Object_gen_ _asInteger_gen_(ExternalLong_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(DynamicLinkLibrary16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asInteger_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printOn_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _printOn_gen_(ExternalLong_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ExternalHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Time_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Association_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Date_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(File_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ObjectLibraryReference_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(LargeNegativeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(LargePositiveInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ExternalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(CompiledMethod_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ConstantAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Character_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ObjectLibraryExternal_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Fraction_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(CompiledInitializer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Font_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Float_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Boolean_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(UndefinedObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Process_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(Array_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(SelfDefinedStructure_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printOn_gen_(CollectionAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asBoolean_gen_(virtual!Object_gen_);
+@method Object_gen_ _asBoolean_gen_(ExternalLong_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asBoolean_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ name_gen_(virtual!Object_gen_);
+@method Object_gen_ _name_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(OperatingSystemInformation_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _name_gen_(Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ edit_gen_(virtual!Object_gen_);
+@method Object_gen_ _edit_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _edit_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _isClass_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isClass_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(Class_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _variableByteSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(UndefinedObject_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ changeSuperclassTo_gen_(virtual!Behavior_gen_, Object_gen_);
+@method Object_gen_ _changeSuperclassTo_gen_(Class_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changeSuperclassTo_gen_(MetaClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changeSuperclassTo_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ classVarNames_gen_(virtual!Behavior_gen_);
+@method Object_gen_ _classVarNames_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _classVarNames_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ subclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(Class_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(Behavior_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _subclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(UndefinedObject_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ variableByteSubclassClassvariablenamesPooldictionaries_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _variableByteSubclassClassvariablenamesPooldictionaries_gen_(Class_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _variableByteSubclassClassvariablenamesPooldictionaries_gen_(UndefinedObject_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ recomputeMethodDictionaries_gen_(virtual!Behavior_gen_);
+@method Object_gen_ _recomputeMethodDictionaries_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _recomputeMethodDictionaries_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@method Object_gen_ _recomputeMethodDictionaries_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(Class_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(Behavior_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _variableSubclassInstancevariablenamesClassvariablenamesPooldictionaries_gen_(UndefinedObject_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ classPool_gen_(virtual!Behavior_gen_);
+@method Object_gen_ _classPool_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _classPool_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sharedPools_gen_(virtual!Behavior_gen_);
+@method Object_gen_ _sharedPools_gen_(Class_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sharedPools_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ handle_gen_(virtual!Object_gen_);
+@method Object_gen_ _handle_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(StoredPicture_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(WinLogicalObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ displayAtWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _displayAtWith_gen_(CursorManager_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAtWith_gen_(DIB_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAtWith_gen_(Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAtWith_gen_(Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAtWith_gen_(Icon_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ inspect_gen_(virtual!Object_gen_);
+@method Object_gen_ _inspect_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(SelfDefinedStructure_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspect_gen_(OrderedCollection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hide_gen_(virtual!Object_gen_);
+@method Object_gen_ _hide_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hide_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ display_gen_(virtual!Object_gen_);
+@method Object_gen_ _display_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _display_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ displayAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _displayAt_gen_(CursorManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAt_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAt_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _displayAt_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ release_gen_(virtual!Object_gen_);
+@method Object_gen_ _release_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(RecordingPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(StoredPicture_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(CallBack_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _release_gen_(Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ handle_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _handle_gen_(CursorManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(ExceptionHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(StoredPicture_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(WinLogicalObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _handle_gen_(METACLASS_Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reset_gen_(virtual!Object_gen_);
+@method Object_gen_ _reset_gen_(CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reset_gen_(WildPattern_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reset_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reset_gen_(Pattern_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ enableMethodsMenu_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _enableMethodsMenu_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enableMethodsMenu_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enableMethodsMenu_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openOn_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _openOn_gen_(MethodBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(SelfDefinedStructureInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(SelectorBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(ByteArrayInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(GraphicInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOn_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ localImplementors_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _localImplementors_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localImplementors_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileOutMethod_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _fileOutMethod_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutMethod_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOutMethod_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ disableMethodsMenu_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _disableMethodsMenu_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disableMethodsMenu_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disableMethodsMenu_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ localSenders_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _localSenders_gen_(MethodBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localSenders_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isExternalHandle_gen_(virtual!Object_gen_);
+@method Object_gen_ _isExternalHandle_gen_(ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isExternalHandle_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceBytesFromToWithStartingat_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(ExternalHandle_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(Symbol_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(ByteArray_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(String_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesFromToWithStartingat_gen_(Float_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ uLongAtOffset_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _uLongAtOffset_gen_(ExternalHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _uLongAtOffset_gen_(ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _uLongAtOffset_gen_(DynamicLinkLibrary16_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fillFromAddress_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fillFromAddress_gen_(ExternalHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fillFromAddress_gen_(ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ uLongAtOffsetPut_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _uLongAtOffsetPut_gen_(ExternalHandle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _uLongAtOffsetPut_gen_(ExternalBuffer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _uLongAtOffsetPut_gen_(DynamicLinkLibrary16_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceFromToWithStartingat_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceFromToWithStartingat_gen_(ExternalHandle_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(LargeInteger_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(Symbol_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(ByteArray_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(String_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithStartingat_gen_(Float_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isValid_gen_(virtual!Object_gen_);
+@method Object_gen_ _isValid_gen_(ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isValid_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isValid_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isValid_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isValid_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isValid_gen_(Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ contents_gen_(virtual!Object_gen_);
+@method Object_gen_ _contents_gen_(ExternalBuffer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ReadWriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(Directory_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ReadStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(MenuItem_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ contents_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _contents_gen_(ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(TextEdit_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _contents_gen_(StaticGraphic_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ size_gen_(virtual!Object_gen_);
+@method Object_gen_ _size_gen_(ExternalBuffer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(Interval_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(FixedSizeCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(Bag_gen_) { return new Object_gen_(); }
+@method Object_gen_ _size_gen_(OrderedCollection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asSeconds_gen_(virtual!Magnitude_gen_);
+@method Object_gen_ _asSeconds_gen_(Time_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asSeconds_gen_(Date_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitAnd_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _bitAnd_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitAnd_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isLargeInteger_gen_(virtual!Object_gen_);
+@method Object_gen_ _isLargeInteger_gen_(LargeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isLargeInteger_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ at_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _at_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(ExternalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(Interval_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(Bag_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(SelfDefinedStructure_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _at_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitOr_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _bitOr_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitOr_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ byteSize_gen_(virtual!Integer_gen_);
+@method Object_gen_ _byteSize_gen_(LargeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _byteSize_gen_(SmallInteger_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitShift_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _bitShift_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitShift_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitShift_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitXor_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _bitXor_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitXor_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deepCopy_gen_(virtual!Object_gen_);
+@method Object_gen_ _deepCopy_gen_(LargeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(SortedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Collection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(FixedSizeCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(Boolean_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deepCopy_gen_(UndefinedObject_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitAt_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _bitAt_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitAt_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reduce_gen_(virtual!Integer_gen_);
+@method Object_gen_ _reduce_gen_(LargeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reduce_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reduce_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reduce_gen_(SmallInteger_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ quo_gen_(virtual!Number_gen_, Object_gen_);
+@method Object_gen_ _quo_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _quo_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _quo_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ absoluteLessThan_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _absoluteLessThan_gen_(LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _absoluteLessThan_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _absoluteLessThan_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDisabled_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _isDisabled_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDisabled_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ popUpAtIn_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _popUpAtIn_gen_(Menu_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _popUpAtIn_gen_(MenuWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ title_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _title_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _title_gen_(MessageBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _title_gen_(FileDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deleteItem_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _deleteItem_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteItem_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteItem_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selector_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _selector_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(LinkMessage_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(CompiledMethod_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(SelectorBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ window_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _window_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _window_gen_(DynamicDataExchange_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _window_gen_(WindowPolicy_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ findWindow_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _findWindow_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _findWindow_gen_(NotificationManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _findWindow_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ destroy_gen_(virtual!Object_gen_);
+@method Object_gen_ _destroy_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _destroy_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _destroy_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _destroy_gen_(MenuWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ owner_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _owner_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(FontDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(ColorDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(PrintDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(FileDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ owner_gen_(virtual!Object_gen_);
+@method Object_gen_ _owner_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _owner_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ labelsLinesSelectors_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _labelsLinesSelectors_gen_(Menu_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _labelsLinesSelectors_gen_(METACLASS_Menu_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isThere_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _isThere_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isThere_gen_(METACLASS_FileHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectorOf_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _selectorOf_gen_(Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectorOf_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deleteAll_gen_(virtual!Object_gen_);
+@method Object_gen_ _deleteAll_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteAll_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteAll_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selector_gen_(virtual!Object_gen_);
+@method Object_gen_ _selector_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selector_gen_(MenuItem_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isMenu_gen_(virtual!Object_gen_);
+@method Object_gen_ _isMenu_gen_(Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isMenu_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ flags_gen_(virtual!Object_gen_);
+@method Object_gen_ _flags_gen_(WinWindowPlacement_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flags_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flags_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flags_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flags_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitBltXYWidthHeightSrcdcXsrcYsrcRop_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop_gen_(RecordingPen_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop_gen_(GraphicsTool_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop_gen_(GDIDLL_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitBltXYWidthHeightSrcdcXsrcYsrcRop_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveSegments_gen_(virtual!GraphicsTool_gen_);
+@method Object_gen_ _saveSegments_gen_(RecordingPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveSegments_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectObject_gen_(virtual!GraphicsTool_gen_, Object_gen_);
+@method Object_gen_ _selectObject_gen_(RecordingPen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectObject_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop_gen_(RecordingPen_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop_gen_(GraphicsTool_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _stretchBltXYDwidthDheightSrcdcXsrcYsrcSwidthSheightRop_gen_(GDIDLL_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ location_gen_(virtual!Object_gen_);
+@method Object_gen_ _location_gen_(RecordingPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _location_gen_(DragDropList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _location_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ allHandles_gen_(virtual!GraphicsTool_gen_);
+@method Object_gen_ _allHandles_gen_(RecordingPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _allHandles_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ matchIndex_gen_(virtual!Pattern_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _matchIndex_gen_(WildPattern_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _matchIndex_gen_(Pattern_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ build_gen_(virtual!Pattern_gen_, Object_gen_);
+@method Object_gen_ _build_gen_(WildPattern_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _build_gen_(Pattern_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ match_gen_(virtual!Pattern_gen_, Object_gen_);
+@method Object_gen_ _match_gen_(WildPattern_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _match_gen_(Pattern_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectIndex_gen_(virtual!ListBox_gen_, Object_gen_);
+@method Object_gen_ _selectIndex_gen_(DropDownList_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectIndex_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectIndex_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getSelection_gen_(virtual!ControlPane_gen_);
+@method Object_gen_ _getSelection_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getSelection_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getSelection_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getSelection_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deleteMessage_gen_(virtual!ListBox_gen_);
+@method Object_gen_ _deleteMessage_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteMessage_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ oemConvert_gen_(virtual!ControlPane_gen_);
+@method Object_gen_ _oemConvert_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _oemConvert_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deleteAllFromControl_gen_(virtual!ListBox_gen_);
+@method Object_gen_ _deleteAllFromControl_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteAllFromControl_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sort_gen_(virtual!ListBox_gen_);
+@method Object_gen_ _sort_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sort_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dropDownList_gen_(virtual!Object_gen_);
+@method Object_gen_ _dropDownList_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dropDownList_gen_(METACLASS_ComboBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ winClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _winClass_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(StaticPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winClass_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ noIntegralHeight_gen_(virtual!ListBox_gen_);
+@method Object_gen_ _noIntegralHeight_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _noIntegralHeight_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCtlcolorlistboxWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmCtlcolorlistboxWith_gen_(DropDownList_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCtlcolorlistboxWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ disableNoScroll_gen_(virtual!ListBox_gen_);
+@method Object_gen_ _disableNoScroll_gen_(DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disableNoScroll_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ insertItemInControl_gen_(virtual!ListBox_gen_, Object_gen_);
+@method Object_gen_ _insertItemInControl_gen_(DropDownList_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _insertItemInControl_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCtlcoloreditWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmCtlcoloreditWith_gen_(DropDownList_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCtlcoloreditWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copyStruct_gen_(virtual!CommonSystemDialog_gen_);
+@method Object_gen_ _copyStruct_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyStruct_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyStruct_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyStruct_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ chosen_gen_(virtual!CommonSystemDialog_gen_);
+@method Object_gen_ _chosen_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _chosen_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cleanUp_gen_(virtual!CommonSystemDialog_gen_);
+@method Object_gen_ _cleanUp_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cleanUp_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cleanUp_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cleanUp_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ flags_gen_(virtual!CommonSystemDialog_gen_, Object_gen_);
+@method Object_gen_ _flags_gen_(FontDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flags_gen_(FileDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ checkFlags_gen_(virtual!CommonSystemDialog_gen_);
+@method Object_gen_ _checkFlags_gen_(FontDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _checkFlags_gen_(ColorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _checkFlags_gen_(PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _checkFlags_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ close_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _close_gen_(AboutDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(TranscriptWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(WalkbackWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(SaveImageAsDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _close_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ok_gen_(virtual!WindowDialog_gen_, Object_gen_);
+@method Object_gen_ _ok_gen_(AboutDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ok_gen_(SaveImageAsDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ok_gen_(Prompter_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ topPaneClass_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _topPaneClass_gen_(AboutDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _topPaneClass_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _topPaneClass_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ do_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _do_gen_(IndexedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(Bag_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _do_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceFromToWithobject_gen_(virtual!IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceFromToWithobject_gen_(IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithobject_gen_(Symbol_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithobject_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithobject_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithobject_gen_(String_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isIndexedCollection_gen_(virtual!Object_gen_);
+@method Object_gen_ _isIndexedCollection_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isIndexedCollection_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reversed_gen_(virtual!IndexedCollection_gen_);
+@method Object_gen_ _reversed_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reversed_gen_(FixedSizeCollection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copyFromTo_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _copyFromTo_gen_(IndexedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(MixedFileStream_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(SortedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(FileStream_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(Stream_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyFromTo_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ unquote_gen_(virtual!Object_gen_);
+@method Object_gen_ _unquote_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _unquote_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _unquote_gen_(CompilerNameScope_gen_) { return new Object_gen_(); }
+@method Object_gen_ _unquote_gen_(OrderedCollection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ includes_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _includes_gen_(IndexedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includes_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includes_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includes_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includes_gen_(Bag_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includes_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ grow_gen_(virtual!Object_gen_);
+@method Object_gen_ _grow_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(SymbolSet_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(SortedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(IdentityDictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _grow_gen_(OrderedCollection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ indexOf_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _indexOf_gen_(IndexedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _indexOf_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _indexOf_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceFromToWith_gen_(virtual!IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceFromToWith_gen_(IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWith_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copyReplaceFromToWith_gen_(virtual!IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _copyReplaceFromToWith_gen_(IndexedCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyReplaceFromToWith_gen_(FixedSizeCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ shallowCopy_gen_(virtual!Object_gen_);
+@method Object_gen_ _shallowCopy_gen_(IndexedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(SortedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Collection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Interval_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(FixedSizeCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(MethodDictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(Boolean_gen_) { return new Object_gen_(); }
+@method Object_gen_ _shallowCopy_gen_(UndefinedObject_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ add_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _add_gen_(SymbolSet_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(FixedSizeCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(NotificationManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(MethodDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(Bag_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(SystemDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _add_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ findElementIndex_gen_(virtual!Set_gen_, Object_gen_);
+@method Object_gen_ _findElementIndex_gen_(SymbolSet_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _findElementIndex_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ species_gen_(virtual!Object_gen_);
+@method Object_gen_ _species_gen_(SymbolSet_gen_) { return new Object_gen_(); }
+@method Object_gen_ _species_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _species_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _species_gen_(Interval_gen_) { return new Object_gen_(); }
+@method Object_gen_ _species_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buildMenuBar_gen_(virtual!Object_gen_);
+@method Object_gen_ _buildMenuBar_gen_(HelpManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildMenuBar_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildMenuBar_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initMenu_gen_(virtual!Object_gen_);
+@method Object_gen_ _initMenu_gen_(HelpManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initMenu_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initMenu_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initMenu_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initMenu_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ max_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _max_gen_(Magnitude_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _max_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ min_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _min_gen_(Magnitude_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _min_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ betweenAnd_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _betweenAnd_gen_(Magnitude_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _betweenAnd_gen_(Point_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resume_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _resume_gen_(ExceptionHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(Exception_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(WalkbackWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(ProcessScheduler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(NotificationManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resume_gen_(Process_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ return_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _return_gen_(ExceptionHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _return_gen_(HomeContext_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _return_gen_(Exception_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ retry_gen_(virtual!Object_gen_);
+@method Object_gen_ _retry_gen_(ExceptionHandler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _retry_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _retry_gen_(CompilationError_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initialize_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _initialize_gen_(ExternalHeapHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initialize_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ free_gen_(virtual!Object_gen_);
+@method Object_gen_ _free_gen_(ExternalHeapHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _free_gen_(ExternalHeapAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _free_gen_(ExternalGlobalAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _free_gen_(DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ styleColorWidth_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _styleColorWidth_gen_(WinLogicalPen_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _styleColorWidth_gen_(METACLASS_WinLogicalPen_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ width_gen_(virtual!Object_gen_);
+@method Object_gen_ _width_gen_(WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(WinBitmapStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(WinLogPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(WinBitmapInfoHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ instanceVariableNames_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _instanceVariableNames_gen_(MetaClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instanceVariableNames_gen_(ClassInstaller_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ newNameSymbol_gen_(virtual!Behavior_gen_, Object_gen_);
+@method Object_gen_ _newNameSymbol_gen_(MetaClass_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _newNameSymbol_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isMetaClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _isMetaClass_gen_(MetaClass_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isMetaClass_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ empty_gen_(virtual!Object_gen_);
+@method Object_gen_ _empty_gen_(ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _empty_gen_(NotificationManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ receiver_gen_(virtual!Object_gen_);
+@method Object_gen_ _receiver_gen_(HomeContext_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiver_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiver_gen_(MethodExecutor_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiver_gen_(Context_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asActionSequence_gen_(virtual!Object_gen_);
+@method Object_gen_ _asActionSequence_gen_(HomeContext_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asActionSequence_gen_(ActionSequence_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asActionSequence_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asActionSequence_gen_(EvaluableAction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asActionSequence_gen_(Context_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ method_gen_(virtual!Object_gen_);
+@method Object_gen_ _method_gen_(HomeContext_gen_) { return new Object_gen_(); }
+@method Object_gen_ _method_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ centered_gen_(virtual!Object_gen_);
+@method Object_gen_ _centered_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _centered_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _centered_gen_(METACLASS_StaticText_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rightJustified_gen_(virtual!Object_gen_);
+@method Object_gen_ _rightJustified_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rightJustified_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rightJustified_gen_(METACLASS_StaticText_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leftJustified_gen_(virtual!Object_gen_);
+@method Object_gen_ _leftJustified_gen_(StaticText_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftJustified_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftJustified_gen_(METACLASS_StaticText_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ key_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _key_gen_(Association_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _key_gen_(METACLASS_Association_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isInBase_gen_(virtual!Object_gen_);
+@method Object_gen_ _isInBase_gen_(Association_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isInBase_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isAssociation_gen_(virtual!Object_gen_);
+@method Object_gen_ _isAssociation_gen_(Association_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isAssociation_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ storeOn_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _storeOn_gen_(Association_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Character_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(FixedSizeCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Boolean_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(UndefinedObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _storeOn_gen_(Array_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openReplace_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _openReplace_gen_(FindReplaceDialog_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openReplace_gen_(METACLASS_FindReplaceDialog_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cancel_gen_(virtual!WindowDialog_gen_, Object_gen_);
+@method Object_gen_ _cancel_gen_(FindReplaceDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(SaveImageDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(SaveImageAsDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(ProgressIndicatorDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(Prompter_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(PrintAbortDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ atPut_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _atPut_gen_(Symbol_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(SortedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(Set_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(Interval_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(String_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(MethodDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(Bag_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(SelfDefinedStructure_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(SystemDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atPut_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initContents_gen_(virtual!String_gen_, Object_gen_);
+@method Object_gen_ _initContents_gen_(Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initContents_gen_(DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asMixedString_gen_(virtual!String_gen_);
+@method Object_gen_ _asMixedString_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asMixedString_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asMixedString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asNormalizedString_gen_(virtual!String_gen_);
+@method Object_gen_ _asNormalizedString_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asNormalizedString_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asNormalizedString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asNormalizedString_gen_(virtual!String_gen_, Object_gen_);
+@method Object_gen_ _asNormalizedString_gen_(Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asNormalizedString_gen_(DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asNormalizedString_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceWith_gen_(Symbol_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceWith_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceWith_gen_(ByteArray_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceWith_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceWith_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceWith_gen_(String_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asString_gen_(virtual!Object_gen_);
+@method Object_gen_ _asString_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(Atom_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asSymbol_gen_(virtual!String_gen_);
+@method Object_gen_ _asSymbol_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asSymbol_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asSymbol_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asSymbol_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asExternalString_gen_(virtual!String_gen_);
+@method Object_gen_ _asExternalString_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalString_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asCompactString_gen_(virtual!String_gen_);
+@method Object_gen_ _asCompactString_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asCompactString_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asCompactString_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asCompactString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isSymbol_gen_(virtual!Object_gen_);
+@method Object_gen_ _isSymbol_gen_(Symbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isSymbol_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isSymbol_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ changedEventFor_gen_(virtual!Toggle_gen_, Object_gen_);
+@method Object_gen_ _changedEventFor_gen_(ThreeStateButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedEventFor_gen_(RadioButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedEventFor_gen_(CheckBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedEventFor_gen_(Toggle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setValue_gen_(virtual!Toggle_gen_);
+@method Object_gen_ _setValue_gen_(ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setValue_gen_(Toggle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getValue_gen_(virtual!ControlPane_gen_);
+@method Object_gen_ _getValue_gen_(ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getValue_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getValue_gen_(Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getValue_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getValue_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ closeSignOn_gen_(virtual!Object_gen_);
+@method Object_gen_ _closeSignOn_gen_(VirtualMachineExe_gen_) { return new Object_gen_(); }
+@method Object_gen_ _closeSignOn_gen_(SessionModel_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reportWarning_gen_(virtual!CompilerErrorHandler_gen_, Object_gen_);
+@method Object_gen_ _reportWarning_gen_(NonInteractiveErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reportWarning_gen_(SilentErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reportWarning_gen_(TextPaneErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reportWarning_gen_(CompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ numberOfArguments_gen_(virtual!Object_gen_);
+@method Object_gen_ _numberOfArguments_gen_(TwoArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numberOfArguments_gen_(LinkMessage_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numberOfArguments_gen_(Context_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numberOfArguments_gen_(OneArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numberOfArguments_gen_(ZeroArgumentBlock_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ evaluateWithArguments_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _evaluateWithArguments_gen_(TwoArgumentBlock_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(LinkMessage_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(ActionSequence_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(ConstantAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(OneArgumentBlock_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(ZeroArgumentBlock_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateWithArguments_gen_(CollectionAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ evaluate_gen_(virtual!Object_gen_);
+@method Object_gen_ _evaluate_gen_(TwoArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(LinkMessage_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(ActionSequence_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(ConstantAccessor_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(MethodExecutor_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(OneArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(ZeroArgumentBlock_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(CollectionAccessor_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ version_gen_(virtual!Object_gen_);
+@method Object_gen_ _version_gen_(OperatingSystemInformation_gen_) { return new Object_gen_(); }
+@method Object_gen_ _version_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _version_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canApplyStyle_gen_(virtual!Window_gen_);
+@method Object_gen_ _canApplyStyle_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canApplyStyle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canApplyStyle_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ applyStyle_gen_(virtual!Window_gen_);
+@method Object_gen_ _applyStyle_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _applyStyle_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDefaultPushButton_gen_(virtual!Button_gen_);
+@method Object_gen_ _isDefaultPushButton_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDefaultPushButton_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDefaultPushButton_gen_(Toggle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setLabel_gen_(virtual!ControlPane_gen_, Object_gen_);
+@method Object_gen_ _setLabel_gen_(Button_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLabel_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLabel_gen_(GroupBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultPushButton_gen_(virtual!Window_gen_);
+@method Object_gen_ _defaultPushButton_gen_(Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultPushButton_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buttonFont_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _buttonFont_gen_(Button_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buttonFont_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveString_gen_(virtual!TextWindow_gen_, Object_gen_);
+@method Object_gen_ _saveString_gen_(TranscriptWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveString_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveAs_gen_(virtual!Object_gen_);
+@method Object_gen_ _saveAs_gen_(TranscriptWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveAs_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveAs_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveAs_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ textPaneClass_gen_(virtual!TextWindow_gen_);
+@method Object_gen_ _textPaneClass_gen_(TranscriptWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _textPaneClass_gen_(WalkbackWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _textPaneClass_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ next_gen_(virtual!Stream_gen_);
+@method Object_gen_ _next_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _next_gen_(ReadWriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _next_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _next_gen_(ReadStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextPutAll_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _nextPutAll_gen_(MixedFileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(ReadWriteStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(TextTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(WriteStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPutAll_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leadBytes_gen_(virtual!Object_gen_);
+@method Object_gen_ _leadBytes_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leadBytes_gen_(NationalLanguageSupport_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ upTo_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _upTo_gen_(MixedFileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _upTo_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _upTo_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setLimits_gen_(virtual!Stream_gen_);
+@method Object_gen_ _setLimits_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLimits_gen_(ReadWriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLimits_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLimits_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLimits_gen_(ReadStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reverseContents_gen_(virtual!Stream_gen_);
+@method Object_gen_ _reverseContents_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reverseContents_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asByteFileStream_gen_(virtual!FileStream_gen_);
+@method Object_gen_ _asByteFileStream_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asByteFileStream_gen_(FileStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asMixedFileStream_gen_(virtual!FileStream_gen_, Object_gen_);
+@method Object_gen_ _asMixedFileStream_gen_(MixedFileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asMixedFileStream_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setLineDelimiterFromFirstPage_gen_(virtual!FileStream_gen_);
+@method Object_gen_ _setLineDelimiterFromFirstPage_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setLineDelimiterFromFirstPage_gen_(FileStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextWord_gen_(virtual!Stream_gen_);
+@method Object_gen_ _nextWord_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextWord_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextByte_gen_(virtual!ReadWriteStream_gen_);
+@method Object_gen_ _nextByte_gen_(MixedFileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextByte_gen_(ReadWriteStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ directory_gen_(virtual!Object_gen_);
+@method Object_gen_ _directory_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _directory_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pathName_gen_(virtual!Object_gen_);
+@method Object_gen_ _pathName_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pathName_gen_(Directory_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pathName_gen_(FileStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ flush_gen_(virtual!Object_gen_);
+@method Object_gen_ _flush_gen_(File_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flush_gen_(FileStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmWininichangeWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmWininichangeWith_gen_(SystemWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmWininichangeWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ errorMessage_gen_(virtual!Object_gen_);
+@method Object_gen_ _errorMessage_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _errorMessage_gen_(CompilationError_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nameScope_gen_(virtual!Object_gen_);
+@method Object_gen_ _nameScope_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nameScope_gen_(CompilerInterface_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canGenerateCompilationResult_gen_(virtual!Object_gen_);
+@method Object_gen_ _canGenerateCompilationResult_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canGenerateCompilationResult_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isCompilationResult_gen_(virtual!Object_gen_);
+@method Object_gen_ _isCompilationResult_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isCompilationResult_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sourceCode_gen_(virtual!Object_gen_);
+@method Object_gen_ _sourceCode_gen_(CompilationResult_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sourceCode_gen_(CompilationError_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ description_gen_(virtual!Object_gen_);
+@method Object_gen_ _description_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _description_gen_(CompilerNameScope_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultDescriptionString_gen_(virtual!Exception_gen_);
+@method Object_gen_ _defaultDescriptionString_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultDescriptionString_gen_(KeyboardInterrupt_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isResumable_gen_(virtual!Exception_gen_);
+@method Object_gen_ _isResumable_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isResumable_gen_(ZeroDivide_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isResumable_gen_(MessageNotUnderstood_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isResumable_gen_(Notification_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultAction_gen_(virtual!Exception_gen_);
+@method Object_gen_ _defaultAction_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultAction_gen_(Warning_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultAction_gen_(KeyboardInterrupt_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultAction_gen_(MessageNotUnderstood_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultAction_gen_(LoggedWarning_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultAction_gen_(Notification_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isActive_gen_(virtual!Object_gen_);
+@method Object_gen_ _isActive_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isActive_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ signal_gen_(virtual!Object_gen_);
+@method Object_gen_ _signal_gen_(Exception_gen_) { return new Object_gen_(); }
+@method Object_gen_ _signal_gen_(Semaphore_gen_) { return new Object_gen_(); }
+@method Object_gen_ _signal_gen_(METACLASS_Exception_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addMenus_gen_(virtual!WindowPolicy_gen_);
+@method Object_gen_ _addMenus_gen_(NoMenusWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addMenus_gen_(CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addMenus_gen_(WindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ create_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _create_gen_(StoredPicture_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _create_gen_(METACLASS_Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ drawUsing_gen_(virtual!GraphicsMedium_gen_, Object_gen_);
+@method Object_gen_ _drawUsing_gen_(StoredPicture_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawUsing_gen_(Printer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawUsing_gen_(GraphicsMedium_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawUsing_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isStoredPicture_gen_(virtual!Object_gen_);
+@method Object_gen_ _isStoredPicture_gen_(StoredPicture_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isStoredPicture_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDoubleByteSymbol_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDoubleByteSymbol_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDoubleByteSymbol_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ equals_gen_(virtual!String_gen_, Object_gen_);
+@method Object_gen_ _equals_gen_(DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _equals_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ containsDBCharacter_gen_(virtual!String_gen_);
+@method Object_gen_ _containsDBCharacter_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _containsDBCharacter_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _containsDBCharacter_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceBytesWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceBytesWith_gen_(DoubleByteSymbol_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesWith_gen_(ByteArray_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesWith_gen_(ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceBytesWith_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ id_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _id_gen_(DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _id_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _id_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ id_gen_(virtual!Object_gen_);
+@method Object_gen_ _id_gen_(DoubleByteSymbol_gen_) { return new Object_gen_(); }
+@method Object_gen_ _id_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _id_gen_(MenuItem_gen_) { return new Object_gen_(); }
+@method Object_gen_ _id_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sourcePosition_gen_(virtual!Object_gen_);
+@method Object_gen_ _sourcePosition_gen_(CompilationError_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sourcePosition_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ privateHandle_gen_(virtual!Object_gen_);
+@method Object_gen_ _privateHandle_gen_(WinLogicalObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _privateHandle_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _privateHandle_gen_(Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ initHandle_gen_(virtual!Object_gen_);
+@method Object_gen_ _initHandle_gen_(WinLogicalObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initHandle_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _initHandle_gen_(Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ stockObject_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _stockObject_gen_(WinLogicalObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _stockObject_gen_(METACLASS_WinLogicalObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _stockObject_gen_(METACLASS_WinLogicalPalette_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dictionary_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _dictionary_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dictionary_gen_(DictionaryScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ droppedOnTextPane_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _droppedOnTextPane_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _droppedOnTextPane_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeSelector_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _removeSelector_gen_(ClassBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeSelector_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectorMenu_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _selectorMenu_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectorMenu_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectors_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _selectors_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectors_gen_(SelectorBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectors_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ droppedOnSelectorList_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _droppedOnSelectorList_gen_(ClassBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _droppedOnSelectorList_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ memoryHandle_gen_(virtual!ExternalAddress_gen_);
+@method Object_gen_ _memoryHandle_gen_(ExternalHeapAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _memoryHandle_gen_(ExternalGlobalAddress_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ memorySize_gen_(virtual!ExternalAddress_gen_, Object_gen_);
+@method Object_gen_ _memorySize_gen_(ExternalHeapAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _memorySize_gen_(ExternalGlobalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ memorySize_gen_(virtual!ExternalAddress_gen_);
+@method Object_gen_ _memorySize_gen_(ExternalHeapAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _memorySize_gen_(ExternalGlobalAddress_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ x_gen_(virtual!Object_gen_);
+@method Object_gen_ _x_gen_(WinPoint_gen_) { return new Object_gen_(); }
+@method Object_gen_ _x_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ x_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _x_gen_(WinPoint_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _x_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ y_gen_(virtual!Object_gen_);
+@method Object_gen_ _y_gen_(WinPoint_gen_) { return new Object_gen_(); }
+@method Object_gen_ _y_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ y_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _y_gen_(WinPoint_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _y_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ boundingBox_gen_(virtual!Object_gen_);
+@method Object_gen_ _boundingBox_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boundingBox_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boundingBox_gen_(WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boundingBox_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boundingBox_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boundingBox_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ width_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _width_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(WinBitmapStruct_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(WinBitmapInfoHeader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _width_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ backColor_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _backColor_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backColor_gen_(Pen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backColor_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backColor_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ height_gen_(virtual!Object_gen_);
+@method Object_gen_ _height_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(WinBitmapStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(WinBitmapInfoHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ foreColor_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _foreColor_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(Pen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(TextTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _foreColor_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ height_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _height_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(WinBitmapStruct_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(WinBitmapInfoHeader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _height_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ erase_gen_(virtual!Object_gen_);
+@method Object_gen_ _erase_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _erase_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deleteObject_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _deleteObject_gen_(GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deleteObject_gen_(GDIDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resetAttributes_gen_(virtual!GraphicsTool_gen_);
+@method Object_gen_ _resetAttributes_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resetAttributes_gen_(TextTool_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isGraphicsTool_gen_(virtual!Object_gen_);
+@method Object_gen_ _isGraphicsTool_gen_(GraphicsTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isGraphicsTool_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dllName_gen_(virtual!Object_gen_);
+@method Object_gen_ _dllName_gen_(ObjectLibraryReference_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dllName_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sizeInBytes_gen_(virtual!Object_gen_);
+@method Object_gen_ _sizeInBytes_gen_(ObjectLibraryReference_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(SelfDefinedStructure_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinLogBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_ExternalLong_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinWindowClass_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_ExternalBuffer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinWindowPlacement_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_VirtualMachineConfiguration_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinPoint_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_ObjectLibraryReference_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinBitmapStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinMessage_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinBitmapFileHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinFileTime_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinTextMetrics_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinPaintStructure_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinLogPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_Win32FindData_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinRectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinLogPalette_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinBitmapInfoHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinLogFont_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinOfstruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeInBytes_gen_(METACLASS_WinSystemTime_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asExternalLong_gen_(virtual!FixedSizeCollection_gen_);
+@method Object_gen_ _asExternalLong_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalLong_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isByteArray_gen_(virtual!Object_gen_);
+@method Object_gen_ _isByteArray_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isByteArray_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceFromToWithaddressStartingat_gen_(virtual!FixedSizeCollection_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _replaceFromToWithaddressStartingat_gen_(ByteArray_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceFromToWithaddressStartingat_gen_(String_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asExternalAddress_gen_(virtual!Object_gen_);
+@method Object_gen_ _asExternalAddress_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalAddress_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalAddress_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asExternalHandle_gen_(virtual!FixedSizeCollection_gen_);
+@method Object_gen_ _asExternalHandle_gen_(ByteArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asExternalHandle_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addFirst_gen_(virtual!OrderedCollection_gen_, Object_gen_);
+@method Object_gen_ _addFirst_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addFirst_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addAll_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _addAll_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addAll_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addAfter_gen_(virtual!OrderedCollection_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _addAfter_gen_(SortedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addAfter_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ select_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _select_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _select_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _select_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _select_gen_(FixedSizeCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sortBlock_gen_(virtual!Object_gen_);
+@method Object_gen_ _sortBlock_gen_(SortedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sortBlock_gen_(METACLASS_Class_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sortBlock_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _sortBlock_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sortBlock_gen_(METACLASS_SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addAllFirst_gen_(virtual!OrderedCollection_gen_, Object_gen_);
+@method Object_gen_ _addAllFirst_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addAllFirst_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addLast_gen_(virtual!OrderedCollection_gen_, Object_gen_);
+@method Object_gen_ _addLast_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addLast_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addAllLast_gen_(virtual!OrderedCollection_gen_, Object_gen_);
+@method Object_gen_ _addAllLast_gen_(SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addAllLast_gen_(OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addBefore_gen_(virtual!OrderedCollection_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _addBefore_gen_(SortedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addBefore_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ remove_gen_(virtual!Object_gen_);
+@method Object_gen_ _remove_gen_(DictionaryInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _remove_gen_(Directory_gen_) { return new Object_gen_(); }
+@method Object_gen_ _remove_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ instVarList_gen_(virtual!Inspector_gen_, Object_gen_);
+@method Object_gen_ _instVarList_gen_(DictionaryInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instVarList_gen_(SelfDefinedStructureInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _instVarList_gen_(Inspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setInstList_gen_(virtual!Inspector_gen_);
+@method Object_gen_ _setInstList_gen_(DictionaryInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setInstList_gen_(Inspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setInstList_gen_(OrderedCollectionInspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setInstList_gen_(DoubleByteStringInspector_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asSegmentedAddress_gen_(virtual!ExternalAddress_gen_);
+@method Object_gen_ _asSegmentedAddress_gen_(ExternalSegmentedAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asSegmentedAddress_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asFlatAddress_gen_(virtual!ExternalAddress_gen_);
+@method Object_gen_ _asFlatAddress_gen_(ExternalSegmentedAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asFlatAddress_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ negated_gen_(virtual!Object_gen_);
+@method Object_gen_ _negated_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(Float_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negated_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ negative_gen_(virtual!Number_gen_);
+@method Object_gen_ _negative_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negative_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negative_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negative_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negative_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ positive_gen_(virtual!Number_gen_);
+@method Object_gen_ _positive_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _positive_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _positive_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _positive_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _positive_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ signedAt_gen_(virtual!Integer_gen_, Object_gen_);
+@method Object_gen_ _signedAt_gen_(LargeNegativeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _signedAt_gen_(LargePositiveInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _signedAt_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sign_gen_(virtual!Number_gen_);
+@method Object_gen_ _sign_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sign_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sign_gen_(Number_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ strictlyPositive_gen_(virtual!Number_gen_);
+@method Object_gen_ _strictlyPositive_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _strictlyPositive_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _strictlyPositive_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _strictlyPositive_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _strictlyPositive_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ abs_gen_(virtual!Object_gen_);
+@method Object_gen_ _abs_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _abs_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _abs_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _abs_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _abs_gen_(Float_gen_) { return new Object_gen_(); }
+@method Object_gen_ _abs_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asUnsigned_gen_(virtual!Integer_gen_);
+@method Object_gen_ _asUnsigned_gen_(LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asUnsigned_gen_(LargePositiveInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asUnsigned_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setToEnd_gen_(virtual!Stream_gen_);
+@method Object_gen_ _setToEnd_gen_(ReadWriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setToEnd_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setToEnd_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getBytesForFromTo_gen_(virtual!ReadWriteStream_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _getBytesForFromTo_gen_(ReadWriteStream_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getBytesForFromTo_gen_(FileStream_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextPut_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _nextPut_gen_(ReadWriteStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(TextTool_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(WriteStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ registerMessageParametertypesReturntypeCallingconvention_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _registerMessageParametertypesReturntypeCallingconvention_gen_(CallBack_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _registerMessageParametertypesReturntypeCallingconvention_gen_(METACLASS_CallBack_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ newFile_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _newFile_gen_(FileHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _newFile_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _newFile_gen_(METACLASS_File_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ collection_gen_(virtual!Object_gen_);
+@method Object_gen_ _collection_gen_(WinStructArray_gen_) { return new Object_gen_(); }
+@method Object_gen_ _collection_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ realizePalette_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _realizePalette_gen_(UserDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _realizePalette_gen_(GDIDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ destroyCaret_gen_(virtual!Object_gen_);
+@method Object_gen_ _destroyCaret_gen_(UserDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _destroyCaret_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectPaletteWithForcebackground_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _selectPaletteWithForcebackground_gen_(UserDLL_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectPaletteWithForcebackground_gen_(GDIDLL_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showCaret_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _showCaret_gen_(UserDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showCaret_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fillRectRectangleBrush_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fillRectRectangleBrush_gen_(UserDLL_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fillRectRectangleBrush_gen_(GDIDLL_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setFocus_gen_(virtual!Window_gen_);
+@method Object_gen_ _setFocus_gen_(RadioButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setFocus_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ createDIBPalette_gen_(virtual!Object_gen_);
+@method Object_gen_ _createDIBPalette_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _createDIBPalette_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ colorTable_gen_(virtual!Object_gen_);
+@method Object_gen_ _colorTable_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _colorTable_gen_(WinBitmapInfo_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ numberOfColors_gen_(virtual!Object_gen_);
+@method Object_gen_ _numberOfColors_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numberOfColors_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitCount_gen_(virtual!Object_gen_);
+@method Object_gen_ _bitCount_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitCount_gen_(WinBitmapInfoHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitCount_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ colorTable_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _colorTable_gen_(DIB_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _colorTable_gen_(WinBitmapInfo_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDIB_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDIB_gen_(DIB_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDIB_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ allSubclasses_gen_(virtual!Object_gen_);
+@method Object_gen_ _allSubclasses_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _allSubclasses_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ superclass_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _superclass_gen_(ClassInstaller_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _superclass_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ errorString_gen_(virtual!Object_gen_);
+@method Object_gen_ _errorString_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _errorString_gen_(DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isPointers_gen_(virtual!Object_gen_);
+@method Object_gen_ _isPointers_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isPointers_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ allInstVarNames_gen_(virtual!Object_gen_);
+@method Object_gen_ _allInstVarNames_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _allInstVarNames_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ superclass_gen_(virtual!Object_gen_);
+@method Object_gen_ _superclass_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _superclass_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isVariable_gen_(virtual!Object_gen_);
+@method Object_gen_ _isVariable_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isVariable_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ recompile_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _recompile_gen_(ClassInstaller_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _recompile_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ install_gen_(virtual!Object_gen_);
+@method Object_gen_ _install_gen_(ClassInstaller_gen_) { return new Object_gen_(); }
+@method Object_gen_ _install_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _install_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ warning_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _warning_gen_(StringDictionaryReader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _warning_gen_(CompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _warning_gen_(METACLASS_MessageBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ arguments_gen_(virtual!Message_gen_, Object_gen_);
+@method Object_gen_ _arguments_gen_(LinkMessage_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _arguments_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ collectArguments_gen_(virtual!Message_gen_, Object_gen_);
+@method Object_gen_ _collectArguments_gen_(LinkMessage_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _collectArguments_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ receiverSelectorArguments_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _receiverSelectorArguments_gen_(LinkMessage_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiverSelectorArguments_gen_(Message_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiverSelectorArguments_gen_(METACLASS_Message_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ perform_gen_(virtual!Message_gen_);
+@method Object_gen_ _perform_gen_(LinkMessage_gen_) { return new Object_gen_(); }
+@method Object_gen_ _perform_gen_(Message_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ doIt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _doIt_gen_(SmalltalkEmulator_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doIt_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doIt_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ compilerErrorAtInFor_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _compilerErrorAtInFor_gen_(SmalltalkEmulator_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerErrorAtInFor_gen_(TextPane_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerErrorAtInFor_gen_(SaveImageAsDialog_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerErrorAtInFor_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerErrorAtInFor_gen_(Prompter_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compilerErrorAtInFor_gen_(METACLASS_CompilerInterface_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ localBindTo_gen_(virtual!CompilerNameScope_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _localBindTo_gen_(DictionaryScope_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localBindTo_gen_(CompilerNameScope_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localBindTo_gen_(MultiplePoolScope_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeLocalBindingFor_gen_(virtual!CompilerNameScope_gen_, Object_gen_);
+@method Object_gen_ _removeLocalBindingFor_gen_(DictionaryScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeLocalBindingFor_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeLocalBindingFor_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ localBindingFor_gen_(virtual!CompilerNameScope_gen_, Object_gen_);
+@method Object_gen_ _localBindingFor_gen_(DictionaryScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localBindingFor_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localBindingFor_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _localBindingFor_gen_(GlobalPoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rehash_gen_(virtual!Set_gen_);
+@method Object_gen_ _rehash_gen_(Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rehash_gen_(IdentityDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ occurrencesOf_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _occurrencesOf_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _occurrencesOf_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _occurrencesOf_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _occurrencesOf_gen_(Bag_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ adjustSize_gen_(virtual!Set_gen_);
+@method Object_gen_ _adjustSize_gen_(Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _adjustSize_gen_(IdentityDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rehashFrom_gen_(virtual!Set_gen_, Object_gen_);
+@method Object_gen_ _rehashFrom_gen_(Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rehashFrom_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rehashFrom_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeIfabsent_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _removeIfabsent_gen_(Set_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(Collection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(FixedSizeCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(Bag_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeIfabsent_gen_(METACLASS_File_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isExternalAddress_gen_(virtual!Object_gen_);
+@method Object_gen_ _isExternalAddress_gen_(ExternalAddress_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isExternalAddress_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dividend_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _dividend_gen_(ZeroDivide_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dividend_gen_(METACLASS_ZeroDivide_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ doesNotUnderstand_gen_(virtual!Artificial_Root_gen_, Object_gen_);
+@method Object_gen_ _doesNotUnderstand_gen_(SelfInitializingObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doesNotUnderstand_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doesNotUnderstand_gen_(SelfDefinedStructure_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isSelfInitializingObject_gen_(virtual!Artificial_Root_gen_);
+@method Object_gen_ _isSelfInitializingObject_gen_(SelfInitializingObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isSelfInitializingObject_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asByteArray_gen_(virtual!String_gen_);
+@method Object_gen_ _asByteArray_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asByteArray_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDoubleByteString_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDoubleByteString_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDoubleByteString_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromMixedStringLeadbytes_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fromMixedStringLeadbytes_gen_(DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromMixedStringLeadbytes_gen_(METACLASS_DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asAsciiZ_gen_(virtual!String_gen_);
+@method Object_gen_ _asAsciiZ_gen_(DoubleByteString_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asAsciiZ_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ associationAtIfabsent_gen_(virtual!Dictionary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _associationAtIfabsent_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _associationAtIfabsent_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ includesKey_gen_(virtual!Dictionary_gen_, Object_gen_);
+@method Object_gen_ _includesKey_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _includesKey_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeAll_gen_(virtual!Collection_gen_);
+@method Object_gen_ _removeAll_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeAll_gen_(Collection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ atIfabsentput_gen_(virtual!Dictionary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _atIfabsentput_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atIfabsentput_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ keys_gen_(virtual!Dictionary_gen_);
+@method Object_gen_ _keys_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _keys_gen_(IdentityDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ associationsDo_gen_(virtual!Dictionary_gen_, Object_gen_);
+@method Object_gen_ _associationsDo_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _associationsDo_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeKey_gen_(virtual!Dictionary_gen_, Object_gen_);
+@method Object_gen_ _removeKey_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeKey_gen_(SystemDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ atIfabsent_gen_(virtual!Collection_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _atIfabsent_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atIfabsent_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atIfabsent_gen_(OrderedCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ findKeyIndex_gen_(virtual!Dictionary_gen_, Object_gen_);
+@method Object_gen_ _findKeyIndex_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _findKeyIndex_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ keysAndValuesDo_gen_(virtual!Dictionary_gen_, Object_gen_);
+@method Object_gen_ _keysAndValuesDo_gen_(Dictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _keysAndValuesDo_gen_(IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ values_gen_(virtual!Dictionary_gen_);
+@method Object_gen_ _values_gen_(Dictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _values_gen_(IdentityDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeKeyIfabsent_gen_(virtual!Dictionary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _removeKeyIfabsent_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeKeyIfabsent_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeKeyIfabsent_gen_(MethodDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ keyAtValueIfabsent_gen_(virtual!Dictionary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _keyAtValueIfabsent_gen_(Dictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _keyAtValueIfabsent_gen_(IdentityDictionary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ planes_gen_(virtual!Object_gen_);
+@method Object_gen_ _planes_gen_(WinBitmapStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _planes_gen_(WinBitmapInfoHeader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _planes_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ planes_gen_(virtual!ExternalBuffer_gen_, Object_gen_);
+@method Object_gen_ _planes_gen_(WinBitmapStruct_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _planes_gen_(WinBitmapInfoHeader_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCharWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmCharWith_gen_(DialogBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCharWith_gen_(EntryField_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCharWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCharWith_gen_(ListBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ processInput_gen_(virtual!Object_gen_);
+@method Object_gen_ _processInput_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _processInput_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _processInput_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemIds_gen_(virtual!DialogBox_gen_);
+@method Object_gen_ _itemIds_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemIds_gen_(NewSubclassDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCommandWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmCommandWith_gen_(DialogBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCommandWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDialogWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDialogWindow_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDialogWindow_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDialogWindow_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ paneAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _paneAt_gen_(DialogBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _paneAt_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ statusPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _statusPane_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _statusPane_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _statusPane_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _statusPane_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _statusPane_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cancel_gen_(virtual!Window_gen_);
+@method Object_gen_ _cancel_gen_(DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cancel_gen_(NewSubclassDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ childAtId_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _childAtId_gen_(DialogBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _childAtId_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromModuleId_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fromModuleId_gen_(DialogBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(Icon_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(METACLASS_CursorManager_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(METACLASS_DIB_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(METACLASS_String_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromModuleId_gen_(METACLASS_Icon_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmHelpWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmHelpWith_gen_(DialogBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmHelpWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmInitdialogWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmInitdialogWith_gen_(DialogBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmInitdialogWith_gen_(DialogTopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmInitdialogWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isMessage_gen_(virtual!Object_gen_);
+@method Object_gen_ _isMessage_gen_(Message_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isMessage_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ receiver_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _receiver_gen_(Message_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiver_gen_(MethodExecutor_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isCompiledMethod_gen_(virtual!Object_gen_);
+@method Object_gen_ _isCompiledMethod_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isCompiledMethod_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ type_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _type_gen_(CompiledMethod_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _type_gen_(ObjectLibraryExternal_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ type_gen_(virtual!Object_gen_);
+@method Object_gen_ _type_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _type_gen_(ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ argumentCount_gen_(virtual!Object_gen_);
+@method Object_gen_ _argumentCount_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _argumentCount_gen_(Context_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ classField_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _classField_gen_(CompiledMethod_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _classField_gen_(MethodDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ classField_gen_(virtual!Object_gen_);
+@method Object_gen_ _classField_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _classField_gen_(ClassReader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _classField_gen_(MethodDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ recompile_gen_(virtual!CompiledMethod_gen_);
+@method Object_gen_ _recompile_gen_(CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _recompile_gen_(CompiledInitializer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pathName_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _pathName_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pathName_gen_(METACLASS_File_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pathName_gen_(METACLASS_Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileReadOnly_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fileReadOnly_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileReadOnly_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDirectory_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDirectory_gen_(Directory_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDirectory_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ file_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _file_gen_(Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _file_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rectangle_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _rectangle_gen_(Pen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rectangle_gen_(WinPaintStructure_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ boxOfSize_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _boxOfSize_gen_(Pen_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boxOfSize_gen_(DialogTopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _boxOfSize_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ white_gen_(virtual!Object_gen_);
+@method Object_gen_ _white_gen_(Pen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _white_gen_(Screen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeExecuteWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeExecuteWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeExecuteWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdePokeWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdePokeWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdePokeWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeAckWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeAckWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeAckWith_gen_(DDEAuxClient_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeAckWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeTerminateWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeTerminateWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeTerminateWith_gen_(DDEAuxClient_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeTerminateWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ddeTerminate_gen_(virtual!DDEAuxWindow_gen_, Object_gen_);
+@method Object_gen_ _ddeTerminate_gen_(DDEAuxServer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ddeTerminate_gen_(DDEAuxClient_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeAdviseWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeAdviseWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeAdviseWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ removeClientFromList_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _removeClientFromList_gen_(DDEAuxServer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _removeClientFromList_gen_(DDEServer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeRequestWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeRequestWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeRequestWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ddeAckMsgAckBusyAppreturncodeItem_gen_(virtual!DDEAuxWindow_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _ddeAckMsgAckBusyAppreturncodeItem_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ddeAckMsgAckBusyAppreturncodeItem_gen_(DDEAuxClient_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeUnadviseWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeUnadviseWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeUnadviseWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeInitiateWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeInitiateWith_gen_(DDEAuxServer_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeInitiateWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fixedSize_gen_(virtual!Object_gen_);
+@method Object_gen_ _fixedSize_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fixedSize_gen_(METACLASS_WinDropFile_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ drawItem_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _drawItem_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawItem_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawItem_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawItem_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ drawFocus_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _drawFocus_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawFocus_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawFocus_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawFocus_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ disabled_gen_(virtual!Window_gen_);
+@method Object_gen_ _disabled_gen_(DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disabled_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ highlight_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _highlight_gen_(DrawnButton_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _highlight_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _highlight_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _highlight_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showWindowAtTop_gen_(virtual!Object_gen_);
+@method Object_gen_ _showWindowAtTop_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showWindowAtTop_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getDC_gen_(virtual!Object_gen_);
+@method Object_gen_ _getDC_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getDC_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ disableRedraw_gen_(virtual!Object_gen_);
+@method Object_gen_ _disableRedraw_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disableRedraw_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ enableRedraw_gen_(virtual!Object_gen_);
+@method Object_gen_ _enableRedraw_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enableRedraw_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ enable_gen_(virtual!Object_gen_);
+@method Object_gen_ _enable_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _enable_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showMaximizedWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _showMaximizedWindow_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showMaximizedWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ propertyAtPut_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _propertyAtPut_gen_(WindowHandle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _propertyAtPut_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hideWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _hideWindow_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hideWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ propertyAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _propertyAt_gen_(WindowHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _propertyAt_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ disable_gen_(virtual!Object_gen_);
+@method Object_gen_ _disable_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _disable_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showIconicWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _showIconicWindow_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showIconicWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ noRedraw_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _noRedraw_gen_(WindowHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _noRedraw_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _showWindow_gen_(WindowHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ctlType_gen_(virtual!ExternalBuffer_gen_);
+@method Object_gen_ _ctlType_gen_(WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ctlType_gen_(WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemId_gen_(virtual!ExternalBuffer_gen_);
+@method Object_gen_ _itemId_gen_(WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemId_gen_(WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ctlId_gen_(virtual!ExternalBuffer_gen_);
+@method Object_gen_ _ctlId_gen_(WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ctlId_gen_(WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemData_gen_(virtual!ExternalBuffer_gen_);
+@method Object_gen_ _itemData_gen_(WinDrawItemStruct_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemData_gen_(WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ imageName_gen_(virtual!Object_gen_);
+@method Object_gen_ _imageName_gen_(SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _imageName_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isRunTime_gen_(virtual!Object_gen_);
+@method Object_gen_ _isRunTime_gen_(SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isRunTime_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getCommandLine_gen_(virtual!Object_gen_);
+@method Object_gen_ _getCommandLine_gen_(SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getCommandLine_gen_(KernelDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getCommandLine_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cr_gen_(virtual!Object_gen_);
+@method Object_gen_ _cr_gen_(TextTool_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cr_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cr_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cr_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cr_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cr_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ position_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _position_gen_(ScrollBar_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(WriteStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(MenuItem_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ horizontal_gen_(virtual!Object_gen_);
+@method Object_gen_ _horizontal_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _horizontal_gen_(METACLASS_ScrollBar_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ position_gen_(virtual!Object_gen_);
+@method Object_gen_ _position_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _position_gen_(MenuItem_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ vertical_gen_(virtual!Object_gen_);
+@method Object_gen_ _vertical_gen_(ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _vertical_gen_(METACLASS_ScrollBar_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ matchBracketFromTo_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _matchBracketFromTo_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _matchBracketFromTo_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addParens_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _addParens_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addParens_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectBefore_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _selectBefore_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectBefore_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectBefore_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ searchFor_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _searchFor_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _searchFor_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ readWrite_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _readWrite_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readWrite_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ scrollTopCornerTo_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _scrollTopCornerTo_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _scrollTopCornerTo_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addSquareBrackets_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _addSquareBrackets_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSquareBrackets_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ search_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _search_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _search_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isTextPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _isTextPane_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isTextPane_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isTextPane_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ matchBracketChars_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _matchBracketChars_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _matchBracketChars_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ textFont_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _textFont_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _textFont_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _textFont_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ inspectIt_gen_(virtual!Object_gen_);
+@method Object_gen_ _inspectIt_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectIt_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _inspectIt_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ searchOld_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _searchOld_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _searchOld_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addDoubleQuotes_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _addDoubleQuotes_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addDoubleQuotes_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addSingleQuotes_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _addSingleQuotes_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSingleQuotes_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setEvaluate_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _setEvaluate_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setEvaluate_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ findReplace_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _findReplace_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _findReplace_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ doItcompilerErrorAtInFor_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _doItcompilerErrorAtInFor_gen_(TextPane_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doItcompilerErrorAtInFor_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ scrollTopCorner_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _scrollTopCorner_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _scrollTopCorner_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultCursor_gen_(virtual!Window_gen_);
+@method Object_gen_ _defaultCursor_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultCursor_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ print_gen_(virtual!Object_gen_);
+@method Object_gen_ _print_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _print_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _print_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _print_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ updateRectangle_gen_(virtual!Window_gen_);
+@method Object_gen_ _updateRectangle_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateRectangle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _updateRectangle_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveCompilerErrorAtInFor_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _saveCompilerErrorAtInFor_gen_(TextPane_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveCompilerErrorAtInFor_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectAfter_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _selectAfter_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectAfter_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectAfter_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printIt_gen_(virtual!Object_gen_);
+@method Object_gen_ _printIt_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printIt_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printIt_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ undo_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _undo_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undo_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addLeftBracketRightbracket_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _addLeftBracketRightbracket_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addLeftBracketRightbracket_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceString_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _replaceString_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceString_gen_(TextPaneControl_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectFromTo_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _selectFromTo_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectFromTo_gen_(EntryField_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectFromTo_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectAtEnd_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _selectAtEnd_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectAtEnd_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmGetdlgcodeWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmGetdlgcodeWith_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmGetdlgcodeWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addCurlyBrackets_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _addCurlyBrackets_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addCurlyBrackets_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmSetfocusWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmSetfocusWith_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSetfocusWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileItIn_gen_(virtual!Object_gen_);
+@method Object_gen_ _fileItIn_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileItIn_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileItIn_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectedItem_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _selectedItem_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectedItem_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectedItem_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ restore_gen_(virtual!Object_gen_);
+@method Object_gen_ _restore_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _restore_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _restore_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _restore_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _restore_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ replaceAtPattern_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _replaceAtPattern_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _replaceAtPattern_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ characterInput_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _characterInput_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _characterInput_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectTo_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _selectTo_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectTo_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmKillfocusWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmKillfocusWith_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmKillfocusWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ forceEndOntoDisplay_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _forceEndOntoDisplay_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _forceEndOntoDisplay_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ doIt_gen_(virtual!Object_gen_);
+@method Object_gen_ _doIt_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doIt_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _doIt_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isReadOnly_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _isReadOnly_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isReadOnly_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isReadOnly_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ forceSelectionOntoDisplay_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _forceSelectionOntoDisplay_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _forceSelectionOntoDisplay_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ showSelectionFromTo_gen_(virtual!SubPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _showSelectionFromTo_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _showSelectionFromTo_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ searchBackOld_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _searchBackOld_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _searchBackOld_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button1DownShift_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button1DownShift_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1DownShift_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1DownShift_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectAll_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _selectAll_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectAll_gen_(EntryField_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ readOnly_gen_(virtual!Object_gen_);
+@method Object_gen_ _readOnly_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readOnly_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readOnly_gen_(Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readOnly_gen_(TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ again_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _again_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _again_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button1DoubleClick_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button1DoubleClick_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1DoubleClick_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button1DoubleClick_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ scrollHorizontal_gen_(virtual!SubPane_gen_, Object_gen_);
+@method Object_gen_ _scrollHorizontal_gen_(TextPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _scrollHorizontal_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ queryReplaceAtPattern_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _queryReplaceAtPattern_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _queryReplaceAtPattern_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmTimerWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmTimerWith_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmTimerWith_gen_(DDEAuxClient_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmTimerWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmTimerWith_gen_(TopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reinitialize_gen_(virtual!Object_gen_);
+@method Object_gen_ _reinitialize_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reinitialize_gen_(NotificationManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ selectedString_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _selectedString_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _selectedString_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ clearSelection_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _clearSelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clearSelection_gen_(EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clearSelection_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clearSelection_gen_(MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ searchForDefaultTextPane_gen_(virtual!Window_gen_);
+@method Object_gen_ _searchForDefaultTextPane_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _searchForDefaultTextPane_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _searchForDefaultTextPane_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ accept_gen_(virtual!Object_gen_);
+@method Object_gen_ _accept_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _accept_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ evaluateIferror_gen_(virtual!TextPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _evaluateIferror_gen_(TextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateIferror_gen_(WorkspaceTextPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printSelection_gen_(virtual!SubPane_gen_);
+@method Object_gen_ _printSelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printSelection_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hideSelection_gen_(virtual!Object_gen_);
+@method Object_gen_ _hideSelection_gen_(TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hideSelection_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deviceContext_gen_(virtual!Object_gen_);
+@method Object_gen_ _deviceContext_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deviceContext_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ graphicsTool_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _graphicsTool_gen_(GraphicsMedium_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _graphicsTool_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pen_gen_(virtual!Object_gen_);
+@method Object_gen_ _pen_gen_(GraphicsMedium_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pen_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pen_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pen_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openOnLabel_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _openOnLabel_gen_(WalkbackWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openOnLabel_gen_(METACLASS_WalkbackWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openModal_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _openModal_gen_(DialogTopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openModal_gen_(WindowDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmPaintWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmPaintWith_gen_(DialogTopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmPaintWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmPaintWith_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmPaintWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmSizeWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmSizeWith_gen_(DialogTopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSizeWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSizeWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSizeWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ buildWindow_gen_(virtual!ApplicationWindow_gen_);
+@method Object_gen_ _buildWindow_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _buildWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDialogTopPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDialogTopPane_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDialogTopPane_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mainWindow_gen_(virtual!Window_gen_);
+@method Object_gen_ _mainWindow_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mainWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mainWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openModeless_gen_(virtual!Object_gen_);
+@method Object_gen_ _openModeless_gen_(DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openModeless_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addSystemMenus_gen_(virtual!WindowPolicy_gen_);
+@method Object_gen_ _addSystemMenus_gen_(CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSystemMenus_gen_(WindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addStandardLeftMenus_gen_(virtual!WindowPolicy_gen_);
+@method Object_gen_ _addStandardLeftMenus_gen_(CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addStandardLeftMenus_gen_(SmalltalkWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addStandardLeftMenus_gen_(StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addStandardLeftMenus_gen_(WindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addSmalltalkMenu_gen_(virtual!StandardWindowPolicy_gen_);
+@method Object_gen_ _addSmalltalkMenu_gen_(CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSmalltalkMenu_gen_(SmalltalkWindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isCollection_gen_(virtual!Object_gen_);
+@method Object_gen_ _isCollection_gen_(Collection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isCollection_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ remove_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _remove_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _remove_gen_(NotificationManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _remove_gen_(METACLASS_File_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _remove_gen_(METACLASS_Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ collect_gen_(virtual!Collection_gen_, Object_gen_);
+@method Object_gen_ _collect_gen_(Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _collect_gen_(FixedSizeCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ errorNotIndexable_gen_(virtual!Object_gen_);
+@method Object_gen_ _errorNotIndexable_gen_(Collection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _errorNotIndexable_gen_(Behavior_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isEmpty_gen_(virtual!Object_gen_);
+@method Object_gen_ _isEmpty_gen_(Collection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isEmpty_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ makeActive_gen_(virtual!Window_gen_);
+@method Object_gen_ _makeActive_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _makeActive_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ waitForData_gen_(virtual!DDEAuxWindow_gen_);
+@method Object_gen_ _waitForData_gen_(DDEAuxWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _waitForData_gen_(DDEAuxClient_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmDdeDataWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmDdeDataWith_gen_(DDEAuxClient_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmDdeDataWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ message_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _message_gen_(MessageBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _message_gen_(ProgressIndicatorDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _message_gen_(MessageNotUnderstood_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _message_gen_(METACLASS_Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _message_gen_(METACLASS_MessageBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _message_gen_(METACLASS_MessageNotUnderstood_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ok_gen_(virtual!DialogBox_gen_);
+@method Object_gen_ _ok_gen_(MessageBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ok_gen_(NewSubclassDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asUpperCase_gen_(virtual!Object_gen_);
+@method Object_gen_ _asUpperCase_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asUpperCase_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asLowerCase_gen_(virtual!Object_gen_);
+@method Object_gen_ _asLowerCase_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asLowerCase_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asCharacter_gen_(virtual!Magnitude_gen_);
+@method Object_gen_ _asCharacter_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asCharacter_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toDo_gen_(virtual!Magnitude_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _toDo_gen_(Character_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toDo_gen_(Number_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isCharacter_gen_(virtual!Object_gen_);
+@method Object_gen_ _isCharacter_gen_(Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isCharacter_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ to_gen_(virtual!Magnitude_gen_, Object_gen_);
+@method Object_gen_ _to_gen_(Character_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _to_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toBy_gen_(virtual!Magnitude_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _toBy_gen_(Character_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toBy_gen_(Number_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toByDo_gen_(virtual!Magnitude_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _toByDo_gen_(Character_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toByDo_gen_(Number_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ methods_gen_(virtual!Object_gen_);
+@method Object_gen_ _methods_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _methods_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ implementorsOf_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _implementorsOf_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _implementorsOf_gen_(SystemDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isFixed_gen_(virtual!Object_gen_);
+@method Object_gen_ _isFixed_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isFixed_gen_(NewSubclassDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pools_gen_(virtual!Object_gen_);
+@method Object_gen_ _pools_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pools_gen_(WorkspaceTextPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sendersOf_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _sendersOf_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sendersOf_gen_(SystemDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ new_gen_(virtual!Behavior_gen_, Object_gen_);
+@method Object_gen_ _new_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_LargeInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_WildPattern_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_SortedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Set_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_CompiledMethod_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_IdentityDictionary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Pattern_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Boolean_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_UndefinedObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_OrderedCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ compile_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _compile_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compile_gen_(CompilerInterface_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ new_gen_(virtual!Behavior_gen_);
+@method Object_gen_ _new_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_ExternalHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_ExternalBuffer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_OperatingSystemInformation_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_DragDropList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Set_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_CompiledMethod_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Printer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Character_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_DynamicLinkLibrary16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_NationalLanguageSupport_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_IdentityDictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_ProgressIndicatorDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Float_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Semaphore_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Boolean_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_CompilerNameScope_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_UndefinedObject_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Bag_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_OrderedCollection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_ViewManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _new_gen_(METACLASS_TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isBehavior_gen_(virtual!Object_gen_);
+@method Object_gen_ _isBehavior_gen_(Behavior_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isBehavior_gen_(Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setCompilationOptions_gen_(virtual!Behavior_gen_, Object_gen_);
+@method Object_gen_ _setCompilationOptions_gen_(Behavior_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setCompilationOptions_gen_(METACLASS_DynamicLinkLibrary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ space_gen_(virtual!Object_gen_);
+@method Object_gen_ _space_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _space_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ putBytesFromFromTo_gen_(virtual!WriteStream_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _putBytesFromFromTo_gen_(WriteStream_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _putBytesFromFromTo_gen_(FileStream_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ tab_gen_(virtual!Object_gen_);
+@method Object_gen_ _tab_gen_(WriteStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tab_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isBoolean_gen_(virtual!Object_gen_);
+@method Object_gen_ _isBoolean_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isBoolean_gen_(Boolean_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isFileStream_gen_(virtual!Object_gen_);
+@method Object_gen_ _isFileStream_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isFileStream_gen_(FileStream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isGroupBox_gen_(virtual!Object_gen_);
+@method Object_gen_ _isGroupBox_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isGroupBox_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isString_gen_(virtual!Object_gen_);
+@method Object_gen_ _isString_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isString_gen_(String_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isBitmap_gen_(virtual!Object_gen_);
+@method Object_gen_ _isBitmap_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isBitmap_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printString_gen_(virtual!Object_gen_);
+@method Object_gen_ _printString_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printString_gen_(SmallInteger_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ eventTableCreate_gen_(virtual!Object_gen_);
+@method Object_gen_ _eventTableCreate_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventTableCreate_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canTriggerEvent_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _canTriggerEvent_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTriggerEvent_gen_(METACLASS_Menu_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTriggerEvent_gen_(METACLASS_SessionModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTriggerEvent_gen_(METACLASS_Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTriggerEvent_gen_(METACLASS_Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTriggerEvent_gen_(METACLASS_ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ basicAt_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _basicAt_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicAt_gen_(String_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isStream_gen_(virtual!Object_gen_);
+@method Object_gen_ _isStream_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isStream_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isFloat_gen_(virtual!Object_gen_);
+@method Object_gen_ _isFloat_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isFloat_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isInteger_gen_(virtual!Object_gen_);
+@method Object_gen_ _isInteger_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isInteger_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ changed_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _changed_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changed_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changed_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dependents_gen_(virtual!Object_gen_);
+@method Object_gen_ _dependents_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dependents_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isNil_gen_(virtual!Object_gen_);
+@method Object_gen_ _isNil_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isNil_gen_(UndefinedObject_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isContext_gen_(virtual!Object_gen_);
+@method Object_gen_ _isContext_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isContext_gen_(Context_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isPoint_gen_(virtual!Object_gen_);
+@method Object_gen_ _isPoint_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isPoint_gen_(Point_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isSmallInteger_gen_(virtual!Object_gen_);
+@method Object_gen_ _isSmallInteger_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isSmallInteger_gen_(SmallInteger_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isFont_gen_(virtual!Object_gen_);
+@method Object_gen_ _isFont_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isFont_gen_(Font_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isGraphPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _isGraphPane_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isGraphPane_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isTopPane_gen_(virtual!Object_gen_);
+@method Object_gen_ _isTopPane_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isTopPane_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isIcon_gen_(virtual!Object_gen_);
+@method Object_gen_ _isIcon_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isIcon_gen_(Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isRectangle_gen_(virtual!Object_gen_);
+@method Object_gen_ _isRectangle_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isRectangle_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isNumber_gen_(virtual!Object_gen_);
+@method Object_gen_ _isNumber_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isNumber_gen_(Number_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ changedWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _changedWith_gen_(Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedWith_gen_(ViewManager_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isMethodDictionary_gen_(virtual!Object_gen_);
+@method Object_gen_ _isMethodDictionary_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isMethodDictionary_gen_(MethodDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ methodDictionaryArray_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _methodDictionaryArray_gen_(Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _methodDictionaryArray_gen_(METACLASS_ObjectLibraryExternal_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ basicAtPut_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _basicAtPut_gen_(Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _basicAtPut_gen_(String_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isApplicationWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _isApplicationWindow_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isApplicationWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isDynamicLinkLibrary_gen_(virtual!Object_gen_);
+@method Object_gen_ _isDynamicLinkLibrary_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isDynamicLinkLibrary_gen_(DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ changedWithWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _changedWithWith_gen_(Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedWithWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _changedWithWith_gen_(ViewManager_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isArray_gen_(virtual!Object_gen_);
+@method Object_gen_ _isArray_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isArray_gen_(Array_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ notNil_gen_(virtual!Object_gen_);
+@method Object_gen_ _notNil_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _notNil_gen_(UndefinedObject_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isTextSelection_gen_(virtual!Object_gen_);
+@method Object_gen_ _isTextSelection_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isTextSelection_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isFraction_gen_(virtual!Object_gen_);
+@method Object_gen_ _isFraction_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isFraction_gen_(Fraction_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isObjectLibraryExternal_gen_(virtual!Object_gen_);
+@method Object_gen_ _isObjectLibraryExternal_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isObjectLibraryExternal_gen_(ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _isWindow_gen_(Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ backupOver_gen_(virtual!Stream_gen_, Object_gen_);
+@method Object_gen_ _backupOver_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _backupOver_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ file_gen_(virtual!Object_gen_);
+@method Object_gen_ _file_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _file_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _file_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextLine_gen_(virtual!Stream_gen_);
+@method Object_gen_ _nextLine_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextLine_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ readLimit_gen_(virtual!Stream_gen_);
+@method Object_gen_ _readLimit_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readLimit_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextChunk_gen_(virtual!Stream_gen_);
+@method Object_gen_ _nextChunk_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextChunk_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ atEnd_gen_(virtual!Stream_gen_);
+@method Object_gen_ _atEnd_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _atEnd_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ lineDelimiter_gen_(virtual!Stream_gen_, Object_gen_);
+@method Object_gen_ _lineDelimiter_gen_(FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _lineDelimiter_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ lineDelimiter_gen_(virtual!Stream_gen_);
+@method Object_gen_ _lineDelimiter_gen_(FileStream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _lineDelimiter_gen_(Stream_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ readOnly_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _readOnly_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readOnly_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCharResultFor_gen_(virtual!EntryField_gen_, Object_gen_);
+@method Object_gen_ _wmCharResultFor_gen_(EntryField_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCharResultFor_gen_(TextEdit_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileOut_gen_(virtual!Object_gen_);
+@method Object_gen_ _fileOut_gen_(ClassReader_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileOut_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getClassIfabsent_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _getClassIfabsent_gen_(ObjectLibraryExternal_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getClassIfabsent_gen_(METACLASS_ObjectLibraryExternal_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ resolve_gen_(virtual!Object_gen_);
+@method Object_gen_ _resolve_gen_(ObjectLibraryExternal_gen_) { return new Object_gen_(); }
+@method Object_gen_ _resolve_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ queryProcAddr_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _queryProcAddr_gen_(DynamicLinkLibrary16_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _queryProcAddr_gen_(DynamicLinkLibrary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getResourceStringId_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _getResourceStringId_gen_(DynamicLinkLibrary16_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getResourceStringId_gen_(DynamicLinkLibrary_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rectangle_gen_(virtual!Object_gen_);
+@method Object_gen_ _rectangle_gen_(WinPaintStructure_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rectangle_gen_(Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sendInputEventWith_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _sendInputEventWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sendInputEventWith_gen_(ViewManager_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ measureControl_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _measureControl_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _measureControl_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _measureControl_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ listFont_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _listFont_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _listFont_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canTab_gen_(virtual!Window_gen_);
+@method Object_gen_ _canTab_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTab_gen_(StaticPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTab_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canTab_gen_(GroupBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ previousTabStop_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _previousTabStop_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _previousTabStop_gen_(GroupPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultDrawItem_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _defaultDrawItem_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultDrawItem_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultFont_gen_(virtual!Object_gen_);
+@method Object_gen_ _defaultFont_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultFont_gen_(METACLASS_Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultFont_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultFont_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultFont_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultFont_gen_(METACLASS_ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sizeChanged_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _sizeChanged_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sizeChanged_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultBackColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _defaultBackColor_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultBackColor_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button2Move_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button2Move_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Move_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultForeColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _defaultForeColor_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultForeColor_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmInitmenuWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmInitmenuWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmInitmenuWith_gen_(TopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmLbuttondblclkWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmLbuttondblclkWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmLbuttondblclkWith_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ parent_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _parent_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _parent_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmLbuttondownWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmLbuttondownWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmLbuttondownWith_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmLbuttondownWith_gen_(GraphPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmQueryendsessionWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmQueryendsessionWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmQueryendsessionWith_gen_(TopPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmSyscommandWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmSyscommandWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSyscommandWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmQuerydragiconWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmQuerydragiconWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmQuerydragiconWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ controlColor_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _controlColor_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlColor_gen_(ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _controlColor_gen_(GroupPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ menuWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _menuWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _menuWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _menuWindow_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ model_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _model_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _model_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ tabScope_gen_(virtual!Window_gen_);
+@method Object_gen_ _tabScope_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tabScope_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tabScope_gen_(GroupPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ systemMenuHandle_gen_(virtual!Window_gen_);
+@method Object_gen_ _systemMenuHandle_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _systemMenuHandle_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmCreateWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmCreateWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmCreateWith_gen_(ApplicationWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button2DoubleClick_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button2DoubleClick_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2DoubleClick_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmMousemoveWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmMousemoveWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmMousemoveWith_gen_(ListBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmSetcursorWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmSetcursorWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmSetcursorWith_gen_(ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sendInputEvent_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _sendInputEvent_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sendInputEvent_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultMeasureControl_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _defaultMeasureControl_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultMeasureControl_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextTabStop_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _nextTabStop_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextTabStop_gen_(GroupPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ wmKeydownWith_gen_(virtual!Window_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _wmKeydownWith_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _wmKeydownWith_gen_(TextPaneControl_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemSize_gen_(virtual!Window_gen_);
+@method Object_gen_ _itemSize_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemSize_gen_(ListBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ button2Down_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _button2Down_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _button2Down_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ drawIndex_gen_(virtual!Window_gen_);
+@method Object_gen_ _drawIndex_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _drawIndex_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isHandleOk_gen_(virtual!Window_gen_);
+@method Object_gen_ _isHandleOk_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isHandleOk_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ activate_gen_(virtual!Window_gen_);
+@method Object_gen_ _activate_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _activate_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _activate_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ minimizeWindow_gen_(virtual!Window_gen_);
+@method Object_gen_ _minimizeWindow_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _minimizeWindow_gen_(TopPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemSize_gen_(virtual!Window_gen_, Object_gen_);
+@method Object_gen_ _itemSize_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemSize_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addSubpane_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _addSubpane_gen_(Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSubpane_gen_(TopPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSubpane_gen_(GroupPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addSubpane_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ whenPerform_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _whenPerform_gen_(Window_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _whenPerform_gen_(ViewManager_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ownerDrawPen_gen_(virtual!Window_gen_);
+@method Object_gen_ _ownerDrawPen_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ownerDrawPen_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ graphicsTool_gen_(virtual!Window_gen_);
+@method Object_gen_ _graphicsTool_gen_(Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _graphicsTool_gen_(ControlPane_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ truncated_gen_(virtual!Object_gen_);
+@method Object_gen_ _truncated_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncated_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncated_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncated_gen_(Float_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncated_gen_(Point_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncated_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ reciprocal_gen_(virtual!Number_gen_);
+@method Object_gen_ _reciprocal_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reciprocal_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reciprocal_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _reciprocal_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ denominator_gen_(virtual!Number_gen_);
+@method Object_gen_ _denominator_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _denominator_gen_(Number_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ asFloat_gen_(virtual!Object_gen_);
+@method Object_gen_ _asFloat_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asFloat_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asFloat_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _asFloat_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ numerator_gen_(virtual!Number_gen_);
+@method Object_gen_ _numerator_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numerator_gen_(Number_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ squared_gen_(virtual!Number_gen_);
+@method Object_gen_ _squared_gen_(Fraction_gen_) { return new Object_gen_(); }
+@method Object_gen_ _squared_gen_(Number_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ numeratorDenominator_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _numeratorDenominator_gen_(Fraction_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _numeratorDenominator_gen_(METACLASS_Fraction_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rem_gen_(virtual!Number_gen_, Object_gen_);
+@method Object_gen_ _rem_gen_(SmallInteger_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rem_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rem_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ exit_gen_(virtual!Object_gen_);
+@method Object_gen_ _exit_gen_(VirtualMachineDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_HelpManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_ExternalHeapHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_SystemWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_CallBack_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_Printer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_VirtualMachineDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exit_gen_(METACLASS_Screen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileName_gen_(virtual!Object_gen_);
+@method Object_gen_ _fileName_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_VirtualMachineExe_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_UserDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_ThunkDLL16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_ShellDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_VirtualMachineDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_KernelDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_KernelDLL16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_CommonDialogDLL_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileName_gen_(METACLASS_GDIDLL_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ outputToPrinter_gen_(virtual!Object_gen_);
+@method Object_gen_ _outputToPrinter_gen_(String_gen_) { return new Object_gen_(); }
+@method Object_gen_ _outputToPrinter_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _outputToPrinter_gen_(Screen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ undeclaredAssignment_gen_(virtual!CompilerErrorHandler_gen_, Object_gen_);
+@method Object_gen_ _undeclaredAssignment_gen_(WorkspaceErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undeclaredAssignment_gen_(TextPaneErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undeclaredAssignment_gen_(TraditionalCompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undeclaredAssignment_gen_(CompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ check_gen_(virtual!Object_gen_);
+@method Object_gen_ _check_gen_(CheckBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _check_gen_(ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ freeLibrary_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _freeLibrary_gen_(KernelDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _freeLibrary_gen_(KernelDLL16_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ loadLibrary_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _loadLibrary_gen_(KernelDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _loadLibrary_gen_(KernelDLL16_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getProcAddressProcname_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _getProcAddressProcname_gen_(KernelDLL_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getProcAddressProcname_gen_(KernelDLL16_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getModuleHandle_gen_(virtual!DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _getModuleHandle_gen_(KernelDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getModuleHandle_gen_(KernelDLL16_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ status_gen_(virtual!Object_gen_);
+@method Object_gen_ _status_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _status_gen_(METACLASS_Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ yield_gen_(virtual!Object_gen_);
+@method Object_gen_ _yield_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _yield_gen_(NotificationManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ terminateActive_gen_(virtual!Object_gen_);
+@method Object_gen_ _terminateActive_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _terminateActive_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copyStack_gen_(virtual!Object_gen_);
+@method Object_gen_ _copyStack_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyStack_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ flip_gen_(virtual!Object_gen_);
+@method Object_gen_ _flip_gen_(ProcessScheduler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _flip_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ okToClose_gen_(virtual!Object_gen_);
+@method Object_gen_ _okToClose_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _okToClose_gen_(Prompter_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ triggerOpenedEvent_gen_(virtual!ApplicationWindow_gen_);
+@method Object_gen_ _triggerOpenedEvent_gen_(TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _triggerOpenedEvent_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ show_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _show_gen_(Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _show_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileIn_gen_(virtual!Object_gen_);
+@method Object_gen_ _fileIn_gen_(Stream_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileIn_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nextPut_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _nextPut_gen_(Stream_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nextPut_gen_(TextWindow_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ directory_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _directory_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _directory_gen_(FileDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hideShow_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _hideShow_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hideShow_gen_(ClassHierarchyBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dropped_gen_(virtual!ViewManager_gen_, Object_gen_);
+@method Object_gen_ _dropped_gen_(DiskBrowser_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dropped_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hideShow_gen_(virtual!ViewManager_gen_);
+@method Object_gen_ _hideShow_gen_(DiskBrowser_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hideShow_gen_(ClassHierarchyBrowser_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ceiling_gen_(virtual!Number_gen_);
+@method Object_gen_ _ceiling_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ceiling_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ radiansToDegrees_gen_(virtual!Number_gen_);
+@method Object_gen_ _radiansToDegrees_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _radiansToDegrees_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ degreesToRadians_gen_(virtual!Number_gen_);
+@method Object_gen_ _degreesToRadians_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _degreesToRadians_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ truncateTo_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _truncateTo_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _truncateTo_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printFraction_gen_(virtual!Number_gen_, Object_gen_);
+@method Object_gen_ _printFraction_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printFraction_gen_(Float_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ left_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _left_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _left_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _left_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printFractionDecimalseparator_gen_(virtual!Number_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _printFractionDecimalseparator_gen_(Number_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printFractionDecimalseparator_gen_(Float_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ floor_gen_(virtual!Number_gen_);
+@method Object_gen_ _floor_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _floor_gen_(Integer_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ exp_gen_(virtual!Number_gen_);
+@method Object_gen_ _exp_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exp_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ right_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _right_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _right_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _right_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ cos_gen_(virtual!Number_gen_);
+@method Object_gen_ _cos_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _cos_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ up_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _up_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _up_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ tan_gen_(virtual!Number_gen_);
+@method Object_gen_ _tan_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _tan_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sqrt_gen_(virtual!Number_gen_);
+@method Object_gen_ _sqrt_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sqrt_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ ln_gen_(virtual!Number_gen_);
+@method Object_gen_ _ln_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _ln_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ down_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _down_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _down_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rounded_gen_(virtual!Object_gen_);
+@method Object_gen_ _rounded_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rounded_gen_(Integer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rounded_gen_(Point_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rounded_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ timesTwoPower_gen_(virtual!Number_gen_, Object_gen_);
+@method Object_gen_ _timesTwoPower_gen_(Number_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _timesTwoPower_gen_(Float_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ sin_gen_(virtual!Number_gen_);
+@method Object_gen_ _sin_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _sin_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ arcTan_gen_(virtual!Number_gen_);
+@method Object_gen_ _arcTan_gen_(Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _arcTan_gen_(Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addStandardRightMenus_gen_(virtual!WindowPolicy_gen_);
+@method Object_gen_ _addStandardRightMenus_gen_(SmalltalkWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addStandardRightMenus_gen_(StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addStandardRightMenus_gen_(WindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ radix_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _radix_gen_(Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _radix_gen_(ByteArrayInspector_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ canceled_gen_(virtual!WindowDialog_gen_);
+@method Object_gen_ _canceled_gen_(SaveImageAsDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _canceled_gen_(ProgressIndicatorDialog_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveImage_gen_(virtual!Object_gen_);
+@method Object_gen_ _saveImage_gen_(SaveImageAsDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveImage_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveImage_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toggleWrap_gen_(virtual!Object_gen_);
+@method Object_gen_ _toggleWrap_gen_(TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toggleWrap_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ compiler_gen_(virtual!Object_gen_);
+@method Object_gen_ _compiler_gen_(WorkspaceTextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _compiler_gen_(CompilerInterface_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addApplicationMenus_gen_(virtual!WindowPolicy_gen_);
+@method Object_gen_ _addApplicationMenus_gen_(StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addApplicationMenus_gen_(WindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ addHelpManager_gen_(virtual!Inspector_gen_);
+@method Object_gen_ _addHelpManager_gen_(Inspector_gen_) { return new Object_gen_(); }
+@method Object_gen_ _addHelpManager_gen_(ByteArrayInspector_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemHeight_gen_(virtual!Object_gen_);
+@method Object_gen_ _itemHeight_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemHeight_gen_(WinMeasureItemStruct_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ itemHeight_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _itemHeight_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _itemHeight_gen_(WinMeasureItemStruct_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ deselect_gen_(virtual!Object_gen_);
+@method Object_gen_ _deselect_gen_(ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _deselect_gen_(Bitmap_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ isIndexSelected_gen_(virtual!ListBox_gen_, Object_gen_);
+@method Object_gen_ _isIndexSelected_gen_(ListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _isIndexSelected_gen_(MultipleSelectListBox_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ createBitmapIndirect_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _createBitmapIndirect_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _createBitmapIndirect_gen_(GDIDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ screenExtent_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _screenExtent_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _screenExtent_gen_(METACLASS_Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ widthHeight_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _widthHeight_gen_(Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _widthHeight_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ widthHeightPlanesBitcount_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _widthHeightPlanesBitcount_gen_(Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _widthHeightPlanesBitcount_gen_(METACLASS_WinBitmapInfoHeader_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _widthHeightPlanesBitcount_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ widthHeightBits_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _widthHeightBits_gen_(Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _widthHeightBits_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ createBitmapHeightPlanesBitcountBits_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _createBitmapHeightPlanesBitcountBits_gen_(Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _createBitmapHeightPlanesBitcountBits_gen_(GDIDLL_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _createBitmapHeightPlanesBitcountBits_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ outputToPrinter_gen_(virtual!GraphicsMedium_gen_, Object_gen_);
+@method Object_gen_ _outputToPrinter_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _outputToPrinter_gen_(Screen_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ outputToFile_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _outputToFile_gen_(Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _outputToFile_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ screenWidthHeight_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _screenWidthHeight_gen_(Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _screenWidthHeight_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pane_gen_(virtual!Object_gen_);
+@method Object_gen_ _pane_gen_(TextPaneErrorHandler_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pane_gen_(TextWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ pane_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _pane_gen_(TextPaneErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _pane_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ undeclaredAccess_gen_(virtual!CompilerErrorHandler_gen_, Object_gen_);
+@method Object_gen_ _undeclaredAccess_gen_(TextPaneErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undeclaredAccess_gen_(TraditionalCompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _undeclaredAccess_gen_(CompilerErrorHandler_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ open_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _open_gen_(NewSubclassDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(METACLASS_DynamicLinkLibrary16_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(METACLASS_DynamicLinkLibrary_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _open_gen_(METACLASS_NewSubclassDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openWindow_gen_(virtual!Object_gen_);
+@method Object_gen_ _openWindow_gen_(WindowDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openWindow_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openWindow_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitmap_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _bitmap_gen_(GraphPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitmap_gen_(METACLASS_StaticGraphic_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bitmap_gen_(virtual!Object_gen_);
+@method Object_gen_ _bitmap_gen_(GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bitmap_gen_(METACLASS_StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ save_gen_(virtual!Object_gen_);
+@method Object_gen_ _save_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _save_gen_(SystemDictionary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openFile_gen_(virtual!Object_gen_);
+@method Object_gen_ _openFile_gen_(FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openFile_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openFile_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveFile_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _saveFile_gen_(FileDialog_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveFile_gen_(TextWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ hasInvalidBindingFor_gen_(virtual!CompilerNameScope_gen_, Object_gen_);
+@method Object_gen_ _hasInvalidBindingFor_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _hasInvalidBindingFor_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ descriptionFor_gen_(virtual!CompilerNameScope_gen_, Object_gen_);
+@method Object_gen_ _descriptionFor_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _descriptionFor_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ unbound_gen_(virtual!Object_gen_);
+@method Object_gen_ _unbound_gen_(CompilerNameScope_gen_) { return new Object_gen_(); }
+@method Object_gen_ _unbound_gen_(METACLASS_CompilerNameScope_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ describeInvalidBindingFor_gen_(virtual!CompilerNameScope_gen_, Object_gen_);
+@method Object_gen_ _describeInvalidBindingFor_gen_(CompilerNameScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _describeInvalidBindingFor_gen_(MultiplePoolScope_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ evaluate_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _evaluate_gen_(CompilerInterface_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(Process_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluate_gen_(METACLASS_CompilerInterface_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultGlobalDictionary_gen_(virtual!Object_gen_);
+@method Object_gen_ _defaultGlobalDictionary_gen_(CompilerInterface_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultGlobalDictionary_gen_(METACLASS_ClassInstaller_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ promptDefault_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _promptDefault_gen_(Prompter_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _promptDefault_gen_(METACLASS_Prompter_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ titlePromptDefault_gen_(virtual!Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _titlePromptDefault_gen_(Prompter_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _titlePromptDefault_gen_(METACLASS_Prompter_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromFileStream_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _fromFileStream_gen_(Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromFileStream_gen_(METACLASS_Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bindTo_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _bindTo_gen_(ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bindTo_gen_(METACLASS_ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ extent_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _extent_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _extent_gen_(METACLASS_Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mapClientToScreen_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _mapClientToScreen_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mapClientToScreen_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mapToScreen_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _mapToScreen_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mapToScreen_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ moveBy_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _moveBy_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _moveBy_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mapFromWindowTo_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _mapFromWindowTo_gen_(Point_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mapFromWindowTo_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mapToWindow_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _mapToWindow_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mapToWindow_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ corner_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _corner_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _corner_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _corner_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ rightBottom_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _rightBottom_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _rightBottom_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mapScreenToClient_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _mapScreenToClient_gen_(Point_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mapScreenToClient_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ evaluateProtectionBlock_gen_(virtual!Object_gen_);
+@method Object_gen_ _evaluateProtectionBlock_gen_(Process_gen_) { return new Object_gen_(); }
+@method Object_gen_ _evaluateProtectionBlock_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ menuTitled_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _menuTitled_gen_(MenuWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _menuTitled_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _menuTitled_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ merge_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _merge_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _merge_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ originExtent_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _originExtent_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _originExtent_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leftBottomRighttop_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _leftBottomRighttop_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftBottomRighttop_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ origin_gen_(virtual!Object_gen_);
+@method Object_gen_ _origin_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _origin_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@method Object_gen_ _origin_gen_(METACLASS_CursorManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ origin_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _origin_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _origin_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ top_gen_(virtual!Object_gen_);
+@method Object_gen_ _top_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _top_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leftTopRightbottom_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _leftTopRightbottom_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftTopRightbottom_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leftBottomExtent_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _leftBottomExtent_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftBottomExtent_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ intersect_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _intersect_gen_(Rectangle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _intersect_gen_(TextSelection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ leftTopExtent_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _leftTopExtent_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _leftTopExtent_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ originCorner_gen_(virtual!Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _originCorner_gen_(Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _originCorner_gen_(TextSelection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _originCorner_gen_(METACLASS_Rectangle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _originCorner_gen_(METACLASS_TextSelection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ corner_gen_(virtual!Object_gen_);
+@method Object_gen_ _corner_gen_(Rectangle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _corner_gen_(TextSelection_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ textModified_gen_(virtual!Object_gen_);
+@method Object_gen_ _textModified_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _textModified_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ noSmalltalkMenuBar_gen_(virtual!Object_gen_);
+@method Object_gen_ _noSmalltalkMenuBar_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _noSmalltalkMenuBar_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openWorkspace_gen_(virtual!Object_gen_);
+@method Object_gen_ _openWorkspace_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openWorkspace_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openClassBrowser_gen_(virtual!Object_gen_);
+@method Object_gen_ _openClassBrowser_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openClassBrowser_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ printSetup_gen_(virtual!Object_gen_);
+@method Object_gen_ _printSetup_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _printSetup_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setForegroundColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _setForegroundColor_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setForegroundColor_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openDiskBrowser_gen_(virtual!Object_gen_);
+@method Object_gen_ _openDiskBrowser_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openDiskBrowser_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ icon_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _icon_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _icon_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _icon_gen_(METACLASS_StaticGraphic_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openIn_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _openIn_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openIn_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ labelWithoutPrefix_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _labelWithoutPrefix_gen_(ApplicationWindow_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _labelWithoutPrefix_gen_(ViewManager_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setFonts_gen_(virtual!Object_gen_);
+@method Object_gen_ _setFonts_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setFonts_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ setBackgroundColor_gen_(virtual!Object_gen_);
+@method Object_gen_ _setBackgroundColor_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _setBackgroundColor_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fileMenu_gen_(virtual!Object_gen_);
+@method Object_gen_ _fileMenu_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileMenu_gen_(METACLASS_CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileMenu_gen_(METACLASS_SmalltalkWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileMenu_gen_(METACLASS_StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fileMenu_gen_(METACLASS_ApplicationWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ saveImageAs_gen_(virtual!Object_gen_);
+@method Object_gen_ _saveImageAs_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _saveImageAs_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ icon_gen_(virtual!Object_gen_);
+@method Object_gen_ _icon_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _icon_gen_(METACLASS_StaticGraphic_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ clearTextModified_gen_(virtual!Object_gen_);
+@method Object_gen_ _clearTextModified_gen_(ApplicationWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _clearTextModified_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toolWindowPolicyClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _toolWindowPolicyClass_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toolWindowPolicyClass_gen_(METACLASS_ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ toolTextPaneClass_gen_(virtual!Object_gen_);
+@method Object_gen_ _toolTextPaneClass_gen_(ViewManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _toolTextPaneClass_gen_(METACLASS_ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getStockObject_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _getStockObject_gen_(GDIDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getStockObject_gen_(METACLASS_GraphicsTool_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ createCompatibleDC_gen_(virtual!Object_gen_, Object_gen_);
+@method Object_gen_ _createCompatibleDC_gen_(GDIDLL_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _createCompatibleDC_gen_(METACLASS_Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ iconId_gen_(virtual!METACLASS_ViewManager_gen_);
+@method Object_gen_ _iconId_gen_(METACLASS_Debugger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _iconId_gen_(METACLASS_TranscriptWindow_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ constructEventsTriggered_gen_(virtual!METACLASS_Window_gen_);
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_RadioButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_ComboEntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_CheckBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_Toggle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_MultipleSelectListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_MenuWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _constructEventsTriggered_gen_(METACLASS_TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ supportedEvents_gen_(virtual!METACLASS_Window_gen_);
+@method Object_gen_ _supportedEvents_gen_(METACLASS_SubPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_ComboBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_DropDownList_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_Button_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_DrawnButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_ScrollBar_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_DialogTopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_EntryField_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_TopPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_ListBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_GraphPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _supportedEvents_gen_(METACLASS_TextEdit_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ threshold_gen_(virtual!METACLASS_WinLogicalObject_gen_);
+@method Object_gen_ _threshold_gen_(METACLASS_WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _threshold_gen_(METACLASS_WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _threshold_gen_(METACLASS_WinLogicalPalette_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ winStruct_gen_(virtual!METACLASS_WinLogicalObject_gen_);
+@method Object_gen_ _winStruct_gen_(METACLASS_WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winStruct_gen_(METACLASS_WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _winStruct_gen_(METACLASS_WinLogicalPalette_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ anchorDictionary_gen_(virtual!METACLASS_WinLogicalObject_gen_);
+@method Object_gen_ _anchorDictionary_gen_(METACLASS_WinLogicalBrush_gen_) { return new Object_gen_(); }
+@method Object_gen_ _anchorDictionary_gen_(METACLASS_WinLogicalPen_gen_) { return new Object_gen_(); }
+@method Object_gen_ _anchorDictionary_gen_(METACLASS_WinLogicalPalette_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromAttributes_gen_(virtual!METACLASS_WinLogicalObject_gen_, Object_gen_);
+@method Object_gen_ _fromAttributes_gen_(METACLASS_WinLogicalBrush_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromAttributes_gen_(METACLASS_WinLogicalPen_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromHandleStyle_gen_(virtual!METACLASS_ControlPane_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_ComboBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_Button_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_EntryField_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_StaticPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_ControlPane_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandleStyle_gen_(METACLASS_ListBox_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ for_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _for_gen_(METACLASS_StringModel_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _for_gen_(METACLASS_DictionaryScope_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _for_gen_(METACLASS_ConstantAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _for_gen_(METACLASS_CollectionAccessor_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromString_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromString_gen_(METACLASS_ExternalLong_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_Time_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_Date_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_Atom_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_ObjectLibraryExternal_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromString_gen_(METACLASS_Float_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ startUp_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _startUp_gen_(METACLASS_CursorManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_HelpManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_ExternalHeapHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_ClipboardManager_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_OperatingSystemInformation_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_SystemWindow_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_CallBack_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_FileHandle_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_PrintDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_DialogBox_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_Printer_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_NationalLanguageSupport_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_FileDialog_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_Icon_gen_) { return new Object_gen_(); }
+@method Object_gen_ _startUp_gen_(METACLASS_Screen_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromBytes_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromBytes_gen_(METACLASS_ExternalHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromBytes_gen_(METACLASS_ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromInteger_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromInteger_gen_(METACLASS_ExternalHandle_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_WinPoint_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_DynamicLinkLibrary16_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_Window_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_Float_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromInteger_gen_(METACLASS_Point_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromAddress_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromAddress_gen_(METACLASS_ExternalBuffer_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromAddress_gen_(METACLASS_DoubleByteString_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromAddress_gen_(METACLASS_String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromAddress_gen_(METACLASS_WinDropFile_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ dateAndTimeNow_gen_(virtual!METACLASS_Magnitude_gen_);
+@method Object_gen_ _dateAndTimeNow_gen_(METACLASS_Time_gen_) { return new Object_gen_(); }
+@method Object_gen_ _dateAndTimeNow_gen_(METACLASS_Date_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ eventsTriggered_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _eventsTriggered_gen_(METACLASS_Menu_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventsTriggered_gen_(METACLASS_SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventsTriggered_gen_(METACLASS_Window_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventsTriggered_gen_(METACLASS_ObjectLibraryBind_gen_) { return new Object_gen_(); }
+@method Object_gen_ _eventsTriggered_gen_(METACLASS_ViewManager_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromFile_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromFile_gen_(METACLASS_VirtualMachineConfiguration_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromFile_gen_(METACLASS_DIB_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromFile_gen_(METACLASS_Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromFile_gen_(METACLASS_Icon_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ mustBeSymbol_gen_(virtual!METACLASS_String_gen_, Object_gen_);
+@method Object_gen_ _mustBeSymbol_gen_(METACLASS_Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _mustBeSymbol_gen_(METACLASS_DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ intern_gen_(virtual!METACLASS_String_gen_, Object_gen_);
+@method Object_gen_ _intern_gen_(METACLASS_Symbol_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _intern_gen_(METACLASS_DoubleByteSymbol_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nonAuto_gen_(virtual!METACLASS_Toggle_gen_);
+@method Object_gen_ _nonAuto_gen_(METACLASS_ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nonAuto_gen_(METACLASS_RadioButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nonAuto_gen_(METACLASS_CheckBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ auto_gen_(virtual!METACLASS_Toggle_gen_);
+@method Object_gen_ _auto_gen_(METACLASS_ThreeStateButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _auto_gen_(METACLASS_RadioButton_gen_) { return new Object_gen_(); }
+@method Object_gen_ _auto_gen_(METACLASS_CheckBox_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openIn_gen_(virtual!METACLASS_Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _openIn_gen_(METACLASS_File_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openIn_gen_(METACLASS_FileHandle_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ exists_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _exists_gen_(METACLASS_File_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _exists_gen_(METACLASS_Directory_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openInAttributeMode_gen_(virtual!METACLASS_Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _openInAttributeMode_gen_(METACLASS_File_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openInAttributeMode_gen_(METACLASS_FileHandle_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ openInActionFilesizeAttributeFlagsMode_gen_(virtual!METACLASS_Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _openInActionFilesizeAttributeFlagsMode_gen_(METACLASS_File_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _openInActionFilesizeAttributeFlagsMode_gen_(METACLASS_FileHandle_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ allocateMemory_gen_(virtual!METACLASS_ExternalAddress_gen_, Object_gen_);
+@method Object_gen_ _allocateMemory_gen_(METACLASS_ExternalHeapAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _allocateMemory_gen_(METACLASS_ExternalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _allocateMemory_gen_(METACLASS_ExternalGlobalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ from_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _from_gen_(METACLASS_ObjectLibraryReference_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _from_gen_(METACLASS_ObjectMutator_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ negativeClass_gen_(virtual!METACLASS_LargeInteger_gen_);
+@method Object_gen_ _negativeClass_gen_(METACLASS_LargeNegativeInteger_gen_) { return new Object_gen_(); }
+@method Object_gen_ _negativeClass_gen_(METACLASS_LargePositiveInteger_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromCollection_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromCollection_gen_(METACLASS_WinStructArray_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromCollection_gen_(METACLASS_ActionSequence_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromFileIn_gen_(virtual!METACLASS_Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fromFileIn_gen_(METACLASS_DIB_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromFileIn_gen_(METACLASS_Bitmap_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ receiverSelector_gen_(virtual!METACLASS_Message_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _receiverSelector_gen_(METACLASS_LinkMessage_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _receiverSelector_gen_(METACLASS_Message_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ with_gen_(virtual!Class_gen_, Object_gen_);
+@method Object_gen_ _with_gen_(METACLASS_SelfInitializingObject_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _with_gen_(METACLASS_Collection_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _with_gen_(METACLASS_FixedSizeCollection_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ memoryHandleFromWithallocflag_gen_(virtual!METACLASS_ExternalAddress_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _memoryHandleFromWithallocflag_gen_(METACLASS_ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _memoryHandleFromWithallocflag_gen_(METACLASS_ExternalGlobalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ copyToNonSmalltalkMemoryWithallocflag_gen_(virtual!METACLASS_ExternalAddress_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _copyToNonSmalltalkMemoryWithallocflag_gen_(METACLASS_ExternalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _copyToNonSmalltalkMemoryWithallocflag_gen_(METACLASS_ExternalGlobalAddress_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ memoryHandleFrom_gen_(virtual!METACLASS_ExternalAddress_gen_, Object_gen_);
+@method Object_gen_ _memoryHandleFrom_gen_(METACLASS_ExternalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _memoryHandleFrom_gen_(METACLASS_ExternalGlobalAddress_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromAddressLength_gen_(virtual!METACLASS_String_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _fromAddressLength_gen_(METACLASS_DoubleByteString_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromAddressLength_gen_(METACLASS_String_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ current_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _current_gen_(METACLASS_Directory_gen_) { return new Object_gen_(); }
+@method Object_gen_ _current_gen_(METACLASS_SessionModel_gen_) { return new Object_gen_(); }
+@method Object_gen_ _current_gen_(METACLASS_Process_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ editMenu_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _editMenu_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _editMenu_gen_(METACLASS_CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _editMenu_gen_(METACLASS_SmalltalkWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _editMenu_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _editMenu_gen_(METACLASS_StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ bracketsMenu_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _bracketsMenu_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bracketsMenu_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@method Object_gen_ _bracketsMenu_gen_(METACLASS_StandardWindowPolicy_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ smalltalkMenu_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _smalltalkMenu_gen_(METACLASS_TextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _smalltalkMenu_gen_(METACLASS_CompatibleWindowPolicy_gen_) { return new Object_gen_(); }
+@method Object_gen_ _smalltalkMenu_gen_(METACLASS_TextPaneControl_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ withWithWithWith_gen_(virtual!METACLASS_Collection_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _withWithWithWith_gen_(METACLASS_Collection_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _withWithWithWith_gen_(METACLASS_FixedSizeCollection_gen_, Object_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ withWith_gen_(virtual!METACLASS_Collection_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _withWith_gen_(METACLASS_Collection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _withWith_gen_(METACLASS_FixedSizeCollection_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ withWithWith_gen_(virtual!METACLASS_Collection_gen_, Object_gen_, Object_gen_, Object_gen_);
+@method Object_gen_ _withWithWith_gen_(METACLASS_Collection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _withWithWith_gen_(METACLASS_FixedSizeCollection_gen_, Object_gen_, Object_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ on_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _on_gen_(METACLASS_FileStream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _on_gen_(METACLASS_Stream_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _on_gen_(METACLASS_WindowPolicy_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ forClass_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _forClass_gen_(METACLASS_ClassReader_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _forClass_gen_(METACLASS_CompilerInterface_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ getHandle_gen_(virtual!METACLASS_DynamicLinkLibrary_gen_, Object_gen_);
+@method Object_gen_ _getHandle_gen_(METACLASS_DynamicLinkLibrary16_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _getHandle_gen_(METACLASS_DynamicLinkLibrary_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ apiPrimitiveMap_gen_(virtual!METACLASS_DynamicLinkLibrary_gen_);
+@method Object_gen_ _apiPrimitiveMap_gen_(METACLASS_DynamicLinkLibrary16_gen_) { return new Object_gen_(); }
+@method Object_gen_ _apiPrimitiveMap_gen_(METACLASS_DynamicLinkLibrary_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ readFrom_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _readFrom_gen_(METACLASS_String_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _readFrom_gen_(METACLASS_Integer_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ fromHandle_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _fromHandle_gen_(METACLASS_ControlPane_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _fromHandle_gen_(METACLASS_Bitmap_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ additiveIdentity_gen_(virtual!METACLASS_Number_gen_);
+@method Object_gen_ _additiveIdentity_gen_(METACLASS_Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _additiveIdentity_gen_(METACLASS_Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ multiplicativeIdentity_gen_(virtual!METACLASS_Number_gen_);
+@method Object_gen_ _multiplicativeIdentity_gen_(METACLASS_Number_gen_) { return new Object_gen_(); }
+@method Object_gen_ _multiplicativeIdentity_gen_(METACLASS_Float_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ defaultPoolNames_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _defaultPoolNames_gen_(METACLASS_WorkspaceTextPane_gen_) { return new Object_gen_(); }
+@method Object_gen_ _defaultPoolNames_gen_(METACLASS_CompilerInterface_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ releaseAllHandles_gen_(virtual!METACLASS_Object_gen_);
+@method Object_gen_ _releaseAllHandles_gen_(METACLASS_Font_gen_) { return new Object_gen_(); }
+@method Object_gen_ _releaseAllHandles_gen_(METACLASS_Bitmap_gen_) { return new Object_gen_(); }
+@method Object_gen_ _releaseAllHandles_gen_(METACLASS_Icon_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ nameOf_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _nameOf_gen_(METACLASS_ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _nameOf_gen_(METACLASS_SelfDefinedStructure_gen_, Object_gen_) { return new Object_gen_(); }
+@mptr("hash") Object_gen_ named_gen_(virtual!METACLASS_Object_gen_, Object_gen_);
+@method Object_gen_ _named_gen_(METACLASS_ObjectLibraryBind_gen_, Object_gen_) { return new Object_gen_(); }
+@method Object_gen_ _named_gen_(METACLASS_SelfDefinedStructure_gen_, Object_gen_) { return new Object_gen_(); }
 
 void main()
 {
