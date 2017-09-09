@@ -1,3 +1,14 @@
+
+/+
+ dub.sdl:
+ name "digitalk2"
+ dependency "openmethods" path="../../"
+ +/
+
+import std.stdio;
+import openmethods;
+mixin(registerMethods);
+
 class Artificial_Root {}
 class SelfInitializingObject : Artificial_Root {}
 class Object_ : Artificial_Root {}
@@ -534,7 +545,6 @@ class METACLASS_ComboBox : METACLASS_DropDownList {}
 class METACLASS_CheckBox : METACLASS_Toggle {}
 class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ style(virtual!Object_, Object_);
-@mptr("hash") Object_ style(virtual!Object_);
 @method Object_ _style(WinLogBrush, Object_) { return new Object_(); }
 @method Object_ _style(WinWindowClass, Object_) { return new Object_(); }
 @method Object_ _style(Window, Object_) { return new Object_(); }
@@ -548,6 +558,7 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ color(virtual!ExternalBuffer);
 @method Object_ _color(WinLogBrush) { return new Object_(); }
 @method Object_ _color(WinLogPen) { return new Object_(); }
+@mptr("hash") Object_ style(virtual!Object_);
 @method Object_ _style(WinLogBrush) { return new Object_(); }
 @method Object_ _style(WinLogicalPen) { return new Object_(); }
 @method Object_ _style(Window) { return new Object_(); }
@@ -643,9 +654,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _button1Up(TextPane, Object_) { return new Object_(); }
 @method Object_ _button1Up(Window, Object_) { return new Object_(); }
 @method Object_ _button1Up(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultDragDropCursor(virtual!SubPane);
-@method Object_ _defaultDragDropCursor(SubPane) { return new Object_(); }
-@method Object_ _defaultDragDropCursor(MultipleSelectListBox) { return new Object_(); }
 @mptr("hash") Object_ charsInRow(virtual!SubPane);
 @method Object_ _charsInRow(SubPane) { return new Object_(); }
 @method Object_ _charsInRow(GraphPane) { return new Object_(); }
@@ -800,10 +808,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _helpRequest(SubPane) { return new Object_(); }
 @method Object_ _helpRequest(TopPane) { return new Object_(); }
 @method Object_ _helpRequest(ApplicationWindow) { return new Object_(); }
-@mptr("hash") Object_ defaultDragDropObjects(virtual!SubPane);
-@method Object_ _defaultDragDropObjects(SubPane) { return new Object_(); }
-@method Object_ _defaultDragDropObjects(ListBox) { return new Object_(); }
-@method Object_ _defaultDragDropObjects(MultipleSelectListBox) { return new Object_(); }
 @mptr("hash") Object_ isSubPane(virtual!Object_);
 @method Object_ _isSubPane(SubPane) { return new Object_(); }
 @method Object_ _isSubPane(Object_) { return new Object_(); }
@@ -892,29 +896,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _controlKeyInput(EntryField, Object_) { return new Object_(); }
 @method Object_ _controlKeyInput(Window, Object_) { return new Object_(); }
 @method Object_ _controlKeyInput(ComboEntryField, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultStyle(virtual!Window);
-@method Object_ _defaultStyle(SubPane) { return new Object_(); }
-@method Object_ _defaultStyle(ComboBox) { return new Object_(); }
-@method Object_ _defaultStyle(DropDownList) { return new Object_(); }
-@method Object_ _defaultStyle(StaticText) { return new Object_(); }
-@method Object_ _defaultStyle(ThreeStateButton) { return new Object_(); }
-@method Object_ _defaultStyle(Button) { return new Object_(); }
-@method Object_ _defaultStyle(RadioButton) { return new Object_(); }
-@method Object_ _defaultStyle(DrawnButton) { return new Object_(); }
-@method Object_ _defaultStyle(ScrollBar) { return new Object_(); }
-@method Object_ _defaultStyle(DialogTopPane) { return new Object_(); }
-@method Object_ _defaultStyle(EntryField) { return new Object_(); }
-@method Object_ _defaultStyle(Window) { return new Object_(); }
-@method Object_ _defaultStyle(CheckBox) { return new Object_(); }
-@method Object_ _defaultStyle(Toggle) { return new Object_(); }
-@method Object_ _defaultStyle(ListBox) { return new Object_(); }
-@method Object_ _defaultStyle(GroupPane) { return new Object_(); }
-@method Object_ _defaultStyle(MultipleSelectListBox) { return new Object_(); }
-@method Object_ _defaultStyle(GroupBox) { return new Object_(); }
-@method Object_ _defaultStyle(StaticBox) { return new Object_(); }
-@method Object_ _defaultStyle(ApplicationWindow) { return new Object_(); }
-@method Object_ _defaultStyle(TextEdit) { return new Object_(); }
-@method Object_ _defaultStyle(StaticGraphic) { return new Object_(); }
 @mptr("hash") Object_ validate(virtual!Object_);
 @method Object_ _validate(SubPane) { return new Object_(); }
 @method Object_ _validate(ComboBox) { return new Object_(); }
@@ -1778,10 +1759,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _title(Menu, Object_) { return new Object_(); }
 @method Object_ _title(MessageBox, Object_) { return new Object_(); }
 @method Object_ _title(FileDialog, Object_) { return new Object_(); }
-@mptr("hash") Object_ deleteItem(virtual!Object_, Object_);
-@method Object_ _deleteItem(Menu, Object_) { return new Object_(); }
-@method Object_ _deleteItem(ListBox, Object_) { return new Object_(); }
-@method Object_ _deleteItem(MenuWindow, Object_) { return new Object_(); }
 @mptr("hash") Object_ selector(virtual!Object_, Object_);
 @method Object_ _selector(Menu, Object_) { return new Object_(); }
 @method Object_ _selector(ClassBrowser, Object_) { return new Object_(); }
@@ -1817,10 +1794,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ selectorOf(virtual!Object_, Object_);
 @method Object_ _selectorOf(Menu, Object_) { return new Object_(); }
 @method Object_ _selectorOf(MenuWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ deleteAll(virtual!Object_);
-@method Object_ _deleteAll(Menu) { return new Object_(); }
-@method Object_ _deleteAll(ListBox) { return new Object_(); }
-@method Object_ _deleteAll(TextEdit) { return new Object_(); }
 @mptr("hash") Object_ selector(virtual!Object_);
 @method Object_ _selector(Menu) { return new Object_(); }
 @method Object_ _selector(CompilationResult) { return new Object_(); }
@@ -1876,15 +1849,9 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _getSelection(EntryField) { return new Object_(); }
 @method Object_ _getSelection(ListBox) { return new Object_(); }
 @method Object_ _getSelection(MultipleSelectListBox) { return new Object_(); }
-@mptr("hash") Object_ deleteMessage(virtual!ListBox);
-@method Object_ _deleteMessage(DropDownList) { return new Object_(); }
-@method Object_ _deleteMessage(ListBox) { return new Object_(); }
 @mptr("hash") Object_ oemConvert(virtual!ControlPane);
 @method Object_ _oemConvert(DropDownList) { return new Object_(); }
 @method Object_ _oemConvert(EntryField) { return new Object_(); }
-@mptr("hash") Object_ deleteAllFromControl(virtual!ListBox);
-@method Object_ _deleteAllFromControl(DropDownList) { return new Object_(); }
-@method Object_ _deleteAllFromControl(ListBox) { return new Object_(); }
 @mptr("hash") Object_ sort(virtual!ListBox);
 @method Object_ _sort(DropDownList) { return new Object_(); }
 @method Object_ _sort(ListBox) { return new Object_(); }
@@ -1953,12 +1920,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _topPaneClass(AboutDialog) { return new Object_(); }
 @method Object_ _topPaneClass(WindowDialog) { return new Object_(); }
 @method Object_ _topPaneClass(ViewManager) { return new Object_(); }
-@mptr("hash") Object_ replaceFromToWithobject(virtual!IndexedCollection, Object_, Object_, Object_);
-@method Object_ _replaceFromToWithobject(IndexedCollection, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithobject(Symbol, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithobject(DoubleByteSymbol, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithobject(DoubleByteString, Object_, Object_, Object_) { return new Object_(); }
-@method Object_ _replaceFromToWithobject(String, Object_, Object_, Object_) { return new Object_(); }
 @mptr("hash") Object_ isIndexedCollection(virtual!Object_);
 @method Object_ _isIndexedCollection(IndexedCollection) { return new Object_(); }
 @method Object_ _isIndexedCollection(Object_) { return new Object_(); }
@@ -2294,9 +2255,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _setLabel(Button, Object_) { return new Object_(); }
 @method Object_ _setLabel(DrawnButton, Object_) { return new Object_(); }
 @method Object_ _setLabel(GroupBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultPushButton(virtual!Window);
-@method Object_ _defaultPushButton(Button) { return new Object_(); }
-@method Object_ _defaultPushButton(TopPane) { return new Object_(); }
 @mptr("hash") Object_ buttonFont(virtual!Window, Object_);
 @method Object_ _buttonFont(Button, Object_) { return new Object_(); }
 @method Object_ _buttonFont(Window, Object_) { return new Object_(); }
@@ -2388,21 +2346,11 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ description(virtual!Object_);
 @method Object_ _description(Exception_) { return new Object_(); }
 @method Object_ _description(CompilerNameScope) { return new Object_(); }
-@mptr("hash") Object_ defaultDescriptionString(virtual!Exception_);
-@method Object_ _defaultDescriptionString(Exception_) { return new Object_(); }
-@method Object_ _defaultDescriptionString(KeyboardInterrupt) { return new Object_(); }
 @mptr("hash") Object_ isResumable(virtual!Exception_);
 @method Object_ _isResumable(Exception_) { return new Object_(); }
 @method Object_ _isResumable(ZeroDivide) { return new Object_(); }
 @method Object_ _isResumable(MessageNotUnderstood) { return new Object_(); }
 @method Object_ _isResumable(Notification) { return new Object_(); }
-@mptr("hash") Object_ defaultAction(virtual!Exception_);
-@method Object_ _defaultAction(Exception_) { return new Object_(); }
-@method Object_ _defaultAction(Warning) { return new Object_(); }
-@method Object_ _defaultAction(KeyboardInterrupt) { return new Object_(); }
-@method Object_ _defaultAction(MessageNotUnderstood) { return new Object_(); }
-@method Object_ _defaultAction(LoggedWarning) { return new Object_(); }
-@method Object_ _defaultAction(Notification) { return new Object_(); }
 @mptr("hash") Object_ isActive(virtual!Object_);
 @method Object_ _isActive(Exception_) { return new Object_(); }
 @method Object_ _isActive(Window) { return new Object_(); }
@@ -2542,9 +2490,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ erase(virtual!Object_);
 @method Object_ _erase(GraphicsTool) { return new Object_(); }
 @method Object_ _erase(GraphPane) { return new Object_(); }
-@mptr("hash") Object_ deleteObject(virtual!Object_, Object_);
-@method Object_ _deleteObject(GraphicsTool, Object_) { return new Object_(); }
-@method Object_ _deleteObject(GDIDLL, Object_) { return new Object_(); }
 @mptr("hash") Object_ resetAttributes(virtual!GraphicsTool);
 @method Object_ _resetAttributes(GraphicsTool) { return new Object_(); }
 @method Object_ _resetAttributes(TextTool) { return new Object_(); }
@@ -3178,9 +3123,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ scrollTopCorner(virtual!SubPane, Object_);
 @method Object_ _scrollTopCorner(TextPane, Object_) { return new Object_(); }
 @method Object_ _scrollTopCorner(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultCursor(virtual!Window);
-@method Object_ _defaultCursor(TextPane) { return new Object_(); }
-@method Object_ _defaultCursor(Window) { return new Object_(); }
 @mptr("hash") Object_ print(virtual!Object_);
 @method Object_ _print(TextPane) { return new Object_(); }
 @method Object_ _print(TextPaneControl) { return new Object_(); }
@@ -3628,28 +3570,12 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ previousTabStop(virtual!Window, Object_);
 @method Object_ _previousTabStop(Window, Object_) { return new Object_(); }
 @method Object_ _previousTabStop(GroupPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultDrawItem(virtual!Window, Object_);
-@method Object_ _defaultDrawItem(Window, Object_) { return new Object_(); }
-@method Object_ _defaultDrawItem(ListBox, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultFont(virtual!Object_);
-@method Object_ _defaultFont(Window) { return new Object_(); }
-@method Object_ _defaultFont(METACLASS_Button) { return new Object_(); }
-@method Object_ _defaultFont(METACLASS_TextPane) { return new Object_(); }
-@method Object_ _defaultFont(METACLASS_Window) { return new Object_(); }
-@method Object_ _defaultFont(METACLASS_TextPaneControl) { return new Object_(); }
-@method Object_ _defaultFont(METACLASS_ListBox) { return new Object_(); }
 @mptr("hash") Object_ sizeChanged(virtual!Window, Object_);
 @method Object_ _sizeChanged(Window, Object_) { return new Object_(); }
 @method Object_ _sizeChanged(ApplicationWindow, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultBackColor(virtual!Object_);
-@method Object_ _defaultBackColor(Window) { return new Object_(); }
-@method Object_ _defaultBackColor(METACLASS_Window) { return new Object_(); }
 @mptr("hash") Object_ button2Move(virtual!Window, Object_);
 @method Object_ _button2Move(Window, Object_) { return new Object_(); }
 @method Object_ _button2Move(GraphPane, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultForeColor(virtual!Object_);
-@method Object_ _defaultForeColor(Window) { return new Object_(); }
-@method Object_ _defaultForeColor(METACLASS_Window) { return new Object_(); }
 @mptr("hash") Object_ wmInitmenuWith(virtual!Window, Object_, Object_);
 @method Object_ _wmInitmenuWith(Window, Object_, Object_) { return new Object_(); }
 @method Object_ _wmInitmenuWith(TopPane, Object_, Object_) { return new Object_(); }
@@ -3697,9 +3623,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ sendInputEvent(virtual!Object_, Object_);
 @method Object_ _sendInputEvent(Window, Object_) { return new Object_(); }
 @method Object_ _sendInputEvent(ViewManager, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultMeasureControl(virtual!Window, Object_);
-@method Object_ _defaultMeasureControl(Window, Object_) { return new Object_(); }
-@method Object_ _defaultMeasureControl(ListBox, Object_) { return new Object_(); }
 @mptr("hash") Object_ nextTabStop(virtual!Window, Object_);
 @method Object_ _nextTabStop(Window, Object_) { return new Object_(); }
 @method Object_ _nextTabStop(GroupPane, Object_) { return new Object_(); }
@@ -4031,9 +3954,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @method Object_ _evaluate(CompilerInterface, Object_) { return new Object_(); }
 @method Object_ _evaluate(Process, Object_) { return new Object_(); }
 @method Object_ _evaluate(METACLASS_CompilerInterface, Object_) { return new Object_(); }
-@mptr("hash") Object_ defaultGlobalDictionary(virtual!Object_);
-@method Object_ _defaultGlobalDictionary(CompilerInterface) { return new Object_(); }
-@method Object_ _defaultGlobalDictionary(METACLASS_ClassInstaller) { return new Object_(); }
 @mptr("hash") Object_ promptDefault(virtual!Object_, Object_, Object_);
 @method Object_ _promptDefault(Prompter, Object_, Object_) { return new Object_(); }
 @method Object_ _promptDefault(METACLASS_Prompter, Object_, Object_) { return new Object_(); }
@@ -4390,9 +4310,6 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ multiplicativeIdentity(virtual!METACLASS_Number);
 @method Object_ _multiplicativeIdentity(METACLASS_Number) { return new Object_(); }
 @method Object_ _multiplicativeIdentity(METACLASS_Float) { return new Object_(); }
-@mptr("hash") Object_ defaultPoolNames(virtual!METACLASS_Object);
-@method Object_ _defaultPoolNames(METACLASS_WorkspaceTextPane) { return new Object_(); }
-@method Object_ _defaultPoolNames(METACLASS_CompilerInterface) { return new Object_(); }
 @mptr("hash") Object_ releaseAllHandles(virtual!METACLASS_Object);
 @method Object_ _releaseAllHandles(METACLASS_Font) { return new Object_(); }
 @method Object_ _releaseAllHandles(METACLASS_Bitmap) { return new Object_(); }
@@ -4403,3 +4320,10 @@ class METACLASS_ThreeStateButton : METACLASS_CheckBox {}
 @mptr("hash") Object_ named(virtual!METACLASS_Object, Object_);
 @method Object_ _named(METACLASS_ObjectLibraryBind, Object_) { return new Object_(); }
 @method Object_ _named(METACLASS_SelfDefinedStructure, Object_) { return new Object_(); }
+
+void main()
+{
+  Runtime rt;
+  rt.update;
+  writeln(rt.metrics);
+}
