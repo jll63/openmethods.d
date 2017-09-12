@@ -104,7 +104,7 @@ debug(traceCalls) {
 }
 
 // ============================================================================
-// Pubic stuff
+// Public stuff
 
 /++
  Mark a parameter as virtual, and declare a method.
@@ -253,8 +253,8 @@ mixin(registerMethods);
 auto registerMethods(string moduleName = __MODULE__)
 {
   return format("static import openmethods;"
-                ~ "mixin(openmethods._registerMethods!%s);"
-                ~ "mixin openmethods._registerSpecs!%s;\n",
+                ~ "mixin(openmethods._registerMethods!(%s));"
+                ~ "mixin openmethods._registerSpecs!(%s);\n",
                 moduleName, moduleName);
 }
 
