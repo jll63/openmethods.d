@@ -1550,7 +1550,7 @@ mixin template _registerSpecs(alias MODULE)
                 immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
               } else {
                 static assert(_openmethods_m_[0] == '_',
-                              m ~ ": method name must begin with an underscore, "
+                              _openmethods_m_ ~ ": method name must begin with an underscore, "
                               ~ "or be set in @method()");
                 immutable _openmethods_id_ = _openmethods_m_[1..$];
               }
