@@ -6,9 +6,6 @@ import animals;
 import openmethods;
 mixin(registerMethods);
 
-import openmethods;
-mixin(registerMethods);
-
 extern(C) void* dlsym(void*, const char*);
 
 void main()
