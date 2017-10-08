@@ -258,6 +258,32 @@ auto registerMethods(string moduleName = __MODULE__)
                 moduleName, moduleName);
 }
 
+mixin template registerClasses(Classes...) {
+  shared static this() {
+    foreach (C; Classes) {
+      debug(explain) {
+        import std.stdio;
+        writefln("Registering class %s", C.stringof);
+      }
+      Runtime.additionalClasses ~= C.classinfo;
+    }
+  }
+
+  shared static ~this()
+  {
+    foreach (C; Classes) {
+      debug(explain) {
+        import std.stdio;
+        writefln("Unregistering class %s", C.stringof);
+      }
+      import std.algorithm, std.array;
+      Runtime.additionalClasses =
+        Runtime.additionalClasses.filter!(c => c != C.classinfo).array;
+      Runtime.needUpdate = true;
+    }
+  }
+}
+
 /++
  Update the runtime dispatch tables. Must be called once before calling any method. Typically this is done at the beginning of `main`.
  +/
@@ -723,6 +749,7 @@ struct Runtime
   }
 
   static __gshared Registry methodInfos;
+  static __gshared ClassInfo[] additionalClasses;
   static __gshared Word[] gmtbl; // Global Method Table
   static __gshared Word[] gdtbl; // Global Dispatch Table
   static __gshared needUpdate = true;
@@ -740,6 +767,15 @@ struct Runtime
   Metrics update()
   {
     seed();
+
+    foreach (ci; additionalClasses) {
+      if (ci !in classMap) {
+        auto c = classMap[ci] = new Class(ci);
+        debug(explain) {
+          writefln("  %s", c.name);
+        }
+      }
+    }
 
     debug(explain) {
       writefln("Scooping...");
