@@ -89,7 +89,7 @@ module openmethods;
 
 import std.algorithm;
 import std.bitmanip;
-import std.datetime;
+import std.datetime.stopwatch : StopWatch;
 import std.format;
 import std.meta;
 import std.range;
@@ -849,8 +849,7 @@ struct Runtime
       string hashMetrics;
 
       if (hashSearchAttempts) {
-        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms",
-                             hashTableSize, hashSearchAttempts, hashSearchTime.nsecs / 1000.);
+        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.split!("nsecs").nsecs / 1000.);
       }
 
       return format("method table size: %s, dispatchTableSize: %s%s",
@@ -1347,7 +1346,6 @@ struct Runtime
 
     debug(explain) {
       writefln("  finding hash factor for %s vptrs", N);
-      import std.datetime;
     }
 
     int M;
@@ -1395,7 +1393,7 @@ struct Runtime
       if (found) {
         debug(explain) {
           writefln("  found %s after %s attempts and %s msecs",
-                   hashMult, totalAttempts, metrics.hashSearchTime.msecs);
+                   hashMult, totalAttempts, metrics.hashSearchTime.split!("msecs").msecs);
         }
         return;
       }
