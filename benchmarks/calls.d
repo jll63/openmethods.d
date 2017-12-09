@@ -82,17 +82,17 @@ version (GNU) {} else {
 
 ulong[string] time;
 
-void pit(string base, string target)(string label1, string label2, ulong n = 1_000_000_000)
+void pit(string base, string target)(string label1 = base, string label2 = target, ulong n = 1_000_000_000)
 {
   StopWatch sw;
   sw.start();
 
   if (base !in time) {
-    mixin(base); // warm up
+    mixin(base ~ ";"); // warm up
     sw.reset();
 
     for (ulong i = 0; i < n; i++) {
-      mixin(base);
+      mixin(base ~ ";");
     }
 
     time[base] = sw.peek().nsecs;
@@ -101,11 +101,11 @@ void pit(string base, string target)(string label1, string label2, ulong n = 1_0
   double baseTime = time[base];
 
   if (target !in time) {
-    mixin(target); // warm up too
+    mixin(target ~ ";"); // warm up too
     sw.reset();
 
     for (ulong i = 0; i < n; i++) {
-      mixin(target);
+      mixin(target ~ ";");
     }
 
     time[target] = sw.peek().nsecs;
@@ -113,7 +113,7 @@ void pit(string base, string target)(string label1, string label2, ulong n = 1_0
 
   double targetTime = time[target];
 
-  writefln("%20s v %-20s %6.2f %6.2f %+8.2f%%",
+  writefln("%25s v %-25s %6.2f %6.2f %+8.2f%%",
            label1, label2,
            baseTime / n,
            targetTime / n,
@@ -123,7 +123,7 @@ void pit(string base, string target)(string label1, string label2, ulong n = 1_0
 void writesec(T...)(T arg)
 {
   writeln("\n", arg);
-  writeln("-".replicate(67));
+  writeln("-".replicate(77));
 }
 
 void main()
@@ -147,29 +147,16 @@ void main()
 
   writesec(`virtual functions vs methods - mptr("deallocator")`);
 
-  pit!("obj.vfClassToClass();", "classToClass1(obj);")
-    ("obj.vfunc()", "method(obj)");
-
-  pit!("obj.vfInterfaceToClass();", "interfaceToClass(obj);")
-    ("intf.vfunc()", "method(intf)");
-
-  pit!("obj.ddClassToClass(obj);", "classToClass2(obj, obj);")
-    ("double dispatch", "2-method");
+  pit!("obj.vfClassToClass()", "classToClass1(obj)");
+  pit!("intf.vfInterfaceToClass()", "interfaceToClass(intf)");
+  pit!("obj.ddClassToClass(obj)", "classToClass2(obj, obj)");
 
   version (GNU) {} else {
     writesec(`using mptr("hash")`);
-
-    pit!("obj.interfaceToClass();", "hInterfaceToClass1(obj);")
-      (`method deallocator`, "method hash");
-
-    pit!("obj.vfInterfaceToClass();", "hInterfaceToClass1(obj);")
-      ("intf.vfunc()", "method hash");
-
-    pit!("obj.classToClass1();", "hClassToClass1(obj);")
-      (`method deallocator`, "method hash");
-
-    pit!("obj.vfClassToClass();", "hClassToClass1(obj);")
-      ("vfunc(obj)", "method hash");
+    pit!("classToClass1(obj)", "hClassToClass1(obj)");
+    pit!("interfaceToClass(intf)", "hInterfaceToClass1(intf)");
+    pit!("obj.vfClassToClass()", "hClassToClass1(obj)");
+    pit!("intf.vfInterfaceToClass()", "hInterfaceToClass1(intf)");
   }
 }
 
