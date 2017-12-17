@@ -258,6 +258,67 @@ auto registerMethods(string moduleName = __MODULE__)
                 moduleName, moduleName);
 }
 
+version (GNU) {}
+ else {
+   mixin template declareMethod(string name, string index, ReturnType, ParameterType...)
+   {
+     mixin(openmethods._declareMethod!(name, index, ReturnType, ParameterType));
+   }
+
+   mixin template declareMethod(string name, ReturnType, ParameterType...)
+   {
+     mixin(openmethods._declareMethod!(name, openmethods.MptrInDeallocator, ReturnType, ParameterType));
+   }
+
+   mixin template defineMethod(alias Dispatcher, alias Fun)
+   {
+     static struct RegisterMethod {
+
+       import openmethods;
+       import std.traits;
+
+       static __gshared Runtime.SpecInfo si;
+       enum methodId = __traits(identifier, Dispatcher);
+       alias Meth = typeof(mixin(methodId)(MethodTag.init, Parameters!(Fun).init));
+       alias Spec = Meth.Specialization!(Fun);
+
+       shared static this() {
+         si.pf = cast(void*) Spec.wrapper;
+
+         debug(explain) {
+           import std.stdio;
+           writefln("Registering override %s%s", Meth.name, Spec.SpecParams.stringof);
+         }
+
+         foreach (i, QP; Meth.QualParams) {
+           static if (IsVirtual!QP) {
+             si.vp ~= Spec.SpecParams[i].classinfo;
+           }
+         }
+
+         Meth.info.specInfos ~= &si;
+         si.nextPtr = cast(void**) &Meth.nextPtr!(Spec.SpecParams);
+
+         Runtime.needUpdate = true;
+       }
+
+       shared static ~this()
+       {
+         debug(explain) {
+           import std.stdio;
+           writefln("Removing override %s%s", Meth.name, Spec.SpecParams.stringof);
+         }
+
+         import std.algorithm, std.array;
+         Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
+         Runtime.needUpdate = true;
+       }
+     }
+
+     __gshared RegisterMethod registerMethod;
+   }
+ }
+
 mixin template registerClasses(Classes...) {
   shared static this() {
     foreach (C; Classes) {
@@ -416,8 +477,8 @@ private template castArgs(T...)
   }
 }
 
-private immutable MptrInDeallocator = "deallocator";
-private immutable MptrViaHash = "hash";
+immutable MptrInDeallocator = "deallocator";
+immutable MptrViaHash = "hash";
 
 struct Method(string id, string Mptr, R, T...)
 {
@@ -1606,4 +1667,18 @@ mixin template _registerSpecs(alias MODULE)
       writefln("Unregistering specs from %s", MODULE.stringof);
     }
   }
+}
+
+string _declareMethod(string name, string index, ReturnType, ParameterType...)()
+{
+  import std.format;
+
+  enum meth =
+    format(`openmethods.Method!("%s", "%s", %s, %s)`,
+           name,
+           index,
+           ReturnType.stringof,
+           ParameterType.stringof[1..$-1]);
+  return format(`alias %s = %s.dispatcher;`, name, meth)
+    ~ format(`alias %s = %s.discriminator;`, name, meth);
 }
