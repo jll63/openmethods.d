@@ -137,6 +137,49 @@ class virtual(T)
 }
 
 /++
+ Mark a parameter as covariant.
+
+ Marking a parameter as covariant makes it possible to override a method with
+ an override that has a type-compatible parameter in the same position.
+ Covariant parameters are not taken into account for override selection. The
+ arguments passed in covariant parameters are automatically cast to the types
+ required by the override.
+
+ `covariant` is useful when it is known for certain that the overrides will
+ always be called with arguments of the required type. This can help improve
+ performance and reduce the size of method dispatch tables.
+
+ Examples:
+ ---
+ class Container {}
+ class Bottle : Container {}
+ class Can : Container {}
+ class Tool {}
+ class Corkscrew : Tool {}
+ class CanOpener : Tool {}
+
+ void open(virtual!Container, covariant!Tool);
+ @method void _open(Bottle bottle, Corkscrew corkscrew) {} // 1
+ @method void _open(Can can, CanOpener opener) {}          // 2
+ // ...
+
+ Container container = new Bottle();
+ Tool tool = new Corkscrew();
+ open(container, tool);
+ // override #1 is selected based solely on first argument's type
+ // second argument is cast to Corkscrew
+ // The following is illegal:
+ Tool wrongTool = new CanOpener();
+ open(container, wrongTool);
+ // override #1 is called but is passed a CanOpener.
+ ---
+ +/
+
+class covariant(T)
+{
+}
+
+/++
  Attribute: Set the policy for storing and retrieving the method pointer (mptr).
 
  Each class involved in method dispatch (either because it occurs as a virtual
@@ -430,6 +473,11 @@ private template VirtualArity(QP...)
   }
 }
 
+enum IsCovariant(T) = false;
+enum IsCovariant(T : covariant!U, U) = true;
+
+private alias CovariantType(T : covariant!U, U) = U;
+
 private template CallParams(T...)
 {
   static if (T.length == 0) {
@@ -437,6 +485,8 @@ private template CallParams(T...)
   } else {
     static if (IsVirtual!(T[0])) {
       alias CallParams = AliasSeq!(VirtualType!(T[0]), CallParams!(T[1..$]));
+    } else static if (IsCovariant!(T[0])) {
+      alias CallParams = AliasSeq!(CovariantType!(T[0]), CallParams!(T[1..$]));
     } else {
       alias CallParams = AliasSeq!(T[0], CallParams!(T[1..$]));
     }
@@ -457,6 +507,18 @@ private template castArgs(T...)
           } else {
             static assert(is(VirtualType!QP == interface),
                              "virtual argument must be a class or an interface");
+            auto arg = cast(S[0]) args[0];
+          }
+        } else static if (IsCovariant!QP) {
+          static if (is(CovariantType!QP == class)) {
+            debug {
+              auto arg = cast(S[0]) args[0];
+            } else {
+              auto arg = cast(S[0]) cast(void*) args[0];
+            }
+          } else {
+            static assert(is(CovariantType!QP == interface),
+                             "covariant argument must be a class or an interface");
             auto arg = cast(S[0]) args[0];
           }
         } else {
