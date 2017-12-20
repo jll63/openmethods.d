@@ -1319,7 +1319,6 @@ struct Runtime
         } else if (specs.empty) {
           m.dispatchTable ~= m.info.notImplementedError;
         } else {
-          import std.stdio;
           m.dispatchTable ~= specs[0].info.pf;
 
           debug(explain) {
