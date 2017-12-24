@@ -310,7 +310,8 @@ version (GNU) {}
 
    mixin template declareMethod(string name, ReturnType, ParameterType...)
    {
-     mixin(openmethods._declareMethod!(name, openmethods.MptrInDeallocator, ReturnType, ParameterType));
+     mixin(openmethods._declareMethod!(name, openmethods.MptrInDeallocator,
+                                       ReturnType, ParameterType));
    }
 
    mixin template defineMethod(alias Dispatcher, alias Fun)
@@ -624,7 +625,8 @@ struct Method(string id, string Mptr, R, T...)
       }
     }
 
-    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slots, const(Word)* strides, P args)
+    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slots,
+                                       const(Word)* strides, P args)
     {
       static if (Q.length > 0) {
         alias Q0 = Q[0];
@@ -855,7 +857,8 @@ struct Runtime
       string hashMetrics;
 
       if (hashSearchAttempts) {
-        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.nsecs / 1000.);
+        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms",
+                             hashTableSize, hashSearchAttempts, hashSearchTime.nsecs / 1000.);
       }
 
       return format("method table size: %s, dispatchTableSize: %s%s",
@@ -873,6 +876,7 @@ struct Runtime
   static __gshared Word* hashTable;
   static __gshared uint methodsUsingDeallocator;
   static __gshared uint methodsUsingHash;
+
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
@@ -1705,7 +1709,9 @@ mixin template _registerSpecs(alias MODULE)
                 immutable _openmethods_id_ = _openmethods_m_[1..$];
               }
             }
-            alias M = typeof(mixin(_openmethods_id_)(MethodTag.init, Parameters!(_openmethods_o_).init));
+            alias M =
+              typeof(mixin(_openmethods_id_)(MethodTag.init,
+                                             Parameters!(_openmethods_o_).init));
             mixin wrap!(M, M.Specialization!(_openmethods_o_));
           }
         }
