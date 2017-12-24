@@ -10,7 +10,7 @@
 
  This implementation uses compressed dispatch tables to deliver a performance
  similar to ordinary virtual function calls, while minimizing the size of the
- dispatch tables in presence of multiple virtual arguments.
+ dispatch tables in the presence of multiple virtual arguments.
 
  Synopsis of openmethods:
 ---
@@ -110,9 +110,9 @@ debug(traceCalls) {
  Mark a parameter as virtual, and declare a method.
 
  A new function is introduced in the current scope. It has the same name as the
- declared method; its parameter consists in the declared parameters, stripped
- from the `virtual!` qualifier. Calls to this function resolve to the most
- specific method that matches the arguments.
+ declared method; its parameter list consists of the declared parameters,
+ stripped from the `virtual!` qualifier. Calls to this function resolve to the
+ most specific method that matches the arguments.
 
  The rules for determining the most specific function are exactly the same as
  those that guide the resolution of function calls in presence of overloads -
@@ -190,7 +190,7 @@ class covariant(T)
  Two policies are supported: "deallocator": store the mptr in the deprecated
  `deallocator` field of ClassInfo. This is the default, and delivers the best
  performance. $(NOTE:) This policy is incompatible with classes that implement
- `operator delete`.
+ the deprecated `operator delete`.
 
  "hash": store the mptr in a hash table. The mptr is obtained by
  applying a perfect hash function to the class' vptr. This policy is only
@@ -211,13 +211,13 @@ struct mptr
 /++
  Attribute: Add an override to a method.
 
- If called without argument, the function name must consist in a method name,
- prefixed with an underscore. The function is added to the method as a
+ If called without an argument, the function name must consist of a method
+ name, prefixed with an underscore. The function is added to the method as a
  specialization.
 
- If called with a string argument, it is interpreted as the name of the method
+ If called with a string argument, the string indicates the name of the method
  to specialize. The function name can then be any valid identifier. This is
- useful to allow one override to call a specific override without going through
+ useful to allow an override to call a specific override without going through
  the dynamic dispatch mechanism.
 
  Examples:
@@ -242,7 +242,7 @@ struct method
   string id;
 }
 
-/++ Call the _next most specialized override if it exists. In other words, call
+/++ Call the _next most specialized override, if it exists. In other words, call
  the override that would have been called if this one had not been defined.
 
  Examples:
@@ -283,7 +283,7 @@ auto next(alias F, T...)(T args)
   return M.nextPtr!(T)(args);
 }
 
-/++ Used as a string mixin: register the methods declaration and definitions in
+/++ Used as a string mixin: register the method declarations and definitions in
  the current module.
 
  Examples:
@@ -389,7 +389,8 @@ mixin template registerClasses(Classes...) {
 }
 
 /++
- Update the runtime dispatch tables. Must be called once before calling any method. Typically this is done at the beginning of `main`.
+ Update the runtime dispatch tables. Must be called once before calling any
+ methods. Typically this is done at the beginning of `main`.
  +/
 
 Runtime.Metrics updateMethods()
@@ -441,8 +442,8 @@ alias MethodErrorHandler = void function(MethodError error);
 MethodErrorHandler errorHandler = &defaultMethodErrorHandler;
 
 /++
- Set the function that is called if a method cannot be called with the
- arguments. Default is to `abort` the program.
+ Set the error handling function to be called if an open method cannot be
+ called with the provided arguments. The default is to `abort` the program.
 +/
 
 void function(MethodError error)
