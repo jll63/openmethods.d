@@ -689,12 +689,7 @@ struct Method(string id, string Mptr, R, T...)
     }
 
     assert(pf);
-
-    static if (is(R == void)) {
-      pf(args);
-    } else {
-      return pf(args);
-    }
+    return pf(args);
   }
 
   shared static this() {
@@ -740,11 +735,7 @@ struct Method(string id, string Mptr, R, T...)
     static __gshared Runtime.SpecInfo si;
 
     static wrapper = function ReturnType(Params args) {
-      static if (is(ReturnType == void)) {
-        fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
-      } else {
-        return fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
-      }
+      return fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
     };
   }
 
