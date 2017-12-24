@@ -132,7 +132,7 @@ debug(traceCalls) {
  ---
  +/
 
-class virtual(T)
+struct virtual(T)
 {
 }
 
@@ -175,7 +175,7 @@ class virtual(T)
  ---
  +/
 
-class covariant(T)
+struct covariant(T)
 {
 }
 
