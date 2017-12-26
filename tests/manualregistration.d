@@ -22,15 +22,15 @@ class Matrix { }
 class DenseMatrix : Matrix { }
 class DiagonalMatrix : Matrix { }
 
-mixin declareMethod!("plus", Matrix, virtual!Matrix, virtual!Matrix);
+private mixin declareMethod!("plus", Matrix, virtual!Matrix, virtual!Matrix);
 
-Matrix densePlusDense(Matrix a, Matrix b) {
+private Matrix densePlusDense(Matrix a, Matrix b) {
   return new DenseMatrix;
 }
 
 mixin defineMethod!(plus, densePlusDense);
 
-Matrix diagPlusDiag(DiagonalMatrix a, DiagonalMatrix b) {
+private Matrix diagPlusDiag(DiagonalMatrix a, DiagonalMatrix b) {
   return new DiagonalMatrix;
 }
 

@@ -13,16 +13,16 @@ class Dog : Animal {}
 class Pitbull : Dog {}
 
 @(openmethods.mptr("hash"))
-string kick(openmethods.virtual!Animal);
+private string kick(openmethods.virtual!Animal);
 
 @(openmethods.method)
-string _kick(Dog x)
+private string _kick(Dog x)
 {
   return "bark";
 }
 
 @(openmethods.method)
-string _kick(Pitbull x)
+private string _kick(Pitbull x)
 {
   return openmethods.next!kick(x) ~ " and bite";
 }

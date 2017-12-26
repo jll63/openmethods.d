@@ -321,27 +321,30 @@ version (GNU) {}
        import openmethods;
        import std.traits;
 
+       alias Meth = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
+
+       static wrapper = function Meth.ReturnType(Meth.Params args) {
+         return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
+       };
+
        static __gshared Runtime.SpecInfo si;
-       enum methodId = __traits(identifier, Dispatcher);
-       alias Meth = typeof(mixin(methodId)(MethodTag.init, Parameters!(Fun).init));
-       alias Spec = Meth.Specialization!(Fun);
 
        shared static this() {
-         si.pf = cast(void*) Spec.wrapper;
+         si.pf = cast(void*) wrapper;
 
          debug(explain) {
            import std.stdio;
-           writefln("Registering override %s%s", Meth.name, Spec.SpecParams.stringof);
+           writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
          }
 
          foreach (i, QP; Meth.QualParams) {
            static if (IsVirtual!QP) {
-             si.vp ~= Spec.SpecParams[i].classinfo;
+             si.vp ~= Parameters!Fun[i].classinfo;
            }
          }
 
          Meth.info.specInfos ~= &si;
-         si.nextPtr = cast(void**) &Meth.nextPtr!(Spec.SpecParams);
+         si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
 
          Runtime.needUpdate = true;
        }
@@ -350,7 +353,7 @@ version (GNU) {}
        {
          debug(explain) {
            import std.stdio;
-           writefln("Removing override %s%s", Meth.name, Spec.SpecParams.stringof);
+           writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
          }
 
          import std.algorithm, std.array;
@@ -495,7 +498,7 @@ private template CallParams(T...)
   }
 }
 
-private template castArgs(T...)
+template castArgs(T...)
 {
   import std.typecons : tuple;
   static if (T.length) {
@@ -729,17 +732,6 @@ struct Method(string id, string Mptr, R, T...)
 
     Runtime.methodInfos.remove(&info);
     Runtime.needUpdate = true;
-  }
-
-  static struct Specialization(alias fun)
-  {
-    alias Parameters!fun SpecParams;
-
-    static __gshared Runtime.SpecInfo si;
-
-    static wrapper = function ReturnType(Params args) {
-      return fun(castArgs!(T).To!(SpecParams).arglist(args).expand);
-    };
   }
 
   static Spec nextPtr(T...) = null;
@@ -1647,28 +1639,33 @@ string _registerMethods(alias MODULE)()
 mixin template _registerSpecs(alias MODULE)
 {
   import openmethods;
-  mixin template wrap(M, S)
+
+  mixin template wrap(Meth, alias Fun)
   {
     static struct Register {
+
+      static wrapper = function Meth.ReturnType(Meth.Params args) {
+        return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
+      };
 
       static __gshared Runtime.SpecInfo si;
 
       shared static this() {
-        si.pf = cast(void*) S.wrapper;
+        si.pf = cast(void*) wrapper;
 
         debug(explain) {
           import std.stdio;
-          writefln("Registering override %s%s", M.name, S.SpecParams.stringof);
+          writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
         }
 
-        foreach (i, QP; M.QualParams) {
+        foreach (i, QP; Meth.QualParams) {
           static if (IsVirtual!QP) {
-            si.vp ~= S.SpecParams[i].classinfo;
+            si.vp ~= Parameters!Fun[i].classinfo;
           }
         }
 
-        M.info.specInfos ~= &si;
-        si.nextPtr = cast(void**) &M.nextPtr!(S.SpecParams);
+        Meth.info.specInfos ~= &si;
+        si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
 
         Runtime.needUpdate = true;
       }
@@ -1677,11 +1674,11 @@ mixin template _registerSpecs(alias MODULE)
       {
         debug(explain) {
           import std.stdio;
-          writefln("Removing override %s%s", M.name, S.SpecParams.stringof);
+          writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
         }
 
         import std.algorithm, std.array;
-        M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
+        Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
         Runtime.needUpdate = true;
       }
     }
@@ -1712,7 +1709,7 @@ mixin template _registerSpecs(alias MODULE)
             alias M =
               typeof(mixin(_openmethods_id_)(MethodTag.init,
                                              Parameters!(_openmethods_o_).init));
-            mixin wrap!(M, M.Specialization!(_openmethods_o_));
+            mixin wrap!(M, _openmethods_o_);
           }
         }
       }
