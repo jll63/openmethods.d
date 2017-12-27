@@ -1,0 +1,7520 @@
+1357
+Artificial_Root 0
+
+SelfInitializingObject 1
+0 
+Object 1
+0 
+UndefinedObject 1
+2 
+EmptySlot 1
+2 
+ProcessScheduler 1
+2 
+ProtectedFrameMarker 1
+2 
+PARTSPropertyStructure 1
+2 
+PARTSLinkEditState 1
+2 
+Point 1
+2 
+NationalLanguageSupport 1
+2 
+PARTSDragResult 1
+2 
+InputEvent 1
+2 
+UpgraderForFile 1
+2 
+PARTSApplication 1
+2 
+PARTSFile 1
+2 
+ClipboardManager 1
+2 
+MenuItem 1
+2 
+PARTSCatalog 1
+2 
+Font 1
+2 
+CallBack 1
+2 
+ClassReader 1
+2 
+Enumerator 1
+2 
+ObjectChangeMap 1
+2 
+P1106 1
+2 
+P1112 1
+2 
+P1120 1
+2 
+SourceManager 1
+2 
+ExceptionHandler 1
+2 
+ObjectStoreSpaceExternals 1
+2 
+ExceptionFilter 1
+2 
+StatusBox 1
+2 
+PARTSIniFile 1
+2 
+PARTSWrapper 1
+2 
+FileVolume 1
+2 
+PARTSFormGeneratorItem 1
+2 
+PARTSScriptContext 1
+2 
+PARTSFramer 1
+2 
+PARTSLinkSettings 1
+2 
+NotificationManager 1
+2 
+PARTSSettings 1
+2 
+OperatingSystemInformation 1
+2 
+ObjectReference 1
+2 
+ServiceRegistry 1
+2 
+StringModel 1
+2 
+ObjectStoreSpace 1
+2 
+PARTSFileType 1
+2 
+MethodExecutor 1
+2 
+ExceptionSet 1
+2 
+UpgraderForDirectory 1
+2 
+CompilationResult 1
+2 
+DefinitionInstaller 1
+2 
+PARTSScriptSource 1
+2 
+PARTSEditorState 1
+2 
+DeletedClass 1
+2 
+PARTSHostInterface 1
+2 
+PARTSEditor 1
+2 
+P1000 1
+2 
+ObjectStoreObject 1
+2 
+DIB 1
+2 
+TextSelection 1
+2 
+PARTSException 1
+2 
+PARTSInterfaceList 1
+2 
+ClassInstaller 1
+2 
+StringDictionaryReader 1
+2 
+P1153 1
+2 
+ObjectFiler 1
+2 
+Rectangle 1
+2 
+PARTSFileVersion 1
+2 
+P1111 1
+2 
+P1109 1
+2 
+P1107 1
+2 
+PARTSStringTemplate 1
+2 
+FileSearchResults 1
+2 
+Border 1
+2 
+PARTSFormGenerator 1
+2 
+PARTSDial 1
+2 
+PARTSApplicationProperty 1
+2 
+KeyboardInputEvent 1
+2 
+SmalltalkToolInterface 1
+2 
+ResidueObject 1
+2 
+PARTSTextIcon 1
+2 
+CompilationError 1
+2 
+ObjectStoreRoot 1
+2 
+Semaphore 1
+2 
+ObjectMutator 1
+2 
+LayoutUnit 1
+2 
+ComputedLayout 1
+86 
+ExternalBuffer 1
+2 
+Win32FindData 1
+88 
+PARTSNonvisualPart 1
+2 
+PARTSFileAccessorPart 1
+90 
+PARTSDiskAccessorPart 1
+90 
+PARTSPartAccessorPart 1
+90 
+EventManager 1
+2 
+Timer 1
+94 
+GraphicsMedium 1
+2 
+Bitmap 1
+96 
+WinPoint 1
+88 
+WinLogicalObject 1
+2 
+WinLogicalPen 1
+99 
+PARTSPropertyUnit 1
+2 
+PARTSPropertyGraphic 1
+101 
+Magnitude 1
+2 
+Association 1
+103 
+CompilerInterface 1
+2 
+PARTSScriptCompilerInterface 1
+105 
+ExpressionEvaluator 1
+2 
+WorkspaceExpressionEvaluator 1
+107 
+PARTSFileOperationContext 1
+2 
+PARTSLoadContext 1
+109 
+Coff 1
+2 
+PeFixup 1
+111 
+PARTSStringTemplatePart 1
+90 
+Context 1
+2 
+OneArgumentBlock 1
+114 
+ObjectStoreFile 1
+2 
+ObjectStoreFileWithVersion 1
+116 
+StreamReference 1
+2 
+SystemStreamReference 1
+118 
+CompilerNameScope 1
+2 
+MultiplePoolScope 1
+120 
+WinMetaheader 1
+88 
+PARTSClipboardAccessorPart 1
+90 
+PeFixupBlock 1
+111 
+PARTSFileDescriptor 1
+2 
+PARTSDosFileDescriptor 1
+125 
+WinMeasureItemStruct 1
+88 
+ObjectStoreObjects 1
+2 
+ObjectStoreFileObjects 1
+128 
+PARTSNotebookPage 1
+2 
+PARTSNotebookPageAttributes 1
+130 
+PARTSLink 1
+2 
+P1122 1
+132 
+Color 1
+2 
+RGBColor 1
+134 
+PARTSSpeakerPart 1
+90 
+ObjectStoreReader 1
+2 
+SmalltalkLibraryBinder 1
+137 
+P1117 1
+2 
+P1118 1
+139 
+P1110 1
+130 
+TwoArgumentBlock 1
+114 
+WinBitmapFileHeader 1
+88 
+Tool 1
+2 
+P1108 1
+144 
+ViewManager 1
+2 
+P1100 1
+146 
+PARTSFileProcessor 1
+2 
+PARTSExeFileProcessor 1
+148 
+WinMetafileheader 1
+88 
+CoffDataTableEntry 1
+111 
+WinRectangle 1
+88 
+Collection 1
+2 
+Bag 1
+153 
+IndexedColor 1
+134 
+PARTSLaunchPadPart 1
+90 
+ZeroArgumentBlock 1
+114 
+WinSystemTime 1
+88 
+PARTSCodeGeneratorInterface 1
+2 
+PARTSCodeGeneratorWriterInterface 1
+159 
+PARTSCodeGeneratorReaderInterface 1
+159 
+Printer 1
+96 
+WinLogicalPalette 1
+99 
+PARTSPrinterPart 1
+90 
+WinPaintStructure 1
+88 
+StringReference 1
+2 
+SourceChunkReference 1
+166 
+WinPaletteEntry 1
+88 
+ObjectStore 1
+2 
+ObjectStoreWithClient 1
+169 
+SessionModel 1
+94 
+PARTSSessionManager 1
+2 
+PARTSWorkbenchSessionManager 1
+172 
+Behavior 1
+2 
+MetaClass 1
+174 
+ObjectLoader 1
+137 
+ObjectStoreWriter 1
+2 
+ObjectDumper 1
+177 
+WindowPolicy 1
+2 
+NoMenusWindowPolicy 1
+179 
+CompositeLayout 1
+86 
+HomeContext 1
+114 
+WinStructArray 1
+88 
+Character 1
+103 
+PARTSPropertyFixedList 1
+101 
+WinFileTime 1
+88 
+WinDialogInfo 1
+88 
+CompilerErrorHandler 1
+2 
+NonInteractiveErrorHandler 1
+188 
+Screen 1
+96 
+PARTSPropertyStaticText 1
+101 
+PARTSPropertyDateFormat 1
+101 
+PARTSSourceFileProcessor 1
+148 
+WinMetafilepict 1
+88 
+ObjectStoreExternal 1
+2 
+ObjectStoreFileExternal 1
+195 
+PARTSConversionPart 1
+90 
+PARTSComparisonPart 1
+90 
+Boolean 1
+2 
+False 1
+199 
+PARTSPropertyColorAndFont 1
+101 
+PARTSStoreContext 1
+109 
+PARTSPropertyList 1
+101 
+ExternalHandle 1
+2 
+FileHandle 1
+204 
+Time 1
+103 
+WinLogBrush 1
+88 
+CompiledMethodDefinition 1
+2 
+PARTSScriptDefinition 1
+208 
+WinLogicalBrush 1
+99 
+PARTSPropertyIcon 1
+101 
+PARTSPropertyMenuAccelerator 1
+101 
+PARTSPropertyLineOfButtons 1
+101 
+WinWindowPlacement 1
+88 
+HelpManager 1
+2 
+PARTSHelpManager 1
+215 
+PARTSComputationPart 1
+90 
+WinTextMetrics 1
+88 
+VirtualMachineConfiguration 1
+88 
+WindowHandle 1
+204 
+True 1
+199 
+P1123 1
+146 
+Date 1
+103 
+LibrarySourceReference 1
+118 
+P1119 1
+139 
+PeResource 1
+111 
+P1101 1
+146 
+WinColorref 1
+88 
+WinMinmaxinfo 1
+88 
+WinOfstruct 1
+88 
+WinLogFont 1
+88 
+Atom 1
+204 
+StoredPicture 1
+96 
+SmalltalkLibrary 1
+169 
+CursorManager 1
+2 
+PARTSCursorManager 1
+235 
+Pattern 1
+2 
+WildPattern 1
+237 
+SelfDefinedStructure 1
+88 
+WinDrawItemStruct 1
+88 
+PARTSLinkJunctionPart 1
+90 
+PARTSDevelopmentSessionManager 1
+172 
+WinMessage 1
+88 
+Exception 1
+2 
+HostFileSystemError 1
+244 
+EvaluableAction 1
+2 
+CollectionAccessor 1
+246 
+WinLogPalette 1
+88 
+WinLogPen 1
+88 
+PARTSRuntimeSessionManager 1
+172 
+WinWindowClass 1
+88 
+PARTSTimerPart 1
+90 
+ConstantAccessor 1
+246 
+Stream 1
+2 
+ReadStream 1
+254 
+DeviceContext 1
+204 
+Icon 1
+2 
+PARTSIcon 1
+257 
+WinBitmapStruct 1
+88 
+PARTSGetExecutionContext 1
+244 
+PeExport 1
+111 
+Class 1
+174 
+METACLASS_SelfInitializingObject 1
+262 
+ExternalMemoryHandle 1
+204 
+ExternalHeapHandle 1
+264 
+ExternalGlobalHandle 1
+264 
+PARTSPrebuiltDialog 1
+90 
+PARTSFileDialogPart 1
+267 
+Menu 1
+2 
+PARTSStandardMenu 1
+269 
+PARTSStandardBracketsMenu 1
+270 
+PARTSPropertyBoolean 1
+101 
+PARTSPropertyPseudoStyle 1
+272 
+FileSystemEntity 1
+2 
+FileSystemComponent 1
+274 
+File 1
+275 
+DynamicLinkLibrary 1
+204 
+GDIDLL 1
+277 
+PARTSPropertyButton 1
+101 
+PARTSPropertySequenceChildren 1
+279 
+TextPaneErrorHandler 1
+188 
+WorkspaceErrorHandler 1
+281 
+CoffFileWriter 1
+111 
+PeFileWriter 1
+283 
+FileSystemLocator 1
+2 
+FileSystemPath 1
+285 
+NetworkFilePath 1
+286 
+Window 1
+2 
+SubPane 1
+288 
+ListConnectionPane 1
+289 
+DialogBox 1
+288 
+NewSubclassDialog 1
+291 
+Notification 1
+244 
+ProcessTermination 1
+293 
+SilentErrorHandler 1
+188 
+TraditionalCompilerErrorHandler 1
+295 
+DictionaryScope 1
+120 
+GlobalPoolScope 1
+297 
+ListPane 1
+289 
+CoffFileSection 1
+111 
+P1001 1
+300 
+ProgressNotification 1
+293 
+RecompilationNotification 1
+293 
+PARTSApplicationHolder 1
+2 
+PARTSWindow 1
+304 
+PARTSPictureMaskEditor 1
+305 
+LayoutFrame 1
+86 
+DialogLayoutFrame 1
+307 
+WindowDialog 1
+146 
+SaveImageAsDialog 1
+309 
+Number 1
+103 
+Float 1
+311 
+PeExportSection 1
+300 
+P1147 1
+2 
+P1151 1
+314 
+P1152 1
+315 
+P1124 1
+2 
+P1125 1
+317 
+P1126 1
+318 
+VRelocationSection 1
+300 
+P1148 1
+314 
+P1150 1
+321 
+P1113 1
+2 
+P1114 1
+323 
+P1116 1
+324 
+ObjectWindow 1
+288 
+PARTSTimerWindow 1
+326 
+CommonDialogDLL 1
+277 
+PARTSSilentErrorHandler 1
+295 
+CoffDataTable 1
+300 
+Error 1
+244 
+UnknownImport 1
+331 
+Fraction 1
+311 
+PeResourceSection 1
+300 
+ProgressIndicatorDialog 1
+309 
+VImageSection 1
+300 
+PeRelocationSection 1
+300 
+VTextSection 1
+300 
+ShellDLL 1
+277 
+PARTSPropertyString 1
+101 
+PARTSPropertyFormattedString 1
+340 
+UserDLL 1
+277 
+HashedCollection 1
+153 
+SymbolSet 1
+343 
+TextPane 1
+289 
+PARTSPrompterPart 1
+267 
+PARTSSpeakerDLL 1
+277 
+PARTSPropertyButtonGroup 1
+101 
+PARTSPropertyButtonGroupWS 1
+348 
+PARTSPropertyExpression 1
+340 
+PARTSPropertyEditButton 1
+279 
+PARTSPropertyNumber 1
+340 
+PARTSPropertyText 1
+340 
+SystemWindow 1
+326 
+KernelDLL 1
+277 
+ObjectLoadDialog 1
+309 
+SharedValue 1
+94 
+SharedBoolean 1
+357 
+PeTextSection 1
+300 
+ApplicationCoordinator 1
+2 
+DialogCoordinator 1
+360 
+ListChooser 1
+361 
+StandardWindowPolicy 1
+179 
+SmalltalkWindowPolicy 1
+363 
+FindReplaceDialog 1
+309 
+P1149 1
+321 
+VirtualMachineExe 1
+277 
+P1115 1
+324 
+AboutDialog 1
+309 
+VetoAction 1
+293 
+PARTSAliasLink 1
+132 
+P1121 1
+371 
+StatusPane 1
+289 
+PrintAbortDialog 1
+309 
+WinBitmapInfoHeader 1
+88 
+WinBitmapInfo 1
+375 
+PARTSPartFileProcessor 1
+148 
+PARTSExecutablePartFileProcessor 1
+377 
+CoffFileModel 1
+111 
+PeFileModel 1
+379 
+VDataSection 1
+300 
+VirtualMachineDLL 1
+277 
+AboutToReplaceFile 1
+293 
+PARTSTextPaneErrorHandler 1
+281 
+SaveImageDialog 1
+309 
+KeyboardInterrupt 1
+293 
+CoffFileReader 1
+111 
+PeFileReader 1
+387 
+TimeStamp 1
+103 
+PARTSTimeStamp 1
+389 
+METACLASS_Object 1
+262 
+METACLASS_UndefinedObject 1
+391 
+METACLASS_EmptySlot 1
+391 
+METACLASS_ProcessScheduler 1
+391 
+METACLASS_ProtectedFrameMarker 1
+391 
+METACLASS_PARTSPropertyStructure 1
+391 
+METACLASS_PARTSLinkEditState 1
+391 
+METACLASS_Point 1
+391 
+METACLASS_NationalLanguageSupport 1
+391 
+METACLASS_PARTSDragResult 1
+391 
+METACLASS_InputEvent 1
+391 
+METACLASS_UpgraderForFile 1
+391 
+METACLASS_PARTSApplication 1
+391 
+METACLASS_PARTSFile 1
+391 
+METACLASS_ClipboardManager 1
+391 
+METACLASS_MenuItem 1
+391 
+METACLASS_PARTSCatalog 1
+391 
+METACLASS_Font 1
+391 
+METACLASS_CallBack 1
+391 
+METACLASS_ClassReader 1
+391 
+METACLASS_Enumerator 1
+391 
+METACLASS_ObjectChangeMap 1
+391 
+METACLASS_P1106 1
+391 
+METACLASS_P1112 1
+391 
+METACLASS_P1120 1
+391 
+METACLASS_SourceManager 1
+391 
+METACLASS_ExceptionHandler 1
+391 
+METACLASS_ObjectStoreSpaceExternals 1
+391 
+METACLASS_ExceptionFilter 1
+391 
+METACLASS_StatusBox 1
+391 
+METACLASS_PARTSIniFile 1
+391 
+METACLASS_PARTSWrapper 1
+391 
+METACLASS_FileVolume 1
+391 
+METACLASS_PARTSFormGeneratorItem 1
+391 
+METACLASS_PARTSScriptContext 1
+391 
+METACLASS_PARTSFramer 1
+391 
+METACLASS_PARTSLinkSettings 1
+391 
+METACLASS_NotificationManager 1
+391 
+METACLASS_PARTSSettings 1
+391 
+METACLASS_OperatingSystemInformation 1
+391 
+METACLASS_ObjectReference 1
+391 
+METACLASS_ServiceRegistry 1
+391 
+METACLASS_StringModel 1
+391 
+METACLASS_ObjectStoreSpace 1
+391 
+METACLASS_PARTSFileType 1
+391 
+METACLASS_MethodExecutor 1
+391 
+METACLASS_ExceptionSet 1
+391 
+METACLASS_UpgraderForDirectory 1
+391 
+METACLASS_CompilationResult 1
+391 
+METACLASS_DefinitionInstaller 1
+391 
+METACLASS_PARTSEditorState 1
+391 
+METACLASS_PARTSScriptSource 1
+391 
+METACLASS_DeletedClass 1
+391 
+METACLASS_PARTSHostInterface 1
+391 
+METACLASS_PARTSEditor 1
+391 
+METACLASS_P1000 1
+391 
+METACLASS_ObjectStoreObject 1
+391 
+METACLASS_DIB 1
+391 
+METACLASS_TextSelection 1
+391 
+METACLASS_PARTSException 1
+391 
+METACLASS_PARTSInterfaceList 1
+391 
+METACLASS_ClassInstaller 1
+391 
+METACLASS_StringDictionaryReader 1
+391 
+METACLASS_P1153 1
+391 
+METACLASS_ObjectFiler 1
+391 
+METACLASS_Rectangle 1
+391 
+METACLASS_PARTSFileVersion 1
+391 
+METACLASS_P1111 1
+391 
+METACLASS_P1109 1
+391 
+METACLASS_P1107 1
+391 
+METACLASS_PARTSStringTemplate 1
+391 
+METACLASS_FileSearchResults 1
+391 
+METACLASS_Border 1
+391 
+METACLASS_PARTSFormGenerator 1
+391 
+METACLASS_PARTSDial 1
+391 
+METACLASS_PARTSApplicationProperty 1
+391 
+METACLASS_KeyboardInputEvent 1
+391 
+METACLASS_SmalltalkToolInterface 1
+391 
+METACLASS_ResidueObject 1
+391 
+METACLASS_PARTSTextIcon 1
+391 
+METACLASS_CompilationError 1
+391 
+METACLASS_ObjectStoreRoot 1
+391 
+METACLASS_Semaphore 1
+391 
+METACLASS_ObjectMutator 1
+391 
+Browser 1
+146 
+CodeBrowser 1
+475 
+ClassHierarchyBrowser 1
+476 
+ControlError 1
+331 
+MessageNotUnderstood 1
+478 
+IndexedCollection 1
+153 
+OrderedCollection 1
+480 
+Process 1
+481 
+PARTSPropertyFormGeneratorButton 1
+279 
+PARTSPropertyCreateTable 1
+483 
+PARTSPropertyWindowStyle 1
+272 
+PARTSPropertyBinaryStyle 1
+485 
+DragDropSession 1
+2 
+LocalDragDropSession 1
+487 
+PARTSLocalDragDropSession 1
+488 
+PARTSDragSession 1
+489 
+PARTSPrebuiltMessageBox 1
+267 
+PARTSConfirmerPart 1
+491 
+ArithmeticError 1
+331 
+ZeroDivide 1
+493 
+CommonSystemDialog 1
+291 
+FontDialog 1
+495 
+Inspector 1
+475 
+DoubleByteStringInspector 1
+497 
+PARTSSettingsViewer 1
+305 
+PARTSMouseButtonsSettingsEditor 1
+499 
+PARTSSettingsEditor 1
+499 
+PARTSValueHolderPart 1
+90 
+PARTSTypedValueHolder 1
+502 
+PARTSNumberHolderPart 1
+503 
+PARTSChooseFileDialog 1
+305 
+PARTSOpenSaveFileDialog 1
+505 
+PARTSStringHolderPart 1
+503 
+FileSystemContainer 1
+274 
+Directory 1
+508 
+PARTSDosDirectory 1
+509 
+PARTSBitEditor 1
+146 
+PARTSIconEditor 1
+511 
+PARTSIconEditorWindows 1
+512 
+TextWindow 1
+475 
+PARTSTextWindow 1
+514 
+PARTSEditorMoveSession 1
+489 
+DictionaryInspector 1
+497 
+WalkbackWindow 1
+514 
+GroupPane 1
+289 
+PARTSNotebookClientAreaPane 1
+519 
+PARTSDialog 1
+309 
+PARTSDialEditor 1
+521 
+ExternalLong 1
+88 
+ExternalAddress 1
+523 
+ExternalGlobalAddress 1
+524 
+PrintDialog 1
+495 
+PARTSOrderedCollectionHolderPart 1
+503 
+P1128 1
+521 
+DragDropObject 1
+2 
+LocalDragDropObject 1
+529 
+PARTSLocalDragDropObject 1
+530 
+PARTSEditorMoveObject 1
+531 
+ControlWindow 1
+288 
+MenuWindow 1
+533 
+PARTSMenuBar 1
+534 
+Prompter 1
+309 
+PARTSPrompter 1
+536 
+PARTSClientAreaPaneWindows 1
+519 
+FileError 1
+331 
+FileAlreadyExists 1
+539 
+PARTSInformationDialogPart 1
+491 
+APICallError 1
+331 
+APICallInvalidArgumentType 1
+542 
+FixedSizeCollection 1
+480 
+ByteArray 1
+544 
+Set 1
+343 
+IdentitySet 1
+546 
+Warning 1
+293 
+LoggedWarning 1
+548 
+FileSystemAccessDenied 1
+539 
+GraphicsTool 1
+2 
+TextTool 1
+551 
+Pen 1
+552 
+RecordingPen 1
+553 
+ExternalSegmentedAddress 1
+524 
+ClassBrowser 1
+476 
+ApplicationWindow 1
+288 
+TopPane 1
+557 
+MainWindow 1
+558 
+PARTSUpgradeObject 1
+2 
+PARTSUpgradeVisualPart 1
+560 
+PARTSUpgradePanePart 1
+561 
+PARTSUpgradeTablePane 1
+562 
+PARTSLinkColorSettingsEditor 1
+499 
+PARTSMenuPaneWindows 1
+519 
+PARTSStandardFileMenu 1
+270 
+PARTSFileMenu 1
+566 
+PARTSStandardHelpMenu 1
+270 
+PARTSHelpMenu 1
+568 
+DynamicLinkLibrary16 1
+277 
+ThunkDLL16 1
+570 
+PARTSStarterWindow 1
+326 
+PARTSStarterWindowWindows 1
+572 
+PARTSBackgroundColorSettingsEditor 1
+499 
+Message 1
+246 
+LinkMessage 1
+575 
+PARTSAliasMessage 1
+576 
+PARTSStandardEditMenu 1
+270 
+PARTSEditMenu 1
+578 
+Interval 1
+544 
+ColorDialog 1
+495 
+MessageBox 1
+291 
+PARTSMessageBox 1
+582 
+TranscriptWindow 1
+514 
+KernelDLL16 1
+570 
+ControlPane 1
+289 
+ScrollBar 1
+586 
+PARTSNotebookPagePane 1
+519 
+PARTSPropertyCreateForm 1
+483 
+BindError 1
+331 
+ClassShapeMismatch 1
+590 
+OrderedCollectionInspector 1
+497 
+PARTSPropertiesEditor 1
+521 
+PARTSSimpleTextEditor 1
+521 
+ListDialog 1
+309 
+SeparatedListDialog 1
+595 
+APICallUnknownPrimitiveFailure 1
+542 
+GraphPane 1
+289 
+PARTSSequencePane 1
+598 
+BindDuplicate 1
+590 
+P1140 1
+305 
+P1143 1
+601 
+Integer 1
+311 
+SmallInteger 1
+603 
+Dictionary 1
+343 
+SystemDictionary 1
+605 
+FileErrorWriteProtected 1
+539 
+ByteArrayInspector 1
+497 
+ExternalHeapAddress 1
+524 
+UnresolvedExternal 1
+590 
+SortedCollection 1
+481 
+PARTSTabOrderEditor 1
+521 
+MultiSelectListDialog 1
+595 
+GraphicInspector 1
+497 
+PARTSConfirmerWithCancelPart 1
+491 
+APICallEntryPointNotFound 1
+542 
+FileSharingViolation 1
+539 
+PARTSPane 1
+289 
+PARTSMenuLabelPart 1
+618 
+TooManyOpenFiles 1
+539 
+FieldInspector 1
+497 
+RadioButtonDialog 1
+595 
+METACLASS_LayoutUnit 1
+391 
+METACLASS_ComputedLayout 1
+623 
+METACLASS_ExternalBuffer 1
+391 
+METACLASS_Win32FindData 1
+625 
+METACLASS_PARTSNonvisualPart 1
+391 
+METACLASS_PARTSFileAccessorPart 1
+627 
+METACLASS_PARTSDiskAccessorPart 1
+627 
+METACLASS_PARTSPartAccessorPart 1
+627 
+METACLASS_GraphicsMedium 1
+391 
+METACLASS_Bitmap 1
+631 
+METACLASS_EventManager 1
+391 
+METACLASS_Timer 1
+633 
+METACLASS_WinPoint 1
+625 
+METACLASS_WinLogicalObject 1
+391 
+METACLASS_WinLogicalPen 1
+636 
+METACLASS_PARTSPropertyUnit 1
+391 
+METACLASS_PARTSPropertyGraphic 1
+638 
+METACLASS_Magnitude 1
+391 
+METACLASS_Association 1
+640 
+METACLASS_CompilerInterface 1
+391 
+METACLASS_PARTSScriptCompilerInterface 1
+642 
+METACLASS_ExpressionEvaluator 1
+391 
+METACLASS_WorkspaceExpressionEvaluator 1
+644 
+METACLASS_PARTSFileOperationContext 1
+391 
+METACLASS_PARTSLoadContext 1
+646 
+METACLASS_Coff 1
+391 
+METACLASS_PeFixup 1
+648 
+METACLASS_PARTSStringTemplatePart 1
+627 
+METACLASS_Context 1
+391 
+METACLASS_OneArgumentBlock 1
+651 
+METACLASS_ObjectStoreFile 1
+391 
+METACLASS_ObjectStoreFileWithVersion 1
+653 
+METACLASS_StreamReference 1
+391 
+METACLASS_SystemStreamReference 1
+655 
+METACLASS_CompilerNameScope 1
+391 
+METACLASS_MultiplePoolScope 1
+657 
+METACLASS_WinMetaheader 1
+625 
+METACLASS_PARTSClipboardAccessorPart 1
+627 
+METACLASS_PeFixupBlock 1
+648 
+METACLASS_PARTSFileDescriptor 1
+391 
+METACLASS_PARTSDosFileDescriptor 1
+662 
+METACLASS_WinMeasureItemStruct 1
+625 
+METACLASS_ObjectStoreObjects 1
+391 
+METACLASS_ObjectStoreFileObjects 1
+665 
+METACLASS_PARTSNotebookPage 1
+391 
+METACLASS_PARTSNotebookPageAttributes 1
+667 
+METACLASS_PARTSLink 1
+391 
+METACLASS_P1122 1
+669 
+METACLASS_Color 1
+391 
+METACLASS_RGBColor 1
+671 
+METACLASS_PARTSSpeakerPart 1
+627 
+METACLASS_ObjectStoreReader 1
+391 
+METACLASS_SmalltalkLibraryBinder 1
+674 
+METACLASS_P1117 1
+391 
+METACLASS_P1118 1
+676 
+METACLASS_P1110 1
+667 
+METACLASS_TwoArgumentBlock 1
+651 
+METACLASS_WinBitmapFileHeader 1
+625 
+METACLASS_Tool 1
+391 
+METACLASS_P1108 1
+681 
+METACLASS_ViewManager 1
+391 
+METACLASS_P1100 1
+683 
+METACLASS_PARTSFileProcessor 1
+391 
+METACLASS_PARTSExeFileProcessor 1
+685 
+METACLASS_WinMetafileheader 1
+625 
+METACLASS_CoffDataTableEntry 1
+648 
+METACLASS_WinRectangle 1
+625 
+METACLASS_Collection 1
+391 
+METACLASS_Bag 1
+690 
+METACLASS_IndexedColor 1
+671 
+METACLASS_PARTSLaunchPadPart 1
+627 
+METACLASS_ZeroArgumentBlock 1
+651 
+METACLASS_WinSystemTime 1
+625 
+METACLASS_PARTSCodeGeneratorInterface 1
+391 
+METACLASS_PARTSCodeGeneratorWriterInterface 1
+696 
+METACLASS_PARTSCodeGeneratorReaderInterface 1
+696 
+METACLASS_Printer 1
+631 
+METACLASS_WinLogicalPalette 1
+636 
+METACLASS_PARTSPrinterPart 1
+627 
+METACLASS_WinPaintStructure 1
+625 
+METACLASS_StringReference 1
+391 
+METACLASS_SourceChunkReference 1
+703 
+METACLASS_WinPaletteEntry 1
+625 
+METACLASS_ObjectStore 1
+391 
+METACLASS_ObjectStoreWithClient 1
+706 
+METACLASS_SessionModel 1
+633 
+METACLASS_PARTSSessionManager 1
+391 
+METACLASS_PARTSWorkbenchSessionManager 1
+709 
+METACLASS_Behavior 1
+391 
+METACLASS_MetaClass 1
+711 
+METACLASS_ObjectLoader 1
+674 
+METACLASS_ObjectStoreWriter 1
+391 
+METACLASS_ObjectDumper 1
+714 
+METACLASS_WindowPolicy 1
+391 
+METACLASS_NoMenusWindowPolicy 1
+716 
+METACLASS_Class 1
+711 
+METACLASS_CompositeLayout 1
+623 
+METACLASS_HomeContext 1
+651 
+METACLASS_WinStructArray 1
+625 
+METACLASS_Character 1
+640 
+METACLASS_PARTSPropertyFixedList 1
+638 
+METACLASS_WinFileTime 1
+625 
+METACLASS_WinDialogInfo 1
+625 
+METACLASS_CompilerErrorHandler 1
+391 
+METACLASS_NonInteractiveErrorHandler 1
+726 
+METACLASS_Screen 1
+631 
+METACLASS_PARTSPropertyStaticText 1
+638 
+METACLASS_PARTSPropertyDateFormat 1
+638 
+METACLASS_PARTSSourceFileProcessor 1
+685 
+METACLASS_WinMetafilepict 1
+625 
+METACLASS_ObjectStoreExternal 1
+391 
+METACLASS_ObjectStoreFileExternal 1
+733 
+METACLASS_PARTSConversionPart 1
+627 
+METACLASS_PARTSComparisonPart 1
+627 
+METACLASS_Boolean 1
+391 
+METACLASS_False 1
+737 
+METACLASS_PARTSPropertyColorAndFont 1
+638 
+METACLASS_PARTSStoreContext 1
+646 
+METACLASS_PARTSPropertyList 1
+638 
+METACLASS_ExternalHandle 1
+391 
+METACLASS_FileHandle 1
+742 
+METACLASS_Time 1
+640 
+METACLASS_WinLogBrush 1
+625 
+METACLASS_CompiledMethodDefinition 1
+391 
+METACLASS_PARTSScriptDefinition 1
+746 
+METACLASS_WinLogicalBrush 1
+636 
+METACLASS_PARTSPropertyIcon 1
+638 
+METACLASS_PARTSPropertyMenuAccelerator 1
+638 
+METACLASS_PARTSPropertyLineOfButtons 1
+638 
+METACLASS_WinWindowPlacement 1
+625 
+METACLASS_HelpManager 1
+391 
+METACLASS_PARTSHelpManager 1
+753 
+METACLASS_PARTSComputationPart 1
+627 
+METACLASS_WinTextMetrics 1
+625 
+METACLASS_WindowHandle 1
+742 
+METACLASS_VirtualMachineConfiguration 1
+625 
+METACLASS_True 1
+737 
+METACLASS_P1123 1
+683 
+METACLASS_Date 1
+640 
+METACLASS_LibrarySourceReference 1
+655 
+METACLASS_P1119 1
+676 
+METACLASS_PeResource 1
+648 
+METACLASS_P1101 1
+683 
+METACLASS_WinColorref 1
+625 
+METACLASS_WinMinmaxinfo 1
+625 
+METACLASS_WinOfstruct 1
+625 
+METACLASS_WinLogFont 1
+625 
+METACLASS_Atom 1
+742 
+METACLASS_StoredPicture 1
+631 
+METACLASS_SmalltalkLibrary 1
+706 
+METACLASS_Pattern 1
+391 
+METACLASS_WildPattern 1
+773 
+METACLASS_CursorManager 1
+391 
+METACLASS_PARTSCursorManager 1
+775 
+METACLASS_SelfDefinedStructure 1
+625 
+METACLASS_WinDrawItemStruct 1
+625 
+METACLASS_PARTSLinkJunctionPart 1
+627 
+METACLASS_PARTSDevelopmentSessionManager 1
+709 
+METACLASS_WinMessage 1
+625 
+METACLASS_Exception 1
+391 
+METACLASS_HostFileSystemError 1
+782 
+METACLASS_EvaluableAction 1
+391 
+METACLASS_CollectionAccessor 1
+784 
+METACLASS_WinLogPalette 1
+625 
+METACLASS_WinLogPen 1
+625 
+METACLASS_PARTSRuntimeSessionManager 1
+709 
+METACLASS_WinWindowClass 1
+625 
+METACLASS_PARTSTimerPart 1
+627 
+METACLASS_ConstantAccessor 1
+784 
+METACLASS_Stream 1
+391 
+METACLASS_ReadStream 1
+792 
+METACLASS_DeviceContext 1
+742 
+METACLASS_Icon 1
+391 
+METACLASS_PARTSIcon 1
+795 
+METACLASS_WinBitmapStruct 1
+625 
+METACLASS_PARTSGetExecutionContext 1
+782 
+METACLASS_PeExport 1
+648 
+PARTSContentsEditor 1
+521 
+PARTSOrderedCollectionEditor 1
+800 
+PARTSPartPropertiesEditor 1
+305 
+PARTSPartPropertySubdialog 1
+802 
+PARTSWindowSizeEditor 1
+803 
+PARTSCollectionHolder 1
+503 
+PARTSDictionaryHolderPart 1
+805 
+ListBox 1
+586 
+ExtendedListBox 1
+807 
+PARTSMenuItemPane 1
+618 
+PARTSMenuSeparatorPart 1
+809 
+PARTSMenuBitmapItemPart 1
+809 
+WriteStream 1
+254 
+ReadWriteStream 1
+812 
+FileStream 1
+813 
+MixedFileStream 1
+814 
+Debugger 1
+476 
+PARTSDeveloperDebugger 1
+816 
+DialogTopPane 1
+558 
+DialogWindow 1
+818 
+PARTSMenuTextItemPart 1
+809 
+PARTSGroupPane 1
+618 
+PARTSNestedPart 1
+821 
+PARTSAddPartObject 1
+531 
+PARTSPasteObject 1
+823 
+PARTSArrayHolderPart 1
+805 
+PARTSArrayEditor 1
+800 
+EntryField 1
+586 
+PARTSExpressionEntryField 1
+827 
+P1141 1
+601 
+P1142 1
+829 
+PARTSIconPane 1
+598 
+P1104 1
+831 
+PARTSTopPane 1
+558 
+P1102 1
+833 
+PARTSPointEditor 1
+521 
+PARTSExtentEditor 1
+835 
+PARTSDialogTopPane 1
+818 
+StaticPane 1
+586 
+StaticBox 1
+838 
+ToolPane 1
+519 
+PARTSToolPane 1
+840 
+Array 1
+544 
+ActionSequence 1
+842 
+PARTSBaseNotebook 1
+586 
+PARTSNotebook 1
+844 
+PARTSAddPartSession 1
+489 
+PARTSCatalogDragSession 1
+846 
+PARTSListPanePart 1
+807 
+PARTSRelativeLayoutDialog 1
+521 
+PARTSFieldOrderDialog 1
+849 
+Button 1
+586 
+PARTSPushButtonPart 1
+851 
+PARTSGraphPanePart 1
+598 
+PARTSDialPanePart 1
+853 
+String 1
+544 
+Symbol 1
+855 
+MethodBrowser 1
+476 
+SelectorBrowser 1
+857 
+PARTSMenuPart 1
+821 
+PARTSPasteSession 1
+846 
+PARTSPrebuiltDialogTopPane 1
+818 
+IdentityDictionary 1
+605 
+PARTSMirrorCopyDictionary 1
+862 
+P1129 1
+835 
+P1103 1
+833 
+PARTSDictionaryEditor 1
+800 
+FileDialog 1
+495 
+PARTSFileDialog 1
+867 
+PARTSPartPropertyDialog 1
+802 
+PARTSNonvisualPartPropertyDialog 1
+869 
+LargeInteger 1
+603 
+LargePositiveInteger 1
+871 
+LargeNegativeInteger 1
+871 
+METACLASS_ExternalMemoryHandle 1
+742 
+METACLASS_ExternalHeapHandle 1
+874 
+METACLASS_ExternalGlobalHandle 1
+874 
+METACLASS_PARTSPrebuiltDialog 1
+627 
+METACLASS_PARTSFileDialogPart 1
+877 
+METACLASS_Menu 1
+391 
+METACLASS_PARTSStandardMenu 1
+879 
+METACLASS_PARTSStandardBracketsMenu 1
+880 
+METACLASS_PARTSPropertyBoolean 1
+638 
+METACLASS_PARTSPropertyPseudoStyle 1
+882 
+METACLASS_FileSystemEntity 1
+391 
+METACLASS_FileSystemComponent 1
+884 
+METACLASS_File 1
+885 
+METACLASS_DynamicLinkLibrary 1
+742 
+METACLASS_GDIDLL 1
+887 
+METACLASS_PARTSPropertyButton 1
+638 
+METACLASS_PARTSPropertySequenceChildren 1
+889 
+METACLASS_TextPaneErrorHandler 1
+726 
+METACLASS_WorkspaceErrorHandler 1
+891 
+METACLASS_CoffFileWriter 1
+648 
+METACLASS_PeFileWriter 1
+893 
+METACLASS_FileSystemLocator 1
+391 
+METACLASS_FileSystemPath 1
+895 
+METACLASS_NetworkFilePath 1
+896 
+METACLASS_Window 1
+391 
+METACLASS_SubPane 1
+898 
+METACLASS_ListConnectionPane 1
+899 
+METACLASS_DialogBox 1
+898 
+METACLASS_NewSubclassDialog 1
+901 
+METACLASS_Notification 1
+782 
+METACLASS_ProcessTermination 1
+903 
+METACLASS_SilentErrorHandler 1
+726 
+METACLASS_TraditionalCompilerErrorHandler 1
+905 
+METACLASS_DictionaryScope 1
+657 
+METACLASS_GlobalPoolScope 1
+907 
+METACLASS_ListPane 1
+899 
+METACLASS_CoffFileSection 1
+648 
+METACLASS_P1001 1
+910 
+METACLASS_ProgressNotification 1
+903 
+METACLASS_RecompilationNotification 1
+903 
+METACLASS_PARTSApplicationHolder 1
+391 
+METACLASS_PARTSWindow 1
+914 
+METACLASS_PARTSPictureMaskEditor 1
+915 
+METACLASS_LayoutFrame 1
+623 
+METACLASS_DialogLayoutFrame 1
+917 
+METACLASS_WindowDialog 1
+683 
+METACLASS_SaveImageAsDialog 1
+919 
+METACLASS_Number 1
+640 
+METACLASS_Float 1
+921 
+METACLASS_PeExportSection 1
+910 
+METACLASS_P1147 1
+391 
+METACLASS_P1151 1
+924 
+METACLASS_P1152 1
+925 
+METACLASS_P1124 1
+391 
+METACLASS_P1125 1
+927 
+METACLASS_P1126 1
+928 
+METACLASS_VRelocationSection 1
+910 
+METACLASS_P1148 1
+924 
+METACLASS_P1150 1
+931 
+METACLASS_P1113 1
+391 
+METACLASS_P1114 1
+933 
+METACLASS_P1116 1
+934 
+METACLASS_ObjectWindow 1
+898 
+METACLASS_PARTSTimerWindow 1
+936 
+METACLASS_CommonDialogDLL 1
+887 
+METACLASS_PARTSSilentErrorHandler 1
+905 
+METACLASS_CoffDataTable 1
+910 
+METACLASS_Error 1
+782 
+METACLASS_UnknownImport 1
+941 
+METACLASS_Fraction 1
+921 
+METACLASS_ProgressIndicatorDialog 1
+919 
+METACLASS_PeResourceSection 1
+910 
+METACLASS_VImageSection 1
+910 
+METACLASS_PeRelocationSection 1
+910 
+METACLASS_VTextSection 1
+910 
+METACLASS_ShellDLL 1
+887 
+METACLASS_PARTSPropertyString 1
+638 
+METACLASS_PARTSPropertyFormattedString 1
+950 
+METACLASS_UserDLL 1
+887 
+METACLASS_HashedCollection 1
+690 
+METACLASS_SymbolSet 1
+953 
+METACLASS_TextPane 1
+899 
+METACLASS_PARTSPrompterPart 1
+877 
+METACLASS_PARTSSpeakerDLL 1
+887 
+METACLASS_PARTSPropertyButtonGroup 1
+638 
+METACLASS_PARTSPropertyButtonGroupWS 1
+958 
+METACLASS_PARTSPropertyExpression 1
+950 
+METACLASS_PARTSPropertyEditButton 1
+889 
+METACLASS_PARTSPropertyNumber 1
+950 
+METACLASS_PARTSPropertyText 1
+950 
+METACLASS_SystemWindow 1
+936 
+METACLASS_KernelDLL 1
+887 
+METACLASS_ObjectLoadDialog 1
+919 
+METACLASS_SharedValue 1
+633 
+METACLASS_SharedBoolean 1
+967 
+METACLASS_PeTextSection 1
+910 
+METACLASS_ApplicationCoordinator 1
+391 
+METACLASS_DialogCoordinator 1
+970 
+METACLASS_ListChooser 1
+971 
+METACLASS_StandardWindowPolicy 1
+716 
+METACLASS_SmalltalkWindowPolicy 1
+973 
+METACLASS_FindReplaceDialog 1
+919 
+METACLASS_P1149 1
+931 
+METACLASS_VirtualMachineExe 1
+887 
+METACLASS_P1115 1
+934 
+METACLASS_AboutDialog 1
+919 
+METACLASS_VetoAction 1
+903 
+METACLASS_PARTSAliasLink 1
+669 
+METACLASS_P1121 1
+981 
+METACLASS_StatusPane 1
+899 
+METACLASS_PrintAbortDialog 1
+919 
+METACLASS_WinBitmapInfoHeader 1
+625 
+METACLASS_WinBitmapInfo 1
+985 
+METACLASS_PARTSPartFileProcessor 1
+685 
+METACLASS_PARTSExecutablePartFileProcessor 1
+987 
+METACLASS_CoffFileModel 1
+648 
+METACLASS_PeFileModel 1
+989 
+METACLASS_VDataSection 1
+910 
+METACLASS_VirtualMachineDLL 1
+887 
+METACLASS_AboutToReplaceFile 1
+903 
+METACLASS_PARTSTextPaneErrorHandler 1
+891 
+METACLASS_SaveImageDialog 1
+919 
+METACLASS_KeyboardInterrupt 1
+903 
+METACLASS_CoffFileReader 1
+648 
+METACLASS_PeFileReader 1
+997 
+METACLASS_TimeStamp 1
+640 
+METACLASS_PARTSTimeStamp 1
+999 
+CompiledMethod 1
+842 
+PARTSScript 1
+1001 
+PARTSOpenWindowPropertiesEditor 1
+803 
+PARTSOpenDialogWindowPropertiesEditor 1
+1003 
+PARTSSequenceEditor 1
+849 
+PARTSPathSequenceEditor 1
+1005 
+StaticText 1
+838 
+PARTSStaticTextPart 1
+1007 
+P1105 1
+831 
+P1154 1
+1009 
+P1135 1
+849 
+P1136 1
+1011 
+P1138 1
+1011 
+PARTSVisualPartPropertyDialog 1
+869 
+PARTSOrderedVisualPartPropertyDialog 1
+1014 
+ComboEntryField 1
+827 
+PARTSComboEntryField 1
+1016 
+GroupBox 1
+838 
+PARTSGroupPanePart 1
+1018 
+StaticGraphic 1
+838 
+PARTSStaticGraphicPart 1
+1020 
+DrawnButton 1
+851 
+PARTSDrawnButtonPart 1
+1022 
+DropDownList 1
+807 
+PARTSDropDownListPart 1
+1024 
+PARTSWindowPart 1
+833 
+PARTSDialogWindowPart 1
+1026 
+MethodDictionary 1
+862 
+PARTSScriptDictionary 1
+1028 
+PARTSGroupPanePropertiesEditor 1
+1014 
+PARTSColorFontPropertiesEditor 1
+1014 
+MultipleSelectListBox 1
+807 
+PARTSMultipleChoiceListPart 1
+1032 
+CompiledInitializer 1
+1001 
+P1139 1
+1005 
+P1137 1
+1011 
+HashTable 1
+842 
+BucketHashTable 1
+1037 
+DoubleByteString 1
+855 
+DoubleByteSymbol 1
+1039 
+LinearHashTable 1
+1037 
+METACLASS_Browser 1
+683 
+METACLASS_CodeBrowser 1
+1042 
+METACLASS_ClassHierarchyBrowser 1
+1043 
+METACLASS_ControlError 1
+941 
+METACLASS_MessageNotUnderstood 1
+1045 
+METACLASS_IndexedCollection 1
+690 
+METACLASS_OrderedCollection 1
+1047 
+METACLASS_Process 1
+1048 
+METACLASS_PARTSPropertyFormGeneratorButton 1
+889 
+METACLASS_PARTSPropertyCreateTable 1
+1050 
+METACLASS_PARTSPropertyWindowStyle 1
+882 
+METACLASS_PARTSPropertyBinaryStyle 1
+1052 
+METACLASS_DragDropSession 1
+391 
+METACLASS_LocalDragDropSession 1
+1054 
+METACLASS_PARTSLocalDragDropSession 1
+1055 
+METACLASS_PARTSDragSession 1
+1056 
+METACLASS_PARTSPrebuiltMessageBox 1
+877 
+METACLASS_PARTSConfirmerPart 1
+1058 
+METACLASS_ArithmeticError 1
+941 
+METACLASS_ZeroDivide 1
+1060 
+METACLASS_CommonSystemDialog 1
+901 
+METACLASS_FontDialog 1
+1062 
+METACLASS_Inspector 1
+1042 
+METACLASS_DoubleByteStringInspector 1
+1064 
+METACLASS_PARTSSettingsViewer 1
+915 
+METACLASS_PARTSMouseButtonsSettingsEditor 1
+1066 
+METACLASS_PARTSSettingsEditor 1
+1066 
+METACLASS_PARTSValueHolderPart 1
+627 
+METACLASS_PARTSTypedValueHolder 1
+1069 
+METACLASS_PARTSNumberHolderPart 1
+1070 
+METACLASS_PARTSChooseFileDialog 1
+915 
+METACLASS_PARTSOpenSaveFileDialog 1
+1072 
+METACLASS_PARTSStringHolderPart 1
+1070 
+METACLASS_FileSystemContainer 1
+884 
+METACLASS_Directory 1
+1075 
+METACLASS_PARTSDosDirectory 1
+1076 
+METACLASS_PARTSBitEditor 1
+683 
+METACLASS_PARTSIconEditor 1
+1078 
+METACLASS_PARTSIconEditorWindows 1
+1079 
+METACLASS_TextWindow 1
+1042 
+METACLASS_PARTSTextWindow 1
+1081 
+METACLASS_PARTSEditorMoveSession 1
+1056 
+METACLASS_DictionaryInspector 1
+1064 
+METACLASS_WalkbackWindow 1
+1081 
+METACLASS_GroupPane 1
+899 
+METACLASS_PARTSNotebookClientAreaPane 1
+1086 
+METACLASS_PARTSDialog 1
+919 
+METACLASS_PARTSDialEditor 1
+1088 
+METACLASS_ExternalLong 1
+625 
+METACLASS_ExternalAddress 1
+1090 
+METACLASS_ExternalGlobalAddress 1
+1091 
+METACLASS_PARTSOrderedCollectionHolderPart 1
+1070 
+METACLASS_PrintDialog 1
+1062 
+METACLASS_P1128 1
+1088 
+METACLASS_DragDropObject 1
+391 
+METACLASS_LocalDragDropObject 1
+1096 
+METACLASS_PARTSLocalDragDropObject 1
+1097 
+METACLASS_PARTSEditorMoveObject 1
+1098 
+METACLASS_ControlWindow 1
+898 
+METACLASS_MenuWindow 1
+1100 
+METACLASS_PARTSMenuBar 1
+1101 
+METACLASS_Prompter 1
+919 
+METACLASS_PARTSPrompter 1
+1103 
+METACLASS_PARTSClientAreaPaneWindows 1
+1086 
+METACLASS_FileError 1
+941 
+METACLASS_FileAlreadyExists 1
+1106 
+METACLASS_PARTSInformationDialogPart 1
+1058 
+METACLASS_APICallError 1
+941 
+METACLASS_APICallInvalidArgumentType 1
+1109 
+METACLASS_FixedSizeCollection 1
+1047 
+METACLASS_ByteArray 1
+1111 
+METACLASS_Set 1
+953 
+METACLASS_IdentitySet 1
+1113 
+METACLASS_Warning 1
+903 
+METACLASS_LoggedWarning 1
+1115 
+METACLASS_FileSystemAccessDenied 1
+1106 
+METACLASS_GraphicsTool 1
+391 
+METACLASS_TextTool 1
+1118 
+METACLASS_Pen 1
+1119 
+METACLASS_RecordingPen 1
+1120 
+METACLASS_ExternalSegmentedAddress 1
+1091 
+METACLASS_ClassBrowser 1
+1043 
+METACLASS_ApplicationWindow 1
+898 
+METACLASS_TopPane 1
+1124 
+METACLASS_MainWindow 1
+1125 
+METACLASS_PARTSUpgradeObject 1
+391 
+METACLASS_PARTSUpgradeVisualPart 1
+1127 
+METACLASS_PARTSUpgradePanePart 1
+1128 
+METACLASS_PARTSUpgradeTablePane 1
+1129 
+METACLASS_PARTSLinkColorSettingsEditor 1
+1066 
+METACLASS_PARTSMenuPaneWindows 1
+1086 
+METACLASS_PARTSStandardFileMenu 1
+880 
+METACLASS_PARTSFileMenu 1
+1133 
+METACLASS_PARTSStandardHelpMenu 1
+880 
+METACLASS_PARTSHelpMenu 1
+1135 
+METACLASS_DynamicLinkLibrary16 1
+887 
+METACLASS_ThunkDLL16 1
+1137 
+METACLASS_PARTSStarterWindow 1
+936 
+METACLASS_PARTSStarterWindowWindows 1
+1139 
+METACLASS_PARTSBackgroundColorSettingsEditor 1
+1066 
+METACLASS_Message 1
+784 
+METACLASS_LinkMessage 1
+1142 
+METACLASS_PARTSAliasMessage 1
+1143 
+METACLASS_PARTSStandardEditMenu 1
+880 
+METACLASS_PARTSEditMenu 1
+1145 
+METACLASS_Interval 1
+1111 
+METACLASS_ColorDialog 1
+1062 
+METACLASS_MessageBox 1
+901 
+METACLASS_PARTSMessageBox 1
+1149 
+METACLASS_TranscriptWindow 1
+1081 
+METACLASS_KernelDLL16 1
+1137 
+METACLASS_ControlPane 1
+899 
+METACLASS_ScrollBar 1
+1153 
+METACLASS_PARTSNotebookPagePane 1
+1086 
+METACLASS_PARTSPropertyCreateForm 1
+1050 
+METACLASS_BindError 1
+941 
+METACLASS_ClassShapeMismatch 1
+1157 
+METACLASS_OrderedCollectionInspector 1
+1064 
+METACLASS_PARTSPropertiesEditor 1
+1088 
+METACLASS_PARTSSimpleTextEditor 1
+1088 
+METACLASS_ListDialog 1
+919 
+METACLASS_SeparatedListDialog 1
+1162 
+METACLASS_APICallUnknownPrimitiveFailure 1
+1109 
+METACLASS_GraphPane 1
+899 
+METACLASS_PARTSSequencePane 1
+1165 
+METACLASS_BindDuplicate 1
+1157 
+METACLASS_P1140 1
+915 
+METACLASS_P1143 1
+1168 
+METACLASS_Integer 1
+921 
+METACLASS_SmallInteger 1
+1170 
+METACLASS_Dictionary 1
+953 
+METACLASS_SystemDictionary 1
+1172 
+METACLASS_FileErrorWriteProtected 1
+1106 
+METACLASS_ByteArrayInspector 1
+1064 
+METACLASS_ExternalHeapAddress 1
+1091 
+METACLASS_UnresolvedExternal 1
+1157 
+METACLASS_SortedCollection 1
+1048 
+METACLASS_PARTSTabOrderEditor 1
+1088 
+METACLASS_MultiSelectListDialog 1
+1162 
+METACLASS_GraphicInspector 1
+1064 
+METACLASS_PARTSConfirmerWithCancelPart 1
+1058 
+METACLASS_APICallEntryPointNotFound 1
+1109 
+METACLASS_FileSharingViolation 1
+1106 
+METACLASS_PARTSPane 1
+899 
+METACLASS_PARTSMenuLabelPart 1
+1185 
+METACLASS_TooManyOpenFiles 1
+1106 
+METACLASS_FieldInspector 1
+1064 
+METACLASS_RadioButtonDialog 1
+1162 
+PARTSEntryFieldPart 1
+827 
+PARTSFormattedEntryField 1
+1190 
+PARTSDateEntryFieldPart 1
+1191 
+PARTSPictureFieldPart 1
+1191 
+Toggle 1
+851 
+CheckBox 1
+1194 
+PARTSCheckBoxPart 1
+1195 
+RadioButton 1
+1194 
+PARTSRadioButtonPart 1
+1197 
+ThreeStateButton 1
+1195 
+TextEdit 1
+827 
+TextPaneControl 1
+1200 
+PARTSTextPanePart 1
+1201 
+PARTSAlphabeticEntryFieldPart 1
+1191 
+PARTSPhoneNumberEntryFieldPart 1
+1191 
+P1127 1
+1201 
+LinearInlineHashTable 1
+1037 
+LinearIdentityHashTable 1
+1206 
+ComboBox 1
+1024 
+PARTSComboBoxPart 1
+1208 
+LinearSymbolHashTable 1
+1206 
+METACLASS_PARTSContentsEditor 1
+1088 
+METACLASS_PARTSOrderedCollectionEditor 1
+1211 
+METACLASS_PARTSPartPropertiesEditor 1
+915 
+METACLASS_PARTSPartPropertySubdialog 1
+1213 
+METACLASS_PARTSWindowSizeEditor 1
+1214 
+METACLASS_PARTSCollectionHolder 1
+1070 
+METACLASS_PARTSDictionaryHolderPart 1
+1216 
+METACLASS_ListBox 1
+1153 
+METACLASS_ExtendedListBox 1
+1218 
+METACLASS_PARTSMenuItemPane 1
+1185 
+METACLASS_PARTSMenuSeparatorPart 1
+1220 
+METACLASS_PARTSMenuBitmapItemPart 1
+1220 
+METACLASS_WriteStream 1
+792 
+METACLASS_ReadWriteStream 1
+1223 
+METACLASS_FileStream 1
+1224 
+METACLASS_MixedFileStream 1
+1225 
+METACLASS_Debugger 1
+1043 
+METACLASS_PARTSDeveloperDebugger 1
+1227 
+METACLASS_DialogTopPane 1
+1125 
+METACLASS_DialogWindow 1
+1229 
+METACLASS_PARTSMenuTextItemPart 1
+1220 
+METACLASS_PARTSAddPartObject 1
+1098 
+METACLASS_PARTSPasteObject 1
+1232 
+METACLASS_PARTSGroupPane 1
+1185 
+METACLASS_PARTSNestedPart 1
+1234 
+METACLASS_PARTSArrayHolderPart 1
+1216 
+METACLASS_PARTSArrayEditor 1
+1211 
+METACLASS_EntryField 1
+1153 
+METACLASS_PARTSExpressionEntryField 1
+1238 
+METACLASS_P1141 1
+1168 
+METACLASS_P1142 1
+1240 
+METACLASS_PARTSIconPane 1
+1165 
+METACLASS_P1104 1
+1242 
+METACLASS_PARTSTopPane 1
+1125 
+METACLASS_P1102 1
+1244 
+METACLASS_PARTSPointEditor 1
+1088 
+METACLASS_PARTSExtentEditor 1
+1246 
+METACLASS_PARTSDialogTopPane 1
+1229 
+METACLASS_StaticPane 1
+1153 
+METACLASS_StaticBox 1
+1249 
+METACLASS_ToolPane 1
+1086 
+METACLASS_PARTSToolPane 1
+1251 
+METACLASS_Array 1
+1111 
+METACLASS_ActionSequence 1
+1253 
+METACLASS_PARTSBaseNotebook 1
+1153 
+METACLASS_PARTSNotebook 1
+1255 
+METACLASS_PARTSAddPartSession 1
+1056 
+METACLASS_PARTSCatalogDragSession 1
+1257 
+METACLASS_PARTSListPanePart 1
+1218 
+METACLASS_PARTSRelativeLayoutDialog 1
+1088 
+METACLASS_PARTSFieldOrderDialog 1
+1260 
+METACLASS_Button 1
+1153 
+METACLASS_PARTSPushButtonPart 1
+1262 
+METACLASS_PARTSGraphPanePart 1
+1165 
+METACLASS_PARTSDialPanePart 1
+1264 
+METACLASS_String 1
+1111 
+METACLASS_Symbol 1
+1266 
+METACLASS_MethodBrowser 1
+1043 
+METACLASS_SelectorBrowser 1
+1268 
+METACLASS_PARTSMenuPart 1
+1234 
+METACLASS_PARTSPasteSession 1
+1257 
+METACLASS_PARTSPrebuiltDialogTopPane 1
+1229 
+METACLASS_IdentityDictionary 1
+1172 
+METACLASS_PARTSMirrorCopyDictionary 1
+1273 
+METACLASS_P1129 1
+1246 
+METACLASS_P1103 1
+1244 
+METACLASS_PARTSDictionaryEditor 1
+1211 
+METACLASS_FileDialog 1
+1062 
+METACLASS_PARTSFileDialog 1
+1278 
+METACLASS_PARTSPartPropertyDialog 1
+1213 
+METACLASS_PARTSNonvisualPartPropertyDialog 1
+1280 
+METACLASS_LargeInteger 1
+1170 
+METACLASS_LargePositiveInteger 1
+1282 
+METACLASS_LargeNegativeInteger 1
+1282 
+PARTSNumericField 1
+1191 
+PARTSFloatEntryFieldPart 1
+1285 
+PARTSIntegerEntryFieldPart 1
+1285 
+METACLASS_CompiledMethod 1
+1253 
+METACLASS_PARTSScript 1
+1288 
+METACLASS_PARTSOpenWindowPropertiesEditor 1
+1214 
+METACLASS_PARTSOpenDialogWindowPropertiesEditor 1
+1290 
+METACLASS_PARTSSequenceEditor 1
+1260 
+METACLASS_PARTSPathSequenceEditor 1
+1292 
+METACLASS_StaticText 1
+1249 
+METACLASS_PARTSStaticTextPart 1
+1294 
+METACLASS_P1105 1
+1242 
+METACLASS_P1154 1
+1296 
+METACLASS_P1135 1
+1260 
+METACLASS_P1136 1
+1298 
+METACLASS_P1138 1
+1298 
+METACLASS_PARTSVisualPartPropertyDialog 1
+1280 
+METACLASS_PARTSOrderedVisualPartPropertyDialog 1
+1301 
+METACLASS_ComboEntryField 1
+1238 
+METACLASS_PARTSComboEntryField 1
+1303 
+METACLASS_GroupBox 1
+1249 
+METACLASS_PARTSGroupPanePart 1
+1305 
+METACLASS_StaticGraphic 1
+1249 
+METACLASS_PARTSStaticGraphicPart 1
+1307 
+METACLASS_DrawnButton 1
+1262 
+METACLASS_PARTSDrawnButtonPart 1
+1309 
+METACLASS_DropDownList 1
+1218 
+METACLASS_PARTSDropDownListPart 1
+1311 
+METACLASS_PARTSWindowPart 1
+1244 
+METACLASS_PARTSDialogWindowPart 1
+1313 
+METACLASS_MethodDictionary 1
+1273 
+METACLASS_PARTSScriptDictionary 1
+1315 
+METACLASS_PARTSGroupPanePropertiesEditor 1
+1301 
+METACLASS_PARTSColorFontPropertiesEditor 1
+1301 
+METACLASS_MultipleSelectListBox 1
+1218 
+METACLASS_PARTSMultipleChoiceListPart 1
+1319 
+METACLASS_CompiledInitializer 1
+1288 
+METACLASS_P1139 1
+1292 
+METACLASS_P1137 1
+1298 
+METACLASS_HashTable 1
+1253 
+METACLASS_BucketHashTable 1
+1324 
+METACLASS_DoubleByteString 1
+1266 
+METACLASS_DoubleByteSymbol 1
+1326 
+METACLASS_LinearHashTable 1
+1324 
+PARTSFixedDecimalEntryFieldPart 1
+1285 
+PARTSCurrencyEntryFieldPart 1
+1329 
+METACLASS_PARTSEntryFieldPart 1
+1238 
+METACLASS_PARTSFormattedEntryField 1
+1331 
+METACLASS_PARTSDateEntryFieldPart 1
+1332 
+METACLASS_PARTSPictureFieldPart 1
+1332 
+METACLASS_Toggle 1
+1262 
+METACLASS_CheckBox 1
+1335 
+METACLASS_PARTSCheckBoxPart 1
+1336 
+METACLASS_RadioButton 1
+1335 
+METACLASS_PARTSRadioButtonPart 1
+1338 
+METACLASS_ThreeStateButton 1
+1336 
+METACLASS_TextEdit 1
+1238 
+METACLASS_TextPaneControl 1
+1341 
+METACLASS_PARTSTextPanePart 1
+1342 
+METACLASS_PARTSAlphabeticEntryFieldPart 1
+1332 
+METACLASS_PARTSPhoneNumberEntryFieldPart 1
+1332 
+METACLASS_P1127 1
+1342 
+METACLASS_LinearInlineHashTable 1
+1324 
+METACLASS_LinearIdentityHashTable 1
+1347 
+METACLASS_ComboBox 1
+1311 
+METACLASS_PARTSComboBoxPart 1
+1349 
+METACLASS_LinearSymbolHashTable 1
+1347 
+METACLASS_PARTSNumericField 1
+1332 
+METACLASS_PARTSFloatEntryFieldPart 1
+1352 
+METACLASS_PARTSIntegerEntryFieldPart 1
+1352 
+METACLASS_PARTSFixedDecimalEntryFieldPart 1
+1352 
+METACLASS_PARTSCurrencyEntryFieldPart 1
+1355 
+2402
+findKeyIndex:for: 4
+1210 1041 1207 1206 
+collisions 2
+1210 1207 
+name 28
+261 257 81 169 381 288 144 315 600 359 262 274 175 41 338 34 162 33 336 31 334 300 330 320 313 851 14 482 
+name: 16
+261 257 81 169 381 144 177 338 162 33 336 31 300 151 313 482 
+offset 6
+261 235 58 824 823 112 
+offset: 5
+261 235 58 151 823 
+initialize 255
+84 257 120 258 371 252 169 807 619 307 1209 79 380 77 615 130 132 75 74 288 144 503 373 72 304 227 598 139 1009 68 323 379 66 827 362 359 1022 358 2 137 177 60 356 859 269 867 595 101 201 53 589 588 350 587 840 581 854 346 345 1202 1023 1198 45 557 1208 178 176 43 512 42 1014 1021 845 816 1019 41 40 1196 39 37 338 1330 565 164 831 289 844 511 554 530 31 335 300 154 551 29 541 330 537 145 141 138 1201 136 135 832 327 553 24 317 527 526 321 1193 320 483 825 582 1008 19 1026 822 1192 1200 1194 507 504 113 146 290 10 496 128 492 280 1190 7 90 808 806 1001 93 92 484 1191 5 267 268 482 534 1351 657 796 1244 1187 1186 783 467 777 1182 711 914 765 1296 1346 761 455 1042 709 671 1166 997 1234 750 1270 879 744 446 1320 1278 444 773 1225 1151 970 1150 1148 1263 955 1259 1310 1339 713 432 1079 685 431 1308 887 708 1140 1058 429 1337 733 1135 427 1136 426 704 947 699 946 1078 945 418 1108 417 684 1342 675 673 1120 413 1094 1334 1297 923 1149 409 1295 1313 1235 1091 1080 405 911 404 902 1292 642 900 1063 643 1059 1331 396 1219 1054 1324 877 921 878 1049 880 
+signal 4
+84 244 783 782 
+root 2
+83 169 
+root: 2
+83 169 
+defaultFileName 3
+505 14 421 
+initializePartValues 11
+505 802 829 602 305 1031 1030 1003 506 869 804 
+openDialogWindow 3
+505 802 506 
+promptDialog:initialFile:fileTypes:defaultPattern:title: 2
+505 662 
+initializeEventHandlers 11
+505 802 829 602 305 1031 1014 1015 506 869 804 
+operation 6
+505 863 11 7 490 487 
+title 15
+505 77 864 1035 269 491 835 836 14 1006 1145 1133 1135 881 880 
+contents 34
+260 255 169 807 619 373 827 1022 821 137 340 840 854 345 1020 254 813 586 336 31 300 151 330 317 88 1026 820 343 299 811 812 808 93 514 
+defaultAction 10
+260 386 383 245 244 293 549 303 548 479 
+isResumable 10
+260 610 600 244 591 293 816 332 494 479 
+contents: 31
+260 807 619 373 1024 827 1022 821 340 840 854 345 1020 853 831 586 841 31 300 1201 317 88 1026 822 1200 820 343 299 808 1191 514 
+> 13
+390 855 871 103 223 604 206 184 333 312 9 389 104 
+>= 13
+390 855 871 103 223 604 206 184 333 312 9 389 104 
+printOn: 66
+390 120 253 873 872 169 855 247 78 239 233 132 1040 228 174 575 153 226 68 223 67 604 204 2 1034 269 206 842 603 814 856 186 286 125 184 274 42 195 34 843 33 158 300 333 199 155 152 357 135 23 312 19 524 17 14 9 389 104 98 95 1001 311 482 3 1002 523 
+hash 41
+390 855 248 871 103 480 1040 575 223 221 67 204 2 206 603 200 856 286 125 184 262 274 42 175 195 34 333 155 576 545 135 312 524 119 9 389 104 276 1001 509 265 
+<= 16
+390 873 872 855 103 223 604 206 184 195 1039 333 312 9 389 104 
+< 14
+390 873 872 855 103 223 604 206 184 333 312 9 389 104 
+readOnly 3
+257 827 345 
+releaseBitmaps 2
+257 81 
+asParameter 22
+257 855 288 221 67 134 204 200 99 856 183 1039 155 545 135 88 20 146 9 97 311 3 
+displayAt:with: 8
+257 258 81 233 235 2 59 97 
+initHandle 3
+257 99 97 
+readOnly: 2
+257 827 
+privateHandle 3
+257 99 551 
+extent 17
+257 81 288 144 220 314 67 60 59 101 53 96 44 37 551 321 97 
+release 10
+257 81 233 235 2 162 554 551 20 97 
+handle: 8
+257 233 288 235 99 551 28 898 
+fromFileStream: 4
+257 795 448 632 
+validate 39
+257 81 833 807 1209 558 373 598 1009 827 63 599 859 818 587 840 814 1025 345 1020 557 1208 586 289 844 535 1201 327 1193 520 1026 851 822 1200 1194 299 808 97 1191 
+fileOutSurrogate: 20
+257 221 606 204 2 200 99 190 182 344 41 39 19 16 276 97 1001 5 482 3 
+outputToFile: 3
+257 233 97 
+handle 9
+257 233 288 235 244 99 551 146 97 
+createMasks 2
+257 512 
+inspect 13
+257 233 235 2 59 274 481 1039 605 545 88 97 482 
+archiveAndRelease 2
+257 97 
+isValid 6
+257 288 220 204 524 97 
+clone 2
+257 97 
+outputToFileStream: 2
+257 97 
+fromModule:id: 11
+257 291 144 97 795 1266 901 681 775 448 632 
+isIcon 3
+257 81 2 
+removeLocalBindingFor: 3
+120 297 121 
+localBindingFor: 4
+120 297 121 298 
+hasInvalidBindingFor: 2
+120 121 
+descriptionFor: 2
+120 121 
+unquote 9
+120 855 480 86 286 48 481 30 782 
+description 10
+120 169 245 77 132 68 244 46 42 14 
+description: 7
+120 169 77 68 177 46 14 
+localBind:to: 3
+120 297 121 
+describeInvalidBindingFor: 2
+120 121 
+unbound 3
+120 657 648 
+height: 6
+259 373 67 840 375 551 
+planes 3
+259 375 97 
+width 16
+259 249 288 69 314 67 59 101 96 375 31 551 25 19 100 97 
+planes: 2
+259 375 
+width: 8
+259 249 69 67 375 31 551 25 
+height 20
+259 288 314 67 213 60 59 340 203 353 101 279 201 272 96 185 375 551 19 97 
+hasMessagePattern 3
+208 1034 1001 
+compiledMethod 2
+208 303 
+sourceString 3
+208 1001 1002 
+sourceString:notifying: 2
+208 209 
+debugInfo 2
+208 209 
+setSourceString: 2
+208 209 
+compiledMethod: 3
+208 303 733 
+recompile 2
+208 209 
+selector 9
+208 132 144 575 269 50 145 17 1001 
+sourceString:errorHandler: 2
+208 209 
+partContainingWindow 3
+258 81 288 
+boundingBox 8
+258 81 240 288 59 96 551 97 
+helpInfo 4
+258 315 33 14 
+fileInUpgrade: 36
+258 371 1209 558 77 132 503 562 827 2 859 49 1027 125 1023 37 1330 586 33 289 535 809 1008 19 1026 561 822 1200 820 14 13 1190 808 1001 93 267 
+partIsSelected 4
+258 81 288 1205 
+connection: 2
+258 81 
+setLabel: 7
+258 833 619 1018 1022 851 820 
+parent 4
+258 81 288 33 
+isPARTSIcon 2
+258 2 
+partStoreResourceOn: 2
+258 97 
+partIsShrunk 4
+258 81 288 2 
+origin 5
+258 81 67 60 775 
+parent: 5
+258 81 288 33 146 
+origin: 4
+258 81 67 60 
+label 15
+258 619 1018 326 362 1022 821 101 557 816 586 147 851 17 820 
+label: 17
+258 81 619 1018 326 362 1022 821 101 191 557 816 851 17 515 820 146 
+partFinalize 6
+258 575 2 101 7 97 
+partRedoDirectEdit: 2
+258 288 
+partUndoDirectEdit: 4
+258 619 288 820 
+frameRectangle 6
+258 81 1209 288 53 1025 
+reverseWith: 2
+258 81 
+superWindow 4
+258 81 288 535 
+bitmap 8
+258 144 598 1023 853 529 811 1307 
+partEditDirect 12
+258 81 859 854 1023 1021 853 822 14 811 810 93 
+frameRelativeRectangle 3
+258 81 288 
+visibleExtent 2
+258 290 
+helpInfoPacked 2
+258 70 
+copyToClipboard 2
+258 853 
+button1DoubleClick: 10
+258 288 373 598 1205 840 345 831 317 299 
+frameWithLabel: 3
+258 81 1009 
+mainObject 3
+258 70 14 
+partFrame 3
+258 81 288 
+containsPoint: 6
+258 81 69 323 67 25 
+partMirrorCopyReal: 37
+258 371 252 833 807 619 868 132 76 288 1329 2 583 854 1202 1023 845 164 586 33 289 605 537 1193 809 19 822 1192 820 343 14 811 1190 97 93 1191 1002 
+partCodeGeneratorExpression: 48
+258 252 81 619 77 615 132 76 62 805 859 1033 53 1027 125 854 346 1025 848 1202 1021 491 853 1019 37 164 156 541 136 502 809 1008 126 1026 822 820 14 113 811 492 1190 8 90 97 93 92 91 268 
+soleObject 2
+258 81 
+showLabel 2
+258 81 
+showLabel: 2
+258 81 
+connection 2
+258 81 
+displayLabel: 2
+258 81 
+displayWith: 6
+258 81 233 2 31 145 
+isShrunk 2
+258 53 
+connectionPrivate 2
+258 81 
+transparent 2
+258 796 
+visibleFrame 2
+258 81 
+button1Down: 18
+258 81 288 598 1205 1033 840 854 345 845 831 1201 317 1193 1010 299 290 808 
+upgradeSelectorFrom:to: 2
+371 132 
+realSelector: 2
+371 577 
+changeDestinationProperties: 3
+371 132 323 
+executionMessageClass 2
+371 132 
+usesSelectorIn: 2
+371 132 
+partAsExecutableAction 5
+371 132 575 372 133 
+upgradeSelectorInfo: 2
+371 132 
+fireSelfWith: 2
+371 132 
+debugLinkClass 2
+371 132 
+runtimeCloneSkeleton 2
+371 132 
+saveSelection 3
+622 613 595 
+listWidthDlg: 5
+622 1036 595 849 1012 
+createListItemsIn:startingAt: 2
+622 595 
+getHeaderInfo: 2
+388 387 
+setInstList 4
+497 592 517 498 
+enableInspectItem 3
+497 816 517 
+createView 26
+497 621 866 614 857 612 374 222 1035 1011 365 356 593 595 858 584 512 835 556 528 522 826 1006 801 477 514 
+inspectMenu: 4
+497 608 816 517 
+inspectSelection 5
+497 621 592 816 517 
+openOn: 34
+497 866 857 613 612 608 304 227 222 1035 829 1011 593 595 858 581 1003 512 574 835 564 556 511 522 826 306 14 500 1006 869 801 477 514 970 
+selectInstance: 4
+497 621 614 816 
+instVarList: 3
+497 621 517 
+instance: 7
+497 621 614 608 592 816 517 
+doItResult:error: 3
+497 816 601 
+accept: 9
+497 621 857 592 858 816 556 517 477 
+inspectSelection: 2
+497 816 
+next 4
+255 814 813 815 
+setLimits 5
+255 814 813 815 812 
+object: 7
+253 593 531 33 529 332 1096 
+evaluate 12
+253 247 132 575 2 50 47 843 157 576 142 115 
+evaluateWithArguments: 13
+253 247 132 575 372 2 577 843 157 576 142 133 115 
+defaultDescriptionString 4
+386 245 244 479 
+sourceCode 2
+82 50 
+sourcePosition 2
+82 1001 
+errorMessage 3
+82 50 1190 
+retry 3
+82 244 28 
+recompileWith: 2
+82 1002 
+partEvents 42
+252 619 1209 241 615 838 304 821 2 859 1033 198 854 346 852 1025 848 1202 1023 1198 853 1196 164 33 289 156 541 502 809 1026 822 123 14 501 492 810 1190 90 93 92 91 268 
+partTypeSimpleName 62
+252 619 1209 241 1285 615 503 217 2 805 859 1033 198 197 1204 1203 1027 854 346 852 1025 848 1202 1023 1198 1287 1021 853 1019 1196 1330 164 1286 156 541 535 136 502 527 1193 825 809 1008 1026 822 1192 123 820 507 14 504 113 811 492 810 1190 806 93 92 91 1191 268 
+interval: 2
+252 76 
+partMessages 74
+252 619 855 1209 241 1285 103 480 611 288 1040 304 153 223 67 217 235 821 2 859 206 1033 603 198 197 814 856 184 854 852 1025 848 1202 1023 1198 481 1021 853 1019 40 1196 164 33 554 605 199 156 136 502 553 1008 19 1026 822 123 820 343 14 113 501 9 811 810 1190 90 276 97 93 92 91 1191 267 311 509 
+partProperties 45
+252 619 1209 1329 821 2 805 859 1033 1027 854 346 852 1025 848 1202 1023 1198 1021 491 853 1019 1196 164 156 136 502 1193 1008 1026 822 1192 820 507 14 504 113 811 810 1190 90 93 92 91 268 
+bitXor: 3
+873 872 604 
+bitAnd: 3
+873 872 604 
+sign 3
+873 872 311 
+\\ 5
+873 872 604 9 311 
+bitOr: 3
+873 872 604 
+negated 7
+873 872 603 333 312 9 311 
+negative 5
+873 872 603 312 311 
+positive 5
+873 872 603 312 311 
+reduce 4
+873 872 871 604 
+strictlyPositive 5
+873 872 603 312 311 
+abs 6
+873 872 603 312 9 311 
+asUnsigned 3
+873 872 603 
+text 4
+81 1208 491 775 
+isPARTSTextIcon 2
+81 2 
+display 26
+81 619 233 288 373 598 139 323 235 821 60 588 840 1027 854 345 557 845 841 317 1010 820 299 290 811 810 
+partDeselect 3
+81 288 1009 
+computeExtent 3
+81 139 101 
+rectangle 14
+81 288 144 139 69 323 101 165 33 31 25 317 14 90 
+displayAt: 2
+81 2 
+updateRectangle 7
+81 288 373 598 345 845 317 
+pen 5
+81 288 96 586 97 
+spacing 3
+81 565 535 
+text: 6
+81 857 1208 491 556 477 
+shapes 3
+169 129 128 
+file 3
+169 867 814 
+fileName 39
+169 855 870 802 304 70 829 602 1031 1030 1003 1014 574 40 109 564 1015 830 126 306 822 506 14 501 500 116 1004 93 804 992 977 965 1152 957 952 949 1138 938 888 
+metaInfo 3
+169 137 116 
+eventTableForEdit 16
+169 558 94 304 227 66 2 137 53 360 289 14 128 7 90 534 
+releaseEventTable 16
+169 558 94 304 227 66 2 137 53 360 289 14 128 7 90 534 
+integralSource 2
+169 224 
+formatVersion 4
+169 117 116 706 
+formatVersion: 2
+169 170 
+version 10
+169 248 77 606 177 41 122 14 455 713 
+version: 5
+169 248 77 122 14 
+objects 4
+169 45 128 487 
+eventTable 16
+169 558 94 304 227 66 2 137 53 360 289 14 128 7 90 534 
+file: 4
+169 137 138 509 
+objects: 2
+169 487 
+prevMethods 2
+169 234 
+fileName: 8
+169 64 177 40 109 126 116 91 
+className: 3
+251 63 22 
+menuName: 2
+251 145 
+style 10
+251 249 130 288 207 349 491 17 100 485 
+hInstance 2
+251 41 
+style: 12
+251 249 615 130 288 207 491 541 582 17 146 492 
+menuName 2
+251 145 
+className 2
+251 63 
+atKey:put:for: 3
+1041 1038 1206 
+lookUpValue:for:ifAbsent: 3
+1041 1038 1206 
+privateAtKey:put:for: 3
+1041 1038 1206 
+lookUpValue:for:ifAbsentPut: 3
+1041 1038 1206 
+removeKey:for:ifAbsent: 3
+1041 1038 1206 
+lookUpValue:for: 3
+1041 1038 1206 
+privateAtSlot:putKey:element: 2
+1041 1206 
+keysAndValuesDo: 5
+1041 1038 1206 862 605 
+loadFactorExceeded: 3
+1041 1038 1206 
+count 2
+1041 1206 
+lookUpKey:for: 3
+1041 1038 1206 
+privateAtKey:putValue:for: 2
+1041 1206 
+elementsDo: 3
+1041 1038 1206 
+copyFrom:for: 2
+1041 1206 
+wmSetcursor:with: 3
+833 288 845 
+accel:afBits: 2
+833 288 
+closeView 6
+833 865 1027 557 837 834 
+partDisableWorkbenchDragDrop 6
+833 619 288 2 809 14 
+osOwner: 2
+833 837 
+frameWindowClass 4
+833 1205 1244 1346 
+initSize: 7
+833 619 557 289 844 809 1026 
+partEnableWorkbenchDragDrop 9
+833 619 288 2 845 565 535 809 14 
+showRestoredWindow 3
+833 220 557 
+getSelection 4
+807 827 1032 808 
+itemHeight 2
+807 127 
+getValue 7
+807 838 827 1199 586 289 1194 
+dragSourceCutDefault: 8
+807 288 345 1032 1201 832 299 808 
+partDirectEditTextIsMultiLine 3
+807 288 1202 
+setSelection 4
+807 827 1032 808 
+measureControl: 3
+807 558 288 
+itemIndexFromPoint: 3
+807 299 808 
+listFont: 3
+807 288 299 
+printSelector 2
+807 299 
+printSelector: 2
+807 299 
+deselect 3
+807 299 97 
+drawItem: 5
+807 558 288 1022 844 
+dragTargetDrawSeparatorEmphasis: 4
+807 345 1201 299 
+notifyDoubleClicked: 2
+807 851 
+setInitialContents 2
+807 1024 
+valueIndex: 2
+807 299 
+drawHighlight: 4
+807 558 288 1022 
+list 3
+807 362 299 
+dragTargetEraseSeparatorEmphasis 4
+807 345 1201 299 
+defaultDrawItem: 3
+807 288 808 
+bitmaps 2
+807 845 
+bitmaps: 2
+807 845 
+sort 2
+807 1024 
+itemSize: 2
+807 288 
+partEditContents:properties: 6
+807 2 854 1202 822 93 
+valueIndex 2
+807 299 
+stringForItem: 2
+807 299 
+indexOf: 6
+807 480 254 25 299 808 
+disableNoScroll 2
+807 1024 
+dragTargetEraseItemEmphasis 2
+807 299 
+button1Move: 13
+807 288 598 1009 599 1033 840 854 345 832 317 299 808 
+partContents 3
+807 2 854 
+keyboardInput: 16
+807 288 598 1009 827 1016 854 345 586 289 844 1201 317 1193 851 299 
+value 29
+807 72 827 272 352 350 587 50 191 854 345 1020 1198 1208 42 1021 1196 195 1032 157 357 502 1007 1194 299 113 104 1190 1191 
+value: 21
+807 827 86 203 101 351 587 854 345 1020 1208 42 195 37 1032 357 1007 1194 115 104 722 
+deleteIndex: 3
+807 299 808 
+characterTyped 2
+807 299 
+deleteAllMessage 2
+807 1024 
+windowClass 16
+807 288 838 373 1018 1024 598 827 587 840 557 851 898 970 1139 971 
+partDefaultExtent 16
+807 619 859 1027 854 1202 1019 586 289 809 1008 1026 851 1194 14 811 
+selectedIndex 2
+807 299 
+ownerDrawFixed 2
+807 808 
+isIndexInList: 3
+807 299 808 
+triggerChanged 10
+807 827 587 854 345 1208 1032 1200 299 1191 
+restore 5
+807 345 557 1201 299 
+selectedItem 9
+807 829 602 345 831 601 1200 299 808 
+isOkToChange 4
+807 289 844 299 
+characterInput: 9
+807 288 1205 844 317 319 1026 851 299 
+deleteItem: 5
+807 269 299 808 534 
+scrollVerticalCharacters: 3
+807 289 1201 
+setValue: 22
+807 827 587 854 345 1020 1208 1021 1032 357 502 527 1007 825 822 1194 507 299 504 1190 806 1191 
+itemHeight: 3
+807 127 808 
+selectionMessage 2
+807 1024 
+lineAt: 5
+807 345 44 1201 299 
+drawFocus: 4
+807 558 288 1022 
+partSetContents: 4
+807 854 1202 822 
+dragTargetDropDefault: 7
+807 288 345 1032 1201 299 808 
+noIntegralHeight 2
+807 1024 
+itemSize 2
+807 288 
+font: 10
+807 288 595 1202 552 164 586 289 317 808 
+selectIndex: 3
+807 1032 299 
+setValueIndex: 2
+807 299 
+lineToRect: 2
+807 299 
+insertItem:at: 3
+807 299 808 
+dragSourceNeedsObjectDefault: 8
+807 288 345 1032 1201 832 299 808 
+wmMousemove:with: 3
+807 288 1010 
+defaultStyle 40
+807 619 130 288 373 1018 1024 1009 519 827 599 1022 821 818 1195 587 840 1027 854 1020 1202 1199 557 1208 1021 845 853 1032 839 289 1197 834 832 1007 520 809 851 1200 1194 299 
+commitSelection 7
+807 1209 1033 1025 848 844 299 
+list: 4
+807 362 595 185 
+insertItem: 2
+807 299 
+dragSourceNeedsObject: 7
+807 288 345 1032 1201 299 808 
+selection 11
+807 827 362 345 1032 289 844 526 1194 299 808 
+selection: 9
+807 362 348 845 1032 289 1197 1194 299 
+dragTargetDrawItemEmphasis: 2
+807 299 
+restoreWithRefresh: 2
+807 299 
+selectItem: 2
+807 299 
+setList: 3
+807 362 299 
+clearSelection 5
+807 827 345 1032 299 
+deleteMessage 4
+807 1024 829 830 
+insertMessage 2
+807 1024 
+defaultMeasureControl: 2
+807 288 
+deleteAll 6
+807 269 1208 1200 299 1190 
+isIndexSelected: 4
+807 1032 299 808 
+selectMessage 3
+807 1024 1032 
+restoreSelected: 2
+807 299 
+restoreSelected 2
+807 299 
+color 4
+249 74 323 207 
+color: 3
+249 207 581 
+partDirectEditFrameRectangle 7
+619 288 821 1026 851 1194 820 
+isPARTSMenuComponent 4
+619 2 859 809 
+font 12
+619 521 288 139 1205 222 595 101 552 164 289 470 
+isVisible 2
+619 288 
+partDoesResizeToContents 4
+619 288 1008 851 
+setFocus 4
+619 1209 288 1197 
+partFileInUpgradeLoadedOS2: 2
+619 809 
+partPrintColorAndFontPropertiesOn:margin: 10
+619 288 859 854 852 1023 1021 853 809 822 
+partSize 3
+619 1014 809 
+wmErasebkgnd:with: 11
+619 288 598 859 557 845 586 289 809 822 820 
+buildWindow: 13
+619 859 269 818 565 586 289 535 520 1026 822 808 534 
+updateSliders 10
+619 288 373 519 821 840 831 586 289 809 
+partCanHaveParent: 4
+619 2 859 809 
+partApplicableStylePrefixes 7
+619 859 852 848 1202 811 1190 
+frameStyle 3
+619 854 809 
+= 35
+855 248 871 103 480 1040 575 223 67 604 204 2 206 856 286 125 184 274 42 195 34 333 155 576 135 312 524 119 9 389 104 276 1001 509 265 
+asTime 3
+855 186 158 
+replaceBytesFrom:to:with:startingAt: 8
+855 1040 204 856 1039 545 312 524 
+replaceFrom:to:withObject: 6
+855 480 1040 856 1039 825 
+asByteArray 2
+855 1039 
+asExternalLong 3
+855 545 523 
+containsDBCharacter 3
+855 1040 1039 
+asFileSystemPath 5
+855 285 286 274 34 
+edit 2
+855 262 
+asString 15
+855 232 1040 166 2 52 50 856 286 125 184 167 545 502 287 
+asExternalAddress 6
+855 204 603 545 524 523 
+fileExtension 2
+855 706 
+isString 2
+855 2 
+copyToExternalMemory 2
+855 545 
+storeOn: 14
+855 1040 153 2 842 856 184 605 199 135 104 544 311 3 
+partHint 8
+855 132 1205 2 502 822 14 93 
+basicAt:put: 2
+855 2 
+replace:with: 6
+855 1040 856 1039 545 524 
+setFromReference: 2
+855 507 
+asDate 3
+855 186 158 
+asSymbol 4
+855 1040 856 1039 
+size 18
+855 480 2 580 254 45 481 1039 154 25 502 88 343 128 544 7 276 509 
+asAsciiZ 2
+855 1039 
+asExternalGlobalAddress 6
+855 204 603 545 525 523 
+asStream 2
+855 254 
+at:put: 23
+855 239 611 1040 606 604 2 1028 856 580 481 109 862 1039 605 154 25 502 825 524 507 343 806 
+asLowerCase 2
+855 184 
+asLowercase 2
+855 184 
+asUpperCase 2
+855 184 
+asUppercase 2
+855 184 
+basicAt: 2
+855 2 
+outputToPrinter 3
+855 190 97 
+asFloat 4
+855 603 333 312 
+asInteger 10
+855 204 603 184 155 135 570 524 311 523 
+at: 18
+855 239 871 604 2 580 481 109 1039 605 154 25 502 825 524 343 7 806 
+replaceFrom:to:withAddress:startingAt: 2
+855 545 
+asFileSystemLocator 4
+855 285 274 34 
+asExternalHandle 3
+855 204 545 
+replaceControlChars 3
+855 1040 856 
+asCompactString 4
+855 1040 856 1039 
+asWindowHandle 2
+855 545 
+asMixedString 3
+855 856 1039 
+asNormalizedString 3
+855 856 1039 
+upTo: 3
+855 254 815 
+asNormalizedString: 3
+855 856 1039 
+asExistingSymbolOrNil 4
+855 1040 856 1039 
+replaceFrom:to:with:startingAt: 11
+855 871 480 1040 204 856 1039 545 825 312 524 
+asExternalString 3
+855 856 1039 
+asPARTSDirectory 4
+285 286 510 509 
+asDirectory 3
+285 49 286 
+asFile 2
+285 286 
+entityName 3
+285 73 286 
+isNetworkPath 2
+285 287 
+resolve 4
+285 286 42 195 
+cancel: 6
+385 536 374 365 335 310 
+initWindowSize 36
+385 866 558 536 857 612 374 227 222 369 1035 1011 365 594 356 593 595 858 584 850 557 816 835 511 335 147 528 522 826 309 310 518 1006 801 477 514 
+defaultDialogFont 6
+385 536 374 365 335 310 
+undeclaredAccess: 5
+384 329 188 281 296 
+undeclaredAssignment: 6
+384 329 188 281 296 282 
+checkDefineGlobal: 3
+384 329 296 
+leftRelativeTo: 2
+307 308 
+rightRelativeTo: 2
+307 308 
+bottomRightRatio: 2
+307 917 
+topLeftRatio: 2
+307 917 
+topRelativeTo: 2
+307 308 
+bottomRelativeTo: 2
+307 308 
+relativeTo: 7
+307 67 86 286 181 37 87 
+partPropertySetStyle: 7
+1209 288 1027 1021 845 1008 1026 
+entryFieldClass 2
+1209 1208 
+close 44
+1209 558 802 291 130 288 598 865 224 137 205 818 840 814 360 345 1020 1023 254 557 1208 1021 277 845 816 853 831 289 844 537 535 141 570 327 309 1026 851 16 299 146 501 811 276 534 
+partSetValueMessage 6
+1209 1033 1025 848 853 289 
+recreateWindow 5
+1209 288 1027 1202 1208 
+partNewValueEvent 6
+1209 1033 1025 848 1196 289 
+setEntryField 2
+1209 1208 
+partMirrorCopyPropertiesToExclude 5
+1209 288 1024 845 1026 
+wmLbuttondblclk:with: 4
+1209 288 1201 299 
+hasIconProperty 3
+870 1014 869 
+partIcon 3
+870 1014 869 
+applyPartName: 2
+870 869 
+closedAction: 3
+868 583 537 
+saveFile: 4
+868 867 268 514 
+openFile: 3
+868 867 268 
+isResidueOrNil 3
+80 2 3 
+isResidue 2
+80 2 
+listSelect: 3
+866 826 801 
+clickedRemove 3
+866 203 801 
+listContents: 4
+866 203 826 801 
+clickedRemoveAll 2
+866 801 
+ok 22
+866 802 521 612 1036 1035 356 593 595 850 835 803 528 1013 522 826 1012 582 292 1006 869 801 
+clickedAdd 3
+866 203 801 
+asActionSequence 6
+246 132 575 182 843 114 
+maximizingWindow 2
+558 288 
+minimizingWindow 4
+558 288 865 834 
+addSubpane: 8
+558 288 1009 519 821 845 822 146 
+triggerOpenedEvent 3
+558 557 1026 
+defaultPushButton 2
+558 851 
+deferredResizeRectangleFor: 2
+558 1026 
+initMenu 8
+558 288 360 345 215 1201 601 146 
+restoringWindow 4
+558 288 865 834 
+button2Up: 11
+558 288 598 1009 1205 1016 588 586 289 844 832 
+aboutToSaveImage 25
+558 288 598 865 840 557 171 39 586 289 844 1201 327 1200 97 795 898 914 728 430 263 675 937 683 632 
+framingBlock: 3
+558 289 1190 
+framingRatio: 2
+558 289 
+buildMenuBar 4
+558 1027 215 557 
+resize:deferInfo: 2
+558 289 
+canTab 10
+558 288 838 1205 821 588 565 538 535 822 
+eventTableCreate 2
+558 2 
+wmQueryendsession:with: 2
+558 288 
+wmHelp:with: 3
+558 291 288 
+handlersAttribute 2
+558 289 
+handlersAttribute: 2
+558 289 
+helpRequest 3
+558 557 289 
+initialSize: 6
+558 818 481 88 343 265 
+tabScope 4
+558 288 1009 519 
+activate 9
+558 288 865 345 1202 557 845 1201 1191 
+okToClose 8
+558 536 227 511 537 147 601 830 
+framingBlock 7
+558 288 101 191 185 557 289 
+sizeChanged: 4
+558 288 865 557 
+saveAs 3
+558 584 514 
+wmTimer:with: 7
+558 288 354 345 289 327 299 
+deactivate 7
+558 288 598 1009 845 289 317 
+isOkToClose 2
+558 1026 
+isTopPane 2
+558 2 
+isDialog 2
+558 818 
+entity: 2
+383 539 
+entity 3
+383 539 73 
+helpDirectoryName 2
+79 754 
+fullHelpPathName: 2
+79 754 
+resourceFileName 3
+79 1042 683 
+windowPolicyClass 4
+79 475 146 970 
+textPaneClass 4
+79 222 518 514 
+exit 10
+382 606 795 992 964 728 753 699 632 875 
+realSize 8
+381 359 336 300 330 320 313 301 
+flags 16
+381 379 359 214 867 581 168 338 336 300 330 526 320 313 301 496 
+flags: 9
+381 379 867 168 338 336 300 313 496 
+writeContentsOn:for: 6
+381 359 336 300 320 313 
+sectionSize 5
+381 338 336 300 320 
+cancelButton 2
+802 222 
+cancel 9
+802 291 521 356 593 595 345 1201 292 
+dialogWindow 4
+802 101 483 7 
+initializeParts 6
+802 304 305 601 501 499 
+fileAlignment 4
+380 283 300 910 
+addSection: 2
+380 379 
+sizeOfOptionalHeader 2
+380 379 
+time 2
+243 389 
+scanCode 2
+243 78 
+isAltKeyDown 2
+78 39 
+isShiftKeyDown 2
+78 39 
+isControlKeyDown 2
+78 39 
+trigger 2
+241 132 
+trigger: 2
+241 132 
+ctlType 2
+240 127 
+itemId 2
+240 127 
+ctlId 2
+240 127 
+itemData 2
+240 127 
+privateAt:put: 3
+239 606 1028 
+inspectorFields 36
+239 274 88 797 789 787 786 781 778 769 768 986 767 766 758 756 752 745 732 724 884 705 985 702 695 1122 689 687 680 625 664 1091 659 635 626 1090 
+sizeInBytes 31
+239 97 797 789 787 786 781 778 769 768 767 766 758 756 752 745 732 724 705 985 702 695 689 687 680 625 664 659 635 626 1090 
+definition 2
+239 1001 
+doesNotUnderstand: 4
+239 2 1 317 
+matchBackward:index:each: 2
+238 237 
+reset 6
+238 1009 1205 235 237 254 
+match: 3
+238 237 30 
+build: 2
+238 237 
+match:index:each: 2
+238 237 
+messageText 7
+616 610 600 597 244 543 332 
+change 2
+236 235 
+hint: 2
+77 145 
+manufacturer 2
+77 14 
+propertyAt:ifAbsent: 4
+77 288 33 7 
+icon: 10
+77 557 33 823 14 146 90 490 1307 1308 
+userPropertyNamed: 2
+77 14 
+fileDescriptor: 7
+77 148 109 159 822 14 93 
+title: 8
+77 75 269 867 595 491 582 14 
+reuseMode 2
+77 14 
+reuseMode: 2
+77 14 
+properties: 2
+77 288 
+manufacturer: 2
+77 14 
+propertyAt: 5
+77 288 220 33 7 
+orderedChildren 4
+77 288 1026 14 
+orderedChildren: 4
+77 288 1026 14 
+fileDescriptor 6
+77 148 109 822 14 93 
+icon 10
+77 288 557 33 823 14 90 93 1307 683 
+hint 3
+77 70 145 
+propertyAt:put: 4
+77 288 220 33 
++ 9
+871 604 184 580 333 312 9 311 523 
+isLargeInteger 2
+871 2 
+byteSize 6
+871 604 34 276 742 1137 
+~= 3
+871 604 2 
+/ 6
+871 603 333 312 9 311 
+// 6
+871 604 333 312 9 311 
+& 4
+871 221 604 200 
+bitShift: 3
+871 604 603 
+deepCopy 14
+871 611 1040 174 153 2 856 184 1039 605 199 544 311 3 
+| 4
+871 221 604 200 
+absAt: 2
+871 604 
+- 9
+871 604 184 580 333 312 9 311 523 
+* 6
+871 604 333 312 9 311 
+absoluteLessThan: 3
+871 604 603 
+bitAt: 2
+871 604 
+quo: 3
+871 604 311 
+isValidNumberOfCharacters: 6
+1285 1329 1204 1193 1192 1190 
+defaultTextLimit 2
+1285 1190 
+partPropertyMaxSizeLabel 2
+1285 1190 
+defaultEmptyValue 3
+1285 1192 1190 
+isValidString: 6
+1285 1329 1286 1193 1192 1191 
+partPropertyAddEmptyValueItem: 2
+1285 1190 
+add: 17
+1285 611 153 606 177 1028 344 481 39 862 605 154 121 343 128 544 806 
+isValidFormat: 6
+1285 1329 1286 1193 1192 1190 
+fileOutOn: 7
+234 345 262 44 175 1201 21 
+abortUnbind 2
+234 138 
+methods 2
+234 174 
+unBind 2
+234 138 
+processInput 3
+291 818 309 
+helpManager 4
+291 288 818 289 
+isDialogWindow 3
+291 2 818 
+contextForItem: 7
+291 269 818 840 557 289 534 
+paneAt: 4
+291 305 192 146 
+statusPane 6
+291 288 818 557 31 146 
+childAtId: 2
+291 288 
+wmChar:with: 5
+291 288 1205 827 1191 
+wmCommand:with: 3
+291 288 837 
+itemIds 2
+291 292 
+wmInitdialog:with: 3
+291 288 818 
+contextForPopup: 6
+291 269 818 557 289 534 
+partPropertyAddStyleItems: 6
+615 491 541 1026 492 1190 
+dialogAnswer: 6
+615 346 541 492 267 268 
+buttonValues 4
+615 491 541 492 
+getGraphicsTool 7
+233 288 598 599 831 162 535 
+displayIn:with: 2
+233 97 
+drawUsing: 4
+233 96 162 97 
+graphicsToolClass 6
+233 288 598 1205 831 162 
+isStoredPicture 2
+233 2 
+fromFile: 12
+233 144 512 511 795 771 681 758 448 724 403 632 
+setStatusText: 2
+130 588 
+key 4
+130 150 104 687 
+key: 4
+130 150 104 641 
+addStyle: 3
+130 288 845 
+removeStyle: 2
+130 288 
+id: 7
+130 288 1040 226 289 17 95 
+tab 4
+130 141 812 514 
+tab: 3
+130 131 812 
+id 8
+130 288 226 557 289 1026 17 95 
+statusText: 2
+130 227 
+window 2
+130 269 
+window: 3
+130 179 269 
+getMnemonicHandler: 4
+130 288 844 851 
+buildWindow 4
+130 818 557 1026 
+updateWindow 2
+130 288 
+max: 2
+103 9 
+min: 2
+103 9 
+between:and: 3
+103 184 9 
+partHasOtherEvents 4
+132 2 502 14 
+debugger 6
+132 372 863 133 110 482 
+fileInActivate: 19
+132 2 53 49 182 42 845 33 19 822 560 14 13 811 276 97 1001 482 1002 
+resultAction: 2
+132 576 
+changeSourceProperties: 2
+132 323 
+selector: 10
+132 144 575 269 858 556 576 17 1001 477 
+addLinksAttachedTo:to: 3
+132 33 24 
+runtimeCloneFor: 2
+132 33 
+removeLink: 3
+132 227 33 
+dependentLinks 2
+132 323 
+sourceObject 2
+132 1001 
+receiver: 3
+132 575 47 
+withAllDependents 2
+132 323 
+withAllDependents: 2
+132 323 
+arguments: 3
+132 575 576 
+arguments 2
+132 575 
+object 7
+132 70 593 531 33 529 332 
+collectArguments: 3
+132 575 576 
+partPrintOn:margin: 3
+132 2 33 
+sourceObject: 2
+132 1001 
+application 7
+132 304 227 222 33 822 93 
+receiver 5
+132 575 182 47 114 
+source: 6
+132 52 487 1258 1083 1054 
+isPARTSLink 2
+132 2 
+source 5
+132 52 129 1001 487 
+delete 3
+232 317 1193 
+prompt:default: 3
+536 346 1103 
+cancelAnswer 2
+536 537 
+title:prompt:default: 2
+536 1103 
+ok: 4
+536 369 594 310 
+compilerError:at:in:for: 8
+536 345 107 1201 601 828 310 642 
+parameters 3
+76 72 113 
+partCodeGenerated: 5
+76 859 854 1026 14 
+lowReading: 2
+76 854 
+parameters: 2
+76 72 
+highReading: 2
+76 854 
+method: 4
+857 182 47 816 
+removeSelector 3
+857 556 477 
+dragDropSourcePanes 6
+857 475 816 556 477 514 
+selectedMethodSelector 5
+857 816 556 476 477 
+selectedClass 4
+857 556 476 477 
+dragDropTargetPanes 6
+857 475 816 556 477 514 
+selectedMethod 5
+857 816 556 476 477 
+methodListCut: 4
+857 816 556 477 
+topPaneClass 10
+521 227 369 511 335 537 147 309 515 146 
+mouseButtonDrag 2
+521 40 
+doubleClickedList 2
+613 595 
+listPaneClass 7
+613 1036 1011 596 595 1013 1012 
+do: 10
+480 153 69 254 481 862 1039 605 154 343 
+atAll:put: 2
+480 825 
+isIndexedCollection 2
+480 2 
+reversed 3
+480 580 544 
+copyFrom:to: 7
+480 611 814 254 481 524 815 
+includes: 7
+480 153 481 605 154 343 128 
+grow 5
+480 611 481 343 812 
+at:ifAbsent: 4
+480 481 109 605 
+indexOf:ifAbsent: 2
+480 862 
+replaceFrom:to:with: 3
+480 481 825 
+atAllPut: 2
+480 825 
+copyReplaceFrom:to:with: 2
+480 544 
+findFirst: 2
+480 509 
+shallowCopy 17
+480 611 1040 174 153 2 1028 856 184 580 605 199 544 1001 1037 311 3 
+setTabStop 2
+612 1200 
+startGroup 2
+612 289 
+initializeWindow 5
+612 1036 1035 1011 1012 
+partEditor 12
+75 288 139 1009 323 1205 2 1031 33 483 14 869 
+cancelChanges 5
+75 101 483 7 869 
+add:after: 2
+611 481 
+addAll: 4
+611 153 605 806 
+asOrderedCollection 3
+611 153 481 
+addAllFirst: 2
+611 481 
+addLast: 2
+611 481 
+add:before: 2
+611 481 
+asSortedCollection 2
+611 153 
+addFirst: 2
+611 481 
+select: 7
+611 153 227 212 185 605 544 
+sortBlock 2
+611 718 
+sortBlock: 2
+611 1178 
+value:value: 3
+611 575 142 
+addAllLast: 2
+611 481 
+is:greaterThanOrEqualTo: 2
+611 198 
+asRectangle 3
+74 67 152 
+bottom 4
+74 67 101 37 
+left 4
+74 67 101 37 
+left: 6
+74 67 37 9 311 463 
+topLeft: 3
+74 67 463 
+borderWidth: 2
+74 463 
+right 4
+74 67 101 37 
+right: 6
+74 67 37 9 311 463 
+top 5
+74 67 60 101 37 
+bottom: 4
+74 67 37 463 
+top: 4
+74 67 37 463 
+bottomRight: 3
+74 67 463 
+memoryHandle 2
+609 525 
+memorySize: 2
+609 525 
+free 3
+609 525 265 
+memorySize 2
+609 525 
+partApplication 2
+288 2 
+sendInputEvent:with: 2
+288 146 
+isDragButton: 3
+288 808 1054 
+doDragDropAt: 9
+288 1009 847 488 516 489 808 490 487 
+partSetDirectEditAttribute: 3
+288 1193 1191 
+popup 3
+288 269 289 
+disabled 3
+288 1022 101 
+dragTargetNoScrollRectangle 2
+288 808 
+owner 6
+288 144 269 109 300 146 
+mouseMove: 4
+288 598 1205 289 
+defaultFont 23
+288 1218 1350 898 1238 972 1320 1265 1263 1312 955 1259 1343 1310 1339 1306 1337 427 1294 1295 1262 909 1331 
+partWrapper 6
+288 2 822 14 90 93 
+defaultBackColor 8
+288 290 1186 898 1270 1229 1314 1220 
+button2Move: 9
+288 598 1009 599 586 289 832 317 808 
+defaultForeColor 6
+288 1186 898 1270 1155 1220 
+destroyCaret 3
+288 60 342 
+partFileInUpgradeLoaded: 5
+288 557 289 1026 1190 
+getStyle 2
+288 1205 
+clearMouseCapture 2
+288 66 
+wmSetfocus:with: 4
+288 345 841 834 
+fontAttribute: 2
+288 289 
+wmSize:with: 4
+288 598 818 557 
+partDirectEditTextIsCentered 5
+288 1008 851 1194 1190 
+foreColor: 5
+288 552 551 553 146 
+partDragTargetDrop: 2
+288 832 
+wmWininichange:with: 2
+288 354 
+partDragTargetOver: 4
+288 859 565 535 
+wmSyschar:with: 2
+288 289 
+partFrameRectangleFrom: 4
+288 2 565 535 
+noRedraw: 2
+288 220 
+partFileInUpgradeLoadedWindows: 4
+288 586 289 1026 
+wmRbuttondown:with: 3
+288 1205 1010 
+wmLbuttondown:with: 4
+288 1205 1201 1010 
+partDrawTargetEmphasis: 5
+288 859 565 535 832 
+controlColor: 4
+288 519 845 586 
+realInvalidateRect: 2
+288 1019 
+moveCaret: 2
+288 60 
+buttonFont: 2
+288 851 
+wmCtlcolorlistbox:with: 2
+288 1024 
+wmCtlcoloredit:with: 2
+288 1024 
+givesUpFocusWithMnemonic 4
+288 557 844 851 
+destroy 7
+288 865 220 269 289 551 534 
+colorChange 7
+288 144 373 840 845 586 289 
+systemMenuHandle 2
+288 557 
+wmHScroll:with: 5
+288 598 586 289 299 
+wmVScroll:with: 4
+288 598 586 289 
+hasFocus 2
+288 1208 
+button2DoubleClick: 2
+288 598 
+partShrunkenIconFile 5
+288 859 1027 1026 822 
+partRealWindowUnderPoint 2
+288 520 
+pen: 3
+288 96 317 
+partDirectEditValueIsValid: 2
+288 851 
+sendInputEvent: 2
+288 146 
+adjustFraming: 3
+288 1205 1026 
+searchForDefaultTextPane 7
+288 865 1205 345 1202 1201 1026 
+nextTabStop: 3
+288 519 588 
+wmKeydown:with: 4
+288 1201 1193 1010 
+partIsEditing 10
+288 865 1009 2 854 1017 33 834 520 14 
+resizeWindow 3
+288 1021 147 
+button2Down: 10
+288 598 1205 831 586 289 317 1010 290 808 
+enableRedraw 2
+288 220 
+partIsSizable 6
+288 1009 2 1021 809 811 
+partDragTargetEnter: 4
+288 859 565 535 
+dragTargetEraseEmphasisDefault: 2
+288 289 
+frameWindow 2
+288 535 
+partMirrorCopyProperties:to: 2
+288 535 
+owner: 11
+288 144 269 867 581 109 300 317 526 146 496 
+disableUpdate 2
+288 220 
+partOnTopWhenSelected 3
+288 1026 822 
+partWrapper: 6
+288 511 822 14 90 93 
+canApplyStyle 5
+288 1027 1202 586 851 
+partEraseTargetEmphasis: 4
+288 859 565 535 
+gettingFocus 9
+288 1016 1022 845 289 1193 851 1194 1191 
+backColor 4
+288 845 551 538 
+addTabInfoFor: 4
+288 1009 588 1026 
+deviceContext 2
+288 96 
+display: 4
+288 323 369 44 
+showWindow 3
+288 220 1026 
+drawBox 2
+288 808 
+altKeyInput:from: 2
+288 844 
+showCaret: 3
+288 60 342 
+ownerDrawPen 2
+288 557 
+stopTimer: 2
+288 937 
+graphicsTool 4
+288 96 162 586 
+applyStyle 2
+288 1194 
+resizeToRectangle: 5
+288 859 1021 820 811 
+removeSubpane: 4
+288 1009 538 1026 
+textFont: 3
+288 345 1201 
+isDragSource 2
+288 831 
+losingFocus 13
+288 827 1016 1022 345 1208 845 289 317 851 1194 1190 1191 
+enableUpdate 2
+288 220 
+create:title:style:rectangle:parent: 2
+288 1027 
+previousTabStop: 3
+288 519 588 
+partIsDragable 3
+288 1009 2 
+partNeedsResizeToContents 4
+288 1008 851 1194 
+rectangle: 9
+288 144 1205 165 33 31 553 317 14 
+partName: 2
+288 2 
+partShrinkWrap 4
+288 865 859 1026 
+currentCursor 3
+288 345 1201 
+defaultCursor 4
+288 1009 1205 345 
+isDragTarget 2
+288 831 
+isHidden 2
+288 276 
+dragSessionClass 3
+288 1009 832 
+partExpand 2
+288 822 
+disableRedraw 2
+288 220 
+resizeWindow: 2
+288 289 
+wmGetdlgcode:with: 2
+288 345 
+partDirectEditErrorMessage 2
+288 851 
+backColor: 4
+288 551 553 146 
+partsEscCharacterHandled: 2
+288 1027 
+partCanHaveChild: 11
+288 865 1009 859 1027 565 289 538 535 1026 822 
+partShrink 2
+288 822 
+partDirectEditTextIsRightJustified 3
+288 1008 1190 
+wmKillfocus:with: 3
+288 345 1190 
+partAddUnder:wrapper: 7
+288 2 289 1026 14 90 267 
+wmMenuselect:with: 2
+288 1026 
+partCanBeNestedChild: 4
+288 2 859 1026 
+partPropertiesIndexOf: 3
+288 491 1026 
+wmClose:with: 2
+288 1026 
+wmSyscommand:with: 4
+288 865 557 1010 
+basicStyle 10
+288 838 1018 598 818 345 557 853 586 289 
+wmNchittest:with: 5
+288 1021 1019 520 1008 
+wmQuerydragicon:with: 2
+288 557 
+hideWindow 3
+288 220 1026 
+mainWindow 7
+288 818 1027 557 538 601 499 
+menuWindow 3
+288 557 146 
+button1DownShift: 5
+288 598 1033 345 832 
+wmCreate:with: 2
+288 557 
+wmRbuttonup:with: 3
+288 832 1010 
+wmLbuttonup:with: 3
+288 832 1010 
+makeActive 3
+288 220 1026 
+partOverlappedWindow: 2
+288 1017 
+wmNclbuttondown:with: 2
+288 1026 
+wmKeyup:with: 2
+288 1010 
+hasStyle: 2
+288 491 
+partDragTargetImport: 4
+288 859 565 535 
+partPrintPropertiesOn:margin: 14
+288 2 211 203 101 279 272 191 185 348 1026 14 102 7 
+defaultDrawHighlight: 2
+288 808 
+unorderedChildren 2
+288 14 
+wmPaint:with: 8
+288 598 1205 818 854 845 586 535 
+partRelativeToParent: 2
+288 1026 
+addPane: 2
+288 146 
+partEditorPane 5
+288 865 1205 1017 834 
+wmGetminmaxinfo:with: 2
+288 557 
+isWindow 5
+288 2 859 1026 822 
+showWindowAtTop 2
+288 220 
+doDragDropAt:button: 2
+288 488 
+drawIndex 2
+288 557 
+button1Up: 10
+288 598 1009 1205 840 345 853 832 317 299 
+partMirrorCopyChildren:to: 2
+288 822 
+disable 10
+288 220 101 279 272 348 289 145 809 851 
+isActive 3
+288 244 1010 
+partHasVisualParts 6
+288 2 859 535 809 822 
+partTargetEmphasisRectangle 2
+288 859 
+partDirectEditInitialValue 3
+288 1193 1191 
+getDC 2
+288 220 
+childrenInBuildOrder 3
+288 1026 14 
+subclassWndProc 2
+288 845 
+partDirectEditValue 2
+288 854 
+foreColor 2
+288 551 
+graphicsTool: 2
+288 96 
+initColors 2
+288 586 
+add:interestIn: 3
+288 557 1026 
+enable 9
+288 220 101 279 272 348 145 809 851 
+windowText 2
+288 671 
+dragTargetDrawEmphasisDefault: 2
+288 289 
+dragTargetDoScroll 2
+288 289 
+partEnableExecution 7
+288 2 859 502 1026 822 93 
+bringToTop 3
+288 1021 1008 
+partDroppedPart:hotSpot:origin: 4
+288 859 565 535 
+sysColors 3
+144 373 840 
+fromBitmap: 3
+144 795 681 
+space 4
+144 31 812 514 
+space: 2
+144 31 
+defaultExtent 2
+144 681 
+extent: 7
+144 314 67 53 9 97 632 
+reserved1 2
+230 143 
+reserved2 2
+230 143 
+initContents: 2
+1040 856 
+replaceBytes:with: 4
+1040 1039 545 524 
+partMirrorCopy: 16
+1040 174 227 1009 323 2 856 190 184 199 147 114 24 19 311 3 
+isDoubleByteSymbol 2
+1040 2 
+basicHash 6
+1040 221 2 603 200 856 
+species 5
+1040 2 856 580 344 
+isSymbol 3
+1040 2 856 
+addStandardRightMenus 3
+179 363 364 
+addApplicationMenus 2
+179 363 
+addMenus 2
+179 180 
+addStandardLeftMenus 3
+179 363 364 
+radix: 2
+608 603 
+partPropertyValidateNewValue: 2
+503 502 
+relayEventsFromValue 2
+503 502 
+partPropertyClass 2
+503 502 
+addFileMenu 2
+363 364 
+tabStop 3
+838 586 289 
+noTabStop 4
+838 586 289 1026 
+subclassRecursively 7
+838 557 1021 1019 586 289 1008 
+isATabStop 5
+838 586 289 1197 822 
+colorTable 2
+376 59 
+colorTable: 2
+376 59 
+ptMaxPosition 2
+229 214 
+directory 6
+73 867 125 274 14 116 
+isFile 3
+73 2 276 
+isDirectory 3
+73 2 509 
+directory:searchHandle:findData: 2
+73 462 
+creationTime 5
+73 274 275 276 509 
+fileSize 2
+73 122 
+fixedSize 2
+373 1022 
+rightJustified 5
+373 317 1007 1200 1294 
+isStatusPane 2
+373 2 
+leftJustified 5
+373 317 1007 1200 1294 
+showHelp: 2
+373 840 
+isGroupBox 2
+1018 2 
+isTransparent 5
+1018 289 1007 1026 1194 
+valueWith: 2
+72 113 
+wildcardChar 2
+72 773 
+parameterNames 2
+72 113 
+valueSample 2
+72 113 
+template 3
+72 476 113 
+open 37
+326 304 598 369 1011 137 818 867 354 584 581 345 557 512 572 845 491 831 289 511 335 528 327 526 310 582 1026 16 14 501 496 276 477 514 445 970 887 
+blue 4
+228 168 135 671 
+blue: 3
+228 168 135 
+red 4
+228 168 135 671 
+red: 3
+228 168 135 
+green 4
+228 168 135 671 
+green: 3
+228 168 135 
+asColor 2
+228 603 
+privateChangeSuperclassTo: 3
+174 262 175 
+compile: 2
+174 105 
+allSubclasses 2
+174 63 
+superclass: 2
+174 63 
+isPointers 2
+174 63 
+implementorsOf: 4
+174 606 33 27 
+methodDictionaries 2
+174 2 
+isFixed 2
+174 292 
+errorNotIndexable 2
+174 153 
+pools 3
+174 108 425 
+referencesToString: 3
+174 606 27 
+allInstVarNames 2
+174 63 
+superclass 2
+174 63 
+sendersOf: 4
+174 606 33 27 
+isVariable 2
+174 63 
+new 75
+174 473 795 657 706 469 468 466 667 669 464 463 898 681 1070 461 633 914 458 457 1296 455 1274 623 671 742 674 714 449 879 638 441 970 722 434 432 1079 1048 1139 1140 430 429 428 427 426 263 699 420 737 1096 691 418 1118 927 931 625 648 1297 922 408 1080 953 403 683 399 665 396 627 1219 1288 1324 921 1049 880 392 
+new: 28
+174 774 1282 1178 1327 1325 461 1171 1274 714 1315 773 1347 1267 434 1048 1326 737 691 414 625 922 953 653 1288 1324 921 392 
+setCompilationOptions: 3
+174 887 1137 
+isBehavior 2
+174 2 
+recompile: 2
+174 63 
+isMessage 2
+575 2 
+receiver:selector:arguments: 3
+575 576 1142 
+perform 2
+575 576 
+resetParts 2
+304 305 
+supportsRecycling 9
+304 1072 914 1318 1317 1290 1168 1066 1215 
+prepareToBeRecycled 3
+304 602 601 
+loadApplication 3
+304 822 93 
+notEmpty 2
+153 62 
+isCollection 2
+153 2 
+removeAll 3
+153 508 605 
+remove: 4
+153 39 886 1076 
+collect: 2
+153 544 
+remove:ifAbsent: 7
+153 481 605 154 343 544 886 
+detect: 2
+153 33 
+asBag 2
+153 154 
+occurrencesOf: 4
+153 605 154 343 
+isEmpty 5
+153 62 286 254 508 
+asArray 3
+153 842 843 
+isDropDownList 3
+1024 2 1208 
+oemConvert 2
+1024 827 
+triggerChangedForSelect 2
+1024 1208 
+dropDownList 2
+1024 1311 
+isSimpleList 2
+1024 1208 
+partDroppedControlRectangle 2
+1024 1025 
+isPublic: 2
+71 460 
+nextToken 2
+71 64 
+readStream 5
+118 224 275 119 276 
+backupCreate: 2
+227 149 
+backupDelete: 2
+227 149 
+editMenu 6
+227 511 601 146 973 974 
+updateBackgroundColor: 2
+227 147 
+editCopy 3
+227 512 511 
+tutorial 2
+227 216 
+fileOpen 2
+227 511 
+toolPane: 2
+227 145 
+editMenuCreate 5
+227 512 511 601 515 
+selectOff: 2
+227 1009 
+fileNew 2
+227 511 
+workbenchWindow 2
+227 33 
+renamedWrapper: 4
+227 829 602 511 
+fileExit 3
+227 512 511 
+findLinksSending:to: 2
+227 24 
+openOn:update: 2
+227 445 
+isDirectEditing: 2
+227 1009 
+windowUnderPoint: 3
+227 1009 898 
+getVisibleRectOf: 2
+227 24 
+help: 4
+227 222 840 147 
+setWindowTitle 3
+227 511 147 
+mouseMovedIn: 2
+227 147 
+lastUpdateTime 3
+227 822 93 
+fileMenu 6
+227 557 146 973 974 1124 
+move:to: 6
+227 1009 859 565 535 884 
+helpMenu 2
+227 215 
+removeLinks: 2
+227 24 
+createHelpManagerFor: 2
+227 147 
+fileCopyFrom:to: 2
+227 446 
+resize:to: 2
+227 1009 
+findWrapper: 4
+227 33 24 14 
+fileSave 2
+227 511 
+gridExtent 2
+227 40 
+fileMenuCreate 4
+227 511 147 515 
+closed 2
+227 816 
+editCut 2
+227 511 
+changesHandled 3
+227 511 147 
+workbenchPane 2
+227 33 
+statusPaneHelp: 2
+227 2 
+defaultCatalogs 2
+227 40 
+undoDelete: 2
+227 323 
+editDelete 2
+227 317 
+aboutToClose: 4
+227 511 147 601 
+fileSaveAs 2
+227 511 
+application: 3
+227 822 93 
+isPARTSEditor 2
+227 2 
+createMenuBarMenus: 6
+227 222 511 601 830 515 
+createViewFor: 2
+227 970 
+statusPane: 2
+227 31 
+editPaste 3
+227 512 511 
+isPARTSCatalogIconConnection 2
+70 2 
+amountToPageUp 3
+598 289 290 
+showBitmap 2
+598 853 
+amountToScrollLeft 2
+598 289 
+updateVerticalSlider 3
+598 586 289 
+bitmapIfAbsent: 2
+598 529 
+charsInRow 2
+598 289 
+totalLength 6
+598 345 44 289 299 290 
+scrollTopCornerTo: 4
+598 345 299 290 
+updateHorizontalSlider 5
+598 586 289 809 290 
+bitmap: 7
+598 1023 853 529 811 1307 1096 
+displayWindow 5
+598 1009 599 854 831 
+erase 2
+598 551 
+update 10
+598 599 345 831 289 1201 1200 1194 299 477 
+scrollTopCorner: 4
+598 345 831 299 
+button1UpShift: 3
+598 1009 1202 
+scrollHorizontal: 8
+598 1009 519 821 345 586 289 299 
+totalWidth 3
+598 345 299 
+amountToScrollUp 3
+598 289 290 
+isGraphPane 2
+598 2 
+charsInColumn 2
+598 289 
+amountToPageLeft 2
+598 289 
+openIn: 4
+865 1027 557 146 
+buildIcon 3
+865 557 1026 
+activeTextPane: 3
+865 557 1026 
+resizeRectangleFor: 3
+865 557 1026 
+activeTextPaneNoSetFocus: 2
+865 557 
+openWindow 6
+865 305 557 309 515 146 
+dataSlotColor: 3
+139 225 140 
+getDisplayPen 2
+139 323 
+computeBorderAndInteriorAnchor 3
+139 225 140 
+dragFinish:delta: 3
+139 225 140 
+linkEditor: 2
+139 323 
+resetDisplayPen: 2
+139 323 
+getLabel 3
+139 225 140 
+editWindow: 3
+139 323 24 
+computeRectangle 5
+139 225 323 140 324 
+extraSideBorderWidth 3
+139 225 140 
+numberOfDataSlots 3
+139 225 140 
+computeLayout 3
+139 323 290 
+type: 8
+226 46 45 42 195 122 112 1001 
+size: 3
+226 151 91 
+type 8
+226 46 45 42 195 122 112 1001 
+partLinkEditor 2
+1009 33 
+resetPenFromTracking 2
+1009 190 
+isPARTSEditorPane 2
+1009 2 
+wmButton1DownAt: 2
+1009 1205 
+wmButton1UpAt: 2
+1009 832 
+wmButton2UpAt: 2
+1009 832 
+tabKeyInput: 5
+1009 345 845 289 1201 
+removeIcon: 2
+1009 831 
+scrollVertical: 7
+1009 519 821 586 289 299 290 
+singleSelectAt: 2
+1009 832 
+setPenForTracking 2
+1009 190 
+updateIcon: 2
+1009 831 
+refresh 2
+1009 831 
+openItemAt: 2
+1009 832 
+dragStart 3
+1009 489 808 
+transferValuesToNewPart: 3
+562 563 561 
+from:to:width: 2
+69 458 
+length 2
+69 214 
+intersects: 4
+69 323 67 25 
+defaultAttachmentSide 2
+225 140 
+saveLocation: 2
+225 140 
+expandLabelsRepaint: 2
+323 368 
+launchSide 2
+323 8 
+removeDependent: 2
+323 2 
+restoreLayout 2
+323 324 
+computeDefaultLayout 2
+323 324 
+displayLaunchPlug: 3
+323 368 325 
+canChangeSourceProperties 2
+323 324 
+labelState 2
+323 368 
+interceptRightClick: 3
+323 368 24 
+numberOfLabels 3
+323 368 325 
+rectLandingPlug 2
+323 368 
+landingSide 2
+323 8 
+launchPlugIsInside 2
+323 325 
+rectLaunchPlug 2
+323 368 
+launchPlugHeight 2
+323 325 
+linkTriggerContaining: 3
+323 368 24 
+launchPlugTip 2
+323 368 
+createArgumentLinkFrom:targetPoint: 2
+323 325 
+computePath 2
+323 368 
+displayLandingPlug: 2
+323 368 
+indexEventLabel 3
+323 368 325 
+menuEditDestCommands:selectors: 2
+323 368 
+dragLaunchPlugFrom:capturePane:eventPrefix: 2
+323 325 
+link: 2
+323 26 
+menuEditSourceCommands:selectors: 3
+323 368 325 
+anchorLinkPath 2
+323 368 
+interceptLafDrag:from:eventPrefix: 2
+323 24 
+launchPlugBase 2
+323 368 
+menu 2
+323 289 
+removeLinkGuts 3
+323 368 325 
+link 2
+323 26 
+saveLayout 2
+323 324 
+indexMessageLabel 3
+323 368 325 
+reinstall: 3
+323 368 325 
+popupMenu 5
+1205 345 1202 289 1201 
+disableWordWrapFlags 2
+1205 1200 
+lafStopEdit 2
+1205 854 
+replaceWithChar: 2
+1205 345 
+pasteSelection 4
+1205 827 345 1208 
+selectAll 4
+1205 827 345 317 
+library: 2
+224 762 
+stream: 3
+224 137 178 
+positionedReadStream: 2
+224 119 
+asSeconds 2
+223 206 
+isDate 2
+223 2 
+timeStamp 2
+379 125 
+sectionAlignment 2
+379 300 
+debugger: 5
+372 863 133 110 482 
+areValuesValidForX:andY: 2
+864 835 
+xItemLabel 3
+864 835 836 
+yItemLabel 3
+864 835 836 
+canArrowInto 3
+519 845 289 
+nextTabStop 2
+519 289 
+childClicked: 2
+519 821 
+previousTabStop 2
+519 289 
+childClicked 2
+519 821 
+extentForButton: 4
+222 356 595 849 
+resumeTimers 2
+222 817 
+suspendTimers 2
+222 817 
+aboutToChangeList: 2
+222 602 
+close: 6
+222 369 584 601 310 518 
+go 3
+222 178 128 
+windowTitle 6
+222 829 593 512 511 830 
+extentForLabel: 4
+222 356 595 849 
+enableDisableButtons 3
+222 829 830 
+openedWindow 3
+222 829 602 
+numListEntries: 3
+1036 1011 1012 
+listHeightDlg:in:maxEntries: 3
+1036 849 1012 
+nameMessageList 3
+1036 1011 1012 
+newListPaneFor: 3
+1036 1011 1012 
+eqv: 2
+221 200 
+not 2
+221 200 
+ifTrue:ifFalse: 2
+221 200 
+ifFalse:ifTrue: 2
+221 200 
+ifTrue: 2
+221 200 
+xor: 2
+221 200 
+or: 2
+221 200 
+and: 3
+221 603 200 
+isFixedObject 6
+221 604 2 200 184 3 
+ifFalse: 2
+221 200 
+privateRemoveKey:ifAbsent: 2
+606 1028 
+referencesTo: 2
+606 27 
+at:ifAbsentPut: 3
+606 109 605 
+imageName 2
+606 171 
+versionNumbers 2
+606 709 
+save 4
+606 867 1202 515 
+implementorsOf:in: 2
+606 27 
+versionNumberString 2
+606 709 
+referencesTo:in: 2
+606 27 
+platform 2
+606 290 
+privateAdd: 5
+606 344 129 343 128 
+sendersOf:in: 2
+606 27 
+referencesToString:in: 2
+606 27 
+launch 2
+606 156 
+isRunTime 2
+606 171 
+removeKey:ifAbsent: 3
+606 1028 605 
+entryHeight 4
+1035 1005 1006 919 
+dragItemIn: 2
+1035 1006 
+rectangleOfEntry: 3
+1035 1005 1006 
+numberOfEntries 3
+1035 1005 1006 
+showMaximizedWindow 2
+220 557 
+showIconicWindow 2
+220 557 
+showWindow: 2
+220 1026 
+nominalFlipSizeBytes: 2
+219 367 
+paddingSizeBytes: 2
+219 367 
+reserved 2
+219 150 
+toFile: 2
+219 186 
+reserved: 2
+219 150 
+location 3
+314 554 551 
+isHorizontalGroup 2
+314 366 
+postCopy 2
+314 321 
+propagateLocation 2
+314 321 
+hasGrandchildren 2
+314 321 
+hasChildren 2
+314 321 
+isGroup 2
+314 321 
+preferredBounds 2
+314 321 
+isVerticalGroup 2
+314 322 
+itemsWithBoundsRelativeTo:do: 4
+314 315 321 316 
+isItem 2
+314 315 
+copy 4
+314 2 286 1001 
+hasLandingPlug 3
+368 324 325 
+getLandingPoint 3
+368 324 325 
+hasLaunchPlug 3
+368 324 325 
+getLaunchSide 3
+368 324 325 
+getLaunchPoint 3
+368 324 325 
+okToDeleteEvent: 2
+829 830 
+supportsExportOperation 4
+829 602 601 830 
+interfaceMenuNewSelector 3
+829 602 601 
+selectedInterfaceItem: 3
+829 602 830 
+initExportButton 2
+829 830 
+interfaceItems: 2
+829 602 
+interfaceMenuDeleteSelector 3
+829 602 601 
+isValidEvent: 3
+829 33 830 
+addInterfaceItem:label:isRemoveable: 3
+829 602 601 
+subjectApplication 3
+829 602 601 
+printInterfaceOn: 4
+829 602 601 830 
+defineMessage 4
+829 602 601 830 
+enableDisableScripts 2
+829 830 
+addMessageText 2
+829 830 
+fillInterfaceList: 3
+829 602 830 
+deletedWrappers: 4
+829 602 511 830 
+scriptPaneChanged 3
+829 601 830 
+defineEvent 2
+829 830 
+deleteEvent 2
+829 830 
+interfacePrintTitle 4
+829 602 601 830 
+closeSignOn 2
+367 171 
+addObjects:externals:objects: 2
+367 176 
+rightTop 2
+67 101 
+merge: 2
+67 60 
+isRectangle 2
+67 2 
+origin:extent: 2
+67 456 
+mapToScreen: 2
+67 9 
+mapClientToScreen: 2
+67 9 
+leftBottom:rightTop: 2
+67 456 
+moveBy: 2
+67 9 
+moveTo: 2
+67 274 
+mapFromWindow:to: 2
+67 9 
+asLayout 2
+67 86 
+mapToWindow: 2
+67 9 
+corner: 3
+67 60 9 
+leftTop 2
+67 101 
+expandBy: 2
+67 859 
+leftTop: 2
+67 101 
+truncated 6
+67 603 333 312 9 311 
+leftBottom: 2
+67 101 
+rightBottom 2
+67 101 
+rightBottom: 2
+67 9 
+scaleFrom: 2
+67 37 
+deviceToLogical: 2
+67 9 
+leftTop:rightBottom: 2
+67 456 
+leftBottom 2
+67 101 
+mapScreenToClient: 2
+67 9 
+leftBottom:extent: 2
+67 456 
+rounded 4
+67 603 9 311 
+intersect: 2
+67 60 
+leftTop:extent: 2
+67 456 
+origin:corner: 4
+67 60 456 449 
+changeContainingRect:to: 2
+67 37 
+corner 2
+67 60 
+translateOrigin:byExtent: 3
+366 321 322 
+split 3
+366 321 322 
+containsSimilarGroups 3
+366 321 322 
+asHorizontalGroup 3
+366 321 322 
+propagateLocationSimilar 3
+366 321 322 
+asVerticalGroup 3
+366 321 322 
+displayRectangle 2
+318 317 
+rem: 3
+604 603 311 
+isSmallInteger 2
+604 2 
+printString 2
+604 2 
+computeOptionalLayout:deltaLeftTop: 2
+1011 1013 
+open:replace: 2
+365 975 
+dump:on: 4
+66 178 455 715 
+clientMessageHandler: 3
+66 178 176 
+loadFrom:loadMaps: 4
+66 176 455 713 
+recordMessage:type:prefix: 2
+66 176 
+isLoadingCurrentVersion 2
+66 176 
+recordSummaryMessage: 2
+66 176 
+log: 2
+66 311 
+loadMapsDictFrom: 2
+66 176 
+loadMapIsValid:sourceVariables:destinationVariables: 2
+66 196 
+restoreLoadedObjects: 2
+66 176 
+loadFrom: 4
+66 176 455 663 
+currentVersion 10
+66 178 176 528 455 446 715 713 684 404 
+clientAllocateDictionaryAction: 2
+66 178 
+objectVersion 3
+66 178 176 
+clientContext: 3
+66 178 176 
+clientContext 3
+66 178 176 
+upgradeFromPreviousVersion: 2
+66 176 
+libraryNameOf: 2
+66 178 
+recordWarningMessage: 4
+66 196 178 176 
+restoreLoadedHashStructures: 2
+66 176 
+registerUpgradeMutationFrom:to: 2
+66 176 
+warningLoadCancelled 2
+66 176 
+describeClassesFrom:to: 4
+66 176 455 713 
+initializeForOperationOn: 3
+66 178 176 
+messageStream 2
+66 176 
+libraryMappings: 2
+66 178 
+recordAbortMessage: 3
+66 196 176 
+recordInfoMessage: 3
+66 196 176 
+loadMapUsedFor: 2
+66 176 
+libraryDependencies 4
+66 137 178 14 
+describeFrom:to: 4
+66 176 455 713 
+objectCountEstimate: 4
+66 177 178 128 
+useBindingInformation 2
+66 176 
+useBindingInformation: 2
+66 176 
+openWorkspace 2
+475 557 
+printIt 4
+475 345 557 1201 
+saveImage 3
+475 557 310 
+fileItIn 4
+475 345 557 1201 
+openClassBrowser 2
+475 557 
+doIt 5
+475 345 557 1201 601 
+aboutDialogClass 2
+475 584 
+optionsMenu 2
+475 511 
+install 3
+475 63 557 
+openDiskBrowser 2
+475 557 
+saveImageAs 2
+475 557 
+inspectIt 4
+475 345 557 1201 
+forLaunch 2
+863 822 
+operation: 4
+863 847 516 487 
+cutSelection 3
+827 345 1208 
+notifyTextChanged: 2
+827 1208 
+previousValue 3
+827 345 1208 
+previousValue: 3
+827 345 1208 
+clear 5
+827 1208 511 513 16 
+readWrite 2
+827 345 
+modified: 3
+827 345 1208 
+wmCharResultFor: 2
+827 1200 
+initialText 5
+827 1020 1208 586 289 
+isReadOnly 3
+827 345 276 
+abortChange 2
+827 289 
+retryChange 2
+827 1191 
+textChanged 2
+827 1200 
+deleteSelection 2
+827 317 
+setContents 2
+827 840 
+modified 8
+827 340 101 345 1208 289 317 1026 
+nextPutAll: 9
+827 814 345 552 813 1201 815 812 514 
+setTextLimit 2
+827 1200 
+autoHScroll 2
+827 1208 
+copySelection 3
+827 345 1208 
+getText 3
+827 345 1208 
+selectFrom:to: 3
+827 345 1201 
+nextPut: 8
+827 814 345 552 813 1201 812 514 
+asBoolean: 3
+217 1027 267 
+asInteger: 3
+64 197 90 
+warning: 4
+64 39 188 1149 
+composedWith: 2
+86 181 
+errorString 10
+63 1329 1204 1203 1287 1330 1286 1192 1190 1191 
+compilerClass 2
+63 108 
+maxInstanceVariables 2
+63 711 
+validateClassVariables 2
+63 900 
+instanceVariableNames: 2
+63 175 
+subclasses 3
+63 262 175 
+setSelection: 2
+362 845 
+initialSelection: 2
+362 348 
+launchSession 2
+172 709 
+partPropertyAddSignedItem: 2
+1329 1330 
+isValidFloatString: 2
+1329 1286 
+partPropertyMaxSizeErrorMessage 2
+1329 1190 
+partPropertyAddContentsItem: 5
+1329 1193 1008 1192 1190 
+createUnformattedStringFromValue: 4
+1329 1193 1192 1191 
+partPropertyMaxSizeChanged: 2
+1329 1190 
+decimalPlace 3
+1329 1330 10 
+isValidDigit: 2
+1329 1330 
+unformattedTextLimit 5
+1329 1204 1193 1192 1190 
+isValidType: 5
+1329 1287 1286 1192 1191 
+isValidDecimalSeparatorPosition: 2
+1329 1286 
+partPropertySetNewMaxSize:to: 2
+1329 1190 
+partPropertyAddMaxSizeItem: 2
+1329 1190 
+partPropertyAddDecimalDigitsItem: 2
+1329 1330 
+isValidCharacter: 8
+1329 1204 1203 1287 1286 1193 1192 1191 
+formattedString 4
+1329 1193 1192 1191 
+partPropertyBeginApply: 4
+1329 1330 1192 1190 
+createDatumFrom: 6
+1329 1287 1286 1193 1192 1191 
+asIndexedColor 4
+134 603 155 135 
+asRGBColor 4
+134 603 155 135 
+isColor 2
+134 2 
+rightButtonScroll: 4
+599 854 831 289 
+isExternalHandle 2
+204 2 
+uLongAtOffset: 2
+204 88 
+uShortAtOffset: 3
+204 570 88 
+fillFromAddress: 2
+204 88 
+uLongAtOffset:put: 2
+204 88 
+uShortAtOffset:put: 3
+204 570 88 
+isDefaultPushButton 4
+1022 852 851 1194 
+showCursor: 2
+235 342 
+hide 2
+235 60 
+isCursor 2
+235 2 
+initModel: 3
+387 300 313 
+openOn:selection: 2
+596 595 
+newListPane 2
+596 595 
+heightInDialogUnits: 4
+596 356 1088 1162 
+listHeightDlg:in: 2
+596 595 
+numListEntries 2
+596 595 
+writeHeader: 2
+283 284 
+write:on: 3
+283 160 697 
+disableControls 5
+821 859 289 1026 822 
+addInterestInChild: 3
+821 859 822 
+enableControls 4
+821 859 289 1026 
+allowWorkbenchToBeDisabled: 2
+861 1027 
+isWorkbenchSession 2
+861 709 
+isOkToDisable: 2
+861 1027 
+allowWorkbenchToBeDisabled 2
+861 1027 
+getWindowToDisable: 3
+861 818 1027 
+computeWidth 16
+213 212 211 340 203 353 101 279 201 272 589 192 191 185 348 102 
+addToWindow: 15
+213 212 211 340 203 101 279 201 272 192 191 185 348 483 102 
+framingBlockFor: 2
+213 348 
+clicked: 3
+212 272 348 
+labelFrameIn: 3
+212 340 353 
+computeHeight 9
+212 211 340 353 101 192 191 348 102 
+labelWidth 3
+212 340 101 
+items 2
+62 269 
+separators: 2
+62 808 
+separators 2
+62 808 
+isPARTSException 2
+61 2 
+partEditProperties 3
+2 345 1019 
+isBoolean 2
+2 199 
+isRadioButton 2
+2 1197 
+isPARTSWrapper 2
+2 33 
+isFileStream 2
+2 814 
+isSelfInitializingObject 2
+2 1 
+isMetaClass 2
+2 175 
+isBitmap 2
+2 97 
+isExternalAddress 2
+2 524 
+partLinkClassFor: 7
+2 805 502 822 14 113 93 
+isPARTSWindow 2
+2 1026 
+partHasObjectMessages 2
+2 502 
+isPARTSNestedPart 2
+2 822 
+isClass 2
+2 262 
+isStream 2
+2 254 
+isDoubleByteString 2
+2 1039 
+isCharacter 2
+2 184 
+isFloat 2
+2 312 
+isInteger 2
+2 603 
+isContext 2
+2 114 
+isFont 2
+2 19 
+isRGBColor 2
+2 135 
+isPoint 2
+2 9 
+isPARTSDialogWindow 2
+2 1027 
+partChildren 3
+2 1027 1026 
+partCanWindow:haveChild: 2
+2 832 
+isPARTSStoreContext 2
+2 202 
+partHasOtherMessages 3
+2 502 14 
+isPARTSRectangle 2
+2 37 
+isCompilationResult 2
+2 50 
+isMenu 2
+2 269 
+partPropertyEditGraphic: 2
+2 1021 
+isTime 2
+2 206 
+isByteArray 2
+2 545 
+isNumber 2
+2 311 
+partParent 2
+2 14 
+partOpen 4
+2 289 1026 14 
+partManufacturer 2
+2 14 
+isDIB 2
+2 59 
+isMethodDictionary 2
+2 1028 
+isPARTSCatalog 2
+2 147 
+isApplicationWindow 2
+2 557 
+isDynamicLinkLibrary 2
+2 277 
+frameCanBeRescaled 2
+2 37 
+isArray 2
+2 842 
+partDefineScript: 2
+2 14 
+notNil 2
+2 3 
+partIsSelectable 5
+2 565 538 535 520 
+partIsShrinkable 4
+2 859 1026 822 
+isFraction 2
+2 333 
+partAboutToAddTo: 3
+2 822 14 
+partDoit:withArguments: 2
+2 502 
+partObjectMessages: 2
+2 502 
+partEditInterface 2
+2 14 
+isPARTSMenuPane 2
+2 565 
+partAddedTo: 3
+2 1027 1026 
+isPushButton 3
+2 851 1194 
+isGraphicsTool 2
+2 551 
+isObjectReference 2
+2 42 
+isNotebookPagePane 2
+2 588 
+isToolPane 2
+2 840 
+isCompiledMethod 2
+2 1001 
+isComboBox 2
+2 1208 
+isPARTSTransientPart 5
+2 565 538 535 520 
+partName 2
+2 869 
+isPARTSApplication 2
+2 14 
+partRealSelectorFor: 7
+2 805 502 822 14 113 93 
+isTextPane 3
+2 345 1201 
+isButton 2
+2 851 
+isIndexedColor 2
+2 155 
+canTriggerEvent: 8
+2 53 822 14 501 90 391 445 
+isSubPane 2
+2 289 
+isPARTSNotebookPagePane 2
+2 588 
+vmInterrupt: 2
+2 1 
+isPARTSClientAreaPane 2
+2 538 
+isInBase 2
+2 104 
+isPARTSNotebook 2
+2 845 
+isDictionary 2
+2 605 
+osError: 5
+2 205 274 743 884 
+changed: 4
+2 557 601 146 
+dependents 2
+2 557 
+isDialogTopPane 2
+2 818 
+isNil 2
+2 3 
+partCanTriggerEvent: 4
+2 33 822 93 
+wrapper 2
+2 824 
+isPARTSNotebookClientAreaPane 2
+2 520 
+partDefineEvent: 2
+2 14 
+partEditValue 4
+2 842 481 605 
+isPARTSMenuItem 2
+2 809 
+perform:withArguments: 2
+2 502 
+partOtherMessages: 2
+2 502 
+isControlPane 2
+2 586 
+update:with: 2
+2 289 
+changed:with: 3
+2 557 146 
+update: 6
+2 345 289 1201 1194 477 
+when:evaluate: 2
+2 33 
+methodDictionaryArray: 2
+2 733 
+isPARTSLoadContext 2
+2 110 
+isPARTSPartAccessorPart 2
+2 93 
+changed:with:with: 3
+2 557 146 
+isPARTSMenuBar 2
+2 535 
+isAssociation 2
+2 104 
+isTextSelection 2
+2 60 
+isPARTSMenuPart 2
+2 859 
+partsExceptionIfNil 2
+2 3 
+isTimeStamp 2
+2 389 
+resolveExternals 3
+137 176 138 
+objectStore 2
+137 177 
+objectStore: 3
+137 129 116 
+allocateMemory: 4
+137 1176 1092 1091 
+checkVersion 2
+137 176 
+getMeta 2
+137 176 
+getObjects 3
+137 176 138 
+globalNameSpace: 2
+137 733 
+directory: 4
+177 867 125 116 
+windowFeedback 3
+177 178 176 
+addImport:fromLibrary: 2
+177 128 
+feedback:cr: 2
+177 176 
+feedback: 2
+177 176 
+interestingImports 2
+177 128 
+remap:to: 2
+177 128 
+addImport: 2
+177 128 
+writeFile 2
+177 116 
+assignAddresses 2
+177 116 
+fileClass 2
+177 178 
+write:description: 2
+177 116 
+objectsClass 2
+177 178 
+pane: 4
+60 107 317 281 
+selectBefore: 3
+60 345 1200 
+selectTo: 2
+60 345 
+displaySelection 3
+60 831 511 
+selectAfter: 3
+60 345 1200 
+hideSelection 4
+60 345 511 299 
+bitCoordinate: 2
+60 1201 
+createDIBPalette 2
+59 97 
+numberOfColors 2
+59 97 
+bitCount 3
+59 375 97 
+pushButtonWidth 4
+211 203 101 638 
+editIcon 2
+211 869 
+undoChanges 4
+211 101 279 351 
+doChanges 9
+211 101 279 201 351 349 348 7 485 
+partPropertyEditDone: 3
+805 822 93 
+keyMessages 3
+805 825 806 
+store:arguments: 3
+805 825 806 
+partEventsOfHolder 2
+805 502 
+keyEvents 3
+805 825 806 
+lookup:arguments: 3
+805 825 806 
+updateValue: 3
+805 825 806 
+keyExceptionEvent 3
+805 825 806 
+partMessagesOfHolder 4
+805 502 507 504 
+isSetMessage: 3
+805 825 806 
+createEntryControl 5
+340 353 352 350 341 
+setModified: 2
+340 101 
+frameHeight 3
+340 101 279 
+entryFrameIn: 2
+340 353 
+addLabelToWindow: 2
+340 353 
+canDoChanges 7
+340 101 352 350 341 483 7 
+openOn:label: 3
+594 518 1085 
+framingBlock:extent: 3
+356 595 849 
+createOkCancelButtons:deltaLeftTop: 2
+356 849 
+titleBarWidth: 3
+356 595 849 
+widthInDialogUnits: 3
+356 1088 1162 
+getHandle 4
+210 163 100 887 
+style:color:hatch: 2
+210 748 
+attributeArray 3
+210 163 100 
+fromStruct: 4
+210 163 100 700 
+initCursors 4
+860 846 516 490 
+isPARTSPasteSession 2
+860 487 
+createDragObjects: 4
+860 846 847 516 
+compilerInterfaceClass 2
+209 1289 
+scriptPart 2
+209 1002 
+drawInsertion:erase: 3
+859 565 535 
+findIndex: 3
+859 565 535 
+refreshItems 3
+859 565 535 
+findIndex:in: 3
+859 565 535 
+getPosition:after: 3
+859 565 535 
+popUp 2
+859 269 
+adjustPositionAfterUndoDelete: 3
+859 565 535 
+draggingOver: 3
+859 565 535 
+move:toIndex: 3
+859 565 535 
+position:after: 3
+859 565 535 
+itemPositionToPoint: 3
+859 565 535 
+basicDrawMark: 3
+859 565 535 
+updatePositions 3
+859 565 535 
+eraseSelection 3
+859 565 535 
+moveFrom:to:after: 3
+859 565 535 
+isDisabled: 2
+269 534 
+menuItem 2
+269 145 
+popUpAt:in: 3
+269 535 534 
+findWindow: 3
+269 39 534 
+labels:lines:selectors: 2
+269 879 
+isThere: 2
+269 743 
+selectorOf: 2
+269 534 
+helpTopic 4
+269 33 289 14 
+getMenuItem: 2
+269 534 
+performMenuItem: 7
+269 1202 557 289 535 317 534 
+position: 7
+205 587 814 254 167 17 812 
+position 5
+205 587 814 254 17 
+setEndOfFileTo: 2
+205 276 
+versionFrom: 2
+57 404 
+helpAndHintFrom: 2
+57 404 
+iconFrom: 2
+57 404 
+propertiesFrom: 2
+57 404 
+gapX 2
+593 201 
+setIcon: 2
+593 310 
+boxOfSize: 3
+818 557 553 
+openModeless 2
+818 309 
+openModal: 3
+818 1027 309 
+copyStruct 4
+867 581 526 496 
+openFile 5
+867 557 515 146 116 
+cleanUp 5
+867 581 526 510 496 
+checkFlags 4
+867 581 526 496 
+resume 3
+244 816 482 
+resume: 6
+244 39 28 518 5 482 
+return: 3
+244 182 28 
+listPaneName 3
+595 850 1006 
+getProcAddress:procName: 2
+355 585 
+getModuleHandle: 2
+355 585 
+freeLibrary: 2
+355 585 
+loadLibrary: 2
+355 585 
+removeDirectory: 2
+355 501 
+beep:for: 3
+355 347 136 
+getCommandLine 2
+355 171 
+ceiling 2
+603 311 
+floor 2
+603 311 
+reciprocal 4
+603 333 312 311 
+asCharacter 2
+603 184 
+asBoolean 3
+603 199 523 
+entryField 2
+203 1208 
+newValue 3
+203 101 191 
+entryField: 2
+203 1208 
+lineHeight 2
+353 290 
+textExtent: 2
+353 826 
+entryFieldHeight 3
+353 101 638 
+entryFieldWidth 4
+353 101 352 638 
+canMirrorCopy 2
+846 847 
+targetLocation 3
+846 531 487 
+validationMessage 2
+101 537 
+validationMessage: 2
+101 537 
+radioButtonHeight 2
+101 638 
+isStyle 4
+101 349 273 485 
+verticalGap 2
+101 638 
+part 5
+101 52 35 7 869 
+horizontalGap 2
+101 638 
+checkBoxHeight 2
+101 638 
+pushButtonExtent 2
+101 638 
+entryFieldFrameWidth 2
+101 341 
+pushButtonHeight 2
+101 638 
+entryFieldFrameHeight 2
+101 638 
+setDisableState 4
+101 279 272 348 
+labelEntryFieldGap 2
+101 638 
+addToStyle: 4
+101 349 486 485 
+numberFieldWidth 2
+101 638 
+clearModified 2
+101 1201 
+bucketClass 4
+1028 344 862 343 
+adjustSize 3
+1028 862 343 
+classField 3
+1028 21 1001 
+newContents: 4
+1028 344 862 343 
+classField: 2
+1028 1001 
+doClick: 3
+1195 1197 851 
+uncheck 2
+1195 809 
+check 4
+1195 176 138 809 
+changedEventFor: 4
+1195 1199 1197 1194 
+pushButton 2
+279 851 
+clickedSelector: 2
+279 351 
+clicked 2
+279 483 
+currentForeColor 2
+201 1014 
+currentBackColor 2
+201 1014 
+partFont 2
+1031 1014 
+hasNameChanged 2
+1031 869 
+editForeColor 2
+1031 1014 
+constructApplyActions 5
+1031 1030 1014 1015 869 
+editFont 2
+1031 1014 
+editBackColor 2
+1031 1014 
+havePropertiesChanged 6
+1031 1030 1014 803 1015 869 
+partForeColor 2
+1031 1014 
+partBackColor 2
+1031 1014 
+eventTable: 3
+53 14 90 
+componentDictionary: 2
+52 14 
+componentDictionary 2
+52 14 
+part: 3
+52 7 869 
+createPartsWith: 3
+589 483 484 
+setGraphics: 8
+588 1023 1021 853 1026 14 811 90 
+mnemonic:typedIn: 3
+588 586 851 
+getGraphics 7
+588 1027 1023 1021 853 1026 811 
+stockObject: 3
+99 636 700 
+removeClass: 2
+51 685 
+defaultGlobalDictionary 3
+51 105 452 
+vertical 2
+587 1154 
+horizontal 2
+587 1154 
+syncControlEvent:with: 2
+587 586 
+asLowerCase: 2
+197 10 
+asUpperCase: 2
+197 10 
+asString: 2
+197 90 
+asNumber: 2
+197 90 
+nameScope 2
+50 105 
+messages 3
+50 476 1001 
+method 2
+50 182 
+selectors: 3
+858 556 477 
+getButtonPressedUnder: 2
+840 841 
+store:into:libraryMappings: 4
+377 193 148 149 
+loadFrom:context: 4
+377 193 148 663 
+backupOver: 2
+814 254 
+putBytesFrom:from:to: 2
+814 812 
+getBytesFor:from:to: 2
+814 813 
+asByteFileStream 2
+814 815 
+setLineDelimiterFromFirstPage 2
+814 815 
+asMixedFileStream: 2
+814 815 
+nextLine 2
+814 254 
+cr 6
+814 345 552 1201 812 514 
+pathName 5
+814 286 276 92 509 
+readLimit 2
+814 254 
+collection 3
+814 183 254 
+nextChunk 2
+814 254 
+next: 2
+814 254 
+truncate 2
+814 813 
+atEnd 2
+814 254 
+flush 2
+814 276 
+lineDelimiter 2
+814 254 
+lineDelimiter: 2
+814 254 
+evaluateFor: 3
+856 157 115 
+twoDigitYear 2
+192 1192 
+dateSeparator 3
+192 1192 10 
+dateSeparator: 2
+192 1192 
+useSystemFormat 2
+192 1192 
+dateFormat 3
+192 1192 10 
+useSystemFormat: 2
+192 1192 
+disableItems 2
+192 801 
+formatString: 5
+1204 1330 1193 1192 1191 
+unformatString: 5
+1204 1330 1193 1192 1191 
+supportsMaxSizeItem 3
+1204 1286 1190 
+black 3
+190 553 671 
+outputToPrinter: 2
+190 97 
+white 3
+190 553 671 
+reportWarning: 4
+189 188 281 295 
+saveString: 2
+584 514 
+initialState: 2
+360 1026 
+asTimeStamp 2
+186 158 
+componentNames 2
+286 14 
+drive 2
+286 509 
+components 4
+286 33 321 14 
+absolute: 2
+286 896 
+absolutePath 2
+286 274 
+chosen 2
+581 496 
+handles: 3
+48 30 782 
+hasMenuBar 2
+1027 1026 
+defaultFrameCreationFlags 6
+1027 854 618 831 834 1026 
+lafAddEditPanes 2
+1027 1026 
+partPropertyOpeningStylePropertiesEditor 2
+1027 1026 
+lafAddMenuBar 2
+1027 1026 
+suspendClient 2
+1027 267 
+suspendClient: 2
+1027 267 
+partPropertyLabel 2
+1027 1026 
+defaultWindowTitle 2
+1027 1026 
+partPropertyDefaultBorderStyle 2
+1027 1026 
+setWaitForAnswer: 2
+1027 267 
+partMessagesProperties 6
+1027 346 491 1026 267 268 
+partPrintOpenSizePropertiesOn:margin: 2
+1027 1026 
+supportsMenuBar 2
+1027 1026 
+waitForAnswer 2
+1027 267 
+partMessagesOperations 6
+1027 346 491 1026 267 268 
+validateShow 3
+1027 557 1026 
+partPropertyAddStyleMinMaxItems: 2
+1027 1026 
+writeToStream: 2
+125 126 
+exists 6
+125 274 275 276 509 699 
+store:libraryMappings: 2
+125 126 
+displayName 2
+125 510 
+fileType 6
+125 988 987 731 685 686 
+fullPathName 2
+125 116 
+revisionNumber 2
+125 709 
+to:do: 2
+184 311 
+to: 2
+184 311 
+to:by: 2
+184 311 
+to:by:do: 2
+184 311 
+defaultDial 2
+854 465 
+dialogBoxCreate 4
+346 491 267 268 
+removeBlanks: 2
+346 537 
+partAddBorder: 2
+852 1023 
+partPropertySelectFont: 2
+852 164 
+removeButtonName 2
+850 801 
+openOn:title: 2
+850 836 
+showSelection 3
+345 317 299 
+moveTopCornerBy: 3
+345 299 290 
+matchBracketFrom:to: 2
+345 1201 
+addParens 2
+345 1201 
+evaluating 2
+345 1201 
+searchFor: 2
+345 1201 
+addSquareBrackets 2
+345 1201 
+search 2
+345 1201 
+matchBracketChars 2
+345 1201 
+doIt: 2
+345 1201 
+selectLineAtCurrentSelection 2
+345 1201 
+expressionEvaluator: 2
+345 1201 
+searchOld 2
+345 1201 
+addSingleQuotes 2
+345 1201 
+addDoubleQuotes 2
+345 1201 
+setEvaluate: 2
+345 1201 
+expressionEvaluator 2
+345 1201 
+findReplace 2
+345 1201 
+topCorner: 4
+345 44 1200 299 
+print 5
+345 557 1201 515 146 
+insertAndSelect: 2
+345 1201 
+makeVisible: 2
+345 299 
+undo 2
+345 1200 
+expressionEvaluatorClass 3
+345 1201 514 
+addLeftBracket:rightBracket: 2
+345 1201 
+replaceString: 2
+345 1201 
+backspace 2
+345 1193 
+selectAtEnd 2
+345 1200 
+addCurlyBrackets 2
+345 1201 
+appendChar: 3
+345 44 1201 
+appendText: 2
+345 44 
+replaceAtPattern 2
+345 1201 
+insert: 3
+345 317 1200 
+selectionIncludesPoint: 2
+345 1201 
+forceEndOntoDisplay 2
+345 1201 
+forceSelectionOntoDisplay 2
+345 1201 
+resize: 5
+345 557 289 1026 822 
+showSelectionFrom:to: 3
+345 1201 317 
+searchBackOld 2
+345 1201 
+fileInFrom: 5
+345 44 1201 27 21 
+characterCoordinate: 2
+345 1201 
+again 2
+345 1201 
+refreshAll 2
+345 299 
+insertAfterSelection: 2
+345 1201 
+queryReplaceAtPattern 2
+345 1201 
+reinitialize 2
+345 39 
+scrollHorizontalCharacters: 3
+345 289 1201 
+backspaceSelection 2
+345 1193 
+selectedString 2
+345 1201 
+accept 6
+345 557 512 511 1201 146 
+isGapSelection 2
+345 1191 
+computeHash: 4
+344 862 547 343 
+compare:candidate: 4
+344 605 547 343 
+newNameSymbol: 2
+262 175 
+subclass:instanceVariableNames:classVariableNames:poolDictionaries:isVariable:isPointers: 2
+262 3 
+variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries: 2
+262 3 
+classVarNames 2
+262 175 
+subclasses: 2
+262 175 
+symbol 2
+262 175 
+subclass:instanceVariableNames:classVariableNames:poolDictionaries: 2
+262 3 
+variableByteSubclass:classVariableNames:poolDictionaries: 2
+262 3 
+variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries: 2
+262 3 
+instanceClass 2
+262 175 
+classPool 2
+262 175 
+sharedPools 2
+262 175 
+initializeOpeningSizeParts 2
+1003 1004 
+saveOpenHiddenParts 2
+1003 1004 
+saveOpeningSizeParts 2
+1003 1004 
+initializeOpenHiddenParts 2
+1003 1004 
+append: 3
+1202 1201 1190 
+partPropertyValidate: 2
+1202 1026 
+menuTitled: 4
+1202 557 146 534 
+resetAttributes 2
+552 551 
+indeterminate 2
+1199 1340 
+setValue 2
+1199 1194 
+setBitmap: 4
+1023 853 16 811 
+defaultBitmap 2
+1023 632 
+dropLocation 2
+847 832 
+targetDrop 4
+847 516 490 487 
+sourceFeedback 5
+847 488 516 489 490 
+registerClass: 2
+342 685 
+show: 3
+254 31 514 
+nextWord 2
+254 815 
+setToEnd 3
+254 813 812 
+reverseContents 2
+254 815 
+next:put: 2
+254 514 
+skip: 2
+254 816 
+pattern 3
+46 92 268 
+pattern: 3
+46 92 268 
+for:title:file:dialogs:aboutDlgClass: 2
+215 753 
+helpFileName 2
+215 765 
+nextByte 2
+813 815 
+headerSize: 2
+45 122 
+assignAddress: 2
+45 116 
+remove 5
+274 138 517 276 509 
+renameAs: 3
+274 276 509 
+isComponentEntity 2
+274 275 
+volumeLabel 2
+274 34 
+fileSystemLocator 2
+274 34 
+fileSystemLocator: 2
+274 34 
+lastModificationTime 3
+274 276 509 
+copyTo:as: 3
+274 276 509 
+moveTo:as: 3
+274 276 509 
+isContainerEntity 2
+274 508 
+create 3
+274 276 509 
+volume 2
+274 34 
+noSmalltalkMenuBar 2
+557 146 
+hasSmalltalkMenuBar 2
+557 1026 
+zoom 3
+557 289 146 
+closeInnerWindows 2
+557 1026 
+setBackgroundColor 2
+557 146 
+setForegroundColor 2
+557 146 
+toggleWrap 3
+557 1201 146 
+minimized 2
+557 834 
+clearTextModified 2
+557 146 
+textModified 2
+557 146 
+printSetup 2
+557 146 
+subPaneWithFocus: 2
+557 289 
+labelWithoutPrefix: 2
+557 146 
+setFonts 2
+557 146 
+initSize 2
+557 834 
+charAt: 2
+44 1201 
+delete: 3
+44 92 91 
+maxLineBetween:and: 2
+44 299 
+string 2
+44 529 
+string: 3
+44 529 1096 
+dropDown 2
+1208 1349 
+moveFile:as: 2
+508 509 
+entitiesDo: 2
+508 509 
+entityNamesDo: 2
+508 509 
+copyDirectory:as: 2
+508 509 
+copyFile:as: 2
+508 509 
+moveDirectory:as: 2
+508 509 
+existingEntityNamed:ifAbsent: 2
+508 509 
+dump:on:objectCountEstimate: 2
+178 715 
+currentVersionDescription 3
+178 715 404 
+doPrerequisites 2
+176 138 
+versionOf: 2
+43 675 
+defaultFileExtension 2
+512 511 
+fill 2
+512 511 
+releaseCopy 2
+512 511 
+resetCopy 2
+512 511 
+openOn:saveBlock: 2
+512 511 
+optionsMenuCreate 2
+512 511 
+addAdjacentCells:to:with: 2
+512 511 
+displayBits: 2
+512 511 
+displayImage: 2
+512 511 
+createMasks: 2
+512 513 
+restoreOriginal 2
+512 511 
+fillAt: 2
+512 511 
+addButtonGroup: 2
+512 511 
+resolveGlobal 2
+42 195 
+type:value: 2
+42 195 
+getClass:ifAbsent: 4
+42 195 734 733 
+writeStream 2
+275 276 
+getDefaultBitmap 2
+1021 845 
+wmExternalCall:with: 3
+572 573 535 
+exception 2
+277 28 
+queryProcAddr: 2
+277 570 
+pageButtonExtent 2
+845 844 
+receiveAllWindowMessages 2
+845 586 
+deferUntilValid 2
+845 844 
+majorTabExtent 2
+845 844 
+minorTabExtent 2
+845 844 
+restartable 3
+816 817 482 
+menu: 2
+816 477 
+walkbackFor:label: 2
+816 817 
+debug 2
+816 817 
+debug: 2
+816 518 
+terminate 2
+816 482 
+resumable 2
+816 817 
+createWindow 2
+573 327 
+partPropertyHasFrameCreationFlags 2
+853 1026 
+buildAppToBeRun 2
+1019 822 
+isOS2 3
+41 290 444 
+isWindows 3
+41 290 444 
+getSystemColor: 2
+41 671 
+showLinksWithSelection 2
+40 501 
+userName 2
+40 501 
+writeSettingsFile 2
+40 421 
+showLinkLabels: 2
+40 501 
+showHints 2
+40 501 
+showHints: 2
+40 501 
+userName: 2
+40 501 
+showLinksWithSelection: 2
+40 501 
+showLinkLabels 2
+40 501 
+loadSettings 2
+40 421 
+colorDictionary 3
+40 421 1078 
+empty 2
+39 16 
+yield 2
+39 5 
+initializeTranscript 2
+39 1151 
+appendOpenItem: 2
+566 567 
+appendNewItem: 2
+566 567 
+appendSaveAsItem: 2
+566 567 
+appendRestoreItem: 2
+566 567 
+getClass:ifAbsentOrNil: 2
+195 733 
+block: 2
+1 87 
+includesKey: 2
+109 605 
+filePathName 4
+109 822 14 93 
+bytesAllocated 2
+34 276 
+printer 2
+164 526 
+printerNames 2
+164 699 
+printerSetup 2
+164 1094 
+formFeed 2
+164 162 
+defaultPrinterName 2
+164 699 
+selectedItems 2
+1032 831 
+addIconToSelection: 2
+831 147 
+icons: 2
+831 141 
+icons 2
+831 141 
+dragButton 3
+831 290 808 
+createNewPart 2
+563 561 
+dictionary: 2
+556 297 
+newMethod 2
+556 477 
+classButton: 2
+556 477 
+selectorMenu: 2
+556 477 
+methodListDrop: 2
+556 477 
+disableMethodsMenu 3
+556 476 477 
+instanceButton: 2
+556 477 
+initialTopCorner 2
+586 289 
+asyncControlEvent:with: 2
+586 317 
+buildDialogItem: 3
+586 289 808 
+helpFile: 2
+33 14 
+enableExecution: 2
+33 14 
+removeLinksAttachedTo: 2
+33 24 
+helpFile:helpTopic: 2
+33 14 
+addComponent: 2
+33 321 
+helpFile 2
+33 14 
+helpTopic: 2
+33 14 
+readStream:removeClass:fileDescriptor: 2
+161 698 
+readStream:removeClass: 2
+161 698 
+logWindowLabel 3
+161 160 159 
+write:on:fileDescriptor: 2
+160 697 
+associationAt: 2
+862 605 
+associationAt:ifAbsent: 2
+862 605 
+keysAsArray 2
+862 605 
+keys 2
+862 605 
+associationsDo: 2
+862 605 
+changeAllocation: 3
+862 605 343 
+keysDo: 2
+862 605 
+values 2
+862 605 
+fileInRehash: 2
+862 343 
+keyAtValue:ifAbsent: 2
+862 605 
+asSegmentedAddress 2
+555 524 
+asFlatAddress 2
+555 524 
+dragTargetDefaultEmphasis 6
+289 1218 955 899 1342 909 
+noGroupLeader 2
+289 1026 
+topCorner 2
+289 1200 
+initGraphics 2
+289 534 
+border 2
+289 321 
+dragTargetEmphasisTypesSupported 6
+289 1218 955 899 1342 909 
+border: 2
+289 321 
+buildControl: 2
+289 1200 
+getContents:from: 4
+336 300 313 301 
+demandLoad: 2
+844 93 
+previousSelection 2
+844 299 
+insertPage:after: 2
+844 147 
+pages 2
+844 526 
+pageSelected: 2
+844 147 
+loadSettingsFrom:into: 2
+32 421 
+writeSettingsFileFor:newFile: 2
+32 421 
+openOnPathName: 4
+511 514 445 407 
+changeBitAt: 2
+511 513 
+applyChanges 2
+511 513 
+setColorBoxes 2
+511 513 
+bitBlt:x:y:width:height:srcDC:xSrc:ySrc:rop: 4
+554 551 278 632 
+saveSegments 2
+554 551 
+selectObject: 2
+554 551 
+stretchBlt:x:y:dWidth:dHeight:srcDC:xSrc:ySrc:sWidth:sHeight:rop: 3
+554 551 278 
+allHandles 2
+554 551 
+availableFormats 2
+530 529 
+hasFormat: 2
+530 529 
+format:data: 2
+530 529 
+format: 2
+530 529 
+format:ifAbsent: 2
+530 529 
+acceptProperties 2
+803 501 
+arePropertiesValid 2
+803 869 
+canceled 2
+335 310 
+message: 6
+335 582 479 879 1149 1046 
+numberOfArguments 5
+157 576 142 114 115 
+fromMixedString:leadBytes: 2
+1039 1326 
+extractKey: 2
+605 343 
+denominator 2
+333 311 
+numerator 2
+333 311 
+squared 2
+333 311 
+numerator:denominator: 2
+333 943 
+pane 3
+107 281 514 
+evaluate:ifError: 2
+107 108 
+index 3
+155 809 810 
+index: 4
+155 809 671 692 
+metafile: 2
+529 1096 
+deleteObject: 2
+551 278 
+graphicsMedium 2
+551 19 
+graphicsMedium: 2
+551 19 
+triggerClickedEvent 3
+1197 851 1194 
+clearCachedPartsFrom: 2
+147 407 
+clearAllCachedParts 2
+147 407 
+performItemId:in: 2
+535 534 
+isDisabled 2
+145 809 
+defaultTabStopInterval 2
+1201 1200 
+argumentCount 2
+114 1001 
+speakerLibrary 2
+136 673 
+forLink:inputArguments:debugger: 2
+26 415 
+result 2
+26 582 
+getTarget 3
+488 516 489 
+supportsScrolling 2
+488 487 
+invalidCursor 3
+488 489 1055 
+vertices: 2
+25 414 
+copy:to: 3
+832 91 886 
+partMessagesRelayedToValue 3
+502 825 806 
+partPropertyValueNew 3
+502 507 504 
+propertyValue: 3
+502 507 504 
+relayMessage:arguments: 2
+502 267 
+stopAllTimers 2
+327 937 
+activeTimers 2
+327 937 
+resetScriptPane 2
+601 830 
+initScriptPane 2
+601 830 
+initSaveButton 2
+601 830 
+setScriptText: 2
+601 830 
+scriptText: 2
+601 830 
+scriptChangesHandled 2
+601 830 
+rectangleWithoutMargin: 2
+828 1190 
+partPropertyApplyEdit: 2
+1193 113 
+inputSize 2
+1193 1191 
+partPropertyAddAlignmentItem: 3
+1193 1008 1190 
+wmCharWindows:with: 2
+1193 1191 
+wmCharOS2:with: 2
+1193 1191 
+centered 3
+1007 1200 1294 
+compiler: 3
+188 281 296 
+keyEventName: 2
+825 806 
+keySetMessageName: 2
+825 806 
+keyMessageName: 2
+825 806 
+exp 2
+312 311 
+cos 2
+312 311 
+radiansToDegrees 2
+312 311 
+degreesToRadians 2
+312 311 
+printFraction: 2
+312 311 
+ln 2
+312 311 
+sqrt 2
+312 311 
+tan 2
+312 311 
+printFraction:decimalSeparator: 2
+312 311 
+timesTwoPower: 2
+312 311 
+sin 2
+312 311 
+arcTan 2
+312 311 
+registerMessage:parameterTypes:returnType:callingConvention: 2
+20 409 
+maybeAdd:from: 2
+129 128 
+privateAddPrereq:for:from: 2
+129 128 
+addImport:from: 2
+129 128 
+externalFor:from: 2
+129 128 
+include:from: 2
+129 128 
+click 2
+809 851 
+orderChildrenAndDisplay: 2
+1026 14 
+updateApplication: 2
+822 93 
+validateApplication 2
+822 93 
+partPropertyFileNamePrefix 2
+822 93 
+refreshApplication 2
+822 93 
+fileNotFoundError 2
+822 93 
+relayLink:arguments: 2
+822 93 
+partEditorTitle: 2
+822 93 
+changeFile: 2
+822 93 
+isOkToSaveContents: 2
+822 93 
+isApplicationMessage: 2
+822 93 
+partUpdate: 2
+822 93 
+partEditDirect: 2
+822 93 
+partPropertyChangeFile: 2
+822 93 
+daysInMonth:forYear: 2
+1192 761 
+checkDay:month:year: 2
+1192 761 
+editorPane 2
+516 489 
+targetEnter 2
+516 487 
+sourceNeedsObject 4
+516 489 490 487 
+dragStart: 3
+516 489 808 
+isPARTSEditorMoveSession 2
+516 487 
+targetLeave 3
+516 489 487 
+hotSpotOffset 3
+516 489 490 
+targetDrawEmphasis 2
+489 487 
+isPARTSDragDropSession 2
+489 487 
+targetOver 2
+489 487 
+getString 2
+123 16 
+getBitmap 2
+123 16 
+validFile: 2
+510 509 
+compile:in: 2
+476 642 
+iconEditorClass 2
+507 504 
+textValue: 2
+507 504 
+partAddAddComponentExpressionTo:application: 2
+14 90 
+isDebuggable 2
+14 1001 
+leadBytes 2
+815 10 
+open: 5
+292 970 887 1137 902 
+evaluate: 3
+105 482 642 
+scopeForClass: 2
+105 106 
+scopeForGlobals 2
+105 106 
+compiler 2
+105 108 
+dragButton: 2
+290 808 
+truncateTo: 2
+9 311 
+up: 2
+9 311 
+x 2
+9 98 
+x: 2
+9 98 
+asPoint 3
+9 98 311 
+down: 2
+9 311 
+y 2
+9 98 
+y: 2
+9 98 
+time: 2
+389 91 
+date: 2
+389 91 
+dividend: 2
+494 1061 
+createBitmapIndirect: 2
+278 97 
+getStockObject: 2
+278 1118 
+createBitmap:height:planes:bitCount:bits: 3
+278 97 632 
+createCompatibleDC: 2
+278 632 
+style:color:width: 2
+100 637 
+validateInput: 2
+1190 1191 
+partPropertyAddConvertItem: 2
+1190 1191 
+flip 2
+97 5 
+screenExtent: 2
+97 632 
+width:height: 2
+97 632 
+width:height:planes:bitCount: 3
+97 985 632 
+width:height:bits: 2
+97 632 
+screenWidth:height: 2
+97 632 
+compiledMethodDefinitionClass 2
+1001 1002 
+fileOutSurrogateForLiteral:pools:for: 2
+1001 1002 
+fileOutSurrogateObject 2
+1001 1002 
+sourceString: 2
+1001 1002 
+isPARTSScript 2
+1001 1002 
+load 3
+93 455 713 
+files 2
+92 509 
+create: 2
+92 1076 
+exists: 6
+92 91 662 404 886 1076 
+currentDirectory 2
+92 404 
+subdirectories 2
+92 509 
+setPattern: 2
+92 268 
+drivePathName 2
+92 509 
+rename:to: 2
+91 886 
+directoryContaining: 2
+91 404 
+bracketsMenu 2
+271 974 
+isGlobalDragDropSession 3
+487 1055 1054 
+objectClass 8
+487 1271 1257 1258 1055 1083 1057 1054 
+isLocalDragDropSession 3
+487 1055 1054 
+status 2
+5 922 
+terminateActive 2
+5 1049 
+copyStack 2
+5 1049 
+compact 2
+5 675 
+evaluateProtectionBlock 2
+482 1049 
+pathName: 6
+509 998 997 662 886 1076 
+newFile: 2
+509 886 
+openOnFile: 3
+514 445 407 
+from: 3
+474 687 659 
+hashModulusFor: 2
+1351 1324 
+operation:title: 2
+1072 1073 
+COMMENT 76
+798 466 465 464 914 765 459 1276 676 458 933 982 760 924 454 1274 709 751 451 950 749 1161 1160 445 444 741 963 638 889 739 442 882 441 961 1316 729 723 662 958 685 1139 429 427 425 1185 1132 646 1252 421 696 1105 684 1102 682 1245 1302 678 415 414 670 927 1239 1050 407 1082 1077 1127 404 1228 890 397 396 1280 883 1052 1289 
+now 2
+1000 744 
+releaseAllHandles 3
+795 408 632 
+startUp 30
+795 469 901 765 775 748 743 445 1278 964 444 636 728 753 887 430 429 700 699 1118 673 413 1094 409 408 405 399 637 632 875 
+on: 11
+746 716 914 1346 440 1225 792 644 942 967 396 
+fromString: 11
+796 770 761 744 896 1326 943 922 398 921 1090 
+iconId 10
+1064 1268 1151 1227 1123 684 1085 683 1044 1081 
+for: 8
+791 785 1274 433 907 663 647 880 
+negativeClass 2
+1284 1283 
+constructEventsTriggered 56
+706 1218 1186 1125 667 898 1249 983 1311 765 1165 1238 1303 1309 1234 391 674 1229 1336 1155 1154 1251 970 1314 1265 955 1343 1340 1339 434 1349 713 1256 708 1264 1337 1242 1319 899 1255 1338 967 1342 675 1220 1262 1341 1335 909 665 653 1331 396 634 394 1101 
+initializeFrameWindowClass 3
+1244 1276 1346 
+frameWindowClass: 2
+1244 1346 
+initializeRuntimeData 4
+788 779 1263 1313 
+fromHandle:style: 6
+1218 1249 1238 1349 1153 1262 
+dragTargetIsScrollable 5
+1218 898 955 1342 909 
+constructNotifications 9
+1218 1311 1238 1154 1349 1153 1255 1262 1341 
+fromAddress:length: 2
+1266 1326 
+fromAddress: 3
+1266 1326 625 
+readFrom: 2
+1266 1170 
+signalWith: 2
+993 783 
+current 15
+468 761 775 744 964 440 887 708 429 427 416 999 1054 1049 1076 
+current: 9
+468 775 964 440 887 429 427 416 1054 
+coffHeaderBase 2
+990 989 
+signal:with: 2
+783 1106 
+signal: 2
+783 782 
+initializeControlKeys 2
+467 898 
+removePartRuntimeLibrary 4
+779 1263 1313 403 
+removeSessionEventHandlers 2
+779 444 
+partLibraryClassesToInitialize 3
+779 1263 1313 
+installPartRuntimeLibrary 4
+779 1263 1313 403 
+named: 5
+777 772 423 699 675 
+withAll: 2
+1047 953 
+dragSourceSensitivity 3
+898 1243 1219 
+dragTargetMultipleItemDefault 2
+898 1319 
+fromBytes: 3
+898 742 625 
+eventsTriggered 8
+898 765 455 391 879 445 970 396 
+eventsTriggered: 2
+898 970 
+initializeEventsTriggered 4
+898 765 970 396 
+fromInteger: 8
+898 742 672 1137 625 922 398 635 
+mustBeSymbol: 2
+1327 1267 
+existingSymbolFor: 2
+1327 1267 
+intern: 2
+1327 1267 
+canEdit 3
+988 685 686 
+forClass: 4
+1070 412 410 642 
+supportedEvents 4
+983 1251 1256 1255 
+defaultHeight 2
+983 1251 
+receiver:selector: 2
+1142 1143 
+recyclingThreshold 3
+914 1168 1215 
+with:with: 2
+690 1111 
+with:with:with: 2
+690 1111 
+with:with:with:with: 2
+690 1111 
+with: 4
+690 437 263 1111 
+indexed: 2
+655 656 
+fromCompiledMethod: 2
+703 704 
+from:to: 2
+458 1147 
+currentClass: 3
+1296 1079 1139 
+currentClass 3
+1296 1079 1139 
+initializeStyleOptions 2
+1346 1166 
+dateAndTimeNow 2
+761 744 
+nullValue 3
+757 742 1091 
+documentation 3
+924 925 931 
+findOrOpenOn: 3
+1240 1068 1066 
+describeClassesInPathName: 3
+455 713 404 
+constructSupportedVersions 2
+455 713 
+createLogWindow 2
+455 713 
+describe 2
+455 713 
+describeObjectInPathName: 2
+455 713 
+standardLoadMapsDictionary: 2
+455 713 
+dump:newFile: 2
+455 715 
+dumpAll:newFile: 2
+455 715 
+removeChangeMapsSatisfying:forVersion: 3
+455 713 404 
+describeClasses 2
+455 713 
+loadAllFromPathName:loadMaps: 2
+455 713 
+supportedVersions 3
+455 446 713 
+supportedVersions: 2
+455 713 
+dump: 2
+455 715 
+versionCanBeDescribed: 3
+455 446 713 
+removeAllChangeMapsForClass: 3
+455 713 404 
+registerChangeMap:forVersion: 3
+455 713 404 
+standardLoadMapsDictionary 2
+455 713 
+constructStandardLoadMaps 2
+455 713 
+getFileNameToOpen 2
+455 713 
+initializePlatformVersion 2
+455 713 
+loadFromPathName: 2
+455 713 
+standardLoadMapsFor: 2
+455 713 
+versionCanBeLoaded: 5
+455 446 713 684 404 
+describeFromPathName:newFile: 2
+455 713 
+loadFromPathName:loadMaps: 2
+455 713 
+installComponent 4
+455 966 713 431 
+removeChangeMapForClass:forVersion: 3
+455 713 404 
+currentVersion: 3
+455 713 404 
+createLogWindowLabelled: 3
+455 715 713 
+defaultDictionaryClass 2
+455 907 
+getFileNameToCreate 2
+455 715 
+initializeStandardLoadMaps 2
+455 713 
+describeClassesFromPathName:newFile: 2
+455 713 
+describeAllFromPathName:newFile: 2
+455 713 
+currentPlatform 3
+455 713 1219 
+loadAllFromPathName: 2
+455 713 
+defaultInitialSize 3
+1274 1315 953 
+red:green:blue: 3
+671 1118 672 
+defaultColorClass 3
+671 692 672 
+initializeSystemColors 2
+671 430 
+fromFile:in: 3
+448 403 632 
+fromAttributes: 2
+748 637 
+winStruct 3
+748 700 637 
+initializePropertyOptions 10
+1270 1314 1263 1310 1339 1308 1337 1295 1313 1331 
+open:in:action:fileSize:attribute:flags:mode: 2
+743 886 
+open:in: 2
+743 886 
+open:in:attribute:mode: 2
+743 886 
+versionDescriptionOf: 2
+446 404 
+initializeVersionInfo 2
+446 404 
+classNamed: 2
+446 696 
+setAttributesOfPathName: 2
+446 404 
+initializePlatformValues 2
+446 444 
+supportsShowDisabledScrollbarStyle 2
+1320 1259 
+installLibrary 2
+1162 444 
+getCurrent 5
+965 1152 952 887 888 
+dragButtonIndex 5
+1257 1258 1056 1057 1054 
+nonAuto 3
+1336 1340 1338 
+auto 3
+1336 1340 1338 
+defaultClass 3
+1151 410 1054 
+defaultClass: 3
+1151 410 1054 
+fromDate:time: 2
+724 695 
+relative: 2
+896 897 
+volumeRelative: 2
+896 897 
+fromCollection: 2
+721 1254 
+pathName:in: 2
+662 886 
+exists:in: 3
+662 404 886 
+forPWO20Dialog: 4
+956 1058 877 878 
+labelFindAgain 2
+1146 1145 
+labelSelectAll 2
+1146 1145 
+labelWordWrap 2
+1146 1145 
+leftButtonScrollInterval 2
+955 909 
+leftButtonScrollTimerId 2
+955 909 
+searchString: 2
+955 1342 
+fromLocator: 3
+884 423 1077 
+fromPath: 4
+884 1077 886 1076 
+fromPath:in: 3
+884 886 1076 
+fields 4
+884 423 886 1076 
+conversions 2
+884 423 
+initializeCurrentClass 2
+1079 1139 
+applicationName 5
+1141 1131 1068 1066 1067 
+shutdown 2
+1139 673 
+removeExternalCallHandler 2
+1139 1140 
+started 2
+1139 1140 
+apiPrimitiveMap 2
+887 1137 
+getHandle: 2
+887 1137 
+default 3
+1227 699 1076 
+standardRuntimeMenuFor: 5
+1145 1133 1135 881 880 
+standardSmalltalkMenuFor: 5
+1145 1133 1135 881 880 
+labelSaveAs 2
+1133 1134 
+labelProductInformation 2
+1135 1136 
+partsFramingBlock: 2
+1132 1105 
+fromHandle: 2
+1153 632 
+applicationFrom: 2
+698 404 
+unitMultiplier 2
+944 919 
+initializeDefaultColors 2
+692 672 
+bound 2
+675 648 
+memoryHandleFrom:withAllocFlag: 2
+1092 1091 
+memoryHandleFrom: 2
+1092 1091 
+copyToNonSmalltalkMemory:withAllocFlag: 2
+1092 1091 
+additiveIdentity 2
+922 921 
+multiplicativeIdentity 2
+922 921 
+extendedDragButtonIndex 2
+1056 1054 
+fullPathName: 2
+404 886 
+defaultPoolNames 2
+642 645 

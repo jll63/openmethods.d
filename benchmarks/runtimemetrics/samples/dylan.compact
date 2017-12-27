@@ -1,0 +1,2708 @@
+925
+Object 0
+
+object 1
+0 
+window_preferences 1
+1 
+preference_manager 1
+1 
+pref_spec 1
+1 
+preference_version 1
+1 
+color_table 1
+1 
+pen_state 1
+1 
+font_metrics 1
+1 
+slot_spec 1
+1 
+file 1
+1 
+idler_reference 1
+1 
+rgb_color 1
+1 
+drag 1
+1 
+class_spec 1
+1 
+busy_cursor 1
+1 
+framework_library 1
+1 
+menu_bar 1
+1 
+external_reference_table 1
+1 
+point 1
+1 
+gc_generation 1
+1 
+gc_step 1
+1 
+activation_stack_entry 1
+1 
+locative_pointer 1
+1 
+cfm_fragment_connection 1
+1 
+symbol 1
+1 
+character 1
+1 
+vcell_vector 1
+1 
+boolean 1
+1 
+dispatch_table 1
+1 
+miscellaneous_immediate 1
+1 
+illegal_object_class 1
+1 
+simple_user_class 1
+1 
+library 1
+1 
+deque_node 1
+1 
+aslm_function_set 1
+1 
+code_vector 1
+1 
+heterogeneous_vector 1
+1 
+table_vector 1
+1 
+meter_entry 1
+1 
+tree_format 1
+1 
+outline_format 1
+40 
+widget 1
+1 
+text_widget 1
+42 
+node 1
+1 
+visual_node 1
+44 
+icon_widget 1
+42 
+tree 1
+1 
+visual_tree 1
+47 
+behavior 1
+1 
+preference_item_behavior 1
+49 
+preference_dialog_behavior 1
+49 
+window_persistence_behavior 1
+49 
+adorner 1
+1 
+box_border_adorner 1
+53 
+3D_button_adorner 1
+53 
+text_button_adorner 1
+53 
+icon_button_adorner 1
+53 
+standard_button_adorner 1
+53 
+standard_popup_adorner 1
+53 
+view_determiner 1
+1 
+vertical_relative_determiner 1
+60 
+page_boundary_adorner 1
+53 
+size_relative_determiner 1
+60 
+size_superview_determiner 1
+60 
+back_color_synch_adorner 1
+53 
+inset_recessed_frame_adorner 1
+53 
+pin_bottom_determiner 1
+60 
+pin_right_determiner 1
+60 
+fore_color_synch_adorner 1
+53 
+inset_scroller_frame_adorner 1
+53 
+horizontal_relative_determiner 1
+60 
+dark_edit_text_adorner 1
+53 
+pin_bottom_right_determiner 1
+60 
+edit_text_adorner 1
+53 
+recessed_frame_adorner 1
+53 
+ae_desc 1
+1 
+relative_descriptor 1
+76 
+token 1
+76 
+has_super_view_bounds 1
+60 
+tracker_adorner 1
+53 
+event 1
+1 
+resign_target_event 1
+81 
+data_item 1
+1 
+clipboard 1
+83 
+hilite_adorner 1
+53 
+typed_data 1
+1 
+typed_handle 1
+86 
+horiz_scroll_bar_determiner 1
+60 
+typed_pointer 1
+86 
+super_view_horiz_relative_determiner 1
+60 
+horiz_size_super_view_determiner 1
+60 
+command 1
+1 
+typing_command 1
+92 
+super_view_relative_determiner 1
+60 
+super_view_vert_relative_determiner 1
+60 
+index_descriptor 1
+76 
+grid_arrow_key_behavior 1
+49 
+region 1
+1 
+qd_region 1
+98 
+grid_select_behavior 1
+49 
+null_descriptor 1
+76 
+drag_flavor 1
+86 
+vert_scroll_bar_determiner 1
+60 
+tabber 1
+49 
+drag_item 1
+83 
+text_style 1
+1 
+qd_text_style 1
+106 
+vert_size_super_view_determiner 1
+60 
+tracker 1
+1 
+grid_select_tracker 1
+109 
+comparison_descriptor 1
+76 
+object_specifier 1
+76 
+activate_event 1
+81 
+grow_icon_determiner 1
+60 
+become_target_event 1
+81 
+designator 1
+1 
+offset_designator 1
+116 
+draw_adorner 1
+53 
+logical_descriptor 1
+76 
+debugger_behavior 1
+49 
+edit_text_dialog_filter 1
+49 
+default_button_adorner 1
+53 
+frame_adorner 1
+53 
+selection_designator 1
+116 
+dialog_behavior 1
+49 
+black_background_adorner 1
+53 
+rect 1
+98 
+range_descriptor 1
+76 
+menu_event 1
+81 
+clipboard_behavior 1
+49 
+clipboard_flavor 1
+86 
+condition 1
+1 
+trace_event 1
+132 
+type 1
+1 
+singleton 1
+134 
+init_descriptor 1
+1 
+slot_descriptor 1
+136 
+basic_machine_pointer 1
+1 
+dynamically_linked_function_pointer 1
+138 
+subclass_specializer 1
+134 
+function 1
+1 
+generic_function 1
+141 
+module 1
+1 
+standard_module 1
+143 
+wrapper 1
+1 
+primitive_wrapper 1
+145 
+memory_shortage 1
+132 
+control_event 1
+81 
+icon_button_event 1
+148 
+popup_control_event 1
+148 
+button_control_event 1
+148 
+scripting_event 1
+81 
+redo_event 1
+152 
+popup_event 1
+148 
+get_data_size_event 1
+152 
+toolbox_event 1
+81 
+disk_event 1
+156 
+do_objects_exist_event 1
+152 
+menu_element 1
+1 
+menu 1
+159 
+popup_menu 1
+160 
+apple_menu 1
+160 
+get_event_info_event 1
+152 
+print_event 1
+152 
+get_suite_info_event 1
+152 
+property 1
+116 
+document_property 1
+166 
+clone_event 1
+152 
+file_property 1
+166 
+undo_event 1
+152 
+move_event 1
+152 
+statically_typed_pointer 1
+138 
+FixedTEClickLoopProcPtr 1
+172 
+close_event 1
+152 
+text_designator 1
+116 
+character_designator 1
+175 
+revert_event 1
+152 
+text_style_command 1
+92 
+font_command 1
+178 
+save_event 1
+152 
+window_property 1
+166 
+quit_event 1
+152 
+check_box_event 1
+148 
+copy_event 1
+152 
+scroll_bar_event 1
+148 
+cut_event 1
+152 
+font_size_command 1
+178 
+radio_event 1
+148 
+count_elements_event 1
+152 
+font_style_command 1
+178 
+open_application_event 1
+152 
+range_designator 1
+116 
+text_range_designator 1
+192 
+open_event 1
+152 
+create_element_event 1
+152 
+select_event 1
+152 
+text_view_property 1
+166 
+delete_event 1
+152 
+make_objects_visible_event 1
+152 
+text_view_selection_property 1
+166 
+button_event 1
+148 
+menu_item 1
+159 
+separator_item 1
+202 
+clipboard_command 1
+92 
+paste_command 1
+204 
+get_class_info_event 1
+152 
+set_data_event 1
+152 
+paste_event 1
+152 
+get_data_event 1
+152 
+IndicatorDragConstraint 1
+172 
+AEArrayData 1
+172 
+QDRect 1
+172 
+PPCStartPBRec 1
+172 
+MultiDevParam 1
+172 
+MCEntry 1
+172 
+CMProfile 1
+172 
+TextStyle 1
+172 
+PolyHandle 1
+172 
+AccessParamPtr 1
+172 
+OffPair 1
+172 
+ITab 1
+172 
+QDTxMeasProcPtr 1
+172 
+QDGlobalsHdl 1
+172 
+HMMessageRecPtr 1
+172 
+EventRecord 1
+172 
+SenderID 1
+172 
+UserEventProcPtr 1
+172 
+STElement 1
+172 
+PPCReadPBRec 1
+172 
+QDLineProcPtr 1
+172 
+CInfoPBRec 1
+172 
+RGBColorHdl 1
+172 
+TEDoTextProcPtr 1
+172 
+WidTable 1
+172 
+CProcRec 1
+172 
+ForeignPrivParam 1
+172 
+DateTimeRec 1
+172 
+ControlDefProcPtr 1
+172 
+_extended80 1
+172 
+HFileParam 1
+172 
+IOParam 1
+172 
+CMColor 1
+172 
+LHTable 1
+172 
+BitMap 1
+172 
+CMYColor 1
+172 
+MenuHandle 1
+172 
+AuxWinRec 1
+172 
+PixMap 1
+172 
+NameTable 1
+172 
+PopupPrivateDataHandle 1
+172 
+AEKeyDesc 1
+172 
+WDPBRec 1
+172 
+TEStyleHandle 1
+172 
+ProcessInfoRec 1
+172 
+PickerMenuItemInfo 1
+172 
+DrawHookProcPtr 1
+172 
+QDPoint 1
+172 
+ModalFilterYDProcPtr 1
+172 
+VolumeParam 1
+172 
+CMProfileResponse 1
+172 
+Polygon 1
+172 
+QDGetPicProcPtr 1
+172 
+CCrsr 1
+172 
+HelpItemInfo 1
+172 
+MenuCRsrc 1
+172 
+AccessParam 1
+172 
+QDGlobalsPtr 1
+172 
+NMRec 1
+172 
+PPCWritePBRec 1
+172 
+SelectorFunctionProcPtr 1
+172 
+VersRecPtr 1
+172 
+KernelID 1
+172 
+WidEntry 1
+172 
+RGBColor 1
+172 
+QDRgnProcPtr 1
+172 
+Int64Bit 1
+172 
+DirInfo 1
+172 
+SProcHndl 1
+172 
+HighLevelEventMsgHdl 1
+172 
+SysParmType 1
+172 
+ParamBlockRec 1
+172 
+LHElement 1
+172 
+TEnableColorMatchingBlk 1
+172 
+ProcPtr 1
+172 
+IPCListPortsPBRec 1
+172 
+LaunchParamBlockRec 1
+172 
+PatHandle 1
+172 
+HSLColor 1
+172 
+AEDesc 1
+172 
+CMovePBRec 1
+172 
+FSSpecHandle 1
+172 
+GDHandle 1
+172 
+HitTestHookProcPtr 1
+172 
+CMYKColor 1
+172 
+StyleTable 1
+172 
+TogglePB 1
+172 
+PPCCompProcPtr 1
+172 
+ScrpSTTable 1
+172 
+PickerInitData 1
+172 
+QDPutPicProcPtr 1
+172 
+ControlRecord 1
+172 
+CursHandle 1
+172 
+FileFilterYDProcPtr 1
+172 
+HVolumeParamPtr 1
+172 
+FileParamPtr 1
+172 
+PixPatHandle 1
+172 
+DrvQEl 1
+172 
+MCTableHandle 1
+172 
+QDGlobals 1
+172 
+WidthHookProcPtr 1
+172 
+PurgeProcPtr 1
+172 
+FontInfo 1
+172 
+IndicatorDragConstraintHandle 1
+172 
+NMProcPtr 1
+172 
+VersRec 1
+172 
+PPCRejectPBRec 1
+172 
+CMProfileHandle 1
+172 
+DlgHookProcPtr 1
+172 
+GrafPort 1
+172 
+ObjParamPtr 1
+172 
+CIconHandle 1
+172 
+STHandle 1
+172 
+SystemDialogInfo 1
+172 
+QDBitsProcPtr 1
+172 
+TargetID 1
+172 
+XYZColor 1
+172 
+Register68kProcPtr 1
+172 
+WinCTab 1
+172 
+HSVColor 1
+172 
+PPCClosePBRec 1
+172 
+HParamBlockRec 1
+172 
+FSSpec 1
+172 
+TokenBlock 1
+172 
+TipFunctionProcPtr 1
+172 
+CSpecArray 1
+172 
+FontAssoc 1
+172 
+GDevice 1
+172 
+ControlHandle 1
+172 
+_extended96 1
+172 
+PPCFilterProcPtr 1
+172 
+FileParam 1
+172 
+CMHeader 1
+172 
+ScrpSTElement 1
+172 
+Cursor 1
+172 
+PMColorPtr 1
+172 
+DTPBRec 1
+172 
+PixPat 1
+172 
+KernEntry 1
+172 
+DeviceLoopDrawingProcPtr 1
+172 
+CQDProcs 1
+172 
+CMProfilePtr 1
+172 
+VCB 1
+172 
+AuxCtlRec 1
+172 
+FileFilterProcPtr 1
+172 
+ColorPickerInfo 1
+172 
+TextWidthHookProcPtr 1
+172 
+PortInfoRec 1
+172 
+NumVersion 1
+172 
+CntrlParam 1
+172 
+RgnHandle 1
+172 
+QDCommentProcPtr 1
+172 
+CIcon 1
+172 
+TokenRec 1
+172 
+ObjParam 1
+172 
+PPCEndPBRec 1
+172 
+MemoryBlock 1
+172 
+GetSpecificFilterProcPtr 1
+172 
+CatPositionRec 1
+172 
+AliasHandle 1
+172 
+HFSFlavor 1
+172 
+EventData 1
+172 
+HighHookProcPtr 1
+172 
+QDArcProcPtr 1
+172 
+ScrapStuff 1
+172 
+WindowDefProcPtr 1
+172 
+ColorSpec 1
+172 
+FontRec 1
+172 
+ControlActionProcPtr 1
+172 
+ccntTokenRecHandle 1
+172 
+WDParam 1
+172 
+QHdr 1
+172 
+LHHandle 1
+172 
+extended80 1
+172 
+DInfo 1
+172 
+CMColorList 1
+172 
+BitMapHandle 1
+172 
+CWindowRecord 1
+172 
+xCSpecArray 1
+172 
+PMColor 1
+172 
+PickerMenuState 1
+172 
+FCBPBRec 1
+172 
+MenuHookProcPtr 1
+172 
+AFPVolMountInfo 1
+172 
+GVarHandle 1
+172 
+LocationNameRec 1
+172 
+KernPair 1
+172 
+StScrpHandle 1
+172 
+WidePtr 1
+172 
+MenuCRsrcHandle 1
+172 
+CCTabHandle 1
+172 
+QDRegion 1
+172 
+DlgHookYDProcPtr 1
+172 
+DragGrayRgnProcPtr 1
+172 
+VolumeParamPtr 1
+172 
+CCrsrHandle 1
+172 
+IntlText 1
+172 
+OpenCPicParams 1
+172 
+AliasRecord 1
+172 
+EOLHookProcPtr 1
+172 
+CMProfileChromaticities 1
+172 
+FamRec 1
+172 
+Zone 1
+172 
+PPCInformPBRec 1
+172 
+TRegisterProfileBlk 1
+172 
+VersRecHndl 1
+172 
+StandardFileReply 1
+172 
+ccntTokenRecord 1
+172 
+CopyParamPtr 1
+172 
+StyleRunDirectionProcPtr 1
+172 
+SlotDevParamPtr 1
+172 
+GammaTblHandle 1
+172 
+ApplicationDialogInfo 1
+172 
+QDPolyProcPtr 1
+172 
+QElem 1
+172 
+TargetIDHdl 1
+172 
+StyleRun 1
+172 
+WindowRecord 1
+172 
+GetNextEventFilterProcPtr 1
+172 
+QDRectProcPtr 1
+172 
+EntityName 1
+172 
+VolMountInfoHeader 1
+172 
+FMOutput 1
+172 
+HMMessageRecord 1
+172 
+FXInfo 1
+172 
+xColorSpecPtr 1
+172 
+FIDParamPtr 1
+172 
+MBarHookProcPtr 1
+172 
+GrafVars 1
+172 
+MachineLocation 1
+172 
+CtlCTab 1
+172 
+PPCPortRec 1
+172 
+AuxWinHandle 1
+172 
+PickerIconData 1
+172 
+CMProfileSearchRecordHandle 1
+172 
+StScrpRec 1
+172 
+PenState 1
+172 
+HIOParamPtr 1
+172 
+MatchRec 1
+172 
+CaretHookProcPtr 1
+172 
+WidthTable 1
+172 
+ColorSearchProcPtr 1
+172 
+ReqListRec 1
+172 
+PickerDialogInfo 1
+172 
+WritingCode 1
+172 
+GrowZoneProcPtr 1
+172 
+PopupPrivateData 1
+172 
+SFReply 1
+172 
+UniversalProcHandle 1
+172 
+PPCOpenPBRec 1
+172 
+CopyParam 1
+172 
+SlotDevParam 1
+172 
+MenuInfo 1
+172 
+IStringHandle 1
+172 
+TEStyleRec 1
+172 
+PicHandle 1
+172 
+FMInput 1
+172 
+GammaTbl 1
+172 
+WCTabHandle 1
+172 
+FKEYProcPtr 1
+172 
+TargetIDHandle 1
+172 
+FInfo 1
+172 
+ItemHitData 1
+172 
+TERec 1
+172 
+QDRRectProcPtr 1
+172 
+HFileInfo 1
+172 
+HMStringResType 1
+172 
+xColorSpec 1
+172 
+FMetricRecHandle 1
+172 
+SProcRec 1
+172 
+CMProfileSearchRecord 1
+172 
+FIDParam 1
+172 
+SysEnvRec 1
+172 
+HighLevelEventMsgHandle 1
+172 
+extended96 1
+172 
+GetVolParmsInfoBuffer 1
+172 
+Pattern 1
+172 
+KernTable 1
+172 
+ColorComplementProcPtr 1
+172 
+WStateDataHandle 1
+172 
+CTabHandle 1
+172 
+picker 1
+172 
+MenuDefProcPtr 1
+172 
+HIOParam 1
+172 
+CGrafPort 1
+172 
+PPCParamBlockRec 1
+172 
+LongDateRec 1
+172 
+CntrlParamPtr 1
+172 
+NullStHandle 1
+172 
+AppParameters 1
+172 
+TEFindWordProcPtr 1
+172 
+UnsignedWidePtr 1
+172 
+ActivateYDProcPtr 1
+172 
+PromiseHFSFlavor 1
+172 
+AuxCtlHandle 1
+172 
+Picture 1
+172 
+QDOpcodeProcPtr 1
+172 
+MCTable 1
+172 
+HVolumeParam 1
+172 
+CursorImagePtr 1
+172 
+TEHandle 1
+172 
+IStringPtr 1
+172 
+LogicalToPhysicalTable 1
+172 
+PPCAcceptPBRec 1
+172 
+TextStyleHandle 1
+172 
+EditData 1
+172 
+QDOvalProcPtr 1
+172 
+IndicatorDragConstraintPtr 1
+172 
+QDProcs 1
+172 
+PScrapStuff 1
+172 
+WDParamPtr 1
+172 
+OffsetTable 1
+172 
+MultiDevParamPtr 1
+172 
+ITabHandle 1
+172 
+HighLevelEventMsg 1
+172 
+FMetricRec 1
+172 
+DeferredTask 1
+172 
+TEStyleTable 1
+172 
+ProcHandle 1
+172 
+MenuBarDefProcPtr 1
+172 
+WStateData 1
+172 
+EvQEl 1
+172 
+QDTextProcPtr 1
+172 
+ProcessSerialNumber 1
+172 
+DXInfo 1
+172 
+ColorChangedProcPtr 1
+172 
+ColorTable 1
+172 
+CSParam 1
+172 
+CProcHndl 1
+172 
+NullStRec 1
+172 
+TERecalcProcPtr 1
+172 
+PixMapCallBackProcPtr 1
+172 
+AsscEntry 1
+172 
+LongDateCvt 1
+172 
+IString 1
+172 
+UnsignedWide 1
+172 
+HFileParamPtr 1
+172 
+IOParamPtr 1
+172 
+PixMapHandle 1
+172 
+QDJShieldCursorProcPtr 1
+172 
+CursorImageRec 1
+172 
+NWidthHookProcPtr 1
+172 
+number 1
+1 
+complex 1
+552 
+rectangular_complex 1
+553 
+serious_condition 1
+132 
+memory_exhausted 1
+555 
+method 1
+141 
+method_closure 1
+557 
+instance_wrapper 1
+145 
+immediate_wrapper 1
+559 
+slot_accessor_method 1
+557 
+format_string_condition 1
+132 
+message 1
+562 
+restart 1
+132 
+listener_abort 1
+564 
+machine_pointer 1
+138 
+alien_array 1
+566 
+abort 1
+564 
+alien_structure 1
+566 
+class 1
+134 
+abstract_class 1
+570 
+simple_method 1
+557 
+stack_overflow 1
+555 
+frame 1
+1 
+event_handler 1
+1 
+view 2
+575 574 
+tree_view 1
+576 
+preference_sheet 1
+576 
+static_text 1
+576 
+graphics_port 1
+574 
+qd_graphics_port 1
+580 
+qd_graphics_buffer 1
+581 
+command_context 1
+575 
+window_context 1
+583 
+document 1
+584 
+system_event 1
+156 
+resume_event 1
+586 
+window_event 1
+156 
+update_event 1
+588 
+cluster 1
+576 
+routinedescriptor 1
+172 
+FixedTEClickLoopUPP 1
+591 
+suspend_event 1
+586 
+key_event 1
+156 
+key_down_event 1
+594 
+clear_command 1
+204 
+cut_command 1
+596 
+key_up_event 1
+594 
+scroller 1
+576 
+main_handler 1
+584 
+grow_icon 1
+576 
+stream 1
+1 
+handle_stream 1
+602 
+object_stream 1
+602 
+handle_object_stream 2
+604 603 
+file_stream 1
+602 
+file_object_stream 2
+604 606 
+simple_icon 1
+576 
+QDCommentUPP 1
+591 
+TextWidthHookUPP 1
+591 
+OSLGetMarkTokenUPP 1
+591 
+UniversalProcPtr 1
+591 
+DeskHookUPP 1
+591 
+PixMapCallBackUPP 1
+591 
+QDOpcodeUPP 1
+591 
+FileFilterYDUPP 1
+591 
+PPCCompUPP 1
+591 
+MenuDefUPP 1
+591 
+GrowZoneUPP 1
+591 
+QDRRectUPP 1
+591 
+OSLDisposeTokenUPP 1
+591 
+WidthHookUPP 1
+591 
+AliasFilterUPP 1
+591 
+QDPutPicUPP 1
+591 
+WindowDefUPP 1
+591 
+UserEventUPP 1
+591 
+OSLAdjustMarksUPP 1
+591 
+HitTestHookUPP 1
+591 
+ControlDefUPP 1
+591 
+ColorSearchUPP 1
+591 
+MBarHookUPP 1
+591 
+QDRectUPP 1
+591 
+DragSendDataUPP 1
+591 
+QDPolyUPP 1
+591 
+ResErrUPP 1
+591 
+DrawHookUPP 1
+591 
+wide 1
+172 
+LongDateTime 1
+637 
+OSLMarkUPP 1
+591 
+IOCompletionUPP 1
+591 
+DragGrayRgnUPP 1
+591 
+TEDoTextUPP 1
+591 
+QDLineUPP 1
+591 
+AEIdleUPP 1
+591 
+MenuHookUPP 1
+591 
+DragReceiveHandlerUPP 1
+591 
+NMUPP 1
+591 
+UserFnUPP 1
+591 
+NWidthHookUPP 1
+591 
+QDArcUPP 1
+591 
+DeferredTaskUPP 1
+591 
+GNEFilterUPP 1
+591 
+MenuBarDefUPP 1
+591 
+TipFunctionUPP 1
+591 
+TERecalcUPP 1
+591 
+DlgHookUPP 1
+591 
+DeviceLoopDrawingUPP 1
+591 
+AECoerceDescUPP 1
+591 
+PurgeUPP 1
+591 
+QDOvalUPP 1
+591 
+DragDrawingUPP 1
+591 
+GetSpecificFilterUPP 1
+591 
+GetNextEventFilterUPP 1
+591 
+QDBitsUPP 1
+591 
+TEFindWordUPP 1
+591 
+ColorComplementUPP 1
+591 
+WordBreakUPP 1
+591 
+DragInputUPP 1
+591 
+AEEventHandlerUPP 1
+591 
+ModalFilterYDUPP 1
+591 
+QDRgnUPP 1
+591 
+CaretHookUPP 1
+591 
+OSLCountUPP 1
+591 
+SelectorFunctionUPP 1
+591 
+StyleRunDirectionUPP 1
+591 
+ColorChangedUPP 1
+591 
+QDGetPicUPP 1
+591 
+AEFilterUPP 1
+591 
+ControlActionUPP 1
+591 
+DlgHookYDUPP 1
+591 
+TEClickLoopUPP 1
+591 
+AECoercionHandlerUPP 1
+591 
+FKEYUPP 1
+591 
+OSLCompareUPP 1
+591 
+EOLHookUPP 1
+591 
+QDTxMeasUPP 1
+591 
+OSLGetErrDescUPP 1
+591 
+FileFilterUPP 1
+591 
+QDJShieldCursorUPP 1
+591 
+PPCFilterUPP 1
+591 
+AECoercePtrUPP 1
+591 
+QDTextUPP 1
+591 
+ActivateYDUPP 1
+591 
+OSLAccessorUPP 1
+591 
+DragTrackingHandlerUPP 1
+591 
+HighHookUPP 1
+591 
+warning 1
+132 
+simple_warning 2
+562 697 
+error 1
+555 
+sealed_object_error 1
+699 
+collection 1
+1 
+sequence 1
+701 
+range 1
+702 
+standard_range 1
+703 
+simple_restart 2
+562 564 
+instantiable_class 1
+570 
+primitive_object_class 1
+706 
+c_ingl_rational 1
+707 
+c_ingl_float 1
+707 
+c_ingl_double_float 1
+707 
+c_ingl_string 1
+707 
+c_ingl_table 1
+707 
+c_ingl_sequence 1
+707 
+c_ingl_machine_pointer 1
+707 
+c_ingl_statically_typed_pointer 1
+707 
+c_ingl_c_string 1
+707 
+c_ingl_pascal_string 1
+707 
+c_ingl_character 1
+707 
+c_ingl_stretchy_vector 1
+707 
+c_ingl_generic_function 1
+707 
+c_ingl_big_integer 1
+707 
+c_ingl_small_integer 1
+707 
+c_ingl_point 1
+707 
+c_ingl_symbol 1
+707 
+c_ingl_simple_object_vector 1
+707 
+c_ingl_pair 1
+707 
+c_ingl_empty_list 1
+707 
+c_ingl_list 1
+707 
+c_ingl_byte_string 1
+707 
+c_ingl_boolean 1
+707 
+c_ingl_integer 1
+707 
+window 2
+583 574 
+preference_dialog 1
+732 
+box 1
+576 
+custom_cluster 1
+734 
+mouse_event 1
+588 
+mouse_moved_event 1
+736 
+mouse_up_event 1
+736 
+framework_error 1
+699 
+os_error 1
+739 
+standard_instantiable_class 1
+706 
+built_in_header_class 1
+741 
+function_class 1
+706 
+method_class 1
+743 
+type_error 1
+699 
+init_type_error 1
+745 
+simple_error 2
+562 699 
+real 1
+553 
+float 1
+748 
+single_float 1
+749 
+built_in_wrapper_class 1
+741 
+double_float 1
+749 
+extended_float 1
+749 
+generic_function_class 1
+743 
+rational 1
+748 
+integer 1
+755 
+n_ingl_1886547824 1
+756 
+n_ingl_1668116580 1
+756 
+n_ingl_1819240297 1
+756 
+n_ingl_1768842341 1
+756 
+n_ingl_1919249440 1
+756 
+n_ingl_1868720672 1
+756 
+n_ingl_1853189228 1
+756 
+n_ingl_1953459045 1
+756 
+n_ingl_1634039412 1
+756 
+n_ingl_1919247215 1
+756 
+n_ingl_1818850164 1
+756 
+n_ingl__1857 1
+756 
+n_ingl__128 1
+756 
+mutable_collection 1
+701 
+mutable_sequence 2
+702 770 
+string 1
+771 
+s_ingl_integer 1
+772 
+n_ingl_1954050932 1
+756 
+n_ingl_1886679930 1
+756 
+n_ingl_1718578804 1
+756 
+n_ingl_1885564532 1
+756 
+n_ingl_1936026725 1
+756 
+n_ingl_1886220132 1
+756 
+n_ingl_1886548858 1
+756 
+n_ingl_1751346274 1
+756 
+n_ingl_1769170540 1
+756 
+n_ingl_1885498980 1
+756 
+n_ingl_1886352238 1
+756 
+n_ingl_1886282093 1
+756 
+n_ingl_23 1
+756 
+n_ingl_15 1
+756 
+n_ingl_8 1
+756 
+n_ingl_7 1
+756 
+n_ingl_6 1
+756 
+n_ingl_5 1
+756 
+n_ingl_4 1
+756 
+n_ingl_3 1
+756 
+n_ingl_2 1
+756 
+s_ingl_pref_ok_button 1
+772 
+s_ingl_pref_cancel_button 1
+772 
+s_ingl_pref_default_button 1
+772 
+s_ingl_stream_out_front_floating_window 1
+772 
+s_ingl_stream_out_front_window 1
+772 
+s_ingl_stream_in_window 1
+772 
+s_ingl_print_front_floating_window 1
+772 
+s_ingl_print_front_window 1
+772 
+s_ingl_print_target_chain 1
+772 
+s_ingl_debug_modal_windows 1
+772 
+s_ingl_break_on_failure 1
+772 
+s_ingl_stop_event_loop 1
+772 
+s_ingl_clear 1
+772 
+s_ingl_paste 1
+772 
+s_ingl_copy 1
+772 
+s_ingl_cut 1
+772 
+n_ingl_1 1
+756 
+s_ingl_revert 1
+772 
+s_ingl_save_copy 1
+772 
+s_ingl_save_as 1
+772 
+s_ingl_save 1
+772 
+s_ingl_quit 1
+772 
+s_ingl_open 1
+772 
+s_ingl_desk_accessory 1
+772 
+s_ingl_about_box 1
+772 
+s_ingl_select_all 1
+772 
+s_ingl_close 1
+772 
+s_ingl_undo 1
+772 
+s_ingl_on 1
+772 
+n_ingl_1685021557 1
+756 
+n_ingl_1668770158 1
+756 
+n_ingl_1718185061 1
+756 
+n_ingl_1768842360 1
+756 
+n_ingl_1667784992 1
+756 
+n_ingl_1918987879 1
+756 
+n_ingl_1668577396 1
+756 
+n_ingl_0 1
+756 
+s_ingl_center_bottom_out_title 1
+772 
+s_ingl_center_bottom_title 1
+772 
+s_ingl_center_bottom_in_title 1
+772 
+s_ingl_center_title 1
+772 
+s_ingl_center_top_inside_title 1
+772 
+s_ingl_center_top_out_title 1
+772 
+s_ingl_center_top_title 1
+772 
+s_ingl_top_right_out_title 1
+772 
+s_ingl_top_left_out_title 1
+772 
+s_ingl_top_right_title 1
+772 
+s_ingl_default_title 1
+772 
+s_ingl_embossed_two_border 1
+772 
+s_ingl_embossed_one_border 1
+772 
+s_ingl_recessed_two_border 1
+772 
+s_ingl_recessed_one_border 1
+772 
+s_ingl_bezel_border 1
+772 
+s_ingl_plain_border 1
+772 
+s_ingl_before 1
+772 
+s_ingl_after 1
+772 
+s_ingl_before_sibling 1
+772 
+s_ingl_after_sibling 1
+772 
+control 1
+576 
+custom_control 1
+853 
+custom_popup 1
+854 
+generic_mouse_down_event 1
+736 
+mouse_down_event 1
+856 
+background_mouse_down_event 1
+856 
+text_view 1
+576 
+edit_text 1
+859 
+number_text 1
+860 
+drag_event 1
+736 
+receive_drag_event 1
+862 
+track_drag_event 1
+862 
+big_integer 1
+756 
+list 1
+771 
+pair 1
+866 
+ratio 1
+755 
+small_ratio 1
+868 
+big_ratio 1
+868 
+empty_list 1
+866 
+module_variable_condition 1
+562 
+module_variable_access_error 2
+872 699 
+small_integer 1
+756 
+instance_class 1
+741 
+statically_typed_pointer_class 1
+875 
+popup 1
+853 
+ctl_mgr_control 1
+853 
+ctl_mgr_popup 2
+878 877 
+radio 1
+853 
+ctl_mgr_radio 2
+878 880 
+scroll_bar 1
+853 
+ctl_mgr_scroll_bar 2
+878 882 
+grid_view 1
+576 
+text_grid_view 1
+884 
+list_view 1
+884 
+text_list_view 2
+886 885 
+button 1
+853 
+ctl_mgr_button 2
+878 888 
+check_box 1
+853 
+ctl_mgr_check_box 2
+878 890 
+stretchy_collection 1
+701 
+explicit_key_collection 1
+701 
+mutable_explicit_key_collection 2
+893 770 
+table 2
+894 892 
+object_table 1
+895 
+stretchy_sequence 2
+702 892 
+deque 2
+771 897 
+array 1
+771 
+vector 1
+899 
+simple_object_vector 1
+900 
+icon_suite 1
+854 
+icon_suite_button 1
+902 
+three_D_icon_button 1
+903 
+custom_button 1
+854 
+text_button 1
+905 
+standard_text_button 1
+906 
+toggle_icon 1
+903 
+unicode_string 2
+772 900 
+c_string 2
+772 172 
+byte_string 2
+772 900 
+label_icon 1
+903 
+toggle_label_icon 1
+912 
+icon_text_button 1
+912 
+handle_string 2
+772 900 
+resource_string 1
+915 
+ae_list 2
+900 76 
+ae_record 1
+917 
+apple_event 1
+918 
+pascal_string 3
+772 900 172 
+stretchy_vector 2
+900 897 
+stretchy_object_vector 1
+921 
+stretchy_byte_string 2
+921 772 
+stretchy_unicode_string 2
+921 772 
+428
+meth32:A:0/1 2
+42 43 
+meth33:A:0/2 2
+47 48 
+meth33:B:1/2 2
+44 45 
+meth37:E:0/1 2
+852 851 
+meth44:A:0/1 2
+48 40 
+meth70:A:0/1 3
+42 46 43 
+meth74:A:0/1 2
+44 45 
+meth79:B:0/1 2
+48 40 
+meth92:D:0/1 2
+850 849 
+meth95:A:0/1 2
+40 41 
+meth97:A:0/1 2
+40 41 
+meth98:A:0/1 2
+42 43 
+meth100:A:0/1 2
+45 42 
+meth149:A:0/1 2
+40 41 
+meth152:A:0/1 2
+40 41 
+meth173:B:0/1 2
+45 42 
+meth258:B:0/1 3
+25 756 732 
+meth259:B:0/1 3
+25 732 756 
+meth289:A:0/1 2
+906 907 
+meth321:A:0/1 2
+576 902 
+meth323:A:0/2 2
+1 756 
+meth323:B:1/2 2
+908 913 
+meth325:A:0/1 2
+902 903 
+meth335:A:0/1 2
+908 913 
+meth347:B:0/1 2
+903 912 
+meth353:B:0/1 2
+903 912 
+meth356:B:0/1 6
+848 847 846 845 844 843 
+meth371:A:0/2 2
+1 756 
+meth371:B:1/2 2
+908 913 
+meth378:A:0/1 2
+908 913 
+meth382:B:0/1 11
+842 841 840 839 838 837 836 835 834 833 832 
+meth415:A:0/1 2
+906 907 
+meth423:A:0/1 2
+903 914 
+meth444:A:0/1 3
+75 66 70 
+meth541:A:0/1 2
+859 93 
+meth546:A:0/1 5
+92 205 596 178 93 
+meth552:A:0/2 2
+574 599 
+meth552:B:1/2 2
+19 98 
+meth558:B:0/1 3
+159 732 585 
+meth559:A:0/1 2
+576 902 
+meth561:A:0/1 2
+576 859 
+meth566:A:0/1 5
+92 205 596 178 93 
+meth571:A:0/2 2
+160 162 
+meth571:B:1/2 3
+202 160 159 
+meth576:A:0/1 2
+574 576 
+meth593:A:0/1 3
+127 99 76 
+meth602:A:0/3 3
+1 882 599 
+meth602:B:1/3 3
+1 599 882 
+meth602:C:2/3 2
+1 185 
+meth615:A:0/1 2
+917 918 
+meth626:A:0/2 2
+99 127 
+meth626:B:1/2 2
+99 127 
+meth627:A:0/1 2
+127 99 
+meth628:A:0/1 2
+109 110 
+meth630:A:0/1 2
+576 599 
+meth633:C:0/2 10
+570 731 730 729 728 727 726 725 724 723 
+meth633:D:1/2 2
+756 831 
+meth636:A:0/1 2
+1 859 
+meth643:B:0/1 2
+603 606 
+meth647:A:0/1 2
+93 178 
+meth649:B:0/1 3
+576 878 912 
+meth655:A:0/1 2
+576 732 
+meth658:A:0/1 2
+99 127 
+meth667:A:0/1 2
+99 127 
+meth673:A:0/1 2
+105 102 
+meth689:A:0/1 3
+878 883 879 
+meth692:A:0/1 5
+1 166 732 600 585 
+meth693:A:0/1 2
+127 99 
+meth703:A:0/1 2
+603 606 
+meth710:A:0/1 26
+191 194 164 182 168 174 189 195 198 158 206 209 155 163 165 171 180 207 184 186 199 208 153 177 196 170 
+meth718:B:0/1 2
+576 732 
+meth721:B:0/1 9
+574 576 732 859 582 734 906 912 903 
+meth723:A:0/1 7
+576 599 878 886 906 912 903 
+meth738:A:0/1 5
+576 859 860 884 886 
+meth739:A:0/1 3
+11 159 575 
+meth745:A:0/4 5
+1 732 859 600 585 
+meth745:B:1/4 6
+756 830 828 826 825 824 
+meth745:C:2/4 3
+756 829 827 
+meth745:D:3/4 2
+76 128 
+meth747:C:0/1 10
+1 756 28 911 866 871 867 901 25 19 
+meth754:A:0/1 2
+53 85 
+meth757:A:0/1 6
+92 205 596 597 178 93 
+meth775:A:0/1 3
+1 26 28 
+meth777:A:0/1 2
+78 101 
+meth780:A:0/2 2
+109 110 
+meth780:D:1/2 2
+25 823 
+meth805:A:0/1 2
+197 200 
+meth811:A:0/1 2
+86 131 
+meth844:B:0/1 3
+574 576 732 
+meth847:A:0/1 2
+576 878 
+meth848:B:0/1 4
+853 878 913 908 
+meth859:A:0/1 4
+576 732 601 883 
+meth873:B:0/1 2
+49 25 
+meth880:A:0/1 2
+576 732 
+meth883:A:0/2 2
+160 162 
+meth883:B:1/2 3
+756 772 25 
+meth890:A:0/1 2
+590 735 
+meth891:B:0/1 2
+197 200 
+meth896:B:0/1 2
+99 127 
+meth897:A:0/1 2
+576 878 
+meth898:A:0/1 11
+10 575 583 576 581 732 878 883 879 859 585 
+meth908:B:0/1 2
+181 167 
+meth909:A:0/2 5
+86 89 87 131 102 
+meth909:B:1/2 2
+141 566 
+meth913:A:0/3 32
+1 917 166 575 583 576 732 853 888 890 880 590 882 878 859 197 193 861 600 10 585 735 855 907 913 908 903 577 881 883 889 891 
+meth913:B:1/3 31
+81 152 189 209 207 129 736 858 82 115 737 589 113 196 174 857 201 183 188 148 185 595 194 593 587 170 153 182 180 151 149 
+meth913:C:2/3 15
+1 822 821 28 820 819 818 817 76 917 816 815 814 813 812 
+meth916:A:0/1 2
+603 606 
+meth918:A:0/1 4
+124 175 176 166 
+meth920:B:0/1 2
+756 811 
+meth924:A:0/2 4
+1 576 732 600 
+meth924:B:1/2 10
+81 736 857 858 588 152 856 738 737 863 
+meth933:A:0/1 5
+81 49 575 53 60 
+meth938:A:0/1 5
+159 732 853 590 585 
+meth942:A:0/1 15
+576 601 878 883 608 859 579 884 886 734 855 906 912 902 577 
+meth945:B:0/1 2
+859 579 
+meth948:B:0/1 3
+576 732 878 
+meth965:A:0/2 2
+99 127 
+meth965:B:1/2 2
+99 127 
+meth971:A:0/1 2
+603 606 
+meth973:A:0/1 2
+78 101 
+meth979:A:0/1 7
+17 159 202 203 160 162 161 
+meth983:A:0/1 2
+105 862 
+meth987:A:0/1 2
+19 127 
+meth992:A:0/1 2
+115 82 
+meth1012:B:0/1 2
+576 732 
+meth1014:A:0/1 3
+576 859 860 
+meth1027:A:0/1 2
+1 25 
+meth1032:A:0/1 2
+99 127 
+meth1036:A:0/4 11
+49 130 125 104 121 120 100 97 51 50 52 
+meth1036:C:1/4 7
+575 732 576 860 600 884 733 
+meth1036:D:2/4 11
+81 129 186 184 208 198 148 595 857 151 149 
+meth1036:E:3/4 18
+1 810 809 808 807 806 805 804 803 802 801 800 799 798 797 796 795 821 
+meth1038:A:0/1 2
+756 772 
+meth1041:A:0/1 2
+10 16 
+meth1042:A:0/1 2
+1 859 
+meth1050:A:0/1 2
+574 599 
+meth1055:A:0/1 2
+257 756 
+meth1057:A:0/1 2
+10 16 
+meth1062:A:0/1 5
+603 606 604 605 607 
+meth1064:A:0/1 6
+17 202 203 160 162 161 
+meth1069:A:0/1 2
+576 599 
+meth1070:A:0/1 6
+575 583 732 859 600 585 
+meth1075:B:0/1 2
+19 98 
+meth1091:A:0/1 3
+49 53 62 
+meth1097:A:0/1 6
+756 19 127 28 772 10 
+meth1103:A:0/1 2
+739 740 
+meth1119:B:0/1 2
+127 99 
+meth1127:A:0/1 2
+603 606 
+meth1134:B:0/1 3
+11 159 575 
+meth1142:A:0/1 2
+160 162 
+meth1154:B:0/1 2
+93 178 
+meth1155:A:0/1 2
+93 178 
+meth1163:A:0/1 2
+99 127 
+meth1164:A:0/1 2
+574 599 
+meth1169:A:0/2 2
+99 127 
+meth1169:B:1/2 2
+99 127 
+meth1170:B:0/1 11
+811 794 793 792 791 790 789 788 787 786 756 
+meth1173:A:0/1 2
+884 885 
+meth1178:A:0/1 6
+10 575 576 732 584 585 
+meth1179:A:0/1 3
+576 581 732 
+meth1186:A:0/2 2
+99 127 
+meth1186:B:1/2 2
+99 127 
+meth1189:A:0/1 3
+576 878 859 
+meth1210:A:0/2 6
+166 169 181 197 200 167 
+meth1210:B:1/2 13
+756 785 784 783 782 781 780 779 778 777 776 775 774 
+meth1212:A:0/1 2
+603 606 
+meth1219:A:0/2 2
+127 99 
+meth1219:B:1/2 2
+127 99 
+meth1221:A:0/1 9
+853 888 890 880 882 877 855 905 903 
+meth1232:A:0/1 2
+915 916 
+meth1239:A:0/1 2
+576 599 
+meth1240:B:0/1 6
+853 878 913 908 903 902 
+meth1242:A:0/2 3
+86 87 102 
+meth1242:B:1/2 2
+141 566 
+meth1246:A:0/1 2
+576 732 
+meth1249:A:0/2 2
+49 104 
+meth1249:B:1/2 2
+575 576 
+meth1250:A:0/1 2
+160 202 
+meth1255:A:0/1 3
+576 878 859 
+meth1263:A:0/2 2
+127 99 
+meth1263:B:1/2 2
+127 99 
+meth1284:A:0/1 2
+127 99 
+meth1285:A:0/3 5
+166 181 197 200 167 
+meth1285:B:1/3 8
+756 784 783 778 777 776 775 774 
+meth1285:C:2/3 3
+1 76 918 
+meth1290:A:0/1 2
+99 127 
+meth1301:A:0/2 2
+574 599 
+meth1301:B:1/2 2
+19 98 
+meth1302:A:0/2 4
+1 25 854 576 
+meth1302:B:1/2 2
+590 735 
+meth1303:A:0/1 2
+10 16 
+meth1305:A:0/1 2
+603 606 
+meth1323:B:0/1 2
+127 99 
+meth1327:B:0/1 3
+853 878 902 
+meth1335:A:0/2 7
+1 10 732 859 197 600 585 
+meth1335:B:1/2 5
+756 776 775 774 778 
+meth1341:B:0/1 2
+99 127 
+meth1348:A:0/1 3
+575 583 732 
+meth1353:A:0/1 2
+603 606 
+meth1368:A:0/1 2
+109 110 
+meth1371:A:0/1 2
+575 576 
+meth1376:A:0/1 2
+181 167 
+meth1381:B:0/1 8
+159 202 160 732 853 590 878 585 
+meth1382:B:0/1 2
+911 566 
+meth1386:A:0/1 6
+25 570 773 731 722 721 
+meth1403:B:0/1 2
+93 178 
+meth1406:A:0/1 2
+1 732 
+meth1412:A:0/2 3
+49 130 120 
+meth1412:C:1/2 2
+575 600 
+meth1416:A:0/1 2
+583 585 
+meth1423:B:0/1 3
+576 878 859 
+meth1425:A:0/1 3
+159 732 585 
+meth1438:A:0/1 17
+60 79 94 91 108 90 95 88 103 114 64 67 63 73 61 71 68 
+meth1439:A:0/1 2
+583 585 
+meth1446:A:0/1 2
+576 599 
+meth1449:B:0/1 2
+19 98 
+meth1452:A:0/3 2
+127 99 
+meth1452:B:1/3 2
+552 756 
+meth1452:C:2/3 2
+552 756 
+meth1467:A:0/1 4
+732 105 13 582 
+meth1474:A:0/1 2
+576 859 
+meth1475:A:0/2 3
+756 772 25 
+meth1475:B:1/2 2
+878 879 
+meth1481:A:0/1 2
+576 732 
+meth1482:A:0/1 10
+1 552 28 702 867 772 25 19 127 99 
+meth1483:A:0/1 2
+10 16 
+meth1498:A:0/3 2
+127 99 
+meth1498:B:1/3 2
+552 756 
+meth1498:C:2/3 2
+552 756 
+meth1505:A:0/1 3
+576 878 859 
+meth1519:A:0/2 2
+127 99 
+meth1519:B:1/2 2
+127 99 
+meth1524:A:0/1 3
+49 53 62 
+meth1525:A:0/1 4
+89 87 131 102 
+meth1527:A:0/2 20
+53 118 80 123 126 122 69 65 62 72 74 70 66 75 54 59 58 57 56 55 
+meth1527:B:1/2 7
+576 599 734 855 907 903 906 
+meth1534:A:0/1 3
+756 769 768 
+meth1537:A:0/1 2
+603 606 
+meth1546:A:0/2 2
+106 107 
+meth1546:B:1/2 2
+576 912 
+meth1547:B:0/1 12
+756 767 766 765 764 763 762 761 760 829 759 758 
+meth1552:A:0/1 2
+1 575 
+meth1556:A:0/1 3
+81 152 862 
+meth1563:A:0/1 2
+886 887 
+meth1572:A:0/1 3
+13 102 105 
+meth1573:A:0/1 6
+1 166 732 576 600 585 
+meth1589:A:0/1 26
+191 194 164 182 168 174 189 195 198 158 206 209 155 163 165 171 180 207 184 186 199 208 153 177 196 170 
+meth1604:A:0/1 2
+93 178 
+meth1606:A:0/2 3
+1 732 600 
+meth1606:B:1/2 3
+756 825 824 
+meth1617:A:0/1 2
+583 585 
+meth1619:A:0/3 4
+1 166 575 576 
+meth1619:B:1/3 3
+81 737 864 
+meth1619:C:2/3 2
+1 757 
+meth1622:A:0/1 2
+99 127 
+meth1623:A:0/1 2
+859 579 
+meth1629:A:0/1 2
+576 860 
+meth1634:B:0/1 5
+81 49 575 53 60 
+meth1639:A:0/1 2
+301 338 
+meth1640:B:0/1 2
+301 338 
+meth1642:A:0/1 2
+26 756 
+meth1643:A:0/1 4
+874 868 865 752 
+meth1644:A:0/1 7
+741 751 707 571 724 720 719 
+meth1645:A:0/1 2
+898 20 
+meth1648:A:0/2 26
+138 1 868 756 865 752 755 19 703 701 702 899 901 911 909 866 107 99 274 12 10 127 45 44 910 920 
+meth1648:B:1/2 26
+138 1 868 756 865 752 755 19 703 701 702 899 901 911 909 866 107 99 274 12 10 127 45 44 910 920 
+meth1649:A:0/2 4
+718 730 717 716 
+meth1649:B:1/2 5
+26 1 920 772 910 
+meth1652:A:0/1 2
+920 910 
+meth1653:A:0/2 2
+703 702 
+meth1653:B:1/2 2
+703 702 
+meth1654:A:0/1 2
+892 1 
+meth1656:A:0/1 2
+896 702 
+meth1659:A:0/1 2
+26 772 
+meth1660:A:0/1 2
+134 570 
+meth1661:A:0/1 4
+772 911 909 25 
+meth1662:A:0/1 2
+874 865 
+meth1664:A:0/2 3
+874 756 865 
+meth1664:B:1/2 2
+874 865 
+meth1667:A:0/1 69
+172 920 910 570 1 145 136 137 895 703 898 921 564 582 13 105 102 886 884 740 585 600 579 861 860 93 178 859 117 192 879 883 889 601 732 576 87 575 162 160 202 129 152 78 917 76 15 107 99 156 606 603 16 10 18 734 6 855 907 906 914 904 912 908 903 577 47 45 44 
+meth1670:A:0/2 2
+134 32 
+meth1670:B:1/2 2
+134 32 
+meth1671:A:0/1 2
+34 21 
+meth1672:A:0/2 2
+570 741 
+meth1672:B:1/2 2
+145 560 
+meth1673:A:0/1 3
+869 756 870 
+meth1676:A:0/2 2
+874 865 
+meth1676:B:1/2 2
+874 865 
+meth1679:A:0/1 6
+701 702 901 911 909 866 
+meth1682:A:0/2 9
+874 566 868 756 752 755 19 127 552 
+meth1682:B:1/2 9
+874 756 566 868 752 755 19 127 552 
+meth1684:A:0/1 13
+866 920 910 911 909 901 895 898 701 921 703 917 915 
+meth1685:A:0/2 2
+899 900 
+meth1685:B:1/2 2
+1 831 
+meth1689:A:0/1 3
+756 868 752 
+meth1690:A:0/1 8
+866 910 898 702 899 901 911 909 
+meth1693:B:0/1 5
+1 901 911 909 866 
+meth1694:A:0/1 2
+132 772 
+meth1695:A:0/1 6
+770 771 866 901 911 909 
+meth1696:B:0/2 7
+1 771 899 901 911 909 866 
+meth1696:C:1/2 7
+1 702 899 901 911 909 866 
+meth1703:B:0/1 2
+34 21 
+meth1706:A:0/2 2
+874 865 
+meth1706:B:1/2 2
+874 865 
+meth1709:A:0/1 4
+132 562 745 573 
+meth1711:B:0/1 2
+702 1 
+meth1712:B:0/2 7
+1 702 899 901 911 909 866 
+meth1712:C:1/2 7
+1 702 899 901 911 909 866 
+meth1713:A:0/1 2
+132 697 
+meth1716:A:0/1 2
+552 868 
+meth1717:A:0/1 2
+911 909 
+meth1718:A:0/1 2
+866 702 
+meth1719:A:0/1 2
+874 865 
+meth1726:A:0/1 2
+132 697 
+meth1729:A:0/1 2
+874 865 
+meth1730:A:0/1 4
+874 868 865 752 
+meth1732:A:0/1 2
+132 697 
+meth1734:A:0/1 4
+752 874 865 755 
+meth1738:A:0/1 2
+874 865 
+meth1743:A:0/2 4
+718 730 717 716 
+meth1743:B:1/2 3
+26 1 772 
+meth1744:A:0/1 2
+756 1 
+meth1745:A:0/2 8
+868 756 874 865 752 755 19 748 
+meth1745:B:1/2 8
+868 756 874 865 752 755 748 19 
+meth1746:A:0/1 2
+899 900 
+meth1750:A:0/1 2
+34 21 
+meth1751:A:0/1 12
+866 920 910 901 911 909 895 703 898 921 917 915 
+meth1753:A:0/1 8
+871 867 900 901 911 909 898 702 
+meth1756:A:0/3 12
+1 731 718 715 714 724 713 712 711 710 709 708 
+meth1756:C:1/3 3
+1 570 134 
+meth1756:D:2/3 8
+1 756 138 172 701 25 910 920 
+meth1757:B:0/1 2
+134 32 
+meth1763:A:0/1 2
+702 701 
+meth1764:A:0/1 2
+866 702 
+meth1767:A:0/1 9
+1 895 866 901 909 911 703 917 915 
+meth1768:A:0/1 3
+869 756 870 
+meth1770:A:0/2 17
+866 920 910 911 909 901 899 900 895 703 898 921 922 923 924 917 915 
+meth1770:B:1/2 3
+1 874 756 
+meth1771:A:0/1 3
+868 865 752 
+meth1772:B:0/2 7
+1 702 899 901 911 909 866 
+meth1772:C:1/2 7
+1 702 899 901 911 909 866 
+meth1773:A:0/1 3
+756 868 752 
+meth1774:A:0/1 3
+756 868 752 
+meth1776:A:0/3 2
+134 728 
+meth1776:C:1/3 5
+1 702 899 901 866 
+meth1776:D:2/3 5
+1 702 899 901 866 
+meth1777:B:0/2 3
+1 771 899 
+meth1777:C:1/2 2
+1 702 
+meth1779:A:0/1 3
+570 706 741 
+meth1781:A:0/1 4
+874 868 865 752 
+meth1782:B:0/1 5
+701 901 911 909 866 
+meth1783:A:0/1 4
+866 898 702 921 
+meth1786:A:0/1 6
+87 160 76 99 606 603 
+meth1787:A:0/1 3
+921 923 924 
+meth1788:B:0/1 2
+34 21 
+meth1792:B:0/1 2
+898 20 
+meth1793:A:0/2 2
+874 865 
+meth1793:B:1/2 2
+874 865 
+meth1794:B:0/1 3
+702 901 866 
+meth1795:A:0/3 2
+1 26 
+meth1795:B:1/3 13
+866 920 910 911 909 901 899 895 898 921 922 923 924 
+meth1795:C:2/3 3
+1 874 756 
+meth1796:A:0/1 2
+561 557 
+meth1797:A:0/2 5
+771 901 911 909 921 
+meth1797:B:1/2 4
+702 901 911 909 
+meth1798:A:0/2 2
+874 865 
+meth1798:B:1/2 2
+874 865 
+meth1799:A:0/1 7
+895 898 701 866 901 911 909 
+meth1800:A:0/1 3
+756 868 752 
+meth1802:B:0/1 2
+702 1 
+meth1803:A:0/1 5
+874 868 865 752 19 
+meth1805:A:0/2 2
+1 134 
+meth1805:B:1/2 2
+32 1 
+meth1811:A:0/1 6
+132 555 697 564 563 133 
+meth1813:A:0/1 4
+866 898 702 921 
+meth1816:A:0/1 4
+866 898 702 921 
+meth1817:A:0/1 2
+755 749 
+meth1818:B:0/1 5
+1 901 911 909 866 
+meth1819:A:0/1 3
+756 868 752 
+meth1820:A:0/1 2
+874 134 
+meth1821:A:0/1 3
+756 26 138 
+meth1822:A:0/1 2
+898 20 
+meth1825:A:0/1 2
+26 772 
+meth1826:A:0/1 8
+866 910 703 898 899 901 911 909 
+meth1827:B:0/1 2
+39 22 
+meth1828:A:0/2 4
+718 730 717 716 
+meth1828:B:1/2 3
+874 920 910 
+meth1833:B:0/1 2
+920 910 
+meth1834:B:0/1 5
+1 901 911 909 866 
+meth1836:A:0/2 3
+874 756 748 
+meth1836:B:1/2 3
+874 756 748 
+meth1839:A:0/1 2
+134 32 
+meth1840:A:0/1 3
+570 875 715 
+meth1841:A:0/1 8
+920 901 911 909 898 921 917 915 
+meth1844:A:0/2 2
+874 865 
+meth1844:B:1/2 2
+874 865 
+meth1847:A:0/2 3
+874 756 748 
+meth1847:B:1/2 3
+874 756 748 
+meth1848:A:0/2 2
+134 728 
+meth1848:C:1/2 4
+1 702 901 866 
+meth1853:B:0/1 6
+703 701 901 911 909 866 
+meth1854:B:0/2 7
+1 702 899 901 911 909 866 
+meth1854:C:1/2 7
+1 702 899 901 911 909 866 
+meth1856:B:0/1 8
+871 867 900 901 911 909 898 771 
+meth1857:A:0/1 2
+132 772 
+meth1860:A:0/2 14
+138 874 26 868 756 865 752 755 19 772 911 909 910 920 
+meth1860:B:1/2 14
+138 874 26 868 756 865 752 755 19 772 911 909 910 920 
+meth1862:A:0/1 2
+39 22 
+meth1865:A:0/2 3
+874 748 865 
+meth1865:B:1/2 3
+874 748 865 
+meth1867:A:0/2 3
+874 756 748 
+meth1867:B:1/2 3
+874 756 748 
+meth1872:A:0/2 3
+874 1 756 
+meth1872:B:1/2 4
+920 910 898 921 
+meth1874:B:0/1 2
+898 20 
+meth1878:A:0/1 2
+892 1 
+meth1880:A:0/1 5
+770 901 911 909 866 
+meth1882:C:0/1 5
+701 901 911 909 866 
+meth1883:B:0/1 2
+1 702 
+meth1884:A:0/2 6
+874 756 868 752 755 19 
+meth1884:B:1/2 7
+874 756 868 865 752 755 748 
+meth1885:A:0/1 2
+32 134 
+meth1887:A:0/1 2
+895 898 
+meth1890:A:0/2 10
+874 566 756 868 865 752 755 19 127 552 
+meth1890:B:1/2 10
+874 756 566 868 865 752 755 19 127 552 
+meth1891:A:0/1 4
+871 867 701 702 
+meth1894:A:0/1 9
+866 920 910 901 911 909 703 898 921 

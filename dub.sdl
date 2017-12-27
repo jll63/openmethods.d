@@ -16,6 +16,7 @@ subPackage "./examples/whytheunderscore"
 subPackage "./tests/errors"
 subPackage "./tests/mptrhash"
 subPackage "./tests/misc"
+subPackage "./benchmarks/runtimemetrics"
 
 buildType "x" {
   buildOptions "debugMode" "debugInfo" "unittests"

@@ -1,0 +1,1622 @@
+311
+Artificial_Root 0
+
+nil 1
+0 
+object 1
+0 
+_dborderassociation 1
+2 
+windowtemplate 1
+2 
+storeheap 1
+2 
+storage 1
+2 
+sound 1
+2 
+protocol 1
+2 
+printinfo 1
+2 
+nibdata 1
+2 
+nxxyshow 1
+2 
+nxworkspacerequestproxy 1
+2 
+nxuniquetabs 1
+2 
+nxtabstoplist 1
+2 
+nxspinlock 1
+2 
+nxspellserver 1
+2 
+nxspellchecker 1
+2 
+nxsoundparameters 1
+2 
+nxsimplehash 1
+2 
+nxserializerstream 1
+2 
+nxselection 1
+2 
+nxrulertoken 1
+2 
+nxrelpath 1
+2 
+nxrecursivelock 1
+2 
+nxrtfdimagehandler 1
+2 
+nxrgbsliders 1
+2 
+nxprotocolchecker 1
+2 
+nxprinterfeatures 1
+2 
+nxprinter 1
+2 
+nxportportal 1
+2 
+nxpanelcontroller 1
+2 
+nxppdparse 1
+2 
+nxnonfactorykludgeobj 1
+2 
+nxnetnameserver 1
+2 
+nxmethodsignature 1
+2 
+nxlock 1
+2 
+nxlazybrowserlist 1
+2 
+nxjournaler 1
+2 
+nximage 1
+2 
+nxhardlinkinfo 1
+2 
+nxhsbsliders 1
+2 
+nxgreysliders 1
+2 
+nxgraphicimport 1
+2 
+nxfiledragsource 1
+2 
+nxdocinfo 1
+2 
+nxdeserializerstream 1
+2 
+nxdatalinkmanager 1
+2 
+nxdatalink 1
+2 
+nxcursor 1
+2 
+nxconditionlock 1
+2 
+nxcolorlistnametable 1
+2 
+nxcolorlistfrozennametable 1
+2 
+nxcolorlist 1
+2 
+nxcolorholder 1
+2 
+nxcharacterset 1
+2 
+nxcmyksliders 1
+2 
+nxbundle 1
+2 
+n3dshaper 1
+2 
+n3drotator 1
+2 
+n3dcontextmanager 1
+2 
+menutemplate 1
+2 
+ixweightingdomain 1
+2 
+ixstoredirectory 1
+2 
+ixstoreblock 1
+2 
+ixrecordmanager 1
+2 
+ixpostingset 1
+2 
+ixfilerecord 1
+2 
+ixfilefinder 1
+2 
+ixfileconverter 1
+2 
+ixdatarepository 1
+2 
+ixdatadictionary 1
+2 
+ixbtree 1
+2 
+ixattributevalue 1
+2 
+ixattributetable 1
+2 
+ixattributequery 1
+2 
+ixattributeparser 1
+2 
+ixattributebinder 1
+2 
+iodevicemaster 1
+2 
+iodevicedescription 1
+2 
+ioconfigtable 1
+2 
+ibobjectdata 1
+2 
+ibhelpconnector 1
+2 
+fontmanager 1
+2 
+fontfile 1
+2 
+font 1
+2 
+dbvalue 1
+2 
+dbtablevector 1
+2 
+dbstring 1
+2 
+dbsparselist 1
+2 
+dbsqltablealias 1
+2 
+dbrelationship 1
+2 
+dbqualifier 1
+2 
+dbmoduletemplate 1
+2 
+dbmodule 1
+2 
+dblayout 1
+2 
+dbgenericrecord 1
+2 
+dbfetchgrouptemplate 1
+2 
+dbfetchgroup 1
+2 
+dbexpression 1
+2 
+dbentity 1
+2 
+dbdatabase 1
+2 
+dbcustomexpression 1
+2 
+dbbrowserdelegate 1
+2 
+dbbindermapping 1
+2 
+dbbinder 1
+2 
+dbbasicadaptorcontext 1
+2 
+dbbasicadaptor 1
+2 
+dbattribute 1
+2 
+customobject 1
+2 
+alert 1
+2 
+storemapping 1
+2 
+storefilemapping 1
+111 
+speaker 1
+2 
+peepoutspeaker 1
+113 
+nxjournalspeaker 1
+113 
+responder 1
+2 
+application 1
+116 
+pasteboard 1
+2 
+nxservicespasteboard 1
+118 
+nxpasteboardproxy 1
+118 
+nxpasteboardfilter 1
+118 
+psmatrix 1
+2 
+focusstate 1
+122 
+nxsoundstream 1
+2 
+nxrecordstream 1
+124 
+nxplaystream 1
+124 
+nxsounddevice 1
+2 
+nxsoundout 1
+127 
+nxsoundin 1
+127 
+nxserializer 1
+2 
+nxdocumentserializer 1
+130 
+nxdirinfoserializer 1
+130 
+nxpropertylist 1
+2 
+nxrtfd 1
+133 
+nxfaxpropertylist 1
+133 
+nxdirinfo 1
+133 
+nxpathcomponent 1
+2 
+nxsymlinkpathcomponent 1
+137 
+nxinvalidationnotifier 1
+2 
+nxport 1
+139 
+nxconnection 1
+139 
+nximagerep 1
+2 
+nxepsimagerep 1
+142 
+nxcustomimagerep 1
+142 
+nxcachedimagerep 1
+142 
+nxbitmapimagerep 1
+142 
+n3dribimagerep 1
+142 
+nxfileref 1
+2 
+nxsmartfileref 1
+148 
+nxcheapfileref 1
+148 
+nxdeserializer 1
+2 
+nxdocumentdeserializer 1
+151 
+nxdirinfodeserializer 1
+151 
+nxdata 1
+2 
+iodata 1
+154 
+nxcolorpicker 1
+2 
+nxcolorpickerwheel 1
+156 
+nxcolorpickeruser 1
+156 
+nxcolorpickersliders 1
+156 
+nxcolorpickerlist 1
+156 
+n3dshape 1
+2 
+n3dlight 1
+161 
+listener 1
+2 
+peepinlistener 1
+163 
+nxjournallistener 1
+163 
+list 1
+2 
+nametable 1
+166 
+nxpath 1
+166 
+nxlistbyvalue 1
+166 
+ixpostinglist 1
+166 
+dbdatapath 1
+166 
+ixstore 1
+2 
+ixstorefile 1
+172 
+ixattribute 1
+2 
+ixmethodattribute 1
+174 
+ixivarattribute 1
+174 
+iodevice 1
+2 
+iodirectdevice 1
+177 
+ibconnector 1
+2 
+iboutletconnector 1
+179 
+ibcontrolconnector 1
+179 
+hashtable 1
+2 
+streamtable 1
+182 
+nxstringtable 1
+182 
+dbrecordstream 1
+2 
+dbrecordlist 1
+185 
+dbformatter 1
+2 
+dbtextformatter 1
+187 
+dbimageformatter 1
+187 
+dbeditableformatter 1
+187 
+dbdatawrap 1
+2 
+dbselectorwrap 1
+191 
+dbpropertywrap 1
+191 
+dbivarwrap 1
+191 
+dbconnector 1
+2 
+dbtableconnector 1
+195 
+dbpopupconnector 1
+195 
+dbassociation 1
+2 
+dbtextassociation 1
+198 
+dbtableassociation 1
+198 
+dbpopupassociation 1
+198 
+dbmoduleassociation 1
+198 
+dbimageviewassociation 1
+198 
+dbfetchgroupassociation 1
+198 
+dbcustomassociation 1
+198 
+dbcontrolassociation 1
+198 
+dbbrowserassociation 1
+198 
+cell 1
+2 
+taggedcell 1
+208 
+nxviewframecell 1
+208 
+nxgraphiccell 1
+208 
+columncell 1
+208 
+bitmap 1
+2 
+cursor 1
+213 
+view 1
+116 
+_grayview 1
+215 
+soundview 1
+215 
+soundmeter 1
+215 
+paperview 1
+215 
+nxsplitview 1
+215 
+nxrulerview 1
+215 
+nxfaxpaperbox 1
+215 
+nxfaxcoverview 1
+215 
+nxcolorswatch 1
+215 
+nxcolorpickerwheelview 1
+215 
+nxcolorpickeruserview 1
+215 
+frameview 1
+215 
+dbheadingview 1
+215 
+dbgridview 1
+215 
+customview 1
+215 
+clipview 1
+215 
+box 1
+215 
+selectioncell 1
+208 
+querycell 1
+233 
+nxstring 1
+2 
+nxsimplereadonlystring 1
+235 
+nxuniquedstring 1
+236 
+nxpagestring 1
+236 
+nxconstantstring 1
+236 
+nxmutablestring 1
+235 
+nxreadwritestring 1
+240 
+nxmarkercell 1
+208 
+nxlinkcell 1
+242 
+nxcleanlist 1
+166 
+mylist 1
+244 
+nxbrowsercell 1
+208 
+_dbbrowsercell 1
+246 
+nxtaggedbrowsercell 1
+246 
+nxspellbrowsercell 1
+246 
+nxnobranchiconbrowsercell 1
+246 
+nxlazybrowsercell 1
+246 
+ixbtreecursor 1
+2 
+ixpostingcursor 1
+252 
+ixattributecursor 1
+253 
+ixattributereader 1
+2 
+ixlanguagereader 1
+255 
+ixenglishreader 1
+256 
+dbexpressionlist 1
+166 
+dbsqlexpression 1
+258 
+actioncell 1
+208 
+slidercell 1
+260 
+formcell 1
+260 
+textfieldcell 1
+260 
+dbheadingcell 1
+263 
+text 1
+215 
+querytext 1
+265 
+nxhelptext 1
+265 
+scrollview 1
+215 
+dbtableview 1
+268 
+window 1
+116 
+panel 1
+270 
+printpanel 1
+271 
+pagelayout 1
+271 
+nxhelppanel 1
+271 
+nxfaxpanel 1
+271 
+nxdatalinkpanel 1
+271 
+nxcolorpanel 1
+271 
+n3drendererpanel 1
+271 
+fontpanel 1
+271 
+chooseprinter 1
+271 
+nxreadonlystring 1
+236 
+nxreadonlysubstring 1
+281 
+n3dcamera 1
+215 
+n3dmoviecamera 1
+283 
+iodisk 1
+177 
+iologicaldisk 1
+285 
+iodiskpartition 1
+286 
+control 1
+215 
+slider 1
+288 
+scroller 1
+288 
+nxcolorwell 1
+288 
+dbimageview 1
+288 
+button 1
+288 
+buttoncell 1
+260 
+menucell 1
+294 
+textfield 1
+288 
+nxfaxtimectl 1
+296 
+nxhelpmarkerinspector 1
+271 
+nxhelplinkinspector 1
+298 
+nxbrowser 1
+288 
+nxacceptscolorbrowser 1
+300 
+menu 1
+271 
+popuplist 1
+302 
+matrix 1
+288 
+form 1
+304 
+savepanel 1
+271 
+openpanel 1
+306 
+nxlinkopenpanel 1
+307 
+nxcolorpaletteopenpanel 1
+307 
+nxcolorlistopenpanel 1
+307 
+499
+_converttotext 2
+294 208 
+aparameter 2
+294 208 
+alticon 2
+294 293 
+altimage 3
+294 246 293 
+alttitle 2
+294 293 
+calccellsize: 4
+294 262 246 208 
+calccellsize:inrect: 4
+294 262 246 208 
+copyfromzone: 14
+294 262 146 145 143 208 99 92 182 166 154 48 39 21 
+doublevalue 11
+294 261 260 194 193 192 208 191 86 73 288 
+drawinside:inview: 4
+294 262 246 208 
+drawself:inview: 5
+294 262 260 246 208 
+floatvalue 13
+294 261 260 290 194 193 192 208 191 86 73 288 218 
+free 191
+294 262 261 263 295 212 246 211 242 210 292 304 300 291 201 194 259 190 189 188 186 184 183 178 286 287 176 175 253 254 173 171 258 170 244 169 168 167 251 248 150 149 147 146 145 143 140 243 241 138 282 239 238 281 237 236 110 213 208 109 108 105 104 103 195 102 191 101 100 99 98 97 187 96 95 94 93 92 185 91 90 89 88 87 86 85 182 179 82 81 80 177 79 78 174 77 76 75 255 74 73 72 71 69 68 67 66 65 172 64 63 62 166 163 61 60 161 57 55 53 52 51 50 154 48 47 151 46 40 39 142 139 38 36 35 32 137 30 29 28 133 27 25 24 21 19 127 124 15 14 13 11 10 118 9 116 7 113 6 5 111 4 2 280 302 277 276 275 274 273 272 306 120 119 117 215 270 307 269 112 267 232 231 288 230 228 227 283 223 217 265 
+getdrawrect: 2
+294 208 
+geticonrect: 2
+294 208 
+getparameter: 2
+294 208 
+getperiodicdelay: 3
+294 293 208 
+getperiodicdelay:andinterval: 3
+294 293 208 
+gettitlerect: 2
+294 208 
+highlight: 4
+294 246 293 208 
+highlight:inview:lit: 3
+294 246 208 
+icon 3
+294 293 208 
+iconposition 2
+294 293 
+image 11
+294 261 246 211 242 293 292 289 243 100 49 
+init 95
+294 262 261 263 295 246 242 233 209 293 259 190 189 188 186 184 183 178 173 171 258 167 303 162 248 146 145 144 143 110 208 109 105 191 101 100 187 93 92 185 89 88 86 182 81 177 79 76 255 72 252 71 69 68 65 172 63 166 163 59 161 55 53 51 50 49 47 39 139 38 36 32 31 29 133 24 127 124 17 15 235 14 122 9 113 6 5 111 2 302 215 270 112 283 271 
+initiconcell: 2
+294 208 
+inittextcell: 5
+294 262 295 246 208 
+intvalue 11
+294 261 260 194 193 192 208 191 86 73 288 
+isbordered 5
+294 293 291 296 208 
+isopaque 11
+294 262 261 263 212 246 233 209 208 142 215 
+istransparent 2
+294 293 
+keyequivalent 3
+294 293 208 
+performclick: 2
+294 293 
+read: 40
+294 262 295 260 304 190 189 188 170 284 162 147 146 145 144 143 208 105 99 92 86 85 182 66 166 163 59 161 53 49 39 142 2 302 277 269 232 231 288 283 
+setalticon: 2
+294 293 
+setaltimage: 3
+294 246 293 
+setalttitle: 2
+294 293 
+setbordered: 6
+294 260 293 291 305 208 
+setdoublevalue: 5
+294 305 208 86 288 
+setfloatvalue: 5
+294 305 208 86 288 
+setfont: 9
+294 260 304 190 188 305 208 232 288 
+seticon: 5
+294 260 293 304 208 
+seticonposition: 2
+294 293 
+setimage: 5
+294 246 293 292 49 
+setintvalue: 5
+294 305 208 86 288 
+setkeyequivalent: 2
+294 293 
+setparameter: 2
+294 208 
+setparameter:to: 2
+294 208 
+setperiodicdelay: 2
+294 293 
+setperiodicdelay:andinterval: 2
+294 293 
+setsound: 2
+294 293 
+setstringvalue: 6
+294 260 305 208 86 288 
+setstringvaluenocopy: 5
+294 260 208 86 288 
+settitle: 7
+294 262 293 304 300 305 232 
+settitlenocopy: 2
+294 293 
+settransparent: 2
+294 293 
+settype: 4
+294 293 162 208 
+sound 4
+294 293 218 217 
+stringvalue 13
+294 261 260 194 193 192 208 191 88 86 73 31 288 
+title 9
+294 262 261 293 289 87 270 232 227 
+trackmouse:inrect:ofview: 4
+294 262 295 208 
+write: 39
+294 262 295 260 304 190 189 188 170 284 162 147 146 145 144 143 208 105 99 92 86 85 182 66 166 163 59 161 53 49 39 142 2 302 269 232 231 288 283 
+resetcursorrect:inview: 2
+262 208 
+setenabled: 9
+262 260 304 300 291 208 83 279 288 
+settitlealignment: 2
+262 305 
+settitlefont: 2
+262 305 
+titlealignment 2
+262 87 
+titlefont 5
+262 261 289 87 227 
+_setprivate 3
+261 277 215 
+awake 29
+261 295 233 300 291 290 284 162 301 208 109 93 85 61 60 161 4 2 302 215 270 232 231 230 227 283 226 221 265 
+drawknob 2
+261 290 
+iscontinuous 6
+261 291 208 277 288 217 
+isvertical 2
+261 289 
+knobthickness 2
+261 289 
+maxvalue 3
+261 289 218 
+minvalue 3
+261 289 218 
+titlecell 2
+261 289 
+titlecolor 2
+261 289 
+titlegray 2
+261 289 
+_backcolorspecified 2
+263 304 
+backgroundcolor 10
+263 304 296 147 39 270 231 283 268 265 
+backgroundgray 9
+263 304 296 270 231 268 218 217 265 
+backgroundtransparent 2
+263 296 
+isbackgroundtransparent 3
+263 304 296 
+textcolor 3
+263 296 265 
+textgray 3
+263 296 265 
+pop 2
+214 49 
+push 2
+214 49 
+set 4
+214 246 85 49 
+_preferstrackingwhendisabled 2
+295 208 
+action 11
+260 292 304 300 291 290 303 208 83 269 288 
+controlview 2
+260 208 
+setaction: 10
+260 304 300 291 305 208 83 277 269 288 
+setalignment: 3
+260 208 288 
+setbezeled: 3
+260 305 208 
+setfloatingpointformat: 3
+260 208 288 
+setfloatingpointformat:left:right: 3
+260 208 288 
+setstringvaluenocopy:shouldfree: 3
+260 208 288 
+settag: 5
+260 304 305 208 288 
+settarget: 8
+260 304 300 291 208 277 269 288 
+tag 8
+260 209 248 208 17 215 288 265 
+target 10
+260 292 304 300 291 290 303 208 269 288 
+data 5
+212 146 126 154 7 
+tabs 2
+212 14 
+_isloaded 2
+246 251 
+isleaf 2
+246 233 
+isloaded 3
+246 300 251 
+reset 13
+246 194 192 105 191 76 255 68 63 5 111 123 112 
+imagehighlighted 2
+242 243 
+inspector 2
+242 243 
+acceptsfirstmouse 12
+293 304 291 290 289 296 215 227 226 225 224 220 
+display 6
+293 304 302 272 215 270 
+initframe: 13
+293 292 304 300 291 305 284 269 232 231 288 283 220 
+nibinstantiate 9
+293 109 195 93 179 82 61 4 230 
+performkeyequivalent: 2
+293 304 
+setstate: 3
+293 304 208 
+state 3
+293 208 47 
+theevent 2
+293 304 
+drawself: 10
+292 304 300 291 269 232 231 288 283 220 
+iseditable 9
+292 296 208 87 53 7 269 217 265 
+seteditable: 3
+292 208 269 
+setstyle: 2
+292 85 
+style 3
+292 85 270 
+acceptsfirstresponder 6
+304 300 296 116 269 217 
+calcsize 3
+304 305 288 
+doubleaction 3
+304 300 269 
+drawcell: 2
+304 288 
+drawcellat: 2
+304 305 
+drawcellinside: 2
+304 288 
+erroraction 2
+304 296 
+findcellwithtag: 2
+304 302 
+font 8
+304 190 188 305 303 208 232 288 
+getintercell: 2
+304 269 
+getselectedcells: 2
+304 300 
+isemptyselectionenabled 2
+304 300 
+mode 4
+304 17 277 269 
+mousedown: 6
+304 300 291 302 288 220 
+mousedownflags 3
+304 208 288 
+removerowat: 2
+304 269 
+resetcursorrects 6
+304 215 270 231 288 228 
+selectall: 3
+304 300 269 
+selectcell: 2
+304 288 
+selecttextat: 2
+304 305 
+selectedcell 3
+304 300 288 
+selectedrow 2
+304 269 
+sendaction 4
+304 300 83 267 
+sendaction: 2
+304 269 
+sendaction:to: 2
+304 288 
+setaction:at: 2
+304 305 
+setbackgroundcolor: 5
+304 147 39 231 283 
+setbackgroundgray: 2
+304 231 
+setcellclass: 2
+304 300 
+setdoubleaction: 3
+304 300 269 
+setemptyselectionenabled: 2
+304 300 
+setintercell: 2
+304 269 
+setmode: 4
+304 156 277 269 
+setscrollable: 2
+304 208 
+settag:at: 2
+304 305 
+settarget:at: 2
+304 305 
+settitle:at: 2
+304 305 
+sizeto: 8
+304 300 305 269 232 231 288 283 
+sizetofit 8
+304 300 289 305 302 232 288 217 
+textdelegate 2
+304 296 
+textdidend:endchar: 3
+304 94 279 
+textdidgetkeys:isempty: 3
+304 279 274 
+textwillchange: 2
+304 94 
+textwillend: 2
+304 94 
+acceptarrowkeys: 2
+300 269 
+column 4
+300 190 2 269 
+delegate 26
+300 105 101 98 187 94 185 83 65 163 53 47 39 38 32 124 16 7 113 117 270 269 283 220 217 265 
+reflectscroll: 2
+300 215 
+scrollcolumntovisible: 2
+300 269 
+selectedcolumn 2
+300 269 
+setdelegate: 19
+300 190 105 101 98 187 94 185 83 65 163 39 38 124 16 117 269 283 220 
+tile 4
+300 269 227 268 
+activate: 2
+291 117 
+color 8
+291 162 54 53 277 226 225 224 
+deactivate 2
+291 124 
+isactive 4
+291 248 124 117 
+setcolor: 3
+291 162 277 
+setcontinuous: 4
+291 208 277 288 
+isbezeled 4
+296 208 218 217 
+isselectable 3
+296 208 161 
+contentsdidchange 4
+207 205 200 198 
+currentrecorddiddelete 4
+207 205 200 198 
+selectiondidchange 4
+207 205 200 198 
+endediting 8
+206 200 199 190 198 187 269 229 
+validateediting 5
+206 200 199 198 288 
+rowcount 2
+200 269 
+establishconnection 6
+197 196 181 180 195 82 
+objectvalue 6
+194 193 192 191 86 73 
+database 6
+193 245 105 100 94 93 
+property 2
+193 104 
+abortediting 3
+190 187 288 
+drawfieldat: 3
+190 189 187 
+editfieldat: 2
+190 269 
+beginbatching: 2
+188 187 
+endbatching 2
+188 187 
+resetbatching: 2
+188 187 
+avalue 3
+186 86 182 
+clear 2
+186 185 
+count 23
+186 253 303 141 99 95 89 84 182 77 74 72 71 66 65 172 166 53 37 133 21 127 6 
+deleterecord 2
+186 185 
+empty 20
+186 253 258 170 92 185 89 182 77 72 71 66 65 172 63 166 37 133 14 6 
+fetchusingqualifier: 2
+186 185 
+freeobjects 6
+186 183 170 182 166 37 
+getrecordkeyvalue: 2
+186 185 
+getvalue: 2
+186 198 
+getvalue:forproperty: 2
+186 185 
+index 6
+186 170 305 98 53 2 
+ismodified 3
+186 96 185 
+isnewrecord 2
+186 185 
+newrecord 2
+186 185 
+savemodifications 2
+186 185 
+setfirst 3
+186 253 252 
+setlast 3
+186 253 252 
+setnext 4
+186 253 185 252 
+setprevious 3
+186 253 252 
+setvalue: 2
+186 198 
+setvalue:forproperty: 2
+186 185 
+astring 5
+184 208 105 101 2 
+writetofile: 2
+184 48 
+eject 2
+285 287 
+registerdevice 2
+285 177 
+comparisonformat 4
+176 175 174 72 
+setfirsthandle 2
+253 66 
+setnexthandle 2
+253 66 
+attribute 2
+254 74 
+descriptor 2
+173 112 
+filename 6
+173 67 47 39 306 112 
+initfromfile: 7
+173 147 146 143 101 48 39 
+entity 9
+171 108 99 98 94 93 92 91 3 
+expressionvalue 11
+171 258 108 191 100 99 92 91 90 88 86 
+internalname 4
+171 108 100 91 
+isdeferredexpression 11
+171 258 108 191 100 99 92 91 90 88 86 
+iskey 4
+171 108 99 91 
+isreadonly 6
+171 108 191 99 185 91 
+issingular 4
+171 108 99 91 
+name 24
+171 213 108 102 101 100 99 98 97 92 91 85 177 65 163 60 53 39 29 127 118 8 7 2 
+propertytype 4
+171 108 99 91 
+uniquepropertyname 2
+171 105 
+copy 10
+258 134 238 88 172 64 40 139 7 2 
+removelastobject 4
+258 170 166 37 
+handle 2
+170 172 
+lastobject 3
+170 166 37 
+source 4
+170 195 179 82 
+_activateapp 2
+165 115 
+_userabort 3
+165 38 115 
+disconnect 2
+164 101 
+_commonawake 4
+303 302 215 270 
+workswhenmodal 14
+303 160 159 158 157 83 56 42 41 26 279 277 270 227 
+cropinrects: 2
+284 283 
+cropinrects:nrects: 2
+284 283 
+framenumber 2
+284 283 
+numcropwindows 2
+284 283 
+render 2
+284 283 
+renderself: 3
+162 161 283 
+type 4
+162 208 76 29 
+modifytime 2
+249 67 
+list 2
+248 128 
+close 5
+245 68 64 302 270 
+outerjoinisdefault 2
+245 107 
+recordidentityproperty 2
+245 107 
+_popupbutton 2
+160 158 
+currentmode 4
+160 159 158 157 
+insertionorder 5
+160 159 158 157 156 
+_restoremode 2
+159 158 
+_savemode 3
+159 158 277 
+_savedmode 2
+159 277 
+deserializenewplist 2
+152 151 
+deserializenewstring 2
+152 151 
+lastmodtime 3
+150 149 148 
+originalpath 3
+150 149 148 
+forceverification 2
+149 148 
+isdirty 2
+149 148 
+markclean 2
+149 148 
+draw 6
+147 146 145 144 143 142 
+drawat: 2
+147 142 
+drawin: 4
+147 146 143 142 
+getboundingbox: 3
+147 143 161 
+getsize: 3
+147 39 142 
+hider 2
+147 283 
+initfromstream: 4
+147 146 143 39 
+point 2
+147 142 
+rect 5
+147 146 143 39 142 
+sethider: 2
+147 283 
+setsurfacetype: 2
+147 161 
+surfacetype 2
+147 161 
+_appname 2
+146 143 
+_candrawoutsideofitsbounds 3
+146 145 142 
+_filename 2
+146 143 
+_forgetdata 2
+146 143 
+_loaddata 2
+146 143 
+initfromsection: 3
+146 143 39 
+preparegstate 2
+146 143 
+writetiff: 2
+146 39 
+hash 8
+140 241 236 174 67 64 235 2 
+finishunarchiving 13
+241 239 281 237 213 85 83 53 49 39 21 7 269 
+length 8
+241 236 88 75 255 65 64 235 
+_reallyfree 2
+239 29 
+stream 4
+238 255 39 265 
+clipcount 2
+128 127 
+flag 6
+128 126 163 127 16 117 
+value 2
+128 252 
+activate 2
+126 124 
+buffercount 2
+126 127 
+getpeakleft: 2
+126 127 
+initondevice: 2
+126 124 
+isdetectingpeaks 2
+126 127 
+leftamp 2
+126 127 
+peakhistory 2
+126 127 
+setdetectpeaks: 2
+126 127 
+setpeakhistory: 2
+126 127 
+lockfocus 4
+213 39 215 283 
+unlockfocus 4
+213 39 215 283 
+window 2
+213 215 
+alignment 2
+208 288 
+isenabled 5
+208 83 279 288 217 
+mask 3
+208 117 288 
+sendactionon: 2
+208 288 
+setselectable: 2
+208 161 
+takedoublevaluefrom: 2
+208 288 
+takefloatvaluefrom: 2
+208 288 
+takeintvaluefrom: 2
+208 288 
+takestringvaluefrom: 2
+208 288 
+destination 4
+198 195 179 82 
+previousrow 2
+198 98 
+selectedrowafter: 3
+198 98 269 
+databasetype 2
+108 100 
+format 2
+108 100 
+isaggregate 2
+108 91 
+isentity 2
+108 100 
+ishidden 5
+108 100 99 91 117 
+objcclassname 2
+108 100 
+objctype 2
+108 100 
+aretransactionsenabled 3
+107 101 172 
+begintransaction 2
+107 101 
+committransaction 3
+107 101 172 
+connectionname 2
+107 101 
+currentloginstring 2
+107 101 
+isconnected 2
+107 101 
+istransactioninprogress 2
+107 101 
+rollbacktransaction 2
+107 101 
+alist 3
+105 101 98 
+addretrieveorder: 2
+105 185 
+addretrieveorder:for: 2
+105 185 
+cancelfetch 2
+105 185 
+evaluatestring: 2
+105 101 
+flush 3
+105 123 112 
+getproperties: 2
+105 185 
+update 7
+105 84 302 276 215 270 288 
+databasename 2
+103 93 
+entityname 3
+103 102 93 
+path 3
+103 195 97 
+description 3
+102 67 6 
+contentstype 2
+191 86 
+aname 3
+101 92 63 
+arepanelsenabled 2
+101 2 
+directory 4
+101 84 57 306 
+setname: 4
+101 98 92 39 
+initforentity: 2
+99 92 
+setentity: 2
+99 92 
+fetchcontentsof:usingqualifier: 2
+98 94 
+datasource 2
+187 269 
+setdatasource: 2
+187 269 
+size 4
+95 87 64 154 
+mainwindow 2
+94 117 
+isempty 2
+92 7 
+isequal: 3
+86 166 21 
+string 3
+85 80 39 
+deviceport 2
+79 127 
+addreference 5
+174 68 64 139 137 
+attributeparser 2
+174 75 
+references 5
+174 68 64 139 137 
+attributenames 5
+77 75 255 68 65 
+context 3
+77 9 117 
+inithashstate 3
+77 74 62 
+providebindings 5
+77 76 68 67 65 
+attributebinder 4
+76 68 67 65 
+clean 3
+255 68 65 
+isupdating 2
+255 68 
+recordmanager 2
+255 68 
+registry 2
+255 68 
+resumeupdating 2
+255 68 
+rootpath 2
+255 68 
+suspendupdating 2
+255 68 
+compact 2
+72 172 
+freefromstore 6
+72 71 68 65 64 63 
+store 6
+72 71 68 65 64 63 
+changecount 3
+252 172 118 
+readobject 2
+252 64 
+writeobject: 2
+252 64 
+classnames 2
+71 65 
+commitdelay 2
+68 2 
+considershiddenfiles 2
+68 2 
+crossesdevicechanges 2
+68 2 
+findercontrol 2
+68 2 
+followssymboliclinks 2
+68 2 
+generatesdescriptions 2
+68 2 
+ignorednames 2
+68 2 
+ignoredtypes 2
+68 2 
+initwithname: 2
+68 53 
+removesautomatically 2
+68 2 
+scansformodifiedfiles 2
+68 2 
+updatesautomatically 2
+68 2 
+setdescription: 2
+67 65 
+aposition 2
+66 269 
+initcount: 2
+66 166 
+capacity 4
+65 172 166 5 
+freeonwrite 2
+172 111 
+residentsize 2
+172 111 
+willfreeonwrite 2
+172 111 
+params 2
+163 127 
+timeout 2
+163 127 
+convertpoints: 2
+161 283 
+isvisible 2
+161 270 
+scale: 2
+161 231 
+translate: 2
+161 231 
+attachcolorlist: 2
+156 277 
+detachcolorlist: 2
+156 277 
+lock 5
+50 139 36 24 15 
+unlock 5
+50 139 36 24 15 
+initfromimage: 2
+49 39 
+_markdirty 2
+48 47 
+initfrompasteboard: 4
+48 39 142 21 
+types 2
+48 2 
+writetopasteboard: 2
+48 21 
+beginpsoutput 2
+44 270 
+beginsetup 2
+44 270 
+begintrailer 2
+44 270 
+endheadercomments 2
+44 270 
+endpsoutput 2
+44 270 
+endpage 2
+44 270 
+endpagesetup 2
+44 270 
+endprologue 2
+44 270 
+endsetup 2
+44 270 
+endtrailer 2
+44 270 
+heightadjustlimit 2
+44 270 
+widthadjustlimit 2
+44 270 
+hasalpha 2
+39 142 
+isflipped 2
+39 215 
+setsize: 2
+39 142 
+isvalid 2
+139 29 
+run 3
+32 16 117 
+zone 2
+30 2 
+host 2
+29 127 
+lasterror 2
+127 124 
+parameters 2
+127 124 
+replyport 3
+127 113 117 
+accessoryview 8
+17 280 279 277 276 273 272 306 
+setaccessoryview: 5
+17 280 279 277 276 
+becomefirstresponder 2
+116 217 
+resignfirstresponder 3
+116 267 217 
+isplayable 2
+7 217 
+play 2
+7 2 
+soundbeingprocessed 2
+7 217 
+stop 2
+7 2 
+isbacked 2
+111 112 
+applicationdefined: 2
+2 117 
+fullpath 2
+2 117 
+poweroff: 2
+2 117 
+splitview:getminy: 2
+2 274 
+splitview:getminy:maxy:ofsubviewat: 2
+2 274 
+splitview:resizesubviews: 2
+2 274 
+splitviewdidresizesubviews: 2
+2 274 
+readprintinfo 4
+280 275 273 272 
+runmodal 4
+280 273 272 306 
+writeprintinfo 4
+280 275 273 272 
+becomekeywindow 3
+279 270 227 
+windowwillresize:tosize: 2
+279 274 
+_specialservicesmenuupdate 2
+302 270 
+rightmousedown: 2
+302 117 
+setautoupdate: 2
+302 117 
+eventptr 2
+274 117 
+sendevent: 2
+274 117 
+setaccessoryview 3
+273 272 306 
+_free 2
+306 307 
+isrunning 2
+117 218 
+_canoptimizedrawing 2
+215 270 
+_computebounds 2
+215 231 
+canstorecolor 2
+215 270 
+discardcursorrects 2
+215 270 
+displayifneeded 2
+215 270 
+gstate 2
+215 270 
+initgstate 2
+215 265 
+scrollclip:to: 2
+215 269 
+_colorspecified 2
+270 231 
+_displaytitle 2
+270 227 
+contentview 2
+270 232 
+displayborder 2
+270 227 
+doesbecomekeyonlyifneeded 2
+270 271 
+resignkeywindow 3
+270 227 271 
+resizeflags 2
+270 227 
+bordertype 2
+232 268 
+cell 2
+232 288 
+docview 2
+231 268 
+moveto: 2
+231 283 
+rotateto: 2
+231 283 
+foregroundgray 2
+218 217 

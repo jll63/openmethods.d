@@ -1,0 +1,18 @@
+name "runtimemetrics"
+description "replace awful visitor with neat open method"
+authors "Jean-Louis Leroy"
+copyright "Copyright © 2017, Jean-Louis Leroy"
+license "Boost Software License 1.0"
+targetType "executable"
+dependency "openmethods" path="../../"
+#dflags "-Jbenchmarks/runtimemetrics/sample-hierarchies"
+
+buildType "x" {
+  buildOptions "debugMode" "debugInfo" "unittests"
+  debugVersions "explain"
+}
+
+buildType "xtc" {
+  buildOptions "debugMode" "debugInfo" "unittests"
+  debugVersions "explain" "traceCalls"
+}

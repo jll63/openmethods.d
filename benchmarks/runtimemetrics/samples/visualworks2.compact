@@ -1,0 +1,10306 @@
+1956
+Object 0
+
+Enumerator 1
+0 
+ExternalInterfaceHolder 1
+0 
+CMacroDefinition 1
+0 
+BenchmarkTable 1
+0 
+BenchDecompilerTestClass 1
+0 
+SQL 1
+0 
+SQLLiteral 1
+0 
+SQLInfixOperation 1
+0 
+SQLIdentifier 1
+0 
+PushFragment 1
+0 
+RecognizerFragment 1
+0 
+InstanceTally 1
+0 
+ClassDeclarations 1
+0 
+SystemAnalyzer 1
+0 
+ReferencePathCollector 1
+0 
+LabeledObjectHolder 1
+0 
+LensGlobalDescriptor 1
+0 
+LensMutationPlan 1
+0 
+LensMutationAction 1
+0 
+KeyboardEvent 1
+0 
+LensPolicy 1
+0 
+ExternalDatabaseBuffer 1
+0 
+ControlManager 1
+0 
+ProcessHandle 1
+0 
+DatabaseTypeMapping 1
+0 
+LensTranscoder 1
+0 
+CellProperties 1
+0 
+PrintConverter 1
+0 
+ExternalInterface 1
+0 
+UIBuilder 1
+0 
+HelpSeeAlso 1
+0 
+HelpForwarder 1
+0 
+Promise 1
+0 
+PostScriptFontBody 1
+0 
+Document 1
+0 
+DocumentRenderer 1
+0 
+MenuItemAdornment 1
+0 
+UIDefiner 1
+0 
+ComposedBlock 1
+0 
+DatabaseCommand 1
+0 
+QueryOperationAccessor 1
+0 
+LensWeakCollection 1
+0 
+ByteFieldDescriptor 1
+0 
+LDMNodeChild 1
+0 
+LDMPerspective 1
+0 
+LDMArc 1
+0 
+LDMRelationsGenerator 1
+0 
+LDMGraph 1
+0 
+SystemUtils 1
+0 
+DSVDependencyAgent 1
+0 
+DataSetColumn 1
+0 
+ColumnResizeAgent 1
+0 
+ColumnReorderAgent 1
+0 
+BOSSSpecialObjectLoader 1
+0 
+ExternalLibrary 1
+0 
+ExternalLibraryHolder 1
+0 
+CStructureLayout 1
+0 
+Timestamp 1
+0 
+UIDispatcher 1
+0 
+InputState 1
+0 
+KeyboardProcessor 1
+0 
+DefineOpcodePool 1
+0 
+MemoryPolicy 1
+0 
+UndefinedObject 1
+0 
+MethodNodeHolder 1
+0 
+MenuAdornment 1
+0 
+ProcessorScheduler 1
+0 
+FontPolicy 1
+0 
+BOSSCompiledCodeHolder 1
+0 
+Dialog 1
+0 
+SPFillLine 1
+0 
+CodeLabel 1
+0 
+RecursionLock 1
+0 
+RangeMap 1
+0 
+StreamPolicy 1
+0 
+DispatchTable 1
+0 
+TimeZone 1
+0 
+ExternalDatabaseColumnDescription 1
+0 
+RasterOp 1
+0 
+InverseColorMapInitializer 1
+0 
+DitherUpTo4 1
+0 
+SharedQueue 1
+0 
+InverseColorMap 1
+0 
+CharacterComposer 1
+0 
+RemoteString 1
+0 
+Exception 1
+0 
+MenuItem 1
+0 
+Delay 1
+0 
+WidgetState 1
+0 
+RowAdaptor 1
+0 
+SequenceableCollectionSorter 1
+0 
+SystemError 1
+0 
+ObjectMemory 1
+0 
+MenuBuilder 1
+0 
+BlockClosure 1
+0 
+ChangeSet 1
+0 
+ExternalDatabaseError 1
+0 
+ClassCategoryReader 1
+0 
+MessageChannel 1
+0 
+FontDescription 1
+0 
+DeferredBlock 1
+0 
+BOSSRegisteredObject 1
+0 
+GraphicsAttributes 1
+0 
+BOSSContents 1
+0 
+ClassBuilder 1
+0 
+DependencyTransformer 1
+0 
+Benchmark 1
+0 
+SystemBenchmark 1
+107 
+SQLNode 1
+0 
+SQLClause 1
+109 
+SQLStatement 1
+109 
+SQLFunction 1
+109 
+Profiler 1
+0 
+AllocationProfiler 1
+113 
+TimeProfiler 1
+113 
+QueryOperation 1
+0 
+LensQuery 1
+116 
+GraphicsContext 1
+0 
+HostPrinterGraphicsContext 1
+118 
+PostScriptGraphicsContext 1
+118 
+ScreenGraphicsContext 1
+118 
+BinaryObjectStorage 1
+0 
+HelpAccessor 1
+122 
+PrintPolicy 1
+0 
+TimestampPrintPolicy 1
+124 
+NumberPrintPolicy 1
+124 
+StringPrintPolicy 1
+124 
+SourceFileManager 1
+0 
+SourceCodeStream 1
+128 
+HelpElement 1
+0 
+HelpBook 1
+130 
+HelpLibrary 1
+130 
+HelpExample 1
+130 
+HelpPage 1
+130 
+HelpChapter 1
+130 
+CharacterAttributes 1
+0 
+PlatformCharacterAttributes 1
+136 
+ImageReader 1
+0 
+BMPImageReader 1
+138 
+Menu 1
+0 
+PopUpMenu 1
+140 
+GraphicsDevice 1
+0 
+PostScriptPrinter 1
+142 
+Printer 1
+142 
+WidgetPolicy 1
+0 
+MacWidgetPolicy 1
+145 
+SmalltalkWidgetPolicy 1
+145 
+MotifWidgetPolicy 1
+145 
+CUAWidgetPolicy 1
+145 
+Win3WidgetPolicy 1
+145 
+LensBasicTransporter 1
+0 
+LensSQLTransporter 1
+151 
+LensMetadata 1
+0 
+LensDatabaseTableColumn 1
+153 
+LensDatabaseTable 1
+153 
+LensDatabaseContext 1
+153 
+LensDatabaseIndex 1
+153 
+LensTableKey 1
+153 
+LensStructureVariable 1
+153 
+LensReferenceType 1
+153 
+LensDataModel 1
+153 
+LDMAbstractVisualBuilder 1
+0 
+LDMIndentedListBuilder 1
+162 
+LDMVariable 1
+0 
+LDMFocusVariable 1
+164 
+LDMElementProxy 1
+0 
+LDMReversingElementProxy 1
+166 
+UIAspectPath 1
+0 
+LensAspectPath 1
+168 
+ExternalObject 1
+0 
+ExternalProcedure 1
+170 
+ExternalVariable 1
+170 
+CType 1
+0 
+CProcedureType 1
+173 
+COopType 1
+173 
+CVoidType 1
+173 
+CDatum 1
+0 
+CArray 1
+177 
+CComposite 1
+177 
+PaintPolicy 1
+0 
+LuminanceBasedColorPolicy 1
+180 
+ExternalConnection 1
+0 
+FileConnection 1
+182 
+InputSensor 1
+0 
+TranslatingSensor 1
+184 
+UILookPolicy 1
+0 
+MacLookPolicy 1
+186 
+Win3LookPolicy 1
+186 
+MotifLookPolicy 1
+186 
+DefaultLookPolicy 1
+186 
+CUALookPolicy 1
+186 
+Filename 1
+0 
+UnixFilename 1
+192 
+MacFilename 1
+192 
+Change 1
+0 
+OtherChange 1
+195 
+ProgramNodeEnumerator 1
+0 
+MessageAnalyzer 1
+197 
+ReadBeforeWrittenTester 1
+197 
+Signal 1
+0 
+ExternalDatabaseSignal 1
+200 
+BorderDecorationPolicy 1
+0 
+SmalltalkBorderDecorationPolicy 1
+202 
+LineInformationTable 1
+0 
+OptimizedLineInformationTable 1
+204 
+Collection 1
+0 
+Bag 1
+206 
+Link 1
+0 
+Process 1
+208 
+Model 1
+0 
+CTermConnection 1
+210 
+ProjectBrowser 1
+210 
+ClassNameChooser 1
+210 
+ManualWriter 1
+210 
+ClassReporter 1
+210 
+LensSession 1
+210 
+TableInterface 1
+210 
+LensApplicationSpec 1
+210 
+LDMBrowserModel 1
+210 
+LDMSelectionService 1
+210 
+FileBrowser 1
+210 
+ScrollValueHolder 1
+210 
+SyntaxError 1
+210 
+Explainer 1
+210 
+SelectionInTable 1
+210 
+CompiledCode 1
+0 
+CompiledBlock 1
+226 
+WindowDisplayPolicy 1
+0 
+DoubleBufferingWindowDisplayPolicy 1
+228 
+Paint 1
+0 
+DevicePaint 1
+230 
+Pattern 1
+230 
+Stream 1
+0 
+Random 1
+233 
+ProgramNodeBuilder 1
+0 
+LensMethodGenerator 1
+235 
+CharacterEncoder 1
+0 
+LargeCharacterEncoder 1
+237 
+ByteCharacterEncoder 1
+237 
+BOSSTransporter 1
+0 
+BOSSWriter 1
+240 
+UninterpretedBytes 1
+0 
+OS2TtyOptions 1
+242 
+MacTtyOptions 1
+242 
+GraphicsHandle 1
+242 
+ExternalDatabaseFramework 1
+0 
+ExternalDatabaseSession 1
+246 
+ExternalDatabaseConnection 1
+246 
+ExternalDatabaseTransaction 1
+246 
+VisualComponent 1
+0 
+Icon 1
+250 
+OpaqueImage 1
+250 
+VisualBlock 1
+250 
+DragHandle 1
+250 
+Boolean 1
+0 
+False 1
+255 
+True 1
+255 
+ProgramNode 1
+0 
+MethodNode 1
+258 
+ParameterNode 1
+258 
+UISpecification 1
+0 
+FullSpec 1
+261 
+WindowSpec 1
+261 
+VariableDefinition 1
+0 
+RemoteVariable 1
+264 
+ReceiverVariable 1
+264 
+PseudoVariable 1
+264 
+Scanner 1
+0 
+ChangeScanner 1
+268 
+SimpleBorder 1
+0 
+Win3Border 1
+270 
+BeveledBorder 1
+270 
+Geometric 1
+0 
+EllipticalArc 1
+273 
+Spline 1
+273 
+LineSegment 1
+273 
+Circle 1
+273 
+Bezier 1
+273 
+Polyline 1
+273 
+Controller 1
+0 
+ComboBoxButtonController 1
+280 
+MenuButtonController 1
+280 
+MenuBarButtonController 1
+280 
+LauncherController 1
+280 
+NoController 1
+280 
+WidgetController 1
+280 
+MenuItemController 1
+280 
+DialogCompositeController 1
+280 
+GraphicsMedium 1
+0 
+MockMedium 1
+289 
+HostPrintJob 1
+289 
+PostScriptFile 1
+289 
+InstructionClient 1
+0 
+InstructionPrinter 1
+293 
+Magnitude 1
+0 
+MessageTally 1
+295 
+Date 1
+295 
+Time 1
+295 
+Character 1
+295 
+ImageRenderer 1
+0 
+ErrorDiffusion 1
+300 
+CompilerErrorHandler 1
+0 
+InteractiveCompilerErrorHandler 1
+302 
+LoggingCompilerErrorHandler 1
+302 
+SilentCompilerErrorHandler 1
+302 
+ClassOrganizer 1
+0 
+SystemOrganizer 1
+306 
+UISpecEnumerator 1
+0 
+AspectEnumerator 1
+308 
+LensSpecReplicator 1
+308 
+FilteredSpecEnumerator 1
+308 
+IOBuffer 1
+0 
+PositionalIOBuffer 1
+312 
+ImplementationFont 1
+0 
+SyntheticFont 1
+314 
+TextAttributes 1
+0 
+VariableSizeTextAttributes 1
+316 
+Border 1
+0 
+EtchedBorder 1
+318 
+Message 1
+0 
+ExternalMessage 1
+320 
+MessageSend 1
+320 
+NameScope 1
+0 
+StaticScope 1
+323 
+NullScope 1
+323 
+SQLModifier 1
+109 
+SQLPostModifier 1
+326 
+HostGraphicsDevice 1
+142 
+Screen 1
+328 
+HostPrinter 1
+328 
+LensType 1
+153 
+LensEncodedType 1
+331 
+LensEnumerationType 1
+331 
+LensDataType 1
+331 
+LDMGraphBuilder 1
+162 
+LDMProtoMapBuilder 1
+335 
+LDMRelationship 1
+0 
+LDMFirstOrderRel 1
+337 
+LDMSpecialRel 1
+338 
+CQualifiedType 1
+173 
+CTypedefType 1
+340 
+CCompoundType 1
+173 
+CCompositeType 1
+342 
+CEnumerationType 1
+342 
+CPointerType 1
+173 
+CArrayType 1
+345 
+CScalarType 1
+173 
+CIntegerType 1
+347 
+CLimitedPrecisionRealType 1
+347 
+CProcedurePointer 1
+177 
+CCallback 1
+350 
+CPointer 1
+177 
+CCompositePointer 1
+352 
+WindowSensor 1
+184 
+ApplicationWindowSensor 1
+354 
+PCFilename 1
+192 
+FATFilename 1
+356 
+NTFSFilename 1
+356 
+HPFSFilename 1
+356 
+EmulationBorderDecorationPolicy 1
+202 
+Win3BorderDecorationPolicy 1
+360 
+CUABorderDecorationPolicy 1
+360 
+MotifBorderDecorationPolicy 1
+360 
+MacBorderDecorationPolicy 1
+360 
+LensContainer 1
+206 
+LensCompositeContainer 1
+365 
+LensBaseContainer 1
+365 
+KeyedCollection 1
+206 
+MethodDictionary 1
+368 
+CharacterTerminal 1
+210 
+SunTerminal 1
+370 
+VT100Terminal 1
+370 
+OutlineBrowser 1
+210 
+WindowBrowser 1
+373 
+ProfileOutlineBrowser 1
+373 
+LDMAbstractBody 1
+210 
+LDMRelationsBody 1
+376 
+Inspector 1
+210 
+CompiledCodeInspector 1
+378 
+ChangeSetInspector 1
+378 
+DictionaryInspector 1
+378 
+ContextInspector 1
+378 
+ValueModel 1
+210 
+RangeAdaptor 1
+383 
+ApplicationModel 1
+210 
+ExternalInterfaceFinder 1
+385 
+ExternalInterfaceBuilder 1
+385 
+LensMappingEditor 1
+385 
+CodingAssistant 1
+385 
+UISettings 1
+385 
+UIFinderVW2 1
+385 
+QueryEditor 1
+385 
+ExternalDatabaseInstallation 1
+385 
+LensApplicationStructureView 1
+385 
+LensEditor 1
+385 
+HelpBrowser 1
+385 
+ExamplesBrowser 1
+385 
+LensApplicationSpecEditor 1
+385 
+AdHocQueryTool 1
+385 
+VisualLauncher 1
+385 
+UIPalette 1
+385 
+UIPainter 1
+385 
+SelectionInList 1
+210 
+MultiSelectionInList 1
+403 
+Browser 1
+210 
+FullBrowser 1
+405 
+Debugger 1
+405 
+MethodListBrowser 1
+405 
+HierarchyBrowser 1
+405 
+CompiledMethod 1
+226 
+AnnotatedMethod 1
+410 
+ExternalMethod 1
+410 
+MarkedMethod 1
+410 
+SymbolicPaint 1
+230 
+HierarchicalSymbolicPaint 1
+414 
+SimplePaint 1
+230 
+CoverageValue 1
+416 
+ColorValue 1
+416 
+SmalltalkCompiler 1
+0 
+Compiler 1
+419 
+ExtendedCompiler 1
+420 
+QueryCompiler 1
+420 
+LensCompiler 1
+420 
+BOSSReader 1
+240 
+BOSSDebugReader 1
+424 
+UnixTtyOptions 1
+242 
+BsdTtyOptions 1
+426 
+Sys5TtyOptions 1
+426 
+RowVisual 1
+250 
+RowLabelVisual 1
+429 
+LDMVisualTreeConnection 1
+250 
+LDMBroomConnection 1
+431 
+VisualPart 1
+250 
+MotifMenuItemSeparatorComponent 1
+433 
+TextLines 1
+250 
+TextList 1
+435 
+PixelArray 1
+250 
+CachedImage 1
+437 
+Label 1
+250 
+LabelAndIcon 1
+439 
+AlignmentLabel 1
+439 
+StatementNode 1
+258 
+ReturnNode 1
+442 
+SubSpec 1
+261 
+UIEventCallbackSubSpec 1
+444 
+SpecCollection 1
+261 
+CompositeSpecCollection 1
+446 
+StaticVariable 1
+264 
+UndeclaredVariable 1
+448 
+LocalVariable 1
+264 
+ArgumentVariable 1
+450 
+TemporaryVariable 1
+450 
+InstanceVariable 1
+264 
+LensInstanceVariable 1
+453 
+GeneralParser 1
+268 
+ParserCompiler 1
+455 
+Parser 1
+268 
+ExtendedParser 1
+457 
+ControlMode 1
+0 
+DrawingMode 1
+459 
+SelectMode 1
+460 
+Rectangle 1
+273 
+CharacterBlock 1
+462 
+MenuController 1
+280 
+MenuAsPopUpController 1
+464 
+MenuFromMenuBarController 1
+464 
+MenuFromMenuButtonController 1
+464 
+MenuAsSubmenuController 1
+464 
+ScrollbarController 1
+280 
+EmulationScrollBarController 1
+469 
+StandardSystemController 1
+280 
+DialogController 1
+471 
+SelectController 1
+280 
+SliderController 1
+473 
+TabBarController 1
+473 
+ColoredAreaController 1
+473 
+ControllerWithMenu 1
+280 
+CTermController 1
+477 
+LDMElementViewController 1
+477 
+LDMCompositeViewController 1
+477 
+SequenceController 1
+477 
+InstructionStream 1
+293 
+Decompiler 1
+482 
+CodeRegenerator 1
+482 
+ArithmeticValue 1
+295 
+Complex 1
+485 
+Point 1
+485 
+TextMeasurer 1
+0 
+CharacterScanner 1
+488 
+CompositionScanner 1
+489 
+DisplayScanner 1
+489 
+CharacterBlockScanner 1
+489 
+Behavior 1
+0 
+ClassDescription 1
+493 
+Metaclass 1
+494 
+PaintRenderer 1
+300 
+OrderedDither 1
+496 
+NearestPaint 1
+496 
+OSErrorHolder 1
+0 
+OSHandle 1
+499 
+Cursor 1
+500 
+NonInteractiveCompilerErrorHandler 1
+302 
+QueryCompilerErrorHandler 1
+502 
+ByteCodeStream 1
+0 
+CodeStream 1
+504 
+RecodeStream 1
+505 
+DeviceFont 1
+314 
+PostScriptPrinterFont 1
+507 
+LocalScope 1
+323 
+LensScope 1
+509 
+Layout 1
+0 
+LayoutOrigin 1
+511 
+AlignmentOrigin 1
+512 
+LayoutFrame 1
+512 
+LensStructureType 1
+331 
+LensCollectionType 1
+515 
+LDMHighOrderRel 1
+337 
+LDMDiadicRel 1
+517 
+LDMOrRel 1
+518 
+LDMComposedRel 1
+518 
+LDMMonadicRel 1
+517 
+LDMNonReflexiveRel 1
+521 
+LDMTransitiveClosureRel 1
+521 
+LDMLimitingRel 1
+521 
+ClassRelatedChange 1
+195 
+MethodChange 1
+525 
+MethodOtherChange 1
+526 
+MethodDefinitionChange 1
+526 
+ClassChange 1
+525 
+ClassDefinitionChange 1
+529 
+Set 1
+206 
+IdentitySet 1
+531 
+SignalCollection 1
+532 
+Dictionary 1
+531 
+CEnvironment 1
+534 
+ColorPreferencesCollection 1
+368 
+LookPreferences 1
+536 
+ChainedColorPreferences 1
+536 
+ColorPreferencesDictionary 1
+536 
+Palette 1
+368 
+CoveragePalette 1
+540 
+SequenceableCollection 1
+206 
+Interval 1
+542 
+TextLineInterval 1
+543 
+SlidingInterval 1
+543 
+ArrayedCollection 1
+542 
+TwoDList 1
+546 
+TableAdaptor 1
+546 
+WeakArray 1
+546 
+RunArray 1
+546 
+LinkedList 1
+542 
+Semaphore 1
+551 
+OrderedCollection 1
+542 
+LinkedOrderedCollection 1
+553 
+FontDescriptionBundle 1
+553 
+HandlerCollection 1
+553 
+UIDataReference 1
+210 
+LensGraphReference 1
+557 
+LensContainerReference 1
+558 
+LensVariableReference 1
+558 
+SequenceableCollectionInspector 1
+378 
+OrderedCollectionInspector 1
+561 
+ProtocolAdaptor 1
+383 
+AspectAdaptor 1
+563 
+ComputedValue 1
+383 
+BlockValue 1
+565 
+PluggableAdaptor 1
+383 
+TypeConverter 1
+567 
+ValueHolder 1
+383 
+ProfilerListHolder 1
+569 
+EvaluationHolder 1
+569 
+HelpProxy 1
+569 
+LensRowHolder 1
+569 
+ChangeList 1
+569 
+Project 1
+569 
+BufferedValueHolder 1
+569 
+TextCollector 1
+569 
+SimpleDialog 1
+385 
+LensDataModelGenerator 1
+578 
+LensApplicationCreationDialog 1
+578 
+LensReferenceNameDialog 1
+578 
+LensTablesSelector 1
+578 
+LensKeyEditor 1
+578 
+SimpleHelp 1
+578 
+LensApplicationModel 1
+385 
+LensDataManager 1
+585 
+LensBrowsingToolModel 1
+385 
+LensGraphView 1
+587 
+SpecModel 1
+385 
+LensDFBasicsSliceModel 1
+589 
+LensDFConnectionSliceModel 1
+589 
+UIPainterWatcher 1
+385 
+UIPropertiesTool 1
+592 
+UIMaskEditor 1
+592 
+UICanvasTool 1
+592 
+UIMenuEditor 1
+592 
+ExternalDatabaseAnswerStream 1
+233 
+LensAnswerStream 1
+597 
+QueryStream 1
+598 
+SimpleComponent 1
+433 
+VisualDivider 1
+600 
+VisualBinderComponent 1
+600 
+VisualRegion 1
+600 
+GroupBox 1
+600 
+PassiveLabel 1
+600 
+Wrapper 1
+433 
+ScalingWrapper 1
+606 
+GridWrapper 1
+606 
+ReversingWrapper 1
+606 
+WidgetStateWrapper 1
+606 
+GraphicsAttributesWrapper 1
+606 
+PassivityWrapper 1
+606 
+CompositePart 1
+433 
+SubCanvas 1
+613 
+ReComposingComposite 1
+613 
+CUAScrollBar 1
+613 
+ComboBoxView 1
+613 
+NoteBookComposite 1
+613 
+ComposedText 1
+435 
+InputFieldComposedText 1
+619 
+Image 1
+437 
+Depth1Image 1
+621 
+Depth32Image 1
+621 
+Depth2Image 1
+621 
+Depth8Image 1
+621 
+Depth4Image 1
+621 
+Depth16Image 1
+621 
+Depth24Image 1
+621 
+ValueNode 1
+442 
+SequenceNode 1
+629 
+ConditionalNode 1
+629 
+ArithmeticLoopNode 1
+629 
+CascadeNode 1
+629 
+LoopNode 1
+629 
+AssignmentNode 1
+629 
+ComponentSpec 1
+261 
+NamedSpec 1
+636 
+ArbitraryComponentSpec 1
+637 
+RegionSpec 1
+637 
+GroupBoxSpec 1
+637 
+DividerSpec 1
+637 
+CompositeSpec 1
+637 
+LabelSpec 1
+637 
+ExternalLanguageParser 1
+455 
+SQLCompiler 1
+644 
+DragMode 1
+460 
+CornerDragMode 1
+646 
+SelectionDragMode 1
+646 
+NullDragMode 1
+646 
+DividerResizingDragMode 1
+646 
+OrientationResizeMode 1
+646 
+ApplicationStandardSystemController 1
+471 
+UIPainterSystemController 1
+652 
+BasicButtonController 1
+473 
+TriggerButtonController 1
+654 
+ToggleButtonController 1
+654 
+DataSetController 1
+477 
+PaintedDataSetController 1
+657 
+BitEditor 1
+477 
+ColorBitEditor 1
+659 
+ModalController 1
+477 
+UIPainterController 1
+661 
+ListController 1
+477 
+ChangeListController 1
+663 
+ParagraphEditor 1
+477 
+TextItemEditor 1
+665 
+DisplaySurface 1
+289 
+Window 1
+667 
+TransientWindow 1
+668 
+UnmappableSurface 1
+667 
+Mask 1
+670 
+Pixmap 1
+670 
+Context 1
+482 
+MessageCollector 1
+673 
+BlockContext 1
+673 
+MethodContext 1
+673 
+Number 1
+485 
+Fraction 1
+677 
+FixedPoint 1
+677 
+LookupKey 1
+295 
+Association 1
+680 
+WeakKeyAssociation 1
+681 
+ExternalProcess 1
+500 
+UnixProcess 1
+683 
+ScreenFont 1
+507 
+XFont 1
+685 
+MacFont 1
+685 
+ClassOtherChange 1
+529 
+ClassCommentChange 1
+688 
+PoolDictionary 1
+534 
+SystemDictionary 1
+690 
+ColorPalette 1
+540 
+FixedPalette 1
+692 
+IntegerArray 1
+546 
+WordArray 1
+694 
+CharacterArray 1
+546 
+Text 1
+696 
+Array 1
+546 
+DependentsCollection 1
+698 
+ScannerTable 1
+698 
+BOSSReaderMap 1
+698 
+List 1
+546 
+LensStreamList 1
+702 
+SortedCollection 1
+553 
+SPActiveLines 1
+704 
+SPSortedLines 1
+704 
+IndexedAdaptor 1
+563 
+SlotAdaptor 1
+707 
+LensMainApplication 1
+585 
+LensTemporaryMain 1
+709 
+IntegratedSpecModel 1
+589 
+DataSetCallbacksSpecModel 1
+711 
+DataSetSpecColumnModel 1
+711 
+PositionToolModel 1
+711 
+ColorToolModel 1
+711 
+PeekableStream 1
+233 
+PositionableStream 1
+716 
+InternalStream 1
+717 
+ReadStream 1
+718 
+WidgetSpecification 1
+606 
+Button 1
+720 
+WidgetWrapper 1
+606 
+SpecWrapper 1
+722 
+GeometricWrapper 1
+606 
+FillingWrapper 1
+724 
+StrokingWrapper 1
+724 
+BorderDecorator 1
+613 
+TableDecorator 1
+727 
+DependentPart 1
+433 
+View 1
+729 
+CTermView 1
+730 
+ProjectView 1
+730 
+NotifierView 1
+730 
+FractionalWidgetView 1
+730 
+ColoredArea 1
+730 
+LauncherView 1
+730 
+DirectBitView 1
+730 
+SimpleMessageNode 1
+629 
+MessageNode 1
+738 
+LeafNode 1
+629 
+VariableNode 1
+740 
+BlockNode 1
+740 
+LiteralNode 1
+740 
+WidgetSpec 1
+637 
+DataSetColumnSpec 1
+744 
+MultiSpec 1
+744 
+SliderSpec 1
+744 
+NoteBookSpec 1
+744 
+SubCanvasSpec 1
+637 
+EmbeddedDetailSpec 1
+749 
+CScanner 1
+268 
+CParser 1
+751 
+CExpressionParser 1
+752 
+CPreprocessor 1
+753 
+CDeclarationParser 1
+753 
+ApplicationDialogController 1
+652 
+DropDownListController 1
+756 
+SelectionInListController 1
+663 
+SelectionSetInListController 1
+758 
+TextController 1
+665 
+DebuggerController 1
+760 
+ScheduledWindow 1
+668 
+ApplicationWindow 1
+762 
+MetaNumeric 1
+677 
+SomeNumber 1
+764 
+NotANumber 1
+764 
+Infinitesimal 1
+764 
+Infinity 1
+764 
+LimitedPrecisionReal 1
+677 
+Double 1
+769 
+Float 1
+769 
+Integer 1
+677 
+SmallInteger 1
+772 
+Class 1
+494 
+Object-class 1
+774 
+Exception-class 1
+775 
+ClassCategoryReader-class 1
+775 
+Delay-class 1
+775 
+DependencyTransformer-class 1
+775 
+TimeZone-class 1
+775 
+CodeLabel-class 1
+775 
+SystemError-class 1
+775 
+BlockClosure-class 1
+775 
+LDMGraph-class 1
+775 
+Document-class 1
+775 
+ExternalDatabaseBuffer-class 1
+775 
+BOSSCompiledCodeHolder-class 1
+775 
+ExternalLibrary-class 1
+775 
+InverseColorMapInitializer-class 1
+775 
+ExternalDatabaseColumnDescription-class 1
+775 
+WidgetState-class 1
+775 
+DatabaseTypeMapping-class 1
+775 
+DispatchTable-class 1
+775 
+MemoryPolicy-class 1
+775 
+FontPolicy-class 1
+775 
+ProcessHandle-class 1
+775 
+SystemUtils-class 1
+775 
+DataSetColumn-class 1
+775 
+Enumerator-class 1
+775 
+PrintConverter-class 1
+775 
+SQL-class 1
+775 
+SystemAnalyzer-class 1
+775 
+QueryOperationAccessor-class 1
+775 
+RangeMap-class 1
+775 
+KeyboardEvent-class 1
+775 
+CellProperties-class 1
+775 
+ProcessorScheduler-class 1
+775 
+BOSSSpecialObjectLoader-class 1
+775 
+StreamPolicy-class 1
+775 
+BenchDecompilerTestClass-class 1
+775 
+PostScriptFontBody-class 1
+775 
+ClassDeclarations-class 1
+775 
+UIDefiner-class 1
+775 
+LensMutationAction-class 1
+775 
+LDMNodeChild-class 1
+775 
+MethodNodeHolder-class 1
+775 
+LensTranscoder-class 1
+775 
+ColumnReorderAgent-class 1
+775 
+RecursionLock-class 1
+775 
+CStructureLayout-class 1
+775 
+DeferredBlock-class 1
+775 
+LDMPerspective-class 1
+775 
+RemoteString-class 1
+775 
+LDMRelationsGenerator-class 1
+775 
+LensWeakCollection-class 1
+775 
+Promise-class 1
+775 
+LDMArc-class 1
+775 
+LensGlobalDescriptor-class 1
+775 
+UIBuilder-class 1
+775 
+DefineOpcodePool-class 1
+775 
+SQLIdentifier-class 1
+775 
+Dialog-class 1
+775 
+InverseColorMap-class 1
+775 
+DitherUpTo4-class 1
+775 
+SequenceableCollectionSorter-class 1
+775 
+InputState-class 1
+775 
+BOSSContents-class 1
+775 
+RowAdaptor-class 1
+775 
+GraphicsAttributes-class 1
+775 
+MenuItem-class 1
+775 
+UIDispatcher-class 1
+775 
+MessageChannel-class 1
+775 
+ExternalDatabaseError-class 1
+775 
+Timestamp-class 1
+775 
+SPFillLine-class 1
+775 
+SQLInfixOperation-class 1
+775 
+BenchmarkTable-class 1
+775 
+PushFragment-class 1
+775 
+ChangeSet-class 1
+775 
+ControlManager-class 1
+775 
+KeyboardProcessor-class 1
+775 
+DocumentRenderer-class 1
+775 
+MenuAdornment-class 1
+775 
+ObjectMemory-class 1
+775 
+BOSSRegisteredObject-class 1
+775 
+HelpForwarder-class 1
+775 
+ClassBuilder-class 1
+775 
+DatabaseCommand-class 1
+775 
+RecognizerFragment-class 1
+775 
+InstanceTally-class 1
+775 
+LensMutationPlan-class 1
+775 
+ByteFieldDescriptor-class 1
+775 
+ComposedBlock-class 1
+775 
+ColumnResizeAgent-class 1
+775 
+ExternalLibraryHolder-class 1
+775 
+CharacterComposer-class 1
+775 
+CMacroDefinition-class 1
+775 
+HelpSeeAlso-class 1
+775 
+LabeledObjectHolder-class 1
+775 
+DSVDependencyAgent-class 1
+775 
+RasterOp-class 1
+775 
+ExternalInterfaceHolder-class 1
+775 
+SQLLiteral-class 1
+775 
+LensPolicy-class 1
+775 
+MenuItemAdornment-class 1
+775 
+SharedQueue-class 1
+775 
+ReferencePathCollector-class 1
+775 
+UndefinedObject-class 1
+775 
+MenuBuilder-class 1
+775 
+ExternalInterface-class 1
+775 
+FontDescription-class 1
+775 
+IOAccessor 1
+500 
+PCIOAccessor 1
+882 
+PCDiskFileAccessor 1
+883 
+MacIOAccessor 1
+882 
+MacTtyAccessor 1
+885 
+MacDiskFileAccessor 1
+885 
+MSWindowsFont 1
+685 
+OS2Font 1
+888 
+LensRegistry 1
+534 
+LensWeakRegistry 1
+890 
+LensObjectRegistry 1
+891 
+MappedPalette 1
+692 
+MonoMappedPalette 1
+893 
+ByteArray 1
+694 
+BOSSBytes 1
+895 
+String 1
+696 
+GapString 1
+897 
+TwoByteString 1
+897 
+WriteStream 1
+718 
+TextStream 1
+900 
+ExternalStream 1
+717 
+BufferedExternalStream 1
+902 
+ExternalWriteStream 1
+903 
+TranslatingWrapper 1
+606 
+ScrollWrapper 1
+905 
+DataSetScrollWrapper 1
+906 
+SlaveScrollWrapper 1
+906 
+LDMAbstractElementWrapper 1
+905 
+LDMListElementWrapper 1
+909 
+LDMGraphElementWrapper 1
+909 
+ComposingComposite 1
+613 
+MenuBar 1
+912 
+Win3MenuBar 1
+913 
+CUAMenuBar 1
+913 
+MotifMenuBar 1
+913 
+MacMenuBar 1
+913 
+DependentComposite 1
+613 
+CompositeView 1
+918 
+LDMElementView 1
+919 
+LDMBrowserBodyView 1
+919 
+UIPainterView 1
+919 
+DialogView 1
+919 
+BitView 1
+730 
+ColorBitView 1
+924 
+Scrollbar 1
+730 
+FixedThumbScrollbar 1
+926 
+BooleanWidgetView 1
+730 
+ActionButton 1
+928 
+MenuItemView 1
+730 
+MotifMenuItemView 1
+930 
+MacMenuItemView 1
+930 
+CUAMenuItemView 1
+930 
+Win3MenuItemView 1
+930 
+MenuComponentSpec 1
+744 
+LDMBrowserSpec 1
+935 
+DataSetSpec 1
+935 
+TableViewSpec 1
+935 
+SequenceViewSpec 1
+935 
+ButtonSpec 1
+744 
+RadioButtonSpec 1
+940 
+MenuButtonSpec 1
+940 
+CheckBoxSpec 1
+940 
+SpecDragMode 1
+646 
+PlacementMode 1
+944 
+SelectPlacementMode 1
+945 
+DragPlacementMode 1
+945 
+TextEditorController 1
+665 
+InputBoxController 1
+948 
+ComboBoxInputBoxController 1
+949 
+LargeInteger 1
+772 
+LargePositiveInteger 1
+951 
+LargeNegativeInteger 1
+951 
+LensAbsentee-class 1
+774 
+LensAbstractProxy-class 1
+954 
+LensProxy-class 1
+955 
+LensCollectionProxy-class 1
+955 
+LensQuerySurrogate-class 1
+954 
+LensChildrenSetSurrogate-class 1
+958 
+VariableDefinition-class 1
+775 
+ReceiverVariable-class 1
+960 
+PseudoVariable-class 1
+960 
+RemoteVariable-class 1
+960 
+CompilerErrorHandler-class 1
+775 
+InteractiveCompilerErrorHandler-class 1
+964 
+LoggingCompilerErrorHandler-class 1
+964 
+SilentCompilerErrorHandler-class 1
+964 
+CDatum-class 1
+775 
+CComposite-class 1
+968 
+CArray-class 1
+968 
+Profiler-class 1
+775 
+TimeProfiler-class 1
+971 
+AllocationProfiler-class 1
+971 
+LDMElementProxy-class 1
+775 
+LDMReversingElementProxy-class 1
+974 
+CharacterAttributes-class 1
+775 
+PlatformCharacterAttributes-class 1
+976 
+SimpleBorder-class 1
+775 
+BeveledBorder-class 1
+978 
+Win3Border-class 1
+978 
+Benchmark-class 1
+775 
+SystemBenchmark-class 1
+981 
+LineInformationTable-class 1
+775 
+OptimizedLineInformationTable-class 1
+983 
+IOBuffer-class 1
+775 
+PositionalIOBuffer-class 1
+985 
+Geometric-class 1
+775 
+Spline-class 1
+987 
+Bezier-class 1
+987 
+Circle-class 1
+987 
+Polyline-class 1
+987 
+LineSegment-class 1
+987 
+EllipticalArc-class 1
+987 
+NameScope-class 1
+775 
+StaticScope-class 1
+994 
+NullScope-class 1
+994 
+Boolean-class 1
+775 
+False-class 1
+997 
+True-class 1
+997 
+ProgramNodeEnumerator-class 1
+775 
+ReadBeforeWrittenTester-class 1
+1000 
+MessageAnalyzer-class 1
+1000 
+BorderDecorationPolicy-class 1
+775 
+SmalltalkBorderDecorationPolicy-class 1
+1003 
+QueryOperation-class 1
+775 
+LensQuery-class 1
+1005 
+WindowDisplayPolicy-class 1
+775 
+DoubleBufferingWindowDisplayPolicy-class 1
+1007 
+InputSensor-class 1
+775 
+TranslatingSensor-class 1
+1009 
+BOSSTransporter-class 1
+775 
+BOSSWriter-class 1
+1011 
+Signal-class 1
+775 
+ExternalDatabaseSignal-class 1
+1013 
+Menu-class 1
+775 
+PopUpMenu-class 1
+1015 
+PaintPolicy-class 1
+775 
+LuminanceBasedColorPolicy-class 1
+1017 
+UninterpretedBytes-class 1
+775 
+MacTtyOptions-class 1
+1019 
+GraphicsHandle-class 1
+1019 
+OS2TtyOptions-class 1
+1019 
+ExternalDatabaseFramework-class 1
+775 
+ExternalDatabaseTransaction-class 1
+1023 
+ExternalDatabaseConnection-class 1
+1023 
+ExternalDatabaseSession-class 1
+1023 
+Link-class 1
+775 
+Process-class 1
+1027 
+ImageReader-class 1
+775 
+BMPImageReader-class 1
+1029 
+LDMAbstractVisualBuilder-class 1
+775 
+LDMIndentedListBuilder-class 1
+1031 
+UILookPolicy-class 1
+775 
+DefaultLookPolicy-class 1
+1033 
+CUALookPolicy-class 1
+1033 
+MacLookPolicy-class 1
+1033 
+Win3LookPolicy-class 1
+1033 
+MotifLookPolicy-class 1
+1033 
+UIAspectPath-class 1
+775 
+LensAspectPath-class 1
+1039 
+CompiledCode-class 1
+775 
+CompiledBlock-class 1
+1041 
+SourceFileManager-class 1
+775 
+SourceCodeStream-class 1
+1043 
+Scanner-class 1
+775 
+ChangeScanner-class 1
+1045 
+Border-class 1
+775 
+EtchedBorder-class 1
+1047 
+Stream-class 1
+775 
+Random-class 1
+1049 
+Paint-class 1
+775 
+DevicePaint-class 1
+1051 
+Pattern-class 1
+1051 
+Controller-class 1
+775 
+LauncherController-class 1
+1054 
+WidgetController-class 1
+1054 
+MenuBarButtonController-class 1
+1054 
+DialogCompositeController-class 1
+1054 
+NoController-class 1
+1054 
+ComboBoxButtonController-class 1
+1054 
+MenuItemController-class 1
+1054 
+MenuButtonController-class 1
+1054 
+Change-class 1
+775 
+OtherChange-class 1
+1063 
+Model-class 1
+775 
+FileBrowser-class 1
+1065 
+CTermConnection-class 1
+1065 
+LensApplicationSpec-class 1
+1065 
+ClassReporter-class 1
+1065 
+ManualWriter-class 1
+1065 
+TableInterface-class 1
+1065 
+Explainer-class 1
+1065 
+ProjectBrowser-class 1
+1065 
+SyntaxError-class 1
+1065 
+LDMBrowserModel-class 1
+1065 
+SelectionInTable-class 1
+1065 
+LDMSelectionService-class 1
+1065 
+ScrollValueHolder-class 1
+1065 
+LensSession-class 1
+1065 
+ClassNameChooser-class 1
+1065 
+GraphicsMedium-class 1
+775 
+MockMedium-class 1
+1081 
+HostPrintJob-class 1
+1081 
+PostScriptFile-class 1
+1081 
+InstructionClient-class 1
+775 
+InstructionPrinter-class 1
+1085 
+Filename-class 1
+775 
+UnixFilename-class 1
+1087 
+MacFilename-class 1
+1087 
+Message-class 1
+775 
+MessageSend-class 1
+1090 
+ExternalMessage-class 1
+1090 
+ExternalObject-class 1
+775 
+ExternalVariable-class 1
+1093 
+ExternalProcedure-class 1
+1093 
+UISpecification-class 1
+775 
+FullSpec-class 1
+1096 
+WindowSpec-class 1
+1096 
+ImplementationFont-class 1
+775 
+SyntheticFont-class 1
+1099 
+UISpecEnumerator-class 1
+775 
+LensSpecReplicator-class 1
+1101 
+FilteredSpecEnumerator-class 1
+1101 
+AspectEnumerator-class 1
+1101 
+WidgetPolicy-class 1
+775 
+MotifWidgetPolicy-class 1
+1105 
+Win3WidgetPolicy-class 1
+1105 
+CUAWidgetPolicy-class 1
+1105 
+MacWidgetPolicy-class 1
+1105 
+SmalltalkWidgetPolicy-class 1
+1105 
+VisualComponent-class 1
+775 
+Icon-class 1
+1111 
+OpaqueImage-class 1
+1111 
+DragHandle-class 1
+1111 
+VisualBlock-class 1
+1111 
+CType-class 1
+775 
+CProcedureType-class 1
+1116 
+CVoidType-class 1
+1116 
+COopType-class 1
+1116 
+Magnitude-class 1
+775 
+MessageTally-class 1
+1120 
+Character-class 1
+1120 
+Time-class 1
+1120 
+Date-class 1
+1120 
+HelpElement-class 1
+775 
+HelpChapter-class 1
+1125 
+HelpExample-class 1
+1125 
+HelpBook-class 1
+1125 
+HelpLibrary-class 1
+1125 
+HelpPage-class 1
+1125 
+BinaryObjectStorage-class 1
+775 
+HelpAccessor-class 1
+1131 
+ClassOrganizer-class 1
+775 
+SystemOrganizer-class 1
+1133 
+ProgramNode-class 1
+775 
+MethodNode-class 1
+1135 
+ParameterNode-class 1
+1135 
+ImageRenderer-class 1
+775 
+ErrorDiffusion-class 1
+1138 
+SQLNode-class 1
+775 
+SQLStatement-class 1
+1140 
+SQLFunction-class 1
+1140 
+SQLClause-class 1
+1140 
+TextAttributes-class 1
+775 
+VariableSizeTextAttributes-class 1
+1144 
+GraphicsDevice-class 1
+775 
+Printer-class 1
+1146 
+PostScriptPrinter-class 1
+1146 
+LensMetadata-class 1
+775 
+LensDatabaseTable-class 1
+1149 
+LensReferenceType-class 1
+1149 
+LensTableKey-class 1
+1149 
+LensStructureVariable-class 1
+1149 
+LensDatabaseContext-class 1
+1149 
+LensDatabaseTableColumn-class 1
+1149 
+LensDataModel-class 1
+1149 
+LensDatabaseIndex-class 1
+1149 
+Collection-class 1
+775 
+Bag-class 1
+1158 
+GraphicsContext-class 1
+775 
+PostScriptGraphicsContext-class 1
+1160 
+HostPrinterGraphicsContext-class 1
+1160 
+ScreenGraphicsContext-class 1
+1160 
+CharacterEncoder-class 1
+775 
+ByteCharacterEncoder-class 1
+1164 
+LargeCharacterEncoder-class 1
+1164 
+PrintPolicy-class 1
+775 
+NumberPrintPolicy-class 1
+1167 
+TimestampPrintPolicy-class 1
+1167 
+StringPrintPolicy-class 1
+1167 
+LensBasicTransporter-class 1
+775 
+LensSQLTransporter-class 1
+1171 
+ExternalConnection-class 1
+775 
+FileConnection-class 1
+1173 
+LDMVariable-class 1
+775 
+LDMFocusVariable-class 1
+1175 
+ProgramNodeBuilder-class 1
+775 
+LensMethodGenerator-class 1
+1177 
+PCTtyAccessor 1
+883 
+OS2TtyAccessor 1
+1179 
+BlockableIOAccessor 1
+882 
+UnixIOAccessor 1
+1181 
+UnixPipeAccessor 1
+1182 
+UnixDiskFileAccessor 1
+1182 
+IdentityDictionary 1
+534 
+WeakDictionary 1
+1185 
+HandleRegistry 1
+1186 
+ExternalRegistry 1
+1187 
+Symbol 1
+897 
+ByteSymbol 1
+1189 
+TwoByteSymbol 1
+1189 
+ByteEncodedString 1
+897 
+ByteString 1
+1192 
+MacString 1
+1192 
+ISO8859L1String 1
+1192 
+OS2String 1
+1192 
+ReadWriteStream 1
+900 
+ByteCodeReadWriteStream 1
+1197 
+ExternalReadStream 1
+903 
+ExternalReadWriteStream 1
+1199 
+ExternalReadAppendStream 1
+1199 
+LayoutWrapper 1
+905 
+BoundedWrapper 1
+1202 
+BoundingWrapper 1
+1203 
+MenuView 1
+919 
+CUAMenuView 1
+1205 
+Win3MenuView 1
+1205 
+MotifMenuView 1
+1205 
+MacMenuView 1
+1205 
+LDMCompositeView 1
+919 
+LDMGraphCompositeView 1
+1210 
+EmulationScrollBar 1
+926 
+MotifScrollBar 1
+1212 
+CUAScrollBarSlider 1
+1212 
+LabeledBooleanView 1
+928 
+LDMArrowView 1
+1215 
+AutoScrollingView 1
+730 
+TableView 1
+1217 
+GeneralSelectionTableView 1
+1218 
+ListView 1
+1217 
+ChangeListView 1
+1220 
+ComposedTextView 1
+1217 
+TextCollectorView 1
+1222 
+SimpleView 1
+730 
+SliderView 1
+1224 
+MacSliderView 1
+1225 
+Win3SliderView 1
+1225 
+ActionButtonSpec 1
+940 
+LinkedDetailSpec 1
+1228 
+LensExpressionSurrogate-class 1
+958 
+LensCommandVariable-class 1
+1230 
+LocalVariable-class 1
+960 
+ArgumentVariable-class 1
+1232 
+TemporaryVariable-class 1
+1232 
+InstanceVariable-class 1
+960 
+LensInstanceVariable-class 1
+1235 
+StaticVariable-class 1
+960 
+UndeclaredVariable-class 1
+1237 
+NonInteractiveCompilerErrorHandler-class 1
+964 
+QueryCompilerErrorHandler-class 1
+1239 
+CPointer-class 1
+968 
+CCompositePointer-class 1
+1241 
+CProcedurePointer-class 1
+968 
+CCallback-class 1
+1243 
+Rectangle-class 1
+987 
+CharacterBlock-class 1
+1245 
+LocalScope-class 1
+994 
+LensScope-class 1
+1247 
+EmulationBorderDecorationPolicy-class 1
+1003 
+CUABorderDecorationPolicy-class 1
+1249 
+MacBorderDecorationPolicy-class 1
+1249 
+Win3BorderDecorationPolicy-class 1
+1249 
+MotifBorderDecorationPolicy-class 1
+1249 
+WindowSensor-class 1
+1009 
+ApplicationWindowSensor-class 1
+1254 
+BOSSReader-class 1
+1011 
+BOSSDebugReader-class 1
+1256 
+SmalltalkCompiler-class 1
+775 
+Compiler-class 1
+1258 
+QueryCompiler-class 1
+1259 
+ExtendedCompiler-class 1
+1259 
+LensCompiler-class 1
+1259 
+UnixTtyOptions-class 1
+1019 
+BsdTtyOptions-class 1
+1263 
+Sys5TtyOptions-class 1
+1263 
+LDMGraphBuilder-class 1
+1031 
+LDMProtoMapBuilder-class 1
+1266 
+CompiledMethod-class 1
+1041 
+AnnotatedMethod-class 1
+1268 
+MarkedMethod-class 1
+1268 
+ExternalMethod-class 1
+1268 
+OSErrorHolder-class 1
+775 
+OSHandle-class 1
+1272 
+Cursor-class 1
+1273 
+Parser-class 1
+1045 
+ExtendedParser-class 1
+1275 
+GeneralParser-class 1
+1045 
+ParserCompiler-class 1
+1277 
+TextMeasurer-class 1
+775 
+CharacterScanner-class 1
+1279 
+CompositionScanner-class 1
+1280 
+DisplayScanner-class 1
+1280 
+CharacterBlockScanner-class 1
+1280 
+Layout-class 1
+775 
+LayoutOrigin-class 1
+1284 
+LayoutFrame-class 1
+1285 
+AlignmentOrigin-class 1
+1285 
+SimplePaint-class 1
+1051 
+CoverageValue-class 1
+1288 
+ColorValue-class 1
+1288 
+SymbolicPaint-class 1
+1051 
+HierarchicalSymbolicPaint-class 1
+1291 
+ControllerWithMenu-class 1
+1054 
+SequenceController-class 1
+1293 
+CTermController-class 1
+1293 
+LDMCompositeViewController-class 1
+1293 
+LDMElementViewController-class 1
+1293 
+SelectController-class 1
+1054 
+ColoredAreaController-class 1
+1298 
+SliderController-class 1
+1298 
+TabBarController-class 1
+1298 
+StandardSystemController-class 1
+1054 
+DialogController-class 1
+1302 
+MenuController-class 1
+1054 
+MenuAsSubmenuController-class 1
+1304 
+MenuAsPopUpController-class 1
+1304 
+MenuFromMenuBarController-class 1
+1304 
+MenuFromMenuButtonController-class 1
+1304 
+ScrollbarController-class 1
+1054 
+EmulationScrollBarController-class 1
+1309 
+Browser-class 1
+1065 
+FullBrowser-class 1
+1311 
+MethodListBrowser-class 1
+1311 
+HierarchyBrowser-class 1
+1311 
+Debugger-class 1
+1311 
+CharacterTerminal-class 1
+1065 
+SunTerminal-class 1
+1316 
+VT100Terminal-class 1
+1316 
+SelectionInList-class 1
+1065 
+MultiSelectionInList-class 1
+1319 
+OutlineBrowser-class 1
+1065 
+ProfileOutlineBrowser-class 1
+1321 
+WindowBrowser-class 1
+1321 
+LDMAbstractBody-class 1
+1065 
+LDMRelationsBody-class 1
+1324 
+ValueModel-class 1
+1065 
+RangeAdaptor-class 1
+1326 
+Inspector-class 1
+1065 
+DictionaryInspector-class 1
+1328 
+CompiledCodeInspector-class 1
+1328 
+ChangeSetInspector-class 1
+1328 
+ContextInspector-class 1
+1328 
+ApplicationModel-class 1
+1065 
+UIPalette-class 1
+1333 
+ExamplesBrowser-class 1
+1333 
+ExternalDatabaseInstallation-class 1
+1333 
+ExternalInterfaceFinder-class 1
+1333 
+LensEditor-class 1
+1333 
+AdHocQueryTool-class 1
+1333 
+HelpBrowser-class 1
+1333 
+UIPainter-class 1
+1333 
+CodingAssistant-class 1
+1333 
+ExternalInterfaceBuilder-class 1
+1333 
+UISettings-class 1
+1333 
+QueryEditor-class 1
+1333 
+UIFinderVW2-class 1
+1333 
+LensApplicationStructureView-class 1
+1333 
+VisualLauncher-class 1
+1333 
+LensMappingEditor-class 1
+1333 
+LensApplicationSpecEditor-class 1
+1333 
+ControlMode-class 1
+775 
+DrawingMode-class 1
+1351 
+SelectMode-class 1
+1352 
+InstructionStream-class 1
+1085 
+CodeRegenerator-class 1
+1354 
+Decompiler-class 1
+1354 
+PCFilename-class 1
+1087 
+NTFSFilename-class 1
+1357 
+HPFSFilename-class 1
+1357 
+FATFilename-class 1
+1357 
+LDMRelationship-class 1
+775 
+LDMFirstOrderRel-class 1
+1361 
+LDMSpecialRel-class 1
+1362 
+SubSpec-class 1
+1096 
+UIEventCallbackSubSpec-class 1
+1364 
+SpecCollection-class 1
+1096 
+CompositeSpecCollection-class 1
+1366 
+DeviceFont-class 1
+1099 
+PostScriptPrinterFont-class 1
+1368 
+ByteCodeStream-class 1
+775 
+CodeStream-class 1
+1370 
+RecodeStream-class 1
+1371 
+PixelArray-class 1
+1111 
+CachedImage-class 1
+1373 
+RowVisual-class 1
+1111 
+RowLabelVisual-class 1
+1375 
+LDMVisualTreeConnection-class 1
+1111 
+LDMBroomConnection-class 1
+1377 
+TextLines-class 1
+1111 
+TextList-class 1
+1379 
+VisualPart-class 1
+1111 
+MotifMenuItemSeparatorComponent-class 1
+1381 
+Label-class 1
+1111 
+LabelAndIcon-class 1
+1383 
+AlignmentLabel-class 1
+1383 
+CQualifiedType-class 1
+1116 
+CTypedefType-class 1
+1386 
+CCompoundType-class 1
+1116 
+CCompositeType-class 1
+1388 
+CEnumerationType-class 1
+1388 
+CScalarType-class 1
+1116 
+CIntegerType-class 1
+1391 
+CLimitedPrecisionRealType-class 1
+1391 
+CPointerType-class 1
+1116 
+CArrayType-class 1
+1394 
+ArithmeticValue-class 1
+1120 
+Point-class 1
+1396 
+Complex-class 1
+1396 
+StatementNode-class 1
+1135 
+ReturnNode-class 1
+1399 
+PaintRenderer-class 1
+1138 
+OrderedDither-class 1
+1401 
+NearestPaint-class 1
+1401 
+SQLModifier-class 1
+1140 
+SQLPostModifier-class 1
+1404 
+HostGraphicsDevice-class 1
+1146 
+HostPrinter-class 1
+1406 
+Screen-class 1
+1406 
+LensType-class 1
+1149 
+LensEnumerationType-class 1
+1409 
+LensEncodedType-class 1
+1409 
+LensDataType-class 1
+1409 
+KeyedCollection-class 1
+1158 
+MethodDictionary-class 1
+1413 
+LensContainer-class 1
+1158 
+LensCompositeContainer-class 1
+1415 
+LensBaseContainer-class 1
+1415 
+Behavior-class 1
+775 
+ClassDescription-class 1
+1418 
+Class-class 1
+1419 
+Metaclass-class 1
+1419 
+UnixTtyAccessor 1
+1182 
+UnixPseudoTtyAccessor 1
+1422 
+UnixRealTtyAccessor 1
+1422 
+WeakAssociationDictionary 1
+1186 
+LinkedWeakAssociationDictionary 1
+1425 
+ExternalDictionary 1
+1426 
+BorderedWrapper 1
+1203 
+MenuBarWrapper 1
+1428 
+EmulationFixedThumbScrollBar 1
+1212 
+MacScrollBar 1
+1430 
+Win3ScrollBar 1
+1430 
+SelectionInListView 1
+1220 
+HierarchicalClassListView 1
+1433 
+SelectionSetInListView 1
+1433 
+TextView 1
+1222 
+DebuggerTextView 1
+1436 
+BasicButtonView 1
+1224 
+ScrollerButtonView 1
+1438 
+VisualPairButton 1
+1439 
+CUAScrollerButtonView 1
+1439 
+MotifScrollerButton 1
+1439 
+ComboBoxButtonView 1
+1438 
+MacComboBoxButtonView 1
+1443 
+MotifComboBoxButtonView 1
+1443 
+CUAComboBoxButtonView 1
+1443 
+Win3ComboBoxButtonView 1
+1443 
+TextEditorSpec 1
+935 
+InputFieldSpec 1
+1448 
+ComboBoxSpec 1
+1449 
+LensFunctionSurrogate-class 1
+1230 
+LensArbitraryFunctionSurrogate-class 1
+1451 
+LensValueSurrogate-class 1
+1230 
+LensObjectSurrogate-class 1
+1453 
+LensSubquerySurrogate-class 1
+1453 
+LensVariableSurrogate-class 1
+1453 
+LensOperationSurrogate-class 1
+1230 
+LensAggregateSurrogate-class 1
+1457 
+ExternalProcess-class 1
+1273 
+UnixProcess-class 1
+1459 
+ExternalLanguageParser-class 1
+1277 
+SQLCompiler-class 1
+1461 
+ExternalDatabaseAnswerStream-class 1
+1049 
+LensAnswerStream-class 1
+1463 
+QueryStream-class 1
+1464 
+ListController-class 1
+1293 
+ChangeListController-class 1
+1466 
+ModalController-class 1
+1293 
+UIPainterController-class 1
+1468 
+BitEditor-class 1
+1293 
+ColorBitEditor-class 1
+1470 
+ParagraphEditor-class 1
+1293 
+TextItemEditor-class 1
+1472 
+DataSetController-class 1
+1293 
+PaintedDataSetController-class 1
+1474 
+BasicButtonController-class 1
+1298 
+TriggerButtonController-class 1
+1476 
+ToggleButtonController-class 1
+1476 
+ApplicationStandardSystemController-class 1
+1302 
+UIPainterSystemController-class 1
+1479 
+ClassRelatedChange-class 1
+1063 
+MethodChange-class 1
+1481 
+MethodOtherChange-class 1
+1482 
+MethodDefinitionChange-class 1
+1482 
+ClassChange-class 1
+1481 
+ClassDefinitionChange-class 1
+1485 
+UIDataReference-class 1
+1065 
+LensGraphReference-class 1
+1487 
+LensContainerReference-class 1
+1488 
+LensVariableReference-class 1
+1488 
+ValueHolder-class 1
+1326 
+Project-class 1
+1491 
+BufferedValueHolder-class 1
+1491 
+TextCollector-class 1
+1491 
+ProfilerListHolder-class 1
+1491 
+ChangeList-class 1
+1491 
+LensRowHolder-class 1
+1491 
+EvaluationHolder-class 1
+1491 
+HelpProxy-class 1
+1491 
+ProtocolAdaptor-class 1
+1326 
+AspectAdaptor-class 1
+1500 
+PluggableAdaptor-class 1
+1326 
+TypeConverter-class 1
+1502 
+ComputedValue-class 1
+1326 
+BlockValue-class 1
+1504 
+SequenceableCollectionInspector-class 1
+1328 
+OrderedCollectionInspector-class 1
+1506 
+SimpleDialog-class 1
+1333 
+SimpleHelp-class 1
+1508 
+LensReferenceNameDialog-class 1
+1508 
+LensKeyEditor-class 1
+1508 
+LensApplicationCreationDialog-class 1
+1508 
+LensTablesSelector-class 1
+1508 
+LensDataModelGenerator-class 1
+1508 
+LensApplicationModel-class 1
+1333 
+LensDataManager-class 1
+1515 
+LensBrowsingToolModel-class 1
+1333 
+LensGraphView-class 1
+1517 
+SpecModel-class 1
+1333 
+LensDFBasicsSliceModel-class 1
+1519 
+LensDFConnectionSliceModel-class 1
+1519 
+UIPainterWatcher-class 1
+1333 
+UIMenuEditor-class 1
+1522 
+UIPropertiesTool-class 1
+1522 
+UIMaskEditor-class 1
+1522 
+UICanvasTool-class 1
+1522 
+DragMode-class 1
+1352 
+DividerResizingDragMode-class 1
+1527 
+NullDragMode-class 1
+1527 
+SelectionDragMode-class 1
+1527 
+OrientationResizeMode-class 1
+1527 
+CornerDragMode-class 1
+1527 
+DisplaySurface-class 1
+1081 
+UnmappableSurface-class 1
+1533 
+Mask-class 1
+1534 
+Pixmap-class 1
+1534 
+Window-class 1
+1533 
+TransientWindow-class 1
+1537 
+Context-class 1
+1354 
+BlockContext-class 1
+1539 
+MessageCollector-class 1
+1539 
+MethodContext-class 1
+1539 
+LDMHighOrderRel-class 1
+1361 
+LDMMonadicRel-class 1
+1543 
+LDMNonReflexiveRel-class 1
+1544 
+LDMLimitingRel-class 1
+1544 
+LDMTransitiveClosureRel-class 1
+1544 
+LDMDiadicRel-class 1
+1543 
+LDMOrRel-class 1
+1548 
+LDMComposedRel-class 1
+1548 
+ComponentSpec-class 1
+1096 
+NamedSpec-class 1
+1551 
+CompositeSpec-class 1
+1552 
+GroupBoxSpec-class 1
+1552 
+ArbitraryComponentSpec-class 1
+1552 
+LabelSpec-class 1
+1552 
+RegionSpec-class 1
+1552 
+DividerSpec-class 1
+1552 
+ScreenFont-class 1
+1368 
+MacFont-class 1
+1559 
+XFont-class 1
+1559 
+Image-class 1
+1373 
+Depth8Image-class 1
+1562 
+Depth24Image-class 1
+1562 
+Depth2Image-class 1
+1562 
+Depth16Image-class 1
+1562 
+Depth4Image-class 1
+1562 
+Depth32Image-class 1
+1562 
+Depth1Image-class 1
+1562 
+ComposedText-class 1
+1379 
+InputFieldComposedText-class 1
+1570 
+SimpleComponent-class 1
+1381 
+VisualDivider-class 1
+1572 
+VisualBinderComponent-class 1
+1572 
+VisualRegion-class 1
+1572 
+GroupBox-class 1
+1572 
+PassiveLabel-class 1
+1572 
+CompositePart-class 1
+1381 
+ComboBoxView-class 1
+1578 
+ReComposingComposite-class 1
+1578 
+SubCanvas-class 1
+1578 
+CUAScrollBar-class 1
+1578 
+NoteBookComposite-class 1
+1578 
+Wrapper-class 1
+1381 
+ScalingWrapper-class 1
+1584 
+ReversingWrapper-class 1
+1584 
+WidgetStateWrapper-class 1
+1584 
+GridWrapper-class 1
+1584 
+PassivityWrapper-class 1
+1584 
+GraphicsAttributesWrapper-class 1
+1584 
+Number-class 1
+1396 
+Fraction-class 1
+1591 
+FixedPoint-class 1
+1591 
+LookupKey-class 1
+1120 
+Association-class 1
+1594 
+WeakKeyAssociation-class 1
+1595 
+ValueNode-class 1
+1399 
+AssignmentNode-class 1
+1597 
+ConditionalNode-class 1
+1597 
+CascadeNode-class 1
+1597 
+LoopNode-class 1
+1597 
+SequenceNode-class 1
+1597 
+ArithmeticLoopNode-class 1
+1597 
+LensStructureType-class 1
+1409 
+LensCollectionType-class 1
+1604 
+SequenceableCollection-class 1
+1158 
+Interval-class 1
+1606 
+SlidingInterval-class 1
+1607 
+TextLineInterval-class 1
+1607 
+OrderedCollection-class 1
+1606 
+FontDescriptionBundle-class 1
+1610 
+LinkedOrderedCollection-class 1
+1610 
+HandlerCollection-class 1
+1610 
+ArrayedCollection-class 1
+1606 
+RunArray-class 1
+1614 
+WeakArray-class 1
+1614 
+TableAdaptor-class 1
+1614 
+TwoDList-class 1
+1614 
+LinkedList-class 1
+1606 
+Semaphore-class 1
+1619 
+Set-class 1
+1158 
+IdentitySet-class 1
+1621 
+SignalCollection-class 1
+1622 
+Dictionary-class 1
+1621 
+CEnvironment-class 1
+1624 
+Palette-class 1
+1413 
+CoveragePalette-class 1
+1626 
+ColorPreferencesCollection-class 1
+1413 
+ChainedColorPreferences-class 1
+1628 
+ColorPreferencesDictionary-class 1
+1628 
+LookPreferences-class 1
+1628 
+TextEditorView 1
+1222 
+InputFieldView 1
+1632 
+ComboBoxInputFieldView 1
+1633 
+ScrollingView 1
+1224 
+SelectionView 1
+1635 
+TabBarView 1
+1636 
+VerticalTabBarView 1
+1637 
+HorizontalTabBarView 1
+1637 
+DataSetView 1
+1636 
+PaintedDataSetView 1
+1640 
+SequenceView 1
+1636 
+MultiSelectionSequenceView 1
+1642 
+LabeledButtonView 1
+1438 
+CheckButtonView 1
+1644 
+DefaultLookCheckButtonView 1
+1645 
+MacCheckButtonView 1
+1645 
+Win3CheckButtonView 1
+1645 
+CUACheckButtonView 1
+1645 
+MotifCheckButtonView 1
+1645 
+RadioButtonView 1
+1644 
+MotifRadioButtonView 1
+1651 
+Win3RadioButtonView 1
+1651 
+DefaultLookRadioButtonView 1
+1651 
+CUARadioButtonView 1
+1651 
+MacRadioButtonView 1
+1651 
+IOAccessor-class 1
+1273 
+PCIOAccessor-class 1
+1657 
+PCDiskFileAccessor-class 1
+1658 
+MacIOAccessor-class 1
+1657 
+MacDiskFileAccessor-class 1
+1660 
+MacTtyAccessor-class 1
+1660 
+CScanner-class 1
+1045 
+CParser-class 1
+1663 
+CExpressionParser-class 1
+1664 
+CPreprocessor-class 1
+1665 
+CDeclarationParser-class 1
+1665 
+PeekableStream-class 1
+1049 
+PositionableStream-class 1
+1668 
+InternalStream-class 1
+1669 
+ReadStream-class 1
+1670 
+SelectionInListController-class 1
+1466 
+SelectionSetInListController-class 1
+1672 
+TextController-class 1
+1472 
+DebuggerController-class 1
+1674 
+ApplicationDialogController-class 1
+1479 
+DropDownListController-class 1
+1676 
+ClassOtherChange-class 1
+1485 
+ClassCommentChange-class 1
+1678 
+IndexedAdaptor-class 1
+1500 
+SlotAdaptor-class 1
+1680 
+LensMainApplication-class 1
+1515 
+LensTemporaryMain-class 1
+1682 
+IntegratedSpecModel-class 1
+1519 
+PositionToolModel-class 1
+1684 
+ColorToolModel-class 1
+1684 
+DataSetCallbacksSpecModel-class 1
+1684 
+DataSetSpecColumnModel-class 1
+1684 
+ScheduledWindow-class 1
+1537 
+ApplicationWindow-class 1
+1689 
+SubCanvasSpec-class 1
+1552 
+EmbeddedDetailSpec-class 1
+1691 
+WidgetSpec-class 1
+1552 
+MultiSpec-class 1
+1693 
+SliderSpec-class 1
+1693 
+DataSetColumnSpec-class 1
+1693 
+NoteBookSpec-class 1
+1693 
+MSWindowsFont-class 1
+1559 
+OS2Font-class 1
+1698 
+BorderDecorator-class 1
+1578 
+TableDecorator-class 1
+1700 
+DependentPart-class 1
+1381 
+View-class 1
+1702 
+NotifierView-class 1
+1703 
+ColoredArea-class 1
+1703 
+LauncherView-class 1
+1703 
+DirectBitView-class 1
+1703 
+CTermView-class 1
+1703 
+FractionalWidgetView-class 1
+1703 
+ProjectView-class 1
+1703 
+WidgetSpecification-class 1
+1584 
+Button-class 1
+1711 
+GeometricWrapper-class 1
+1584 
+FillingWrapper-class 1
+1713 
+StrokingWrapper-class 1
+1713 
+WidgetWrapper-class 1
+1584 
+SpecWrapper-class 1
+1716 
+MetaNumeric-class 1
+1591 
+Infinity-class 1
+1718 
+SomeNumber-class 1
+1718 
+NotANumber-class 1
+1718 
+Infinitesimal-class 1
+1718 
+Integer-class 1
+1591 
+SmallInteger-class 1
+1723 
+LimitedPrecisionReal-class 1
+1591 
+Double-class 1
+1725 
+Float-class 1
+1725 
+LeafNode-class 1
+1597 
+LiteralNode-class 1
+1728 
+VariableNode-class 1
+1728 
+BlockNode-class 1
+1728 
+SimpleMessageNode-class 1
+1597 
+MessageNode-class 1
+1732 
+SortedCollection-class 1
+1610 
+SPSortedLines-class 1
+1734 
+SPActiveLines-class 1
+1734 
+IntegerArray-class 1
+1614 
+WordArray-class 1
+1737 
+List-class 1
+1614 
+LensStreamList-class 1
+1739 
+CharacterArray-class 1
+1614 
+Text-class 1
+1741 
+Array-class 1
+1614 
+DependentsCollection-class 1
+1743 
+ScannerTable-class 1
+1743 
+BOSSReaderMap-class 1
+1743 
+PoolDictionary-class 1
+1624 
+SystemDictionary-class 1
+1747 
+ColorPalette-class 1
+1626 
+FixedPalette-class 1
+1749 
+PushButtonView 1
+1644 
+MenuBarButtonView 1
+1751 
+CUAMenuBarButtonView 1
+1752 
+Win3MenuBarButtonView 1
+1752 
+MacMenuBarButtonView 1
+1752 
+MotifMenuBarButtonView 1
+1752 
+MenuButtonView 1
+1751 
+Win3MenuButtonView 1
+1757 
+MacMenuButtonView 1
+1757 
+MotifMenuButtonView 1
+1757 
+UndecoratedMenuButtonView 1
+1757 
+CUAMenuButtonView 1
+1757 
+ActionButtonView 1
+1751 
+Win3ActionButtonView 1
+1763 
+UndecoratedActionButtonView 1
+1763 
+MotifActionButtonView 1
+1763 
+CUAActionButtonView 1
+1763 
+MacActionButtonView 1
+1763 
+PCTtyAccessor-class 1
+1658 
+OS2TtyAccessor-class 1
+1769 
+BlockableIOAccessor-class 1
+1657 
+UnixIOAccessor-class 1
+1771 
+UnixPipeAccessor-class 1
+1772 
+UnixDiskFileAccessor-class 1
+1772 
+WriteStream-class 1
+1670 
+TextStream-class 1
+1775 
+ExternalStream-class 1
+1669 
+BufferedExternalStream-class 1
+1777 
+ExternalWriteStream-class 1
+1778 
+TextEditorController-class 1
+1472 
+InputBoxController-class 1
+1780 
+ComboBoxInputBoxController-class 1
+1781 
+SpecDragMode-class 1
+1527 
+PlacementMode-class 1
+1783 
+SelectPlacementMode-class 1
+1784 
+DragPlacementMode-class 1
+1784 
+MenuComponentSpec-class 1
+1693 
+DataSetSpec-class 1
+1787 
+SequenceViewSpec-class 1
+1787 
+TableViewSpec-class 1
+1787 
+LDMBrowserSpec-class 1
+1787 
+ButtonSpec-class 1
+1693 
+RadioButtonSpec-class 1
+1792 
+MenuButtonSpec-class 1
+1792 
+CheckBoxSpec-class 1
+1792 
+ComposingComposite-class 1
+1578 
+MenuBar-class 1
+1796 
+Win3MenuBar-class 1
+1797 
+CUAMenuBar-class 1
+1797 
+MotifMenuBar-class 1
+1797 
+MacMenuBar-class 1
+1797 
+DependentComposite-class 1
+1578 
+CompositeView-class 1
+1802 
+UIPainterView-class 1
+1803 
+LDMBrowserBodyView-class 1
+1803 
+DialogView-class 1
+1803 
+LDMElementView-class 1
+1803 
+BitView-class 1
+1703 
+ColorBitView-class 1
+1808 
+Scrollbar-class 1
+1703 
+FixedThumbScrollbar-class 1
+1810 
+BooleanWidgetView-class 1
+1703 
+ActionButton-class 1
+1812 
+MenuItemView-class 1
+1703 
+Win3MenuItemView-class 1
+1814 
+MotifMenuItemView-class 1
+1814 
+MacMenuItemView-class 1
+1814 
+CUAMenuItemView-class 1
+1814 
+TranslatingWrapper-class 1
+1584 
+LDMAbstractElementWrapper-class 1
+1819 
+LDMListElementWrapper-class 1
+1820 
+LDMGraphElementWrapper-class 1
+1820 
+ScrollWrapper-class 1
+1819 
+DataSetScrollWrapper-class 1
+1823 
+SlaveScrollWrapper-class 1
+1823 
+LargeInteger-class 1
+1723 
+LargePositiveInteger-class 1
+1826 
+LargeNegativeInteger-class 1
+1826 
+ByteArray-class 1
+1737 
+BOSSBytes-class 1
+1829 
+String-class 1
+1741 
+GapString-class 1
+1831 
+TwoByteString-class 1
+1831 
+LensRegistry-class 1
+1624 
+LensWeakRegistry-class 1
+1834 
+LensObjectRegistry-class 1
+1835 
+MappedPalette-class 1
+1749 
+MonoMappedPalette-class 1
+1837 
+UnixTtyAccessor-class 1
+1772 
+UnixPseudoTtyAccessor-class 1
+1839 
+UnixRealTtyAccessor-class 1
+1839 
+ReadWriteStream-class 1
+1775 
+ByteCodeReadWriteStream-class 1
+1842 
+ExternalReadStream-class 1
+1778 
+ExternalReadWriteStream-class 1
+1844 
+ExternalReadAppendStream-class 1
+1844 
+ActionButtonSpec-class 1
+1792 
+LinkedDetailSpec-class 1
+1847 
+LDMCompositeView-class 1
+1803 
+LDMGraphCompositeView-class 1
+1849 
+MenuView-class 1
+1803 
+CUAMenuView-class 1
+1851 
+Win3MenuView-class 1
+1851 
+MotifMenuView-class 1
+1851 
+MacMenuView-class 1
+1851 
+EmulationScrollBar-class 1
+1810 
+MotifScrollBar-class 1
+1856 
+CUAScrollBarSlider-class 1
+1856 
+LabeledBooleanView-class 1
+1812 
+LDMArrowView-class 1
+1859 
+AutoScrollingView-class 1
+1703 
+TableView-class 1
+1861 
+GeneralSelectionTableView-class 1
+1862 
+ListView-class 1
+1861 
+ChangeListView-class 1
+1864 
+ComposedTextView-class 1
+1861 
+TextCollectorView-class 1
+1866 
+SimpleView-class 1
+1703 
+SliderView-class 1
+1868 
+MacSliderView-class 1
+1869 
+Win3SliderView-class 1
+1869 
+LayoutWrapper-class 1
+1819 
+BoundedWrapper-class 1
+1872 
+BoundingWrapper-class 1
+1873 
+Symbol-class 1
+1831 
+ByteSymbol-class 1
+1875 
+TwoByteSymbol-class 1
+1875 
+ByteEncodedString-class 1
+1831 
+MacString-class 1
+1878 
+ISO8859L1String-class 1
+1878 
+ByteString-class 1
+1878 
+OS2String-class 1
+1878 
+IdentityDictionary-class 1
+1624 
+WeakDictionary-class 1
+1883 
+HandleRegistry-class 1
+1884 
+ExternalRegistry-class 1
+1885 
+TextEditorSpec-class 1
+1787 
+InputFieldSpec-class 1
+1887 
+ComboBoxSpec-class 1
+1888 
+EmulationFixedThumbScrollBar-class 1
+1856 
+Win3ScrollBar-class 1
+1890 
+MacScrollBar-class 1
+1890 
+SelectionInListView-class 1
+1864 
+HierarchicalClassListView-class 1
+1893 
+SelectionSetInListView-class 1
+1893 
+TextView-class 1
+1866 
+DebuggerTextView-class 1
+1896 
+BasicButtonView-class 1
+1868 
+ScrollerButtonView-class 1
+1898 
+CUAScrollerButtonView-class 1
+1899 
+MotifScrollerButton-class 1
+1899 
+VisualPairButton-class 1
+1899 
+ComboBoxButtonView-class 1
+1898 
+MacComboBoxButtonView-class 1
+1903 
+MotifComboBoxButtonView-class 1
+1903 
+CUAComboBoxButtonView-class 1
+1903 
+Win3ComboBoxButtonView-class 1
+1903 
+BorderedWrapper-class 1
+1873 
+MenuBarWrapper-class 1
+1908 
+WeakAssociationDictionary-class 1
+1884 
+LinkedWeakAssociationDictionary-class 1
+1910 
+ExternalDictionary-class 1
+1911 
+TextEditorView-class 1
+1866 
+InputFieldView-class 1
+1913 
+ComboBoxInputFieldView-class 1
+1914 
+ScrollingView-class 1
+1868 
+SelectionView-class 1
+1916 
+DataSetView-class 1
+1917 
+PaintedDataSetView-class 1
+1918 
+SequenceView-class 1
+1917 
+MultiSelectionSequenceView-class 1
+1920 
+TabBarView-class 1
+1917 
+VerticalTabBarView-class 1
+1922 
+HorizontalTabBarView-class 1
+1922 
+LabeledButtonView-class 1
+1898 
+RadioButtonView-class 1
+1925 
+CUARadioButtonView-class 1
+1926 
+MacRadioButtonView-class 1
+1926 
+MotifRadioButtonView-class 1
+1926 
+Win3RadioButtonView-class 1
+1926 
+DefaultLookRadioButtonView-class 1
+1926 
+CheckButtonView-class 1
+1925 
+MotifCheckButtonView-class 1
+1932 
+DefaultLookCheckButtonView-class 1
+1932 
+MacCheckButtonView-class 1
+1932 
+Win3CheckButtonView-class 1
+1932 
+CUACheckButtonView-class 1
+1932 
+PushButtonView-class 1
+1925 
+ActionButtonView-class 1
+1938 
+CUAActionButtonView-class 1
+1939 
+MacActionButtonView-class 1
+1939 
+Win3ActionButtonView-class 1
+1939 
+UndecoratedActionButtonView-class 1
+1939 
+MotifActionButtonView-class 1
+1939 
+MenuButtonView-class 1
+1938 
+UndecoratedMenuButtonView-class 1
+1945 
+Win3MenuButtonView-class 1
+1945 
+MacMenuButtonView-class 1
+1945 
+MotifMenuButtonView-class 1
+1945 
+CUAMenuButtonView-class 1
+1945 
+MenuBarButtonView-class 1
+1938 
+MotifMenuBarButtonView-class 1
+1951 
+CUAMenuBarButtonView-class 1
+1951 
+Win3MenuBarButtonView-class 1
+1951 
+MacMenuBarButtonView-class 1
+1951 
+3196
+representBinaryOn: 32
+0 104 200 130 31 500 495 774 769 673 438 245 410 572 531 553 704 1191 1190 369 540 893 534 1185 890 1426 1427 176 347 134 133 131 
+isProtocolAdaptor 3
+0 567 563 
+effectiveClass 2
+0 43 
+finalize 9
+0 246 55 17 882 667 352 351 330 
+expressInterestIn:for:sendBack: 2
+0 573 
+refersToLiteral: 7
+0 95 226 681 698 897 1189 
+doesNotUnderstand: 2
+0 105 
+sortKey 5
+0 920 558 560 159 
+asDependentsWithout: 3
+0 64 699 
+subscriptBoundsError: 2
+0 700 
+errorSignal 8
+0 775 1131 857 1049 1272 1396 1290 
+executor 11
+0 246 173 170 3 668 249 248 247 351 329 
+in: 2
+0 489 
+isSymbol 2
+0 1189 
+respondsToArithmetic 2
+0 485 
+isSequenceable 2
+0 542 
+update: 16
+0 64 729 732 1222 1220 1436 1223 1437 1433 1435 918 921 394 388 582 
+species 7
+0 192 543 549 1191 1190 540 
+update:with: 8
+0 64 762 737 924 376 211 394 
+myDependents 9
+0 210 920 722 906 702 549 548 547 
+basicAt: 2
+0 895 
+size 45
+0 82 242 206 41 22 772 771 770 673 745 630 718 903 904 1201 1200 370 542 207 531 365 553 551 546 543 550 702 548 547 701 697 1192 899 898 1193 1191 695 369 540 541 693 893 538 537 
+printOn: 124
+0 320 306 499 96 95 493 87 78 258 246 72 71 226 206 200 192 64 58 173 170 337 166 47 46 164 43 151 32 25 21 17 116 16 12 11 9 109 8 7 4 3 509 322 882 501 684 497 494 299 298 680 297 296 681 487 486 679 678 772 769 768 767 766 765 673 675 462 463 259 257 256 439 621 606 920 245 244 243 428 427 903 414 418 417 557 216 569 565 563 707 564 708 209 365 543 698 694 697 897 895 369 540 536 693 534 1187 1426 691 367 366 171 165 161 160 159 157 155 154 334 333 332 515 123 
+~= 5
+0 773 951 771 770 
+inspect 12
+0 96 95 226 673 762 374 553 694 897 369 534 
+changeRequest 9
+0 400 397 396 395 392 596 594 593 
+hash 45
+0 100 95 295 258 242 226 192 58 177 299 298 680 297 296 487 486 679 678 772 769 773 768 767 279 278 276 462 275 414 418 417 542 543 696 897 1189 541 693 893 175 174 345 340 346 
+breakDependents 2
+0 211 
+copy 7
+0 76 463 594 1189 691 891 
+removeDependent: 9
+0 223 211 407 567 384 563 576 575 
+release 44
+0 50 23 762 763 473 286 481 657 478 948 662 937 433 729 613 606 735 928 731 1757 1636 1640 1218 918 920 913 728 612 724 609 608 383 376 592 396 395 391 388 386 713 712 582 579 
+= 55
+0 100 95 295 258 242 226 192 58 177 173 130 31 299 298 680 485 297 296 681 773 951 771 770 279 278 276 462 275 463 414 231 418 417 227 413 542 543 704 697 897 1192 899 1189 544 541 693 893 347 175 174 345 342 340 346 
+isBehavior 2
+0 493 
+baseCType 16
+0 177 774 1019 1833 1878 1877 1876 1829 1738 1122 1727 1726 772 697 898 
+elementLabel: 5
+0 1515 560 559 167 
+identityHash 3
+0 299 773 
+isInteger 2
+0 772 
+notNil 2
+0 64 
+lensSession 2
+0 365 
+isString 2
+0 897 
+basicAt:put: 4
+0 700 895 892 
+postCopy 43
+0 95 493 87 226 210 204 192 40 140 128 118 21 497 495 462 446 745 937 447 621 920 722 906 412 572 207 550 702 549 548 547 703 697 898 369 539 1185 535 890 1186 891 159 
+storeOn: 49
+0 320 255 72 206 64 58 173 337 26 116 494 495 299 298 297 681 487 677 486 462 621 438 418 417 546 543 550 549 698 697 897 1189 895 369 541 693 893 534 1426 176 347 340 341 521 518 524 339 515 
+class 2
+0 105 
+printString 2
+0 134 
+yourself 2
+0 43 
+shallowCopy 6
+0 255 64 299 773 1189 
+at: 42
+0 242 45 22 1361 822 974 772 771 770 1198 217 368 531 365 553 551 543 550 702 548 547 703 701 697 1192 899 898 1196 1195 1194 1193 1191 1190 695 895 540 534 1187 367 352 178 
+at:put: 52
+0 316 242 45 136 22 1361 828 822 772 771 770 1198 531 553 551 543 704 702 548 547 701 700 697 1192 899 1189 898 1196 1195 1194 1193 695 895 369 539 538 537 534 1185 690 890 1186 1425 691 891 367 352 178 342 137 123 
+isDirty 3
+0 731 586 
+copyToHeap: 10
+0 242 299 694 697 897 1192 898 695 895 
+notify: 5
+0 268 457 455 751 
+updateRequest 9
+0 64 665 659 662 736 1222 922 699 
+isLiteral 13
+0 64 299 679 772 771 770 257 256 698 897 1189 895 
+isKindOf: 2
+0 43 
+changed: 2
+0 501 
+isNil 2
+0 64 
+addDependent: 9
+0 87 64 140 211 567 384 563 576 
+supersedesAsTextEmphasis: 3
+0 230 681 
+updateRequest: 3
+0 64 699 
+isLensType 3
+0 331 160 
+asDependentsWith: 3
+0 64 699 
+relatedBy: 10
+0 166 1515 560 559 167 159 155 154 515 
+asValue 2
+0 383 
+asDependentsAsCollection 3
+0 64 699 
+lock 4
+0 17 376 392 
+displayString 21
+0 173 130 31 3 681 557 572 559 696 161 160 159 157 155 154 334 332 515 135 131 
+myDependents: 9
+0 210 920 722 906 702 549 548 547 
+isNilExternalId 3
+0 64 698 
+isError 2
+0 92 
+performUpdate:with: 3
+0 64 699 
+performUpdate: 3
+0 64 699 
+update:with:from: 65
+0 106 246 64 42 880 854 829 788 968 1625 1092 1079 1336 1271 1025 682 763 662 606 735 928 926 731 1438 1225 1443 1757 1441 1636 1640 1218 1212 1432 1431 923 913 728 612 609 608 906 225 403 376 215 214 404 592 398 585 391 386 580 567 384 565 563 576 707 564 699 1186 691 891 
+externalId 2
+0 17 
+messageNotUnderstoodSignal 2
+0 775 
+binaryRepresentationVersion 26
+0 880 865 1093 1041 788 1837 1884 1145 1394 1117 1386 1390 1389 1873 1812 1570 1091 1533 1689 1326 1329 1500 1293 1286 1247 
+container 6
+0 41 19 17 433 396 
+isVariableBinding 2
+0 681 
+reverseByteOrder 11
+0 242 1019 771 770 245 428 427 899 1191 695 
+browse 5
+0 664 391 386 374 
+stringKey: 8
+0 166 558 559 159 155 154 515 
+asLayout 3
+511 487 462 
+compute:whenRelativeTo:preferred: 6
+511 512 514 513 487 462 
+fromLiteralArrayEncoding: 25
+511 87 261 337 45 153 636 446 263 262 637 447 218 557 536 539 538 537 161 331 159 333 332 515 516 
+initialize 536
+511 318 105 316 312 308 504 100 302 96 94 289 280 89 270 84 261 76 250 246 75 74 73 204 202 197 186 180 61 58 173 57 51 48 166 47 46 164 45 162 42 40 39 38 142 140 35 33 136 130 30 128 27 122 25 23 22 21 17 116 113 12 107 512 514 513 509 319 317 313 309 505 506 500 684 774 775 881 880 874 1164 1160 1144 1133 866 865 864 1131 1116 857 1105 1370 854 852 850 849 844 841 1361 836 1054 1051 830 1049 829 828 826 822 1279 820 1045 818 1043 812 811 1272 809 807 1041 805 1033 803 802 1029 1023 1019 795 1013 1011 793 1009 791 1005 788 785 994 987 782 780 976 778 974 971 968 776 1172 1419 1421 1161 1415 1413 1621 1626 1631 1627 1837 1838 1747 1625 1616 1742 1878 1875 1882 1881 1880 1879 1734 1409 1156 1154 1153 1148 1408 1407 1145 1402 1733 1129 1124 1122 1396 1727 1726 1724 1828 1827 1722 1719 1394 1118 1117 1388 1386 1393 1392 1390 1389 1375 1112 1384 1810 1708 1706 1818 1817 1816 1815 1869 1870 1907 1906 1904 1901 1900 1953 1950 1948 1947 1941 1937 1936 1935 1934 1931 1930 1929 1928 1927 1920 1924 1923 1866 1895 1859 1860 1858 1892 1854 1570 1380 1110 1109 1108 1107 1106 1371 1559 1369 1561 1560 1698 1092 1363 1546 1357 1356 1355 1539 1537 1538 1689 1333 1079 1077 1072 1070 1069 1316 1067 1066 1311 1350 1347 1346 1344 1343 1341 1340 1338 1337 1336 1335 1334 1508 1685 1518 1512 1504 1499 1495 1493 1492 1323 1322 1318 1317 1315 1302 1472 1295 1473 1780 1781 1469 1467 1291 1290 1289 1050 1777 1046 1663 1278 1273 1274 1459 1657 1841 1271 1037 1036 1035 1030 1028 1025 1263 1020 1265 1264 1262 1014 1254 1004 1252 1251 989 988 982 980 979 973 972 1241 1244 958 667 292 668 762 763 477 288 286 471 469 481 665 661 659 657 666 948 949 662 757 470 468 467 465 945 272 746 745 254 431 429 441 440 619 613 600 736 1224 735 1217 734 928 926 924 731 1438 1225 1635 1644 1443 1757 1752 1765 1761 1756 1755 1754 1753 1636 1642 1640 1637 1222 1220 1218 1632 1633 1433 1435 1219 929 1215 1212 1431 912 727 923 920 728 612 610 609 722 905 608 607 721 906 1203 908 605 603 602 249 248 247 239 238 236 597 225 403 222 385 383 221 220 219 376 216 215 214 213 212 211 406 404 402 592 401 399 398 397 396 395 394 578 393 392 391 390 389 388 387 386 596 595 594 593 711 715 714 713 586 583 580 579 567 384 565 563 577 576 575 574 572 564 377 209 704 706 360 364 363 362 361 199 342 343 167 163 161 331 159 156 155 154 333 515 328 329 137 135 134 133 132 131 123 115 114 
+literalArrayEncoding 31
+511 87 261 255 206 64 337 45 153 140 299 487 677 678 462 744 745 414 231 418 218 557 698 897 1189 536 539 538 537 338 160 
+rectangleRelativeTo:preferred: 6
+511 512 514 513 487 462 
+bindingsDo: 9
+323 504 509 325 324 534 690 1425 1426 
+leaveScope:between:and:remove: 2
+323 509 
+associationsDo: 8
+323 534 1185 890 1186 1425 1426 891 
+variableAt:from: 5
+323 504 509 325 324 
+undeclared:from: 2
+323 325 
+selector 17
+320 65 195 296 673 676 675 674 259 738 254 405 218 406 391 526 161 
+setSelector:arguments: 2
+320 321 
+arguments 4
+320 116 738 742 
+displayOn:forDisplayBox:using: 5
+318 270 319 272 271 
+topColor 4
+318 270 272 271 
+setBorderWidth: 2
+318 270 
+displayOn:forDisplayBox: 2
+318 270 
+bottom 5
+318 270 462 271 435 
+insetDisplayBoxFor: 4
+318 270 319 271 
+leftColor 4
+318 270 272 271 
+rightColor 4
+318 270 272 271 
+right 6
+318 270 462 271 435 1640 
+displayBoxFor: 4
+318 270 319 271 
+allSidesEqual: 2
+318 270 
+bottomColor 4
+318 270 272 271 
+left 7
+318 270 462 271 439 435 440 
+top 6
+318 270 673 462 271 435 
+setBorderColor: 4
+318 270 536 537 
+beFixed 2
+105 595 
+className 9
+105 195 405 392 391 389 386 579 525 
+organization 3
+105 494 691 
+className: 5
+105 405 409 406 525 
+classVariables: 2
+105 995 
+currentClass 2
+105 406 
+typeOf: 2
+105 161 
+superclass 3
+105 493 218 
+environment 8
+105 493 495 248 405 216 399 156 
+superclass: 3
+105 493 218 
+instanceVariables: 2
+105 494 
+scan: 2
+105 268 
+category: 5
+105 494 405 218 526 
+category 15
+105 195 173 3 494 405 218 387 386 579 526 344 343 172 171 
+organization: 2
+105 691 
+environment: 4
+105 248 216 156 
+object: 3
+104 429 571 
+defaultFont 3
+316 289 68 
+gridForFont:withTopLead:bottomLead: 2
+316 317 
+fontAt:for: 3
+316 136 137 
+descent 6
+316 314 34 315 685 508 
+defaultFontFor: 2
+316 136 
+alignment: 5
+316 745 1448 441 343 
+alignment 7
+316 173 57 745 1448 926 343 
+lineGrid: 3
+316 1636 1218 
+restIndent 2
+316 619 
+baseline 2
+316 619 
+lineGrid 8
+316 435 736 1636 1640 1222 1220 1218 
+clearIndents 2
+316 619 
+firstIndent: 2
+316 619 
+restIndent: 2
+316 619 
+rightIndent: 3
+316 619 923 
+rightIndent 3
+316 619 923 
+firstIndent 2
+316 619 
+fontAt: 2
+316 555 
+installOn: 19
+103 314 100 230 315 685 508 880 820 1393 1392 1389 232 414 231 418 417 415 555 
+lineWidth 6
+103 118 641 639 726 603 
+joinStyle 2
+103 118 
+lineWidth: 6
+103 118 641 639 726 603 
+font 3
+103 118 745 
+joinStyle: 2
+103 118 
+paint 3
+103 118 871 
+capStyle: 2
+103 118 
+font: 5
+103 488 118 491 745 
+paint: 2
+103 118 
+capStyle 2
+103 118 
+update 6
+102 378 212 394 391 386 
+value 34
+102 99 95 255 64 41 140 33 22 16 3 322 299 485 681 750 1229 443 635 743 222 383 220 218 578 569 567 384 565 563 576 572 1189 132 
+releaseHandle 13
+314 56 170 55 685 500 684 667 412 351 171 328 330 
+height 18
+314 289 79 497 667 292 291 290 462 439 437 435 621 438 436 619 920 370 
+encode: 11
+314 237 34 507 315 508 1833 1878 241 239 238 
+name 56
+314 100 493 92 261 78 237 195 182 173 56 170 55 337 45 153 34 21 116 11 4 107 3 315 685 508 501 495 774 296 637 260 741 903 412 218 557 211 555 366 196 526 688 530 183 342 341 331 160 159 157 156 155 154 515 108 
+widthOf: 3
+314 507 315 
+widthTable 5
+314 488 315 685 508 
+ascent 5
+314 34 315 685 508 
+displayString:from:to:at:on: 4
+314 507 315 491 
+fontDescription 4
+314 315 685 508 
+isAccessible 3
+314 315 685 
+commit 13
+312 17 882 1184 887 884 249 248 903 1201 216 367 123 
+stepToNextBuffer 2
+312 313 
+readBufferStartingAt: 2
+312 313 
+flushBufferUpTo: 2
+312 313 
+readPosition:setOffset: 2
+312 313 
+isSeekable 5
+312 882 1184 887 884 
+bufferChanged 2
+312 313 
+currentBufferPosition 2
+312 313 
+doLeafSubCanvasSpec: 2
+308 309 
+doLeafComponentSpec: 2
+308 310 
+doLeafNamedSpec: 2
+308 310 
+doLeafNoteBookSpec: 2
+308 309 
+doLeafInputFieldSpec: 2
+308 310 
+doSpec: 2
+308 311 
+doLeafComboBoxSpec: 2
+308 309 
+doLeafActionButtonSpec: 2
+308 309 
+doLeafLabelSpec: 2
+308 310 
+doLeafEmbeddedDetail: 2
+308 309 
+doLeafDataSetSpec: 3
+308 310 309 
+doLeafDataSetColumnSpec: 3
+308 310 309 
+doLeafWidgetSpec: 3
+308 310 309 
+doLeafLinkedDetail: 2
+308 309 
+doLeafGroupBoxSpec: 2
+308 310 
+codeLoad:from: 2
+504 506 
+isForNonImmediate 2
+504 505 
+generateNames: 2
+504 509 
+arguments: 3
+504 116 109 
+class:outerScope: 2
+504 506 
+inBlock 2
+504 505 
+targetClass 11
+504 38 506 236 421 402 395 392 389 596 594 
+newLabel 2
+504 471 
+newBlockScope 4
+504 509 505 506 
+requestor: 2
+504 751 
+saveSourceMap 2
+504 505 
+error:with:at: 8
+504 302 502 305 304 303 503 386 
+addMethodVars 2
+504 506 
+specialSelectors 2
+504 505 
+pop: 3
+504 674 198 
+addTemporaries:asArguments: 2
+504 505 
+underline 2
+100 555 
+strikeout: 2
+100 315 
+findMatchOn:allowance: 2
+100 555 
+pixelSize 2
+100 555 
+underline: 2
+100 315 
+color 4
+100 87 37 555 
+fixedWidth 3
+100 34 555 
+italic 3
+100 34 555 
+outline 2
+100 555 
+manufacturer 2
+100 555 
+serif 3
+100 34 555 
+boldness 3
+100 34 555 
+setWidth 3
+100 34 555 
+name: 27
+100 261 78 237 56 170 55 337 45 21 116 3 685 501 296 637 741 218 557 211 342 341 331 159 157 155 154 
+shadow 3
+100 1291 555 
+color: 4
+100 87 37 315 
+family 3
+100 34 555 
+encoding 2
+100 555 
+strikeout 2
+100 555 
+removeCategory: 2
+306 494 
+elements 2
+306 548 
+scanFrom: 2
+306 98 
+changeFromString: 2
+306 307 
+categories 3
+306 387 386 
+numArgs 7
+99 95 226 39 3 1189 174 
+value: 22
+99 95 81 41 33 22 7 873 1122 681 443 743 439 222 383 578 384 565 563 574 570 568 
+value:value:value: 3
+99 95 41 
+value:value: 3
+99 95 41 
+valueWithArguments: 4
+99 95 41 39 
+receiver:selector: 2
+99 1091 
+selector: 9
+302 1090 674 254 405 218 198 526 161 
+source: 8
+302 79 30 309 502 305 751 578 
+class: 4
+302 13 674 198 
+abort 5
+302 303 457 455 751 
+forClass:on:for:onFailDo:do: 2
+302 303 
+retryBlock: 2
+302 455 
+error:with:in:from: 6
+302 502 305 304 303 503 
+reportErrorProceeding 2
+499 192 
+errorReporter 4
+499 192 1087 1272 
+errorString 3
+499 86 200 
+reportError 2
+499 192 
+representImage:as:paintTransfer: 5
+300 301 496 498 497 
+representImageLuminances:as: 2
+300 301 
+representImage:forMedium: 4
+300 180 498 181 
+removeClass: 3
+96 391 386 
+renameClass:as: 2
+96 691 
+putStatsOn: 3
+96 1492 575 
+addDoIt: 2
+96 574 
+fileOutOn: 4
+96 195 574 528 
+asSortedCollection 2
+96 206 
+isEmpty 13
+96 82 258 206 630 1220 717 365 553 551 554 1426 141 
+outerContext 2
+95 675 
+pushCopiedValues: 7
+95 293 294 484 483 675 674 
+home 5
+95 673 676 675 674 
+method 9
+95 505 296 482 484 455 456 645 214 
+fork 2
+95 236 
+printNameOn:inClass: 4
+95 226 410 227 
+copiedValues 2
+95 484 
+sourceCodeForMethod:at: 2
+493 1278 
+new: 23
+493 876 983 1159 1621 1414 1630 1837 1610 1739 1616 1615 1742 1831 1833 1878 1832 1877 1876 1740 1738 1734 1396 
+sourceCodeAt: 2
+493 880 
+subclasses 2
+493 495 
+rebindAllMethods: 2
+493 774 
+removeSelector: 2
+493 494 
+basicNew: 2
+493 1616 
+shouldBeRegistered 2
+493 774 
+hasMethods 2
+493 774 
+new 155
+493 173 495 881 1175 879 878 876 874 869 1144 1133 866 863 1125 860 858 1116 857 1111 1370 852 851 850 849 848 1101 844 1096 840 1361 1081 831 1054 1049 829 828 827 826 825 824 1284 822 820 819 1045 1043 813 809 807 804 1033 1031 1017 798 1015 1013 793 792 791 1005 1003 1000 786 997 785 784 987 985 983 981 978 976 971 964 1178 1165 1159 1621 1414 1630 1837 1614 1610 1607 1620 1739 1615 1740 1156 1155 1154 1153 1150 1410 1604 1147 1402 1132 1127 1122 1396 1721 1391 1118 1570 1092 1548 1544 1333 1080 1078 1077 1076 1075 1326 1324 1319 1070 1069 1316 1067 1066 1342 1341 1500 1492 1318 1312 1679 1463 1050 1777 1048 1046 1028 1026 1025 1024 1022 1020 996 1247 1245 979 1244 176 347 175 174 345 342 340 346 343 
+decompilerClass 2
+493 495 
+instanceCount 2
+493 12 
+whichSelectorsReferTo: 2
+493 369 
+inheritsFrom: 2
+493 200 
+bindingFor: 6
+493 495 774 534 690 1425 
+obsolete 14
+493 774 880 829 788 968 1625 1092 1079 1337 1336 1459 1271 1025 
+allSubclassesDo: 2
+493 495 
+removeSubclass: 2
+493 495 
+addSubclass: 2
+493 495 
+validateMethod:forSelector: 5
+493 1013 783 776 1623 
+classPool 3
+493 495 774 
+format 3
+493 138 139 
+compilerClass 6
+493 495 880 801 1277 1664 
+isVariableSize 4
+493 1727 1726 331 
+fullScopeHas:ifTrue: 2
+493 495 
+evaluatorClass 2
+493 495 
+isMeta 2
+493 495 
+newNoRetry: 2
+493 1616 
+instVarNames 2
+493 494 
+removeFromSuper 2
+493 774 
+compile:notifying:ifFail: 3
+493 494 1664 
+classVarNames 2
+493 774 
+basicNew 3
+493 1122 1724 
+sharedPools 2
+493 774 
+rebindAllMethods 3
+493 774 691 
+localObsolete 3
+493 494 774 
+fullName 2
+493 495 
+addToSuper 2
+493 774 
+lastIndex 4
+488 489 1636 1218 
+destX 2
+488 79 
+destX: 2
+488 79 
+stopConditions 2
+488 489 
+<= 11
+295 71 487 773 951 771 770 463 572 696 897 
+>= 9
+295 487 773 951 771 770 463 696 897 
+> 11
+295 58 299 487 773 951 771 770 463 696 897 
+min: 4
+295 487 263 331 
+max: 6
+295 1158 487 263 334 332 
+< 24
+295 58 299 298 680 485 297 296 487 486 679 678 772 773 951 771 770 768 767 766 765 463 696 897 
+pushContext 7
+293 505 294 484 673 483 674 
+sendNoCheck:numArgs: 6
+293 505 294 484 673 483 
+storeInstAny: 6
+293 294 484 673 483 674 
+storePopLocal:outer: 6
+293 294 484 483 675 674 
+pushInstAny: 6
+293 294 484 673 483 674 
+pushReceiverOuter: 6
+293 294 484 483 675 674 
+pushLocal:outer: 6
+293 294 484 483 675 674 
+pushLocal: 6
+293 294 484 673 483 674 
+pop 6
+293 505 294 484 673 483 
+pushStatic: 7
+293 505 294 484 673 483 674 
+returnTop 6
+293 294 484 673 483 674 
+pushConstant: 7
+293 505 294 484 673 483 674 
+methodReturnTop: 6
+293 294 484 483 675 674 
+undefined:with:with: 2
+293 294 
+sendNonImmediate:numArgs: 6
+293 505 294 484 673 483 
+undefined: 3
+293 294 484 
+pushReceiver 6
+293 294 484 673 483 674 
+storeLocal: 6
+293 294 484 673 483 674 
+undefined:with: 2
+293 294 
+send:numArgs: 7
+293 505 294 484 673 483 674 
+jump: 6
+293 294 484 673 483 674 
+jump:if: 6
+293 294 484 673 483 674 
+dupFirst 6
+293 505 294 484 673 483 
+primitiveReturn 6
+293 294 484 673 483 674 
+dupLast 6
+293 505 294 484 673 483 
+dupNext 6
+293 505 294 484 673 483 
+pushInst: 6
+293 294 484 673 483 674 
+loopHead 6
+293 505 294 484 673 483 
+methodPrimitive: 6
+293 294 484 673 483 674 
+noOp 6
+293 506 294 484 673 483 
+makeCopyingBlock:count: 6
+293 294 484 673 483 674 
+makeFullBlock: 6
+293 294 484 673 483 674 
+storeInst: 5
+293 294 673 483 674 
+sendSuper:numArgs: 7
+293 505 294 484 673 483 674 
+callPrimitive: 5
+293 294 484 673 483 
+startUp 10
+94 280 53 140 285 471 464 478 466 433 
+menuHolder 2
+94 477 
+menu 12
+94 874 477 263 935 745 942 1757 1752 1205 596 570 
+startUpAt: 3
+94 52 140 
+add: 25
+94 206 42 151 39 30 613 216 207 531 553 551 546 543 704 702 548 703 540 536 534 1185 890 1425 367 
+widgetPolicy 12
+289 186 1631 290 668 762 433 191 190 189 188 187 
+inactiveSelectionBackgroundColor 5
+289 250 606 1205 537 
+inactiveForegroundColor 9
+289 250 606 930 1224 926 1205 913 537 
+palette 9
+289 83 292 291 290 668 672 671 621 
+bitsPerPixel 8
+289 292 291 290 668 672 671 621 
+secondarySymbolicForeground 5
+289 250 606 1438 1443 
+defaultFontPolicy 2
+289 142 
+inactiveSelectionForegroundColor 5
+289 250 606 1205 537 
+paintPreferences 6
+289 118 433 1762 1758 722 
+defaultPaintPolicy 7
+289 292 291 290 668 672 671 
+bounds 16
+289 273 250 292 290 263 433 429 606 1642 1220 905 607 726 1203 329 
+lookPreferences 6
+289 250 762 433 722 1428 
+flush 24
+289 233 162 142 118 667 292 291 290 920 909 234 597 1199 904 1201 1200 900 719 370 211 577 335 329 
+separatorColor 8
+289 250 606 930 1224 926 1205 913 
+screen 4
+289 60 685 501 
+clear 3
+289 118 577 
+secondarySymbolicBackground 7
+289 250 606 926 1438 1225 1443 
+newGraphicsDevice: 22
+289 250 290 762 763 439 251 436 619 613 606 1644 1751 1440 1640 1222 1220 727 724 720 605 604 
+supportsInvalidation 2
+289 668 
+symbolicShadow 2
+289 250 
+foregroundColor 18
+289 250 27 606 600 930 1224 926 1758 1218 1632 1634 1205 913 722 217 536 537 
+inactiveBackgroundColor 9
+289 250 606 930 1224 926 1205 913 537 
+background 8
+289 1291 667 292 291 290 762 659 
+selectionForegroundColor 18
+289 250 27 606 600 930 1224 926 934 933 1218 1632 1205 913 722 217 536 537 
+graphicsDevice 7
+289 68 667 292 291 290 433 
+borderColor 10
+289 250 606 930 1224 926 1205 913 536 537 
+graphicsContext 6
+289 667 292 291 290 433 
+paintBasis 13
+289 118 292 291 290 668 672 671 621 438 540 541 692 
+hiliteColor 10
+289 250 606 930 1224 926 1205 913 536 537 
+localColorPreferences 2
+289 762 
+depth 10
+289 292 291 290 668 672 671 621 909 540 
+traversalHiliteColor 8
+289 250 606 930 1224 926 1205 913 
+primarySymbolicForeground 4
+289 250 606 1443 
+preferredBounds 68
+289 250 439 437 435 254 253 252 251 431 436 613 606 434 730 737 736 924 731 934 933 932 931 1644 1751 1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 1768 1767 1766 1764 1760 1756 1755 1754 1753 1440 1642 1640 1641 1222 1220 1218 1633 929 1215 1216 727 923 724 905 607 726 906 1428 605 604 603 602 601 
+isOpen 7
+289 667 292 291 290 433 329 
+extent 10
+289 497 292 462 437 435 254 252 251 603 
+defaultPaint 8
+289 292 291 290 668 672 671 762 
+backgroundColor 23
+289 250 66 140 27 1249 606 600 930 1224 926 1762 1758 1218 1632 1634 1205 1208 913 722 217 536 537 
+defaultPaintPreferences 4
+289 142 762 669 
+shadowColor 10
+289 250 606 930 1224 926 1205 913 536 537 
+symbolicHilite 2
+289 250 
+width 21
+289 79 51 497 667 292 291 290 462 745 439 437 435 621 438 436 619 620 370 713 154 
+selectionBackgroundColor 16
+289 250 27 606 600 930 1224 926 1218 1632 1205 913 722 217 536 537 
+updateCachedPaintPreferences 2
+289 668 
+defaultLookPreferences 2
+289 762 
+defaultWidgetPolicy 2
+289 142 
+primarySymbolicBackground 4
+289 250 606 1443 
+reservedContiguousFreeBytes 2
+93 854 
+parameter 3
+92 86 645 
+requestFocusOut 3
+280 657 948 
+poll 4
+280 287 471 464 
+checkForAccept 2
+280 948 
+downcastEvent:with:from: 17
+280 250 762 658 433 613 606 600 1224 1765 1761 1218 1632 1431 724 610 723 
+checkForAcceptWithValidation 2
+280 948 
+view: 3
+280 471 429 
+checkForAutoAccept 3
+280 61 948 
+requestFocusIn 2
+280 657 
+checkForAutoAcceptWithValidation 3
+280 61 948 
+focusOut 2
+280 657 
+downcastLocalEvent:with:at:from: 14
+280 250 762 282 481 949 656 433 613 606 1224 724 905 1203 
+flushCoordinateCaches 10
+280 250 286 469 433 431 613 606 1640 724 
+checkForEvents 5
+280 23 762 669 763 
+isControlWanted 22
+280 287 473 286 285 471 283 282 281 469 464 481 665 663 661 480 479 657 666 948 950 662 
+isControlActive 24
+280 287 473 286 285 284 471 283 282 281 469 464 481 665 663 479 657 478 666 948 662 472 756 612 
+getDispatcher 6
+280 473 282 481 657 948 
+controlLoop 3
+280 286 469 
+controlInitialize 4
+280 287 472 756 
+model: 27
+280 261 1702 1860 1802 1693 762 763 760 758 263 749 744 729 737 924 731 1757 1636 1222 1220 1218 918 617 720 432 567 
+model 13
+280 261 52 168 762 263 749 744 1229 729 918 720 432 
+view 4
+280 52 645 429 
+sensor 3
+280 52 668 
+focusIn 2
+280 657 
+controlTerminate 5
+280 287 283 472 756 
+controlActivity 22
+280 477 287 473 284 471 283 282 281 469 464 665 661 480 478 662 474 654 652 472 756 757 
+outlineIntersects: 8
+273 279 278 277 276 462 275 274 
+regionIntersects: 5
+273 279 277 462 274 
+displayStrokedOn: 8
+273 279 278 277 276 462 275 274 
+translatedBy: 9
+273 487 279 278 277 276 462 275 274 
+scaledBy: 9
+273 487 279 278 277 276 462 275 274 
+canBeFilled 5
+273 279 277 462 274 
+computeBounds 8
+273 279 278 277 276 462 275 274 
+displayFilledOn: 8
+273 279 278 277 276 462 275 274 
+collection 2
+91 446 
+sortBlock: 3
+91 1734 704 
+collection: 2
+91 446 
+indexForInserting: 2
+91 704 
+swap:with: 8
+91 542 531 704 369 1185 890 1186 
+sort 2
+91 702 
+sort:to: 2
+91 704 
+sortBlock 2
+91 704 
+mouseMovedFrom:to:inController: 3
+459 944 946 
+mouseEnteredAt:inController: 4
+459 944 947 946 
+redDownAt:inController: 4
+459 461 947 946 
+mouseExitedAt:inController: 3
+459 944 946 
+yellowDownAt:inController: 2
+459 947 
+numberOfColumns 5
+90 4 1640 1218 401 
+colors: 3
+89 263 637 
+hasBackgroundColor 2
+89 1224 
+isEnabled: 9
+89 600 1224 1443 1218 1632 728 610 722 
+isEnabled 10
+89 87 287 600 930 1224 1637 1218 1632 722 
+textAttributes 3
+89 736 141 
+isVisible 7
+89 600 1224 1218 1632 612 722 
+label: 20
+89 87 261 1098 1556 1554 1553 1792 668 762 263 642 745 1644 1215 722 721 605 604 407 
+label 16
+89 87 261 51 762 263 745 1644 1215 721 605 604 370 211 407 713 
+hasBorder: 4
+89 263 637 1751 
+hasBorder 7
+89 263 637 606 1751 727 1428 
+isOpaque: 3
+89 637 722 
+colors 4
+89 263 637 893 
+isVisible: 8
+89 600 1224 1443 1218 1632 728 722 
+isOpaque 4
+89 637 1224 722 
+disable 3
+88 87 722 
+wait 4
+88 684 1274 552 
+postSnapshot 4
+88 836 778 1408 
+activate 18
+88 246 1023 473 282 481 657 666 948 949 950 475 654 655 249 248 247 597 
+resume 7
+88 321 1025 673 216 209 367 
+scanTokens: 2
+268 457 
+scanFieldNames: 2
+268 880 
+scanToken 3
+268 751 754 
+step 7
+268 673 751 754 747 234 407 
+offEnd: 4
+268 457 455 751 
+on: 45
+268 80 166 122 2 315 872 1160 835 812 798 795 789 985 971 1584 1700 1374 1100 1354 1086 1079 1343 1340 1335 1514 1502 1669 1778 1044 751 717 718 903 1201 900 901 1198 405 408 387 375 374 354 129 
+xLetter 3
+268 455 751 
+initScanner 5
+268 457 455 751 456 
+submenu: 2
+87 37 
+realAdornment 2
+87 140 
+shortcutKeyCharacter: 2
+87 37 
+indication: 2
+87 37 
+shortcutKeyCharacter 2
+87 37 
+accessCharacterPosition: 4
+87 37 1754 1753 
+labelImage: 2
+87 37 
+labelImage 2
+87 37 
+labelText: 2
+87 37 
+accessCharacterPosition 2
+87 37 
+enable 2
+87 722 
+labelText 2
+87 37 
+submenu 2
+87 37 
+emitLoad:from: 10
+264 267 453 266 265 448 454 452 451 449 
+isLocalScope:index: 3
+264 266 450 
+emitStore:from: 7
+264 267 453 266 265 452 451 
+leaveScope:between:and: 3
+264 452 451 
+emitStore:value:from: 6
+264 265 448 454 743 741 
+emitStorePop:value:from: 7
+264 265 448 454 449 743 741 
+emitStorePop:from: 7
+264 267 453 266 265 452 451 
+noteStore 2
+264 452 
+isInvariant 3
+264 266 451 
+isStatic 2
+264 448 
+restart 3
+86 673 407 
+raise 4
+86 200 668 374 
+proceed 4
+86 24 223 407 
+signal 2
+86 552 
+raiseRequest 2
+86 200 
+string 6
+85 619 370 696 697 897 
+compose2:with: 2
+84 76 
+add:do: 2
+84 76 
+compose1: 2
+84 76 
+reset 25
+84 76 337 47 164 122 482 484 478 1220 236 717 718 903 557 370 211 558 372 371 521 518 524 339 163 
+indexOfPaintNearestLuminance: 5
+83 692 693 893 894 
+indexOf:ifAbsent: 8
+83 542 702 540 541 693 893 894 
+indexOfPaintNearest: 7
+83 540 541 692 693 893 894 
+palette:resolutionRed:green:blue:gray: 2
+83 833 
+resolution 4
+83 138 329 139 
+next 15
+82 233 122 482 424 234 597 599 1199 904 900 719 1197 397 123 
+nextPut: 17
+82 233 184 122 292 241 234 597 904 1201 1200 900 719 370 211 577 123 
+peek 3
+82 716 599 
+getLabel 4
+261 643 640 940 
+hasCharacterOrientedLabel 4
+261 643 640 940 
+finalizeComponentIn: 4
+261 636 263 637 
+acceptsAspectPath 3
+261 744 1228 
+hasImageOrientedLabel 4
+261 643 640 940 
+hasCharacterOrientedLabel: 4
+261 643 640 940 
+addTo:withPolicy: 4
+261 446 262 447 
+layout: 10
+261 202 1551 636 722 723 1202 203 360 361 
+dispatchTo:with: 24
+261 263 643 642 641 640 639 638 749 750 748 747 943 942 1228 941 1229 939 1448 938 937 936 1449 1450 
+getPerformerIn: 3
+261 263 935 
+specDo: 7
+261 636 446 263 262 937 447 
+models 6
+261 749 744 748 937 1450 
+canHaveMenu 4
+261 263 935 942 
+canHaveLabel 5
+261 643 640 940 605 
+isReadOnly 3
+261 1448 1450 
+componentSpec 2
+261 262 
+setLabel: 8
+261 643 640 940 1644 1757 605 604 
+layout 8
+261 636 447 722 723 1202 163 335 
+hasImageOrientedLabel: 4
+261 643 640 940 
+width: 9
+79 51 1047 978 979 462 745 923 154 
+height: 2
+79 462 
+source 4
+79 30 309 754 
+length 2
+78 276 
+type: 10
+78 177 170 745 1449 388 583 688 527 340 
+type 18
+78 177 173 170 494 1023 1025 745 1449 260 721 583 365 526 688 528 527 340 
+scale 6
+78 118 107 679 924 607 
+scale: 4
+78 118 924 607 
+index: 2
+78 429 
+index 5
+78 52 453 450 429 
+withInitializationOfTemps 2
+258 630 
+isInvariantIn: 3
+258 743 741 
+isSuper 2
+258 741 
+sourcePosition 5
+258 455 751 260 741 
+comment: 2
+258 494 
+nodeDo: 11
+258 260 259 443 635 633 630 738 743 742 741 
+shouldBeKeptInCode 3
+258 630 743 
+numberValue 3
+258 630 743 
+absoluteSourcePosition 4
+258 635 633 738 
+formattedCode 2
+258 65 
+isComplex 5
+258 485 486 630 742 
+printOn:indent: 11
+258 260 259 443 635 633 630 738 743 742 741 
+booleanValue 3
+258 630 743 
+hasEffect 3
+258 740 630 
+comment 3
+258 494 214 
+decompiledCode 3
+258 65 259 
+isSelf 2
+258 741 
+printOn:indent:precedence: 4
+258 635 633 738 
+isBlockWithNumArgs: 2
+258 742 
+sourcePosition: 3
+258 455 751 
+| 3
+255 257 256 
+decodeAsLiteralArray 7
+255 64 299 677 698 897 1189 
+ifFalse: 3
+255 257 256 
+ifTrue:ifFalse: 3
+255 257 256 
+ifFalse:ifTrue: 3
+255 257 256 
+and: 3
+255 257 256 
+or: 3
+255 257 256 
+not 3
+255 257 256 
+ifTrue: 3
+255 257 256 
+& 3
+255 257 256 
+displayOn:at: 12
+250 501 670 672 671 437 435 621 619 620 696 697 
+invalidateRectangle: 3
+250 433 736 
+displayOn: 96
+250 501 290 670 762 669 439 437 435 433 254 253 252 251 431 429 440 621 613 606 434 737 736 735 734 926 924 732 731 934 933 932 931 1225 1751 1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 1765 1761 1756 1755 1754 1753 1447 1446 1445 1444 1442 1441 1440 1227 1642 1640 1639 1638 1222 1220 1218 1632 1221 1435 929 1215 927 1212 1432 1431 920 1208 913 612 611 724 610 609 722 905 608 607 726 725 1203 1428 605 604 603 602 601 
+invalidate 4
+250 182 433 161 
+intersects: 14
+250 462 613 606 724 905 607 726 725 1203 1204 604 601 432 
+container: 6
+250 151 17 433 599 366 
+flushCaches 7
+250 14 290 762 433 431 579 
+changedBounds: 2
+250 433 
+inDefaultEdgeDecorator 2
+250 1640 
+changedPreferredBounds: 2
+250 433 
+containsPoint: 12
+250 762 462 613 606 724 905 607 1203 1204 604 601 
+objectWantingControl 16
+250 433 613 606 1224 1640 1218 1632 923 1210 920 612 724 722 1203 1428 
+scrollOffsetHolder: 9
+250 606 1217 1635 1636 1222 1220 1218 1210 
+bounds: 24
+250 263 433 253 429 441 613 606 926 731 1225 1637 1222 1220 1218 1432 1431 727 724 1202 906 1203 1428 603 
+rectangleRelativeTo: 8
+250 462 606 724 905 607 1202 1429 
+state 4
+246 184 185 354 
+acquireExternal 2
+246 248 
+key 12
+246 685 500 680 682 667 920 245 414 352 351 328 
+dismiss 5
+246 249 247 597 598 
+install 33
+246 317 501 880 854 1087 836 830 829 778 968 1625 1616 1878 1408 1092 1533 1777 1273 1274 1459 1657 1460 1271 1025 1253 1252 1251 216 393 392 596 594 
+finalizeExternal 3
+246 248 247 
+traceLevel: 2
+246 1025 
+isExecutor 2
+246 597 
+quiesce 5
+246 1023 248 247 597 
+unsignedLongAt: 2
+242 896 
+shortAt: 2
+242 896 
+longAt:put: 2
+242 896 
+asByteArray 3
+242 897 895 
+sizeInBytes 4
+242 1192 899 895 
+longAt: 2
+242 896 
+unsignedShortAt: 2
+242 896 
+replaceBytesFrom:to:with:startingAt: 2
+242 895 
+unsignedLongAt:put: 2
+242 896 
+unsignedShortAt:put: 2
+242 896 
+byteAt: 6
+242 226 1192 899 1190 895 
+byteAt:put: 5
+242 226 1192 899 895 
+storage:on: 2
+240 424 
+printDate:on: 2
+75 125 
+decode: 7
+237 507 1833 1878 1663 239 238 
+encodingType 10
+237 315 685 508 1831 1833 1882 1881 1880 1879 
+rangeStart: 2
+74 384 
+grid: 5
+74 487 608 222 384 
+rangeStop: 2
+74 384 
+grid 3
+74 222 384 
+rangeStart 2
+74 384 
+rangeStop 2
+74 384 
+map: 4
+74 489 734 1225 
+critical: 2
+73 552 
+definition: 2
+72 3 
+definition 4
+72 494 456 154 
+newVariable 2
+235 395 
+newLiteralValue: 2
+235 13 
+forSelf 2
+235 236 
+newMessageReceiver:selector:arguments: 2
+235 13 
+newVariableName: 2
+235 13 
+origin 3
+71 1274 462 
+corner 3
+71 1274 462 
+origin:corner:tag: 2
+71 845 
+nonInteractiveCompilerErrorHandlerClass 2
+419 422 
+newMethodHolder 2
+419 420 
+compile:in:notifying:ifFail: 3
+419 455 456 
+scopeForClass 2
+419 423 
+targetClass: 8
+419 455 236 402 395 392 596 594 
+requestor 2
+419 751 
+newCodeStream 2
+419 420 
+format:in:notifying: 4
+419 455 456 644 
+parse:in:notifying: 3
+419 455 456 
+blockClass 3
+419 505 484 
+translate:noPattern:ifFail:needSourceMap:handler: 2
+419 421 
+compile:in: 2
+419 423 
+methodClass 5
+419 505 296 484 421 
+store: 4
+233 128 1201 577 
+upToEnd 3
+233 597 599 
+space 7
+233 1122 492 491 490 292 577 
+nextChunkPut: 2
+233 1201 
+crtab 3
+233 292 577 
+contents 14
+233 130 122 10 234 597 717 718 903 900 901 1197 352 172 
+isReadable 9
+233 192 234 1199 904 900 719 1197 193 
+atEnd 8
+233 122 482 234 597 717 903 904 
+do: 28
+233 206 43 42 542 368 207 531 365 553 551 543 554 702 703 369 541 693 893 894 534 1185 890 1186 1425 1426 891 342 
+nextPutAll: 7
+233 122 292 1201 370 211 577 
+next:put: 3
+233 292 577 
+timeStamp 2
+233 128 
+close 27
+233 182 36 35 128 122 23 882 501 1181 667 292 291 668 762 763 471 652 472 756 597 903 1201 578 330 129 123 
+policy 5
+233 30 292 717 577 
+fileOutChanges 3
+233 192 1087 
+fileOutChangesFor: 2
+233 192 
+next:into:startingAt: 4
+233 597 717 903 
+tab: 2
+233 292 
+tab 7
+233 1122 492 491 490 292 577 
+cr 8
+233 128 1122 492 491 490 292 577 
+next:putAll:startingAt: 6
+233 292 717 903 1201 370 
+crtab: 3
+233 292 577 
+emphasis 5
+233 128 16 901 577 
+emphasis: 5
+233 128 16 901 577 
+contentsSpecies 3
+233 599 717 
+isWritable 9
+233 192 234 1199 904 1201 1200 900 719 
+print: 7
+233 36 124 852 292 1201 577 
+asDevicePaintOn: 3
+230 232 414 
+canPaintMedium: 6
+230 232 414 231 418 417 
+uncheckedAsDevicePaintOn: 4
+230 232 414 231 
+asShadowColor 2
+230 418 
+asHiliteColor 2
+230 418 
+reinstallAfterPaintPolicyChangeOn: 2
+230 231 
+reinstallAfterPaintPreferencesChangeOn: 2
+230 414 
+code 5
+69 11 484 397 133 
+displayDamageList:in: 2
+228 229 
+initializeDefault 3
+68 1144 1145 
+findFont: 2
+68 118 
+syntheticBoldAndItalic 6
+68 1368 1369 1560 1698 1699 
+methodWithSource 3
+226 410 227 
+numTemps 2
+226 505 
+isMarked 2
+226 413 
+printSymbolicOn: 2
+226 413 
+messages 2
+226 633 
+isBlockMethod 3
+226 410 227 
+getSource 4
+226 410 227 528 
+isMarkedForUnwind 2
+226 413 
+isMarkedForHandle 2
+226 413 
+mclass 5
+226 673 674 410 227 
+homeMethod 3
+226 410 227 
+isMarkedForPropagate 2
+226 413 
+numLocals 2
+226 227 
+remove:ifAbsent: 14
+67 206 216 542 207 531 553 551 702 369 540 536 534 367 
+atNameKey:putMenuItem: 2
+66 140 
+unhideItem: 2
+66 140 
+backgroundColor: 5
+66 140 27 1218 536 
+hiddenItems 2
+66 140 
+hideItem: 2
+66 140 
+atNameKey: 2
+66 140 
+sourceMap 2
+65 673 
+sourceInfo: 2
+65 673 
+tempNames 4
+65 509 325 673 
+method: 4
+65 294 482 674 
+node 3
+65 44 450 
+node: 2
+65 44 
+nextLink: 2
+208 1027 
+do:separatedBy: 2
+206 542 
+copyEmpty: 10
+206 621 365 704 554 540 536 690 1426 691 
+contains: 6
+206 130 462 135 132 131 
+collect: 10
+206 542 531 365 553 543 704 554 369 534 
+growSize 2
+206 702 
+addAll: 6
+206 216 553 704 706 702 
+occurrencesOf: 6
+206 542 207 531 1192 534 
+detect:ifNone: 6
+206 41 365 553 546 554 
+includes: 12
+206 43 42 41 207 531 553 546 540 534 367 331 
+removeAll: 3
+206 828 892 
+capacity 7
+206 531 553 702 703 369 893 
+remove: 10
+206 42 1361 613 216 543 534 135 132 131 
+asSet 2
+206 207 
+select: 17
+206 42 41 662 941 735 219 395 388 588 542 365 553 702 703 369 534 
+detect: 2
+206 41 
+asArray 2
+206 542 
+lastStop: 2
+204 205 
+setLines:lastLine: 2
+204 205 
+lineAt:putInformationFromScanner: 2
+204 205 
+adjustStarts:from:upTo:with:size: 2
+204 205 
+lineStartAt: 2
+204 205 
+numberOfLines: 2
+204 205 
+lineAt:put: 2
+204 205 
+numberOfLines 4
+204 435 436 619 
+trimLinesTo: 2
+204 205 
+lineStopAt: 2
+204 205 
+lineAt: 5
+204 435 436 619 205 
+lineIndexOfCharacterIndex: 2
+204 619 
+markerThickness 7
+202 1631 1858 926 1214 1213 1432 
+inset 4
+202 979 1633 1428 
+border: 2
+202 1428 
+border 5
+202 1291 1428 604 363 
+minMarkerExtent 4
+202 1858 926 1214 
+preferredBoundsFor: 7
+202 203 360 364 363 362 361 
+inset: 3
+202 1633 1428 
+menuBarHeight 2
+202 1631 
+newException 2
+200 201 
+mayProceed 2
+200 407 
+accepts: 2
+200 533 
+handle:do: 2
+200 533 
+handle:from:do: 2
+200 533 
+parent: 5
+200 19 296 484 585 
+doType: 2
+197 57 
+doMethod:selector:primitive:block: 3
+197 199 198 
+doVariable:name: 3
+197 199 198 
+doBlock:arguments:body: 3
+197 199 198 
+doReturn:value: 3
+197 199 198 
+doSequence:temporaries:statements: 3
+197 199 198 
+doCascade:receiver:messages: 3
+197 199 198 
+doMessage:receiver:selector:arguments: 3
+197 199 198 
+doLiteral:value: 3
+197 199 198 
+doAssignment:variable:value: 3
+197 199 198 
+doParameter:variable:type: 3
+197 199 198 
+text 21
+195 296 665 439 619 1223 903 1201 405 223 221 378 407 396 570 379 196 530 689 528 134 
+checkWith: 7
+195 196 688 530 689 528 527 
+file 2
+195 292 
+text: 6
+195 489 439 619 196 134 
+file:position: 2
+195 1063 
+fileIn 5
+195 192 664 716 528 
+classObject 2
+195 525 
+fileOutOn:previous:next: 2
+195 528 
+parameters 4
+195 525 196 526 
+values 10
+195 42 41 140 368 365 550 534 1426 117 
+fileName 3
+195 221 528 
+copyTo: 2
+192 194 
+printTextFile 4
+192 194 193 356 
+constructString: 3
+192 194 356 
+setFileType: 2
+192 194 
+lastSeparatorIndex 2
+192 194 
+asString 5
+192 619 696 694 1189 
+head 4
+192 168 194 356 
+moveTo: 5
+192 668 462 722 194 
+fileSize 4
+192 882 886 1179 
+printPSFile 4
+192 194 193 356 
+named: 14
+192 36 109 874 1140 852 1087 811 1552 1084 292 194 193 356 
+readWriteStream 4
+192 1184 887 884 
+writeStream 4
+192 182 882 542 
+openHandleForDirection:creation: 2
+192 194 
+defaultClass 13
+192 882 1087 1357 1089 1273 1274 1459 1657 1460 1660 1658 1772 
+filesMatching: 3
+192 1087 221 
+concreteClass 2
+192 1087 
+readStream 6
+192 182 41 882 542 365 
+readAppendStream 3
+192 182 882 
+filesMatchingAccessList:into: 4
+192 194 193 356 
+primOpenFileNamed:direction:creation:errorInto: 2
+192 1662 
+isAbsolute 3
+192 194 356 
+edit 2
+192 391 
+separator 6
+192 1087 1357 1089 1088 1291 
+asFilename 2
+192 696 
+tail 4
+192 168 194 356 
+isLike: 3
+64 621 897 
+variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category: 2
+64 774 
+variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category: 2
+64 774 
+subclass:instanceVariableNames:classVariableNames:poolDictionaries:category: 3
+64 774 880 
+slider:into: 3
+186 188 187 
+checkBoxClass 6
+186 191 190 189 188 187 
+inputFieldBorder 4
+186 191 188 187 
+comboBox:into: 3
+186 191 187 
+defaultDivider 3
+186 188 187 
+borderLayoutPolicy 6
+186 191 190 189 188 187 
+defaultBorder 7
+186 1033 1631 1038 1037 1036 1035 
+textViewClass 4
+186 1328 1332 1330 
+comboBoxCompositeWithEditor:andButton: 6
+186 191 190 189 188 187 
+measure: 2
+186 107 
+borderedWrapperClass 2
+186 613 
+makeTextLabelFor: 9
+186 600 1224 1652 1650 1766 1765 1756 1218 
+defaultableActionButtonHeight 5
+186 1033 1038 1037 1036 
+wrappedMenuBarFor:in: 6
+186 191 190 189 188 187 
+defaultActionButtonHeight 5
+186 1033 1038 1037 1036 
+radioButtonClass 6
+186 191 190 189 188 187 
+defaultedButtonExpansionFactor 3
+186 1033 1038 
+measureActionButtonLabel: 5
+186 190 189 188 187 
+groupBoxBorder 3
+186 188 187 
+boundedWrapperClass 2
+186 613 
+sliderClass 3
+186 188 187 
+translatingWrapperClass 2
+186 613 
+comboButtonViewClass 5
+186 191 189 188 187 
+menuButtonClass 4
+186 191 188 187 
+raisedBorder 3
+186 1751 1766 
+actionButtonClass 6
+186 191 190 189 188 187 
+insetBorder 3
+186 1751 1766 
+makeSpaceFor: 2
+63 854 
+waitButton 2
+184 5 
+noButtonPressed 2
+184 5 
+keyboardPressed 2
+184 5 
+keyboardDevice 3
+184 185 354 
+altDown 2
+184 60 
+isActive 11
+184 182 882 501 684 668 286 1432 1431 216 183 
+metaInput 3
+184 185 354 
+shiftDown 2
+184 60 
+pollForActivity 4
+184 60 185 354 
+ctrlDown 3
+184 60 5 
+keyboard 2
+184 5 
+primCtrlDown 2
+184 5 
+keyboardPeek 2
+184 5 
+mousePoint 3
+184 60 5 
+window 4
+184 30 262 212 
+globalOrigin 4
+184 668 185 354 
+anyButtonPressed 2
+184 5 
+buttons 2
+184 5 
+globalCursorPoint 4
+184 662 185 354 
+cursorPoint 6
+184 5 1009 1254 661 662 
+primMouseButtons 2
+184 5 
+keyboardEvent 2
+184 5 
+primKbdPeek 2
+184 5 
+primKbdNext 2
+184 5 
+waitClickButton 2
+184 5 
+flushKeyboard 3
+184 5 354 
+mousePointNext 2
+184 5 
+blueButtonPressed 2
+184 5 
+metaDown 2
+184 60 
+currentCursor: 3
+184 5 1274 
+currentCursor 3
+184 5 1274 
+waitNoButton 2
+184 5 
+redButtonPressed 3
+184 5 661 
+cursorPoint: 3
+184 60 5 
+yellowButtonPressed 3
+184 5 661 
+lineEndConvention 6
+182 882 885 883 1182 903 
+dataSize 13
+182 173 313 183 176 347 175 174 345 340 346 344 343 
+defaultIoBufferInMode: 2
+182 183 
+releaseHandles 4
+182 903 1201 1187 
+canPersist 2
+182 183 
+renderPaint:usingPalette:on: 5
+180 496 498 497 181 
+paintRenderer: 2
+180 181 
+processKeyboardEvent: 13
+61 473 464 481 657 948 475 654 655 930 934 933 1205 
+sendKeyboardTo: 3
+61 30 288 
+keyboardHook: 4
+61 473 481 948 
+nextField 2
+61 288 
+doDefaultAction 2
+61 949 
+default 11
+61 881 1144 836 1043 809 780 1148 1408 1407 1129 
+cancel 10
+61 665 662 247 370 402 578 594 593 586 
+doCancelAction 2
+61 949 
+setActive: 2
+61 288 
+menuBar 19
+61 1350 1345 1336 1682 763 642 749 1752 398 396 395 391 388 387 386 596 595 709 
+requestForWindowClose 6
+61 652 385 585 578 390 
+run 3
+60 107 484 
+metaState 2
+60 20 
+pollingTimeout 2
+60 836 
+pseudoEvent 3
+60 185 354 
+doubleClickTimeout 2
+60 836 
+requestFocusInSelector: 2
+59 445 
+requestFocusOutSelector: 2
+59 445 
+doubleClickSelector: 2
+59 445 
+receiver 5
+59 322 673 633 738 
+focusOutSelector: 3
+59 50 445 
+requestValueChangeSelector: 2
+59 445 
+valueChangeSelector: 2
+59 445 
+isDoubleClickable 2
+59 481 
+focusInSelector: 3
+59 50 445 
+receiver: 2
+59 322 
+requestDoubleClickSelector: 2
+59 445 
+zero 13
+58 844 1396 1398 1591 1397 1593 1592 1723 1718 1727 1726 1724 
+asSeconds 3
+58 298 297 
+daysInYear 2
+58 297 
+fromDate:andTime: 2
+58 844 
+day 2
+58 297 
+year 2
+58 297 
+fromSeconds: 3
+58 844 1123 
+newDatumOfType: 2
+177 968 
+returnFromSnapshot 5
+177 321 880 1023 1092 
+newDatum:ofType: 2
+177 968 
+isPointer 6
+177 173 352 350 345 340 
+sizeof 3
+177 173 348 
+bePascal 4
+173 174 345 340 
+isSigned 3
+173 340 348 
+isUnion 3
+173 340 343 
+atSelector 4
+173 347 340 344 
+isStdcall 4
+173 174 345 340 
+baseReferentType 3
+173 345 340 
+malloc16: 4
+173 176 175 174 
+callStreamArgs:assign:interface: 4
+173 3 172 171 
+isBasic 5
+173 176 347 175 340 
+beStdcall 4
+173 174 345 340 
+pointerType 4
+173 22 346 341 
+defaultPointerClass 5
+173 175 174 340 343 
+isIntegral 3
+173 340 348 
+referentType 3
+173 345 340 
+external: 3
+173 421 174 
+transDo:visited: 6
+173 174 345 340 343 341 
+beOopRef 3
+173 345 340 
+atPutSelector 4
+173 347 340 344 
+beSeg16 4
+173 345 340 341 
+isVolatile 3
+173 340 341 
+isFar 4
+173 174 345 340 
+beFar 4
+173 174 345 340 
+beLongcomp 4
+173 174 345 340 
+isBitField 3
+173 340 348 
+beBased 2
+173 174 
+put:into:at: 10
+173 176 347 175 174 345 340 346 344 343 
+coerceForAssignment: 10
+173 175 345 340 349 348 346 344 343 341 
+methodClassIn: 4
+173 170 3 171 
+isStructure 3
+173 340 343 
+worstCaseDataSize 4
+173 340 346 343 
+contentsFrom:at: 10
+173 176 347 175 174 345 340 346 344 343 
+kind 11
+173 1025 218 176 347 175 174 345 340 344 343 
+isComposite 5
+173 365 366 340 343 
+isVoid 3
+173 176 340 
+beNear 4
+173 174 345 340 
+isOopRef 3
+173 345 340 
+coerce: 18
+173 485 487 486 679 678 772 764 771 770 175 345 340 349 348 346 344 343 
+beCdecl 4
+173 174 345 340 
+contentsAt:offset: 5
+173 176 345 340 346 
+methods 4
+173 3 172 171 
+coerceForArgument: 4
+173 176 345 340 
+isPascal 5
+173 174 345 340 341 
+contentsAt:offset:put: 3
+173 176 340 
+storeContentOn: 11
+173 176 347 175 174 345 342 340 346 343 341 
+printDeclOn: 5
+173 170 3 342 341 
+isProcedure 3
+173 174 340 
+beNoCallback 4
+173 174 345 340 
+malloc: 4
+173 176 175 174 
+isProcedurePointer 3
+173 345 340 
+isCdecl 4
+173 174 345 340 
+printOn:forName:indent: 10
+173 176 347 175 174 345 342 340 346 341 
+newPointerToAddress: 2
+173 348 
+typeDo: 12
+173 176 175 174 345 340 349 348 346 344 343 341 
+baseType 2
+173 340 
+defaultDatumClass 4
+173 340 346 343 
+beFortran 2
+173 174 
+isConstant 3
+173 340 341 
+isSeg16 3
+173 340 341 
+specifierFlags 2
+173 412 
+isArray 3
+173 340 346 
+beConstant 2
+173 340 
+load 4
+56 55 596 594 
+libraryUnloaded: 2
+56 880 
+unload 2
+56 55 
+mapAddress: 2
+56 55 
+owner: 4
+56 170 505 155 
+library: 2
+56 396 
+library 3
+56 396 131 
+owner 3
+170 412 155 
+ordinal 2
+170 412 
+mapAddressFor: 3
+170 1271 412 
+virtuals 2
+170 412 
+initializer: 2
+170 171 
+findVirtualHandleForClass: 2
+170 412 
+virtualHandleForClass: 2
+170 350 
+updateLayoutCache 4
+170 880 412 171 
+isVirtual 3
+170 880 412 
+libraries 2
+170 412 
+ordinal: 2
+170 412 
+virtuals: 2
+170 412 
+referentAddress: 4
+170 412 352 350 
+handle: 3
+170 55 500 
+referentAddress 4
+170 412 352 350 
+asPointer 3
+170 352 350 
+handle 3
+55 685 412 
+message: 2
+54 808 
+controller: 6
+53 52 762 730 1222 919 
+selectUpAt: 7
+52 473 481 657 475 656 655 
+cursorPointWithScrolling 4
+52 481 663 657 
+startDragging 3
+52 481 657 
+selectDownAt: 10
+52 473 481 657 658 476 475 474 656 655 
+mouseExitedAt: 7
+52 473 481 657 475 656 655 
+mouseMovedTo: 6
+52 473 481 657 475 474 
+checkScrollingFrom: 3
+52 481 657 
+mouseEnteredAt: 7
+52 473 481 657 475 656 655 
+beDefault 4
+51 745 1751 721 
+callbacksSpec 2
+51 744 
+editor 3
+51 1640 617 
+offset: 4
+51 310 439 609 
+offset 4
+51 310 439 621 
+widthHolder 2
+51 745 
+description: 3
+51 337 116 
+description 6
+51 337 116 113 115 114 
+noScroll 2
+51 745 
+labelHeight 2
+51 604 
+noScroll: 2
+51 745 
+canEdit 2
+51 745 
+builder: 6
+51 168 1211 911 432 385 
+callbacksSpec: 2
+51 744 
+focusInSelector 3
+50 445 712 
+requestFocusOutSelector 3
+50 445 712 
+spec: 5
+50 30 723 398 580 
+requestFocusInSelector 3
+50 445 712 
+valueChangeSelector 3
+50 445 712 
+focusOutSelector 3
+50 445 712 
+requestValueChangeSelector 3
+50 445 712 
+bindings 4
+50 30 309 578 
+validateComponentsFor: 2
+50 1449 
+bindings: 2
+50 30 
+adaptorStartingAt: 2
+168 169 
+trigger 4
+168 1712 712 586 
+otherSide: 2
+48 46 
+reverse: 3
+337 609 167 
+r2 2
+337 518 
+reverse 5
+337 871 609 542 704 
+relatedTo: 8
+337 338 524 523 522 520 519 339 
+r1 3
+337 521 518 
+token 2
+337 338 
+computeReverse 7
+337 338 521 524 523 520 519 
+element 2
+166 396 
+updateGraph 2
+47 398 
+graph 2
+47 46 
+perspective: 3
+47 588 377 
+setFocus: 3
+47 164 165 
+openAllRelatedTo:side: 2
+47 46 
+generator: 3
+46 234 395 
+canAddElements:fromArc:phase: 2
+164 165 
+focusNumber 2
+164 165 
+removeNotIn: 2
+164 165 
+upToDate 2
+45 376 
+rows 3
+45 586 548 
+addRow 2
+45 586 
+visualForElement: 2
+162 377 
+build 4
+162 596 335 336 
+visualForGraph:viewModel: 3
+162 163 335 
+viewModel 2
+162 376 
+viewModel: 2
+162 376 
+composite 3
+162 30 377 
+releaseVisuals 2
+162 377 
+childrenFor: 4
+162 373 375 374 
+indexOf: 4
+42 122 542 540 
+printNameOn: 6
+153 21 116 216 161 155 
+startCommand 2
+151 152 
+initFetchCommand 2
+151 152 
+disconnect 7
+151 248 247 216 399 365 367 
+initForQueries 2
+151 152 
+resultTemplate 3
+151 40 367 
+initAddCommand 2
+151 152 
+initUpdateCommand 2
+151 152 
+resultType 5
+151 41 116 412 174 
+doCommand: 3
+151 248 247 
+unique 4
+41 116 392 365 
+groupBy: 3
+41 116 365 
+distinct 4
+41 116 392 365 
+select:answer: 2
+41 365 
+first 6
+41 542 553 551 543 702 
+useSqlAccessInterface 2
+41 116 
+locking 3
+41 116 365 
+selectWhere: 3
+41 116 365 
+orderBy: 3
+41 116 365 
+answer: 3
+41 116 365 
+addBinding: 2
+40 690 
+bindTemplate: 2
+40 247 
+decoder: 3
+40 599 515 
+body 4
+40 742 236 219 
+decoder 4
+40 331 159 515 
+resultTemplate: 2
+40 247 
+body: 4
+40 1731 742 921 
+does:inheritFromClassNamed: 3
+38 1346 391 
+excludedBindings 3
+38 1515 1516 
+setClass: 2
+38 455 
+expandPaths: 2
+38 662 
+getClassNamed: 3
+38 1346 391 
+menuViewForMenu: 18
+145 282 1757 1752 1762 1761 1760 1759 1758 1756 1755 1754 1753 150 149 148 147 146 
+lookPolicyClass 6
+145 150 149 148 147 146 
+toggleFor: 6
+145 150 149 148 147 146 
+windowLookPreferences 2
+145 1105 
+lookCode 7
+145 1105 1110 1109 1108 1107 1106 
+triggerFor: 6
+145 150 149 148 147 146 
+unknownButton: 2
+145 147 
+switchFor: 6
+145 150 149 148 147 146 
+deviceColormap 4
+142 143 330 329 
+sync 2
+142 329 
+preferredFontClass 3
+142 328 143 
+updateWidgetPolicy 2
+142 329 
+updatePaintPreferences 2
+142 329 
+fontNamed:fromClass:encoding: 3
+142 328 143 
+listFontNames 4
+142 143 330 329 
+rendererName 4
+142 143 330 329 
+color:for:look: 2
+142 329 
+installFontPolicy 2
+142 328 
+values: 2
+140 141 
+valueAt: 2
+140 141 
+labelAt: 4
+140 30 1333 484 
+valueAt:put: 2
+140 141 
+labels 5
+140 30 1333 484 748 
+lines 2
+140 436 
+attributeKeysAndValuesDo: 2
+138 139 
+readImage 2
+138 139 
+image 2
+138 438 
+from: 5
+138 1096 1019 1720 1053 
+startParagraph 2
+36 35 
+addText: 2
+36 35 
+addImage: 2
+36 35 
+addItalicHeader:pixelSize: 2
+36 35 
+doFooter:footerString:doPageNumbers: 2
+36 35 
+setTabs: 2
+36 35 
+addString: 2
+36 35 
+toPrinter 2
+36 35 
+endPage 2
+36 291 
+flushBuffer 2
+36 370 
+setLandscape 2
+36 35 
+addImageOneToN: 2
+36 35 
+setMargins: 2
+36 35 
+newPage 7
+36 35 128 1122 292 120 119 
+addText:under: 2
+36 35 
+initializeFrom: 2
+34 685 
+encode:as: 2
+34 239 
+defaultQueryFor: 2
+136 137 
+queryCacheAt:for:put: 2
+136 137 
+queryCacheAt:for:ifAbsent: 2
+136 137 
+setDefaultQuery:for: 2
+136 137 
+embeddedProxies 5
+130 135 134 132 131 
+isChapter 2
+130 135 
+isBook 2
+130 131 
+title: 2
+130 31 
+listSize 2
+130 574 
+asText 7
+130 16 619 572 696 697 897 
+add:before: 5
+130 553 704 702 132 
+nilEquivalent 2
+130 131 
+title 3
+130 31 397 
+isList 5
+130 942 135 132 131 
+contents: 3
+130 352 172 
+position: 12
+32 122 717 718 903 904 1201 1200 370 572 558 372 
+position 9
+32 122 506 717 903 904 370 577 572 
+isEditing: 2
+30 586 
+decorator 3
+30 921 722 
+window: 3
+30 262 212 
+labels: 3
+30 1015 748 
+visualAt:put: 2
+30 1333 
+visuals 2
+30 1333 
+componentAt: 3
+30 398 580 
+component: 8
+30 762 669 763 262 638 606 724 
+spec 5
+30 723 398 593 580 
+wrapper 2
+30 254 
+keyboardProcessor: 6
+30 763 473 481 657 948 
+component 9
+30 290 762 669 262 638 606 727 720 
+open 20
+30 23 981 1866 1867 1865 1333 1073 1069 1067 1066 1311 1346 1344 1340 1337 762 923 385 183 
+windowSpec: 2
+30 402 
+openPopUpIn: 2
+30 762 
+isEditing 3
+30 1640 586 
+policy: 2
+30 717 
+windowSpec 30
+30 1350 1349 1348 1347 1346 1345 1344 1343 1342 1340 1339 1338 1337 1336 1335 1334 1525 1524 1523 1685 1518 1682 1683 1513 1512 1511 1510 1509 402 
+safelyPerform:key: 2
+30 309 
+wrapper: 2
+30 254 
+decorator: 3
+30 921 722 
+openWithExtent: 2
+30 762 
+keyboardProcessor 6
+30 762 763 948 662 652 
+noTabbing 2
+30 940 
+openWithExtent:andType: 2
+30 763 
+labelAt:put: 2
+30 1333 
+openIn: 2
+30 762 
+openAroundCursorWithExtent:andType: 2
+30 763 
+visualAt: 2
+30 1333 
+isReadOnly: 3
+128 1448 1450 
+willUpdateSourcePointers 2
+128 129 
+classNameFor: 2
+128 409 
+target 3
+128 645 563 
+commitSources 2
+128 424 
+deferInitializations 2
+128 129 
+condenseFile: 2
+128 123 
+finishInitializations 2
+128 129 
+initializeThisClass: 2
+128 129 
+externalAccessFailedSignal 3
+29 880 1117 
+externalMethodClass 2
+29 880 
+libraryFiles 3
+29 2 880 
+externals 3
+29 880 458 
+printPolicy: 5
+124 1167 127 126 125 
+print:on: 4
+124 127 126 125 
+nextTokenOn: 4
+124 127 126 125 
+convertToByteArray: 2
+28 1274 
+stripTrailingSeparators: 3
+28 596 568 
+convertToLiteral: 2
+28 568 
+selectionForegroundColor: 3
+27 1218 536 
+selectionBackgroundColor: 3
+27 1218 536 
+foregroundColor: 3
+27 1218 536 
+with: 14
+26 1158 817 1837 1614 1383 1076 1319 1491 1505 1499 1320 1670 718 
+skipNext 2
+122 424 
+isBigEndian 2
+122 1019 
+firstIndex 3
+122 1636 1218 
+expectCycles 2
+122 241 
+setToEnd 4
+122 717 903 904 
+fontPolicy: 2
+118 619 
+translation 5
+118 905 911 908 121 
+primDisplayUninterpretedImageBits:at: 4
+118 121 120 119 
+widthOfString:from:to: 2
+118 315 
+fontPolicy 5
+118 439 435 619 731 
+medium 2
+118 762 
+primDisplayPolygon:at: 4
+118 121 120 119 
+setDevicePattern: 2
+118 120 
+primDisplayArcBBoxOrigin:extent:startAngle:sweepAngle: 4
+118 121 120 119 
+primCopyMaskedArea:from:sourceOffset:destinationOffset: 4
+118 121 120 119 
+supportsScaling 3
+118 120 119 
+primDisplayMask:at: 4
+118 121 120 119 
+primDisplayMappedString:from:to:at:withMap: 4
+118 121 120 119 
+copyImage:to: 2
+118 119 
+clippingBounds 2
+118 906 
+primDisplayWedgeBBoxOrigin:extent:startAngle:sweepAngle: 4
+118 121 120 119 
+primDisplayUninterpretedMonoImageBits:foreground:background:at: 4
+118 121 120 119 
+deviceClippingBounds 2
+118 120 
+primDisplayRectangleOrigin:extent: 4
+118 121 120 119 
+primDisplayCharacterOfIndex:at: 4
+118 121 120 119 
+primDisplayPolyline:at: 4
+118 121 120 119 
+primCopyRectangularAreaExtent:from:sourceOffset:destinationOffset: 4
+118 121 120 119 
+copyMaskedArea:fromPixelArray:sourceOffset:destinationOffset: 4
+118 121 120 119 
+primDisplayRectangularBorderOrigin:extent: 4
+118 121 120 119 
+paintPreferences: 3
+118 762 669 
+primDisplayLineFrom:to: 4
+118 121 120 119 
+displayPixelArray:at: 2
+118 121 
+columnType 4
+25 388 713 582 
+fieldType: 3
+25 159 332 
+fieldType 3
+25 159 332 
+terminate 3
+24 673 209 
+resumeProcess 2
+24 407 
+prepareForErrorCondition 2
+24 407 
+resetViews 2
+23 1144 
+deactivate 11
+23 473 282 481 657 666 948 949 950 475 654 
+elementSize 2
+22 548 
+free 2
+22 352 
+unregister 2
+21 17 
+variable 3
+19 260 635 
+selectBlock 2
+19 116 
+children 4
+19 909 585 558 
+parent 4
+19 414 415 585 
+actionFor: 3
+18 1333 385 
+markDirty 2
+17 392 
+refresh 2
+17 762 
+rollback 5
+17 249 248 216 367 
+object 4
+17 429 909 378 
+resultType: 2
+116 174 
+alternateSQL: 2
+116 117 
+isUnique 2
+116 157 
+mode 2
+116 375 
+useStreaming 2
+116 392 
+mode: 3
+116 392 375 
+string:value: 2
+16 869 
+reportOn:cutoffPercent: 2
+113 114 
+profilingDo: 3
+113 115 114 
+profile: 2
+113 971 
+defaultAmount 3
+113 115 114 
+profileSummaryFilter: 2
+113 114 
+accept 13
+113 288 665 666 948 760 662 402 396 578 594 586 141 
+maxHowOften 3
+113 115 114 
+initializeSignaller 3
+113 115 114 
+startTally 3
+113 115 114 
+totalReport 2
+113 375 
+howOften: 2
+113 115 
+reportTotalOn: 3
+113 115 114 
+sampleUnitName 3
+113 115 114 
+trace: 3
+15 1023 241 
+allReferencePathsTo: 2
+15 877 
+someReferencePathTo: 2
+15 877 
+referencePathsTo:do: 2
+15 877 
+allClassesImplementing: 2
+14 1311 
+allBehaviorsDo: 3
+14 797 691 
+allCallsOn:and: 2
+14 1311 
+allSelect: 2
+14 1311 
+allClassesDo: 2
+14 691 
+allImplementedMessages 2
+14 1311 
+allImplementorsOf: 2
+14 1311 
+bytesInOOP 2
+14 802 
+bytesInHeader 2
+14 802 
+allCallsOn: 2
+14 1311 
+check 2
+13 664 
+formatComment: 2
+13 494 
+commentTemplateString 2
+13 494 
+flushCache 2
+13 3 
+bump: 2
+12 296 
+name:action:test: 2
+11 859 
+test 2
+11 1002 
+action 2
+11 456 
+setup:parts: 2
+10 848 
+addComponent: 4
+9 613 912 922 
+printOn:indented: 7
+9 109 8 7 112 110 327 
+components: 4
+9 1087 831 1089 
+secondaryKeywords 2
+109 111 
+components:operator: 2
+8 846 
+example3 5
+6 879 826 1147 1920 
+example 3
+6 1070 1056 
+example2 4
+6 879 826 1147 
+primCursorLocPut: 2
+5 329 
+name:columnLabels: 2
+4 847 
+name:columnLabels:significantDigits: 2
+4 847 
+numberOfRows 3
+4 1640 1218 
+addRow: 2
+4 548 
+initiallySelectedBenchmarks 2
+107 108 
+convert:toRateFor: 2
+107 108 
+benchmarkSelectors 2
+107 108 
+defaultOutputFilename 2
+107 108 
+significantDigits 2
+107 108 
+benchmarkLabelForSelector: 2
+107 108 
+endOfRun 5
+107 489 492 491 490 
+defaultMeasureRate 2
+107 108 
+externalInterface: 2
+2 387 
+includeDirectories 2
+2 880 
+libraryDirectories 2
+2 880 
+includeFiles 2
+2 880 
+variables 3
+2 583 515 
+topFraction 2
+512 714 
+leftFraction 2
+512 714 
+reducedForm 3
+512 514 513 
+topOffset 2
+512 714 
+leftOffset 2
+512 714 
+rightFraction 2
+514 714 
+bottomFraction 2
+514 714 
+rightOffset 2
+514 714 
+bottomOffset 2
+514 714 
+instanceVariables:startingAt: 2
+509 510 
+variableForBinding: 2
+509 505 
+setBlock: 3
+324 253 566 
+suspend 2
+321 209 
+updateBasedOn: 2
+317 1145 
+displayCharacter:at:on: 2
+507 508 
+widthOf:ifAbsent: 3
+507 685 508 
+withUnderline 4
+507 315 687 888 
+withColor: 2
+507 315 
+illegalCharacterWidth 3
+507 315 508 
+recycleScanner: 2
+507 685 
+scanner 2
+507 685 
+encoder 3
+507 685 515 
+displayString:from:to:at:on:map: 2
+507 315 
+withStrikeout 3
+507 315 888 
+setDescription: 3
+315 685 508 
+setEncoder: 2
+685 508 
+setPosition: 2
+313 903 
+block: 4
+311 1115 259 254 
+editPolicy 3
+310 1516 218 
+editPolicy: 2
+310 218 
+canMergeWithPop 2
+505 506 
+canCopy 2
+505 484 
+mergePopLoads 2
+506 484 
+printOutCategory:on: 2
+307 494 
+nonInteractiveError: 2
+502 503 
+editor: 4
+305 303 388 582 
+handleValue: 4
+500 1273 667 328 
+bufferSize 5
+882 1183 1422 886 1179 
+seekTo: 3
+882 886 1179 
+writeWait 2
+882 1423 
+truncateTo: 5
+882 886 1179 487 677 
+connectionClass 6
+882 1184 887 884 1023 1154 
+primSeekTo: 3
+882 886 1179 
+primClose 4
+882 886 668 330 
+primGetSize 3
+882 886 1179 
+primReadInto:startingAt:for: 3
+882 1181 886 
+setSem:forWrite: 6
+882 1181 887 886 884 1179 
+readWait 2
+882 1423 
+primBufferSize 2
+882 886 
+writeFrom:startingAt:for:untilFalse: 2
+882 1181 
+primWriteFrom:startingAt:for: 4
+882 1181 886 1180 
+readInto:startingAt:for:untilFalse: 2
+882 1181 
+lock:for: 3
+1184 887 884 
+primGetOptions 3
+1422 886 1180 
+getOptions 4
+1422 886 1179 1180 
+setForTty 3
+1422 886 1179 
+setOptions: 4
+1422 886 1179 1180 
+modemBits:mask:sendBreak: 2
+1424 1180 
+genericPaletteRepresentImage:as:paintTransfer: 3
+496 498 497 
+smallPaletteRepresentImage:as:paintTransfer: 3
+496 498 497 
+uniformRangeLevels 2
+496 497 
+renderLuminance:usingPalette:on: 2
+496 498 
+atPoint:put: 4
+497 621 548 547 
+order: 2
+497 1402 
+atPoint: 4
+497 621 548 547 
+binaryInitializationMessagesFor: 4
+494 774 880 1663 
+fileOutMethodsOn: 2
+494 880 
+isVisualStartable 7
+494 1154 1333 1079 1517 1335 1508 
+fileOutSourceOn: 5
+494 495 774 1663 1278 
+checkShallowIncludes: 8
+494 1831 1591 1723 331 159 515 516 
+isSubdomainOf: 6
+494 331 334 333 332 516 
+typeClass 12
+494 775 954 878 1158 1120 844 997 1415 1831 1397 1592 
+methodsFor: 2
+494 878 
+addInstVarName: 3
+494 495 774 
+removeInstVarName: 3
+494 495 774 
+printOutOn: 2
+494 774 
+methodLoaderSelector 2
+494 878 
+prerequisitesForLoading 4
+494 495 774 1518 
+binaryReaderBlockForVersion:format: 35
+494 880 865 1093 788 1837 1884 1885 1145 1394 1117 1386 1395 1390 1389 1873 1812 1570 1091 1533 1537 1689 1326 1329 1500 1491 1496 1494 1492 1293 1472 1286 1268 1042 1247 
+definitionMessage 3
+494 495 880 
+of: 2
+494 516 
+representContentsBinaryOn: 3
+495 774 880 
+isObsolete 2
+495 774 
+checkIncludes: 6
+495 334 333 332 515 516 
+addClassVarName: 2
+495 774 
+rename: 3
+774 880 155 
+recordTemplate 10
+774 1120 997 1881 1723 331 334 333 332 515 
+removeSharedPool: 2
+774 880 
+classCompilerClass 2
+774 880 
+queryTemplate 4
+774 1158 331 515 
+informationSignal 2
+775 1272 
+readFrom: 8
+775 844 1831 1875 1124 1123 1591 1723 
+initSignals 5
+775 829 1272 1777 552 
+includeDirectories: 2
+880 754 
+fillDefineCachesWithValues 2
+880 1427 
+updateProcedureLayoutCache 2
+880 1427 
+fillDefineCaches 2
+880 1427 
+version 4
+880 1663 1025 691 
+flushExternalCache 2
+880 1427 
+example1 4
+879 826 1147 1920 
+registry 10
+874 1023 1408 1407 1533 1273 1274 1459 1657 1244 
+print:on:using: 4
+1167 127 126 125 
+and 3
+871 863 392 
+erase 2
+871 392 
+exampleWideLines 2
+1160 1147 
+exampleArcs 2
+1160 1147 
+exampleRectangularBorder 2
+1160 1147 
+with:with:with: 3
+1158 1837 1614 
+with:with:with:with: 3
+1158 1837 1614 
+with:with: 4
+1158 1837 1614 992 
+withAll: 3
+1158 1621 1614 
+valueEncoder 5
+1149 1409 1157 1156 1153 
+encodedAspects 14
+1149 1409 1157 1156 1155 1154 1153 1151 1150 1412 1411 1410 1604 1605 
+decodeFromLiteralArray: 15
+1149 1096 840 1361 1284 822 798 1015 1628 1397 1487 1068 1291 1290 1245 
+string: 3
+869 1191 1190 
+registeredInstances 4
+1146 1148 1408 1407 
+initializeFixed 2
+1144 1145 
+initializeSmall 2
+1144 1145 
+initializeLarge 2
+1144 1145 
+preprocessorClass 3
+867 1664 1665 
+or 2
+863 392 
+initializeSignals 3
+1131 1116 1626 
+for: 4
+860 813 800 412 
+empty 2
+859 380 
+initializeDefaultGenericColors 5
+1105 1109 1108 1107 1106 
+initializeDefaultButtonColors 4
+1105 1109 1108 1107 
+initializeDefaultScrollbarColors 5
+1105 1110 1109 1108 1107 
+initializeDefaultMenuColors 3
+1105 1109 1108 
+makeHiliteColorFor: 3
+1105 1106 537 
+installCalculatedPaintPreferencesFrom:on: 2
+1105 1107 
+makeShadowColorFor: 3
+1105 1106 537 
+current 4
+854 849 1492 392 
+compactMemory 2
+854 1274 
+quit 2
+854 396 
+initializeErrorActions 3
+854 1272 782 
+preSnapshot 4
+854 836 778 1408 
+noChanges 2
+849 575 
+browseChangedMessages 2
+849 1311 
+origin:corner: 3
+845 1245 462 
+fromArray: 2
+844 1165 
+now 2
+844 1123 
+preInstall 4
+1099 836 1408 1533 
+addBindingsTo:for:channel: 29
+1096 1098 1552 1558 1557 1693 1556 1555 1554 1691 1792 1697 1695 1787 1694 1794 1793 1847 1848 1790 1789 1887 1788 1888 1889 1692 1365 1519 1684 
+readFromClass:methodName: 2
+1096 1156 
+selectionPullDownMenu 5
+1096 1691 1794 1848 1692 
+fontMenu 2
+1096 1688 
+selectionPopUpMenu 6
+1096 1691 1794 1848 1692 662 
+slices 9
+1096 1693 1694 1848 1790 1789 1788 1889 1692 
+readFromFile: 2
+1361 822 
+initializeRelationships 3
+1361 1338 1518 
+at:ifAbsent: 20
+1361 828 822 368 365 369 541 693 893 894 539 538 537 534 1185 890 1186 1425 1426 891 
+saveInFile: 2
+1361 822 
+isCaseSensitive 3
+1087 1357 1089 
+isBadCharacter: 7
+1087 1357 1089 1088 1360 1359 1358 
+volumes 4
+1087 1357 1089 1088 
+readBaseLocationFromStream: 4
+1087 1357 1089 1088 
+hookupTo: 4
+1087 1273 1772 1839 
+defaultClass: 5
+1087 1273 1274 1459 1657 
+baseDirectoryForList: 4
+1087 1357 1089 1088 
+localNameStringFrom: 2
+1087 1089 
+canonicalize: 4
+1087 1357 1089 1088 
+createInstanceNamed: 2
+1087 1357 
+suggest: 3
+1087 1089 1088 
+currentDirectoryString 4
+1087 1357 1089 1088 
+isUglyCharacter: 2
+1087 1088 
+maxLength 7
+1087 1357 1089 1088 1360 1359 1358 
+hookupFor:withID: 3
+1087 1459 1657 
+requestFileName:default: 2
+832 1806 
+confirm: 2
+832 1806 
+request: 2
+832 1806 
+requestFileName: 2
+832 1806 
+requestFileName:default:version: 2
+832 1806 
+request:initialAnswer:onCancel:for: 2
+832 578 
+requestNewFileName:default: 2
+832 1806 
+choose:fromList:values:buttons:values:lines:cancel:for: 2
+832 578 
+request:initialAnswer:onCancel: 3
+832 1806 578 
+request:initialAnswer: 2
+832 1806 
+choose:fromList:values:buttons:values:lines:cancel: 2
+832 578 
+warn: 3
+832 1806 215 
+choose:labels:values:default: 3
+832 1806 578 
+confirm:initialAnswer: 2
+832 1806 
+requestFileName:default:version:ifFail: 2
+832 1806 
+choose:labels:values:default:for: 2
+832 578 
+list: 8
+829 1220 1433 1435 225 403 221 570 
+keyAtIndex: 2
+828 892 
+removeAtIndex: 5
+828 553 702 703 892 
+removeObjectsIn: 2
+828 892 
+descriptorsIn:do: 2
+828 892 
+width:color: 2
+1047 978 
+terminateSignal 2
+826 1028 
+initializePerspectives 4
+822 1347 1338 1518 
+inappropriateOperationSignal 2
+1272 1079 
+rangeErrorSignal 2
+1272 1396 
+background: 4
+807 667 762 659 
+stop: 3
+804 747 544 
+installLookPreferences 2
+1033 1034 
+menuName 6
+1033 1038 1037 1036 1035 1034 
+browseAllSelect: 2
+802 1311 
+canRead: 2
+1029 1030 
+data 2
+1023 1025 
+unregister: 5
+1023 1406 1533 1273 1187 
+call 4
+1023 1025 350 171 
+register: 4
+1023 1019 1273 1187 
+with:from:to: 2
+1019 1670 
+preferredParserClass 3
+1258 1277 1261 
+compileClass:selector:source: 2
+1258 1259 
+forClass:outerScope: 2
+994 423 
+millisecondClockValue 2
+778 1123 
+fillInPanel: 2
+971 973 
+initTargetPrimitiveList 3
+971 973 972 
+makeWrappedMethodCodeFor:using: 3
+971 973 972 
+installDatum 4
+968 1243 1241 1244 
+template: 2
+1420 218 
+objectNotPersistentSignal 2
+1415 1079 
+cannotQueryLocalVariableSignal 2
+1415 1079 
+objectInAnotherLensContainerSignal 2
+1415 1079 
+invalidAggregateFunctionSignal 2
+1415 1079 
+invalidPredicateSignal 2
+1415 1079 
+cannotUpdateSignal 2
+1415 1079 
+queryErrorSignal 2
+1415 1079 
+objectNotUniquelyIdentifiedSignal 2
+1415 1079 
+valueNotFoundSignal 2
+1413 1624 
+keyNotFoundSignal 2
+1413 1624 
+withSize: 4
+1606 1610 1739 1740 
+withKeysAndValues: 2
+1414 1624 
+constantNameFor: 4
+1626 1122 1291 1290 
+constantNames 7
+1626 1627 1837 1122 1291 1290 1289 
+edgeDecorationPolicy 5
+1631 290 762 433 727 
+edgeDecorationPolicy: 3
+1631 762 727 
+widgetPolicy: 2
+1631 762 
+wrap:by: 2
+1629 538 
+redShift:redMask:greenShift:greenMask:blueShift:blueMask: 2
+1750 693 
+new:withAll: 4
+1614 1739 1615 1740 
+from:to: 2
+1607 992 
+fromString: 4
+1737 1742 1831 1832 
+adaptors: 2
+1617 548 
+defaultImplementor 2
+1831 1875 
+fromBytes: 3
+1831 1833 1878 
+encodingMap 5
+1831 1882 1881 1880 1879 
+decodingMap 5
+1831 1882 1881 1880 1879 
+table 8
+1875 645 1218 225 217 158 154 515 
+table: 7
+1875 1218 225 217 158 154 515 
+rehash 3
+1875 531 369 
+start:stop:internalSpaces:paddingWidth: 2
+1609 544 
+start: 2
+1609 747 
+memberClass:dataModel: 3
+1409 331 515 
+typeViolationSignal 2
+1409 1079 
+contextClass 2
+1155 1150 
+reservedWords 4
+1154 1277 1663 1664 
+catalogDataModel 2
+1154 156 
+typeNamed: 2
+1154 161 
+transporterClass 2
+1154 392 
+memberClass:variables: 2
+1604 515 
+startPrintJobNamed: 3
+1147 143 330 
+registerValueOf: 4
+1406 1533 1273 1187 
+findRegistrant: 3
+1408 1533 1273 
+open: 6
+1408 1866 1328 1841 1662 1769 
+dateAndTimeNow 2
+1124 1123 
+key: 6
+1594 1291 1292 680 682 414 
+leftArrow 3
+1122 1685 1511 
+backspace 2
+1122 370 
+unity 11
+1396 1398 1591 1397 1593 1592 1723 1718 1727 1726 1724 
+generality 11
+1396 485 487 486 679 678 772 764 773 771 770 
+class:method: 2
+1121 296 
+key:value: 3
+1595 681 516 
+coerce:precision: 2
+1591 1593 
+coerce:to:precision: 4
+1591 1593 1727 1726 
+exponentCharacter 3
+1593 1727 1726 
+pi 2
+1727 1726 
+radiansPerDegree 2
+1727 1726 
+maxVal 2
+1724 348 
+minVal 2
+1724 348 
+negative 8
+1722 1719 485 678 953 952 768 767 
+negative: 4
+1722 1719 768 767 
+positive 8
+1722 1719 485 678 953 952 768 767 
+resultType:argumentTypes:argumentNames: 2
+1117 174 
+initializeSelectors 2
+1393 1392 
+initializeTypes 2
+1393 1392 
+figure:shape: 2
+1113 252 
+image: 2
+1112 251 
+menuView: 3
+1382 434 930 
+on:at: 2
+1819 1873 
+toggle 3
+1712 1210 920 
+openOn: 9
+1808 1920 1865 1333 1328 1311 1340 1506 1323 
+initializeImages 5
+1907 1948 1947 1004 1252 
+label:menu:menuBar: 2
+1951 1752 
+label:accessCharacter:menu:menuBar: 2
+1954 1953 
+createOn:label:icon: 2
+1866 1867 
+open:label: 2
+1866 1867 
+open:label:icon: 2
+1866 1867 
+on:aspect:change:menu: 2
+1896 1436 
+guaranteeSafe: 2
+1914 1781 
+recover 2
+1865 664 
+on:printItems:oneItem:aspect:change:list:menu:initialSelection:useIndex: 2
+1893 1433 
+defaultHeight 3
+1859 370 371 
+horizontalFor: 2
+1858 1582 
+verticalFor: 2
+1858 1582 
+for:model: 2
+1807 920 
+extent:depth:palette: 2
+1562 621 
+fromUser 3
+1562 1245 989 
+parse: 6
+1368 1369 1561 1560 1698 1699 
+createFont:toResemble:on: 6
+1368 1369 1561 1560 1698 1699 
+preferredFontSizeReferringTo: 4
+1368 1561 1560 1698 
+syntheticBoldAndItalic: 2
+1368 1699 
+encoderNamed:ifAbsent: 3
+1368 1559 1369 
+defaultFontDescriptionIn: 5
+1368 1369 1561 1560 1698 
+defaultEncodingName 4
+1561 1560 1698 1699 
+detailsEditSpec 20
+1098 1558 1557 1556 1555 1554 1553 1691 1697 1695 1694 1795 1794 1793 1847 1790 1789 1887 1788 1888 
+model:label: 2
+1098 1792 
+componentName 26
+1098 1552 1558 1557 1556 1555 1554 1553 1691 1697 1695 1694 1795 1794 1793 1847 1848 1790 1789 1887 1788 1888 1889 1692 1687 637 
+basicsEditSpec 21
+1098 1558 1557 1556 1555 1554 1553 1691 1697 1695 1694 1795 1794 1793 1847 1790 1789 1887 1788 1888 1889 
+placementExtentBlock 11
+1551 1558 1557 1556 1697 1695 1795 1794 1793 1847 1888 
+specGenerationBlock 9
+1551 1558 1557 1556 1695 1795 1793 1847 1848 
+flushIcons 2
+1552 1334 
+paletteMonoIcon 20
+1558 1557 1556 1555 1554 1691 1697 1695 1795 1794 1793 1847 1848 1790 1789 1887 1788 1888 1889 1692 
+paletteIcon 20
+1558 1557 1556 1555 1554 1691 1697 1695 1795 1794 1793 1847 1848 1790 1789 1887 1788 1888 1889 1692 
+named:model:layout:properties: 2
+1693 1787 
+label:layout: 3
+1556 1554 1553 
+named:model:label:layout:properties: 2
+1792 1793 
+getTypePropForClassNamed: 2
+1696 1888 
+model:menu: 2
+1787 1794 
+model:menu:layout: 2
+1787 1794 
+named:model:menu:layout:properties: 2
+1787 1794 
+alignmentMenu 2
+1887 1688 
+typeMenu 3
+1888 386 713 
+validationEditSpec 2
+1365 1687 
+notificationEditSpec 2
+1365 1687 
+receiver:selector:arguments: 3
+1091 738 739 
+maximumComponentLength 6
+1357 1089 1088 1360 1359 1358 
+getVolumes 2
+1357 1089 
+canonicalizeForFileSystem: 2
+1357 1360 
+registerAllValuesOf: 3
+1533 1273 1187 
+on:in:for: 2
+1082 290 
+platformName 2
+1537 328 
+extent: 6
+1534 487 462 254 1203 603 
+allocateHandleOn:extent: 3
+1534 1536 1535 
+componentFor: 2
+1333 385 
+labelFor: 3
+1333 385 593 
+clientFor: 3
+1333 385 585 
+visualFor: 3
+1333 662 385 
+specificationFor: 2
+1333 385 
+writeEssentialsFor:using:into: 3
+1333 1516 1682 
+listFor: 2
+1333 385 
+application 6
+1333 763 385 219 558 161 
+menuFor: 3
+1333 385 593 
+interfaceSpecFor: 2
+1333 1469 
+aspectFor: 3
+1333 385 593 
+aspectPathClass 3
+1333 1516 385 
+flushMenus 7
+1328 1074 1066 1311 1329 1507 1315 
+inspect: 3
+1328 378 382 
+connectSpec 2
+1079 1339 
+defaultPattern 2
+1066 582 
+openProtocolBrowserOn:withTextState: 2
+1311 1312 
+addClassViewTo:in:on:readOnly: 2
+1311 1314 
+openOn:withTextState: 2
+1311 1312 
+addSelectorViewTo:in:on:readOnly: 2
+1311 1312 
+addTextViewTo:in:on:initialSelection:initialState: 2
+1311 1312 
+openClassBrowserOn:withTextState: 2
+1311 1312 
+newOnClass: 2
+1311 1314 
+openCategoryBrowserOn:withTextState: 2
+1311 1312 
+openMethodBrowserOn:withTextState: 2
+1311 1312 
+addCategoryViewTo:in:on:readOnly: 2
+1311 1312 
+helpIcon 2
+1348 1340 
+doesSystemHaveClassNamed: 2
+1348 1346 
+toolsMenu 2
+1348 1526 
+resultsForClassName:andSuperclass:andCategory: 2
+1346 1337 
+openNewClassDialogForName:subClassing:inCategory: 2
+1346 1337 
+recentlyVisitedClasses 2
+1346 1337 
+classMenu 2
+1346 405 
+superClassNamed:fromController: 2
+1346 1337 
+resetRecentlyVisited 2
+1346 1337 
+classCreationDialog 2
+1346 1337 
+visited: 2
+1346 1337 
+openSourceDialogForClass:andCategory: 2
+1346 392 
+designatedHWM 2
+1344 1341 
+preferenceFor: 2
+1344 1341 
+hostWindowMgrMenu 2
+1344 1341 
+windowMenuSpec 2
+1344 1524 
+windowNotebookSpec 2
+1344 1524 
+gridModeMenu 2
+1344 1341 
+markedAsSystemClass 2
+1343 1337 
+defaultLookMenu 3
+1341 402 390 
+standardSpecsForPalette 2
+1341 1334 
+initializeOffsets 2
+1341 1334 
+noMenu 2
+1340 1335 
+leftIcon 2
+1340 1335 
+helpMainMenu 2
+1340 396 
+rightIcon 2
+1340 1335 
+textMenu 8
+1340 1335 405 223 221 378 213 570 
+enableChildSets 2
+1338 388 
+dialectsMenu 2
+1338 1514 
+helpContents 3
+1337 387 386 
+dataModel 7
+1515 218 216 585 710 159 515 
+dataModelDesignator 2
+1515 1682 
+scratchWindow 2
+1335 397 
+currentMode 2
+1334 661 
+currentModeHolder 2
+1334 401 
+currentMode: 2
+1334 661 
+emptySpec 2
+1508 1512 
+lookMenu 2
+1526 595 
+maskEditorMenu 2
+1525 594 
+fieldMenu 10
+1523 1685 378 589 390 593 382 381 380 562 
+dataType 2
+1688 154 
+propSpec 2
+1686 1685 
+upArrow 2
+1685 1511 
+insetYIcon 2
+1685 1469 
+insetXIcon 2
+1685 1469 
+rightArrow 2
+1685 1511 
+downArrow 2
+1685 1511 
+onPerspective: 2
+1518 588 
+plusImage 2
+1516 1511 
+minusImage 2
+1516 1511 
+rowType: 2
+1516 218 
+rowType 3
+1516 218 586 
+dialogSpec 2
+1516 1513 
+lockPolicy 7
+1516 750 1229 218 586 709 710 
+allowPartialCommit 2
+1682 709 
+helpString: 2
+1509 584 
+accessPath: 2
+1500 563 
+subjectChannel: 3
+1500 567 563 
+subject: 5
+1500 254 384 563 576 
+accessWith:assignWith: 2
+1501 564 
+forAspect: 2
+1501 564 
+forIndex: 3
+1680 707 708 
+openListBrowserOn:label: 2
+1313 215 
+currentSelection 3
+1472 1781 665 
+undoSelection 3
+1472 1781 665 
+dispatchTable 5
+1472 1473 1780 1781 665 
+previousSelections 3
+1472 1781 665 
+currentSelection: 2
+1472 665 
+initializeDispatchTable 2
+1472 1469 
+undoSelection: 2
+1472 665 
+modeIsSticky 2
+1469 662 
+foreground 2
+1291 659 
+maxDistance 3
+1288 1290 1289 
+retainedMediumWithExtent: 3
+1288 1290 1289 
+device:paint:basis: 2
+1052 231 
+parent:nodeName: 2
+1292 415 
+green 2
+1290 418 
+yellow 2
+1290 418 
+luminanceScalingValue 2
+1290 418 
+blue 2
+1290 418 
+red 2
+1290 418 
+scalingValue 3
+1290 1289 418 
+cyan 2
+1290 418 
+magenta 2
+1290 418 
+transparent 2
+1289 637 
+opaque 2
+1289 637 
+on:from:to: 3
+1669 1670 718 
+typeTable 4
+1277 1663 1664 1666 
+parse:as: 2
+1277 455 
+computeTables 2
+1277 1663 
+methodInfo 4
+1277 1663 1278 1664 
+isGrammarExpression: 2
+1277 456 
+tokensFrom: 2
+1663 751 
+preprocess:declarations:includeDirectories: 2
+1666 754 
+topRight 2
+1274 462 
+bottomLeft 2
+1274 462 
+normal 2
+1274 487 
+marker 3
+1274 926 1225 
+execute 4
+1274 484 247 399 
+read 3
+1274 596 594 
+makeRegistry 3
+1274 1459 1657 
+reapSome 2
+1459 1460 
+defaultForIPC 4
+1657 1660 1658 1772 
+readOnly 2
+1657 948 
+defaultForSerial 4
+1657 1660 1658 1772 
+openFileNamed:direction:creation: 2
+1657 1769 
+defaultForFiles 4
+1657 1660 1658 1772 
+openPair 2
+1773 1840 
+primOpen:errInto: 2
+1841 1662 
+defaultPortName 3
+1841 1662 1769 
+bytes:literals:numArgs:numTemps:maxDepth:needsFrame:hybrid:forContext: 2
+1268 1042 
+fromMethod: 2
+1270 1269 
+keyboardFocusBorder 2
+1038 1766 
+newTree 2
+1266 1032 
+pause 2
+1025 216 
+initSpeeds 2
+1263 1020 
+initLocalModes 2
+1265 1264 
+clearInsideOn:bounds: 2
+1249 1252 
+variables: 2
+995 515 
+center:radius: 2
+993 990 
+exampleIntersects 2
+992 991 
+origin:extent: 2
+1245 462 
+demoFlatness 2
+989 988 
+raised 2
+980 979 
+do:ofType: 2
+1244 351 
+textStyle: 11
+489 439 435 436 619 1644 1636 1222 1218 605 604 
+internalSpaces 2
+489 544 
+justifiedTabDeltaFor: 2
+489 544 
+paddingWidth: 2
+489 544 
+internalSpaces: 2
+489 544 
+characterNotInFont 3
+489 492 491 
+justifiedPadFor: 2
+489 544 
+paddingWidth 2
+489 544 
+crossedX 4
+489 492 491 490 
+paddedSpace 2
+492 491 
+setStopConditions 3
+492 491 490 
+resetFont 2
+490 120 
+asLowercase 3
+299 696 697 
+sameAs: 3
+299 696 897 
+asUppercase 3
+299 696 697 
+asInteger 6
+299 677 772 764 352 350 
+asSymbol 3
+299 696 1189 
+asCharacter 2
+299 772 
+isComposed 2
+299 619 
+asTimestamp 2
+298 297 
+differenceFromInfinitesimal: 5
+485 768 767 766 765 
+quotientFromPoint: 2
+485 487 
+sumFromInfinity: 5
+485 768 767 766 765 
+lessFromFixedPoint: 2
+485 679 
+isZero 14
+485 487 486 679 678 772 773 951 771 770 768 767 766 765 
+sign 2
+485 486 
+productFromInteger: 8
+485 679 678 772 764 951 771 770 
+productFromInfinity: 5
+485 768 767 766 765 
+differenceFromInteger: 8
+485 679 678 772 764 951 771 770 
+differenceFromFixedPoint: 2
+485 679 
+quotientFromInfinitesimal: 5
+485 768 767 766 765 
+productFromPoint: 2
+485 487 
+differenceFromSomeNumber: 5
+485 768 767 766 765 
+sumFromSomeNumber: 5
+485 768 767 766 765 
+productFromFraction: 6
+485 678 772 764 771 770 
+sumFromDouble: 7
+485 679 678 772 764 771 770 
+productFromDouble: 7
+485 679 678 772 764 771 770 
+differenceFromFraction: 6
+485 678 772 764 771 770 
+productFromInfinitesimal: 5
+485 768 767 766 765 
+sumFromFloat: 7
+485 679 678 772 764 771 770 
+differenceFromPoint: 2
+485 487 
+productFromFloat: 7
+485 679 678 772 764 771 770 
+isReal 2
+485 677 
+* 14
+485 487 486 679 678 772 773 951 771 770 768 767 766 765 
+quotientFromSomeNumber: 5
+485 768 767 766 765 
+/ 14
+485 487 486 679 678 772 773 951 771 770 768 767 766 765 
++ 15
+485 487 486 679 678 772 773 951 771 770 768 767 766 765 352 
+sumFromFraction: 6
+485 678 772 764 771 770 
+reduceGeneralityIfPossible 7
+485 486 679 678 772 769 765 
+quotientFromInteger: 7
+485 679 678 772 764 771 770 
+lessFromInfinitesimal: 5
+485 768 767 766 765 
+reciprocal 3
+485 679 678 
+- 16
+485 487 486 679 678 772 773 951 771 770 768 767 766 765 531 352 
+negated 8
+485 679 678 772 953 952 768 767 
+quotientFromDouble: 7
+485 679 678 772 764 771 770 
+lessFromInteger: 8
+485 679 678 772 764 951 771 770 
+sumFromFixedPoint: 2
+485 679 
+differenceFromFloat: 7
+485 679 678 772 764 771 770 
+productFromSomeNumber: 5
+485 768 767 766 765 
+lessFromFloat: 7
+485 679 678 772 764 771 770 
+quotientFromFraction: 6
+485 678 772 764 771 770 
+abs 6
+485 487 486 772 953 952 
+lessFromInfinity: 5
+485 768 767 766 765 
+sumFromInfinitesimal: 5
+485 768 767 766 765 
+sumFromInteger: 8
+485 679 678 772 764 951 771 770 
+quotientFromFixedPoint: 2
+485 679 
+differenceFromDouble: 7
+485 679 678 772 764 771 770 
+asSmallInteger 2
+485 773 
+lessFromFraction: 6
+485 678 772 764 771 770 
+lessFromDouble: 7
+485 679 678 772 764 771 770 
+quotientFromFloat: 7
+485 679 678 772 764 771 770 
+sumFromPoint: 2
+485 487 
+lessFromSomeNumber: 5
+485 768 767 766 765 
+productFromFixedPoint: 2
+485 679 
+quotientFromInfinity: 5
+485 768 767 766 765 
+differenceFromInfinity: 5
+485 768 767 766 765 
+corner: 2
+487 462 
+truncated 11
+487 677 679 678 772 771 770 768 767 765 462 
+rem: 2
+487 677 
+quo: 5
+487 677 772 773 951 
+indexAccessInto: 2
+487 772 
+asOffsetLayout 2
+487 462 
+theta 2
+487 486 
+\\ 4
+487 677 773 951 
+roundTo: 2
+487 677 
+// 5
+487 677 772 773 951 
+floor 3
+487 677 772 
+indexAccessInto:put: 2
+487 772 
+ceiling 3
+487 677 772 
+quoFromInteger: 3
+487 677 772 
+asFractionalLayout 2
+487 462 
+r 2
+487 486 
+rounded 6
+487 677 772 771 770 462 
+asPoint 4
+487 677 486 276 
+transpose 4
+487 217 548 547 
+x: 2
+487 753 
+exp 4
+677 486 771 770 
+log: 2
+677 486 
+arcCos 3
+677 771 770 
+ln 4
+677 486 771 770 
+tan 4
+677 486 771 770 
+degreesToRadians 2
+677 769 
+odd 3
+677 772 773 
+even 3
+677 772 773 
+** 2
+677 486 
+asLimitedPrecisionReal 2
+677 769 
+asComplex 2
+677 486 
+raisedTo: 4
+677 486 771 770 
+asRational 7
+677 679 678 772 769 764 765 
+asMetaNumber 2
+677 764 
+i 2
+677 486 
+sqrtRounded 2
+677 773 
+asFloat 10
+677 679 678 772 764 773 771 770 767 765 
+log 2
+677 486 
+sin 4
+677 486 771 770 
+cos 4
+677 486 771 770 
+radiansToDegrees 2
+677 769 
+asDouble 10
+677 679 678 772 764 773 771 770 767 765 
+arcSin 3
+677 771 770 
+sqrt 4
+677 486 771 770 
+arcTan 3
+677 771 770 
+reduced 2
+679 678 
+denominator 3
+679 678 772 
+numerator 3
+679 678 772 
+asFixedPoint: 4
+679 678 772 769 
+maskSet: 2
+772 159 
+printOn:base: 3
+772 773 953 
+computeGCD: 3
+772 773 952 
+lowBit 2
+772 773 
+digitAt:put: 3
+772 773 951 
+highBit 4
+772 773 953 952 
+digitLength 3
+772 773 951 
+bitAnd: 3
+772 773 951 
+bitOr: 3
+772 773 951 
+bitShift: 3
+772 773 951 
+compressed 4
+772 773 953 952 
+bitXor: 3
+772 773 951 
+digitAt: 3
+772 773 951 
+maskClear: 2
+772 159 
+fractionPart 3
+769 771 770 
+exponent 3
+769 771 770 
+defaultNumberOfDigits 2
+769 770 
+floorLog10 2
+771 770 
+timesTwoPower: 2
+771 770 
+setValue: 6
+765 383 569 567 384 563 
+outer: 3
+294 676 675 
+interpretXMisc:with:for: 2
+482 484 
+changeToVPC 2
+482 673 
+interpretShortLoad:for: 2
+482 484 
+merge: 3
+484 674 462 
+checkMerge 2
+484 674 
+push: 3
+484 673 674 
+emitBody: 2
+484 742 
+initScope: 2
+484 742 
+homeReceiver 4
+673 676 675 674 
+return: 2
+673 236 
+send 2
+673 407 
+sourceCode 5
+673 676 675 674 379 
+findTemp:do:elseDo: 4
+673 676 675 674 
+isBlockContext 2
+673 675 
+skipPrimitive 2
+673 458 
+privateTempAt:put: 2
+676 675 
+privateTempAt: 2
+676 675 
+asImage 4
+667 437 621 438 
+deviceContentsOfAreaOriginX:y:width:height:into:startingAt: 5
+667 668 672 671 329 
+hasOutstandingDamage 4
+667 290 670 668 
+privateClose 5
+667 668 672 671 330 
+defaultBackgroundPaint 6
+667 291 668 672 671 762 
+contentsOfArea:into:startingAt: 2
+667 329 
+contentsOfArea: 2
+667 329 
+completeContentsOfArea: 2
+667 329 
+setFont: 2
+292 731 
+print 2
+292 291 
+setLandscape: 2
+292 291 
+pageSize 2
+292 586 
+getDimensions 2
+291 668 
+compositionBoundsFor: 8
+290 762 433 613 905 607 1203 1428 
+graphicsContextFor: 14
+290 762 669 433 1640 1205 612 611 610 722 905 607 1203 1428 
+invalidateRectangle:repairNow:forComponent: 12
+290 762 669 763 433 612 610 722 905 607 1203 1428 
+display 4
+290 762 669 471 
+extentEvent: 2
+290 762 
+dispatchesKeyboard 5
+290 762 763 433 923 
+changedPreferredBounds:forComponent: 11
+290 762 433 613 615 1211 905 607 906 1203 1429 
+asPattern 4
+670 621 438 232 
+unmap 2
+668 669 
+getMinimumSize 2
+668 762 
+getMaximumSize 2
+668 762 
+actAsExecutor 6
+668 762 669 763 351 329 
+masterWindow 2
+668 762 
+displayBox: 2
+668 762 
+lower 2
+668 374 
+expand 4
+668 763 373 375 
+map 2
+668 669 
+sensorClass 2
+668 763 
+finishOpening 3
+668 762 763 
+hibernate 2
+668 763 
+prepareToMap 2
+668 762 
+collapse 2
+668 471 
+icon: 3
+668 762 440 
+asRetainedMedium 5
+672 671 437 621 438 
+menuDo: 2
+762 763 
+processEvent: 2
+762 763 
+localPointToGlobal: 5
+762 669 433 905 1428 
+globalPointToLocal: 4
+762 433 905 1428 
+upcastEvent:with:from:path: 3
+762 433 1211 
+changedBounds:forComponent: 6
+762 433 613 905 607 1203 
+insideColor 2
+762 1428 
+insideColor: 3
+762 1428 603 
+topComponent 3
+762 669 433 
+lookPreferences: 3
+762 722 723 
+displayDamageEvent: 2
+762 669 
+subViewWantingControl 3
+762 433 1205 
+controller 6
+762 763 730 617 919 593 
+displayPendingInvalidation 2
+762 669 
+getLookPreferences 2
+763 722 
+application: 4
+763 219 558 161 
+setComponent: 5
+763 606 727 724 906 
+menuHolder: 3
+477 1757 1752 
+performer 7
+477 283 263 935 1752 913 396 
+yellowButtonActivity 5
+477 481 659 657 660 
+redButtonActivity 8
+477 481 663 659 479 657 759 660 
+menuMessageReceiver 2
+477 282 
+initializeMenu 8
+477 665 478 948 760 664 758 662 
+dispatchMenuSelection: 9
+477 283 282 481 665 480 657 948 662 
+processMenuAt:centered: 3
+477 760 758 
+performer: 4
+477 263 935 913 
+processKeyboard 6
+288 473 481 665 657 478 
+compositeController: 3
+473 666 948 
+setDispatcher: 6
+473 282 481 657 948 722 
+startDraggingAt: 2
+473 475 
+desiresFocus 16
+473 481 657 948 950 475 654 1438 1656 1647 1768 1765 1636 1222 1218 1632 
+buttonPressed 2
+286 1441 
+beToggle 2
+286 1215 
+beSwitch 2
+286 1215 
+restartAfterError 3
+471 472 756 
+resize 2
+471 653 
+openTransientViewsTopWindowIn: 2
+471 756 
+shutdownBecauseOfError 3
+471 472 756 
+dispatchBlockClosure: 5
+283 282 481 657 948 
+dispatchMenuSymbol: 5
+283 282 481 657 948 
+isActuationAllowed 2
+282 654 
+displayBoxOfView: 2
+281 1205 
+scrollPageUp 2
+469 470 
+scrollPageDown 2
+469 470 
+scrollAbsolute 2
+469 470 
+menuCursor 4
+464 1205 1208 1207 
+findElementFor: 3
+481 657 475 
+selectTarget 2
+481 475 
+pressAction 5
+481 475 654 656 655 
+toggleTarget 3
+481 657 475 
+selectionStartIndex 2
+665 731 
+resetState 2
+665 948 
+evaluateSelection 2
+665 761 
+selectionStartIndex: 2
+665 1222 
+selectionStartIndex:stopIndex: 2
+665 1222 
+dyForPoint: 2
+665 759 
+find: 2
+665 553 
+inspectIt 2
+665 478 
+localMenuItem: 2
+665 480 
+trackMouseSelection 2
+665 948 
+selectFrom:to: 3
+665 478 1222 
+ignoreInputKey: 2
+665 662 
+align 2
+665 343 
+copyKey: 2
+665 662 
+doItReceiver 7
+665 405 378 407 571 570 382 
+doIt 4
+665 478 215 214 
+processRedButton 4
+665 666 948 950 
+processYellowButton 3
+665 666 948 
+selectAndScroll 3
+665 1222 1633 
+readKeyboard 2
+665 948 
+insertAndSelect:at: 2
+665 392 
+hardcopy 3
+665 619 396 
+selectAt: 2
+665 1222 
+selection 17
+665 478 645 731 1220 1219 225 403 217 373 395 394 593 574 570 375 141 
+replaceSelectionWith:saveSelectionForUndo: 3
+665 948 949 
+deselect 6
+665 1222 1220 1210 920 574 
+select 7
+665 480 941 735 1222 1210 920 
+again 2
+665 596 
+copySelection 2
+665 478 
+cut 2
+665 594 
+paste 2
+665 594 
+selectionStopIndex: 2
+665 1222 
+pasteKey: 2
+665 662 
+cutKey: 2
+665 662 
+undoKey: 2
+665 662 
+isTokenish: 2
+665 457 
+replaceFrom:to:with: 6
+665 948 619 542 697 898 
+changeSelectionFrom:to: 2
+663 758 
+keyboardActivity 2
+661 662 
+stopEditing 2
+657 586 
+allowCrInText 2
+666 949 
+processCRKey: 2
+666 949 
+processTabKey: 3
+666 948 949 
+tabBlock: 2
+666 949 
+allowTabInText 2
+666 949 
+crBlock: 2
+666 949 
+privateAccept 2
+948 949 
+doAccept 2
+760 595 
+editValue 2
+949 1633 
+hasEditValue 2
+949 1633 
+setButtonController: 2
+950 757 
+doItContext 4
+761 378 407 382 
+doItValue: 4
+761 407 382 379 
+removeAll 3
+664 574 554 
+restoreAll 2
+664 574 
+forget 2
+664 574 
+doThis 2
+664 574 
+checkWithSystem: 2
+664 574 
+fileOut 2
+664 380 
+setWindowMaxSize 2
+662 595 
+correctFraction: 2
+662 714 
+fractionalConstraintDialog 2
+662 595 
+doExtractSubCanvas 2
+662 595 
+selections: 3
+662 1643 404 
+maskEditor 2
+662 595 
+doBrowseApplication 2
+662 595 
+toVisualBack 2
+662 595 
+doDefine 2
+662 595 
+doDefineChildDataForm 2
+662 595 
+doCut 2
+662 595 
+doMakeBounded 2
+662 595 
+frameNumberFor: 2
+662 714 
+setWindowToDefaults 2
+662 595 
+menuEditor 2
+662 595 
+doSpawn 2
+662 595 
+alignDialog 2
+662 595 
+defineMenuAsQuery 2
+662 595 
+doPaste 2
+662 595 
+openReusableComponents 2
+662 595 
+toVisualFrontOne 2
+662 595 
+lookPolicy: 2
+662 595 
+doOpen 2
+662 595 
+doPaintApplication 2
+662 595 
+doBrowse 2
+662 595 
+setWindowPrefSize 2
+662 595 
+currentLook 2
+662 402 
+toVisualFront 2
+662 595 
+builder 3
+662 432 385 
+doDefineApplication 2
+662 595 
+doBrowseChildDataForm 2
+662 595 
+toVisualBackOne 2
+662 595 
+doPalette 2
+662 595 
+doMakeUnBounded 2
+662 595 
+distributeDialog 2
+662 595 
+doGroup 2
+662 595 
+doInstall 2
+662 595 
+setAllWindowInfo 2
+662 595 
+setWindowMinSize 2
+662 595 
+doUngroup 2
+662 595 
+equalizeDialog 2
+662 595 
+selections 3
+662 1643 404 
+doCopy 2
+662 595 
+doPaintChildDataForm 2
+662 595 
+takeDefault 2
+654 1751 
+loseDefault 2
+654 1751 
+closeNoTerminate 3
+652 472 756 
+controlDispatch 2
+652 757 
+isFinished 3
+472 756 757 
+invokePostOpen 3
+756 757 578 
+asPolyline 7
+279 278 277 276 462 275 274 
+end 2
+278 276 
+computePoints 3
+278 275 274 
+asLine 2
+278 276 
+start 3
+278 276 747 
+sweepAngle 2
+277 274 
+area 2
+277 462 
+asEllipticalArc 2
+277 274 
+startAngle 2
+277 274 
+center 3
+277 462 274 
+asPointArray 2
+276 462 
+moveBy: 2
+462 722 
+topLeft 2
+462 435 
+character 2
+463 392 
+specClass 2
+461 945 
+dragObject:startingAt:inController: 5
+651 650 649 648 647 
+expected: 3
+457 455 751 
+parseArgsAndTemps:notifying: 2
+457 458 
+endOfLastToken 2
+457 751 
+cascade: 2
+457 558 
+pragmaKeywords 2
+457 458 
+temporaries 2
+457 630 
+match: 4
+457 216 365 696 
+expression 2
+457 753 
+pattern 4
+457 221 392 582 
+parse:class:noPattern:context:notifying:builder:saveComments:ifFail: 2
+457 458 
+notify:at: 3
+457 455 751 
+method:context: 2
+457 458 
+peekForType:value: 2
+455 752 
+combineStackTo: 2
+455 752 
+backupSave 2
+455 752 
+backupDiscard 2
+455 752 
+init:notifying:failBlock: 2
+455 751 
+peekForTypeNoPush: 2
+455 752 
+generate: 2
+455 644 
+unexpectedError 2
+455 751 
+backupRestore 2
+455 752 
+peekForType: 2
+455 752 
+popStackTo: 2
+455 752 
+replaceStackTop: 2
+455 752 
+keywords 2
+455 1189 
+xCR 2
+751 754 
+fastInit 3
+751 752 754 
+xWord 2
+751 754 
+resetSourceToLastToken 2
+751 458 
+statements 3
+458 630 236 
+external 5
+458 421 412 387 386 
+backup: 3
+456 554 1426 
+constValue 2
+456 595 
+terminal: 2
+456 211 
+term 2
+456 645 
+column 2
+645 159 
+declarations: 2
+752 387 
+declarations 2
+752 387 
+members 2
+753 333 
+parsePrimary 2
+753 754 
+compositeSpec 2
+753 447 
+defineOrSingleDeclaration 2
+755 754 
+scope:index:from: 2
+450 452 
+savableSpecFor: 5
+636 642 744 935 942 
+componentSpecDo: 21
+636 637 643 642 640 638 749 744 750 748 940 935 745 943 942 1228 941 1229 937 1449 1450 
+hasInherentSize 5
+636 643 642 940 942 
+extractedSpecFor: 2
+636 642 
+dragHandlesFor:subject:isPrimary: 3
+636 641 747 
+hasMenuBar: 2
+263 637 
+modelInBuilder: 3
+263 744 1229 
+useVerticalScrollBar 2
+263 727 
+hasMenuBar 3
+263 637 727 
+noHorizontalScroll 3
+263 642 749 
+noMenuBar 4
+263 642 749 727 
+hasVerticalScrollBar: 2
+263 637 
+getBindingIn: 9
+263 744 748 747 1228 1229 939 938 1449 
+scrollingFlags 2
+263 637 
+defaultFlags 13
+263 637 638 749 747 942 1228 939 1448 938 937 936 1449 
+max 5
+263 331 334 332 516 
+useMenuBar 2
+263 727 
+useHorizontalScrollBar 2
+263 727 
+menu: 6
+263 935 745 942 1757 596 
+hasVerticalScrollBar 3
+263 637 727 
+noVerticalScroll 3
+263 642 749 
+hasHorizontalScrollBar: 2
+263 637 
+getMenuIn: 3
+263 935 942 
+flags 4
+263 637 427 159 
+hasHorizontalScrollBar 3
+263 637 727 
+flags: 4
+263 637 427 159 
+defaultScrollingFlags 8
+637 642 749 940 939 1448 938 1449 
+decorationType 2
+637 748 
+style: 9
+643 640 748 940 746 939 1448 938 1449 
+style 9
+643 640 748 940 746 939 1448 938 1449 
+bordered 2
+642 745 
+horizontalScrollBar 2
+642 749 
+verticalScrollBar 2
+642 749 
+setOrientation: 2
+641 601 
+orientation: 2
+641 747 
+orientation 4
+641 747 601 335 
+clientKey 2
+749 1229 
+clientKey: 2
+749 1229 
+minorKey 2
+749 1229 
+majorKey 2
+749 1229 
+minorKey: 2
+749 1229 
+majorKey: 2
+749 1229 
+typeConvert: 2
+744 1228 
+tabable 7
+744 748 940 939 938 937 1449 
+defaultModel 14
+744 748 747 745 943 942 1228 941 939 1448 938 937 936 1449 
+fetchAction: 2
+750 1229 
+fetchAction 2
+750 1229 
+lockPolicy: 4
+750 1229 218 586 
+synchronize: 3
+750 1229 585 
+autoOpen 2
+750 1229 
+openAction 2
+750 1229 
+synchronize 2
+750 1229 
+contentKey: 2
+750 1229 
+contentKey 3
+750 1229 590 
+autoFetch: 2
+750 1229 
+sourceType 2
+750 1229 
+sourceType: 2
+750 1229 
+autoFetch 2
+750 1229 
+rangeMap 2
+747 1225 
+isDecorated: 3
+940 942 1449 
+isDecorated 3
+940 942 1449 
+changeFont 2
+746 713 
+defaultable: 2
+746 1228 
+defaultable 2
+746 1228 
+propertiesTool: 2
+746 711 
+labelFont 2
+745 713 
+converterWith: 2
+745 1449 
+labelIsImage 2
+745 713 
+formatString 3
+745 1449 713 
+formatString: 2
+745 1449 
+canDefault 2
+1228 1751 
+isDefault 3
+1228 1751 721 
+selectionStyle: 3
+938 1219 217 
+columns 7
+937 597 548 159 158 155 515 
+columns: 3
+937 158 155 
+emitValue: 13
+442 443 635 634 633 632 631 630 738 743 742 741 739 
+emitSend:selector:arguments: 5
+442 743 742 741 739 
+emitBranch:to:if: 5
+442 631 630 743 739 
+emitEffect: 10
+442 259 443 635 634 740 632 631 630 739 
+emitLocalReturn:from: 5
+442 443 631 630 739 
+emitReturn:from: 5
+442 443 631 630 739 
+emitValue:forAssignment: 2
+442 742 
+attributes 6
+259 439 611 410 411 370 
+block 2
+259 254 
+failIfOptimizationsAreDefeatedBy:in: 3
+629 634 632 
+canGenerateCorrectCode 3
+629 634 632 
+turnOffOptimizationIn: 2
+634 632 
+precedence 2
+738 1189 
+computeExtent 2
+439 923 
+displayTextOn: 2
+439 441 
+attributes: 3
+439 611 411 
+setTextStyle: 9
+435 600 1224 1644 1636 1218 1632 605 604 
+visibleRectangleFrom:to: 3
+435 1222 1633 
+lineIndexOfTop: 3
+435 1222 1220 
+textStyle 8
+435 436 619 600 1224 1636 1222 1218 
+rightMarginForDisplay 3
+435 619 620 
+topAtLineIndex: 3
+435 1222 1220 
+leftMarginForDisplayForLine: 3
+435 619 620 
+textAt: 4
+435 436 619 620 
+getController 3
+433 730 919 
+flash 2
+433 374 
+setController: 3
+433 730 919 
+painterDragMode 2
+254 723 
+isPrimary 2
+254 157 
+subject 5
+254 384 563 576 568 
+displayHorizontalOn: 2
+431 432 
+computePreferredBounds 3
+431 613 432 
+initializeRenderers 2
+429 430 
+getRendererFor: 2
+429 430 
+alignLeft 2
+441 595 
+alignRight 2
+441 595 
+rowAt:into:startingAt: 8
+621 628 627 626 625 624 623 622 
+inherentBitsPerPixel 8
+621 628 627 626 625 624 623 622 
+pixelArraySpecies 5
+621 626 625 624 622 
+bits 3
+621 244 243 
+rowAt: 2
+621 548 
+tileBitsStride:width:atX:y:from:stride:width:atX:y:width:height:rule: 2
+621 895 
+copyEmpty 2
+621 553 
+atX:y: 8
+621 628 627 626 625 624 623 622 
+atX:y:put: 8
+621 628 627 626 625 624 623 622 
+rowAt:putAll:startingAt: 8
+621 628 627 626 625 624 623 622 
+copyBitsStride:width:atX:y:from:stride:width:atX:y:width:height:rule: 2
+621 895 
+retainedMediumClass 4
+621 540 541 692 
+computeWidth 2
+436 1642 
+characterBlockAtPoint: 2
+619 1222 
+composeAll 2
+619 620 
+asComposedText 2
+619 696 
+compositionWidth:text:style:fitWidth: 2
+619 620 
+rightMarginForComposition 2
+619 620 
+getCompositionScanner 2
+619 620 
+newLineTable 2
+619 620 
+asParagraph 3
+619 697 897 
+getCharacterBlockScanner 2
+619 620 
+wordWrap: 2
+619 1222 
+recomposeAfterReplacingFrom:to:withSize: 2
+619 620 
+setHeight: 2
+619 620 
+characterBlockForIndex: 2
+619 1222 
+updateCompositionHeight 2
+619 620 
+nextLineItem:line:with: 2
+619 620 
+setModel: 5
+729 730 929 918 919 
+removeComponent: 2
+613 912 
+computeDisplayBoxFor:inDisplayBox: 3
+613 727 728 
+layoutComponentsForBounds: 3
+613 912 728 
+components 3
+613 365 366 
+newBounds:oldBounds:forWrapper: 2
+613 922 
+hitDetect: 2
+613 920 
+newBounds:containingBounds: 5
+606 722 905 723 1202 
+setComponentBoundsTo: 4
+606 905 607 1203 
+displayBackgroundIfNeededOn: 4
+600 1224 1218 1632 
+getTextStyle 8
+600 1224 1644 1636 1218 1632 605 604 
+widgetState: 6
+600 1224 1218 1632 610 722 
+displayBackgroundIfNeededOn:in: 10
+600 1224 1768 1764 1227 1226 1641 1218 1632 1634 
+widgetState 6
+600 1224 1218 1632 610 722 
+initializeState 6
+600 1224 1751 1632 610 722 
+setForegroundPaintOn: 4
+600 1224 1640 1218 
+defaultControllerClass 39
+730 736 930 735 734 928 926 924 731 1225 1443 1651 1645 1751 1655 1649 1757 1752 1441 1642 1640 1637 1641 1222 1220 1218 1436 1632 1437 1633 1221 1433 1435 1212 925 919 923 1210 1205 
+defaultController 6
+730 1655 1649 1441 919 920 
+selectionIndex: 14
+736 1636 1642 1640 1637 1641 1639 1638 1222 1220 1218 225 403 217 
+selectionFinalized 2
+930 1205 
+redisplay 2
+930 388 
+preferredHeight 5
+930 934 933 932 931 
+specificInactiveSelectionBackgroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificSelectionForegroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+simpleRedisplay 3
+1224 1222 1632 
+specificBorderColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+redisplayForEnabledChange 4
+1224 1751 1768 1636 
+displayBackgroundOn:in: 2
+1224 1218 
+specificSelectionBackgroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificInactiveForegroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificBackgroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificTraversalHiliteColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificHiliteColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+simpleRedisplayIn: 4
+1224 1218 1212 1213 
+specificInactiveSelectionForegroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificSeparatorColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+simpleRedisplayIn:colorBackgroundIfNeeded: 2
+1224 1212 
+specificInactiveBackgroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificShadowColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+specificForegroundColor 10
+1224 1438 1225 1443 1439 1651 1645 1751 1757 1752 
+positionTo: 2
+1217 1635 
+scrollableExtent 3
+1217 1635 906 
+visibleExtent 3
+1217 1635 906 
+validateScrollPosition: 4
+1217 1635 1218 906 
+changePositionBy: 2
+1217 1635 
+scrollTo: 2
+1217 1635 
+scrollBy: 3
+1217 1635 906 
+beHorizontal 4
+734 926 1225 601 
+axis: 2
+734 1225 
+beVertical 4
+734 926 1225 601 
+beTwoDimensional 2
+734 1225 
+markerBlock: 2
+734 1225 
+isInTransition 2
+928 1438 
+isSelected 5
+928 1438 1757 1752 920 
+isInTransition: 2
+928 1438 
+computeMarkerRegion 3
+926 927 1430 
+mapToDataSpace: 3
+926 927 1430 
+computeMarkerPosition 3
+926 927 1430 
+markerColor 2
+926 1225 
+alignMarker: 3
+926 927 1212 
+redisplayRectangle:on: 4
+731 1222 1435 906 
+selectionInterval 2
+731 1221 
+displayLabelOn:in:selected: 4
+934 933 932 931 
+composedLabel 4
+934 933 932 931 
+displayIndicationOn:in:selected: 4
+934 933 932 931 
+displaySelectionBackgroundOn:in: 3
+934 933 932 
+preferredShortcutWidth 2
+934 931 
+composedCharacterWidth 4
+934 933 932 931 
+displayShortCutOn:in:selected: 4
+934 933 932 931 
+openSubMenu 4
+934 933 932 931 
+displaySubMenuIndicatorOn:in:selected: 4
+934 933 932 931 
+composedCharacter 4
+934 933 932 931 
+computeComposedTexts 4
+934 933 932 931 
+displayRightSideIndicatorsOn:in:selected: 3
+934 933 932 
+preferredLabelExtent 3
+934 933 931 
+buttonPartForegroundColor 2
+1438 1762 
+redisplayForTransitionChange 17
+1438 1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 1763 1757 1767 1766 1765 1761 
+loseFocus 3
+1438 1636 1218 
+hasFocus 6
+1438 1636 1640 1637 1218 1632 
+redisplayFocusChange 20
+1438 1644 1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 1763 1757 1768 1767 1766 1765 1632 1633 
+takeFocus 3
+1438 1636 1218 
+hasFocus: 7
+1438 1636 1640 1637 1222 1218 1632 
+setPaintOn: 5
+1438 1768 1764 1758 1756 
+buttonPartBackgroundColor 2
+1438 1762 
+redisplayChangeOfStateFrom:to: 18
+1438 1644 1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 1763 1757 1767 1766 1765 1761 
+defaultMarkerBorder 2
+1225 1226 
+setScrollOffsetHolder: 2
+1635 1218 
+fixScrollingOffset 2
+1635 1218 
+invalidateOrRedisplayBy: 2
+1644 1645 
+labelString: 4
+1644 722 605 604 
+setLabelString: 3
+1644 605 604 
+list 8
+1443 1220 225 403 574 570 375 374 
+listHolder: 2
+1443 403 
+listHolder 2
+1443 403 
+lookPolicy 5
+1443 1447 1446 1445 1444 
+getBorder 4
+1751 1764 1759 1758 
+displayNormalOn: 10
+1751 1757 1768 1767 1766 1764 1762 1760 1759 1758 
+redisplayActiveArea 4
+1751 1768 1764 1758 
+translationFactor 6
+1751 1757 1768 1766 1764 1756 
+normalBox 5
+1751 1768 1767 1766 1764 
+policyClass 4
+1751 1766 1760 1756 
+initializeForFixedLabel: 2
+1751 1757 
+displayUndecoratedOn: 3
+1751 1765 1761 
+displayDefaultOn: 5
+1751 1768 1767 1766 1764 
+displayButtonOn: 10
+1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 
+redisplayButton 10
+1656 1655 1654 1653 1652 1650 1649 1648 1647 1646 
+displayTraversalHiliteOn: 8
+1655 1654 1653 1652 1650 1649 1648 1646 
+redisplayTraveralHilite 8
+1655 1654 1653 1652 1650 1649 1648 1646 
+redisplayNewLabel 2
+1757 1761 
+startPointForMenu 4
+1757 1752 1755 1754 
+processShortcutKeyEventAsMenuBarAccessor: 3
+1752 1754 1753 
+canClickReleaseToOpenMenu 2
+1752 1755 
+highlightNextMenuBarButton 2
+1752 1205 
+highlightPreviousMenuBarButton 2
+1752 1205 
+labelColor 3
+1767 1762 1753 
+buttonEdgeColor 2
+1767 1762 
+displayNormalButtonOn:in: 3
+1767 1766 1764 
+hiliteSelection: 2
+1765 1761 
+beDown 2
+1442 1441 
+beRight 2
+1442 1441 
+beLeft 2
+1442 1441 
+beUp 2
+1442 1441 
+beVisual:ifTrue: 2
+1440 1215 
+beVisual: 3
+1440 929 1215 
+resetSelection 3
+1636 1643 1218 
+setSelectionIndex: 3
+1636 1641 1218 
+newElementsFrom:to: 2
+1636 1642 
+updateModel 2
+1636 1218 
+isValidIndex: 3
+1636 1640 1218 
+updateInsert: 2
+1636 1218 
+targetIndex 2
+1636 1218 
+initialSelectionIndex 2
+1636 1637 
+displayStringSelector 2
+1636 1218 
+setValidTargetIndex: 2
+1636 1218 
+retractSelectionIndex: 4
+1636 1642 1643 1218 
+elementsInSequenceHaveChanged 2
+1636 1642 
+leftOffsetForDisplay 2
+1636 1639 
+topOffsetForDisplay 3
+1636 1640 1638 
+initializeGrid 4
+1636 1640 1637 1218 
+useSelectionIndex: 4
+1636 1637 1643 1218 
+updateAdd: 2
+1636 1218 
+updateInsertCollection: 2
+1636 1640 
+zeroIndex 6
+1636 1218 225 403 404 702 
+selectionChannel 2
+1636 1218 
+displayStringSelector: 2
+1636 1218 
+targetIndex: 6
+1636 1642 1640 1637 1218 1219 
+initializeSelectionChannel 3
+1636 1643 1218 
+selectionChannel: 2
+1636 1218 
+invalidateElementIndex: 3
+1636 1218 1219 
+makeVisible: 5
+1636 1642 1640 1637 1218 
+updateAt: 3
+1636 1642 1218 
+displayStringAt: 2
+1636 1218 
+getDefaultTextStyle 2
+1636 1642 
+numberOfElements 2
+1636 1218 
+boundsOfElementIndex:inBounds: 6
+1636 1642 1640 1639 1638 1218 
+updateSelectionChannel 3
+1636 1643 1218 
+dynamicUpdatingOfSelection 2
+1636 1640 
+elementIndexFor: 4
+1636 1639 1638 1218 
+sequence: 2
+1636 1637 
+isSelected: 6
+1636 1643 1218 1219 220 398 
+lastSelectionIndex 4
+1636 1642 1643 1218 
+updateRemove: 3
+1636 1640 1218 
+selectionIndex 5
+1636 1218 225 403 217 
+prevVIndexFor: 2
+1642 1218 
+visualComponentForElementIndex: 2
+1642 1218 
+visualBlock: 3
+1642 1637 1218 
+displayNormalElement:on:forBounds: 2
+1642 1218 
+prevHIndexFor: 2
+1642 1218 
+initializeVisuals 3
+1642 1637 1218 
+strokedSelection 2
+1642 1218 
+normalSelection 2
+1642 1218 
+displayVisualsOn: 4
+1642 1640 1641 1218 
+nextVIndexFor: 2
+1642 1218 
+displayTargetElement:on:forBounds: 3
+1642 1218 1219 
+displayTextObjectsOn: 2
+1642 1218 
+displayElement:on:forBounds: 2
+1642 1218 
+visibleIntervalForBounds: 2
+1642 1640 
+useTargetIndex: 2
+1642 1218 
+nextHIndexFor: 2
+1642 1218 
+confirmColumnSize 2
+1640 1641 
+editCell 2
+1640 1641 
+visibleYIndexRangeFor: 2
+1640 1218 
+columnIndexFor: 2
+1640 1218 
+rowIndexFor: 2
+1640 1218 
+xRangesFor: 2
+1640 1218 
+dropEdit 2
+1640 1641 
+yRangesFor: 2
+1640 1218 
+visibleXIndexRangeFor: 2
+1640 1218 
+displayGridLinesOn: 3
+1640 1641 1218 
+tabScrollPositionIncrement 2
+1637 1638 
+computeTabScrollPositionFor: 3
+1637 1639 1638 
+invalidateTabsForScrolling 3
+1637 1639 1638 
+visualComponentForElementIndex:inBounds: 2
+1637 1639 
+incrementTabButtonBox 3
+1637 1639 1638 
+decrementTabButtonBox 3
+1637 1639 1638 
+initialDisplayContents 2
+1222 1633 
+updateDisplayContents 2
+1222 1632 
+getContents 5
+1222 1436 1223 1632 1633 
+paragraphInset 2
+1222 1633 
+placeSelectionPointAt: 2
+1222 1633 
+positionToSelection 2
+1222 1633 
+fixedCompositionWidth 3
+1222 1632 1633 
+displayOrigin 3
+1222 1220 1633 
+displayTextIn:on: 2
+1222 1632 
+redisplayAfterReplacementAt:affectedLines:lineDelta: 2
+1222 1632 
+initializeSelection 2
+1222 1436 
+displayObject 3
+1222 1220 1218 
+editText: 3
+1222 1632 1633 
+displaySelection 2
+1222 1632 
+findSelectionDelta 2
+1222 1633 
+setToTop 2
+1222 1220 
+displaySelectionIndex:on: 2
+1220 1435 
+getList 2
+1220 1433 
+displaySelectionIndex:on:within:inFColor:bColor:vis:clip: 3
+1220 1221 1435 
+displaySelectionsOn:within: 2
+1220 1435 
+hiliteRectangle:on:fColor:bColor: 2
+1220 1435 
+getSelectionIndex 3
+1220 1433 1434 
+visualExtra 2
+1220 1435 
+selectionExtraEmphasisAtIndex: 3
+1218 1219 217 
+foregroundColorAtIndex: 3
+1218 1219 217 
+updateLayout 2
+1218 217 
+isDisplayedAsSelected: 2
+1218 1219 
+dimensions 3
+1218 548 547 
+gridLineColor 2
+1218 217 
+foregroundColorOrNilAtIndex: 2
+1218 1219 
+widthOfColumnIndex: 2
+1218 217 
+selectionForegroundColorAtIndex:put: 2
+1218 217 
+backgroundColorAtIndex: 3
+1218 1219 217 
+selectionExtraEmphasisAtIndex:put: 2
+1218 217 
+selectionForegroundColorAtIndex: 3
+1218 1219 217 
+selectionBackgroundColorAtIndex:put: 2
+1218 217 
+selectionForegroundColorOrNilAtIndex: 2
+1218 1219 
+targetBoxOfElement:forBounds: 2
+1218 1219 
+gridLineColor: 2
+1218 217 
+optimize: 2
+1218 217 
+isOptimized 2
+1218 217 
+tableHasTransposed 2
+1218 1219 
+foregroundColorAtIndex:put: 2
+1218 217 
+selectionBackgroundColorAtIndex: 3
+1218 1219 217 
+boundsOfIndex: 2
+1218 1219 
+extraEmphasisAtIndex:put: 2
+1218 217 
+extraEmphasisAtIndex: 3
+1218 1219 217 
+backgroundColorAtIndex:put: 2
+1218 217 
+menuMessage 2
+1436 1433 
+appendEntry 2
+1223 577 
+resetValue 2
+1632 565 
+zOrder 2
+1219 217 
+zOrder: 2
+1219 217 
+useFilling 2
+1215 1216 
+displayInteriorOn: 3
+1212 1213 1432 
+displayInactiveOn: 3
+1212 1432 1431 
+displayMarkerOn: 5
+1212 1214 1213 1432 1431 
+markerLength 3
+1430 1432 1431 
+shouldBeActive 2
+1432 1431 
+client: 2
+618 614 
+client:spec: 2
+618 614 
+client:spec:builder: 2
+618 614 
+initializeSpacing 4
+912 913 916 915 
+resetComponents 2
+727 728 
+flushComponents 2
+727 728 
+closeChannel 2
+923 578 
+componentsInside: 2
+1210 920 
+getLabelHints 2
+920 376 
+openAll:level:out: 2
+920 376 
+prepareMenuItemViewsToMinWidth: 2
+1205 1208 
+addMenuItemViewComposite:height: 3
+1205 1208 1206 
+menuItemViewForMenuItem: 5
+1205 1209 1208 1207 1206 
+topRightOffsetAsChildMenu 4
+1205 1208 1207 1206 
+newHeightWithMenuItemViewGroup:to:at:width: 5
+1205 1209 1208 1207 1206 
+withBoundedWrapper 5
+1205 1209 1208 1207 1206 
+insetWidthOfMenuBorder 5
+1205 1209 1208 1207 1206 
+menuButtonPositionMenuWindow:forParentMenuButtonView:displayBox: 3
+1205 1209 1208 
+computeMaxWidth 5
+1205 1209 1208 1207 1206 
+selectionService 2
+1211 219 
+newHeightWithGroupSeparatorAt:to:width: 4
+1209 1208 1207 1206 
+shortcutColumnIndent 3
+1208 1207 1206 
+newButtonLabeled:accessCharacter:menu: 5
+913 917 916 915 914 
+inMenuBarWrapper 4
+917 916 915 914 
+rowLabelsWidth 2
+728 217 
+transposeLabels 2
+728 217 
+newLayout: 2
+722 723 
+installComponent 2
+720 721 
+setOrigin: 2
+905 906 
+isRoot 2
+909 515 
+children: 2
+909 558 
+scrollBy:on:grid: 3
+906 908 907 
+displayUpdatesCanOccur 3
+906 908 222 
+borderColor: 2
+1428 536 
+reference: 2
+910 199 
+displayLabelOn: 2
+605 604 
+setLineWidth: 2
+603 601 
+beginExternal 2
+249 248 
+inTransactionMode 2
+249 248 
+commitExternal 2
+249 248 
+acquire 2
+249 247 
+begin 3
+249 248 216 
+rollbackExternal 2
+249 248 
+connect: 2
+248 216 
+password 3
+248 216 399 
+username 4
+248 216 399 156 
+password: 2
+248 216 
+getSession 2
+248 161 
+doCommandString: 2
+248 247 
+username: 3
+248 216 156 
+prepare: 2
+248 247 
+connect 4
+248 247 216 399 
+blockFactor 2
+247 399 
+rowCount 2
+247 586 
+query 2
+247 399 
+answer 3
+247 392 117 
+columnDescriptions 2
+247 597 
+blockFactor: 2
+247 399 
+connection 2
+247 216 
+setBinary 5
+426 244 243 428 427 
+speed: 4
+426 244 243 427 
+speedCode 4
+426 244 428 427 
+echo: 4
+426 244 428 427 
+disciplineCode: 3
+426 428 427 
+disciplineCode 3
+426 428 427 
+speed 3
+426 244 243 
+setGlassCooked 5
+426 244 243 428 427 
+speedCode: 4
+426 244 428 427 
+parity: 5
+426 244 243 428 427 
+discipline: 2
+426 428 
+printParityOn: 2
+244 243 
+isBinary 5
+244 243 428 427 903 
+raw: 2
+244 243 
+setDumbTerminal 4
+244 243 428 427 
+outputFlowControl: 2
+244 243 
+inputFlowControl: 2
+244 243 
+bits: 2
+244 243 
+stopBits: 2
+244 243 
+stopBits 2
+244 243 
+parity 2
+244 243 
+localMode: 2
+428 427 
+printLocalModeOn: 2
+428 427 
+localMode 2
+428 427 
+readObjects:topIndex: 2
+424 425 
+singleObjectFrom: 2
+424 425 
+session: 3
+597 585 117 
+session 3
+597 585 710 
+skip: 4
+716 717 1199 1200 
+padTo:put: 2
+902 1201 
+pastEnd 2
+718 903 
+readPosition 3
+903 719 1197 
+textOfClass: 2
+903 1201 
+reopen 2
+903 904 
+binary 2
+903 1201 
+lineEndConvention: 2
+903 1201 
+nextBuffer 2
+903 904 
+writePosition 4
+903 904 1201 900 
+closeConnection 2
+903 904 
+getIoBuffer 2
+903 904 
+removeIndex: 2
+1198 553 
+contentsFrom: 2
+1198 352 
+distanceFrom: 3
+416 418 417 
+rootKey 2
+414 415 
+hue 2
+418 715 
+brightness 2
+418 715 
+saturation 2
+418 715 
+resourceType 2
+410 411 
+copyStateFromOldVersion: 3
+410 412 411 
+filePosition 2
+410 227 
+fileIndex 3
+410 227 572 
+argumentKinds 2
+412 174 
+mapAddress 2
+412 351 
+selection: 6
+225 403 373 375 374 141 
+selectionIndexHolder 2
+225 403 
+selectionIndexHolder: 2
+225 403 
+selectedClass 3
+405 407 406 
+classesWithVisibleVariables: 2
+405 406 
+onClass: 2
+405 409 
+protocol: 2
+405 406 
+categoryMenu 2
+405 409 
+classList 2
+405 409 
+categoryList 3
+405 387 386 
+protocolList 2
+405 406 
+protocol 2
+405 406 
+selectorList 3
+405 406 391 
+acceptMethod:from: 2
+405 406 
+changeClassCategory 2
+405 406 
+filterFilename: 3
+405 391 386 
+acceptText:from: 9
+405 223 221 378 408 407 382 381 561 
+updateCategories 2
+405 409 
+fileOutClass 4
+405 406 391 386 
+browseFieldReferences 2
+405 406 
+browseClassVariables 2
+405 406 
+renameClass 4
+405 406 391 386 
+removeClass 5
+405 409 406 391 386 
+browseSenders 4
+405 391 570 375 
+browseMessages 4
+405 407 570 375 
+interfaceWindow 3
+405 221 378 
+spawnEdits:from: 3
+405 408 407 
+moveMethod 2
+405 406 
+findMethodAndSelectAlphabetic 2
+405 406 
+fileOutProtocol 2
+405 406 
+spawnProtocol 2
+405 406 
+removeMethod 2
+405 408 
+selectionHolder 2
+403 592 
+windowEvent:from: 7
+385 592 400 395 391 388 386 
+preBuildWith: 5
+385 401 395 390 711 
+buildInSubCanvas:withBuilder: 5
+385 592 593 715 714 
+openInterface: 2
+385 578 
+postOpenWith: 20
+385 592 399 398 585 397 396 395 392 391 390 388 387 386 593 714 586 583 581 580 
+closeRequest 2
+385 395 
+postBuildWith: 21
+385 592 401 400 397 396 395 393 392 391 390 389 388 596 594 593 591 715 713 712 586 
+noticeOfWindowClose: 7
+385 401 585 396 394 595 586 
+valueUsingSubject: 4
+383 567 563 576 
+releaseParts 5
+383 384 565 563 576 
+compute: 4
+383 220 713 712 
+isBuffering 4
+383 567 563 576 
+pattern: 2
+221 392 
+addFile 2
+221 387 
+printItems 2
+378 381 
+field: 2
+378 379 
+fieldList 5
+378 382 381 561 379 
+evaluateText:from:ifFail: 2
+378 382 
+fieldIndex 3
+378 382 561 
+fieldValue 5
+378 382 381 561 379 
+usesIndex 2
+378 382 
+kind: 2
+218 347 
+dataModel: 5
+218 216 398 580 515 
+asContainerReference 2
+557 559 
+containers 3
+216 398 580 
+refreshAllObjects 2
+216 367 
+refresh: 2
+216 123 
+lensPolicy 3
+216 579 161 
+revertAllChildrenSets 2
+216 367 
+addChild:indentLevel: 2
+373 375 
+contractFully 2
+373 375 
+selected 2
+373 375 
+contractFully: 2
+373 375 
+isOpen: 2
+373 375 
+expandFully 2
+373 375 
+nameFor:indentLevel:useBold: 2
+373 375 
+expandFully: 2
+373 375 
+clearAll 2
+213 404 
+filter: 2
+213 391 
+listMenu 3
+213 375 374 
+enter 2
+212 575 
+translateCharacter: 2
+370 372 
+reverseLF 3
+370 372 371 
+canBlink 2
+370 372 
+lfnlMode 2
+370 372 
+deleteLine 2
+370 372 
+doLF 3
+370 372 371 
+spacesToTabAfter: 2
+370 372 
+emulationName 3
+370 372 371 
+cursorPosition 2
+370 372 
+cursorDown 2
+370 372 
+substitute 2
+370 372 
+vanillaChars:from:to: 3
+370 372 371 
+formFeed 2
+370 372 
+cursorHome 2
+370 372 
+terminal 2
+370 211 
+insertLine 2
+370 372 
+doUp 2
+370 372 
+cursorUp 2
+370 372 
+spacesToTabBefore: 2
+370 372 
+cursorMode 3
+370 372 371 
+setWidth:height: 2
+370 372 
+methodName 2
+408 526 
+pcRange 2
+407 379 
+showClass 2
+406 394 
+selectAll 2
+404 397 
+targetSelector: 5
+402 395 392 596 594 
+openOnClass:andSelector: 5
+402 395 392 596 594 
+openNewWindowCanvas 2
+402 391 
+installInSystem 3
+402 596 594 
+acceptedState 2
+402 594 
+runInstallationDialog 5
+402 395 392 596 594 
+acceptedState: 2
+402 594 
+targetSelector 5
+402 395 392 596 594 
+targetTrouble 3
+402 596 594 
+enableGroup: 2
+592 711 
+setUpVisuals 2
+592 715 
+disableRead 4
+592 594 711 715 
+enableApply 3
+592 594 711 
+reappearGroup: 2
+592 711 
+pendingSelectionChange 2
+592 593 
+visible:components: 2
+592 711 
+enableRead 4
+592 594 711 715 
+able:components: 2
+592 711 
+disableGroup: 2
+592 711 
+vanishGroup: 2
+592 711 
+reloadSelectionInformation 7
+592 596 595 594 593 715 714 
+disableApply 3
+592 594 711 
+newMenuBar 2
+400 595 
+precancel 5
+589 593 711 713 712 
+usesConservativeReload 3
+589 593 714 
+notifyParent 2
+589 711 
+shouldOpenDialogOnUnacceptedChange 3
+589 593 711 
+specChannel: 3
+589 711 713 
+preapply 6
+589 593 715 714 713 712 
+browserModel 2
+587 588 
+doneEditing 2
+398 580 
+addAReference: 2
+398 580 
+changedDataModel 2
+398 580 
+enable:group: 6
+398 585 392 388 582 580 
+graphView 3
+398 394 388 
+selectedType 3
+398 395 580 
+catalogLens 4
+398 395 582 579 
+newClass 2
+398 386 
+dataModelFor: 2
+398 580 
+helpActionForDialog 2
+398 580 
+startEditing 3
+398 586 580 
+selectedDataModel 3
+398 395 580 
+helpAction 5
+398 395 392 390 388 
+setEnablement 4
+398 586 582 580 
+confirmationOfCommit 2
+585 586 
+removeChild: 2
+585 586 
+authenticate 2
+585 579 
+requestForRollback 2
+585 586 
+requestForLogout 3
+585 586 709 
+localRequestForWindowClose 3
+585 586 709 
+databaseLogout 2
+585 710 
+confirmationOfRollback 2
+585 586 
+requestForCommit 2
+585 586 
+clearRows 3
+585 586 709 
+spawn 3
+397 396 570 
+page: 2
+397 396 
+page 2
+397 396 
+examples 4
+397 135 134 131 
+adjustButtons 2
+397 396 
+changedSelection 3
+396 713 712 
+selectionInList 2
+396 580 
+seeAlso 2
+396 134 
+storer 2
+396 132 
+helpString 3
+396 390 584 
+selectorNameAdaptor 2
+395 579 
+loadDataModel 2
+395 579 
+valueClassesMenu 2
+395 388 
+selectionInGraph 3
+395 394 388 
+regenerateAccessMethods 3
+395 159 515 
+newDataModel 2
+395 579 
+browseClass 3
+395 387 386 
+updateAll 2
+395 388 
+reference:to: 2
+395 579 
+inferReferences 2
+395 579 
+focus 2
+394 588 
+doCancel 2
+578 595 
+exit 2
+393 575 
+disableFields 2
+392 713 
+changedPattern 2
+392 582 
+classGone 2
+391 386 
+classNameListMenu 2
+391 386 
+pruneRemovedClasses 2
+391 386 
+showClasses: 2
+391 386 
+remove 3
+391 387 386 
+changedClassName 3
+391 389 386 
+showAllClasses 2
+391 386 
+classNameList 2
+391 386 
+showRecentlyVisitedClasses 2
+391 386 
+rebuild 2
+390 377 
+setFocus 3
+390 388 593 
+masterList 2
+390 593 
+apply 4
+389 596 594 593 
+addVariable 2
+388 386 
+addIncludeFile 2
+387 386 
+addExternalForCategory: 2
+387 386 
+updateCategoryNotSelected 2
+387 386 
+addIncludeDirectory 2
+387 386 
+updateCategorySelected 2
+387 386 
+listAtCategory: 2
+387 386 
+computeCategoryList 2
+387 386 
+removeIncludeFile 2
+387 386 
+removeIncludeDirectory 2
+387 386 
+removeExternalForCategory: 2
+387 386 
+runInstallationDialogFor: 2
+596 594 
+changedStatusBar 2
+595 593 
+statusBarText 2
+595 593 
+specChannel 2
+591 590 
+currentColumn 2
+713 712 
+initSelectionChannel 2
+713 712 
+focus: 2
+588 377 
+renderingValueUsingSubject: 3
+567 563 576 
+makeAdaptorForRenderingStoreLeafInto: 2
+567 563 
+increment 3
+384 543 352 
+decrement 2
+384 352 
+computeValue 2
+565 566 
+parts 2
+565 566 
+hookupToSubject 2
+563 576 
+valueUsingTarget: 4
+563 707 564 708 
+unhookFromSubject 2
+563 576 
+setValueUsingTarget:to: 4
+563 707 564 708 
+dumpContents 3
+572 132 131 
+browseImplementers 2
+570 375 
+addField 2
+381 562 
+removeField 2
+381 562 
+prevIndexOf:from:to: 2
+542 1192 
+startingAt:replaceElementsIn:from:to: 11
+542 551 698 696 694 1192 899 1191 1190 695 895 
+copyFrom:to: 5
+542 704 550 697 898 
+replaceElementsFrom:to:withTwoByteString:startingAt: 2
+542 899 
+grow 4
+542 531 553 369 
+replaceElementsFrom:to:withByteEncodedString:startingAt: 2
+542 1192 
+indexOfSubCollection:startingAt: 3
+542 696 897 
+replaceElementsFrom:to:withByteArray:startingAt: 2
+542 895 
+replaceFrom:to:with:startingAt: 6
+542 702 698 703 1189 898 
+keysAndValuesDo: 19
+542 368 553 369 541 693 893 894 539 538 537 534 1185 890 1186 1425 1426 891 342 
+atAllPut: 2
+542 700 
+changeSizeTo: 5
+542 553 704 702 703 
+last 6
+542 553 551 543 702 703 
+replaceElementsFrom:to:withWordArray:startingAt: 2
+542 695 
+copyWithout: 2
+542 553 
+copyReplaceFrom:to:with: 3
+542 550 697 
+reverseDo: 7
+542 553 543 554 702 703 1426 
+unquote 6
+542 365 704 550 697 366 
+copyWith: 2
+542 553 
+nextIndexOf:from:to: 3
+542 1192 898 
+keyNotFoundError: 2
+368 534 
+keysDo: 3
+368 534 891 
+keyAtValue:ifAbsent: 10
+368 369 540 534 1185 890 1186 1425 1426 891 
+keys 7
+368 365 369 538 534 1185 890 
+removeKey:ifAbsent: 8
+368 369 536 534 1185 890 1186 891 
+valueNotFoundError: 2
+368 534 
+removeKey: 3
+368 534 367 
+includesKey: 12
+368 369 540 541 693 893 538 537 534 1186 891 367 
+keyAtValue: 2
+368 534 
+changeCapacityTo: 11
+531 553 706 705 702 369 534 1185 890 1186 891 
+trim 4
+531 553 702 369 
+fixCollisionsFrom: 3
+531 1186 891 
+fullCheck 2
+531 369 
+findElementOrNil: 2
+531 532 
+setTally 8
+531 369 1185 890 1186 1426 691 891 
+type:lensSession: 2
+365 367 
+removeFirst 3
+553 551 702 
+removeFirst: 3
+553 702 703 
+noSuchElementError 2
+553 702 
+removeLast: 3
+553 702 703 
+add:beforeIndex: 5
+553 704 702 548 703 
+addLast: 8
+553 551 555 704 550 702 703 545 
+firstObjectError 2
+553 702 
+removeLast 5
+553 551 702 703 545 
+removeAllSuchThat: 3
+553 702 703 
+addFirst: 6
+553 551 555 704 550 702 
+notEnoughElementsError 2
+553 702 
+setIndices 2
+553 554 
+lastObjectError 2
+553 702 
+before: 2
+553 702 
+after: 2
+553 702 
+addAllFirst: 3
+553 704 702 
+addAllLast: 4
+553 704 702 703 
+add:after: 3
+553 704 702 
+defaultElement 4
+546 694 548 547 
+initializeScanner: 2
+543 544 
+backup 2
+554 1426 
+ownDetect: 2
+554 1426 
+performDo:block:path: 2
+554 1426 
+ownCollect: 2
+554 1426 
+ownIsEmpty 2
+554 1426 
+ownSelect: 2
+554 1426 
+removeBackup: 2
+554 1426 
+ownDetect:ifNone: 2
+554 1426 
+performReverseDo:block:path: 2
+554 1426 
+addBackup: 2
+554 1426 
+ownDo: 2
+554 1426 
+runs 2
+550 697 
+moveElementsFrom:ofSize:toMyCollectionStartingAt: 2
+702 703 
+moveDown:fromIndex: 2
+702 703 
+privateAt:put: 2
+702 703 
+removeFrom:to:returnElements: 2
+702 703 
+addAll:beforeIndex: 2
+702 703 
+insertCollection:before: 2
+702 703 
+privateAddLast: 2
+702 703 
+privateIndexOf:ifAbsent: 2
+702 703 
+privateInsertObject:beforeIndex: 2
+702 703 
+privateAt: 2
+702 703 
+privateRemoveIndex:to:returnElements: 2
+702 703 
+privateRemoveIndex: 2
+702 703 
+findString:startingAt: 2
+696 697 
+emphasisAt: 2
+696 697 
+runLengthFor: 4
+696 697 897 898 
+changeFrom:to:with: 3
+696 897 898 
+asByteString 4
+694 897 1193 895 
+asTwoByteString 3
+694 897 899 
+atInteger: 2
+548 547 
+transposed: 2
+548 547 
+isTransposed 2
+548 547 
+rowSize 2
+548 547 
+pointIndexFor: 2
+548 547 
+atInteger:put: 2
+548 547 
+transposeNoUpdate 2
+548 547 
+columnSize 2
+548 547 
+hasChangeOfEmphasis 2
+697 897 
+concreteString 2
+897 898 
+stringEncoding 10
+897 1192 899 898 1196 1195 1194 1193 1191 1190 
+isByteIndexed 4
+897 1192 898 1190 
+stringhash 2
+897 1189 
+asWordArray 2
+897 695 
+concreteIndexFor: 2
+897 898 
+asIntegerArray 3
+1192 899 1193 
+byteOrder 3
+899 1191 695 
+isCompound 2
+1189 159 
+removeAndCleanUpAtIndex: 5
+369 1185 890 1186 891 
+findKeyOrNil: 5
+369 534 1185 890 1188 
+noCheckAt:put: 4
+369 1185 890 1186 
+removeDangerouslyKey:ifAbsent: 3
+369 1185 890 
+ditherMappingBlockFor:ditherScale: 2
+540 894 
+maxIndex 4
+540 541 693 893 
+pixelsAndThresholdsForDithering: 4
+540 541 692 693 
+matchAt: 2
+536 537 
+setShadowColor: 2
+536 537 
+exactMatchAt:ifAbsent: 2
+536 538 
+setHiliteColor: 2
+536 537 
+matchAt:ifAbsent: 3
+536 539 537 
+setSelectionBackgroundColor: 2
+536 537 
+setSelectionForegroundColor: 2
+536 537 
+matchAt:put: 2
+536 538 
+asChainedColorPreferences 2
+536 538 
+asLookPreferences 2
+536 537 
+setBackgroundColor: 2
+536 537 
+includesMatch: 2
+536 537 
+setForegroundColor: 2
+536 537 
+isMonochrome 4
+692 693 893 894 
+hasColor 4
+692 693 893 894 
+hasGrayOrColor 4
+692 693 893 894 
+setColors: 2
+893 894 
+createInverseMap 2
+893 894 
+poolDefinitionClass 3
+534 690 1427 
+associationAt:ifAbsent: 5
+534 1185 890 1425 1426 
+finalizeElements 3
+1186 1427 891 
+setAccessLock: 2
+1186 891 
+unlockedAt:put: 3
+1186 1425 891 
+removeDataWhere: 2
+367 152 
+printTypeOn: 4
+367 366 515 516 
+selectFieldList 2
+367 152 
+topOffsetFor: 4
+203 360 364 361 
+horizontalScrollBarFor: 6
+203 360 364 363 362 361 
+add:to:in: 2
+203 360 
+rightOffsetFor: 2
+203 360 
+leftOffsetFor: 2
+203 360 
+verticalScrollBarFor: 6
+203 360 364 363 362 361 
+bottomOffsetFor: 2
+203 360 
+withBounds: 2
+203 360 
+verticalScrollRegionFor: 5
+203 360 364 362 361 
+withBorder: 2
+203 360 
+horizontalScrollRegionFor: 5
+203 360 364 362 361 
+dataRegionFor: 6
+203 360 364 363 362 361 
+horizontalThumbFor: 3
+364 363 361 
+upButtonFor: 3
+364 363 361 
+downButtonFor: 3
+364 363 361 
+verticalThumbFor: 3
+364 363 361 
+leftButtonFor: 3
+364 363 361 
+rightButtonFor: 3
+364 363 361 
+printTextFileErrInto: 2
+194 356 
+hasDamage 2
+185 354 
+getAndResetDamage 2
+185 354 
+eventExit: 2
+354 355 
+eventResize: 2
+354 355 
+eventEnter: 2
+354 355 
+eventExpand: 2
+354 355 
+memberAt: 2
+179 353 
+memberAt:put: 2
+179 353 
+isNull 2
+352 350 
+callWith:with:with: 2
+350 171 
+callWith:with: 2
+350 171 
+callWith: 2
+350 171 
+call: 2
+350 171 
+isNear 2
+174 345 
+printHeadOn: 3
+342 344 343 
+printMembersOn:indent: 3
+342 344 343 
+metaType 2
+344 343 
+layoutNode: 2
+163 335 
+stepNextPositionFor: 2
+163 335 
+internalBuild:depth: 2
+163 335 
+isSerialNumber 2
+331 160 
+referenceEncoding 2
+331 515 
+isEquivalentTo: 6
+331 334 333 332 515 516 
+encodeSelector 5
+331 160 159 333 332 
+isMapped 4
+331 160 159 515 
+cloneStructure 3
+331 159 515 
+computeFieldType 4
+331 333 332 515 
+isLensEncodedType 2
+331 332 
+references: 3
+331 515 516 
+memberClass 3
+331 160 333 
+isLensStructureType 3
+331 160 515 
+decodeSelector 5
+331 160 159 333 332 
+shallowIncludes: 2
+331 516 
+isLensDataType 3
+331 160 515 
+resolveReferencesIn: 5
+331 159 332 515 516 
+isLensCollectionType 3
+331 160 516 
+isLensEnumerationType 2
+331 333 
+isReadyToSetFieldType: 2
+159 515 
+mappedRel 2
+159 515 
+isNotNil 2
+159 154 
+relatedRel 4
+159 155 154 515 
+generateAccessMethods 2
+159 515 
+isNotNil: 2
+159 154 
+flushAccessMethods 2
+159 515 
+accumulateIn: 2
+159 515 
+flushTranscoders 2
+159 515 
+setFieldType 2
+159 515 
+keyType: 2
+158 516 
+keyType 2
+158 516 
+internalName 2
+155 154 
+elementType: 2
+333 516 
+elementType 2
+333 516 
+allocateFontNamed: 2
+330 329 
+coverageDepthAndBitsPerPixel 2
+330 329 
+colorDepthAndBitsPerPixel 2
+330 329 
+confirmString 3
+135 134 131 
+subelementClass 3
+135 132 131 
+reportOn:withFooter: 3
+135 134 131 
+contentsList 3
+135 132 131 
+roundedDisplayCharacterOfIndex:at: 2
+121 119 
+roundedDisplayMask:at: 2
+121 119 
+roundedPrimDisplayArcBBoxOrigin:extent:startAngle:sweepAngle: 2
+121 119 
+roundedPrimCopyRectangularAreaExtent:from:sourceOffset:destinationOffset: 2
+121 119 
+roundedPrimCopyMaskedArea:from:sourceOffset:destinationOffset: 2
+121 119 
+roundedDisplayPolygon:at: 2
+121 119 
+roundedDisplayMappedString:from:to:at:withMap: 2
+121 119 
+roundedPrimDisplayWedgeBBoxOrigin:extent:startAngle:sweepAngle: 2
+121 119 
+roundedPrimDisplayRectangleOrigin:extent: 2
+121 119 
+roundedPrimDisplayRectangularBorderOrigin:extent: 2
+121 119 
+roundedDisplayUninterpretedImageBits:at: 2
+121 119 
+roundedDisplayUninterpretedMonoImageBits:foreground:background:at: 2
+121 119 
+roundedDisplayPolyline:at: 2
+121 119 
+roundedDisplayLineFrom:to: 2
+121 119 

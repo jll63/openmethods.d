@@ -1,0 +1,1896 @@
+579
+java.lang.Object 0
+
+test.types.DynAnyTypes.TestValueStructHolder 1
+0 
+test.types.DynAnyTypes.TestValueStructHelper 1
+0 
+test.types.DynAnyTypes.TestValueStruct 1
+0 
+test.types.DynAnyTypes.TestValue4Holder 1
+0 
+test.types.DynAnyTypes.TestValue4Helper 1
+0 
+test.types.DynAnyTypes.TestValue3Holder 1
+0 
+test.types.DynAnyTypes.TestValue3Helper 1
+0 
+test.types.DynAnyTypes.TestValue2Holder 1
+0 
+test.types.DynAnyTypes.TestValue2Helper 1
+0 
+test.types.DynAnyTypes.TestValue1Holder 1
+0 
+test.types.DynAnyTypes.TestValue1Helper 1
+0 
+test.types.DynAnyTypes.TestUnion4Holder 1
+0 
+test.types.DynAnyTypes.TestUnion4Helper 1
+0 
+test.types.DynAnyTypes.TestUnion4 1
+0 
+test.types.DynAnyTypes.TestUnion3Holder 1
+0 
+test.types.DynAnyTypes.TestUnion3Helper 1
+0 
+test.types.DynAnyTypes.TestUnion3 1
+0 
+test.types.DynAnyTypes.TestUnion2Holder 1
+0 
+test.types.DynAnyTypes.TestUnion2Helper 1
+0 
+test.types.DynAnyTypes.TestUnion2 1
+0 
+test.types.DynAnyTypes.TestUnion1Holder 1
+0 
+test.types.DynAnyTypes.TestUnion1Helper 1
+0 
+test.types.DynAnyTypes.TestUnion1 1
+0 
+test.types.DynAnyTypes.TestStructHolder 1
+0 
+test.types.DynAnyTypes.TestStructHelper 1
+0 
+test.types.DynAnyTypes.TestStructBoxHolder 1
+0 
+test.types.DynAnyTypes.TestStructBoxHelper 1
+0 
+test.types.DynAnyTypes.TestStruct 1
+0 
+test.types.DynAnyTypes.TestStringBoxHolder 1
+0 
+test.types.DynAnyTypes.TestStringBoxHelper 1
+0 
+test.types.DynAnyTypes.TestStringArrayHolder 1
+0 
+test.types.DynAnyTypes.TestStringArrayHelper 1
+0 
+test.types.DynAnyTypes.TestShortSeqHolder 1
+0 
+test.types.DynAnyTypes.TestShortSeqHelper 1
+0 
+test.types.DynAnyTypes.TestExceptionHolder 1
+0 
+test.types.DynAnyTypes.TestExceptionHelper 1
+0 
+test.types.DynAnyTypes.TestEnumHolder 1
+0 
+test.types.DynAnyTypes.TestEnumHelper 1
+0 
+test.types.DynAnyTypes.TestEnum 1
+0 
+test.types.DynAnyTypes.TestEmptyExceptionHolder 1
+0 
+test.types.DynAnyTypes.TestEmptyExceptionHelper 1
+0 
+test.types.DynAnyTypes.TestBoundedStringHelper 1
+0 
+test.types.DynAnyTypes.TestBoundedString10SeqHolder 1
+0 
+test.types.DynAnyTypes.TestBoundedString10SeqHelper 1
+0 
+test.types.DynAnyTypes.TestAnySeqHolder 1
+0 
+test.types.DynAnyTypes.TestAnySeqHelper 1
+0 
+test.types.TestUnion5Holder 1
+0 
+test.types.TestUnion5Helper 1
+0 
+test.types.TestUnion5 1
+0 
+test.types.TestUnion4Holder 1
+0 
+test.types.TestUnion4Helper 1
+0 
+test.types.TestUnion4 1
+0 
+test.types.TestUnion3Holder 1
+0 
+test.types.TestUnion3Helper 1
+0 
+test.types.TestUnion3 1
+0 
+test.types.TestUnion2Holder 1
+0 
+test.types.TestUnion2Helper 1
+0 
+test.types.TestUnion2 1
+0 
+test.types.TestUnion1Holder 1
+0 
+test.types.TestUnion1Helper 1
+0 
+test.types.TestUnion1 1
+0 
+test.types.TestTypes 1
+0 
+test.types.TestStruct4Holder 1
+0 
+test.types.TestStruct4Helper 1
+0 
+test.types.TestStruct4 1
+0 
+test.types.TestStruct3Holder 1
+0 
+test.types.TestStruct3Helper 1
+0 
+test.types.TestStruct3 1
+0 
+test.types.TestStruct2SeqHolder 1
+0 
+test.types.TestStruct2SeqHelper 1
+0 
+test.types.TestStruct2Holder 1
+0 
+test.types.TestStruct2Helper 1
+0 
+test.types.TestStruct2 1
+0 
+test.types.TestStruct1SeqHolder 1
+0 
+test.types.TestStruct1SeqHelper 1
+0 
+test.types.TestStruct1Holder 1
+0 
+test.types.TestStruct1Helper 1
+0 
+test.types.TestStruct120SeqHolder 1
+0 
+test.types.TestStruct120SeqHelper 1
+0 
+test.types.TestStruct1 1
+0 
+test.types.TestFixed2Helper 1
+0 
+test.types.TestFixed1Helper 1
+0 
+test.types.TestEnumSeqHolder 1
+0 
+test.types.TestEnumSeqHelper 1
+0 
+test.types.TestEnumHolder 1
+0 
+test.types.TestEnumHelper 1
+0 
+test.types.TestEnum30SeqHolder 1
+0 
+test.types.TestEnum30SeqHelper 1
+0 
+test.types.TestEnum 1
+0 
+test.types.TestDynAny$TestValue4Factory_impl 1
+0 
+test.types.TestDynAny$TestValue3Factory_impl 1
+0 
+test.types.TestDynAny$TestValue2Factory_impl 1
+0 
+test.types.TestDynAny$TestValue1Factory_impl 1
+0 
+test.types.TestConstInterfaceHolder 1
+0 
+test.types.TestConstInterfaceHelper 1
+0 
+test.types.String40SeqHolder 1
+0 
+test.types.String40SeqHelper 1
+0 
+test.types.OctetSeqHolder 1
+0 
+test.types.OctetSeqHelper 1
+0 
+test.types.MeasurementHolder 1
+0 
+test.types.MeasurementHelper 1
+0 
+test.types.Measurement 1
+0 
+test.types.DoubleSeqHolder 1
+0 
+test.types.DoubleSeqHelper 1
+0 
+test.types.DoubleArrayHolder 1
+0 
+test.types.DoubleArrayHelper 1
+0 
+test.types.Double10SeqHolder 1
+0 
+test.types.Double10SeqHelper 1
+0 
+test.types.Double10Seq10SeqHolder 1
+0 
+test.types.Double10Seq10SeqHelper 1
+0 
+test.types.CharSeqHolder 1
+0 
+test.types.CharSeqHelper 1
+0 
+test.types.BoundedStringHelper 1
+0 
+test.poa.POAManagerProxyPackage.StateHolder 1
+0 
+test.poa.POAManagerProxyPackage.StateHelper 1
+0 
+test.poa.POAManagerProxyPackage.State 1
+0 
+test.poa.POAManagerProxyPackage.AdapterInactiveHolder 1
+0 
+test.poa.POAManagerProxyPackage.AdapterInactiveHelper 1
+0 
+test.poa.TestUtil 1
+0 
+test.poa.TestServerHolder 1
+0 
+test.poa.TestServerHelper 1
+0 
+test.poa.TestServantActivatorServer 1
+0 
+test.poa.TestServantActivator 1
+0 
+test.poa.TestLocationForwardServerMain 1
+0 
+test.poa.TestLocationForwardServerHolder 1
+0 
+test.poa.TestLocationForwardServerHelper 1
+0 
+test.poa.TestLocationForwardHolder 1
+0 
+test.poa.TestLocationForwardHelper 1
+0 
+test.poa.TestLocationForwardActivatorHolder 1
+0 
+test.poa.TestLocationForwardActivatorHelper 1
+0 
+test.poa.TestInfoSeqHolder 1
+0 
+test.poa.TestInfoSeqHelper 1
+0 
+test.poa.TestInfoHolder 1
+0 
+test.poa.TestInfoHelper 1
+0 
+test.poa.TestInfo 1
+0 
+test.poa.TestHolder 1
+0 
+test.poa.TestHelper 1
+0 
+test.poa.TestDefaultServantServer 1
+0 
+test.poa.POAManagerProxyHolder 1
+0 
+test.poa.POAManagerProxyHelper 1
+0 
+test.pi.TestInterfacePackage.userHolder 1
+0 
+test.pi.TestInterfacePackage.userHelper 1
+0 
+test.pi.TestInterfacePackage.sHolder 1
+0 
+test.pi.TestInterfacePackage.sHelper 1
+0 
+test.pi.TestInterfacePackage.s 1
+0 
+test.pi.TestInterfaceHolder 1
+0 
+test.pi.TestInterfaceHelper 1
+0 
+test.pi.ServerProxyManager 1
+0 
+test.pi.RequestContextHolder 1
+0 
+test.pi.RequestContextHelper 1
+0 
+test.pi.RequestContext 1
+0 
+test.pi.ReplyContextHolder 1
+0 
+test.pi.ReplyContextHelper 1
+0 
+test.pi.ReplyContext 1
+0 
+test.pi.MyServerPolicyHolder 1
+0 
+test.pi.MyServerPolicyHelper 1
+0 
+test.pi.MyComponentHolder 1
+0 
+test.pi.MyComponentHelper 1
+0 
+test.pi.MyComponent 1
+0 
+test.pi.MyClientPolicyHolder 1
+0 
+test.pi.MyClientPolicyHelper 1
+0 
+test.pi.fooHolder 1
+0 
+test.pi.fooHelper 1
+0 
+test.pi.foo 1
+0 
+test.pi.Collocated 1
+0 
+test.pi.ClientProxyManager 1
+0 
+test.obv.TestOBVColoPackage.VSeqHolder 1
+0 
+test.obv.TestOBVColoPackage.VSeqHelper 1
+0 
+test.obv.TestOBVColoPackage.UVHolder 1
+0 
+test.obv.TestOBVColoPackage.UVHelper 1
+0 
+test.obv.TestOBVColoPackage.UV 1
+0 
+test.obv.TestOBVColoPackage.SVHolder 1
+0 
+test.obv.TestOBVColoPackage.SVHelper 1
+0 
+test.obv.TestOBVColoPackage.SV 1
+0 
+test.obv.ValueBoxFactories 1
+0 
+test.obv.ValueBoxFactories$TestVarUnionBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestVarStructBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestULongBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestStringSeqBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestStringBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestFixUnionBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestFixStructBoxFactory_impl 1
+0 
+test.obv.ValueBoxFactories$TestAnonSeqBoxFactory_impl 1
+0 
+test.obv.TestVarUnionHolder 1
+0 
+test.obv.TestVarUnionHelper 1
+0 
+test.obv.TestVarUnionBoxHolder 1
+0 
+test.obv.TestVarUnionBoxHelper 1
+0 
+test.obv.TestVarUnion 1
+0 
+test.obv.TestVarStructHolder 1
+0 
+test.obv.TestVarStructHelper 1
+0 
+test.obv.TestVarStructBoxHolder 1
+0 
+test.obv.TestVarStructBoxHelper 1
+0 
+test.obv.TestVarStruct 1
+0 
+test.obv.TestValueSubHolder 1
+0 
+test.obv.TestValueSubHelper 1
+0 
+test.obv.TestValueSubFactory_impl 1
+0 
+test.obv.TestValueInterfaceHolder 1
+0 
+test.obv.TestValueInterfaceHelper 1
+0 
+test.obv.TestValueInterfaceFactory_impl 1
+0 
+test.obv.TestValueHolder 1
+0 
+test.obv.TestValueHelper 1
+0 
+test.obv.TestValueFactory_impl 1
+0 
+test.obv.TestValueAIHolder 1
+0 
+test.obv.TestValueAIHelper 1
+0 
+test.obv.TestValueAIFactory_impl 1
+0 
+test.obv.TestULongBoxHolder 1
+0 
+test.obv.TestULongBoxHelper 1
+0 
+test.obv.TestULongBox 1
+0 
+test.obv.TestTruncBaseHolder 1
+0 
+test.obv.TestTruncBaseHelper 1
+0 
+test.obv.TestTruncBaseFactory_impl 1
+0 
+test.obv.TestTrunc2Holder 1
+0 
+test.obv.TestTrunc2Helper 1
+0 
+test.obv.TestTrunc2Factory_impl 1
+0 
+test.obv.TestTrunc1Holder 1
+0 
+test.obv.TestTrunc1Helper 1
+0 
+test.obv.TestTrunc1Factory_impl 1
+0 
+test.obv.TestStringSeqHolder 1
+0 
+test.obv.TestStringSeqHelper 1
+0 
+test.obv.TestStringSeqBoxHolder 1
+0 
+test.obv.TestStringSeqBoxHelper 1
+0 
+test.obv.TestStringBoxHolder 1
+0 
+test.obv.TestStringBoxHelper 1
+0 
+test.obv.TestOBVHolder 1
+0 
+test.obv.TestOBVHelper 1
+0 
+test.obv.TestOBVColoHolder 1
+0 
+test.obv.TestOBVColoHelper 1
+0 
+test.obv.TestNodeHolder 1
+0 
+test.obv.TestNodeHelper 1
+0 
+test.obv.TestNodeFactory_impl 1
+0 
+test.obv.TestInterfaceHolder 1
+0 
+test.obv.TestInterfaceHelper 1
+0 
+test.obv.TestFixUnionHolder 1
+0 
+test.obv.TestFixUnionHelper 1
+0 
+test.obv.TestFixUnionBoxHolder 1
+0 
+test.obv.TestFixUnionBoxHelper 1
+0 
+test.obv.TestFixUnion 1
+0 
+test.obv.TestFixStructHolder 1
+0 
+test.obv.TestFixStructHelper 1
+0 
+test.obv.TestFixStructBoxHolder 1
+0 
+test.obv.TestFixStructBoxHelper 1
+0 
+test.obv.TestFixStruct 1
+0 
+test.obv.TestCustomHolder 1
+0 
+test.obv.TestCustomHelper 1
+0 
+test.obv.TestCustomFactory_impl 1
+0 
+test.obv.TestAnonSeqBoxHolder 1
+0 
+test.obv.TestAnonSeqBoxHelper 1
+0 
+test.obv.TestAbsValue2Holder 1
+0 
+test.obv.TestAbsValue2Helper 1
+0 
+test.obv.TestAbsValue1Holder 1
+0 
+test.obv.TestAbsValue1Helper 1
+0 
+test.obv.TestAbstractSubHolder 1
+0 
+test.obv.TestAbstractSubHelper 1
+0 
+test.obv.TestAbstractHolder 1
+0 
+test.obv.TestAbstractHelper 1
+0 
+test.obv.Server 1
+0 
+test.multi.Server 1
+0 
+test.multi.MultiHolder 1
+0 
+test.multi.MultiHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.TestFixedHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWStringHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWStringHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWCharHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWCharHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExULongLongHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExULongLongHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExLongLongHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExLongLongHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExFixedHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExFixedHelper 1
+0 
+test.main.TestIntfPackage.VariableUnionHolder 1
+0 
+test.main.TestIntfPackage.VariableUnionHelper 1
+0 
+test.main.TestIntfPackage.VariableUnion 1
+0 
+test.main.TestIntfPackage.VariableStructHolder 1
+0 
+test.main.TestIntfPackage.VariableStructHelper 1
+0 
+test.main.TestIntfPackage.VariableStruct 1
+0 
+test.main.TestIntfPackage.VariableArraySequenceHolder 1
+0 
+test.main.TestIntfPackage.VariableArraySequenceHelper 1
+0 
+test.main.TestIntfPackage.VariableArrayHolder 1
+0 
+test.main.TestIntfPackage.VariableArrayHelper 1
+0 
+test.main.TestIntfPackage.VariableArrayBoundSequenceHolder 1
+0 
+test.main.TestIntfPackage.VariableArrayBoundSequenceHelper 1
+0 
+test.main.TestIntfPackage.TestEnumHolder 1
+0 
+test.main.TestIntfPackage.TestEnumHelper 1
+0 
+test.main.TestIntfPackage.TestEnum 1
+0 
+test.main.TestIntfPackage.StringSequenceHolder 1
+0 
+test.main.TestIntfPackage.StringSequenceHelper 1
+0 
+test.main.TestIntfPackage.FixedUnionHolder 1
+0 
+test.main.TestIntfPackage.FixedUnionHelper 1
+0 
+test.main.TestIntfPackage.FixedUnion 1
+0 
+test.main.TestIntfPackage.FixedStructHolder 1
+0 
+test.main.TestIntfPackage.FixedStructHelper 1
+0 
+test.main.TestIntfPackage.FixedStruct 1
+0 
+test.main.TestIntfPackage.FixedArraySequenceHolder 1
+0 
+test.main.TestIntfPackage.FixedArraySequenceHelper 1
+0 
+test.main.TestIntfPackage.FixedArrayHolder 1
+0 
+test.main.TestIntfPackage.FixedArrayHelper 1
+0 
+test.main.TestIntfPackage.FixedArrayBoundSequenceHolder 1
+0 
+test.main.TestIntfPackage.FixedArrayBoundSequenceHelper 1
+0 
+test.main.TestIntfPackage.ExVoidHolder 1
+0 
+test.main.TestIntfPackage.ExVoidHelper 1
+0 
+test.main.TestIntfPackage.ExVariableUnionHolder 1
+0 
+test.main.TestIntfPackage.ExVariableUnionHelper 1
+0 
+test.main.TestIntfPackage.ExVariableStructHolder 1
+0 
+test.main.TestIntfPackage.ExVariableStructHelper 1
+0 
+test.main.TestIntfPackage.ExVariableArraySequenceHolder 1
+0 
+test.main.TestIntfPackage.ExVariableArraySequenceHelper 1
+0 
+test.main.TestIntfPackage.ExVariableArrayHolder 1
+0 
+test.main.TestIntfPackage.ExVariableArrayHelper 1
+0 
+test.main.TestIntfPackage.ExVariableArrayBoundSequenceHolder 1
+0 
+test.main.TestIntfPackage.ExVariableArrayBoundSequenceHelper 1
+0 
+test.main.TestIntfPackage.ExUShortHolder 1
+0 
+test.main.TestIntfPackage.ExUShortHelper 1
+0 
+test.main.TestIntfPackage.ExULongHolder 1
+0 
+test.main.TestIntfPackage.ExULongHelper 1
+0 
+test.main.TestIntfPackage.ExTestIntfHolder 1
+0 
+test.main.TestIntfPackage.ExTestIntfHelper 1
+0 
+test.main.TestIntfPackage.ExTestEnumHolder 1
+0 
+test.main.TestIntfPackage.ExTestEnumHelper 1
+0 
+test.main.TestIntfPackage.ExStringSequenceHolder 1
+0 
+test.main.TestIntfPackage.ExStringSequenceHelper 1
+0 
+test.main.TestIntfPackage.ExStringHolder 1
+0 
+test.main.TestIntfPackage.ExStringHelper 1
+0 
+test.main.TestIntfPackage.ExShortHolder 1
+0 
+test.main.TestIntfPackage.ExShortHelper 1
+0 
+test.main.TestIntfPackage.ExOctetHolder 1
+0 
+test.main.TestIntfPackage.ExOctetHelper 1
+0 
+test.main.TestIntfPackage.ExLongHolder 1
+0 
+test.main.TestIntfPackage.ExLongHelper 1
+0 
+test.main.TestIntfPackage.ExFloatHolder 1
+0 
+test.main.TestIntfPackage.ExFloatHelper 1
+0 
+test.main.TestIntfPackage.ExFixedUnionHolder 1
+0 
+test.main.TestIntfPackage.ExFixedUnionHelper 1
+0 
+test.main.TestIntfPackage.ExFixedStructHolder 1
+0 
+test.main.TestIntfPackage.ExFixedStructHelper 1
+0 
+test.main.TestIntfPackage.ExFixedArraySequenceHolder 1
+0 
+test.main.TestIntfPackage.ExFixedArraySequenceHelper 1
+0 
+test.main.TestIntfPackage.ExFixedArrayHolder 1
+0 
+test.main.TestIntfPackage.ExFixedArrayHelper 1
+0 
+test.main.TestIntfPackage.ExFixedArrayBoundSequenceHolder 1
+0 
+test.main.TestIntfPackage.ExFixedArrayBoundSequenceHelper 1
+0 
+test.main.TestIntfPackage.ExDoubleHolder 1
+0 
+test.main.TestIntfPackage.ExDoubleHelper 1
+0 
+test.main.TestIntfPackage.ExCharHolder 1
+0 
+test.main.TestIntfPackage.ExCharHelper 1
+0 
+test.main.TestIntfPackage.ExBooleanHolder 1
+0 
+test.main.TestIntfPackage.ExBooleanHelper 1
+0 
+test.main.TestIntfPackage.ExAnyHolder 1
+0 
+test.main.TestIntfPackage.ExAnyHelper 1
+0 
+test.main.TestIntf_2_3_NoLongDoubleHolder 1
+0 
+test.main.TestIntf_2_3_NoLongDoubleHelper 1
+0 
+test.main.TestIntfHolder 1
+0 
+test.main.TestIntfHelper 1
+0 
+test.ins.URLTest.IIOPAddressHolder 1
+0 
+test.ins.URLTest.IIOPAddressHelper 1
+0 
+test.ins.Server 1
+0 
+test.ins.Server$TempIORFile 1
+0 
+test.ins.Client 1
+0 
+test.ins.Client$ClientTest 1
+0 
+test.codesets.TestCodeSetsHolder 1
+0 
+test.codesets.TestCodeSetsHelper 1
+0 
+test.codesets.Server 1
+0 
+test.codesets.Client 1
+0 
+org.omg.CORBA.portable.ObjectImpl 1
+0 
+test.types._TestConstInterfaceStub 1
+364 
+test.common.TestBase 1
+0 
+test.types.TestUnion 1
+366 
+test.types.TestTypeCode 1
+366 
+test.types.TestDynAny 1
+366 
+test.types.DynAnyTypes.TestValue2 1
+0 
+test.types.TestDynAny$TestValue2_impl 1
+370 
+test.types.DynAnyTypes.TestValue1 1
+0 
+test.types.TestDynAny$TestValue1_impl 1
+372 
+org.omg.PortableServer.Servant 1
+0 
+test.types.TestConstInterfacePOA 1
+374 
+test.types.TestConst 1
+366 
+test.types.TestAny 1
+366 
+test.poa._TestStub 1
+364 
+test.poa._TestServerStub 1
+364 
+test.poa._TestLocationForwardStub 1
+364 
+test.poa._TestLocationForwardServerStub 1
+364 
+test.poa._TestLocationForwardActivatorStub 1
+364 
+test.poa._POAManagerProxyStub 1
+364 
+test.poa.TestServantLocatorServer 1
+366 
+test.poa.TestPOAManagerServer 1
+366 
+test.poa.TestPOAManagerCommon 1
+366 
+java.lang.Thread 1
+0 
+test.poa.TestPOAManagerCommon$TestHoldingState 1
+387 
+test.poa.TestPOAManagerClient 1
+366 
+test.poa.TestMultipleOrbsThreadedServer 1
+366 
+test.poa.TestMultipleOrbsThreadedServer$OrbTestThread 1
+387 
+test.poa.TestMultipleOrbsThreadedClient 1
+366 
+test.poa.TestMultipleOrbsServer 1
+366 
+test.poa.TestMultipleOrbsClient 1
+366 
+test.poa.TestMisc 1
+366 
+test.poa.TestLocationForwardClient 1
+366 
+test.poa.TestFind 1
+366 
+test.poa.TestDispatchStrategyServer 1
+366 
+com.ooc.CORBA.LocalObject 1
+0 
+test.poa.TestDispatchStrategyServer$CustDispatchStrategy 1
+399 
+test.poa.TestDispatchStrategyClient 1
+366 
+test.poa.TestDestroy 1
+366 
+test.poa.TestDestroy$LongCaller 1
+387 
+test.poa.TestDeactivate 1
+366 
+test.poa.TestDeactivate$LongCaller 1
+387 
+test.poa.TestCreate 1
+366 
+test.poa.TestCollocated 1
+366 
+test.poa.TestClient 1
+366 
+test.poa.TestAdapterActivatorServer 1
+366 
+test.poa.TestActivate 1
+366 
+test.poa.PMSTestThread 1
+387 
+test.pi.TranslateCallInterceptor_impl 1
+399 
+test.pi.ServerTestInterceptor_impl 1
+399 
+test.pi.ServerORBInitializer_impl 1
+399 
+test.pi.ServerInterceptorProxy_impl 1
+399 
+test.pi.Server 1
+366 
+test.pi.MyServerPolicy_impl 1
+399 
+test.pi.MyServerPolicyFactory_impl 1
+399 
+test.pi.MyIORInterceptor_impl 1
+399 
+test.pi.MyClientPolicy_impl 1
+399 
+test.pi.MyClientPolicyFactory_impl 1
+399 
+test.pi.DummyServerInterceptor_impl 1
+399 
+test.pi.ClientORBInitializer_impl 1
+399 
+test.pi.ClientInterceptorProxy_impl 1
+399 
+test.pi.Client 1
+366 
+test.pi.CallInterceptor_impl 1
+399 
+test.obv._TestOBVStub 1
+364 
+test.obv._TestOBVColoStub 1
+364 
+test.obv._TestInterfaceStub 1
+364 
+test.obv._TestAbstractSubStub 1
+364 
+test.obv._TestAbstractStub 1
+364 
+test.obv.TestValue 1
+0 
+test.obv.TestValue_impl 1
+432 
+test.obv.TestValueInterface 1
+0 
+test.obv.TestValueInterface_impl 1
+434 
+test.obv.TestValueAI 1
+0 
+test.obv.TestValueAI_impl 1
+436 
+test.obv.TestTruncBase 1
+0 
+test.obv.TestTruncBase_impl 1
+438 
+test.obv.TestNode 1
+0 
+test.obv.TestNode_impl 1
+440 
+test.obv.TestCustom 1
+0 
+test.obv.TestCustom_impl 1
+442 
+test.obv.Client 1
+366 
+test.multi._MultiStub 1
+364 
+test.multi.Client 1
+366 
+test.main._TestIntf_2_3_NoLongDoubleStub 1
+364 
+test.main._TestIntfStub 1
+364 
+test.main.TestStub_2_3_NoLongDouble 1
+366 
+test.main.TestStubTimeout 1
+366 
+test.main.TestStubException_2_3_NoLongDouble 1
+366 
+test.main.TestStubException 1
+366 
+test.main.TestStubContext 1
+366 
+test.main.TestStub 1
+366 
+test.main.TestDII_2_3_NoLongDouble 1
+366 
+test.main.TestDIIException 1
+366 
+test.main.TestDIIContext 1
+366 
+test.main.TestDII 1
+366 
+test.main.Server 1
+366 
+test.main.CollocatedClient 1
+366 
+test.main.Client 1
+366 
+test.ins.URLTest._IIOPAddressStub 1
+364 
+test.codesets._TestCodeSetsStub 1
+364 
+test.types.DynAnyTypes.TestValue4 1
+370 
+test.types.TestDynAny$TestValue4_impl 1
+464 
+test.types.DynAnyTypes.TestValue3 1
+370 
+test.types.TestDynAny$TestValue3_impl 1
+466 
+test.poa.TestPOA 1
+374 
+test.poa.Test_impl 1
+468 
+test.poa.TestServerPOA 1
+374 
+test.poa.TestServer_impl 1
+470 
+org.omg.PortableServer.ServantLocatorPOA 1
+374 
+test.poa.TestServantLocatorServer$TestLocator_impl 1
+472 
+org.omg.PortableServer.ServantActivatorPOA 1
+374 
+test.poa.TestServantActivatorServer$TestActivator_impl 1
+474 
+test.poa.TestServantActivator$TestActivator_impl 1
+474 
+test.poa.POAManagerProxyPOA 1
+374 
+test.poa.TestPOAManagerServer$POAManagerProxy_impl 1
+477 
+test.poa.TestMultipleOrbsThreadedServer$TestOrb_impl 1
+468 
+test.poa.TestLocationForwardPOA 1
+374 
+test.poa.TestLocationForward_impl 1
+480 
+test.poa.TestLocationForwardServerPOA 1
+374 
+test.poa.TestLocationForwardServerMain$Server_impl 1
+482 
+test.poa.TestLocationForwardActivatorPOA 1
+374 
+test.poa.TestLocationForwardActivator_impl 1
+484 
+org.omg.PortableServer.DynamicImplementation 1
+374 
+test.poa.TestDSI_impl 1
+486 
+test.poa.TestDSIRef_impl 1
+486 
+test.poa.TestDispatchStrategyServer$TestThreadPool_impl 1
+468 
+test.poa.TestDispatchStrategyServer$TestThreadPerReq_impl 1
+468 
+test.poa.TestDispatchStrategyServer$TestSameThread_impl 1
+468 
+test.poa.TestDestroy$Test_impl2 1
+468 
+test.poa.TestDeactivate$Test_impl2 1
+468 
+test.poa.TestCollocated$TestLocator_impl 1
+472 
+test.poa.TestCollocated$TestActivator_impl 1
+474 
+test.poa.TestAdapterActivatorServer$TestServantActivator_impl 1
+474 
+org.omg.PortableServer.AdapterActivatorPOA 1
+374 
+test.poa.TestAdapterActivatorServer$TestRemoteAdapterActivator_impl 1
+497 
+test.poa.TestAdapterActivatorServer$TestAdapterActivator_impl 1
+497 
+test.poa.TestActivate$TestActivator_impl 1
+474 
+com.ooc.CORBA.ObjectImpl 1
+364 
+test.pi._TestInterfaceStub 1
+501 
+test.pi.TestLocator_impl 1
+472 
+test.pi.TestInterfaceDSI_impl 1
+486 
+test.obv.TestValueSub 1
+432 
+test.obv.TestValueSub_impl 1
+505 
+test.obv.TestTrunc2 1
+438 
+test.obv.TestTrunc2_impl 1
+507 
+test.obv.TestTrunc1 1
+438 
+test.obv.TestTrunc1_impl 1
+509 
+test.obv.TestOBVPOA 1
+374 
+test.obv.TestOBV_impl 1
+511 
+test.obv.TestOBVPOATie 1
+511 
+test.obv.TestOBVColoPOA 1
+374 
+test.obv.TestOBVColo_impl 1
+514 
+test.obv.TestOBVColoPOATie 1
+514 
+test.obv.TestInterfacePOA 1
+374 
+test.obv.TestInterfacePOATie 1
+517 
+test.obv.TestAbstractSubPOA 1
+374 
+test.obv.TestAbstractSub_impl 1
+519 
+test.obv.TestAbstractSubPOATie 1
+519 
+test.multi.MultiPOA 1
+374 
+test.multi.Multi_impl 1
+522 
+test.main.TestIntf_2_3_NoLongDoublePOA 1
+374 
+test.main.TestIntf_2_3_NoLongDouble_impl 1
+524 
+test.main.TestIntf_2_3_NoLongDouble_DSI_impl 1
+486 
+test.main.TestIntf_2_3_NoLongDoublePOATie 1
+524 
+test.main.TestIntfPOA 1
+374 
+test.main.TestIntfPOATie 1
+528 
+test.ins.URLTest.IIOPAddressPOA 1
+374 
+test.ins.URLTest.IIOPAddress_impl 1
+530 
+test.ins.URLTest.IIOPAddressPOATie 1
+530 
+java.lang.Throwable 1
+0 
+java.lang.Exception 1
+533 
+test.ins.Client$TestFailure 1
+534 
+test.codesets.TestCodeSetsPOA 1
+374 
+test.codesets.TestCodeSets_impl 1
+536 
+test.codesets.TestCodeSetsPOATie 1
+536 
+org.omg.CORBA.UserException 1
+534 
+test.types.DynAnyTypes.TestException 1
+539 
+test.types.DynAnyTypes.TestEmptyException 1
+539 
+test.poa.POAManagerProxyPackage.AdapterInactive 1
+539 
+test.pi.TestInterfacePackage.user 1
+539 
+com.ooc.PortableServer.Servant 1
+374 
+test.pi.TestInterfacePOA 1
+544 
+test.pi.TestInterface_impl 1
+545 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWString 1
+539 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExWChar 1
+539 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExULongLong 1
+539 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExLongLong 1
+539 
+test.main.TestIntf_2_3_NoLongDoublePackage.ExFixed 1
+539 
+test.main.TestIntfPackage.ExVoid 1
+539 
+test.main.TestIntfPackage.ExVariableUnion 1
+539 
+test.main.TestIntfPackage.ExVariableStruct 1
+539 
+test.main.TestIntfPackage.ExVariableArraySequence 1
+539 
+test.main.TestIntfPackage.ExVariableArrayBoundSequence 1
+539 
+test.main.TestIntfPackage.ExVariableArray 1
+539 
+test.main.TestIntfPackage.ExUShort 1
+539 
+test.main.TestIntfPackage.ExULong 1
+539 
+test.main.TestIntfPackage.ExTestIntf 1
+539 
+test.main.TestIntfPackage.ExTestEnum 1
+539 
+test.main.TestIntfPackage.ExStringSequence 1
+539 
+test.main.TestIntfPackage.ExString 1
+539 
+test.main.TestIntfPackage.ExShort 1
+539 
+test.main.TestIntfPackage.ExOctet 1
+539 
+test.main.TestIntfPackage.ExLong 1
+539 
+test.main.TestIntfPackage.ExFloat 1
+539 
+test.main.TestIntfPackage.ExFixedUnion 1
+539 
+test.main.TestIntfPackage.ExFixedStruct 1
+539 
+test.main.TestIntfPackage.ExFixedArraySequence 1
+539 
+test.main.TestIntfPackage.ExFixedArrayBoundSequence 1
+539 
+test.main.TestIntfPackage.ExFixedArray 1
+539 
+test.main.TestIntfPackage.ExDouble 1
+539 
+test.main.TestIntfPackage.ExChar 1
+539 
+test.main.TestIntfPackage.ExBoolean 1
+539 
+test.main.TestIntfPackage.ExAny 1
+539 
+java.lang.RuntimeException 1
+534 
+test.common.TestException 1
+577 
+368
+void-_read-org.omg.CORBA.portable.InputStream 153
+360 354 352 350 348 346 344 342 340 338 336 334 332 330 328 326 324 322 320 318 316 314 312 310 308 306 304 302 300 298 296 294 291 288 286 283 281 279 277 274 271 269 267 265 263 261 258 254 252 250 248 246 243 240 238 235 233 231 440 228 226 224 222 220 218 509 215 507 212 438 209 206 432 436 203 200 434 197 505 194 191 189 186 184 172 169 167 162 160 157 155 152 149 146 143 141 139 136 133 131 129 127 125 120 117 114 111 109 107 105 103 100 98 96 94 87 85 83 78 76 74 71 69 66 63 59 56 53 50 47 45 43 40 37 35 33 31 29 26 24 21 18 15 12 372 10 370 8 466 6 464 4 1 
+org.omg.CORBA.TypeCode-_type 153
+360 354 352 350 348 346 344 342 340 338 336 334 332 330 328 326 324 322 320 318 316 314 312 310 308 306 304 302 300 298 296 294 291 288 286 283 281 279 277 274 271 269 267 265 263 261 258 254 252 250 248 246 243 240 238 235 233 231 440 228 226 224 222 220 218 509 215 507 212 438 209 206 432 436 203 200 434 197 505 194 191 189 186 184 172 169 167 162 160 157 155 152 149 146 143 141 139 136 133 131 129 127 125 120 117 114 111 109 107 105 103 100 98 96 94 87 85 83 78 76 74 71 69 66 63 59 56 53 50 47 45 43 40 37 35 33 31 29 26 24 21 18 15 12 372 10 370 8 466 6 464 4 1 
+void-_write-org.omg.CORBA.portable.OutputStream 153
+360 354 352 350 348 346 344 342 340 338 336 334 332 330 328 326 324 322 320 318 316 314 312 310 308 306 304 302 300 298 296 294 291 288 286 283 281 279 277 274 271 269 267 265 263 261 258 254 252 250 248 246 243 240 238 235 233 231 440 228 226 224 222 220 218 509 215 507 212 438 209 206 432 436 203 200 434 197 505 194 191 189 186 184 172 169 167 162 160 157 155 152 149 146 143 141 139 136 133 131 129 127 125 120 117 114 111 109 107 105 103 100 98 96 94 87 85 83 78 76 74 71 69 66 63 59 56 53 50 47 45 43 40 37 35 33 31 29 26 24 21 18 15 12 372 10 370 8 466 6 464 4 1 
+void-deactivate 31
+536 538 537 463 530 532 531 462 528 529 524 527 525 448 447 522 523 445 511 513 512 427 545 546 502 483 482 470 471 381 379 
+char-testWChar-char 4
+536 538 537 463 
+java.lang.String-testWString-java.lang.String 4
+536 538 537 463 
+char-testChar-char 4
+536 538 537 463 
+java.lang.String-testString-java.lang.String 4
+536 538 537 463 
+[Ljava.lang.String;-_all_interfaces-org.omg.PortableServer.POA-[B 25
+536 530 528 524 526 522 519 517 514 511 504 545 477 488 487 484 480 482 468 470 375 374 472 474 497 
+org.omg.CORBA.portable.OutputStream-_invoke-java.lang.String-org.omg.CORBA.portable.InputStream-org.omg.CORBA.portable.ResponseHandler 19
+536 530 528 524 522 519 517 514 511 477 484 480 482 468 470 375 472 474 497 
+org.omg.PortableServer.POA-_default_POA 14
+538 532 529 527 521 518 516 513 546 493 492 487 469 374 
+[Ljava.lang.String;-_ids 20
+463 462 448 447 445 431 430 429 428 427 502 383 382 381 380 379 378 365 364 399 
+void-finalize 3
+357 415 0 
+void-destroy 7
+530 532 531 462 420 417 387 
+java.lang.String-getKey 4
+530 532 531 462 
+java.lang.String-getHost 4
+530 532 531 462 
+short-getPort 4
+530 532 531 462 
+java.lang.String-getCorbalocURL 4
+530 532 531 462 
+java.lang.String-getString 4
+530 532 531 462 
+java.lang.String-getIIOPAddress 4
+530 532 531 462 
+void-setString-java.lang.String 4
+530 532 531 462 
+int-version 7
+528 529 524 527 525 448 447 
+boolean-concurrentRequestExecution 7
+528 529 524 527 525 448 447 
+void-attrAny-org.omg.CORBA.Any 7
+528 529 524 527 525 448 447 
+org.omg.CORBA.Any-attrAny 7
+528 529 524 527 525 448 447 
+boolean-attrBoolean 7
+528 529 524 527 525 448 447 
+void-attrBoolean-boolean 7
+528 529 524 527 525 448 447 
+void-attrChar-char 7
+528 529 524 527 525 448 447 
+char-attrChar 7
+528 529 524 527 525 448 447 
+void-attrDouble-double 7
+528 529 524 527 525 448 447 
+double-attrDouble 7
+528 529 524 527 525 448 447 
+[[[S-attrFixedArray 7
+528 529 524 527 525 448 447 
+void-attrFixedArray-[[[S 7
+528 529 524 527 525 448 447 
+void-attrFixedArrayBoundSequence-[[[[S 7
+528 529 524 527 525 448 447 
+[[[[S-attrFixedArrayBoundSequence 7
+528 529 524 527 525 448 447 
+[[[[S-attrFixedArraySequence 7
+528 529 524 527 525 448 447 
+void-attrFixedArraySequence-[[[[S 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedStruct-attrFixedStruct 7
+528 529 524 527 525 448 447 
+void-attrFixedStruct-test.main.TestIntfPackage.FixedStruct 7
+528 529 524 527 525 448 447 
+void-attrFixedUnion-test.main.TestIntfPackage.FixedUnion 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedUnion-attrFixedUnion 7
+528 529 524 527 525 448 447 
+float-attrFloat 7
+528 529 524 527 525 448 447 
+void-attrFloat-float 7
+528 529 524 527 525 448 447 
+void-attrLong-int 7
+528 529 524 527 525 448 447 
+int-attrLong 7
+528 529 524 527 525 448 447 
+byte-attrOctet 7
+528 529 524 527 525 448 447 
+void-attrOctet-byte 7
+528 529 524 527 525 448 447 
+short-attrShort 7
+528 529 524 527 525 448 447 
+void-attrShort-short 7
+528 529 524 527 525 448 447 
+void-attrString-java.lang.String 7
+528 529 524 527 525 448 447 
+java.lang.String-attrString 7
+528 529 524 527 525 448 447 
+[Ljava.lang.String;-attrStringSequence 7
+528 529 524 527 525 448 447 
+void-attrStringSequence-[Ljava.lang.String; 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.TestEnum-attrTestEnum 7
+528 529 524 527 525 448 447 
+void-attrTestEnum-test.main.TestIntfPackage.TestEnum 7
+528 529 524 527 525 448 447 
+void-attrTestIntf-test.main.TestIntf 7
+528 529 524 527 525 448 447 
+test.main.TestIntf-attrTestIntf 7
+528 529 524 527 525 448 447 
+int-attrULong 7
+528 529 524 527 525 448 447 
+void-attrULong-int 7
+528 529 524 527 525 448 447 
+short-attrUShort 7
+528 529 524 527 525 448 447 
+void-attrUShort-short 7
+528 529 524 527 525 448 447 
+[[Ljava.lang.String;-attrVariableArray 7
+528 529 524 527 525 448 447 
+void-attrVariableArray-[[Ljava.lang.String; 7
+528 529 524 527 525 448 447 
+void-attrVariableArrayBoundSequence-[[[Ljava.lang.String; 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-attrVariableArrayBoundSequence 7
+528 529 524 527 525 448 447 
+void-attrVariableArraySequence-[[[Ljava.lang.String; 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-attrVariableArraySequence 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableStruct-attrVariableStruct 7
+528 529 524 527 525 448 447 
+void-attrVariableStruct-test.main.TestIntfPackage.VariableStruct 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableUnion-attrVariableUnion 7
+528 529 524 527 525 448 447 
+void-attrVariableUnion-test.main.TestIntfPackage.VariableUnion 7
+528 529 524 527 525 448 447 
+org.omg.CORBA.Any-opAny-org.omg.CORBA.Any-org.omg.CORBA.AnyHolder-org.omg.CORBA.AnyHolder 7
+528 529 524 527 525 448 447 
+org.omg.CORBA.Any-opAnyEx-org.omg.CORBA.Any-org.omg.CORBA.AnyHolder-org.omg.CORBA.AnyHolder 7
+528 529 524 527 525 448 447 
+boolean-opBoolean-boolean-org.omg.CORBA.BooleanHolder-org.omg.CORBA.BooleanHolder 7
+528 529 524 527 525 448 447 
+boolean-opBooleanEx-boolean-org.omg.CORBA.BooleanHolder-org.omg.CORBA.BooleanHolder 7
+528 529 524 527 525 448 447 
+char-opChar-char-org.omg.CORBA.CharHolder-org.omg.CORBA.CharHolder 7
+528 529 524 527 525 448 447 
+char-opCharEx-char-org.omg.CORBA.CharHolder-org.omg.CORBA.CharHolder 7
+528 529 524 527 525 448 447 
+[Ljava.lang.String;-opContext-java.lang.String-org.omg.CORBA.Context 7
+528 529 524 527 525 448 447 
+double-opDouble-double-org.omg.CORBA.DoubleHolder-org.omg.CORBA.DoubleHolder 7
+528 529 524 527 525 448 447 
+double-opDoubleEx-double-org.omg.CORBA.DoubleHolder-org.omg.CORBA.DoubleHolder 7
+528 529 524 527 525 448 447 
+[[[S-opFixedArray-[[[S-test.main.TestIntfPackage.FixedArrayHolder-test.main.TestIntfPackage.FixedArrayHolder 7
+528 529 524 527 525 448 447 
+[[[[S-opFixedArrayBoundSequence-[[[[S-test.main.TestIntfPackage.FixedArrayBoundSequenceHolder-test.main.TestIntfPackage.FixedArrayBoundSequenceHolder 7
+528 529 524 527 525 448 447 
+[[[[S-opFixedArrayBoundSequenceEx-[[[[S-test.main.TestIntfPackage.FixedArrayBoundSequenceHolder-test.main.TestIntfPackage.FixedArrayBoundSequenceHolder 7
+528 529 524 527 525 448 447 
+[[[S-opFixedArrayEx-[[[S-test.main.TestIntfPackage.FixedArrayHolder-test.main.TestIntfPackage.FixedArrayHolder 7
+528 529 524 527 525 448 447 
+[[[[S-opFixedArraySequence-[[[[S-test.main.TestIntfPackage.FixedArraySequenceHolder-test.main.TestIntfPackage.FixedArraySequenceHolder 7
+528 529 524 527 525 448 447 
+[[[[S-opFixedArraySequenceEx-[[[[S-test.main.TestIntfPackage.FixedArraySequenceHolder-test.main.TestIntfPackage.FixedArraySequenceHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedStruct-opFixedStruct-test.main.TestIntfPackage.FixedStruct-test.main.TestIntfPackage.FixedStructHolder-test.main.TestIntfPackage.FixedStructHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedStruct-opFixedStructEx-test.main.TestIntfPackage.FixedStruct-test.main.TestIntfPackage.FixedStructHolder-test.main.TestIntfPackage.FixedStructHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedUnion-opFixedUnion-test.main.TestIntfPackage.FixedUnion-test.main.TestIntfPackage.FixedUnionHolder-test.main.TestIntfPackage.FixedUnionHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.FixedUnion-opFixedUnionEx-test.main.TestIntfPackage.FixedUnion-test.main.TestIntfPackage.FixedUnionHolder-test.main.TestIntfPackage.FixedUnionHolder 7
+528 529 524 527 525 448 447 
+float-opFloat-float-org.omg.CORBA.FloatHolder-org.omg.CORBA.FloatHolder 7
+528 529 524 527 525 448 447 
+float-opFloatEx-float-org.omg.CORBA.FloatHolder-org.omg.CORBA.FloatHolder 7
+528 529 524 527 525 448 447 
+int-opLong-int-org.omg.CORBA.IntHolder-org.omg.CORBA.IntHolder 7
+528 529 524 527 525 448 447 
+int-opLongEx-int-org.omg.CORBA.IntHolder-org.omg.CORBA.IntHolder 7
+528 529 524 527 525 448 447 
+byte-opOctet-byte-org.omg.CORBA.ByteHolder-org.omg.CORBA.ByteHolder 7
+528 529 524 527 525 448 447 
+byte-opOctetEx-byte-org.omg.CORBA.ByteHolder-org.omg.CORBA.ByteHolder 7
+528 529 524 527 525 448 447 
+short-opShort-short-org.omg.CORBA.ShortHolder-org.omg.CORBA.ShortHolder 7
+528 529 524 527 525 448 447 
+short-opShortEx-short-org.omg.CORBA.ShortHolder-org.omg.CORBA.ShortHolder 7
+528 529 524 527 525 448 447 
+java.lang.String-opString-java.lang.String-org.omg.CORBA.StringHolder-org.omg.CORBA.StringHolder 7
+528 529 524 527 525 448 447 
+java.lang.String-opStringEx-java.lang.String-org.omg.CORBA.StringHolder-org.omg.CORBA.StringHolder 7
+528 529 524 527 525 448 447 
+[Ljava.lang.String;-opStringSequence-[Ljava.lang.String;-test.main.TestIntfPackage.StringSequenceHolder-test.main.TestIntfPackage.StringSequenceHolder 7
+528 529 524 527 525 448 447 
+[Ljava.lang.String;-opStringSequenceEx-[Ljava.lang.String;-test.main.TestIntfPackage.StringSequenceHolder-test.main.TestIntfPackage.StringSequenceHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.TestEnum-opTestEnum-test.main.TestIntfPackage.TestEnum-test.main.TestIntfPackage.TestEnumHolder-test.main.TestIntfPackage.TestEnumHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.TestEnum-opTestEnumEx-test.main.TestIntfPackage.TestEnum-test.main.TestIntfPackage.TestEnumHolder-test.main.TestIntfPackage.TestEnumHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntf-opTestIntf-test.main.TestIntf-test.main.TestIntfHolder-test.main.TestIntfHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntf-opTestIntfEx-test.main.TestIntf-test.main.TestIntfHolder-test.main.TestIntfHolder 7
+528 529 524 527 525 448 447 
+int-opULong-int-org.omg.CORBA.IntHolder-org.omg.CORBA.IntHolder 7
+528 529 524 527 525 448 447 
+int-opULongEx-int-org.omg.CORBA.IntHolder-org.omg.CORBA.IntHolder 7
+528 529 524 527 525 448 447 
+short-opUShort-short-org.omg.CORBA.ShortHolder-org.omg.CORBA.ShortHolder 7
+528 529 524 527 525 448 447 
+short-opUShortEx-short-org.omg.CORBA.ShortHolder-org.omg.CORBA.ShortHolder 7
+528 529 524 527 525 448 447 
+[[Ljava.lang.String;-opVariableArray-[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArrayHolder-test.main.TestIntfPackage.VariableArrayHolder 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-opVariableArrayBoundSequence-[[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArrayBoundSequenceHolder-test.main.TestIntfPackage.VariableArrayBoundSequenceHolder 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-opVariableArrayBoundSequenceEx-[[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArrayBoundSequenceHolder-test.main.TestIntfPackage.VariableArrayBoundSequenceHolder 7
+528 529 524 527 525 448 447 
+[[Ljava.lang.String;-opVariableArrayEx-[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArrayHolder-test.main.TestIntfPackage.VariableArrayHolder 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-opVariableArraySequence-[[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArraySequenceHolder-test.main.TestIntfPackage.VariableArraySequenceHolder 7
+528 529 524 527 525 448 447 
+[[[Ljava.lang.String;-opVariableArraySequenceEx-[[[Ljava.lang.String;-test.main.TestIntfPackage.VariableArraySequenceHolder-test.main.TestIntfPackage.VariableArraySequenceHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableStruct-opVariableStruct-test.main.TestIntfPackage.VariableStruct-test.main.TestIntfPackage.VariableStructHolder-test.main.TestIntfPackage.VariableStructHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableStruct-opVariableStructEx-test.main.TestIntfPackage.VariableStruct-test.main.TestIntfPackage.VariableStructHolder-test.main.TestIntfPackage.VariableStructHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableUnion-opVariableUnion-test.main.TestIntfPackage.VariableUnion-test.main.TestIntfPackage.VariableUnionHolder-test.main.TestIntfPackage.VariableUnionHolder 7
+528 529 524 527 525 448 447 
+test.main.TestIntfPackage.VariableUnion-opVariableUnionEx-test.main.TestIntfPackage.VariableUnion-test.main.TestIntfPackage.VariableUnionHolder-test.main.TestIntfPackage.VariableUnionHolder 7
+528 529 524 527 525 448 447 
+void-opVoid 7
+528 529 524 527 525 448 447 
+void-opVoidEx 7
+528 529 524 527 525 448 447 
+void-op_BAD_CONTEXT_Ex 7
+528 529 524 527 525 448 447 
+void-op_BAD_INV_ORDER_Ex 7
+528 529 524 527 525 448 447 
+void-op_BAD_OPERATION_Ex 7
+528 529 524 527 525 448 447 
+void-op_BAD_PARAM_Ex 7
+528 529 524 527 525 448 447 
+void-op_BAD_QOS_Ex 7
+528 529 524 527 525 448 447 
+void-op_BAD_TYPECODE_Ex 7
+528 529 524 527 525 448 447 
+void-op_CODESET_INCOMPATIBLE_Ex 7
+528 529 524 527 525 448 447 
+void-op_COMM_FAILURE_Ex 7
+528 529 524 527 525 448 447 
+void-op_DATA_CONVERSION_Ex 7
+528 529 524 527 525 448 447 
+void-op_FREE_MEM_Ex 7
+528 529 524 527 525 448 447 
+void-op_IMP_LIMIT_Ex 7
+528 529 524 527 525 448 447 
+void-op_INITIALIZE_Ex 7
+528 529 524 527 525 448 447 
+void-op_INTERNAL_Ex 7
+528 529 524 527 525 448 447 
+void-op_INTF_REPOS_Ex 7
+528 529 524 527 525 448 447 
+void-op_INVALID_TRANSACTION_Ex 7
+528 529 524 527 525 448 447 
+void-op_INV_FLAG_Ex 7
+528 529 524 527 525 448 447 
+void-op_INV_IDENT_Ex 7
+528 529 524 527 525 448 447 
+void-op_INV_OBJREF_Ex 7
+528 529 524 527 525 448 447 
+void-op_INV_POLICY_Ex 7
+528 529 524 527 525 448 447 
+void-op_MARSHAL_Ex 7
+528 529 524 527 525 448 447 
+void-op_NO_IMPLEMENT_Ex 7
+528 529 524 527 525 448 447 
+void-op_NO_MEMORY_Ex 7
+528 529 524 527 525 448 447 
+void-op_NO_PERMISSION_Ex 7
+528 529 524 527 525 448 447 
+void-op_NO_RESOURCES_Ex 7
+528 529 524 527 525 448 447 
+void-op_NO_RESPONSE_Ex 7
+528 529 524 527 525 448 447 
+void-op_OBJECT_NOT_EXIST_Ex 7
+528 529 524 527 525 448 447 
+void-op_OBJ_ADAPTER_Ex 7
+528 529 524 527 525 448 447 
+void-op_PERSIST_STORE_Ex 7
+528 529 524 527 525 448 447 
+void-op_REBIND_Ex 7
+528 529 524 527 525 448 447 
+void-op_TIMEOUT_Ex 7
+528 529 524 527 525 448 447 
+void-op_TRANSACTION_MODE_Ex 7
+528 529 524 527 525 448 447 
+void-op_TRANSACTION_REQUIRED_Ex 7
+528 529 524 527 525 448 447 
+void-op_TRANSACTION_ROLLEDBACK_Ex 7
+528 529 524 527 525 448 447 
+void-op_TRANSACTION_UNAVAILABLE_Ex 7
+528 529 524 527 525 448 447 
+void-op_TRANSIENT_Ex 7
+528 529 524 527 525 448 447 
+void-op_UNKNOWN_Ex 7
+528 529 524 527 525 448 447 
+void-sleepOneway-int 7
+528 529 524 527 525 448 447 
+void-sleepTwoway-int 7
+528 529 524 527 525 448 447 
+void-attrFixed-java.math.BigDecimal 4
+524 527 525 447 
+java.math.BigDecimal-attrFixed 4
+524 527 525 447 
+void-attrLongLong-long 4
+524 527 525 447 
+long-attrLongLong 4
+524 527 525 447 
+long-attrULongLong 4
+524 527 525 447 
+void-attrULongLong-long 4
+524 527 525 447 
+char-attrWChar 4
+524 527 525 447 
+void-attrWChar-char 4
+524 527 525 447 
+void-attrWString-java.lang.String 4
+524 527 525 447 
+java.lang.String-attrWString 4
+524 527 525 447 
+java.math.BigDecimal-opFixed-java.math.BigDecimal-org.omg.CORBA.FixedHolder-org.omg.CORBA.FixedHolder 4
+524 527 525 447 
+java.math.BigDecimal-opFixedEx-java.math.BigDecimal-org.omg.CORBA.FixedHolder-org.omg.CORBA.FixedHolder 4
+524 527 525 447 
+long-opLongLong-long-org.omg.CORBA.LongHolder-org.omg.CORBA.LongHolder 4
+524 527 525 447 
+long-opLongLongEx-long-org.omg.CORBA.LongHolder-org.omg.CORBA.LongHolder 4
+524 527 525 447 
+long-opULongLong-long-org.omg.CORBA.LongHolder-org.omg.CORBA.LongHolder 4
+524 527 525 447 
+long-opULongLongEx-long-org.omg.CORBA.LongHolder-org.omg.CORBA.LongHolder 4
+524 527 525 447 
+char-opWChar-char-org.omg.CORBA.CharHolder-org.omg.CORBA.CharHolder 4
+524 527 525 447 
+char-opWCharEx-char-org.omg.CORBA.CharHolder-org.omg.CORBA.CharHolder 4
+524 527 525 447 
+java.lang.String-opWString-java.lang.String-org.omg.CORBA.StringHolder-org.omg.CORBA.StringHolder 4
+524 527 525 447 
+java.lang.String-opWStringEx-java.lang.String-org.omg.CORBA.StringHolder-org.omg.CORBA.StringHolder 4
+524 527 525 447 
+void-invoke-org.omg.CORBA.ServerRequest 5
+526 504 488 487 486 
+short-discriminator 4
+290 52 23 14 
+void-d-double 2
+290 237 
+double-d 2
+290 237 
+int-l 2
+290 61 
+void-l-int 2
+290 61 
+int-value 7
+285 420 417 116 102 89 39 
+boolean-discriminator 4
+273 237 171 20 
+int-getpid 3
+522 523 445 
+void-abstract_op 7
+519 521 520 436 437 431 430 
+void-sub_op 4
+519 521 520 430 
+java.io.Serializable-read_value-org.omg.CORBA.portable.InputStream 10
+247 241 236 223 221 207 192 187 30 27 
+void-write_value-org.omg.CORBA.portable.OutputStream-java.io.Serializable 10
+247 241 236 223 221 207 192 187 30 27 
+java.lang.String-get_id 10
+247 241 236 223 221 207 192 187 30 27 
+void-ping1 5
+442 443 432 506 433 
+[Ljava.lang.String;-_truncatable_ids 14
+442 440 509 507 438 208 432 436 434 505 372 370 466 464 
+void-marshal-org.omg.CORBA.DataOutputStream 2
+442 443 
+void-unmarshal-org.omg.CORBA.DataInputStream 2
+442 443 
+java.io.Serializable-read_value-org.omg.CORBA_2_3.portable.InputStream 21
+245 230 217 214 211 205 202 199 196 183 182 181 180 179 178 177 176 93 92 91 90 
+int-get_count 5
+517 518 434 435 429 
+int-compute_count 2
+440 441 
+void-set_expected_count-int 4
+514 516 515 428 
+test.obv.TestAbstract-test_abstract_attribute 4
+514 516 515 428 
+void-test_abstract_attribute-test.obv.TestAbstract 4
+514 516 515 428 
+void-test_abstract_op-test.obv.TestAbstract 4
+514 516 515 428 
+void-test_value_attribute-test.obv.TestValue 4
+514 516 515 428 
+test.obv.TestValue-test_value_attribute 4
+514 516 515 428 
+test.obv.TestValue-test_value_op-test.obv.TestValue-test.obv.TestValueHolder-test.obv.TestValueHolder 4
+514 516 515 428 
+void-test_value_seq_attribute-[Ltest.obv.TestValue; 4
+514 516 515 428 
+[Ltest.obv.TestValue;-test_value_seq_attribute 4
+514 516 515 428 
+[Ltest.obv.TestValue;-test_value_seq_op-[Ltest.obv.TestValue;-test.obv.TestOBVColoPackage.VSeqHolder-test.obv.TestOBVColoPackage.VSeqHolder 4
+514 516 515 428 
+test.obv.TestOBVColoPackage.SV-test_value_struct_attribute 4
+514 516 515 428 
+void-test_value_struct_attribute-test.obv.TestOBVColoPackage.SV 4
+514 516 515 428 
+test.obv.TestOBVColoPackage.SV-test_value_struct_op-test.obv.TestOBVColoPackage.SV-test.obv.TestOBVColoPackage.SVHolder-test.obv.TestOBVColoPackage.SVHolder 4
+514 516 515 428 
+void-test_value_union_attribute-test.obv.TestOBVColoPackage.UV 4
+514 516 515 428 
+test.obv.TestOBVColoPackage.UV-test_value_union_attribute 4
+514 516 515 428 
+test.obv.TestOBVColoPackage.UV-test_value_union_op-test.obv.TestOBVColoPackage.UV-test.obv.TestOBVColoPackage.UVHolder-test.obv.TestOBVColoPackage.UVHolder 4
+514 516 515 428 
+test.obv.TestAbsValue1-get_abs_custom 4
+511 513 512 427 
+test.obv.TestAbsValue1-get_abs_value1 4
+511 513 512 427 
+test.obv.TestAbsValue2-get_abs_value2 4
+511 513 512 427 
+test.obv.TestAbstract-get_ai_interface 4
+511 513 512 427 
+org.omg.CORBA.Any-get_ai_interface_any 4
+511 513 512 427 
+test.obv.TestAbstract-get_ai_value 4
+511 513 512 427 
+org.omg.CORBA.Any-get_ai_value_any 4
+511 513 512 427 
+[S-get_anon_seq_box-int 4
+511 513 512 427 
+test.obv.TestCustom-get_custom 4
+511 513 512 427 
+org.omg.CORBA.Any-get_custom_any 4
+511 513 512 427 
+test.obv.TestFixStruct-get_fix_struct_box-test.obv.TestFixStruct 4
+511 513 512 427 
+test.obv.TestFixUnion-get_fix_union_box-test.obv.TestFixUnion 4
+511 513 512 427 
+void-get_node-test.obv.TestNodeHolder-org.omg.CORBA.IntHolder 4
+511 513 512 427 
+java.io.Serializable-get_null_valuebase 4
+511 513 512 427 
+test.obv.TestValueSub-get_null_valuesub 4
+511 513 512 427 
+java.lang.String-get_string_box-java.lang.String 4
+511 513 512 427 
+[Ljava.lang.String;-get_string_seq_box-[Ljava.lang.String; 4
+511 513 512 427 
+test.obv.TestTruncBase-get_trunc1 4
+511 513 512 427 
+org.omg.CORBA.Any-get_trunc1_any 4
+511 513 512 427 
+org.omg.CORBA.Any-get_trunc1_as_base_any 4
+511 513 512 427 
+test.obv.TestTruncBase-get_trunc2 4
+511 513 512 427 
+org.omg.CORBA.Any-get_trunc2_any 4
+511 513 512 427 
+org.omg.CORBA.Any-get_trunc2_as_base_any 4
+511 513 512 427 
+void-get_two_value_anys-org.omg.CORBA.AnyHolder-org.omg.CORBA.AnyHolder 4
+511 513 512 427 
+void-get_two_values-test.obv.TestValueHolder-test.obv.TestValueHolder 4
+511 513 512 427 
+void-get_two_valuesubs_as_values-test.obv.TestValueHolder-test.obv.TestValueHolder 4
+511 513 512 427 
+test.obv.TestULongBox-get_ulong_box-int 4
+511 513 512 427 
+test.obv.TestValue-get_value 4
+511 513 512 427 
+org.omg.CORBA.Any-get_value_any 4
+511 513 512 427 
+test.obv.TestInterface-get_value_as_interface 4
+511 513 512 427 
+test.obv.TestValueInterface-get_value_as_value 4
+511 513 512 427 
+test.obv.TestValueSub-get_valuesub 4
+511 513 512 427 
+org.omg.CORBA.Any-get_valuesub_any 4
+511 513 512 427 
+test.obv.TestValue-get_valuesub_as_value 4
+511 513 512 427 
+org.omg.CORBA.Any-get_valuesub_as_value_any 4
+511 513 512 427 
+test.obv.TestVarStruct-get_var_struct_box-test.obv.TestVarStruct 4
+511 513 512 427 
+test.obv.TestVarUnion-get_var_union_box-test.obv.TestVarUnion 4
+511 513 512 427 
+void-remarshal_any-org.omg.CORBA.Any 4
+511 513 512 427 
+void-set_abs_custom-test.obv.TestAbsValue1 4
+511 513 512 427 
+void-set_abs_value1-test.obv.TestAbsValue1 4
+511 513 512 427 
+void-set_abs_value2-test.obv.TestAbsValue2 4
+511 513 512 427 
+void-set_ai_interface-test.obv.TestAbstract 4
+511 513 512 427 
+void-set_ai_interface_any-org.omg.CORBA.Any 4
+511 513 512 427 
+void-set_ai_value-test.obv.TestAbstract 4
+511 513 512 427 
+void-set_ai_value_any-org.omg.CORBA.Any 4
+511 513 512 427 
+void-set_anon_seq_box-[S-int 4
+511 513 512 427 
+void-set_custom-test.obv.TestCustom 4
+511 513 512 427 
+void-set_fix_struct_box-test.obv.TestFixStruct-test.obv.TestFixStruct 4
+511 513 512 427 
+void-set_fix_union_box-test.obv.TestFixUnion-test.obv.TestFixUnion 4
+511 513 512 427 
+void-set_node-test.obv.TestNode 4
+511 513 512 427 
+void-set_null_valuebase-java.io.Serializable 4
+511 513 512 427 
+void-set_null_valuesub-test.obv.TestValueSub 4
+511 513 512 427 
+void-set_string_box-java.lang.String-java.lang.String 4
+511 513 512 427 
+void-set_string_seq_box-[Ljava.lang.String;-[Ljava.lang.String; 4
+511 513 512 427 
+void-set_two_value_anys-org.omg.CORBA.Any-org.omg.CORBA.Any 4
+511 513 512 427 
+void-set_two_values-test.obv.TestValue-test.obv.TestValue 4
+511 513 512 427 
+void-set_two_valuesubs_as_values-test.obv.TestValue-test.obv.TestValue 4
+511 513 512 427 
+void-set_ulong_box-test.obv.TestULongBox-int 4
+511 513 512 427 
+void-set_value-test.obv.TestValue 4
+511 513 512 427 
+void-set_valuesub-test.obv.TestValueSub 4
+511 513 512 427 
+void-set_valuesub_as_value-test.obv.TestValue 4
+511 513 512 427 
+void-set_var_struct_box-test.obv.TestVarStruct-test.obv.TestVarStruct 4
+511 513 512 427 
+void-set_var_union_box-test.obv.TestVarUnion-test.obv.TestVarUnion 4
+511 513 512 427 
+void-value_op 4
+436 437 434 435 
+void-ping2 2
+505 506 
+java.lang.String-s 3
+188 61 55 
+void-s-java.lang.String 3
+188 61 55 
+int-discriminator 2
+188 61 
+void-__default 4
+188 55 52 20 
+java.lang.String-name 7
+426 424 422 419 415 413 412 
+void-receive_exception-org.omg.PortableInterceptor.ClientRequestInfo 3
+426 424 412 
+void-receive_other-org.omg.PortableInterceptor.ClientRequestInfo 3
+426 424 412 
+void-receive_reply-org.omg.PortableInterceptor.ClientRequestInfo 3
+426 424 412 
+void-send_poll-org.omg.PortableInterceptor.ClientRequestInfo 3
+426 424 412 
+void-send_request-org.omg.PortableInterceptor.ClientRequestInfo 3
+426 424 412 
+void-post_init-org.omg.PortableInterceptor.ORBInitInfo 2
+423 414 
+void-pre_init-org.omg.PortableInterceptor.ORBInitInfo 2
+423 414 
+void-receive_request-org.omg.PortableInterceptor.ServerRequestInfo 3
+422 415 413 
+void-receive_request_service_contexts-org.omg.PortableInterceptor.ServerRequestInfo 3
+422 415 413 
+void-send_exception-org.omg.PortableInterceptor.ServerRequestInfo 3
+422 415 413 
+void-send_other-org.omg.PortableInterceptor.ServerRequestInfo 3
+422 415 413 
+void-send_reply-org.omg.PortableInterceptor.ServerRequestInfo 3
+422 415 413 
+org.omg.CORBA.Policy-create_policy-int-org.omg.CORBA.Any 2
+421 418 
+org.omg.CORBA.Policy-copy 2
+420 417 
+int-policy_type 2
+420 417 
+boolean-_is_a-java.lang.String 5
+504 487 374 364 399 
+void-location_forward 3
+545 546 502 
+void-noargs_oneway 3
+545 546 502 
+void-systemexception 3
+545 546 502 
+void-test_service_context 3
+545 546 502 
+void-userexception 3
+545 546 502 
+void-noargs 3
+545 546 502 
+void-one_string_in-java.lang.String 3
+545 546 502 
+void-one_string_inout-org.omg.CORBA.StringHolder 3
+545 546 502 
+void-one_string_out-org.omg.CORBA.StringHolder 3
+545 546 502 
+java.lang.String-one_string_return 3
+545 546 502 
+void-one_struct_in-test.pi.TestInterfacePackage.s 3
+545 546 502 
+void-one_struct_inout-test.pi.TestInterfacePackage.sHolder 3
+545 546 502 
+void-one_struct_out-test.pi.TestInterfacePackage.sHolder 3
+545 546 502 
+test.pi.TestInterfacePackage.s-one_struct_return 3
+545 546 502 
+java.lang.String-string_attrib 3
+545 546 502 
+void-string_attrib-java.lang.String 3
+545 546 502 
+test.pi.TestInterfacePackage.s-struct_attrib 3
+545 546 502 
+void-struct_attrib-test.pi.TestInterfacePackage.s 3
+545 546 502 
+void-_OB_dispatch-com.ooc.OB.Upcall 2
+545 544 
+void-postinvoke-[B-org.omg.PortableServer.POA-java.lang.String-java.lang.Object-org.omg.PortableServer.Servant 4
+503 494 473 472 
+org.omg.PortableServer.Servant-preinvoke-[B-org.omg.PortableServer.POA-java.lang.String-org.omg.PortableServer.ServantLocatorPackage.CookieHolder 4
+503 494 473 472 
+void-run 6
+411 405 403 391 388 387 
+void-deactivate-boolean-boolean 3
+477 478 383 
+void-activate 3
+477 478 383 
+void-discard_requests-boolean 3
+477 478 383 
+test.poa.POAManagerProxyPackage.State-get_state 3
+477 478 383 
+void-hold_requests-boolean 3
+477 478 383 
+void-etherealize-[B-org.omg.PortableServer.POA-org.omg.PortableServer.Servant-boolean-boolean 9
+500 496 495 484 485 476 475 382 474 
+org.omg.PortableServer.Servant-incarnate-[B-org.omg.PortableServer.POA 9
+500 496 495 484 485 476 475 382 474 
+boolean-unknown_adapter-org.omg.PortableServer.POA-java.lang.String 3
+499 498 497 
+void-aMethod 12
+493 492 491 490 489 480 481 479 468 469 380 378 
+boolean-failed 3
+491 490 489 
+void-setForwardRequest-org.omg.CORBA.Object 3
+484 485 382 
+void-deactivate_servant 3
+480 481 380 
+org.omg.CORBA.Object-get_servant 3
+483 482 381 
+test.poa.TestLocationForwardActivator-get_activator 3
+483 482 381 
+[Ltest.poa.TestInfo;-get_info 3
+470 471 379 
+void-a-org.omg.CORBA.Any 2
+55 49 
+org.omg.CORBA.Any-a 2
+55 49 
+void-c-char 4
+55 52 49 17 
+char-c 4
+55 52 49 17 
+void-a-short-int 2
+23 14 
+int-a 4
+23 20 17 14 
+void-a-int 4
+23 20 17 14 
+void-b-float 2
+23 14 
+float-b 2
+23 14 
+int-hashCode 2
+0 364 
+boolean-equals-java.lang.Object 2
+0 364 
+java.lang.String-toString 4
+0 364 387 533 
+org.omg.CORBA.InterfaceDef-_get_interface 2
+374 399 
+boolean-_non_existent 3
+374 364 399 
+org.omg.CORBA.ORB-_orb 2
+374 364 
+org.omg.CORBA.portable.Delegate-_get_delegate 2
+364 399 
+void-_set_delegate-org.omg.CORBA.portable.Delegate 2
+364 399 
+boolean-_is_equivalent-org.omg.CORBA.Object 2
+364 399 
+int-_hash-int 2
+364 399 
+org.omg.CORBA.Object-_duplicate 2
+364 399 
+void-_release 2
+364 399 
+org.omg.CORBA.Object-_get_interface_def 2
+364 399 
+org.omg.CORBA.Request-_request-java.lang.String 2
+364 399 
+org.omg.CORBA.Request-_create_request-org.omg.CORBA.Context-java.lang.String-org.omg.CORBA.NVList-org.omg.CORBA.NamedValue 2
+364 399 
+org.omg.CORBA.Request-_create_request-org.omg.CORBA.Context-java.lang.String-org.omg.CORBA.NVList-org.omg.CORBA.NamedValue-org.omg.CORBA.ExceptionList-org.omg.CORBA.ContextList 2
+364 399 
+org.omg.CORBA.Policy-_get_policy-int 2
+364 399 
+[Lorg.omg.CORBA.DomainManager;-_get_domain_managers 2
+364 399 
+org.omg.CORBA.Object-_set_policy_override-[Lorg.omg.CORBA.Policy;-org.omg.CORBA.SetOverrideType 2
+364 399 

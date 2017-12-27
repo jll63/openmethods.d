@@ -1,0 +1,3890 @@
+774
+object 0
+
+bosscontents 1
+0 
+processhandle 1
+0 
+processorscheduler 1
+0 
+screen 1
+0 
+recursionlock 1
+0 
+undefinedobject 1
+0 
+signal 1
+0 
+graphicsattributes 1
+0 
+spfillline 1
+0 
+controlmanager 1
+0 
+defineopcodepool 1
+0 
+graphicscontext 1
+0 
+binaryobjectstorage 1
+0 
+exception 1
+0 
+ditherupto4 1
+0 
+changeset 1
+0 
+characterattributes 1
+0 
+classcategoryreader 1
+0 
+deferredblock 1
+0 
+codelabel 1
+0 
+bossregisteredobject 1
+0 
+inversecolormap 1
+0 
+dispatchtable 1
+0 
+timezone 1
+0 
+menutracker 1
+0 
+lookpreferences 1
+0 
+bosscompiledcodeholder 1
+0 
+fontpolicy 1
+0 
+remotestring 1
+0 
+inputstate 1
+0 
+rasterop 1
+0 
+charactercomposer 1
+0 
+objectmemory 1
+0 
+fontdescription 1
+0 
+memorypolicy 1
+0 
+delay 1
+0 
+keyboardevent 1
+0 
+programnodebuilder 1
+0 
+border 1
+0 
+sharedqueue 1
+0 
+inversecolormapinitializer 1
+0 
+methodnodeholder 1
+0 
+classbuilder 1
+0 
+blockclosure 1
+0 
+stream 1
+0 
+random 1
+45 
+sourcefilemanager 1
+0 
+sourcecodestream 1
+47 
+model 1
+0 
+popupmenu 1
+49 
+filebrowser 1
+49 
+scrollvalueholder 1
+49 
+syntaxerror 1
+49 
+explainer 1
+49 
+scanner 1
+0 
+changescanner 1
+55 
+widgetpolicy 1
+0 
+smalltalkwidgetpolicy 1
+57 
+programnode 1
+0 
+parameternode 1
+59 
+methodnode 1
+59 
+collection 1
+0 
+bag 1
+62 
+filename 1
+0 
+dosfilename 1
+64 
+macfilename 1
+64 
+unixfilename 1
+64 
+smalltalkcompiler 1
+0 
+compiler 1
+68 
+imagerenderer 1
+0 
+errordiffusion 1
+70 
+controller 1
+0 
+nocontroller 1
+72 
+widgetcontroller 1
+72 
+scrollbarcontroller 1
+72 
+launchercontroller 1
+72 
+dialogcompositecontroller 1
+72 
+instructionclient 1
+0 
+instructionprinter 1
+78 
+boolean 1
+0 
+false 1
+80 
+true 1
+80 
+link 1
+0 
+process 1
+83 
+inputsensor 1
+0 
+translatingsensor 1
+85 
+windowsensor 1
+85 
+paint 1
+0 
+pattern 1
+88 
+implementationfont 1
+0 
+syntheticfont 1
+90 
+programnodeenumerator 1
+0 
+readbeforewrittentester 1
+92 
+namescope 1
+0 
+staticscope 1
+94 
+nullscope 1
+94 
+localscope 1
+94 
+paintpolicy 1
+0 
+luminancebasedcolorpolicy 1
+98 
+lineinformationtable 1
+0 
+optimizedlineinformationtable 1
+100 
+message 1
+0 
+messagesend 1
+102 
+magnitude 1
+0 
+character 1
+104 
+time 1
+104 
+date 1
+104 
+textattributes 1
+0 
+variablesizetextattributes 1
+108 
+geometric 1
+0 
+bezier 1
+110 
+spline 1
+110 
+linesegment 1
+110 
+circle 1
+110 
+polyline 1
+110 
+ellipticalarc 1
+110 
+externalconnection 1
+0 
+fileconnection 1
+117 
+uninterpretedbytes 1
+0 
+graphicshandle 1
+119 
+compiledcode 1
+0 
+compiledblock 1
+121 
+iobuffer 1
+0 
+positionaliobuffer 1
+123 
+bosstransporter 1
+0 
+bosswriter 1
+125 
+visualcomponent 1
+0 
+opaqueimage 1
+127 
+cachedimage 1
+127 
+icon 1
+127 
+compilererrorhandler 1
+0 
+loggingcompilererrorhandler 1
+131 
+noninteractivecompilererrorhandler 1
+131 
+interactivecompilererrorhandler 1
+131 
+silentcompilererrorhandler 1
+131 
+borderdecorationpolicy 1
+0 
+smalltalkborderdecorationpolicy 1
+136 
+classorganizer 1
+0 
+systemorganizer 1
+138 
+change 1
+0 
+otherchange 1
+140 
+variabledefinition 1
+0 
+instancevariable 1
+142 
+receivervariable 1
+142 
+remotevariable 1
+142 
+pseudovariable 1
+142 
+characterencoder 1
+0 
+largecharacterencoder 1
+147 
+bytecharacterencoder 1
+147 
+behavior 1
+0 
+classdescription 1
+150 
+metaclass 1
+151 
+bytecodestream 1
+0 
+codestream 1
+153 
+recodestream 1
+154 
+browser 1
+49 
+debugger 1
+156 
+methodlistbrowser 1
+156 
+hierarchybrowser 1
+156 
+valuemodel 1
+49 
+pluggableadaptor 1
+160 
+inspector 1
+49 
+dictionaryinspector 1
+162 
+contextinspector 1
+162 
+changesetinspector 1
+162 
+parser 1
+55 
+ccompatibleparser 1
+166 
+statementnode 1
+59 
+returnnode 1
+168 
+palette 1
+62 
+coveragepalette 1
+170 
+oserrorholder 1
+0 
+oshandle 1
+172 
+cursor 1
+173 
+paintrenderer 1
+70 
+nearestpaint 1
+175 
+ordereddither 1
+175 
+displaysurface 1
+0 
+unmappablesurface 1
+178 
+mask 1
+179 
+pixmap 1
+179 
+window 1
+178 
+scheduledwindow 1
+182 
+controllerwithmenu 1
+72 
+notifiercontroller 1
+184 
+standardsystemcontroller 1
+72 
+dialogcontroller 1
+186 
+instructionstream 1
+78 
+coderegenerator 1
+188 
+decompiler 1
+188 
+textmeasurer 1
+0 
+characterscanner 1
+191 
+compositionscanner 1
+192 
+characterblockscanner 1
+192 
+displayscanner 1
+192 
+simplepaint 1
+88 
+colorvalue 1
+196 
+coveragevalue 1
+196 
+devicefont 1
+90 
+xfont 1
+199 
+mswindowsfont 1
+199 
+macfont 1
+199 
+arithmeticvalue 1
+104 
+point 1
+203 
+rectangle 1
+110 
+characterblock 1
+205 
+compiledmethod 1
+121 
+markedmethod 1
+207 
+bossreader 1
+125 
+bossdebugreader 1
+209 
+textlines 1
+127 
+textlist 1
+211 
+composedtext 1
+211 
+image 1
+127 
+depth8image 1
+214 
+depth4image 1
+214 
+depth16image 1
+214 
+depth1image 1
+214 
+depth24image 1
+214 
+depth32image 1
+214 
+depth2image 1
+214 
+staticvariable 1
+142 
+undeclaredvariable 1
+222 
+localvariable 1
+142 
+temporaryvariable 1
+224 
+argumentvariable 1
+224 
+layout 1
+0 
+layoutorigin 1
+227 
+layoutframe 1
+228 
+valueholder 1
+160 
+textcollector 1
+230 
+changelist 1
+230 
+project 1
+230 
+sequenceablecollectioninspector 1
+162 
+orderedcollectioninspector 1
+234 
+valuenode 1
+168 
+loopnode 1
+236 
+assignmentnode 1
+236 
+sequencenode 1
+236 
+arithmeticloopnode 1
+236 
+conditionalnode 1
+236 
+cascadenode 1
+236 
+set 1
+62 
+identityset 1
+243 
+signalcollection 1
+244 
+dictionary 1
+243 
+systemdictionary 1
+246 
+colorpalette 1
+170 
+fixedpalette 1
+248 
+sequenceablecollection 1
+62 
+linkedlist 1
+250 
+semaphore 1
+251 
+interval 1
+250 
+textlineinterval 1
+253 
+orderedcollection 1
+250 
+handlercollection 1
+255 
+fontdescriptionbundle 1
+255 
+arrayedcollection 1
+250 
+runarray 1
+258 
+weakarray 1
+258 
+paragrapheditor 1
+184 
+textitemeditor 1
+261 
+listcontroller 1
+184 
+changelistcontroller 1
+263 
+context 1
+188 
+methodcontext 1
+265 
+blockcontext 1
+265 
+number 1
+203 
+fraction 1
+268 
+lookupkey 1
+104 
+association 1
+270 
+weakkeyassociation 1
+271 
+visualpart 1
+127 
+wrapper 1
+273 
+graphicsattributeswrapper 1
+274 
+passivitywrapper 1
+274 
+compositepart 1
+273 
+borderdecorator 1
+277 
+classrelatedchange 1
+140 
+classchange 1
+279 
+classdefinitionchange 1
+280 
+methodchange 1
+279 
+methodotherchange 1
+282 
+methoddefinitionchange 1
+282 
+class 1
+151 
+object:class 1
+285 
+processhandle:class 1
+286 
+remotestring:class 1
+286 
+delay:class 1
+286 
+deferredblock:class 1
+286 
+recursionlock:class 1
+286 
+changeset:class 1
+286 
+graphicscontext:class 1
+286 
+charactercomposer:class 1
+286 
+inputstate:class 1
+286 
+defineopcodepool:class 1
+286 
+timezone:class 1
+286 
+screen:class 1
+286 
+binaryobjectstorage:class 1
+286 
+inversecolormapinitializer:class 1
+286 
+blockclosure:class 1
+286 
+processorscheduler:class 1
+286 
+programnodebuilder:class 1
+286 
+objectmemory:class 1
+286 
+spfillline:class 1
+286 
+classcategoryreader:class 1
+286 
+undefinedobject:class 1
+286 
+border:class 1
+286 
+bosscontents:class 1
+286 
+codelabel:class 1
+286 
+memorypolicy:class 1
+286 
+ditherupto4:class 1
+286 
+controlmanager:class 1
+286 
+signal:class 1
+286 
+sharedqueue:class 1
+286 
+menutracker:class 1
+286 
+lookpreferences:class 1
+286 
+graphicsattributes:class 1
+286 
+exception:class 1
+286 
+characterattributes:class 1
+286 
+methodnodeholder:class 1
+286 
+fontpolicy:class 1
+286 
+bossregisteredobject:class 1
+286 
+bosscompiledcodeholder:class 1
+286 
+classbuilder:class 1
+286 
+keyboardevent:class 1
+286 
+inversecolormap:class 1
+286 
+dispatchtable:class 1
+286 
+fontdescription:class 1
+286 
+rasterop:class 1
+286 
+peekablestream 1
+45 
+positionablestream 1
+331 
+internalstream 1
+332 
+readstream 1
+333 
+leafnode 1
+236 
+blocknode 1
+335 
+variablenode 1
+335 
+literalnode 1
+335 
+simplemessagenode 1
+236 
+messagenode 1
+339 
+identitydictionary 1
+246 
+methoddictionary 1
+341 
+mappedpalette 1
+248 
+monomappedpalette 1
+343 
+sortedcollection 1
+255 
+spactivelines 1
+345 
+spsortedlines 1
+345 
+array 1
+258 
+scannertable 1
+348 
+bossreadermap 1
+348 
+dependentscollection 1
+348 
+characterarray 1
+258 
+text 1
+352 
+integerarray 1
+258 
+wordarray 1
+354 
+ioaccessor 1
+173 
+unixioaccessor 1
+356 
+unixdiskfileaccessor 1
+357 
+macioaccessor 1
+356 
+macdiskfileaccessor 1
+359 
+dosioaccessor 1
+356 
+dosdiskfileaccessor 1
+361 
+textcontroller 1
+261 
+debuggercontroller 1
+363 
+selectioninlistcontroller 1
+263 
+selectionsetinlistcontroller 1
+365 
+limitedprecisionreal 1
+268 
+double 1
+367 
+float 1
+367 
+integer 1
+268 
+largenegativeinteger 1
+370 
+smallinteger 1
+370 
+largepositiveinteger 1
+370 
+widgetspecification 1
+274 
+button 1
+374 
+geometricwrapper 1
+274 
+fillingwrapper 1
+376 
+strokingwrapper 1
+376 
+translatingwrapper 1
+274 
+scrollwrapper 1
+379 
+dependentpart 1
+273 
+view 1
+381 
+fractionalwidgetview 1
+382 
+launcherview 1
+382 
+notifierview 1
+382 
+classotherchange 1
+280 
+classcommentchange 1
+386 
+paintpolicy:class 1
+286 
+luminancebasedcolorpolicy:class 1
+388 
+instructionclient:class 1
+286 
+instructionprinter:class 1
+390 
+inputsensor:class 1
+286 
+windowsensor:class 1
+392 
+translatingsensor:class 1
+392 
+namescope:class 1
+286 
+localscope:class 1
+395 
+nullscope:class 1
+395 
+staticscope:class 1
+395 
+widgetpolicy:class 1
+286 
+smalltalkwidgetpolicy:class 1
+399 
+compiledcode:class 1
+286 
+compiledblock:class 1
+401 
+implementationfont:class 1
+286 
+syntheticfont:class 1
+403 
+controller:class 1
+286 
+launchercontroller:class 1
+405 
+nocontroller:class 1
+405 
+scrollbarcontroller:class 1
+405 
+widgetcontroller:class 1
+405 
+dialogcompositecontroller:class 1
+405 
+characterencoder:class 1
+286 
+bytecharacterencoder:class 1
+411 
+largecharacterencoder:class 1
+411 
+scanner:class 1
+286 
+changescanner:class 1
+414 
+externalconnection:class 1
+286 
+fileconnection:class 1
+416 
+geometric:class 1
+286 
+linesegment:class 1
+418 
+spline:class 1
+418 
+circle:class 1
+418 
+bezier:class 1
+418 
+ellipticalarc:class 1
+418 
+polyline:class 1
+418 
+collection:class 1
+286 
+bag:class 1
+425 
+boolean:class 1
+286 
+false:class 1
+427 
+true:class 1
+427 
+textattributes:class 1
+286 
+variablesizetextattributes:class 1
+430 
+borderdecorationpolicy:class 1
+286 
+smalltalkborderdecorationpolicy:class 1
+432 
+classorganizer:class 1
+286 
+systemorganizer:class 1
+434 
+stream:class 1
+286 
+random:class 1
+436 
+change:class 1
+286 
+otherchange:class 1
+438 
+paint:class 1
+286 
+pattern:class 1
+440 
+message:class 1
+286 
+messagesend:class 1
+442 
+lineinformationtable:class 1
+286 
+optimizedlineinformationtable:class 1
+444 
+sourcefilemanager:class 1
+286 
+sourcecodestream:class 1
+446 
+programnode:class 1
+286 
+parameternode:class 1
+448 
+methodnode:class 1
+448 
+model:class 1
+286 
+scrollvalueholder:class 1
+451 
+filebrowser:class 1
+451 
+popupmenu:class 1
+451 
+explainer:class 1
+451 
+syntaxerror:class 1
+451 
+magnitude:class 1
+286 
+date:class 1
+457 
+time:class 1
+457 
+character:class 1
+457 
+filename:class 1
+286 
+macfilename:class 1
+461 
+dosfilename:class 1
+461 
+unixfilename:class 1
+461 
+link:class 1
+286 
+process:class 1
+465 
+imagerenderer:class 1
+286 
+errordiffusion:class 1
+467 
+smalltalkcompiler:class 1
+286 
+compiler:class 1
+469 
+programnodeenumerator:class 1
+286 
+readbeforewrittentester:class 1
+471 
+visualcomponent:class 1
+286 
+icon:class 1
+473 
+opaqueimage:class 1
+473 
+cachedimage:class 1
+473 
+variabledefinition:class 1
+286 
+pseudovariable:class 1
+477 
+receivervariable:class 1
+477 
+instancevariable:class 1
+477 
+remotevariable:class 1
+477 
+uninterpretedbytes:class 1
+286 
+graphicshandle:class 1
+482 
+bosstransporter:class 1
+286 
+bosswriter:class 1
+484 
+compilererrorhandler:class 1
+286 
+noninteractivecompilererrorhandler:class 1
+486 
+interactivecompilererrorhandler:class 1
+486 
+silentcompilererrorhandler:class 1
+486 
+loggingcompilererrorhandler:class 1
+486 
+iobuffer:class 1
+286 
+positionaliobuffer:class 1
+491 
+externalstream 1
+332 
+bufferedexternalstream 1
+493 
+externalwritestream 1
+494 
+writestream 1
+333 
+textstream 1
+496 
+weakdictionary 1
+341 
+handleregistry 1
+498 
+string 1
+352 
+gapstring 1
+500 
+twobytestring 1
+500 
+bytearray 1
+354 
+bossbytes 1
+503 
+scrollbar 1
+382 
+fixedthumbscrollbar 1
+505 
+booleanwidgetview 1
+382 
+labeledbooleanview 1
+507 
+actionbutton 1
+507 
+dependentcomposite 1
+277 
+compositeview 1
+510 
+dialogview 1
+511 
+instructionstream:class 1
+390 
+coderegenerator:class 1
+513 
+decompiler:class 1
+513 
+bytecodestream:class 1
+286 
+codestream:class 1
+516 
+recodestream:class 1
+517 
+layout:class 1
+286 
+layoutorigin:class 1
+519 
+layoutframe:class 1
+520 
+compiledmethod:class 1
+401 
+markedmethod:class 1
+522 
+devicefont:class 1
+403 
+xfont:class 1
+524 
+mswindowsfont:class 1
+524 
+macfont:class 1
+524 
+controllerwithmenu:class 1
+405 
+notifiercontroller:class 1
+528 
+standardsystemcontroller:class 1
+405 
+dialogcontroller:class 1
+530 
+parser:class 1
+414 
+ccompatibleparser:class 1
+532 
+rectangle:class 1
+418 
+characterblock:class 1
+534 
+palette:class 1
+425 
+coveragepalette:class 1
+536 
+simplepaint:class 1
+440 
+colorvalue:class 1
+538 
+coveragevalue:class 1
+538 
+oserrorholder:class 1
+286 
+oshandle:class 1
+541 
+cursor:class 1
+542 
+displaysurface:class 1
+286 
+window:class 1
+544 
+scheduledwindow:class 1
+545 
+unmappablesurface:class 1
+544 
+mask:class 1
+547 
+pixmap:class 1
+547 
+statementnode:class 1
+448 
+returnnode:class 1
+550 
+valuemodel:class 1
+451 
+pluggableadaptor:class 1
+552 
+browser:class 1
+451 
+methodlistbrowser:class 1
+554 
+hierarchybrowser:class 1
+554 
+debugger:class 1
+554 
+inspector:class 1
+451 
+contextinspector:class 1
+558 
+changesetinspector:class 1
+558 
+dictionaryinspector:class 1
+558 
+arithmeticvalue:class 1
+457 
+point:class 1
+562 
+paintrenderer:class 1
+467 
+ordereddither:class 1
+564 
+nearestpaint:class 1
+564 
+behavior:class 1
+286 
+classdescription:class 1
+567 
+class:class 1
+568 
+metaclass:class 1
+568 
+textlines:class 1
+473 
+composedtext:class 1
+571 
+textlist:class 1
+571 
+image:class 1
+473 
+depth24image:class 1
+574 
+depth8image:class 1
+574 
+depth1image:class 1
+574 
+depth16image:class 1
+574 
+depth4image:class 1
+574 
+depth32image:class 1
+574 
+depth2image:class 1
+574 
+staticvariable:class 1
+477 
+undeclaredvariable:class 1
+582 
+localvariable:class 1
+477 
+argumentvariable:class 1
+584 
+temporaryvariable:class 1
+584 
+bossreader:class 1
+484 
+bossdebugreader:class 1
+587 
+textmeasurer:class 1
+286 
+characterscanner:class 1
+589 
+compositionscanner:class 1
+590 
+displayscanner:class 1
+590 
+characterblockscanner:class 1
+590 
+externalreadstream 1
+494 
+externalreadwritestream 1
+594 
+externalreadappendstream 1
+594 
+readwritestream 1
+496 
+bytecodereadwritestream 1
+597 
+byteencodedstring 1
+500 
+iso8859l1string 1
+599 
+bytestring 1
+599 
+macstring 1
+599 
+symbol 1
+500 
+twobytesymbol 1
+603 
+bytesymbol 1
+603 
+layoutwrapper 1
+379 
+boundedwrapper 1
+606 
+borderedwrapper 1
+607 
+autoscrollingview 1
+382 
+composedtextview 1
+609 
+textcollectorview 1
+610 
+listview 1
+609 
+changelistview 1
+612 
+context:class 1
+513 
+methodcontext:class 1
+614 
+blockcontext:class 1
+614 
+paragrapheditor:class 1
+528 
+textitemeditor:class 1
+617 
+listcontroller:class 1
+528 
+changelistcontroller:class 1
+619 
+sequenceablecollection:class 1
+425 
+interval:class 1
+621 
+textlineinterval:class 1
+622 
+orderedcollection:class 1
+621 
+handlercollection:class 1
+624 
+fontdescriptionbundle:class 1
+624 
+linkedlist:class 1
+621 
+semaphore:class 1
+627 
+arrayedcollection:class 1
+621 
+weakarray:class 1
+629 
+runarray:class 1
+629 
+colorpalette:class 1
+536 
+fixedpalette:class 1
+632 
+set:class 1
+425 
+identityset:class 1
+634 
+signalcollection:class 1
+635 
+dictionary:class 1
+634 
+systemdictionary:class 1
+637 
+classrelatedchange:class 1
+438 
+classchange:class 1
+639 
+classdefinitionchange:class 1
+640 
+methodchange:class 1
+639 
+methoddefinitionchange:class 1
+642 
+methodotherchange:class 1
+642 
+valuenode:class 1
+550 
+cascadenode:class 1
+645 
+conditionalnode:class 1
+645 
+loopnode:class 1
+645 
+sequencenode:class 1
+645 
+assignmentnode:class 1
+645 
+arithmeticloopnode:class 1
+645 
+valueholder:class 1
+552 
+project:class 1
+652 
+changelist:class 1
+652 
+textcollector:class 1
+652 
+sequenceablecollectioninspector:class 1
+558 
+orderedcollectioninspector:class 1
+656 
+number:class 1
+562 
+fraction:class 1
+658 
+lookupkey:class 1
+457 
+association:class 1
+660 
+weakkeyassociation:class 1
+661 
+visualpart:class 1
+473 
+wrapper:class 1
+663 
+graphicsattributeswrapper:class 1
+664 
+passivitywrapper:class 1
+664 
+compositepart:class 1
+663 
+borderdecorator:class 1
+667 
+textview 1
+610 
+debuggertextview 1
+669 
+selectioninlistview 1
+612 
+selectionsetinlistview 1
+671 
+textcontroller:class 1
+617 
+debuggercontroller:class 1
+673 
+selectioninlistcontroller:class 1
+619 
+selectionsetinlistcontroller:class 1
+675 
+sortedcollection:class 1
+624 
+spsortedlines:class 1
+677 
+spactivelines:class 1
+677 
+integerarray:class 1
+629 
+wordarray:class 1
+680 
+characterarray:class 1
+629 
+text:class 1
+682 
+array:class 1
+629 
+dependentscollection:class 1
+684 
+scannertable:class 1
+684 
+bossreadermap:class 1
+684 
+mappedpalette:class 1
+632 
+monomappedpalette:class 1
+688 
+identitydictionary:class 1
+637 
+methoddictionary:class 1
+690 
+peekablestream:class 1
+436 
+positionablestream:class 1
+692 
+internalstream:class 1
+693 
+readstream:class 1
+694 
+classotherchange:class 1
+640 
+classcommentchange:class 1
+696 
+ioaccessor:class 1
+542 
+unixioaccessor:class 1
+698 
+unixdiskfileaccessor:class 1
+699 
+dosioaccessor:class 1
+698 
+dosdiskfileaccessor:class 1
+701 
+macioaccessor:class 1
+698 
+macdiskfileaccessor:class 1
+703 
+simplemessagenode:class 1
+645 
+messagenode:class 1
+705 
+leafnode:class 1
+645 
+blocknode:class 1
+707 
+variablenode:class 1
+707 
+literalnode:class 1
+707 
+limitedprecisionreal:class 1
+658 
+float:class 1
+711 
+double:class 1
+711 
+integer:class 1
+658 
+largepositiveinteger:class 1
+714 
+largenegativeinteger:class 1
+714 
+smallinteger:class 1
+714 
+translatingwrapper:class 1
+664 
+scrollwrapper:class 1
+718 
+geometricwrapper:class 1
+664 
+strokingwrapper:class 1
+720 
+fillingwrapper:class 1
+720 
+widgetspecification:class 1
+664 
+button:class 1
+723 
+dependentpart:class 1
+663 
+view:class 1
+725 
+notifierview:class 1
+726 
+fractionalwidgetview:class 1
+726 
+launcherview:class 1
+726 
+bytearray:class 1
+680 
+bossbytes:class 1
+730 
+string:class 1
+682 
+gapstring:class 1
+732 
+twobytestring:class 1
+732 
+weakdictionary:class 1
+690 
+handleregistry:class 1
+735 
+writestream:class 1
+694 
+textstream:class 1
+737 
+externalstream:class 1
+693 
+bufferedexternalstream:class 1
+739 
+externalwritestream:class 1
+740 
+dependentcomposite:class 1
+667 
+compositeview:class 1
+742 
+dialogview:class 1
+743 
+scrollbar:class 1
+726 
+fixedthumbscrollbar:class 1
+745 
+booleanwidgetview:class 1
+726 
+actionbutton:class 1
+747 
+labeledbooleanview:class 1
+747 
+symbol:class 1
+732 
+twobytesymbol:class 1
+750 
+bytesymbol:class 1
+750 
+byteencodedstring:class 1
+732 
+bytestring:class 1
+753 
+iso8859l1string:class 1
+753 
+macstring:class 1
+753 
+readwritestream:class 1
+737 
+bytecodereadwritestream:class 1
+757 
+externalreadstream:class 1
+740 
+externalreadwritestream:class 1
+759 
+externalreadappendstream:class 1
+759 
+layoutwrapper:class 1
+718 
+boundedwrapper:class 1
+762 
+borderedwrapper:class 1
+763 
+autoscrollingview:class 1
+726 
+composedtextview:class 1
+765 
+textcollectorview:class 1
+766 
+listview:class 1
+765 
+changelistview:class 1
+768 
+textview:class 1
+766 
+debuggertextview:class 1
+770 
+selectioninlistview:class 1
+768 
+selectionsetinlistview:class 1
+772 
+1170
+notfounderror 3
+0 62 255 
+performupdate: 3
+0 351 6 
+issymbol 2
+0 603 
+ismanifest 6
+0 105 370 369 80 6 
+issequenceable 2
+0 250 
+doesnotunderstand: 2
+0 43 
+supersedesastextemphasis: 3
+0 271 88 
+referstoliteral: 6
+0 44 121 271 500 348 
+postcopy 19
+0 44 214 380 121 205 100 177 64 353 501 260 259 341 498 49 47 150 152 
+reversebyteorder 9
+0 119 120 369 368 355 604 502 482 
+mydependents 4
+0 380 260 49 
+browse 2
+0 264 
+update: 10
+0 381 612 671 672 610 611 669 670 6 
+species 7
+0 64 605 604 260 253 170 
+basicat: 2
+0 503 
+size 35
+0 40 119 370 369 368 265 62 250 258 355 353 604 502 599 601 501 350 259 255 253 251 63 170 343 249 171 243 239 160 333 494 495 596 595 
+printon: 55
+0 44 138 214 274 121 120 205 206 270 271 107 106 105 204 269 370 367 102 103 97 198 197 20 84 16 82 81 265 267 177 64 172 174 356 9 62 354 503 353 500 348 253 170 249 246 247 499 59 61 7 6 494 150 151 
+~= 5
+0 373 372 369 368 
+inspect 6
+0 16 354 500 255 246 
+hash 32
+0 44 34 121 119 205 115 113 112 111 104 270 107 106 105 204 269 370 372 367 198 197 64 250 352 500 603 253 343 249 171 59 
+copy 5
+0 206 23 603 247 
+removedependent: 5
+0 233 161 53 157 
+release 23
+0 40 273 277 510 381 507 274 276 376 117 199 91 72 183 10 499 6 230 233 157 2 494 
+= 40
+0 44 34 121 122 208 119 205 206 115 113 112 111 104 270 271 107 106 105 203 373 372 369 368 198 197 64 250 353 500 603 502 599 345 253 254 343 249 171 59 
+isinteger 2
+0 370 
+notnil 2
+0 6 
+identityhash 3
+0 105 372 
+errorsignal 8
+0 286 325 562 541 539 436 299 
+basicat:put: 3
+0 503 349 
+storeon: 29
+0 205 271 107 106 105 204 268 102 198 197 20 80 62 258 503 353 500 603 348 260 259 253 343 249 171 246 6 151 
+class 2
+0 43 
+subscriptboundserror: 2
+0 349 
+shallowcopy 6
+0 105 372 80 603 6 
+at: 27
+0 119 370 369 368 503 355 353 605 604 502 599 602 601 600 501 350 259 255 253 251 170 243 246 499 160 598 
+at:put: 30
+0 119 108 370 369 368 17 503 355 353 603 502 599 602 601 600 501 350 349 255 345 253 251 243 246 247 341 498 160 598 
+finalize 3
+0 178 356 
+notify: 3
+0 55 166 
+updaterequest 6
+0 384 610 261 351 6 
+isliteral 12
+0 105 370 369 368 82 81 503 500 603 348 6 
+respondstoarithmetic 2
+0 203 
+update:with: 3
+0 183 6 
+updaterequest: 3
+0 351 6 
+adddependent: 3
+0 6 161 
+changed: 2
+0 174 
+isnil 2
+0 6 
+asdependentswithout: 3
+0 351 6 
+representbinaryon: 19
+0 207 120 367 265 173 605 604 255 345 170 343 243 246 341 7 1 152 285 
+isstring 2
+0 500 
+mydependents: 4
+0 380 260 49 
+isbehavior 2
+0 150 
+binaryrepresentationversion 14
+0 747 763 561 454 552 544 443 735 688 528 401 396 521 
+isimmediate 3
+0 105 372 
+update:with:from: 14
+0 512 507 505 274 380 276 272 351 247 498 6 161 304 
+asdependentswith: 3
+0 351 6 
+asdependentsascollection 3
+0 351 6 
+performupdate:with: 3
+0 351 6 
+executor 3
+0 182 4 
+name: 5
+147 34 199 174 337 
+decode: 6
+147 149 148 199 753 734 
+encodingtype 8
+147 199 91 732 756 755 754 734 
+name 19
+147 140 141 282 386 281 34 117 118 90 199 91 174 337 60 494 150 152 285 
+encode: 9
+147 149 148 126 90 199 91 753 734 
+initialize 175
+148 43 227 228 229 39 136 34 32 127 277 278 512 384 507 509 508 505 383 609 612 671 672 610 379 607 380 276 375 213 123 124 108 109 100 98 23 97 92 93 84 17 16 72 186 77 74 184 261 262 178 182 183 13 173 10 345 347 5 4 160 233 232 231 161 52 51 47 153 154 155 285 286 589 329 484 328 482 573 572 749 729 773 766 474 326 570 565 325 466 460 562 717 716 715 713 712 458 455 454 453 554 557 653 322 320 319 706 446 317 545 546 541 542 698 543 314 540 539 436 739 437 434 313 433 430 431 304 634 637 638 536 688 689 537 753 756 755 754 750 683 630 677 418 422 420 414 415 302 405 530 529 620 617 618 524 527 526 525 299 298 401 297 395 296 295 294 293 292 393 517 515 514 614 289 
+outercontext 2
+44 267 
+pushcopiedvalues: 6
+44 78 190 267 189 79 
+home 4
+44 265 267 266 
+value: 9
+44 271 15 338 169 160 232 52 460 
+value 13
+44 271 203 103 21 338 238 169 57 160 230 161 52 
+method 4
+44 188 189 154 
+numargs 3
+44 121 603 
+printnameon:inclass: 4
+44 121 122 207 
+copiedvalues 2
+44 189 
+classname 4
+43 140 279 156 
+organization 3
+43 247 151 
+classname: 4
+43 279 156 159 
+classvariables: 2
+43 398 
+superclass 2
+43 150 
+environment 2
+43 151 
+superclass: 2
+43 150 
+instancevariables: 2
+43 151 
+scan: 2
+43 55 
+category: 4
+43 282 156 151 
+category 5
+43 140 282 156 151 
+organization: 2
+43 247 
+compute:whenrelativeto:preferred: 5
+227 228 229 205 204 
+rectanglerelativeto:preferred: 5
+227 228 229 205 204 
+aslayout 3
+227 205 204 
+sourceinfo: 2
+42 265 
+node 2
+42 224 
+sourcemap 2
+42 265 
+decompilestring 2
+42 59 
+tempnames 4
+42 97 96 265 
+method: 3
+42 188 79 
+selector 10
+42 140 282 102 265 267 266 339 61 156 
+on: 29
+41 91 87 13 55 156 158 48 332 333 496 598 497 494 596 491 476 668 664 553 322 447 693 740 300 404 293 513 391 
+next 11
+40 209 188 13 45 496 597 334 495 594 46 
+nextput: 12
+40 126 85 13 231 45 496 334 495 596 595 46 
+isempty 10
+40 612 16 62 255 251 59 239 50 332 
+peek 2
+40 331 
+emitload:from: 9
+142 146 226 225 145 222 223 144 143 
+islocalscope:index: 3
+142 224 144 
+emitstore:from: 7
+142 146 226 225 145 144 143 
+leavescope:between:and: 3
+142 226 225 
+emitstore:value:from: 5
+142 145 222 338 337 
+emitstorepop:value:from: 6
+142 145 222 223 338 337 
+emitstorepop:from: 7
+142 146 226 225 145 144 143 
+notestore 2
+142 225 
+isinvariant 3
+142 226 144 
+isstatic 2
+142 222 
+scope:index:from: 2
+224 225 
+bottom 3
+39 211 205 
+right 3
+39 211 205 
+hasborder 3
+39 274 608 
+left 3
+39 211 205 
+top 4
+39 211 205 265 
+setbordercolor: 2
+39 26 
+metastate 2
+37 30 
+wait 3
+36 252 543 
+postsnapshot 4
+36 298 295 289 
+activate 2
+36 262 
+resume 3
+36 84 265 
+startup 7
+36 273 25 72 186 73 50 
+makespacefor: 2
+35 304 
+text 15
+140 141 284 387 281 611 213 261 162 53 51 156 157 494 596 
+fileouton: 4
+140 284 16 232 
+checkwith: 7
+140 141 284 283 386 387 281 
+text: 4
+140 141 213 192 
+file:position: 2
+140 438 
+filein 5
+140 284 264 64 331 
+classobject 2
+140 279 
+fileouton:previous:next: 2
+140 284 
+parameters 4
+140 141 279 282 
+values 4
+140 259 246 50 
+filename 3
+140 284 51 
+selector: 4
+282 131 156 442 
+methodname 2
+282 158 
+type 6
+282 284 283 386 375 60 
+getsource 4
+284 121 122 207 
+type: 2
+283 386 
+removecategory: 2
+138 151 
+scanfrom: 2
+138 18 
+changefromstring: 2
+138 139 
+superclassorder: 2
+139 292 
+printoutcategory:on: 2
+139 151 
+markerthickness 3
+136 505 317 
+inset 2
+136 608 
+border: 2
+136 608 
+border 2
+136 608 
+minmarkerextent 2
+136 505 
+preferredboundsfor: 2
+136 137 
+inset: 2
+136 608 
+menubarheight 2
+136 317 
+layout: 3
+136 137 606 
+strikeout: 2
+34 91 
+findmatchon:allowance: 2
+34 257 
+underline: 2
+34 91 
+installon: 11
+34 214 90 199 91 88 89 198 197 257 8 
+color: 2
+34 91 
+error:with:in:from: 5
+131 135 134 133 132 
+abort 2
+131 166 
+error:with:at: 6
+131 135 134 133 132 153 
+editor: 2
+135 134 
+source: 3
+135 133 31 
+compose2:with: 2
+32 23 
+add:do: 2
+32 23 
+compose1: 2
+32 23 
+reset 9
+32 612 23 188 189 13 332 333 494 
+width: 4
+31 512 205 308 
+height: 2
+31 205 
+destx: 2
+31 191 
+destx 2
+31 191 
+width 8
+31 214 211 213 212 205 178 177 
+height 9
+31 214 211 213 212 205 90 178 177 
+ctrldown 2
+30 85 
+shiftdown 2
+30 85 
+metadown 2
+30 85 
+run 2
+30 189 
+mousepoint 2
+30 85 
+pollforactivity 4
+30 85 87 86 
+screen 4
+30 199 178 174 
+cursorpoint: 2
+30 85 
+altdown 2
+30 85 
+pollingtimeout 2
+30 295 
+pseudoevent 2
+30 87 
+changedbounds: 2
+127 273 
+bounds 11
+127 273 612 274 379 607 378 211 110 178 4 
+invalidaterectangle: 3
+127 273 384 
+selectionbackgroundcolor 3
+127 26 25 
+invalidate 3
+127 273 117 
+foregroundcolor 4
+127 26 25 183 
+scrolloffsetholder: 5
+127 609 612 610 274 
+intersects: 9
+127 277 274 379 607 376 378 377 205 
+objectwantingcontrol 7
+127 273 277 512 274 276 376 
+flushcaches 11
+127 130 277 278 612 610 274 376 374 212 183 
+lookpreferences 7
+127 273 505 608 276 25 183 
+changedpreferredbounds: 2
+127 273 
+flushcoordinatecaches 7
+127 273 277 274 376 72 74 
+preferredbounds 22
+127 214 130 277 278 512 382 384 509 508 612 610 274 379 608 376 378 129 128 211 212 178 
+displayon:at: 10
+127 214 211 213 179 181 180 174 352 353 
+bounds: 13
+127 273 277 278 505 612 610 274 606 607 608 380 376 
+selectionforegroundcolor 3
+127 26 25 
+displayon: 31
+127 214 130 273 277 385 384 509 508 505 506 383 612 672 613 610 274 379 607 608 276 275 376 378 377 129 128 211 183 179 174 
+rectanglerelativeto: 6
+127 274 379 606 376 205 
+containspoint: 8
+127 277 274 379 607 376 205 183 
+container: 2
+127 273 
+backgroundcolor 4
+127 26 25 183 
+depth 6
+214 178 182 181 180 170 
+rowat:into:startingat: 8
+214 221 220 219 218 217 216 215 
+asimage 2
+214 178 
+rowat:putall:startingat: 8
+214 221 220 219 218 217 216 215 
+retainedmediumclass 4
+214 170 248 171 
+atpoint: 2
+214 177 
+atx:y:put: 8
+214 221 220 219 218 217 216 215 
+asretainedmedium 4
+214 129 181 180 
+tilebitsstride:width:atx:y:from:stride:width:atx:y:width:height:rule: 2
+214 503 
+atx:y: 8
+214 221 220 219 218 217 216 215 
+extent:depth:palette: 2
+214 574 
+extent 8
+214 130 129 128 211 205 178 177 
+copyempty: 5
+214 62 345 170 247 
+pixelarrayspecies 5
+214 221 218 216 215 
+copybitsstride:width:atx:y:from:stride:width:atx:y:width:height:rule: 2
+214 503 
+paintbasis 14
+214 129 88 89 198 197 178 182 181 180 12 170 248 171 
+bitsperpixel 5
+214 178 182 181 180 
+aspattern 4
+214 129 89 179 
+copyempty 2
+214 255 
+palette 6
+214 22 178 182 181 180 
+atpoint:put: 2
+214 177 
+inherentbitsperpixel 8
+214 221 220 219 218 217 216 215 
+image: 2
+130 474 
+graphicscontext 2
+273 178 
+edgedecorationpolicy 4
+273 278 183 317 
+globalpointtolocal: 4
+273 379 608 183 
+dispatcheskeyboard 3
+273 512 183 
+changedbounds:forcomponent: 5
+273 277 379 607 183 
+changedpreferredbounds:forcomponent: 6
+273 277 379 607 380 183 
+isopen 2
+273 178 
+compositionboundsfor: 6
+273 277 379 607 608 183 
+subviewwantingcontrol 2
+273 183 
+setcontroller: 3
+273 511 382 
+invalidaterectangle:repairnow:forcomponent: 6
+273 379 607 608 276 183 
+widgetpolicy 3
+273 183 317 
+getcontroller 3
+273 511 382 
+repairdamage 2
+273 25 
+topcomponent 2
+273 183 
+localpointtoglobal: 4
+273 379 608 183 
+graphicscontextfor: 7
+273 379 607 608 276 275 183 
+computedisplayboxfor:indisplaybox: 2
+277 278 
+add: 12
+277 62 258 255 345 253 251 63 170 243 246 341 
+remove: 4
+277 62 253 246 
+component 4
+278 274 374 183 
+setcomponent: 4
+278 274 380 376 
+edgedecorationpolicy: 3
+278 183 317 
+model: 12
+510 381 612 610 374 72 365 363 183 161 725 742 
+model 5
+510 381 374 72 183 
+setmodel: 5
+510 511 381 382 509 
+defaultcontrollerclass 15
+511 512 382 385 384 507 505 383 612 671 672 613 610 669 670 
+defaultcontroller 2
+511 382 
+controller: 4
+511 382 610 183 
+controller 3
+511 382 183 
+open 9
+512 118 183 10 769 766 767 453 554 
+rightindent: 3
+512 213 108 
+rightindent 3
+512 213 108 
+contents 10
+385 13 45 332 333 496 597 497 494 46 
+linegrid 5
+384 612 610 211 108 
+selectionindex: 3
+384 612 610 
+inactiveforegroundcolor 2
+507 276 
+bevisual: 2
+509 508 
+label 3
+508 375 183 
+beswitch 2
+508 74 
+betoggle 2
+508 74 
+label: 4
+508 375 182 183 
+computemarkerregion 2
+505 506 
+alignmarker: 2
+505 506 
+computemarkerposition 2
+505 506 
+maptodataspace: 2
+505 506 
+marker 2
+505 543 
+alignment 2
+505 108 
+behorizontal 2
+505 383 
+bevertical 2
+505 383 
+map: 2
+383 192 
+scrollby: 2
+609 25 
+validatescrollposition: 2
+609 380 
+settotop 2
+612 610 
+displayorigin 2
+612 610 
+displayselectionindex:on: 2
+612 672 
+lineindexoftop: 3
+612 610 211 
+list: 4
+612 671 672 51 
+displayobject 2
+612 610 
+selection 5
+612 25 261 232 50 
+deselect 4
+612 610 261 232 
+getlist 2
+612 671 
+list 2
+612 232 
+displayselectionindex:on:within:infcolor:bcolor:vis:clip: 3
+612 672 613 
+displayselectionson:within: 2
+612 672 
+hiliterectangle:on:fcolor:bcolor: 3
+612 672 25 
+topatlineindex: 3
+612 610 211 
+getselectionindex 2
+612 671 
+visualextra 2
+612 672 
+on:printitems:oneitem:aspect:change:list:menu:initialselection:useindex: 2
+671 772 
+menumessage 2
+671 669 
+redisplayrectangle:on: 3
+672 610 380 
+getcontents 3
+610 611 669 
+selectionstartindex: 2
+610 261 
+wordwrap: 2
+610 213 
+characterblockforindex: 2
+610 213 
+selectionstartindex:stopindex: 2
+610 261 
+displaycontents 2
+610 25 
+characterblockatpoint: 2
+610 213 
+selectfrom:to: 2
+610 261 
+selectandscroll 2
+610 261 
+selectat: 2
+610 261 
+select 2
+610 261 
+initializeselection 2
+610 669 
+textstyle 4
+610 211 213 212 
+textstyle: 5
+610 211 213 212 192 
+visiblerectanglefrom:to: 2
+610 211 
+selectionstopindex: 2
+610 261 
+appendentry 2
+611 231 
+on:aspect:change:menu: 2
+669 770 
+component: 3
+274 376 183 
+setcomponentboundsto: 3
+274 379 607 
+newbounds:containingbounds: 3
+274 379 606 
+setorigin: 2
+379 380 
+translation 2
+379 12 
+extent: 4
+607 205 204 547 
+bordercolor: 2
+608 26 
+insidecolor 2
+608 183 
+insidecolor: 2
+608 183 
+clippingbounds 2
+380 12 
+displayupdatescanoccur 2
+380 52 
+iscontrolactive 10
+276 72 186 187 76 74 263 261 262 73 
+linewidth: 3
+378 12 8 
+linewidth 3
+378 12 8 
+installcomponent 2
+374 375 
+figure:shape: 2
+128 475 
+numberoflines 4
+211 213 212 100 
+topleft 2
+211 205 
+rightmarginfordisplay 2
+211 213 
+leftmarginfordisplayforline: 2
+211 213 
+lineat: 5
+211 213 212 100 101 
+textat: 3
+211 213 212 
+fontpolicy 3
+211 213 12 
+ascomposedtext 2
+213 352 
+baseline 2
+213 108 
+restindent 2
+213 108 
+clearindents 2
+213 108 
+firstindent: 2
+213 108 
+restindent: 2
+213 108 
+firstindent 2
+213 108 
+asstring 5
+213 64 354 352 603 
+asparagraph 3
+213 353 500 
+string 5
+213 29 352 353 500 
+iscomposed 2
+213 105 
+lineindexofcharacterindex: 2
+213 100 
+hardcopy 2
+213 261 
+fontpolicy: 2
+213 12 
+astext 4
+213 352 353 500 
+replacefrom:to:with: 5
+213 261 250 353 501 
+lines 2
+212 50 
+storage:on: 2
+125 209 
+commitsources 2
+209 47 
+skipnext 2
+209 13 
+readobjects:topindex: 2
+209 210 
+singleobjectfrom: 2
+209 210 
+commit 7
+123 356 362 360 358 494 596 
+steptonextbuffer 2
+123 124 
+flushbufferupto: 2
+123 124 
+readbufferstartingat: 2
+123 124 
+readposition:setoffset: 2
+123 124 
+bufferchanged 2
+123 124 
+currentbufferposition 2
+123 124 
+setposition: 2
+124 494 
+datasize 3
+124 117 118 
+position 7
+29 13 231 332 494 495 155 
+defaultfont 4
+28 108 17 178 
+initializedefault 4
+28 320 430 431 
+findfont: 2
+28 12 
+numtemps 2
+121 154 
+ismarkedforunwind 2
+121 208 
+byteat:put: 5
+121 119 503 502 599 
+ismarked 2
+121 208 
+messages 2
+121 242 
+methodwithsource 3
+121 122 207 
+printsymbolicon: 2
+121 208 
+numlocals 2
+121 122 
+ismarkedforpropagate 2
+121 208 
+mclass 4
+121 122 207 265 
+ismarkedforhandle 2
+121 208 
+byteat: 6
+121 119 503 605 502 599 
+homemethod 3
+121 122 207 
+isblockmethod 3
+121 122 207 
+fileposition 2
+122 207 
+fileindex 2
+122 207 
+unsignedlongat: 2
+119 504 
+shortat: 2
+119 504 
+longat:put: 2
+119 504 
+sizeinbytes 4
+119 503 502 599 
+longat: 2
+119 504 
+unsignedshortat: 2
+119 504 
+replacebytesfrom:to:with:startingat: 2
+119 503 
+unsignedlongat:put: 2
+119 504 
+unsignedshortat:put: 2
+119 504 
+key 7
+120 270 272 199 178 173 4 
+code 2
+27 189 
+bordercolor 2
+26 25 
+lineendconvention 6
+117 356 361 359 357 494 
+writestream 4
+117 64 356 250 
+readstream 4
+117 64 356 250 
+close 15
+117 186 187 178 182 183 13 174 356 357 10 47 45 494 596 
+defaultiobufferinmode: 2
+117 118 
+readappendstream 3
+117 64 356 
+canpersist 2
+117 118 
+isactive 7
+117 118 85 74 182 174 356 
+display 3
+25 186 183 
+startupat:centerx:centery: 2
+25 50 
+grid 2
+25 52 
+anybuttonpressed 2
+25 85 
+selection: 2
+25 50 
+startupwithheading: 2
+25 50 
+startupat: 2
+25 50 
+startupat:keepopenifin: 2
+25 50 
+poll 2
+25 72 
+outlineintersects: 8
+110 116 205 115 114 113 112 111 
+regionintersects: 5
+110 116 205 115 114 
+displaystrokedon: 8
+110 116 205 115 114 113 112 111 
+translatedby: 9
+110 116 205 115 114 113 112 111 204 
+scaledby: 9
+110 116 205 115 114 113 112 111 204 
+canbefilled 5
+110 116 205 115 114 
+computebounds 8
+110 116 205 115 114 113 112 111 
+displayfilledon: 5
+110 116 205 115 114 
+aspolyline 5
+116 205 114 112 111 
+sweepangle 2
+116 114 
+asellipticalarc 2
+116 114 
+startangle 2
+116 114 
+computepoints 3
+116 112 111 
+center 3
+116 205 114 
+origin 3
+205 9 543 
+corner 3
+205 9 543 
+corner: 2
+205 204 
+merge: 2
+205 189 
+asoffsetlayout 2
+205 204 
+area 2
+205 114 
+topright 2
+205 543 
+moveto: 3
+205 182 64 
+asfractionallayout 2
+205 204 
+aspointarray 2
+205 113 
+rounded 6
+205 204 268 370 369 368 
+bottomleft 2
+205 543 
+truncated 7
+205 204 268 269 370 369 368 
+origin:corner: 3
+205 305 534 
+origin:extent: 2
+205 534 
+< 16
+206 104 270 107 106 105 203 204 269 370 373 372 369 368 352 500 
+<= 10
+206 104 204 373 372 369 368 9 352 500 
+> 10
+206 104 105 204 373 372 369 368 352 500 
+>= 9
+206 104 204 373 372 369 368 352 500 
+end 2
+113 111 
+aspoint 3
+113 204 268 
+asline 2
+113 111 
+start 2
+113 111 
+descent 4
+108 90 199 91 
+gridforfont:withlead: 2
+108 109 
+fontat: 3
+108 17 257 
+install 15
+109 461 544 542 698 699 739 304 753 630 403 298 296 295 289 
+updatebasedon: 2
+109 431 
+min: 2
+104 204 
+max: 2
+104 204 
+key: 3
+270 272 660 
+key:value: 2
+271 661 
+asseconds 2
+107 106 
+aslowercase 3
+105 352 353 
+ascharacter 2
+105 370 
+assymbol 3
+105 352 603 
+asinteger 3
+105 268 370 
+asuppercase 3
+105 352 353 
+lessfromdouble: 5
+203 269 370 369 368 
+quotientfromfloat: 5
+203 269 370 369 368 
+differencefromfloat: 5
+203 269 370 369 368 
+reducegeneralityifpossible 4
+203 269 370 367 
+assmallinteger 2
+203 372 
+abs 4
+203 204 373 371 
+iszero 7
+203 204 269 370 372 369 368 
+productfromfraction: 5
+203 269 370 369 368 
+sumfromfloat: 5
+203 269 370 369 368 
+quotientfromfraction: 5
+203 269 370 369 368 
+sumfromdouble: 5
+203 269 370 369 368 
+lessfromfraction: 5
+203 269 370 369 368 
+sumfrominteger: 5
+203 269 370 369 368 
+negated 4
+203 269 373 371 
+lessfromfloat: 5
+203 269 370 369 368 
+* 8
+203 204 269 370 373 372 369 368 
+/ 8
+203 204 269 370 373 372 369 368 
++ 8
+203 204 269 370 373 372 369 368 
+differencefromfraction: 5
+203 269 370 369 368 
+quotientfrominteger: 5
+203 269 370 369 368 
+sumfromfraction: 5
+203 269 370 369 368 
+productfrominteger: 5
+203 269 370 369 368 
+negative 3
+203 373 371 
+positive 3
+203 373 371 
+generality 8
+203 204 269 370 372 369 368 562 
+productfromdouble: 5
+203 269 370 369 368 
+reciprocal 2
+203 269 
+coerce: 6
+203 204 269 370 369 368 
+- 9
+203 204 269 370 373 372 369 368 243 
+quotientfromdouble: 5
+203 269 370 369 368 
+lessfrominteger: 5
+203 269 370 369 368 
+differencefromdouble: 5
+203 269 370 369 368 
+differencefrominteger: 5
+203 269 370 369 368 
+productfromfloat: 5
+203 269 370 369 368 
+truncateto: 3
+204 268 356 
+// 5
+204 268 370 373 372 
+\\ 4
+204 268 373 372 
+grid: 2
+204 52 
+rem: 2
+204 268 
+quo: 5
+204 268 370 373 372 
+normal 2
+204 543 
+floor 2
+268 370 
+ceiling 2
+268 370 
+odd 3
+268 370 372 
+even 3
+268 370 372 
+asdouble 6
+268 269 370 372 369 368 
+quofrominteger: 2
+268 370 
+asrational 4
+268 269 370 367 
+sin 3
+268 369 368 
+sqrtrounded 2
+268 372 
+cos 3
+268 369 368 
+raisedto: 3
+268 369 368 
+degreestoradians 2
+268 367 
+aslimitedprecisionreal 2
+268 367 
+asfloat 6
+268 269 370 372 369 368 
+arcsin 3
+268 369 368 
+sqrt 3
+268 369 368 
+arctan 3
+268 369 368 
+radianstodegrees 2
+268 367 
+exp 3
+268 369 368 
+arccos 3
+268 369 368 
+tan 3
+268 369 368 
+ln 3
+268 369 368 
+denominator 2
+269 370 
+numerator 2
+269 370 
+printon:base: 3
+370 372 371 
+digitat:put: 4
+370 373 372 371 
+highbit 4
+370 373 372 371 
+digitlength 4
+370 373 372 371 
+bitand: 3
+370 373 372 
+bitor: 3
+370 373 372 
+bitshift: 3
+370 373 372 
+bitxor: 3
+370 373 372 
+digitat: 4
+370 373 372 371 
+compressed 4
+370 373 372 371 
+fractionpart 3
+367 369 368 
+exponent 3
+367 369 368 
+defaultnumberofdigits 2
+367 368 
+floorlog10 2
+369 368 
+timestwopower: 2
+369 368 
+arguments 3
+102 339 336 
+receiver 4
+103 265 339 242 
+laststop: 2
+100 101 
+setlines:lastline: 2
+100 101 
+lineat:putinformationfromscanner: 2
+100 101 
+adjuststarts:from:upto:with:size: 2
+100 101 
+linestartat: 2
+100 101 
+numberoflines: 2
+100 101 
+lineat:put: 2
+100 101 
+trimlinesto: 2
+100 101 
+linestopat: 2
+100 101 
+renderpaint:usingpalette: 5
+98 99 175 177 176 
+representimage:formedium: 4
+98 99 70 176 
+paintrenderer: 2
+98 99 
+leavescope:between:and:remove: 2
+94 97 
+associationsdo: 7
+94 97 96 95 246 341 498 
+variableat:from: 5
+94 97 96 95 153 
+undeclared:from: 3
+94 96 155 
+newblockscope 4
+97 153 154 155 
+variableforbinding: 2
+97 154 
+generatenames: 2
+97 153 
+domethod:selector:primitive:block: 2
+92 93 
+dovariable:name: 2
+92 93 
+doblock:arguments:body: 2
+92 93 
+doreturn:value: 2
+92 93 
+dosequence:temporaries:statements: 2
+92 93 
+docascade:receiver:messages: 2
+92 93 
+domessage:receiver:selector:arguments: 2
+92 93 
+doliteral:value: 2
+92 93 
+doassignment:variable:value: 2
+92 93 
+doparameter:variable:type: 2
+92 93 
+displaystring:from:to:at:on: 4
+90 199 91 195 
+widthtable 4
+90 199 91 191 
+widthof: 3
+90 199 91 
+ascent 3
+90 199 91 
+isaccessible 3
+90 199 91 
+withunderline 4
+199 202 201 91 
+withcolor: 2
+199 91 
+displaystring:from:to:at:on:map: 2
+199 91 
+illegalcharacterwidth 2
+199 91 
+withstrikeout 3
+199 201 91 
+widthofstring:from:to: 2
+91 12 
+indexofpaintnearestluminance: 5
+22 248 343 344 249 
+indexof:ifabsent: 7
+22 250 170 343 344 249 171 
+indexofpaintnearest: 7
+22 170 248 343 344 249 171 
+palette:resolutionred:green:blue:gray: 2
+22 327 
+resolution 2
+22 4 
+distancefrom: 3
+196 198 197 
+magenta 2
+197 539 
+luminancescalingvalue 2
+197 539 
+blue 2
+197 539 
+green 2
+197 539 
+red 2
+197 539 
+cyan 2
+197 539 
+scalingvalue 3
+197 540 539 
+yellow 2
+197 539 
+update 2
+21 162 
+definition 2
+20 151 
+keyboarddevice 3
+85 87 86 
+state 3
+85 87 86 
+metainput 3
+85 87 86 
+globalorigin 4
+85 87 86 182 
+globalcursorpoint 3
+85 87 86 
+cursorpoint 3
+85 392 393 
+currentcursor: 2
+85 543 
+currentcursor 2
+85 543 
+hasdamage 2
+87 86 
+getandresetdamage 2
+87 86 
+nextlink: 2
+83 465 
+terminate 3
+84 265 2 
+font: 4
+191 195 12 8 
+lastindex 2
+191 192 
+stopconditions 2
+191 192 
+internalspaces 2
+192 254 
+justifiedtabdeltafor: 2
+192 254 
+paddingwidth: 2
+192 254 
+internalspaces: 2
+192 254 
+characternotinfont 3
+192 195 194 
+justifiedpadfor: 2
+192 254 
+paddingwidth 2
+192 254 
+endofrun 4
+192 195 194 193 
+crossedx 4
+192 195 194 193 
+space 6
+195 194 193 231 45 460 
+setstopconditions 3
+195 194 193 
+cr 7
+195 194 193 231 47 45 460 
+paddedspace 2
+195 194 
+tab 6
+195 194 193 231 45 460 
+renameclass:as: 2
+16 247 
+putstatson: 3
+16 233 653 
+adddoit: 2
+16 232 
+assortedcollection 2
+16 62 
+| 3
+80 82 81 
+iftrue: 3
+80 82 81 
+iffalse: 3
+80 82 81 
+iftrue:iffalse: 3
+80 82 81 
+iffalse:iftrue: 3
+80 82 81 
+and: 3
+80 82 81 
+or: 3
+80 82 81 
+not 3
+80 82 81 
+& 3
+80 82 81 
+pushcontext 6
+78 190 265 189 79 154 
+sendnocheck:numargs: 6
+78 190 265 189 79 154 
+storeinstany: 5
+78 190 265 189 79 
+storepoplocal:outer: 5
+78 190 267 189 79 
+pushinstany: 5
+78 190 265 189 79 
+pushreceiverouter: 5
+78 190 267 189 79 
+pushlocal:outer: 5
+78 190 267 189 79 
+storestatic: 5
+78 190 265 79 154 
+pushlocal: 5
+78 190 265 189 79 
+pop 6
+78 190 265 189 79 154 
+pushstatic: 6
+78 190 265 189 79 154 
+returntop 5
+78 190 265 189 79 
+pushconstant: 6
+78 190 265 189 79 154 
+methodreturntop: 5
+78 190 267 189 79 
+undefined:with:with: 2
+78 79 
+sendnonimmediate:numargs: 6
+78 190 265 189 79 154 
+undefined: 3
+78 189 79 
+pushreceiver 5
+78 190 265 189 79 
+undefined:with: 2
+78 79 
+storelocal: 5
+78 190 265 189 79 
+send:numargs: 6
+78 190 265 189 79 154 
+jump: 5
+78 190 265 189 79 
+dupfirst 6
+78 190 265 189 79 154 
+jump:if: 5
+78 190 265 189 79 
+primitivereturn 5
+78 190 265 189 79 
+duplast 6
+78 190 265 189 79 154 
+dupnext 6
+78 190 265 189 79 154 
+pushinst: 5
+78 190 265 189 79 
+methodprimitive: 5
+78 190 265 189 79 
+makecopyingblock:count: 5
+78 190 265 189 79 
+noop 6
+78 190 265 189 79 155 
+loophead 6
+78 190 265 189 79 154 
+makefullblock: 5
+78 190 265 189 79 
+storeinst: 4
+78 190 265 79 
+sendsuper:numargs: 6
+78 190 265 189 79 154 
+callprimitive: 5
+78 190 265 189 79 
+atend 7
+188 13 45 332 494 495 46 
+interpretxmisc:with:for: 2
+188 189 
+changetovpc 2
+188 265 
+interpretshortload:for: 2
+188 189 
+sourcecode 3
+265 267 266 
+push: 2
+265 189 
+isblockcontext 2
+265 267 
+findtemp:do:elsedo: 3
+265 267 266 
+step 4
+265 55 157 46 
+homereceiver 3
+265 267 266 
+restart 3
+265 14 157 
+send 2
+265 157 
+outer: 3
+267 266 79 
+privatetempat: 2
+267 266 
+privatetempat:put: 2
+267 266 
+execute 2
+189 543 
+storepopstatic: 2
+189 154 
+parent: 2
+189 7 
+mergepoploads 2
+189 155 
+cancopy 2
+189 154 
+labels 2
+189 50 
+emitbody: 2
+189 336 
+initscope: 2
+189 336 
+checkforevents 3
+72 183 10 
+controlactivity 7
+72 186 187 76 75 184 261 
+controlloop 3
+72 75 74 
+controlinitialize 2
+72 187 
+controlterminate 2
+72 187 
+sensor 2
+72 182 
+iscontrolwanted 8
+72 186 75 74 263 261 262 73 
+view: 2
+72 186 
+newlabel 2
+186 153 
+collapse 2
+186 182 
+restartaftererror 2
+186 187 
+shutdownbecauseoferror 2
+186 187 
+accept 5
+77 261 262 363 50 
+processkeyboard 2
+77 261 
+redbuttonactivity 4
+184 185 263 366 
+initializemenu 6
+184 185 264 365 261 363 
+dispatchmenuselection: 2
+184 261 
+processmenuat:centered: 3
+184 365 363 
+copystack 2
+185 157 
+proceed 5
+185 14 53 157 2 
+changeselectionfrom:to: 2
+263 365 
+removeall 2
+264 232 
+restoreall 2
+264 232 
+forget 2
+264 232 
+dothis 2
+264 232 
+checkwithsystem: 2
+264 232 
+fileout 2
+264 165 
+recover 2
+264 769 
+dyforpoint: 2
+366 261 
+currentselection: 2
+261 617 
+doitreceiver 5
+261 162 164 156 157 
+find: 2
+261 255 
+undoselection: 2
+261 617 
+previousselections 2
+261 617 
+evaluateselection 2
+261 364 
+dispatchtable 3
+261 617 618 
+undoselection 2
+261 617 
+processredbutton 2
+261 262 
+processyellowbutton 2
+261 262 
+currentselection 2
+261 617 
+istokenish: 2
+261 166 
+deactivate 2
+262 10 
+doitcontext 4
+364 162 164 157 
+doitvalue: 3
+364 164 157 
+completecontentsofarea: 2
+178 4 
+defaultpaint 5
+178 182 183 181 180 
+contentsofareaoriginx:y:width:height: 4
+178 182 179 4 
+defaultfontpolicy 2
+178 4 
+flush 12
+178 12 4 231 45 496 334 495 594 596 595 46 
+background 2
+178 183 
+handlevalue: 4
+178 173 4 542 
+background: 3
+178 183 302 
+defaultpaintpolicy 4
+178 182 181 180 
+contentsofarea: 2
+178 4 
+defaultbackgroundpaint 5
+178 182 183 181 180 
+privateclose 4
+178 182 181 180 
+releasehandle 3
+178 173 4 
+clear 3
+178 12 231 
+icon: 2
+182 183 
+primclose 2
+182 356 
+reopen 4
+182 183 494 495 
+displaybox: 2
+182 183 
+actasexecutor 2
+182 4 
+raise 3
+182 14 7 
+medium 2
+183 12 
+widgetpolicy: 2
+183 317 
+representimage:as:painttransfer: 4
+70 177 176 71 
+representimageluminances:as: 2
+70 71 
+uniformrangelevels 2
+175 177 
+renderluminance:usingpalette: 2
+175 176 
+usesmallpalettealgorithmfor: 2
+177 176 
+smallpaletterepresentimage:as:painttransfer: 2
+177 176 
+order: 2
+177 565 
+genericpaletterepresentimage:as:painttransfer: 2
+177 176 
+errorstring 3
+14 172 7 
+signal 2
+14 252 
+raiserequest 2
+14 7 
+indexof: 3
+13 250 170 
+nextputall: 4
+13 231 45 596 
+settoend 4
+13 332 494 495 
+position: 7
+13 332 333 494 495 596 595 
+isbigendian 2
+13 482 
+paint 3
+12 8 330 
+font 2
+12 8 
+capstyle 2
+12 8 
+paint: 2
+12 8 
+joinstyle: 2
+12 8 
+capstyle: 2
+12 8 
+joinstyle 2
+12 8 
+newmethodholder 2
+68 69 
+newcodestream 2
+68 69 
+isreadable 2
+64 67 
+printtextfile 3
+64 66 65 
+constructstring: 3
+64 66 65 
+head 3
+64 66 65 
+filesize 2
+64 356 
+errorreporter 4
+64 172 461 541 
+named: 5
+64 67 66 65 461 
+readwritestream 4
+64 362 360 358 
+defaultclass 11
+64 356 461 463 462 542 698 703 701 699 543 
+fileoutchanges 3
+64 45 461 
+fileoutchangesfor: 2
+64 45 
+filesmatching: 3
+64 51 461 
+concreteclass 2
+64 461 
+reporterrorproceeding 2
+64 172 
+filesmatchingaccesslist:into: 4
+64 67 66 65 
+isabsolute 3
+64 66 65 
+separator 5
+64 461 464 463 462 
+reporterror 2
+64 172 
+asfilename 2
+64 352 
+tail 3
+64 66 65 
+printtextfileerrinto: 2
+66 65 
+connectionclass 4
+356 362 360 358 
+primreadinto:startingat:for: 2
+356 357 
+setsem:forwrite: 4
+356 362 360 357 
+writefrom:startingat:for:untilfalse: 2
+356 357 
+primwritefrom:startingat:for: 2
+356 357 
+readinto:startingat:for:untilfalse: 2
+356 357 
+lock:for: 2
+360 358 
+origin:corner:tag: 2
+9 305 
+do: 15
+62 250 255 253 251 63 343 344 249 171 243 246 341 498 45 
+collect: 7
+62 250 255 345 253 243 246 
+addall: 4
+62 255 345 347 
+occurrencesof: 6
+62 250 599 63 243 246 
+remove:ifabsent: 9
+62 250 255 251 63 170 243 246 3 
+includes: 5
+62 63 170 243 246 
+capacity 4
+62 255 343 243 
+asset 2
+62 63 
+select: 4
+62 250 255 246 
+asarray 3
+62 250 348 
+previndexof:from:to: 2
+250 599 
+startingat:replaceelementsin:from:to: 11
+250 354 503 355 352 605 604 502 599 348 251 
+copyfrom:to: 6
+250 353 500 501 259 255 
+replaceelementsfrom:to:withtwobytestring:startingat: 2
+250 502 
+swap:with: 5
+250 345 243 341 498 
+grow 5
+250 255 347 346 243 
+replaceelementsfrom:to:withbyteencodedstring:startingat: 2
+250 599 
+indexofsubcollection:startingat: 2
+250 500 
+replaceelementsfrom:to:withbytearray:startingat: 2
+250 503 
+reverse 4
+250 255 345 330 
+replacefrom:to:with:startingat: 3
+250 603 501 
+keysandvaluesdo: 10
+250 255 170 343 344 249 171 246 341 498 
+atallput: 2
+250 349 
+last 4
+250 255 253 251 
+replaceelementsfrom:to:withwordarray:startingat: 2
+250 355 
+copywithout: 2
+250 255 
+first 4
+250 255 253 251 
+copyreplacefrom:to:with: 4
+250 353 259 255 
+reversedo: 3
+250 255 253 
+copywith: 2
+250 255 
+nextindexof:from:to: 3
+250 599 501 
+defaultelement 2
+258 354 
+asbytestring 4
+354 503 500 601 
+astwobytestring 3
+354 500 502 
+asbytearray 2
+503 500 
+aswordarray 2
+355 500 
+byteorder 3
+355 604 502 
+runlengthfor: 4
+352 353 500 501 
+sameas: 2
+352 500 
+changefrom:to:with: 3
+352 500 501 
+match: 2
+352 166 
+findstring:startingat: 2
+352 353 
+emphasisat: 2
+352 353 
+runs 2
+353 259 
+haschangeofemphasis 2
+353 500 
+concretestring 2
+500 501 
+stringencoding 9
+500 605 604 502 599 602 601 600 501 
+isbyteindexed 4
+500 605 599 501 
+stringhash 2
+500 603 
+concreteindexfor: 2
+500 501 
+precedence 2
+603 339 
+string: 2
+605 604 
+asintegerarray 3
+502 599 601 
+addfirst: 5
+259 255 257 345 251 
+addlast: 5
+259 255 257 345 251 
+removelast 2
+255 251 
+add:before: 2
+255 345 
+add:beforeindex: 2
+255 345 
+removeindex: 2
+255 598 
+addallfirst: 2
+255 345 
+addalllast: 2
+255 345 
+add:after: 2
+255 345 
+removefirst 2
+255 251 
+sortblock: 2
+345 677 
+initializescanner: 2
+253 254 
+start:stop:internalspaces:paddingwidth: 2
+254 623 
+critical: 2
+252 5 
+initsignals 4
+252 286 541 739 
+includeskey: 6
+170 343 249 171 246 498 
+dithermappingblockfor:ditherscale: 2
+170 344 
+maxindex 4
+170 343 249 171 
+pixelsandthresholdsfordithering: 4
+170 248 249 171 
+at:ifabsent: 8
+170 343 344 249 171 246 341 498 
+ismonochrome 4
+248 343 344 249 
+hascolor 4
+248 343 344 249 
+hasgrayorcolor 4
+248 343 344 249 
+setcolors: 2
+343 344 
+createinversemap 2
+343 344 
+redshift:redmask:greenshift:greenmask:blueshift:bluemask: 2
+249 633 
+changecapacityto: 3
+243 246 498 
+initialindexfor:boundedby: 2
+243 342 
+fixcollisionsfrom: 2
+243 498 
+nocheckadd: 2
+243 341 
+rehash 2
+243 750 
+findelementornil: 2
+243 244 
+settally 4
+243 247 341 498 
+findkeyornil: 2
+246 341 
+removeassociation:ifabsent: 2
+246 341 
+associationat:ifabsent: 2
+246 341 
+keyatvalue:ifabsent: 3
+246 341 498 
+keys 2
+246 341 
+removekey:ifabsent: 4
+246 341 498 342 
+rebindallmethods 3
+247 150 285 
+nocheckadd:with: 2
+341 498 
+removeandcleanupatindex: 2
+341 498 
+unregister: 4
+499 544 542 298 
+registervalueof: 4
+499 544 542 298 
+register: 3
+499 482 542 
+registerallvaluesof: 3
+499 544 542 
+whichselectorsreferto: 2
+342 150 
+accepts: 2
+245 7 
+handle:from:do: 2
+245 7 
+handle:do: 2
+245 7 
+withinitializationoftemps 2
+59 239 
+isinvariantin: 3
+59 338 337 
+issuper 2
+59 337 
+sourceposition 3
+59 337 60 
+comment: 2
+59 151 
+shouldbekeptincode 3
+59 338 239 
+numbervalue 3
+59 338 239 
+absolutesourceposition 4
+59 339 242 238 
+printon:indent: 11
+59 339 242 338 337 336 239 238 169 61 60 
+iscomplex 3
+59 336 239 
+haseffect 3
+59 335 239 
+booleanvalue 3
+59 338 239 
+comment 2
+59 151 
+isself 2
+59 337 
+printon:indent:precedence: 4
+59 339 242 238 
+isblockwithnumargs: 2
+59 336 
+emitvalue: 13
+168 339 340 242 338 337 336 241 240 239 238 237 169 
+emitsend:selector:arguments: 5
+168 340 338 337 336 
+emitbranch:to:if: 5
+168 340 338 241 239 
+emiteffect: 10
+168 340 335 241 240 239 238 237 169 61 
+emitlocalreturn:from: 5
+168 340 241 239 169 
+emitreturn:from: 5
+168 340 241 239 169 
+emitvalue:forassignment: 2
+168 336 
+failifoptimizationsaredefeatedby:in: 3
+236 240 237 
+cangeneratecorrectcode 3
+236 240 237 
+receiver:selector:arguments: 3
+339 340 443 
+nodedo: 10
+339 242 338 337 336 239 238 169 61 60 
+body: 2
+336 708 
+turnoffoptimizationin: 2
+240 237 
+temporaries 2
+239 166 
+variable 2
+238 60 
+inheritsfrom: 2
+7 150 
+mayproceed 2
+7 157 
+variablebytesubclass:instancevariablenames:classvariablenames:pooldictionaries:category: 2
+6 285 
+variablesubclass:instancevariablenames:classvariablenames:pooldictionaries:category: 2
+6 285 
+subclass:instancevariablenames:classvariablenames:pooldictionaries:category: 2
+6 285 
+triggerfor: 2
+57 58 
+togglefor: 2
+57 58 
+unknownbutton: 2
+57 58 
+switchfor: 2
+57 58 
+offend: 2
+55 166 
+initscanner 3
+55 166 167 
+pattern 2
+166 51 
+platformname 2
+4 545 
+fieldlist 4
+162 234 164 163 
+fieldmenu 5
+162 235 165 164 163 
+evaluatetext:from:iffail: 2
+162 164 
+fieldindex 3
+162 234 164 
+fieldvalue 4
+162 234 164 163 
+accepttext:from: 9
+162 234 164 163 53 51 156 158 157 
+textmenu 4
+162 53 51 156 
+inspect: 3
+162 164 558 
+usesindex 2
+162 164 
+printitems 2
+162 163 
+addfield 2
+235 163 
+removefield 2
+235 163 
+empty 2
+165 288 
+setvalue: 3
+160 230 161 
+nochanges 2
+233 292 
+crtab 2
+231 45 
+emphasis 4
+231 47 45 497 
+emphasis: 4
+231 47 45 497 
+crtab: 2
+231 45 
+print: 3
+231 45 596 
+store: 4
+231 47 45 596 
+next:put: 2
+231 45 
+labelarray:lines:values: 2
+50 454 
+updatecategories 2
+156 159 
+removeclass 2
+156 159 
+selectedclass 2
+156 157 
+browsemessages 2
+156 157 
+spawnedits:from: 3
+156 158 157 
+onclass: 2
+156 159 
+categorymenu 2
+156 159 
+classlist 2
+156 159 
+removemethod 2
+156 158 
+prepareforerrorcondition 2
+157 2 
+resumeprocess 2
+157 2 
+finishinitializations 2
+47 48 
+initializethisclass: 2
+47 48 
+timestamp 2
+47 45 
+willupdatesourcepointers 2
+47 48 
+deferinitializations 2
+47 48 
+newpage 2
+47 460 
+nextchunkput: 2
+45 596 
+next:into:startingat: 3
+45 332 494 
+next:putall:startingat: 4
+45 332 494 596 
+contentsspecies 2
+45 332 
+skip: 4
+331 332 594 595 
+pastend 2
+333 494 
+on:from:to: 3
+333 693 694 
+with: 6
+333 652 694 425 688 629 
+writeposition 4
+496 494 495 596 
+readposition 3
+597 334 494 
+padto:put: 2
+493 596 
+textofclass: 2
+494 596 
+binary 2
+494 596 
+lineendconvention: 2
+494 596 
+nextbuffer 2
+494 495 
+closeconnection 2
+494 495 
+getiobuffer 2
+494 495 
+specialselectors 2
+153 154 
+addtemporaries:asarguments: 2
+153 154 
+isfornonimmediate 2
+153 154 
+class:outerscope: 2
+153 155 
+addmethodvars 2
+153 155 
+savesourcemap 2
+153 154 
+targetclass 2
+153 155 
+inblock 2
+153 154 
+canmergewithpop 2
+154 155 
+basicnew 3
+150 460 717 
+shouldberegistered 2
+150 285 
+removefromsuper 2
+150 285 
+validatemethod:forselector: 5
+150 319 314 636 301 
+new: 19
+150 562 444 315 634 691 688 426 732 753 734 733 752 751 683 631 681 624 677 
+new 56
+150 152 491 329 328 473 572 471 565 325 466 460 562 454 453 452 552 653 320 446 544 444 315 314 697 436 739 437 434 313 432 307 430 427 634 688 426 629 631 628 624 622 418 534 414 415 302 405 397 396 294 519 292 291 516 388 
+subclasses 2
+150 152 
+poolhas:iftrue: 2
+150 285 
+evaluatorclass 2
+150 152 
+allclassvarnames 2
+150 285 
+allsharedpools 2
+150 285 
+hasmethods 2
+150 285 
+decompilerclass 2
+150 152 
+scopehas:iftrue: 2
+150 152 
+localobsolete 3
+150 151 285 
+ismeta 2
+150 152 
+obsolete 2
+150 285 
+allsubclassesdo: 2
+150 152 
+compilerclass 2
+150 152 
+rebindallmethods: 2
+150 285 
+classpool 3
+150 152 285 
+instvarnames 2
+150 151 
+compile:notifying:iffail: 2
+150 151 
+addtosuper 2
+150 285 
+classvarnames 2
+150 285 
+sharedpools 2
+150 285 
+fullscopehas:iftrue: 2
+150 152 
+removeselector: 2
+150 151 
+binaryreaderblockforversion:format: 23
+151 747 763 561 454 552 652 655 654 653 544 545 546 443 735 736 688 528 617 402 522 396 521 
+definitionmessage 2
+151 152 
+fileoutsourceon: 3
+151 152 285 
+addinstvarname: 3
+151 152 285 
+removeinstvarname: 3
+151 152 285 
+printouton: 2
+151 285 
+representcontentsbinaryon: 2
+152 285 
+addclassvarname: 2
+152 285 
+isobsolete 2
+152 285 
+informationsignal 2
+286 541 
+readfrom: 7
+286 459 658 714 458 732 750 
+default 7
+329 320 446 430 298 297 295 
+with:from:to: 2
+482 694 
+from: 2
+482 441 
+fromuser 3
+574 534 422 
+openon: 3
+769 558 554 
+createon:label:icon: 2
+766 767 
+open:label: 2
+766 767 
+open: 3
+766 558 298 
+open:label:icon: 2
+766 767 
+on:at: 2
+718 763 
+compileclass:selector:source: 2
+469 470 
+hookupto: 2
+461 542 
+suggest: 4
+461 464 463 462 
+readbaselocationfromstream: 4
+461 464 463 462 
+canonicalize: 4
+461 464 463 462 
+volumes 4
+461 464 463 462 
+iscasesensitive 3
+461 463 462 
+basedirectoryforlist: 4
+461 464 463 462 
+isuglycharacter: 4
+461 464 463 462 
+defaultclass: 4
+461 542 698 543 
+isbadcharacter: 4
+461 464 463 462 
+currentdirectorystring 4
+461 464 463 462 
+changeextension 4
+461 464 463 462 
+components: 2
+461 462 
+sourceextension 4
+461 464 463 462 
+localnamestringfrom: 2
+461 462 
+imageextension 4
+461 464 463 462 
+hookupfor:withid: 2
+461 698 
+maxlength 4
+461 464 463 462 
+maximumcomponentlength 3
+464 463 462 
+getvolumes 2
+463 462 
+millisecondclockvalue 2
+459 289 
+dateandtimenow 2
+459 458 
+unity 8
+562 563 658 714 717 659 713 712 
+zero 8
+562 563 658 714 717 659 713 712 
+rangeerrorsignal 2
+562 541 
+coerce:to: 3
+658 713 712 
+exponentcharacter 2
+713 712 
+radiansperdegree 2
+713 712 
+pi 2
+713 712 
+flushmenus 7
+456 558 657 561 453 554 557 
+textviewclass 2
+558 559 
+browsechangedmessages 2
+554 292 
+addclassviewto:in:on:readonly: 2
+554 556 
+current 3
+653 304 292 
+setdefaultto: 2
+320 430 
+stylenamed: 2
+320 430 
+stylenamed:ifabsent: 2
+320 430 
+initializefixed 2
+320 430 
+stylenamed:put: 2
+320 430 
+initializesmall 2
+320 430 
+styles 2
+320 430 
+initializelarge 2
+320 430 
+registry 5
+544 542 698 543 298 
+findregistrant: 2
+544 542 
+extent:on: 3
+547 549 548 
+makeregistry 2
+698 543 
+defaultforfiles 4
+698 703 701 699 
+compactmemory 2
+543 304 
+maxdistance 3
+538 540 539 
+retainedmediumwithextent: 3
+538 540 539 
+constantnames 5
+540 539 536 688 537 
+constantnamefor: 2
+539 536 
+presnapshot 4
+304 298 295 289 
+with:with:with: 3
+425 688 629 
+with:with: 4
+425 688 629 419 
+with:with:with:with: 3
+425 688 629 
+withall: 3
+425 634 629 
+initializesignals 2
+536 299 
+new:withall: 2
+629 631 
+fromstring: 4
+732 733 683 680 
+frombytes: 3
+732 753 734 
+encodingmap 4
+732 756 755 754 
+decodingmap 4
+732 756 755 754 
+defaultimplementor 2
+732 750 
+from:to: 2
+622 419 
+exampleintersects 2
+424 419 
+center:radius: 2
+423 421 
+demoflatness 2
+422 420 
+createfont:toresemble:on: 4
+524 527 526 525 
+preferredfontsizereferringto: 4
+524 527 526 525 
+parse: 4
+524 527 526 525 
+finddefaultfontnamein: 4
+524 527 526 525 
+defaultencodingname 3
+527 526 525 
+bytes:literals:numargs:numtemps:maxdepth:needsframe:hybrid:forcontext: 2
+402 522 
