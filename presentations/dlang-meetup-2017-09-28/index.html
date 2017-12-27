@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	  var link = document.createElement( 'link' );
+	  link.rel = 'stylesheet';
+	  link.type = 'text/css';
+	  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	  document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+  </head>
+  <body>
+	<div class="reveal">
+	  <div class="slides">
+        <section>
+          <section data-markdown>
+	        <textarea data-template>
+		      # Open Is Good
+	        </textarea>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+	        <textarea data-template>
+		      ## A Short History of OOP
+              * Simula 60, 68
+              * Smalltalk 72, 80
+              * (~1985 - Common Lisp Object System)
+              * 90's: OOP gonna save the world
+              * C++, Java, ...
+              * 10's: OOP discredited
+	        </textarea>
+          </section>
+        </section>
+        <section>
+          <section data-markdown class="center">
+	        <textarea data-template>
+		      ## The Expression Problem
+              behaviors += types
+              types += behavior
+	        </textarea>
+          </section>
+          <section data-markdown class="center">
+	        <textarea data-template>
+		      ## behavior += types
+              OOP languages are good at this
+	        </textarea>
+          </section>
+          <section data-markdown class="center">
+	        <textarea data-template>
+		      ## types += behaviors
+              functional languages are good at this
+	        </textarea>
+          </section>
+          <section data-markdown class="center">
+	        <textarea data-template>
+		      ## Multi Layered Architectures
+              - domain objects
+              - \+ persistence
+              - \+ presentation
+	        </textarea>
+          </section>
+        </section>
+        <section>
+          <section data-markdown class="center">
+            ## How It Works
+          </section>
+          <section data-markdown class="center">
+            ## Example
+            ```D
+            import openmethods;
+            mixin(registerMethods);
+
+            interface Animal {}
+            class Dog : Animal {}
+            class Pitbull : Dog {}
+
+            string kick(virtual!Animal);
+            ```
+          </section>
+          <section data-markdown class="center">
+            ## Example (cont'd)
+            ```D
+            @method string _kick(Dog dog) {
+              return "bark";
+            }
+
+            @method string _kick(Pitbull pitbull) {
+              return next!kick(pitbull) ~ " and bite";
+            }
+
+            void main() {
+              updateMethods();
+              Animal hector = new Pitbull();
+              writeln("kick hector: ", kick(hector)); // bark and bite
+            }
+            ```
+          </section>
+          <section data-markdown class="center">
+            ## registerMethods (CT)
+            * scan module
+            * string kick(virtual!Dog)
+              * Method!("kick", "deallocator", string, virtual!Dog)
+              * string dispatcher(Dog) { ... } -> kick
+              * Method!(...) discriminator(MethodTag, Dog); -> kick
+              * method info, this(), ~this()
+          </section>
+          <section data-markdown class="center">
+            ## registerMethods (cont'd)
+            * @method string _kick(Pitbull)
+              * typeof(kick(MethodTag.init, Pitbull.init)) -> Method!(...)
+              * spec info, this(), ~this()
+          </section>
+          <section data-markdown class="center">
+            ## UpdateMethods (RT)
+            * seed
+            * scoop
+            * layer
+            * augment
+            * checks
+            * allocate slots
+            * build dispatch tables
+          </section>
+          <section data-markdown class="center">
+            ## Make a Call
+            * fetch *obj -> vptr
+            * fetch *vptr -> ClassInfo
+            * fetch ClassInfo.deallocator -> mptr
+            * fetch Method.slot -> slot
+            * call (mptr[slot])
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+	        <textarea data-template>
+		      ## TODO
+              - support templatized methods
+              - understand why gdc class-to-class calls are so fast
+              - improve speed of interface-to-class calls
+              - understand why finding perfect hash with dmd takes so much longer to find than with ldc
+              - write a guide / implementation notes
+	        </textarea>
+          </section>
+        </section>
+	  </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+	  // More info about config & dependencies:
+	  // - https://github.com/hakimel/reveal.js#configuration
+	  // - https://github.com/hakimel/reveal.js#dependencies
+	  Reveal.initialize({
+	  dependencies: [
+	  { src: 'plugin/markdown/marked.js' },
+	  { src: 'plugin/markdown/markdown.js' },
+	  { src: 'plugin/notes/notes.js', async: true },
+	  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	  ]
+	  });
+	</script>
+  </body>
+</html>
