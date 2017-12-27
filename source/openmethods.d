@@ -846,7 +846,7 @@ struct Runtime
       string hashMetrics;
 
       if (hashSearchAttempts) {
-        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %.3f msecs", hashTableSize, hashSearchAttempts, hashSearchTime.usecs / 1000.);
+        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.split!("nsecs").nsecs / 1000.);
       }
 
       return format("method table size: %s, dispatchTableSize: %s%s",
