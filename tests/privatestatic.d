@@ -1,27 +1,29 @@
 /+
  dub.sdl:
- name "staticimport"
+ name "privatestatic"
  dependency "openmethods" path="../"
  +/
 
+// EXCLUDE_GDC
+
 static import openmethods;
-import openmethods : virtual;
+import openmethods : method, mptr, virtual;
 mixin(openmethods.registerMethods);
 
 interface  Animal {}
 class Dog : Animal {}
 class Pitbull : Dog {}
 
-@(openmethods.mptr("hash"))
+@mptr("hash")
 private string kick(openmethods.virtual!Animal);
 
-@(openmethods.method)
+@method
 private string _kick(Dog x)
 {
   return "bark";
 }
 
-@(openmethods.method)
+@method
 private string _kick(Pitbull x)
 {
   return openmethods.next!kick(x) ~ " and bite";

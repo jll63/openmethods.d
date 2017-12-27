@@ -13,8 +13,6 @@
  }
  +/
 
-// EXCLUDE_GDC
-
 module covariant_test;
 
 import std.stdio;

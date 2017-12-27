@@ -301,70 +301,67 @@ auto registerMethods(string moduleName = __MODULE__)
                 moduleName, moduleName);
 }
 
-version (GNU) {}
- else {
-   mixin template declareMethod(string name, string index, ReturnType, ParameterType...)
-   {
-     mixin(openmethods._declareMethod!(name, index, ReturnType, ParameterType));
-   }
+mixin template declareMethod(string name, string index, ReturnType, ParameterType...)
+{
+  mixin(openmethods._declareMethod!(name, index, ReturnType, ParameterType));
+}
 
-   mixin template declareMethod(string name, ReturnType, ParameterType...)
-   {
-     mixin(openmethods._declareMethod!(name, openmethods.MptrInDeallocator,
-                                       ReturnType, ParameterType));
-   }
+mixin template declareMethod(string name, ReturnType, ParameterType...)
+{
+  mixin openmethods.declareMethod!(name, openmethods.MptrInDeallocator,
+                                   ReturnType, ParameterType);
+}
 
-   mixin template defineMethod(alias Dispatcher, alias Fun)
-   {
-     static struct RegisterMethod {
+mixin template defineMethod(alias Dispatcher, alias Fun)
+{
+  static struct RegisterMethod {
 
-       import openmethods;
-       import std.traits;
+    import openmethods;
+    import std.traits;
 
-       alias Meth = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
+    alias Meth = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
 
-       static wrapper = function Meth.ReturnType(Meth.Params args) {
-         return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
-       };
+    static wrapper = function Meth.ReturnType(Meth.Params args) {
+      return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
+    };
 
-       static __gshared Runtime.SpecInfo si;
+    static __gshared Runtime.SpecInfo si;
 
-       shared static this() {
-         si.pf = cast(void*) wrapper;
+    shared static this() {
+      si.pf = cast(void*) wrapper;
 
-         debug(explain) {
-           import std.stdio;
-           writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
-         }
+      debug(explain) {
+        import std.stdio;
+        writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
+      }
 
-         foreach (i, QP; Meth.QualParams) {
-           static if (IsVirtual!QP) {
-             si.vp ~= Parameters!Fun[i].classinfo;
-           }
-         }
+      foreach (i, QP; Meth.QualParams) {
+        static if (IsVirtual!QP) {
+          si.vp ~= Parameters!Fun[i].classinfo;
+        }
+      }
 
-         Meth.info.specInfos ~= &si;
-         si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
+      Meth.info.specInfos ~= &si;
+      si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
 
-         Runtime.needUpdate = true;
-       }
+      Runtime.needUpdate = true;
+    }
 
-       shared static ~this()
-       {
-         debug(explain) {
-           import std.stdio;
-           writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
-         }
+    shared static ~this()
+    {
+      debug(explain) {
+        import std.stdio;
+        writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
+      }
 
-         import std.algorithm, std.array;
-         Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
-         Runtime.needUpdate = true;
-       }
-     }
+      import std.algorithm, std.array;
+      Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
+      Runtime.needUpdate = true;
+    }
+  }
 
-     __gshared RegisterMethod registerMethod;
-   }
- }
+  __gshared RegisterMethod registerMethod;
+}
 
 mixin template registerClasses(Classes...) {
   shared static this() {
@@ -1604,6 +1601,40 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
+version (GNU) {
+  template getUDAs(alias symbol, alias attribute)
+  {
+    import std.meta : Filter;
+
+    template isDesiredUDA(alias toCheck)
+    {
+      static if (is(typeof(attribute)) && !__traits(isTemplate, attribute))
+        {
+          static if (__traits(compiles, toCheck == attribute))
+            enum isDesiredUDA = toCheck == attribute;
+          else
+            enum isDesiredUDA = false;
+        }
+      else static if (is(typeof(toCheck)))
+        {
+          static if (__traits(isTemplate, attribute))
+            enum isDesiredUDA =  isInstanceOf!(attribute, typeof(toCheck));
+          else
+            enum isDesiredUDA = is(typeof(toCheck) == attribute);
+        }
+      else static if (__traits(isTemplate, attribute))
+        enum isDesiredUDA = isInstanceOf!(attribute, toCheck);
+      else
+        enum isDesiredUDA = is(toCheck == attribute);
+    }
+    alias getUDAs = Filter!(isDesiredUDA, __traits(getAttributes, symbol));
+  }
+  // template hasUDA(alias symbol, alias attribute)
+  // {
+  //   enum hasUDA = getUDAs!(symbol, attribute).length != 0;
+  // }
+}
+
 string _registerMethods(alias MODULE)()
 {
   import std.array;
@@ -1692,17 +1723,13 @@ mixin template _registerSpecs(alias MODULE)
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
           static if (hasUDA!(_openmethods_o_, method)) {
-            version (GNU) {
-              immutable _openmethods_id_ = _openmethods_m_[1..$];
+            static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
+              immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
             } else {
-              static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
-                immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
-              } else {
-                static assert(_openmethods_m_[0] == '_',
-                              _openmethods_m_ ~ ": method name must begin with an underscore, "
-                              ~ "or be set in @method()");
-                immutable _openmethods_id_ = _openmethods_m_[1..$];
-              }
+              static assert(_openmethods_m_[0] == '_',
+                            _openmethods_m_ ~ ": method name must begin with an underscore, "
+                            ~ "or be set in @method()");
+              immutable _openmethods_id_ = _openmethods_m_[1..$];
             }
             alias M =
               typeof(mixin(_openmethods_id_)(MethodTag.init,

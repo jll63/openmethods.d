@@ -13,8 +13,6 @@
  }
  +/
 
-// EXCLUDE_GDC
-
 static import openmethods;
 import openmethods : virtual, declareMethod, defineMethod;
 

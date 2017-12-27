@@ -7,7 +7,8 @@ then
     DC=dmd
 fi
 
-DC_EXCLUSIONS='EXCLUDE_GDC|mptr|method\('
+#DC_EXCLUSIONS='EXCLUDE_GDC|mptr|method\('
+DC_EXCLUSIONS='EXCLUDE_GDC'
 
 echo test openmethods...
 
