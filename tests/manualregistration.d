@@ -20,7 +20,7 @@ class Matrix { }
 class DenseMatrix : Matrix { }
 class DiagonalMatrix : Matrix { }
 
-private mixin declareMethod!("plus", Matrix, virtual!Matrix, virtual!Matrix);
+private mixin declareMethod!(Matrix, "plus", virtual!Matrix, virtual!Matrix);
 
 private Matrix densePlusDense(Matrix a, Matrix b) {
   return new DenseMatrix;

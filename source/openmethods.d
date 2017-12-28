@@ -301,15 +301,15 @@ auto registerMethods(string moduleName = __MODULE__)
                 moduleName, moduleName);
 }
 
-mixin template declareMethod(string name, string index, ReturnType, ParameterType...)
+mixin template declareMethod(string index, ReturnType, string name, ParameterType...)
 {
-  mixin(openmethods._declareMethod!(name, index, ReturnType, ParameterType));
+  mixin(openmethods._declareMethod!(index, ReturnType, name, ParameterType));
 }
 
-mixin template declareMethod(string name, ReturnType, ParameterType...)
+mixin template declareMethod(ReturnType, string name, ParameterType...)
 {
-  mixin openmethods.declareMethod!(name, openmethods.MptrInDeallocator,
-                                   ReturnType, ParameterType);
+  mixin openmethods.declareMethod!(openmethods.MptrInDeallocator, ReturnType, name,
+                                   ParameterType);
 }
 
 mixin template defineMethod(alias Dispatcher, alias Fun)
@@ -544,7 +544,7 @@ template castArgs(T...)
 immutable MptrInDeallocator = "deallocator";
 immutable MptrViaHash = "hash";
 
-struct Method(string id, string Mptr, R, T...)
+struct Method(string Mptr, R, string id, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!T;
@@ -1651,10 +1651,10 @@ string _registerMethods(alias MODULE)()
             immutable index = "deallocator";
           }
           auto meth =
-            format(`openmethods.Method!("%s", "%s", %s, %s)`,
-                   m,
+            format(`openmethods.Method!("%s", %s, "%s", %s)`,
                    index,
                    ReturnType!o.stringof,
+                   m,
                    Parameters!o.stringof[1..$-1]);
           code ~= format(`alias %s = %s.dispatcher;`, m, meth);
           code ~= format(`alias %s = %s.discriminator;`, m, meth);
@@ -1754,15 +1754,15 @@ mixin template _registerSpecs(alias MODULE)
   }
 }
 
-string _declareMethod(string name, string index, ReturnType, ParameterType...)()
+string _declareMethod(string index, ReturnType, string name, ParameterType...)()
 {
   import std.format;
 
   enum meth =
-    format(`openmethods.Method!("%s", "%s", %s, %s)`,
-           name,
+    format(`openmethods.Method!("%s", %s, "%s", %s)`,
            index,
            ReturnType.stringof,
+           name,
            ParameterType.stringof[1..$-1]);
   return format(`alias %s = %s.dispatcher;`, name, meth)
     ~ format(`alias %s = %s.discriminator;`, name, meth);
