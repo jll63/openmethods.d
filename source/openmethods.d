@@ -828,13 +828,6 @@ struct Runtime
 
   alias Registry = MethodInfo*[MethodInfo*];
 
-  struct HashInfo
-  {
-    ulong hashMult;
-    uint hashShift, hashSize;
-    Word* hashTable;
-  }
-
   struct Metrics
   {
     size_t methodTableSize, dispatchTableSize, hashTableSize;
