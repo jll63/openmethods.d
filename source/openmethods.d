@@ -960,6 +960,8 @@ struct Runtime
 
     // Fill the 'directBases' and 'directDerived' arrays in the Class objects.
 
+    // Fill the 'directBases' and 'directDerived' arrays in the Class objects.
+
     initClasses();
 
     // Copy the Class objects to the 'classes' array, ensuring that derived
