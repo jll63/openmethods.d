@@ -881,11 +881,11 @@ struct Runtime
       writefln("Scooping...");
     }
 
-	foreach (mod; ModuleInfo) {
+  foreach (mod; ModuleInfo) {
       foreach (c; mod.localClasses) {
         scoop(c);
       }
-	}
+  }
 
     initClasses();
     layer();
@@ -1328,7 +1328,7 @@ struct Runtime
       if (c.info.vtbl.ptr) {
         vptrs ~= c.info.vtbl.ptr;
       }
-	}
+  }
 
     auto N = vptrs.length;
     StopWatch sw;
