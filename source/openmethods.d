@@ -828,13 +828,6 @@ struct Runtime
 
   alias Registry = MethodInfo*[MethodInfo*];
 
-  struct HashInfo
-  {
-    ulong hashMult;
-    uint hashShift, hashSize;
-    Word* hashTable;
-  }
-
   struct Metrics
   {
     size_t methodTableSize, dispatchTableSize, hashTableSize;
@@ -888,11 +881,11 @@ struct Runtime
       writefln("Scooping...");
     }
 
-	foreach (mod; ModuleInfo) {
+  foreach (mod; ModuleInfo) {
       foreach (c; mod.localClasses) {
         scoop(c);
       }
-	}
+  }
 
     initClasses();
     layer();
@@ -1335,7 +1328,7 @@ struct Runtime
       if (c.info.vtbl.ptr) {
         vptrs ~= c.info.vtbl.ptr;
       }
-	}
+  }
 
     auto N = vptrs.length;
     StopWatch sw;
