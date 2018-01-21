@@ -6,7 +6,7 @@
  dependency "openmethods" path="../"
 +/
 
-import std.stdio, std.format, std.datetime, std.array;
+import std.stdio, std.format, std.array, std.datetime.stopwatch;
 
 import openmethods;
 mixin(registerMethods);
@@ -80,7 +80,7 @@ version (GNU) {} else {
   }
 }
 
-ulong[string] time;
+Duration[string] time;
 
 void pit(string base, string target)(string label1 = base, string label2 = target, ulong n = 1_000_000_000)
 {
@@ -95,10 +95,10 @@ void pit(string base, string target)(string label1 = base, string label2 = targe
       mixin(base ~ ";");
     }
 
-    time[base] = sw.peek().nsecs;
+    time[base] = sw.peek();
   }
 
-  double baseTime = time[base];
+  auto baseTime = time[base];
 
   if (target !in time) {
     mixin(target ~ ";"); // warm up too
@@ -108,16 +108,13 @@ void pit(string base, string target)(string label1 = base, string label2 = targe
       mixin(target ~ ";");
     }
 
-    time[target] = sw.peek().nsecs;
+    time[target] = sw.peek();
   }
 
-  double targetTime = time[target];
+  auto targetTime = time[target];
 
-  writefln("%25s v %-25s %6.2f %6.2f %+8.2f%%",
-           label1, label2,
-           baseTime / n,
-           targetTime / n,
-           100 * (targetTime - baseTime) / baseTime);
+  writefln("%25s v %-25s %s%%",
+           label1, label2, 100 * (targetTime - baseTime) / baseTime);
 }
 
 void writesec(T...)(T arg)
@@ -161,8 +158,39 @@ void main()
 }
 
 /*
-dub run openmethods:benchmarks --build release --compiler dmd
-dub run openmethods:benchmarks --build release --compiler ldc2
+dub run --single benchmarks/calls.d --build release --compiler dmd
+
+Using ldc2-1.7.0
+
+virtual functions vs methods - mptr("deallocator")
+-----------------------------------------------------------------------------
+     obj.vfClassToClass() v classToClass1(obj)        37%
+intf.vfInterfaceToClass() v interfaceToClass(intf)    114%
+  obj.ddClassToClass(obj) v classToClass2(obj, obj)   32%
+
+using mptr("hash")
+-----------------------------------------------------------------------------
+       classToClass1(obj) v hClassToClass1(obj)       43%
+   interfaceToClass(intf) v hInterfaceToClass1(intf)  16%
+     obj.vfClassToClass() v hClassToClass1(obj)       97%
+intf.vfInterfaceToClass() v hInterfaceToClass1(intf)  149%
+
+Using dmd-2.078.0...
+
+virtual functions vs methods - mptr("deallocator")
+-----------------------------------------------------------------------------
+     obj.vfClassToClass() v classToClass1(obj)        118%
+intf.vfInterfaceToClass() v interfaceToClass(intf)    414%
+  obj.ddClassToClass(obj) v classToClass2(obj, obj)   85%
+
+using mptr("hash")
+-----------------------------------------------------------------------------
+       classToClass1(obj) v hClassToClass1(obj)       9%
+   interfaceToClass(intf) v hInterfaceToClass1(intf)  4%
+     obj.vfClassToClass() v hClassToClass1(obj)       138%
+intf.vfInterfaceToClass() v hInterfaceToClass1(intf)  437%
+
+===============================================================================
 
 Results with initial version (no first argument optimization)
 -------------------------------------------------------------
