@@ -90,6 +90,7 @@ module openmethods;
 import std.algorithm;
 import std.bitmanip;
 import std.datetime.stopwatch : StopWatch;
+import std.exception;
 import std.format;
 import std.meta;
 import std.range;
@@ -590,64 +591,71 @@ struct Method(string Mptr, R, string id, T...)
     static auto getMptr(T)(T arg) {
       alias Word = Runtime.Word;
       static if (is(T == class)) {
-        return Runtime.hashTable[Runtime.hash(*cast (void**) arg)].pw;
+        return Runtime.gv.ptr[Runtime.hash(*cast (void**) arg)].pw;
       } else {
         Object o = cast(Object)
           (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-        return Runtime.hashTable[Runtime.hash(*cast (void**) o)].pw;
+        return Runtime.gv.ptr[Runtime.hash(*cast (void**) o)].pw;
       }
     }
   }
 
   template Indexer(Q...)
   {
-    static const(Word)* move(P...)(const(Word)* slots, const(Word)* strides, P args)
+    static const(Word)* move(P...)(const(Word)* slotStride, P args)
     {
       alias Q0 = Q[0];
       debug(traceCalls) {
-        stderr.write(" | ", Q0.stringof, ":");
+        stderr.write("\n  ", Q0.stringof, ":");
       }
       static if (IsVirtual!Q0) {
         alias arg = args[0];
         const (Word)* mtbl = getMptr(arg);
+        auto slot = slotStride++.i;
+        auto index = mtbl[slot].i;
         debug(traceCalls) {
-          stderr.writef(" %s ", mtbl);
-          stderr.writef(" %s ", slots.i);
-          stderr.writef(" %s ", mtbl[slots.i].p);
+          stderr.writef(" mtbl = %s", mtbl);
+          stderr.writef(" slot = %s", slot);
+          stderr.writef(" dt = %s\n  ", mtbl[slot].p);
         }
         return Indexer!(Q[1..$])
-          .moveNext(cast(const(Word)*) mtbl[slots.i].p,
-                    slots + 1,
-                    strides, // stride for dim 0 is 1, not stored
+          .moveNext(cast(const(Word)*) mtbl[slot].p,
+                    slotStride,
                     args[1..$]);
       } else {
-        return Indexer!(Q[1..$]).move(slots, strides, args[1..$]);
+        return Indexer!(Q[1..$]).move(slotStride, args[1..$]);
       }
     }
 
-    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slots,
-                                       const(Word)* strides, P args)
+    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slotStride, P args)
     {
       static if (Q.length > 0) {
         alias Q0 = Q[0];
-        debug(traceCalls) {
-          stderr.write(" | ", Q0.stringof, ":");
-        }
         static if (IsVirtual!Q0) {
           alias arg = args[0];
           const (Word)* mtbl = getMptr(arg);
+          auto slot = slotStride++.i;
+          auto index = mtbl[slot].i;
+          auto stride = slotStride++.i;
           debug(traceCalls) {
-            stderr.writef(" %s, %s, %s", mtbl, slots.i, mtbl[slots.i].p);
+            stderr.write(Q0.stringof, ":");
+            stderr.writef(" mtbl = %s", mtbl);
+            stderr.writef(" slot = %s", slot);
+            stderr.writef(" index = %s", index);
+            stderr.writef(" stride = %s", stride);
+            stderr.writef(" : %s\n ", dt + index * stride);
           }
           return Indexer!(Q[1..$])
-            .moveNext(dt + mtbl[slots.i].i * strides.i,
-                      slots + 1,
-                      strides + 1,
+            .moveNext(dt + index * stride,
+                      slotStride,
                       args[1..$]);
         } else {
-          return Indexer!(Q[1..$]).moveNext(dt, slots, strides, args[1..$]);
+          return Indexer!(Q[1..$]).moveNext(dt, slotStride, args[1..$]);
         }
       } else {
+        debug(traceCalls) {
+          stderr.writef(" return %s\n ", dt);
+        }
         return dt;
       }
     }
@@ -655,10 +663,10 @@ struct Method(string Mptr, R, string id, T...)
     static const(Word)* unary(P...)(P args)
     {
       alias Q0 = Q[0];
-      debug(traceCalls) {
-        stderr.write(" | ", Q0.stringof, ":");
-      }
       static if (IsVirtual!Q0) {
+        debug(traceCalls) {
+          stderr.write(" ", Q0.stringof, ":");
+        }
         return getMptr(args[0]);
       } else {
         return Indexer!(Q[1..$]).unary(args[1..$]);
@@ -673,18 +681,17 @@ struct Method(string Mptr, R, string id, T...)
     }
 
     alias Word = Runtime.Word;
-    assert(info.vp.length == 1 || info.dispatchTable, "updateMethods not called");
-    assert(info.vp.length == 1 || info.slots);
-    assert(info.vp.length == 1 || info.strides);
+    assert(info.slotStride);
 
     static if (VirtualArity!QualParams == 1) {
+      auto mptr = Indexer!(QualParams).unary(args);
       debug(traceCalls) {
-        stderr.writef("%s %s", Indexer!(QualParams).unary(args), info.slots[0].i);
+        stderr.writef("%s %s", mptr, info.slotStride[0].i);
       }
-      auto pf = cast(Spec) Indexer!(QualParams).unary(args)[info.slots[0].i].p;
+      auto pf = cast(Spec) mptr[info.slotStride[0].i].p;
     } else {
       auto pf =
-        cast(Spec) Indexer!(QualParams).move(info.slots, info.strides, args).p;
+        cast(Spec) Indexer!(QualParams).move(info.slotStride, args).p;
     }
 
     debug(traceCalls) {
@@ -750,9 +757,7 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
-    Word* slots;
-    Word* strides;
-    Word* dispatchTable;
+    Word* slotStride;
     void* ambiguousCallError;
     void* notImplementedError;
   }
@@ -772,8 +777,9 @@ struct Runtime
 
     int[] slots;
     int[] strides;
+    GroupMap[] groups;
     void*[] dispatchTable;
-    GroupMap firstDim;
+    Word* gvDispatchTable;
 
     auto toString() const
     {
@@ -812,6 +818,9 @@ struct Runtime
     Param[] methodParams;
     int nextSlot = 0;
     int firstUsedSlot = -1;
+    int[] mtbl;
+    Word* gvMtbl;
+
 
     @property auto name() const
     {
@@ -849,19 +858,16 @@ struct Runtime
 
   static __gshared Registry methodInfos;
   static __gshared ClassInfo[] additionalClasses;
-  static __gshared Word[] gmtbl; // Global Method Table
-  static __gshared Word[] gdtbl; // Global Dispatch Table
+  static __gshared Word[] gv; // Global Vector
   static __gshared needUpdate = true;
   static __gshared ulong hashMult;
   static __gshared uint hashShift, hashSize;
-  static __gshared Word* hashTable;
   static __gshared uint methodsUsingDeallocator;
   static __gshared uint methodsUsingHash;
 
   Method*[] methods;
   Class*[ClassInfo] classMap;
   Class*[] classes;
-  Word*[Class*] mtbls;
   Metrics metrics;
 
   Metrics update()
@@ -893,6 +899,12 @@ struct Runtime
     checkDeallocatorConflicts();
     allocateSlots();
     buildTables();
+
+    if (methodsUsingHash) {
+      findHash();
+    }
+
+    installGlobalData();
 
     needUpdate = false;
 
@@ -1041,8 +1053,8 @@ struct Runtime
       foreach (vp; m.vp) {
         foreach (c; vp.conforming) {
           if (c.info.deallocator
-              && !(c.info.deallocator >= gmtbl.ptr
-                  && c.info.deallocator <  gmtbl.ptr + gmtbl.length)) {
+              && !(c.info.deallocator >= gv.ptr
+                  && c.info.deallocator <  gv.ptr + gv.length)) {
             throw new MethodError(MethodError.DeallocatorInUse, m.info);
           }
         }
@@ -1093,81 +1105,8 @@ struct Runtime
         }
       }
     }
-
-    debug(explain) {
-      writeln("Initializing the global mtbl vector...");
-    }
-
-    auto gmtblLength =
-      classes.filter!(c => c.isClass).map!(c => c.nextSlot - c.firstUsedSlot).sum
-      + methods.map!(m => m.vp.length).sum;
-
-    metrics.methodTableSize = gmtblLength;
-
-    if (methodsUsingHash) {
-      findHash();
-      gmtblLength += hashSize;
-    }
-
-    gmtbl.length = gmtblLength;
-
-    Word* sp = gmtbl.ptr;
-
-    debug(explain) {
-      writefln("  gmtbl size: %d", gmtbl.length);
-    }
-
-    if (methodsUsingHash) {
-      hashTable = sp;
-      sp += hashSize;
-      debug(explain) {
-        writefln("  reserved %d entries for hash table", hashSize);
-      }
-    }
-
-    debug(explain) {
-      writeln("  slots:");
-    }
-
-    foreach (m; methods) {
-      debug(explain) {
-        writefln("    %s %02d-%02d %s",
-                 sp, sp - gmtbl.ptr, sp - gmtbl.ptr + m.vp.length, *m);
-      }
-
-      m.info.slots = sp;
-
-      foreach (slot; m.slots) {
-        sp++.i = slot;
-      }
-    }
-
-    debug(explain) {
-      writeln("  mtbl:");
-    }
-
     foreach (c; classes) {
-      if (c.isClass) {
-        debug(explain) {
-          writefln("    %s %02d-%02d %s",
-                   sp, c.firstUsedSlot, c.nextSlot, c.name);
-        }
-        auto mptr = sp - c.firstUsedSlot;
-        mtbls[c] = mptr;
-
-        if (methodsUsingDeallocator) {
-          c.info.deallocator = mptr;
-        }
-
-        if (methodsUsingHash) {
-          auto h = hash(c.info.vtbl.ptr);
-          debug(explain) {
-            writefln("    -> hashTable[%d]", h);
-          }
-          hashTable[h].p = mptr;
-        }
-        sp += c.nextSlot - c.firstUsedSlot;
-      }
+      c.mtbl.length = c.nextSlot;
     }
   }
 
@@ -1404,8 +1343,7 @@ struct Runtime
       }
 
       auto dims = m.vp.length;
-      GroupMap[] groups;
-      groups.length = dims;
+      m.groups.length = dims;
 
       foreach (int dim, vp; m.vp) {
         debug(explain) {
@@ -1434,16 +1372,16 @@ struct Runtime
               writefln("      bit mask = %s", mask);
             }
 
-            if (mask in groups[dim]) {
+            if (mask in m.groups[dim]) {
               debug(explain) {
                 writefln("      add class %s to existing group", conforming.name, mask);
               }
-              groups[dim][mask] ~= conforming;
+              m.groups[dim][mask] ~= conforming;
             } else {
               debug(explain) {
                 writefln("      create new group for %s", conforming.name);
               }
-              groups[dim][mask] = [ conforming ];
+              m.groups[dim][mask] = [ conforming ];
             }
           }
         }
@@ -1456,7 +1394,7 @@ struct Runtime
         debug(explain) {
           writefln("    stride for dim %s = %s", dim + 1, stride);
         }
-        stride *= groups[dim].length;
+        stride *= m.groups[dim].length;
         m.strides[dim] = stride;
       }
 
@@ -1467,7 +1405,7 @@ struct Runtime
         writefln("    assign specs");
       }
 
-      buildTable(m, dims - 1, groups, ~none);
+      buildTable(m, dims - 1, m.groups, ~none);
 
       debug(explain) {
         writefln("  assign slots");
@@ -1480,80 +1418,185 @@ struct Runtime
 
         int i = 0;
 
-        foreach (group; groups[dim]) {
+        foreach (group; m.groups[dim]) {
           debug(explain) {
             writefln("      group %d (%s)",
                      i,
                      group.map!(c => c.name).join(", "));
           }
           foreach (c; group) {
-            mtbls[c][m.slots[dim]].i = i;
+            c.mtbl[m.slots[dim]] = i;
           }
 
           ++i;
         }
       }
-
-      m.firstDim = groups[0];
     }
+  }
 
-    auto gdtblLength  = methods.filter!(m => m.vp.length > 1).map!
-      (m => m.dispatchTable.length + m.slots.length + m.strides.length).sum;
-    gdtbl.length = gdtblLength;
-    metrics.dispatchTableSize = gdtblLength;
-
-    Word* mp = gdtbl.ptr;
-
-    debug(explain) {
-      writefln("Initializing global dispatch table - %d words", gdtbl.length);
-    }
+  void installGlobalData()
+  {
+    auto finalSize = hashSize;
 
     foreach (m; methods) {
+      finalSize += m.slots.length + m.strides.length;
+      if (m.vp.length > 1) {
+        finalSize += m.dispatchTable.length;
+      }
+    }
+
+    foreach (c; classes) {
+      if (c.isClass) {
+        finalSize += c.nextSlot - c.firstUsedSlot;
+      }
+    }
+
+    gv.length = 0;
+    gv.reserve(finalSize);
+
+    debug(explain) {
+      void trace(T...)(string format, T args) {
+        writef("%4s %s: ", gv.length, gv.ptr + gv.length);
+        writef(format, args);
+      }
+    }
+
+    debug(explain) {
+      writefln("Initializing global vector");
+    }
+
+    if (hashSize > 0) {
+      debug(explain)
+        trace("hash table\n");
+      gv.length = hashSize;
+    }
+
+    Word word;
+
+    foreach (m; methods) {
+
+      m.info.slotStride = gv.ptr + gv.length;
+
+      debug(explain) {
+        trace("slots and strides for %s\n", *m);
+      }
+
+      int iSlot = 0;
+      word.i = m.slots[iSlot++];
+      gv ~= word;
+
+      while (iSlot < m.slots.length) {
+        word.i = m.slots[iSlot];
+        gv ~= word;
+        word.i = m.strides[iSlot - 1];
+        gv ~= word;
+        ++iSlot;
+      }
+
       if (m.info.vp.length > 1) {
+        m.gvDispatchTable = gv.ptr + gv.length;
         debug(explain) {
-          writefln("  %s:", *m);
-          writefln("    %s: %d strides: %s", mp, m.strides.length, m.strides);
+          trace("and %d function pointers at %s\n",
+                m.dispatchTable.length, m.gvDispatchTable);
         }
-        m.info.strides = mp;
-        foreach (stride; m.strides) {
-          mp++.i = stride;
-        }
-        debug(explain) {
-          writefln("    %s: %d functions", mp, m.dispatchTable.length);
-        }
-        m.info.dispatchTable = mp;
         foreach (p; m.dispatchTable) {
-          debug(explain) {
-            writefln("      %s", p);
-          }
-          mp++.p = cast(void*) p;
+          word.p = p;
+          gv ~= word;
         }
       }
     }
+
+    enforce(gv.length <= finalSize,
+            format("gv.length = %s > finalSize = %s", gv.length, finalSize));
+
+    foreach (c; classes) {
+      if (c.isClass) {
+
+        c.gvMtbl = gv.ptr + gv.length - c.firstUsedSlot;
+
+        debug(explain) {
+          trace("method table for %s\n", c.name);
+        }
+
+        if (methodsUsingDeallocator) {
+          c.info.deallocator = c.gvMtbl;
+          debug(explain) {
+            writefln("     -> %s.deallocator", c.name);
+          }
+        }
+
+        if (hashSize > 0) {
+          auto h = hash(c.info.vtbl.ptr);
+          debug(explain) {
+            writefln("     -> %s hashTable[%d]", c.name, h);
+          }
+          gv[h].p = c.gvMtbl;
+        }
+
+        gv.length += c.nextSlot - c.firstUsedSlot;
+      }
+    }
+
+    enforce(gv.length <= finalSize,
+            format("gv.length = %s > finalSize = %s", gv.length, finalSize));
 
     foreach (m; methods) {
       auto slot = m.slots[0];
       if (m.info.vp.length == 1) {
         debug(explain) {
-          writefln("  %s:", *m);
-          writefln("    1-method, storing fp in mtbl, slot = %s", slot);
+          writefln("  %s: 1-method, storing fp in mtbl, slot = %s", *m, slot);
         }
         int i = 0;
-        foreach (group; m.firstDim) {
+        foreach (group; m.groups[0]) {
           foreach (c; group) {
-            Word* index = mtbls[c] + slot;
+            Word* index = c.gvMtbl + slot;
             index.p = m.dispatchTable[i];
             debug(explain) {
-              writefln("      %s %s", i, index.p);
+              writefln("    group %s pf = %s %s", i, index.p, c.name);
             }
           }
           ++i;
         }
       } else {
-        foreach (group; m.firstDim) {
-          foreach (c; group) {
-            Word* index = mtbls[c] + slot;
-            index.p = m.info.dispatchTable + index.i;
+        debug(explain) {
+          writefln("  %s: %s-method, storing col* in mtbl, slot = %s",
+                   *m, m.vp.length, slot);
+        }
+
+        foreach (int dim, vp; m.vp) {
+          debug(explain) {
+            writefln("    dim %s", dim);
+          }
+
+          int groupIndex = 0;
+
+          foreach (group; m.groups[dim]) {
+            debug(explain) {
+              writefln("      group %d (%s)",
+                       groupIndex,
+                       group.map!(c => c.name).join(", "));
+            }
+
+            if (dim == 0) {
+              debug(explain) {
+                writefln("        [%s] <- %s",
+                         m.slots[dim],
+                         m.gvDispatchTable + groupIndex);
+              }
+              foreach (c; group) {
+                c.gvMtbl[m.slots[dim]].p = m.gvDispatchTable + groupIndex;
+              }
+            } else {
+              debug(explain) {
+                writefln("        [%s] <- %s",
+                         m.slots[dim],
+                         groupIndex);
+              }
+              foreach (c; group) {
+                c.gvMtbl[m.slots[dim]].i = groupIndex;
+              }
+            }
+            ++groupIndex;
           }
         }
       }
@@ -1562,6 +1605,9 @@ struct Runtime
         *spec.info.nextPtr = nextSpec ? nextSpec.info.pf : null;
       }
     }
+
+    enforce(gv.length == finalSize,
+            format("gv.length = %s <> finalSize = %s", gv.length, finalSize));
   }
 
   static auto findNext(Spec* spec, Spec*[] specs)
@@ -1622,10 +1668,6 @@ version (GNU) {
     }
     alias getUDAs = Filter!(isDesiredUDA, __traits(getAttributes, symbol));
   }
-  // template hasUDA(alias symbol, alias attribute)
-  // {
-  //   enum hasUDA = getUDAs!(symbol, attribute).length != 0;
-  // }
 }
 
 string _registerMethods(alias MODULE)()

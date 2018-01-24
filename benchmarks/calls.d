@@ -160,6 +160,26 @@ void main()
 /*
 dub run --single benchmarks/calls.d --build release --compiler dmd
 
+===============================================================================
+single pointer for slots and strides
+
+Using ldc2-1.7.0
+
+virtual functions vs methods - mptr("deallocator")
+-----------------------------------------------------------------------------
+     obj.vfClassToClass() v classToClass1(obj)        34%
+intf.vfInterfaceToClass() v interfaceToClass(intf)    106%
+  obj.ddClassToClass(obj) v classToClass2(obj, obj)   27%
+
+using mptr("hash")
+-----------------------------------------------------------------------------
+       classToClass1(obj) v hClassToClass1(obj)       35%
+   interfaceToClass(intf) v hInterfaceToClass1(intf)  9%
+     obj.vfClassToClass() v hClassToClass1(obj)       82%
+intf.vfInterfaceToClass() v hInterfaceToClass1(intf)  126%
+
+===============================================================================
+
 Using ldc2-1.7.0
 
 virtual functions vs methods - mptr("deallocator")
