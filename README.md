@@ -269,7 +269,7 @@ Because open methods live outside class hierarchies, they make it possible to
 extend libraries to a degree that virtual member functions cannot provide.
 
 If a function is missing from the matrix library - say, `transpose` -, it can
-be added it without changing the library's code. I can vary the implementation of
+be added without changing the library's code. I can vary the implementation of
 `transpose` depending on its exact type - transposing a diagonal matrix is a
 no-op.
 
