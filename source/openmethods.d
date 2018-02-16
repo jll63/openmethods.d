@@ -1685,6 +1685,7 @@ string _registerMethods(alias MODULE)()
           } else {
             immutable index = "deallocator";
           }
+
           auto meth =
             format(`openmethods.Method!("%s", %s, "%s", %s)`,
                    index,
@@ -1770,6 +1771,8 @@ mixin template _registerSpecs(alias MODULE)
                             ~ "or be set in @method()");
               immutable _openmethods_id_ = _openmethods_m_[1..$];
             }
+            static assert(!hasVirtualParameters!_openmethods_o_,
+                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
             alias M =
               typeof(mixin(_openmethods_id_)(MethodTag.init,
                                              Parameters!(_openmethods_o_).init));
