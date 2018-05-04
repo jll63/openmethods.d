@@ -301,21 +301,25 @@ mixin(registerMethods);
 
 auto registerMethods(string moduleName = __MODULE__)
 {
-  return format("static import openmethods;"
-                ~ "mixin(openmethods._registerMethods!(%s));"
-                ~ "mixin openmethods._registerSpecs!(%s);\n",
-                moduleName, moduleName);
+  return `static import openmethods;
+import std.traits : FunctionAttribute;
+mixin(openmethods._registerMethods!(%s));
+mixin openmethods._registerSpecs!(%s);`.format(moduleName, moduleName);
 }
 
 mixin template declareMethod(string index, ReturnType, string name, ParameterType...)
 {
-  mixin(openmethods._declareMethod!(index, ReturnType, name, ParameterType));
+  mixin(openmethods.Method!(index, ReturnType, name,
+                            FunctionAttribute.none, ParameterType)
+        .code);
 }
 
 mixin template declareMethod(ReturnType, string name, ParameterType...)
 {
-  mixin openmethods.declareMethod!(openmethods.MptrInDeallocator, ReturnType, name,
-                                   ParameterType);
+  import std.traits;
+  mixin(openmethods.Method!(openmethods.MptrInDeallocator, ReturnType, name,
+                            FunctionAttribute.none, ParameterType)
+        .code);
 }
 
 mixin template defineMethod(alias Dispatcher, alias Fun)
@@ -468,9 +472,9 @@ setMethodErrorHandler(void function(MethodError error) handler)
 enum IsVirtual(T) = false;
 enum IsVirtual(T : virtual!U, U) = true;
 
-private alias VirtualType(T : virtual!U, U) = U;
+alias VirtualType(T : virtual!U, U) = U;
 
-private template VirtualArity(QP...)
+template VirtualArity(QP...)
 {
   static if (QP.length == 0) {
     enum VirtualArity = 0;
@@ -550,14 +554,22 @@ template castArgs(T...)
 immutable MptrInDeallocator = "deallocator";
 immutable MptrViaHash = "hash";
 
-struct Method(string Mptr, R, string id, T...)
+struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!T;
-  alias R function(Params) Spec;
   alias ReturnType = R;
   alias Word =  Runtime.Word;
   enum name = id;
+  alias functionAttributes = functionAttributes_;
+  alias This = Method!(Mptr, R, id, functionAttributes, T);
+
+
+  static if (functionAttributes & FunctionAttribute.ref_) {
+    alias ref R function(Params) Spec;
+  } else {
+    alias R function(Params) Spec;
+  }
 
   static __gshared Runtime.MethodInfo info;
 
@@ -679,32 +691,81 @@ struct Method(string Mptr, R, string id, T...)
     }
   }
 
-  static auto dispatcher(CallParams!T args)
-  {
+  enum code = discriminatorCode ~ dispatcherCode;
+
+  enum discriminatorCode = `openmethods.%s %s(openmethods.MethodTag, %s);
+`.format(This.stringof,
+         name,
+         Params.stringof[1..$-1]
+);
+
+  enum refAttribute = functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
+
+  enum string nonRefAttributes= `%s%s%s%s%s%s`
+    .format(
+            functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
+            functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
+            functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
+            functionAttributes & FunctionAttribute.safe ? " @safe" : "",
+            functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
+            functionAttributes & FunctionAttribute.system ? " @system" : "");
+
+  static string dispatcherCode() {
+    string params;
+    string args;
+    string sep = "";
+
+    foreach (i, p; Params) {
+      args ~= `%sarg%d`.format(sep, i);
+      params ~= `%s%s arg%d`.format(sep, p.stringof, i);
+      sep = ", ";
+    }
+
+    return `
+%s%s %s(%s)%s%s%s%s%s%s
+{
+  import std.traits, openmethods;
+
+  debug(traceCalls) {
+    import std.stdio;
+    stderr.write(info.name);
+  }
+
+  alias Word = Runtime.Word;
+  alias Method = openmethods.%s;
+  assert(Method.info.slotStride);
+
+  static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
+    auto mptr = Method.Indexer!(Method.QualParams).unary(%s);
     debug(traceCalls) {
-      stderr.write(info.name);
+      stderr.writef("%%s %%s", mptr, Method.info.slotStride[0].i);
     }
+    auto pf = cast(Method.Spec) mptr[Method.info.slotStride[0].i].p;
+  } else {
+    auto pf =
+      cast(Method.Spec) Method.Indexer!(Method.QualParams).move(Method.info.slotStride, %s).p;
+  }
 
-    alias Word = Runtime.Word;
-    assert(info.slotStride);
+  debug(traceCalls) {
+    import std.stdio;
+    writefln(" pf = %%s", pf);
+  }
 
-    static if (VirtualArity!QualParams == 1) {
-      auto mptr = Indexer!(QualParams).unary(args);
-      debug(traceCalls) {
-        stderr.writef("%s %s", mptr, info.slotStride[0].i);
-      }
-      auto pf = cast(Spec) mptr[info.slotStride[0].i].p;
-    } else {
-      auto pf =
-        cast(Spec) Indexer!(QualParams).move(info.slotStride, args).p;
-    }
-
-    debug(traceCalls) {
-      writefln(" pf = %s", pf);
-    }
-
-    assert(pf);
-    return pf(args);
+  assert(pf);
+  return pf(%s);
+}
+`.format(functionAttributes & FunctionAttribute.ref_ ? "ref " : "",
+         ReturnType.stringof,
+         name,
+         params,
+         functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
+         functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
+         functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
+         functionAttributes & FunctionAttribute.safe ? " @safe" : "",
+         functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
+         functionAttributes & FunctionAttribute.system ? " @system" : "",
+         This.stringof,
+         args, args, args);
   }
 
   shared static this() {
@@ -879,16 +940,16 @@ struct Runtime
 
   Metrics update()
   {
+    // Create a Method object for each method.  Create a Class object for all
+    // the classes or interfaces that occur as virtual parameters in a method,
+    // or were registered explicitly with 'registerClasses'.
+
     seed();
 
-    foreach (ci; additionalClasses) {
-      if (ci !in classMap) {
-        auto c = classMap[ci] = new Class(ci);
-        debug(explain) {
-          writefln("  %s", c.name);
-        }
-      }
-    }
+    // Create a Class object for all the classes or interfaces that derive from
+    // a class or interface that occur as virtual parameters in a method,
+    // or were registered explicitly with 'registerClasses'. Also record in
+    // each Class object all the method parameters that target it.
 
     debug(explain) {
       writefln("Scooping...");
@@ -900,11 +961,32 @@ struct Runtime
       }
   }
 
+    // Fill the 'directBases' and 'directDerived' arrays in the Class objects.
+
     initClasses();
+
+    // Copy the Class objects to the 'classes' array, ensuring that derived
+    // classes and interface come after their base class and interfaces, but as
+    // close to them as possible.
     layer();
+
+    // Fill the 'conforming' arrays, i.e. for each class record all the classes
+    // and interfaces that are type compatible with it. Note that every class
+    // is in its own 'conforming' array.
+
     calculateInheritanceRelationships();
+
+    // Check if there are classes that define the 'delete' operator.
+
     checkDeallocatorConflicts();
+
+    // For each method, reserve one slot per virtual parameter in the target
+    // Class.
+
     allocateSlots();
+
+    // Build dispatch tables and install the global vectors.
+
     buildTables();
 
     if (methodsUsingHash) {
@@ -957,6 +1039,15 @@ struct Runtime
 
     debug(explain) {
       writeln();
+    }
+
+    foreach (ci; additionalClasses) {
+      if (ci !in classMap) {
+        auto c = classMap[ci] = new Class(ci);
+        debug(explain) {
+          writefln("  %s", c.name);
+        }
+      }
     }
   }
 
@@ -1607,6 +1698,7 @@ struct Runtime
           }
         }
       }
+
       foreach (spec; m.specs) {
         auto nextSpec = findNext(spec, m.specs);
         *spec.info.nextPtr = nextSpec ? nextSpec.info.pf : null;
@@ -1680,7 +1772,9 @@ version (GNU) {
 string _registerMethods(alias MODULE)()
 {
   import std.array;
+
   string[] code;
+
   foreach (m; __traits(allMembers, MODULE)) {
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
@@ -1694,13 +1788,19 @@ string _registerMethods(alias MODULE)()
           }
 
           auto meth =
-            format(`openmethods.Method!("%s", %s, "%s", %s)`,
+            format(`openmethods.Method!("%s", %s, "%s", %s, %s)`,
                    index,
                    ReturnType!o.stringof,
                    m,
+                   functionAttributes!o,
                    Parameters!o.stringof[1..$-1]);
-          code ~= format(`alias %s = %s.dispatcher;`, m, meth);
-          code ~= format(`alias %s = %s.discriminator;`, m, meth);
+          //code ~= format(`alias %s = %s.dispatcher;`, m, meth);
+          // alias Method = openmethods.Method!(index, ReturnType, m, functionAttributes!o, Parameters!o);
+          alias Method = openmethods.Method!(index, ReturnType!o, m, functionAttributes!o, Parameters!o);
+          //code ~= `mixin(%s.code);`.format(meth);
+          code ~= Method.dispatcherCode;
+          code ~= Method.discriminatorCode;
+          //code ~= format(`alias %s = %s.discriminator;`, m, meth);
         }
       }
     }
@@ -1716,14 +1816,20 @@ mixin template _registerSpecs(alias MODULE)
   {
     static struct Register {
 
-      static wrapper = function Meth.ReturnType(Meth.Params args) {
-        return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
-      };
+      static if (Meth.functionAttributes & FunctionAttribute.ref_) {
+        static ref Meth.ReturnType wrapper(Meth.Params args) {
+          return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
+        }
+      } else {
+        static Meth.ReturnType wrapper(Meth.Params args) {
+          return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
+        }
+      }
 
       static __gshared Runtime.SpecInfo si;
 
       shared static this() {
-        si.pf = cast(void*) wrapper;
+        si.pf = cast(void*) &wrapper;
 
         debug(explain) {
           import std.stdio;
@@ -1797,18 +1903,4 @@ mixin template _registerSpecs(alias MODULE)
       writefln("Unregistering specs from %s", MODULE.stringof);
     }
   }
-}
-
-string _declareMethod(string index, ReturnType, string name, ParameterType...)()
-{
-  import std.format;
-
-  enum meth =
-    format(`openmethods.Method!("%s", %s, "%s", %s)`,
-           index,
-           ReturnType.stringof,
-           name,
-           ParameterType.stringof[1..$-1]);
-  return format(`alias %s = %s.dispatcher;`, name, meth)
-    ~ format(`alias %s = %s.discriminator;`, name, meth);
 }
