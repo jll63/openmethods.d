@@ -6,7 +6,7 @@
  dependency "openmethods" path="../"
 +/
 
-import std.stdio, std.format, std.array, std.datetime.stopwatch;
+import std.stdio, std.format, std.array;
 
 import openmethods;
 mixin(registerMethods);
@@ -80,7 +80,13 @@ version (GNU) {} else {
   }
 }
 
-Duration[string] time;
+version (GNU) {
+  import std.datetime;
+  ulong[string] time;
+} else {
+  import std.datetime.stopwatch;
+  Duration[string] time;
+}
 
 void pit(string base, string target)(string label1 = base, string label2 = target, ulong n = 1_000_000_000)
 {
@@ -95,27 +101,35 @@ void pit(string base, string target)(string label1 = base, string label2 = targe
       mixin(base ~ ";");
     }
 
-    time[base] = sw.peek();
-  }
-
-  auto baseTime = time[base];
-
-  if (target !in time) {
-    mixin(target ~ ";"); // warm up too
-    sw.reset();
-
-    for (ulong i = 0; i < n; i++) {
-      mixin(target ~ ";");
+    auto peek() {
+      version (GNU) {
+        return sw.peek.nsecs;
+      } else {
+        return sw.peek;
+      }
     }
 
-    time[target] = sw.peek();
+    time[base] = peek;
+    auto baseTime = time[base];
+
+    if (target !in time) {
+      mixin(target ~ ";"); // warm up too
+      sw.reset();
+
+      for (ulong i = 0; i < n; i++) {
+        mixin(target ~ ";");
+      }
+
+      time[target] = peek;
+    }
+
+    auto targetTime = time[target];
+
+    writefln("%25s v %-25s %s%%",
+             label1, label2, 100 * (targetTime - baseTime) / baseTime);
   }
-
-  auto targetTime = time[target];
-
-  writefln("%25s v %-25s %s%%",
-           label1, label2, 100 * (targetTime - baseTime) / baseTime);
 }
+
 
 void writesec(T...)(T arg)
 {

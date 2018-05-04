@@ -89,12 +89,17 @@ module openmethods;
 
 import std.algorithm;
 import std.bitmanip;
-import std.datetime.stopwatch : StopWatch;
 import std.exception;
 import std.format;
 import std.meta;
 import std.range;
 import std.traits;
+
+version (GNU) {
+  import std.datetime;
+} else {
+  import std.datetime.stopwatch;
+}
 
 debug(explain) {
   import std.stdio;
@@ -848,7 +853,9 @@ struct Runtime
       string hashMetrics;
 
       if (hashSearchAttempts) {
-        hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.split!("nsecs").nsecs / 1000.);
+        version (GNU) {} else {
+          hashMetrics = format(", hash table size = %s, hash found after %s attempts and %g ms", hashTableSize, hashSearchAttempts, hashSearchTime.split!("nsecs").nsecs / 1000.);
+        }
       }
 
       return format("method table size: %s, dispatchTableSize: %s%s",
