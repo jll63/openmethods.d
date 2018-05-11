@@ -733,17 +733,17 @@ struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, 
 
   alias Word = Runtime.Word;
   alias Method = openmethods.%s;
-  assert(Method.info.slotStride);
 
   static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
     auto mptr = Method.Indexer!(Method.QualParams).unary(%s);
     debug(traceCalls) {
-      stderr.writef("%%s %%s", mptr, Method.info.slotStride[0].i);
+      stderr.writef("%%s %%s", mptr, Method.info.slotStride.i);
     }
-    auto pf = cast(Method.Spec) mptr[Method.info.slotStride[0].i].p;
+    auto pf = cast(Method.Spec) mptr[Method.info.slotStride.i].p;
   } else {
+    assert(Method.info.slotStride.pw);
     auto pf =
-      cast(Method.Spec) Method.Indexer!(Method.QualParams).move(Method.info.slotStride, %s).p;
+      cast(Method.Spec) Method.Indexer!(Method.QualParams).move(Method.info.slotStride.pw, %s).p;
   }
 
   debug(traceCalls) {
@@ -823,7 +823,7 @@ struct Runtime
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
-    Word* slotStride;
+    Word slotStride;
     void* ambiguousCallError;
     void* notImplementedError;
   }
@@ -1544,8 +1544,8 @@ struct Runtime
     auto finalSize = hashSize;
 
     foreach (m; methods) {
-      finalSize += m.slots.length + m.strides.length;
       if (m.vp.length > 1) {
+        finalSize += m.slots.length + m.strides.length;
         finalSize += m.dispatchTable.length;
       }
     }
@@ -1580,25 +1580,25 @@ struct Runtime
 
     foreach (m; methods) {
 
-      m.info.slotStride = gv.ptr + gv.length;
-
-      debug(explain) {
-        trace("slots and strides for %s\n", *m);
-      }
-
-      int iSlot = 0;
-      word.i = m.slots[iSlot++];
-      gv ~= word;
-
-      while (iSlot < m.slots.length) {
-        word.i = m.slots[iSlot];
-        gv ~= word;
-        word.i = m.strides[iSlot - 1];
-        gv ~= word;
-        ++iSlot;
-      }
-
       if (m.info.vp.length > 1) {
+        m.info.slotStride.pw = gv.ptr + gv.length;
+
+        debug(explain) {
+          trace("slots and strides for %s\n", *m);
+        }
+
+        int iSlot = 0;
+        word.i = m.slots[iSlot++];
+        gv ~= word;
+
+        while (iSlot < m.slots.length) {
+          word.i = m.slots[iSlot];
+          gv ~= word;
+          word.i = m.strides[iSlot - 1];
+          gv ~= word;
+          ++iSlot;
+        }
+
         m.gvDispatchTable = gv.ptr + gv.length;
         debug(explain) {
           trace("and %d function pointers at %s\n",
@@ -1608,6 +1608,8 @@ struct Runtime
           word.p = p;
           gv ~= word;
         }
+      } else {
+        m.info.slotStride.i = m.slots[0];
       }
     }
 
