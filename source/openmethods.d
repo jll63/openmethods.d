@@ -1185,7 +1185,6 @@ struct Runtime
 
           mp.method.slots[mp.param] = slot;
 
-
           if (c.firstUsedSlot == -1) {
             c.firstUsedSlot = slot;
           }
@@ -1194,7 +1193,9 @@ struct Runtime
           visited[c] = true;
 
           foreach (d; c.directDerived) {
-            allocateSlotDown(d, slot, visited);
+            if (d !in visited) {
+              allocateSlotDown(d, slot, visited);
+            }
           }
 
           debug(explain) {
@@ -1210,9 +1211,6 @@ struct Runtime
 
   void allocateSlotDown(Class* c, int slot, bool[Class*] visited)
   {
-    if (c in visited)
-      return;
-
     debug(explain) {
       writef(" %s", c.name);
     }
@@ -1228,19 +1226,20 @@ struct Runtime
     }
 
     foreach (b; c.directBases) {
-      allocateSlotUp(b, slot, visited);
+      if (b !in visited) {
+        allocateSlotUp(b, slot, visited);
+      }
     }
 
     foreach (d; c.directDerived) {
-      allocateSlotDown(d, slot, visited);
+      if (d !in visited) {
+        allocateSlotDown(d, slot, visited);
+      }
     }
   }
 
   void allocateSlotUp(Class* c, int slot, bool[Class*] visited)
   {
-    if (c in visited)
-      return;
-
     debug(explain) {
       writef(" %s", c.name);
     }
@@ -1255,8 +1254,16 @@ struct Runtime
       c.firstUsedSlot = slot;
     }
 
-    foreach (d; c.directBases) {
-      allocateSlotUp(d, slot, visited);
+    foreach (b; c.directBases) {
+      if (b !in visited) {
+        allocateSlotUp(b, slot, visited);
+      }
+    }
+
+    foreach (d; c.directDerived) {
+      if (d !in visited) {
+        allocateSlotDown(d, slot, visited);
+      }
     }
   }
 
