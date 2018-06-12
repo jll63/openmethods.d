@@ -2,6 +2,7 @@ out/
 .dub
 docs.json
 __dummy.html
+*.a
 *.o
 *.obj
 __test__*__
