@@ -592,29 +592,27 @@ struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, 
 
   static Method discriminator(MethodTag, CallParams!T);
 
-  static if (Mptr == MptrInDeallocator) {
-    static auto getMptr(T)(T arg)
-    {
-      alias Word = Runtime.Word;
+  static auto getMptr(T)(T arg) {
+    alias Word = Runtime.Word;
+    static if (Mptr == MptrInDeallocator) {
+        static if (is(T == class)) {
+          auto mptr = cast(const Word*) arg.classinfo.deallocator;
+        } else {
+          Object o = cast(Object)
+            (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
+          auto mptr = cast(const Word*) o.classinfo.deallocator;
+        }
+    } else static if (Mptr == MptrViaHash) {
       static if (is(T == class)) {
-        return cast(const Word*) arg.classinfo.deallocator;
+        auto mptr = Runtime.gv.ptr[Runtime.hash(*cast (void**) arg)].pw;
       } else {
         Object o = cast(Object)
           (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-        return cast(const Word*) o.classinfo.deallocator;
+        auto mptr = Runtime.gv.ptr[Runtime.hash(*cast (void**) o)].pw;
       }
     }
-  } else static if (Mptr == MptrViaHash) {
-    static auto getMptr(T)(T arg) {
-      alias Word = Runtime.Word;
-      static if (is(T == class)) {
-        return Runtime.gv.ptr[Runtime.hash(*cast (void**) arg)].pw;
-      } else {
-        Object o = cast(Object)
-          (cast(void*) arg - (cast(Interface*) **cast(void***) arg).offset);
-        return Runtime.gv.ptr[Runtime.hash(*cast (void**) o)].pw;
-      }
-    }
+    assert(mptr, format("Cannot locate method table for %s", T.classinfo.name));
+    return mptr;
   }
 
   template Indexer(Q...)
