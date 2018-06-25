@@ -564,7 +564,6 @@ struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, 
   alias functionAttributes = functionAttributes_;
   alias This = Method!(Mptr, R, id, functionAttributes, T);
 
-
   static if (functionAttributes & FunctionAttribute.ref_) {
     alias ref R function(Params) Spec;
   } else {
@@ -720,17 +719,18 @@ struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, 
     }
 
     return `
-%s%s %s(%s)%s%s%s%s%s%s
+%s%s %s(%s)%s
 {
   import std.traits, openmethods;
 
+  alias Method = openmethods.%s;
+
   debug(traceCalls) {
     import std.stdio;
-    stderr.write(info.name);
+    stderr.write(Method.info.name, Method.QualParams.stringof);
   }
 
   alias Word = Runtime.Word;
-  alias Method = openmethods.%s;
 
   static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
     auto mptr = Method.Indexer!(Method.QualParams).unary(%s);
@@ -756,12 +756,12 @@ struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, 
          ReturnType.stringof,
          name,
          params,
-         functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
-         functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
-         functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
-         functionAttributes & FunctionAttribute.safe ? " @safe" : "",
-         functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
-         functionAttributes & FunctionAttribute.system ? " @system" : "",
+         [functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
+          functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
+          functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
+          functionAttributes & FunctionAttribute.safe ? " @safe" : "",
+          functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
+          functionAttributes & FunctionAttribute.system ? " @system" : ""].join(" "),
          This.stringof,
          args, args, args);
   }
