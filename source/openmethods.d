@@ -302,7 +302,6 @@ mixin(registerMethods);
 auto registerMethods(string moduleName = __MODULE__)
 {
   return `static import openmethods;
-import std.traits : FunctionAttribute;
 mixin(openmethods._registerMethods!(%s));
 mixin openmethods._registerSpecs!(%s);`.format(moduleName, moduleName);
 }
@@ -554,14 +553,14 @@ template castArgs(T...)
 immutable MptrInDeallocator = "deallocator";
 immutable MptrViaHash = "hash";
 
-struct Method(string Mptr, R, string id, FunctionAttribute functionAttributes_, T...)
+struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!T;
   alias ReturnType = R;
   alias Word =  Runtime.Word;
   enum name = id;
-  alias functionAttributes = functionAttributes_;
+  enum functionAttributes = cast(FunctionAttribute) functionAttributes_;
   alias This = Method!(Mptr, R, id, functionAttributes, T);
 
   static if (functionAttributes & FunctionAttribute.ref_) {
