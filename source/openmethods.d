@@ -864,7 +864,7 @@ struct Runtime
   struct Param
   {
     Method* method;
-    int param;
+    size_t param;
 
     auto toString() const
     {
@@ -1021,7 +1021,7 @@ struct Runtime
       auto m = new Method(mi);
       methods ~= m;
 
-      foreach (int i, ci; mi.vp) {
+      foreach (size_t i, ci; mi.vp) {
         auto c = upgrade(ci);
         m.vp ~= c;
         c.methodParams ~= Runtime.Param(m, i);
@@ -1447,7 +1447,7 @@ struct Runtime
       auto dims = m.vp.length;
       m.groups.length = dims;
 
-      foreach (int dim, vp; m.vp) {
+      foreach (size_t dim, vp; m.vp) {
         debug(explain) {
           writefln("  make groups for param #%s, class %s", dim, vp.name);
         }
@@ -1461,7 +1461,7 @@ struct Runtime
             BitArray mask;
             mask.length = m.specs.length;
 
-            foreach (int specIndex, spec; m.specs) {
+            foreach (size_t specIndex, spec; m.specs) {
               if (conforming in spec.params[dim].conforming) {
                 debug(explain) {
                   writefln("      %s", *spec);
@@ -1492,7 +1492,7 @@ struct Runtime
       int stride = 1;
       m.strides.length = dims - 1;
 
-      foreach (int dim, vp; m.vp[1..$]) {
+      foreach (size_t dim, vp; m.vp[1..$]) {
         debug(explain) {
           writefln("    stride for dim %s = %s", dim + 1, stride);
         }
@@ -1513,7 +1513,7 @@ struct Runtime
         writefln("  assign slots");
       }
 
-      foreach (int dim, vp; m.vp) {
+      foreach (size_t dim, vp; m.vp) {
         debug(explain) {
           writefln("    dim %s", dim);
         }
@@ -1667,7 +1667,7 @@ struct Runtime
                    *m, m.vp.length, slot);
         }
 
-        foreach (int dim, vp; m.vp) {
+        foreach (size_t dim, vp; m.vp) {
           debug(explain) {
             writefln("    dim %s", dim);
           }
