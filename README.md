@@ -50,7 +50,7 @@ to the problems described above, you will have to resort on hacks like double
 dispatch or - again - type switches.
 
 This library neatly solves this problem. It brings you the flexibility and the
-power of open multi-methods, as found in languages like Lisp, Closure, Dylan or
+power of open multi-methods, as found in languages like Lisp, Clojure, Dylan or
 TADS. They are fast too, comparable to ordinary virtual function calls. And,
 because they use compressed dispatch tables, the memory footprint remains
 reasonable even in presence of multiple virtual arguments. Hey, you can even
