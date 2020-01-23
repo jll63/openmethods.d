@@ -952,11 +952,11 @@ struct Runtime
       writefln("Scooping...");
     }
 
-  foreach (mod; ModuleInfo) {
+    foreach (mod; ModuleInfo) {
       foreach (c; mod.localClasses) {
         scoop(c);
       }
-  }
+    }
 
     // Fill the 'directBases' and 'directDerived' arrays in the Class objects.
 
