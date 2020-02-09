@@ -248,8 +248,9 @@ struct method
   string id;
 }
 
-/++ Call the _next most specialized override, if it exists. In other words, call
- the override that would have been called if this one had not been defined.
+/++ Call the _next most specialized override, if it exists. In other words,
+ call the override that would have been called if this one had not been
+ defined.
 
  Examples:
  ---
@@ -286,7 +287,8 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
 auto next(alias F, T...)(T args)
 {
   alias M = typeof(F(MethodTag.init, T.init));
-  return M.nextPtr!(T)(args);
+  alias Spec = M.ReturnType function(M.Params);
+  return (cast(Spec) M.nextPtr!T)(args);
 }
 
 /++ Used as a string mixin: register the method declarations and definitions in
@@ -315,61 +317,55 @@ mixin template declareMethod(string index, ReturnType, string name, ParameterTyp
 
 mixin template declareMethod(ReturnType, string name, ParameterType...)
 {
-  import std.traits;
-  mixin(openmethods.Method!(openmethods.MptrInDeallocator, ReturnType, name,
-                            FunctionAttribute.none, ParameterType)
+  import std.traits, std.range;
+  mixin(openmethods.
+        Method!(openmethods.MptrInDeallocator, ReturnType, name,
+                FunctionAttribute.none, "".repeat(ParameterType.length).array(),
+                ParameterType)
         .code);
 }
 
 mixin template defineMethod(alias Dispatcher, alias Fun)
 {
-  static struct RegisterMethod {
+  __gshared openmethods.Runtime.SpecInfo si;
 
+  shared static this() {
     import openmethods;
     import std.traits;
 
-    alias Meth = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
+    alias M = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
 
-    static wrapper = function Meth.ReturnType(Meth.Params args) {
-      return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
-    };
+    enum wrapperCode = M.wrapperCode!(Fun);
+    mixin(wrapperCode);
 
-    static __gshared Runtime.SpecInfo si;
+    mixin("alias Spec = " ~ M.pointerDeclCode ~ ";");
 
-    shared static this() {
-      si.pf = cast(void*) wrapper;
+    enum registerSpecCode = M.registerSpecCode!(std.traits.Parameters!Fun);
 
-      debug(explain) {
-        import std.stdio;
-        writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
-      }
-
-      foreach (i, QP; Meth.QualParams) {
-        static if (IsVirtual!QP) {
-          si.vp ~= Parameters!Fun[i].classinfo;
-        }
-      }
-
-      Meth.info.specInfos ~= &si;
-      si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
-
-      Runtime.needUpdate = true;
-    }
-
-    shared static ~this()
-    {
-      debug(explain) {
-        import std.stdio;
-        writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
-      }
-
-      import std.algorithm, std.array;
-      Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
-      Runtime.needUpdate = true;
-    }
+    debug(codeGen)
+      pragma(msg,
+             "registerSpecCode for "
+             ~ std.traits.Parameters!Fun.stringof
+             ~ ": "
+             ~ registerSpecCode);
+    mixin(registerSpecCode);
   }
 
-  __gshared RegisterMethod registerMethod;
+  shared static ~this()
+  {
+    import openmethods;
+    import std.traits;
+    alias M = typeof(Dispatcher(MethodTag.init, std.traits.Parameters!(Fun).init));
+
+    debug(explain) {
+      import std.stdio;
+      writefln("Removing override %s%s", M.name, Parameters!Fun.stringof);
+    }
+
+    import std.algorithm, std.array;
+    M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
+    Runtime.needUpdate = true;
+  }
 }
 
 mixin template registerClasses(Classes...) {
@@ -471,7 +467,8 @@ setMethodErrorHandler(void function(MethodError error) handler)
 enum IsVirtual(T) = false;
 enum IsVirtual(T : virtual!U, U) = true;
 
-alias VirtualType(T : virtual!U, U) = U;
+alias UnqualType(T) = T;
+alias UnqualType(T : virtual!U, U) = U;
 
 template VirtualArity(QP...)
 {
@@ -487,7 +484,7 @@ template VirtualArity(QP...)
 enum IsCovariant(T) = false;
 enum IsCovariant(T : covariant!U, U) = true;
 
-private alias CovariantType(T : covariant!U, U) = U;
+private alias UnqualType(T : covariant!U, U) = U;
 
 private template CallParams(T...)
 {
@@ -495,57 +492,11 @@ private template CallParams(T...)
     alias CallParams = AliasSeq!();
   } else {
     static if (IsVirtual!(T[0])) {
-      alias CallParams = AliasSeq!(VirtualType!(T[0]), CallParams!(T[1..$]));
+      alias CallParams = AliasSeq!(UnqualType!(T[0]), CallParams!(T[1..$]));
     } else static if (IsCovariant!(T[0])) {
-      alias CallParams = AliasSeq!(CovariantType!(T[0]), CallParams!(T[1..$]));
+      alias CallParams = AliasSeq!(UnqualType!(T[0]), CallParams!(T[1..$]));
     } else {
       alias CallParams = AliasSeq!(T[0], CallParams!(T[1..$]));
-    }
-  }
-}
-
-template castArgs(T...)
-{
-  import std.typecons : tuple;
-  static if (T.length) {
-    template To(S...)
-    {
-      auto arglist(A...)(A args) {
-        alias QP = T[0];
-        static if (IsVirtual!QP) {
-          static if (is(VirtualType!QP == class)) {
-            auto arg = cast(S[0]) cast(void*) args[0];
-          } else {
-            static assert(is(VirtualType!QP == interface),
-                             "virtual argument must be a class or an interface");
-            auto arg = cast(S[0]) args[0];
-          }
-        } else static if (IsCovariant!QP) {
-          static if (is(CovariantType!QP == class)) {
-            debug {
-              auto arg = cast(S[0]) args[0];
-            } else {
-              auto arg = cast(S[0]) cast(void*) args[0];
-            }
-          } else {
-            static assert(is(CovariantType!QP == interface),
-                             "covariant argument must be a class or an interface");
-            auto arg = cast(S[0]) args[0];
-          }
-        } else {
-          auto arg = args[0];
-        }
-        return
-          tuple(arg,
-                castArgs!(T[1..$]).To!(S[1..$]).arglist(args[1..$]).expand);
-      }
-    }
-  } else {
-    template To(X...)
-    {
-      auto arglist() {
-        return tuple();
-      }
     }
   }
 }
@@ -553,25 +504,157 @@ template castArgs(T...)
 immutable MptrInDeallocator = "deallocator";
 immutable MptrViaHash = "hash";
 
-struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
+template ConcatStorageClassModifiers(Modifiers...)
+{
+  static if (Modifiers.length == 0) {
+    enum ConcatStorageClassModifiers = "";
+  } else static if (Modifiers.length == 1) {
+    enum ConcatStorageClassModifiers = Modifiers[0];
+  } else {
+    enum ConcatStorageClassModifiers =
+      Modifiers[0] ~ " " ~ ConcatStorageClassModifiers!(Modifiers[1..$]);
+  }
+}
+
+template StorageClassModifiers(alias Func)
+{
+  template Helper(int i)
+  {
+    static if (i == Parameters!(Func).length) {
+      enum Helper = [];
+    } else {
+      enum Helper = [ ConcatStorageClassModifiers!(__traits(getParameterStorageClasses, Func, i)) ]
+        ~ Helper!(i + 1);
+    }
+  }
+  enum StorageClassModifiers = Helper!0;
+}
+
+template castArg(QP, int i, T)
+{
+  static if (IsVirtual!QP) {
+    static if (is(UnqualType!QP == interface)) {
+      enum castArg = "cast(%s) a%s".format(T.stringof, i);
+    } else {
+      enum castArg = "cast(%s) cast(void*) a%s".format(T.stringof, i);
+    }
+  } else static if (IsCovariant!QP) {
+    static if (is(UnqualType!QP == class)) {
+      debug {
+        enum castArg = "cast(%s) a%s".format(T.stringof, i);
+      } else {
+        enum castArg = "cast(%s) cast(void*) a%s".format(T.stringof, i);
+      }
+    } else {
+      static assert(is(UnqualType!QP == interface),
+                    "covariant argument must be a class or an interface");
+      enum castArg = "cast(%s) a%s".format(T.stringof, i);
+    }
+  } else {
+    enum castArg = "a%s".format(i);
+  }
+}
+
+template castArgList(QP...)
+{
+  template to(T...)
+  {
+    static if (QP.length == 0) {
+      enum to = [];
+    } else {
+      enum to = [ castArg!(QP[0], QP.length, T[0]) ]
+        ~ castArgList!(QP[1..$]).to!(T[1..$]);
+    }
+  }
+}
+
+enum typeStringOf(T) = T.stringof;
+enum unqualTypeStringOf(T) = UnqualType!(T).stringof;
+
+enum tupleToArray() = [];
+enum tupleToArray(T...) = [ T[0] ] ~ tupleToArray!(T[1..$]);
+
+enum typeList(Params...) = tupleToArray!(staticMap!(typeStringOf, Params));
+enum unqualTypeList(Params...) = tupleToArray!(staticMap!(unqualTypeStringOf, Params));
+
+template FilterVirtual(Q...)
+{
+  template From(T...) {
+    //static assert Q.length == T.length;
+    static if (Q.length == 0) {
+      alias From = AliasSeq!();
+    } else {
+      static if (IsVirtual!(Q[0])) {
+        alias From = AliasSeq!(T[0], FilterVirtual!(Q[1..$]).From!(T[1..$]));
+      } else {
+        alias From = FilterVirtual!(Q[1..$]).From!(T[1..$]);
+      }
+    }
+  }
+}
+
+string _formatAppendClassInfoCode(string cls) {
+  return "si.vp ~= %s.classinfo".format(cls);
+}
+
+template selectVirtualArgsCode(QP...)
+{
+  static if (QP.length) {
+    static if (IsVirtual!(QP[0])) {
+      enum selectVirtualArgsCode =
+        [ "a%s".format(QP.length) ] ~ selectVirtualArgsCode!(QP[1..$]);
+    } else {
+      enum selectVirtualArgsCode = selectVirtualArgsCode!(QP[1..$]);
+    }
+  } else {
+    enum selectVirtualArgsCode = [];
+  }
+}
+
+struct Method(
+  string Mptr, R, string id, uint functionAttributes_, string[] SCM, T...)
 {
   alias QualParams = T;
-  alias Params = CallParams!T;
+  alias Params = CallParams!QualParams;
   alias ReturnType = R;
   alias Word =  Runtime.Word;
+  alias This = Method!(Mptr, R, id, functionAttributes, SCM, T);
+
   enum name = id;
+
   enum functionAttributes = cast(FunctionAttribute) functionAttributes_;
-  alias This = Method!(Mptr, R, id, functionAttributes, T);
 
-  static if (functionAttributes & FunctionAttribute.ref_) {
-    alias ref R function(Params) Spec;
-  } else {
-    alias R function(Params) Spec;
-  }
+  enum argListCode = Params.length.iota
+    .mapStatic!(i => "a%s".format(Params.length - i))
+    .join(", ");
+  debug(codeGen) pragma(msg, "argListCode: " ~ argListCode);
 
-  static __gshared Runtime.MethodInfo info;
+  enum paramListCode = zip(SCM, unqualTypeList!QualParams, Params.length.iota)
+      .mapStatic!(t => "%s %s a%s".format(t[0], t[1], Params.length - t[2]))
+      .join(", ");
+  debug(codeGen) pragma(msg, "paramListCode: " ~ paramListCode);
 
-  static R notImplementedError(T...)
+  enum returnTypeCode = refAttribute ~ ReturnType.stringof;
+  enum returnStatementCode = is(ReturnType == void) ? "" : "return";
+
+  enum pointerDeclCode =
+    mixin(interp!"${returnTypeCode} function(${paramListCode})");
+  debug(codeGen) pragma(msg, "pointerDeclCode: " ~ pointerDeclCode);
+
+  enum nonRefAttributes= `%s%s%s%s%s%s`
+    .format(
+            functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
+            functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
+            functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
+            functionAttributes & FunctionAttribute.safe ? " @safe" : "",
+            functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
+            functionAttributes & FunctionAttribute.system ? " @system" : "");
+
+  __gshared Runtime.MethodInfo info;
+  alias genericNextPtr = void function();
+  __gshared genericNextPtr nextPtr(QualParams...) = null;
+
+  static R notImplementedError(QualParams...)
   {
     import std.meta;
     errorHandler(new MethodError(MethodError.NotImplemented, &info));
@@ -580,7 +663,7 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
     }
   }
 
-  static R ambiguousCallError(T...)
+  static R ambiguousCallError(QualParams...)
   {
     errorHandler(new MethodError(MethodError.AmbiguousCall, &info));
     static if (!is(R == void)) {
@@ -588,7 +671,7 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
     }
   }
 
-  static Method discriminator(MethodTag, CallParams!T);
+  static Method discriminator(MethodTag, Params);
 
   static auto getMptr(T)(T arg) {
     alias Word = Runtime.Word;
@@ -609,85 +692,65 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
         auto mptr = Runtime.gv.ptr[Runtime.hash(*cast (void**) o)].pw;
       }
     }
+
     assert(mptr, format("Cannot locate method table for %s", T.classinfo.name));
     return mptr;
   }
 
-  template Indexer(Q...)
-  {
-    static const(Word)* move(P...)(const(Word)* slotStride, P args)
-    {
-      alias Q0 = Q[0];
-      debug(traceCalls) {
-        stderr.write("\n  ", Q0.stringof, ":");
-      }
-      static if (IsVirtual!Q0) {
-        alias arg = args[0];
-        const (Word)* mtbl = getMptr(arg);
-        auto slot = slotStride++.i;
-        auto index = mtbl[slot].i;
-        debug(traceCalls) {
-          stderr.writef(" mtbl = %s", mtbl);
-          stderr.writef(" slot = %s", slot);
-          stderr.writef(" dt = %s\n  ", mtbl[slot].p);
-        }
-        return Indexer!(Q[1..$])
-          .moveNext(cast(const(Word)*) mtbl[slot].p,
+  static const(Word)* move(P...)(const(Word)* slotStride, P args) {
+    alias P0 = P[0];
+    debug(traceCalls) {
+      stderr.write("\n  ", P0.stringof, ":");
+    }
+
+    alias arg = args[0];
+    const (Word)* mtbl = getMptr(arg);
+    auto slot = slotStride++.i;
+    auto index = mtbl[slot].i;
+    debug(traceCalls) {
+      stderr.writef(" mtbl = %s", mtbl);
+      stderr.writef(" slot = %s", slot);
+      stderr.writef(" dt = %s\n  ", mtbl[slot].p);
+    }
+    return moveNext(cast(const(Word)*) mtbl[slot].p,
                     slotStride,
                     args[1..$]);
-      } else {
-        return Indexer!(Q[1..$]).move(slotStride, args[1..$]);
-      }
-    }
+  }
 
-    static const(Word)* moveNext(P...)(const(Word)* dt, const(Word)* slotStride, P args)
-    {
-      static if (Q.length > 0) {
-        alias Q0 = Q[0];
-        static if (IsVirtual!Q0) {
-          alias arg = args[0];
-          const (Word)* mtbl = getMptr(arg);
-          auto slot = slotStride++.i;
-          auto index = mtbl[slot].i;
-          auto stride = slotStride++.i;
-          debug(traceCalls) {
-            stderr.write(Q0.stringof, ":");
-            stderr.writef(" mtbl = %s", mtbl);
-            stderr.writef(" slot = %s", slot);
-            stderr.writef(" index = %s", index);
-            stderr.writef(" stride = %s", stride);
-            stderr.writef(" : %s\n ", dt + index * stride);
-          }
-          return Indexer!(Q[1..$])
-            .moveNext(dt + index * stride,
-                      slotStride,
-                      args[1..$]);
-        } else {
-          return Indexer!(Q[1..$]).moveNext(dt, slotStride, args[1..$]);
-        }
-      } else {
-        debug(traceCalls) {
-          stderr.writef(" return %s\n ", dt);
-        }
-        return dt;
+  static const(Word)* moveNext(P...)(
+    const(Word)* dt, const(Word)* slotStride, P args)
+  {
+    static if (P.length > 0) {
+      alias P0 = P[0];
+      alias arg = args[0];
+      const (Word)* mtbl = getMptr(arg);
+      auto slot = slotStride++.i;
+      auto index = mtbl[slot].i;
+      auto stride = slotStride++.i;
+      debug(traceCalls) {
+        stderr.write(P0.stringof, ":");
+        stderr.writef(" mtbl = %s", mtbl);
+        stderr.writef(" slot = %s", slot);
+        stderr.writef(" index = %s", index);
+        stderr.writef(" stride = %s", stride);
+        stderr.writef(" : %s\n ", dt + index * stride);
       }
-    }
-
-    static const(Word)* unary(P...)(P args)
-    {
-      alias Q0 = Q[0];
-      static if (IsVirtual!Q0) {
-        debug(traceCalls) {
-          stderr.write(" ", Q0.stringof, ":");
-        }
-        return getMptr(args[0]);
-      } else {
-        return Indexer!(Q[1..$]).unary(args[1..$]);
+      return moveNext(dt + index * stride, slotStride, args[1..$]);
+    } else {
+      debug(traceCalls) {
+        stderr.writef(" return %s\n ", dt);
       }
+      return dt;
     }
   }
 
-  enum code = discriminatorCode ~ dispatcherCode;
+  static const(Word)* unary(P)(P arg)
+  {
+    debug(traceCalls) {
+      stderr.write(" ", P.stringof, ":");
+    }
+    return getMptr(arg);
+  }
 
   enum discriminatorCode = `openmethods.%s %s(openmethods.MethodTag, %s);
 `.format(This.stringof,
@@ -697,73 +760,87 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
 
   enum refAttribute = functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
 
-  enum string nonRefAttributes= `%s%s%s%s%s%s`
-    .format(
-            functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
-            functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
-            functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
-            functionAttributes & FunctionAttribute.safe ? " @safe" : "",
-            functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
-            functionAttributes & FunctionAttribute.system ? " @system" : "");
+  enum virtualArgsCode = selectVirtualArgsCode!QualParams.join(", ");
 
-  static string dispatcherCode() {
-    string params;
-    string args;
-    string sep = "";
+  enum attributes =
+    [functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
+     functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
+     functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
+     functionAttributes & FunctionAttribute.safe ? " @safe" : "",
+     functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
+     functionAttributes & FunctionAttribute.system ? " @system" : ""].join(" ");
 
-    foreach (i, p; Params) {
-      args ~= `%sarg%d`.format(sep, i);
-      params ~= `%s%s arg%d`.format(sep, p.stringof, i);
-      sep = ", ";
-    }
+  enum dispatcherCode = mixin(interp!q{
+      ${returnTypeCode} ${name}(${paramListCode}) ${attributes} {
+        import std.traits, openmethods;
 
-    return `
-%s%s %s(%s)%s
-{
-  import std.traits, openmethods;
+        alias Method = openmethods.${This.stringof};
+        alias Spec = ${pointerDeclCode};
 
-  alias Method = openmethods.%s;
+        debug(traceCalls) {
+          import std.stdio;
+          stderr.write("${name}", "${QualParams.stringof}");
+        }
 
-  debug(traceCalls) {
-    import std.stdio;
-    stderr.write(Method.info.name, Method.QualParams.stringof);
-  }
+        alias Word = Runtime.Word;
 
-  alias Word = Runtime.Word;
+        static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
+          auto mptr = Method.unary(${virtualArgsCode});
+          debug(traceCalls) {
+            stderr.writef("%s %s", mptr, Method.info.slotStride.i);
+          }
+          auto pf = cast(Spec) mptr[Method.info.slotStride.i].p;
+        } else {
+          assert(Method.info.slotStride.pw);
+          auto pf =
+            cast(Spec) Method.move(Method.info.slotStride.pw, ${virtualArgsCode}).p;
+        }
 
-  static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
-    auto mptr = Method.Indexer!(Method.QualParams).unary(%s);
-    debug(traceCalls) {
-      stderr.writef("%%s %%s", mptr, Method.info.slotStride.i);
-    }
-    auto pf = cast(Method.Spec) mptr[Method.info.slotStride.i].p;
-  } else {
-    assert(Method.info.slotStride.pw);
-    auto pf =
-      cast(Method.Spec) Method.Indexer!(Method.QualParams).move(Method.info.slotStride.pw, %s).p;
-  }
+        debug(traceCalls) {
+          import std.stdio;
+          writefln(" pf = %s", pf);
+        }
 
-  debug(traceCalls) {
-    import std.stdio;
-    writefln(" pf = %%s", pf);
-  }
+        assert(pf);
+        return pf(${argListCode});
+      }
+    });
 
-  assert(pf);
-  return pf(%s);
-}
-`.format(functionAttributes & FunctionAttribute.ref_ ? "ref " : "",
-         ReturnType.stringof,
-         name,
-         params,
-         [functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
-          functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
-          functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
-          functionAttributes & FunctionAttribute.safe ? " @safe" : "",
-          functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
-          functionAttributes & FunctionAttribute.system ? " @system" : ""].join(" "),
-         This.stringof,
-         args, args, args);
-  }
+  enum code = discriminatorCode ~ dispatcherCode;
+
+  enum castArgsCode(alias Overload) =
+    castArgList!QualParams.to!(Parameters!Overload).join(", ");
+
+  enum wrapperCode(alias Overload) = mixin(interp!q{
+      static ${refAttribute}${ReturnType.stringof} wrapper(${paramListCode})
+      {
+        ${returnStatementCode} ${__traits(identifier, Overload)}(${castArgsCode!Overload});
+      }
+    });
+
+  enum appendClassInfoCode(SpecParams...) =
+    typeList!(FilterVirtual!(QualParams).From!(SpecParams))
+    .map!(_formatAppendClassInfoCode)
+    .join("; ");
+
+  enum registerSpecCode(SpecParams...) =
+    mixin(interp!q{
+        si.pf = cast(void*) &wrapper;
+
+        debug(explain) {
+          import std.stdio;
+          writefln(
+            "Registering override %s%s, pf = %s",
+            M.name, M.SpecParams.stringof, &wrapper);
+        }
+
+        ${appendClassInfoCode!SpecParams};
+
+        si.nextPtr = cast(void**) &M.nextPtr!${SpecParams.stringof};
+
+        M.info.specInfos ~= &si;
+        openmethods.Runtime.needUpdate = true;
+      });
 
   shared static this() {
     info.name = id;
@@ -780,7 +857,7 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
     foreach (QP; QualParams) {
       int i = 0;
       static if (IsVirtual!QP) {
-        info.vp ~= VirtualType!(QP).classinfo;
+        info.vp ~= UnqualType!(QP).classinfo;
       }
     }
 
@@ -800,8 +877,23 @@ struct Method(string Mptr, R, string id, uint functionAttributes_, T...)
     Runtime.methodInfos.remove(&info);
     Runtime.needUpdate = true;
   }
+}
 
-  static Spec nextPtr(T...) = null;
+template MethodOf(alias Fun) {
+  static assert(hasVirtualParameters!Fun);
+  static if (hasUDA!(Fun, openmethods.mptr)) {
+    static assert(getUDAs!(Fun, openmethods.mptr).length == 1, "only une @mptr allowed");
+    immutable index = getUDAs!(Fun, openmethods.mptr)[0].index;
+  } else {
+    immutable index = "deallocator";
+  }
+
+  alias MethodOf = Method!(index,
+                           ReturnType!Fun,
+                           __traits(identifier, Fun),
+                           functionAttributes!Fun,
+                           StorageClassModifiers!Fun,
+                           Parameters!Fun);
 }
 
 struct MethodTag { }
@@ -1745,36 +1837,6 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
-version (GNU) {
-  template getUDAs(alias symbol, alias attribute)
-  {
-    import std.meta : Filter;
-
-    template isDesiredUDA(alias toCheck)
-    {
-      static if (is(typeof(attribute)) && !__traits(isTemplate, attribute))
-        {
-          static if (__traits(compiles, toCheck == attribute))
-            enum isDesiredUDA = toCheck == attribute;
-          else
-            enum isDesiredUDA = false;
-        }
-      else static if (is(typeof(toCheck)))
-        {
-          static if (__traits(isTemplate, attribute))
-            enum isDesiredUDA =  isInstanceOf!(attribute, typeof(toCheck));
-          else
-            enum isDesiredUDA = is(typeof(toCheck) == attribute);
-        }
-      else static if (__traits(isTemplate, attribute))
-        enum isDesiredUDA = isInstanceOf!(attribute, toCheck);
-      else
-        enum isDesiredUDA = is(toCheck == attribute);
-    }
-    alias getUDAs = Filter!(isDesiredUDA, __traits(getAttributes, symbol));
-  }
-}
-
 string _registerMethods(alias MODULE)()
 {
   import std.array;
@@ -1785,128 +1847,271 @@ string _registerMethods(alias MODULE)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!o) {
-          static if (hasUDA!(o, openmethods.mptr)) {
-            static assert(getUDAs!(o, openmethods.mptr).length == 1,
-                          "only une @mptr allowed");
-            immutable index = getUDAs!(o, openmethods.mptr)[0].index;
-          } else {
-            immutable index = "deallocator";
-          }
-
-          auto meth =
-            format(`openmethods.Method!("%s", %s, "%s", %s, %s)`,
-                   index,
-                   ReturnType!o.stringof,
-                   m,
-                   functionAttributes!o,
-                   Parameters!o.stringof[1..$-1]);
-          //code ~= format(`alias %s = %s.dispatcher;`, m, meth);
-          // alias Method = openmethods.Method!(index, ReturnType, m, functionAttributes!o, Parameters!o);
-          alias Method = openmethods.Method!(index, ReturnType!o, m, functionAttributes!o, Parameters!o);
-          //code ~= `mixin(%s.code);`.format(meth);
-          code ~= Method.dispatcherCode;
-          code ~= Method.discriminatorCode;
-          //code ~= format(`alias %s = %s.discriminator;`, m, meth);
+          code ~= openmethods.MethodOf!o.code;
         }
       }
     }
   }
+
   return join(code, "\n");
+}
+
+enum _isNamedSpec(alias spec) = is(typeof(getUDAs!(spec, method)[0]) == method);
+
+template _specId(alias M, alias spec)
+  if (_isNamedSpec!(spec)) {
+  enum _specId = getUDAs!(spec, method)[0].id;
+}
+
+template _specId(alias M, alias spec)
+  if (!_isNamedSpec!(spec)) {
+  enum _specId = M[1..$];
 }
 
 mixin template _registerSpecs(alias MODULE)
 {
   import openmethods;
 
-  mixin template wrap(Meth, alias Fun)
-  {
-    static struct Register {
+  mixin template Register(M, alias Fun) {
 
-      static if (Meth.functionAttributes & FunctionAttribute.ref_) {
-        static ref Meth.ReturnType wrapper(Meth.Params args) {
-          return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
-        }
-      } else {
-        static Meth.ReturnType wrapper(Meth.Params args) {
-          return Fun(openmethods.castArgs!(Meth.QualParams).To!(Parameters!Fun).arglist(args).expand);
-        }
-      }
-
-      static __gshared Runtime.SpecInfo si;
+    static struct Registrar {
+      __gshared openmethods.Runtime.SpecInfo si;
 
       shared static this() {
-        si.pf = cast(void*) &wrapper;
-
-        debug(explain) {
-          import std.stdio;
-          writefln("Registering override %s%s", Meth.name, Parameters!Fun.stringof);
-        }
-
-        foreach (i, QP; Meth.QualParams) {
-          static if (IsVirtual!QP) {
-            si.vp ~= Parameters!Fun[i].classinfo;
-          }
-        }
-
-        Meth.info.specInfos ~= &si;
-        si.nextPtr = cast(void**) &Meth.nextPtr!(Parameters!Fun);
-
-        Runtime.needUpdate = true;
+        enum wrapperCode = M.wrapperCode!(Fun);
+        debug(codeGen) pragma(msg, "wrapperCode: " ~ wrapperCode);
+        mixin(wrapperCode);
+        mixin("alias Spec = " ~ M.pointerDeclCode ~ ";");
+        enum registerSpecCode = M.registerSpecCode!(Parameters!Fun);
+        debug(codeGen)
+          pragma(
+                 msg,
+                 "registerSpecCode for "
+                 ~ Parameters!Fun.stringof
+                 ~ ": "
+                 ~ registerSpecCode);
+        mixin(registerSpecCode);
       }
 
       shared static ~this()
       {
         debug(explain) {
           import std.stdio;
-          writefln("Removing override %s%s", Meth.name, Parameters!Fun.stringof);
+          writefln("Unregistering specs from %s", MODULE.stringof);
         }
 
         import std.algorithm, std.array;
-        Meth.info.specInfos = Meth.info.specInfos.filter!(p => p != &si).array;
+        M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
         Runtime.needUpdate = true;
       }
     }
 
-    __gshared Register r;
+    __gshared Registrar r;
   }
 
-  import std.traits;
-
-  shared static this()
-  {
-    debug(explain) {
-      import std.stdio;
-      writefln("Registering specs from %s", MODULE.stringof);
-    }
+  shared static this() {
+    import std.traits;
     foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
       static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
         foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
           static if (hasUDA!(_openmethods_o_, method)) {
-            static if (is(typeof(getUDAs!(_openmethods_o_, method)[0]) == method)) {
-              immutable _openmethods_id_ = getUDAs!(_openmethods_o_, method)[0].id;
-            } else {
-              static assert(_openmethods_m_[0] == '_',
-                            _openmethods_m_ ~ ": method name must begin with an underscore, "
-                            ~ "or be set in @method()");
-              immutable _openmethods_id_ = _openmethods_m_[1..$];
-            }
+            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
+            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
+                          _openmethods_m_ ~ ": method name must begin with an underscore, "
+                          ~ "or be set in @method()");
             static assert(!hasVirtualParameters!_openmethods_o_,
                           _openmethods_m_ ~ ": virtual! must not be used in method definitions");
-            alias M =
-              typeof(mixin(_openmethods_id_)(MethodTag.init,
-                                             Parameters!(_openmethods_o_).init));
-            mixin wrap!(M, _openmethods_o_);
+            mixin Register!
+              (typeof(mixin(_specId!(_openmethods_m_, _openmethods_o_))(MethodTag.init, Parameters!(_openmethods_o_).init)),
+               _openmethods_o_);
           }
         }
       }
     }
   }
+}
 
-  shared static ~this()
-  {
-    debug(explain) {
-      import std.stdio;
-      writefln("Unregistering specs from %s", MODULE.stringof);
+// string interpolation
+// Copied from https://github.com/Abscissa/scriptlike
+
+string interp(string str)()
+{
+  static import std.conv;
+	enum State
+	{
+		normal,
+		dollar,
+		code,
+	}
+
+	auto state = State.normal;
+
+	string buf;
+	buf ~= '`';
+
+	foreach(char c; str)
+	final switch(state)
+	{
+	case State.normal:
+		if(c == '$')
+			// Delay copying the $ until we find out whether it's
+			// the start of an escape sequence.
+			state = State.dollar;
+		else if(c == '`') {
+			buf ~= "`~\"`\"~`";
+            // "`~\"`\"~`"
+		} else
+			buf ~= c;
+		break;
+
+	case State.dollar:
+		if(c == '{')
+		{
+			state = State.code;
+			buf ~= "`~_interp_text(";
+		}
+		else if(c == '$')
+			buf ~= '$'; // Copy the previous $
+		else
+		{
+			buf ~= '$'; // Copy the previous $
+			buf ~= c;
+			state = State.normal;
+		}
+		break;
+
+	case State.code:
+		if(c == '}')
+		{
+			buf ~= ")~`";
+			state = State.normal;
+		}
+		else
+			buf ~= c;
+		break;
+	}
+
+	// Finish up
+	final switch(state)
+	{
+	case State.normal:
+		buf ~= '`';
+		break;
+
+	case State.dollar:
+		buf ~= "$`"; // Copy the previous $
+		break;
+
+	case State.code:
+		throw new Exception(
+			"Interpolated string contains an unterminated expansion. "~
+			"You're missing a closing curly brace."
+		);
+	}
+
+	return buf;
+}
+
+string _interp_text(T...)(T args)
+{
+  static import std.conv;
+  static if(T.length == 0)
+    return null;
+  else
+    return std.conv.text(args);
+}
+
+// use 'map' inside structs
+// Copied from code posted by Basile B here:
+// https://forum.dlang.org/post/bxwlodescrnwyftwmohl@forum.dlang.org
+// Also explains why we need this.
+
+static template mapStatic(fun...)
+if (fun.length >= 1)
+{
+    auto mapStatic(Range)(Range r)
+      if (isInputRange!(std.algorithm.mutation.Unqual!Range))
+    {
+        import std.meta : AliasSeq, staticMap;
+        import std.functional : unaryFun;
+        alias RE = ElementType!(Range);
+        alias _fun = unaryFun!fun;
+        alias _funs = AliasSeq!(_fun);
+        return MapResult!(_fun, Range)(r);
     }
-  }
+}
+
+private static struct MapResult(alias fun, Range)
+{
+    alias R = std.algorithm.mutation.Unqual!Range;
+    R _input;
+
+    @property auto ref back()()
+    {
+        return fun(_input.back);
+    }
+
+    void popBack()()
+    {
+        _input.popBack();
+    }
+
+    this(R input)
+    {
+        _input = input;
+    }
+
+    @property bool empty()
+    {
+        return _input.empty;
+    }
+
+    void popFront()
+    {
+        assert(!empty, "Attempting to popFront an empty map.");
+        _input.popFront();
+    }
+
+    @property auto ref front()
+    {
+        assert(!empty, "Attempting to fetch the front of an empty map.");
+        return fun(_input.front);
+    }
+
+    static if (isRandomAccessRange!R)
+    {
+        static if (is(typeof(_input[ulong.max])))
+            private alias opIndex_t = ulong;
+        else
+            private alias opIndex_t = uint;
+
+        auto ref opIndex(opIndex_t index)
+        {
+            return fun(_input[index]);
+        }
+    }
+
+    static if (hasLength!R)
+    {
+        @property auto length()
+        {
+            return _input.length;
+        }
+    }
+
+    static if (hasSlicing!R)
+    {
+        static if (is(typeof(_input[ulong.max .. ulong.max])))
+            private alias opSlice_t = ulong;
+        else
+            private alias opSlice_t = uint;
+
+        static if (hasLength!R)
+        {
+            auto opSlice(opSlice_t low, opSlice_t high)
+            {
+                return typeof(this)(_input[low .. high]);
+            }
+        }
+    }
 }

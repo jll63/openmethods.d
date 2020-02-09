@@ -12,7 +12,7 @@ DC_EXCLUSIONS='EXCLUDE_GDC'
 
 echo test openmethods...
 
-if ! dub test -q openmethods $*;
+if ! dub test --compiler $DC -q openmethods $*;
 then
     echo "ERROR"
     errors=1
@@ -43,7 +43,7 @@ do
                 echo SKIP $target
             else
 
-                if ! dub test -q openmethods:$target $*;
+                if ! dub test --compiler $DC -q openmethods:$target $*;
                 then
                     echo "ERROR"
                     errors=1
@@ -51,7 +51,7 @@ do
 
                 if ! grep --quiet library $dir/$target/dub.sdl;
                 then
-                    if ! dub run -q openmethods:$target $*;
+                    if ! dub run --compiler $DC -q openmethods:$target $*;
                     then
                         echo "ERROR"
                         errors=1
@@ -70,7 +70,7 @@ do
                 continue
             fi
 
-            if ! dub run --single -q $dir/$target $*;
+            if ! dub run --compiler $DC --single -q $dir/$target $*;
             then
                 echo "ERROR"
                 errors=1

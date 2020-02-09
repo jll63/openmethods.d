@@ -5,4 +5,4 @@ script: dev/travis.sh
 d:
   - dmd
   - ldc
-  - gdc
+#  - gdc
