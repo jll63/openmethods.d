@@ -8,7 +8,6 @@
 import std.stdio, std.traits, std.range;
 
 import openmethods;
-// pragma(msg, _registerMethods!storageclass);
 mixin(registerMethods);
 
 class Animal {}

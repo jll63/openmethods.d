@@ -286,9 +286,9 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
 
 auto next(alias F, T...)(T args)
 {
-  alias M = typeof(F(MethodTag.init, T.init));
-  alias Spec = M.ReturnType function(M.Params);
-  return (cast(Spec) M.nextPtr!T)(args);
+  alias TheMethod = typeof(F(MethodTag.init, T.init));
+  alias Spec = TheMethod.ReturnType function(TheMethod.Params);
+  return (cast(Spec) TheMethod.nextPtr!T)(args);
 }
 
 /++ Used as a string mixin: register the method declarations and definitions in
@@ -306,66 +306,6 @@ auto registerMethods(string moduleName = __MODULE__)
   return `static import openmethods;
 mixin(openmethods._registerMethods!(%s));
 mixin openmethods._registerSpecs!(%s);`.format(moduleName, moduleName);
-}
-
-mixin template declareMethod(string index, ReturnType, string name, ParameterType...)
-{
-  mixin(openmethods.Method!(index, ReturnType, name,
-                            FunctionAttribute.none, ParameterType)
-        .code);
-}
-
-mixin template declareMethod(ReturnType, string name, ParameterType...)
-{
-  import std.traits, std.range;
-  mixin(openmethods.
-        Method!(openmethods.MptrInDeallocator, ReturnType, name,
-                FunctionAttribute.none, "".repeat(ParameterType.length).array(),
-                ParameterType)
-        .code);
-}
-
-mixin template defineMethod(alias Dispatcher, alias Fun)
-{
-  __gshared openmethods.Runtime.SpecInfo si;
-
-  shared static this() {
-    import openmethods;
-    import std.traits;
-
-    alias M = typeof(Dispatcher(MethodTag.init, Parameters!(Fun).init));
-
-    enum wrapperCode = M.wrapperCode!(Fun);
-    mixin(wrapperCode);
-
-    mixin("alias Spec = " ~ M.pointerDeclCode ~ ";");
-
-    enum registerSpecCode = M.registerSpecCode!(std.traits.Parameters!Fun);
-
-    debug(codeGen)
-      pragma(msg,
-             "registerSpecCode for "
-             ~ std.traits.Parameters!Fun.stringof
-             ~ ": "
-             ~ registerSpecCode);
-    mixin(registerSpecCode);
-  }
-
-  shared static ~this()
-  {
-    import openmethods;
-    import std.traits;
-    alias M = typeof(Dispatcher(MethodTag.init, std.traits.Parameters!(Fun).init));
-
-    debug(explain) {
-      import std.stdio;
-      writefln("Removing override %s%s", M.name, Parameters!Fun.stringof);
-    }
-
-    import std.algorithm, std.array;
-    M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
-    Runtime.needUpdate = true;
-  }
 }
 
 mixin template registerClasses(Classes...) {
@@ -464,6 +404,9 @@ setMethodErrorHandler(void function(MethodError error) handler)
 // Private parts. This doesn't exist. If you believe it does and use it, on
 // your head be it.
 
+// ----------------------------------------------------------------------------
+// Meta-programming helpers
+
 enum IsVirtual(T) = false;
 enum IsVirtual(T : virtual!U, U) = true;
 
@@ -501,86 +444,9 @@ private template CallParams(T...)
   }
 }
 
-immutable MptrInDeallocator = "deallocator";
-immutable MptrViaHash = "hash";
-
-template ConcatStorageClassModifiers(Modifiers...)
-{
-  static if (Modifiers.length == 0) {
-    enum ConcatStorageClassModifiers = "";
-  } else static if (Modifiers.length == 1) {
-    enum ConcatStorageClassModifiers = Modifiers[0];
-  } else {
-    enum ConcatStorageClassModifiers =
-      Modifiers[0] ~ " " ~ ConcatStorageClassModifiers!(Modifiers[1..$]);
-  }
-}
-
-template StorageClassModifiers(alias Func)
-{
-  template Helper(int i)
-  {
-    static if (i == Parameters!(Func).length) {
-      enum Helper = [];
-    } else {
-      enum Helper = [ ConcatStorageClassModifiers!(__traits(getParameterStorageClasses, Func, i)) ]
-        ~ Helper!(i + 1);
-    }
-  }
-  enum StorageClassModifiers = Helper!0;
-}
-
-template castArg(QP, int i, T)
-{
-  static if (IsVirtual!QP) {
-    static if (is(UnqualType!QP == interface)) {
-      enum castArg = "cast(%s) a%s".format(T.stringof, i);
-    } else {
-      enum castArg = "cast(%s) cast(void*) a%s".format(T.stringof, i);
-    }
-  } else static if (IsCovariant!QP) {
-    static if (is(UnqualType!QP == class)) {
-      debug {
-        enum castArg = "cast(%s) a%s".format(T.stringof, i);
-      } else {
-        enum castArg = "cast(%s) cast(void*) a%s".format(T.stringof, i);
-      }
-    } else {
-      static assert(is(UnqualType!QP == interface),
-                    "covariant argument must be a class or an interface");
-      enum castArg = "cast(%s) a%s".format(T.stringof, i);
-    }
-  } else {
-    enum castArg = "a%s".format(i);
-  }
-}
-
-template castArgList(QP...)
-{
-  template to(T...)
-  {
-    static if (QP.length == 0) {
-      enum to = [];
-    } else {
-      enum to = [ castArg!(QP[0], QP.length, T[0]) ]
-        ~ castArgList!(QP[1..$]).to!(T[1..$]);
-    }
-  }
-}
-
-enum typeStringOf(T) = T.stringof;
-enum unqualTypeStringOf(T) = UnqualType!(T).stringof;
-
-enum tupleToArray() = [];
-enum tupleToArray(T...) = [ T[0] ] ~ tupleToArray!(T[1..$]);
-
-enum typeList(Params...) = tupleToArray!(staticMap!(typeStringOf, Params));
-enum unqualTypeList(Params...) = tupleToArray!(staticMap!(unqualTypeStringOf, Params));
-
 template FilterVirtual(Q...)
 {
   template From(T...) {
-    //static assert Q.length == T.length;
     static if (Q.length == 0) {
       alias From = AliasSeq!();
     } else {
@@ -593,55 +459,67 @@ template FilterVirtual(Q...)
   }
 }
 
-string _formatAppendClassInfoCode(string cls) {
-  return "si.vp ~= %s.classinfo".format(cls);
-}
+alias selectVirtualArgsCode(QP...) = selectVirtualArgsCode!(0, QP);
 
-template selectVirtualArgsCode(QP...)
+template selectVirtualArgsCode(size_t i, QP...)
 {
   static if (QP.length) {
     static if (IsVirtual!(QP[0])) {
       enum selectVirtualArgsCode =
-        [ "a%s".format(QP.length) ] ~ selectVirtualArgsCode!(QP[1..$]);
+        [ "a%s".format(i) ] ~ selectVirtualArgsCode!(i + 1, QP[1..$]);
     } else {
-      enum selectVirtualArgsCode = selectVirtualArgsCode!(QP[1..$]);
+      enum selectVirtualArgsCode = selectVirtualArgsCode!(i + 1, QP[1..$]);
     }
   } else {
     enum selectVirtualArgsCode = [];
   }
 }
 
+// ============================================================================
+// Method
+
+struct MethodTag { }
+
+enum MptrInDeallocator = "deallocator";
+enum MptrViaHash = "hash";
+
 struct Method(
-  string Mptr, R, string id, uint functionAttributes_, string[] SCM, T...)
+  string Mptr, R, string ID, uint FA, string[] SCM, T...)
 {
   alias QualParams = T;
   alias Params = CallParams!QualParams;
   alias ReturnType = R;
   alias Word =  Runtime.Word;
-  alias This = Method!(Mptr, R, id, functionAttributes, SCM, T);
+  alias TheMethod = Method!(Mptr, R, Name, functionAttributes, SCM, T);
+  enum Name = ID;
+  enum functionAttributes = cast(FunctionAttribute) FA;
 
-  enum name = id;
+  // ==========================================================================
+  // Meta-programming
 
-  enum functionAttributes = cast(FunctionAttribute) functionAttributes_;
+  // --------------------------------------------------------------------------
+  // Code fragments, for string mixins
 
   enum argListCode = Params.length.iota
-    .mapStatic!(i => "a%s".format(Params.length - i))
+    .mapStatic!(i => "a%s".format(i))
     .join(", ");
-  debug(codeGen) pragma(msg, "argListCode: " ~ argListCode);
 
-  enum paramListCode = zip(SCM, unqualTypeList!QualParams, Params.length.iota)
-      .mapStatic!(t => "%s %s a%s".format(t[0], t[1], Params.length - t[2]))
+  enum paramListCode = zip(SCM, Params.length.iota)
+      .mapStatic!(t => "%s TheMethod.Params[%s] a%s".format(t[0], t[1], t[1]))
       .join(", ");
-  debug(codeGen) pragma(msg, "paramListCode: " ~ paramListCode);
 
-  enum returnTypeCode = refAttribute ~ ReturnType.stringof;
+  enum discriminatorParamListCode = Params.length.iota
+    .mapStatic!(t => "Params[%s] a%s".format(t, t))
+    .join(", ");
+
+  enum functionPrefixCode =
+    functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
+
+  enum returnTypeCode = functionPrefixCode ~ "ReturnType";
+
   enum returnStatementCode = is(ReturnType == void) ? "" : "return";
 
-  enum pointerDeclCode =
-    mixin(interp!"${returnTypeCode} function(${paramListCode})");
-  debug(codeGen) pragma(msg, "pointerDeclCode: " ~ pointerDeclCode);
-
-  enum nonRefAttributes= `%s%s%s%s%s%s`
+  enum functionPostfixCode = `%s%s%s%s%s%s`
     .format(
             functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
             functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
@@ -650,9 +528,125 @@ struct Method(
             functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
             functionAttributes & FunctionAttribute.system ? " @system" : "");
 
+  static template castArgCode(QualParam, size_t i)
+  {
+    static if (IsVirtual!QualParam) {
+      static if (is(UnqualType!QualParam == interface)) {
+        enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+      } else {
+        enum castArgCode = "cast(SpecParams[%s]) cast(void*) a%s".format(i, i);
+      }
+    } else static if (IsCovariant!QualParam) {
+      static if (is(UnqualType!QualParam == class)) {
+        debug {
+          enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+        } else {
+          enum castArgCode = "cast(SpecParams[%s]) cast(void*) a%s".format(i, i);
+        }
+      } else {
+        static assert(is(UnqualType!QualParam == interface),
+                      "covariant argument must be a class or an interface");
+        enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+      }
+    } else {
+      enum castArgCode = "a%s".format(i);
+    }
+  }
+
+  static string castArgListCode(alias Spec)() {
+    string[] casts;
+    foreach (i, qp; QualParams) {
+      casts ~= castArgCode!(qp, i);
+    }
+
+    return casts.join(", ");
+  }
+
+  // enum castArgListCode(alias Spec) = zip!(QualParams, Params.length.iota)
+  //   .mapStatic!(qp, i => castArgCode!(qp, i))
+  //   .join(", ");
+
+  enum wrapperCode(alias Spec) = mixin(interp!q{
+      static ${functionPrefixCode} TheMethod.ReturnType wrapper(${paramListCode}) ${functionPostfixCode}
+      {
+        ${returnStatementCode} Spec(${castArgListCode!Spec});
+      }
+    });
+
+  enum virtualArgsCode = selectVirtualArgsCode!QualParams.join(", ");
+
+  enum code =
+    "alias %s = openmethods.%s.discriminator;\n".format(
+      Name,
+      TheMethod.stringof) ~
+    "alias %s = openmethods.%s.dispatcher;\n".format(
+      Name,
+      TheMethod.stringof);
+
+  // --------------------------------------------------------------------------
+  // Mixins
+
+  mixin("alias Spec = %s function(%s) %s;".format(
+          returnTypeCode, paramListCode, functionPostfixCode));
+
+  mixin(
+    mixin(interp!q{
+        static ${returnTypeCode} dispatcher(${paramListCode}) ${functionPostfixCode} {
+          return resolve(${virtualArgsCode})(${argListCode});
+        }
+      }));
+
+  mixin(
+    mixin(interp!q{
+        static TheMethod discriminator(
+          openmethods.MethodTag, ${discriminatorParamListCode}) ${functionPostfixCode};
+      }));
+
+  // ==========================================================================
+  // Method Registration
+
   __gshared Runtime.MethodInfo info;
   alias genericNextPtr = void function();
   __gshared genericNextPtr nextPtr(QualParams...) = null;
+
+  shared static this() {
+    info.name = Name;
+
+    static if (Mptr == MptrInDeallocator) {
+      ++Runtime.methodsUsingDeallocator;
+    } else static if (Mptr == MptrViaHash) {
+      ++Runtime.methodsUsingHash;
+    }
+
+    info.ambiguousCallError = &ambiguousCallError;
+    info.notImplementedError = &notImplementedError;
+
+    foreach (QP; QualParams) {
+      int i = 0;
+      static if (IsVirtual!QP) {
+        info.vp ~= UnqualType!(QP).classinfo;
+      }
+    }
+
+    debug(explain) {
+      writefln("registering %s", info);
+    }
+
+    Runtime.methodInfos[&info] = &info;
+    Runtime.needUpdate = true;
+  }
+
+  shared static ~this() {
+    debug(explain) {
+      writefln("Unregistering %s", info);
+    }
+
+    Runtime.methodInfos.remove(&info);
+    Runtime.needUpdate = true;
+  }
+
+  // ==========================================================================
+  // Exceptions
 
   static R notImplementedError(QualParams...)
   {
@@ -671,7 +665,8 @@ struct Method(
     }
   }
 
-  static Method discriminator(MethodTag, Params);
+  // ==========================================================================
+  // Dispatch
 
   static auto getMptr(T)(T arg) {
     alias Word = Runtime.Word;
@@ -752,131 +747,74 @@ struct Method(
     return getMptr(arg);
   }
 
-  enum discriminatorCode = `openmethods.%s %s(openmethods.MethodTag, %s);
-`.format(This.stringof,
-         name,
-         Params.stringof[1..$-1]
-);
-
-  enum refAttribute = functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
-
-  enum virtualArgsCode = selectVirtualArgsCode!QualParams.join(", ");
-
-  enum attributes =
-    [functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
-     functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
-     functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
-     functionAttributes & FunctionAttribute.safe ? " @safe" : "",
-     functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
-     functionAttributes & FunctionAttribute.system ? " @system" : ""].join(" ");
-
-  enum dispatcherCode = mixin(interp!q{
-      ${returnTypeCode} ${name}(${paramListCode}) ${attributes} {
-        import std.traits, openmethods;
-
-        alias Method = openmethods.${This.stringof};
-        alias Spec = ${pointerDeclCode};
-
-        debug(traceCalls) {
-          import std.stdio;
-          stderr.write("${name}", "${QualParams.stringof}");
-        }
-
-        alias Word = Runtime.Word;
-
-        static if (openmethods.VirtualArity!(Method.QualParams) == 1) {
-          auto mptr = Method.unary(${virtualArgsCode});
-          debug(traceCalls) {
-            stderr.writef("%s %s", mptr, Method.info.slotStride.i);
-          }
-          auto pf = cast(Spec) mptr[Method.info.slotStride.i].p;
-        } else {
-          assert(Method.info.slotStride.pw);
-          auto pf =
-            cast(Spec) Method.move(Method.info.slotStride.pw, ${virtualArgsCode}).p;
-        }
-
-        debug(traceCalls) {
-          import std.stdio;
-          writefln(" pf = %s", pf);
-        }
-
-        assert(pf);
-        return pf(${argListCode});
-      }
-    });
-
-  enum code = discriminatorCode ~ dispatcherCode;
-
-  enum castArgsCode(alias Overload) =
-    castArgList!QualParams.to!(Parameters!Overload).join(", ");
-
-  enum wrapperCode(alias Overload) = mixin(interp!q{
-      static ${refAttribute}${ReturnType.stringof} wrapper(${paramListCode})
-      {
-        ${returnStatementCode} ${__traits(identifier, Overload)}(${castArgsCode!Overload});
-      }
-    });
-
-  enum appendClassInfoCode(SpecParams...) =
-    typeList!(FilterVirtual!(QualParams).From!(SpecParams))
-    .map!(_formatAppendClassInfoCode)
-    .join("; ");
-
-  enum registerSpecCode(SpecParams...) =
-    mixin(interp!q{
-        si.pf = cast(void*) &wrapper;
-
-        debug(explain) {
-          import std.stdio;
-          writefln(
-            "Registering override %s%s, pf = %s",
-            M.name, M.SpecParams.stringof, &wrapper);
-        }
-
-        ${appendClassInfoCode!SpecParams};
-
-        si.nextPtr = cast(void**) &M.nextPtr!${SpecParams.stringof};
-
-        M.info.specInfos ~= &si;
-        openmethods.Runtime.needUpdate = true;
-      });
-
-  shared static this() {
-    info.name = id;
-
-    static if (Mptr == MptrInDeallocator) {
-      ++Runtime.methodsUsingDeallocator;
-    } else static if (Mptr == MptrViaHash) {
-      ++Runtime.methodsUsingHash;
+  static auto resolve(VP...)(VP args) {
+    debug(traceCalls) {
+      import std.stdio;
+      stderr.write(Name, VP.stringof);
     }
 
-    info.ambiguousCallError = &ambiguousCallError;
-    info.notImplementedError = &notImplementedError;
+    alias Word = Runtime.Word;
 
-    foreach (QP; QualParams) {
-      int i = 0;
-      static if (IsVirtual!QP) {
-        info.vp ~= UnqualType!(QP).classinfo;
+    static if (VP.length == 1) {
+      auto mptr = Method.unary(args);
+      debug(traceCalls) {
+        stderr.writef("%s %s", mptr, Method.info.slotStride.i);
       }
+      auto pf = cast(Spec) mptr[Method.info.slotStride.i].p;
+    } else {
+      assert(Method.info.slotStride.pw);
+      auto pf =
+        cast(Spec) Method.move(Method.info.slotStride.pw, args).p;
     }
 
-    debug(explain) {
-      writefln("registering %s", info);
+    debug(traceCalls) {
+      import std.stdio;
+      writefln(" pf = %s", pf);
     }
 
-    Runtime.methodInfos[&info] = &info;
-    Runtime.needUpdate = true;
+    assert(pf);
+
+    return pf;
   }
+}
 
-  shared static ~this() {
-    debug(explain) {
-      writefln("Unregistering %s", info);
-    }
+// ============================================================================
+// Module Method  Registration
 
-    Runtime.methodInfos.remove(&info);
-    Runtime.needUpdate = true;
+enum hasVirtualParameters(alias F) = anySatisfy!(IsVirtual, Parameters!F);
+
+unittest
+{
+  void meth(virtual!Object);
+  static assert(hasVirtualParameters!meth);
+  void nonmeth(Object);
+  static assert(!hasVirtualParameters!nonmeth);
+}
+
+template ConcatStorageClassModifiers(Modifiers...)
+{
+  static if (Modifiers.length == 0) {
+    enum ConcatStorageClassModifiers = "";
+  } else static if (Modifiers.length == 1) {
+    enum ConcatStorageClassModifiers = Modifiers[0];
+  } else {
+    enum ConcatStorageClassModifiers =
+      Modifiers[0] ~ " " ~ ConcatStorageClassModifiers!(Modifiers[1..$]);
   }
+}
+
+template StorageClassModifiers(alias Func)
+{
+  template Helper(int i)
+  {
+    static if (i == Parameters!(Func).length) {
+      enum Helper = [];
+    } else {
+      enum Helper = [ ConcatStorageClassModifiers!(__traits(getParameterStorageClasses, Func, i)) ]
+        ~ Helper!(i + 1);
+    }
+  }
+  enum StorageClassModifiers = Helper!0;
 }
 
 template MethodOf(alias Fun) {
@@ -896,7 +834,107 @@ template MethodOf(alias Fun) {
                            Parameters!Fun);
 }
 
-struct MethodTag { }
+string _registerMethods(alias MODULE)()
+{
+  import std.array;
+
+  string[] code;
+
+  foreach (m; __traits(allMembers, MODULE)) {
+    static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+      foreach (o; __traits(getOverloads, MODULE, m)) {
+        static if (hasVirtualParameters!o) {
+          code ~= openmethods.MethodOf!o.code;
+        }
+      }
+    }
+  }
+
+  return join(code, "\n");
+}
+
+// ============================================================================
+// Module Specialization Registration
+
+mixin template Registrar(TheMethod, alias Spec) {
+  __gshared openmethods.Runtime.SpecInfo si;
+
+  shared static this() {
+    import std.traits;
+    alias SpecParams = Parameters!Spec;
+    mixin(TheMethod.wrapperCode!Spec);
+    si.pf = cast(void*) &wrapper;
+
+    debug(explain) {
+      import std.stdio;
+      writefln(
+        "Registering override %s%s, pf = %s",
+        TheMethod.Name, SpecParams.stringof, &wrapper);
+    }
+
+    foreach (cls; openmethods.FilterVirtual!(TheMethod.QualParams).From!(SpecParams)) {
+      si.vp ~= cls.classinfo;
+    }
+
+    si.nextPtr = cast(void**) &TheMethod.nextPtr!SpecParams;
+
+    TheMethod.info.specInfos ~= &si;
+    openmethods.Runtime.needUpdate = true;
+  }
+
+  shared static ~this()
+  {
+    debug(explain) {
+      import std.stdio;
+      writefln("Unregistering specs from %s", MODULE.stringof);
+    }
+
+    import std.algorithm, std.array;
+    TheMethod.info.specInfos = TheMethod.info.specInfos.filter!(p => p != &si).array;
+    Runtime.needUpdate = true;
+  }
+}
+
+enum _isNamedSpec(alias spec) = is(typeof(getUDAs!(spec, method)[0]) == method);
+
+template _specId(alias M, alias spec)
+  if (_isNamedSpec!(spec)) {
+  enum _specId = getUDAs!(spec, method)[0].id;
+}
+
+template _specId(alias M, alias spec)
+  if (!_isNamedSpec!(spec)) {
+  enum _specId = __traits(identifier, spec)[1..$];
+}
+
+mixin template _registerSpecs(alias MODULE)
+{
+  import openmethods;
+  import std.traits;
+
+  static foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
+    static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
+      static foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
+        static if (hasUDA!(_openmethods_o_, method)) {
+          static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
+          static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
+                        _openmethods_m_ ~ ": method name must begin with an underscore, "
+                        ~ "or be set in @method()");
+          static assert(!hasVirtualParameters!_openmethods_o_,
+                        _openmethods_m_ ~ ": virtual! must not be used in method definitions");
+          mixin Registrar!(
+            typeof(
+              mixin(openmethods._specId!(_openmethods_m_, _openmethods_o_))(
+                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init)),
+            _openmethods_o_);
+        }
+      }
+    }
+  }
+}
+
+// ============================================================================
+// Method Table
 
 struct Runtime
 {
@@ -1817,116 +1855,12 @@ struct Runtime
   version (unittest) {
     int[] slots(alias MX)()
     {
-      return methods.find!(m => m.info == &MX.ThisMethod.info)[0].slots;
+      return methods.find!(m => m.info == &MX.TheMethod.info)[0].slots;
     }
 
     Class* getClass(C)()
     {
       return classes.find!(c => c.info == C.classinfo)[0];
-    }
-  }
-}
-
-immutable bool hasVirtualParameters(alias F) = anySatisfy!(IsVirtual, Parameters!F);
-
-unittest
-{
-  void meth(virtual!Object);
-  static assert(hasVirtualParameters!meth);
-  void nonmeth(Object);
-  static assert(!hasVirtualParameters!nonmeth);
-}
-
-string _registerMethods(alias MODULE)()
-{
-  import std.array;
-
-  string[] code;
-
-  foreach (m; __traits(allMembers, MODULE)) {
-    static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-      foreach (o; __traits(getOverloads, MODULE, m)) {
-        static if (hasVirtualParameters!o) {
-          code ~= openmethods.MethodOf!o.code;
-        }
-      }
-    }
-  }
-
-  return join(code, "\n");
-}
-
-enum _isNamedSpec(alias spec) = is(typeof(getUDAs!(spec, method)[0]) == method);
-
-template _specId(alias M, alias spec)
-  if (_isNamedSpec!(spec)) {
-  enum _specId = getUDAs!(spec, method)[0].id;
-}
-
-template _specId(alias M, alias spec)
-  if (!_isNamedSpec!(spec)) {
-  enum _specId = M[1..$];
-}
-
-mixin template _registerSpecs(alias MODULE)
-{
-  import openmethods;
-
-  mixin template Register(M, alias Fun) {
-
-    static struct Registrar {
-      __gshared openmethods.Runtime.SpecInfo si;
-
-      shared static this() {
-        enum wrapperCode = M.wrapperCode!(Fun);
-        debug(codeGen) pragma(msg, "wrapperCode: " ~ wrapperCode);
-        mixin(wrapperCode);
-        mixin("alias Spec = " ~ M.pointerDeclCode ~ ";");
-        enum registerSpecCode = M.registerSpecCode!(Parameters!Fun);
-        debug(codeGen)
-          pragma(
-                 msg,
-                 "registerSpecCode for "
-                 ~ Parameters!Fun.stringof
-                 ~ ": "
-                 ~ registerSpecCode);
-        mixin(registerSpecCode);
-      }
-
-      shared static ~this()
-      {
-        debug(explain) {
-          import std.stdio;
-          writefln("Unregistering specs from %s", MODULE.stringof);
-        }
-
-        import std.algorithm, std.array;
-        M.info.specInfos = M.info.specInfos.filter!(p => p != &si).array;
-        Runtime.needUpdate = true;
-      }
-    }
-
-    __gshared Registrar r;
-  }
-
-  shared static this() {
-    import std.traits;
-    foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
-        foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
-          static if (hasUDA!(_openmethods_o_, method)) {
-            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
-            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
-                          _openmethods_m_ ~ ": method name must begin with an underscore, "
-                          ~ "or be set in @method()");
-            static assert(!hasVirtualParameters!_openmethods_o_,
-                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
-            mixin Register!
-              (typeof(mixin(_specId!(_openmethods_m_, _openmethods_o_))(MethodTag.init, Parameters!(_openmethods_o_).init)),
-               _openmethods_o_);
-          }
-        }
-      }
     }
   }
 }
