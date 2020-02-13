@@ -96,7 +96,7 @@ void main()
     Expense exp = new Taxi;
 
     writeln("pay(executive): ", pay(exec));
-    writeln("approve(executive, taxi)", approve(exec, exp));
+    writeln("approve(executive, taxi): ", approve(exec, exp));
   }
 }
 
