@@ -605,21 +605,25 @@ struct Method(
   // --------------------------------------------------------------------------
   // Mixins
 
-  mixin("alias Spec = %s function(%s) %s;".format(
-          returnTypeCode, paramListCode, functionPostfixCode));
+  enum specCode = "alias Spec = %s function(%s) %s;".format(
+    returnTypeCode, paramListCode, functionPostfixCode);
 
-  mixin(
-    mixin(interp!q{
-        static ${returnTypeCode} dispatcher(${paramListCode}) ${functionPostfixCode} {
-          return resolve(${virtualArgsCode})(${argListCode});
-        }
-      }));
+  mixin(specCode);
 
-  mixin(
-    mixin(interp!q{
-        static TheMethod discriminator(
-          openmethods.MethodTag, ${discriminatorParamListCode}) ${functionPostfixCode};
-      }));
+  enum dispatcherCode = mixin(interp!q{
+      static ${returnTypeCode} dispatcher(${paramListCode}) ${functionPostfixCode} {
+        return resolve(${virtualArgsCode})(${argListCode});
+      }
+    });
+
+  mixin(dispatcherCode);
+
+  enum discriminatorCode = mixin(interp!q{
+      static TheMethod discriminator(
+        openmethods.MethodTag, ${discriminatorParamListCode}) ${functionPostfixCode};
+    });
+
+  mixin(discriminatorCode);
 
   // ==========================================================================
   // Method Registration
