@@ -459,20 +459,37 @@ template FilterVirtual(Q...)
   }
 }
 
-alias selectVirtualArgsCode(QP...) = selectVirtualArgsCode!(0, QP);
+alias VirtualPositions(QP...) = VirtualPositions!(0, QP);
 
-template selectVirtualArgsCode(size_t i, QP...)
+template VirtualPositions(size_t i, QP...)
 {
   static if (QP.length) {
     static if (IsVirtual!(QP[0])) {
-      enum selectVirtualArgsCode =
-        [ "a%s".format(i) ] ~ selectVirtualArgsCode!(i + 1, QP[1..$]);
+      enum VirtualPositions = [ i ] ~ VirtualPositions!(i + 1, QP[1..$]);
     } else {
-      enum selectVirtualArgsCode = selectVirtualArgsCode!(i + 1, QP[1..$]);
+      enum VirtualPositions = VirtualPositions!(i + 1, QP[1..$]);
     }
   } else {
-    enum selectVirtualArgsCode = [];
+    enum VirtualPositions = [];
   }
+}
+
+unittest
+{
+  static assert(VirtualPositions!(int, virtual!Object, int) == [ 1 ]);
+  static assert(VirtualPositions!(int, int, virtual!Object) == [ 2 ]);
+  static assert(VirtualPositions!(virtual!Object, int, virtual!Object) == [ 0, 2 ]);
+  static assert(VirtualPositions!(int, int) == [ ]);
+}
+
+enum VirtualArgsCode(QP...) = VirtualPositions!QP.map!(i => "a%d".format(i));
+
+unittest
+{
+  assert(VirtualArgsCode!(int, virtual!Object, int).array == [ "a1" ]);
+  assert(
+    VirtualArgsCode!(virtual!Object, int, int, virtual!Object).array
+    == [ "a0", "a3" ]);
 }
 
 // ============================================================================
@@ -493,6 +510,8 @@ struct Method(
   alias TheMethod = Method!(Mptr, R, Name, functionAttributes, SCM, T);
   enum Name = ID;
   enum functionAttributes = cast(FunctionAttribute) FA;
+
+  enum virtualPositions = VirtualPositions!QualParams;
 
   // ==========================================================================
   // Meta-programming
@@ -573,7 +592,7 @@ struct Method(
       }
     });
 
-  enum virtualArgsCode = selectVirtualArgsCode!QualParams.join(", ");
+  enum virtualArgsCode = VirtualArgsCode!QualParams.join(", ");
 
   enum code =
     "alias %s = openmethods.%s.discriminator;\n".format(
@@ -689,62 +708,8 @@ struct Method(
     }
 
     assert(mptr, format("Cannot locate method table for %s", T.classinfo.name));
+
     return mptr;
-  }
-
-  static const(Word)* move(P...)(const(Word)* slotStride, P args) {
-    alias P0 = P[0];
-    debug(traceCalls) {
-      stderr.write("\n  ", P0.stringof, ":");
-    }
-
-    alias arg = args[0];
-    const (Word)* mtbl = getMptr(arg);
-    auto slot = slotStride++.i;
-    auto index = mtbl[slot].i;
-    debug(traceCalls) {
-      stderr.writef(" mtbl = %s", mtbl);
-      stderr.writef(" slot = %s", slot);
-      stderr.writef(" dt = %s\n  ", mtbl[slot].p);
-    }
-    return moveNext(cast(const(Word)*) mtbl[slot].p,
-                    slotStride,
-                    args[1..$]);
-  }
-
-  static const(Word)* moveNext(P...)(
-    const(Word)* dt, const(Word)* slotStride, P args)
-  {
-    static if (P.length > 0) {
-      alias P0 = P[0];
-      alias arg = args[0];
-      const (Word)* mtbl = getMptr(arg);
-      auto slot = slotStride++.i;
-      auto index = mtbl[slot].i;
-      auto stride = slotStride++.i;
-      debug(traceCalls) {
-        stderr.write(P0.stringof, ":");
-        stderr.writef(" mtbl = %s", mtbl);
-        stderr.writef(" slot = %s", slot);
-        stderr.writef(" index = %s", index);
-        stderr.writef(" stride = %s", stride);
-        stderr.writef(" : %s\n ", dt + index * stride);
-      }
-      return moveNext(dt + index * stride, slotStride, args[1..$]);
-    } else {
-      debug(traceCalls) {
-        stderr.writef(" return %s\n ", dt);
-      }
-      return dt;
-    }
-  }
-
-  static const(Word)* unary(P)(P arg)
-  {
-    debug(traceCalls) {
-      stderr.write(" ", P.stringof, ":");
-    }
-    return getMptr(arg);
   }
 
   static auto resolve(VP...)(VP args) {
@@ -753,18 +718,48 @@ struct Method(
       stderr.write(Name, VP.stringof);
     }
 
-    alias Word = Runtime.Word;
-
     static if (VP.length == 1) {
-      auto mptr = Method.unary(args);
+      debug(traceCalls) {
+        stderr.write(" ", VP[0].stringof, ":");
+      }
+      auto mptr = getMptr(args);
       debug(traceCalls) {
         stderr.writef("%s %s", mptr, Method.info.slotStride.i);
       }
-      auto pf = cast(Spec) mptr[Method.info.slotStride.i].p;
+      auto pf = mptr[Method.info.slotStride.i].p;
     } else {
       assert(Method.info.slotStride.pw);
-      auto pf =
-        cast(Spec) Method.move(Method.info.slotStride.pw, args).p;
+      debug(traceCalls) {
+        stderr.write("\n  ", VP[0].stringof, ":");
+      }
+
+      const (Word)* mtbl = getMptr(args[0]);
+      auto slotStride = Method.info.slotStride.pw;
+      auto slot = slotStride++.i;
+      auto dt = cast(const(Word)*) mtbl[slot].p;
+      debug(traceCalls) {
+        stderr.writef(" mtbl = %s", mtbl);
+        stderr.writef(" slot = %s", slot);
+        stderr.writef(" dt = %s\n  ", dt);
+      }
+
+      foreach (i, arg; args[1..$]) {
+        mtbl = getMptr(arg);
+        slot = slotStride++.i;
+        auto index = mtbl[slot].i;
+        auto stride = slotStride++.i;
+        debug(traceCalls) {
+          stderr.write(VP[i + 1].stringof, ":");
+          stderr.writef(" mtbl = %s", mtbl);
+          stderr.writef(" slot = %s", slot);
+          stderr.writef(" index = %s", index);
+          stderr.writef(" stride = %s", stride);
+          stderr.writef(" : %s\n ", dt + index * stride);
+        }
+        dt += index * stride;
+      }
+
+      auto pf = dt.p;
     }
 
     debug(traceCalls) {
@@ -774,7 +769,7 @@ struct Method(
 
     assert(pf);
 
-    return pf;
+    return cast(Spec) pf;
   }
 }
 
