@@ -284,7 +284,7 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
  ---
 +/
 
-auto next(alias F, T...)(T args)
+auto next(alias F, T...)(T args) @trusted
 {
   alias TheMethod = typeof(F(MethodTag.init, T.init));
   alias Spec = TheMethod.ReturnType function(TheMethod.Params);
@@ -586,7 +586,8 @@ struct Method(
   //   .join(", ");
 
   enum wrapperCode(alias Spec) = mixin(interp!q{
-      static ${functionPrefixCode} TheMethod.ReturnType wrapper(${paramListCode}) ${functionPostfixCode}
+      static ${functionPrefixCode} TheMethod.ReturnType wrapper(
+        ${paramListCode}) @trusted
       {
         ${returnStatementCode} Spec(${castArgListCode!Spec});
       }
@@ -691,7 +692,8 @@ struct Method(
   // ==========================================================================
   // Dispatch
 
-  static auto getMptr(T)(T arg) {
+  static auto getMptr(T)(T arg) @nogc @trusted nothrow
+  {
     alias Word = Runtime.Word;
     static if (Mptr == MptrInDeallocator) {
         static if (is(T == class)) {
@@ -711,12 +713,13 @@ struct Method(
       }
     }
 
-    assert(mptr, format("Cannot locate method table for %s", T.classinfo.name));
+    debug assert(mptr, "Cannot locate method table for " ~ T.classinfo.name);
 
     return mptr;
   }
 
-  static auto resolve(VP...)(VP args) {
+  static auto resolve(VP...)(VP args) @nogc @trusted nothrow
+  {
     debug(traceCalls) {
       import std.stdio;
       stderr.write(Name, VP.stringof);
