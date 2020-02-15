@@ -95,20 +95,6 @@ import std.meta;
 import std.range;
 import std.traits;
 
-version (GNU) {
-  import std.datetime;
-} else {
-  import std.datetime.stopwatch;
-}
-
-debug(explain) {
-  import std.stdio;
-}
-
-debug(traceCalls) {
-  import std.stdio;
-}
-
 // ============================================================================
 // Public stuff
 
@@ -403,6 +389,44 @@ setMethodErrorHandler(void function(MethodError error) handler)
 // ============================================================================
 // Private parts. This doesn't exist. If you believe it does and use it, on
 // your head be it.
+
+version (GNU) {
+  import std.datetime;
+} else {
+  import std.datetime.stopwatch;
+ }
+
+debug(explain) {
+  import std.stdio;
+}
+
+debug(traceCalls) {
+  import std.stdio;
+
+  void trace(T...)(T args) nothrow
+  {
+    try {
+      stderr.write(args);
+    } catch (Exception) {
+    }
+  }
+
+  void tracef(T...)(T args) nothrow
+  {
+    try {
+      stderr.writef(args);
+    } catch (Exception) {
+    }
+  }
+
+  void tracefln(T...)(T args) nothrow
+  {
+    try {
+      stderr.writefln(args);
+    } catch (Exception) {
+    }
+  }
+}
 
 // ----------------------------------------------------------------------------
 // Meta-programming helpers
@@ -722,7 +746,7 @@ struct Method(
   {
     debug(traceCalls) {
       import std.stdio;
-      stderr.write(Name, VP.stringof);
+      trace(Name, VP.stringof);
     }
 
     static if (VP.length == 1) {
@@ -737,7 +761,7 @@ struct Method(
     } else {
       assert(Method.info.slotStride.pw);
       debug(traceCalls) {
-        stderr.write("\n  ", VP[0].stringof, ":");
+        trace("\n  ", VP[0].stringof, ":");
       }
 
       const (Word)* mtbl = getMptr(args[0]);
@@ -745,9 +769,9 @@ struct Method(
       auto slot = slotStride++.i;
       auto dt = cast(const(Word)*) mtbl[slot].p;
       debug(traceCalls) {
-        stderr.writef(" mtbl = %s", mtbl);
-        stderr.writef(" slot = %s", slot);
-        stderr.writef(" dt = %s\n  ", dt);
+        tracef(" mtbl = %s", mtbl);
+        tracef(" slot = %s", slot);
+        tracef(" dt = %s\n  ", dt);
       }
 
       foreach (i, arg; args[1..$]) {
@@ -756,12 +780,12 @@ struct Method(
         auto index = mtbl[slot].i;
         auto stride = slotStride++.i;
         debug(traceCalls) {
-          stderr.write(VP[i + 1].stringof, ":");
-          stderr.writef(" mtbl = %s", mtbl);
-          stderr.writef(" slot = %s", slot);
-          stderr.writef(" index = %s", index);
-          stderr.writef(" stride = %s", stride);
-          stderr.writef(" : %s\n ", dt + index * stride);
+          trace(VP[i + 1].stringof, ":");
+          tracef(" mtbl = %s", mtbl);
+          tracef(" slot = %s", slot);
+          tracef(" index = %s", index);
+          tracef(" stride = %s", stride);
+          tracef(" : %s\n ", dt + index * stride);
         }
         dt += index * stride;
       }
@@ -771,7 +795,7 @@ struct Method(
 
     debug(traceCalls) {
       import std.stdio;
-      writefln(" pf = %s", pf);
+      tracefln(" pf = %s", pf);
     }
 
     assert(pf);
@@ -869,7 +893,7 @@ mixin template Registrar(TheMethod, alias Spec) {
 
     debug(explain) {
       import std.stdio;
-      writefln(
+      tracefln(
         "Registering override %s%s, pf = %s",
         TheMethod.Name, SpecParams.stringof, &wrapper);
     }
@@ -888,7 +912,7 @@ mixin template Registrar(TheMethod, alias Spec) {
   {
     debug(explain) {
       import std.stdio;
-      writefln("Unregistering specs from %s", MODULE.stringof);
+      tracefln("Unregistering specs from %s", MODULE.stringof);
     }
 
     import std.algorithm, std.array;
@@ -1081,7 +1105,7 @@ struct Runtime
     // each Class object all the method parameters that target it.
 
     debug(explain) {
-      writefln("Scooping...");
+      tracefln("Scooping...");
     }
 
     foreach (mod; ModuleInfo) {
@@ -1174,7 +1198,7 @@ struct Runtime
       if (ci !in classMap) {
         auto c = classMap[ci] = new Class(ci);
         debug(explain) {
-          writefln("  %s", c.name);
+          tracefln("  %s", c.name);
         }
       }
     }
@@ -1202,7 +1226,7 @@ struct Runtime
       if (ci !in classMap) {
         auto c = classMap[ci] = new Class(ci);
         debug(explain) {
-          writefln("  %s", c.name);
+          tracefln("  %s", c.name);
         }
       }
     }
@@ -1232,7 +1256,7 @@ struct Runtime
   void layer()
   {
     debug(explain) {
-      writefln("Layering...");
+      tracefln("Layering...");
     }
 
     auto v = classMap.values.filter!(c => c.directBases.empty).array;
@@ -1240,7 +1264,7 @@ struct Runtime
 
     while (!v.empty) {
       debug(explain) {
-        writefln("  %s", v.map!(c => c.name).join(" "));
+        tracefln("  %s", v.map!(c => c.name).join(" "));
       }
 
       v.sort!((a, b) => cmp(a.name, b.name) < 0);
@@ -1298,7 +1322,7 @@ struct Runtime
     foreach (c; classes) {
       if (!c.methodParams.empty) {
         debug(explain) {
-          writefln("  %s...", c.name);
+          tracefln("  %s...", c.name);
         }
 
         foreach (mp; c.methodParams) {
@@ -1455,7 +1479,7 @@ struct Runtime
         }
 
         debug(explain) {
-          writefln("%*s    dim %d group %d (%s): select best of %s",
+          tracefln("%*s    dim %d group %d (%s): select best of %s",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
                    group.map!(c => c.name).join(", "),
@@ -1472,7 +1496,7 @@ struct Runtime
           m.dispatchTable ~= specs[0].info.pf;
 
           debug(explain) {
-            writefln("%*s      %s: pf = %s",
+            tracefln("%*s      %s: pf = %s",
                      (m.vp.length - dim) * 2, "",
                      specs.map!(spec => spec.toString).join(", "),
                      specs[0].info.pf);
@@ -1480,7 +1504,7 @@ struct Runtime
         }
       } else {
         debug(explain) {
-          writefln("%*s    dim %d group %d (%s)",
+          tracefln("%*s    dim %d group %d (%s)",
                    (m.vp.length - dim) * 2, "",
                    dim, groupIndex,
                    group.map!(c => c.name).join(", "));
@@ -1508,7 +1532,7 @@ struct Runtime
     sw.start();
 
     debug(explain) {
-      writefln("  finding hash factor for %s vptrs", N);
+      tracefln("  finding hash factor for %s vptrs", N);
     }
 
     int M;
@@ -1528,7 +1552,7 @@ struct Runtime
       buckets.length = hashSize;
 
       debug(explain) {
-        writefln("  trying with M = %s, %s buckets", M, buckets.length);
+        tracefln("  trying with M = %s, %s buckets", M, buckets.length);
       }
 
       bool found;
@@ -1555,7 +1579,7 @@ struct Runtime
 
       if (found) {
         debug(explain) {
-          writefln("  found %s after %s attempts and %s msecs",
+          tracefln("  found %s after %s attempts and %s msecs",
                    hashMult, totalAttempts, metrics.hashSearchTime.split!("msecs").msecs);
         }
         return;
@@ -1573,7 +1597,7 @@ struct Runtime
   {
     foreach (m; methods) {
       debug(explain) {
-        writefln("Building dispatch table for %s", *m);
+        tracefln("Building dispatch table for %s", *m);
       }
 
       auto dims = m.vp.length;
@@ -1581,13 +1605,13 @@ struct Runtime
 
       foreach (size_t dim, vp; m.vp) {
         debug(explain) {
-          writefln("  make groups for param #%s, class %s", dim, vp.name);
+          tracefln("  make groups for param #%s, class %s", dim, vp.name);
         }
 
         foreach (conforming; vp.conforming) {
           if (conforming.isClass) {
             debug(explain) {
-              writefln("    specs applicable to %s", conforming.name);
+              tracefln("    specs applicable to %s", conforming.name);
             }
 
             BitArray mask;
@@ -1596,24 +1620,24 @@ struct Runtime
             foreach (size_t specIndex, spec; m.specs) {
               if (conforming in spec.params[dim].conforming) {
                 debug(explain) {
-                  writefln("      %s", *spec);
+                  tracefln("      %s", *spec);
                 }
                 mask[specIndex] = 1;
               }
             }
 
             debug(explain) {
-              writefln("      bit mask = %s", mask);
+              tracefln("      bit mask = %s", mask);
             }
 
             if (mask in m.groups[dim]) {
               debug(explain) {
-                writefln("      add class %s to existing group", conforming.name, mask);
+                tracefln("      add class %s to existing group", conforming.name, mask);
               }
               m.groups[dim][mask] ~= conforming;
             } else {
               debug(explain) {
-                writefln("      create new group for %s", conforming.name);
+                tracefln("      create new group for %s", conforming.name);
               }
               m.groups[dim][mask] = [ conforming ];
             }
@@ -1626,7 +1650,7 @@ struct Runtime
 
       foreach (size_t dim, vp; m.vp[1..$]) {
         debug(explain) {
-          writefln("    stride for dim %s = %s", dim + 1, stride);
+          tracefln("    stride for dim %s = %s", dim + 1, stride);
         }
         stride *= m.groups[dim].length;
         m.strides[dim] = stride;
@@ -1636,25 +1660,25 @@ struct Runtime
       none.length = m.specs.length;
 
       debug(explain) {
-        writefln("    assign specs");
+        tracefln("    assign specs");
       }
 
       buildTable(m, dims - 1, m.groups, ~none);
 
       debug(explain) {
-        writefln("  assign slots");
+        tracefln("  assign slots");
       }
 
       foreach (size_t dim, vp; m.vp) {
         debug(explain) {
-          writefln("    dim %s", dim);
+          tracefln("    dim %s", dim);
         }
 
         int i = 0;
 
         foreach (group; m.groups[dim]) {
           debug(explain) {
-            writefln("      group %d (%s)",
+            tracefln("      group %d (%s)",
                      i,
                      group.map!(c => c.name).join(", "));
           }
@@ -1696,7 +1720,7 @@ struct Runtime
     }
 
     debug(explain) {
-      writefln("Initializing global vector");
+      tracefln("Initializing global vector");
     }
 
     if (hashSize > 0) {
@@ -1757,14 +1781,14 @@ struct Runtime
         if (methodsUsingDeallocator) {
           c.info.deallocator = c.gvMtbl;
           debug(explain) {
-            writefln("     -> %s.deallocator", c.name);
+            tracefln("     -> %s.deallocator", c.name);
           }
         }
 
         if (hashSize > 0) {
           auto h = hash(c.info.vtbl.ptr);
           debug(explain) {
-            writefln("     -> %s hashTable[%d]", c.name, h);
+            tracefln("     -> %s hashTable[%d]", c.name, h);
           }
           gv[h].p = c.gvMtbl;
         }
@@ -1780,7 +1804,7 @@ struct Runtime
       auto slot = m.slots[0];
       if (m.info.vp.length == 1) {
         debug(explain) {
-          writefln("  %s: 1-method, storing fp in mtbl, slot = %s", *m, slot);
+          tracefln("  %s: 1-method, storing fp in mtbl, slot = %s", *m, slot);
         }
         int i = 0;
         foreach (group; m.groups[0]) {
@@ -1788,34 +1812,34 @@ struct Runtime
             Word* index = c.gvMtbl + slot;
             index.p = m.dispatchTable[i];
             debug(explain) {
-              writefln("    group %s pf = %s %s", i, index.p, c.name);
+              tracefln("    group %s pf = %s %s", i, index.p, c.name);
             }
           }
           ++i;
         }
       } else {
         debug(explain) {
-          writefln("  %s: %s-method, storing col* in mtbl, slot = %s",
+          tracefln("  %s: %s-method, storing col* in mtbl, slot = %s",
                    *m, m.vp.length, slot);
         }
 
         foreach (size_t dim, vp; m.vp) {
           debug(explain) {
-            writefln("    dim %s", dim);
+            tracefln("    dim %s", dim);
           }
 
           int groupIndex = 0;
 
           foreach (group; m.groups[dim]) {
             debug(explain) {
-              writefln("      group %d (%s)",
+              tracefln("      group %d (%s)",
                        groupIndex,
                        group.map!(c => c.name).join(", "));
             }
 
             if (dim == 0) {
               debug(explain) {
-                writefln("        [%s] <- %s",
+                tracefln("        [%s] <- %s",
                          m.slots[dim],
                          m.gvDispatchTable + groupIndex);
               }
@@ -1824,7 +1848,7 @@ struct Runtime
               }
             } else {
               debug(explain) {
-                writefln("        [%s] <- %s",
+                tracefln("        [%s] <- %s",
                          m.slots[dim],
                          groupIndex);
               }
