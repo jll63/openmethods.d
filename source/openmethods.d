@@ -441,21 +441,6 @@ private enum IsCovariant(T) = false;
 private enum IsCovariant(T : covariant!U, U) = true;
 private alias UnqualType(T : covariant!U, U) = U;
 
-template FilterVirtual(Q...)
-{
-  template From(T...) {
-    static if (Q.length == 0) {
-      alias From = AliasSeq!();
-    } else {
-      static if (IsVirtual!(Q[0])) {
-        alias From = AliasSeq!(T[0], FilterVirtual!(Q[1..$]).From!(T[1..$]));
-      } else {
-        alias From = FilterVirtual!(Q[1..$]).From!(T[1..$]);
-      }
-    }
-  }
-}
-
 private template Format(alias F, A...)
 {
   static if (isInstanceOf!(AliasPack, A[0])) {
@@ -475,6 +460,36 @@ unittest
   alias F2 = ApplyLeft!(Format, "%s a%s");
   static assert(F2!("int", 1) == "int a1");
   static assert(F2!(AliasPack!("int", 1)) == "int a1");
+}
+
+// will PR
+template staticSlice(alias Pack, alias Positions)
+{
+  static if (Positions.length == 0) {
+    alias staticSlice = AliasPack!();
+  } else {
+    alias staticSlice = AliasPack!(
+      Pack.Unpack[Positions.Unpack[0]],
+      staticSlice!(Pack, Positions.Tail).Unpack);
+  }
+}
+
+unittest
+{
+  static assert(
+    staticSlice!(
+         AliasPack!(),
+         AliasPack!())
+    .equals!());
+  static assert(
+    staticSlice!(
+         AliasPack!(int, char, float),
+         AliasPack!()).equals!());
+  static assert(
+    staticSlice!(
+         AliasPack!(int, char, float),
+         AliasPack!(0, 2))
+    .equals!(int, float));
 }
 
 // ============================================================================
@@ -887,7 +902,11 @@ mixin template Registrar(TheMethod, alias Spec) {
         TheMethod.Name, SpecParams.stringof, &wrapper);
     }
 
-    foreach (cls; openmethods.FilterVirtual!(TheMethod.QualParams).From!(SpecParams)) {
+    foreach (
+      cls;
+      openmethods.staticSlice!(
+        openmethods.AliasPack!(SpecParams),
+        openmethods.AliasPack!(TheMethod.virtualPositions)).Unpack) {
       si.vp ~= cls.classinfo;
     }
 
