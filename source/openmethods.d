@@ -275,7 +275,7 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
 auto next(alias F, T...)(T args) @trusted
 {
   alias TheMethod = typeof(F(MethodTag.init, T.init));
-  alias Spec = TheMethod.ReturnType function(TheMethod.Params);
+  alias Spec = TheMethod.ReturnType function(TheMethod.CallParams);
   return (cast(Spec) TheMethod.nextPtr!T)(args);
 }
 
@@ -380,8 +380,7 @@ MethodErrorHandler errorHandler = &defaultMethodErrorHandler;
  called with the provided arguments. The default is to `abort` the program.
 +/
 
-void function(MethodError error)
-setMethodErrorHandler(void function(MethodError error) handler)
+MethodErrorHandler setMethodErrorHandler(MethodErrorHandler handler)
 {
   auto prev = errorHandler;
   errorHandler = handler;
@@ -433,31 +432,14 @@ debug(traceCalls) {
 // ----------------------------------------------------------------------------
 // Meta-programming helpers
 
-enum IsVirtual(T) = false;
-enum IsVirtual(T : virtual!U, U) = true;
+private enum IsVirtual(T) = false;
+private enum IsVirtual(T : virtual!U, U) = true;
+private alias UnqualType(T) = T;
+private alias UnqualType(T : virtual!U, U) = U;
 
-alias UnqualType(T) = T;
-alias UnqualType(T : virtual!U, U) = U;
-
-enum IsCovariant(T) = false;
-enum IsCovariant(T : covariant!U, U) = true;
-
+private enum IsCovariant(T) = false;
+private enum IsCovariant(T : covariant!U, U) = true;
 private alias UnqualType(T : covariant!U, U) = U;
-
-private template CallParams(T...)
-{
-  static if (T.length == 0) {
-    alias CallParams = AliasSeq!();
-  } else {
-    static if (IsVirtual!(T[0])) {
-      alias CallParams = AliasSeq!(UnqualType!(T[0]), CallParams!(T[1..$]));
-    } else static if (IsCovariant!(T[0])) {
-      alias CallParams = AliasSeq!(UnqualType!(T[0]), CallParams!(T[1..$]));
-    } else {
-      alias CallParams = AliasSeq!(T[0], CallParams!(T[1..$]));
-    }
-  }
-}
 
 template FilterVirtual(Q...)
 {
@@ -474,57 +456,25 @@ template FilterVirtual(Q...)
   }
 }
 
-alias VirtualPositions(QP...) = VirtualPositions!(0, QP);
-
-template VirtualPositions(size_t i, QP...)
+private template Format(alias F, A...)
 {
-  static if (QP.length) {
-    static if (IsVirtual!(QP[0])) {
-      enum VirtualPositions = [ i ] ~ VirtualPositions!(i + 1, QP[1..$]);
-    } else {
-      enum VirtualPositions = VirtualPositions!(i + 1, QP[1..$]);
-    }
+  static if (isInstanceOf!(AliasPack, A[0])) {
+    static assert(A.length == 1);
+    enum Format = format!F(A[0].Unpack);
   } else {
-    enum VirtualPositions = [];
+    enum Format = format!F(A);
   }
 }
 
 unittest
 {
-  static assert(VirtualPositions!(int, virtual!Object, int) == [ 1 ]);
-  static assert(VirtualPositions!(int, int, virtual!Object) == [ 2 ]);
-  static assert(VirtualPositions!(virtual!Object, int, virtual!Object) == [ 0, 2 ]);
-  static assert(VirtualPositions!(int, int) == [ ]);
-}
-
-enum isAliasPack(T) = false;
-enum isAliasPack(T : AliasPack!U, alias U) = true;
-
-unittest
-{
-  static assert(isInstanceOf!(AliasPack, AliasPack!0));
-  static assert(!isInstanceOf!(AliasPack, 0));
-}
-
-template Format(alias F, V...)
-{
-  static if (isInstanceOf!(AliasPack, V[0])) {
-    static assert(V.length == 1);
-    enum Format = format!F(V[0].Unpack);
-  } else {
-    enum Format = format!F(V);
-  }
-}
-
-unittest
-{
-  static assert(format!("foo %s,%s")(1, 2) == "foo 1,2");
-  alias F = ApplyLeft!(Format, "a%s");
-  static assert(F!1 == "a1");
-  static assert(F!(AliasPack!(1)) == "a1");
-  static assert(staticMap!(F, 1, 2, 3) == AliasSeq!("a1", "a2", "a3"));
-  static assert(
-    staticMap!(ApplyLeft!(Format, "a%s"), AliasSeq!(1, 2, 3)) == AliasSeq!("a1", "a2", "a3"));
+  alias F1 = ApplyLeft!(Format, "a%s");
+  static assert(F1!1 == "a1");
+  static assert(F1!(AliasPack!(1)) == "a1");
+  static assert(staticMap!(F1, 1, 2, 3) == AliasSeq!("a1", "a2", "a3"));
+  alias F2 = ApplyLeft!(Format, "%s a%s");
+  static assert(F2!("int", 1) == "int a1");
+  static assert(F2!(AliasPack!("int", 1)) == "int a1");
 }
 
 // ============================================================================
@@ -539,10 +489,10 @@ struct Method(
   string Mptr, R, string ID, uint FA, string[] SCM, T...)
 {
   alias QualParams = T;
-  alias Params = CallParams!QualParams;
+  alias CallParams = staticMap!(UnqualType, QualParams);
   alias ReturnType = R;
   alias Word =  Runtime.Word;
-  alias TheMethod = Method!(Mptr, R, Name, functionAttributes, SCM, T);
+  alias TheMethod = Method;
   enum Name = ID;
   enum functionAttributes = cast(FunctionAttribute) FA;
 
@@ -557,7 +507,7 @@ struct Method(
   // Code fragments, for string mixins
 
   enum argListCode = [ staticMap!(
-      ApplyLeft!(Format, "a%s"), aliasSeqOf!(Params.length.iota))
+      ApplyLeft!(Format, "a%s"), aliasSeqOf!(CallParams.length.iota))
   ].join(", ");
 
   enum virtualArgListCode = [
@@ -566,19 +516,19 @@ struct Method(
 
   enum paramListCode = [
     staticMap!(
-      ApplyLeft!(Format, "%s TheMethod.Params[%s] a%s"),
+      ApplyLeft!(Format, "%s TheMethod.CallParams[%s] a%s"),
       staticZip!(
         AliasPack!(aliasSeqOf!SCM),
-        AliasPack!(aliasSeqOf!(Params.length.iota)),
-        AliasPack!(aliasSeqOf!(Params.length.iota))).Unpack)
+        AliasPack!(aliasSeqOf!(CallParams.length.iota)),
+        AliasPack!(aliasSeqOf!(CallParams.length.iota))).Unpack)
   ].join(", ");
 
   enum discriminatorParamListCode = [
     staticMap!(
-      ApplyLeft!(Format, "Params[%s] a%s"),
+      ApplyLeft!(Format, "CallParams[%s] a%s"),
       staticZip!(
-        AliasPack!(aliasSeqOf!(Params.length.iota)),
-        AliasPack!(aliasSeqOf!(Params.length.iota))).Unpack)
+        AliasPack!(aliasSeqOf!(CallParams.length.iota)),
+        AliasPack!(aliasSeqOf!(CallParams.length.iota))).Unpack)
   ].join(", ");
 
   enum functionPrefixCode =
@@ -826,9 +776,8 @@ struct Method(
 
 unittest
 {
-  alias M  = Method!(
-    MptrInDeallocator, string, "M", 0, ["", "lazy", "out", ""],
-    virtual!Object, int, real, virtual!Object);
+  ref string foo(virtual!Object, lazy int, out real, virtual!Object) @safe;
+  alias M  = MethodOf!foo;
   static assert(M.argListCode == "a0, a1, a2, a3");
   static assert(M.isVirtualPosition!0);
   static assert(!M.isVirtualPosition!1);
@@ -837,8 +786,11 @@ unittest
   static assert(M.virtualPositions == AliasSeq!(0, 3));
   static assert(
     M.paramListCode ==
-    " TheMethod.Params[0] a0, lazy TheMethod.Params[1] a1, out TheMethod.Params[2] a2,  TheMethod.Params[3] a3");
+    " TheMethod.CallParams[0] a0, lazy TheMethod.CallParams[1] a1," ~
+    " out TheMethod.CallParams[2] a2,  TheMethod.CallParams[3] a3");
   assert(M.virtualArgListCode == "a0, a3");
+  static assert(M.returnTypeCode == "ref ReturnType");
+  static assert(M.functionPostfixCode == " @safe");
 }
 
 // ============================================================================
@@ -854,7 +806,7 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
-template ConcatStorageClassModifiers(Modifiers...)
+private template ConcatStorageClassModifiers(Modifiers...)
 {
   static if (Modifiers.length == 0) {
     enum ConcatStorageClassModifiers = "";
@@ -866,7 +818,7 @@ template ConcatStorageClassModifiers(Modifiers...)
   }
 }
 
-template StorageClassModifiers(alias Func)
+private template StorageClassModifiers(alias Func)
 {
   template Helper(int i)
   {
@@ -1114,14 +1066,14 @@ struct Runtime
     }
   }
 
-  static __gshared Registry methodInfos;
-  static __gshared ClassInfo[] additionalClasses;
-  static __gshared Word[] gv; // Global Vector
-  static __gshared needUpdate = true;
-  static __gshared ulong hashMult;
-  static __gshared uint hashShift, hashSize;
-  static __gshared uint methodsUsingDeallocator;
-  static __gshared uint methodsUsingHash;
+  __gshared Registry methodInfos;
+  __gshared ClassInfo[] additionalClasses;
+  __gshared Word[] gv; // Global Vector
+  __gshared needUpdate = true;
+  __gshared ulong hashMult;
+  __gshared uint hashShift, hashSize;
+  __gshared uint methodsUsingDeallocator;
+  __gshared uint methodsUsingHash;
 
   Method*[] methods;
   Class*[ClassInfo] classMap;
@@ -1931,7 +1883,7 @@ struct Runtime
 // string interpolation
 // Copied from https://github.com/Abscissa/scriptlike
 
-string interp(string str)()
+private string interp(string str)()
 {
   static import std.conv;
 	enum State
@@ -2009,7 +1961,7 @@ string interp(string str)()
 	return buf;
 }
 
-string _interp_text(T...)(T args)
+private string _interp_text(T...)(T args)
 {
   static import std.conv;
   static if(T.length == 0)
