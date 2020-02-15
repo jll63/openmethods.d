@@ -3,9 +3,16 @@ description "fast, open multi-methods for D"
 authors "Jean-Louis Leroy"
 copyright "Copyright © 2017, Jean-Louis Leroy"
 license "Boost Software License 1.0"
+buildType "xtc" {
+	debugVersions "explain" "traceCalls"
+	buildOptions "debugMode" "debugInfo" "unittests"
+}
+buildType "x" {
+	debugVersions "explain"
+	buildOptions "debugMode" "debugInfo" "unittests"
+}
+dependency "bolts" version="~>1.4.0"
 targetType "library"
-#dflags "-H"
-
 subPackage "./examples/acceptnovisitors"
 subPackage "./examples/adventure"
 subPackage "./examples/matrix"
@@ -17,13 +24,3 @@ subPackage "./tests/errors"
 subPackage "./tests/mptrhash"
 subPackage "./tests/misc"
 subPackage "./benchmarks/runtimemetrics"
-
-buildType "x" {
-  buildOptions "debugMode" "debugInfo" "unittests"
-  debugVersions "explain"
-}
-
-buildType "xtc" {
-  buildOptions "debugMode" "debugInfo" "unittests"
-  debugVersions "explain" "traceCalls"
-}

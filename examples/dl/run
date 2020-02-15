@@ -5,11 +5,15 @@ rm -f *.o *.di *.so
 
 DC=dmd
 
-DFLAGS="-g -I../../source $DFLAGS"
+BOLT_VERSION=1.4.0
+dub fetch bolts@$BOLT_VERSION
+BOLT_SOURCE=~/.dub/packages/bolts-$BOLT_VERSION/bolts/source
+
+DFLAGS="-g -I../../source -I$BOLT_SOURCE $DFLAGS"
 
 SOFLAGS="-L-fPIC -shared"
 
-$DC $DFLAGS $SOFLAGS -c ../../source/openmethods.d
+$DC $DFLAGS $SOFLAGS -i -c ../../source/openmethods.d
 $DC $DFLAGS $SOFLAGS openmethods.o -oflibopenmethods.so
 
 $DC $DFLAGS $SOFLAGS -c animals.d

@@ -95,6 +95,8 @@ import std.meta;
 import std.range;
 import std.traits;
 
+import bolts.meta;
+
 // ============================================================================
 // Public stuff
 
@@ -437,17 +439,6 @@ enum IsVirtual(T : virtual!U, U) = true;
 alias UnqualType(T) = T;
 alias UnqualType(T : virtual!U, U) = U;
 
-template VirtualArity(QP...)
-{
-  static if (QP.length == 0) {
-    enum VirtualArity = 0;
-  } else static if (IsVirtual!(QP[0])) {
-    enum VirtualArity = 1 + VirtualArity!(QP[1..$]);
-  } else {
-    enum VirtualArity = VirtualArity!(QP[1..$]);
-  }
-}
-
 enum IsCovariant(T) = false;
 enum IsCovariant(T : covariant!U, U) = true;
 
@@ -506,14 +497,34 @@ unittest
   static assert(VirtualPositions!(int, int) == [ ]);
 }
 
-enum VirtualArgsCode(QP...) = VirtualPositions!QP.map!(i => "a%d".format(i));
+enum isAliasPack(T) = false;
+enum isAliasPack(T : AliasPack!U, alias U) = true;
 
 unittest
 {
-  assert(VirtualArgsCode!(int, virtual!Object, int).array == [ "a1" ]);
-  assert(
-    VirtualArgsCode!(virtual!Object, int, int, virtual!Object).array
-    == [ "a0", "a3" ]);
+  static assert(isInstanceOf!(AliasPack, AliasPack!0));
+  static assert(!isInstanceOf!(AliasPack, 0));
+}
+
+template Format(alias F, V...)
+{
+  static if (isInstanceOf!(AliasPack, V[0])) {
+    static assert(V.length == 1);
+    enum Format = format!F(V[0].Unpack);
+  } else {
+    enum Format = format!F(V);
+  }
+}
+
+unittest
+{
+  static assert(format!("foo %s,%s")(1, 2) == "foo 1,2");
+  alias F = ApplyLeft!(Format, "a%s");
+  static assert(F!1 == "a1");
+  static assert(F!(AliasPack!(1)) == "a1");
+  static assert(staticMap!(F, 1, 2, 3) == AliasSeq!("a1", "a2", "a3"));
+  static assert(
+    staticMap!(ApplyLeft!(Format, "a%s"), AliasSeq!(1, 2, 3)) == AliasSeq!("a1", "a2", "a3"));
 }
 
 // ============================================================================
@@ -535,7 +546,9 @@ struct Method(
   enum Name = ID;
   enum functionAttributes = cast(FunctionAttribute) FA;
 
-  enum virtualPositions = VirtualPositions!QualParams;
+  enum isVirtualPosition(size_t I) = IsVirtual!(QualParams[I]);
+  enum virtualPositions = Filter!(
+    isVirtualPosition, aliasSeqOf!(QualParams.length.iota));
 
   // ==========================================================================
   // Meta-programming
@@ -543,17 +556,30 @@ struct Method(
   // --------------------------------------------------------------------------
   // Code fragments, for string mixins
 
-  enum argListCode = Params.length.iota
-    .mapStatic!(i => "a%s".format(i))
-    .join(", ");
+  enum argListCode = [ staticMap!(
+      ApplyLeft!(Format, "a%s"), aliasSeqOf!(Params.length.iota))
+  ].join(", ");
 
-  enum paramListCode = zip(SCM, Params.length.iota)
-      .mapStatic!(t => "%s TheMethod.Params[%s] a%s".format(t[0], t[1], t[1]))
-      .join(", ");
+  enum virtualArgListCode = [
+    staticMap!(ApplyLeft!(Format, "a%s"), virtualPositions)
+  ].join(", ");
 
-  enum discriminatorParamListCode = Params.length.iota
-    .mapStatic!(t => "Params[%s] a%s".format(t, t))
-    .join(", ");
+  enum paramListCode = [
+    staticMap!(
+      ApplyLeft!(Format, "%s TheMethod.Params[%s] a%s"),
+      staticZip!(
+        AliasPack!(aliasSeqOf!SCM),
+        AliasPack!(aliasSeqOf!(Params.length.iota)),
+        AliasPack!(aliasSeqOf!(Params.length.iota))).Unpack)
+  ].join(", ");
+
+  enum discriminatorParamListCode = [
+    staticMap!(
+      ApplyLeft!(Format, "Params[%s] a%s"),
+      staticZip!(
+        AliasPack!(aliasSeqOf!(Params.length.iota)),
+        AliasPack!(aliasSeqOf!(Params.length.iota))).Unpack)
+  ].join(", ");
 
   enum functionPrefixCode =
     functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
@@ -605,10 +631,6 @@ struct Method(
     return casts.join(", ");
   }
 
-  // enum castArgListCode(alias Spec) = zip!(QualParams, Params.length.iota)
-  //   .mapStatic!(qp, i => castArgCode!(qp, i))
-  //   .join(", ");
-
   enum wrapperCode(alias Spec) = mixin(interp!q{
       static ${functionPrefixCode} TheMethod.ReturnType wrapper(
         ${paramListCode}) @trusted
@@ -616,8 +638,6 @@ struct Method(
         ${returnStatementCode} Spec(${castArgListCode!Spec});
       }
     });
-
-  enum virtualArgsCode = VirtualArgsCode!QualParams.join(", ");
 
   enum code =
     "alias %s = openmethods.%s.discriminator;\n".format(
@@ -637,7 +657,7 @@ struct Method(
 
   enum dispatcherCode = mixin(interp!q{
       static ${returnTypeCode} dispatcher(${paramListCode}) ${functionPostfixCode} {
-        return resolve(${virtualArgsCode})(${argListCode});
+        return resolve(${virtualArgListCode})(${argListCode});
       }
     });
 
@@ -802,6 +822,23 @@ struct Method(
 
     return cast(Spec) pf;
   }
+}
+
+unittest
+{
+  alias M  = Method!(
+    MptrInDeallocator, string, "M", 0, ["", "lazy", "out", ""],
+    virtual!Object, int, real, virtual!Object);
+  static assert(M.argListCode == "a0, a1, a2, a3");
+  static assert(M.isVirtualPosition!0);
+  static assert(!M.isVirtualPosition!1);
+  static assert(!M.isVirtualPosition!2);
+  static assert(M.isVirtualPosition!3);
+  static assert(M.virtualPositions == AliasSeq!(0, 3));
+  static assert(
+    M.paramListCode ==
+    " TheMethod.Params[0] a0, lazy TheMethod.Params[1] a1, out TheMethod.Params[2] a2,  TheMethod.Params[3] a3");
+  assert(M.virtualArgListCode == "a0, a3");
 }
 
 // ============================================================================
@@ -1979,99 +2016,4 @@ string _interp_text(T...)(T args)
     return null;
   else
     return std.conv.text(args);
-}
-
-// use 'map' inside structs
-// Copied from code posted by Basile B here:
-// https://forum.dlang.org/post/bxwlodescrnwyftwmohl@forum.dlang.org
-// Also explains why we need this.
-
-static template mapStatic(fun...)
-if (fun.length >= 1)
-{
-    auto mapStatic(Range)(Range r)
-      if (isInputRange!(std.algorithm.mutation.Unqual!Range))
-    {
-        import std.meta : AliasSeq, staticMap;
-        import std.functional : unaryFun;
-        alias RE = ElementType!(Range);
-        alias _fun = unaryFun!fun;
-        alias _funs = AliasSeq!(_fun);
-        return MapResult!(_fun, Range)(r);
-    }
-}
-
-private static struct MapResult(alias fun, Range)
-{
-    alias R = std.algorithm.mutation.Unqual!Range;
-    R _input;
-
-    @property auto ref back()()
-    {
-        return fun(_input.back);
-    }
-
-    void popBack()()
-    {
-        _input.popBack();
-    }
-
-    this(R input)
-    {
-        _input = input;
-    }
-
-    @property bool empty()
-    {
-        return _input.empty;
-    }
-
-    void popFront()
-    {
-        assert(!empty, "Attempting to popFront an empty map.");
-        _input.popFront();
-    }
-
-    @property auto ref front()
-    {
-        assert(!empty, "Attempting to fetch the front of an empty map.");
-        return fun(_input.front);
-    }
-
-    static if (isRandomAccessRange!R)
-    {
-        static if (is(typeof(_input[ulong.max])))
-            private alias opIndex_t = ulong;
-        else
-            private alias opIndex_t = uint;
-
-        auto ref opIndex(opIndex_t index)
-        {
-            return fun(_input[index]);
-        }
-    }
-
-    static if (hasLength!R)
-    {
-        @property auto length()
-        {
-            return _input.length;
-        }
-    }
-
-    static if (hasSlicing!R)
-    {
-        static if (is(typeof(_input[ulong.max .. ulong.max])))
-            private alias opSlice_t = ulong;
-        else
-            private alias opSlice_t = uint;
-
-        static if (hasLength!R)
-        {
-            auto opSlice(opSlice_t low, opSlice_t high)
-            {
-                return typeof(this)(_input[low .. high]);
-            }
-        }
-    }
 }
