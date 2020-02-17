@@ -78,11 +78,11 @@ void main()
 }
 ---
 
- Copyright: Copyright Jean-Louis Leroy 2017
+ Copyright: Copyright Jean-Louis Leroy 2017-2020
 
  License:   $(LINK2 http://boost.org/LICENSE_1_0.txt, Boost License 1.0).
 
- Authors:   Jean-Louis Leroy 2017
+ Authors:   Jean-Louis Leroy
 +/
 
 module openmethods;
