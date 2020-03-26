@@ -678,6 +678,49 @@ struct Method(
     Runtime.needUpdate = true;
   }
 
+  static template specRegistrar(alias Spec) {
+    alias SpecParams = Parameters!Spec;
+    mixin(TheMethod.wrapperCode!Spec);
+
+    __gshared openmethods.Runtime.SpecInfo si;
+
+    void register() {
+      si.pf = cast(void*) &wrapper;
+
+      debug(explain) {
+        tracefln(
+          "Registering override %s%s, pf = %s",
+          TheMethod.Name, SpecParams.stringof, &wrapper);
+      }
+
+      foreach (
+        cls;
+        openmethods.staticSlice!(
+          openmethods.AliasPack!(SpecParams),
+          openmethods.AliasPack!(TheMethod.virtualPositions)).Unpack) {
+        si.vp ~= cls.classinfo;
+      }
+
+      si.nextPtr = cast(void**) &TheMethod.nextPtr!SpecParams;
+
+      TheMethod.info.specInfos ~= &si;
+      openmethods.Runtime.needUpdate = true;
+    }
+
+    void unregister()
+    {
+      debug(explain) {
+        tracefln(
+          "Unregistering override %s%s, pf = %s",
+          TheMethod.Name, SpecParams.stringof, &wrapper);
+      }
+
+      import std.algorithm, std.array;
+      TheMethod.info.specInfos = TheMethod.info.specInfos.filter!(p => p != &si).array;
+      Runtime.needUpdate = true;
+    }
+  }
+
   // ==========================================================================
   // Exceptions
 
@@ -736,11 +779,11 @@ struct Method(
 
     static if (VP.length == 1) {
       debug(traceCalls) {
-        stderr.write(" ", VP[0].stringof, ":");
+        tracef(" ", VP[0].stringof, ":");
       }
       auto mptr = getMptr(args);
       debug(traceCalls) {
-        stderr.writef("%s %s", mptr, Method.info.slotStride.i);
+        tracef("%s %s", mptr, Method.info.slotStride.i);
       }
       auto pf = mptr[Method.info.slotStride.i].p;
     } else {
@@ -883,52 +926,6 @@ string _registerMethods(alias MODULE)()
   return join(code, "\n");
 }
 
-// ============================================================================
-// Module Specialization Registration
-
-mixin template Registrar(TheMethod, alias Spec) {
-  __gshared openmethods.Runtime.SpecInfo si;
-
-  shared static this() {
-    import std.traits;
-    alias SpecParams = Parameters!Spec;
-    mixin(TheMethod.wrapperCode!Spec);
-    si.pf = cast(void*) &wrapper;
-
-    debug(explain) {
-      import std.stdio;
-      tracefln(
-        "Registering override %s%s, pf = %s",
-        TheMethod.Name, SpecParams.stringof, &wrapper);
-    }
-
-    foreach (
-      cls;
-      openmethods.staticSlice!(
-        openmethods.AliasPack!(SpecParams),
-        openmethods.AliasPack!(TheMethod.virtualPositions)).Unpack) {
-      si.vp ~= cls.classinfo;
-    }
-
-    si.nextPtr = cast(void**) &TheMethod.nextPtr!SpecParams;
-
-    TheMethod.info.specInfos ~= &si;
-    openmethods.Runtime.needUpdate = true;
-  }
-
-  shared static ~this()
-  {
-    debug(explain) {
-      import std.stdio;
-      tracefln("Unregistering specs from %s", MODULE.stringof);
-    }
-
-    import std.algorithm, std.array;
-    TheMethod.info.specInfos = TheMethod.info.specInfos.filter!(p => p != &si).array;
-    Runtime.needUpdate = true;
-  }
-}
-
 enum _isNamedSpec(alias spec) = is(typeof(getUDAs!(spec, method)[0]) == method);
 
 template _specId(alias M, alias spec)
@@ -941,31 +938,52 @@ template _specId(alias M, alias spec)
   enum _specId = __traits(identifier, spec)[1..$];
 }
 
-mixin template _registerSpecs(alias MODULE)
+mixin template _registerSpecs(alias Module)
 {
   import openmethods;
   import std.traits;
 
-  static foreach (_openmethods_m_; __traits(allMembers, MODULE)) {
-    static if (is(typeof(__traits(getOverloads, MODULE, _openmethods_m_)))) {
-      static foreach (_openmethods_o_; __traits(getOverloads, MODULE, _openmethods_m_)) {
-        static if (hasUDA!(_openmethods_o_, method)) {
-          static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
-          static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
-                        _openmethods_m_ ~ ": method name must begin with an underscore, "
-                        ~ "or be set in @method()");
-          static assert(!hasVirtualParameters!_openmethods_o_,
-                        _openmethods_m_ ~ ": virtual! must not be used in method definitions");
-          mixin Registrar!(
-            typeof(
+  static this() {
+    foreach (_openmethods_m_; __traits(allMembers, Module)) {
+      static if (is(typeof(__traits(getOverloads, Module, _openmethods_m_)))) {
+        foreach (_openmethods_o_; __traits(getOverloads, Module, _openmethods_m_)) {
+          static if (hasUDA!(_openmethods_o_, method)) {
+            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
+            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
+                          _openmethods_m_ ~ ": method name must begin with an underscore, "
+                          ~ "or be set in @method()");
+            static assert(!hasVirtualParameters!_openmethods_o_,
+                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
+            alias Method = typeof(
               mixin(openmethods._specId!(_openmethods_m_, _openmethods_o_))(
-                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init)),
-            _openmethods_o_);
+                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init));
+            Method.specRegistrar!_openmethods_o_.register;
+          }
         }
       }
     }
   }
-}
+
+  static ~this() {
+    foreach (_openmethods_m_; __traits(allMembers, Module)) {
+      static if (is(typeof(__traits(getOverloads, Module, _openmethods_m_)))) {
+        foreach (_openmethods_o_; __traits(getOverloads, Module, _openmethods_m_)) {
+          static if (hasUDA!(_openmethods_o_, method)) {
+            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
+            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
+                          _openmethods_m_ ~ ": method name must begin with an underscore, "
+                          ~ "or be set in @method()");
+            static assert(!hasVirtualParameters!_openmethods_o_,
+                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
+            alias Method = typeof(
+              mixin(openmethods._specId!(_openmethods_m_, _openmethods_o_))(
+                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init));
+            Method.specRegistrar!_openmethods_o_.unregister;
+          }
+        }
+      }
+    }
+  }}
 
 // ============================================================================
 // Method Table
