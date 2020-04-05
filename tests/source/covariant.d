@@ -1,18 +1,3 @@
-/+
- dub.sdl:
- name "covariant"
- dependency "openmethods" path="../"
- buildType "x" {
-   buildOptions "debugMode" "debugInfo" "unittests"
-   debugVersions "explain"
- }
-
- buildType "xtc" {
-   buildOptions "debugMode" "debugInfo" "unittests"
-   debugVersions "explain" "traceCalls"
- }
- +/
-
 module covariant_test;
 
 import std.stdio;
@@ -48,7 +33,8 @@ string _open(Bottle bottle, Corkscrew corkscrew)
   return "open a " ~ bottle.label ~ " with a " ~ corkscrew.brand;
 }
 
-void main() {
+unittest
+{
   updateMethods;
   Container container = new Bottle("Chateauneuf-du-Pape");
   Tool tool = new Corkscrew("Brabantia corkscrew");

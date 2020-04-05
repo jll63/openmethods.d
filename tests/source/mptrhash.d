@@ -1,7 +1,7 @@
 import openmethods;
 mixin(registerMethods);
 
-interface  Animal {}
+interface Animal {}
 class Dog : Animal {}
 class Pitbull : Dog {}
 
@@ -22,9 +22,7 @@ string _kick(Pitbull x)
 
 unittest
 {
-  if (needUpdateMethods) {
-    updateMethods();
-  }
+  updateMethods();
 
   import std.stdio;
 

@@ -18,7 +18,15 @@ then
     errors=1
 fi
 
-for dir in tests examples
+echo test openmethods:tests...
+
+if ! dub test --compiler $DC -q openmethods:tests $*;
+then
+    echo "ERROR"
+    errors=1
+fi
+
+for dir in examples
 do
     echo "$dir..."
 

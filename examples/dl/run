@@ -14,7 +14,8 @@ DFLAGS="-g -I../../source -I$BOLT_SOURCE $DFLAGS"
 SOFLAGS="-L-fPIC -shared"
 
 $DC $DFLAGS $SOFLAGS -i -c ../../source/openmethods.d
-$DC $DFLAGS $SOFLAGS openmethods.o -oflibopenmethods.so
+$DC $DFLAGS $SOFLAGS -i -c ../../source/bolts/reflection/*.d
+$DC $DFLAGS $SOFLAGS openmethods.o meta*.o -oflibopenmethods.so
 
 $DC $DFLAGS $SOFLAGS -c animals.d
 $DC $DFLAGS $SOFLAGS animals.o -oflibanimals.so

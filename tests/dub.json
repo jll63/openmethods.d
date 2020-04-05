@@ -1,0 +1,34 @@
+{
+	"authors": [
+		"Jean-Louis Leroy"
+	],
+	"copyright": "Copyright © 2020, Jean-Louis Leroy",
+	"description": "tests for openmethods",
+	"license": "Boost Software License 1.0",
+	"name": "tests",
+	"targetType": "library",
+    "dflags": ["-mixin=mixins.txt"],
+    "importPaths": ["../source", "source"],
+    "dependencies": {
+		"openmethods": "*"
+	},
+    "buildTypes": {
+        "x": {
+	        "debugVersions": ["explain"],
+	        "buildOptions": ["debugMode", "debugInfo", "unittests"],
+        },
+        "xtc": {
+	        "debugVersions": ["explain", "traceCalls"],
+	        "buildOptions": ["debugMode", "debugInfo", "unittests"],
+        },
+    },
+    "configurations": [
+        {
+            "name": "unittest",
+            "dflags": ["-mixin=mixins.txt"],
+            "dependencies": {
+                "fluent-asserts": "~>0.13.3",
+            }
+        },
+    ]
+}

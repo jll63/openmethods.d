@@ -44,42 +44,42 @@ class Plane : Expense
 {
 }
 
-bool approve(virtual!Role, virtual!Expense) @safe @nogc nothrow;
+bool approve(virtual!Role, virtual!Expense) @trusted @nogc nothrow;
 
 @method
-bool _approve(Role r, Expense e) @safe @nogc nothrow
+bool _approve(Role r, Expense e) @trusted @nogc nothrow
 {
   return false;
 }
 
 @method
-bool _approve(Employee r, Public e) @safe @nogc nothrow
+bool _approve(Employee r, Public e) @trusted @nogc nothrow
 {
   return true;
 }
 
 @method
-bool _approve(Executive r, Taxi e) @safe @nogc nothrow
+bool _approve(Executive r, Taxi e) @trusted @nogc nothrow
 {
   return true;
 }
 
 @method
-bool _approve(Owner r, Expense e) @safe @nogc nothrow
+bool _approve(Owner r, Expense e) @trusted @nogc nothrow
 {
   return true;
 }
 
-string pay(virtual!Employee) @safe;
+string pay(virtual!Employee) @trusted;
 
 @method
-string _pay(Employee m) @safe
+string _pay(Employee m) @trusted
 {
   return "salary";
 }
 
 @method
-string _pay(Executive e) @safe
+string _pay(Executive e) @trusted
 {
   return next!pay(e) ~ " + bonus";
 }

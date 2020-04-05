@@ -397,11 +397,7 @@ version (GNU) {
   import std.datetime.stopwatch;
  }
 
-debug(explain) {
-  import std.stdio;
-}
-
-debug(traceCalls) {
+debug {
   import std.stdio;
 
   void trace(T...)(T args) nothrow
@@ -470,67 +466,51 @@ struct MethodTag { }
 enum MptrInDeallocator = "deallocator";
 enum MptrViaHash = "hash";
 
-struct Method(
-  string Mptr, R, string ID, uint FA, string[] SCM, T...)
+struct Method(alias module_, string name, uint index)
 {
-  alias QualParams = T;
+  alias Module = module_;
+  enum Name = name;
+  enum Index = index;
+
+  alias Declaration = __traits(getOverloads, Module, Name)[Index];
+  alias QualParams = std.traits.Parameters!Declaration;
   alias CallParams = staticMap!(UnqualType, QualParams);
-  alias ReturnType = R;
+  alias ReturnType = std.traits.ReturnType!Declaration;
   alias Word =  Runtime.Word;
   alias TheMethod = Method;
-  enum Name = ID;
-  enum functionAttributes = cast(FunctionAttribute) FA;
+
+  // ==========================================================================
+  // Meta-programming
+
+  import bolts.reflection.metafunction;
+  import bolts.reflection.metatype;
+
+  alias Original = Function!(Declaration, "Declaration");
+
+  alias updateParameter(int i) = Original.parameters[i].setType!(
+    Original.parameters[i].type.setMixture!("CallParams[%d]".format(i)));
+
+  alias Editor = Function!(Declaration, "Declaration")
+    .setReturnType!(Type!(ReturnType, "ReturnType")) // not really needed but helps debugging
+    .setParameters!(
+      staticMap!(
+        updateParameter,
+        aliasSeqOf!(std.traits.Parameters!(Declaration).length.iota)));
+
+  static if (hasUDA!(Declaration, mptr)) {
+    static assert(getUDAs!(Declaration, mptr).length == 1, "only one @mptr allowed");
+    enum Mptr = getUDAs!(Declaration, mptr)[0].index;
+  } else {
+    enum Mptr = "deallocator";
+  }
 
   enum isVirtualPosition(size_t I) = IsVirtual!(QualParams[I]);
   enum virtualPositions = Filter!(
     isVirtualPosition, aliasSeqOf!(QualParams.length.iota));
 
-  // ==========================================================================
-  // Meta-programming
-
-  // --------------------------------------------------------------------------
-  // Code fragments, for string mixins
-
-  enum argListCode = [ staticMap!(
-      ApplyLeft!(Format, "a%s"), aliasSeqOf!(CallParams.length.iota))
-  ].join(", ");
-
   enum virtualArgListCode = [
     staticMap!(ApplyLeft!(Format, "a%s"), virtualPositions)
   ].join(", ");
-
-  enum paramListCode = [
-    staticMap!(
-      ApplyLeft!(Format, "%s TheMethod.CallParams[%s] a%s"),
-      staticZip!(
-        AliasPack!(aliasSeqOf!SCM),
-        AliasPack!(aliasSeqOf!(CallParams.length.iota)),
-        AliasPack!(aliasSeqOf!(CallParams.length.iota))).Unpack)
-  ].join(", ");
-
-  enum discriminatorParamListCode = [
-    staticMap!(
-      ApplyLeft!(Format, "CallParams[%s] a%s"),
-      staticZip!(
-        AliasPack!(aliasSeqOf!(CallParams.length.iota)),
-        AliasPack!(aliasSeqOf!(CallParams.length.iota))).Unpack)
-  ].join(", ");
-
-  enum functionPrefixCode =
-    functionAttributes & FunctionAttribute.ref_ ? "ref " : "";
-
-  enum returnTypeCode = functionPrefixCode ~ "ReturnType";
-
-  enum returnStatementCode = is(ReturnType == void) ? "" : "return";
-
-  enum functionPostfixCode = `%s%s%s%s%s%s`
-    .format(
-            functionAttributes & FunctionAttribute.pure_ ? " pure" : "",
-            functionAttributes & FunctionAttribute.nothrow_ ? " nothrow" : "",
-            functionAttributes & FunctionAttribute.trusted ? " @trusted" : "",
-            functionAttributes & FunctionAttribute.safe ? " @safe" : "",
-            functionAttributes & FunctionAttribute.nogc ? " @nogc" : "",
-            functionAttributes & FunctionAttribute.system ? " @system" : "");
 
   static template castArgCode(QualParam, size_t i)
   {
@@ -557,53 +537,50 @@ struct Method(
     }
   }
 
-  static string castArgListCode(alias Spec)() {
+  enum castArgListCode(alias Spec) = {
     string[] casts;
     foreach (i, qp; QualParams) {
       casts ~= castArgCode!(qp, i);
     }
-
     return casts.join(", ");
-  }
+  }();
 
-  enum wrapperCode(alias Spec) = mixin(interp!q{
-      static ${functionPrefixCode} TheMethod.ReturnType wrapper(
-        ${paramListCode}) @trusted
-      {
-        ${returnStatementCode} Spec(${castArgListCode!Spec});
-      }
-    });
+  alias Wrapper(alias Spec) = Editor
+    .setName!"wrapper"
+    .setBody!("return Spec(%s);".format(castArgListCode!Spec));
 
-  enum code =
-    "alias %s = openmethods.%s.discriminator;\n".format(
-      Name,
-      TheMethod.stringof) ~
-    "alias %s = openmethods.%s.dispatcher;\n".format(
-      Name,
-      TheMethod.stringof);
+  mixin(
+    "alias Spec = ",
+    Editor.setUdaList!(UDAList!()).pointerMixture,
+    ";");
 
-  // --------------------------------------------------------------------------
-  // Mixins
+  // dispatcher
+  alias Dispatcher =
+    Editor
+    .setName!"dispatcher"
+    .setBody!("return resolve(%s)(%s);".format(
+      virtualArgListCode, Editor.argumentMixture));
+  mixin(Dispatcher.mixture);
 
-  enum specCode = "alias Spec = %s function(%s) %s;".format(
-    returnTypeCode, paramListCode, functionPostfixCode);
+  // discriminator note that we do *not* carry parameter storage classes
+  // because we use CallParams[i].init to form an argument list when "calling"
+  // the discriminator to locate the method.
+  alias removeStorageClasses(alias P) = P.setStorageClasses!([]);
+  mixin(
+    Editor
+    .setReturnType!(Type!(TheMethod, "TheMethod"))
+    .setName!"discriminator"
+    .setParameters!(
+      Parameter!([], Type!(openmethods.MethodTag), ""),
+      staticMap!(removeStorageClasses, Editor.parameters))
+    .mixture, ";");
 
-  mixin(specCode);
-
-  enum dispatcherCode = mixin(interp!q{
-      static ${returnTypeCode} dispatcher(${paramListCode}) ${functionPostfixCode} {
-        return resolve(${virtualArgListCode})(${argListCode});
-      }
-    });
-
-  mixin(dispatcherCode);
-
-  enum discriminatorCode = mixin(interp!q{
-      static TheMethod discriminator(
-        openmethods.MethodTag, ${discriminatorParamListCode}) ${functionPostfixCode};
-    });
-
-  mixin(discriminatorCode);
+  enum aliases = q{
+    alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
+    alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
+  }.format(
+      Name, __traits(identifier, Module), Name, Index,
+      Name, __traits(identifier, Module), Name, Index);
 
   // ==========================================================================
   // Method Registration
@@ -649,8 +626,8 @@ struct Method(
   }
 
   static template specRegistrar(alias Spec) {
-    alias SpecParams = Parameters!Spec;
-    mixin(TheMethod.wrapperCode!Spec);
+    alias SpecParams = std.traits.Parameters!Spec;
+    mixin(TheMethod.Wrapper!Spec.mixture);
 
     __gshared openmethods.Runtime.SpecInfo si;
 
@@ -663,12 +640,8 @@ struct Method(
           TheMethod.Name, SpecParams.stringof, &wrapper);
       }
 
-      foreach (
-        cls;
-        bolts.meta.Pluck!(
-          bolts.meta.AliasPack!(SpecParams),
-          [TheMethod.virtualPositions]).Unpack) {
-        si.vp ~= cls.classinfo;
+      foreach (i; TheMethod.virtualPositions) {
+        si.vp ~= SpecParams[i].classinfo;
       }
 
       si.nextPtr = cast(void**) &TheMethod.nextPtr!SpecParams;
@@ -694,20 +667,20 @@ struct Method(
   // ==========================================================================
   // Exceptions
 
-  static R notImplementedError(QualParams...)
+  static ReturnType notImplementedError(QualParams...)
   {
     import std.meta;
     errorHandler(new MethodError(MethodError.NotImplemented, &info));
-    static if (!is(R == void)) {
-      return R.init;
+    static if (!is(ReturnType == void)) {
+      return ReturnType.init;
     }
   }
 
-  static R ambiguousCallError(QualParams...)
+  static ReturnType ambiguousCallError(QualParams...)
   {
     errorHandler(new MethodError(MethodError.AmbiguousCall, &info));
-    static if (!is(R == void)) {
-      return R.init;
+    static if (!is(ReturnType == void)) {
+      return ReturnType.init;
     }
   }
 
@@ -802,29 +775,11 @@ struct Method(
   }
 }
 
-unittest
-{
-  ref string foo(virtual!Object, lazy int, out real, virtual!Object) @safe;
-  alias M  = MethodOf!foo;
-  static assert(M.argListCode == "a0, a1, a2, a3");
-  static assert(M.isVirtualPosition!0);
-  static assert(!M.isVirtualPosition!1);
-  static assert(!M.isVirtualPosition!2);
-  static assert(M.isVirtualPosition!3);
-  static assert(M.virtualPositions == AliasSeq!(0, 3));
-  static assert(
-    M.paramListCode ==
-    " TheMethod.CallParams[0] a0, lazy TheMethod.CallParams[1] a1," ~
-    " out TheMethod.CallParams[2] a2,  TheMethod.CallParams[3] a3");
-  assert(M.virtualArgListCode == "a0, a3");
-  static assert(M.returnTypeCode == "ref ReturnType");
-  static assert(M.functionPostfixCode == " @safe");
-}
-
 // ============================================================================
-// Module Method  Registration
+// Module Method Registration
 
-enum hasVirtualParameters(alias F) = anySatisfy!(IsVirtual, Parameters!F);
+enum hasVirtualParameters(alias F) =
+  anySatisfy!(IsVirtual, std.traits.Parameters!F);
 
 unittest
 {
@@ -834,62 +789,17 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
-private template ConcatStorageClassModifiers(Modifiers...)
-{
-  static if (Modifiers.length == 0) {
-    enum ConcatStorageClassModifiers = "";
-  } else static if (Modifiers.length == 1) {
-    enum ConcatStorageClassModifiers = Modifiers[0];
-  } else {
-    enum ConcatStorageClassModifiers =
-      Modifiers[0] ~ " " ~ ConcatStorageClassModifiers!(Modifiers[1..$]);
-  }
-}
-
-private template StorageClassModifiers(alias Func)
-{
-  template Helper(int i)
-  {
-    static if (i == Parameters!(Func).length) {
-      enum Helper = [];
-    } else {
-      enum Helper = [ ConcatStorageClassModifiers!(__traits(getParameterStorageClasses, Func, i)) ]
-        ~ Helper!(i + 1);
-    }
-  }
-  enum StorageClassModifiers = Helper!0;
-}
-
-template MethodOf(alias Fun) {
-  static assert(hasVirtualParameters!Fun);
-  static if (hasUDA!(Fun, openmethods.mptr)) {
-    static assert(getUDAs!(Fun, openmethods.mptr).length == 1, "only une @mptr allowed");
-    immutable index = getUDAs!(Fun, openmethods.mptr)[0].index;
-  } else {
-    immutable index = "deallocator";
-  }
-
-  alias MethodOf = Method!(index,
-                           ReturnType!Fun,
-                           __traits(identifier, Fun),
-                           functionAttributes!Fun,
-                           StorageClassModifiers!Fun,
-                           Parameters!Fun);
-}
-
 string _registerMethods(alias MODULE)()
 {
   import std.array;
+  import bolts.reflection.metamodule;
 
   string[] code;
 
-  foreach (m; __traits(allMembers, MODULE)) {
-    static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-      foreach (o; __traits(getOverloads, MODULE, m)) {
-        static if (hasVirtualParameters!o) {
-          code ~= openmethods.MethodOf!o.code;
-        }
-      }
+  foreach (m; Module!MODULE.functions) {
+    static if (hasVirtualParameters!(m.origin)) {
+      enum aliases = openmethods.Method!(MODULE, m.name, m.index).aliases;
+      code ~= aliases;
     }
   }
 
@@ -908,52 +818,41 @@ template _specId(alias M, alias spec)
   enum _specId = __traits(identifier, spec)[1..$];
 }
 
-mixin template _registerSpecs(alias Module)
+mixin template _registerSpecs(alias M)
 {
   import openmethods;
   import std.traits;
+  import bolts.reflection.metamodule;
 
   static this() {
-    foreach (_openmethods_m_; __traits(allMembers, Module)) {
-      static if (is(typeof(__traits(getOverloads, Module, _openmethods_m_)))) {
-        foreach (_openmethods_o_; __traits(getOverloads, Module, _openmethods_m_)) {
-          static if (hasUDA!(_openmethods_o_, method)) {
-            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
-            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
-                          _openmethods_m_ ~ ": method name must begin with an underscore, "
-                          ~ "or be set in @method()");
-            static assert(!hasVirtualParameters!_openmethods_o_,
-                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
-            alias Method = typeof(
-              mixin(openmethods._specId!(_openmethods_m_, _openmethods_o_))(
-                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init));
-            Method.specRegistrar!_openmethods_o_.register;
-          }
-        }
+    foreach (fun; Module!M.functions) {
+      static if (hasUDA!(fun.origin, method)) {
+        static assert(
+          _isNamedSpec!(fun.origin) || fun.name[0] == '_',
+          fun.name ~ ": method name must begin with an underscore, "
+          ~ "or be set in @method()");
+        static assert(
+          !hasVirtualParameters!(fun.origin),
+          fun.name ~ ": virtual! must not be used in method definitions");
+        alias Method = typeof(
+          mixin(openmethods._specId!(fun.name, fun.origin))(
+            openmethods.MethodTag.init, Parameters!(fun.origin).init));
+        Method.specRegistrar!(fun.origin).register;
       }
     }
   }
 
   static ~this() {
-    foreach (_openmethods_m_; __traits(allMembers, Module)) {
-      static if (is(typeof(__traits(getOverloads, Module, _openmethods_m_)))) {
-        foreach (_openmethods_o_; __traits(getOverloads, Module, _openmethods_m_)) {
-          static if (hasUDA!(_openmethods_o_, method)) {
-            static assert(getUDAs!(_openmethods_o_, method).length == 1, "only one @method attribute is allowed");
-            static assert(_isNamedSpec!(_openmethods_o_) || _openmethods_m_[0] == '_',
-                          _openmethods_m_ ~ ": method name must begin with an underscore, "
-                          ~ "or be set in @method()");
-            static assert(!hasVirtualParameters!_openmethods_o_,
-                          _openmethods_m_ ~ ": virtual! must not be used in method definitions");
-            alias Method = typeof(
-              mixin(openmethods._specId!(_openmethods_m_, _openmethods_o_))(
-                openmethods.MethodTag.init, Parameters!(_openmethods_o_).init));
-            Method.specRegistrar!_openmethods_o_.unregister;
-          }
-        }
+    foreach (fun; Module!M.functions) {
+      static if (hasUDA!(fun.origin, method)) {
+        alias Method = typeof(
+          mixin(openmethods._specId!(fun.name, fun.origin))(
+            openmethods.MethodTag.init, Parameters!(fun.origin).init));
+        Method.specRegistrar!(fun.origin).unregister;
       }
     }
-  }}
+  }
+}
 
 // ============================================================================
 // Method Table
@@ -1089,6 +988,9 @@ struct Runtime
 
   Metrics update()
   {
+    if (!needUpdate)
+      return Metrics();
+
     // Create a Method object for each method.  Create a Class object for all
     // the classes or interfaces that occur as virtual parameters in a method,
     // or were registered explicitly with 'registerClasses'.
@@ -1535,13 +1437,13 @@ struct Runtime
     auto rnd = Random(unpredictableSeed);
     ulong totalAttempts;
 
-    for (int room = 2; room <= 6; ++room) {
-      M = 1;
+    M = 1;
 
-      while ((1 << M) < room * N / 2) {
-        ++M;
-      }
+    while ((1 << M) < N) {
+      ++M;
+    }
 
+    for (int room = 2; room <= 6; ++room, ++M) {
       hashShift = 64 - M;
       hashSize = 1 << M;
       int[] buckets;
@@ -1750,8 +1652,9 @@ struct Runtime
 
         m.gvDispatchTable = gv.ptr + gv.length;
         debug(explain) {
-          trace("and %d function pointers at %s\n",
-                m.dispatchTable.length, m.gvDispatchTable);
+          trace(
+            "and %d function pointers at %s\n",
+            m.dispatchTable.length, m.gvDispatchTable);
         }
         foreach (p; m.dispatchTable) {
           word.p = p;
@@ -1815,8 +1718,9 @@ struct Runtime
         }
       } else {
         debug(explain) {
-          tracefln("  %s: %s-method, storing col* in mtbl, slot = %s",
-                   *m, m.vp.length, slot);
+          tracefln(
+            "  %s: %s-method, storing col* in mtbl, slot = %s",
+            *m, m.vp.length, slot);
         }
 
         foreach (size_t dim, vp; m.vp) {
@@ -1828,25 +1732,28 @@ struct Runtime
 
           foreach (group; m.groups[dim]) {
             debug(explain) {
-              tracefln("      group %d (%s)",
-                       groupIndex,
-                       group.map!(c => c.name).join(", "));
+              tracefln(
+                "      group %d (%s)",
+                groupIndex,
+                group.map!(c => c.name).join(", "));
             }
 
             if (dim == 0) {
               debug(explain) {
-                tracefln("        [%s] <- %s",
-                         m.slots[dim],
-                         m.gvDispatchTable + groupIndex);
+                tracefln(
+                  "        [%s] <- %s",
+                  m.slots[dim],
+                  m.gvDispatchTable + groupIndex);
               }
               foreach (c; group) {
                 c.gvMtbl[m.slots[dim]].p = m.gvDispatchTable + groupIndex;
               }
             } else {
               debug(explain) {
-                tracefln("        [%s] <- %s",
-                         m.slots[dim],
-                         groupIndex);
+                tracefln(
+                  "        [%s] <- %s",
+                  m.slots[dim],
+                  groupIndex);
               }
               foreach (c; group) {
                 c.gvMtbl[m.slots[dim]].i = groupIndex;
@@ -1863,8 +1770,9 @@ struct Runtime
       }
     }
 
-    enforce(gv.length == finalSize,
-            format("gv.length = %s <> finalSize = %s", gv.length, finalSize));
+    enforce(
+      gv.length == finalSize,
+      format("gv.length = %s <> finalSize = %s", gv.length, finalSize));
   }
 
   static auto findNext(Spec* spec, Spec*[] specs)
@@ -1885,94 +1793,4 @@ struct Runtime
       return classes.find!(c => c.info == C.classinfo)[0];
     }
   }
-}
-
-// string interpolation
-// Copied from https://github.com/Abscissa/scriptlike
-
-private string interp(string str)()
-{
-  static import std.conv;
-	enum State
-	{
-		normal,
-		dollar,
-		code,
-	}
-
-	auto state = State.normal;
-
-	string buf;
-	buf ~= '`';
-
-	foreach(char c; str)
-	final switch(state)
-	{
-	case State.normal:
-		if(c == '$')
-			// Delay copying the $ until we find out whether it's
-			// the start of an escape sequence.
-			state = State.dollar;
-		else if(c == '`') {
-			buf ~= "`~\"`\"~`";
-            // "`~\"`\"~`"
-		} else
-			buf ~= c;
-		break;
-
-	case State.dollar:
-		if(c == '{')
-		{
-			state = State.code;
-			buf ~= "`~_interp_text(";
-		}
-		else if(c == '$')
-			buf ~= '$'; // Copy the previous $
-		else
-		{
-			buf ~= '$'; // Copy the previous $
-			buf ~= c;
-			state = State.normal;
-		}
-		break;
-
-	case State.code:
-		if(c == '}')
-		{
-			buf ~= ")~`";
-			state = State.normal;
-		}
-		else
-			buf ~= c;
-		break;
-	}
-
-	// Finish up
-	final switch(state)
-	{
-	case State.normal:
-		buf ~= '`';
-		break;
-
-	case State.dollar:
-		buf ~= "$`"; // Copy the previous $
-		break;
-
-	case State.code:
-		throw new Exception(
-			"Interpolated string contains an unterminated expansion. "~
-			"You're missing a closing curly brace."
-		);
-	}
-
-	return buf;
-}
-
-private string _interp_text(T...)(T args)
-{
-  static import std.conv;
-  static if(T.length == 0)
-    return null;
-  else
-    return std.conv.text(args);
 }

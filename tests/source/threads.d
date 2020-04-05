@@ -1,13 +1,3 @@
-/+
- dub.sdl:
- name "threads"
- dependency "openmethods" path="../"
- buildType "xtc" {
-   buildOptions "debugMode" "debugInfo" "unittests"
-   debugVersions "explain" "traceCalls"
- }
- +/
-
 import openmethods;
 mixin(registerMethods);
 
@@ -18,7 +8,7 @@ void threadFunc(virtual!ThreadClass);
 @method
 void _threadFunc(ThreadClass obj) { }
 
-void main()
+unittest
 {
   import std.concurrency;
 

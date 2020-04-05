@@ -12,6 +12,10 @@ buildType "x" {
 	buildOptions "debugMode" "debugInfo" "unittests"
 }
 dependency "bolts" version="~>1.7.0"
+configuration "unittest" {
+    dflags "-mixin=mixins.txt"
+    dependency "fluent-asserts" version="~>0.13.3"
+}
 targetType "library"
 subPackage "./examples/acceptnovisitors"
 subPackage "./examples/adventure"
@@ -24,3 +28,4 @@ subPackage "./tests/errors"
 subPackage "./tests/mptrhash"
 subPackage "./tests/misc"
 subPackage "./benchmarks/runtimemetrics"
+subPackage "./tests"

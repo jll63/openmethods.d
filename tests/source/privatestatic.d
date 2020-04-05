@@ -1,9 +1,3 @@
-/+
- dub.sdl:
- name "privatestatic"
- dependency "openmethods" path="../"
- +/
-
 // EXCLUDE_GDC
 
 static import openmethods;
@@ -29,7 +23,7 @@ private string _kick(Pitbull x)
   return openmethods.next!kick(x) ~ " and bite";
 }
 
-void main()
+unittest
 {
   import std.stdio;
   openmethods.updateMethods();

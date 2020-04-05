@@ -1,10 +1,3 @@
-/+
- dub.sdl:
- name "storageclass"
- description "tests for parameters with storage class"
- dependency "openmethods" path="../"
- +/
-
 import std.stdio, std.traits, std.range;
 
 import openmethods;
@@ -62,7 +55,7 @@ void _feed(Cat, lazy Fish fish) {
   auto yummy = fish;
 }
 
-void main()
+unittest
 {
   updateMethods();
 
