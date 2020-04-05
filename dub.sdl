@@ -11,7 +11,7 @@ buildType "x" {
 	debugVersions "explain"
 	buildOptions "debugMode" "debugInfo" "unittests"
 }
-dependency "bolts" version="~>1.4.0"
+dependency "bolts" version="~>1.7.0"
 targetType "library"
 subPackage "./examples/acceptnovisitors"
 subPackage "./examples/adventure"

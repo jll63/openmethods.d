@@ -5,7 +5,7 @@ rm -f *.o *.di *.so
 
 DC=dmd
 
-BOLT_VERSION=1.4.0
+BOLT_VERSION=1.7.0
 dub fetch bolts@$BOLT_VERSION
 BOLT_SOURCE=~/.dub/packages/bolts-$BOLT_VERSION/bolts/source
 

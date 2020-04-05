@@ -462,36 +462,6 @@ unittest
   static assert(F2!(AliasPack!("int", 1)) == "int a1");
 }
 
-// will PR
-template staticSlice(alias Pack, alias Positions)
-{
-  static if (Positions.length == 0) {
-    alias staticSlice = AliasPack!();
-  } else {
-    alias staticSlice = AliasPack!(
-      Pack.Unpack[Positions.Unpack[0]],
-      staticSlice!(Pack, Positions.Tail).Unpack);
-  }
-}
-
-unittest
-{
-  static assert(
-    staticSlice!(
-         AliasPack!(),
-         AliasPack!())
-    .equals!());
-  static assert(
-    staticSlice!(
-         AliasPack!(int, char, float),
-         AliasPack!()).equals!());
-  static assert(
-    staticSlice!(
-         AliasPack!(int, char, float),
-         AliasPack!(0, 2))
-    .equals!(int, float));
-}
-
 // ============================================================================
 // Method
 
@@ -695,9 +665,9 @@ struct Method(
 
       foreach (
         cls;
-        openmethods.staticSlice!(
-          openmethods.AliasPack!(SpecParams),
-          openmethods.AliasPack!(TheMethod.virtualPositions)).Unpack) {
+        bolts.meta.Pluck!(
+          bolts.meta.AliasPack!(SpecParams),
+          [TheMethod.virtualPositions]).Unpack) {
         si.vp ~= cls.classinfo;
       }
 
