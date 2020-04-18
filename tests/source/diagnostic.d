@@ -5,5 +5,4 @@ mixin(registerMethods);
 
 unittest
 {
-  updateMethods();
 }

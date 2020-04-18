@@ -73,8 +73,6 @@ string incredible(Character t, Dragon d, Hands w)
 
 void main()
 {
-  updateMethods();
-
   Character bob = new Character, rambo = new Warrior;
   Creature elliott = new Dragon, paddington = new Bear;
   Device hands = new Hands, axe = new Axe, chiquita = new Banana;
@@ -89,8 +87,6 @@ void main()
 unittest {
   import std.meta;
   import std.string;
-
-  updateMethods();
 
   static bool error;
 

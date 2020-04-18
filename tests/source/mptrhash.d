@@ -22,8 +22,6 @@ string _kick(Pitbull x)
 
 unittest
 {
-  updateMethods();
-
   import std.stdio;
 
   Animal hector = new Pitbull, snoopy = new Dog;

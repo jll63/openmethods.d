@@ -26,7 +26,6 @@ private string _kick(Pitbull x)
 unittest
 {
   import std.stdio;
-  openmethods.updateMethods();
   Animal hector = new Pitbull, snoopy = new Dog;
   assert(kick(snoopy) == "bark");
   assert(kick(hector) == "bark and bite");

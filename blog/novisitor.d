@@ -51,8 +51,6 @@ void _print(SparseMatrix m, File of)
 
 void main()
 {
-  updateMethods();
-
   Matrix dense = new DenseMatrix, diagonal = new DiagonalMatrix;
   print(dense, stdout);
   print(diagonal, stdout);

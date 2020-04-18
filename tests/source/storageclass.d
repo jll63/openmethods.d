@@ -57,8 +57,6 @@ void _feed(Cat, lazy Fish fish) {
 
 unittest
 {
-  updateMethods();
-
   string noise;
 
   kick(new Dog, noise);

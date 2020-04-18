@@ -80,8 +80,6 @@ string _toRPN(Number expr)
 
 void main()
 {
-  updateMethods();
-
   version (unittest) {
   } else {
     Node expr =

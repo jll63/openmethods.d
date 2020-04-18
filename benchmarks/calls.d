@@ -139,8 +139,6 @@ void writesec(T...)(T arg)
 
 void main()
 {
-  updateMethods();
-
   obj = new DerivedClass;
   intf = obj;
 

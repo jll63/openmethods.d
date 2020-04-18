@@ -48,7 +48,6 @@ void _inspect(Car v, StateInspector i)
 void main() {
   version (unittest) {
   } else {
-    updateMethods();
     Vehicle car = new Car;
     Inspector inspector = new StateInspector;
     inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance.

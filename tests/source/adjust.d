@@ -40,9 +40,6 @@ void* y(virtual!C);
 
 unittest
 {
-  if (needUpdateMethods)
-    updateMethods();
-
   {
     X obj = new X;
     assert(x(obj) == cast(void*) obj);

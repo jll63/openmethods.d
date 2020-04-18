@@ -46,8 +46,6 @@ string _meet(Dog, Cat)
 
 void main()
 {
-  updateMethods(); // once per process - don't forget!
-
   import std.stdio;
 
   Animal hector = new Pitbull, snoopy = new Dog;

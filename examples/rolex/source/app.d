@@ -89,8 +89,6 @@ void main()
   version (unittest) {} else {
     import std.stdio;
 
-    updateMethods();
-
     Employee exec = new Executive;
     Expense exp = new Taxi;
 
@@ -101,8 +99,6 @@ void main()
 
 unittest
 {
-  updateMethods();
-
   {
     Employee emp = new Employee, exec = new Executive;
 

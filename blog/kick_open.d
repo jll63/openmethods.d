@@ -29,7 +29,6 @@ string _kick(Pitbull dog) { return next!kick(dog) ~ " and bite"; }
 
 void main()
 {
-  updateMethods();
   import std.stdio : writeln;
   Animal snoopy = new Dog, hector = new Pitbull;
   writeln("kick(snoopy): ", kick(snoopy)); // bark

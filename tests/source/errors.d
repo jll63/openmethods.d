@@ -13,10 +13,6 @@ void plus(virtual!Matrix, virtual!Matrix);
 
 unittest
 {
-  if (needUpdateMethods) {
-    updateMethods();
-  }
-
   static string methodId;
 
   auto oldErrorHandler =

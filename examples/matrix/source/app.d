@@ -33,8 +33,6 @@ void _print(DiagonalMatrix m)
 
 void main()
 {
-  updateMethods();
-
   Matrix dense1 =
     new DenseMatrix(2, 3,
                     [ 1, 2, 3,

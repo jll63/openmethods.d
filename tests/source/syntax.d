@@ -17,9 +17,6 @@ void _nonvirtual2(int, Object, Object)
 
 unittest
 {
-  if (needUpdateMethods)
-    updateMethods();
-
   nonvirtual1(new Object, new Object, 1);
   nonvirtual2(1, new Object, new Object);
 }

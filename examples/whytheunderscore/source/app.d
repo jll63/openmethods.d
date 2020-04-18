@@ -33,7 +33,6 @@ string kick(Pitbull x)
 
 void main()
 {
-  updateMethods();
   Dog defangled = new Pitbull;
   Animal hector = defangled;
   writeln(kick(hector)); // call kick(Animal): bark and bite

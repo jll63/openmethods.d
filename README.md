@@ -137,9 +137,6 @@ mixin(registerMethods);
 
 I like to place it just after the `import methods` directive.
 
-Finally, `updateMethods` must be called before calling any methods. Typically
-this is done once, in `main`.
-
 To recap:
 
 ```D
@@ -178,8 +175,6 @@ void _print(DiagonalMatrix m)
 
 void main()
 {
-  updateMethods();
-
   Matrix dense1 =
     new DenseMatrix(2, 3,
                     [ 1, 2, 3,

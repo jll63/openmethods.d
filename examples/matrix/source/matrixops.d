@@ -26,10 +26,6 @@ bool _same(DiagonalMatrix a, DiagonalMatrix b) {
 
 unittest
 {
-  if (needUpdateMethods) {
-    updateMethods();
-  }
-
   Matrix
     a = new DenseMatrix(2, 2,
                         [ 0, 1,

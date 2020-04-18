@@ -46,8 +46,6 @@ mixin(registerMethods("matrixMethods!int"));
 
 void main()
 {
-  updateMethods();
-
   {
     Matrix!double m = new DenseMatrix!double();
     double s = 1;

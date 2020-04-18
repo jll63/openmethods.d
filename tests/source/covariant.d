@@ -35,7 +35,6 @@ string _open(Bottle bottle, Corkscrew corkscrew)
 
 unittest
 {
-  updateMethods;
   Container container = new Bottle("Chateauneuf-du-Pape");
   Tool tool = new Corkscrew("Brabantia corkscrew");
   //writeln(open(container, tool));

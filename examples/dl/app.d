@@ -10,8 +10,6 @@ extern(C) void* dlsym(void*, const char*);
 
 void main()
 {
-  updateMethods();
-
   Animal ralf = new Wolf;
   assert(species(ralf) == "wolf");
 

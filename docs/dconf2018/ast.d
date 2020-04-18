@@ -187,8 +187,6 @@ version(openmethods) {
 }
 
 void main() {
-  version (openmethods) updateMethods();
-
   Node expr =
     new Times(new Number(2), new Plus(new Number(3), new Number(4)));
   writefln("value = %s", expr.value); // 2 3 4 + * = 14

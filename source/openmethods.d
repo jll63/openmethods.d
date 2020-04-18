@@ -63,8 +63,6 @@ string _meet(Dog, Cat)
 
 void main()
 {
-  updateMethods(); // once per process - don't forget!
-
   import std.stdio;
 
   Animal hector = new Pitbull, snoopy = new Dog;
@@ -291,9 +289,10 @@ mixin(registerMethods);
 
 auto registerMethods(string moduleName = __MODULE__)
 {
-  return `static import openmethods;
-mixin(openmethods._registerMethods!(%s));
-mixin openmethods._registerSpecs!(%s);`.format(moduleName, moduleName);
+  return q{
+    static import openmethods;
+    mixin(openmethods.registrationMixture!(%s, "%s"));
+  }.format(moduleName, moduleName);
 }
 
 mixin template registerClasses(Classes...) {
@@ -323,14 +322,25 @@ mixin template registerClasses(Classes...) {
 }
 
 /++
- Update the runtime dispatch tables. Must be called once before calling any
- methods. Typically this is done at the beginning of `main`.
+ Update the runtime dispatch tables. Must be called after dynamically
+ loading or unloading a shared lubrary.
  +/
 
 Runtime.Metrics updateMethods()
 {
   Runtime rt;
   return rt.update();
+}
+
+void unregisterMethods()
+{
+  Runtime rt;
+  rt.unregister;
+}
+
+shared static this()
+{
+  updateMethods;
 }
 
 bool needUpdateMethods()
@@ -397,7 +407,7 @@ version (GNU) {
   import std.datetime.stopwatch;
  }
 
-debug {
+debug (explain) {
   import std.stdio;
 
   void trace(T...)(T args) nothrow
@@ -589,8 +599,13 @@ struct Method(alias module_, string name, uint index)
   alias genericNextPtr = void function();
   __gshared genericNextPtr nextPtr(QualParams...) = null;
 
-  shared static this() {
+  static register() {
+    info = Runtime.MethodInfo.init;
     info.name = Name;
+
+    debug(explain) {
+      writefln("registering method %s", info);
+    }
 
     static if (Mptr == MptrInDeallocator) {
       ++Runtime.methodsUsingDeallocator;
@@ -608,20 +623,16 @@ struct Method(alias module_, string name, uint index)
       }
     }
 
-    debug(explain) {
-      writefln("registering %s", info);
-    }
-
     Runtime.methodInfos[&info] = &info;
     Runtime.needUpdate = true;
   }
 
-  shared static ~this() {
+  static unregister() {
     debug(explain) {
       writefln("Unregistering %s", info);
     }
 
-    Runtime.methodInfos.remove(&info);
+    info = Runtime.MethodInfo.init;
     Runtime.needUpdate = true;
   }
 
@@ -632,6 +643,7 @@ struct Method(alias module_, string name, uint index)
     __gshared openmethods.Runtime.SpecInfo si;
 
     void register() {
+      si = openmethods.Runtime.SpecInfo.init;
       si.pf = cast(void*) &wrapper;
 
       debug(explain) {
@@ -657,9 +669,7 @@ struct Method(alias module_, string name, uint index)
           "Unregistering override %s%s, pf = %s",
           TheMethod.Name, SpecParams.stringof, &wrapper);
       }
-
-      import std.algorithm, std.array;
-      TheMethod.info.specInfos = TheMethod.info.specInfos.filter!(p => p != &si).array;
+      si = openmethods.Runtime.SpecInfo.init;
       Runtime.needUpdate = true;
     }
   }
@@ -776,7 +786,15 @@ struct Method(alias module_, string name, uint index)
 }
 
 // ============================================================================
-// Module Method Registration
+// Method Registration
+
+interface Registrar
+{
+  void registerMethods();
+  void registerSpecs();
+  void unregisterSpecs();
+  void unregisterMethods();
+}
 
 enum hasVirtualParameters(alias F) =
   anySatisfy!(IsVirtual, std.traits.Parameters!F);
@@ -789,64 +807,88 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
-string _registerMethods(alias MODULE)()
+string registrationMixture(alias MODULE, alias moduleName)()
 {
   import std.array;
   import bolts.reflection.metamodule;
 
-  string[] code;
+  string[] mixture;
 
   foreach (m; Module!MODULE.functions) {
     static if (hasVirtualParameters!(m.origin)) {
-      enum aliases = openmethods.Method!(MODULE, m.name, m.index).aliases;
-      code ~= aliases;
+      mixture ~= openmethods.Method!(MODULE, m.name, m.index).aliases;
     }
   }
 
-  return join(code, "\n");
+  mixture ~= q{
+    class __OpenMethodsRegistrar__ : openmethods.Registrar {
+      mixin openmethods.registrar!(%s, "%s");
+    }
+  }.format(moduleName, moduleName);
+
+  return join(mixture, "\n");
 }
 
-enum _isNamedSpec(alias spec) = is(typeof(getUDAs!(spec, method)[0]) == method);
-
-template _specId(alias M, alias spec)
-  if (_isNamedSpec!(spec)) {
-  enum _specId = getUDAs!(spec, method)[0].id;
-}
-
-template _specId(alias M, alias spec)
-  if (!_isNamedSpec!(spec)) {
-  enum _specId = __traits(identifier, spec)[1..$];
-}
-
-mixin template _registerSpecs(alias M)
+mixin template registrar(alias M, alias ModuleName)
 {
   import openmethods;
   import std.traits;
   import bolts.reflection.metamodule;
 
-  static this() {
+  void registerMethods()
+  {
+    foreach (fun; Module!M.functions) {
+      static if (hasVirtualParameters!(fun.origin)) {
+        openmethods.Method!(M, fun.name, fun.index).register;
+      }
+    }
+  }
+
+  void unregisterMethods()
+  {
+    foreach (fun; Module!M.functions) {
+      static if (hasVirtualParameters!(fun.origin)) {
+        openmethods.Method!(M, fun.name, fun.index).unregister;
+      }
+    }
+  }
+
+  enum isNamedSpec(alias spec) = is(
+    typeof(getUDAs!(spec, method)[0]) == openmethods.method);
+
+  template specId(alias M, alias spec)
+    if (isNamedSpec!(spec)) {
+    enum specId = getUDAs!(spec, method)[0].id;
+  }
+
+  template specId(alias M, alias spec)
+    if (!isNamedSpec!(spec)) {
+    enum specId = __traits(identifier, spec)[1..$];
+  }
+
+  void registerSpecs() {
     foreach (fun; Module!M.functions) {
       static if (hasUDA!(fun.origin, method)) {
         static assert(
-          _isNamedSpec!(fun.origin) || fun.name[0] == '_',
+          isNamedSpec!(fun.origin) || fun.name[0] == '_',
           fun.name ~ ": method name must begin with an underscore, "
           ~ "or be set in @method()");
         static assert(
           !hasVirtualParameters!(fun.origin),
           fun.name ~ ": virtual! must not be used in method definitions");
         alias Method = typeof(
-          mixin(openmethods._specId!(fun.name, fun.origin))(
+          mixin(specId!(fun.name, fun.origin))(
             openmethods.MethodTag.init, Parameters!(fun.origin).init));
         Method.specRegistrar!(fun.origin).register;
       }
     }
   }
 
-  static ~this() {
+  void unregisterSpecs() {
     foreach (fun; Module!M.functions) {
       static if (hasUDA!(fun.origin, method)) {
         alias Method = typeof(
-          mixin(openmethods._specId!(fun.name, fun.origin))(
+          mixin(specId!(fun.name, fun.origin))(
             openmethods.MethodTag.init, Parameters!(fun.origin).init));
         Method.specRegistrar!(fun.origin).unregister;
       }
@@ -991,6 +1033,24 @@ struct Runtime
     if (!needUpdate)
       return Metrics();
 
+    foreach (mod; ModuleInfo) {
+      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      foreach (c; mod.localClasses) {
+        if (c.name == registrar) {
+          (cast(Registrar) c.create()).registerMethods;
+        }
+      }
+    }
+
+    foreach (mod; ModuleInfo) {
+      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      foreach (c; mod.localClasses) {
+        if (c.name == registrar) {
+          (cast(Registrar) c.create()).registerSpecs;
+        }
+      }
+    }
+
     // Create a Method object for each method.  Create a Class object for all
     // the classes or interfaces that occur as virtual parameters in a method,
     // or were registered explicitly with 'registerClasses'.
@@ -1049,6 +1109,27 @@ struct Runtime
     needUpdate = false;
 
     return metrics;
+  }
+
+  void unregister()
+  {
+    foreach (mod; ModuleInfo) {
+      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      foreach (c; mod.localClasses) {
+        if (c.name == registrar) {
+          (cast(Registrar) c.create()).unregisterSpecs;
+        }
+      }
+    }
+
+    foreach (mod; ModuleInfo) {
+      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      foreach (c; mod.localClasses) {
+        if (c.name == registrar) {
+          (cast(Registrar) c.create()).unregisterMethods;
+        }
+      }
+    }
   }
 
   void seed()
