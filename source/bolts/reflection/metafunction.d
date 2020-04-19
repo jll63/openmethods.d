@@ -7,7 +7,7 @@ module bolts.reflection.metafunction;
 import bolts.reflection.metatype;
 import bolts.reflection.metauda;
 
-import bolts.meta : AliasPack, Zip;
+import bolts.meta : AliasPack;
 import bolts.traits : isSame;
 
 import std.array : join;
@@ -44,8 +44,6 @@ template ParameterAttribute(alias F, int i, int j)
 
 unittest
 {
-  import bolts.traits : isSame;
-
   struct foo;
 
   struct bar
