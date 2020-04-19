@@ -1,0 +1,53 @@
+{
+	"authors": [
+		"Jean-Louis Leroy"
+	],
+	"buildTypes": {
+		"x": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain"
+			]
+		},
+		"xtc": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain",
+				"traceCalls"
+			]
+		}
+	},
+	"configurations": [
+		{
+			"mainSourceFile": "source/app.d",
+			"name": "application",
+			"targetType": "executable"
+		}
+	],
+	"copyright": "Copyright © 2017, Jean-Louis Leroy",
+	"dependencies": {
+		"openmethods": {
+			"path": "../../",
+			"version": ">=0.0.0"
+		}
+	},
+	"description": "the reason for the underscore in front of method specializations",
+	"importPaths": [
+		"source/"
+	],
+	"license": "Boost Software License 1.0",
+	"name": "whytheunderscore",
+	"sourcePaths": [
+		"source/"
+	],
+	"targetType": "executable",
+	"version": "~master"
+}

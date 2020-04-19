@@ -1,0 +1,66 @@
+{
+	"authors": [
+		"Jean-Louis Leroy"
+	],
+	"buildTypes": {
+		"x": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain"
+			]
+		},
+		"xtc": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain",
+				"traceCalls"
+			]
+		}
+	},
+	"configurations": [
+		{
+			"dependencies": {
+				"fluent-asserts": "~>0.13.3"
+			},
+			"dflags": [
+				"-mixin=mixins.txt"
+			],
+			"name": "unittest",
+			"targetType": "library"
+		}
+	],
+	"copyright": "Copyright © 2017, Jean-Louis Leroy",
+	"dependencies": {
+		"bolts": "~>1.7.0"
+	},
+	"description": "fast, open multi-methods for D",
+	"importPaths": [
+		"source/"
+	],
+	"license": "Boost Software License 1.0",
+	"name": "openmethods",
+	"sourcePaths": [
+		"source/"
+	],
+	"subPackages": [
+		"./examples/acceptnovisitors",
+		"./examples/adventure",
+		"./examples/matrix",
+		"./examples/next",
+		"./examples/rolex",
+		"./examples/synopsis",
+		"./examples/whytheunderscore",
+		"./benchmarks/runtimemetrics",
+		"./tests"
+	],
+	"targetType": "library",
+	"version": "1.3.0+commit.2.gaa32b61"
+}

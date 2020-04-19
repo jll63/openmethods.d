@@ -1,0 +1,52 @@
+{
+	"authors": [
+		"Jean-Louis Leroy"
+	],
+	"buildTypes": {
+		"x": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain"
+			]
+		},
+		"xtc": {
+			"buildOptions": [
+				"debugMode",
+				"debugInfo",
+				"unittests"
+			],
+			"debugVersions": [
+				"explain",
+				"traceCalls"
+			]
+		}
+	},
+	"configurations": [
+		{
+			"name": "application",
+			"targetType": "executable"
+		}
+	],
+	"copyright": "Copyright © 2017, Jean-Louis Leroy",
+	"dependencies": {
+		"openmethods": {
+			"path": "../../",
+			"version": ">=0.0.0"
+		}
+	},
+	"description": "test against large code base",
+	"importPaths": [
+		"source/"
+	],
+	"license": "Boost Software License 1.0",
+	"name": "runtimemetrics",
+	"sourcePaths": [
+		"source/"
+	],
+	"targetType": "executable",
+	"version": "~master"
+}
