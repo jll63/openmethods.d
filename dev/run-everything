@@ -57,7 +57,7 @@ do
                     errors=1
                 fi
 
-                if ! grep --quiet library $dir/$target/dub.sdl;
+                if ! grep --quiet library $dir/$target/dub.json;
                 then
                     if ! dub run --compiler $DC -q openmethods:$target $*;
                     then
