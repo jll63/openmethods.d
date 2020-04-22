@@ -303,6 +303,7 @@ mixin template registerClasses(Classes...) {
         writefln("Registering class %s", C.stringof);
       }
       Runtime.additionalClasses ~= C.classinfo;
+      Runtime.needUpdate = true;
     }
   }
 
@@ -505,7 +506,7 @@ struct Method(alias module_, string name, uint index)
     .setParameters!(
       staticMap!(
         updateParameter,
-        aliasSeqOf!(std.traits.Parameters!(Declaration).length.iota)));
+        aliasSeqOf!(Original.arity.iota)));
 
   static if (hasUDA!(Declaration, mptr)) {
     static assert(getUDAs!(Declaration, mptr).length == 1, "only one @mptr allowed");
@@ -589,8 +590,8 @@ struct Method(alias module_, string name, uint index)
     alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
     alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
   }.format(
-      Name, __traits(identifier, Module), Name, Index,
-      Name, __traits(identifier, Module), Name, Index);
+    Name, __traits(identifier, Module), Name, Index,
+    Name, __traits(identifier, Module), Name, Index);
 
   // ==========================================================================
   // Method Registration
@@ -1135,7 +1136,7 @@ struct Runtime
   void seed()
   {
     debug(explain) {
-      write("Seeding...\n ");
+      write("Seeding...\n  roots:\n");
     }
 
     Class* upgrade(ClassInfo ci)
@@ -1146,7 +1147,7 @@ struct Runtime
       } else {
         c = classMap[ci] = new Class(ci);
         debug(explain) {
-          writef(" %s", c.name);
+          writef("    %s\n", c.name);
         }
       }
       return c;
@@ -1170,14 +1171,14 @@ struct Runtime
     }
 
     debug(explain) {
-      writeln();
+      writeln("  manually registered:");
     }
 
     foreach (ci; additionalClasses) {
       if (ci !in classMap) {
         auto c = classMap[ci] = new Class(ci);
         debug(explain) {
-          tracefln("  %s", c.name);
+          writeln("    ", c.name);
         }
       }
     }

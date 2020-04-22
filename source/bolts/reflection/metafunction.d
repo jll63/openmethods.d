@@ -12,7 +12,7 @@ import bolts.traits : isSame;
 
 import std.array : join;
 import std.format : format;
-import std.meta : AliasSeq, aliasSeqOf, ApplyLeft, staticMap, anySatisfy;
+import std.meta : Alias, AliasSeq, aliasSeqOf, ApplyLeft, staticMap, anySatisfy;
 import std.range : iota;
 import std.traits;
 import std.typecons : tuple;
@@ -34,11 +34,7 @@ private struct String(string value)
 template ParameterAttribute(alias F, int i, int j)
 {
   static if (is(typeof(F) P == __parameters)) {
-    static if (isExpressions!(__traits(getAttributes, P[i..i+1])[j])) {
-      enum ParameterAttribute = __traits(getAttributes, P[i..i+1])[j];
-    } else {
-      alias ParameterAttribute = __traits(getAttributes, P[i..i+1])[j];
-    }
+    alias ParameterAttribute = Alias!(__traits(getAttributes, P[i..i+1])[j]);
   }
 }
 
@@ -156,11 +152,7 @@ template Function(Props...)
   import std.ascii : toUpper;
 
   static foreach (i, property; __traits(allMembers, Property)) {
-    static if (isExpressions!(PropertyDefaults[i])) {
-      mixin("enum ", property, " = Properties[Property.", property, "];");
-    } else {
-      mixin("alias ", property, " = Properties[Property.", property, "];");
-    }
+    mixin("alias ", property, " = Alias!(Properties[Property.", property, "]);");
     mixin(q{
         alias set%s%s(NewValue...) = Function!(
           aliasSeqReplace!(Property.%s, NewValue, Properties));
@@ -559,11 +551,7 @@ template reflectParameterList(alias fun, string mixture)
         {
           static if (__traits(compiles, __traits(getAttributes, parameter))) {
             static if (udaIndex < __traits(getAttributes, parameter).length) {
-              static if (isExpressions!(__traits(getAttributes, parameter)[udaIndex])) {
-                enum value = __traits(getAttributes, parameter)[udaIndex];
-              } else {
-                alias value = __traits(getAttributes, parameter)[udaIndex];
-              }
+              alias value = Alias!(__traits(getAttributes, parameter)[udaIndex]);
               alias reflectUDAs = AliasSeq!(
                 UDA!(
                   value,
