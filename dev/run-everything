@@ -34,7 +34,8 @@ do
     do
         if [ -d $dir/$target ];
         then
-            echo $target
+            echo "========================================================================"
+            echo "Running $target"
             if [ "$target" = 'dl' ];
             then
                 if [[ "$DC" == 'dmd' ]];
@@ -70,7 +71,8 @@ do
 
         if [[ $target == *'.d' ]]
         then
-            echo $target
+            echo "========================================================================"
+            echo "Running $target"
 
             if [[ "$DC" == 'gdc' ]] && grep --quiet -P $DC_EXCLUSIONS $dir/$target;
             then

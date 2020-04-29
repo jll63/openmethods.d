@@ -27,9 +27,6 @@
 	},
 	"configurations": [
 		{
-			"dependencies": {
-				"fluent-asserts": "~>0.13.3"
-			},
 			"dflags": [
 				"-mixin=mixins.txt"
 			],
@@ -38,9 +35,6 @@
 		}
 	],
 	"copyright": "Copyright © 2017, Jean-Louis Leroy",
-	"dependencies": {
-		"bolts": "~>1.7.0"
-	},
 	"description": "fast, open multi-methods for D",
 	"importPaths": [
 		"source/"

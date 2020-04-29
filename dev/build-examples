@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for example in acceptnovisitors adventure matrix next rolex synopsis whytheunderscore; do
+    touch examples/$example/source/app.d
+    dub build openmethods:$example
+done
+
+du -hc examples/*/openmethods_*

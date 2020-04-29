@@ -93,7 +93,8 @@ import std.meta;
 import std.range;
 import std.traits;
 
-import bolts.meta;
+import rf = bolts.experimental.refraction;
+static import bolts.experimental.refraction;
 
 // ============================================================================
 // Public stuff
@@ -291,6 +292,7 @@ auto registerMethods(string moduleName = __MODULE__)
 {
   return q{
     static import openmethods;
+    static import bolts.experimental.refraction;
     mixin(openmethods.registrationMixture!(%s, "%s"));
   }.format(moduleName, moduleName);
 }
@@ -324,7 +326,7 @@ mixin template registerClasses(Classes...) {
 
 /++
  Update the runtime dispatch tables. Must be called after dynamically
- loading or unloading a shared lubrary.
+ loading or unloading a shared library.
  +/
 
 Runtime.Metrics updateMethods()
@@ -450,23 +452,7 @@ private alias UnqualType(T : covariant!U, U) = U;
 
 private template Format(alias F, A...)
 {
-  static if (isInstanceOf!(AliasPack, A[0])) {
-    static assert(A.length == 1);
-    enum Format = format!F(A[0].Unpack);
-  } else {
-    enum Format = format!F(A);
-  }
-}
-
-unittest
-{
-  alias F1 = ApplyLeft!(Format, "a%s");
-  static assert(F1!1 == "a1");
-  static assert(F1!(AliasPack!(1)) == "a1");
-  static assert(staticMap!(F1, 1, 2, 3) == AliasSeq!("a1", "a2", "a3"));
-  alias F2 = ApplyLeft!(Format, "%s a%s");
-  static assert(F2!("int", 1) == "int a1");
-  static assert(F2!(AliasPack!("int", 1)) == "int a1");
+  enum Format = format!F(A);
 }
 
 // ============================================================================
@@ -477,7 +463,18 @@ struct MethodTag { }
 enum MptrInDeallocator = "deallocator";
 enum MptrViaHash = "hash";
 
-struct Method(alias module_, string name, uint index)
+auto makeCallParams(rf.Parameter[] parameters)
+{
+  return parameters.length.iota.map!(
+    i => parameters[i].setType("CallParams[%d]".format(i))).array;
+}
+
+auto removeStorageClasses(rf.Parameter[] parameters)
+{
+  return parameters.map!(p => p.setStorage([])).array;
+}
+
+struct Method(alias module_, string name, int index)
 {
   alias Module = module_;
   enum Name = name;
@@ -493,20 +490,12 @@ struct Method(alias module_, string name, uint index)
   // ==========================================================================
   // Meta-programming
 
-  import bolts.reflection.metafunction;
-  import bolts.reflection.metatype;
+  enum Original = rf.refract!(Declaration, "Declaration");
 
-  alias Original = Function!(Declaration, "Declaration");
-
-  alias updateParameter(int i) = Original.parameters[i].setType!(
-    Original.parameters[i].type.setMixture!("CallParams[%d]".format(i)));
-
-  alias Editor = Function!(Declaration, "Declaration")
-    .setReturnType!(Type!(ReturnType, "ReturnType")) // not really needed but helps debugging
-    .setParameters!(
-      staticMap!(
-        updateParameter,
-        aliasSeqOf!(Original.arity.iota)));
+  enum Editor = Original
+    .setStatic(true)
+    .setReturnType("ReturnType") // not really needed but helps debugging
+    .setParameters(makeCallParams(Original.parameters));
 
   static if (hasUDA!(Declaration, mptr)) {
     static assert(getUDAs!(Declaration, mptr).length == 1, "only one @mptr allowed");
@@ -520,31 +509,31 @@ struct Method(alias module_, string name, uint index)
     isVirtualPosition, aliasSeqOf!(QualParams.length.iota));
 
   enum virtualArgListCode = [
-    staticMap!(ApplyLeft!(Format, "a%s"), virtualPositions)
+    staticMap!(ApplyLeft!(Format, "_%d"), virtualPositions)
   ].join(", ");
 
   static template castArgCode(QualParam, size_t i)
   {
     static if (IsVirtual!QualParam) {
       static if (is(UnqualType!QualParam == interface)) {
-        enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+        enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
       } else {
-        enum castArgCode = "cast(SpecParams[%s]) cast(void*) a%s".format(i, i);
+        enum castArgCode = "cast(SpecParams[%s]) cast(void*) _%d".format(i, i);
       }
     } else static if (IsCovariant!QualParam) {
       static if (is(UnqualType!QualParam == class)) {
         debug {
-          enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+          enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
         } else {
-          enum castArgCode = "cast(SpecParams[%s]) cast(void*) a%s".format(i, i);
+          enum castArgCode = "cast(SpecParams[%s]) cast(void*) _%d".format(i, i);
         }
       } else {
         static assert(is(UnqualType!QualParam == interface),
                       "covariant argument must be a class or an interface");
-        enum castArgCode = "cast(SpecParams[%s]) a%s".format(i, i);
+        enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
       }
     } else {
-      enum castArgCode = "a%s".format(i);
+      enum castArgCode = "_%d".format(i);
     }
   }
 
@@ -556,35 +545,35 @@ struct Method(alias module_, string name, uint index)
     return casts.join(", ");
   }();
 
-  alias Wrapper(alias Spec) = Editor
-    .setName!"wrapper"
-    .setBody!("return Spec(%s);".format(castArgListCode!Spec));
+  enum Wrapper(alias Spec) = Editor
+    .setName("wrapper")
+    .setBody("{ return Spec(%s); }".format(castArgListCode!Spec));
 
   mixin(
     "alias Spec = ",
-    Editor.setUdaList!(UDAList!()).pointerMixture,
+    Editor.setUdas([]).setName("function").mixture,
     ";");
 
   // dispatcher
-  alias Dispatcher =
+  enum Dispatcher =
     Editor
-    .setName!"dispatcher"
-    .setBody!("return resolve(%s)(%s);".format(
-      virtualArgListCode, Editor.argumentMixture));
+    .setName("dispatcher")
+    .setBody(
+      "{ return resolve(%s)(%s); }".format(
+        virtualArgListCode, Editor.argumentMixture));
   mixin(Dispatcher.mixture);
 
   // discriminator note that we do *not* carry parameter storage classes
   // because we use CallParams[i].init to form an argument list when "calling"
   // the discriminator to locate the method.
-  alias removeStorageClasses(alias P) = P.setStorageClasses!([]);
   mixin(
     Editor
-    .setReturnType!(Type!(TheMethod, "TheMethod"))
-    .setName!"discriminator"
-    .setParameters!(
-      Parameter!([], Type!(openmethods.MethodTag), ""),
-      staticMap!(removeStorageClasses, Editor.parameters))
-    .mixture, ";");
+    .setReturnType("TheMethod")
+    .setName("discriminator")
+    .setParameters(
+      [ rf.Parameter().setType("openmethods.MethodTag") ]
+      ~ removeStorageClasses(Editor.parameters))
+    .mixture);
 
   enum aliases = q{
     alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
@@ -811,13 +800,16 @@ unittest
 string registrationMixture(alias MODULE, alias moduleName)()
 {
   import std.array;
-  import bolts.reflection.metamodule;
 
   string[] mixture;
 
-  foreach (m; Module!MODULE.functions) {
-    static if (hasVirtualParameters!(m.origin)) {
-      mixture ~= openmethods.Method!(MODULE, m.name, m.index).aliases;
+  foreach (m; __traits(allMembers, MODULE)) {
+    static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+      foreach (i, o; __traits(getOverloads, MODULE, m)) {
+        static if (hasVirtualParameters!(o)) {
+          mixture ~= openmethods.Method!(MODULE, m, i).aliases;
+        }
+      }
     }
   }
 
@@ -830,26 +822,33 @@ string registrationMixture(alias MODULE, alias moduleName)()
   return join(mixture, "\n");
 }
 
-mixin template registrar(alias M, alias ModuleName)
+mixin template registrar(alias MODULE, alias ModuleName)
 {
   import openmethods;
   import std.traits;
-  import bolts.reflection.metamodule;
 
   void registerMethods()
   {
-    foreach (fun; Module!M.functions) {
-      static if (hasVirtualParameters!(fun.origin)) {
-        openmethods.Method!(M, fun.name, fun.index).register;
+    foreach (m; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+        foreach (i, o; __traits(getOverloads, MODULE, m)) {
+          static if (hasVirtualParameters!(o)) {
+            openmethods.Method!(MODULE, m, i).register;
+          }
+        }
       }
     }
   }
 
   void unregisterMethods()
   {
-    foreach (fun; Module!M.functions) {
-      static if (hasVirtualParameters!(fun.origin)) {
-        openmethods.Method!(M, fun.name, fun.index).unregister;
+    foreach (m; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+        foreach (i, o; __traits(getOverloads, MODULE, m)) {
+          static if (hasVirtualParameters!(o)) {
+            openmethods.Method!(MODULE, m, i).unregister;
+          }
+        }
       }
     }
   }
@@ -868,30 +867,38 @@ mixin template registrar(alias M, alias ModuleName)
   }
 
   void registerSpecs() {
-    foreach (fun; Module!M.functions) {
-      static if (hasUDA!(fun.origin, method)) {
-        static assert(
-          isNamedSpec!(fun.origin) || fun.name[0] == '_',
-          fun.name ~ ": method name must begin with an underscore, "
-          ~ "or be set in @method()");
-        static assert(
-          !hasVirtualParameters!(fun.origin),
-          fun.name ~ ": virtual! must not be used in method definitions");
-        alias Method = typeof(
-          mixin(specId!(fun.name, fun.origin))(
-            openmethods.MethodTag.init, Parameters!(fun.origin).init));
-        Method.specRegistrar!(fun.origin).register;
+    foreach (m; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+        foreach (i, o; __traits(getOverloads, MODULE, m)) {
+          static if (hasUDA!(o, method)) {
+            static assert(
+              isNamedSpec!(o) || m[0] == '_',
+              m ~ ": method name must begin with an underscore, "
+              ~ "or be set in @method()");
+            static assert(
+              !hasVirtualParameters!(o),
+              m ~ ": virtual! must not be used in method definitions");
+            alias Method = typeof(
+              mixin(specId!(m, o))(
+                openmethods.MethodTag.init, Parameters!(o).init));
+            Method.specRegistrar!(o).register;
+          }
+        }
       }
     }
   }
 
   void unregisterSpecs() {
-    foreach (fun; Module!M.functions) {
-      static if (hasUDA!(fun.origin, method)) {
-        alias Method = typeof(
-          mixin(specId!(fun.name, fun.origin))(
-            openmethods.MethodTag.init, Parameters!(fun.origin).init));
-        Method.specRegistrar!(fun.origin).unregister;
+    foreach (m; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+        foreach (i, o; __traits(getOverloads, MODULE, m)) {
+          static if (hasUDA!(o, method)) {
+            alias Method = typeof(
+              mixin(specId!(m, o))(
+                openmethods.MethodTag.init, Parameters!(o).init));
+            Method.specRegistrar!(o).unregister;
+          }
+        }
       }
     }
   }

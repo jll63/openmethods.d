@@ -4,7 +4,6 @@ import openmethods;
 mixin(registerMethods);
 
 import std.array, std.range;
-import fluent.asserts;
 
 class Animal {}
 class Cat : Animal {}
@@ -18,7 +17,7 @@ string kick(virtual!Animal, int times = 1);
 
 unittest
 {
-  Assert.equal(kick(new Cat), "meow!");
-  Assert.equal(kick(new Cat, 3), "meow! meow! meow!");
+  assert(kick(new Cat) == "meow!");
+  assert(kick(new Cat, 3) == "meow! meow! meow!");
 }
 }

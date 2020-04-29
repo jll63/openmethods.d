@@ -26,9 +26,6 @@
         {
             "name": "unittest",
             "dflags": ["-mixin=mixins.txt"],
-            "dependencies": {
-                "fluent-asserts": "~>0.13.3",
-            }
         },
     ]
 }

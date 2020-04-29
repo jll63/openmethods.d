@@ -9,5 +9,5 @@ interface Matrix
 }
 
 Matrix plus(virtual!Matrix, virtual!Matrix);
-Matrix times(double, virtual!Matrix);
 Matrix times(virtual!Matrix, double);
+Matrix times(double, virtual!Matrix);
