@@ -20,18 +20,30 @@ class Matrix(T) {}
 class DenseMatrix(T) : Matrix!(T) {}
 class DiagonalMatrix(T) : Matrix!(T) {}
 
-template declareMatrixMethods(T)
+template declareMatrixClasses(T)
 {
   mixin registerClasses!(Matrix!T);
   mixin registerClasses!(DenseMatrix!T);
   mixin registerClasses!(DiagonalMatrix!T);
-
-  Matrix!T times(virtual!(Matrix!T), T);
-  Matrix!T times(T, virtual!(Matrix!T));
 }
 
-mixin(registerMethods("declareMatrixMethods!double"));
-mixin(registerMethods("declareMatrixMethods!int"));
+mixin declareMatrixClasses!double;
+
+import std.traits;
+
+Matrix!T timesTemplate(T)(virtual!(Matrix!T), virtual!(Matrix!T));
+
+Matrix!T times(T)(lazy Matrix!T a, lazy Matrix!T b)
+{
+  // alias thisFunction = methodtemplates.times!double;
+  // pragma(msg, "alias thisFunction = ", __FUNCTION__, ";");
+  //pragma(msg, Parameters!thisFunction);
+  return Method!(methodtemplates, timesTemplate!T, "times", 0).dispatcher(a, b);
+  //return Matrix!T.init;
+}
+
+Method!(methodtemplates, timesTemplate!T, "times", 0)
+times(T)(MethodTag, Matrix!T a, Matrix!T b);
 
 template matrixMethods(T)
 {
@@ -41,29 +53,33 @@ template matrixMethods(T)
   @method DiagonalMatrix!T _times(T s, DiagonalMatrix!T m) { return new DiagonalMatrix!T; }
 }
 
-mixin(registerMethods("matrixMethods!double"));
-mixin(registerMethods("matrixMethods!int"));
+@method DenseMatrix!double _times(Matrix!double m1, Matrix!double m2)
+{
+  return new DenseMatrix!double;
+}
 
 void main()
 {
+
+  updateMethods;
   {
     Matrix!double m = new DenseMatrix!double();
     double s = 1;
-    assert(typeid(times(m, s)) == typeid(DenseMatrix!double));
-    assert(typeid(times(s, m)) == typeid(DenseMatrix!double));
+    // assert(typeid(times(m, s)) == typeid(DenseMatrix!double));
+    // assert(typeid(times(s, m)) == typeid(DenseMatrix!double));
+    assert(typeid(times(m, m)) == typeid(DenseMatrix!double));
   }
 
-  {
-    Matrix!double m = new DiagonalMatrix!double();
-    double s = 1;
-    assert(typeid(times(m, s)) == typeid(DiagonalMatrix!double));
-    assert(typeid(times(s, m)) == typeid(DiagonalMatrix!double));
-  }
+  // {
+  //   Matrix!double m = new DiagonalMatrix!double();
+  //   double s = 1;
+  //   assert(typeid(times(m, s)) == typeid(DiagonalMatrix!double));
+  //   assert(typeid(times(s, m)) == typeid(DiagonalMatrix!double));
+  // }
 
-  {
-    Matrix!int m = new DenseMatrix!int();
-    int s = 1;
-    assert(typeid(times(m, s)) == typeid(DenseMatrix!int));
-    assert(typeid(times(s, m)) == typeid(DenseMatrix!int));
-  }
+  //   Matrix!int m = new DenseMatrix!int();
+  //   int s = 1;
+  //   assert(typeid(times(m, s)) == typeid(DenseMatrix!int));
+  //   assert(typeid(times(s, m)) == typeid(DenseMatrix!int));
+  // }
 }

@@ -473,13 +473,16 @@ auto removeStorageClasses(rf.Parameter[] parameters)
   return parameters.map!(p => p.withStorageClasses([])).array;
 }
 
-struct Method(alias module_, string name, int index)
+alias Method(alias Module, string name, int index, Distinct...) = Method!(
+    Module, __traits(getOverloads, Module, name)[index],
+    name, index, Distinct);
+
+struct Method(alias module_, alias Declaration, string name, int index, Distinct...)
 {
   alias Module = module_;
   enum Name = name;
   enum Index = index;
 
-  alias Declaration = __traits(getOverloads, Module, Name)[Index];
   alias QualParams = std.traits.Parameters!Declaration;
   alias CallParams = staticMap!(UnqualType, QualParams);
   alias ReturnType = std.traits.ReturnType!Declaration;
@@ -573,12 +576,12 @@ struct Method(alias module_, string name, int index)
       ~ Editor.parameters)
     .mixture);
 
-  enum aliases = q{
+  enum aliases() = q{
     alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
     alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
   }.format(
-    Name, __traits(identifier, Module), Name, Index,
-    Name, __traits(identifier, Module), Name, Index);
+    Original.name, __traits(identifier, Module), Original.name, Index,
+    Original.name, __traits(identifier, Module), Original.name, Index);
 
   // ==========================================================================
   // Method Registration
@@ -588,6 +591,9 @@ struct Method(alias module_, string name, int index)
   __gshared genericNextPtr nextPtr(QualParams...) = null;
 
   static register() {
+    if (info.registered++ > 0)
+      return;
+
     info = Runtime.MethodInfo.init;
     info.name = Name;
 
@@ -616,6 +622,9 @@ struct Method(alias module_, string name, int index)
   }
 
   static unregister() {
+    if (--info.registered == 0)
+      return;
+
     debug(explain) {
       writefln("Unregistering %s", info);
     }
@@ -805,7 +814,7 @@ string registrationMixture(alias MODULE, alias moduleName)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (i, o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!(o)) {
-          mixture ~= openmethods.Method!(MODULE, m, i).aliases;
+          mixture ~= openmethods.Method!(MODULE, m, i).aliases!();
         }
       }
     }
@@ -831,7 +840,7 @@ mixin template registrar(alias MODULE, alias ModuleName)
       static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
         foreach (i, o; __traits(getOverloads, MODULE, m)) {
           static if (hasVirtualParameters!(o)) {
-            openmethods.Method!(MODULE, m, i).register;
+            //openmethods.Method!(MODULE, m, i).register;
           }
         }
       }
@@ -844,7 +853,7 @@ mixin template registrar(alias MODULE, alias ModuleName)
       static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
         foreach (i, o; __traits(getOverloads, MODULE, m)) {
           static if (hasVirtualParameters!(o)) {
-            openmethods.Method!(MODULE, m, i).unregister;
+            //openmethods.Method!(MODULE, m, i).unregister;
           }
         }
       }
@@ -880,6 +889,7 @@ mixin template registrar(alias MODULE, alias ModuleName)
             alias Method = typeof(
               mixin(specId!(m, o))(
                 openmethods.MethodTag.init, args));
+            Method.register;
             Method.specRegistrar!(o).register;
           }
         }
@@ -918,6 +928,7 @@ struct Runtime
 
   struct MethodInfo
   {
+    int registered;
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
