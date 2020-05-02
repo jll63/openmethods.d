@@ -473,21 +473,27 @@ auto removeStorageClasses(rf.Parameter[] parameters)
   return parameters.map!(p => p.withStorageClasses([])).array;
 }
 
-alias Method(alias Module, string name, int index, Distinct...) = Method!(
-    Module, __traits(getOverloads, Module, name)[index],
-    name, index, Distinct);
-
-struct Method(alias module_, alias Declaration, string name, int index, Distinct...)
+class Method(
+  alias Module, string name, int index) : MethodBase!(
+    __traits(getOverloads, Module, name)[index], name)
 {
-  alias Module = module_;
+  enum aliases = q{
+    alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
+    alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
+  }.format(
+    name, __traits(identifier, Module), name, index,
+    name, __traits(identifier, Module), name, index);
+}
+
+class MethodBase(alias Declaration, string name)
+{
   enum Name = name;
-  enum Index = index;
 
   alias QualParams = std.traits.Parameters!Declaration;
   alias CallParams = staticMap!(UnqualType, QualParams);
   alias ReturnType = std.traits.ReturnType!Declaration;
   alias Word =  Runtime.Word;
-  alias TheMethod = Method;
+  alias TheMethod = MethodBase;
 
   // ==========================================================================
   // Meta-programming
@@ -576,13 +582,6 @@ struct Method(alias module_, alias Declaration, string name, int index, Distinct
       ~ Editor.parameters)
     .mixture);
 
-  enum aliases() = q{
-    alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
-    alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
-  }.format(
-    Original.name, __traits(identifier, Module), Original.name, Index,
-    Original.name, __traits(identifier, Module), Original.name, Index);
-
   // ==========================================================================
   // Method Registration
 
@@ -591,14 +590,15 @@ struct Method(alias module_, alias Declaration, string name, int index, Distinct
   __gshared genericNextPtr nextPtr(QualParams...) = null;
 
   static register() {
-    if (info.registered++ > 0)
+    if (info.registered > 0)
       return;
 
-    info = Runtime.MethodInfo.init;
+    ++info.registered;
+
     info.name = Name;
 
     debug(explain) {
-      writefln("registering method %s", info);
+      writefln("Registering method %s - %s", info, TheMethod.stringof);
     }
 
     static if (Mptr == MptrInDeallocator) {
@@ -735,15 +735,15 @@ struct Method(alias module_, alias Declaration, string name, int index, Distinct
       debug(traceCalls) {
         tracef("%s %s", mptr, Method.info.slotStride.i);
       }
-      auto pf = mptr[Method.info.slotStride.i].p;
+      auto pf = mptr[MethodBase.info.slotStride.i].p;
     } else {
-      assert(Method.info.slotStride.pw);
+      assert(MethodBase.info.slotStride.pw);
       debug(traceCalls) {
         trace("\n  ", VP[0].stringof, ":");
       }
 
       const (Word)* mtbl = getMptr(args[0]);
-      auto slotStride = Method.info.slotStride.pw;
+      auto slotStride = MethodBase.info.slotStride.pw;
       auto slot = slotStride++.i;
       auto dt = cast(const(Word)*) mtbl[slot].p;
       debug(traceCalls) {
@@ -814,7 +814,7 @@ string registrationMixture(alias MODULE, alias moduleName)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (i, o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!(o)) {
-          mixture ~= openmethods.Method!(MODULE, m, i).aliases!();
+          mixture ~= openmethods.Method!(MODULE, m, i).aliases;
         }
       }
     }
