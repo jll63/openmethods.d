@@ -331,13 +331,14 @@ mixin template registerClasses(Classes...) {
 Runtime.Metrics updateMethods()
 {
   Runtime rt;
+  rt.reset();
   return rt.update();
 }
 
-void unregisterMethods()
+void resetMethods()
 {
   Runtime rt;
-  rt.unregister;
+  rt.reset;
 }
 
 shared static this()
@@ -411,7 +412,6 @@ version (GNU) {
 
 debug (explain) {
   import std.stdio;
-
   void trace(T...)(T args) nothrow
   {
     try {
@@ -440,19 +440,12 @@ debug (explain) {
 // ----------------------------------------------------------------------------
 // Meta-programming helpers
 
-private enum IsVirtual(T) = false;
-private enum IsVirtual(T : virtual!U, U) = true;
 private alias UnqualType(T) = T;
 private alias UnqualType(T : virtual!U, U) = U;
 
 private enum IsCovariant(T) = false;
 private enum IsCovariant(T : covariant!U, U) = true;
 private alias UnqualType(T : covariant!U, U) = U;
-
-private template Format(alias F, A...)
-{
-  enum Format = format!F(A);
-}
 
 // ============================================================================
 // Method
@@ -462,30 +455,50 @@ struct MethodTag { }
 enum MptrInDeallocator = "deallocator";
 enum MptrViaHash = "hash";
 
-auto makeCallParams(rf.Parameter[] parameters)
+private auto makeCallParams(rf.Parameter[] parameters)
 {
   return parameters.length.iota.map!(
     i => parameters[i].withType("CallParams[%d]".format(i))).array;
 }
 
-auto removeStorageClasses(rf.Parameter[] parameters)
+private auto removeStorageClasses(rf.Parameter[] parameters)
 {
   return parameters.map!(p => p.withStorageClasses([])).array;
 }
 
-class Method(
-  alias Module, string name, int index) : MethodBase!(
-    __traits(getOverloads, Module, name)[index], name)
+template isVirtual(alias Fun, uint i)
 {
-  enum aliases = q{
-    alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
-    alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
-  }.format(
-    name, __traits(identifier, Module), name, index,
-    name, __traits(identifier, Module), name, index);
+  static if (is(FunctionTypeOf!(Fun) parameters == __parameters)) {
+    alias p = parameters[i..i+1];
+    static if (isInstanceOf!(virtual, p)) {
+      enum isVirtual = true;
+    } else static if (__traits(compiles, __traits(getAttributes, p))) {
+      static foreach (a; __traits(getAttributes, p)) {
+        static if (__traits(isSame, a, virtual)) {
+          enum isVirtual = true;
+        }
+      }
+    }
+  }
+
+  static if (!__traits(compiles, { auto b = isVirtual; })) {
+    enum isVirtual = false;
+  }
 }
 
-class MethodBase(alias Declaration, string name)
+class Method(
+  alias Module, string name, int index) : Method!(
+    __traits(getOverloads, Module, name)[index], name)
+{
+  enum methodMixture = `alias %s = openmethods.Method!(%s, "%s", %d)`.format(
+    name, __traits(identifier, Module), name, index);
+  enum aliases = q{
+    %s.dispatcher;
+    %s.discriminator;
+  }.format(methodMixture, methodMixture);
+}
+
+class Method(alias Declaration, string name)
 {
   enum Name = name;
 
@@ -493,7 +506,8 @@ class MethodBase(alias Declaration, string name)
   alias CallParams = staticMap!(UnqualType, QualParams);
   alias ReturnType = std.traits.ReturnType!Declaration;
   alias Word =  Runtime.Word;
-  alias TheMethod = MethodBase;
+  alias TheMethod = Method;
+  enum Arity = QualParams.length;
 
   // ==========================================================================
   // Meta-programming
@@ -505,24 +519,21 @@ class MethodBase(alias Declaration, string name)
     .withReturnType("ReturnType") // not really needed but helps debugging
     .withParameters(makeCallParams(Original.parameters));
 
-  static if (hasUDA!(Declaration, mptr)) {
-    static assert(getUDAs!(Declaration, mptr).length == 1, "only one @mptr allowed");
-    enum Mptr = getUDAs!(Declaration, mptr)[0].index;
-  } else {
-    enum Mptr = "deallocator";
-  }
+  enum Mptr = "deallocator";
 
-  enum isVirtualPosition(size_t I) = IsVirtual!(QualParams[I]);
+  alias isVirtual(uint i) = .isVirtual!(Declaration, i);
+
   enum virtualPositions = Filter!(
-    isVirtualPosition, aliasSeqOf!(QualParams.length.iota));
+    isVirtual, aliasSeqOf!(Arity.iota));
 
-  enum virtualArgListCode = [
-    staticMap!(ApplyLeft!(Format, "_%d"), virtualPositions)
-  ].join(", ");
+  enum argumentMixture(uint i) = Editor.argumentMixtureArray[i];
+
+  enum virtualArgListCode =
+    [staticMap!(argumentMixture, virtualPositions)].join(", ");
 
   static template castArgCode(QualParam, size_t i)
   {
-    static if (IsVirtual!QualParam) {
+    static if (isVirtual!i) {
       static if (is(UnqualType!QualParam == interface)) {
         enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
       } else {
@@ -610,9 +621,8 @@ class MethodBase(alias Declaration, string name)
     info.ambiguousCallError = &ambiguousCallError;
     info.notImplementedError = &notImplementedError;
 
-    foreach (QP; QualParams) {
-      int i = 0;
-      static if (IsVirtual!QP) {
+    foreach (i, QP; QualParams) {
+      static if (isVirtual!(i)) {
         info.vp ~= UnqualType!(QP).classinfo;
       }
     }
@@ -621,12 +631,9 @@ class MethodBase(alias Declaration, string name)
     Runtime.needUpdate = true;
   }
 
-  static unregister() {
-    if (--info.registered == 0)
-      return;
-
+  static reset() {
     debug(explain) {
-      writefln("Unregistering %s", info);
+      writefln("resetting %s", info);
     }
 
     info = Runtime.MethodInfo.init;
@@ -657,17 +664,6 @@ class MethodBase(alias Declaration, string name)
 
       TheMethod.info.specInfos ~= &si;
       openmethods.Runtime.needUpdate = true;
-    }
-
-    void unregister()
-    {
-      debug(explain) {
-        tracefln(
-          "Unregistering override %s%s, pf = %s",
-          TheMethod.Name, SpecParams.stringof, &wrapper);
-      }
-      si = openmethods.Runtime.SpecInfo.init;
-      Runtime.needUpdate = true;
     }
   }
 
@@ -735,15 +731,15 @@ class MethodBase(alias Declaration, string name)
       debug(traceCalls) {
         tracef("%s %s", mptr, Method.info.slotStride.i);
       }
-      auto pf = mptr[MethodBase.info.slotStride.i].p;
+      auto pf = mptr[Method.info.slotStride.i].p;
     } else {
-      assert(MethodBase.info.slotStride.pw);
+      assert(Method.info.slotStride.pw);
       debug(traceCalls) {
         trace("\n  ", VP[0].stringof, ":");
       }
 
       const (Word)* mtbl = getMptr(args[0]);
-      auto slotStride = MethodBase.info.slotStride.pw;
+      auto slotStride = Method.info.slotStride.pw;
       auto slot = slotStride++.i;
       auto dt = cast(const(Word)*) mtbl[slot].p;
       debug(traceCalls) {
@@ -787,14 +783,15 @@ class MethodBase(alias Declaration, string name)
 
 interface Registrar
 {
+  void reset();
   void registerMethods();
   void registerSpecs();
-  void unregisterSpecs();
-  void unregisterMethods();
 }
 
 enum hasVirtualParameters(alias F) =
-  anySatisfy!(IsVirtual, std.traits.Parameters!F);
+  anySatisfy!(
+    ApplyLeft!(isVirtual, F),
+    aliasSeqOf!(arity!F.iota));
 
 unittest
 {
@@ -834,6 +831,22 @@ mixin template registrar(alias MODULE, alias ModuleName)
   import openmethods;
   import std.traits;
 
+  void reset()
+  {
+    debug(explain) {
+      tracefln("Resetting %s", ModuleName);
+    }
+    foreach (m; __traits(allMembers, MODULE)) {
+      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
+        foreach (i, o; __traits(getOverloads, MODULE, m)) {
+          static if (hasVirtualParameters!(o)) {
+            openmethods.Method!(MODULE, m, i).reset;
+          }
+        }
+      }
+    }
+  }
+
   void registerMethods()
   {
     foreach (m; __traits(allMembers, MODULE)) {
@@ -841,19 +854,6 @@ mixin template registrar(alias MODULE, alias ModuleName)
         foreach (i, o; __traits(getOverloads, MODULE, m)) {
           static if (hasVirtualParameters!(o)) {
             //openmethods.Method!(MODULE, m, i).register;
-          }
-        }
-      }
-    }
-  }
-
-  void unregisterMethods()
-  {
-    foreach (m; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-        foreach (i, o; __traits(getOverloads, MODULE, m)) {
-          static if (hasVirtualParameters!(o)) {
-            //openmethods.Method!(MODULE, m, i).unregister;
           }
         }
       }
@@ -891,22 +891,6 @@ mixin template registrar(alias MODULE, alias ModuleName)
                 openmethods.MethodTag.init, args));
             Method.register;
             Method.specRegistrar!(o).register;
-          }
-        }
-      }
-    }
-  }
-
-  void unregisterSpecs() {
-    foreach (m; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-        foreach (i, o; __traits(getOverloads, MODULE, m)) {
-          static if (hasUDA!(o, method)) {
-            Parameters!(o) args;
-            alias Method = typeof(
-              mixin(specId!(m, o))(
-                openmethods.MethodTag.init, args));
-            Method.specRegistrar!(o).unregister;
           }
         }
       }
@@ -1053,9 +1037,10 @@ struct Runtime
       return Metrics();
 
     foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      auto registrarClassName = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
       foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
+        if (c.name == registrarClassName) {
+          auto registrar = (cast(Registrar) c.create());
           (cast(Registrar) c.create()).registerMethods;
         }
       }
@@ -1130,24 +1115,10 @@ struct Runtime
     return metrics;
   }
 
-  void unregister()
+  void reset()
   {
-    foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
-      foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
-          (cast(Registrar) c.create()).unregisterSpecs;
-        }
-      }
-    }
-
-    foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
-      foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
-          (cast(Registrar) c.create()).unregisterMethods;
-        }
-      }
+    foreach (methodInfo; Runtime.methodInfos) {
+      methodInfo.specInfos = [];
     }
   }
 
@@ -1487,8 +1458,15 @@ struct Runtime
         auto specs = best(applicable);
 
         if (specs.length > 1) {
+          debug(explain) {
+            writefln(
+              "        warning: ambiguous: %d applicable methods", specs.length);
+          }
           m.dispatchTable ~= m.info.ambiguousCallError;
         } else if (specs.empty) {
+          debug(explain) {
+            writeln("        warning: not implemented");
+          }
           m.dispatchTable ~= m.info.notImplementedError;
         } else {
           m.dispatchTable ~= specs[0].info.pf;

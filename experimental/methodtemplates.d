@@ -16,6 +16,8 @@
 import openmethods;
 mixin(registerMethods);
 
+import bolts.experimental.refraction;
+
 class Matrix(T) {}
 class DenseMatrix(T) : Matrix!(T) {}
 class DiagonalMatrix(T) : Matrix!(T) {}
@@ -33,24 +35,24 @@ import std.traits;
 
 Matrix!T timesTemplate(T)(virtual!(Matrix!T), virtual!(Matrix!T));
 
-Matrix!T times(T)(lazy Matrix!T a, lazy Matrix!T b)
+Matrix!T times(T)(lazy Matrix!T a, @virtual lazy Matrix!T b)
 {
   // alias thisFunction = methodtemplates.times!double;
   // pragma(msg, "alias thisFunction = ", __FUNCTION__, ";");
   //pragma(msg, Parameters!thisFunction);
-  return Method!(methodtemplates, timesTemplate!T, "times", 0).dispatcher(a, b);
+
+  enum Fun = refract!(typeof(&times), "times");
+  //pragma(msg, name, Parameters!(typeof(&foo)));
   //return Matrix!T.init;
+  return MethodBase!(
+    Matrix!T function(lazy virtual!(Matrix!T), lazy virtual!(Matrix!T)), "times")
+    .dispatcher(a, b);
 }
 
-Method!(methodtemplates, timesTemplate!T, "times", 0)
-times(T)(MethodTag, Matrix!T a, Matrix!T b);
-
-template matrixMethods(T)
+auto times(T)(MethodTag, Matrix!T a, Matrix!T b)
 {
-  @method DenseMatrix!T _times(Matrix!T m, T s) { return new DenseMatrix!T; }
-  @method DenseMatrix!T _times(T s, Matrix!T m) { return new DenseMatrix!T; }
-  @method DiagonalMatrix!T _times(DiagonalMatrix!T m, T s) { return new DiagonalMatrix!T; }
-  @method DiagonalMatrix!T _times(T s, DiagonalMatrix!T m) { return new DiagonalMatrix!T; }
+  return MethodBase!(
+    Matrix!T function(lazy virtual!(Matrix!T), lazy virtual!(Matrix!T)), "times").init;
 }
 
 @method DenseMatrix!double _times(Matrix!double m1, Matrix!double m2)
@@ -60,7 +62,6 @@ template matrixMethods(T)
 
 void main()
 {
-
   updateMethods;
   {
     Matrix!double m = new DenseMatrix!double();
