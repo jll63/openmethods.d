@@ -13,6 +13,11 @@
  }
  +/
 
+// -*- compile-command: "dub run --single --compiler ~/dev/d/dmd/generated/linux/release/64/dmd experimental/methodtemplates.d" -*-
+
+
+module methodtemplates;
+
 import openmethods;
 mixin(registerMethods);
 
@@ -31,29 +36,41 @@ template declareMatrixClasses(T)
 
 mixin declareMatrixClasses!double;
 
+import std.meta;
 import std.traits;
 
-Matrix!T timesTemplate(T)(virtual!(Matrix!T), virtual!(Matrix!T));
+void foo(virtual!Object);
+//pragma(msg, typeof(&foo));
 
-Matrix!T times(T)(lazy Matrix!T a, @virtual lazy Matrix!T b)
-{
-  // alias thisFunction = methodtemplates.times!double;
-  // pragma(msg, "alias thisFunction = ", __FUNCTION__, ";");
-  //pragma(msg, Parameters!thisFunction);
+Matrix!T times(T)(virtual!(Matrix!T), virtual!(Matrix!T));
 
-  enum Fun = refract!(typeof(&times), "times");
-  //pragma(msg, name, Parameters!(typeof(&foo)));
-  //return Matrix!T.init;
-  return MethodBase!(
-    Matrix!T function(lazy virtual!(Matrix!T), lazy virtual!(Matrix!T)), "times")
-    .dispatcher(a, b);
+template InstantiateTemplateAt(alias Module, string name, int index, T...) {
+    alias TemplateAt = __traits(getOverloads, Module, name, true)[index];
+    //pragma(msg, TemplateAt.stringof);
+    alias InstantiateTemplateAt = TemplateAt!(T);
 }
 
-auto times(T)(MethodTag, Matrix!T a, Matrix!T b)
+Matrix!T times(T)(Matrix!T a, Matrix!T b)
 {
-  return MethodBase!(
-    Matrix!T function(lazy virtual!(Matrix!T), lazy virtual!(Matrix!T)), "times").init;
+  return Method!(
+      InstantiateTemplateAt!(methodtemplates, "times", 0, T),
+      "times")
+      .dispatcher(a, b);
 }
+
+Method!(
+    InstantiateTemplateAt!(methodtemplates, "times", 0, T),
+    "times")
+times(T)(MethodTag, Matrix!T a, Matrix!T b);
+
+alias M = Method!(
+    InstantiateTemplateAt!(methodtemplates, "times", 0, int),
+    "times");
+
+// pragma(msg, Method!(typeof(&timesMM!double), "times").Original.mixture);
+// pragma(msg, Method!(typeof(&timesMM!double), "times").Declaration);
+
+//alias times(T) = methodLocator!(timesMM!T);
 
 @method DenseMatrix!double _times(Matrix!double m1, Matrix!double m2)
 {

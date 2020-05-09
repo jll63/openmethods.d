@@ -498,7 +498,7 @@ class Method(
   }.format(methodMixture, methodMixture);
 }
 
-class Method(alias Declaration, string name)
+class Method(alias Declaration, string name = __traits(identifier, Declaration))
 {
   enum Name = name;
 
@@ -515,7 +515,6 @@ class Method(alias Declaration, string name)
   enum Original = rf.refract!(Declaration, "Declaration");
 
   enum Editor = Original
-    .withStatic(true)
     .withReturnType("ReturnType") // not really needed but helps debugging
     .withParameters(makeCallParams(Original.parameters));
 
@@ -528,6 +527,7 @@ class Method(alias Declaration, string name)
 
   enum argumentMixture(uint i) = Editor.argumentMixtureArray[i];
 
+  //pragma(msg, Declaration);
   enum virtualArgListCode =
     [staticMap!(argumentMixture, virtualPositions)].join(", ");
 
@@ -565,6 +565,7 @@ class Method(alias Declaration, string name)
   }();
 
   enum Wrapper(alias Spec) = Editor
+    .withStatic(true)
     .withName("wrapper")
     .withBody("{ return Spec(%s); }".format(castArgListCode!Spec));
 
@@ -575,6 +576,7 @@ class Method(alias Declaration, string name)
   // dispatcher
   enum Dispatcher =
     Editor
+    .withStatic(true)
     .withName("dispatcher")
     .withBody(
       "{ return resolve(%s)(%s); }".format(
@@ -586,6 +588,7 @@ class Method(alias Declaration, string name)
   // the discriminator to locate the method.
   mixin(
     Editor
+    .withStatic(true)
     .withReturnType("TheMethod")
     .withName("discriminator")
     .withParameters(
@@ -776,6 +779,13 @@ class Method(alias Declaration, string name)
 
     return cast(Spec) pf;
   }
+}
+
+alias methodDispatcher(alias Fun) = Method!(Fun).dispatcher;
+
+auto methodLocator(alias Fun, T...)(MethodTag, T args)
+{
+   return Method!(Fun).discriminator;
 }
 
 // ============================================================================
