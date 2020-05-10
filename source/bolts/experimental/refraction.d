@@ -42,7 +42,7 @@ template ParameterAttribute(alias F, int i, int j)
 
 */
 
-Function refract(alias fun, string localSymbol)()
+immutable(Function) refract(alias fun, string localSymbol)()
   if (is(typeof(fun) == function))
 {
   Function model = {
@@ -59,6 +59,37 @@ Function refract(alias fun, string localSymbol)()
   };
 
   return model;
+}
+
+private enum isScope(alias T) = is(T == module) || is(T == struct)
+  || is(T == class) || is(T == interface);
+
+immutable(Function) refract(
+  alias Scope, string localSymbol, string name, uint index)()
+  if (isScope!Scope)
+{
+  return refract!(
+    __traits(getOverloads, Scope, name)[index],
+    `__traits(getOverloads, %s, "%s")[%d]`.format(localSymbol, name, index))
+    .setIndex(index);
+}
+
+private enum True(T...) = true;
+
+immutable(Function)[] refract(alias Scope, string localSymbol, alias Predicate = True)()
+  if (isScope!Scope)
+{
+  Function[] functions;
+
+  static foreach (member; __traits(allMembers, Scope)) {
+    static foreach (index, fun; __traits(getOverloads, Scope, member)) {
+      static if (Predicate!fun) {
+        functions ~= refract!(Scope, localSymbol, member, index);
+      }
+    }
+  }
+
+  return functions;
 }
 
 ///
@@ -123,7 +154,27 @@ private enum isAggregate(T...) =
     A struct capturing all the properties of a function.
 */
 
-struct Function
+private mixin template replaceAttribute(string Name)
+{
+  alias Struct = typeof(this);
+  mixin(
+    "Struct copy = {",
+    {
+      string[] mixture;
+      foreach (member; __traits(allMembers, Struct)) {
+        if (__traits(getOverloads, Struct, member).length == 0) {
+          //pragma(msg, member);
+          mixture ~= member ~ ":" ~ (member == Name ? "value" : member);
+        }
+      }
+      return mixture.join(",\n");
+    }(),
+    "};"
+  );
+}
+
+
+immutable struct Function
 {
 
   /**
@@ -139,13 +190,13 @@ struct Function
   string name;
 
   /**
-     Set the function name.
+     Return a new Function object with the name attribute set to value.
   */
 
-  Function setName(string value)
+  immutable(Function) setName(string value)
   {
-    name = value;
-    return this;
+    mixin replaceAttribute!"name";
+    return copy;
   }
 
   ///
@@ -159,19 +210,40 @@ struct Function
   }
 
   /**
+     Index of function in a set of overloads. Valid only if Function represents
+     a function (not a function pointer), and was refracted from a module.
+   */
+
+  uint index;
+
+  /**
+     Return a new Function object with the index attribute set to value.
+  */
+
+  immutable(Function) setIndex(uint value)
+  {
+    mixin replaceAttribute!"index";
+    return copy;
+  }
+
+  /**
+     Return a string representing the parameter.
+   */
+
+  /**
      Return type. Initial value: `std.traits.ReturnType!fun`.
    */
 
   string returnType;
 
   /**
-     Set the return type.
+     Return a new Function object with the returnType attribute set to value.
   */
 
-  Function setReturnType(string value)
+  immutable(Function) setReturnType(string value)
   {
-    returnType = value;
-    return this;
+    mixin replaceAttribute!"returnType";
+    return copy;
   }
 
   ///
@@ -192,13 +264,13 @@ struct Function
   Parameter[] parameters;
 
   /**
-     Set the parameter list.
+     Return a new Function object with the parameters attribute set to value.
   */
 
-  Function setParameters(Parameter[] value)
+  immutable(Function) setParameters(immutable(Parameter)[] value)
   {
-    parameters = value;
-    return this;
+    mixin replaceAttribute!"parameters";
+    return copy;
   }
 
   ///
@@ -214,19 +286,34 @@ struct Function
   }
 
   /**
+     Return a new Function object with a parameter attribute containing the
+     same parameters, with new parameters inserted parameters at the specified
+     index.
+  */
+
+  Function insertParameters(uint index, immutable(Parameter)[] inserted...)
+  {
+    auto value = index == parameters.length ? parameters ~ inserted
+      : index == 0 ? inserted ~ parameters
+      : parameters[0..index] ~ inserted ~ parameters[index..$];
+    mixin replaceAttribute!"parameters";
+    return copy;
+  }
+
+  /**
      Function body. Initial value: `;`.
    */
 
   string body_;
 
   /**
-     Set the function body.
+     Return a new Function object with the body_ attribute set to value.
   */
 
-  Function setBody(string value)
+  immutable(Function) setBody(string value)
   {
-    body_ = value;
-    return this;
+    mixin replaceAttribute!"body_";
+    return copy;
   }
 
   ///
@@ -251,10 +338,10 @@ struct Function
      Set `attributes`. Return `this`.
    */
 
-  Function setAttributes(uint value)
+  immutable(Function) setAttributes(uint value)
   {
-    attributes = value;
-    return this;
+    mixin replaceAttribute!"attributes";
+    return copy;
   }
 
   ///
@@ -282,13 +369,13 @@ struct Function
   bool static_;
 
   /**
-     Set the `static_` attribute. Return `this`.
+     Return a new Function object with the static_ attribute set to value.
    */
 
-  Function setStatic(bool value)
+  immutable(Function) setStatic(bool value)
   {
-    static_ = value;
-    return this;
+    mixin replaceAttribute!"static_";
+    return copy;
   }
 
   ///
@@ -315,13 +402,13 @@ struct Function
   string[] udas;
 
   /**
-     Set the `udas` attribute. Return `this`.
+     Return a new Function object with the udas attribute set to value.
    */
 
-  Function setUdas(string[] value)
+  immutable(Function) setUdas(immutable(string)[] value)
   {
-    udas = value;
-    return this;
+    mixin replaceAttribute!"udas";
+    return copy;
   }
 
   ///
@@ -355,7 +442,7 @@ struct Function
       body_;
   }
 
-  const string[] parameterListMixtureArray()
+  string[] parameterListMixtureArray()
   {
     return map!(p => p.mixture)(parameters).array;
   }
@@ -364,7 +451,7 @@ struct Function
      Return the argument list as an array of strings.
    */
 
-  const const(string)[] argumentMixtureArray()
+  const(string)[] argumentMixtureArray()
   {
     return parameters.map!(p => p.name).array;
   }
@@ -380,7 +467,7 @@ struct Function
      Return the argument list as a string.
    */
 
-  const string argumentMixture()
+  string argumentMixture()
   {
     return argumentMixtureArray.join(", ");
   }
@@ -396,7 +483,7 @@ struct Function
      Return the attribute list as an array of strings.
    */
 
-  const string[] attributeMixtureArray()
+  string[] attributeMixtureArray()
   {
     with (FunctionAttribute)
     {
@@ -433,7 +520,7 @@ struct Function
      Return the attribute list as a string.
    */
 
-  const string attributeMixture()
+  string attributeMixture()
   {
     return attributeMixtureArray.join(" ");
   }
@@ -451,7 +538,7 @@ struct Function
     A struct capturing all the properties of a function parameter.
 */
 
-struct Parameter
+immutable struct Parameter
 {
   /**
      Parameter name. Initial value: `_i`, where `i` is the position of the
@@ -464,10 +551,10 @@ struct Parameter
      Set the parameter name.
   */
 
-  Parameter setName(string value)
+  immutable(Parameter) setName(string value)
   {
-    name = value;
-    return this;
+    mixin replaceAttribute!"name";
+    return copy;
   }
 
   /**
@@ -478,13 +565,13 @@ struct Parameter
   string type;
 
   /**
-     Set the parameter type.
+     Return a new Parameter object with the type attribute set to value.
   */
 
-  Parameter setType(string value)
+  immutable(Parameter) setType(string value)
   {
-    type = value;
-    return this;
+    mixin replaceAttribute!"type";
+    return copy;
   }
 
   /**
@@ -496,13 +583,13 @@ struct Parameter
   string[] storage;
 
   /**
-     Set the parameter storage classes.
+     Return a new Parameter object with the storage attribute set to value.
   */
 
-  Parameter setStorage(string[] value)
+  immutable(Parameter) setStorage(immutable(string)[] value)
   {
-    storage = value;
-    return this;
+    mixin replaceAttribute!"storage";
+    return copy;
   }
 
   /**
@@ -515,26 +602,22 @@ struct Parameter
   string[] udas;
 
   /**
-     Set the parameter udas.
+     Return a new Parameter object with the udas attribute set to value.
   */
 
-  Parameter setUdas(string[] value)
+  immutable(Parameter) setUdas(immutable(string)[] value)
   {
-    udas = value;
-    return this;
+    mixin replaceAttribute!"udas";
+    return copy;
   }
 
-  /**
-     Return a string representing the parameter.
-   */
-
-  const string mixture()
+  string mixture()
   {
     return join(udas ~ storage ~ [ type, name ], " ");
   }
 }
 
-Parameter refractParameter(alias Fun, string mixture, uint index)()
+immutable(Parameter) refractParameter(alias Fun, string mixture, uint index)()
 {
   static if (is(typeof(Fun) parameters == __parameters)) {
     alias parameter = parameters[index .. index + 1];
@@ -549,8 +632,8 @@ Parameter refractParameter(alias Fun, string mixture, uint index)()
 
     Parameter p =
       {
-      name: "_%d".format(index),
       type: `std.traits.Parameters!(%s)[%d]`.format(mixture, index),
+      name: "_%d".format(index),
       storage: [__traits(getParameterStorageClasses, Fun, index)],
       udas: udas,
       };
@@ -558,7 +641,7 @@ Parameter refractParameter(alias Fun, string mixture, uint index)()
   return p;
 }
 
-private Parameter[] refractParameterList(alias Fun, string mixture)()
+private immutable(Parameter)[] refractParameterList(alias Fun, string mixture)()
 {
   Parameter[] result;
   static if (is(typeof(Fun) parameters == __parameters)) {
