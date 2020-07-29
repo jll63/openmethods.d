@@ -273,7 +273,8 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
 
 auto next(alias F, T...)(T args) @trusted
 {
-  alias TheMethod = typeof(F(MethodTag.init, T.init));
+  T discriminatorArgs;
+  alias TheMethod = typeof(F(MethodTag.init, discriminatorArgs));
   alias Spec = TheMethod.ReturnType function(TheMethod.CallParams);
   return (cast(Spec) TheMethod.nextPtr!T)(args);
 }
@@ -572,7 +573,7 @@ struct Method(alias module_, string name, int index)
     .setName("discriminator")
     .setParameters(
       [ rf.Parameter().setType("openmethods.MethodTag") ]
-      ~ removeStorageClasses(Editor.parameters))
+      ~ Editor.parameters)
     .mixture);
 
   enum aliases = q{
@@ -878,9 +879,10 @@ mixin template registrar(alias MODULE, alias ModuleName)
             static assert(
               !hasVirtualParameters!(o),
               m ~ ": virtual! must not be used in method definitions");
+            Parameters!(o) args;
             alias Method = typeof(
               mixin(specId!(m, o))(
-                openmethods.MethodTag.init, Parameters!(o).init));
+                openmethods.MethodTag.init, args));
             Method.specRegistrar!(o).register;
           }
         }
@@ -893,9 +895,10 @@ mixin template registrar(alias MODULE, alias ModuleName)
       static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
         foreach (i, o; __traits(getOverloads, MODULE, m)) {
           static if (hasUDA!(o, method)) {
+            Parameters!(o) args;
             alias Method = typeof(
               mixin(specId!(m, o))(
-                openmethods.MethodTag.init, Parameters!(o).init));
+                openmethods.MethodTag.init, args));
             Method.specRegistrar!(o).unregister;
           }
         }
