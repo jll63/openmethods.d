@@ -465,12 +465,12 @@ enum MptrViaHash = "hash";
 auto makeCallParams(rf.Parameter[] parameters)
 {
   return parameters.length.iota.map!(
-    i => parameters[i].setType("CallParams[%d]".format(i))).array;
+    i => parameters[i].withType("CallParams[%d]".format(i))).array;
 }
 
 auto removeStorageClasses(rf.Parameter[] parameters)
 {
-  return parameters.map!(p => p.setStorage([])).array;
+  return parameters.map!(p => p.withStorageClasses([])).array;
 }
 
 struct Method(alias module_, string name, int index)
@@ -492,9 +492,9 @@ struct Method(alias module_, string name, int index)
   enum Original = rf.refract!(Declaration, "Declaration");
 
   enum Editor = Original
-    .setStatic(true)
-    .setReturnType("ReturnType") // not really needed but helps debugging
-    .setParameters(makeCallParams(Original.parameters));
+    .withStatic(true)
+    .withReturnType("ReturnType") // not really needed but helps debugging
+    .withParameters(makeCallParams(Original.parameters));
 
   static if (hasUDA!(Declaration, mptr)) {
     static assert(getUDAs!(Declaration, mptr).length == 1, "only one @mptr allowed");
@@ -545,19 +545,18 @@ struct Method(alias module_, string name, int index)
   }();
 
   enum Wrapper(alias Spec) = Editor
-    .setName("wrapper")
-    .setBody("{ return Spec(%s); }".format(castArgListCode!Spec));
+    .withName("wrapper")
+    .withBody("{ return Spec(%s); }".format(castArgListCode!Spec));
 
   mixin(
     "alias Spec = ",
-    Editor.setUdas([]).setName("function").mixture,
-    ";");
+    Editor.withUdas([]).withName("function").mixture);
 
   // dispatcher
   enum Dispatcher =
     Editor
-    .setName("dispatcher")
-    .setBody(
+    .withName("dispatcher")
+    .withBody(
       "{ return resolve(%s)(%s); }".format(
         virtualArgListCode, Editor.argumentMixture));
   mixin(Dispatcher.mixture);
@@ -567,10 +566,10 @@ struct Method(alias module_, string name, int index)
   // the discriminator to locate the method.
   mixin(
     Editor
-    .setReturnType("TheMethod")
-    .setName("discriminator")
-    .setParameters(
-      [ rf.Parameter().setType("openmethods.MethodTag") ]
+    .withReturnType("TheMethod")
+    .withName("discriminator")
+    .withParameters(
+      [ rf.Parameter().withType("openmethods.MethodTag") ]
       ~ Editor.parameters)
     .mixture);
 

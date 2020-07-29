@@ -35,6 +35,9 @@
 		}
 	],
 	"copyright": "Copyright © 2017-2020, Jean-Louis Leroy",
+	"dependencies": {
+		"bolts": "1.8.0"
+	},
 	"description": "fast, open multi-methods for D",
 	"importPaths": [
 		"source/"
@@ -55,5 +58,5 @@
 		"./benchmarks/runtimemetrics",
 		"./tests"
 	],
-	"targetType": "library",
+	"targetType": "library"
 }
