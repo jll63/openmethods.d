@@ -271,12 +271,10 @@ inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance
  ---
 +/
 
-auto next(alias F, T...)(T args) @trusted
+ref auto next(alias F, T...)(auto return ref scope T args) @trusted
 {
-  T discriminatorArgs;
-  alias TheMethod = typeof(F(MethodTag.init, discriminatorArgs));
-  alias Spec = TheMethod.ReturnType function(TheMethod.CallParams);
-  return (cast(Spec) TheMethod.nextPtr!T)(args);
+  alias TheMethod = typeof(F(MethodTag.init, args));
+  return (cast(TheMethod.Spec) TheMethod.nextPtr!T)(args);
 }
 
 /++ Used as a string mixin: register the method declarations and definitions in

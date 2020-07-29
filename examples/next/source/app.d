@@ -23,40 +23,37 @@ class StateInspector : Inspector
 {
 }
 
-void inspect(virtual!Vehicle, virtual!Inspector);
+void inspect(virtual!Vehicle, virtual!Inspector, ref int checks);
 
 @method
-void _inspect(Vehicle v, Inspector i)
+void _inspect(Vehicle v, Inspector i, ref int checks)
 {
   writeln("Inspect vehicle.");
+  ++checks;
 }
 
 @method
-void _inspect(Car v, Inspector i)
+void _inspect(Car v, Inspector i, ref int checks)
 {
-  next!inspect(v, i); // next calls the next most methodd method
+  next!inspect(v, i, checks); // next calls the next most methodd method
+  ++checks;
   writeln("Inspect seat belts.");
 }
 
 @method
-void _inspect(Car v, StateInspector i)
+void _inspect(Car v, StateInspector i, ref int checks)
 {
-  next!inspect(v, i);
+  next!inspect(v, i, checks);
+  ++checks;
   writeln("Check insurance.");
 }
 
 void main() {
-  version (unittest) {
-  } else {
-    Vehicle car = new Car;
-    Inspector inspector = new StateInspector;
-    inspect(car, inspector); // Inspect vehicle. Inspect seat belts. Check insurance.
-  }
+  int checks;
+  Vehicle car = new Car;
+  Inspector inspector = new StateInspector;
+  inspect(car, inspector, checks); // Inspect vehicle. Inspect seat belts. Check insurance.
+  assert(checks == 3);
 }
 
 mixin(registerMethods);
-
-unittest
-{
-
-}
