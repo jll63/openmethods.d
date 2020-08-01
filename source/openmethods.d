@@ -304,7 +304,6 @@ mixin template registerClasses(Classes...) {
         writefln("Registering class %s", C.stringof);
       }
       Runtime.additionalClasses ~= C.classinfo;
-      Runtime.needUpdate = true;
     }
   }
 
@@ -318,7 +317,6 @@ mixin template registerClasses(Classes...) {
       import std.algorithm, std.array;
       Runtime.additionalClasses =
         Runtime.additionalClasses.filter!(c => c != C.classinfo).array;
-      Runtime.needUpdate = true;
     }
   }
 }
@@ -334,20 +332,9 @@ Runtime.Metrics updateMethods()
   return rt.update();
 }
 
-void unregisterMethods()
-{
-  Runtime rt;
-  rt.unregister;
-}
-
 shared static this()
 {
   updateMethods;
-}
-
-bool needUpdateMethods()
-{
-  return Runtime.needUpdate;
 }
 
 /++
@@ -411,7 +398,6 @@ version (GNU) {
 
 debug (explain) {
   import std.stdio;
-
   void trace(T...)(T args) nothrow
   {
     try {
@@ -588,11 +574,11 @@ struct Method(alias module_, string name, int index)
   __gshared genericNextPtr nextPtr(QualParams...) = null;
 
   static register() {
-    info = Runtime.MethodInfo.init;
+    TheMethod.info = Runtime.MethodInfo.init;
     info.name = Name;
 
     debug(explain) {
-      writefln("registering method %s", info);
+      writefln("Registering method %s - %s", info, TheMethod.stringof);
     }
 
     static if (Mptr == MptrInDeallocator) {
@@ -612,16 +598,6 @@ struct Method(alias module_, string name, int index)
     }
 
     Runtime.methodInfos[&info] = &info;
-    Runtime.needUpdate = true;
-  }
-
-  static unregister() {
-    debug(explain) {
-      writefln("Unregistering %s", info);
-    }
-
-    info = Runtime.MethodInfo.init;
-    Runtime.needUpdate = true;
   }
 
   static template specRegistrar(alias Spec) {
@@ -647,18 +623,6 @@ struct Method(alias module_, string name, int index)
       si.nextPtr = cast(void**) &TheMethod.nextPtr!SpecParams;
 
       TheMethod.info.specInfos ~= &si;
-      openmethods.Runtime.needUpdate = true;
-    }
-
-    void unregister()
-    {
-      debug(explain) {
-        tracefln(
-          "Unregistering override %s%s, pf = %s",
-          TheMethod.Name, SpecParams.stringof, &wrapper);
-      }
-      si = openmethods.Runtime.SpecInfo.init;
-      Runtime.needUpdate = true;
     }
   }
 
@@ -780,8 +744,6 @@ interface Registrar
 {
   void registerMethods();
   void registerSpecs();
-  void unregisterSpecs();
-  void unregisterMethods();
 }
 
 enum hasVirtualParameters(alias F) =
@@ -838,19 +800,6 @@ mixin template registrar(alias MODULE, alias ModuleName)
     }
   }
 
-  void unregisterMethods()
-  {
-    foreach (m; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-        foreach (i, o; __traits(getOverloads, MODULE, m)) {
-          static if (hasVirtualParameters!(o)) {
-            openmethods.Method!(MODULE, m, i).unregister;
-          }
-        }
-      }
-    }
-  }
-
   enum isNamedSpec(alias spec) = is(
     typeof(getUDAs!(spec, method)[0]) == openmethods.method);
 
@@ -886,22 +835,6 @@ mixin template registrar(alias MODULE, alias ModuleName)
       }
     }
   }
-
-  void unregisterSpecs() {
-    foreach (m; __traits(allMembers, MODULE)) {
-      static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
-        foreach (i, o; __traits(getOverloads, MODULE, m)) {
-          static if (hasUDA!(o, method)) {
-            Parameters!(o) args;
-            alias Method = typeof(
-              mixin(specId!(m, o))(
-                openmethods.MethodTag.init, args));
-            Method.specRegistrar!(o).unregister;
-          }
-        }
-      }
-    }
-  }
 }
 
 // ============================================================================
@@ -918,6 +851,7 @@ struct Runtime
 
   struct MethodInfo
   {
+    int registered;
     string name;
     ClassInfo[] vp;
     SpecInfo*[] specInfos;
@@ -1025,7 +959,6 @@ struct Runtime
   __gshared Registry methodInfos;
   __gshared ClassInfo[] additionalClasses;
   __gshared Word[] gv; // Global Vector
-  __gshared needUpdate = true;
   __gshared ulong hashMult;
   __gshared uint hashShift, hashSize;
   __gshared uint methodsUsingDeallocator;
@@ -1038,22 +971,24 @@ struct Runtime
 
   Metrics update()
   {
-    if (!needUpdate)
-      return Metrics();
+    methodInfos.clear();
 
     foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      auto registrarClassName = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
       foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
+        if (c.name == registrarClassName) {
+          debug(explain) tracefln("Calling %s.registerMethods", registrarClassName);
+          auto registrar = (cast(Registrar) c.create());
           (cast(Registrar) c.create()).registerMethods;
         }
       }
     }
 
     foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
+      auto registrarClassName = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
       foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
+        if (c.name == registrarClassName) {
+          debug(explain) tracefln("Calling %s.registerSpecs", registrarClassName);
           (cast(Registrar) c.create()).registerSpecs;
         }
       }
@@ -1114,29 +1049,13 @@ struct Runtime
 
     installGlobalData();
 
-    needUpdate = false;
-
     return metrics;
   }
 
-  void unregister()
+  void reset()
   {
-    foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
-      foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
-          (cast(Registrar) c.create()).unregisterSpecs;
-        }
-      }
-    }
-
-    foreach (mod; ModuleInfo) {
-      auto registrar = mod.name ~ "." ~ "__OpenMethodsRegistrar__";
-      foreach (c; mod.localClasses) {
-        if (c.name == registrar) {
-          (cast(Registrar) c.create()).unregisterMethods;
-        }
-      }
+    foreach (methodInfo; Runtime.methodInfos) {
+      methodInfo.specInfos = [];
     }
   }
 
@@ -1476,8 +1395,15 @@ struct Runtime
         auto specs = best(applicable);
 
         if (specs.length > 1) {
+          debug(explain) {
+            writefln(
+              "        warning: ambiguous: %d applicable methods", specs.length);
+          }
           m.dispatchTable ~= m.info.ambiguousCallError;
         } else if (specs.empty) {
+          debug(explain) {
+            writeln("        warning: not implemented");
+          }
           m.dispatchTable ~= m.info.notImplementedError;
         } else {
           m.dispatchTable ~= specs[0].info.pf;
