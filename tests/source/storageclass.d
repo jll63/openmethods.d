@@ -28,17 +28,17 @@ void _kick(Cat, out string noise)
   noise = "meow";
 }
 
-ref string pet(virtual!Animal, ref string noise);
+ref string pet(virtual!Animal, return ref string noise);
 
 @method
-ref string _pet(Dog, ref string noise)
+ref string _pet(Dog, return ref string noise)
 {
   noise = "woof";
   return noise;
 }
 
 @method("pet")
-ref string petCat(Cat, ref string noise)
+ref string petCat(Cat, return ref string noise)
 {
   noise = "purr";
   return noise;
