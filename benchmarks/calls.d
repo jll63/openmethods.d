@@ -93,6 +93,14 @@ void pit(string base, string target)(string label1 = base, string label2 = targe
   StopWatch sw;
   sw.start();
 
+  auto peek() {
+    version (GNU) {
+      return sw.peek.nsecs;
+    } else {
+      return sw.peek;
+    }
+  }
+
   if (base !in time) {
     mixin(base ~ ";"); // warm up
     sw.reset();
@@ -100,34 +108,27 @@ void pit(string base, string target)(string label1 = base, string label2 = targe
     for (ulong i = 0; i < n; i++) {
       mixin(base ~ ";");
     }
-
-    auto peek() {
-      version (GNU) {
-        return sw.peek.nsecs;
-      } else {
-        return sw.peek;
-      }
-    }
-
     time[base] = peek;
-    auto baseTime = time[base];
+  }
 
-    if (target !in time) {
-      mixin(target ~ ";"); // warm up too
-      sw.reset();
+  auto baseTime = time[base];
 
-      for (ulong i = 0; i < n; i++) {
-        mixin(target ~ ";");
-      }
+  if (target !in time) {
+    mixin(target ~ ";"); // warm up too
+    sw.reset();
 
-      time[target] = peek;
+    for (ulong i = 0; i < n; i++) {
+      mixin(target ~ ";");
     }
 
-    auto targetTime = time[target];
-
-    writefln("%25s v %-25s %s%%",
-             label1, label2, 100 * (targetTime - baseTime) / baseTime);
+    time[target] = peek;
   }
+
+  auto targetTime = time[target];
+
+  writefln(
+    "%25s v %-25s %s%%",
+    label1, label2, 100 * (targetTime - baseTime) / baseTime);
 }
 
 
