@@ -20,3 +20,17 @@ unittest
   nonvirtual1(new Object, new Object, 1);
   nonvirtual2(1, new Object, new Object);
 }
+
+class Matrix {}
+class DenseMatrix : Matrix {}
+
+Matrix times(const virtual!(Matrix), lazy int);
+
+@method
+Matrix _times(const Matrix m, lazy int s) { return new DenseMatrix; }
+
+unittest {
+  int i = 0;
+  times(new Matrix(), i++);
+  assert(i == 0);
+}

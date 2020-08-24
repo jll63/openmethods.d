@@ -429,16 +429,18 @@ debug (explain) {
 private enum IsVirtual(T) = false;
 private enum IsVirtual(T : virtual!U, U) = true;
 private alias UnqualType(T) = T;
-private alias UnqualType(T : virtual!U, U) = U;
+private alias UnqualType(T : virtual!U, U) = CopyTypeQualifiers!(T, U);
 
 private enum IsCovariant(T) = false;
 private enum IsCovariant(T : covariant!U, U) = true;
-private alias UnqualType(T : covariant!U, U) = U;
+private alias UnqualType(T : covariant!U, U) = CopyTypeQualifiers!(T, U);
 
 private template Format(alias F, A...)
 {
   enum Format = format!F(A);
 }
+
+private enum isConst(T) = is(ConstOf!T == T);
 
 // ============================================================================
 // Method
@@ -497,25 +499,48 @@ struct Method(alias module_, string name, int index)
     staticMap!(ApplyLeft!(Format, "_%d"), virtualPositions)
   ].join(", ");
 
-  static template castArgCode(QualParam, size_t i)
-  {
-    static if (IsVirtual!QualParam) {
-      static if (is(UnqualType!QualParam == interface)) {
-        enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
+  template castClass(int param, To, alias Spec) {
+    static To castClass(From)(From from) {
+      debug {
+        return cast(To) from;
       } else {
-        enum castArgCode = "cast(SpecParams[%s]) cast(void*) _%d".format(i, i);
+        return cast(To) cast(void*) from;
       }
-    } else static if (IsCovariant!QualParam) {
-      static if (is(UnqualType!QualParam == class)) {
-        debug {
-          enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
-        } else {
-          enum castArgCode = "cast(SpecParams[%s]) cast(void*) _%d".format(i, i);
-        }
+    }
+  }
+
+  template castInterface(int param, To, alias Spec) {
+    static To castInterface(From)(From from) {
+      return cast(To) from;
+    }
+  }
+
+  static template castArgCode(size_t i, alias Spec)
+  {
+    alias QualParam = QualParams[i];
+    alias SpecParam = Parameters!Spec[i];
+
+    static assert(
+      is(CopyTypeQualifiers!(QualParam, SpecParam) == SpecParam),
+      "%s%s: specialization %s%s: incompatible type qualifiers".format(
+        __traits(identifier, Declaration), Parameters!Declaration.stringof,
+        __traits(identifier, Spec), Parameters!Spec.stringof));
+
+    static assert(
+      __traits(getParameterStorageClasses, Declaration, i).stringof ==
+      __traits(getParameterStorageClasses, Spec, i).stringof,
+      "%s%s: specialization %s%s: incompatible storage classes".format(
+        __traits(identifier, Declaration), Parameters!Declaration.stringof,
+        __traits(identifier, Spec), Parameters!Spec.stringof));
+
+    static if (IsVirtual!QualParam || IsCovariant!QualParam) {
+      static if (is(UnqualType!QualParam == interface)) {
+        enum castArgCode = "castInterface!(%d, SpecParams[%s], Spec)(_%d)".format(i, i, i);
       } else {
-        static assert(is(UnqualType!QualParam == interface),
-                      "covariant argument must be a class or an interface");
-        enum castArgCode = "cast(SpecParams[%s]) _%d".format(i, i);
+        static assert(
+          is(UnqualType!QualParam == class),
+          "virtual or covariant parameter must be a class or an interface");
+        enum castArgCode = "castClass!(%d, SpecParams[%s], Spec)(_%d)".format(i, i, i);
       }
     } else {
       enum castArgCode = "_%d".format(i);
@@ -525,7 +550,7 @@ struct Method(alias module_, string name, int index)
   enum castArgListCode(alias Spec) = {
     string[] casts;
     foreach (i, qp; QualParams) {
-      casts ~= castArgCode!(qp, i);
+      casts ~= castArgCode!(i, Spec);
     }
     return casts.join(", ");
   }();
@@ -547,9 +572,6 @@ struct Method(alias module_, string name, int index)
         virtualArgListCode, Editor.argumentMixture));
   mixin(Dispatcher.mixture);
 
-  // discriminator note that we do *not* carry parameter storage classes
-  // because we use CallParams[i].init to form an argument list when "calling"
-  // the discriminator to locate the method.
   mixin(
     Editor
     .withReturnType("TheMethod")
