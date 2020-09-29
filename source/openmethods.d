@@ -561,7 +561,7 @@ struct Method(alias module_, string name, int index)
 
   mixin(
     "alias Spec = ",
-    Editor.withUdas([]).withName("function").mixture);
+    Editor.withStatic(false).withUdas([]).withName("function").mixture);
 
   // dispatcher
   enum Dispatcher =
