@@ -651,7 +651,7 @@ struct Method(alias module_, string name, int index)
   // ==========================================================================
   // Exceptions
 
-  static ReturnType notImplementedError(QualParams...)
+  static ReturnType notImplementedError(/+ QualParams... +/)
   {
     import std.meta;
     errorHandler(new MethodError(MethodError.NotImplemented, &info));
@@ -660,7 +660,7 @@ struct Method(alias module_, string name, int index)
     }
   }
 
-  static ReturnType ambiguousCallError(QualParams...)
+  static ReturnType ambiguousCallError(/+ QualParams... +/)
   {
     errorHandler(new MethodError(MethodError.AmbiguousCall, &info));
     static if (!is(ReturnType == void)) {
