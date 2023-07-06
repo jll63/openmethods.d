@@ -461,9 +461,10 @@ auto removeStorageClasses(rf.Parameter[] parameters)
   return parameters.map!(p => p.withStorageClasses([])).array;
 }
 
-struct Method(alias module_, string name, int index)
+struct Method(string module_, string name, int index)
 {
-  alias Module = module_;
+  mixin("static import ", module_, ";");
+  alias Module = mixin(module_);
   enum Name = name;
   enum Index = index;
 
@@ -582,11 +583,11 @@ struct Method(alias module_, string name, int index)
     .mixture);
 
   enum aliases = q{
-    alias %s = openmethods.Method!(%s, "%s", %d).dispatcher;
-    alias %s = openmethods.Method!(%s, "%s", %d).discriminator;
+    alias %s = openmethods.Method!("%s", "%s", %d).dispatcher;
+    alias %s = openmethods.Method!("%s", "%s", %d).discriminator;
   }.format(
-    Name, __traits(identifier, Module), Name, Index,
-    Name, __traits(identifier, Module), Name, Index);
+    Name, module_, Name, Index,
+    Name, module_, Name, Index);
 
   // ==========================================================================
   // Method Registration
@@ -779,7 +780,7 @@ unittest
   static assert(!hasVirtualParameters!nonmeth);
 }
 
-string registrationMixture(alias MODULE, alias moduleName)()
+string registrationMixture(alias MODULE, string moduleName)()
 {
   import std.array;
 
@@ -789,7 +790,7 @@ string registrationMixture(alias MODULE, alias moduleName)()
     static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
       foreach (i, o; __traits(getOverloads, MODULE, m)) {
         static if (hasVirtualParameters!(o)) {
-          mixture ~= openmethods.Method!(MODULE, m, i).aliases;
+          mixture ~= openmethods.Method!(moduleName, m, i).aliases;
         }
       }
     }
@@ -804,7 +805,7 @@ string registrationMixture(alias MODULE, alias moduleName)()
   return join(mixture, "\n");
 }
 
-mixin template registrar(alias MODULE, alias ModuleName)
+mixin template registrar(alias MODULE, string ModuleName)
 {
   import openmethods;
   import std.traits;
@@ -815,7 +816,7 @@ mixin template registrar(alias MODULE, alias ModuleName)
       static if (is(typeof(__traits(getOverloads, MODULE, m)))) {
         foreach (i, o; __traits(getOverloads, MODULE, m)) {
           static if (hasVirtualParameters!(o)) {
-            openmethods.Method!(MODULE, m, i).register;
+            openmethods.Method!(ModuleName, m, i).register;
           }
         }
       }
