@@ -35,7 +35,6 @@
 	"dependencies": {
 		"openmethods": {
 			"path": "../../",
-			"version": ">=0.0.0"
 		}
 	},
 	"description": "test against large code base",

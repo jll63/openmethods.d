@@ -10,7 +10,9 @@
     "dflags": ["-mixin=mixins.txt"],
     "importPaths": ["../source", "source"],
     "dependencies": {
-		"openmethods": "*"
+		"openmethods": {
+			"path": "../",
+		}
 	},
     "buildTypes": {
         "x": {

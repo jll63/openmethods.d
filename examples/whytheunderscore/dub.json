@@ -36,7 +36,6 @@
 	"dependencies": {
 		"openmethods": {
 			"path": "../../",
-			"version": ">=0.0.0"
 		}
 	},
 	"description": "the reason for the underscore in front of method specializations",

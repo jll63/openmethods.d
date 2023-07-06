@@ -36,7 +36,6 @@
 	"dependencies": {
 		"openmethods": {
 			"path": "../../",
-			"version": ">=0.0.0"
 		}
 	},
 	"description": "example of a method with three virtual arguments",

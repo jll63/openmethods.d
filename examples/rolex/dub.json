@@ -36,7 +36,6 @@
 	"dependencies": {
 		"openmethods": {
 			"path": "../../",
-			"version": ">=0.0.0"
 		}
 	},
 	"description": "Role and Expense example from the yomm11 article on Code Project",
