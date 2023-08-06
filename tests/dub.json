@@ -7,25 +7,27 @@
 	"license": "Boost Software License 1.0",
 	"name": "tests",
 	"targetType": "library",
-    "dflags": ["-mixin=mixins.txt"],
-    "importPaths": ["../source", "source"],
-    "dependencies": {
-		"openmethods": "*"
+		"dflags": ["-mixin=mixins.txt"],
+		"importPaths": ["../source", "source"],
+		"dependencies": {
+		"openmethods": {
+			"path": "../",
+		}
 	},
-    "buildTypes": {
-        "x": {
-	        "debugVersions": ["explain"],
-	        "buildOptions": ["debugMode", "debugInfo", "unittests"],
-        },
-        "xtc": {
-	        "debugVersions": ["explain", "traceCalls"],
-	        "buildOptions": ["debugMode", "debugInfo", "unittests"],
-        },
-    },
-    "configurations": [
-        {
-            "name": "unittest",
-            "dflags": ["-mixin=mixins.txt"],
-        },
-    ]
+		"buildTypes": {
+				"x": {
+					"debugVersions": ["explain"],
+					"buildOptions": ["debugMode", "debugInfo", "unittests"],
+				},
+				"xtc": {
+					"debugVersions": ["explain", "traceCalls"],
+					"buildOptions": ["debugMode", "debugInfo", "unittests"],
+				},
+		},
+		"configurations": [
+				{
+						"name": "unittest",
+						"dflags": ["-mixin=mixins.txt"],
+				},
+		]
 }

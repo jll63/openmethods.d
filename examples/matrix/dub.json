@@ -36,7 +36,6 @@
 	"dependencies": {
 		"openmethods": {
 			"path": "../../",
-			"version": ">=0.0.0"
 		}
 	},
 	"description": "unary and binary matrix operations with two types of matrices",
