@@ -1,9 +1,35 @@
-out/
+mixins.txt
+
+# Build Directories
+[Bb]in
+
+# Dependency Folders
+[Ll]ib
+
+# Compiled Object Files
+*.o
+*.obj
+
+# Compiled Dynamic Libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static Libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# Code coverage
+*.lst
+
+# ===
+# DUB
+# ===
 .dub
 docs.json
 __dummy.html
-*.a
-*.o
-*.so
-*.obj
-__test__*__
+docs/
+build/
