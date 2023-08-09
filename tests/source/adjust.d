@@ -40,28 +40,28 @@ void* y(virtual!C);
 
 unittest
 {
-  {
-    X obj = new X;
-    assert(x(obj) == cast(void*) obj);
+	{
+		X obj = new X;
+		assert(x(obj) == cast(void*) obj);
 
-    A pa = obj;
-    assert(a(obj) == cast(void*) pa);
+		A pa = obj;
+		assert(a(obj) == cast(void*) pa);
 
-    B pb = obj;
-    assert(b(obj) == cast(void*) pb);
+		B pb = obj;
+		assert(b(obj) == cast(void*) pb);
 
-    C pc = obj;
-    assert(c(obj) == cast(void*) pc);
-  }
+		C pc = obj;
+		assert(c(obj) == cast(void*) pc);
+	}
 
-  {
-    Y obj = new Y;
-    assert(y(obj) == cast(void*) obj);
+	{
+		Y obj = new Y;
+		assert(y(obj) == cast(void*) obj);
 
-    C pc = obj;
-    assert(c(obj) == cast(void*) pc);
+		C pc = obj;
+		assert(c(obj) == cast(void*) pc);
 
-    D pd = obj;
-    assert(d(obj) == cast(void*) pc);
-  }
+		D pd = obj;
+		assert(d(obj) == cast(void*) pc);
+	}
 }

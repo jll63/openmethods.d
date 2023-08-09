@@ -13058,7 +13058,7 @@ class METACLASS_PARTSCurrencyEntryFieldPart_gen_ : METACLASS_PARTSFixedDecimalEn
 
 void main()
 {
-  Runtime rt;
-  rt.update;
-  writeln(rt.metrics);
+	Runtime rt;
+	rt.update;
+	writeln(rt.metrics);
 }

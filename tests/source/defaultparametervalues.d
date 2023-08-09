@@ -12,12 +12,12 @@ string kick(virtual!Animal, int times = 1);
 
 @method string _kick(Cat, int times)
 {
-  return join("meow!".repeat(times), " ");
+	return join("meow!".repeat(times), " ");
 }
 
 unittest
 {
-  assert(kick(new Cat) == "meow!");
-  assert(kick(new Cat, 3) == "meow! meow! meow!");
+	assert(kick(new Cat) == "meow!");
+	assert(kick(new Cat, 3) == "meow! meow! meow!");
 }
 }

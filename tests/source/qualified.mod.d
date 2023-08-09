@@ -10,5 +10,5 @@ void walkNode(virtual!Node);
 @method
 void _walkNode(Node node)
 {
-  // Dummy
+	// Dummy
 }

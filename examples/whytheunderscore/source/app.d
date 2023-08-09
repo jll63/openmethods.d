@@ -22,19 +22,19 @@ string kick(virtual!Animal);
 @method("kick")
 string kick(Dog x)
 {
-  return "bark";
+	return "bark";
 }
 
 @method("kick")
 string kick(Pitbull x)
 {
-  return next!kick(x) ~ " and bite";
+	return next!kick(x) ~ " and bite";
 }
 
 void main()
 {
-  Dog defangled = new Pitbull;
-  Animal hector = defangled;
-  writeln(kick(hector)); // call kick(Animal): bark and bite
-  writeln(kick(defangled)); // call kick(Dog): just bark
+	Dog defangled = new Pitbull;
+	Animal hector = defangled;
+	writeln(kick(hector)); // call kick(Animal): bark and bite
+	writeln(kick(defangled)); // call kick(Dog): just bark
 }

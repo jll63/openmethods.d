@@ -26,13 +26,13 @@ string species(virtual!Animal);
 @method
 string _species(Wolf)
 {
-  return "wolf";
+	return "wolf";
 }
 
 @method
 string _species(Cow)
 {
-  return "cow";
+	return "cow";
 }
 
 string meet(virtual!Animal, virtual!Animal);
@@ -40,5 +40,5 @@ string meet(virtual!Animal, virtual!Animal);
 @method
 string _meet(Animal, Animal)
 {
-  return "ignore";
+	return "ignore";
 }

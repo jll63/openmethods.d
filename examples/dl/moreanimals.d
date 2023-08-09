@@ -12,13 +12,13 @@ class Goat : Prey
 @method
 string _meet(Predator, Prey)
 {
-  return "chase";
+	return "chase";
 }
 
 @method
 string _meet(Prey, Predator)
 {
-  return "run";
+	return "run";
 }
 
 void mate(virtual!Animal, virtual!Animal);
@@ -30,5 +30,5 @@ void _mate(Animal, Animal)
 
 extern (C) Animal make(string species)
 {
-  return cast(Animal) Object.factory(species);
+	return cast(Animal) Object.factory(species);
 }

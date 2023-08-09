@@ -14,19 +14,19 @@ private string kick(openmethods.virtual!Animal);
 @method
 private string _kick(Dog x)
 {
-  return "bark";
+	return "bark";
 }
 
 @method
 private string _kick(Pitbull x)
 {
-  return openmethods.next!kick(x) ~ " and bite";
+	return openmethods.next!kick(x) ~ " and bite";
 }
 
 unittest
 {
-  import std.stdio;
-  Animal hector = new Pitbull, snoopy = new Dog;
-  assert(kick(snoopy) == "bark");
-  assert(kick(hector) == "bark and bite");
+	import std.stdio;
+	Animal hector = new Pitbull, snoopy = new Dog;
+	assert(kick(snoopy) == "bark");
+	assert(kick(hector) == "bark and bite");
 }

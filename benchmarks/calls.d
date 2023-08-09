@@ -13,7 +13,7 @@ mixin(registerMethods);
 
 interface BaseInterface
 {
-  void vfInterfaceToClass();
+	void vfInterfaceToClass();
 }
 
 interface DerivedInterface : BaseInterface
@@ -21,18 +21,18 @@ interface DerivedInterface : BaseInterface
 }
 
 class BaseClass : DerivedInterface {
-  void vfInterfaceToClass()  { }
-  void vfClassToClass()  { }
-  void ddClassToClass(BaseClass x) { }
-  void ddClassToClass(DerivedClass x) { }
+	void vfInterfaceToClass()  { }
+	void vfClassToClass()  { }
+	void ddClassToClass(BaseClass x) { }
+	void ddClassToClass(DerivedClass x) { }
 }
 
 class DerivedClass : BaseClass {
-  override {
-    override void vfClassToClass() { }
-    void ddClassToClass(BaseClass x) { x.ddClassToClass(this); }
-    void ddClassToClass(DerivedClass x) { }
-  }
+	override {
+		override void vfClassToClass() { }
+		void ddClassToClass(BaseClass x) { x.ddClassToClass(this); }
+		void ddClassToClass(DerivedClass x) { }
+	}
 }
 
 BaseInterface intf;
@@ -67,107 +67,107 @@ void _classToClass2(DerivedClass x, DerivedClass y)
 }
 
 version (GNU) {} else {
-  @mptr("hash") void hInterfaceToClass1(virtual!BaseInterface);
+	@mptr("hash") void hInterfaceToClass1(virtual!BaseInterface);
 
-  @method void _hInterfaceToClass1(DerivedClass)
-  {
-  }
+	@method void _hInterfaceToClass1(DerivedClass)
+	{
+	}
 
-  @mptr("hash") void hClassToClass1(virtual!BaseClass);
+	@mptr("hash") void hClassToClass1(virtual!BaseClass);
 
-  @method void _hClassToClass1(DerivedClass)
-  {
-  }
+	@method void _hClassToClass1(DerivedClass)
+	{
+	}
 }
 
 version (GNU) {
-  import std.datetime;
-  ulong[string] time;
+	import std.datetime;
+	ulong[string] time;
 } else {
-  import std.datetime.stopwatch;
-  Duration[string] time;
+	import std.datetime.stopwatch;
+	Duration[string] time;
 }
 
 void pit(string base, string target)(string label1 = base, string label2 = target, ulong n = 1_000_000_000)
 {
-  StopWatch sw;
-  sw.start();
+	StopWatch sw;
+	sw.start();
 
-  auto peek() {
-    version (GNU) {
-      return sw.peek.nsecs;
-    } else {
-      return sw.peek;
-    }
-  }
+	auto peek() {
+		version (GNU) {
+			return sw.peek.nsecs;
+		} else {
+			return sw.peek;
+		}
+	}
 
-  if (base !in time) {
-    mixin(base ~ ";"); // warm up
-    sw.reset();
+	if (base !in time) {
+		mixin(base ~ ";"); // warm up
+		sw.reset();
 
-    for (ulong i = 0; i < n; i++) {
-      mixin(base ~ ";");
-    }
-    time[base] = peek;
-  }
+		for (ulong i = 0; i < n; i++) {
+			mixin(base ~ ";");
+		}
+		time[base] = peek;
+	}
 
-  auto baseTime = time[base];
+	auto baseTime = time[base];
 
-  if (target !in time) {
-    mixin(target ~ ";"); // warm up too
-    sw.reset();
+	if (target !in time) {
+		mixin(target ~ ";"); // warm up too
+		sw.reset();
 
-    for (ulong i = 0; i < n; i++) {
-      mixin(target ~ ";");
-    }
+		for (ulong i = 0; i < n; i++) {
+			mixin(target ~ ";");
+		}
 
-    time[target] = peek;
-  }
+		time[target] = peek;
+	}
 
-  auto targetTime = time[target];
+	auto targetTime = time[target];
 
-  writefln(
-    "%25s v %-25s %s%%",
-    label1, label2, 100 * (targetTime - baseTime) / baseTime);
+	writefln(
+		"%25s v %-25s %s%%",
+		label1, label2, 100 * (targetTime - baseTime) / baseTime);
 }
 
 
 void writesec(T...)(T arg)
 {
-  writeln("\n", arg);
-  writeln("-".replicate(77));
+	writeln("\n", arg);
+	writeln("-".replicate(77));
 }
 
 void main()
 {
-  obj = new DerivedClass;
-  intf = obj;
+	obj = new DerivedClass;
+	intf = obj;
 
-  version(DigitalMars) {
-    writeln("Using dmd...");
-  }
+	version(DigitalMars) {
+		writeln("Using dmd...");
+	}
 
-  version(LDC) {
-    writeln("Using ldc2...");
-  }
+	version(LDC) {
+		writeln("Using ldc2...");
+	}
 
-  version(GNU) {
-    writeln("Using gdc...");
-  }
+	version(GNU) {
+		writeln("Using gdc...");
+	}
 
-  writesec(`virtual functions vs methods - mptr("deallocator")`);
+	writesec(`virtual functions vs methods - mptr("deallocator")`);
 
-  pit!("obj.vfClassToClass()", "classToClass1(obj)");
-  pit!("intf.vfInterfaceToClass()", "interfaceToClass(intf)");
-  pit!("obj.ddClassToClass(obj)", "classToClass2(obj, obj)");
+	pit!("obj.vfClassToClass()", "classToClass1(obj)");
+	pit!("intf.vfInterfaceToClass()", "interfaceToClass(intf)");
+	pit!("obj.ddClassToClass(obj)", "classToClass2(obj, obj)");
 
-  version (GNU) {} else {
-    writesec(`using mptr("hash")`);
-    pit!("classToClass1(obj)", "hClassToClass1(obj)");
-    pit!("interfaceToClass(intf)", "hInterfaceToClass1(intf)");
-    pit!("obj.vfClassToClass()", "hClassToClass1(obj)");
-    pit!("intf.vfInterfaceToClass()", "hInterfaceToClass1(intf)");
-  }
+	version (GNU) {} else {
+		writesec(`using mptr("hash")`);
+		pit!("classToClass1(obj)", "hClassToClass1(obj)");
+		pit!("interfaceToClass(intf)", "hInterfaceToClass1(intf)");
+		pit!("obj.vfClassToClass()", "hClassToClass1(obj)");
+		pit!("intf.vfInterfaceToClass()", "hInterfaceToClass1(intf)");
+	}
 }
 
 /*

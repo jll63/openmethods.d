@@ -11,20 +11,20 @@ string kick(virtual!Animal);
 @method
 string _kick(Dog x) //
 {
-  return "bark";
+	return "bark";
 }
 
 @method
 string _kick(Pitbull x)
 {
-  return next!kick(x) ~ " and bite";
+	return next!kick(x) ~ " and bite";
 }
 
 unittest
 {
-  import std.stdio;
+	import std.stdio;
 
-  Animal hector = new Pitbull, snoopy = new Dog;
-  assert(kick(snoopy) == "bark");
-  assert(kick(hector) == "bark and bite");
+	Animal hector = new Pitbull, snoopy = new Dog;
+	assert(kick(snoopy) == "bark");
+	assert(kick(hector) == "bark and bite");
 }

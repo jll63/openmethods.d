@@ -4702,7 +4702,7 @@ class METACLASS_ThreeStateButton_gen_ : METACLASS_CheckBox_gen_ {}
 
 void main()
 {
-  Runtime rt;
-  rt.update;
-  writeln(rt.metrics);
+	Runtime rt;
+	rt.update;
+	writeln(rt.metrics);
 }

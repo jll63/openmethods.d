@@ -13,27 +13,27 @@ void plus(virtual!Matrix, virtual!Matrix);
 
 unittest
 {
-  static string methodId;
+	static string methodId;
 
-  auto oldErrorHandler =
-    setMethodErrorHandler(function void(MethodError error) {
-        assert(error.reason == MethodError.NotImplemented);
-        methodId = error.functionName;
-      });
+	auto oldErrorHandler =
+		setMethodErrorHandler(function void(MethodError error) {
+				assert(error.reason == MethodError.NotImplemented);
+				methodId = error.functionName;
+			});
 
-  scope (exit) {
-    setMethodErrorHandler(oldErrorHandler);
-  }
+	scope (exit) {
+		setMethodErrorHandler(oldErrorHandler);
+	}
 
-  plus(new Matrix, new Matrix);
-  assert(methodId == "plus");
+	plus(new Matrix, new Matrix);
+	assert(methodId == "plus");
 
-  methodId = "";
-  setMethodErrorHandler(function void(MethodError error) {
-      assert(error.reason == MethodError.AmbiguousCall);
-      methodId = error.functionName;
-    });
+	methodId = "";
+	setMethodErrorHandler(function void(MethodError error) {
+			assert(error.reason == MethodError.AmbiguousCall);
+			methodId = error.functionName;
+		});
 
-  plus(new DiagonalMatrix, new DiagonalMatrix);
-  assert(methodId == "plus");
+	plus(new DiagonalMatrix, new DiagonalMatrix);
+	assert(methodId == "plus");
 }
