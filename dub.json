@@ -1,62 +1,44 @@
 {
+	"name": "openmethods",
+	"description": "Fast, open multi-methods for D",
 	"authors": [
-		"Jean-Louis Leroy"
+		"Jean-Louis Leroy",
+		"Ahmet Sait",
+	],
+	"copyright": "Copyright © 2017-2020, Jean-Louis Leroy",
+	"license": "BSL-1.0",
+	"targetType": "library",
+	"targetPath": "bin/$BUILD_TYPE-$PLATFORM-$ARCH",
+	"dependencies": {
+		"bolts": "1.8.1",
+	},
+	"importPaths": [
+		"source",
+	],
+	"sourcePaths": [
+		"source",
 	],
 	"buildTypes": {
 		"x": {
 			"buildOptions": [
 				"debugMode",
 				"debugInfo",
-				"unittests"
+				"unittests",
 			],
 			"debugVersions": [
-				"explain"
-			]
+				"explain",
+			],
 		},
 		"xtc": {
 			"buildOptions": [
 				"debugMode",
 				"debugInfo",
-				"unittests"
+				"unittests",
 			],
 			"debugVersions": [
 				"explain",
-				"traceCalls"
-			]
-		}
-	},
-	"configurations": [
-		{
-			"dflags": [
-				"-mixin=mixins.txt"
+				"traceCalls",
 			],
-			"name": "unittest",
-			"targetType": "library"
-		}
-	],
-	"copyright": "Copyright © 2017-2020, Jean-Louis Leroy",
-	"dependencies": {
-		"bolts": "1.8.1"
+		},
 	},
-	"description": "fast, open multi-methods for D",
-	"importPaths": [
-		"source/"
-	],
-	"license": "Boost Software License 1.0",
-	"name": "openmethods",
-	"sourcePaths": [
-		"source/"
-	],
-	"subPackages": [
-		"./examples/acceptnovisitors",
-		"./examples/adventure",
-		"./examples/matrix",
-		"./examples/next",
-		"./examples/rolex",
-		"./examples/synopsis",
-		"./examples/whytheunderscore",
-		"./benchmarks/runtimemetrics",
-		"./tests"
-	],
-	"targetType": "library"
 }
